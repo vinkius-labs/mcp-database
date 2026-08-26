@@ -35,18 +35,18 @@ Connect your **Tingg (Cellulant)** payments account to any AI agent and simplify
 
 
 ## Available Tools (12)
-- **get_account_performance_metrics**: Retrieve performance stats
 - **get_payout_status**: Check status of a payout
 - **get_transaction_status**: Check status of a specific transaction
-- **initiate_payout_request**: Send money to a recipient
-- **list_disbursement_payouts**: List all payouts/disbursements
 - **list_account_settlements**: List bank settlements
-- **list_payment_transactions**: List recent payment transactions
-- **list_configured_webhooks**: List active webhooks
+- **list_disbursement_payouts**: List all payouts/disbursements
 - **send_engagement_notification**: Send SMS or Email alert
-- **create_checkout_request**: Initiate a new payment request
-- **initiate_payment_refund**: Request a refund
 - **check_api_health**: Verify Tingg API connectivity
+- **create_checkout_request**: Initiate a new payment request
+- **get_account_performance_metrics**: Retrieve performance stats
+- **initiate_payment_refund**: Request a refund
+- **initiate_payout_request**: Send money to a recipient
+- **list_configured_webhooks**: List active webhooks
+- **list_payment_transactions**: List recent payment transactions
 
 
 ## 💬 Prompt Examples

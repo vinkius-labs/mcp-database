@@ -34,14 +34,14 @@ Equip your AI agent with real-time global maritime intelligence through the **Da
 
 
 ## Available Tools (8)
+- **get_vessel_status**: Get real-time location and status for a specific vessel
+- **search_maritime_vessels**: Search for vessels by name
+- **search_ports_by_name**: Search for maritime ports by text name
+- **search_ports_by_country**: Search for maritime ports in a specific country
+- **find_vessels_in_radius**: Find all vessels currently located within a specific circular radius
 - **get_port_details**: Get specific details and coordinates for a maritime port
 - **get_vessel_history**: Get historical AIS track and location data for a vessel
 - **get_vessel_pro_specs**: Get advanced technical specifications for a vessel
-- **get_vessel_status**: Get real-time location and status for a specific vessel
-- **find_vessels_in_radius**: Find all vessels currently located within a specific circular radius
-- **search_ports_by_name**: Search for maritime ports by text name
-- **search_ports_by_country**: Search for maritime ports in a specific country
-- **search_maritime_vessels**: Search for vessels by name
 
 
 ## 💬 Prompt Examples

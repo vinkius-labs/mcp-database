@@ -43,8 +43,8 @@ Connect your **VBOUT** marketing automation account to any AI agent and simplify
 - **add_contact**: Requires email and list_id.
 
 Add a contact to a list
-- **create_social_post**: Create a social media post
 - **trigger_workflow**: Trigger a workflow for a contact
+- **create_social_post**: Create a social media post
 
 
 ## 💬 Prompt Examples

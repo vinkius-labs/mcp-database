@@ -38,16 +38,16 @@ No more manual creation of individual marketing posts or missing critical genera
 ## Available Tools (12)
 - **list_generations**: List generations
 - **create_asset**: Create an asset
-- **create_campaign**: Create a campaign
-- **delete_asset**: Delete an asset
 - **generate_content**: Generate AI content
 - **get_asset**: Get asset details
-- **get_campaign**: Get campaign details
 - **get_generation**: Get generation details
 - **list_assets**: List assets
 - **list_campaigns**: List campaigns
 - **list_templates**: List templates
 - **check_getalai_status**: Verify connectivity
+- **create_campaign**: Create a campaign
+- **delete_asset**: Delete an asset
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

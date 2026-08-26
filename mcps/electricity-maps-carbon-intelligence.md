@@ -34,12 +34,12 @@ Equip your AI agent with real-time global energy intelligence through the **Elec
 
 
 ## Available Tools (3)
-- **get_carbon_intensity**: g., DE, FR, US-CA).
-
-Get current carbon intensity for a zone
 - **get_power_production_breakdown**: ) currently powering a specific zone.
 
 Get power production breakdown for a zone
+- **get_carbon_intensity**: g., DE, FR, US-CA).
+
+Get current carbon intensity for a zone
 - **list_energy_zones**: List all available energy zones
 
 

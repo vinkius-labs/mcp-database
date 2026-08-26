@@ -38,12 +38,12 @@ Connect your **WorkflowMax by BlueRock** account to any AI agent to automate you
 - **create_job**: Requires essential details like name, client ID, and start date.
 
 Create a new job
-- **create_timesheet**: Requires job UUID, task UUID, and the duration/hours.
+- **list_timesheets**: Useful for auditing time logs and work progress.
 
-Create a new timesheet entry
-- **get_client_contact**: Get details for a specific client contact
-- **get_client**: Get details for a specific client
-- **get_job**: Get details for a specific job
+List timesheet entries
+- **create_client**: Requires a company or individual name.
+
+Create a new client
 - **list_clients**: List all WorkflowMax clients
 - **list_jobs**: Useful for getting an overview of active projects.
 
@@ -51,16 +51,16 @@ List all WorkflowMax jobs
 - **list_tasks**: Tasks are the service units that can be assigned to jobs.
 
 List all tasks
-- **list_timesheets**: Useful for auditing time logs and work progress.
-
-List timesheet entries
-- **update_job**: Update an existing job
 - **create_client_contact**: Requires the client UUID and contact details.
 
 Create a new client contact
-- **create_client**: Requires a company or individual name.
+- **create_timesheet**: Requires job UUID, task UUID, and the duration/hours.
 
-Create a new client
+Create a new timesheet entry
+- **get_client**: Get details for a specific client
+- **get_client_contact**: Get details for a specific client contact
+- **get_job**: Get details for a specific job
+- **update_job**: Update an existing job
 
 
 ## 💬 Prompt Examples

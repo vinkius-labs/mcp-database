@@ -37,9 +37,9 @@ Connect your **Adikteev** account to your AI agent to unlock professional app re
 ## Available Tools (5)
 - **list_companies**: Retrieve your company ID
 - **list_segments**: List audience segments
-- **create_segment**: Create an audience segment
 - **get_churn_scores**: Retrieve user churn scores
 - **get_reporting**: Get campaign performance data
+- **create_segment**: Create an audience segment
 
 
 ## 💬 Prompt Examples

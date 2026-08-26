@@ -38,18 +38,18 @@ No more manual timesheet entries or missing project budget gaps. Your AI acts as
 
 ## Available Tools (10)
 - **get_timeghost_task**: Get details for a specific task
-- **get_timeghost_entry**: Get a specific time entry
-- **list_timeghost_projects**: List projects
-- **check_timeghost_status**: Check API Status
 - **list_timeghost_entries**: Optionally filter by date range or specific user.
 
 List time entries
+- **list_timeghost_projects**: List projects
 - **list_timeghost_members**: List workspace members
 - **list_timeghost_workspaces**: List workspaces
-- **get_timeghost_project**: Get details for a specific project
 - **list_timeghost_tasks**: Filter by project ID to isolate specific technical pipelines.
 
 List tasks
+- **check_timeghost_status**: Check API Status
+- **get_timeghost_entry**: Get a specific time entry
+- **get_timeghost_project**: Get details for a specific project
 - **list_timeghost_clients**: List clients
 
 

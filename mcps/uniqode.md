@@ -40,15 +40,15 @@ Connect your **Uniqode (formerly Beaconstac)** account to any AI agent and simpl
 - **get_analytics_time**: Get scan analytics by time
 - **get_qrcode**: Get QR code details
 - **list_campaigns**: List campaigns
-- **list_folders**: List folders
 - **get_account_info**: Get account details
-- **list_organizations**: List organizations
-- **list_qrcodes**: List all QR codes
 - **list_tags**: List tags
 - **update_qrcode**: Update an existing QR code
+- **list_organizations**: List organizations
 - **create_qrcode**: qr_type: 1 for Website, 2 for vCard, etc.
 
 Create a new QR code
+- **list_folders**: List folders
+- **list_qrcodes**: List all QR codes
 
 
 ## 💬 Prompt Examples

@@ -36,26 +36,26 @@ Connect your **IP2WHOIS** account to any AI agent and access comprehensive domai
 
 
 ## Available Tools (10)
-- **check_domain_availability**: Check if a domain is available for registration
 - **check_domain_age**: Check the age of a domain
-- **lookup_hosted_domains**: Useful for shared hosting analysis.
-
-Find all domains hosted on a specific IP address
-- **get_registrar_info**: Get registrar and status info for a domain
 - **check_ip2whois_status**: com to confirm valid authentication.
 
 Verify IP2WHOIS API connectivity
-- **lookup_domain_whois**: Full WHOIS lookup for a domain
-- **bulk_whois_lookup**: Returns key registration details for each domain.
-
-WHOIS lookup for multiple domains at once
-- **get_domain_contacts**: Note: many domains use privacy protection.
-
-Get registrant and admin contact info for a domain
 - **check_domain_expiry**: Useful for renewal monitoring.
 
 Check when a domain expires
+- **get_domain_contacts**: Note: many domains use privacy protection.
+
+Get registrant and admin contact info for a domain
+- **lookup_domain_whois**: Full WHOIS lookup for a domain
+- **lookup_hosted_domains**: Useful for shared hosting analysis.
+
+Find all domains hosted on a specific IP address
+- **bulk_whois_lookup**: Returns key registration details for each domain.
+
+WHOIS lookup for multiple domains at once
+- **check_domain_availability**: Check if a domain is available for registration
 - **get_nameservers**: Get nameservers for a domain
+- **get_registrar_info**: Get registrar and status info for a domain
 
 
 ## 💬 Prompt Examples

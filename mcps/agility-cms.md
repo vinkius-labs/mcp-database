@@ -34,12 +34,18 @@ Connect your **Agility CMS** instance to your AI agent and turn it into the ulti
 
 
 ## Available Tools (10)
-- **count_reference_items**: Get the total size/count of items in a specific Reference List
+- **sync_incremental_items**: Start with 0 for full backup.
+
+Get incrementally updated items since the last sync token
+- **sync_incremental_pages**: Start with 0 for a full fetch.
+
+Get incrementally updated pages since the last sync token
 - **get_media_gallery**: Retrieve a specific media gallery mapping containing photos
+- **count_reference_items**: Get the total size/count of items in a specific Reference List
+- **get_page_layout**: Retrieve the layout and structural modules of a single Page
 - **get_single_item**: g., an article body) knowing its numeric content ID.
 
 Retrieve a single Agility CMS content item by its ID
-- **get_page_layout**: Retrieve the layout and structural modules of a single Page
 - **get_site_flat_router**: Retrieve the exact flat list of all CMS routes/pages
 - **get_site_tree**: Requires the target channel name.
 
@@ -48,12 +54,6 @@ Retrieve the nested sitemap architecture of a digital channel
 
 List content items from an Agility CMS Reference list
 - **search_content_reference**: Search for specific keywords inside a Content Reference List
-- **sync_incremental_items**: Start with 0 for full backup.
-
-Get incrementally updated items since the last sync token
-- **sync_incremental_pages**: Start with 0 for a full fetch.
-
-Get incrementally updated pages since the last sync token
 
 
 ## 💬 Prompt Examples

@@ -39,42 +39,24 @@ Your AI agent becomes a protein domain expert with access to InterPro's unified 
 
 
 ## Available Tools (16)
-- **get_entry_taxonomy**: Returns taxonomy nodes with names, ranks, and protein counts. This answers the evolutionary biology question "which organisms have this domain/family?" and is essential for understanding protein evolution and conservation.
-
-Get taxonomic distribution of an InterPro entry
 - **get_cdd_entry**: CDD provides curated models for protein domain families and includes additional alignment and structure data. Use accessions like cd00001.
 
 Get CDD (Conserved Domain Database) entry details
-- **get_entry_proteins**: Returns protein accessions, names, lengths, and source organisms. Useful for finding all members of a protein family across the UniProt database.
-
-Get all proteins matching an InterPro entry
-- **get_protein_entries**: This is the key tool for understanding "what domains does my protein have?" — the fundamental question in protein characterization.
-
-Get all InterPro entries matching a specific protein
 - **get_clan**: Returns clan accession, name, description, and member counts. Use Pfam clan accessions like CL0001.
 
 Get Pfam clan (super-family grouping) details
 - **get_entry**: Returns name, type (family, domain, homologous superfamily, repeat, site), description, Gene Ontology terms, member database cross-references, and literature count. Use accessions like IPR000001, IPR036291.
 
 Get InterPro entry metadata for a family or domain
-- **get_entry_structures**: Returns PDB IDs, names, experiment types, and resolutions. Useful for finding structural representatives of a protein family or domain.
+- **get_entry_taxonomy**: Returns taxonomy nodes with names, ranks, and protein counts. This answers the evolutionary biology question "which organisms have this domain/family?" and is essential for understanding protein evolution and conservation.
 
-Get all PDB structures matching an InterPro entry
-- **get_pfam_entry**: Pfam is the most widely used protein domain database. Use accessions like PF00069 (kinase domain), PF00076 (RRM domain).
+Get taxonomic distribution of an InterPro entry
+- **get_protein_entries**: This is the key tool for understanding "what domains does my protein have?" — the fundamental question in protein characterization.
 
-Get Pfam domain or family details
-- **get_protein**: Returns the protein name, length, source organism, evidence level, fragment status, and counters for how many InterPro entries, Pfam domains, structures, and taxa are associated with it.
-
-Get protein details with all domain and family assignments
+Get all InterPro entries matching a specific protein
 - **get_proteome**: Returns proteome ID, organism name, strain, reference status, and counters for associated entries and proteins. Use UniProt proteome IDs like UP000005640 (human).
 
 Get proteome details with domain coverage statistics
-- **get_structure**: Use a 4-character PDB ID like 1cbs or 4hhb.
-
-Get a PDB structure with mapped InterPro annotations
-- **get_taxonomy**: Returns the organism name, rank, lineage, number of children taxa, and counters for associated InterPro entries and proteins. Use IDs like 9606 (human), 10090 (mouse), 562 (E. coli).
-
-Get taxonomic node with entry and protein counts
 - **list_entry_databases**: Shows the number of entries in each database. Useful for understanding the scope of available domain and family annotations.
 
 List all InterPro member databases and entry counts
@@ -84,6 +66,24 @@ Search InterPro entries by keyword and type
 - **search_proteins**: Returns UniProt accessions, names, lengths, organisms, and annotation counts. Use queries like "insulin", "hemoglobin", "BRCA1".
 
 Search proteins in InterPro by name or keyword
+- **get_entry_proteins**: Returns protein accessions, names, lengths, and source organisms. Useful for finding all members of a protein family across the UniProt database.
+
+Get all proteins matching an InterPro entry
+- **get_entry_structures**: Returns PDB IDs, names, experiment types, and resolutions. Useful for finding structural representatives of a protein family or domain.
+
+Get all PDB structures matching an InterPro entry
+- **get_pfam_entry**: Pfam is the most widely used protein domain database. Use accessions like PF00069 (kinase domain), PF00076 (RRM domain).
+
+Get Pfam domain or family details
+- **get_protein**: Returns the protein name, length, source organism, evidence level, fragment status, and counters for how many InterPro entries, Pfam domains, structures, and taxa are associated with it.
+
+Get protein details with all domain and family assignments
+- **get_structure**: Use a 4-character PDB ID like 1cbs or 4hhb.
+
+Get a PDB structure with mapped InterPro annotations
+- **get_taxonomy**: Returns the organism name, rank, lineage, number of children taxa, and counters for associated InterPro entries and proteins. Use IDs like 9606 (human), 10090 (mouse), 562 (E. coli).
+
+Get taxonomic node with entry and protein counts
 - **search_taxonomy**: Returns taxon IDs, names, ranks, and annotation counts. Use queries like "human", "drosophila", "arabidopsis", "saccharomyces".
 
 Search taxonomy by organism name

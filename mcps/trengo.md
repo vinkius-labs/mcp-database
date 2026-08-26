@@ -35,19 +35,19 @@ Connect your **Trengo** omnichannel inbox to any AI agent and simplify how you m
 
 
 ## Available Tools (12)
+- **create_ticket**: Create a new ticket
+- **get_account_profile**: Get current user profile
 - **get_ticket**: Get ticket details
+- **list_messages**: List ticket messages
 - **list_channels**: ).
 
 List communication channels
 - **list_contacts**: List all contacts
-- **list_messages**: List ticket messages
-- **list_tickets**: List all support tickets
 - **list_team_members**: List team users
+- **list_tickets**: List all support tickets
 - **list_webhooks**: List configured webhooks
-- **send_message**: Send a message
 - **update_ticket**: Update ticket status
-- **get_account_profile**: Get current user profile
-- **create_ticket**: Create a new ticket
+- **send_message**: Send a message
 - **create_webhook**: Create a new webhook
 
 

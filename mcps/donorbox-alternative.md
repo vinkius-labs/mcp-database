@@ -40,20 +40,20 @@ No more manual status checking or digging through donation tables in the portal.
 
 Add a new donor record
 - **get_account_profile**: Get authenticated account info
-- **list_donations**: Can be filtered by email, campaign, or amount.
-
-List all donations
 - **cancel_recurring_plan**: Cancel a recurring donation
 - **check_api_health**: Verify Donorbox API connectivity
 - **list_fundraising_campaigns**: List fundraising campaigns
-- **pause_recurring_plan**: Pause a recurring donation
 - **resume_recurring_plan**: Resume a paused recurring donation
 - **update_donor_info**: Modify a donor record
+- **list_configured_webhooks**: List active webhooks
 - **list_donors**: Can be filtered by name or email.
 
 List all donors
 - **list_recurring_plans**: List recurring donation plans
-- **list_configured_webhooks**: List active webhooks
+- **list_donations**: Can be filtered by email, campaign, or amount.
+
+List all donations
+- **pause_recurring_plan**: Pause a recurring donation
 
 
 ## 💬 Prompt Examples

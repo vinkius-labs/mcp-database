@@ -41,13 +41,13 @@ No more manual toggling between WhatsApp tabs or missing critical customer repli
 - **list_agents**: List agents
 - **list_templates**: List templates
 - **send_message**: Send a message
-- **get_customer**: Get customer details
 - **check_wasmart_status**: Verify connectivity
 - **list_campaigns**: List campaigns
-- **list_customers**: List customers
 - **list_messages**: List messages
 - **search_customers**: Search customers
 - **send_media**: Send media
+- **list_customers**: List customers
+- **get_customer**: Get customer details
 - **send_template**: Send a template
 
 

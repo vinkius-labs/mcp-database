@@ -36,16 +36,16 @@ No more manual toggling between browser tabs to check your todo list. Your AI ac
 
 
 ## Available Tools (8)
-- **update_task**: Update an existing task
+- **delete_task**: Delete a task
+- **get_task**: Get details of a specific task
+- **list_labels**: List all task labels
+- **list_tasks**: List all tasks
 - **complete_task**: Mark a task as completed
 - **create_task**: Provide title and optionally date/labels.
 
 Create a new task
-- **delete_task**: Delete a task
-- **get_task**: Get details of a specific task
-- **list_labels**: List all task labels
 - **list_lists**: List all task lists
-- **list_tasks**: List all tasks
+- **update_task**: Update an existing task
 
 
 ## 💬 Prompt Examples

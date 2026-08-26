@@ -34,15 +34,15 @@ Connect to the **EPA ECHO (Enforcement and Compliance History Online)** database
 
 
 ## Available Tools (7)
-- **search_hazardous_waste_facilities**: Search for hazardous waste handlers regulated under the Resource Conservation and Recovery Act (RCRA)
-- **search_drinking_water_systems**: Search for public drinking water systems regulated under the Safe Drinking Water Act (SDWA)
 - **search_water_facilities**: Search for facilities regulated under the Clean Water Act (CWA) and managed under the NPDES program
-- **get_effluent_chart**: Get dynamic charts and tables of permitted effluent limits, releases, and violations for CWA wastewater discharge permits
-- **search_air_facilities**: Search for stationary sources regulated under the Clean Air Act (CAA)
 - **search_all_facilities**: ) using location or name.
 
 Search across all environmental program records available in ECHO
 - **get_detailed_facility_report**: Get a comprehensive report for a single facility across all available environmental program records
+- **get_effluent_chart**: Get dynamic charts and tables of permitted effluent limits, releases, and violations for CWA wastewater discharge permits
+- **search_air_facilities**: Search for stationary sources regulated under the Clean Air Act (CAA)
+- **search_drinking_water_systems**: Search for public drinking water systems regulated under the Safe Drinking Water Act (SDWA)
+- **search_hazardous_waste_facilities**: Search for hazardous waste handlers regulated under the Resource Conservation and Recovery Act (RCRA)
 
 
 ## 💬 Prompt Examples
