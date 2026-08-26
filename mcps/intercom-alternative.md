@@ -35,18 +35,18 @@ Connect your **Intercom** account to any AI agent and manage customer communicat
 
 
 ## Available Tools (12)
-- **create_contact**: Register a new contact
 - **create_conversation**: Start a new conversation
 - **get_contact_details**: Get details for a contact
 - **get_conversation_details**: Get conversation history
 - **list_admins**: List workspace admins
-- **list_help_articles**: List help center articles
 - **list_contacts**: List Intercom contacts
 - **list_conversations**: List recent conversations
+- **list_help_articles**: List help center articles
+- **search_contacts**: Search contacts with filters
+- **create_contact**: Register a new contact
 - **list_data_attributes**: List custom attributes
 - **list_segments**: List workspace segments
 - **reply_to_conversation**: Reply to a conversation
-- **search_contacts**: Search contacts with filters
 
 
 ## 💬 Prompt Examples

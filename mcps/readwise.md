@@ -36,9 +36,9 @@ Connect your **Readwise** account directly to your AI agent. Enabling this integ
 - **check_auth_status**: Verifies the validity of the Readwise access token
 - **get_reader_document**: Retrieves details for a specific Reader document
 - **list_books**: Lists all books and sources in Readwise
-- **list_highlights**: Lists all highlights from the user's Readwise account
 - **list_reader_documents**: Lists documents in the Readwise Reader
 - **list_tags**: Lists all tags used in Readwise
+- **list_highlights**: Lists all highlights from the user's Readwise account
 
 
 ## 💬 Prompt Examples

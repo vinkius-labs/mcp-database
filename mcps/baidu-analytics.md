@@ -36,14 +36,14 @@ Empower your AI agent to orchestrate your web analytics and visitor insights wit
 
 ## Available Tools (8)
 - **get_daily_trend**: Get daily traffic trend
-- **get_geo_distribution**: Get visitor geographic data
-- **get_realtime_metrics**: Get real-time statistics
 - **get_page_rankings**: Get top visited pages
+- **get_realtime_metrics**: Get real-time statistics
+- **list_sites**: List all analytics sites
+- **get_geo_distribution**: Get visitor geographic data
 - **get_source_data**: g., search, direct).
 
 Get visitor sources
 - **get_yesterday_overview**: Get yesterday traffic summary
-- **list_sites**: List all analytics sites
 - **query_custom_metrics**: Execute custom report query
 
 

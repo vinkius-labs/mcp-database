@@ -33,17 +33,17 @@ Connect your **Acuity Scheduling** (by Squarespace) account to any AI agent and 
 - **check_availability_dates**: Requires Appointment Type ID.
 
 Check which dates have available booking slots for a specific service and month
-- **get_account**: Retrieve business profile and account settings from the connected Acuity account
 - **get_appointment**: Retrieve the full details of a specific Acuity appointment using its unique ID
-- **list_appointment_types**: Shows duration, price, and category.
-
-Retrieve all active bookable service types offered in the Acuity account
 - **list_appointments**: Filter by date range.
 
 Retrieve booked appointments from the Acuity Scheduling system, filterable by date range
 - **list_available_times**: Essential for booking assistance.
 
 List exactly when someone can book a given Acuity service on a specific date
+- **get_account**: Retrieve business profile and account settings from the connected Acuity account
+- **list_appointment_types**: Shows duration, price, and category.
+
+Retrieve all active bookable service types offered in the Acuity account
 - **list_calendars**: Retrieve all calendars identifying providers and instructors in Acuity
 - **list_classes**: Retrieve group classes scheduled in Acuity, including their capacity and enrolled counts
 - **list_products**: Retrieve products or gift certificates available for purchase through Acuity

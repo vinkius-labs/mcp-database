@@ -39,9 +39,9 @@ Connect your **Apify** account to any AI agent and simplify how you manage your 
 - **list_actor_tasks**: List configured actor tasks
 - **get_dataset_results**: Get items from a dataset
 - **get_run_details**: Get details for a specific run
-- **run_actor**: Trigger an actor run
 - **list_actors**: List Apify actors
 - **list_datasets**: List Apify datasets
+- **run_actor**: Trigger an actor run
 
 
 ## 💬 Prompt Examples

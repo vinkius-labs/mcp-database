@@ -22,8 +22,8 @@ By strictly scoping access, your AI can safely persist data, analyze documents, 
 
 
 ## Available Tools (4)
-- **delete_object**: Delete an object from the Google Cloud Storage bucket
 - **get_object**: Read the content of an object in the Google Cloud Storage bucket
+- **delete_object**: Delete an object from the Google Cloud Storage bucket
 - **list_objects**: List objects in the configured Google Cloud Storage bucket
 - **put_object**: If the object already exists, it is overwritten.
 

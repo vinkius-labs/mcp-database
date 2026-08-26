@@ -31,9 +31,6 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **zoho_module_fields**: Returns field name, display label, data type (text/number/date/picklist/lookup), whether it is required, read-only, and formula-based. Essential for understanding the data model before creating or updating records. Use when the user asks "what fields are on Contacts?" or needs to know valid field names for API operations.
 
 Get all fields (properties) configured on a Zoho CRM module with data types, validation rules, and edit permissions
-- **zoho_org_info**: Returns company name, Zoho CRM edition (Free/Standard/Professional/Enterprise/Ultimate), default timezone, currency, and admin contact. Use when the user needs account-level information, subscription details, or org configuration.
-
-Get Zoho CRM organization details — company name, subscription edition, timezone, currency, and license information
 - **zoho_custom_views**: Returns view name, system name, category (shared/personal), and whether it is the default. Custom views are saved filters that define how records appear in the module list view (e.g., "All Open Deals", "My Contacts", "Unread Leads"). Use when the user asks about available filters, saved views, or list configurations.
 
 List saved custom views/filters for a Zoho CRM module — predefined list views like "My Open Deals" or "All Leads"
@@ -43,6 +40,9 @@ List all available CRM modules in Zoho with their names, API support status, and
 - **zoho_list_pipelines**: For deals: shows sales pipeline stages with associated win probability percentages (e.g., Qualification=10%, Proposal=75%, Closed Won=100%). Returns pipeline name, stage names, stage IDs, and probabilities. Use to understand the sales process, find stage names for deal operations, or check pipeline configuration.
 
 List deal (or custom module) pipelines in Zoho CRM with their stages, win probabilities, and display order
+- **zoho_org_info**: Returns company name, Zoho CRM edition (Free/Standard/Professional/Enterprise/Ultimate), default timezone, currency, and admin contact. Use when the user needs account-level information, subscription details, or org configuration.
+
+Get Zoho CRM organization details — company name, subscription edition, timezone, currency, and license information
 
 
 ## 💬 Prompt Examples

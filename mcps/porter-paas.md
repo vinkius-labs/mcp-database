@@ -35,17 +35,20 @@ No pulling KUBECONFIG files, authenticating via cloud CLI tools, or navigating d
 
 
 ## Available Tools (10)
-- **deploy_app_tag**: Assigns a raw docker registry digest/tag directly causing Kubernetes to perform an absolute image pull orchestrating a fresh deployment state spanning replica boundaries.
-
-Forcefully mutate the executed Docker image running internally
 - **get_app**: Includes explicit CPU metrics requested, RAM limits mapped locally to the JVM/Node instances, and internal registry image hashes resolving at runtime.
 
 Analyze architectural bindings orchestrating a specific App
-- **get_cluster**: Inspect deep cloud credentials generating a specific K8s Cluster
 - **get_project**: Perform structural extraction of metadata linked to a Porter Project
 - **list_apps**: Discovers precisely which App routing identities expose `porter.run` subdomains or linked target custom apex mappings.
 
 Inventory deployed discrete Applications mapping to a Cluster
+- **list_helm_releases**: Vital for verifying if dependent third-party apps (e.g. Postgres databases or Metabase) deployed aside the primary stack succeeded during installation phases.
+
+List underlying operational Helm configurations inside a namespace
+- **deploy_app_tag**: Assigns a raw docker registry digest/tag directly causing Kubernetes to perform an absolute image pull orchestrating a fresh deployment state spanning replica boundaries.
+
+Forcefully mutate the executed Docker image running internally
+- **get_cluster**: Inspect deep cloud credentials generating a specific K8s Cluster
 - **list_clusters**: Exposes crucial execution zones hosting absolute memory nodes.
 
 List underlying target cloud Kubernetes definitions bounds to Porter
@@ -53,9 +56,6 @@ List underlying target cloud Kubernetes definitions bounds to Porter
 - **list_projects**: Fetches indispensable integer `projectId` arrays coordinating everything strictly downstream inside AWS/GCP clusters.
 
 Identify base Porter PaaS organizational scopes
-- **list_helm_releases**: Vital for verifying if dependent third-party apps (e.g. Postgres databases or Metabase) deployed aside the primary stack succeeded during installation phases.
-
-List underlying operational Helm configurations inside a namespace
 - **restart_app**: Mandatory during severe connection leakage scenarios impacting native processes without modifying the fundamental code layer deployment tag.
 
 Instruct the Kubernetes API to bounce the App deployment replicas

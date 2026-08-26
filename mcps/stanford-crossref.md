@@ -36,6 +36,12 @@ Connect to the **CrossRef API** — the authoritative source for DOI metadata an
 
 
 ## Available Tools (16)
+- **get_journal**: Returns title, publisher, subjects, total DOI count, current and backfile counts, metadata coverage percentages, and quality flags.
+
+Get journal details by ISSN
+- **get_publisher**: Returns name, DOI prefix, total/current/backfile DOI counts, metadata coverage scores, and quality flags.
+
+Get publisher details with output metrics
 - **get_citations_count**: The "is-referenced-by-count" is the number of times other works cite this DOI. The "references-count" is how many references this work cites. Quick way to assess a paper's impact.
 
 Get citation count for a DOI
@@ -45,15 +51,6 @@ Get works funded by a specific funding organization
 - **get_journal_works**: Can be filtered with an optional text query. Useful for browsing a journal's publication history or searching within a specific journal.
 
 Get articles published in a specific journal
-- **get_publisher**: Returns name, DOI prefix, total/current/backfile DOI counts, metadata coverage scores, and quality flags.
-
-Get publisher details with output metrics
-- **get_reference_list**: Returns all cited references with their DOIs (when available), authors, titles, journals, and years. Essential for bibliography analysis, finding source material, and understanding a paper's intellectual foundations.
-
-Get full reference list (bibliography) for a DOI
-- **resolve_doi**: Returns title, authors, journal, publisher, publication date, volume, issue, pages, citation count, reference count, subject areas, and license information. The definitive tool for getting structured metadata from any DOI.
-
-Resolve a DOI to full bibliographic metadata
 - **search_by_affiliation**: Use institution names like "Stanford University", "MIT", "Harvard Medical School". Can be combined with a topic query.
 
 Search works by institutional affiliation
@@ -69,21 +66,24 @@ Search academic journals by title or ISSN
 - **search_preprints**: This covers preprints from bioRxiv, medRxiv, SSRN, ChemRxiv, and other preprint servers that register DOIs with CrossRef.
 
 Search registered preprints across all servers
-- **search_publishers**: Returns publisher names, DOI prefixes, and total DOI counts.
-
-Search academic publishers
 - **search_recent_works**: Default is last 7 days. Use this to monitor the latest publications across all journals and publishers.
 
 Find the most recently registered DOIs
-- **search_works**: Supports full-text query, filters, sorting, and pagination. Filter syntax: "from-pub-date:2024-01-01", "type:journal-article", "has-orcid:true", "has-references:true", "is-update:false". Sort options: "relevance", "published", "indexed", "is-referenced-by-count".
-
-Search 150M+ DOI-registered academic works
 - **validate_doi**: Returns whether the DOI exists in CrossRef, along with basic metadata (title, type, publisher) if valid. Useful for quality-checking reference lists and citation data.
 
 Check if a DOI is valid and registered
-- **get_journal**: Returns title, publisher, subjects, total DOI count, current and backfile counts, metadata coverage percentages, and quality flags.
+- **get_reference_list**: Returns all cited references with their DOIs (when available), authors, titles, journals, and years. Essential for bibliography analysis, finding source material, and understanding a paper's intellectual foundations.
 
-Get journal details by ISSN
+Get full reference list (bibliography) for a DOI
+- **resolve_doi**: Returns title, authors, journal, publisher, publication date, volume, issue, pages, citation count, reference count, subject areas, and license information. The definitive tool for getting structured metadata from any DOI.
+
+Resolve a DOI to full bibliographic metadata
+- **search_publishers**: Returns publisher names, DOI prefixes, and total DOI counts.
+
+Search academic publishers
+- **search_works**: Supports full-text query, filters, sorting, and pagination. Filter syntax: "from-pub-date:2024-01-01", "type:journal-article", "has-orcid:true", "has-references:true", "is-update:false". Sort options: "relevance", "published", "indexed", "is-referenced-by-count".
+
+Search 150M+ DOI-registered academic works
 
 
 ## 💬 Prompt Examples

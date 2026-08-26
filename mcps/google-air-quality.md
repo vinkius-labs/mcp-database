@@ -34,8 +34,8 @@ Equip your AI agent with hyper-local environmental intelligence through the **Go
 
 
 ## Available Tools (2)
-- **get_air_quality_history**: Get historical air quality data
 - **get_current_air_quality**: Get current air quality using Google Maps API
+- **get_air_quality_history**: Get historical air quality data
 
 
 ## 💬 Prompt Examples

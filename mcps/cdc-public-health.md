@@ -35,13 +35,13 @@ Empower your AI agent to orchestrate your public health research and content syn
 
 
 ## Available Tools (8)
+- **get_media_details**: Get media item info
+- **get_syndication_html**: Get embed code for media
 - **search_health_media**: ) by keyword.
 
 Search CDC media items
 - **search_hhs_resources**: Search HHS Digital Media
-- **get_media_details**: Get media item info
 - **get_recent_health_media**: Get latest media items
-- **get_syndication_html**: Get embed code for media
 - **get_topic_metadata**: Get topic details
 - **list_health_topics**: List public health topics
 - **list_supported_languages**: List available languages

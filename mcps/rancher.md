@@ -33,15 +33,15 @@ Connect your **Rancher** Kubernetes management platform to your AI agent, allowi
 
 
 ## Available Tools (10)
-- **get_cluster**: Retrieves details for a specific Kubernetes cluster
 - **get_project**: Retrieves details for a specific Rancher project
-- **list_apps**: Lists Helm applications installed in a project
-- **list_catalogs**: Lists available Helm chart repositories (Catalogs)
 - **list_clusters**: Lists all Kubernetes clusters managed by Rancher
 - **list_namespaces**: Lists Kubernetes namespaces associated with a project
-- **list_nodes**: Lists all nodes within a specific cluster
 - **list_users**: Lists all user accounts in the Rancher platform
 - **list_workloads**: Lists all Kubernetes workloads (Deployments, StatefulSets) in a project
+- **get_cluster**: Retrieves details for a specific Kubernetes cluster
+- **list_apps**: Lists Helm applications installed in a project
+- **list_catalogs**: Lists available Helm chart repositories (Catalogs)
+- **list_nodes**: Lists all nodes within a specific cluster
 - **list_projects**: Use this to find project IDs.
 
 Lists logical projects within a cluster

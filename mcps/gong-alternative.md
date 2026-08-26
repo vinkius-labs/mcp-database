@@ -36,20 +36,20 @@ Connect your **Gong** account to any AI agent and unlock conversation intelligen
 
 
 ## Available Tools (14)
-- **get_call_stats**: Get call statistics
-- **get_transcript**: Get call transcript
 - **get_user_stats**: Get user stats
-- **get_user**: Get user details
-- **list_call_scores**: Get call scores
-- **list_calls_by_date**: List calls by date range
 - **list_calls_by_user**: List calls by user
-- **list_calls**: List calls
+- **list_call_scores**: Get call scores
 - **list_library_calls**: List library calls
 - **list_scorecards**: List scorecards
 - **list_users**: List users
 - **check_gong_status**: Verify connectivity
-- **get_call**: Get call details
 - **list_deals**: List deals
+- **list_calls_by_date**: List calls by date range
+- **get_call**: Get call details
+- **get_call_stats**: Get call statistics
+- **get_transcript**: Get call transcript
+- **get_user**: Get user details
+- **list_calls**: List calls
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,6 @@ Get all contacts associated with a specific campaign to measure conversion and e
 - **zoho_campaign_leads**: Returns leads with name, email, company, and source. Use to measure campaign effectiveness: "how many leads did this campaign generate?", "which leads came from the webinar?", or for campaign ROI analysis.
 
 Get all leads associated with a specific campaign to measure lead generation performance and attribution
-- **zoho_create_campaign**: Campaign_Name is required. Type: Conference, Webinar, Trade Show, Public Relations, Advertisement, Email, Social Media, Banner Ads. Status: Planning, Active, Inactive, Complete, None. Start_Date/End_Date use YYYY-MM-DD. Budgeted_Cost is the planned spend.
-
-Create a new marketing campaign in Zoho CRM with name, type, budget, dates, and status for initiative tracking
 - **zoho_get_campaign**: Returns full data: name, type, status, budgeted/actual cost, expected revenue, expected response, start/end dates, and description. Use after searching to drill into campaign details.
 
 Get complete details of a specific Zoho CRM campaign by ID, including budget, ROI metrics, and all custom fields
@@ -46,6 +43,9 @@ List marketing campaigns in Zoho CRM with name, type (Conference/Webinar/Email/A
 - **zoho_search_campaigns**: Returns matching campaigns with type, status, budget, and dates. Use when the user wants to find a specific campaign, check its budget/ROI, or review campaign status.
 
 Search Zoho CRM campaigns by name or keyword to find specific marketing initiatives and their performance data
+- **zoho_create_campaign**: Campaign_Name is required. Type: Conference, Webinar, Trade Show, Public Relations, Advertisement, Email, Social Media, Banner Ads. Status: Planning, Active, Inactive, Complete, None. Start_Date/End_Date use YYYY-MM-DD. Budgeted_Cost is the planned spend.
+
+Create a new marketing campaign in Zoho CRM with name, type, budget, dates, and status for initiative tracking
 
 
 ## 💬 Prompt Examples

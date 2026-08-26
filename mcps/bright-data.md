@@ -42,27 +42,27 @@ Download scraped data from a completed collection
 - **list_datasets**: Use to find the correct dataset_id for trigger_dataset. Large response — filter by name.
 
 Browse all 100+ available datasets with IDs and names
-- **send_request**: Requires a valid zone name — call get_all_zones first if unknown. Web Unlocker zones scrape any site; SERP API zones return structured search results from Google/Bing URLs.
+- **get_zone_info**: Use to verify a zone is active and correctly configured before using send_request.
 
-Scrape any URL bypassing anti-bot protections, or extract structured SERP data
+Get zone configuration — type, status, bandwidth, and settings
 - **get_all_zones**: Call this before send_request to get valid zone names. Empty list means zones must be created at brightdata.com/cp/zones.
 
 List all proxy zones configured in the account
 - **get_dataset_progress**: Returns status ("running" or "ready"), records count, and errors count. Poll every 15-30s. Only call get_dataset_snapshot after status="ready". LinkedIn scraping takes 60-120s per URL.
 
 Check if a dataset collection is complete
-- **get_account_status**: Use first if other tools return auth errors.
-
-Check account status and API key validity
-- **get_zone_info**: Use to verify a zone is active and correctly configured before using send_request.
-
-Get zone configuration — type, status, bandwidth, and settings
 - **get_zone_passwords**: For direct proxy connections outside this MCP. SENSITIVE — do not log credentials.
 
 Get proxy credentials for direct connections (Selenium, Playwright, etc.)
+- **get_account_status**: Use first if other tools return auth errors.
+
+Check account status and API key validity
 - **list_browser_sessions**: Only relevant if Scraping Browser zones are configured. Default: 50 most recent.
 
 List Scraping Browser sessions by status, duration, or bandwidth
+- **send_request**: Requires a valid zone name — call get_all_zones first if unknown. Web Unlocker zones scrape any site; SERP API zones return structured search results from Google/Bing URLs.
+
+Scrape any URL bypassing anti-bot protections, or extract structured SERP data
 - **trigger_dataset**: Poll get_dataset_progress until status="ready", then call get_dataset_snapshot to download results. Provide either url or keyword. LinkedIn Posts (gd_lyy3tktm25m4avu764) requires URLs matching linkedin.com/(pulse|posts|feed/update) — no keyword support. Always set include_errors=true.
 
 Start an async scraping job for LinkedIn, Amazon, Instagram, and 100+ sources

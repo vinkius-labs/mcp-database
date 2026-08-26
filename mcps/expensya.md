@@ -39,24 +39,24 @@ No more manual entry of every coffee receipt. Your AI acts as your dedicated fin
 ## Available Tools (12)
 - **export_expense_data**: Export expenses to a specific format
 - **get_authenticated_user_profile**: Get current user profile
-- **list_supported_currencies**: List all supported currencies
 - **list_expenses**: Supports filtering by date, user, and status.
 
 List all business expenses
 - **list_payment_methods**: g., Cash, Company Card) configured.
 
 List defined payment methods
+- **list_supported_currencies**: List all supported currencies
 - **list_analytical_projects**: List projects for tracking
 - **list_expense_reports**: List expense reports (folders)
 - **list_expense_tags**: List active tags
 - **list_expensya_users**: List users in the organization
 - **list_mileage_vehicles**: List vehicles for mileage tracking
-- **create_new_expense**: Requires amount, currency, and category.
-
-Add a new expense record
 - **list_expense_categories**: g., Meals, Travel).
 
 List active expense categories
+- **create_new_expense**: Requires amount, currency, and category.
+
+Add a new expense record
 
 
 ## 💬 Prompt Examples

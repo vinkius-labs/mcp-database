@@ -38,10 +38,10 @@ Connect your **AfterShip Tracking** account to your AI agent to unlock professio
 - **list_trackings**: g. InTransit).
 
 Retrieve all active and historical tracked shipments currently monitored by AfterShip
-- **create_tracking**: Register a new package tracking number to initiate real-time monitoring and webhooks via AfterShip
+- **detect_courier**: Analyze a raw tracking number format to automatically identify the likely carriers routing it
 - **get_tracking_details**: Retrieve highly accurate real-time location updates and the current delivery status for an AfterShip tracking ID
 - **list_couriers**: Retrieve the subset of shipping couriers that are currently actively enabled in your AfterShip account
-- **detect_courier**: Analyze a raw tracking number format to automatically identify the likely carriers routing it
+- **create_tracking**: Register a new package tracking number to initiate real-time monitoring and webhooks via AfterShip
 
 
 ## 💬 Prompt Examples
