@@ -33,11 +33,11 @@ Connect to the **NPM Registry** to explore the world's largest software registry
 
 
 ## Available Tools (4)
-- **get_package**: Get metadata for an NPM package
 - **get_package_version**: Get metadata for a specific version of an NPM package
 - **search_packages**: Supports qualifiers like author:name, maintainer:name, keywords:word, is:unstable, not:insecure.
 
 Search for packages in the NPM registry
+- **get_package**: Get metadata for an NPM package
 - **get_registry_meta**: Get information about the NPM registry instance
 
 

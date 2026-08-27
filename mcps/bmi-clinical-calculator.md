@@ -15,8 +15,8 @@ This MCP server provides clinical tools for anthropometric assessment. Use `comp
 
 ## Available Tools (3)
 - **calculate_ideal_body_weights**: Estimate ideal body weight using clinical formulas
-- **compute_bmi_metrics**: Calculate BMI and related clinical metrics
 - **evaluate_bariatric_eligibility**: Determine bariatric surgery eligibility
+- **compute_bmi_metrics**: Calculate BMI and related clinical metrics
 
 
 ## 💬 Prompt Examples

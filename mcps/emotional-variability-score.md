@@ -14,18 +14,18 @@ This MCP server provides specialized tools to analyze emotional patterns over ti
 
 
 ## Available Tools (4)
-- **calculate_mood_amplitude**: Returns peak, valley, and total range.
-
-Identify the extremes of the emotional range experienced during a period
 - **calculate_instability_index**: Returns instability score and pattern type.
 
 Quantify how erratic or frequent the mood swings are within a specific date range
-- **get_comprehensive_emotional_report**: Returns aggregated stability status, range, and rating.
+- **calculate_mood_amplitude**: Returns peak, valley, and total range.
 
-Generate a high-level summary of all emotional metrics for a given period
+Identify the extremes of the emotional range experienced during a period
 - **compare_weekly_volatility**: Returns delta and trend.
 
 Determine if emotional instability is worsening or improving by comparing two consecutive weeks
+- **get_comprehensive_emotional_report**: Returns aggregated stability status, range, and rating.
+
+Generate a high-level summary of all emotional metrics for a given period
 
 
 ## 💬 Prompt Examples

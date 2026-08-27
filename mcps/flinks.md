@@ -34,9 +34,12 @@ Connect your **Flinks** instance to any AI agent to access real-time banking dat
 
 
 ## Available Tools (15)
-- **delete_card**: Delete all data associated with a specific user account
-- **get_statements**: Retrieve original bank-issued PDF statements (Canada Only)
 - **authorize_session**: Authenticate a session and fetch cached banking data
+- **delete_card**: Delete all data associated with a specific user account
+- **get_accounts_detail**: If 202 is returned, data is processing and you should poll the async endpoint.
+
+Retrieve full account details including transactions and KYC
+- **get_statements**: Retrieve original bank-issued PDF statements (Canada Only)
 - **create_transaction**: Requires FLINKS_CLIENT_ID credential.
 
 Create an EFT transaction (debit or credit)
@@ -45,9 +48,6 @@ Create an EFT transaction (debit or credit)
 
 Generate a one-time authorize token
 - **get_accounts_detail_async**: Poll for asynchronous account details processing
-- **get_accounts_detail**: If 202 is returned, data is processing and you should poll the async endpoint.
-
-Retrieve full account details including transactions and KYC
 - **get_accounts_summary**: Retrieve general account details and balances
 - **get_business_analysis_attributes**: Get insights for business underwriting and creditworthiness
 - **get_categorization**: Get categorized transaction data

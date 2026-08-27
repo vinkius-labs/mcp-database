@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for determining financ
 
 
 ## Available Tools (3)
-- **get_phase_percentage_bounds**: Get the minimum and maximum contingency percentage limits for a specific phase
 - **analyze_budget_impact**: Analyze the total financial impact of adding contingency reserves
 - **calculate_contingency_amounts**: Calculate specific contingency amounts for each risk category
+- **get_phase_percentage_bounds**: Get the minimum and maximum contingency percentage limits for a specific phase
 
 
 ## 💬 Prompt Examples

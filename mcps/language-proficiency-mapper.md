@@ -14,15 +14,15 @@ Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check 
 
 
 ## Available Tools (3)
+- **check_minimum_requirements**: Returns pass/fail status and the required minimum level.
+
+Check if a CEFR proficiency level meets minimum language requirements for a country and purpose
 - **get_cross_exam_equivalency**: Useful for understanding how one score compares to other major exams.
 
 Get equivalent proficiency levels across different language exams for a given CEFR level
 - **map_exam_score_to_cefr**: Returns the mapped CEFR level from A1 to C2.
 
 Map a language exam score to its equivalent CEFR proficiency level
-- **check_minimum_requirements**: Returns pass/fail status and the required minimum level.
-
-Check if a CEFR proficiency level meets minimum language requirements for a country and purpose
 
 
 ## 💬 Prompt Examples

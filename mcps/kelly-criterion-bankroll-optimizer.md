@@ -15,8 +15,8 @@ This MCP server provides a suite of mathematical tools for managing bankrolls in
 
 ## Available Tools (3)
 - **calculate_kelly_position**: Calculates the recommended bet size for a single market opportunity
-- **validate_market_edge**: Quickly determines if a market opportunity is worth pursuing
 - **simulate_strategy_performance**: Estimates the long-term behavior and risks of a specific betting strategy
+- **validate_market_edge**: Quickly determines if a market opportunity is worth pursuing
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides precise mathematical tools to bridge the gap between ma
 
 
 ## Available Tools (3)
-- **calculate_edge_and_signal**: Determines if a market position offers a statistically significant opportunity
 - **calculate_position_size**: Calculates the recommended amount of capital to commit
+- **calculate_edge_and_signal**: Determines if a market position offers a statistically significant opportunity
 - **get_market_status**: Provides a high-level summary of market vs model relationship
 
 

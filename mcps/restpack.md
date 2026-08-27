@@ -34,13 +34,13 @@ Restpack provides powerful tools for web-to-document conversion. This MCP server
 
 
 ## Available Tools (4)
-- **get_usage**: Get API usage statistics
 - **capture_screenshot**: Returns a CDN URL.
 
 Capture a screenshot of a web page
 - **convert_html_to_pdf**: Returns a CDN URL.
 
 Convert a web page or HTML to PDF
+- **get_usage**: Get API usage statistics
 - **create_browser_mockup**: Returns a CDN URL.
 
 Convert an image into a browser mockup

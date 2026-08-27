@@ -34,10 +34,10 @@ Connect your **Mono** account to any AI agent to access real-time financial data
 
 
 ## Available Tools (5)
-- **initiate_payment**: Initiate a direct bank transfer
+- **get_account**: Get Mono account details
 - **get_statement**: Get bank statement for a Mono account
 - **get_transactions**: Get transactions for a Mono account
-- **get_account**: Get Mono account details
+- **initiate_payment**: Initiate a direct bank transfer
 - **get_identity**: Get identity information for a Mono account
 
 

@@ -35,10 +35,10 @@ Access the complete **BrewDog** beer library through the Punk API. This MCP serv
 
 ## Available Tools (3)
 - **get_beer**: Get a single beer by ID
+- **get_random_beer**: Get a random beer
 - **list_beers**: Supports pagination and filtering by ABV, IBU, EBC, ingredients, and food pairings.
 
 List beers from the BrewDog catalog
-- **get_random_beer**: Get a random beer
 
 
 ## 💬 Prompt Examples

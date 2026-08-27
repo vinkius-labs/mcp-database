@@ -34,28 +34,28 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 
 ## Available Tools (17)
-- **list_diseases**: List identifiable plant diseases
+- **align_species_name**: Align a species name within a project
+- **estimate_survey_cost**: Estimate cost for a multi-species survey
+- **get_quota_history**: Check API quota history (Contractualized only)
+- **identify_disease**: Identify plant diseases and pests from images
+- **identify_species**: Project can be "all" or a specific project ID.
+
+Identify a plant species from images
+- **list_languages**: Get the list of supported language codes
 - **list_species**: Can be scoped to a specific project or globalThis.
 
 List species, optionally filtered by project
 - **list_varieties**: List identifiable cultivated plant varieties
+- **list_diseases**: List identifiable plant diseases
 - **search_observations**: Search DarwinCore plant observations
 - **search_plots**: Search DarwinCore plots
 - **survey_tiles**: g., quadrat or drone imagery) to identify multiple species.
 
 Identify multiple species in a single high-resolution image (Beta)
 - **get_quota**: Check current API quota
-- **align_species_name**: Align a species name within a project
-- **estimate_survey_cost**: Estimate cost for a multi-species survey
 - **get_daily_quota**: Check daily API usage
-- **list_languages**: Get the list of supported language codes
 - **list_projects**: List Pl@ntNet projects (taxonomic referentials)
-- **get_quota_history**: Check API quota history (Contractualized only)
 - **get_status**: Check Pl@ntNet API service health status
-- **identify_disease**: Identify plant diseases and pests from images
-- **identify_species**: Project can be "all" or a specific project ID.
-
-Identify a plant species from images
 - **identify_variety**: Identify cultivated plant varieties from images
 
 

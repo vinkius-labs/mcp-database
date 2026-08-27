@@ -14,9 +14,9 @@ The Active Recall Session Planner uses Bloom's Taxonomy to structure your learni
 
 
 ## Available Tools (3)
-- **summarize_session_complexity**: Summarizes the complexity of a planned practice session
 - **generate_practice_sequence**: Generates an optimized active recall practice sequence
 - **verify_topic_inclusion**: Verifies if all required topics are present in a practice sequence
+- **summarize_session_complexity**: Summarizes the complexity of a planned practice session
 
 
 ## 💬 Prompt Examples

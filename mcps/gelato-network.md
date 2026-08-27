@@ -34,20 +34,20 @@ Connect your **Gelato Network** account to any AI agent and automate complex Web
 
 
 ## Available Tools (12)
+- **bundler_estimate_user_operation_gas**: Estimate gas for a UserOperation
 - **bundler_send_user_operation**: Submit an ERC-4337 UserOperation
+- **relayer_get_fee_data**: Get token exchange rates and gas price data
+- **relayer_send_transaction**: Returns a unique 32-byte task ID for tracking.
+
+Submit a signed transaction for relaying
 - **bundler_supported_entry_points**: List supported EntryPoint addresses
 - **relayer_get_capabilities**: Get supported payment tokens and fee collectors
-- **relayer_get_fee_data**: Get token exchange rates and gas price data
 - **relayer_get_fee_quote**: Get a fee quote for a specific gas amount
 - **relayer_get_status**: Check the status of a relayed transaction
-- **bundler_estimate_user_operation_gas**: Estimate gas for a UserOperation
 - **bundler_get_user_operation_by_hash**: Retrieve UserOperation details by hash
 - **bundler_get_user_operation_gas_price**: Get current gas prices for UserOperations
 - **bundler_get_user_operation_receipt**: Get the receipt of a UserOperation
 - **relayer_send_transaction_sync**: Submit a transaction and wait for inclusion
-- **relayer_send_transaction**: Returns a unique 32-byte task ID for tracking.
-
-Submit a signed transaction for relaying
 
 
 ## 💬 Prompt Examples

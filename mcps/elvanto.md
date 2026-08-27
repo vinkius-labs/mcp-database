@@ -27,52 +27,52 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 
 
 ## Available Tools (46)
-- **remove_person**: Delete a person
-- **remove_transaction**: Delete a transaction
-- **edit_song_key**: Edit an existing key
-- **list_people_flow_steps**: Lists all People Flow Steps within a given People Flow
 - **add_group_person**: Add a person to a group, or change their position
 - **add_person_to_flow_step**: Adds a person to a specified People Flow Step
 - **create_calendar_event**: Create a new calendar event
+- **create_song**: Create a new song
+- **create_song_arrangement**: Create an arrangement tied to a specified song
+- **create_transaction**: Create a new transaction
+- **edit_group**: Edit an existing group
+- **edit_song_key**: Edit an existing key
+- **get_person**: Find a person based on their ID
+- **get_song**: Find a song based on its ID
+- **get_song_key**: Find a key based on its ID
+- **list_financial_categories**: Get a list of all Chart of Accounts categories
+- **remove_transaction**: Delete a transaction
+- **list_groups**: Get a list of all groups
+- **list_people**: Get a list of all people
+- **list_songs**: Get a list of songs
+- **list_transactions**: Get a list of all transactions between two dates
+- **remove_group**: Delete a group
+- **remove_person**: Delete a person
+- **search_people**: Find one or more people matching a specific search query
+- **list_people_flow_steps**: Lists all People Flow Steps within a given People Flow
 - **create_financial_category**: Creates a new category in the Chart of Accounts
 - **create_group**: Create a new group
 - **create_person**: Create a new person
-- **create_song_arrangement**: Create an arrangement tied to a specified song
 - **create_song_key**: Create a key attached to a specified arrangement
-- **create_song**: Create a new song
-- **create_transaction**: Create a new transaction
 - **edit_calendar_event**: Edit an existing calendar event
-- **edit_group**: Edit an existing group
 - **edit_person**: Edit an existing person
-- **edit_song_arrangement**: Edit a specific arrangement details
 - **edit_song**: Edit specific details about a chosen song
+- **edit_song_arrangement**: Edit a specific arrangement details
 - **edit_transaction**: Edit an existing transaction
 - **get_current_user**: Retrieve information of the logged-in user
 - **get_group**: Find a group based on its ID
-- **get_person**: Find a person based on their ID
 - **get_service**: Find a service based on its ID
 - **get_song_arrangement**: Find an arrangement based on its ID
-- **get_song_key**: Find a key based on its ID
-- **get_song**: Find a song based on its ID
 - **get_transaction**: Find a transaction based on its ID
 - **list_calendar_events**: Get a list of all events between two dates
 - **list_calendars**: Get a list of all Calendars that events can be assigned to
 - **list_custom_fields**: Get a list of all Custom Fields
-- **list_financial_categories**: Get a list of all Chart of Accounts categories
-- **list_groups**: Get a list of all groups
 - **list_people_categories**: Get a list of all People Categories
-- **list_people_flow_step_people**: Lists members inside a specific People Flow step
 - **list_people_flows**: Lists all People Flows in the account
-- **list_people**: Get a list of all people
+- **list_people_flow_step_people**: Lists members inside a specific People Flow step
 - **list_services**: Get a list of services
 - **list_song_arrangements**: Get a list of arrangements within a song
 - **list_song_keys**: Get a list of keys within an arrangement
-- **list_songs**: Get a list of songs
-- **list_transactions**: Get a list of all transactions between two dates
 - **remove_calendar_event**: Delete a calendar event
 - **remove_group_person**: Remove a person from a group
-- **remove_group**: Delete a group
-- **search_people**: Find one or more people matching a specific search query
 
 
 ## 💬 Prompt Examples
