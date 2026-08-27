@@ -14,8 +14,8 @@ The Vaccine Schedule Generator provides precise immunization timelines for pets.
 
 
 ## Available Tools (3)
-- **check_vaccine_compliance**: Checks if a pet is up to date with vaccinations
 - **predict_upcoming_boosters**: Predicts upcoming booster events
+- **check_vaccine_compliance**: Checks if a pet is up to date with vaccinations
 - **generate_vaccine_schedule**: Generates a complete vaccination schedule for a pet
 
 

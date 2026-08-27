@@ -14,11 +14,11 @@ This MCP server provides a precise way to calculate the distribution of logistic
 
 
 ## Available Tools (3)
-- **calculate_cost_breakdown**: Calculate the total cost breakdown for a specific Incoterm
 - **compare_risk_exposure**: g., comparing FOB vs DDP).
 
 Compare risk transfer points between multiple Incoterms
 - **get_responsibility_matrix**: Get the responsibility matrix for a specific Incoterm
+- **calculate_cost_breakdown**: Calculate the total cost breakdown for a specific Incoterm
 
 
 ## 💬 Prompt Examples

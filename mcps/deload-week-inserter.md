@@ -14,8 +14,8 @@ The Deload Week Inserter MCP server allows you to transform a standard training 
 
 
 ## Available Tools (3)
-- **apply_deload_logic**: Generates a modified training schedule with recovery weeks
 - **count_recovery_occurrences**: Counts how many recovery weeks occur in a block
+- **apply_deload_logic**: Generates a modified training schedule with recovery weeks
 - **validate_deload_training_config**: Ensures deload settings are mathematically sound
 
 

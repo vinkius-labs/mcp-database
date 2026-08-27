@@ -14,8 +14,8 @@ When Large Language Models fail to follow strict JSON or Pydantic schemas due to
 
 
 ## Available Tools (3)
-- **extract_structured_data**: Performs the primary rescue extraction of fields from a block of text using a provided schema
 - **validate_schema_integrity**: Checks if the provided schema definition is logically sound and follows naming conventions
+- **extract_structured_data**: Performs the primary rescue extraction of fields from a block of text using a provided schema
 - **get_extraction_summary**: Provides a high-level overview of a specific extraction attempt's success and reliability
 
 

@@ -15,8 +15,8 @@ This MCP server provides specialized tools to analyze the resilience of AI agent
 
 ## Available Tools (3)
 - **calculate_error_distribution**: Provides a breakdown of how many times specific errors occurred
-- **calculate_resilience_metrics**: Computes the high-level performance ratios regarding reliability and recovery
 - **parse_execution_logs**: Extracts a structured sequence of tool call outcomes and error types from raw text logs
+- **calculate_resilience_metrics**: Computes the high-level performance ratios regarding reliability and recovery
 
 
 ## 💬 Prompt Examples

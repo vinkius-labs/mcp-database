@@ -14,9 +14,9 @@ The Beat Grid Sync Calculator is a specialized utility for video editors and mot
 
 
 ## Available Tools (3)
-- **get_beat_interval**: Calculate the duration of a single beat
 - **calculate_clip_snap**: Calculate video clip adjustment for beat alignment
 - **generate_sync_grid**: Generate a timeline of beat timestamps
+- **get_beat_interval**: Calculate the duration of a single beat
 
 
 ## 💬 Prompt Examples

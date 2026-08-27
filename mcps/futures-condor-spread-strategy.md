@@ -14,8 +14,8 @@ This MCP server provides quantitative tools to execute a deterministic four-legg
 
 
 ## Available Tools (3)
-- **analyze_risk_metrics**: Provides a deep dive into the theoretical risk profile of the current condor spread
 - **calculate_condor_signals**: Analyzes daily price arrays for four futures contracts to generate trading signals based on Z-score thresholds
+- **analyze_risk_metrics**: Provides a deep dive into the theoretical risk profile of the current condor spread
 - **validate_contract_eligibility**: Checks if a set of four contracts meets the liquidity and structural requirements for the strategy
 
 

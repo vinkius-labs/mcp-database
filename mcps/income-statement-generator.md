@@ -15,8 +15,8 @@ Transform raw financial data into a professional, hierarchical Income Statement.
 
 ## Available Tools (3)
 - **analyze_expense_composition**: Identifies which expense categories are the primary drivers of cost
-- **generate_income_statement**: Produces a complete, hierarchical Income Statement (P/L) with vertical analysis
 - **calculate_profitability_margins**: Provides a quick diagnostic of the company's margin health
+- **generate_income_statement**: Produces a complete, hierarchical Income Statement (P/L) with vertical analysis
 
 
 ## 💬 Prompt Examples

@@ -16,8 +16,8 @@ The EV Charging Cost Calculator provides detailed economic analysis for electric
 ## Available Tools (4)
 - **calculate_session_cost**: Determines the total monetary cost to charge a battery from its current level to full
 - **compare_trip_efficiency**: Compares the cost of traveling a specific distance using an EV versus a gasoline vehicle
-- **forecast_annual_savings**: Predicts the yearly and lifetime monetary savings when switching from a gasoline vehicle to an EV
 - **evaluate_charging_strategy**: Compares the economic feasibility of charging at home versus using public rapid chargers
+- **forecast_annual_savings**: Predicts the yearly and lifetime monetary savings when switching from a gasoline vehicle to an EV
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for executing futures carry trad
 
 ## Available Tools (3)
 - **analyze_market_regime**: Classifies the current state of the futures curve
-- **calculate_carry_performance**: Analyzes the historical profitability of the carry strategy
 - **get_daily_signals**: Provides the primary trading signals by comparing implied market carry against theoretical model carry
+- **calculate_carry_performance**: Analyzes the historical profitability of the carry strategy
 
 
 ## 💬 Prompt Examples

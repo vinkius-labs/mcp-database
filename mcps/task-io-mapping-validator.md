@@ -14,9 +14,9 @@ This MCP server provides precise validation for AI agent pipelines. It ensures t
 
 
 ## Available Tools (3)
-- **check_task_continuity**: Inspects the hand-off between two specific adjacent tasks in a sequence
 - **find_orphaned_outputs**: Identifies data produced by tasks that is never utilized by any subsequent task in the provided sequence
 - **validate_pipeline_flow**: Performs a full structural validation of the entire task sequence to ensure data continuity
+- **check_task_continuity**: Inspects the hand-off between two specific adjacent tasks in a sequence
 
 
 ## 💬 Prompt Examples

@@ -14,13 +14,13 @@ The Markup Calculator is a specialized financial tool designed to help businesse
 
 
 ## Available Tools (3)
-- **compare_regimes**: Pass scenarios as a JSON string array of objects.
-
-Compare different tax and expense configurations
-- **calculate_markup**: Calculate suggested selling price based on costs and rates
 - **list_tax_scenarios**: g., VAT, US Sales Tax).
 
 List predefined tax scenarios
+- **calculate_markup**: Calculate suggested selling price based on costs and rates
+- **compare_regimes**: Pass scenarios as a JSON string array of objects.
+
+Compare different tax and expense configurations
 
 
 ## 💬 Prompt Examples

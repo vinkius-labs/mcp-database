@@ -14,9 +14,9 @@ The Fundraising Target Calculator is a financial planning tool designed to help 
 
 
 ## Available Tools (3)
-- **evaluate_fundraising_adequacy**: Evaluates if a proposed fundraising amount is sufficient
-- **calculate_fundraising_target**: Calculates the total capital required for a fundraising round
 - **forecast_burn_trajectory**: Visualizes the progression of monthly expenses
+- **calculate_fundraising_target**: Calculates the total capital required for a fundraising round
+- **evaluate_fundraising_adequacy**: Evaluates if a proposed fundraising amount is sufficient
 
 
 ## 💬 Prompt Examples
