@@ -4,6 +4,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Aluminum Toxicity Risk Assessment](../mcps/aluminum-toxicity-risk-assessment.md) | Assess aluminum toxicity risk in acidic soils and calculate lime requirements. |
 | [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Cover Crop Biomass Predictor](../mcps/cover-crop-biomass-predictor.md) | Predict cover crop biomass, nitrogen content, and optimal termination timing. |
 | [Infiltration Rate Estimator](../mcps/infiltration-rate-estimator.md) | Estimates soil infiltration rates and runoff risks using physical soil properties. |

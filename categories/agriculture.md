@@ -38,6 +38,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Dairy Lactation Curve Model](../mcps/dairy-lactation-curve-model.md) | Predict dairy cow milk production trajectories using Wood's and Wilmink's mathematical models. |
 | [Dairy Somatic Cell Score Analyzer](../mcps/dairy-somatic-cell-score-analyzer.md) | Calculate bulk tank somatic cell count (BTSCC) contributions and quantify mastitis economic impact. |
 | [Double-Crop Economics Analyzer](../mcps/double-crop-economics-analyzer.md) | Evaluate the profitability and feasibility of double-cropping sequences. |
+| [Drainage Coefficient Calculator](../mcps/drainage-coefficient-calculator.md) | Design optimal tile drainage systems by calculating drainage coefficients, spacing, and depth. |
 | [Dry Bean Canning Quality Predictor](../mcps/dry-bean-canning-quality-predictor.md) | Predicts canning yield, texture, and color retention for dry beans. |
 | [Egg Collection & Handling System](../mcps/egg-collection-handling-system.md) | Calculates industrial egg production capacity, collection belt speeds, and labor requirements. |
 | [Feed Bunk Space Calculator](../mcps/feed-bunk-space-calculator.md) | Calculates feed bunk space requirements and feeding schedules for livestock. |

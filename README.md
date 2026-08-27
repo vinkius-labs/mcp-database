@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,012 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,014 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -20,8 +20,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
+- [agriculture](categories/agriculture.md) (124 servers)
 - [utilities](categories/utilities.md) (124 servers)
-- [agriculture](categories/agriculture.md) (123 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
 - [customer-support](categories/customer-support.md) (106 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
@@ -97,13 +97,13 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [crm-sales](categories/crm-sales.md) (6 servers)
 - [data-analysis](categories/data-analysis.md) (6 servers)
 - [data-extraction](categories/data-extraction.md) (6 servers)
+- [environmental-science](categories/environmental-science.md) (6 servers)
 - [logistics](categories/logistics.md) (6 servers)
 - [other](categories/other.md) (6 servers)
 - [video-conferencing](categories/video-conferencing.md) (6 servers)
 - [ai-agents](categories/ai-agents.md) (5 servers)
 - [automotive](categories/automotive.md) (5 servers)
 - [data](categories/data.md) (5 servers)
-- [environmental-science](categories/environmental-science.md) (5 servers)
 - [learning-training](categories/learning-training.md) (5 servers)
 - [nutrition](categories/nutrition.md) (5 servers)
 - [quality-assurance](categories/quality-assurance.md) (5 servers)
