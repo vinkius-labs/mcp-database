@@ -35,18 +35,18 @@ Connect your **AlisQI** instance to your AI agent to unlock professional quality
 
 
 ## Available Tools (10)
-- **list_analysis_sets**: List analysis sets
 - **get_analysis_set_details**: Get set metadata
+- **list_analysis_sets**: List analysis sets
 - **list_results**: Supports filtering.
 
 List quality results
-- **get_result_details**: Get specific result
 - **store_results**: Create or update results
-- **list_fields**: List dynamic fields
 - **list_active_webhooks**: List active triggers
 - **get_api_info**: Check API status
-- **list_choice_lists**: List selection menus
 - **get_result_attachments**: List document attachments
+- **get_result_details**: Get specific result
+- **list_fields**: List dynamic fields
+- **list_choice_lists**: List selection menus
 
 
 ## 💬 Prompt Examples

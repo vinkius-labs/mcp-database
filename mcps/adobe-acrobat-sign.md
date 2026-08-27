@@ -35,31 +35,31 @@ Connect your **Adobe Acrobat Sign** account to any AI agent and manage your enti
 
 
 ## Available Tools (10)
-- **adobe_agreement_members**: Returns each member email, role (SIGNER/APPROVER/ACCEPTOR/FORM_FILLER/DELEGATE_TO_SIGNER/CC), and their signing status. Use to check who has signed, who is pending, or to review the signing workflow.
-
-Get all participants (signers, approvers, CC recipients) in a specific Adobe Sign agreement with their roles and status
-- **adobe_create_agreement**: Create a new Adobe Sign agreement and send it for signature — the core e-signature workflow for contracts, NDAs, and legal documents
 - **adobe_get_agreement**: Returns name, status, all participant sets with their roles (SIGNER/APPROVER/CC/DELEGATE), signature type, creation and modification dates, and any external IDs. Use after listing agreements to drill into a specific agreement for complete information.
 
 Get complete details of a specific Adobe Sign agreement by ID, including all participants, signing status, and document metadata
-- **adobe_list_agreements**: Returns agreement name, current status, signature type (ESIGN/WRITTEN), creator email, and creation/modification dates. Agreement statuses: DRAFT (being built), OUT_FOR_SIGNATURE (awaiting signatures), SIGNED (fully executed), CANCELLED, EXPIRED. Use when the user asks about pending signatures, completed agreements, or document pipeline.
-
-List Adobe Acrobat Sign agreements with name, status (DRAFT/OUT_FOR_SIGNATURE/SIGNED/CANCELLED/EXPIRED), sender, and dates
 - **adobe_list_library_documents**: Library documents are reusable templates that can be referenced when creating new agreements. Returns document name, ID (for use in adobe_create_agreement fileInfos), sharing mode, and creation date. Use when the user asks "what templates do we have?" or needs a library document ID.
 
 List reusable library documents (templates) in Adobe Sign — pre-built agreements, forms, and document templates
 - **adobe_search_agreements**: Returns matching agreements with names, statuses, and dates. Use when the user wants to find a specific agreement, look up a contract by name, or search across the document library.
 
 Search Adobe Sign agreements by name or keyword to find specific documents across your signature pipeline
-- **adobe_send_reminder**: The agreement must be in OUT_FOR_SIGNATURE status. An optional comment is included in the reminder email. Use when the user says "remind them to sign" or "send a reminder for the contract."
-
-Send a signing reminder to all pending signers on an Adobe Sign agreement — nudges recipients who have not yet signed
 - **adobe_upload_document**: Returns a transientDocumentId that is then used in adobe_create_agreement fileInfos. This is the standard workflow: (1) upload document → (2) create agreement with the transientDocumentId → (3) agreement is sent for signature.
 
 Upload a document to Adobe Sign as a transient document — the first step before creating an agreement for signature
+- **adobe_agreement_members**: Returns each member email, role (SIGNER/APPROVER/ACCEPTOR/FORM_FILLER/DELEGATE_TO_SIGNER/CC), and their signing status. Use to check who has signed, who is pending, or to review the signing workflow.
+
+Get all participants (signers, approvers, CC recipients) in a specific Adobe Sign agreement with their roles and status
 - **adobe_audit_trail**: The audit trail is a legally binding record of all actions taken: when the agreement was created, viewed, signed, and by whom (with IP addresses and timestamps). Essential for legal compliance and dispute resolution.
 
 Get the legal audit trail for an Adobe Sign agreement — a tamper-proof record of all signing events and actions
+- **adobe_create_agreement**: Create a new Adobe Sign agreement and send it for signature — the core e-signature workflow for contracts, NDAs, and legal documents
+- **adobe_list_agreements**: Returns agreement name, current status, signature type (ESIGN/WRITTEN), creator email, and creation/modification dates. Agreement statuses: DRAFT (being built), OUT_FOR_SIGNATURE (awaiting signatures), SIGNED (fully executed), CANCELLED, EXPIRED. Use when the user asks about pending signatures, completed agreements, or document pipeline.
+
+List Adobe Acrobat Sign agreements with name, status (DRAFT/OUT_FOR_SIGNATURE/SIGNED/CANCELLED/EXPIRED), sender, and dates
+- **adobe_send_reminder**: The agreement must be in OUT_FOR_SIGNATURE status. An optional comment is included in the reminder email. Use when the user says "remind them to sign" or "send a reminder for the contract."
+
+Send a signing reminder to all pending signers on an Adobe Sign agreement — nudges recipients who have not yet signed
 - **adobe_cancel_agreement**: This is irreversible — the agreement cannot be re-sent (a new one must be created). An optional comment explains the cancellation reason to all participants. Use when a deal falls through, terms change, or the document needs to be replaced.
 
 Cancel an Adobe Sign agreement that is currently out for signature — stops the signing process and notifies all parties

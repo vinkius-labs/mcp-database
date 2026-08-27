@@ -34,31 +34,31 @@ Connect your **Localazy** account to any AI agent to automate your localization 
 
 
 ## Available Tools (23)
-- **create_project**: Create a new project inside the given organization
 - **delete_glossary_term**: Delete a glossary term
+- **list_files**: Returns a list of files in the project
+- **list_glossary_terms**: List glossary terms for a project
+- **list_import_formats**: List supported file types and their parameters
+- **list_screenshots**: List screenshots in a project
+- **list_webhooks**: List configured webhooks for a project
+- **update_glossary_term**: Update an existing glossary term
+- **update_source_key**: Modify properties of a source key
+- **delete_source_key**: Remove a key from the project
+- **create_glossary_term**: Create a new glossary term
+- **create_project**: Create a new project inside the given organization
+- **delete_screenshot**: Delete a screenshot
 - **download_file**: Download the raw file content in the specified language
 - **get_webhook_secret**: Get the webhook secret used for HMAC verification
 - **import_content**: Import supported file formats including translations
 - **list_cdn_metadata**: List metadata URLs for published release tags (CDN)
 - **list_file_content**: Returns keys and translations for a specific language and file
-- **list_files**: Returns a list of files in the project
-- **list_glossary_terms**: List glossary terms for a project
-- **list_import_formats**: List supported file types and their parameters
 - **list_projects**: Use optional flags to include organization info or language statistics.
 
 List projects accessible with the current token
-- **list_screenshots**: List screenshots in a project
-- **list_webhooks**: List configured webhooks for a project
 - **set_key_priority**: Batch operation to set priority for keys
 - **set_key_tags**: Batch operation to set tags for keys (Max 1,000 keys)
-- **update_glossary_term**: Update an existing glossary term
 - **update_screenshot**: Update metadata for a screenshot (link phrases, tags)
-- **update_source_key**: Modify properties of a source key
 - **update_webhooks**: Update webhook configurations for a project
 - **upload_screenshot**: Upload a new screenshot (Base64 encoded image)
-- **delete_screenshot**: Delete a screenshot
-- **delete_source_key**: Remove a key from the project
-- **create_glossary_term**: Create a new glossary term
 
 
 ## 💬 Prompt Examples

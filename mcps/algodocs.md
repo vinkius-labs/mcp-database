@@ -35,16 +35,16 @@ Connect your **AlgoDocs** account to your AI agent to unlock professional automa
 
 
 ## Available Tools (10)
-- **get_my_account**: Check account status
 - **get_document_data**: Get parsed data
-- **list_extractor_data**: Bulk extraction results
 - **get_document_status**: Check processing status
+- **get_my_account**: Check account status
+- **list_extractor_data**: Bulk extraction results
 - **get_api_usage**: Get usage stats
 - **get_folder_details**: Get folder metadata
-- **list_recent_documents**: List latest parsed docs
-- **list_extractors**: List AI extractors
 - **list_folders**: List storage folders
+- **list_recent_documents**: List latest parsed docs
 - **upload_document_from_url**: Parse document from URL
+- **list_extractors**: List AI extractors
 
 
 ## 💬 Prompt Examples

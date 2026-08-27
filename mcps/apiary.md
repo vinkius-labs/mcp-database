@@ -35,20 +35,20 @@ No copying and pasting back and forth to the Apiary browser editor.
 
 
 ## Available Tools (10)
+- **run_tests**: Get or run Dredd-style API tests against an Apiary project
+- **get_api**: Get the full API Blueprint source code of an Apiary API project
+- **get_doc_url**: Get the documentation and mock server URLs for an Apiary API project
 - **list_apis**: Apiary is an API design-first platform.
 
 List all API projects on Apiary
-- **get_api**: Get the full API Blueprint source code of an Apiary API project
-- **run_tests**: Get or run Dredd-style API tests against an Apiary project
-- **get_me**: Get the authenticated Apiary user profile
-- **list_team_apis**: List all API projects belonging to a specific Apiary team
-- **list_teams**: List all teams the authenticated user belongs to on Apiary
-- **get_team**: Get details of a specific Apiary team
-- **list_team_members**: List all members of an Apiary team
 - **publish_blueprint**: Use with valid Markdown blueprint/Swagger.
 
 Publish (update) the API Blueprint of an Apiary API project
-- **get_doc_url**: Get the documentation and mock server URLs for an Apiary API project
+- **get_team**: Get details of a specific Apiary team
+- **list_teams**: List all teams the authenticated user belongs to on Apiary
+- **get_me**: Get the authenticated Apiary user profile
+- **list_team_apis**: List all API projects belonging to a specific Apiary team
+- **list_team_members**: List all members of an Apiary team
 
 
 ## 💬 Prompt Examples

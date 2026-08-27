@@ -26,12 +26,12 @@ Zero authentication required. Covers the full breadth of ADB member economies fr
 - **get_gdp_asia**: Economy codes: PRC, JPN, IND, KOR, INO, THA, VIE, PHI.
 
 Get GDP data for Asia-Pacific economies
-- **get_inflation_asia**: Economy codes: PRC, JPN, IND, KOR, INO, THA, VIE, PHI.
-
-Get consumer price inflation rates for Asia-Pacific
 - **query_adb_indicators**: Dataflow IDs: ADB,EO_NA (GDP), ADB,EO_INF (Inflation), ADB,EO_BOP (Trade). Common indicators: NGDP_XDC (GDP), PCPI_PCH (CPI). Economy codes: PRC, JPN, IND, KOR, INO, PHI, THA, VIE. Use + to combine.
 
 Query macroeconomic indicators from the Asian Development Bank
+- **get_inflation_asia**: Economy codes: PRC, JPN, IND, KOR, INO, THA, VIE, PHI.
+
+Get consumer price inflation rates for Asia-Pacific
 
 
 ## 💬 Prompt Examples

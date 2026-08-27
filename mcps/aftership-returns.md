@@ -35,12 +35,12 @@ Connect your **AfterShip Returns** account to your AI agent to unlock profession
 
 
 ## Available Tools (4)
-- **list_returns**: Retrieve pending or historical customer return requests and their processing statuses
 - **approve_return**: This allows the customer to ship the item back.
 
 Authorize a pending return request to immediately trigger generating the return shipping label
-- **receive_items**: Record the arrival and physical grading condition of returned items arriving at the warehouse
 - **get_return_details**: Retrieve the granular items, return reasons, and current logistics status for a specific RMA
+- **list_returns**: Retrieve pending or historical customer return requests and their processing statuses
+- **receive_items**: Record the arrival and physical grading condition of returned items arriving at the warehouse
 
 
 ## 💬 Prompt Examples

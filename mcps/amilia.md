@@ -36,16 +36,16 @@ Connect your **Amilia (SmartRec)** account to your AI agent to unlock profession
 
 ## Available Tools (9)
 - **list_accounts**: List family accounts
-- **get_account_details**: Get account profile
-- **list_contacts**: List account contacts
-- **list_programs**: g. Summer Camp, Fall Sessions).
-
-List recreational programs
 - **get_program_details**: Get program metadata
 - **list_activities**: List program activities
 - **list_activity_occurrences**: List activity schedules
+- **list_programs**: g. Summer Camp, Fall Sessions).
+
+List recreational programs
 - **list_registrations**: List account registrations
+- **get_account_details**: Get account profile
 - **get_attendance**: Get attendance roster
+- **list_contacts**: List account contacts
 
 
 ## 💬 Prompt Examples

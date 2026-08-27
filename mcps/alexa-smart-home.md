@@ -43,30 +43,18 @@ Your AI becomes a smart home assistant, helping you manage lighting, climate, an
 
 
 ## Available Tools (16)
+- **get_alexa_device**: Use endpoint ID from list_alexa_devices.
+
+Get detailed information for a specific Alexa-connected device
 - **get_brightness_state**: Use endpoint ID from list_alexa_devices.
 
 Get the current brightness level of an Alexa-connected light
-- **adjust_brightness**: Positive values increase brightness, negative values decrease it.
-
-Adjust the brightness of an Alexa-connected light relatively
-- **deregister_alexa_device**: This removes the device from your account but does not reset the device itself.
-
-Deregister an Alexa-connected device from your account
-- **forget_alexa_device**: The device will need to be re-discovered and set up again to be used with Alexa.
-
-Remove (forget) an Alexa-connected device from Alexa
-- **get_power_state**: Use endpoint ID from list_alexa_devices.
-
-Get the current power state of an Alexa-connected device
 - **get_speaker_state**: Use endpoint ID from list_alexa_devices.
 
 Get the current speaker volume state of an Alexa device
-- **get_temperature_sensor**: Use endpoint ID from list_alexa_devices.
+- **adjust_brightness**: Positive values increase brightness, negative values decrease it.
 
-Get the current temperature reading from an Alexa-connected sensor
-- **get_thermostat_state**: Use endpoint ID from list_alexa_devices.
-
-Get the current state of an Alexa-connected thermostat
+Adjust the brightness of an Alexa-connected light relatively
 - **list_alexa_devices**: Shows device names, manufacturers, models, features, and display categories.
 
 USE WHEN:
@@ -85,6 +73,27 @@ EXAMPLES:
 - "What Alexa devices are connected?" → call with no params
 
 List all Alexa-connected smart home devices and endpoints
+- **set_brightness**: Use endpoint ID from list_alexa_devices.
+
+Set the brightness level of an Alexa-connected light
+- **update_alexa_device_name**: Use endpoint ID from list_alexa_devices.
+
+Update the friendly name of an Alexa-connected device
+- **deregister_alexa_device**: This removes the device from your account but does not reset the device itself.
+
+Deregister an Alexa-connected device from your account
+- **forget_alexa_device**: The device will need to be re-discovered and set up again to be used with Alexa.
+
+Remove (forget) an Alexa-connected device from Alexa
+- **get_power_state**: Use endpoint ID from list_alexa_devices.
+
+Get the current power state of an Alexa-connected device
+- **get_temperature_sensor**: Use endpoint ID from list_alexa_devices.
+
+Get the current temperature reading from an Alexa-connected sensor
+- **get_thermostat_state**: Use endpoint ID from list_alexa_devices.
+
+Get the current state of an Alexa-connected thermostat
 - **set_volume**: Use endpoint ID from list_alexa_devices.
 
 Set the speaker volume of an Alexa device
@@ -94,18 +103,9 @@ Turn off an Alexa-connected device
 - **turn_on_alexa_device**: Works for lights, switches, plugs, and other power-controllable devices.
 
 Turn on an Alexa-connected device
-- **update_alexa_device_name**: Use endpoint ID from list_alexa_devices.
-
-Update the friendly name of an Alexa-connected device
 - **update_device_room**: Use endpoint ID from list_alexa_devices and unit ID from your Alexa Smart Properties account.
 
 Update the room/unit assignment for an Alexa-connected device
-- **get_alexa_device**: Use endpoint ID from list_alexa_devices.
-
-Get detailed information for a specific Alexa-connected device
-- **set_brightness**: Use endpoint ID from list_alexa_devices.
-
-Set the brightness level of an Alexa-connected light
 
 
 ## 💬 Prompt Examples

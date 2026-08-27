@@ -35,18 +35,18 @@ Connect your **Alegra** account to your AI agent to unlock professional business
 
 
 ## Available Tools (10)
+- **create_contact**: Add a new contact
+- **list_estimates**: List business estimates
 - **list_invoices**: Supports date filtering.
 
 List sales invoices
-- **get_invoice_details**: Get invoice metadata
-- **create_invoice**: Add a new sales invoice
-- **list_contacts**: List client/provider profiles
-- **get_contact_details**: Get contact metadata
-- **create_contact**: Add a new contact
-- **list_inventory_items**: Check stock levels
-- **get_item_details**: Get product metadata
 - **list_payments**: List business payments
-- **list_estimates**: List business estimates
+- **create_invoice**: Add a new sales invoice
+- **get_contact_details**: Get contact metadata
+- **get_invoice_details**: Get invoice metadata
+- **list_contacts**: List client/provider profiles
+- **get_item_details**: Get product metadata
+- **list_inventory_items**: Check stock levels
 
 
 ## 💬 Prompt Examples

@@ -38,15 +38,15 @@ Connect your **AdaptiveWork (formerly Clarizen)** account to your AI agent to un
 - **list_projects**: Can filter by state or status in the tool response natively.
 
 Retrieve a list of active projects managed within the AdaptiveWork organization
+- **create_task**: You must provide a task name and its parent ID.
+
+Add a new granular task to a project or parent task structure in AdaptiveWork
 - **get_project_details**: Requires the Project ID.
 
 Retrieve detailed metadata and progress metrics for a specific AdaptiveWork project
 - **list_tasks**: Requires the Project ID.
 
 Retrieve the active task list associated with a specific project container ID
-- **create_task**: You must provide a task name and its parent ID.
-
-Add a new granular task to a project or parent task structure in AdaptiveWork
 - **list_users**: Retrieve the list of active organization users in AdaptiveWork to check resource assignments
 - **run_query**: Requires valid CZQL syntax.
 

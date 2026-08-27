@@ -40,6 +40,15 @@ No more browsing hundreds of listings manually. Your AI acts as a dedicated trav
 
 
 ## Available Tools (12)
+- **get_calendar**: This helps plan trips by confirming availability before attempting to book.
+You can optionally specify a month (YYYY-MM format) to view a specific month's calendar.
+The response shows available dates, minimum stay requirements, and pricing variations by date.
+
+Check availability calendar for an Airbnb listing
+- **get_listing**: Use the listing_id obtained from search_listings to inspect full property details before booking.
+This includes bed/bath counts, capacity, check-in instructions, and guest reviews summary.
+
+Get detailed information about a specific Airbnb listing
 - **get_pricing**: You must provide check-in and check-out dates.
 Optionally specify number of guests as pricing may vary based on occupancy.
 This helps travelers understand the full cost before booking, including all fees and taxes.
@@ -60,11 +69,11 @@ Reviews help assess the quality, accuracy of listing description, host responsiv
 Optionally limit the number of reviews returned (default: all available).
 
 Get reviews for a specific Airbnb listing
-- **get_calendar**: This helps plan trips by confirming availability before attempting to book.
-You can optionally specify a month (YYYY-MM format) to view a specific month's calendar.
-The response shows available dates, minimum stay requirements, and pricing variations by date.
+- **search_listings**: You can search by city name, neighborhood, or address. Optionally specify check-in and check-out dates (YYYY-MM-DD format),
+number of guests, and minimum/maximum price per night. This helps find available accommodations matching traveler preferences.
+Results include listing name, location, price, rating, amenities, and booking links.
 
-Check availability calendar for an Airbnb listing
+Search Airbnb listings by location
 - **get_experience**: Use the experience_id from search_experiences to inspect full activity details before booking.
 This helps travelers understand what the experience entails and whether it matches their interests.
 
@@ -73,10 +82,6 @@ Get detailed information about an Airbnb Experience
 Use the host_id obtained from listing details to inspect host credentials.
 
 Get details about a listing host
-- **get_listing**: Use the listing_id obtained from search_listings to inspect full property details before booking.
-This includes bed/bath counts, capacity, check-in instructions, and guest reviews summary.
-
-Get detailed information about a specific Airbnb listing
 - **get_user_profile**: Use this to verify account access and view your profile details.
 
 Get the authenticated user profile
@@ -91,11 +96,6 @@ Results include experience name, host, duration, price, rating, and booking link
 This helps travelers discover local activities beyond just accommodation.
 
 Search Airbnb Experiences in a location
-- **search_listings**: You can search by city name, neighborhood, or address. Optionally specify check-in and check-out dates (YYYY-MM-DD format),
-number of guests, and minimum/maximum price per night. This helps find available accommodations matching traveler preferences.
-Results include listing name, location, price, rating, amenities, and booking links.
-
-Search Airbnb listings by location
 
 
 ## 💬 Prompt Examples

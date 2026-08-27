@@ -34,6 +34,12 @@ Connect to **Gordian Software** to manage airline ancillaries within your AI age
 
 
 ## Available Tools (17)
+- **get_basket**: Get current basket items
+- **get_search_results**: Contains itineraries and products.
+
+Get search results by search ID
+- **request_refund**: Request an airline refund for a ticket
+- **add_to_basket**: Add products to the basket
 - **check_basket**: Re-validate items in the basket
 - **check_cancellation**: Check if items are refundable
 - **create_trip**: Can optionally include a search object to start an ancillary search immediately.
@@ -42,27 +48,21 @@ Initialize a new trip
 - **fulfill_trip**: Payment types: gordian_settlement or bsp_cash.
 
 Initiate the purchase of all valid items in the basket
-- **get_basket**: Get current basket items
+- **get_refund**: Get refund details for a trip
 - **get_search_results_by_product**: g., seat, bag).
 
 Get search results filtered by product type
-- **get_search_results**: Contains itineraries and products.
-
-Get search results by search ID
 - **get_trip**: Retrieve current trip state
 - **inform_cancelled**: Inform Gordian of an external flight cancellation
 - **inform_changed**: Inform Gordian of an external flight change
 - **start_search**: g., seat, bag).
 
 Start an asynchronous search for specific product types
-- **request_refund**: Request an airline refund for a ticket
-- **get_refund**: Get refund details for a trip
-- **add_to_basket**: Add products to the basket
-- **cancel_trip**: Execute the cancellation of a trip
 - **subscribe_callback**: Subscribe to asynchronous event callbacks
 - **update_trip**: g., adding a PNR/Record Locator after flight booking).
 
 Update trip details
+- **cancel_trip**: Execute the cancellation of a trip
 
 
 ## 💬 Prompt Examples

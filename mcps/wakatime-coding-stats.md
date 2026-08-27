@@ -33,22 +33,22 @@ Connect your **WakaTime** account to any AI agent to analyze your coding habits,
 
 
 ## Available Tools (14)
-- **create_external_duration**: Create activity from an external app
-- **create_heartbeat**: Create a raw coding activity ping
 - **get_all_time_since_today**: Get total time logged since account creation
-- **get_goal**: Get a specific user-defined coding goal
-- **get_stats**: Get summarized coding statistics for a given range
-- **list_commits**: List of commits for a project with time spent on each
 - **list_custom_rules**: Get rules to modify or delete coding activity based on patterns
-- **list_durations**: Get coding activity joined into blocks based on keystroke timeout
 - **list_external_durations**: g., Google Calendar).
 
 Get activity created from external apps
-- **list_summaries**: Get daily totals of coding activity
-- **update_custom_rules**: Update rules to modify or delete coding activity
 - **list_goals**: List user-defined coding goals and their progress
 - **list_heartbeats**: Get raw coding activity pings from IDE plugins
 - **list_projects**: List of projects detected for the user
+- **create_external_duration**: Create activity from an external app
+- **create_heartbeat**: Create a raw coding activity ping
+- **get_goal**: Get a specific user-defined coding goal
+- **get_stats**: Get summarized coding statistics for a given range
+- **list_commits**: List of commits for a project with time spent on each
+- **list_durations**: Get coding activity joined into blocks based on keystroke timeout
+- **list_summaries**: Get daily totals of coding activity
+- **update_custom_rules**: Update rules to modify or delete coding activity
 
 
 ## 💬 Prompt Examples
