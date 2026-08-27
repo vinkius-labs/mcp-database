@@ -15,8 +15,8 @@ The Image SEO Auditor provides a specialized toolkit for evaluating the health o
 
 ## Available Tools (3)
 - **audit_image_set**: Perform a bulk SEO analysis on a collection of images
-- **fetch_audit_guidelines**: Retrieve the current SEO audit thresholds and patterns
 - **inspect_single_image**: Analyze a single image for SEO and accessibility violations
+- **fetch_audit_guidelines**: Retrieve the current SEO audit thresholds and patterns
 
 
 ## 💬 Prompt Examples

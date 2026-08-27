@@ -39,14 +39,14 @@ No more manual navigation through complex automation dashboards to check if a wo
 
 
 ## Available Tools (9)
-- **list_apps**: List connected apps (Slack, Gmail, Salesforce etc)
-- **get_zap**: Get Zap details by ID. Returns trigger, actions, state
 - **get_app**: Get app details by ID or slug
 - **get_profile**: Get authenticated user profile and plan
 - **get_template**: Get Zap template details by ID
+- **get_zap**: Get Zap details by ID. Returns trigger, actions, state
 - **get_zap_history**: Shows last executions with success/failure.
 
 Get Zap execution history. Returns run status success/failure
+- **list_apps**: List connected apps (Slack, Gmail, Salesforce etc)
 - **list_zaps**: Use limit to control page size.
 
 List Zaps (workflows). Returns Zap IDs, titles, state ON/OFF

@@ -14,9 +14,9 @@ Connect your AI agent to the archetypal energies of the Tarot. This MCP server p
 
 
 ## Available Tools (3)
-- **draw_spread**: Draw a tarot spread
 - **inspect_deck**: Inspect the tarot deck composition
 - **draw_card**: Draw a single tarot card
+- **draw_spread**: Draw a tarot spread
 
 
 ## 💬 Prompt Examples

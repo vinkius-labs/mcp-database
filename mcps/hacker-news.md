@@ -39,15 +39,15 @@ Connect to **Hacker News** (Y Combinator) and take full control of your tech new
 - **top_stories**: json list, including title, author, score, URL, timestamp, and child comment IDs when available.
 
 Fetch the current top stories from the official Hacker News Firebase feed
-- **new_stories**: json list, including title, author, score, URL, timestamp, and child comment IDs when available.
-
-Fetch the newest stories from the official Hacker News Firebase feed
-- **fetch_top_stories_by_date**: Date must use YYYY-MM-DD.
-
-Search Hacker News stories created on a specific date using the public Algolia index
 - **get_item**: The kids field contains IDs of direct child comments; child contents are not downloaded automatically.
 
 Fetch one Hacker News item by numeric ID
+- **fetch_top_stories_by_date**: Date must use YYYY-MM-DD.
+
+Search Hacker News stories created on a specific date using the public Algolia index
+- **new_stories**: json list, including title, author, score, URL, timestamp, and child comment IDs when available.
+
+Fetch the newest stories from the official Hacker News Firebase feed
 
 
 ## 💬 Prompt Examples

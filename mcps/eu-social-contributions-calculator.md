@@ -14,9 +14,9 @@ This MCP server provides a precise calculation engine for estimating payroll-rel
 
 
 ## Available Tools (3)
-- **compare_tax_burden**: Compares the total social security overhead between two different countries for the same salary
 - **get_country_rates**: Retrieves the raw percentage rates for all social security branches within a specific country
 - **calculate_contribution_breakdown**: Calculates the specific monetary amounts for both employee and employer portions across all branches
+- **compare_tax_burden**: Compares the total social security overhead between two different countries for the same salary
 
 
 ## 💬 Prompt Examples

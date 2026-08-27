@@ -28,17 +28,17 @@ The **Apperio MCP Server** provides a powerful natural language interface to you
 
 
 ## Available Tools (10)
-- **approve_invoice**: Approve a legal invoice
 - **get_account_check**: Verify Apperio account connection
 - **get_invoice_approval_workflow**: Get the approval workflow path for an invoice
+- **approve_invoice**: Approve a legal invoice
 - **get_invoice_details**: Get full details for a specific invoice
-- **get_matter_header**: Get high-level information about a specific matter
-- **list_invoices**: List all e-billing invoices available in Apperio
-- **list_matter_tags**: List all available matter tags
-- **list_matters**: List all legal matters tracked in Apperio
 - **reject_invoice**: Should usually be followed by a reason in the platform.
 
 Reject a legal invoice
+- **get_matter_header**: Get high-level information about a specific matter
+- **list_invoices**: List all e-billing invoices available in Apperio
+- **list_matters**: List all legal matters tracked in Apperio
+- **list_matter_tags**: List all available matter tags
 - **tag_matter**: Apply tags to a specific matter
 
 

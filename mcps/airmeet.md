@@ -35,15 +35,15 @@ Connect your **Airmeet** community to your AI agent to unlock professional event
 
 
 ## Available Tools (10)
-- **list_events**: List virtual events
-- **create_event**: Create a new Airmeet
-- **update_event_status**: Change event status
 - **add_attendee**: Register an attendee
-- **list_participants**: List event participants
+- **create_event**: Create a new Airmeet
+- **list_questions**: List participant questions
+- **list_events**: List virtual events
+- **update_event_status**: Change event status
 - **create_session**: Add a session to event
 - **get_event_attendance**: Get attendance analytics
+- **list_participants**: List event participants
 - **list_poll_responses**: List event polls
-- **list_questions**: List participant questions
 - **get_session_recordings**: Get recording download links
 
 

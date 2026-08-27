@@ -14,11 +14,11 @@ The Pet Ideal Weight Calculator helps pet owners monitor their animal's health b
 
 
 ## Available Tools (3)
+- **analyze_pet_health**: Analyze a pet's weight status
 - **get_breed_catalog**: Get breeds and weight ranges for a species
 - **list_supported_species**: g., Dog, Cat).
 
 List all supported animal species
-- **analyze_pet_health**: Analyze a pet's weight status
 
 
 ## 💬 Prompt Examples

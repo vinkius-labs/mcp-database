@@ -15,9 +15,9 @@ The Learning Velocity Tracker is a specialized metric engine designed to quantif
 
 ## Available Tools (4)
 - **analyze_subject_mastery**: Analyzes proficiency level for a specific subject
-- **calculate_global_velocity**: Calculates overall learning pace
-- **predict_completion_timeline**: Predicts completion date for the curriculum
 - **identify_low_yield_topics**: Identifies bottleneck topics
+- **predict_completion_timeline**: Predicts completion date for the curriculum
+- **calculate_global_velocity**: Calculates overall learning pace
 
 
 ## 💬 Prompt Examples

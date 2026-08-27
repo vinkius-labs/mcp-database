@@ -14,9 +14,9 @@ This MCP server provides advanced strength estimation tools for lifters. Use `es
 
 
 ## Available Tools (3)
-- **generate_warmup_routine**: Generate a structured warmup routine
 - **lookup_strength_standards**: Lookup standardized strength benchmarks
 - **estimate_one_rep_max**: Estimate 1RM using multiple formulas
+- **generate_warmup_routine**: Generate a structured warmup routine
 
 
 ## 💬 Prompt Examples

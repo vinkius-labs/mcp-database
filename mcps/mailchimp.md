@@ -31,26 +31,26 @@ Equip any AI agent with robust Mailchimp marketing capabilities. Integrate your 
 
 
 ## Available Tools (18)
-- **list_audiences**: List Mailchimp audiences. Returns list_id, name, member count
 - **list_automations**: List automation workflows. Returns automation_id and status
-- **get_campaign**: Get campaign details by campaign_id
 - **get_report**: Get campaign report. Returns opens, clicks, bounces, unsubscribes
-- **search_members**: Search contacts across all audiences by email or name
-- **get_audience**: Get audience details by list_id. Returns stats and settings
-- **set_campaign_content**: Set HTML content for a campaign. Required before send/test
 - **add_member**: Add contact to audience
-- **list_campaigns**: List campaigns. Returns campaign_id, subject, status, send time
 - **create_campaign**: Create campaign shell. Returns campaign_id. Set content next
+- **get_audience**: Get audience details by list_id. Returns stats and settings
+- **get_campaign**: Get campaign details by campaign_id
+- **list_audiences**: List Mailchimp audiences. Returns list_id, name, member count
+- **list_members**: List contacts in an audience. Returns email, status, tags
+- **search_members**: Search contacts across all audiences by email or name
+- **set_campaign_content**: Set HTML content for a campaign. Required before send/test
+- **update_member**: Update contact fields
+- **list_campaigns**: List campaigns. Returns campaign_id, subject, status, send time
 - **delete_member**: Archive contact from audience. Reversible via re-add
 - **get_member**: Get single contact by email. Returns status, merge fields, tags
-- **list_members**: List contacts in an audience. Returns email, status, tags
 - **list_segments**: List segments for an audience. Returns segment_id and conditions
 - **send_campaign**: Triggers live delivery.
 
 Send campaign immediately. Irreversible
 - **tag_member**: Add/remove tags for a contact
 - **test_campaign**: Send test email for a campaign without live delivery
-- **update_member**: Update contact fields
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The Chronotype Estimator helps you align your daily schedule with your biologica
 
 
 ## Available Tools (3)
-- **estimate_chronotype**: Estimate user chronotype
 - **evaluate_sleep_debt**: Evaluate sleep debt impact
 - **get_schedule_recommendations**: Get schedule recommendations
+- **estimate_chronotype**: Estimate user chronotype
 
 
 ## 💬 Prompt Examples

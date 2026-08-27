@@ -34,13 +34,13 @@ Connect **Speechmatics** to your AI agent to handle advanced audio processing wo
 
 
 ## Available Tools (8)
-- **create_temp_key**: Create a temporary API key
 - **delete_job**: Delete a transcription job
 - **generate_tts**: Generate speech from text (TTS)
 - **get_job**: Get details for a specific job
-- **get_transcript**: Retrieve the transcript for a job
 - **get_usage**: Get usage statistics
 - **list_jobs**: List recent transcription jobs
+- **create_temp_key**: Create a temporary API key
+- **get_transcript**: Retrieve the transcript for a job
 - **create_job**: Create a new batch transcription job
 
 

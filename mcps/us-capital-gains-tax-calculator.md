@@ -15,8 +15,8 @@ This MCP server provides tools to determine if a transaction results in a short-
 
 ## Available Tools (3)
 - **calculate_gain_classification**: Determines if a transaction results in short-term or long or long-term capital gain
-- **get_tax_bracket_context**: Provides income thresholds for long-term tax rates
 - **estimate_tax_liability**: Calculates the dollar amount of tax owed on a realized gain
+- **get_tax_bracket_context**: Provides income thresholds for long-term tax rates
 
 
 ## 💬 Prompt Examples

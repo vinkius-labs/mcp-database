@@ -35,23 +35,23 @@ Unlock the full potential of your connected workspace by linking **Notion** to y
 
 
 ## Available Tools (17)
-- **get_blocks**: Read page content blocks (paragraphs, lists, headings)
-- **delete_block**: Delete block and its children. Irreversible
-- **get_database**: Get database schema (columns, types, options). Call before create_page
-- **update_page_properties**: Update page properties (status, select, date, etc)
-- **query_database**: Query database rows. Supports filter/sort as JSON
 - **append_block_children**: Append blocks to page. Supports simple text or full JSON
+- **delete_block**: Delete block and its children. Irreversible
+- **get_blocks**: Read page content blocks (paragraphs, lists, headings)
+- **get_database**: Get database schema (columns, types, options). Call before create_page
+- **query_database**: Query database rows. Supports filter/sort as JSON
+- **update_page_properties**: Update page properties (status, select, date, etc)
+- **update_page_title**: Update page title. Specify property name if not Name
 - **archive_page**: Archive page (move to trash)
 - **create_database**: Create database inside page
 - **create_page**: Create database row. Minimal: title. Advanced: full properties JSON
 - **get_block**: Get single block by ID
 - **get_page**: Get page metadata (properties, parent, url). Use get_blocks for content
 - **get_user**: Get user by ID
+- **list_users**: List workspace users and bots. Use to map assignee IDs
 - **search_databases**: Search databases by title. Returns database_id needed for query_database
 - **search_pages**: Search pages by title. Returns page_id needed for get_page/get_blocks
 - **update_block**: Update block content
-- **update_page_title**: Update page title. Specify property name if not Name
-- **list_users**: List workspace users and bots. Use to map assignee IDs
 
 
 ## 💬 Prompt Examples

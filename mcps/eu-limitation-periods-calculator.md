@@ -14,9 +14,9 @@ This MCP server provides a precise way to determine the statutes of limitations 
 
 
 ## Available Tools (3)
+- **calculate_expiry_date**: Determines the exact calendar date when a claim will expire based on a known starting event
 - **get_limitation_info**: Evaluates the standard duration, starting point logic, and interruption causes for a specific country and relationship type
 - **list_supported_jurisdictions**: Provides a list of all European countries currently serviced by the calculator
-- **calculate_expiry_date**: Determines the exact calendar date when a claim will expire based on a known starting event
 
 
 ## 💬 Prompt Examples

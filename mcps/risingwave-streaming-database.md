@@ -34,6 +34,12 @@ Connect your **RisingWave** streaming database to any AI agent and take full con
 
 ## Available Tools (6)
 - **execute_sql**: Execute a SQL statement on RisingWave
+- **list_sources**: rw_sources to list all external data sources.
+
+List sources in RisingWave
+- **list_tables**: tables to list user tables.
+
+List tables in RisingWave
 - **ingest_events**: Body can be a single JSON object or an array of objects.
 
 Ingest events into a RisingWave table
@@ -43,12 +49,6 @@ List materialized views in RisingWave
 - **list_sinks**: rw_sinks to list all data sinks.
 
 List sinks in RisingWave
-- **list_sources**: rw_sources to list all external data sources.
-
-List sources in RisingWave
-- **list_tables**: tables to list user tables.
-
-List tables in RisingWave
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ The CNPJ Validator MCP server provides a specialized engine for verifying Brazil
 
 ## Available Tools (3)
 - **analyze_cnpj_structure**: Deconstructs a CNPJ into its constituent parts
-- **batch_validate_cnpjs**: Performs high-volume validation on a list of identifiers
 - **validate_cnpj_format**: Validates a CNPJ string using checksum algorithm
+- **batch_validate_cnpjs**: Performs high-volume validation on a list of identifiers
 
 
 ## 💬 Prompt Examples

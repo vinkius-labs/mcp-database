@@ -14,9 +14,9 @@ The Hedge Ratio Calculator is a specialized tool for agricultural producers to m
 
 
 ## Available Tools (3)
+- **calculate_hedge_volume**: Calculate required futures contracts and hedged volume
 - **evaluate_price_exposure**: Quantify financial exposure to price volatility
 - **project_net_margin**: Estimate final net profitability of the harvest
-- **calculate_hedge_volume**: Calculate required futures contracts and hedged volume
 
 
 ## 💬 Prompt Examples

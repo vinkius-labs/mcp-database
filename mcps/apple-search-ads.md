@@ -31,14 +31,14 @@ The **Apple Search Ads MCP Server** empowers your AI agent to directly manage yo
 ## Available Tools (10)
 - **get_account_check**: Verify Apple Search Ads account connection
 - **list_keywords**: List all keywords in a campaign
-- **get_campaign**: Get details for a specific campaign
-- **get_keyword_report**: Get performance report for keywords
 - **get_me**: Retrieve information about the authenticated user and organization
 - **get_search_term_report**: Get performance report for search terms
 - **list_ad_groups**: List ad groups within a campaign
-- **list_campaigns**: List all search ads campaigns
-- **get_campaign_report**: Get performance report at the campaign level
 - **get_ad_group_report**: Get performance report for ad groups
+- **get_campaign**: Get details for a specific campaign
+- **get_campaign_report**: Get performance report at the campaign level
+- **get_keyword_report**: Get performance report for keywords
+- **list_campaigns**: List all search ads campaigns
 
 
 ## 💬 Prompt Examples

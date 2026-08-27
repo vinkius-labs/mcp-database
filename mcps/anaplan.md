@@ -33,12 +33,12 @@ Connect your **Anaplan** account to your AI agent to automate financial planning
 
 
 ## Available Tools (10)
-- **get_task_status**: Get status of a running task
 - **list_exports**: List export actions for a model
 - **list_files**: List files in a model (exports/imports)
-- **list_imports**: List import actions for a model
 - **list_models**: List Anaplan models. Optionally filter by workspaceId
 - **run_export**: Run an Anaplan export action
+- **get_task_status**: Get status of a running task
+- **list_imports**: List import actions for a model
 - **list_processes**: List processes for a model
 - **list_workspaces**: List available Anaplan workspaces
 - **run_import**: Run an Anaplan import action

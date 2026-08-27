@@ -30,11 +30,11 @@ The **Atlas MCP Server** provides a seamless natural language interface to your 
 
 ## Available Tools (8)
 - **create_ticket**: Create a new support ticket
+- **list_customers**: List all customers in Atlas
 - **get_account_check**: Verify Atlas account connection
 - **get_customer**: Get details for a specific customer
 - **get_ticket**: Get details for a specific ticket
 - **list_articles**: List help center articles
-- **list_customers**: List all customers in Atlas
 - **list_tickets**: List all support tickets in Atlas
 - **list_users**: List team users (agents)
 

@@ -14,8 +14,8 @@ This MCP server provides specialized financial tools to measure business profita
 
 
 ## Available Tools (3)
-- **calculate_portfolio_weighted_margin**: Determines the aggregate margin index for a collection of products based on their impact on total revenue
 - **identify_underperforming_products**: Flags specific products that fail to meet a defined profitability threshold
+- **calculate_portfolio_weighted_margin**: Determines the aggregate margin index for a collection of products based on their impact on total revenue
 - **calculate_unit_margin_metrics**: Calculates both the currency value and the percentage-based margin for a single product
 
 
