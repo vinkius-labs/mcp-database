@@ -6,7 +6,9 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Aviation Weight and Balance](../mcps/aviation-weight-and-balance.md) | Deterministic aircraft weight, moment, and CG calculator with safety envelope validation. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
+| [Grassed Waterway Designer](../mcps/grassed-waterway-designer.md) | Design stable grassed waterways using hydraulic modeling and vegetation retardance. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
+| [Sediment Basin Designer](../mcps/sediment-basin-designer.md) | Design erosion control sediment basins using settling theory and NRCS standards. |
 | [Steve Jobs Vision Prover](../mcps/steve-jobs-vision-prover.md) | A product had settings menus with 47 options and 15 integrations. This tool forces it to kill features, absorb complexity, and own the whole experience. |
 
 

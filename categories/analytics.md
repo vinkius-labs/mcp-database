@@ -41,6 +41,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
+| [Wine Redox Stability Diagnostic](../mcps/wine-redox-stability-diagnostic.md) | Analyzes redox potential and chemical fault risks in wine. |
 | [Zero-shot vs Few-shot Ratio Calculator Alternative](../mcps/zero-shot-vs-few-shot-ratio-calculator-alternative.md) | Quantify prompt composition by measuring the density of few-shot examples against instructions. |
 
 

@@ -26,6 +26,9 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Waste Decomposition Timer](../mcps/waste-decomposition-timer.md) | Get estimated decomposition timelines for various materials. |
 | [Watchmaking Gear Calculator](../mcps/watchmaking-gear-calculator.md) | Deterministic engine for horological gear train ratios, beat rates, and power reserves. |
 | [Wave Speed and Period Analyzer](../mcps/wave-speed-and-period-analyzer.md) | Deterministic physics engine for calculating wave dynamics in deep and shallow water. |
+| [Wine Aging Kinetics Predictor](../mcps/wine-aging-kinetics-predictor.md) | Predict wine color, astringency, and aroma evolution using chemical kinetics. |
+| [Wine Aroma Evolution Modeler](../mcps/wine-aroma-evolution-modeler.md) | Predicts chemical transformations of aroma compounds during fermentation and aging. |
+| [Wine Sensory Threshold Calculator](../mcps/wine-sensory-threshold-calculator.md) | Predict sensory detection and impact of chemical compounds in wine using matrix-correction factors. |
 
 
 ---

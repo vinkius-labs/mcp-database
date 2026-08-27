@@ -7,6 +7,7 @@ Explore the open database of **data-science** Model Context Protocol (MCP) serve
 | [BM25 Context Relevance Scorer](../mcps/bm25-context-relevance-scorer.md) | Deterministic BM25 relevance scoring engine for RAG optimization. |
 | [Signal Filter Designer](../mcps/signal-filter-designer.md) | Apply digital filters like low-pass, high-pass, SMA, EMA, and Peaking EQ to signal arrays. |
 | [String Similarity Batch](../mcps/string-similarity-batch.md) | High-performance string similarity computations for batch processing of large text arrays using algorithms like Levenshtein and Jaro-Winkler. |
+| [Wine Color Extraction Model](../mcps/wine-color-extraction-model.md) | Models anthocyanin extraction and color stability during red wine fermentation. |
 
 
 ---

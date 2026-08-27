@@ -250,6 +250,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Cron Expression Calculator](../mcps/cron-expression-calculator.md) | Calculate the exact future dates of any Cron expression using deterministic JavaScript. Stop LLMs from failing date mathematics and leap year edge cases. |
 | [Cronofy](../mcps/cronofy.md) | Automate scheduling via Cronofy — unify Google, iCloud, and Exchange calendars to manage events and track multi-user availability directly from any AI agent. |
 | [Crop Yield Calculator](../mcps/crop-yield-calculator.md) | Calculate crop productivity in kg/ha and bags/ha using field metrics. |
+| [Crop Yield Estimator](../mcps/crop-yield-estimator.md) | Estimates agricultural production by synthesizing planting metrics and soil constraints. |
 | [Crossfade Time Subtractor](../mcps/crossfade-time-subtractor.md) | Calculate precise video durations and required raw footage lengths when using overlapping transitions. |
 | [Crossword Clue Formatter](../mcps/crossword-clue-formatter.md) | Generate deterministic metadata, symmetry checks, and statistics for crossword grids. |
 | [CUFinder](../mcps/cufinder.md) | Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting. |

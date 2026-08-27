@@ -587,6 +587,10 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |
 | [Williams Fractals Strategy](../mcps/williams-fractals-strategy.md) | Identify price reversals and breakout signals using deterministic Williams Fractals. |
 | [Windbreak Economics Analyzer](../mcps/windbreak-economics-analyzer.md) | Financial evaluation for windbreak installations and crop protection. |
+| [Wine Banking Cost Calculator](../mcps/wine-banking-cost-calculator.md) | Calculate barrel aging costs, evaporation losses, and break-even premiums for wine banking. |
+| [Wine Compliance & Tax Calculator](../mcps/wine-compliance-tax-calculator.md) | Calculate federal and state wine excise taxes and manage compliance schedules. |
+| [Wine Grape Pricing Model](../mcps/wine-grape-pricing-model.md) | Calculate optimal grape purchase prices using wine production economics. |
+| [Wine Warehouse Logistics & Cost Modeler](../mcps/wine-warehouse-logistics-cost-modeler.md) | Calculate wine storage footprints, monthly costs, and warehouse economic models. |
 | [Workers' Compensation Premium Calculator](../mcps/workers-compensation-premium-calculator.md) | Estimate workers' comp premiums, deposits, and audit adjustments based on payroll, EMR, and region. |
 | [Working Capital Calculator](../mcps/working-capital-calculator.md) | Calculate your Cash Conversion Cycle and Working Capital Need instantly. |
 | [Y Combinator Deal Economics Calculator](../mcps/y-combinator-deal-economics-calculator.md) | Calculate YC equity stakes, dilution, and deal scenarios. |

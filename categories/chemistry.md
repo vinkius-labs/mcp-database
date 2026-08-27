@@ -11,6 +11,11 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | [Perfume Dilution Calculator](../mcps/perfume-dilution-calculator.md) | Calculate exact carrier volumes and dilution ratios for perfume making. |
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
+| [Wine Copper Casse Predictor](../mcps/wine-copper-casse-predictor.md) | Predict copper casse formation risk and stability in wine. |
+| [Wine KHT Solubility Predictor](../mcps/wine-kht-solubility-predictor.md) | Predicts Potassium Bitartrate (KHT) precipitation risks and stabilization needs in wine. |
+| [Wine Microbial Stability Assessment](../mcps/wine-microbial-stability-assessment.md) | Predictive analysis of wine spoilage risk using hurdle technology. |
+| [Wine Protein Stability Analyzer](../mcps/wine-protein-stability-analyzer.md) | Quantify protein instability and calculate precise bentonite dosing for wine stabilization. |
+| [Wine Tartrate Stability Model](../mcps/wine-tartrate-stability-model.md) | Predicts potassium bitartrate instability and recommends stabilization treatments for wine. |
 
 
 ---
