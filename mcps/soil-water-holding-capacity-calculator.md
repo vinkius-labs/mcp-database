@@ -14,10 +14,10 @@ This MCP server provides precise soil moisture analysis tools. Use `get_soil_pro
 
 
 ## Available Tools (4)
-- **calculate_root_zone_storage**: Calculate the total depth of water available in a specific soil layer
-- **get_soil_water_retention**: Determine volumetric water content at specific tension levels based on soil texture
 - **calculate_available_water_capacity**: Calculate the amount of water available for plant uptake
+- **calculate_root_zone_storage**: Calculate the total depth of water available in a specific soil layer
 - **get_soil_profile_summary**: Provide a complete diagnostic of the soil's water characteristics
+- **get_soil_water_retention**: Determine volumetric water content at specific tension levels based on soil texture
 
 
 ## 💬 Prompt Examples

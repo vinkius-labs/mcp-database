@@ -15,8 +15,8 @@ This MCP server provides a deterministic modeling engine for predicting and harv
 
 ## Available Tools (3)
 - **analyze_decay_curve**: Generates the theoretical price path of a binary option over its remaining lifespan
-- **calculate_performance_metrics**: Computes the efficiency and profitability of a completed or ongoing trade
 - **evaluate_strategy_signals**: Identifies entry and exit opportunities based on the relationship between market price and the theoretical decay curve
+- **calculate_performance_metrics**: Computes the efficiency and profitability of a completed or ongoing trade
 
 
 ## 💬 Prompt Examples

@@ -14,12 +14,12 @@ This MCP server provides specialized tools for soil scientists and agricultural 
 
 
 ## Available Tools (4)
-- **get_texture_boundaries**: Retrieve the definitions or threshold ranges for the 12 USDA texture classes
-- **batch_classify_samples**: Process multiple laboratory samples in a single operation
 - **classify_soil_texture**: The sum must be exactly 100.
 
 Identify the specific USDA texture class for a given soil sample
+- **get_texture_boundaries**: Retrieve the definitions or threshold ranges for the 12 USDA texture classes
 - **validate_composition**: Verify if a set of laboratory measurements is mathematically sound
+- **batch_classify_samples**: Process multiple laboratory samples in a single operation
 
 
 ## 💬 Prompt Examples

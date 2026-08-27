@@ -14,9 +14,9 @@ This MCP server provides specialized tools for geotechnical and hydrological ana
 
 
 ## Available Tools (4)
+- **get_pore_size_distribution**: Analyzes the internal structure of the medium to understand how pore sizes are distributed
 - **get_saturated_conductivity**: Calculates the maximum water flow capacity when the medium is fully saturated
 - **get_unsaturated_conductivity**: Determines the water flow rate when the medium is partially saturated
-- **get_pore_size_distribution**: Analyzes the internal structure of the medium to understand how pore sizes are distributed
 - **get_viscosity_adjustment**: Calculates the specific multiplier needed to adjust conductivity based on temperature
 
 

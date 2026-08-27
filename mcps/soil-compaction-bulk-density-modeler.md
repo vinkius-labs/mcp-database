@@ -14,10 +14,10 @@ This MCP server provides advanced modeling for soil physical properties under me
 
 
 ## Available Tools (4)
-- **identify_critical_moisture**: Find the moisture level at which the soil is most vulnerable to compaction
-- **predict_compaction_impact**: Estimate how specific machinery will alter the soil's physical state
 - **assess_remediation_needs**: Suggest specific physical or biological interventions based on the severity of compaction
 - **get_soil_vulnerability_profile**: Provide a summarized risk assessment of the soil profile
+- **identify_critical_moisture**: Find the moisture level at which the soil is most vulnerable to compaction
+- **predict_compaction_impact**: Estimate how specific machinery will alter the soil's physical state
 
 
 ## 💬 Prompt Examples

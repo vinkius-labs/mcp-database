@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for assessing the effi
 
 
 ## Available Tools (4)
-- **estimate_processing_economics**: Estimates the total processing cost and resulting product value
 - **calculate_yield_and_quality**: Calculates the expected yield and quality of processed spelt
 - **compare_dehulling_methods**: Compares different dehulling methods (e.g., stone mill vs. impact dehuller)
+- **estimate_processing_economics**: Estimates the total processing cost and resulting product value
 - **optimize_moisture_settings**: Finds the ideal moisture level to minimize breakage while maximizing yield
 
 

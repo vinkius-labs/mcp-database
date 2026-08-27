@@ -14,10 +14,10 @@ This MCP server provides specialized tools for analyzing teff grain quality base
 
 
 ## Available Tools (4)
-- **grade_teff_batch**: Determines the official Ethiopian grade classification for a specific batch of teff
-- **predict_injera_utility**: Predicts how the grain will perform in culinary applications, specifically for making injera
 - **analyze_processing_impact**: Evaluates how harvest and threshing methods have affected the grain quality
 - **estimate_market_value**: Calculates the economic value of a grain quantity based on quality metrics
+- **grade_teff_batch**: Determines the official Ethiopian grade classification for a specific batch of teff
+- **predict_injera_utility**: Predicts how the grain will perform in culinary applications, specifically for making injera
 
 
 ## 💬 Prompt Examples

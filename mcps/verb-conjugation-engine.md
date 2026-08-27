@@ -15,8 +15,8 @@ This MCP server provides a deterministic morphological engine for generating acc
 
 ## Available Tools (3)
 - **conjugate_verb**: Provides the primary conjugation of a specific verb based on grammatical parameters
-- **get_conjugation_pattern**: Returns the morphological patterns or "templates" for a specific verb
 - **validate_clitic_placement**: Checks if a specific combination of verb form and pronoun placement is grammatically valid
+- **get_conjugation_pattern**: Returns the morphological patterns or "templates" for a specific verb
 
 
 ## 💬 Prompt Examples
