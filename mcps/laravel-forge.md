@@ -33,15 +33,15 @@ Connect your **Laravel Forge** developer account to an AI agent to execute compl
 
 
 ## Available Tools (9)
-- **list_recipes**: Retrieve available custom shell recipes within your organizational team limits
 - **list_servers**: Retrieve the master list of all connected Forge servers
 - **list_sites**: List websites mounted to a specific server
-- **list_workers**: Retrieve queue worker configurations executing on a tracked site
-- **get_site**: Look up specifics for an exact site layout on a server
-- **list_databases**: List active databases mounted on a Forge server
 - **list_ssh_keys**: Retrieve active physical access keys inserted on the root server
-- **deploy_site**: Command a deployment script queue to execute on a repository site
 - **get_server**: Retrieve detailed data on a specific server droplet
+- **list_databases**: List active databases mounted on a Forge server
+- **list_recipes**: Retrieve available custom shell recipes within your organizational team limits
+- **list_workers**: Retrieve queue worker configurations executing on a tracked site
+- **deploy_site**: Command a deployment script queue to execute on a repository site
+- **get_site**: Look up specifics for an exact site layout on a server
 
 
 ## 💬 Prompt Examples

@@ -35,28 +35,28 @@ Connect your **Grafana Cloud k6** account to any AI agent and take full control 
 
 
 ## Available Tools (10)
+- **get_run**: Get full details of a k6 test run
+- **get_run_metrics**: g., http_req_duration, http_req_failed, iterations, VUs, data_received, etc.).
+
+Get performance metrics for a k6 run
 - **list_tests**: Returns test names, IDs, scripts, and last run statuses.
 
 List all load tests on Grafana Cloud k6
-- **get_test**: Get full details of a k6 test
-- **list_runs**: Returns run IDs, status states (QUEUED/RUNNING/FINISHED/ABORTED), VU counts, durations, and timestamps.
-
-List test runs for a specific k6 test
-- **get_run**: Get full details of a k6 test run
 - **start_test_run**: Returns the new active run ID for tracking.
 
 Start a new k6 Cloud test run
-- **stop_test_run**: Stop a running k6 Cloud test
+- **list_runs**: Returns run IDs, status states (QUEUED/RUNNING/FINISHED/ABORTED), VU counts, durations, and timestamps.
+
+List test runs for a specific k6 test
+- **get_test**: Get full details of a k6 test
+- **get_run_thresholds**: Get threshold evaluation results for a k6 run
 - **list_organizations**: Returns organization names, IDs, and member counts.
 
 List organizations on k6 Cloud
 - **list_projects**: Projects contain tests.
 
 List projects in a k6 Cloud organization
-- **get_run_metrics**: g., http_req_duration, http_req_failed, iterations, VUs, data_received, etc.).
-
-Get performance metrics for a k6 run
-- **get_run_thresholds**: Get threshold evaluation results for a k6 run
+- **stop_test_run**: Stop a running k6 Cloud test
 
 
 ## 💬 Prompt Examples

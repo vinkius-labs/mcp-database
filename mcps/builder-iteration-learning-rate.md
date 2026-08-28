@@ -14,10 +14,10 @@ This MCP server provides a specialized analytical engine to measure how effectiv
 
 
 ## Available Tools (4)
-- **get_improvement_trajectory**: Determines the momentum and direction of the builder's learning progress over time
 - **get_iteration_efficiency_audit**: Provides a diagnostic overview by combining all metrics to identify if the builder is churning or stalling
-- **get_learning_rate_score**: Calculates the primary efficiency metric for a builder's current iteration cycle
 - **get_optimal_cadence**: Recommends the ideal frequency for future iterations to maximize efficiency
+- **get_learning_rate_score**: Calculates the primary efficiency metric for a builder's current iteration cycle
+- **get_improvement_trajectory**: Determines the momentum and direction of the builder's learning progress over time
 
 
 ## 💬 Prompt Examples

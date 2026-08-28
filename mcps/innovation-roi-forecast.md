@@ -14,10 +14,10 @@ This MCP server provides financial modeling tools to project the economic viabil
 
 
 ## Available Tools (4)
-- **summarize_project_health**: What is the high-level risk profile and value proposition of this project?
 - **calculate_break_even**: When will this innovation project pay for itself?
 - **compare_scenarios**: How does changing our success probability or investment impact our returns?
 - **forecast_roi**: What is the expected financial performance of this innovation project?
+- **summarize_project_health**: What is the high-level risk profile and value proposition of this project?
 
 
 ## 💬 Prompt Examples
