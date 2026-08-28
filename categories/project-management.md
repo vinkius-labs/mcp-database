@@ -6,6 +6,7 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 |-----------|-------------|
 | [Diese](../mcps/diese.md) | Equip your AI agent to manage ERP projects, track invoices, and monitor resource planning via the Diese API. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
+| [Innovation Time-to-Market Engine](../mcps/innovation-time-to-market-engine.md) | Calculate and optimize product development timelines, critical paths, and acceleration strategies. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |
 | [Pipefy](../mcps/pipefy.md) | Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent. |
 | [Productive](../mcps/productive.md) | Manage your entire agency workflow via Productive — fetch budgets, analyze time entries, track deals, and monitor project health directly from any AI agent. |

@@ -152,6 +152,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Budget Envelope Allocator](../mcps/budget-envelope-allocator.md) | A deterministic zero-based budgeting engine for precise income distribution. |
 | [Buffer](../mcps/buffer.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
+| [Builder Iteration Learning Rate](../mcps/builder-iteration-learning-rate.md) | Analyzes learning velocity and execution efficiency in iterative development cycles. |
+| [Builder Team Velocity Metrics](../mcps/builder-team-velocity-metrics.md) | Analyzes software team productivity using velocity, quality, and delivery speed metrics. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
 | [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
 | [Burnout Risk Assessment](../mcps/burnout-risk-assessment.md) | Assess burnout risk for Singapore professionals using work, commute, sleep, and vacation data. |
@@ -651,6 +653,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Multi-Agent Parallelization Optimizer](../mcps/multi-agent-parallelization-optimizer.md) | Optimize agent workflow execution timing and resource efficiency. |
 | [Multi-Shift Accumulator](../mcps/multi-shift-accumulator.md) | Calculate total net work time by summing multiple shifts and subtracting unpaid breaks. |
 | [Music Theory Chord Engine](../mcps/music-theory-chord-engine.md) | Deterministic music theory calculator for precise chord structures and enharmonic spelling. |
+| [MVP Cost & Timeline Estimator](../mcps/mvp-cost-timeline-estimator.md) | Calculate precise MVP development costs and delivery timelines. |
 | [MyHR](../mcps/myhr.md) | Simplify employee management in New Zealand and Australia with leave tracking, timesheets, and HR compliance tools. |
 | [Nager.Date](../mcps/nagerdate.md) | Manage public holidays worldwide — audit global events and calendars via AI. |
 | [NameSilo (Domain Registrar Developer API)](../mcps/namesilo-domain-registrar-developer-api.md) | Manage your domain portfolio, DNS records, and registrations directly through NameSilo's developer API. |
@@ -862,6 +865,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Taskworld](../mcps/taskworld.md) | Manage Taskworld projects, tasks, and team collaboration directly from your AI agent. |
 | [TeamGantt](../mcps/teamgantt.md) | Plan projects with intuitive Gantt charts that show deadlines, dependencies, and team workloads in one visual timeline. |
 | [Teamwork Projects](../mcps/teamwork-projects.md) | Manage projects, tasks, milestones, time entries, and messages via Teamwork API. |
+| [Technical Debt Impact Calculator](../mcps/technical-debt-impact-calculator.md) | Quantify the financial and velocity impact of technical debt. |
 | [Technical Writing Prover](../mcps/technical-writing-prover.md) | An AI wrote API documentation for 'developers.' No expertise level. No prerequisites. A wall of text with no headings. Code examples that referenced a deprecated method — untested. Passive voice throughout: 'it is recommended that the configuration be updated.' A junior engineer followed the docs, deployed to production with the wrong config, and caused a 4-hour outage. This tool forces audience definition, task-based structure, tested examples, ambiguity elimination, and completeness verification. |
 | [Telebroad](../mcps/telebroad.md) | Connect your business phone system with cloud PBX that includes auto-attendant, call queues, and voicemail-to-email transcription. |
 | [Text Diff Engine](../mcps/text-diff-engine.md) | Exact character-by-character string comparison. Stop relying on LLM summaries and get absolute text diffs for code and contracts. |

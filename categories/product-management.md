@@ -11,6 +11,7 @@ Explore the open database of **product-management** Model Context Protocol (MCP)
 | [AI Feature Onboarding Analyzer](../mcps/ai-feature-onboarding-analyzer.md) | Analyze AI feature adoption efficiency using funnel metrics and TTV analysis. |
 | [AI Improvement Velocity Tracker](../mcps/ai-improvement-velocity-tracker.md) | Quantify the speed and effectiveness of your AI model improvement cycles. |
 | [Cohort Retention Analytics](../mcps/cohort-retention-analytics.md) | Analyze cohort retention curves, average user lifetime, and benchmark performance against industry standards. |
+| [Product-Market Fit Diagnostic Engine](../mcps/product-market-fit-diagnostic-engine.md) | Evaluates product maturity and market resonance using retention, sentiment, and growth signals. |
 | [Retention Curve Analyzer](../mcps/retention-curve-analyzer.md) | Analyze cohort retention curves to identify stability versus churn and compare against industry benchmarks. |
 
 

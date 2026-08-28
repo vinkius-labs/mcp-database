@@ -330,6 +330,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Index Arbitrage Strategy](../mcps/index-arbitrage-strategy.md) | Detect and quantify cash-and-carry and reverse cash-and-carry arbitrage opportunities. |
 | [Inflation Erosion Calculator](../mcps/inflation-erosion-calculator.md) | Calculate the real purchasing power of money and visualize inflation's impact over time. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
+| [Innovation Patent Strategy ROI](../mcps/innovation-patent-strategy-roi.md) | Quantify patent ROI and prioritize IP filings based on economic value. |
+| [Innovation ROI Forecast](../mcps/innovation-roi-forecast.md) | Calculate risk-adjusted ROI and break-even timelines for innovation projects. |
 | [Inside Bar Breakout Strategy](../mcps/inside-bar-breakout-strategy.md) | Detect volatility contraction and explosive breakouts using inside bar patterns. |
 | [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
 | [Intermarket Spread Strategy](../mcps/intermarket-spread-strategy.md) | Deterministic mean-reversion engine for trading commodity ratio spreads. |
