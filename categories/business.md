@@ -10,6 +10,7 @@ Explore the open database of **business** Model Context Protocol (MCP) servers.
 | [Accelerator Readiness Assessment](../mcps/accelerator-readiness-assessment.md) | Quantify startup suitability for accelerator programs through deep readiness analysis. |
 | [Accelerator Selection Scoring](../mcps/accelerator-selection-scoring.md) | Calculate weighted startup scores, adjust for interviewer bias, and evaluate cohort fit. |
 | [Bezos Flywheel Prover](../mcps/bezos-flywheel-prover.md) | A startup benchmarked against 5 competitors instead of talking to a single customer. It proposed standalone initiatives instead of a flywheel. It built an end-user product instead of infrastructure. It formed a committee instead of a two-pizza team. It optimized for this quarter instead of a 7-year thesis. That is not strategy — that is a project list. This tool forces five Bezos-level axes: customer obsession, flywheel design, infrastructure-first, Day 1 culture, and long-term compounding. |
+| [Innovation Disruption Engine](../mcps/innovation-disruption-engine.md) | Quantitatively assess market disruption potential and industry vulnerability. |
 | [Innovation Idea Validator](../mcps/innovation-idea-validator.md) | Quantitatively assess the viability of new product ideas. |
 | [NPS Score Calculator](../mcps/nps-score-calculator.md) | Calculate Net Promoter Score, performance tiers, and statistical margin of error. |
 | [Ramen Shop Queue Estimator](../mcps/ramen-shop-queue-estimator.md) | Predict wait times and congestion for Japanese-style ramen shops using queueing theory. |

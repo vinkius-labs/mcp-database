@@ -14,6 +14,7 @@ Explore the open database of **devops** Model Context Protocol (MCP) servers.
 | [AWS Step Functions Limits Calculator](../mcps/aws-step-functions-limits-calculator.md) | Validate AWS Step Functions configurations against hard service limits and performance best practices. |
 | [CI/CD Pipeline Duration Analyzer](../mcps/cicd-pipeline-duration-analyzer.md) | Analyze CI/CD pipeline run data to identify bottlenecks, critical paths, and parallelization opportunities. |
 | [Dependency Coupling Fitness Function](../mcps/dependency-coupling-fitness-function.md) | Enforce clean architecture boundaries by validating dependency directions. |
+| [Deployment Economics & Efficiency](../mcps/deployment-economics-efficiency.md) | Calculate deployment efficiency, costs, and risk exposure for software delivery pipelines. |
 | [DynamoDB Capacity Calculator](../mcps/dynamodb-capacity-calculator.md) | Deterministic AWS DynamoDB capacity, partition, and burst limit calculator. |
 | [Environment Consistency Validator](../mcps/environment-consistency-validator.md) | A diagnostic tool to verify development environments against expected configurations. |
 | [Kubernetes HPA Scaling Simulator](../mcps/kubernetes-hpa-scaling-simulator.md) | Simulate Kubernetes Horizontal Pod Autoscaler behavior and stability. |

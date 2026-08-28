@@ -27,6 +27,8 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [DISCO](../mcps/disco.md) | Query your DISCO eDiscovery datasets, data-usage changes, and review metrics directly from any AI agent via the official DISCO API. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
 | [Innovation Moat Forecaster](../mcps/innovation-moat-forecaster.md) | Quantify the lifespan of competitive advantages and strategic moats. |
+| [Innovation Pivot Decision Analysis](../mcps/innovation-pivot-decision-analysis.md) | A strategic framework for evaluating business trajectories and pivot viability. |
+| [Innovation Platform Ecosystem Economics](../mcps/innovation-platform-ecosystem-economics.md) | Calculate ecosystem value, network multipliers, and growth potential. |
 | [innovation-first-mover-advantage](../mcps/innovation-first-mover-advantage.md) | Quantify the economic value and defensibility of being a market pioneer. |
 | [Mautic](../mcps/mautic.md) | Open-source marketing automation via Mautic — manage contacts, campaigns, and emails. |
 | [McLeod Software](../mcps/mcleod-software.md) | Transportation management via McLeod Software — manage orders, dispatches, and carriers. |
@@ -35,6 +37,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [MeetingPulse](../mcps/meetingpulse.md) | Interactive audience engagement via MeetingPulse — track polls, Q&As, and meeting analytics. |
 | [More Trees](../mcps/more-trees.md) | Plant trees for every transaction and track your environmental impact with carbon offset certificates for sustainable businesses. |
 | [Open Brewery DB](../mcps/open-brewery-db-alternative.md) | Search and discover craft breweries worldwide — find locations, types, and contact info via AI. |
+| [Open-Source Strategy Economics](../mcps/open-source-strategy-economics.md) | Calculate the economic impact and strategic value of open-source initiatives. |
 | [OpenCorporates](../mcps/opencorporates.md) | Access the largest open database of companies — audit corporate records and officers via AI. |
 | [OpenEI](../mcps/openei.md) | US electricity rate intelligence — query utility rates by location, sector, and tariff via AI for solar and energy analysis. |
 | [Pike13](../mcps/pike13.md) | Manage classes, clients, staff, invoices, visits, and analytics for your Pike13-powered fitness studio through natural conversation. |

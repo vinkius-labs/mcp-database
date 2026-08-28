@@ -324,14 +324,21 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Implied Probability Extractor](../mcps/implied-probability-extractor.md) | Convert American odds to true implied probability by removing the bookmaker margin. |
 | [Implied Volatility Calculator](../mcps/implied-volatility-calculator.md) | Deterministic engine for calculating implied volatility via Newton-Raphson iteration. |
+| [Incident Response Economics](../mcps/incident-response-economics.md) | Quantify the economic impact of software incidents and calculate ROI for prevention strategies. |
 | [Income Statement Generator](../mcps/income-statement-generator.md) | Generate structured Income Statements (P&L) with vertical analysis. |
 | [Incoterms 2020 Cost & Risk Calculator](../mcps/incoterms-2020-cost-risk-calculator.md) | Calculate logistics cost breakdowns, risk transfer points, and responsibility matrices for Incoterms 2020. |
 | [Indemnification Exposure Calculator](../mcps/indemnification-exposure-calculator.md) | Calculate maximum financial exposure in indemnity clauses by assessing contractual caps, carve-outs, and jurisdiction. |
 | [Index Arbitrage Strategy](../mcps/index-arbitrage-strategy.md) | Detect and quantify cash-and-carry and reverse cash-and-carry arbitrage opportunities. |
 | [Inflation Erosion Calculator](../mcps/inflation-erosion-calculator.md) | Calculate the real purchasing power of money and visualize inflation's impact over time. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
+| [Innovation Acquisition Economics](../mcps/innovation-acquisition-economics.md) | Evaluate the financial viability and integration risks of acquiring external innovations. |
+| [Innovation Incubator Economics](../mcps/innovation-incubator-economics.md) | Calculate incubator ROI, portfolio value, and failure tolerance. |
+| [Innovation Licensing Revenue Potential](../mcps/innovation-licensing-revenue-potential.md) | Quantify IP value, optimal licensing strategies, and negotiation leverage. |
+| [Innovation Partnership Economics Engine](../mcps/innovation-partnership-economics-engine.md) | Quantifies economic viability, risk profiles, and optimal structures for strategic innovation partnerships. |
 | [Innovation Patent Strategy ROI](../mcps/innovation-patent-strategy-roi.md) | Quantify patent ROI and prioritize IP filings based on economic value. |
+| [Innovation Regulatory Approval Timeline](../mcps/innovation-regulatory-approval-timeline.md) | Models financial and temporal implications of regulatory pathways. |
 | [Innovation ROI Forecast](../mcps/innovation-roi-forecast.md) | Calculate risk-adjusted ROI and break-even timelines for innovation projects. |
+| [Innovation Talent Acquisition Cost](../mcps/innovation-talent-acquisition-cost.md) | Calculates the economic impact and ROI of hiring specialized innovation talent. |
 | [Inside Bar Breakout Strategy](../mcps/inside-bar-breakout-strategy.md) | Detect volatility contraction and explosive breakouts using inside bar patterns. |
 | [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
 | [Intermarket Spread Strategy](../mcps/intermarket-spread-strategy.md) | Deterministic mean-reversion engine for trading commodity ratio spreads. |
@@ -527,6 +534,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [SuperTrend Calculator](../mcps/supertrend-calculator.md) | Deterministic SuperTrend indicator for trend direction and stop-loss levels. |
 | [SuperTrend Strategy Engine](../mcps/supertrend-strategy-engine.md) | Deterministic trend-following strategy with volatility and trend-strength filters. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
+| [Sustainability Innovation Value Calculator](../mcps/sustainability-innovation-value-calculator.md) | Quantify the economic and strategic value of sustainable innovations. |
 | [Sweep the Floor Liquidity Arb](../mcps/sweep-the-floor-liquidity-arb.md) | Exploit thin liquidity in prediction markets by calculating price impact and exit strategies. |
 | [Swing Index Calculator](../mcps/swing-index-calculator.md) | Calculate Welles Wilder's Swing Index and Cumulative Swing Index for market momentum analysis. |
 | [Swing Trading Strategy Engine](../mcps/swing-trading-strategy-engine.md) | A deterministic multi-timeframe engine for identifying high-probability swing trading pullbacks. |
@@ -536,6 +544,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
 | [Techstars Deal Economics Analyzer](../mcps/techstars-deal-economics-analyzer.md) | Calculate effective cost of capital and net economic benefits for Techstars accelerator deals. |
+| [Testing Automation ROI Calculator](../mcps/testing-automation-roi-calculator.md) | Calculate the financial and operational return on investment for transitioning from manual to automated testing. |
 | [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |
 | [Tick Index Cumulative Calculator](../mcps/tick-index-cumulative-calculator.md) | Calculate cumulative tick indices, momentum, and statistical breadth metrics. |
 | [Tiered Discount Simulator](../mcps/tiered-discount-simulator.md) | Calculate the most cost-effective way to reach higher discount tiers by adding filler items. |

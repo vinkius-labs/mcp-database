@@ -5,6 +5,7 @@ Explore the open database of **economics** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Accelerator University Affiliation](../mcps/accelerator-university-affiliation.md) | Models economic impact and structural alignment for university-affiliated startup accelerators. |
+| [Builder Prototyping Economics](../mcps/builder-prototyping-economics.md) | Calculate optimal prototype counts, total costs, and iteration efficiency. |
 
 
 ---

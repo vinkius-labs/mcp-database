@@ -13,6 +13,7 @@ Explore the open database of **product-management** Model Context Protocol (MCP)
 | [Cohort Retention Analytics](../mcps/cohort-retention-analytics.md) | Analyze cohort retention curves, average user lifetime, and benchmark performance against industry standards. |
 | [Product-Market Fit Diagnostic Engine](../mcps/product-market-fit-diagnostic-engine.md) | Evaluates product maturity and market resonance using retention, sentiment, and growth signals. |
 | [Retention Curve Analyzer](../mcps/retention-curve-analyzer.md) | Analyze cohort retention curves to identify stability versus churn and compare against industry benchmarks. |
+| [User Research ROI Calculator](../mcps/user-research-roi-calculator.md) | Calculate the economic return and strategic value of user research investments. |
 
 
 ---

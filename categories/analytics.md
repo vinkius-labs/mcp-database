@@ -40,7 +40,9 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
 | [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |
 | [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
+| [Limit of Detection Calculator](../mcps/limit-of-detection-calculator.md) | Calculate LOD, LOQ, and noise profiles using IUPAC-compliant statistical methods. |
 | [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |
+| [Mass Balance Analytical](../mcps/mass-balance-analytical.md) | Calculates chemical mass balance, recovery rates, and method efficiency for laboratory procedures. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
@@ -49,9 +51,11 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
+| [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
+| [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |

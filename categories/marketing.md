@@ -28,6 +28,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [LinkedIn Engagement Scorer](../mcps/linkedin-engagement-scorer.md) | Quantify the effectiveness of LinkedIn post Call-to-Actions (CT0As) and engagement triggers in text. |
 | [LinkedIn Hashtag Strategy Validator](../mcps/linkedin-hashtag-strategy-validator.md) | Analyze LinkedIn hashtag usage for density, accessibility, and strategic positioning. |
 | [LinkedIn Link Penalty and Placement Analyzer](../mcps/linkedin-link-penalty-and-placement-analyzer.md) | Analyzes LinkedIn post text to identify external link placement risks and bypass phrase detection. |
+| [Market Education Strategy Calculator](../mcps/market-education-strategy-calculator.md) | Calculate investment, ROI, and optimal channel mix for market education campaigns. |
 | [Marketing ROI Calculator](../mcps/marketing-roi-calculator.md) | Calculate marketing Return on Investment (ROI), payback period, and efficiency across all campaigns using detailed cost and revenue attribution. |
 | [Meta Ad Creative Copy-Pairing Scorer](../mcps/meta-ad-creative-copy-pairing-scorer.md) | Score the alignment between Meta ad copy and visual descriptions to optimize performance. |
 | [Meta Tag Analyzer](../mcps/meta-tag-analyzer.md) | Validate HTML title and meta description tags for SEO optimization. |

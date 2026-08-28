@@ -6,8 +6,10 @@ Explore the open database of **statistics** Model Context Protocol (MCP) servers
 |-----------|-------------|
 | [A/B Test Significance Calculator](../mcps/ab-test-significance-calculator.md) | Calculate statistical significance, required sample sizes, and power for A/B tests. |
 | [Agent A/B Test Calculator](../mcps/agent-ab-test-calculator.md) | A deterministic statistical engine for evaluating performance differences between agent variants. |
+| [Calibration Curve Generator](../mcps/calibration-curve-generator.md) | Generates mathematical calibration models and statistical analysis for analytical instruments. |
 | [Data Analysis Prover](../mcps/data-analysis-prover.md) | A marketing team asked an AI to analyze campaign data. The AI reported 'significant correlation between email frequency and purchase rate (p<0.05).' The team tripled emails. Unsubscribes spiked 340%. Sample: N=47 self-selected respondents, no power analysis. Correlation: observational, no confounders. Distribution: right-skewed but mean used. p=0.043 but Cohen's d=0.12 — trivial. Chart: truncated Y-axis making a 2% difference look enormous. This tool forces five axes: sample validity, causal inference, distribution awareness, significance with effect size, and visualization integrity. |
 | [Multivariate Test Analyzer](../mcps/multivariate-test-analyzer.md) | Perform 2k factorial analysis to identify optimal element combinations and interaction effects in multivariate experiments. |
+| [Sampling Plan Designer](../mcps/sampling-plan-designer.md) | Generates statistically rigorous sampling plans for quality control. |
 | [Test Duration Calculator](../mcps/test-duration-calculator.md) | Calculate required A/B test duration, sample sizes, and experiment risk levels. |
 
 

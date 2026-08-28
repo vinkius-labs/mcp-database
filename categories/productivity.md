@@ -152,8 +152,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Budget Envelope Allocator](../mcps/budget-envelope-allocator.md) | A deterministic zero-based budgeting engine for precise income distribution. |
 | [Buffer](../mcps/buffer.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
+| [Builder Automation ROI Calculator](../mcps/builder-automation-roi-calculator.md) | Calculate the financial viability and strategic priority of automating manual processes. |
 | [Builder Iteration Learning Rate](../mcps/builder-iteration-learning-rate.md) | Analyzes learning velocity and execution efficiency in iterative development cycles. |
 | [Builder Team Velocity Metrics](../mcps/builder-team-velocity-metrics.md) | Analyzes software team productivity using velocity, quality, and delivery speed metrics. |
+| [Builder Toolstack Optimization](../mcps/builder-toolstack-optimization.md) | Evaluate toolstack efficiency and cost-benefit ratios. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
 | [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
 | [Burnout Risk Assessment](../mcps/burnout-risk-assessment.md) | Assess burnout risk for Singapore professionals using work, commute, sleep, and vacation data. |
@@ -222,6 +224,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Coda](../mcps/coda.md) | Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work. |
 | [Coda](../mcps/coda-alternative.md) | Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work. |
 | [Code Integrity Prover](../mcps/code-integrity-prover.md) | AI agents default to type evasion (like any, void*, unsafe, or ignore), TODO stubs, timing/sleep hacks, and empty catch blocks. 96% of developers don't trust AI-generated code. This tool enforces zero-workaround integrity across all programming languages. |
+| [Code Review Economics Engine](../mcps/code-review-economics-engine.md) | Quantify the financial impact and ROI of your code review processes. |
 | [Coffee & Lunch Habit Cost Calculator](../mcps/coffee-lunch-habit-cost-calculator.md) | Quantify the long-term opportunity cost of daily habits like coffee or lunch. |
 | [Cognitive Load Estimator](../mcps/cognitive-load-estimator.md) | Quantify mental strain from workload metrics and get actionable mitigation strategies. |
 | [Cognitive Load Scorer](../mcps/cognitive-load-scorer.md) | Quantify the mental effort required to process text by measuring linguistic complexity. |
@@ -307,6 +310,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DevRel Voice Prover](../mcps/devrel-voice-prover.md) | AI agents write developer content that sounds like a press release. This tool forces authentic developer-to-developer voice: community-aware context, value over features, actionable code paths, and genuine engagement. No corporate speak, no feature dumps. |
 | [Dext](../mcps/dext.md) | Equip your AI agent to manage receipts, track invoices, and monitor accounting data via the Dext API. |
 | [Diagonal Cut Pythagorean Calculator](../mcps/diagonal-cut-pythagorean-calculator.md) | Calculate exact diagonal spans, mitered edge lengths, and miter offsets for precise angled cuts. |
+| [Digital Transformation ROI Calculator](../mcps/digital-transformation-roi-calculator.md) | Quantify the financial impact, payback period, and risk-adjusted value of digital transformation initiatives. |
 | [Digital Wellness Boundary Setter](../mcps/digital-wellness-boundary-setter.md) | Establish healthy digital habits with personalized notification schedules, social media limits, and a digital sunset time. |
 | [Divided Dose Scheduler](../mcps/divided-dose-scheduler.md) | Precisely split a total daily medication volume into equal time intervals. |
 | [Docamatic](../mcps/docamatic.md) | Generate professional PDFs from templates with dynamic data injection for invoices, reports, and custom documents at scale. |
@@ -317,6 +321,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Doctolib](../mcps/doctolib.md) | Manage medical appointments via Doctolib — search practitioners by specialty and city, track availabilities, and book consultations directly from any AI agent. |
 | [Document AI Economics Modeler](../mcps/document-ai-economics-modeler.md) | Calculate unit economics and total cost of ownership for AI document processing workflows. |
 | [Document Paginator Engine](../mcps/document-paginator-engine.md) | Mathematically slice massive text blocks into token-safe chunks without ever truncating critical sentences. |
+| [Documentation ROI Calculator](../mcps/documentation-roi-calculator.md) | Calculate the financial return and maintenance costs of documentation investments. |
 | [Documint](../mcps/documint.md) | Equip your AI agent to automate document generation, manage templates, and track output files via the Documint API. |
 | [Documo](../mcps/documo.md) | Equip your AI agent to manage digital faxes, track fax numbers, and monitor transmissions via the Documo API. |
 | [Docupilot](../mcps/docupilot.md) | Equip your AI agent to automate document creation, manage templates, and track merges via the Docupilot API. |
@@ -569,6 +574,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Kitsu](../mcps/kitsu.md) | Search and manage your anime and manga collections via Kitsu — browse titles, check user profiles, and update your library directly from any AI agent. |
 | [Kizeo Forms](../mcps/kizeo-forms.md) | Manage mobile forms, data submissions, and users via the Kizeo Forms API. |
 | [Knackly](../mcps/knackly.md) | Generate legal and business documents from smart templates with conditional logic that adapts content to every unique situation. |
+| [Knowledge Management ROI Calculator](../mcps/knowledge-management-roi-calculator.md) | Quantify the financial impact of your knowledge management investments. |
 | [Kraken.io](../mcps/krakenio.md) | Optimize, compress, and resize images via URL or direct upload using the Kraken.io API. |
 | [Lamha](../mcps/lamha.md) | Build AI chatbots for Arabic-speaking audiences with natural language understanding designed for Middle Eastern dialects. |
 | [Landing](../mcps/landing.md) | Create high-converting landing pages in minutes with AI-powered templates and drag-and-drop editing built for marketers. |
@@ -673,6 +679,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [OfficeRnD Hybrid](../mcps/officernd-hybrid.md) | Hybrid work management — book desks, rooms, and manage office resources via OfficeRnD. |
 | [Officevibe](../mcps/officevibe.md) | Manage employee engagement via Officevibe — track pulse survey scores, feedback, and NPS directly from your AI agent. |
 | [Omnivore (Read-Later)](../mcps/omnivore-read-later.md) | Manage your Omnivore library — search articles, read full content, and save new links directly from your AI agent. |
+| [On-Call Economics Engine](../mcps/on-call-economics-engine.md) | Quantify the economic impact of on-call rotations by balancing compensation costs against burnout and attrition risks. |
 | [Onboard.io Implementation](../mcps/onboardio-implementation.md) | Automate and manage customer onboarding via Onboard.io — track launch plans, tasks, and progress directly from your AI agent. |
 | [ONES](../mcps/ones.md) | Enterprise R&D project management platform — manage tasks, projects, and workflows via AI. |
 | [Open Emoji API](../mcps/open-emoji-api.md) | Access emoji data — audit characters, names, and categories via AI. |
@@ -760,6 +767,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
 | [Recovery Time Planner](../mcps/recovery-time-planner.md) | Calculate estimated recovery duration and progressive weekly plans based on burnout levels and mitigation strategies. |
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
+| [Refactoring Schedule Optimizer](../mcps/refactoring-schedule-optimizer.md) | Strategic decision-support for balancing technical debt reduction with feature delivery. |
 | [Refiner](../mcps/refiner.md) | Survey your SaaS users with in-app micro-surveys that capture NPS, feature feedback, and churn signals at the perfect moment. |
 | [Reflect](../mcps/reflect.md) | Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API. |
 | [Remote Program Effectiveness Analyzer](../mcps/remote-program-effectiveness-analyzer.md) | Quantifies remote accelerator success by comparing engagement and outcomes against in-person benchmarks. |
@@ -867,6 +875,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Teamwork Projects](../mcps/teamwork-projects.md) | Manage projects, tasks, milestones, time entries, and messages via Teamwork API. |
 | [Technical Debt Impact Calculator](../mcps/technical-debt-impact-calculator.md) | Quantify the financial and velocity impact of technical debt. |
 | [Technical Writing Prover](../mcps/technical-writing-prover.md) | An AI wrote API documentation for 'developers.' No expertise level. No prerequisites. A wall of text with no headings. Code examples that referenced a deprecated method — untested. Passive voice throughout: 'it is recommended that the configuration be updated.' A junior engineer followed the docs, deployed to production with the wrong config, and caused a 4-hour outage. This tool forces audience definition, task-based structure, tested examples, ambiguity elimination, and completeness verification. |
+| [Technical Writing ROI Analyzer](../mcps/technical-writing-roi-analyzer.md) | Quantify the economic impact of technical documentation on support costs and developer productivity. |
 | [Telebroad](../mcps/telebroad.md) | Connect your business phone system with cloud PBX that includes auto-attendant, call queues, and voicemail-to-email transcription. |
 | [Text Diff Engine](../mcps/text-diff-engine.md) | Exact character-by-character string comparison. Stop relying on LLM summaries and get absolute text diffs for code and contracts. |
 | [Text In Church](../mcps/text-in-church.md) | Keep your congregation engaged with church-specific texting, email, and communication tools that grow attendance and giving. |
