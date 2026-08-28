@@ -5,6 +5,11 @@ Explore the open database of **product-management** Model Context Protocol (MCP)
 | Tool Name | Description |
 |-----------|-------------|
 | [AI Feature Adoption Analytics](../mcps/ai-feature-adoption-analytics.md) | Calculate AI feature adoption rates, velocity, stickiness, and funnel efficiency. |
+| [AI Feature Discovery Analytics](../mcps/ai-feature-discovery-analytics.md) | Measure and optimize how users find and engage with your AI features. |
+| [AI Feature NPS Impact Engine](../mcps/ai-feature-nps-impact-engine.md) | Quantify how AI features drive or drag your product's NPS. |
+| [AI Feature NSM Analyzer](../mcps/ai-feature-nsm-analyzer.md) | Calculates AI feature impact on North Star Metrics using correlation and leading indicators. |
+| [AI Feature Onboarding Analyzer](../mcps/ai-feature-onboarding-analyzer.md) | Analyze AI feature adoption efficiency using funnel metrics and TTV analysis. |
+| [AI Improvement Velocity Tracker](../mcps/ai-improvement-velocity-tracker.md) | Quantify the speed and effectiveness of your AI model improvement cycles. |
 | [Cohort Retention Analytics](../mcps/cohort-retention-analytics.md) | Analyze cohort retention curves, average user lifetime, and benchmark performance against industry standards. |
 | [Retention Curve Analyzer](../mcps/retention-curve-analyzer.md) | Analyze cohort retention curves to identify stability versus churn and compare against industry benchmarks. |
 

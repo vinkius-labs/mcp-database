@@ -50,8 +50,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Agent Workflow Cost Calculator](../mcps/agent-workflow-cost-calculator.md) | Calculate the exact financial footprint of multi-agent AI workflows. |
 | [agent-output-deduplicator](../mcps/agent-output-deduplicator.md) | Detects and removes redundant outputs from multi-agent workflows using Jaccard similarity and n-gram overlap. |
 | [AgentMail](../mcps/agentmail.md) | Give your AI agents their own email inbox to read, send, and reply to messages natively. |
+| [AI Automation Time Savings Calculator](../mcps/ai-automation-time-savings-calculator.md) | Calculate the economic and operational impact of AI automation. |
+| [AI Content Generation Metrics](../mcps/ai-content-generation-metrics.md) | Calculate AI content generation volume, velocity, and utilization metrics. |
 | [AI Receptionist](../mcps/ai-receptionist.md) | Let AI answer your business calls, book appointments, and handle customer inquiries around the clock without missing a beat. |
+| [AI Suggestion Effectiveness Analyzer](../mcps/ai-suggestion-effectiveness-analyzer.md) | Analyze AI suggestion acceptance, modification, and quality metrics. |
 | [AI Token Counter](../mcps/ai-token-counter.md) | Give AI Agents self-awareness of context limits. Count exact OpenAI/Claude tokens local to prevent fatal API truncation errors. |
+| [AI Workflow Comparison Engine](../mcps/ai-workflow-comparison-engine.md) | Quantify the transition from manual to AI-assisted workflows. |
 | [AidaForm](../mcps/aidaform.md) | Design beautiful online forms, quizzes, and surveys that convert and collect structured data effortlessly. |
 | [Aidbase](../mcps/aidbase.md) | Deploy AI-powered customer support chatbots, manage knowledge bases, and resolve tickets faster with intelligent automation. |
 | [AiMasher](../mcps/aimasher.md) | Generate marketing content, social media posts, and creative assets using multiple AI models in a single unified workspace. |

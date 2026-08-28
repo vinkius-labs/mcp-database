@@ -13,7 +13,18 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
 | [AI Data Preparation Estimator](../mcps/ai-data-preparation-estimator.md) | Calculate data preparation costs, timelines, and quality impact. |
 | [AI Engagement Scoring](../mcps/ai-engagement-scoring.md) | Analyze AI feature engagement, adoption rates, and churn risk. |
+| [AI Feature Abandonment Analyzer](../mcps/ai-feature-abandonment-analyzer.md) | Analyze user drop-off patterns and identify friction points in AI features. |
+| [AI Feature Activation Analyzer](../mcps/ai-feature-activation-analyzer.md) | Analyze the time between user signup and their first AI feature interaction to optimize growth. |
+| [AI Feature i18n Quality Analyzer](../mcps/ai-feature-i18n-quality-analyzer.md) | Assess AI feature readiness for global markets using linguistic and AI performance metrics. |
+| [AI Feature Pricing Sensitivity](../mcps/ai-feature-pricing-sensitivity.md) | Model price elasticity and optimize AI feature pricing to maximize revenue. |
+| [AI Feature Upsell Correlation](../mcps/ai-feature-upsell-correlation.md) | Quantify the impact of AI features on subscription upgrades. |
+| [AI Feature Usage Analytics](../mcps/ai-feature-usage-analytics.md) | Analyze AI feature stickiness, usage distribution, and engagement trajectories. |
+| [AI Feature Value Realization](../mcps/ai-feature-value-realization.md) | Quantify the time to value and adoption efficiency of your AI features. |
 | [AI Feedback Loop Economics](../mcps/ai-feedback-loop-economics.md) | Calculate the costs and ROI of user feedback collection for AI model improvement. |
+| [AI Model Usage Analytics](../mcps/ai-model-usage-analytics.md) | Analyze AI model cost distribution and usage concentration across product features. |
+| [AI Output Quality Metrics Engine](../mcps/ai-output-quality-metrics-engine.md) | Quantifies AI performance using feedback, regeneration rates, and acceptance metrics. |
+| [AI Power User Analytics Engine](../mcps/ai-power-user-analytics-engine.md) | Quantify AI power user density, value multipliers, and feature depth. |
+| [AI SaaS Feature Churn Correlation](../mcps/ai-saas-feature-churn-correlation.md) | Quantify the impact of AI features on customer retention and calculate prevented churn revenue. |
 | [AI SaaS Token Economics Engine](../mcps/ai-saas-token-economics-engine.md) | Analyze token consumption, feature efficiency, and tier-based costs for AI SaaS platforms. |
 | [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |

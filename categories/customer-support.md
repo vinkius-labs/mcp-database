@@ -6,6 +6,7 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 |-----------|-------------|
 | [8x8 Contact Center](../mcps/8x8-contact-center.md) | Real-time contact center analytics — monitor queues, agent performance, and live metrics via AI. |
 | [Ada](../mcps/ada.md) | AI-powered customer service automation — manage conversations, end users, and knowledge via AI. |
+| [AI Feature Support Impact Analyzer](../mcps/ai-feature-support-impact-analyzer.md) | Calculate support burden, costs, and documentation ROI for AI features. |
 | [Alchemer](../mcps/alchemer.md) | Survey and feedback orchestration — manage surveys, responses, and reports via AI. |
 | [Appbot](../mcps/appbot.md) | Analyze app reviews and sentiment with Appbot — track user feedback, ratings, and topics across iOS and Android via AI. |
 | [AppFollow](../mcps/appfollow.md) | Manage app reviews and rankings with AppFollow — track sentiment, ratings, and store charts via AI. |

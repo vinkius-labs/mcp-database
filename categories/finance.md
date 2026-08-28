@@ -80,13 +80,15 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Data Pipeline Cost Analyzer](../mcps/ai-data-pipeline-cost-analyzer.md) | Calculate monthly operating costs and efficiency metrics for AI data pipelines. |
 | [AI Error Recovery Economics](../mcps/ai-error-recovery-economics.md) | Quantify the financial and experiential cost of AI errors and calculate ROI for recovery strategies. |
 | [AI Feature Expansion Impact Analyzer](../mcps/ai-feature-expansion-impact-analyzer.md) | Quantify the financial and behavioral impact of AI features on SaaS expansion revenue and upsell conversion. |
+| [AI Feature First-Mover Advantage Calculator](../mcps/ai-feature-first-mover-advantage-calculator.md) | Quantify the economic value and competitive moat of launching AI features ahead of the market. |
 | [AI Feature Flag Cost & Risk Modeler](../mcps/ai-feature-flag-cost-risk-modeler.md) | Calculate infrastructure costs, deployment velocity, and risk mitigation for AI feature flags. |
+| [AI Feature ROI Analyzer](../mcps/ai-feature-roi-analyzer.md) | Evaluate the financial efficiency and pricing viability of AI features at the user level. |
 | [AI Memory Cost Analyzer](../mcps/ai-memory-cost-analyzer.md) | Estimate and optimize the economic impact of AI conversation memory architectures. |
 | [AI Model Drift Detection & ROI Calculator](../mcps/ai-model-drift-detection-roi-calculator.md) | Calculate monitoring costs, early detection value, and ROI for AI model drift detection. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
-| [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Calculate cost per active user and scaling efficiency for AI platforms. |
+| [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Decomposes AI feature costs into actionable unit economics. |
 | [AI SaaS Gross Margin Analyzer](../mcps/ai-saas-gross-margin-analyzer.md) | Calculate and project gross margins for AI SaaS businesses, including AI API and compute costs. |
 | [AI SaaS Unit Economics Engine](../mcps/ai-saas-unit-economics-engine.md) | Calculate LTV, LTV:CAC, and AI cost impact for AI-driven SaaS models. |
 | [AI Safety Guardrails Cost Analyzer](../mcps/ai-safety-guardrails-cost-analyzer.md) | Calculate the financial impact and risk reduction of AI safety guardrails. |
