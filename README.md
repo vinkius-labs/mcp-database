@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,239 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,241 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -21,7 +21,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
-- [utilities](categories/utilities.md) (124 servers)
+- [utilities](categories/utilities.md) (125 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
 - [customer-support](categories/customer-support.md) (107 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
@@ -52,7 +52,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [education](categories/education.md) (35 servers)
 - [lifestyle](categories/lifestyle.md) (35 servers)
 - [optimization](categories/optimization.md) (34 servers)
-- [science](categories/science.md) (33 servers)
+- [science](categories/science.md) (34 servers)
 - [brain-trust](categories/brain-trust.md) (32 servers)
 - [image-video](categories/image-video.md) (32 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)

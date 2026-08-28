@@ -123,6 +123,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |
 | [URL and Email Token Detector](../mcps/url-and-email-token-detector.md) | Detect URLs and emails to calculate potential LLM token savings. |
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
+| [Water Analysis Calculator](../mcps/water-analysis-calculator.md) | Calculates water quality indices, hardness levels, and regulatory compliance. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 | [Western Astrology Calculator](../mcps/western-astrology-calculator.md) | Calculate sun signs, moon signs, ascendants, and planetary positions. |

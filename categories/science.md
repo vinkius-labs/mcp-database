@@ -13,6 +13,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
+| [Crystallite Size Calculator](../mcps/crystallite-size-calculator.md) | Analyze XRD data to determine crystallite size, microstrain, and instrumental broadening. |
 | [Distillation Proof Calculator](../mcps/distillation-proof-calculator.md) | Deterministic tools for alcohol proof correction, distillation stage identification, and volume-based cuts. |
 | [Dog Age Calculator](../mcps/dog-age-calculator.md) | Accurate canine aging estimation using scientific veterinary formulas. |
 | [Electrode Potential Calculator](../mcps/electrode-potential-calculator.md) | Calculate electrode potentials, detection limits, and selectivity impacts for ion-selective electrodes. |
