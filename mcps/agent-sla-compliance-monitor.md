@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for monitoring autonomous agent 
 
 
 ## Available Tools (3)
+- **get_composite_health_score**: Generates a single unified score representing the total system health
 - **analyze_error_budget**: Determines the status of the error budget, including remaining capacity and burn rate
 - **calculate_compliance_metrics**: Calculates core compliance percentages for latency, availability, and accuracy
-- **get_composite_health_score**: Generates a single unified score representing the total system health
 
 
 ## 💬 Prompt Examples

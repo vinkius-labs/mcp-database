@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to evaluate AI agent performance
 
 
 ## Available Tools (3)
-- **calculate_composite_and_health**: Generates a single performance score and determines if the agent is underperforming relative to a baseline
 - **calculate_core_metrics**: Calculates the foundational performance indicators (accuracy, precision, recall, and F1 score) based on task outcomes
 - **calculate_efficiency_metrics**: Analyzes the operational cost and speed of the agent
+- **calculate_composite_and_health**: Generates a single performance score and determines if the agent is underperforming relative to a baseline
 
 
 ## 💬 Prompt Examples

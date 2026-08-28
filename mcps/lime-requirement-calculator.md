@@ -7,16 +7,19 @@
 
 **Category:** [agriculture](../categories/agriculture.md)
 
-Calculate precise limestone dosage and total application costs using base saturation and SMP buffer methods.
+Calculate precise limestone requirements and application costs based on soil properties.
 
 ## Description
-This MCP server provides specialized agricultural tools to determine the exact amount of lime needed for soil correction. Use `calculate_base_saturation_dosage` to calculate requirements based on current and target base saturation (V%), soil CTC, and lime PRNT. You can also use `calculate_smp_dosage` to assess needs via the SMP buffer method, and `calculate_total_expenditure` to project total mass needed and financial investment for a specific field area.
+This MCP server provides specialized tools for agricultural soil management. It allows AI agents to determine the exact amount of lime needed to reach a target pH by analyzing soil buffering capacity, including clay content, organic matter, and Cation Exchange Capacity (CEC). Users can use `calculate_lime_rate` to find the required tonnage, `estimate_liming_cost` to project financial investments, `recommend_application_timing` to plan application windows based on lime fineness, and `get_soil_classification` to understand soil types and buffering tiers.
 
 
-## Available Tools (3)
-- **calculate_base_saturation_dosage**: Calculates the amount of lime required to reach a desired base saturation level
-- **calculate_smp_dosage**: Determines the lime requirement based on the SMP buffer capacity measurements
-- **calculate_total_expenditure**: Estimates the total financial investment required for a specific field area
+## Available Tools (4)
+- **calculate_lime_rate**: Provide current pH, target pH, buffering method (SMP or BaseSaturation), soil properties (clay, organic matter, CEC), and lime quality (CCE and fineness factor).
+
+Determines the total amount of lime needed to reach the target pH based on soil properties
+- **estimate_liming_cost**: Calculates the financial investment required for the lime application
+- **recommend_application_timing**: Provides guidance on when to apply lime based on soil characteristics and lime fineness
+- **get_soil_classification**: Categorizes the soil type to provide context for the lime requirement
 
 
 ## 💬 Prompt Examples
@@ -24,38 +27,38 @@ This MCP server provides specialized agricultural tools to determine the exact a
 Here are some examples of how you can interact with the **Lime Requirement Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate lime dosage for a soil with 40% V%, target 65%, CTC of 10, and PRNT of 85%."
+> "Calculate the lime needed for a soil with pH 5.2, target pH 6.5, using the SMP method. Soil has 25% clay, 3% organic matter, and 15 CEC. Lime has 80% CCE and 0.9 fineness."
 
 **🤖 AI Agent:**
-> The `calculate_base_saturation_dosage` tool would calculate the required dosage based on these parameters.
+> The required lime rate is 4.25 tonnes per hectare.
 
 ---
 
 **👤 You:**
-> "What is the cost for 50 hectares if I need 2 tonnes per hectare at $150 per tonne?"
+> "What is the cost to apply 5 tonnes of lime if the price is $150 per tonne and application costs $30 per hectare?"
 
 **🤖 AI Agent:**
-> Using `calculate_total_expenditure`, the total mass needed is 100 tonnes, with a total cost of $15,000.
+> The total cost for the lime application is $750.00.
 
 ---
 
 **👤 You:**
-> "Determine lime needs using SMP value of 4.5 and target of 6.0."
+> "Classify a soil with 40% clay and 5% organic matter."
 
 **🤖 AI Agent:**
-> The `calculate_smp_dosage` tool will compute the necessary dosage per hectare to reach the target equilibrium.
+> The soil is classified as Clay-heavy with a High Resistance buffering tier.
 
 
 ## ❓ FAQ
 
-**Q: What is the base saturation method?**
-It calculates lime dosage by finding the difference between target and current V%, adjusted by soil CTC and lime PRNT using `calculate_base_saturation_dosage`.
+**Q: How does the tool account for lime quality?**
+The `calculate_lime_rate` tool uses the Calcium Carbonate Equivalent (CCE) and the fineness factor to adjust the total lime requirement, ensuring the calculation reflects the actual effectiveness of the material.
 
-**Q: How do I estimate total costs?**
-Use the `calculate_total_expenditure` tool by providing your field area, dosage per hectare, and the market price per tonne.
+**Q: Can I estimate the total cost of my soil treatment?**
+Yes, you can use the `estimate_liming_cost` tool. By providing the lime rate and the unit price, the tool calculates both the material cost and the total investment including application costs.
 
-**Q: Does it support the SMP buffer method?**
-Yes, the `calculate_smp_dosage` tool allows you to determine lime requirements based on current and target SMP buffer values.
+**Q: What soil properties are required for the calculation?**
+To get an accurate result from `calculate_lime_rate`, you need to provide the current pH, target pH, the buffering method (SMP or BaseSaturation), and soil properties including clay content, organic matter, and CEC.
 
 
 ## Installation & Usage

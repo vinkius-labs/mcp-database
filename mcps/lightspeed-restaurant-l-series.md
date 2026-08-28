@@ -23,48 +23,48 @@ Connect your **Lightspeed Restaurant L-Series** (resto-api) to any AI agent.
 
 
 ## Available Tools (14)
-- **list_customers**: Use for CRM, loyalty, or contact lookups. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data.
-
-Customers: name, contact, address, store credit, loyalty cards
-- **get_product_sales**: "from"/"to" are ISO-8601 dates (e.g. 2026-08-01). Use for best-sellers and menu performance. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the underlying receipts use get_sales_report.
-
-Per-product sales: quantity, revenue, tax, and profit
-- **list_modifiers**: Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the products they attach to use list_menu_items.
-
-Modifier groups (add-ons): values, prices, min/max selection
-- **list_employees**: Use for the roster or to find a person. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For worked hours use list_clock_times.
-
-Staff roster: name, username, email, contact
-- **list_clock_times**: Use for hours worked, attendance, or labour tracking. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For staff names/details use list_employees.
-
-Staff clock in/out records per employee
-- **list_establishments**: Use for multi-location groups. Empty for a single-location account. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data.
-
-Linked locations sharing products and customers
-- **list_menu_items**: Use to inspect pricing, find a product, or audit the menu. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Group by category with list_categories; add-on groups are in list_modifiers.
-
-Menu products: name, price, SKU/PLU, tax class, stock, modifiers
-- **list_categories**: Use to see how the menu is organized or to group products. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the products themselves use list_menu_items.
-
-Product groups (menu categories): name, display order, visibility
-- **list_floors**: Use for section-level questions. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For a flat list of every table use list_tables.
-
-Floor plans (sections): name, capacity, and their tables
-- **list_tables**: Use for table-level questions (how many tables, seats, which section). Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the sections themselves use list_floors.
-
-Tables across all floors: number, seats, type, floor
-- **list_receipts**: Each: items, modifiers, table, total, tips, payment breakdown, status, type. Optional date (YYYY-MM-DD); defaults to the restaurant's current business day in its own timezone. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Multi-day span → get_sales_report; per-product totals → get_product_sales; one receipt by id → get_receipt.
-
-Receipts for one day: items, totals, tips, payments, table
-- **get_sales_report**: "from"/"to" are ISO-8601 (e.g. 2026-08-01T00:00:00). Use for "this week"/"last month" sales. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Single day → list_receipts; aggregated per-product profit → get_product_sales.
-
-Receipts over a date range: items, totals, tips, payments
 - **get_company**: Returns the account's name, address, currency, tax-inclusive flag, opening time, and IANA timezone. The source of truth for the account timezone. Not for sales figures — use get_sales_report or get_product_sales.
 
 Restaurant profile: name, address, currency, tax mode, timezone
+- **list_establishments**: Use for multi-location groups. Empty for a single-location account. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data.
+
+Linked locations sharing products and customers
+- **get_product_sales**: "from"/"to" are ISO-8601 dates (e.g. 2026-08-01). Use for best-sellers and menu performance. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the underlying receipts use get_sales_report.
+
+Per-product sales: quantity, revenue, tax, and profit
 - **get_receipt**: Returns every item, modifier, tax line, and payment. Get the ID from list_receipts first.
 
 One receipt by ID: full item, tax, and payment breakdown
+- **get_sales_report**: "from"/"to" are ISO-8601 (e.g. 2026-08-01T00:00:00). Use for "this week"/"last month" sales. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Single day → list_receipts; aggregated per-product profit → get_product_sales.
+
+Receipts over a date range: items, totals, tips, payments
+- **list_categories**: Use to see how the menu is organized or to group products. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the products themselves use list_menu_items.
+
+Product groups (menu categories): name, display order, visibility
+- **list_clock_times**: Use for hours worked, attendance, or labour tracking. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For staff names/details use list_employees.
+
+Staff clock in/out records per employee
+- **list_customers**: Use for CRM, loyalty, or contact lookups. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data.
+
+Customers: name, contact, address, store credit, loyalty cards
+- **list_employees**: Use for the roster or to find a person. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For worked hours use list_clock_times.
+
+Staff roster: name, username, email, contact
+- **list_floors**: Use for section-level questions. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For a flat list of every table use list_tables.
+
+Floor plans (sections): name, capacity, and their tables
+- **list_menu_items**: Use to inspect pricing, find a product, or audit the menu. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Group by category with list_categories; add-on groups are in list_modifiers.
+
+Menu products: name, price, SKU/PLU, tax class, stock, modifiers
+- **list_modifiers**: Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the products they attach to use list_menu_items.
+
+Modifier groups (add-ons): values, prices, min/max selection
+- **list_receipts**: Each: items, modifiers, table, total, tips, payment breakdown, status, type. Optional date (YYYY-MM-DD); defaults to the restaurant's current business day in its own timezone. Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. Multi-day span → get_sales_report; per-product totals → get_product_sales; one receipt by id → get_receipt.
+
+Receipts for one day: items, totals, tips, payments, table
+- **list_tables**: Use for table-level questions (how many tables, seats, which section). Paginated: start offset="0", amount="100"; while page.has_more is true, call again with offset=page.next_offset until it is false. You must page to the end for complete data. For the sections themselves use list_floors.
+
+Tables across all floors: number, seats, type, floor
 
 
 ## 💬 Prompt Examples

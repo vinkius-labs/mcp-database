@@ -37,19 +37,12 @@ No API key required for public data — completely free.
 
 
 ## Available Tools (8)
-- **get_server_time**: Get the current Binance server time. Use to check exchange availability or align timestamps before other calls
-- **get_trades**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
-
-Get the most recent individual trades (price, quantity, time, side) for a trading pair. Use to inspect live trade activity and order flow
 - **get_agg_trades**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
 
 Get aggregated trades, where fills at the same price and time are combined into one record. Use for efficient trade-flow analysis on high-volume pairs
 - **get_exchange_info**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to list all pairs.
 
 Look up trading rules and metadata for Binance pairs: status, base/quote assets, order types and price/quantity filters. Use to discover valid symbols or check limits before trading
-- **get_klines**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
-
-Get historical OHLCV candlestick data (open, high, low, close, volume) for a trading pair at a chosen interval. Use for charting and technical analysis
 - **get_24h_ticker**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to return all pairs.
 
 Get 24-hour price change stats for a trading pair: price change, percent change, high, low and volume. Use for market overviews or "how did X move today"
@@ -59,6 +52,13 @@ Get the live order book (bids and asks with prices and quantities) for a trading
 - **get_price**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to return all pairs.
 
 Get the latest market price for a trading pair (e.g. BTCUSDT). The fastest way to answer "how much is X worth right now"
+- **get_klines**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
+
+Get historical OHLCV candlestick data (open, high, low, close, volume) for a trading pair at a chosen interval. Use for charting and technical analysis
+- **get_server_time**: Get the current Binance server time. Use to check exchange availability or align timestamps before other calls
+- **get_trades**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
+
+Get the most recent individual trades (price, quantity, time, side) for a trading pair. Use to inspect live trade activity and order flow
 
 
 ## 💬 Prompt Examples

@@ -7,14 +7,17 @@
 
 **Category:** [agriculture](../categories/agriculture.md)
 
-Generate optimized agricultural crop rotation sequences to improve soil health and maximize income.
+Optimize agricultural yields and soil health with intelligent crop sequencing.
 
 ## Description
-The Crop Rotation Planner connects AI agents to advanced agricultural decision-making. Using the `generate_crop_rotation` tool, you can input your current crop, available area, production system, and rotation objectives to receive a detailed multi-season planting sequence. This tool helps farmers implement sustainable practices like nitrogen fixation and pest cycle disruption by planning transitions between crops such as Soy/Corn or Crop-Livestock Integration. It is designed for use in Cursor, VS Code, Claude Desktop, and Windsurf via Vinkius Edge.
+The Crop Rotation Planner connects AI agents to advanced agricultural intelligence. It uses tools like `analyze_crop_compatibility` to prevent disease buildup and allelopathy, `calculate_rotation_yield` to project harvests, and `evaluate_soil_health_impact` to monitor nutrient levels. Farmers and researchers can use `generate_rotation_plan` to create optimal 3-5 year sequences that maximize economic returns through nitrogen fixation and rotation benefit coefficients.
 
 
-## Available Tools (1)
-- **generate_crop_rotation**: Generate a crop rotation sequence
+## Available Tools (4)
+- **analyze_crop_compatibility**: Determines if two specific crops can be grown in succession based on biological constraints
+- **calculate_rotation_yield**: Estimates the expected yield of a crop given its predecessor in a rotation
+- **evaluate_soil_health_impact**: Predicts how a specific crop will affect the soil quality for future seasons
+- **generate_rotation_plan**: Creates a multi-year sequence of crops that maximizes economic return while maintaining soil health and compatibility
 
 
 ## 💬 Prompt Examples
@@ -22,38 +25,38 @@ The Crop Rotation Planner connects AI agents to advanced agricultural decision-m
 Here are some examples of how you can interact with the **Crop Rotation Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am currently growing Soybean on 50 hectares. Using the Soy/Corn production system and aiming for soil improvement, what should my next crops be?"
+> "Can I plant Corn immediately after Soybeans?"
 
 **🤖 AI Agent:**
-> Your optimized rotation sequence is: Season 1: Corn, Season 2: Soybean. This plan utilizes the nitrogen-fixing properties of soybeans to enhance soil health.
+> Yes, planting Corn after Soybeans is compatible and you will benefit from the nitrogen credit provided by the Soybeans.
 
 ---
 
 **👤 You:**
-> "Generate a rotation plan for 100 hectares using the Crop-Livestock Integration system with an objective to maximize income."
+> "Generate a 3-year rotation plan starting in 2025 with Corn, Soybeans, and Clover."
 
 **🤖 AI Agent:**
-> The generated sequence includes: Season 1: Corn, Season 2: Pasture, Season 3: Soybean. This maximizes revenue by leveraging high-value crops and integrated grazing.
+> Year 1 (2025): Soybeans. Year 2 (2026): Corn. Year 3 (2027): Clover. This sequence maximizes nitrogen credit and yield.
 
 ---
 
 **👤 You:**
-> "What is the next crop in my sequence if I am using the Soy/Corn/Wheat system and want to control diseases?"
+> "What will be the expected yield for Wheat if the previous crop was Alfalfa?"
 
 **🤖 AI Agent:**
-> To maintain disease control, your next planting should be Wheat, followed by Corn, to break the life cycles of common soil-borne pathogens.
+> The expected yield for Wheat following Alfalfa is 85 bushels per acre due to the high rotation benefit coefficient.
 
 
 ## ❓ FAQ
 
-**Q: What production systems are supported?**
-The planner supports several frameworks including Soy/Corn, Soy/Corn/Wheat, Sugarcane, and Crop-Livestock Integration.
+**Q: How does this tool help with soil health?**
+By using `evaluate_soil_health_impact`, the tool predicts how specific crops will affect organic matter and nutrient levels, allowing for better planning.
 
-**Q: How does the tool help with soil improvement?**
-By selecting the 'Soil Improvement' objective, the `generate_crop_rotation` tool prioritizes nitrogen-fixing crops and organic matter contributors in your sequence.
+**Q: Can I plan for multiple years?**
+Yes, the `generate_rotation_plan` tool creates optimized sequences covering a 3-5 year period.
 
-**Q: Can I use this with Claude Desktop?**
-Yes, you can connect this MCP server to Claude Desktop, Cursor, and other compatible clients using your Vinkius Connection Token.
+**Q: How are crop conflicts handled?**
+The tool uses `analyze_crop_compatibility` to identify potential issues like allelopathy or disease vectors between successive crops.
 
 
 ## Installation & Usage

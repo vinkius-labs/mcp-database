@@ -41,22 +41,11 @@ No more manual logging into the Zendesk dashboard to check a ticket's status. Yo
 ## Available Tools (15)
 - **list_macros**: Lists all available support macros (canned responses)
 - **list_tickets**: Lists all support tickets in the Zendesk account
-- **update_ticket**: Update an existing Zendesk ticket
-- **add_ticket_comment**: The comment will be emailed to the requester.
-
-Add a public comment to an existing Zendesk ticket
-- **create_ticket**: Returns the created ticket.
-
-Create a new support ticket in Zendesk
 - **get_current_user**: Get the currently authenticated Zendesk user
-- **get_ticket_comments**: List all comments and replies on a Zendesk ticket
 - **get_ticket**: Retrieves comprehensive details for a specific support ticket
 - **get_user**: Retrieves details for a specific Zendesk user
 - **list_groups**: Lists all support agent groups
 - **list_organizations**: Lists all organizations defined in Zendesk
-- **list_satisfaction_ratings**: Use to monitor support quality.
-
-List customer satisfaction (CSAT) ratings
 - **list_users**: Lists all users (customers and agents) in the Zendesk account
 - **list_views**: g. "Unassigned tickets") and their IDs.
 
@@ -64,6 +53,17 @@ Lists shared and personal ticket views
 - **search_tickets**: Syntax: "type:ticket status:open tags:escalation".
 
 Searches for tickets using the Zendesk search syntax
+- **list_satisfaction_ratings**: Use to monitor support quality.
+
+List customer satisfaction (CSAT) ratings
+- **add_ticket_comment**: The comment will be emailed to the requester.
+
+Add a public comment to an existing Zendesk ticket
+- **create_ticket**: Returns the created ticket.
+
+Create a new support ticket in Zendesk
+- **get_ticket_comments**: List all comments and replies on a Zendesk ticket
+- **update_ticket**: Update an existing Zendesk ticket
 
 
 ## 💬 Prompt Examples
