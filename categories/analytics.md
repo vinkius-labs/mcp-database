@@ -11,6 +11,10 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Accelerator Program Optimizer](../mcps/accelerator-program-optimizer.md) | Optimize accelerator program lengths using startup performance and funding data. |
 | [Agent Benchmark Comparison Engine](../mcps/agent-benchmark-comparison-engine.md) | A deterministic engine for ranking and comparing LLM agents based on performance metrics. |
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
+| [AI Data Preparation Estimator](../mcps/ai-data-preparation-estimator.md) | Calculate data preparation costs, timelines, and quality impact. |
+| [AI Engagement Scoring](../mcps/ai-engagement-scoring.md) | Analyze AI feature engagement, adoption rates, and churn risk. |
+| [AI Feedback Loop Economics](../mcps/ai-feedback-loop-economics.md) | Calculate the costs and ROI of user feedback collection for AI model improvement. |
+| [AI SaaS Token Economics Engine](../mcps/ai-saas-token-economics-engine.md) | Analyze token consumption, feature efficiency, and tier-based costs for AI SaaS platforms. |
 | [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
@@ -20,6 +24,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
+| [Image Generation Economics](../mcps/image-generation-economics.md) | Calculate image generation costs, storage scaling, and quality-cost trade-offs. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
 | [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |
@@ -28,6 +33,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
+| [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
 | [Prompt Reuse Analyzer](../mcps/prompt-reuse-analyzer.md) | Analyze prompt template reuse, efficiency, and standardization opportunities. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |

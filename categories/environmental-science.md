@@ -7,14 +7,19 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [Aluminum Toxicity Risk Assessment](../mcps/aluminum-toxicity-risk-assessment.md) | Assess aluminum toxicity risk in acidic soils and calculate lime requirements. |
 | [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Cover Crop Biomass Predictor](../mcps/cover-crop-biomass-predictor.md) | Predict cover crop biomass, nitrogen content, and optimal termination timing. |
+| [Farm-Gate Nitrogen Balance](../mcps/farm-gate-nitrogen-balance.md) | Calculates whole-farm nitrogen balance, efficiency, and environmental risk indicators. |
+| [GDU Accumulator](../mcps/gdu-accumulator.md) | Predict crop development stages and harvest timing using Growing Degree Units (GDU). |
 | [Groundwater Recharge Estimator](../mcps/groundwater-recharge-estimator.md) | Estimates groundwater recharge and well yield impacts using water balance and mass balance methods. |
+| [Hay Drying Model](../mcps/hay-drying-model.md) | Predicts hay drying rates, baling windows, and rain damage risks. |
 | [Infiltration Rate Estimator](../mcps/infiltration-rate-estimator.md) | Estimates soil infiltration rates and runoff risks using physical soil properties. |
+| [Manure Nutrient Calculator](../mcps/manure-nutrient-calculator.md) | Calculate plant-available nutrients and environmental risks from manure applications. |
 | [No-Till Transition Impact](../mcps/no-till-transition-impact.md) | Models soil health, yield trajectories, and compaction risks during the shift to no-till farming. |
 | [Nutrient Runoff Loss Model](../mcps/nutrient-runoff-loss-model.md) | Simulates nitrogen and phosphorus loss from agricultural fields due to runoff. |
 | [Orchard Frost Protection](../mcps/orchard-frost-protection.md) | Calculate water requirements, mortality risks, and compare frost protection methods. |
 | [Runoff Curve Number Calculator](../mcps/runoff-curve-number-calculator.md) | Calculate surface runoff using the SCS Curve Number method. |
 | [Rye Ergot Risk Predictor](../mcps/rye-ergot-risk-predictor.md) | Predicts ergot contamination risk and economic impact in rye production. |
 | [Sediment Yield Estimator](../mcps/sediment-yield-estimator.md) | Estimates sediment yield from erosion and delivery using USLE and MUSLE models. |
+| [Spray Drift Model](../mcps/spray-drift-model.md) | Estimates pesticide drift distance and risk using agdrift equations. |
 
 
 ---

@@ -18,6 +18,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Buckwheat Milling Yield Predictor](../mcps/buckwheat-milling-yield-predictor.md) | Predicts buckwheat milling yield, nutritional quality, and market value. |
 | [Calf Housing Ventilation Engine](../mcps/calf-housing-ventilation-engine.md) | Calculate ventilation requirements, heating needs, and respiratory risk for calf housing. |
 | [Cation Exchange Capacity Calculator](../mcps/cation-exchange-capacity-calculator.md) | Calculate soil CEC, base saturation, and sodicity risk. |
+| [Cattle Growth Projection](../mcps/cattle-growth-projection.md) | Predictive modeling for cattle weight gain and feed requirements using NRC standards. |
 | [Cattle Working Facility Designer](../mcps/cattle-working-facility-designer.md) | Design cattle handling facilities with precise dimensions, throughput, and pen capacity calculations. |
 | [Cheese Aging & Affinage Calculator](../mcps/cheese-aging-affinage-calculator.md) | Predict cheese weight loss, flavor maturation, and maintenance schedules. |
 | [Cherry Cracking Risk Predictor](../mcps/cherry-cracking-risk-predictor.md) | Predict sweet cherry cracking risk from rainfall events and environmental conditions. |
@@ -32,19 +33,25 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Contour Farming Effectiveness](../mcps/contour-farming-effectiveness.md) | Calculate erosion reduction and ridge stability using USLE P-factor modeling. |
 | [Corn Hybrid Maturity Selector](../mcps/corn-hybrid-maturity-selector.md) | Determine the optimal corn hybrid maturity based on local climate and planting dates. |
 | [Corn Silage Hybrid Selector](../mcps/corn-silage-hybrid-selector.md) | Select optimal corn hybrids for silage based on GDU, soil, and livestock needs. |
+| [Corn Silage Quality Predictor](../mcps/corn-silage-quality-predictor.md) | Predict corn silage quality, moisture, and optimal harvest windows. |
+| [Cotton Deficit Irrigation Optimizer](../mcps/cotton-deficit-irrigation-optimizer.md) | Optimize cotton yield and fiber quality using deficit irrigation strategies. |
 | [Cotton Fiber Quality Predictor](../mcps/cotton-fiber-quality-predictor.md) | Predicts cotton fiber quality metrics and market value from growing conditions. |
+| [Cotton Gin Performance Calculator](../mcps/cotton-gin-performance-calculator.md) | Calculate lint yields, seed weights, and economic revenue for cotton ginning operations. |
 | [Cover Crop Economics Evaluator](../mcps/cover-crop-economics-evaluator.md) | Analyze the financial viability and long-term soil productivity impact of cover cropping. |
 | [Cover Crop Residue Calculator](../mcps/cover-crop-residue-calculator.md) | Calculate residue cover, N content, and erosion protection benefits. |
+| [Cover Crop Selector](../mcps/cover-crop-selector.md) | Select optimal cover crop species based on ecological goals and soil health needs. |
 | [Cranberry Flood Management](../mcps/cranberry-flood-management.md) | Calculate water requirements and frost protection for cranberry beds. |
 | [Crop Rotation Economics](../mcps/crop-rotation-economics.md) | Evaluates the financial and agronomic benefits of crop rotation sequences. |
-| [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
+| [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Optimize agricultural yields and soil health with intelligent crop sequencing. |
 | [Dairy Freestall Dimension Calculator](../mcps/dairy-freestall-dimension-calculator.md) | Calculate precise dairy stall dimensions and assess cow comfort based on breed and design. |
 | [Dairy Lactation Curve Model](../mcps/dairy-lactation-curve-model.md) | Predict dairy cow milk production trajectories using Wood's and Wilmink's mathematical models. |
+| [Dairy Ration Balancer](../mcps/dairy-ration-balancer.md) | Precision dairy nutrition tool for calculating cow nutrient requirements and optimizing feed rations. |
 | [Dairy Somatic Cell Score Analyzer](../mcps/dairy-somatic-cell-score-analyzer.md) | Calculate bulk tank somatic cell count (BTSCC) contributions and quantify mastitis economic impact. |
 | [Double-Crop Economics Analyzer](../mcps/double-crop-economics-analyzer.md) | Evaluate the profitability and feasibility of double-cropping sequences. |
 | [Drainage Coefficient Calculator](../mcps/drainage-coefficient-calculator.md) | Design optimal tile drainage systems by calculating drainage coefficients, spacing, and depth. |
 | [Dry Bean Canning Quality Predictor](../mcps/dry-bean-canning-quality-predictor.md) | Predicts canning yield, texture, and color retention for dry beans. |
 | [Egg Collection & Handling System](../mcps/egg-collection-handling-system.md) | Calculates industrial egg production capacity, collection belt speeds, and labor requirements. |
+| [Ethanol Yield Calculator](../mcps/ethanol-yield-calculator.md) | Calculate ethanol production, co-product yields, and energy/GHG metrics from grain feedstocks. |
 | [Feed Bunk Space Calculator](../mcps/feed-bunk-space-calculator.md) | Calculates feed bunk space requirements and feeding schedules for livestock. |
 | [Feedlot Pen Sizing](../mcps/feedlot-pen-sizing.md) | Calculate precise feedlot pen dimensions, infrastructure needs, and performance impacts. |
 | [Fertilizer Calculator](../mcps/fertilizer-calculator.md) | Calculate precise NPK requirements and optimized fertilizer blends. |
@@ -54,12 +61,16 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Flaxseed Lignan Predictor](../mcps/flaxseed-lignan-predictor.md) | Predicts flaxseed SDG content, oil, and protein levels based on environmental and genetic data. |
 | [Forestry Board Foot Calculator](../mcps/forestry-board-foot-calculator.md) | Deterministic timber volume and basal area calculator for forestry professionals. |
 | [Goat Milk Composition Model](../mcps/goat-milk-composition-model.md) | Predict goat milk yield, nutritional composition, and cheese potential. |
+| [Grain Bin Capacity & Aeration](../mcps/grain-bin-capacity-aeration.md) | Calculate grain storage capacity, pile height, and aeration requirements for round bins. |
+| [Grain Drying Calculator](../mcps/grain-drying-calculator.md) | Calculate grain drying time, energy needs, and mass shrinkage. |
+| [Grain Moisture & Shrinkage Calculator](../mcps/grain-moisture-shrinkage-calculator.md) | Calculate grain weight loss, water evaporation, and handling shrinkage. |
 | [Grass Hay Quality Predictor](../mcps/grass-hay-quality-predictor.md) | Predict nutritional profiles and dairy performance from hay maturity and harvest conditions. |
 | [Grass Seed Yield Components](../mcps/grass-seed-yield-components.md) | Calculate grass seed yield and lodging risk factors. |
 | [Grazing Paddock Rotation Scheduler](../mcps/grazing-paddock-rotation-scheduler.md) | Design optimal rotational grazing schedules by balancing herd size and pasture growth. |
 | [Greenhouse Climate & Energy Modeler](../mcps/greenhouse-climate-energy-modeler.md) | Calculate greenhouse heat loss, energy costs, and ventilation needs. |
 | [Hanami Bloom Forecast](../mcps/hanami-bloom-forecast.md) | Predict Japanese cherry blossom (Sakura) bloom dates using thermal degree day accumulation. |
 | [Harvest Loss Calculator](../mcps/harvest-loss-calculator.md) | Quantify physical and financial grain losses during harvest. |
+| [Harvest Loss Estimator](../mcps/harvest-loss-estimator.md) | Quantify grain harvest losses and get machine adjustment recommendations. |
 | [Haylage Fermentation Quality Predictor](../mcps/haylage-fermentation-quality-predictor.md) | Predict haylage fermentation quality, pH, and stability from harvest parameters. |
 | [Hemp Fiber Quality Predictor](../mcps/hemp-fiber-quality-predictor.md) | Predicts hemp fiber quality, yield, and industrial suitability from plant growth data. |
 | [Hop Alpha Acid Degradation Predictor](../mcps/hop-alpha-acid-degradation-predictor.md) | Predict alpha acid degradation and optimize hop storage conditions. |
@@ -77,9 +88,11 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Laying Hen Egg Production Model](../mcps/laying-hen-egg-production-model.md) | Models laying hen egg production curves using the Adams-Bell model. |
 | [Lentil Splitting Yield Predictor](../mcps/lentil-splitting-yield-predictor.md) | Predicts lentil splitting yield, breakage, and cooking performance. |
 | [Lettuce Tipburn Predictor](../mcps/lettuce-tipburn-predictor.md) | Predict tipburn risk in lettuce by modeling calcium transport and growth dynamics. |
-| [Lime Requirement Calculator](../mcps/lime-requirement-calculator.md) | Calculate precise limestone dosage and total application costs using base saturation and SMP buffer methods. |
+| [Lime Requirement Calculator](../mcps/lime-requirement-calculator.md) | Calculate precise limestone requirements and application costs based on soil properties. |
 | [Livestock Shelter Design](../mcps/livestock-shelter-design.md) | Calculates livestock shelter dimensions, windbreak requirements, and economic payback. |
+| [Livestock Water Requirement Engine](../mcps/livestock-water-requirement-engine.md) | Calculate precise daily water needs, peak flow, and storage for livestock. |
 | [Livestock Waterer Planner](../mcps/livestock-waterer-planner.md) | Calculate waterer space, flow rates, and freezing risks for livestock systems. |
+| [Machinery Capacity Planner](../mcps/machinery-capacity-planner.md) | Calculate field capacity, completion probability, and machinery economics. |
 | [Machinery Ownership vs Custom Hire](../mcps/machinery-ownership-vs-custom-hire.md) | Evaluate the economic viability of owning agricultural machinery versus hiring custom operators. |
 | [Manure Storage Sizing](../mcps/manure-storage-sizing.md) | Calculate manure storage dimensions and nutrient production. |
 | [Maple Syrup Production Engine](../mcps/maple-syrup-production-engine.md) | Predict syrup yields, boiling times, and production costs. |
@@ -95,13 +108,17 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Oats Milling Quality Calculator](../mcps/oats-milling-quality-calculator.md) | Calculate oat milling yield, nutritional quality, and product suitability. |
 | [Olive Oil Extraction Yield & Quality Predictor](../mcps/olive-oil-extraction-yield-quality-predictor.md) | Predict olive oil yield, extraction loss, and chemical quality risks based on fruit characteristics and malaxing conditions. |
 | [Papaya Harvest & Ripening Predictor](../mcps/papaya-harvest-ripening-predictor.md) | Predict papaya harvest windows and post-harvest ripening trajectories. |
+| [Pasture Carrying Capacity](../mcps/pasture-carrying-capacity.md) | Calculate stocking rates and rotational grazing schedules for livestock management. |
 | [Pasture Growth Rate Model](../mcps/pasture-growth-rate-model.md) | Simulate pasture biomass accumulation and grazing capacity based on environmental drivers. |
 | [Peppermint Oil Composition Predictor](../mcps/peppermint-oil-composition-predictor.md) | Predict chemical composition and economic value of peppermint oil. |
+| [Pesticide Application Rate Calculator](../mcps/pesticide-application-rate-calculator.md) | Calculate precise pesticide dosages, sprayer settings, and tank mix compatibility. |
 | [Pesticide Dilution Calculator](../mcps/pesticide-dilution-calculator.md) | Calculate precise pesticide dilution, tank loads, and safety intervals. |
 | [Phosphorus Sorption Model](../mcps/phosphorus-sorption-model.md) | Models phosphorus adsorption behavior and calculates fertilizer requirements based on soil properties. |
 | [Pistachio Blank Percentage Estimator](../mcps/pistachio-blank-percentage-estimator.md) | Predicts empty pistachio nut percentages and provides agricultural recommendations. |
 | [Pistachio Split Percentage Estimator](../mcps/pistachio-split-percentage-estimator.md) | Predict nut shell splitting, kernel quality, and harvest timing. |
+| [Pivot Irrigation Designer](../mcps/pivot-irrigation-designer.md) | Design optimized center pivot irrigation systems based on field and water constraints. |
 | [Plant Population Calculator](../mcps/plant-population-calculator.md) | Calculate seed density and evaluate planting success against industry standards. |
+| [Planting Density Optimizer](../mcps/planting-density-optimizer.md) | Optimize plant spacing and population per hectare based on crop needs and environmental constraints. |
 | [Planting Window Calculator](../mcps/planting-window-calculator.md) | Determine optimal planting windows, insurance deadlines, and climate risks for crops. |
 | [Pond Siting Evaluator](../mcps/pond-siting-evaluator.md) | Analyze pond site suitability using hydrologic and geological data. |
 | [Potassium Fixation Estimator](../mcps/potassium-fixation-estimator.md) | Estimates potassium fixation and availability based on soil mineralogy. |
@@ -112,17 +129,22 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Quinoa Saponin Removal Calculator](../mcps/quinoa-saponin-removal-calculator.md) | Calculate processing requirements, economic impact, and quality for quinoa saponin removal. |
 | [Rabbit Production Modeler](../mcps/rabbit-production-modeler.md) | Simulates rabbit growth, mortality, and reproductive efficiency. |
 | [Residue Management Calculator](../mcps/residue-management-calculator.md) | Calculate soil residue cover, seasonal decay, and erosion protection effectiveness. |
+| [Rice Drying Cost & Optimization](../mcps/rice-drying-cost-optimization.md) | Calculate drying costs, energy use, and optimize temperature for rice quality. |
 | [Riparian Buffer Designer](../mcps/riparian-buffer-designer.md) | Design science-based riparian buffer systems for water quality and habitat protection. |
 | [Safflower Yield Predictor](../mcps/safflower-yield-predictor.md) | Predicts safflower petal and seed yields and optimizes harvest timing. |
 | [Sake Seimai Buai Calculator](../mcps/sake-seimai-buai-calculator.md) | Calculate rice milling yields, milling duration, sake grades, and fermentation water requirements. |
+| [Seed Germination Predictor](../mcps/seed-germination-predictor.md) | Predict seed germination success and emergence timing using thermal time models. |
 | [Seed Spacing Grid Planner](../mcps/seed-spacing-grid-planner.md) | Generate precise planting layouts with exact coordinates and capacity limits. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Seed Vigor Index Calculator](../mcps/seed-vigor-index-calculator.md) | Calculates seed vigor indices and assesses certification status from germination data. |
 | [Sheep Wool Quality Predictor](../mcps/sheep-wool-quality-predictor.md) | Predict wool quality, grade, and economic value based on sheep breed and physical characteristics. |
 | [Shrimp Feed & Growth Modeler](../mcps/shrimp-feed-growth-modeler.md) | Predictive modeling for shrimp growth, feed requirements, and survival risk. |
+| [Silage Storage Calculator](../mcps/silage-storage-calculator.md) | Plan optimal silage storage volumes and dimensions for bunker, bag, and tower silos. |
 | [Sodicity Hazard Evaluator](../mcps/sodicity-hazard-evaluator.md) | Assess soil degradation risks and calculate gypsum requirements for sodic soil reclamation. |
 | [Soil Compaction & Bulk Density Modeler](../mcps/soil-compaction-bulk-density-modeler.md) | Predict soil compaction, porosity loss, and yield impact from machinery traffic. |
+| [Soil Compaction Predictor](../mcps/soil-compaction-predictor.md) | Predict soil compaction risk, rut depth, and yield loss from machinery traffic. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
+| [Soil Erosion Calculator](../mcps/soil-erosion-calculator.md) | Estimates soil loss using USLE/RUSLE2 models and provides conservation advice. |
 | [Soil Organic Matter Model](../mcps/soil-organic-matter-model.md) | Predictive modeling for soil organic matter dynamics and carbon sequestration. |
 | [Soil pH & Buffer Capacity Calculator](../mcps/soil-ph-buffer-capacity-calculator.md) | Calculate soil buffer capacity and precise limestone requirements. |
 | [Soil pH Amendment Calculator](../mcps/soil-ph-amendment-calculator.md) | Calculate precise soil amendment amounts and costs based on soil type and pH targets. |
@@ -130,8 +152,10 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Soil Texture Classifier](../mcps/soil-texture-classifier.md) | Classifies soil texture using the USDA soil texture triangle based on particle size distribution. |
 | [Soil Water Holding Capacity Calculator](../mcps/soil-water-holding-capacity-calculator.md) | Calculate soil water retention, field capacity, and available water storage. |
 | [Sorghum Tannin Content Calculator](../mcps/sorghum-tannin-content-calculator.md) | Predict tannin levels and nutritional impact in sorghum grains. |
+| [Soybean Cyst Nematode Risk Assessment](../mcps/soybean-cyst-nematode-risk-assessment.md) | Models SCN population growth and predicts soybean yield loss. |
 | [Soybean Seed Quality Predictor](../mcps/soybean-seed-quality-predictor.md) | Predict soybean seed viability and storage safety windows using environmental stress models. |
 | [Spelt Hulling Efficiency Engine](../mcps/spelt-hulling-efficiency-engine.md) | Calculate dehulling yield, kernel breakage, and processing economics for spelt grain. |
+| [Sugarcane Ripening Scheduler](../mcps/sugarcane-ripening-scheduler.md) | Predict sucrose accumulation and optimize harvest windows for sugarcane crops. |
 | [Sugarcane Trash Management](../mcps/sugarcane-trash-management.md) | Calculate economic and agronomic impacts of sugarcane residue management. |
 | [Sunflower Hybrid Selector](../mcps/sunflower-hybrid-selector.md) | Select optimal sunflower hybrids using multi-criteria analysis of yield, oil, and disease resistance. |
 | [Sunflower Oil Fatty Acid Profiler](../mcps/sunflower-oil-fatty-acid-profiler.md) | Predicts sunflower oil fatty acid composition and oxidative stability based on cultivar type and agronomic conditions. |
@@ -149,6 +173,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Vineyard Yield Estimator](../mcps/vineyard-yield-estimator.md) | Predict grape yields and harvest timelines using phenological models. |
 | [Water Quality Index Calculator](../mcps/water-quality-index-calculator.md) | Assess water safety for irrigation and livestock using chemical analysis. |
 | [Wheat Dough Strength Predictor](../mcps/wheat-dough-strength-predictor.md) | Predict wheat dough quality and baking suitability from protein and environmental data. |
+| [Wheat Protein Predictor](../mcps/wheat-protein-predictor.md) | Predict wheat grain protein content and optimize nitrogen application for maximum profit. |
 | [Wine Blending Optimization](../mcps/wine-blending-optimization.md) | Calculate ideal wine proportions to meet chemical targets and budget constraints. |
 | [Wine Bottling & Filling Calculator](../mcps/wine-bottling-filling-calculator.md) | Calculate production timelines, material needs, and unit costs for wine bottling lines. |
 | [Wine Brettanomyces Growth Model](../mcps/wine-brettanomyces-growth-model.md) | Predictive modeling for Brettanomyces yeast growth and volatile phenol production in wine. |

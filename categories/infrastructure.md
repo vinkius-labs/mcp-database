@@ -7,6 +7,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Agent Load Balancer Calculator](../mcps/agent-load-balancer-calculator.md) | Deterministic load balancing engine for distributing request rates across agent instances. |
 | [Agent Rate Limiter Calculator](../mcps/agent-rate-limiter-calculator.md) | Deterministic distributed rate limiting for agentic workloads. |
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
+| [AI App Rate Limiting Economics](../mcps/ai-app-rate-limiting-economics.md) | Calculate the economic impact of rate-limiting strategies on AI infrastructure and revenue. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |
 | [AWS API Gateway Throttling Calculator](../mcps/aws-api-gateway-throttling-calculator.md) | Calculate AWS API Gateway RPS, burst capacity, quotas, and operational limits. |
 | [AWS Auto Scaling Group Capacity Calculator](../mcps/aws-auto-scaling-group-capacity-calculator.md) | Calculate exact instance requirements and scaling thresholds for AWS Auto Scaling Groups. |
@@ -41,6 +42,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Rate Limiter State Calculator](../mcps/rate-limiter-state-calculator.md) | Deterministic engine for evaluating Token Bucket, Leaky Bucket, and sliding window rate limiting states. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
 | [SNS Fanout & Filtering Calculator](../mcps/sns-fanout-filtering-calculator.md) | Calculate AWS SNS fanout, throughput, and filter policy complexity. |
+| [Voice AI Economics Calculator](../mcps/voice-ai-economics-calculator.md) | Calculate voice AI integration costs, infrastructure needs, and UX value. |
 | [vpc-cidr-calculator](../mcps/vpc-cidr-calculator.md) | Deterministic AWS VPC CIDR and subnet layout generator. |
 | [WebSocket Capacity Planner](../mcps/websocket-capacity-planner.md) | Estimate WebSocket connection limits, server fleet requirements, and network overhead. |
 

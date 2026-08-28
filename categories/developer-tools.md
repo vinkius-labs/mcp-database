@@ -24,6 +24,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
 | [Agify](../mcps/agify.md) | Predict the age of a person based on their first name using the Agify.io API. |
 | [Agility CMS](../mcps/agility-cms.md) | Manage and query your Agility CMS content through AI — navigate sitemaps, search lists, and fetch layouts. |
+| [AI Tool-Calling Economics Engine](../mcps/ai-tool-calling-economics-engine.md) | Quantify the cost and latency impact of AI agent tool-calling workflows. |
 | [Allnodes (Staking and Web3 Hosting API)](../mcps/allnodes-staking-and-web3-hosting-api.md) | Manage staking, validators, and Web3 hosting infrastructure directly from any AI agent via Allnodes. |
 | [Ankr (Web3 Node API)](../mcps/ankr-web3-node-api.md) | Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains. |
 | [ANOVA Calculator Engine](../mcps/anova-calculator-engine.md) | Run exact One-Way ANOVA tests to compare means across multiple groups local. Get CPU-guaranteed F-scores and p-values, not LLM guesses. |

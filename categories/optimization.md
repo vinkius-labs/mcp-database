@@ -8,6 +8,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Agent Memory Hierarchy Calculator](../mcps/agent-memory-hierarchy-calculator.md) | Deterministic memory management for agentic memory tiers. |
 | [Agent Memory Tier Calculator](../mcps/agent-memory-tier-calculator.md) | Deterministic memory management engine for agentic memory hierarchies. |
 | [Agent Tool Selection Router](../mcps/agent-tool-selection-router.md) | A deterministic engine for selecting and sequencing optimal tools for AI agents. |
+| [AI Model Selection ROI Engine](../mcps/ai-model-selection-roi-engine.md) | Calculate and compare the ROI of different AI models based on cost, performance, and maintenance. |
 | [Animation Frame Timing & Memory Calculator](../mcps/animation-frame-timing-memory-calculator.md) | Calculate animation duration, memory footprint, and optimization potential for skeletal animations. |
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
@@ -16,6 +17,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify overlapping N-grams across RAG documents to calculate redundancy and byte-size savings. |
 | [Context Window Compression Calculator](../mcps/context-window-compression-calculator.md) | Mathematically model token reduction strategies and quality trade-offs. |
+| [Context Window Economics Optimizer](../mcps/context-window-economics-optimizer.md) | Calculate the financial and performance impact of LLM context management strategies. |
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Glass Cutting Optimizer](../mcps/glass-cutting-optimizer.md) | Deterministic 2D guillotine-style cutting optimizer for industrial glass fabrication. |

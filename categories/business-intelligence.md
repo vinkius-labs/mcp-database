@@ -16,6 +16,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [Accelerator Studio Idea Validation](../mcps/accelerator-studio-idea-validation.md) | Quantitatively assess startup idea viability using market, team, and empirical data. |
 | [Accelerator Time-to-Market](../mcps/accelerator-time-to-market.md) | Quantify the impact of acceleration on time-to-market and market opportunity. |
 | [Aha!](../mcps/aha.md) | Product roadmapping and strategy — manage features, ideas, and strategic goals via AI. |
+| [AI Feature Retention Analyzer](../mcps/ai-feature-retention-analyzer.md) | Quantify the impact of AI features on user retention and ROI. |
 | [Arbox](../mcps/arbox.md) | Manage members, schedule, coaches, leads, payments, and CRM for your Arbox-powered fitness studio through natural conversation. |
 | [AskNicely](../mcps/asknicely.md) | Manage customer experience and NPS surveys with AskNicely — track responses and audit sentiment via AI. |
 | [DecileHub](../mcps/decilehub.md) | Segment your customers by value and behavior with predictive analytics that reveal your most profitable audience segments. |

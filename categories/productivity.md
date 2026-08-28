@@ -133,6 +133,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [BR Business Days Calculator](../mcps/br-business-days-calculator.md) | Stop LLMs from calculating SLAs incorrectly. An local, deterministic engine that adds business days while perfectly avoiding weekends and Brazilian national holidays. |
 | [Bread Fermentation Calculator](../mcps/bread-fermentation-calculator.md) | Deterministic scheduling for bread fermentation timing and temperature. |
 | [Break-even Price Calculator](../mcps/break-even-price-calculator.md) | Calculate commodity break-even prices, margin targets, and productivity requirements. |
+| [Breakeven Yield Calculator](../mcps/breakeven-yield-calculator.md) | Calculate critical break-even yield and price thresholds for crop production. |
 | [Breakthrough Ideation Prover](../mcps/breakthrough-ideation-prover.md) | AI agents default to safe, obvious ideas or hallucinate impossible ones. This tool forces breakthrough ideation: challenge convention with facts, integrate real constraints, map a concrete roadmap, and prove feasibility for every blocker. Radical AND realizable. |
 | [Breezy HR](../mcps/breezy-hr.md) | Manage your recruitment process via Breezy HR — track candidates, positions, and stages directly from any AI agent. |
 | [Breezy HR](../mcps/breezy-hr-alternative.md) | Manage recruitment workflows via Breezy HR — list companies, track job positions, and manage candidates directly from any AI agent. |
@@ -308,6 +309,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DocRaptor](../mcps/docraptor.md) | Convert HTML to professional PDFs and Excel spreadsheets using the high-quality Prince XML engine. |
 | [DocsGenFlow](../mcps/docsgenflow.md) | Create documents automatically from templates with merge fields that pull data from your systems and generate polished output. |
 | [Doctolib](../mcps/doctolib.md) | Manage medical appointments via Doctolib — search practitioners by specialty and city, track availabilities, and book consultations directly from any AI agent. |
+| [Document AI Economics Modeler](../mcps/document-ai-economics-modeler.md) | Calculate unit economics and total cost of ownership for AI document processing workflows. |
 | [Document Paginator Engine](../mcps/document-paginator-engine.md) | Mathematically slice massive text blocks into token-safe chunks without ever truncating critical sentences. |
 | [Documint](../mcps/documint.md) | Equip your AI agent to automate document generation, manage templates, and track output files via the Documint API. |
 | [Documo](../mcps/documo.md) | Equip your AI agent to manage digital faxes, track fax numbers, and monitor transmissions via the Documo API. |
