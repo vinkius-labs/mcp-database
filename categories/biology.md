@@ -6,6 +6,7 @@ Explore the open database of **biology** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Heat Cycle Tracker](../mcps/heat-cycle-tracker.md) | Predict reproductive cycles and fertile windows for unspayed animals based on breed data. |
 | [Litter Size Estimator](../mcps/litter-size-estimator.md) | Predict puppy litter sizes based on breed and physical size. |
+| [PCR Protocol Optimizer](../mcps/pcr-protocol-optimizer.md) | Calculates optimal PCR parameters including annealing temperature, extension time, and reagent concentrations. |
 | [Tilapia Growth & Thermal Modeling](../mcps/tilapia-growth-thermal-modeling.md) | Predictive modeling for tilapia growth, feed efficiency, and survival based on thermal profiles. |
 
 

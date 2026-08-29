@@ -4,6 +4,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Adsorption Isotherm Fitting](../mcps/adsorption-isotherm-fitting.md) | Mathematical modeling for adsorption isotherms including Langmuir and Freundlich models. |
 | [Agent Consensus & Voting Engine](../mcps/agent-consensus-voting-engine.md) | Deterministic multi-agent consensus and voting calculator. |
 | [Agent Resource Contention Calculator](../mcps/agent-resource-contention-calculator.md) | High-precision queueing theory calculator for multi-agent system performance. |
 | [Ahnentafel Generator](../mcps/ahnentafel-generator.md) | Generate deterministic ancestor numbering and relationship paths using the Ahnentafel system. |
@@ -25,6 +26,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
 | [Matrix Math and Linear Algebra Solver](../mcps/matrix-math-and-linear-algebra-solver.md) | Perform precise matrix operations like addition, multiplication, and inversion. |
 | [Mesh Geometry Calculator](../mcps/mesh-geometry-calculator.md) | Perform advanced geometric and topological analysis on 3D triangle meshes. |
+| [Metabolic Flux Analysis](../mcps/metabolic-flux-analysis.md) | Perform Flux Balance Analysis to quantify metabolic flows and identify limiting reactions. |
 | [Minimum Spanning Tree Calculator](../mcps/minimum-spanning-tree-calculator.md) | Calculate Minimum and Maximum Spanning Trees using Kruskal's and Prim's algorithms. |
 | [Musical Tempo Delay Calculator](../mcps/musical-tempo-delay-calculator.md) | Calculate precise millisecond delays for musical note durations at constant or ramping tempos. |
 | [Network Flow Calculator](../mcps/network-flow-calculator.md) | Solve maximum flow, minimum cut, and bipartite matching problems using Edmonds-Karp. |

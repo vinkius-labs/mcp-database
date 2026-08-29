@@ -7,6 +7,7 @@ Explore the open database of **quality-assurance** Model Context Protocol (MCP) 
 | [Agent Quality Gate Calculator](../mcps/agent-quality-gate-calculator.md) | A deterministic engine for calculating quality scores, approval decisions, and operational costs for AI agent outputs. |
 | [Chatbot Dialogue Consistency Checker](../mcps/chatbot-dialogue-consistency-checker.md) | Audit chatbot scripts for linguistic stability, persona adherence, and conversational quality. |
 | [Coverage Gate Evaluator](../mcps/coverage-gate-evaluator.md) | Enforce strict code coverage thresholds using deterministic integer math. |
+| [Failure Analysis Methodology](../mcps/failure-analysis-methodology.md) | A systematic framework for diagnosing component failures through environmental, visual, and mechanical analysis. |
 | [FAQ Clarity Analyzer](../mcps/faq-clarity-analyzer.md) | Audit FAQ content for naturalness, complexity, and readability consistency. |
 | [Guardrail Violation Detector](../mcps/guardrail-violation-detector.md) | Analyzes AI agent outputs for safety and compliance violations. |
 

@@ -30,6 +30,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [JobNimbus](../mcps/jobnimbus.md) | Manage contacts, jobs, and tasks via JobNimbus CRM API. |
 | [Lumber Quantity Calculator](../mcps/lumber-quantity-calculator.md) | Estimate board feet of lumber needed for wall, floor, and roof framing. |
 | [Masonry Quantity Calculator](../mcps/masonry-quantity-calculator.md) | Calculate the number of masonry units, mortar volume, and required cement and sand for wall construction. |
+| [Paint & Coating Calculator](../mcps/paint-coating-calculator.md) | Calculate theoretical and practical coverage, material waste, and coating requirements. |
 | [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
 | [Plumbing Pipe Sizing](../mcps/plumbing-pipe-sizing.md) | Deterministic water supply pipe sizing based on IPC and Hunter's Curve. |
