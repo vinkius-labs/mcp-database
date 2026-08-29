@@ -39,24 +39,24 @@ Connect your AI agent to the **Binance** public API and take full control of you
 - **compare_coins**: A bare ticker defaults to USDT.
 
 Compare multiple cryptocurrencies side by side — price, 24h change, volume, and relative performance
-- **get_price**: For full stats, use get_ticker.
-
-Get the current price of a cryptocurrency plus its 24h change. Use for "how much is X?" or "what is the price of Y?"
-- **get_candles**: Intervals: 1m,5m,15m,30m,1h,4h,1d,1w. Limit 1-100 (default 30).
-
-Get OHLCV candlestick data for a crypto pair over time. Use for charts or analyzing price movement across a period
 - **get_ticker**: For a quick price only, use get_price.
 
 Get full 24h statistics for a crypto pair: price, high, low, volume, trade count, VWAP and change. Use when a plain price is not enough
+- **get_candles**: Intervals: 1m,5m,15m,30m,1h,4h,1d,1w. Limit 1-100 (default 30).
+
+Get OHLCV candlestick data for a crypto pair over time. Use for charts or analyzing price movement across a period
+- **get_price**: For full stats, use get_ticker.
+
+Get the current price of a cryptocurrency plus its 24h change. Use for "how much is X?" or "what is the price of Y?"
+- **get_volatility**: Default interval=1h, periods=24.
+
+Analyze price volatility and trend for a coin over recent candles: amplitude, direction and bull/bear ratio. Use for "how risky/volatile is X?"
 - **list_market**: Limit 1-50 (default 10). For gainers/losers, use list_movers.
 
 List the top crypto coins by 24h trading volume. Use for market overviews, "top coins", or "most traded coins"
 - **list_movers**: Limit 1-20 per direction (default 5).
 
 Get the top gaining and/or losing cryptocurrencies on Binance in the last 24 hours
-- **get_volatility**: Default interval=1h, periods=24.
-
-Analyze price volatility and trend for a coin over recent candles: amplitude, direction and bull/bear ratio. Use for "how risky/volatile is X?"
 
 
 ## 💬 Prompt Examples

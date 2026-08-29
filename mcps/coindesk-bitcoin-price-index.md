@@ -34,12 +34,12 @@ Equip your AI agent with real-time cryptocurrency intelligence through the **Coi
 ## Available Tools (8)
 - **get_bitcoin_price_eur**: Get the current Bitcoin index price in EUR
 - **get_bitcoin_price_custom**: Get the current Bitcoin index price in a supported fiat currency
+- **get_bitcoin_price_gbp**: Get the current Bitcoin index price in GBP
+- **get_bitcoin_price_global**: Get the current Bitcoin index price in USD, GBP, and EUR
+- **list_supported_currencies**: List supported Bitcoin index quote currencies
+- **get_bitcoin_price_usd**: Get the current Bitcoin index price in USD
 - **get_coindesk_disclaimer**: Get the CoinDesk Data API usage disclaimer
 - **get_latest_update_time**: Get the latest CoinDesk Bitcoin index update time
-- **get_bitcoin_price_gbp**: Get the current Bitcoin index price in GBP
-- **get_bitcoin_price_usd**: Get the current Bitcoin index price in USD
-- **list_supported_currencies**: List supported Bitcoin index quote currencies
-- **get_bitcoin_price_global**: Get the current Bitcoin index price in USD, GBP, and EUR
 
 
 ## 💬 Prompt Examples
