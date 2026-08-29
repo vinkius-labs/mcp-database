@@ -15,10 +15,10 @@ This MCP server provides specialized tools for water quality assessment. It allo
 
 ## Available Tools (4)
 - **calculate_wqi**: Determines the overall Water Quality Index based on provided analytical measurements
-- **classify_hardness**: Categorizes the hardness level of a water sample
 - **assess_compliance**: g., drinking_water or wastewater).
 
 Evaluates if a water sample meets the regulatory requirements for a specific use
+- **classify_hardness**: Categorizes the hardness level of a water sample
 - **get_parameter_summary**: Provides a high-level overview of the chemical state of the water sample
 
 
