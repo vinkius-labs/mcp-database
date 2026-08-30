@@ -35,25 +35,25 @@ No exporting CSVs or navigating XML trees manually. When a customer complains ab
 
 
 ## Available Tools (10)
-- **list_orders**: Limits response arrays via bounds (e.g., `0,20`). Critical for scanning recent sales history mapped directly against specific customer IDs.
-
-List PrestaShop active orders retrieving order references, current fulfillment statuses, and totals
-- **get_order**: Maps raw Webservice XML nodes into consumable arrays.
-
-Get PrestaShop nested order by explicit ID, tracing line items, billing/shipping boundaries, and payment success paths
 - **list_customers**: Limits response arrays via bounds (e.g., `0,20`). Maps basic CRM points for subsequent order correlations.
 
 List PrestaShop customers tracking emails, first and last names, and account creation dates
-- **list_categories**: List all PrestaShop root and child categories dictating store navigation geometry
 - **list_addresses**: Limits response arrays via bounds (e.g., `0,20`). Used to analyze spatial destination data linked implicitly to customers and orders.
 
 List physical PrestaShop customer/order addresses mapping delivery logistics lines
-- **get_stock**: Get PrestaShop specific stock quantity node explicitly by constrained resource ID
+- **list_categories**: List all PrestaShop root and child categories dictating store navigation geometry
 - **list_currencies**: List all active currencies configured and accepted implicitly within the target store interface
+- **get_order**: Maps raw Webservice XML nodes into consumable arrays.
+
+Get PrestaShop nested order by explicit ID, tracing line items, billing/shipping boundaries, and payment success paths
+- **get_stock**: Get PrestaShop specific stock quantity node explicitly by constrained resource ID
+- **list_orders**: Limits response arrays via bounds (e.g., `0,20`). Critical for scanning recent sales history mapped directly against specific customer IDs.
+
+List PrestaShop active orders retrieving order references, current fulfillment statuses, and totals
+- **get_product**: Get an individual PrestaShop product by ID, returning full pricing, descriptions, and category associations
 - **list_products**: Use the `limit` parameter string to bound results (e.g., `0,20`). Native XML responses are parsed and converted to structured arrays.
 
 List PrestaShop products with full details, retrieving items from the open-source eCommerce catalog
-- **get_product**: Get an individual PrestaShop product by ID, returning full pricing, descriptions, and category associations
 - **list_stock**: Resolves specific stock trace items which dictate the physical inventory logic overriding standard product rules.
 
 List PrestaShop available stock quantities mapping exact units over specific complex item structures

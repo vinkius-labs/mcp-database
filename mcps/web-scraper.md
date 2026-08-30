@@ -33,27 +33,27 @@ Connect the **Web Scraper** utility to any AI agent to give it direct access to 
 
 
 ## Available Tools (7)
-- **read**: Uses @mozilla/readability (Firefox Reader View) to extract the main article content, then converts to Markdown. Works best for articles, docs, blogs, and Wikipedia.
+- **read**: Example: {"url": "https://example.com"}. For multiple pages, use batch_read.
 
-Fetch any public web page and return its full content as clean Markdown
-- **extract**: Returns: title, description, OG tags, lang, author, robots, canonical, link count. For the full page content, use the read tool instead.
+Read a single web page and return its content
+- **extract**: Example: {"url": "https://example.com"}. For full content, use read.
 
-Extract structured metadata from a web page: title, description, OG tags, and more
-- **list_links**: Internal links share the same hostname as the source page.
+Extract page metadata: title, description, OG tags, lang, author, and more
+- **crawl**: Example: {"url": "https://docs.example.com", "max_pages": 5}. For a single page, use read.
 
-Extract all hyperlinks from a web page
-- **read_json**: json file, or any URL that returns structured JSON data.
+Crawl a website starting from a URL and return 2+ pages
+- **read_json**: Example: {"url": "https://api.example.com/data"}.
 
-Fetch and parse a JSON response from a URL
-- **extract_jsonld**: org markup) from a web page.
+Fetch and return raw JSON from a URL
+- **extract_jsonld**: org structured data from a page. Example: {"url": "https://example.com"}.
 
-Extract JSON-LD blocks from a web page
-- **batch_read**: All URLs are fetched in parallel. Maximum 10 URLs per batch.
+Extract JSON-LD structured data from a page
+- **batch_read**: Example: {"url": ["https://a.com", "https://b.com"]}. For a single page, use read.
 
-Fetch multiple web pages in parallel
-- **crawl**: Maximum 10 pages to keep response size manageable.
+Read multiple pages in one call
+- **list_links**: Example: {"url": "https://example.com"}.
 
-Crawl a website starting from a URL
+Extract all links from a page
 
 
 ## 💬 Prompt Examples

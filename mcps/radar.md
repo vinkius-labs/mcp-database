@@ -33,14 +33,14 @@ Integrate **Radar** with an AI agent to bring enterprise-level location intellig
 
 
 ## Available Tools (10)
-- **search_geofences**: Searches for active geofences near a specific location
 - **autocomplete**: Provides address or place suggestions as a user types
+- **ip_geocode**: Retrieves geographic location information based on an IP address
+- **reverse_geocode**: Converts geographic coordinates into a human-readable address
 - **calculate_route_distance**: Calculates travel distance and duration between two points
 - **calculate_routing_matrix**: Calculates travel times and distances between multiple origins and destinations
 - **forward_geocode**: Converts a human-readable address into geographic coordinates (latitude and longitude)
 - **get_location_context**: Retrieves contextual information for a location, such as geofences and weather
-- **ip_geocode**: Retrieves geographic location information based on an IP address
-- **reverse_geocode**: Converts geographic coordinates into a human-readable address
+- **search_geofences**: Searches for active geofences near a specific location
 - **search_places**: Searches for nearby places (POIs) based on coordinates
 - **validate_address**: Validates and cleans up a structured address
 

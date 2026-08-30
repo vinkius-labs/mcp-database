@@ -36,28 +36,28 @@ Unlock the full power of **OpenRouteService** from a single conversation. Calcul
 
 
 ## Available Tools (10)
-- **calculate_isochrones**: Range values are seconds for time-based isochrones.
-
-Generate reachable areas around one or more coordinates
-- **calculate_directions**: Supported profiles include driving-car, cycling-regular, foot-walking, and wheelchair.
-
-Calculate a route between two or more coordinates
 - **get_elevation_line**: For polyline, provide the encoded polyline string as JSON.
 
 Return elevation values along a line
-- **solve_vrp_optimization**: Solve a vehicle routing problem with jobs and vehicles
+- **reverse_geocode**: Reverse geocode longitude and latitude into an address
+- **calculate_matrix**: Unreachable pairs may be null.
+
+Calculate a duration matrix between multiple locations
+- **geocode_search**: Search an address or place with OpenRouteService geocoding
+- **snap_gps_to_road**: Snap GPS coordinates to the nearest road network
+- **calculate_directions**: Supported profiles include driving-car, cycling-regular, foot-walking, and wheelchair.
+
+Calculate a route between two or more coordinates
+- **calculate_isochrones**: Range values are seconds for time-based isochrones.
+
+Generate reachable areas around one or more coordinates
 - **get_ors_status**: This is not an optimization job status.
 
 Check OpenRouteService API status
 - **search_country_boundary**: country filtering with a two-letter ISO country code.
 
 Search places constrained to an ISO country code
-- **reverse_geocode**: Reverse geocode longitude and latitude into an address
-- **geocode_search**: Search an address or place with OpenRouteService geocoding
-- **calculate_matrix**: Unreachable pairs may be null.
-
-Calculate a duration matrix between multiple locations
-- **snap_gps_to_road**: Snap GPS coordinates to the nearest road network
+- **solve_vrp_optimization**: Solve a vehicle routing problem with jobs and vehicles
 
 
 ## 💬 Prompt Examples

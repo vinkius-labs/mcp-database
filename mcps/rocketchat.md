@@ -34,17 +34,17 @@ Connect your conversational assistant directly to **Rocket.Chat**, the open-sour
 
 ## Available Tools (10)
 - **chat_update_message**: Updates the text of an existing message
+- **list_users**: Lists all users in the workspace directory
 - **get_channel_info**: Retrieves details for a specific channel
 - **get_user_info**: Retrieves detailed information for a specific user
 - **list_direct_messages**: Lists all active direct message rooms
 - **list_private_groups**: Lists all private groups (channels) the user is a member of
 - **list_public_channels**: Lists all public channels in the workspace
-- **list_users**: Lists all users in the workspace directory
+- **chat_send_message**: Sends a message to a specific room by ID
 - **chat_delete_message**: You must provide both room ID and message ID.
 
 Deletes a message from a room
 - **chat_post_message**: Sends a message to a channel or user by name
-- **chat_send_message**: Sends a message to a specific room by ID
 
 
 ## 💬 Prompt Examples

@@ -32,6 +32,9 @@ Connect your conversational assistant directly to **Robin**, the leading workpla
 
 
 ## Available Tools (10)
+- **list_space_events**: Lists all events booked in a specific meeting space
+- **list_spaces**: Lists all bookable meeting rooms at a location
+- **list_locations**: Lists all office locations in Robin
 - **book_space**: Specify space ID, title, and start/end times.
 
 Books a meeting room by creating an event
@@ -43,10 +46,7 @@ Cancels an existing desk reservation
 Checks availability for multiple spaces within a time range
 - **get_location**: Retrieves details for a specific office location
 - **get_space**: Retrieves detailed information for a specific meeting space
-- **list_space_events**: Lists all events booked in a specific meeting space
-- **list_spaces**: Lists all bookable meeting rooms at a location
 - **list_desks**: Lists all hot desks and assigned seats at a location
-- **list_locations**: Lists all office locations in Robin
 - **reserve_desk**: Reserves a hot desk for a specific date
 
 

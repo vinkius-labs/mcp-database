@@ -5,19 +5,19 @@
 
 ## Overview
 
-**Category:** [finance](../categories/finance.md)
+**Category:** [science](../categories/science.md)
 
-Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds.
+Precise volume calculations for single-step and serial dilutions.
 
 ## Description
-The Dilution Calculator is a specialized simulation engine designed for founders and investors to model the impact of new funding rounds on existing equity. Using tools like `calculate_round_dilution` and `simulate_option_pool_expansion`, you can predict how much current shareholders will be diluted by new capital, how an expanded ESOP affects ownership, and evaluate the consequences of down rounds using `calculate_anti_dilution_impact`. It provides a clear view of your cap table evolution through `get_cap_table_snapshot`.
+This MCP server provides laboratory professionals with precise tools for solution chemistry. Use `calculate_single_dilution` to find exact stock and diluent volumes for one-step processes. For large dilution factors, `calculate_serial_dilution_plan` generates a multi-step sequence to maintain accuracy. You can also use `validate_mixing_ratio` to verify if your parts-based ratios are mathematically consistent with target concentrations.
 
 
 ## Available Tools (4)
-- **simulate_option_pool_expansion**: Calculates effective dilution from ESOP resizing
-- **calculate_anti_dilution_impact**: Evaluates Broad-Based Weighted Average anti-dilution impact
-- **calculate_round_dilution**: Simulates a new investment round
-- **get_cap_table_snapshot**: Provides a clear view of the current ownership structure
+- **calculate_serial_dilution_plan**: Generates a multi-step dilution sequence when a single step is impractical
+- **calculate_single_dilution**: Calculates the specific volumes needed for a one-step dilution
+- **get_dilution_factor_info**: Provides descriptive metadata about a specific dilution factor
+- **validate_mixing_ratio**: Checks if a specific ratio of stock to diluent is mathematically consistent with the target concentrations
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ The Dilution Calculator is a specialized simulation engine designed for founders
 Here are some examples of how you can interact with the **Dilution Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is my current ownership structure?"
+> "I have a 10M stock solution. I need 500ml of a 0.1M solution. How much stock and diluent do I need?"
 
 **🤖 AI Agent:**
-> The current cap table shows: Founder A (40%), Founder B (30%), Angel Investor (20%), and ESOP (10%). Total shares outstanding: 1,000,000.
+> You need 5ml of the 10M stock solution and 495ml of diluent to reach a total volume of 500ml.
 
 ---
 
 **👤 You:**
-> "If we raise $2M at a $8M pre-money valuation, what happens to our ownership?"
+> "Plan a serial dilution for a 1000-fold dilution starting from 1M, with a max dilution factor of 10 per step."
 
 **🤖 AI Agent:**
-> The post-money valuation will be $10M. The new investors will hold 20% of the company, and existing shareholders will experience a dilution factor of 0.8.
+> The plan requires 3 steps: Step 1 (1:10) results in 0.1M, Step 2 (1:10) results in 0.01M, and Step 3 (1:10) results in 0.001M.
 
 ---
 
 **👤 You:**
-> "Calculate the impact of an anti-dilution adjustment if our previous price was $1.50 and the new price is $1.20."
+> "Is a 1:5 ratio of stock to diluent correct for a 1M to 0.2M dilution?"
 
 **🤖 AI Agent:**
-> The Broad-Based Weighted Average calculation results in a new conversion price of $1.42, with an adjustment ratio of 0.95.
+> Yes, a 1:5 ratio (1 part stock to 4 parts diluent) results in a 1:5 dilution factor, which is correct for 1M to 0.2M.
 
 
 ## ❓ FAQ
 
-**Q: How does the calculator handle option pool expansion?**
-The `simulate_option_pool_expansion` tool calculates the additional shares required to reach a target post-money ESOP size, specifically showing the impact on founder ownership.
+**Q: How do I calculate a single dilution step?**
+Use the `calculate_single_dilution` tool by providing the initial concentration, the desired final concentration, and the total final volume.
 
-**Q: Can I simulate a down round?**
-Yes. By using `calculate_anti_dilution_impact`, you can evaluate how a Broad-Based Weighted Average anti-dilution clause will adjust conversion prices when the new share price is lower than previous rounds.
+**Q: When should I use a serial dilution plan?**
+Use `calculate_serial_dilution_plan` when the required dilution factor is too large to achieve accurately in a single step.
 
-**Q: What information do I need for a round simulation?**
-To use `calculate_round_dilution`, you need the new investment amount and the pre-money valuation. You can also optionally include a target option pool expansion percentage.
+**Q: Can I verify my mixing ratios?**
+Yes, the `validate_mixing_ratio` tool checks if your stock and diluent parts match the required dilution factor.
 
 
 ## Installation & Usage

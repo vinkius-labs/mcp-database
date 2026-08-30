@@ -5,24 +5,19 @@
 
 ## Overview
 
-**Category:** [sustainability](../categories/sustainability.md)
+**Category:** [environmental-science](../categories/environmental-science.md)
 
-Estimate the freshwater consumption required to produce everyday food and consumer goods.
+Calculates multi-dimensional water footprints for chemical manufacturing processes.
 
 ## Description
-The Water Footprint Calculator connects AI agents to a detailed database of water usage for various products. Using tools like `lookup_item_footprint`, you can find the specific liters used per kg or unit for items like beef or cotton t-shirts. The `calculate_batch_footprint` tool allows for calculating cumulative impact across multiple items, while `get_category_inventory` helps browse available products in categories such as Food, Apparel, and Household goods.
+This MCP server provides specialized tools for chemical manufacturing to measure environmental impact through water footprint analysis. It calculates Blue Water Footprint (surface/groundwater consumption), Green Water Footprint (rainwater used by bio-based feedstocks), and Grey Water Footprint (freshwater needed to dilute pollutants). Users can also determine water intensity to evaluate production efficiency. The tools, such as `calculate_blue_water_footprint` and `calculate_grey_water_footprint`, account for variables like water recycling and treatment efficiency.
 
 
-## Available Tools (3)
-- **calculate_batch_footprint**: Example: [{"itemName": "beef", "quantity": 2}]
-
-Calculate total water footprint for a list of items
-- **get_category_inventory**: g., "Food", "Apparel", "Household") to see all items available in that category.
-
-Get all items in a specific category
-- **lookup_item_footprint**: g., "beef", "apple") to see its water usage in liters.
-
-Lookup the water footprint of a specific item
+## Available Tools (4)
+- **calculate_blue_water_footprint**: Determines the net surface and groundwater consumption of a chemical process
+- **calculate_green_water_footprint**: Calculates the rainwater footprint related to bio-based chemical feedstocks
+- **calculate_grey_water_footprint**: Estimates the freshwater required to dilute discharge to acceptable quality levels
+- **calculate_water_intensity**: Evaluates the efficiency of water use relative to production output
 
 
 ## 💬 Prompt Examples
@@ -30,38 +25,38 @@ Lookup the water footprint of a specific item
 Here are some examples of how you can interact with the **Water Footprint Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How much water is used to produce 1kg of beef?"
+> "Calculate the blue water footprint for a process with 500m3 intake, 300m3 consumption, and 50m3 recycled water."
 
 **🤖 AI Agent:**
-> Producing 1kg of beef requires approximately 15,415 liters of water.
+> The blue water footprint for this process is 250m3.
 
 ---
 
 **👤 You:**
-> "Calculate the total water footprint for 2kg of wheat and 3 cotton t-shirts."
+> "What is the grey water footprint if I have 100m3 of discharge with 50kg of pollutants and a permissible concentration of 0.5kg/m3, assuming 20% treatment efficiency?"
 
 **🤖 AI Agent:**
-> The total water usage is 8,500 liters. Breakdown: Wheat (2kg) uses 1,600L, and Cotton T-shirts (3 units) use 6,900L.
+> The grey water footprint is 8000m3.
 
 ---
 
 **👤 You:**
-> "What items are available in the Apparel category?"
+> "Calculate the water intensity for a product with a total water footprint of 1500m3 and a mass of 500kg."
 
 **🤖 AI Agent:**
-> The Apparel category includes: cotton t-shirt, denim jeans, and wool sweater.
+> The water intensity is 3m3/kg.
 
 
 ## ❓ FAQ
 
-**Q: How do I find the water usage for a specific item?**
-Use the `lookup_item_footprint` tool and provide the exact name of the product as it appears in the catalog, such as 'beef' or 'apple'.
+**Q: What is the difference between blue and grey water footprints?**
+Blue water footprint measures the volume of surface and groundwater consumed, while grey water footprint measures the volume of freshwater required to dilute pollutants in discharge to meet quality standards.
 
-**Q: Can I calculate the total water usage for multiple items at once?**
-Yes, use the `calculate_batch_footprint` tool by providing a JSON array of objects containing the item names and their respective quantities.
+**Q: How does water recycling affect the calculation?**
+Using `calculate_blue_water_footprint`, you can include recycled water to reduce the net blue water footprint, as recycled water is subtracted from the total consumption.
 
-**Q: What categories are available to browse?**
-You can browse items using `get_category_inventory` within the Food, Apparel, and Household categories.
+**Q: Can I calculate water intensity for my product?**
+Yes, you can use `calculate_water_intensity` by providing the total water footprint and the mass of the finished product.
 
 
 ## Installation & Usage
