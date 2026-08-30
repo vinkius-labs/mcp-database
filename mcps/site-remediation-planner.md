@@ -14,10 +14,10 @@ This MCP server provides professional decision-support for environmental enginee
 
 
 ## Available Tools (4)
-- **evaluate_feasibility**: Determines if a specific remediation technology is suitable for the site
-- **plan_remediation**: Generates a full remediation strategy including technology selection, timeline, and cost
 - **calculate_timeline**: Calculates the expected time required to reach cleanup goals
 - **estimate_remediation_cost**: Provides a financial projection for the proposed remediation work
+- **evaluate_feasibility**: Determines if a specific remediation technology is suitable for the site
+- **plan_remediation**: Generates a full remediation strategy including technology selection, timeline, and cost
 
 
 ## 💬 Prompt Examples

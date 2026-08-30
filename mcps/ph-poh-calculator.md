@@ -14,9 +14,9 @@ This MCP server provides a specialized chemical calculation engine for aqueous s
 
 
 ## Available Tools (4)
-- **solve_strong_electrolyte**: Calculates all relevant properties for solutions of strong acids or strong bases
 - **calculate_buffer_properties**: Analyzes the pH and capacity of a buffer solution
 - **get_ion_concentration**: Calculates the concentration of a specific ion when its logarithmic counterpart (pH or pOH) is known
+- **solve_strong_electrolyte**: Calculates all relevant properties for solutions of strong acids or strong bases
 - **solve_weak_electrolyte**: Calculates properties for solutions of weak acids or weak bases where partial dissociation occurs
 
 

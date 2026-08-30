@@ -36,14 +36,14 @@ No more manual data entry in complex forms. Your AI acts as a dedicated database
 
 
 ## Available Tools (8)
-- **execute_ninox_script**: Execute a Ninox script/query
-- **list_records**: List records from a table
 - **update_record**: Update a specific record
-- **create_records**: Create or update records
 - **delete_record**: Delete a record
+- **list_databases**: List all databases in the team
+- **list_records**: List records from a table
+- **create_records**: Create or update records
+- **execute_ninox_script**: Execute a Ninox script/query
 - **get_database_schema**: Get database schema
 - **get_record**: Get details for a specific record
-- **list_databases**: List all databases in the team
 
 
 ## 💬 Prompt Examples

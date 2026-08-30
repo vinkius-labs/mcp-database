@@ -14,8 +14,8 @@ This MCP server provides a specialized engine for chemical concentration calcula
 
 
 ## Available Tools (5)
-- **calculate_mass_based_concentrations**: Calculate mass-based ratios including percent, ppm, and ppb
 - **calculate_density_adjusted_molarity**: Convert volume-based solvent measurements to molarity using solution density
+- **calculate_mass_based_concentrations**: Calculate mass-based ratios including percent, ppm, and ppb
 - **calculate_molality**: Determine the molal concentration of a solution
 - **calculate_molarity**: Determine the molar concentration of a solution
 - **calculate_mole_fraction**: Determine the ratio of solute moles to total moles in a solution
