@@ -8,6 +8,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
 | [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
 | [I-Ching Hexagram Divination](../mcps/i-ching-hexagram-divination.md) | Simulate traditional I Ching coin-toss divination to generate hexagrams and interpretations. |
+| [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |
 
 
 ---

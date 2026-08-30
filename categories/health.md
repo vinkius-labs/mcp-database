@@ -14,6 +14,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
+| [Chemical Exposure Assessment](../mcps/chemical-exposure-assessment.md) | Quantify worker chemical exposure and assess risk levels. |
 | [Continuous Glucose Trend Arrow Calculator](../mcps/continuous-glucose-trend-arrow-calculator.md) | Predictive CGM velocity and trend arrow analysis. |
 | [Continuous Glucose Trend Calculator](../mcps/continuous-glucose-trend-calculator.md) | Predictive CGM glucose velocity and trend arrow analysis. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |
@@ -27,6 +28,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Glycemic Load Calculator](../mcps/glycemic-load-calculator.md) | Calculate the metabolic impact and blood glucose spike magnitude of food combinations. |
 | [Heart Rate Zone Calculator](../mcps/heart-rate-zone-calculator.md) | Calculate personalized training zones using the Karvonen formula and sport-specific adjustments. |
 | [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate personalized aerobic training zones using the Karvonen formula. |
+| [Heat Stress Index Calculator](../mcps/heat-stress-index-calculator.md) | Evaluate workplace thermal risk and automate safety protocols. |
 | [High-Fat/Protein Bolus Calculator](../mcps/high-fatprotein-bolus-calculator.md) | Calculates insulin dosing for high-fat and high-protein meals to mitigate the 'Pizza Effect'. |
 | [HRV Coherence Calculator](../mcps/hrv-coherence-calculator.md) | Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify cardiorespiratory coherence level using R-R intervals. |
 | [Hydration & Sweat Rate Calculator](../mcps/hydration-sweat-rate-calculator.md) | Calculate sweat rates, dehydration levels, and precise fluid/electrolyte replacement strategies. |

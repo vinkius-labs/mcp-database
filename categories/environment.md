@@ -4,6 +4,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Indoor Air Quality Assessment](../mcps/indoor-air-quality-assessment.md) | Evaluates chemical laboratory safety through IAQ indexing and ventilation analysis. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |
 | [Wind Direction & Beach Orientation Analyzer](../mcps/wind-direction-beach-orientation-analyzer.md) | Analyze wind conditions and beach orientation to determine surfing suitability. |

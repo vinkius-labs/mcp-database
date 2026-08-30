@@ -19,9 +19,11 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
 | [Crystallite Size Calculator](../mcps/crystallite-size-calculator.md) | Analyze XRD data to determine crystallite size, microstrain, and instrumental broadening. |
+| [Dilution Calculator](../mcps/dilution-calculator.md) | Precise volume calculations for single-step and serial dilutions. |
 | [Distillation Proof Calculator](../mcps/distillation-proof-calculator.md) | Deterministic tools for alcohol proof correction, distillation stage identification, and volume-based cuts. |
 | [DNA Concentration Calculator](../mcps/dna-concentration-calculator.md) | Calculate DNA concentration, purity, and yield from absorbance readings. |
 | [Dog Age Calculator](../mcps/dog-age-calculator.md) | Accurate canine aging estimation using scientific veterinary formulas. |
+| [Drug Stability Kinetics](../mcps/drug-stability-kinetics.md) | Models pharmaceutical degradation kinetics and predicts shelf life. |
 | [Electrode Potential Calculator](../mcps/electrode-potential-calculator.md) | Calculate electrode potentials, detection limits, and selectivity impacts for ion-selective electrodes. |
 | [Enzyme Inhibition Analysis](../mcps/enzyme-inhibition-analysis.md) | Determine enzyme inhibition mechanisms and kinetic parameters like Ki and IC50. |
 | [Fermentation Kinetics Model](../mcps/fermentation-kinetics-model.md) | Models fermentation process kinetics to determine growth and production rates. |
@@ -35,10 +37,14 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Melting Temperature Calculator](../mcps/melting-temperature-calculator.md) | Calculate DNA melting temperatures, GC content, and amplicon properties for PCR optimization. |
 | [Membrane Filtration Design](../mcps/membrane-filtration-design.md) | Calculate membrane area, flux, and concentration polarization for filtration systems. |
 | [Microbial Growth Rate Calculator](../mcps/microbial-growth-rate-calculator.md) | Calculate specific growth rate, doubling time, and growth yield for microbial populations. |
+| [Phylogenetic Tree Construction](../mcps/phylogenetic-tree-construction.md) | Construct evolutionary trees and calculate genetic distances from sequence alignments. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
+| [Protein Secondary Structure Predictor](../mcps/protein-secondary-structure-predictor.md) | Predict protein secondary structures like alpha-helices and beta-sheets from amino acid sequences. |
 | [Protein Stability Predictor](../mcps/protein-stability-predictor.md) | Predict protein thermal stability, aggregation risk, and shelf life. |
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Restriction Enzyme Analysis](../mcps/restriction-enzyme-analysis.md) | Analyze DNA digestion patterns, fragment sizes, and enzyme characteristics. |
+| [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
+| [Solution Concentration Calculator](../mcps/solution-concentration-calculator.md) | Calculate molarity, molality, mass percent, and other chemical concentrations. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
 | [Surface Area Measurement](../mcps/surface-area-measurement.md) | Calculate specific surface area and monolayer capacity using BET isotherm analysis. |
 | [Telescope Optics Calculator](../mcps/telescope-optics-calculator.md) | Calculate telescope performance, magnification, and viewing comfort. |

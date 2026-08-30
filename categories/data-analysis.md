@@ -5,6 +5,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | Tool Name | Description |
 |-----------|-------------|
 | [Bacterial Growth Kinetics](../mcps/bacterial-growth-kinetics.md) | Models bacterial growth curves and extracts physiological parameters from OD measurements. |
+| [Biosimilar Comparability Analysis](../mcps/biosimilar-comparability-analysis.md) | Professional analytical assessment tool for evaluating biosimilarity between reference biologics and biosimilar candidates. |
 | [Cell Viability Calculation Engine](../mcps/cell-viability-calculation-engine.md) | Calculate cell viability, IC50, and growth inhibition from assay data. |
 | [Chinese Slang Density Checker](../mcps/chinese-slang-density-checker.md) | Analyze the prevalence and trendiness of Chinese internet slang in text. |
 | [Dialogue Tree Complexity Analyzer](../mcps/dialogue-tree-complexity-analyzer.md) | Analyze structural complexity, branching, and localization costs of dialogue trees. |

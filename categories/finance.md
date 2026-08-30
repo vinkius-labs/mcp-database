@@ -197,7 +197,6 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Diabetes Supply Budget Optimizer](../mcps/diabetes-supply-budget-optimizer.md) | Calculate precise daily and monthly costs for diabetes supplies like insulin, CGM, and test strips. |
 | [Diamond 4Cs Estimator](../mcps/diamond-4cs-estimator.md) | A deterministic valuation engine for estimating diamond market value using the 4Cs. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
-| [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Disaster Payment Eligibility](../mcps/disaster-payment-eligibility.md) | Calculate USDA disaster program eligibility and estimated payments for ARC, PLC, ELAP, and LFP. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
 | [Dividend Capture Strategy Engine](../mcps/dividend-capture-strategy-engine.md) | Identify and validate profitable dividend capture opportunities with deterministic modeling. |

@@ -29,6 +29,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
+| [pH & pOH Calculator](../mcps/ph-poh-calculator.md) | Calculate pH, pOH, and ion concentrations for strong/weak electrolytes and buffers. |
 | [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
@@ -36,6 +37,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Stanford OpenAlex](../mcps/stanford-openalex.md) | Explore the global research landscape with open access to scholarly works, authors, institutions, and citation graphs. |
 | [Stanford PubMed](../mcps/stanford-pubmed.md) | Search biomedical literature from the world largest database of life science and medical research publications. |
 | [Stanford Semantic Scholar](../mcps/stanford-semantic-scholar.md) | Discover academic papers with AI-powered search that understands research context, finds citations, and recommends related work. |
+| [Stoichiometry Calculator](../mcps/stoichiometry-calculator.md) | Perform precise chemical stoichiometry calculations including limiting reagents and theoretical yields. |
 | [Study Abroad Cost Estimator](../mcps/study-abroad-cost-estimator.md) | Calculates a comprehensive budget for international studies in USD, EUR, and BRL. |
 | [Tarot Spread Structure Generator](../mcps/tarot-spread-structure-generator.md) | Provides deterministic structural blueprints for tarot spreads, including positions and reading sequences. |
 | [Verb Conjugation Engine](../mcps/verb-conjugation-engine.md) | Deterministic morphological engine for Romance language verb conjugation. |

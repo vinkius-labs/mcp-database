@@ -41,6 +41,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [OpenCorporates](../mcps/opencorporates.md) | Access the largest open database of companies — audit corporate records and officers via AI. |
 | [OpenEI](../mcps/openei.md) | US electricity rate intelligence — query utility rates by location, sector, and tariff via AI for solar and energy analysis. |
 | [Pike13](../mcps/pike13.md) | Manage classes, clients, staff, invoices, visits, and analytics for your Pike13-powered fitness studio through natural conversation. |
+| [Risk Matrix Calculator](../mcps/risk-matrix-calculator.md) | Quantify risk levels using configurable assessment matrices. |
 | [TeamUp](../mcps/teamup.md) | Manage events, customers, coaches, memberships, and payments for your TeamUp-powered fitness studio through natural conversation. |
 | [Vendor Scorecard Calculator](../mcps/vendor-scorecard-calculator.md) | Calculate and monitor supplier performance using weighted metrics. |
 

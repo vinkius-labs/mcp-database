@@ -9,14 +9,20 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Ceramic Formulation Calculator](../mcps/ceramic-formulation-calculator.md) | Design ceramic batches and glazes by calculating oxide profiles, thermal expansion, and sintering temperatures. |
 | [Composite Material Design](../mcps/composite-material-design.md) | Calculate mechanical properties, optimal fiber content, and laminate stiffness for composite materials. |
 | [Corrosion Rate Calculator](../mcps/corrosion-rate-calculator.md) | Calculate corrosion rates, penetration depth, and remaining service life from weight loss or electrochemical data. |
+| [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Grassed Waterway Designer](../mcps/grassed-waterway-designer.md) | Design stable grassed waterways using hydraulic modeling and vegetation retardance. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Material Selection Database](../mcps/material-selection-database.md) | Identify, rank, and compare engineering materials based on environmental conditions and performance requirements. |
 | [Oxygen Transfer Coefficient Calculator](../mcps/oxygen-transfer-coefficient-calculator.md) | Estimates oxygen mass transfer (kLa), OTR, and power requirements for bioreactors. |
 | [Polymer Additive Calculator](../mcps/polymer-additive-calculator.md) | Calculate precise additive concentrations, PHR, and batch sizes for polymer formulations. |
+| [Process Hazard Analysis Tool](../mcps/process-hazard-analysis-tool.md) | Systematic documentation and risk assessment for industrial process hazards. |
 | [Sediment Basin Designer](../mcps/sediment-basin-designer.md) | Design erosion control sediment basins using settling theory and NRCS standards. |
+| [Site Remediation Planner](../mcps/site-remediation-planner.md) | Generates comprehensive remediation strategies, timelines, and cost estimates for contaminated sites. |
+| [Stack Testing Protocol Designer](../mcps/stack-testing-protocol-designer.md) | Automated design of air emission testing protocols using EPA methods. |
 | [Steve Jobs Vision Prover](../mcps/steve-jobs-vision-prover.md) | A product had settings menus with 47 options and 15 integrations. This tool forces it to kill features, absorb complexity, and own the whole experience. |
+| [Ventilation Rate Calculator](../mcps/ventilation-rate-calculator.md) | Calculates required ventilation rates, exhaust flow, and make-up air for chemical safety. |
+| [VOC Emission Calculator](../mcps/voc-emission-calculator.md) | Calculate VOC emissions and control efficiency using EPA-aligned methodologies. |
 
 
 ---

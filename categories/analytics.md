@@ -33,6 +33,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
+| [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
@@ -62,6 +63,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
+| [Waste Minimization Analysis](../mcps/waste-minimization-analysis.md) | Analyze waste generation, reduction opportunities, and recycling potential using the waste hierarchy. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
 | [Wine Redox Stability Diagnostic](../mcps/wine-redox-stability-diagnostic.md) | Analyzes redox potential and chemical fault risks in wine. |
 | [Zero-shot vs Few-shot Ratio Calculator Alternative](../mcps/zero-shot-vs-few-shot-ratio-calculator-alternative.md) | Quantify prompt composition by measuring the density of few-shot examples against instructions. |

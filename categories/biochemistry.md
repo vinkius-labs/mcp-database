@@ -4,8 +4,10 @@ Explore the open database of **biochemistry** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Amino Acid Composition Analysis](../mcps/amino-acid-composition-analysis.md) | Analyze protein composition, molecular weight, and nutritional quality from sequences or mass data. |
 | [ELISA Standard Curve Analysis](../mcps/elisa-standard-curve-analysis.md) | Automated 4-parameter logistic (4PL) regression for ELISA standard curves and sample quantification. |
 | [Enzyme Kinetics Analyzer](../mcps/enzyme-kinetics-analyzer.md) | Calculates Vmax, Km, kcat, and catalytic efficiency from reaction rate data. |
+| [Ligand Binding Analysis](../mcps/ligand-binding-analysis.md) | Calculate binding affinity, capacity, and cooperativity from biochemical data. |
 | [Protein Concentration Calculator](../mcps/protein-concentration-calculator.md) | Calculate protein concentration and yield using UV280, colorimetric assays, or standard curves. |
 | [Protein Molecular Weight Calculator](../mcps/protein-molecular-weight-calculator.md) | Calculate protein mass, extinction coefficient, and isoelectric point from sequences or compositions. |
 | [Protein Purification Yield Calculator](../mcps/protein-purification-yield-calculator.md) | Quantify protein purity and recovery efficiency across purification steps. |

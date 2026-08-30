@@ -4,6 +4,8 @@ Explore the open database of **genetics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Codon Usage Optimization](../mcps/codon-usage-optimization.md) | Optimize DNA sequences for heterologous expression in specific hosts. |
+| [CRISPR Guide Designer](../mcps/crispr-guide-designer.md) | Design optimal CRISPR guide RNAs by analyzing PAM sites, efficiency, and off-target risks. |
 | [Primer Design Calculator](../mcps/primer-design-calculator.md) | Design optimal PCR primers and analyze their thermal and structural properties. |
 
 
