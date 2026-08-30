@@ -5,6 +5,7 @@ Explore the open database of **scientific-research** Model Context Protocol (MCP
 | Tool Name | Description |
 |-----------|-------------|
 | [Edamam](../mcps/edamam-extended.md) | Search over 2.3 million recipes, analyze nutritional data, and access a database of 900,000+ food items directly from your AI agent. |
+| [Flow Cytometry Analysis](../mcps/flow-cytometry-analysis.md) | Analyze fluorescence-based flow cytometry data, calculate cell population metrics, and apply spectral compensation. |
 | [NoiseMeters API](../mcps/noisemeters-api.md) | Monitor noise levels — audit decibels and instruments via AI. |
 | [Open UV Index API](../mcps/open-uv-index-api.md) | Monitor UV levels — audit ozone and sun safety via AI. |
 | [Spaceflight News](../mcps/spaceflight-news.md) | Access real-time spaceflight news, blogs, and technical reports from major space agencies and news outlets worldwide. |

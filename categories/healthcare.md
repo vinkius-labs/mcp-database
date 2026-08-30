@@ -26,6 +26,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Pediatric Fluid Calculator](../mcps/pediatric-fluid-calculator.md) | Calculate pediatric fluid maintenance requirements using the Holliday-Segar rule. |
 | [Pediatric Growth Percentile Calculator](../mcps/pediatric-growth-percentile-calculator.md) | Calculate pediatric growth percentiles and Z-scores using WHO (0-60m) and CDC (61-216m) standards. |
 | [Pet Medication Dose Calculator](../mcps/pet-medication-dose-calculator.md) | Calculate estimated medication dosages for pets based on body weight and veterinary standards. |
+| [Pharmacokinetics Calculator](../mcps/pharmacokinetics-calculator.md) | Derive fundamental pharmacokinetic parameters from concentration-time data. |
 | [Safe Syringe Rounding](../mcps/safe-syringe-rounding.md) | Ensures medical safety by rounding liquid doses down to the nearest syringe marking. |
 | [SOFA Score Calculator](../mcps/sofa-score-calculator.md) | Calculate SOFA scores, mortality risk, and sepsis status. |
 | [Vaccine Schedule Generator](../mcps/vaccine-schedule-generator.md) | Automated vaccination timeline and booster calculator for dogs and cats. |

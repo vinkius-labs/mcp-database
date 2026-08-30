@@ -6,6 +6,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
 | [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
+| [Bioassay Potency Calculator](../mcps/bioassay-potency-calculator.md) | Calculate relative potency and analyze dose-response parallelism. |
 | [Bioreactor Design Calculator](../mcps/bioreactor-design-calculator.md) | Calculate bioreactor volume, oxygen demand, and agitation requirements. |
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
@@ -13,6 +14,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Celestial Navigation Calculator](../mcps/celestial-navigation-calculator.md) | Perform deterministic celestial sight reduction to calculate intercept and azimuth. |
 | [Cell Culture Media Designer](../mcps/cell-culture-media-designer.md) | Formulate optimal cell culture media by calculating nutrient concentrations, osmolarity, and buffer systems. |
 | [Chromatography Method Development](../mcps/chromatography-method-development.md) | Automate chromatography method selection, column recommendation, and resolution prediction. |
+| [Chromatography Protein Purification Designer](../mcps/chromatography-protein-purification-designer.md) | Design optimal chromatography parameters including column sizing, resin capacity, and elution strategies. |
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
@@ -34,6 +36,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Membrane Filtration Design](../mcps/membrane-filtration-design.md) | Calculate membrane area, flux, and concentration polarization for filtration systems. |
 | [Microbial Growth Rate Calculator](../mcps/microbial-growth-rate-calculator.md) | Calculate specific growth rate, doubling time, and growth yield for microbial populations. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
+| [Protein Stability Predictor](../mcps/protein-stability-predictor.md) | Predict protein thermal stability, aggregation risk, and shelf life. |
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Restriction Enzyme Analysis](../mcps/restriction-enzyme-analysis.md) | Analyze DNA digestion patterns, fragment sizes, and enzyme characteristics. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
