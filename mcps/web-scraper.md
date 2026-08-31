@@ -7,7 +7,7 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Equip your AI agent with the ability to read web pages, extract metadata, and crawl documentation sites as clean Markdown.
+Equip your AI agent with the ability to search the web, read pages, extract metadata, and crawl sites as clean Markdown.
 
 ## Description
 Connect the **Web Scraper** utility to any AI agent to give it direct access to the public internet. Instead of letting the AI hallucinate facts, allow it to read real-time articles, parse documentation, and fetch clean text from any URL you provide.
@@ -32,7 +32,7 @@ Connect the **Web Scraper** utility to any AI agent to give it direct access to 
 - **SEO Specialists** — audit a webpage's metadata, extracted titles, and outbound link structure dynamically
 
 
-## Available Tools (7)
+## Available Tools (8)
 - **read**: Example: {"url": "https://example.com"}. For multiple pages, use batch_read.
 
 Read a single web page and return its content
@@ -54,6 +54,9 @@ Read multiple pages in one call
 - **list_links**: Example: {"url": "https://example.com"}.
 
 Extract all links from a page
+- **search**: Example: {"query": "mcp protocol specification", "site": "modelcontextprotocol.io"}. After searching, use read or batch_read on the returned URLs to fetch full content. Do not call in rapid loops — refine the query instead.
+
+Search the web and return matching URLs, titles, and snippets
 
 
 ## 💬 Prompt Examples

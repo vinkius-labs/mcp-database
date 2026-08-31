@@ -12,18 +12,22 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Accelerator Peer Learning Value Engine](../mcps/accelerator-peer-learning-value-engine.md) | Quantify the economic and structural value of startup accelerator networks. |
 | [Accelerator Program Satisfaction Engine](../mcps/accelerator-program-satisfaction-engine.md) | Analyzes accelerator program success through satisfaction scores, NPS, and module performance. |
 | [Accelerator Session Effectiveness Evaluator](../mcps/accelerator-session-effectiveness-evaluator.md) | Compares online vs offline session effectiveness and calculates optimal delivery mixes. |
+| [Acid-Base Neutralization Calculator](../mcps/acid-base-neutralization-calculator.md) | Calculates equivalence points, pH levels, and excess reagents for acid-base reactions. |
 | [Chengyu Tone & Pattern Validator](../mcps/chengyu-tone-pattern-validator.md) | Validates the phonetic structure and poetic meter of Chinese Chengyu. |
 | [Chess.com](../mcps/chesscom.md) | Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent. |
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
 | [Circle of Fifths Navigator](../mcps/circle-of-fifths-navigator.md) | Navigate musical keys, identify tonal relationships, and plan modulations using the Circle of Fifverts framework. |
 | [Class Rank Estimator](../mcps/class-rank-estimator.md) | Estimate your class rank percentile using GPA, mean, and standard deviation. |
+| [Electrochemical Cell Calculator](../mcps/electrochemical-cell-calculator.md) | Calculates cell potential and Gibbs free energy using the Nernst equation. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
+| [Equilibrium Constant Calculator](../mcps/equilibrium-constant-calculator.md) | Compute Kc, Kp, reaction quotients, and equilibrium concentrations. |
 | [Final Grade Needed Calculator](../mcps/final-grade-needed-calculator.md) | Calculate the exact score needed on upcoming exams or assignments to reach your target course grade. |
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |
 | [GPA Converter](../mcps/gpa-converter.md) | Convert academic grades between different scales and calculate weighted averages. |
 | [GPA Cumulative Calculator](../mcps/gpa-cumulative-calculator.md) | Calculate and track semester and cumulative GPA using various grading scales. |
+| [Heat of Reaction Calculator](../mcps/heat-of-reaction-calculator.md) | Calculate enthalpy changes using Hess's Law, formation enthalpies, and bond energies. |
 | [IELTS Band Estimator](../mcps/ielts-band-estimator.md) | Estimate your IELTS band score, CEFR proficiency level, and discover matching visa and university requirements. |
 | [Interval Calculator](../mcps/interval-calculator.md) | Calculate musical intervals, properties, and note frequencies. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
@@ -31,7 +35,9 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
 | [pH & pOH Calculator](../mcps/ph-poh-calculator.md) | Calculate pH, pOH, and ion concentrations for strong/weak electrolytes and buffers. |
 | [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
+| [Redox Reaction Balancer](../mcps/redox-reaction-balancer.md) | Balance redox reactions and identify chemical agents. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
+| [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |
 | [Stanford OpenAlex](../mcps/stanford-openalex.md) | Explore the global research landscape with open access to scholarly works, authors, institutions, and citation graphs. |

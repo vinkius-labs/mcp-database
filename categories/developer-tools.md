@@ -659,7 +659,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Voyage AI (AI Embeddings API)](../mcps/voyage-ai-ai-embeddings-api.md) | Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows. |
 | [Vultr](../mcps/vultr.md) | Manage Vultr cloud infrastructure, bare metal instances, and backups directly from your AI agent. |
 | [WCAG.com Accessibility](../mcps/wcagcom-accessibility.md) | Audit web accessibility — check compliance and guidelines via AI. |
-| [Web Scraper](../mcps/web-scraper.md) | Equip your AI agent with the ability to read web pages, extract metadata, and crawl documentation sites as clean Markdown. |
+| [Web Scraper](../mcps/web-scraper.md) | Equip your AI agent with the ability to search the web, read pages, extract metadata, and crawl sites as clean Markdown. |
 | [Webflow](../mcps/webflow.md) | Design and build professional websites visually with a no-code platform that generates clean, production-ready HTML and CSS. |
 | [Webflow](../mcps/webflow-alternative-1.md) | Manage Webflow sites, CMS collections, pages, and assets directly from your AI agent. |
 | [WebGPU WGSL Syntax Linter](../mcps/webgpu-wgsl-syntax-linter.md) | Verify the structural integrity and entry points of your Webbr GPU shaders. |

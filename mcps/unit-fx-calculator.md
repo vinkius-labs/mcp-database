@@ -20,12 +20,12 @@ LLMs notoriously struggle with complex compound conversions (e.g. converting km/
 
 
 ## Available Tools (3)
-- **convert_unit**: Length, mass, volume, temperature and speed are supported; incompatible units (e.g. km to kg) return an error instead of a guess.
-
-Deterministically converts physical units (e.g. km/h to mi/h, celsius to fahrenheit) using mathjs
 - **batch_convert**: ). Pass the value, source unit, and target unit for exact mathematical conversion.
 
 Converts multiple physical units in a single deterministic pass
+- **convert_unit**: Length, mass, volume, temperature and speed are supported; incompatible units (e.g. km to kg) return an error instead of a guess.
+
+Deterministically converts physical units (e.g. km/h to mi/h, celsius to fahrenheit) using mathjs
 - **get_rate**: Some currencies (e.g. JPY) have no Binance pair; if the market source reports no pair, retry with source "reference".
 
 Gets the foreign exchange rate between two ISO currency codes. Two free sources: "reference" (central bank rates via Frankfurter, 1h cache) or "market" (live Binance market prices, 5min cache)

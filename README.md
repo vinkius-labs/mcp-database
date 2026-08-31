@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,329 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,349 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -28,6 +28,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
 - [health](categories/health.md) (76 servers)
+- [science](categories/science.md) (69 servers)
 - [security](categories/security.md) (68 servers)
 - [analytics](categories/analytics.md) (63 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
@@ -38,17 +39,16 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [data-management](categories/data-management.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [marketing](categories/marketing.md) (55 servers)
-- [science](categories/science.md) (55 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [construction](categories/construction.md) (49 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [mathematics](categories/mathematics.md) (45 servers)
+- [education](categories/education.md) (43 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
 - [infrastructure](categories/infrastructure.md) (41 servers)
 - [business-intelligence](categories/business-intelligence.md) (40 servers)
 - [document-management](categories/document-management.md) (40 servers)
 - [collaboration](categories/collaboration.md) (39 servers)
-- [education](categories/education.md) (37 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
 - [lifestyle](categories/lifestyle.md) (35 servers)
