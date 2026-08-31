@@ -8,12 +8,16 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | [Chemical Incompatibility Check](../mcps/chemical-incompatibility-check.md) | Predict hazardous chemical reactions and determine storage segregation requirements. |
 | [Chemical Storage Compatibility](../mcps/chemical-storage-compatibility.md) | Determines safe chemical storage arrangements and segregation requirements. |
 | [Chemical Substitution Analysis](../mcps/chemical-substitution-analysis.md) | Identify safer chemical alternatives and evaluate implementation feasibility. |
+| [Chromatography Resolution Calculator](../mcps/chromatography-resolution-calculator.md) | Calculate chromatographic resolution, column efficiency, and Van Deemter impacts. |
 | [Fabric Dye Mixing Calculator](../mcps/fabric-dye-mixing-calculator.md) | Deterministic textile dye formulation and bath parameter calculator. |
 | [Flammability Classification Engine](../mcps/flammability-classification-engine.md) | Classifies flammable liquids and gases using GHS and NFPA standards. |
 | [Gelatin Converter](../mcps/gelatin-converter.md) | Calculates precise gelatin amounts for any liquid volume and classifies the resulting texture (mousse, panna cotta, or firm jelly). Standardizes measures between sheets and powder. |
 | [Green Chemistry Metrics](../mcps/green-chemistry-metrics.md) | Quantify chemical process sustainability using atom economy, E-factor, and waste impact metrics. |
 | [Hair Dye Formulation Calculator](../mcps/hair-dye-formulation-calculator.md) | Calculate precise color tube counts and developer volumes for professional hair coloring. |
+| [IR Spectrum Interpreter](../mcps/ir-spectrum-interpreter.md) | Identifies functional groups and structural features from infrared (IR) spectra peaks. |
 | [Perfume Dilution Calculator](../mcps/perfume-dilution-calculator.md) | Calculate exact carrier volumes and dilution ratios for perfume making. |
+| [Polymer Structure Analyzer](../mcps/polymer-structure-analyzer.md) | Predict physical properties of polymers from chemical architecture. |
+| [Polymerization Mechanism Predictor](../mcps/polymerization-mechanism-predictor.md) | Predict polymerization mechanisms and kinetic properties of polymers. |
 | [Protein-Ligand Docking Score](../mcps/protein-ligand-docking-score.md) | Evaluates protein-ligand binding affinity and interaction characteristics from docking poses. |
 | [Safety Data Sheet Synthesis](../mcps/safety-data-sheet-synthesis.md) | Generates regulatory-compliant GHS Safety Data Sheet (SDS) summaries from chemical data. |
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
