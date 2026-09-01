@@ -14,9 +14,9 @@ This MCP server provides precise calculations for adjusting basal insulin dosing
 
 
 ## Available Tools (3)
+- **validate_time_format**: Validates that a provided time string adheres to the required HH:mm format
 - **calculate_travel_adjustment**: Provides a complete adjustment plan for basal insulin and meal timing based on travel direction and insulin type
 - **get_insulin_type_details**: Provides specific characteristics and adjustment logic constraints for different insulin types
-- **validate_time_format**: Validates that a provided time string adheres to the required HH:mm format
 
 
 ## 💬 Prompt Examples

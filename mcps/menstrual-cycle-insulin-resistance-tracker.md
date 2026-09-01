@@ -14,9 +14,9 @@ This MCP server provides deterministic insulin resistance adjustments based on t
 
 
 ## Available Tools (3)
-- **calculate_insulin_adjustments**: 
 - **get_cycle_phase_info**: 
 - **validate_baseline_parameters**: 
+- **calculate_insulin_adjustments**: 
 
 
 ## 💬 Prompt Examples
