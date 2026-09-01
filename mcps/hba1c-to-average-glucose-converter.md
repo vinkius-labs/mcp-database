@@ -14,8 +14,8 @@ This MCP server provides deterministic tools to convert HbA1c percentages into c
 
 
 ## Available Tools (3)
-- **get_conversion_constants**: Get the mathematical constants used for glucose conversions
 - **calculate_glucose_metrics**: Calculate estimated glucose metrics based on HbA1c percentage
+- **get_conversion_constants**: Get the mathematical constants used for glucose conversions
 - **validate_a1c_range**: Validate if an HbA1c value is within a clinically valid range
 
 

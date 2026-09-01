@@ -14,9 +14,9 @@ This MCP server provides tools to estimate how caffeine consumption affects bloo
 
 
 ## Available Tools (3)
-- **calculate_preemptive_bolus**: Determines the insulin units required to preemptively mitigate the predicted glucose spike
 - **estimate_caffeine_spike**: Calculates the predicted increase in blood glucose and the timing of the peak impact
 - **get_sensitivity_reference**: Provides a lookup of the current sensitivity factors for user reference
+- **calculate_preemptive_bolus**: Determines the insulin units required to preemptively mitigate the predicted glucose spike
 
 
 ## 💬 Prompt Examples
