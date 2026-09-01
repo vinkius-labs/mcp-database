@@ -31,6 +31,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
+| [Conductivity Measurement Analysis](../mcps/conductivity-measurement-analysis.md) | Analyze electrolyte properties including molar conductivity and dissociation. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |

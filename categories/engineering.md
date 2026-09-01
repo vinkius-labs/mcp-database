@@ -8,6 +8,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Centrifugation Design Engineer](../mcps/centrifugation-design-engineer.md) | Design and size industrial centrifugation systems using Stokes' law and centrifugal physics. |
 | [Ceramic Formulation Calculator](../mcps/ceramic-formulation-calculator.md) | Design ceramic batches and glazes by calculating oxide profiles, thermal expansion, and sintering temperatures. |
 | [Composite Material Design](../mcps/composite-material-design.md) | Calculate mechanical properties, optimal fiber content, and laminate stiffness for composite materials. |
+| [Corrosion Kinetics Engine](../mcps/corrosion-kinetics-engine.md) | Calculates corrosion current, material loss rates, and analyzes Evans diagrams from electrochemical data. |
 | [Corrosion Rate Calculator](../mcps/corrosion-rate-calculator.md) | Calculate corrosion rates, penetration depth, and remaining service life from weight loss or electrochemical data. |
 | [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
@@ -15,6 +16,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Material Selection Database](../mcps/material-selection-database.md) | Identify, rank, and compare engineering materials based on environmental conditions and performance requirements. |
 | [Oxygen Transfer Coefficient Calculator](../mcps/oxygen-transfer-coefficient-calculator.md) | Estimates oxygen mass transfer (kLa), OTR, and power requirements for bioreactors. |
+| [Passivation Potential Determination](../mcps/passivation-potential-determination.md) | Extracts critical electrochemical parameters from polarization curves of active-passive metals. |
 | [Polymer Additive Calculator](../mcps/polymer-additive-calculator.md) | Calculate precise additive concentrations, PHR, and batch sizes for polymer formulations. |
 | [Process Hazard Analysis Tool](../mcps/process-hazard-analysis-tool.md) | Systematic documentation and risk assessment for industrial process hazards. |
 | [Sediment Basin Designer](../mcps/sediment-basin-designer.md) | Design erosion control sediment basins using settling theory and NRCS standards. |
