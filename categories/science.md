@@ -4,18 +4,21 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Acid-Base Strength Predictor](../mcps/acid-base-strength-predictor.md) | Predict pKa and analyze electronic stability of molecular structures. |
 | [Activation Energy Calculator](../mcps/activation-energy-calculator.md) | Derive activation energy and pre-exponential factors from temperature-dependent rate data. |
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
 | [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
 | [Atom Economy Calculator](../mcps/atom-economy-calculator.md) | Calculate atom economy, E-factor, and waste metrics for chemical reactions. |
 | [Beer-Lambert Law Calculator](../mcps/beer-lambert-law-calculator.md) | Calculate absorbance, concentration, molar absorptivity, and detection limits for spectroscopy. |
 | [Bioassay Potency Calculator](../mcps/bioassay-potency-calculator.md) | Calculate relative potency and analyze dose-response parallelism. |
+| [Bioinorganic Chemistry Calculator](../mcps/bioinorganic-chemistry-calculator.md) | Analyze metalloenzyme active sites, redox potentials, and coordination geometries. |
 | [Bioreactor Design Calculator](../mcps/bioreactor-design-calculator.md) | Calculate bioreactor volume, oxygen demand, and agitation requirements. |
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Buffer Solution Calculator](../mcps/buffer-solution-calculator.md) | Calculate buffer solution properties including required ratios, pH shifts, and capacity. |
 | [Catalyst Performance Evaluator](../mcps/catalyst-performance-evaluator.md) | Calculates TOF, TON, selectivity, and deactivation rates for heterogeneous catalysis. |
 | [Catalyst-Effect-Model](../mcps/catalyst-effect-model.md) | Models chemical reaction rate changes caused by catalysts. |
+| [Catalytic Cycle Analyzer](../mcps/catalytic-cycle-analyzer.md) | Analyze organometallic catalytic cycles, kinetics, and stability. |
 | [Celestial Navigation Calculator](../mcps/celestial-navigation-calculator.md) | Perform deterministic celestial sight reduction to calculate intercept and azimuth. |
 | [Cell Culture Media Designer](../mcps/cell-culture-media-designer.md) | Formulate optimal cell culture media by calculating nutrient concentrations, osmolarity, and buffer systems. |
 | [Chemical Equilibrium Solver](../mcps/chemical-equilibrium-solver.md) | Solves complex chemical equilibrium systems and calculates species concentrations. |
@@ -47,10 +50,15 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Heterocyclic Compound Classifier](../mcps/heterocyclic-compound-classifier.md) | Classifies and names heterocyclic organic compounds. |
 | [Hops Bitterness Calculator](../mcps/hops-bitterness-calculator.md) | Calculate precise IBU and BU:GU ratios for beer recipes. |
 | [IBU & SRM Brewing Calculator](../mcps/ibu-srm-brewing-calculator.md) | Calculate beer bitterness (IBU) and color (SRM) using deterministic brewing formulas. |
+| [Inorganic Solubility Predictor](../mcps/inorganic-solubility-predictor.md) | Predict solubility, Ksp, and thermodynamics of inorganic compounds. |
+| [Inorganic Synthesis Planner](../mcps/inorganic-synthesis-planner.md) | Plans multi-step synthesis pathways for inorganic compounds using available reagents. |
+| [Isomerism Identification](../mcps/isomerism-identification.md) | Identify structural, geometric, optical, and conformational isomerism in chemical compounds. |
+| [Lattice Energy Calculator](../mcps/lattice-energy-calculator.md) | Calculate lattice energy, enthalpy of formation, and thermodynamic stability of ionic compounds. |
 | [Light Therapy Dosage Calculator](../mcps/light-therapy-dosage-calculator.md) | Calculates precise light therapy dosages for blue and red light treatments. |
 | [Mass Spectrum Interpreter](../mcps/mass-spectrum-interpreter.md) | High-precision analytical tool for interpreting mass spectrometry data and identifying molecular structures. |
 | [Melting Temperature Calculator](../mcps/melting-temperature-calculator.md) | Calculate DNA melting temperatures, GC content, and amplicon properties for PCR optimization. |
 | [Membrane Filtration Design](../mcps/membrane-filtration-design.md) | Calculate membrane area, flux, and concentration polarization for filtration systems. |
+| [Metal Complex Stability Predictor](../mcps/metal-complex-stability-predictor.md) | Predict thermodynamic stability of metal-ligand complexes using HSAB theory and chelate effect analysis. |
 | [Microbial Growth Rate Calculator](../mcps/microbial-growth-rate-calculator.md) | Calculate specific growth rate, doubling time, and growth yield for microbial populations. |
 | [Molecular Formula Determination Engine](../mcps/molecular-formula-determination-engine.md) | A precision engine for calculating empirical formulas, molecular formulas, and degree of unsaturation. |
 | [Molecular Orbital Diagram Generator](../mcps/molecular-orbital-diagram-generator.md) | Generates molecular orbital diagrams and chemical properties using MO theory. |
@@ -58,21 +66,26 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Nernst Equation Solver](../mcps/nernst-equation-solver.md) | Calculate electrochemical cell potentials and concentration requirements using the Nernst equation. |
 | [NMR Spectrum Interpreter](../mcps/nmr-spectrum-interpreter.md) | Analyze NMR spectra to determine molecular structures. |
 | [Organic Synthesis Planner](../mcps/organic-synthesis-planner.md) | Automated retrosynthetic analysis and synthetic route planning for organic molecules. |
+| [Organometallic Property Analyzer](../mcps/organometallic-property-analyzer.md) | Analyze electronic structure, oxidation states, and stability of organometallic complexes. |
 | [Partial Pressure Calculator](../mcps/partial-pressure-calculator.md) | Calculate partial pressures, mole fractions, and mass percentages for gas mixtures. |
+| [Pericyclic Reaction Analyzer](../mcps/pericyclic-reaction-analyzer.md) | Evaluates pericyclic reaction feasibility and stereochemistry using orbital symmetry. |
 | [Phylogenetic Tree Construction](../mcps/phylogenetic-tree-construction.md) | Construct evolutionary trees and calculate genetic distances from sequence alignments. |
 | [Polymer Molecular Weight Distribution Modeling](../mcps/polymer-molecular-weight-distribution-modeling.md) | Simulate and analyze polymer molecular weight distributions using statistical models. |
 | [Polymerization Degree Calculator](../mcps/polymerization-degree-calculator.md) | Calculate degree of polymerization, repeat units, and PDI for polymer chains. |
 | [Precipitation Prediction Model](../mcps/precipitation-prediction-model.md) | Predict chemical precipitation risks and thresholds based on ion concentrations and Ksp values. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
+| [Protecting Group Selector](../mcps/protecting-group-selector.md) | Select optimal protecting groups for organic synthesis based on functional group compatibility and orthogonality. |
 | [Protein Secondary Structure Predictor](../mcps/protein-secondary-structure-predictor.md) | Predict protein secondary structures like alpha-helices and beta-sheets from amino acid sequences. |
 | [Protein Stability Predictor](../mcps/protein-stability-predictor.md) | Predict protein thermal stability, aggregation risk, and shelf life. |
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Reaction Mechanism Predictor](../mcps/reaction-mechanism-predictor.md) | Reconstruct chemical reaction pathways from kinetic data and products. |
 | [Reaction Mechanism Simulator](../mcps/reaction-mechanism-simulator.md) | Predict organic reaction pathways, mechanisms, and energetic profiles. |
 | [Reaction Rate Calculator](../mcps/reaction-rate-calculator.md) | Calculate reaction orders, rate constants, half-lives, and concentration profiles. |
+| [Reagent Selection Guide](../mcps/reagent-selection-guide.md) | Identify optimal reagents, reaction conditions, and selectivity for chemical transformations. |
 | [Restriction Enzyme Analysis](../mcps/restriction-enzyme-analysis.md) | Analyze DNA digestion patterns, fragment sizes, and enzyme characteristics. |
 | [Retrosynthetic Analysis Engine](../mcps/retrosynthetic-analysis-engine.md) | Deconstruct complex molecules into simpler precursors using strategic disconnection analysis. |
 | [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
+| [Solid-State Structure Predictor](../mcps/solid-state-structure-predictor.md) | Predict crystal structures, coordination numbers, and unit cell parameters for inorganic solids. |
 | [Solution Concentration Calculator](../mcps/solution-concentration-calculator.md) | Calculate molarity, molality, mass percent, and other chemical concentrations. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
 | [Spectroscopy Wavelength Calculator](../mcps/spectroscopy-wavelength-calculator.md) | Converts between energy, frequency, wavelength, and wavenumber for spectroscopic transitions. |

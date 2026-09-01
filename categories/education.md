@@ -20,6 +20,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
 | [Circle of Fifths Navigator](../mcps/circle-of-fifths-navigator.md) | Navigate musical keys, identify tonal relationships, and plan modulations using the Circle of Fifverts framework. |
 | [Class Rank Estimator](../mcps/class-rank-estimator.md) | Estimate your class rank percentile using GPA, mean, and standard deviation. |
+| [Coordination Chemistry Calculator](../mcps/coordination-chemistry-calculator.md) | Calculate oxidation states, d-electron counts, and CFSE for coordination complexes. |
 | [Coordination Compound Nomenclature](../mcps/coordination-compound-nomenclature.md) | Generate IUPAC names, formulas, and geometries for coordination complexes. |
 | [Electrochemical Cell Calculator](../mcps/electrochemical-cell-calculator.md) | Calculates cell potential and Gibbs free energy using the Nernst equation. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
@@ -31,16 +32,21 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [GPA Cumulative Calculator](../mcps/gpa-cumulative-calculator.md) | Calculate and track semester and cumulative GPA using various grading scales. |
 | [Heat of Reaction Calculator](../mcps/heat-of-reaction-calculator.md) | Calculate enthalpy changes using Hess's Law, formation enthalpies, and bond energies. |
 | [IELTS Band Estimator](../mcps/ielts-band-estimator.md) | Estimate your IELTS band score, CEFR proficiency level, and discover matching visa and university requirements. |
+| [Inorganic Nomenclature Calculator](../mcps/inorganic-nomenclature-calculator.md) | Converts chemical formulas into IUPAC systematic names, common names, and validated formulas. |
 | [Interval Calculator](../mcps/interval-calculator.md) | Calculate musical intervals, properties, and note frequencies. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Le Chatelier Prediction](../mcps/le-chatelier-prediction.md) | Predict chemical equilibrium shifts caused by changes in concentration, pressure, or temperature. |
 | [Limiting Reagent Yield Calculator](../mcps/limiting-reagent-yield-calculator.md) | A precision stoichiometry engine for determining limiting reactants, theoretical yields, and efficiency metrics. |
+| [Main Group Chemistry Predictor](../mcps/main-group-chemistry-predictor.md) | Predict reactivity, stability, and reaction outcomes for main group elements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
 | [Organic Compound Nomenclature](../mcps/organic-compound-nomenclature.md) | Precise IUPAC naming and chemical property analysis for organic molecules. |
+| [Oxidation State Calculator](../mcps/oxidation-state-calculator.md) | Determine oxidation states, redox behavior, and chemical nomenclature. |
+| [Periodic Trend Analyzer](../mcps/periodic-trend-analyzer.md) | Analyzes periodic trends and elemental properties, accounting for atomic structure anomalies. |
 | [pH & pOH Calculator](../mcps/ph-poh-calculator.md) | Calculate pH, pOH, and ion concentrations for strong/weak electrolytes and buffers. |
 | [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
 | [Redox Reaction Balancer](../mcps/redox-reaction-balancer.md) | Balance redox reactions and identify chemical agents. |
+| [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
@@ -52,6 +58,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Structural Isomer Counter](../mcps/structural-isomer-counter.md) | Identify and count constitutional isomers for organic molecular formulas. |
 | [Study Abroad Cost Estimator](../mcps/study-abroad-cost-estimator.md) | Calculates a comprehensive budget for international studies in USD, EUR, and BRL. |
 | [Tarot Spread Structure Generator](../mcps/tarot-spread-structure-generator.md) | Provides deterministic structural blueprints for tarot spreads, including positions and reading sequences. |
+| [Transition Metal Chemistry Predictor](../mcps/transition-metal-chemistry-predictor.md) | Predict electronic, magnetic, and optical properties of transition metal complexes. |
 | [Verb Conjugation Engine](../mcps/verb-conjugation-engine.md) | Deterministic morphological engine for Romance language verb conjugation. |
 
 

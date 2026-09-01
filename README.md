@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,379 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,399 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -26,8 +26,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [customer-support](categories/customer-support.md) (107 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
+- [science](categories/science.md) (102 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [science](categories/science.md) (89 servers)
 - [health](categories/health.md) (76 servers)
 - [security](categories/security.md) (68 servers)
 - [analytics](categories/analytics.md) (63 servers)
@@ -37,11 +37,11 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [fort-knox](categories/fort-knox.md) (58 servers)
 - [artificial-intelligence](categories/artificial-intelligence.md) (56 servers)
 - [data-management](categories/data-management.md) (56 servers)
+- [education](categories/education.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [marketing](categories/marketing.md) (55 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [construction](categories/construction.md) (49 servers)
-- [education](categories/education.md) (49 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [mathematics](categories/mathematics.md) (45 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
