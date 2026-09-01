@@ -14,10 +14,10 @@ This MCP server provides advanced chemical modeling for s-block and p-block elem
 
 
 ## Available Tools (4)
+- **predict_element_reactivity**: Determines the general reactivity profile and preferred oxidation states of a single main group element
+- **assess_compound_stability**: Evaluates whether a specific main group compound is stable under given environmental conditions
 - **identify_diagonal_similarity**: Finds elements that exhibit similar chemical behavior to the input element due to diagonal relationships
 - **simulate_reaction_outcome**: Predicts the chemical products and stoichiometric likelihood of a reaction between a reactant and a condition
-- **assess_compound_stability**: Evaluates whether a specific main group compound is stable under given environmental conditions
-- **predict_element_reactivity**: Determines the general reactivity profile and preferred oxidation states of a single main group element
 
 
 ## 💬 Prompt Examples

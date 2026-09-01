@@ -14,9 +14,9 @@ This MCP server provides specialized tools for chemical analysis of molecular is
 
 
 ## Available Tools (4)
-- **identify_stereoisomers**: Determines the existence and count of stereoisomers for a specific structure
 - **analyze_isomerism_types**: Identifies which fundamental categories of isomerism are possible for a given structure
 - **get_conformational_analysis**: Identifies the presence of conformers and the nature of rotation within a molecule
+- **identify_stereoisomers**: Determines the existence and count of stereoisomers for a specific structure
 - **list_structural_isomers**: Finds all possible structural isomers for a given molecular formula
 
 

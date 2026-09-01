@@ -14,10 +14,10 @@ This MCP server provides precise chemical identification tools for inorganic com
 
 
 ## Available Tools (4)
-- **get_common_name**: Retrieves the widely recognized traditional name for a compound
 - **get_systematic_name**: Provides the formal, rule-based IUPAC name for a given chemical entity
 - **get_validated_formula**: Returns the correctly formatted chemical formula
 - **identify_compound_class**: Categorizes the compound into its specific chemical family
+- **get_common_name**: Retrieves the widely recognized traditional name for a compound
 
 
 ## 💬 Prompt Examples

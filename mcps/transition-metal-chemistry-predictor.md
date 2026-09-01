@@ -15,8 +15,8 @@ This MCP server provides specialized tools for coordination chemistry. Use `get_
 
 ## Available Tools (4)
 - **determine_geometry_and_splitting**: Identifies the most likely molecular geometry and the nature of the splitting
-- **predict_magnetic_properties**: Predicts if a complex is paramagnetic or diamagnetic and calculates the magnetic moment
 - **get_electron_configuration**: Determines the number of d-electrons for a given metal and oxidation state
+- **predict_magnetic_properties**: Predicts if a complex is paramagnetic or diamagnetic and calculates the magnetic moment
 - **predict_optical_properties**: Predicts the color of the complex based on electronic transitions
 
 

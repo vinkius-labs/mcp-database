@@ -15,9 +15,9 @@ This MCP server provides specialized chemical informatics tools to predict the a
 
 ## Available Tools (4)
 - **get_structural_influence**: Identifies specific functional groups contributing to the acid-base properties
-- **predict_pka**: Determines the predicted pKa value of a given molecular structure
 - **analyze_conjugate_stability**: Evaluates the electronic stability of the molecule's conjugate species
 - **classify_strength**: Categorizes a molecule into a standard acid-base strength class
+- **predict_pka**: Determines the predicted pKa value of a given molecular structure
 
 
 ## 💬 Prompt Examples

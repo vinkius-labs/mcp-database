@@ -14,10 +14,10 @@ This MCP server provides specialized tools for organometallic chemistry. It allo
 
 
 ## Available Tools (4)
-- **analyze_cycle_kinetics**: Determines the sequence of steps and identifies the bottleneck in the catalytic process
+- **map_catalyst_stability**: Predicts the structural stability of the catalyst against common degradation routes
 - **calculate_catalytic_efficiency**: Quantifies the productivity of the catalyst under specific conditions
 - **evaluate_deactivation_impact**: Assesses how much the catalyst's productivity is reduced by competing degradation pathways
-- **map_catalyst_stability**: Predicts the structural stability of the catalyst against common degradation routes
+- **analyze_cycle_kinetics**: Determines the sequence of steps and identifies the bottleneck in the catalytic process
 
 
 ## 💬 Prompt Examples
