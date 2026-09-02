@@ -99,6 +99,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Quantum Harmonic Oscillator Engine](../mcps/quantum-harmonic-oscillator-engine.md) | Calculates energy levels, vibrational frequency, and wavefunctions for quantum harmonic oscillators. |
 | [Quantum Mechanics Energy Levels](../mcps/quantum-mechanics-energy-levels.md) | Calculate energy eigenvalues, wavefunctions, and probability densities for fundamental quantum models. |
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
+| [Reaction Equilibrium Composition](../mcps/reaction-equilibrium-composition.md) | Calculates equilibrium composition, conversion, and temperature sensitivity for reacting chemical systems. |
 | [Reaction Feasibility Predictor](../mcps/reaction-feasibility-predictor.md) | Predict thermodynamic spontaneity and kinetic feasibility of chemical reactions. |
 | [Reaction Mechanism Predictor](../mcps/reaction-mechanism-predictor.md) | Reconstruct chemical reaction pathways from kinetic data and products. |
 | [Reaction Mechanism Simulator](../mcps/reaction-mechanism-simulator.md) | Predict organic reaction pathways, mechanisms, and energetic profiles. |

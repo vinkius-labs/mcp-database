@@ -450,6 +450,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Price Volume Trend Calculator](../mcps/price-volume-trend-calculator.md) | Analyze market momentum using Price Volume Trend (PVT) and divergence detection. |
 | [Pricing Strategy Calculator](../mcps/pricing-strategy-calculator.md) | Calculate optimal price points using Cost-Plus, Value-Based, and Competitive methodologies. |
 | [Pro-Labore Tax Calculator](../mcps/pro-labore-tax-calculator.md) | Calculate INSS, IRRF, and compare compensation strategies for business partners. |
+| [Process Economics Evaluation](../mcps/process-economics-evaluation.md) | Analyze the financial viability of chemical manufacturing processes. |
 | [Prorated Rent Calculator](../mcps/prorated-rent-calculator.md) | Calculate exact rent for partial months. |
 | [Protective Collar Strategy](../mcps/protective-collar-strategy.md) | A deterministic hedging engine for locking in profits and mitigating downside risk using protective collars. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |

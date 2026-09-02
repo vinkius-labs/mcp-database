@@ -22,6 +22,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
 | [Potato Sprout Control & Storage Management](../mcps/potato-sprout-control-storage-management.md) | Manage potato dormancy and calculate CIPC inhibitor application rates. |
+| [Rebar Scheduling Optimization](../mcps/rebar-scheduling-optimization.md) | Optimize just-in-time rebar deliveries to balance site storage and installation rates. |
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
