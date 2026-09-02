@@ -14,10 +14,10 @@ This MCP server provides precise calculations for the optical characteristics of
 
 
 ## Available Tools (4)
-- **predict_emission_color**: Translates the calculated wavelength into a human-readable color description
 - **calculate_optical_properties**: Provides a complete profile of the quantum dot's optical characteristics
 - **compare_materials_for_size**: Compares how different materials respond to the same physical diameter
 - **get_confinement_energy**: Isolates the specific energy shift caused by quantum confinement
+- **predict_emission_color**: Translates the calculated wavelength into a human-readable color description
 
 
 ## 💬 Prompt Examples

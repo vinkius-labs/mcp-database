@@ -35,7 +35,7 @@ Connect your **ExchangeRate-API** account to any AI agent to perform currency co
 
 
 ## Available Tools (6)
-- **get_quota**: Check remaining API request quota
+- **get_supported_codes**: Get list of all supported currency codes
 - **get_enriched_data**: Requires Business/Volume plan.
 
 Get enriched exchange rate data including localization
@@ -44,7 +44,7 @@ Get enriched exchange rate data including localization
 Get historical exchange rates for a specific date
 - **get_latest_rates**: Get latest exchange rates for a base currency
 - **get_pair_conversion**: Get exchange rate between two specific currencies
-- **get_supported_codes**: Get list of all supported currency codes
+- **get_quota**: Check remaining API request quota
 
 
 ## 💬 Prompt Examples

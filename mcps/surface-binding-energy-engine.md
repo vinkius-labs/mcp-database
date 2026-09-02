@@ -14,9 +14,9 @@ This MCP server provides a specialized thermodynamic engine for analyzing adsorp
 
 
 ## Available Tools (4)
-- **analyze_site_heterogeneity**: Evaluates how uniform the surface binding sites are based on the adsorption profile
 - **get_adsorption_enthalpy**: Determines the enthalpy change associated with the adsorption process
 - **get_binding_energy**: Calculates the specific surface binding energy for a given set of isotherm data
+- **analyze_site_heterogeneity**: Evaluates how uniform the surface binding sites are based on the adsorption profile
 - **get_multilayer_profile**: Identifies the pressure range and coverage where multi-layer adsorption begins to dominate
 
 

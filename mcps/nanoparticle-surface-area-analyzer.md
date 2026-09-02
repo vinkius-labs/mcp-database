@@ -14,10 +14,10 @@ This MCP server provides precise geometric and physical calculations for nanopar
 
 
 ## Available Tools (4)
-- **get_morphology_constants**: Retrieves geometric scaling factors for a specific shape
 - **analyze_size_distribution**: Calculates average physical properties across a population of particles with varying sizes
 - **calculate_specific_surface_area**: Calculates the specific surface area for a given particle shape and size
 - **calculate_surface_atom_fraction**: Calculates the percentage of atoms located on the surface of the particle
+- **get_morphology_constants**: Retrieves geometric scaling factors for a specific shape
 
 
 ## 💬 Prompt Examples

@@ -34,20 +34,20 @@ Transform your AI into an expert ornithology assistant. This MCP server provides
 
 
 ## Available Tools (12)
-- **get_checklist**: Get checklist details
 - **get_hotspots_in_region**: Get hotspots in a region
+- **get_recent_nearby_observations**: Get recent nearby observations
+- **get_taxonomic_groups**: Get taxonomic groups
+- **get_checklist**: Get checklist details
 - **get_nearby_hotspots**: Get nearby hotspots
 - **get_recent_checklists**: Get recent checklists in a region
-- **get_recent_nearby_observations**: Get recent nearby observations
-- **get_recent_observations_by_species**: Get recent observations of a species in a region
 - **get_recent_observations**: g., country, state, or county).
 
 Get recent observations in a region
+- **get_recent_observations_by_species**: Get recent observations of a species in a region
 - **get_region_info**: Get region info
 - **get_sub_regions**: g., states within a country).
 
 List sub-regions
-- **get_taxonomic_groups**: Get taxonomic groups
 - **get_taxonomy**: Get eBird taxonomy
 - **get_top_100**: Get top 100 observers
 

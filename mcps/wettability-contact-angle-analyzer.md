@@ -14,10 +14,10 @@ This MCP server provides specialized computational tools for surface science. It
 
 
 ## Available Tools (4)
-- **validate_measurement_consistency**: Checks if the provided contact angle measurements and surface tension components are physically consistent with the OWRK model
 - **analyze_wettability_regime**: Categorizes the wettability behavior of a liquid-solid pair
-- **calculate_adhesion_metrics**: Calculates the work of adhesion and the spreading coefficient for a specific liquid on a known surface
 - **calculate_surface_energy**: Determines the total surface energy and its component breakdown using the OWRK/Fowkes models
+- **calculate_adhesion_metrics**: Calculates the work of adhesion and the spreading coefficient for a specific liquid on a known surface
+- **validate_measurement_consistency**: Checks if the provided contact angle measurements and surface tension components are physically consistent with the OWRK model
 
 
 ## 💬 Prompt Examples

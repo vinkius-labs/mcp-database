@@ -14,10 +14,10 @@ This MCP server provides professional-grade engineering tools for chemical proce
 
 
 ## Available Tools (5)
-- **evaluate_recycle_and_purge**: Checks if a recycle loop is accumulating mass or if a purge stream is sufficient
 - **analyze_stream_composition**: Validates and normalizes the composition of a specific chemical stream
 - **calculate_unknown_flow_rate**: Determines a missing mass flow rate in a junction
 - **compute_component_balance**: Calculates the mass of a specific chemical species across a single unit or junction
+- **evaluate_recycle_and_purge**: Checks if a recycle loop is accumulating mass or if a purge stream is sufficient
 - **solve_reaction_balance**: Calculates the mass of products generated or reactants consumed during a chemical reaction
 
 

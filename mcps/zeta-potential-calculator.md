@@ -15,10 +15,10 @@ This MCP server provides specialized tools for colloid science. Use `calculate_z
 
 ## Available Tools (4)
 - **predict_colloidal_stability**: Evaluates whether a particle suspension is likely to be stable or prone to aggregation
+- **estimate_surface_charge**: Converts the measured zeta potential into a physical surface charge value
 - **calculate_zeta_potential**: Provide particle radius for Henry correction.
 
 Determines the zeta potential of a particle based on its movement in a fluid
-- **estimate_surface_charge**: Converts the measured zeta potential into a physical surface charge value
 - **get_medium_properties**: Retrieves standardized physical constants for common solvents
 
 
