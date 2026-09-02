@@ -14,9 +14,9 @@ This MCP server provides deterministic predictive analysis for Continuous Glucos
 
 
 ## Available Tools (3)
-- **get_glucose_velocity_analysis**: Calculates the precise rate of change, the visual trend arrow, and the predicted glucose level
 - **get_proactive_intervention_alert**: Determines if an immediate corrective action is required to prevent hypoglycemia
 - **get_trend_status**: Returns only the visual trend classification for a user to quickly interpret direction
+- **get_glucose_velocity_analysis**: Calculates the precise rate of change, the visual trend arrow, and the predicted glucose level
 
 
 ## 💬 Prompt Examples

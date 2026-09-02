@@ -14,10 +14,10 @@ This MCP server provides specialized thermodynamic tools for analyzing liquid-li
 
 
 ## Available Tools (4)
-- **generate_tie_lines**: Identifies the equilibrium relationship between phases across a range of compositions for a specific temperature
 - **analyze_phase_behavior**: Classifies the system behavior and identifies the presence of a miscibility gap
 - **calculate_distribution_coefficients**: Calculates the partitioning preference of each component between the two phases
 - **calculate_phase_compositions**: Determines the concentration of each component in each separated liquid phase
+- **generate_tie_lines**: Identifies the equilibrium relationship between phases across a range of compositions for a specific temperature
 
 
 ## 💬 Prompt Examples

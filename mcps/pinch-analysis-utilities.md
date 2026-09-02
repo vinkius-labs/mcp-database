@@ -14,10 +14,10 @@ This MCP server provides a suite of tools for chemical engineering pinch analysi
 
 
 ## Available Tools (4)
+- **evaluate_stream_splitting**: 
 - **analyze_pinch_targets**: 
 - **calculate_utility_optimization**: 
 - **check_pinch_violation**: 
-- **evaluate_stream_splitting**: 
 
 
 ## 💬 Prompt Examples

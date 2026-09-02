@@ -14,8 +14,8 @@ This MCP server provides specialized engineering tools for sizing emergency reli
 
 
 ## Available Tools (4)
-- **calculate_radiation_distance**: Finds the minimum distance from the flare tip required to meet a specific radiation safety limit
 - **calculate_tip_diameter**: Determines the optimal diameter of the flare tip to manage exit velocity
+- **calculate_radiation_distance**: Finds the minimum distance from the flare tip required to meet a specific radiation safety limit
 - **get_relief_profile**: Calculates the fundamental properties of the relief stream based on mass flow and composition
 - **sizing_summary**: Performs the complete sizing orchestration to provide a final stack height recommendation
 

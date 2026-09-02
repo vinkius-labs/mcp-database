@@ -14,10 +14,10 @@ This MCP server provides advanced process integration capabilities for chemical 
 
 
 ## Available Tools (4)
-- **analyze_pinch_limits**: 
 - **calculate_heat_loads**: 
 - **design_network_configuration**: 
 - **evaluate_energy_efficiency**: 
+- **analyze_pinch_limits**: 
 
 
 ## 💬 Prompt Examples

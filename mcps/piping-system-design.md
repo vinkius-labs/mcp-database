@@ -14,9 +14,9 @@ This MCP server provides essential fluid mechanics calculations for process plan
 
 
 ## Available Tools (4)
+- **calculate_pipe_diameter**: Determines the required internal diameter of a pipe to handle a specific flow rate while staying within velocity limits
 - **calculate_pressure_drop**: Calculates the total pressure loss across a specific length of pipe including all components
 - **calculate_pump_head**: Determines the total head (energy) a pump must provide to overcome all system resistances and elevation changes
-- **calculate_pipe_diameter**: Determines the required internal diameter of a pipe to handle a specific flow rate while staying within velocity limits
 - **validate_system_constraints**: Checks if a designed system meets safety and operational limits
 
 

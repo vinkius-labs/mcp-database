@@ -14,10 +14,10 @@ This MCP server provides professional engineering tools for sizing pressure reli
 
 
 ## Available Tools (4)
-- **validate_scenario_safety**: Performs a final check to ensure the proposed valve sizing provides adequate protection
 - **calculate_relief_capacity**: Determines the required mass or volumetric flow rate based on a specific relief scenario
 - **get_equipment_specs**: Retrieves the technical design limits for a specific piece of protected equipment
 - **size_valve_orifice**: Calculates the minimum required orifice area for a relief valve
+- **validate_scenario_safety**: Performs a final check to ensure the proposed valve sizing provides adequate protection
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for batch reactor design.
 
 
 ## Available Tools (4)
-- **optimize_production_schedule**: Calculates how many batches are needed and how to arrange them to meet a specific production quota
 - **analyze_mixing_impact**: Estimates how deviations in mixing quality affect the kinetics and volume requirements
 - **calculate_reactor_sizing**: Determines the required physical volume and the total time required for a single batch
 - **evaluate_thermal_requirements**: Assesses if the reactor can safely and effectively manage the heat generated or required by the reaction
+- **optimize_production_schedule**: Calculates how many batches are needed and how to arrange them to meet a specific production quota
 
 
 ## 💬 Prompt Examples

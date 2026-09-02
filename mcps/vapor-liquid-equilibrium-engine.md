@@ -15,9 +15,9 @@ This MCP server provides specialized thermodynamic tools for chemical process en
 
 ## Available Tools (4)
 - **calculate_dew_point**: Determines the conditions required for the first drop of liquid to form from a vapor mixture
+- **calculate_bubble_point**: Determines the conditions required for the first bubble of vapor to form from a liquid mixture
 - **check_azeotrope_existence**: Identifies if a mixture of specific components can form an azeotrope under specific conditions
 - **get_equilibrium_properties**: Calculates K-values and phase compositions at a fixed temperature and pressure
-- **calculate_bubble_point**: Determines the conditions required for the first bubble of vapor to form from a liquid mixture
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools to calculate the mechanic
 
 
 ## Available Tools (4)
-- **evaluate_intercooling_requirements**: Analyzes if intercooling is necessary and determines the temperature drop needed
 - **calculate_single_stage_parameters**: Determines the thermodynamic outcomes of a single compression step
 - **calculate_total_system_power**: Calculates the total mechanical power required to drive the entire compressor string
 - **determine_multi_stage_configuration**: Decides how many stages are required and how the pressure should be distributed
+- **evaluate_intercooling_requirements**: Analyzes if intercooling is necessary and determines the temperature drop needed
 
 
 ## 💬 Prompt Examples

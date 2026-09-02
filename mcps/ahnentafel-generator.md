@@ -14,9 +14,9 @@ This MCP server provides a mathematical engine for genealogical lineage manageme
 
 
 ## Available Tools (3)
-- **calculate_ahnentafel_numbers**: Assign a unique, deterministic Ahnentafel number to every person provided in a flat list of ancestral relationships
 - **get_relationship_path**: Find the specific genealogical path required to reach a specific ancestor from the subject
 - **validate_pedigree_integrity**: Verify that a provided set of ancestors adheres to the strict rules of the Ahnentafel system
+- **calculate_ahnentafel_numbers**: Assign a unique, deterministic Ahnentafel number to every person provided in a flat list of ancestral relationships
 
 
 ## 💬 Prompt Examples

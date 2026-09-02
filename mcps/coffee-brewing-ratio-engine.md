@@ -14,8 +14,8 @@ This MCP server provides precise brewing calculations following the SCA Golden C
 
 
 ## Available Tools (3)
-- **calculate_brew_parameters**: Calculates the core ingredients and timing required for a specific brew
 - **get_method_recommendations**: Suggests optimal ratios and temperatures for specific brew methods if the user is unsure
+- **calculate_brew_parameters**: Calculates the core ingredients and timing required for a specific brew
 - **validate_ratio_compatibility**: Checks if a specific user-provided ratio is appropriate for a chosen brewing method
 
 

@@ -14,9 +14,9 @@ This MCP server provides chemical engineering tools to design Continuous Stirred
 
 
 ## Available Tools (4)
-- **get_residence_time_summary**: Compares the residence time against a set of industry standard thresholds
 - **calculate_cstr_series**: Calculates the total volume and cumulative conversion for a sequence of CSTRs
 - **calculate_single_cstr**: Determines the required volume and residence time for a single reactor to reach a specific conversion
+- **get_residence_time_summary**: Compares the residence time against a set of industry standard thresholds
 - **validate_kinetic_parameters**: Ensures the provided kinetic data is physically meaningful and consistent
 
 

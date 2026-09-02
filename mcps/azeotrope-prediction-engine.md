@@ -14,10 +14,10 @@ This MCP server provides advanced thermodynamic analysis for chemical mixtures. 
 
 
 ## Available Tools (4)
-- **validate_mixture_miscibility**: Checks if a mixture is expected to be homogeneous or heterogeneous
 - **analyze_pressure_sensitivity**: Determines how the azeotropic point shifts when pressure is changed
 - **get_azeotrope_properties**: Calculates the exact physical characteristics of a confirmed azeotrope
 - **predict_azeotrope_existence**: Determines if a mixture of specific components will form an azeotrope under given conditions
+- **validate_mixture_miscibility**: Checks if a mixture is expected to be homogeneous or heterogeneous
 
 
 ## 💬 Prompt Examples

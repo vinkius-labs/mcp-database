@@ -14,10 +14,10 @@ This MCP server provides essential engineering tools for fluid transport system 
 
 
 ## Available Tools (4)
-- **pump_calculate_power_requirements**: Determine the electrical and mechanical power needed to drive the pump at a specific operating point
-- **pump_check_cavitation_risk**: Evaluate if the current system configuration will cause cavitation damage
 - **pump_apply_affinity_laws**: Predict how changing the pump hardware (impeller size) or speed will impact performance
 - **pump_calculate_operating_point**: Determine the specific operating conditions where the pump performance meets the system resistance
+- **pump_calculate_power_requirements**: Determine the electrical and mechanical power needed to drive the pump at a specific operating point
+- **pump_check_cavitation_risk**: Evaluate if the current system configuration will cause cavitation damage
 
 
 ## 💬 Prompt Examples

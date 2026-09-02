@@ -14,8 +14,8 @@ This MCP server provides engineering tools to design atmospheric storage tanks a
 
 
 ## Available Tools (4)
-- **design_tank_roof**: Determines the type and thickness of the roof structure
 - **calculate_shell_thickness**: Determines the necessary thickness of the vertical steel plates for the tank shell
+- **design_tank_roof**: Determines the type and thickness of the roof structure
 - **evaluate_environmental_stability**: Assesses the tank's resistance to wind and seismic forces
 - **get_tank_dimensions**: Calculates the physical footprint and height of the tank based on required volume
 

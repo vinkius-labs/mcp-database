@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing Plug Flow R
 
 
 ## Available Tools (4)
-- **simulate_temperature_profile**: Predicts how the temperature changes as the reaction progresses through the reactor
+- **calculate_residence_time**: Calculates how long a fluid element remains within the reactor
 - **estimate_pressure_drop**: Calculates the loss in pressure experienced by the fluid due to reactor resistance
 - **get_reactor_volume**: Determines the physical size required for a reactor to reach a specific conversion goal
-- **calculate_residence_time**: Calculates how long a fluid element remains within the reactor
+- **simulate_temperature_profile**: Predicts how the temperature changes as the reaction progresses through the reactor
 
 
 ## 💬 Prompt Examples
