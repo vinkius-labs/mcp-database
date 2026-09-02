@@ -9,6 +9,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | [Delio](../mcps/delio.md) | Automate wealth management workflows via Delio Core OS — manage deals, investors, portfolio transactions, compliance forms, and platform users from any AI agent. |
 | [Effluent Discharge Compliance](../mcps/effluent-discharge-compliance.md) | Evaluates pollutant discharge compliance with regulatory limits and calculates required treatment levels. |
 | [Environmental Release Reporting](../mcps/environmental-release-reporting.md) | Determines reporting requirements, timelines, and thresholds for chemical releases. |
+| [Fugitive Emissions Estimator](../mcps/fugitive-emissions-estimator.md) | Calculate fugitive emissions and LDAR compliance requirements for industrial equipment. |
 | [Groundwater Monitoring Program Designer](../mcps/groundwater-monitoring-program-designer.md) | Design comprehensive groundwater monitoring strategies including well placement and sampling schedules. |
 | [Hazardous Waste Classifier](../mcps/hazardous-waste-classifier.md) | Classifies waste streams as hazardous or non-hazardous using RCRA and EU standards. |
 | [Permit Compliance Tracking](../mcps/permit-compliance-tracking.md) | Monitor and validate environmental permit adherence across air, water, and waste media. |

@@ -43,6 +43,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Drug Stability Kinetics](../mcps/drug-stability-kinetics.md) | Models pharmaceutical degradation kinetics and predicts shelf life. |
 | [Electrode Potential Calculator](../mcps/electrode-potential-calculator.md) | Calculate electrode potentials, detection limits, and selectivity impacts for ion-selective electrodes. |
 | [Electrolysis Calculator](../mcps/electrolysis-calculator.md) | Calculate mass, gas volume, and charge requirements for electrolysis reactions. |
+| [Energy Balance Calculator](../mcps/energy-balance-calculator.md) | Calculate sensible heat, phase changes, mixing temperatures, and process efficiency. |
 | [Enzyme Inhibition Analysis](../mcps/enzyme-inhibition-analysis.md) | Determine enzyme inhibition mechanisms and kinetic parameters like Ki and IC50. |
 | [Fermentation Kinetics Model](../mcps/fermentation-kinetics-model.md) | Models fermentation process kinetics to determine growth and production rates. |
 | [Fuel Cell Performance Engine](../mcps/fuel-cell-performance-engine.md) | Calculate thermodynamic and electrochemical performance metrics for fuel cells. |
@@ -90,6 +91,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Polymerization Degree Calculator](../mcps/polymerization-degree-calculator.md) | Calculate degree of polymerization, repeat units, and PDI for polymer chains. |
 | [Precipitation Prediction Model](../mcps/precipitation-prediction-model.md) | Predict chemical precipitation risks and thresholds based on ion concentrations and Ksp values. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
+| [Process Simulation Setup](../mcps/process-simulation-setup.md) | Execute steady-state chemical process simulations, mass/energy balances, and equipment sizing. |
 | [Protecting Group Selector](../mcps/protecting-group-selector.md) | Select optimal protecting groups for organic synthesis based on functional group compatibility and orthogonality. |
 | [Protein Secondary Structure Predictor](../mcps/protein-secondary-structure-predictor.md) | Predict protein secondary structures like alpha-helices and beta-sheets from amino acid sequences. |
 | [Protein Stability Predictor](../mcps/protein-stability-predictor.md) | Predict protein thermal stability, aggregation risk, and shelf life. |

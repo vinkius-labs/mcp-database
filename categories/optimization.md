@@ -31,6 +31,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [RAG Chunk Optimization Calculator](../mcps/rag-chunk-optimization-calculator.md) | Deterministic tool for optimizing RAG chunk size and overlap parameters. |
 | [RAG Chunk Selection Optimizer](../mcps/rag-chunk-selection-optimizer.md) | A deterministic engine to select the most effective RAG information chunks within token budgets. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
+| [Reactor Network Synthesis](../mcps/reactor-network-synthesis.md) | Optimizes reactor configurations, volumes, and sequences to maximize selectivity and economic yield. |
 | [Speculative Decoding Calculator](../mcps/speculative-decoding-calculator.md) | Optimize LLM inference speed and cost using deterministic speculative decoding metrics. |
 | [Speculative Decoding Speedup Calculator](../mcps/speculative-decoding-speedup-calculator.md) | Calculate efficiency gains and throughput improvements for speculative decoding strategies. |
 | [Sprite Sheet Memory Optimizer](../mcps/sprite-sheet-memory-optimizer.md) | Calculate optimal sprite sheet layouts and analyze memory footprint, utilization, and rendering efficiency. |

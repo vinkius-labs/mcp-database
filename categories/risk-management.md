@@ -5,6 +5,7 @@ Explore the open database of **risk-management** Model Context Protocol (MCP) se
 | Tool Name | Description |
 |-----------|-------------|
 | [Peanut Aflatoxin Risk Model](../mcps/peanut-aflatoxin-risk-model.md) | Predict aflatoxin contamination risk and economic impact in peanut crops. |
+| [Process Safety Analysis](../mcps/process-safety-analysis.md) | Conduct HAZOP, LOPA, and SIL assessments to manage industrial process risks. |
 | [Wheat Vomitoxin Risk Predictor](../mcps/wheat-vomitoxin-risk-predictor.md) | Predicts deoxynivalenol (DON) contamination risk in wheat crops. |
 
 

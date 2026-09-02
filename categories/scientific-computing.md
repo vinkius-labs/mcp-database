@@ -4,6 +4,7 @@ Explore the open database of **scientific-computing** Model Context Protocol (MC
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Liquid-Liquid Equilibrium Engine](../mcps/liquid-liquid-equilibrium-engine.md) | Calculates phase compositions, distribution coefficients, and tie lines for immiscible liquid systems. |
 | [Plasmon Resonance Calculator](../mcps/plasmon-resonance-calculator.md) | Calculate surface plasmon resonance wavelength, extinction, and field enhancement for metallic nanoparticles. |
 
 
