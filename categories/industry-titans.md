@@ -232,7 +232,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Kavak](../mcps/kavak.md) | Browse, inspect, finance, and reserve certified used cars from Kavak — Mexico's largest online used car platform — directly from any AI agent. |
 | [Kingdee / 金蝶](../mcps/kingdee.md) | Comprehensive enterprise ERP platform — manage materials, customers, and business flows via AI. |
 | [Kuaishou Mini-Game](../mcps/kuaishou-mini-game.md) | Kuaishou mini-game developer API — manage cloud storage, leaderboards, analytics, and content moderation for casual games. |
-| [LexisNexis](../mcps/lexisnexis.md) | Manage your corporate intelligence — audit news, company data, and legal cases via AI. |
 | [Lingyi Wanwu](../mcps/lingyi-wanwu.md) | Orchestrate Lingyi Wanwu AI models — manage chat completions, embeddings, and monitor Yi model performance directly from any AI agent. |
 | [LinkedIn](../mcps/linkedin.md) | Publish to your personal profile or Company Page, share articles, react, comment, and manage LinkedIn engagement through your AI agent. |
 | [LinkedIn Ads](../mcps/linkedin-ads.md) | Access marketing analytics, campaigns, and reporting via the LinkedIn Ads REST API. |

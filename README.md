@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,519 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,588 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -13,12 +13,13 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [productivity](categories/productivity.md) (1000 servers)
 - [developer-tools](categories/developer-tools.md) (691 servers)
 - [finance](categories/finance.md) (632 servers)
-- [industry-titans](categories/industry-titans.md) (587 servers)
+- [industry-titans](categories/industry-titans.md) (586 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [agriculture](categories/agriculture.md) (188 servers)
-- [science](categories/science.md) (137 servers)
+- [construction](categories/construction.md) (142 servers)
+- [science](categories/science.md) (138 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
@@ -28,10 +29,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [construction](categories/construction.md) (85 servers)
 - [health](categories/health.md) (76 servers)
 - [security](categories/security.md) (68 servers)
 - [analytics](categories/analytics.md) (64 servers)
+- [engineering](categories/engineering.md) (64 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (58 servers)
@@ -41,7 +42,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [education](categories/education.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [marketing](categories/marketing.md) (55 servers)
-- [engineering](categories/engineering.md) (54 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [mathematics](categories/mathematics.md) (45 servers)
@@ -198,6 +198,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [blockchain](categories/blockchain.md) (1 servers)
 - [business-management](categories/business-management.md) (1 servers)
 - [calculation](categories/calculation.md) (1 servers)
+- [civil-engineering](categories/civil-engineering.md) (1 servers)
 - [cloud-storage](categories/cloud-storage.md) (1 servers)
 - [communication-tools](categories/communication-tools.md) (1 servers)
 - [content-analysis](categories/content-analysis.md) (1 servers)
@@ -254,6 +255,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [smart-home](categories/smart-home.md) (1 servers)
 - [social-network](categories/social-network.md) (1 servers)
 - [structural-design](categories/structural-design.md) (1 servers)
+- [structural-engineering](categories/structural-engineering.md) (1 servers)
 - [system-utilities](categories/system-utilities.md) (1 servers)
 - [technical-analysis](categories/technical-analysis.md) (1 servers)
 - [telecommunications](categories/telecommunications.md) (1 servers)

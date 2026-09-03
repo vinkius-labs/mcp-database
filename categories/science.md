@@ -109,6 +109,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Retrosynthetic Analysis Engine](../mcps/retrosynthetic-analysis-engine.md) | Deconstruct complex molecules into simpler precursors using strategic disconnection analysis. |
 | [Sedimentation Velocity Dynamics](../mcps/sedimentation-velocity-dynamics.md) | Calculate particle sedimentation coefficients, terminal velocities, and Svedberg constants. |
 | [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
+| [Slope Stability Analysis](../mcps/slope-stability-analysis.md) | Evaluate soil slope stability using Bishop's simplified method. |
 | [Solid-State Structure Predictor](../mcps/solid-state-structure-predictor.md) | Predict crystal structures, coordination numbers, and unit cell parameters for inorganic solids. |
 | [Solution Concentration Calculator](../mcps/solution-concentration-calculator.md) | Calculate molarity, molality, mass percent, and other chemical concentrations. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
