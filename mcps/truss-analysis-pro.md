@@ -14,10 +14,10 @@ This MCP server provides structural engineering tools to analyze truss structure
 
 
 ## Available Tools (4)
-- **estimate_max_deflection**: Predicts the maximum displacement of the truss structure under the specified loading conditions
-- **analyze_truss_equilibrium**: Calculates the external reaction forces at the supports based on the applied loads and truss geometry
 - **calculate_member_forces**: Determines the axial tension or compression in every individual member of the truss
+- **estimate_max_deflection**: Predicts the maximum displacement of the truss structure under the specified loading conditions
 - **verify_structural_integrity**: Checks if the calculated forces exceed the capacity of the truss members
+- **analyze_truss_equilibrium**: Calculates the external reaction forces at the supports based on the applied loads and truss geometry
 
 
 ## 💬 Prompt Examples

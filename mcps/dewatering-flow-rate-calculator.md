@@ -14,10 +14,10 @@ This MCP server provides essential geotechnical tools for managing groundwater d
 
 
 ## Available Tools (4)
+- **calculate_flow_rate**: Determines the total volume of water that must be removed per minute to achieve the target drawdown
 - **calculate_pump_requirements**: Determines the mechanical pump equipment necessary to move the calculated flow
 - **calculate_well_configuration**: Determines the number of wells needed and how far apart they should be placed
 - **evaluate_boundary_impact**: Adjusts the expected flow rate based on environmental constraints like nearby water bodies
-- **calculate_flow_rate**: Determines the total volume of water that must be removed per minute to achieve the target drawdown
 
 
 ## 💬 Prompt Examples

@@ -16,8 +16,8 @@ The Crop Rotation Planner connects AI agents to advanced agricultural intelligen
 ## Available Tools (4)
 - **analyze_crop_compatibility**: Determines if two specific crops can be grown in succession based on biological constraints
 - **calculate_rotation_yield**: Estimates the expected yield of a crop given its predecessor in a rotation
-- **evaluate_soil_health_impact**: Predicts how a specific crop will affect the soil quality for future seasons
 - **generate_rotation_plan**: Creates a multi-year sequence of crops that maximizes economic return while maintaining soil health and compatibility
+- **evaluate_soil_health_impact**: Predicts how a specific crop will affect the soil quality for future seasons
 
 
 ## 💬 Prompt Examples

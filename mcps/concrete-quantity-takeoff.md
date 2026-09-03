@@ -14,10 +14,10 @@ This MCP server provides specialized tools for construction professionals to det
 
 
 ## Available Tools (4)
-- **compare_takeoff_scenarios**: To evaluate how different waste factors or opening configurations impact the final order quantity
-- **validate_element_geometry**: To check if the provided dimensions and openings are physically possible
 - **calculate_element_volume**: To determine the net and gross volumes for a single structural element
+- **compare_takeoff_scenarios**: To evaluate how different waste factors or opening configurations impact the final order quantity
 - **estimate_pump_requirements**: To calculate the additional concrete volume required specifically due to the use of a concrete pump
+- **validate_element_geometry**: To check if the provided dimensions and openings are physically possible
 
 
 ## 💬 Prompt Examples

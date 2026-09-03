@@ -14,10 +14,10 @@ This MCP server provides specialized engineering calculations to ensure the stru
 
 
 ## Available Tools (4)
+- **calculate_gravel_filter_thickness**: Calculates the necessary thickness of the gravel filter layer to prevent soil migration and clogging
 - **calculate_drain_pipe_diameter**: Determines the required diameter of the perforated drainage pipe to accommodate the expected water volume
 - **calculate_weep_hole_spacing**: Determines the optimal distance between weep holes in the retaining wall face
 - **evaluate_drainage_safety_margin**: Provides an assessment of the overall drainage design's adequacy against clogging and pressure risks
-- **calculate_gravel_filter_thickness**: Calculates the necessary thickness of the gravel filter layer to prevent soil migration and clogging
 
 
 ## 💬 Prompt Examples

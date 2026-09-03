@@ -15,9 +15,9 @@ This MCP server provides technical calculation tools for concrete pumping operat
 
 ## Available Tools (4)
 - **evaluate_pipeline_efficiency**: Analyzes how the chosen pipe diameter impacts the pressure requirements
-- **calculate_required_pressure**: Determines the total discharge pressure needed at the pump to overcome all system resistances
 - **get_line_configuration_summary**: Provides a high-level summary of the physical setup for site planning
 - **verify_pump_capability**: Checks if a specific pump model can meet the requirements of a calculated pressure profile
+- **calculate_required_pressure**: Determines the total discharge pressure needed at the pump to overcome all system resistances
 
 
 ## 💬 Prompt Examples

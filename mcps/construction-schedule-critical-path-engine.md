@@ -14,10 +14,10 @@ This MCP server provides advanced Critical Path Method (CPM) capabilities for co
 
 
 ## Available Tools (4)
-- **get_activity_schedule_details**: Retrieves specific timing data (ES, EF, LS, LF, and Float) for a specific activity
-- **simulate_weather_delay_impact**: Estimates how much the project completion date will shift if a specific weather event occurs
 - **analyze_resource_impact**: Identifies if specific resource limitations are causing delays or if they are pushing activities off the critical path
 - **calculate_project_timeline**: Provides a high-level summary of the entire project schedule including the total duration and the primary critical path
+- **get_activity_schedule_details**: Retrieves specific timing data (ES, EF, LS, LF, and Float) for a specific activity
+- **simulate_weather_delay_impact**: Estimates how much the project completion date will shift if a specific weather event occurs
 
 
 ## 💬 Prompt Examples

@@ -14,12 +14,12 @@ This MCP server provides precise tools for structural engineers to predict and v
 
 
 ## Available Tools (4)
-- **analyze_geometry_impact**: Evaluates how changes in cover or bar diameter affect the potential crack width
 - **calculate_crack_width**: Determines the physical width of a crack based on mechanical and geometric inputs
 - **get_exposure_limits**: g., XC1, XS1, XF1) to get the allowable crack width limits.
 
 Retrieves the maximum allowable crack width based on the environmental exposure class
 - **validate_crack_compliance**: Checks if a specific set of crack parameters meets the limits of a specific exposure class
+- **analyze_geometry_impact**: Evaluates how changes in cover or bar diameter affect the potential crack width
 
 
 ## 💬 Prompt Examples

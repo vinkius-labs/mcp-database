@@ -14,10 +14,10 @@ This MCP server provides specialized tools for construction professionals to est
 
 
 ## Available Tools (4)
-- **calculate_reinforcement_fabric**: Estimates the linear or square meters of reinforcement fabric required for joints and corners
-- **generate_material_summary**: Consolidates all individual material calculations into a single procurement list
 - **calculate_membrane_requirement**: Determines the total amount of waterproofing membrane needed for a specific surface area
 - **estimate_adhesive_needs**: Calculates the volume of adhesive required based on the membrane area
+- **generate_material_summary**: Consolidates all individual material calculations into a single procurement list
+- **calculate_reinforcement_fabric**: Estimates the linear or square meters of reinforcement fabric required for joints and corners
 
 
 ## 💬 Prompt Examples
