@@ -14,8 +14,8 @@ This MCP server provides specialized engineering tools for designing Self-Compac
 
 
 ## Available Tools (4)
-- **calculate_mix_proportions**: Generates the primary SCC mix design based on target performance requirements
 - **check_segregation_stability**: Assesses the risk of aggregate settlement and bleeding
+- **calculate_mix_proportions**: Generates the primary SCC mix design based on target performance requirements
 - **get_material_efficiency**: Provides a cost and efficiency overview of the design
 - **verify_passing_ability**: Evaluates if the current mix design will successfully pass through reinforcement
 

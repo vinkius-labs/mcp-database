@@ -15,9 +15,9 @@ This MCP server provides technical engineering tools to design concrete formwork
 
 ## Available Tools (4)
 - **get_tie_cone_layout**: Defines the optimal placement of tie cones relative to the rod and waler intersections
-- **get_waler_specification**: Determines the necessary structural size for the horizontal walers
 - **get_rod_spacing**: Calculates the required horizontal distance between tie rods to prevent overloading
 - **get_system_safety_check**: Evaluates if the current design configuration is safe against deflection and rod capacity
+- **get_waler_specification**: Determines the necessary structural size for the horizontal walers
 
 
 ## 💬 Prompt Examples

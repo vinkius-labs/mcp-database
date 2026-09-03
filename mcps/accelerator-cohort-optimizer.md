@@ -15,8 +15,8 @@ This MCP server provides advanced optimization tools for accelerator programs to
 
 ## Available Tools (3)
 - **calculate_optimal_composition**: 
-- **evaluate_cohort_health**: 
 - **simulate_synergy_impact**: 
+- **evaluate_cohort_health**: 
 
 
 ## 💬 Prompt Examples

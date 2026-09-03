@@ -16,8 +16,8 @@ This MCP server provides specialized calculation tools for fiber-reinforced conc
 ## Available Tools (4)
 - **estimate_fiber_count**: Calculates the total number of individual fibers present in the concrete volume
 - **evaluate_performance_improvement**: Predicts the qualitative or quantitative improvement in concrete properties
-- **calculate_fiber_dosage**: Determines the required mass of fiber needed to meet a specific performance goal
 - **optimize_mix_design**: Suggests the most efficient mixing approach and dosage for a given set of constraints
+- **calculate_fiber_dosage**: Determines the required mass of fiber needed to meet a specific performance goal
 
 
 ## 💬 Prompt Examples

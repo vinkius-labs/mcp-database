@@ -14,8 +14,8 @@ This MCP server provides specialized tools to calculate the economic impact of t
 
 
 ## Available Tools (3)
-- **get_wash_sale_window**: Determines the regulatory window for wash sale compliance
 - **evaluate_harvesting_opportunity**: Calculates the potential tax benefits and net economic impact of harvesting losses
+- **get_wash_sale_window**: Determines the regulatory window for wash sale compliance
 - **retrieve_tax_rate_by_jurisdiction**: Retrieves the correct capital gains percentage based on jurisdiction and income band
 
 

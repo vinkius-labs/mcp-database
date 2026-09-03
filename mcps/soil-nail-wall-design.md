@@ -16,8 +16,8 @@ This MCP server provides specialized engineering tools for designing and analyzi
 ## Available Tools (4)
 - **analyze_global_stability**: Evaluates if the entire excavation is safe from catastrophic failure
 - **get_nail_diameter**: Calculates the required diameter of the steel nail to meet capacity requirements
-- **get_required_nail_length**: Determines the necessary depth of the nails to ensure the reinforced zone is sufficient
 - **calculate_nail_capacity**: Determines how much force a specific nail can resist based on its dimensions and soil environment
+- **get_required_nail_length**: Determines the necessary depth of the nails to ensure the reinforced zone is sufficient
 
 
 ## 💬 Prompt Examples

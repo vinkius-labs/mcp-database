@@ -14,9 +14,9 @@ This MCP server provides specialized tools to determine the surface properties o
 
 
 ## Available Tools (4)
-- **estimate_rebound_impact**: Specifically calculates the expected rebound number for non-destructive testing simulations
 - **calculate_surface_hardness**: Provides a comprehensive suite of hardness and wear metrics for a given concrete profile
 - **evaluate_abrasion_resistance**: Determines how well the surface will withstand wear based on its chemical and mechanical state
+- **estimate_rebound_impact**: Specifically calculates the expected rebound number for non-destructive testing simulations
 - **get_hardness_correlation_factors**: Retrieves the adjustment multipliers used to transform core strength into surface metrics
 
 

@@ -14,8 +14,8 @@ The MEWS Calculator is a clinical assessment tool designed to identify patients 
 
 
 ## Available Tools (3)
-- **check_activation_threshold**: Checks if a MEWS score requires activation of the Rapid Response Team
 - **calculate_mews_score**: Calculates the cumulative MEWS score based on vital signs
+- **check_activation_threshold**: Checks if a MEWS score requires activation of the Rapid Response Team
 - **get_clinical_classification**: Determines the clinical risk category based on a MEWS score
 
 

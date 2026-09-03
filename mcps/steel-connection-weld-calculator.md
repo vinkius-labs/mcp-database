@@ -15,9 +15,9 @@ This MCP server provides precise engineering calculations for steel welding. It 
 
 ## Available Tools (4)
 - **calculate_minimum_weld_size**: Determines the minimum allowable weld size to prevent cracking based on part thicknesses
+- **determine_required_length**: Calculates how long a weld must be to safely resist a specific applied load
 - **calculate_weld_strength**: Calculates the total load-carrying capacity of a specific weld configuration
 - **recommend_weld_parameters**: Provides a complete package of weld specifications (size, length, and electrode) for a given connection scenario
-- **determine_required_length**: Calculates how long a weld must be to safely resist a specific applied load
 
 
 ## 💬 Prompt Examples

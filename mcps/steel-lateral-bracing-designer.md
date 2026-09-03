@@ -14,8 +14,8 @@ This MCP server provides structural engineering tools to design lateral bracing 
 
 
 ## Available Tools (4)
-- **calculate_brace_sizing**: Determines the required cross-sectional properties for the chosen bracing type to resist lateral loads
 - **calculate_connection_forces**: Calculates the forces applied to the structural joints where the braces meet the frame
+- **calculate_brace_sizing**: Determines the required cross-sectional properties for the chosen bracing type to resist lateral loads
 - **optimize_stiffness_distribution**: Recommends how to distribute bracing stiffness across different levels of the building
 - **validate_drift_compliance**: Checks if the current bracing design prevents the building from swaying beyond allowable limits
 
