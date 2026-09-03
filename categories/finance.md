@@ -224,7 +224,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
 | [Employer Cost Calculator](../mcps/employer-cost-calculator.md) | Calculate the true total cost of an employee including taxes, provisions, and levies. |
 | [Energy Efficiency Calculator](../mcps/energy-efficiency-calculator.md) | Estimate energy savings and ROI for lighting, appliances, insulation, and HVAC upgrades. |
+| [Enterprise Budget Cycle Alignment](../mcps/enterprise-budget-cycle-alignment.md) | Aligns fiscal timelines with discretionary spending windows and approval hierarchies. |
 | [Enterprise Budget Generator](../mcps/enterprise-budget-generator.md) | Generate comprehensive agricultural budget reports for crops and livestock. |
+| [Enterprise CAB Value Calculator](../mcps/enterprise-cab-value-calculator.md) | Quantify the financial and strategic ROI of your Customer Advisory Board programs. |
+| [Enterprise Customer Economics by Tier](../mcps/enterprise-customer-economics-by-tier.md) | Analyze unit economics, LTV:CAC ratios, and tier prioritization for enterprise segments. |
+| [Enterprise Sales Capacity Planner](../mcps/enterprise-sales-capacity-planner.md) | Calculate sales headcount, revenue capacity, and hiring timelines. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
 | [ETF Arbitrage Strategy](../mcps/etf-arbitrage-strategy.md) | Identify and quantify arbitrage opportunities between ETF market prices and NAV. |
 | [EU Employment Termination Calculator](../mcps/eu-employment-termination-calculator.md) | Estimate statutory severance pay for Germany, France, Spain, and Portugal. |

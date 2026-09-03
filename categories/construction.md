@@ -11,6 +11,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |
 | [Column Load Capacity Calculator](../mcps/column-load-capacity-calculator.md) | Calculate axial load, moment capacity, and slenderness for reinforced concrete columns. |
 | [Column Sizing Estimator](../mcps/column-sizing-estimator.md) | Preliminary sizing for reinforced concrete and steel columns based on vertical load accumulation. |
+| [Concrete Bleeding Rate Predictor](../mcps/concrete-bleeding-rate-predictor.md) | Predicts water bleeding rates, total volume, and finishing windows for fresh concrete mixes. |
 | [Concrete Bundle Bar Analyzer](../mcps/concrete-bundle-bar-analyzer.md) | Verify bundle bar compliance and spacing requirements using ACI provisions. |
 | [Concrete Calculator](../mcps/concrete-calculator.md) | Deterministic tool for precise concrete volume, material, and rebar calculations. |
 | [Concrete Carbonation Diagnostic Tool](../mcps/concrete-carbonation-diagnostic-tool.md) | Predict carbonation depth, corrosion timing, and remaining service life for reinforced concrete structures. |
@@ -75,6 +76,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Footing Size Calculator](../mcps/footing-size-calculator.md) | Calculate minimum square footing dimensions and thickness based on column load and soil bearing capacity. |
 | [Formwork Area Calculator](../mcps/formwork-area-calculator.md) | Estimate material requirements and quantities for construction formwork systems. |
 | [Formwork Pressure Calculator](../mcps/formwork-pressure-calculator.md) | Calculates lateral pressure on formwork using ACI standards. |
+| [Formwork Striking Time Optimizer](../mcps/formwork-striking-time-optimizer.md) | Calculates safe formwork removal timing based on concrete strength and environmental factors. |
 | [Formwork Tie Rod Design Engine](../mcps/formwork-tie-rod-design-engine.md) | Calculates optimal tie rod spacing, waler sizing, and safety checks for concrete formwork. |
 | [Foundation Load Calculator](../mcps/foundation-load-calculator.md) | Calculate total structural loads for columns and foundation beams. |
 | [Giddyup](../mcps/giddyup.md) | Coordinate field service teams with job dispatching, route optimization, and real-time status updates for mobile workforces. |

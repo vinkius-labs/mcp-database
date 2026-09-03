@@ -368,6 +368,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Engineering Compliance Prover](../mcps/engineering-compliance-prover.md) | Forces AI to validate structural designs against US codes (ASCE, ACI, NEC). Demands real capacity-demand ratios, traced load paths, specific material tolerances, and FMEA instead of vague appeals to 'industry standards'. |
 | [Engineering Reasoning Prover](../mcps/engineering-reasoning-prover.md) | An engineering report cited 'industry standards' without naming a single one. Engineering Reasoning Prover forces ISO/ASME/IEC-grounded compliance analysis — real calculations, real codes, real risk quantification. |
 | [Enrich CRM](../mcps/enrich-crm.md) | Enhance your CRM records with verified company data, technographic signals, and contact enrichment that keeps your database fresh. |
+| [Enterprise AE Ramp Time Analyzer](../mcps/enterprise-ae-ramp-time-analyzer.md) | Models and calculates Account Executive ramp progression, quota attainment, and productivity velocity. |
+| [Enterprise Email Engagement Analytics](../mcps/enterprise-email-engagement-analytics.md) | Analyze email campaign performance, response rates, and engagement drivers. |
+| [Enterprise Legal Review Timeline](../mcps/enterprise-legal-review-timeline.md) | Predict legal review durations and negotiation dynamics. |
+| [Enterprise Meeting Show Rate Analytics](../mcps/enterprise-meeting-show-rate-analytics.md) | Analyze meeting attendance, no-show patterns, and engagement quality. |
+| [Enterprise Qualification Framework](../mcps/enterprise-qualification-framework.md) | Quantify sales opportunity health using BANT and MEDDIC methodologies. |
+| [Enterprise SDR Productivity Metrics](../mcps/enterprise-sdr-productivity-metrics.md) | Calculate SDR efficiency, capacity, and performance benchmarks for enterprise sales teams. |
 | [EnterpriseAlumni](../mcps/enterprisealumni.md) | Equip your AI agent to manage alumni networks, track engagement, and monitor member profiles via the EnterpriseAlumni API. |
 | [Envoy](../mcps/envoy.md) | Manage workplace operations via Envoy — register visitors, book desks and rooms, track deliveries, and monitor office capacity directly from any AI agent. |
 | [Equity Split Calculator](../mcps/equity-split-calculator.md) | Calculate fair ownership distribution among co-founders using weighted factors or dynamic slicing. |

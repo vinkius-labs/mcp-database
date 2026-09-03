@@ -25,6 +25,9 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [DecileHub](../mcps/decilehub.md) | Segment your customers by value and behavior with predictive analytics that reveal your most profitable audience segments. |
 | [Digital Turbine](../mcps/digital-turbine.md) | Equip your AI agent to manage mobile growth campaigns, track app monetization, and monitor performance via the Digital Turbine API. |
 | [DISCO](../mcps/disco.md) | Query your DISCO eDiscovery datasets, data-usage changes, and review metrics directly from any AI agent via the official DISCO API. |
+| [Enterprise ABM Campaign Effectiveness](../mcps/enterprise-abm-campaign-effectiveness.md) | Measure ABM campaign ROI, engagement metrics, and pipeline conversion efficiency. |
+| [Enterprise Procurement Cycle Analysis](../mcps/enterprise-procurement-cycle-analysis.md) | Analyze procurement timelines, identify bottlenecks, and calculate early engagement ROI. |
+| [Enterprise QBR Effectiveness Engine](../mcps/enterprise-qbr-effectiveness-engine.md) | Quantify the business impact and operational quality of Quarterly Business Reviews. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
 | [Innovation Moat Forecaster](../mcps/innovation-moat-forecaster.md) | Quantify the lifespan of competitive advantages and strategic moats. |
 | [Innovation Pivot Decision Analysis](../mcps/innovation-pivot-decision-analysis.md) | A strategic framework for evaluating business trajectories and pivot viability. |

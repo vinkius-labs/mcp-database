@@ -88,6 +88,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [emfluence Marketing](../mcps/emfluence-marketing.md) | Equip your AI agent to manage marketing emails, track contact groups, and monitor performance via the emfluence API. |
 | [Emma](../mcps/emma.md) | Manage email marketing via Emma — track members, groups, and mailings directly from your AI agent. |
 | [EngageBay All-in-One CRM](../mcps/engagebay-all-in-one-crm.md) | Equip your AI agent to manage contacts, track sales deals, and monitor CRM tasks via the EngageBay API. |
+| [Enterprise Sequence Effectiveness](../mcps/enterprise-sequence-effectiveness.md) | Analyze sales sequence performance and optimize outreach cadence. |
 | [Envoke Marketing](../mcps/envoke-marketing.md) | Equip your AI agent to manage email campaigns, track contact lists, and monitor performance via the Envoke API. |
 | [Everflow Partner Marketing](../mcps/everflow-partner-marketing.md) | Equip your AI agent to manage marketing offers, track affiliates, and monitor network performance via the Everflow API. |
 | [Evergiving Fundraising](../mcps/evergiving-fundraising.md) | Equip your AI agent to manage donations, track fundraising campaigns, and monitor field staff via the Evergiving API. |

@@ -5,6 +5,7 @@ Explore the open database of **crm** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Daftra](../mcps/daftra-alternative.md) | Run your Arabic-first business with invoicing, inventory, CRM, and accounting designed for the Middle East and North Africa. |
+| [Enterprise Account Scoring Model](../mcps/enterprise-account-scoring-model.md) | Prioritize B2B accounts using firmographics, technographics, and intent signals. |
 
 
 ---

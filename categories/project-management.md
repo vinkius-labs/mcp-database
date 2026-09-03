@@ -5,6 +5,7 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | Tool Name | Description |
 |-----------|-------------|
 | [Diese](../mcps/diese.md) | Equip your AI agent to manage ERP projects, track invoices, and monitor resource planning via the Diese API. |
+| [Enterprise Pilot Scope Optimizer](../mcps/enterprise-pilot-scope-optimizer.md) | Calculates optimal pilot scope, duration, and success alignment. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
 | [Innovation Time-to-Market Engine](../mcps/innovation-time-to-market-engine.md) | Calculate and optimize product development timelines, critical paths, and acceleration strategies. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |

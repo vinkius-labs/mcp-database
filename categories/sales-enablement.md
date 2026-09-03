@@ -4,6 +4,7 @@ Explore the open database of **sales-enablement** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Enterprise Demo Conversion Analyzer](../mcps/enterprise-demo-conversion-analyzer.md) | Analyze sales effectiveness by calculating demo conversion rates, quality scores, and optimal formats. |
 | [Objection Handling Coverage Scorer](../mcps/objection-handling-coverage-scorer.md) | Audit sales copy by measuring how effectively customer objections are addressed. |
 
 

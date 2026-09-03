@@ -37,6 +37,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
+| [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
 | [Image Generation Economics](../mcps/image-generation-economics.md) | Calculate image generation costs, storage scaling, and quality-cost trade-offs. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
