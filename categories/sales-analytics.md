@@ -4,7 +4,9 @@ Explore the open database of **sales-analytics** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Enterprise Champion Identification Rate](../mcps/enterprise-champion-identification-rate.md) | Analyze sales efficacy by measuring champion identification success, impact on win rates, and identification velocity. |
 | [Enterprise Discovery Call Effectiveness](../mcps/enterprise-discovery-call-effectiveness.md) | Quantify the quality and outcome potential of enterprise sales discovery calls. |
+| [Enterprise Win Rate Analyzer](../mcps/enterprise-win-rate-analyzer.md) | Analyzes sales performance and market opportunity by segmenting enterprise deals. |
 
 
 ---

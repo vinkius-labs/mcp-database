@@ -26,8 +26,19 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [Digital Turbine](../mcps/digital-turbine.md) | Equip your AI agent to manage mobile growth campaigns, track app monetization, and monitor performance via the Digital Turbine API. |
 | [DISCO](../mcps/disco.md) | Query your DISCO eDiscovery datasets, data-usage changes, and review metrics directly from any AI agent via the official DISCO API. |
 | [Enterprise ABM Campaign Effectiveness](../mcps/enterprise-abm-campaign-effectiveness.md) | Measure ABM campaign ROI, engagement metrics, and pipeline conversion efficiency. |
+| [Enterprise Average Deal Size Analytics](../mcps/enterprise-average-deal-size-analytics.md) | Analyze average deal size, segment breakdowns, and upsell opportunities. |
+| [Enterprise Churn Analyzer](../mcps/enterprise-churn-analyzer.md) | Analyze churn rates, revenue impact, and risk indicators across enterprise customer tiers. |
+| [Enterprise Competitive Displacement Rate](../mcps/enterprise-competitive-displacement-rate.md) | Quantify displacement success and strategic market capture effectiveness. |
+| [Enterprise Decision Maker Access Rate](../mcps/enterprise-decision-maker-access-rate.md) | Quantify sales engagement effectiveness and decision maker access success. |
+| [Enterprise Logo Retention Analytics](../mcps/enterprise-logo-retention-analytics.md) | Analyze customer retention rates, tier breakdowns, and churn risks for enterprise segments. |
+| [Enterprise NPS by Segment](../mcps/enterprise-nps-by-segment.md) | Analyze Net Promoter Score (NPS) across enterprise customer segments to identify performance gaps. |
+| [Enterprise Onboarding Analytics](../mcps/enterprise-onboarding-analytics.md) | Analyze onboarding success metrics, funnel drop-offs, and segment performance. |
+| [Enterprise Pilot Conversion Analytics](../mcps/enterprise-pilot-conversion-analytics.md) | Analyze pilot conversion rates, velocity, and resource efficiency. |
+| [Enterprise POC Success Metrics Engine](../mcps/enterprise-poc-success-metrics-engine.md) | Analyze POC efficiency, ROI, and qualification rigor. |
 | [Enterprise Procurement Cycle Analysis](../mcps/enterprise-procurement-cycle-analysis.md) | Analyze procurement timelines, identify bottlenecks, and calculate early engagement ROI. |
 | [Enterprise QBR Effectiveness Engine](../mcps/enterprise-qbr-effectiveness-engine.md) | Quantify the business impact and operational quality of Quarterly Business Reviews. |
+| [Enterprise RFP Response Metrics](../mcps/enterprise-rfp-response-metrics.md) | Calculates RFP win rates, response efficiency, and strategic prioritization. |
+| [European Expansion Sequencing](../mcps/european-expansion-sequencing.md) | Determine the most efficient order for entering European markets by balancing economic opportunity against operational complexity. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
 | [Innovation Moat Forecaster](../mcps/innovation-moat-forecaster.md) | Quantify the lifespan of competitive advantages and strategic moats. |
 | [Innovation Pivot Decision Analysis](../mcps/innovation-pivot-decision-analysis.md) | A strategic framework for evaluating business trajectories and pivot viability. |

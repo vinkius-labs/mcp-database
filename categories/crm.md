@@ -6,6 +6,9 @@ Explore the open database of **crm** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Daftra](../mcps/daftra-alternative.md) | Run your Arabic-first business with invoicing, inventory, CRM, and accounting designed for the Middle East and North Africa. |
 | [Enterprise Account Scoring Model](../mcps/enterprise-account-scoring-model.md) | Prioritize B2B accounts using firmographics, technographics, and intent signals. |
+| [Enterprise Demo Conversion Analytics](../mcps/enterprise-demo-conversion-analytics.md) | Analyze sales demonstration efficiency and effectiveness metrics. |
+| [Enterprise Sales Stage Conversion](../mcps/enterprise-sales-stage-conversion.md) | Analyze sales funnel efficiency, stage velocity, and optimization priorities. |
+| [Enterprise SEQ Score Calculator](../mcps/enterprise-seq-score-calculator.md) | Measure sales engagement effectiveness using the SEQ methodology. |
 
 
 ---

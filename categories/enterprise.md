@@ -4,10 +4,16 @@ Explore the open database of **enterprise** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Enterprise Buying Committee Analyzer](../mcps/enterprise-buying-committee-analyzer.md) | Calculate optimal stakeholder engagement and strategic coverage for B2B enterprise deals. |
+| [Enterprise Cross-Sell Success Rate Engine](../mcps/enterprise-cross-sell-success-rate-engine.md) | Analyzes cross-sell efficiency, product affinity, and customer alignment. |
 | [Enterprise Feature Adoption Depth](../mcps/enterprise-feature-adoption-depth.md) | Quantify customer integration, stickiness, and expansion opportunities. |
+| [Enterprise Integration Complexity Scorer](../mcps/enterprise-integration-complexity-scorer.md) | Quantify technical effort, risk, and resource needs for enterprise software integrations. |
 | [Enterprise Proposal Analytics](../mcps/enterprise-proposal-analytics.md) | Calculate key performance indicators for enterprise sales proposals. |
+| [Enterprise Seat Expansion Analytics](../mcps/enterprise-seat-expansion-analytics.md) | Calculate seat growth, adoption trends, and expansion opportunities. |
+| [Enterprise Stakeholder Engagement Score](../mcps/enterprise-stakeholder-engagement-score.md) | Analyze stakeholder relationship health, momentum, and risks. |
 | [Enterprise Success Plan Completion](../mcps/enterprise-success-plan-completion.md) | Calculates success plan achievement rates, outcome scores, and renewal predictability. |
 | [Enterprise Support Ticket Analysis](../mcps/enterprise-support-ticket-analysis.md) | Analyze support performance and account health for enterprise clients. |
+| [Enterprise Time-to-Value Calculator](../mcps/enterprise-time-to-value-calculator.md) | Quantify enterprise deployment velocity and onboarding efficiency. |
 | [Enterprise User Adoption Analytics](../mcps/enterprise-user-adoption-analytics.md) | Monitor and forecast software adoption metrics for enterprise deployments. |
 
 

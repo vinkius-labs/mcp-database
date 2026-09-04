@@ -122,6 +122,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Break-even Analysis Tool](../mcps/break-even-analysis-tool.md) | Calculate break-even points, contribution margins, and sensitivity scenarios for agricultural enterprises. |
 | [Break-Even Calculator](../mcps/break-even-calculator.md) | Calculate accounting, economic, and financial break-even points with margin of safety analysis. |
 | [Breakout Strategy](../mcps/breakout-strategy.md) | A deterministic Donchian Channel breakout strategy based on Turtle Trader principles. |
+| [Brexit Impact Assessment](../mcps/brexit-impact-assessment.md) | Quantify the financial and operational consequences of Brexit. |
 | [Brunch Cost & Instagram ROI Calculator](../mcps/brunch-cost-instagram-roi-calculator.md) | Calculate the economic efficiency and social ROI of your café visits. |
 | [BTO Affordability Index](../mcps/bto-affordability-index.md) | Calculate HDB BTO affordability, grants, and savings timelines. |
 | [Bundle vs Individual Comparator](../mcps/bundle-vs-individual-comparator.md) | Compare bundle discounts against individual coupon stacking to find the best savings. |
@@ -224,11 +225,28 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
 | [Employer Cost Calculator](../mcps/employer-cost-calculator.md) | Calculate the true total cost of an employee including taxes, provisions, and levies. |
 | [Energy Efficiency Calculator](../mcps/energy-efficiency-calculator.md) | Estimate energy savings and ROI for lighting, appliances, insulation, and HVAC upgrades. |
+| [Enterprise ACV Calculator](../mcps/enterprise-acv-calculator.md) | Calculate Annual Contract Value, segment metrics, and discount impact. |
+| [Enterprise ARR Productivity Analyzer](../mcps/enterprise-arr-productivity-analyzer.md) | Calculate sales productivity, ramp-adjusted ARR, and quota attainment metrics. |
 | [Enterprise Budget Cycle Alignment](../mcps/enterprise-budget-cycle-alignment.md) | Aligns fiscal timelines with discretionary spending windows and approval hierarchies. |
 | [Enterprise Budget Generator](../mcps/enterprise-budget-generator.md) | Generate comprehensive agricultural budget reports for crops and livestock. |
 | [Enterprise CAB Value Calculator](../mcps/enterprise-cab-value-calculator.md) | Quantify the financial and strategic ROI of your Customer Advisory Board programs. |
+| [Enterprise CAC Analyzer](../mcps/enterprise-cac-analyzer.md) | Calculate enterprise CAC, payback periods, and sales efficiency. |
+| [Enterprise Contract Renewal Metrics](../mcps/enterprise-contract-renewal-metrics.md) | Calculate renewal rates, ARR impact, and identify churn risks for enterprise contracts. |
+| [Enterprise Contract Term Optimization](../mcps/enterprise-contract-term-optimization.md) | Strategic decision-support tool for optimizing contract durations and revenue impact. |
 | [Enterprise Customer Economics by Tier](../mcps/enterprise-customer-economics-by-tier.md) | Analyze unit economics, LTV:CAC ratios, and tier prioritization for enterprise segments. |
+| [Enterprise Discount Impact Analysis](../mcps/enterprise-discount-impact-analysis.md) | Analyze how discounts affect revenue, deal velocity, and ROI. |
+| [Enterprise Early Renewal Analytics](../mcps/enterprise-early-renewal-analytics.md) | Quantify early renewal performance, revenue acceleration, and discount efficiency. |
+| [Enterprise Expansion Revenue Analytics](../mcps/enterprise-expansion-revenue-analytics.md) | Analyze land-and-expand efficiency with detailed expansion revenue metrics. |
+| [Enterprise Incumbent Switching Cost Engine](../mcps/enterprise-incumbent-switching-cost-engine.md) | Quantify the financial and operational friction of replacing existing vendors. |
+| [Enterprise Land and Expand Metrics](../mcps/enterprise-land-and-expand-metrics.md) | Quantify the speed, scale, and ROI of B2B account growth strategies. |
+| [Enterprise LTV Analyzer](../mcps/enterprise-ltv-analyzer.md) | Calculate lifetime value, efficiency ratios, and revenue projections for enterprise contracts. |
+| [Enterprise Migration Cost Analysis](../mcps/enterprise-migration-cost-analysis.md) | Calculate migration costs, payback periods, and ROI for software displacement. |
+| [Enterprise NRR Analytics](../mcps/enterprise-nrr-analytics.md) | Calculate Net Revenue Retention (NRR) and expansion potential for enterprise accounts. |
+| [Enterprise Payment Terms Analysis](../mcps/enterprise-payment-terms-analysis.md) | Analyze the economic impact of payment terms and optimize cash flow. |
+| [Enterprise Pipeline Coverage Ratio](../mcps/enterprise-pipeline-coverage-ratio.md) | Calculate required pipeline, coverage ratios, and revenue gaps. |
+| [Enterprise Renewal Expansion Rate](../mcps/enterprise-renewal-expansion-rate.md) | Calculates revenue expansion metrics and upsell opportunities during enterprise contract renewals. |
 | [Enterprise Sales Capacity Planner](../mcps/enterprise-sales-capacity-planner.md) | Calculate sales headcount, revenue capacity, and hiring timelines. |
+| [Enterprise TCV Calculator](../mcps/enterprise-tcv-calculator.md) | Calculate Total Contract Value, revenue splits, and expected lifetime value for enterprise contracts. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
 | [ETF Arbitrage Strategy](../mcps/etf-arbitrage-strategy.md) | Identify and quantify arbitrage opportunities between ETF market prices and NAV. |
 | [EU Employment Termination Calculator](../mcps/eu-employment-termination-calculator.md) | Estimate statutory severance pay for Germany, France, Spain, and Portugal. |
@@ -240,6 +258,24 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EU VAT Calculator](../mcps/eu-vat-calculator.md) | Calculate EU VAT rates, transaction taxes, and compliance rules for 27 member states. |
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
 | [European Commercial Lease Calculator](../mcps/european-commercial-lease-calculator.md) | Calculate rental adjustments, notice periods, and eviction indemnities for European commercial leases. |
+| [European Currency Risk Exposure Engine](../mcps/european-currency-risk-exposure-engine.md) | Calculates net currency exposure, hedging costs, and optimal strategies for European operations. |
+| [European ESOP Friendliness Ranking](../mcps/european-esop-friendliness-ranking.md) | Quantify the attractiveness of European jurisdictions for Employee Stock Ownership Plans. |
+| [European Exit Landscape Analyzer](../mcps/european-exit-landscape-analyzer.md) | Analyze exit probabilities, valuation gaps, and potential buyers for European companies. |
+| [European Government Grant Opportunity Calculator](../mcps/european-government-grant-opportunity-calculator.md) | Calculate EU grant funding potential, risk-adjusted values, and application costs. |
+| [European Hiring Cost Modeler](../mcps/european-hiring-cost-modeler.md) | Calculate fully-loaded employment costs and optimal location strategies across Europe. |
+| [European IP Tax Incentive Calculator](../mcps/european-ip-tax-incentive-calculator.md) | Calculate IP Box tax savings and net economic benefits while ensuring BEPS compliance. |
+| [European IPO Readiness Score](../mcps/european-ipo-readiness-score.md) | Evaluates European IPO feasibility by scoring readiness and identifying optimal exchanges. |
+| [European Language Localization Cost Calculator](../mcps/european-language-localization-cost-calculator.md) | Calculate initial investment, annual maintenance, and market ROI for European content localization. |
+| [European Market Opportunity Analyzer](../mcps/european-market-opportunity-analyzer.md) | Calculate addressable markets, growth projections, and priority country rankings for the European market. |
+| [European Payment Methods Coverage](../mcps/european-payment-methods-coverage.md) | Analyze the financial and conversion impact of European payment method integration. |
+| [European Payroll Tax Burden Calculator](../mcps/european-payroll-tax-burden-calculator.md) | Calculate total employer costs, social contributions, and tax incentive impacts across European jurisdictions. |
+| [European R&D Tax Credit ROI Calculator](../mcps/european-rd-tax-credit-roi-calculator.md) | Calculate R&D tax credit values, ROI, and optimal European jurisdictions. |
+| [European Regulatory Complexity Score](../mcps/european-regulatory-complexity-score.md) | Quantify the administrative and financial weight of EU regulatory frameworks. |
+| [European Revenue Analyzer](../mcps/european-revenue-analyzer.md) | Analyze revenue distribution, market concentration, and expansion opportunities across Europe. |
+| [European Stock Option Taxation Engine](../mcps/european-stock-option-taxation-engine.md) | Analyze net equity compensation and corporate tax efficiency across European jurisdictions. |
+| [European Subsidy Calculator](../mcps/european-subsidy-calculator.md) | Calculate potential EU regional subsidies, conditionality costs, and net economic benefits. |
+| [European VAT Compliance Calculator](../mcps/european-vat-compliance-calculator.md) | Calculate VAT compliance costs, liability risks, and automation ROI for EU cross-border sales. |
+| [European Venture Funding Analyzer](../mcps/european-venture-funding-analyzer.md) | Analyze European VC availability, valuation gaps, and optimal funding strategies. |
 | [EV Charging Cost Calculator](../mcps/ev-charging-cost-calculator.md) | Calculate and compare the costs of electric vehicle charging versus gasoline consumption. |
 | [Exact Decimal Currency Calculator](../mcps/exact-decimal-currency-calculator.md) | Perform error-free financial arithmetic using integer-based cent calculations. |
 | [Expected Value vs Implied Probability](../mcps/expected-value-vs-implied-probability.md) | A deterministic decision-support tool for evaluating market edges and optimal position sizing. |
@@ -298,6 +334,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Garman-Klass Volatility Calculator](../mcps/garman-klass-volatility-calculator.md) | Calculate efficient Garman-Klass volatility using OHLC data. |
 | [Gas Fee Estimator](../mcps/gas-fee-estimator.md) | Estimate blockchain transaction costs for EVM-compatible chains. |
 | [Gas vs EV Fuel Savings Calculator](../mcps/gas-vs-ev-fuel-savings-calculator.md) | Compare the long-term costs of gasoline and electric vehicles. |
+| [GDPR Compliance Impact Analyzer](../mcps/gdpr-compliance-impact-analyzer.md) | Calculate GDPR compliance costs, risk exposure, and ROI. |
 | [Geographic Expansion ROI Accelerator](../mcps/geographic-expansion-roi-accelerator.md) | Quantify financial viability and operational readiness for entering new geographic markets. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Golden Cross Strategy Engine](../mcps/golden-cross-strategy-engine.md) | A deterministic trend-following engine for Golden Cross and Death Cross signals. |
