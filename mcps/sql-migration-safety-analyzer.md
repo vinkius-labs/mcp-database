@@ -14,8 +14,8 @@ Prevent destructive database changes by analyzing SQL migration strings before e
 
 
 ## Available Tools (3)
-- **analyze_migration_security**: Analyze a SQL migration string for structural risks
 - **scan_for_unbounded_deletions**: Detect high-risk data manipulation commands
+- **analyze_migration_security**: Analyze a SQL migration string for structural risks
 - **validate_rollback_integrity**: Ensure every structural change in the migration has a matching reversal command
 
 
