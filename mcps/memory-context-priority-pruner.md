@@ -14,9 +14,9 @@ The Memory Context Priority Pruner is a specialized utility designed to manage t
 
 
 ## Available Tools (3)
-- **predict_pruning_impact**: Predicts the impact of a pruning strategy
 - **analyze_context_density**: Analyzes the distribution of tokens across message tiers
 - **execute_context_reduction**: Performs the actual removal of messages to fit within budget
+- **predict_pruning_impact**: Predicts the impact of a pruning strategy
 
 
 ## 💬 Prompt Examples

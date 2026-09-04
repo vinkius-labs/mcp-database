@@ -14,10 +14,10 @@ The Deterministic Fuzzer Input Generator is a specialized tool designed to move 
 
 
 ## Available Tools (4)
+- **evaluate_full_schema_suite**: Generates a complete battery of tests for an entire object definition
+- **generate_enum_and_null_cases**: Generates boundary-value test inputs for an enum field
 - **generate_numeric_boundary_cases**: Generates boundary-value test inputs for a numeric field
 - **generate_string_boundary_cases**: Generates boundary-value test inputs for a string field
-- **generate_enum_and_null_cases**: Generates boundary-value test inputs for an enum field
-- **evaluate_full_schema_suite**: Generates a complete battery of tests for an entire object definition
 
 
 ## 💬 Prompt Examples
