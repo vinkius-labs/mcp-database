@@ -58,9 +58,11 @@ Read a catalog MCP's FAQs
 - **get_listing**: search_catalog already returns each MCP's tools — use this only for FAQs, prompt examples, or related MCPs. Prompt examples show the expected flow: read them before driving an MCP you have never used.
 
 Deep detail of one catalog MCP: description, FAQs, prompt examples, related
-- **search_catalog**: Use the catalog first for external capabilities. Results already include the matching servers and their tools, descriptions, and input schemas.
+- **search_catalog**: Requires a free Vinkius account — anonymous calls fail with the connect URL.
 
-Continue pagination when relevant and refine weak searches before concluding no suitable capability exists.
+Use the catalog first for external capabilities. Results already include the matching servers and their tools, descriptions, and input schemas.
+
+Refine weak searches before concluding no suitable capability exists.
 
 
 Search the Vinkius catalog for capabilities the agent can use across apps, services, data sources, devices, AI tools, and automations
