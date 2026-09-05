@@ -6,6 +6,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
 | [Agent Config Drift Detector](../mcps/agent-config-drift-detector.md) | Detects unauthorized changes to agent configurations by comparing SHA-256 hashes. |
+| [AI Red-Teaming Cost Structure](../mcps/ai-red-teaming-cost-structure.md) | Quantify the financial investment and ROI of AI red-teaming engagements. |
 | [AWS Secrets Manager Rotation Calculator](../mcps/aws-secrets-manager-rotation-calculator.md) | Validate AWS Secrets Manager configurations against operational limits and rotation best practices. |
 | [AWS WAF Rules & Rate Limiting Calculator](../mcps/aws-waf-rules-rate-limiting-calculator.md) | Calculate AWS WAF capacity, rate limits, and rule complexity against best practices. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |

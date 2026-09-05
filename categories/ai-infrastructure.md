@@ -7,6 +7,7 @@ Explore the open database of **ai-infrastructure** Model Context Protocol (MCP) 
 | [AI A/B Testing Economics](../mcps/ai-ab-testing-economics.md) | Calculate the economic efficiency, capacity, and insight value of AI A/B testing. |
 | [AI App Architecture Complexity Scorer](../mcps/ai-app-architecture-complexity-scorer.md) | Quantify the structural intricacy and risks of AI-driven application architectures. |
 | [AI Inference Latency Budget](../mcps/ai-inference-latency-budget.md) | Calculate the economic and technical feasibility of reducing AI inference latency. |
+| [AI Inference Serving Optimization](../mcps/ai-inference-serving-optimization.md) | Optimize AI model serving by balancing throughput, latency, and infrastructure costs. |
 | [AI Multi-Model Orchestration Economics](../mcps/ai-multi-model-orchestration-economics.md) | Calculate the economic and performance impact of complex AI model routing and fallback strategies. |
 | [Memory Context Priority Pruner](../mcps/memory-context-priority-pruner.md) | Deterministic context window management by prioritizing essential and high-relevance messages. |
 

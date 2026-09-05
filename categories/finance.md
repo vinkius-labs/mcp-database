@@ -75,24 +75,40 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI App Observability Cost Calculator](../mcps/ai-app-observability-cost-calculator.md) | Calculate observability investment, MTTR value, and coverage gaps for AI applications. |
 | [AI App Recommendation System Cost](../mcps/ai-app-recommendation-system-cost.md) | Financial modeling for recommendation engine economics and infrastructure scaling. |
 | [AI Batch Economics Engine](../mcps/ai-batch-economics-engine.md) | Calculate savings and optimal batching strategies for AI workloads. |
+| [AI Benchmark ROI Analyzer](../mcps/ai-benchmark-roi-analyzer.md) | Quantify the financial impact and ROI of AI benchmark leadership positions. |
 | [AI Build vs Buy Decision Support](../mcps/ai-build-vs-buy-decision-support.md) | Evaluate the economic and strategic trade-offs between custom AI development and third-party APIs. |
 | [AI Content Moderation Economics](../mcps/ai-content-moderation-economics.md) | Calculate the economic impact of AI and human moderation strategies. |
+| [AI Continuous Training Cost Calculator](../mcps/ai-continuous-training-cost-calculator.md) | Calculate the economic impact and ROI of continuous AI model retraining cycles. |
+| [AI Data Labeling Cost Optimizer](../mcps/ai-data-labeling-cost-optimizer.md) | Model and predict the financial impact of data labeling strategies, including active learning and automation savings. |
+| [AI Data Lineage Infrastructure Cost Calculator](../mcps/ai-data-lineage-infrastructure-cost-calculator.md) | Quantify the financial impact of data lineage, including tracking costs, compliance value, and debugging efficiency. |
 | [AI Data Pipeline Cost Analyzer](../mcps/ai-data-pipeline-cost-analyzer.md) | Calculate monthly operating costs and efficiency metrics for AI data pipelines. |
 | [AI Error Recovery Economics](../mcps/ai-error-recovery-economics.md) | Quantify the financial and experiential cost of AI errors and calculate ROI for recovery strategies. |
+| [AI Evaluation Cost Analyzer](../mcps/ai-evaluation-cost-analyzer.md) | Calculate and forecast the economic impact of AI evaluation infrastructure. |
 | [AI Feature Expansion Impact Analyzer](../mcps/ai-feature-expansion-impact-analyzer.md) | Quantify the financial and behavioral impact of AI features on SaaS expansion revenue and upsell conversion. |
 | [AI Feature First-Mover Advantage Calculator](../mcps/ai-feature-first-mover-advantage-calculator.md) | Quantify the economic value and competitive moat of launching AI features ahead of the market. |
 | [AI Feature Flag Cost & Risk Modeler](../mcps/ai-feature-flag-cost-risk-modeler.md) | Calculate infrastructure costs, deployment velocity, and risk mitigation for AI feature flags. |
 | [AI Feature ROI Analyzer](../mcps/ai-feature-roi-analyzer.md) | Evaluate the financial efficiency and pricing viability of AI features at the user level. |
+| [AI Foundation Model Valuation Engine](../mcps/ai-foundation-model-valuation-engine.md) | Calculate enterprise value and market position for AI model companies. |
+| [AI Human Feedback Cost Calculator](../mcps/ai-human-feedback-cost-calculator.md) | Calculate RLHF and RLAIF cost structures, quality impact, and automation potential. |
+| [AI Knowledge Distillation ROI Calculator](../mcps/ai-knowledge-distillation-roi-calculator.md) | Calculate the economic value and break-even scale of model distillation projects. |
 | [AI Memory Cost Analyzer](../mcps/ai-memory-cost-analyzer.md) | Estimate and optimize the economic impact of AI conversation memory architectures. |
+| [AI Model A/B Testing Cost Engine](../mcps/ai-model-ab-testing-cost-engine.md) | Calculate infrastructure costs, time to significance, and ROI for AI model A/B tests. |
+| [AI Model Compression ROI](../mcps/ai-model-compression-roi.md) | Quantify the economic impact of AI model compression. |
+| [AI Model Distribution Economics](../mcps/ai-model-distribution-economics.md) | Calculate cost structures, margins, and optimal distribution strategies for AI models. |
 | [AI Model Drift Detection & ROI Calculator](../mcps/ai-model-drift-detection-roi-calculator.md) | Calculate monitoring costs, early detection value, and ROI for AI model drift detection. |
+| [AI Model Ensemble Economics](../mcps/ai-model-ensemble-economics.md) | Calculate the economic efficiency and optimal configuration of AI model ensembles. |
+| [AI Model Fine-Tuning Service Margin](../mcps/ai-model-fine-tuning-service-margin.md) | Analyze profitability and long-term viability of AI fine-tuning services. |
+| [AI Model Registry Cost Structure](../mcps/ai-model-registry-cost-structure.md) | Quantify the economic impact, operating costs, and governance benefits of your AI model registry. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
 | [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Decomposes AI feature costs into actionable unit economics. |
 | [AI SaaS Gross Margin Analyzer](../mcps/ai-saas-gross-margin-analyzer.md) | Calculate and project gross margins for AI SaaS businesses, including AI API and compute costs. |
 | [AI SaaS Unit Economics Engine](../mcps/ai-saas-unit-economics-engine.md) | Calculate LTV, LTV:CAC, and AI cost impact for AI-driven SaaS models. |
+| [AI Safety Evaluation Score](../mcps/ai-safety-evaluation-score.md) | Translates technical AI safety metrics into financial risk profiles and safety posture scores. |
 | [AI Safety Guardrails Cost Analyzer](../mcps/ai-safety-guardrails-cost-analyzer.md) | Calculate the financial impact and risk reduction of AI safety guardrails. |
 | [AI Search Investment Modeler](../mcps/ai-search-investment-modeler.md) | Calculate infrastructure costs, latency impact, and relevance gains for AI-powered search enhancements. |
+| [AI Training Data Valuation Engine](../mcps/ai-training-data-valuation-engine.md) | Calculate the economic worth, scarcity premium, and licensing potential of AI training datasets. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
 | [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
@@ -151,6 +167,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Choppiness Index Calculator](../mcps/choppiness-index-calculator.md) | Measure market volatility and identify regime shifts using the Choppiness Index. |
 | [Choppiness Index Strategy](../mcps/choppiness-index-strategy.md) | Detect market regimes and generate deterministic trading signals using the Choppiness Index. |
 | [Churn Rate Calculator](../mcps/churn-rate-calculator.md) | Calculate Customer Churn Rate, Revenue Churn Rate, and Net Revenue Retention (NRR) to instantly assess account health against industry benchmarks. |
+| [Cloud Vendor Lock-in Risk Analyzer](../mcps/cloud-vendor-lock-in-risk-analyzer.md) | Evaluate financial and operational exposure to cloud providers through risk scoring and switching cost modeling. |
 | [CNPJ Validator](../mcps/cnpj-validator.md) | Verify the mathematical validity and structure of Brazilian CNPJ numbers. |
 | [COE Bidding Optimizer](../mcps/coe-bidding-optimizer.md) | Deterministic bidding strategy calculator for Singapore COE auctions. |
 | [Commitment of Traders (COT) Strategy](../mcps/commitment-of-traders-cot-strategy.md) | Analyze commercial and non-commercial positioning to generate deterministic trading signals. |
@@ -234,6 +251,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Enterprise Contract Renewal Metrics](../mcps/enterprise-contract-renewal-metrics.md) | Calculate renewal rates, ARR impact, and identify churn risks for enterprise contracts. |
 | [Enterprise Contract Term Optimization](../mcps/enterprise-contract-term-optimization.md) | Strategic decision-support tool for optimizing contract durations and revenue impact. |
 | [Enterprise Customer Economics by Tier](../mcps/enterprise-customer-economics-by-tier.md) | Analyze unit economics, LTV:CAC ratios, and tier prioritization for enterprise segments. |
+| [Enterprise Deployment Economics](../mcps/enterprise-deployment-economics.md) | Calculate total deployment costs, profit margins, and professional services ROI for enterprise AI implementations. |
 | [Enterprise Discount Impact Analysis](../mcps/enterprise-discount-impact-analysis.md) | Analyze how discounts affect revenue, deal velocity, and ROI. |
 | [Enterprise Early Renewal Analytics](../mcps/enterprise-early-renewal-analytics.md) | Quantify early renewal performance, revenue acceleration, and discount efficiency. |
 | [Enterprise Expansion Revenue Analytics](../mcps/enterprise-expansion-revenue-analytics.md) | Analyze land-and-expand efficiency with detailed expansion revenue metrics. |
@@ -257,23 +275,31 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EU Transfer Pricing Checker](../mcps/eu-transfer-pricing-checker.md) | Verify intercompany transaction compliance with OECD Arm's Length Principle using industry benchmarks. |
 | [EU VAT Calculator](../mcps/eu-vat-calculator.md) | Calculate EU VAT rates, transaction taxes, and compliance rules for 27 member states. |
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
+| [European Bankruptcy Law Impact Analyzer](../mcps/european-bankruptcy-law-impact-analyzer.md) | Assess insolvency risk, creditor recovery, and director liability across EU jurisdictions. |
+| [European Cloud Cost & Sovereignty Modeler](../mcps/european-cloud-cost-sovereignty-modeler.md) | Calculate cloud expenditures and evaluate EU data residency compliance. |
 | [European Commercial Lease Calculator](../mcps/european-commercial-lease-calculator.md) | Calculate rental adjustments, notice periods, and eviction indemnities for European commercial leases. |
 | [European Currency Risk Exposure Engine](../mcps/european-currency-risk-exposure-engine.md) | Calculates net currency exposure, hedging costs, and optimal strategies for European operations. |
+| [European Customer LTV Variation](../mcps/european-customer-ltv-variation.md) | Calculate LTV, efficiency ratios, and market priority across European territories. |
 | [European ESOP Friendliness Ranking](../mcps/european-esop-friendliness-ranking.md) | Quantify the attractiveness of European jurisdictions for Employee Stock Ownership Plans. |
 | [European Exit Landscape Analyzer](../mcps/european-exit-landscape-analyzer.md) | Analyze exit probabilities, valuation gaps, and potential buyers for European companies. |
 | [European Government Grant Opportunity Calculator](../mcps/european-government-grant-opportunity-calculator.md) | Calculate EU grant funding potential, risk-adjusted values, and application costs. |
 | [European Hiring Cost Modeler](../mcps/european-hiring-cost-modeler.md) | Calculate fully-loaded employment costs and optimal location strategies across Europe. |
+| [European Insurance Coverage Gap Analyzer](../mcps/european-insurance-coverage-gap-analyzer.md) | Identifies financial exposure and compliance needs for insurance across European jurisdictions. |
 | [European IP Tax Incentive Calculator](../mcps/european-ip-tax-incentive-calculator.md) | Calculate IP Box tax savings and net economic benefits while ensuring BEPS compliance. |
 | [European IPO Readiness Score](../mcps/european-ipo-readiness-score.md) | Evaluates European IPO feasibility by scoring readiness and identifying optimal exchanges. |
 | [European Language Localization Cost Calculator](../mcps/european-language-localization-cost-calculator.md) | Calculate initial investment, annual maintenance, and market ROI for European content localization. |
+| [European Legal Entity Structure Optimizer](../mcps/european-legal-entity-structure-optimizer.md) | Optimize corporate structures across Europe by analyzing tax, cost, and complexity. |
 | [European Market Opportunity Analyzer](../mcps/european-market-opportunity-analyzer.md) | Calculate addressable markets, growth projections, and priority country rankings for the European market. |
 | [European Payment Methods Coverage](../mcps/european-payment-methods-coverage.md) | Analyze the financial and conversion impact of European payment method integration. |
 | [European Payroll Tax Burden Calculator](../mcps/european-payroll-tax-burden-calculator.md) | Calculate total employer costs, social contributions, and tax incentive impacts across European jurisdictions. |
 | [European R&D Tax Credit ROI Calculator](../mcps/european-rd-tax-credit-roi-calculator.md) | Calculate R&D tax credit values, ROI, and optimal European jurisdictions. |
+| [European Redundancy Cost Calculator](../mcps/european-redundancy-cost-calculator.md) | Calculate financial liabilities and timelines for employee redundancies across European jurisdictions. |
 | [European Regulatory Complexity Score](../mcps/european-regulatory-complexity-score.md) | Quantify the administrative and financial weight of EU regulatory frameworks. |
 | [European Revenue Analyzer](../mcps/european-revenue-analyzer.md) | Analyze revenue distribution, market concentration, and expansion opportunities across Europe. |
 | [European Stock Option Taxation Engine](../mcps/european-stock-option-taxation-engine.md) | Analyze net equity compensation and corporate tax efficiency across European jurisdictions. |
 | [European Subsidy Calculator](../mcps/european-subsidy-calculator.md) | Calculate potential EU regional subsidies, conditionality costs, and net economic benefits. |
+| [European Trade Sale Valuation Engine](../mcps/european-trade-sale-valuation-engine.md) | Calculate M&A enterprise value ranges using European sector multiples and geographic adjustments. |
+| [European Transfer Pricing Exposure Analysis](../mcps/european-transfer-pricing-exposure-analysis.md) | Calculates transfer pricing risk, compliance costs, and arm's length margin deviations for European intercompany transactions. |
 | [European VAT Compliance Calculator](../mcps/european-vat-compliance-calculator.md) | Calculate VAT compliance costs, liability risks, and automation ROI for EU cross-border sales. |
 | [European Venture Funding Analyzer](../mcps/european-venture-funding-analyzer.md) | Analyze European VC availability, valuation gaps, and optimal funding strategies. |
 | [EV Charging Cost Calculator](../mcps/ev-charging-cost-calculator.md) | Calculate and compare the costs of electric vehicle charging versus gasoline consumption. |
@@ -579,6 +605,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Sweep the Floor Liquidity Arb](../mcps/sweep-the-floor-liquidity-arb.md) | Exploit thin liquidity in prediction markets by calculating price impact and exit strategies. |
 | [Swing Index Calculator](../mcps/swing-index-calculator.md) | Calculate Welles Wilder's Swing Index and Cumulative Swing Index for market momentum analysis. |
 | [Swing Trading Strategy Engine](../mcps/swing-trading-strategy-engine.md) | A deterministic multi-timeframe engine for identifying high-probability swing trading pullbacks. |
+| [Synthetic Data ROI Analyzer](../mcps/synthetic-data-roi-analyzer.md) | Quantify the economic advantages and performance trade-offs of synthetic data. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
 | [Taobao to Japan Landed Cost Calculator](../mcps/taobao-to-japan-landed-cost-calculator.md) | Calculate exact landed costs for China-to-Japan shipments, including volumetric weight and customs duties. |
 | [Tax Bracket Calculator](../mcps/tax-bracket-calculator.md) | Calculate marginal and effective tax rates, standard deductions, and capital gains. |

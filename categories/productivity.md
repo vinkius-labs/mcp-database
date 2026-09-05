@@ -52,7 +52,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AgentMail](../mcps/agentmail.md) | Give your AI agents their own email inbox to read, send, and reply to messages natively. |
 | [AI Automation Time Savings Calculator](../mcps/ai-automation-time-savings-calculator.md) | Calculate the economic and operational impact of AI automation. |
 | [AI Content Generation Metrics](../mcps/ai-content-generation-metrics.md) | Calculate AI content generation volume, velocity, and utilization metrics. |
+| [AI Prompt Engineering Platform Economics](../mcps/ai-prompt-engineering-platform-economics.md) | Calculate ROI, adoption value, and strategic moat for prompt engineering platforms. |
 | [AI Receptionist](../mcps/ai-receptionist.md) | Let AI answer your business calls, book appointments, and handle customer inquiries around the clock without missing a beat. |
+| [AI Research Productivity Analyzer](../mcps/ai-research-productivity-analyzer.md) | Calculate key performance indicators for AI research teams, including citation impact and R&D efficiency. |
 | [AI Suggestion Effectiveness Analyzer](../mcps/ai-suggestion-effectiveness-analyzer.md) | Analyze AI suggestion acceptance, modification, and quality metrics. |
 | [AI Token Counter](../mcps/ai-token-counter.md) | Give AI Agents self-awareness of context limits. Count exact OpenAI/Claude tokens local to prevent fatal API truncation errors. |
 | [AI Workflow Comparison Engine](../mcps/ai-workflow-comparison-engine.md) | Quantify the transition from manual to AI-assisted workflows. |

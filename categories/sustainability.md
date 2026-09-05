@@ -4,6 +4,7 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [AI Carbon Footprint Economics](../mcps/ai-carbon-footprint-economics.md) | Quantify the environmental and financial impact of AI compute operations. |
 | [Cloud Carbon Footprint Calculator](../mcps/cloud-carbon-footprint-calculator.md) | Estimate and compare CO2e emissions for cloud compute workloads. |
 | [CO2 Savings Calculator](../mcps/co2-savings-calculator.md) | Calculate the mass of CO2 emissions avoided by using recycled materials instead of primary production. |
 | [Food Waste Impact Calculator](../mcps/food-waste-impact-calculator.md) | Quantify the environmental and financial impact of food waste, including CO2e, methane, water loss, and monetary cost. |

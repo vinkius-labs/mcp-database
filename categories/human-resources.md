@@ -28,6 +28,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [Didacte](../mcps/didacte.md) | Equip your AI agent to manage LMS courses, track learner progress, and monitor enrollments via the Didacte (Workleap) API. |
 | [DigitalChalk](../mcps/digitalchalk.md) | Equip your AI agent to manage LMS offerings, track learner progress, and monitor exam results via the DigitalChalk API. |
 | [eCompliance](../mcps/ecompliance.md) | Equip your AI agent to manage safety incidents, track inspections, and monitor action items via the eCompliance API. |
+| [European Works Council Impact Analyzer](../mcps/european-works-council-impact-analyzer.md) | Evaluates operational, temporal, and financial implications of organizational changes under EWC regulations. |
 | [Eurostat Demographics — EU Population & Labor](../mcps/eurostat-demographics-eu-population-labor.md) | EU demographics and labor market: population by age and sex, monthly unemployment rates, employment data, immigration by citizenship, life expectancy, and minimum wages for all 27 EU member states. |
 | [Finch](../mcps/finch.md) | Connect Finch to automate HRIS and Payroll integration — list employees, retrieve employment data, and manage pay statements directly from your AI agent. |
 | [Firefish](../mcps/firefish.md) | Manage candidates, jobs, and companies through AI agents with Firefish Recruitment CRM. |

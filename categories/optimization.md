@@ -9,6 +9,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Agent Memory Tier Calculator](../mcps/agent-memory-tier-calculator.md) | Deterministic memory management engine for agentic memory hierarchies. |
 | [Agent Tool Selection Router](../mcps/agent-tool-selection-router.md) | A deterministic engine for selecting and sequencing optimal tools for AI agents. |
 | [AI Model Selection ROI Engine](../mcps/ai-model-selection-roi-engine.md) | Calculate and compare the ROI of different AI models based on cost, performance, and maintenance. |
+| [AI Quantization Cost-Benefit Engine](../mcps/ai-quantization-cost-benefit-engine.md) | Evaluate the economic and performance impact of model quantization. |
 | [Animation Frame Timing & Memory Calculator](../mcps/animation-frame-timing-memory-calculator.md) | Calculate animation duration, memory footprint, and optimization potential for skeletal animations. |
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |

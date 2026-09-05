@@ -20,6 +20,8 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |
 | [Douyin Engagement Algorithm](../mcps/douyin-engagement-algorithm.md) | Calculate precise video engagement scores and viral potential for Douyin and TikTok content. |
 | [eSputnik](../mcps/esputnik.md) | Omnichannel marketing automation with eSputnik. |
+| [European CAC Analytics Engine](../mcps/european-cac-analytics-engine.md) | Calculate and optimize Customer Acquisition Costs (CAC) across European markets. |
+| [European Churn Analysis Engine](../mcps/european-churn-analysis-engine.md) | Calculates churn variation, drivers, and retention priorities across European markets. |
 | [Hashtag Effectiveness Analyzer](../mcps/hashtag-effectiveness-analyzer.md) | Evaluate hashtag sets for platform optimization, readability, and safety. |
 | [Headline Power Analyzer](../mcps/headline-power-analyzer.md) | Analyze headlines for power words, emotional impact, sentiment, and platform compliance. |
 | [Influencer ROI Calculator](../mcps/influencer-roi-calculator.md) | Calculate the financial impact, EMV, and profitability of influencer marketing campaigns. |

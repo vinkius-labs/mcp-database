@@ -4,6 +4,8 @@ Explore the open database of **risk-management** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
+| [AI Bias Audit & Risk Assessment](../mcps/ai-bias-audit-risk-assessment.md) | Calculate AI bias risk scores, legal liability, and remediation timelines. |
+| [AI Regulatory Readiness Score](../mcps/ai-regulatory-readiness-score.md) | Calculate compliance readiness for EU AI Act and US regulations. |
 | [Peanut Aflatoxin Risk Model](../mcps/peanut-aflatoxin-risk-model.md) | Predict aflatoxin contamination risk and economic impact in peanut crops. |
 | [Process Safety Analysis](../mcps/process-safety-analysis.md) | Conduct HAZOP, LOPA, and SIL assessments to manage industrial process risks. |
 | [Wheat Vomitoxin Risk Predictor](../mcps/wheat-vomitoxin-risk-predictor.md) | Predicts deoxynivalenol (DON) contamination risk in wheat crops. |

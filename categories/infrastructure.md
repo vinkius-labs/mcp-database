@@ -8,6 +8,9 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Agent Rate Limiter Calculator](../mcps/agent-rate-limiter-calculator.md) | Deterministic distributed rate limiting for agentic workloads. |
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
 | [AI App Rate Limiting Economics](../mcps/ai-app-rate-limiting-economics.md) | Calculate the economic impact of rate-limiting strategies on AI infrastructure and revenue. |
+| [AI Hardware Iteration Risk](../mcps/ai-hardware-iteration-risk.md) | Calculate hardware obsolescence risk and refresh investment for AI infrastructure. |
+| [AI Multi-Tenant Isolation Cost Modeler](../mcps/ai-multi-tenant-isolation-cost-modeler.md) | Calculate infrastructure costs, isolation overhead, and scaling economics for multi-tenant AI workloads. |
+| [AI Usage Metering Analytics](../mcps/ai-usage-metering-analytics.md) | Calculate the economic impact and infrastructure costs of high-precision usage metering. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |
 | [AWS API Gateway Throttling Calculator](../mcps/aws-api-gateway-throttling-calculator.md) | Calculate AWS API Gateway RPS, burst capacity, quotas, and operational limits. |
 | [AWS Auto Scaling Group Capacity Calculator](../mcps/aws-auto-scaling-group-capacity-calculator.md) | Calculate exact instance requirements and scaling thresholds for AWS Auto Scaling Groups. |
@@ -31,12 +34,14 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Deterministic Feature Flag Evaluator](../mcps/deterministic-feature-flag-evaluator.md) | Evaluate feature flags using consistent, hash-based logic to prevent session flicker. |
 | [Docker Compose Validator](../mcps/docker-compose-validator.md) | Validate Docker Compose files for structural errors, port conflicts, and dependency cycles. |
 | [ECS Task Sizing Calculator](../mcps/ecs-task-sizing-calculator.md) | Calculate precise AWS ECS task resources, EC2 capacity, and scaling configurations. |
+| [European Data Center ROI Optimizer](../mcps/european-data-center-roi-optimizer.md) | Identify optimal European data center locations by balancing latency, energy costs, and GDPR compliance. |
 | [European Data Localization Economics](../mcps/european-data-localization-economics.md) | Calculate the financial and operational impact of European data residency requirements. |
 | [Idempotency Key Enforcer](../mcps/idempotency-key-enforcer.md) | Prevents duplicate execution of identical side-effectful operations using an in-memory LRU cache. |
 | [Kubernetes Architecture Prover](../mcps/kubernetes-architecture-prover.md) | An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload. |
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
 | [Load Balancer Distributor](../mcps/load-balancer-distributor.md) | Deterministic simulation engine for evaluating load balancing algorithms. |
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
+| [ML Experiment Tracking Cost Analyzer](../mcps/ml-experiment-tracking-cost-analyzer.md) | Calculate infrastructure, storage, and knowledge management costs for ML experiments. |
 | [Multi-Tenant Isolation Calculator](../mcps/multi-tenant-isolation-calculator.md) | Deterministic resource isolation and quota calculator for multi-tenant environments. |
 | [OpenSearch Shard Calculator](../mcps/opensearch-shard-calculator.md) | Deterministic AWS OpenSearch shard distribution and resource allocation calculator. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
