@@ -14,10 +14,10 @@ This MCP server provides a decision-support engine to evaluate how model quantiz
 
 
 ## Available Tools (4)
-- **find_optimal_precision**: Identifies the best precision level (e.g., FP16, INT8, INT4) by balancing cost, speed, and accuracy
-- **get_deployment_savings**: Calculates the total monetary savings achieved by switching from a baseline model to a quantized version
 - **check_hardware_compatibility**: Validates if a specific quantization precision level can be executed on the intended hardware
 - **evaluate_accuracy_impact**: Determines if the accuracy loss is acceptable within the context of the deployment target
+- **find_optimal_precision**: Identifies the best precision level (e.g., FP16, INT8, INT4) by balancing cost, speed, and accuracy
+- **get_deployment_savings**: Calculates the total monetary savings achieved by switching from a baseline model to a quantized version
 
 
 ## 💬 Prompt Examples

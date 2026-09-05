@@ -17,9 +17,9 @@ This MCP server provides specialized tools to analyze the financial impact of de
 - **analyze_diversity_impact**: 0), and the cost of the new model.
 
 Predicts how adding a diverse model affects the performance-cost ratio
-- **find_optimal_ensemble_size**: Finds the number of models that maximizes the performance-cost ratio
 - **calculate_ensemble_cost**: Calculates the total cost to run a specific ensemble of models
 - **evaluate_performance_efficiency**: Evaluates the performance-cost ratio of an ensemble
+- **find_optimal_ensemble_size**: Finds the number of models that maximizes the performance-cost ratio
 
 
 ## 💬 Prompt Examples

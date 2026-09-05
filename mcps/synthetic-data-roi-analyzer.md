@@ -14,10 +14,10 @@ This MCP server provides a financial and operational analysis engine to quantify
 
 
 ## Available Tools (4)
-- **calculate_quality_adjusted_savings**: Evaluates the net economic value by penalizing savings based on the synthetic data's quality relative to real data
-- **calculate_scalability_benefit**: Quantifies the ability to expand datasets at a lower marginal cost compared to real data
 - **analyze_risk_and_bias_impact**: Estimates the hidden costs associated with distribution mismatch and bias in synthetic datasets
 - **calculate_direct_cost_savings**: Determines the immediate raw financial benefit of switching from real data to synthetic data
+- **calculate_quality_adjusted_savings**: Evaluates the net economic value by penalizing savings based on the synthetic data's quality relative to real data
+- **calculate_scalability_benefit**: Quantifies the ability to expand datasets at a lower marginal cost compared to real data
 
 
 ## 💬 Prompt Examples

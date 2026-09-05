@@ -14,8 +14,8 @@ This MCP server provides tools to analyze the financial performance of machine l
 
 
 ## Available Tools (4)
-- **analyze_latency_storage_tradeoff**: Evaluates the efficiency of the current storage strategy relative to latency requirements
 - **calculate_feature_unit_economics**: Determines the individual cost impact of each feature in the store
+- **analyze_latency_storage_tradeoff**: Evaluates the efficiency of the current storage strategy relative to latency requirements
 - **estimate_freshness_impact**: Predicts how changing the frequency of feature updates will affect the total budget
 - **evaluate_feature_reuse_benefit**: Quantifies the economic advantage of using existing features for new models
 

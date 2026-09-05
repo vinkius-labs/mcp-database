@@ -15,9 +15,9 @@ This MCP server provides tools to model the financial requirements of AI model t
 
 ## Available Tools (4)
 - **calculate_coverage_metrics**: Measures how much of the total benchmark space has been validated
+- **get_run_cost_breakdown**: Determines the total financial expenditure for a specific evaluation run
 - **predict_scaling_budget**: Forecasts the budget required to scale evaluation across multiple model versions or larger datasets
 - **analyze_tradeoff_efficiency**: Evaluates the economic efficiency of the current evaluation strategy
-- **get_run_cost_breakdown**: Determines the total financial expenditure for a specific evaluation run
 
 
 ## 💬 Prompt Examples

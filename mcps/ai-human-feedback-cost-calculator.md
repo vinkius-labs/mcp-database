@@ -14,10 +14,10 @@ This MCP server provides tools to model the financial and operational costs of t
 
 
 ## Available Tools (4)
-- **automation_potential**: Estimates the cost savings if a portion of the human feedback is replaced by AI feedback (RLAIF)
 - **quality_impact**: Calculates how quality requirements and auditing increase the total budgetary requirement
 - **resource_planning**: Determines the required human workforce size based on time constraints
 - **rlhf_cost**: Determines the baseline total cost for a human-only feedback loop
+- **automation_potential**: Estimates the cost savings if a portion of the human feedback is replaced by AI feedback (RLAIF)
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server provides a computational engine to evaluate the economic and per
 
 ## Available Tools (4)
 - **analyze_queue_impact**: Evaluates how different request arrival patterns affect the effectiveness of the chosen batch size
+- **calculate_efficiency_metrics**: Calculates the primary performance and economic outcomes of a serving configuration change
 - **evaluate_cost_reduction**: Specifically isolates the financial impact of increasing throughput efficiency
 - **validate_sla_compliance**: Determines if a specific optimization configuration is viable under strict latency constraints
-- **calculate_efficiency_metrics**: Calculates the primary performance and economic outcomes of a serving configuration change
 
 
 ## 💬 Prompt Examples

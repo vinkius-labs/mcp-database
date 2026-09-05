@@ -14,10 +14,10 @@ This MCP server provides a specialized economic modeling engine to quantify the 
 
 
 ## Available Tools (4)
+- **project_future_economics**: Forecasts the long-term financial trajectory based on the compounding growth of the prompt library
 - **assess_competitive_advantage**: Measures the strategic moat created by high-quality, optimized prompt libraries
 - **calculate_platform_roi**: Determines the total financial return of the platform relative to its costs
 - **estimate_adoption_value**: Quantifies the economic impact of how successfully users are adopting the prompt-driven features
-- **project_future_economics**: Forecasts the long-term financial trajectory based on the compounding growth of the prompt library
 
 
 ## 💬 Prompt Examples

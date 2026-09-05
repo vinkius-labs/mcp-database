@@ -16,8 +16,8 @@ This MCP server provides a suite of tools to optimize the economics of AI traini
 ## Available Tools (4)
 - **estimate_quality_control_impact**: Calculates the additional cost and volume needed to ensure the labels meet the target quality through verification
 - **get_optimization_summary**: Provides a comprehensive comparison between the baseline scenario and the optimized scenario
-- **calculate_baseline_costs**: Determines the initial cost of a labeling project before any optimization strategies are applied
 - **simulate_optimization_strategy**: Predicts the cost savings and quality outcomes when applying active learning and automation
+- **calculate_baseline_costs**: Determines the initial cost of a labeling project before any optimization strategies are applied
 
 
 ## 💬 Prompt Examples

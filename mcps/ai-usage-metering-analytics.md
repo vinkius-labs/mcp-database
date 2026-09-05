@@ -14,10 +14,10 @@ This MCP server provides an analytical engine to determine the financial implica
 
 
 ## Available Tools (4)
-- **estimate_billing_accuracy_gain**: Calculates the financial value of improving metering precision to reduce revenue leakage
-- **evaluate_fraud_mitigation_value**: Estimates the cost savings achieved by detecting fraudulent usage patterns through granular telemetry
 - **analyze_economic_efficiency**: Provides a high-level summary of the relationship between metering costs and revenue protection
 - **calculate_infrastructure_overhead**: Determines the total operational cost required to support a specific metering configuration
+- **estimate_billing_accuracy_gain**: Calculates the financial value of improving metering precision to reduce revenue leakage
+- **evaluate_fraud_mitigation_value**: Estimates the cost savings achieved by detecting fraudulent usage patterns through granular telemetry
 
 
 ## 💬 Prompt Examples

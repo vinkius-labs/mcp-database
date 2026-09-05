@@ -14,10 +14,10 @@ This MCP server provides specialized economic modeling for AI security testing. 
 
 
 ## Available Tools (4)
-- **calculate_total_engagement_cost**: Determines the total financial outlay for a red-teaming exercise
 - **estimate_remediation_impact**: Calculates the total cost required to fix all discovered issues
 - **calculate_discovery_metrics**: Calculates how efficiently the team is finding vulnerabilities
 - **calculate_redteaming_roi**: Evaluates the economic value of the red-teaming exercise
+- **calculate_total_engagement_cost**: Determines the total financial outlay for a red-teaming exercise
 
 
 ## 💬 Prompt Examples

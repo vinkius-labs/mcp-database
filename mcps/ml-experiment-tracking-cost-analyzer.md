@@ -14,10 +14,10 @@ This MCP server provides tools to model the financial impact of machine learning
 
 
 ## Available Tools (4)
+- **evaluate_archival_efficiency**: Assesses the cost-saving impact of moving data from active to archival storage
 - **get_knowledge_utility_score**: Quantifies the value of the experiment history for research reproducibility
 - **predict_storage_trajectory**: Forecasts the total storage volume needed over a specific time horizon
 - **calculate_monthly_tracking_cost**: Determines the total monthly operational expense for the tracking infrastructure
-- **evaluate_archival_efficiency**: Assesses the cost-saving impact of moving data from active to archival storage
 
 
 ## 💬 Prompt Examples

@@ -16,8 +16,8 @@ This MCP server provides financial modeling tools to determine the infrastructur
 ## Available Tools (4)
 - **query_infrastructure_total_projection**: Calculates the total projected infrastructure spend for a planned fleet of tenants
 - **query_noisy_neighbor_impact**: Estimates the "hidden cost" of over-provisioning required to mitigate performance interference in shared environments
-- **query_scaling_efficiency**: Determines if the current infrastructure strategy is becoming more or less efficient as more tenants are added
 - **query_tenant_cost_breakdown**: Provides a granular view of how much a single tenant costs based on their specific isolation and resource needs
+- **query_scaling_efficiency**: Determines if the current infrastructure strategy is becoming more or less efficient as more tenants are added
 
 
 ## 💬 Prompt Examples
