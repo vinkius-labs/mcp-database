@@ -47,13 +47,23 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Infra Break-Even Analyzer](../mcps/infra-break-even-analyzer.md) | Calculate infrastructure break-even timelines, cash flow inflection points, and runway safety. |
 | [Infra Capacity Planning ROI](../mcps/infra-capacity-planning-roi.md) | Calculates optimal capacity investment timing and ROI based on demand growth and lead times. |
 | [Infra Cash Flow Timing Mismatch](../mcps/infra-cash-flow-timing-mismatch.md) | Assess liquidity risk by modeling the temporal misalignment between capital expenditures and revenue realization. |
+| [Infra Exit Option Analysis](../mcps/infra-exit-option-analysis.md) | Calculates strategic and financial exit valuations and optimal timing for infrastructure startups. |
+| [Infra Finance Analyzer](../mcps/infra-finance-analyzer.md) | Compare ROE vs IRR for infrastructure investments. |
 | [Infra Marginal Cost Analyzer](../mcps/infra-marginal-cost-analyzer.md) | Calculates unit costs and capacity risks for new customer acquisition. |
+| [Infra Revenue Volatility Score](../mcps/infra-revenue-volatility-score.md) | Quantifies infrastructure revenue stability and predictability. |
 | [Infra Unit Economics & Gross Margin](../mcps/infra-unit-economics-gross-margin.md) | Calculate gross margin, cost breakdowns, and identify margin improvement levers for infrastructure businesses. |
+| [Infra Working Capital Analyzer](../mcps/infra-working-capital-analyzer.md) | Calculate working capital needs, cash conversion cycles, and funding requirements. |
+| [Infra-Inflation Protection Mechanism](../mcps/infra-inflation-protection-mechanism.md) | Quantify contract resilience against inflation using specialized protection metrics. |
 | [Infra-Regulatory Compliance Cost](../mcps/infra-regulatory-compliance-cost.md) | Calculates economic burden and strategic impact of regulatory requirements. |
+| [Infra-Regulatory Moat Strength](../mcps/infra-regulatory-moat-strength.md) | Quantifies regulatory barriers and competitive advantages for infrastructure assets. |
 | [infra-revenue-per-asset](../mcps/infra-revenue-per-asset.md) | Calculates revenue productivity per asset to identify performance trends and underperforming infrastructure. |
+| [Infrastructure Asset Financing](../mcps/infrastructure-asset-financing.md) | Calculate borrowing capacity, financing costs, and covenant compliance for infrastructure assets. |
 | [Infrastructure Asset Utilization](../mcps/infrastructure-asset-utilization.md) | Calculates infrastructure asset utilization, trends, and expansion timing. |
 | [Infrastructure Capex Analyzer](../mcps/infrastructure-capex-analyzer.md) | Analyze maintenance vs growth capex and infrastructure lifecycle health. |
 | [Infrastructure Capital Intensity Analyzer](../mcps/infrastructure-capital-intensity-analyzer.md) | Analyze capital intensity, spending splits, and asset efficiency for infrastructure businesses. |
+| [Infrastructure DSCR Analyzer](../mcps/infrastructure-dscr-analyzer.md) | Calculate Debt Service Coverage Ratio, debt capacity, and refinancing risk for infrastructure projects. |
+| [Infrastructure Geographic Concentration Risk](../mcps/infrastructure-geographic-concentration-risk.md) | Quantify risk exposure of infrastructure assets based on geographic, political, and regulatory distribution. |
+| [Infrastructure Project Finance Viability](../mcps/infrastructure-project-finance-viability.md) | Calculate optimal capital structure and financial feasibility for large-scale infrastructure projects. |
 | [Infrastructure Scalability Analyzer](../mcps/infrastructure-scalability-analyzer.md) | Analyzes infrastructure scalability metrics including coefficients, economies of scale, and capacity elasticity. |
 | [Infrastructure Technology Obsolescence Risk Engine](../mcps/infrastructure-technology-obsolescence-risk-engine.md) | Quantify technology obsolescence and financial risk for infrastructure assets. |
 | [Kubernetes Architecture Prover](../mcps/kubernetes-architecture-prover.md) | An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload. |
@@ -62,6 +72,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
 | [ML Experiment Tracking Cost Analyzer](../mcps/ml-experiment-tracking-cost-analyzer.md) | Calculate infrastructure, storage, and knowledge management costs for ML experiments. |
 | [Multi-Tenant Isolation Calculator](../mcps/multi-tenant-isolation-calculator.md) | Deterministic resource isolation and quota calculator for multi-tenant environments. |
+| [Offtake Agreement Eligibility Analysis](../mcps/offtake-agreement-eligibility-analysis.md) | Calculates the financial value, financing impact, and credit enhancement of offtake agreements. |
 | [OpenSearch Shard Calculator](../mcps/opensearch-shard-calculator.md) | Deterministic AWS OpenSearch shard distribution and resource allocation calculator. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
 | [Pub-Sub Topic Router](../mcps/pub-sub-topic-router.md) | Deterministic routing engine for hierarchical topic patterns and wildcard subscriptions. |

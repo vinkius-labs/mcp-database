@@ -5,9 +5,16 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Barrel Ride Physics Simulator](../mcps/barrel-ride-physics-simulator.md) | Deterministic barrel riding physics and positioning calculator. |
+| [Board Speed Record Simulator](../mcps/board-speed-record-simulator.md) | Calculate theoretical maximum speeds for kitefoiling and kiteboarding setups. |
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
 | [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
 | [I-Ching Hexagram Divination](../mcps/i-ching-hexagram-divination.md) | Simulate traditional I Ching coin-toss divination to generate hexagrams and interpretations. |
+| [Impact Cushion Depth](../mcps/impact-cushion-depth.md) | Calculates required water depth and injury risk for body impacts. |
+| [Kite Jump Parabola](../mcps/kite-jump-parabola.md) | Physics engine for modeling kiteboarder jump trajectories. |
+| [Kite Loop Physics Engine](../mcps/kite-loop-physics-engine.md) | Calculates g-force, body load, and peak duration for kiteboarding loops. |
+| [Kite Sheeting Pressure Engine](../mcps/kite-sheeting-pressure-engine.md) | Calculates bar pressure, steering force, and feedback stability for kiteboarding. |
+| [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
+| [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |
 | [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |
 
 

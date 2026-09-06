@@ -23,6 +23,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Evaporator Design Engineer](../mcps/evaporator-design-engineer.md) | Calculate thermal requirements and equipment dimensions for industrial evaporation systems. |
 | [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
 | [Extraction Column Design Tool](../mcps/extraction-column-design-tool.md) | Design liquid-liquid extraction columns by calculating stages, diameter, height, and hydrodynamics. |
+| [Fin Pressure & Stress Analyzer](../mcps/fin-pressure-stress-analyzer.md) | Calculates hydrodynamic pressure, base stress, and structural break risk for aquatic fins. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Flare System Sizing](../mcps/flare-system-sizing.md) | Sizing emergency relief flare systems using API 521 methodologies. |
 | [Foundation Pile Layout Optimizer](../mcps/foundation-pile-layout-optimizer.md) | Optimizes pile quantity, positioning, and pile cap dimensions for structural foundations. |
@@ -31,6 +32,10 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Ion Exchange System Designer](../mcps/ion-exchange-system-designer.md) | Design ion exchange columns, calculate resin volumes, and estimate regeneration needs. |
+| [Kite Bridle Tension Analyzer](../mcps/kite-bridle-tension-analyzer.md) | Calculates tension distribution and failure risks for kite bridle systems. |
+| [Kite Depower Mechanics](../mcps/kite-depower-mechanics.md) | Simulate kite depower mechanics including angle of attack, power reduction, and bar pressure. |
+| [Kite Line Drag Calculator](../mcps/kite-line-drag-calculator.md) | Calculate hydrodynamic resistance and power losses for submerged kite tether lines. |
+| [Kite Line Stretch & Creep Analyzer](../mcps/kite-line-stretch-creep-analyzer.md) | Calculate elastic deformation, long-term creep, and tuning adjustments for kite lines. |
 | [Leaching Process Design](../mcps/leaching-process-design.md) | Design efficient solid-liquid extraction processes using kinetic and equilibrium modeling. |
 | [mat-foundation-design](../mcps/mat-foundation-design.md) | Engineering tool for mat foundation thickness, reinforcement, and settlement calculations. |
 | [Material Selection Database](../mcps/material-selection-database.md) | Identify, rank, and compare engineering materials based on environmental conditions and performance requirements. |
@@ -59,11 +64,13 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Steel Weld Inspection Engine](../mcps/steel-weld-inspection-engine.md) | Calculates weld quality compliance, discontinuity limits, and inspection planning based on AWS D1.1 and ISO 5817 standards. |
 | [Steve Jobs Vision Prover](../mcps/steve-jobs-vision-prover.md) | A product had settings menus with 47 options and 15 integrations. This tool forces it to kill features, absorb complexity, and own the whole experience. |
 | [Storage Tank Design (API 650)](../mcps/storage-tank-design-api-650.md) | Design atmospheric storage tanks following API 650 standards. |
+| [Strap Tension Calculator](../mcps/strap-tension-calculator.md) | Calculate strap tension and structural safety during high-G maneuvers. |
 | [Stripping Column Design Suite](../mcps/stripping-column-design-suite.md) | Engineering tools for designing stripping columns and optimizing volatile removal. |
 | [Structural Vibration Analysis](../mcps/structural-vibration-analysis.md) | Analyze floor vibration serviceability and natural frequencies. |
 | [Thermodynamic Model Selector](../mcps/thermodynamic-model-selector.md) | Select the optimal thermodynamic model for chemical process simulations. |
 | [Tie-back Anchored Wall Designer](../mcps/tie-back-anchored-wall-designer.md) | Design and analyze the stability of tie-back anchored retaining walls. |
 | [Truss Analysis Pro](../mcps/truss-analysis-pro.md) | Calculate internal forces, reactions, and deflection in truss structures. |
+| [Twintip Flex Effect Engine](../mcps/twintip-flex-effect-engine.md) | Physics-based engine for calculating snowboard pop and comfort. |
 | [Vapor-Liquid Equilibrium Engine](../mcps/vapor-liquid-equilibrium-engine.md) | Calculate bubble points, dew points, and phase equilibrium properties for chemical mixtures. |
 | [Ventilation Rate Calculator](../mcps/ventilation-rate-calculator.md) | Calculates required ventilation rates, exhaust flow, and make-up air for chemical safety. |
 | [Vessel Design Calculator](../mcps/vessel-design-calculator.md) | Professional ASME-compliant pressure vessel dimension and structural requirement calculator. |

@@ -8,6 +8,8 @@ Explore the open database of **aviation** Model Context Protocol (MCP) servers.
 | [Density Altitude Calculator](../mcps/density-altitude-calculator.md) | Calculate precise density altitude and takeoff performance penalties. |
 | [Flight Emissions Calculator](../mcps/flight-emissions-calculator.md) | Estimate the carbon footprint of air travel based on distance, seat class, and radiative forcing. |
 | [Flight Risk Assessment Prover](../mcps/flight-risk-assessment-prover.md) | A dispatch office cleared a flight into known CB activity with 'proceed with caution.' The crew never returned. Flight Risk Prover forces ICAO SMS-level threat identification with METAR data, 5×5 risk quantification, Swiss Cheese barrier modeling, SHELL/IMSAFE human factors analysis, and explicit GO/NO-GO commitment — eliminating the sycophantic go-bias that kills in aviation. |
+| [Kite Twist Recovery](../mcps/kite-twist-recovery.md) | Calculates line twist recovery procedures and safety warnings for kite pilots. |
+| [Lemniscate Flight Path](../mcps/lemniscate-flight-path.md) | Calculates optimal figure-8 kite flight patterns for maximum power and smoothness. |
 
 
 ---

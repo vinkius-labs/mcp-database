@@ -5,10 +5,15 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Aspect Ratio Cropper](../mcps/aspect-ratio-cropper.md) | Calculate precise center-crop coordinates and pixel loss for any target aspect ratio. |
+| [Board Sink Rate Calculator](../mcps/board-sink-rate-calculator.md) | Calculate board sink rates, submergence times, and visibility loss. |
 | [Cake Serving Sizer](../mcps/cake-serving-sizer.md) | Calculate exact cake tier combinations and serving yields using Wilton standards. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
+| [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
+| [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
+| [Kite Tether Drag Calculator](../mcps/kite-tether-drag-calculator.md) | Calculate aerodynamic drag, anchor load, and flight safety for tethered kites. |
+| [Kite Wind Range Chart](../mcps/kite-wind-range-chart.md) | Calculates optimal wind windows and coverage overlap for kiteboarding gear sets. |
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
 | [Leash Length Optimizer](../mcps/leash-length-optimizer.md) | Deterministic surfboard leash length and thickness calculator. |
 | [Leatherworking Pattern Calculator](../mcps/leatherworking-pattern-calculator.md) | Calculate leather area, hide yield, and material consumables for leathercraft projects. |

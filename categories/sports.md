@@ -6,6 +6,9 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Billiards Cut Angle Calculator](../mcps/billiards-cut-angle-calculator.md) | Deterministic geometry engine for precision pool and billiards shot mechanics. |
 | [Pop-Up Mechanics Analyzer](../mcps/pop-up-mechanics-analyzer.md) | Calculate the explosive force and power required for a surfer's pop-up maneuver. |
+| [Power Stroke Duration](../mcps/power-stroke-duration.md) | Calculate optimal kite power stroke metrics and maneuver stability. |
+| [Wave Jump Timing](../mcps/wave-jump-timing.md) | Calculate optimal launch points, timing windows, and boost potential for kite surfing jumps. |
+| [Wave Section Speed Predictor](../mcps/wave-section-speed-predictor.md) | Predictive modeling for surfer velocity and timing to navigate wave sections. |
 
 
 ---

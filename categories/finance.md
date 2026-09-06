@@ -205,6 +205,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Correlation Matrix Hedging](../mcps/correlation-matrix-hedging.md) | Calculate precise hedge ratios and risk profiles for correlated prediction markets. |
 | [Cost Per Wear Calculator](../mcps/cost-per-wear-calculator.md) | Calculate the true economic value of your wardrobe investments by determining cost per use. |
 | [Cost-per-Bag Calculator](../mcps/cost-per-bag-calculator.md) | Estimate agricultural production costs per unit of yield and benchmark against regional averages. |
+| [Counterparty Credit Risk Analyzer](../mcps/counterparty-credit-risk-analyzer.md) | Calculates credit risk exposure, default losses, and concentration risk for counterparty portfolios. |
 | [Covered Call Strategy Engine](../mcps/covered-call-strategy-engine.md) | Deterministic signaling and backtesting for covered call option strategies. |
 | [CPF Allocation Calculator](../mcps/cpf-allocation-calculator.md) | Calculate exact CPF contributions and account allocations for Singapore Citizens and PRs. |
 | [CPF Optimization Strategy](../mcps/cpf-optimization-strategy.md) | Deterministic CPF allocation and projection engine for Singaporeans aged 20-35. |
@@ -416,9 +417,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Index Arbitrage Strategy](../mcps/index-arbitrage-strategy.md) | Detect and quantify cash-and-carry and reverse cash-and-carry arbitrage opportunities. |
 | [Inflation Erosion Calculator](../mcps/inflation-erosion-calculator.md) | Calculate the real purchasing power of money and visualize inflation's impact over time. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
+| [Infra Capex Funding Gap Analyzer](../mcps/infra-capex-funding-gap-analyzer.md) | Calculates capital expenditure funding requirements and assesses financing implications. |
 | [Infra Customer Concentration Risk](../mcps/infra-customer-concentration-risk.md) | Quantifies financial vulnerability by analyzing revenue distribution and customer stability. |
 | [Infra Energy Cost Exposure](../mcps/infra-energy-cost-exposure.md) | Quantify energy cost exposure and price sensitivity for infrastructure operations. |
+| [Infra Force Majeure Exposure](../mcps/infra-force-majeure-exposure.md) | Quantify operational risk exposure and organizational resilience against force majeure events. |
 | [Infrastructure Depreciation & Cash Flow Analyzer](../mcps/infrastructure-depreciation-cash-flow-analyzer.md) | Quantify the impact of depreciation strategies on tax shields and liquidity. |
+| [Infrastructure Fund Appeal Analyzer](../mcps/infrastructure-fund-appeal-analyzer.md) | Quantifies the attractiveness and suitability of infrastructure funds for various investor classes. |
 | [Innovation Acquisition Economics](../mcps/innovation-acquisition-economics.md) | Evaluate the financial viability and integration risks of acquiring external innovations. |
 | [Innovation Incubator Economics](../mcps/innovation-incubator-economics.md) | Calculate incubator ROI, portfolio value, and failure tolerance. |
 | [Innovation Licensing Revenue Potential](../mcps/innovation-licensing-revenue-potential.md) | Quantify IP value, optimal licensing strategies, and negotiation leverage. |

@@ -22,6 +22,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Gemology Carat & Alloy Calculator](../mcps/gemology-carat-alloy-calculator.md) | Calculate gemstone carat weight and precious metal alloy compositions. |
 | [Graph Analysis Toolkit](../mcps/graph-analysis-toolkit.md) | Deep structural analysis of directed and undirected graphs, providing metrics on connectivity, topology, and node importance. |
 | [I Ching Hexagram Engine](../mcps/i-ching-hexagram-engine.md) | Calculate primary, transformed, and nuclear hexagrams from line values or coin tosses. |
+| [Kite Pull Mechanics Engine](../mcps/kite-pull-mechanics-engine.md) | Physics-based calculations for kite pull angle, force distribution, and rider stability. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
 | [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
 | [Matrix Math and Linear Algebra Solver](../mcps/matrix-math-and-linear-algebra-solver.md) | Perform precise matrix operations like addition, multiplication, and inversion. |

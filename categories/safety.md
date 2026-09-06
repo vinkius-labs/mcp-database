@@ -4,11 +4,16 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Board Float Time Calculator](../mcps/board-float-time-calculator.md) | Calculate board buoyancy, visibility, and retrieval urgency after a rider fall. |
 | [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
+| [Kite Bladder Pressure Safety Engine](../mcps/kite-bladder-pressure-safety-engine.md) | Calculates kite bladder pressure shifts and safety risks from environmental changes. |
+| [Kite Drift Calculator](../mcps/kite-drift-calculator.md) | Calculate kite drift distance, direction, and recovery location. |
+| [Kite Stall Predictor](../mcps/kite-stall-predictor.md) | Calculate kite stall speed, safety margins, and recovery actions. |
 | [Lineup Priority Logic Validator](../mcps/lineup-priority-logic-validator.md) | Deterministic surfing right-of-way and priority violation validator. |
 | [Noise Exposure Assessment](../mcps/noise-exposure-assessment.md) | Calculate workplace noise dose, TWA, and hearing protection requirements. |
 | [Process Safety Lead Indicator](../mcps/process-safety-lead-indicator.md) | Monitor proactive safety metrics like inspection completion, training compliance, and near-miss trends. |
 | [Scuba Gas Planner](../mcps/scuba-gas-planner.md) | Deterministic gas consumption and depth limit calculations for scuba divers. |
+| [Water Depth Clearance](../mcps/water-depth-clearance.md) | Calculates safety margins and minimum water depth for aquatic maneuvers. |
 | [Wetsuit Thickness Recommender](../mcps/wetsuit-thickness-recommender.md) | Get precise wetsuit thickness and gear recommendations based on water temperature, air temperature, wind chill, and session duration. |
 
 

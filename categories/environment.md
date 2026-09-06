@@ -5,6 +5,8 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Indoor Air Quality Assessment](../mcps/indoor-air-quality-assessment.md) | Evaluates chemical laboratory safety through IAQ indexing and ventilation analysis. |
+| [Kite Lofting Risk Assessment](../mcps/kite-lofting-risk-assessment.md) | Calculate kite lofting risk by balancing aerodynamic lift against rider weight and wind gusts. |
+| [Kite Visibility Assessor](../mcps/kite-visibility-assessor.md) | Assess kite visibility and safety in various environmental conditions. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |
 | [Wind Direction & Beach Orientation Analyzer](../mcps/wind-direction-beach-orientation-analyzer.md) | Analyze wind conditions and beach orientation to determine surfing suitability. |
