@@ -16,8 +16,8 @@ This MCP server provides specialized tools for chemical manufacturing to measure
 ## Available Tools (4)
 - **calculate_blue_water_footprint**: Determines the net surface and groundwater consumption of a chemical process
 - **calculate_green_water_footprint**: Calculates the rainwater footprint related to bio-based chemical feedstocks
-- **calculate_grey_water_footprint**: Estimates the freshwater required to dilute discharge to acceptable quality levels
 - **calculate_water_intensity**: Evaluates the efficiency of water use relative to production output
+- **calculate_grey_water_footprint**: Estimates the freshwater required to dilute discharge to acceptable quality levels
 
 
 ## 💬 Prompt Examples
