@@ -16,8 +16,8 @@ This MCP server provides deep analytical insights into the unit economics of AI-
 ## Available Tools (4)
 - **analyze_infrastructure_overhead**: Answers how much of the shared cloud infrastructure is being consumed by specific AI workloads
 - **compare_feature_efficiency**: Compares the cost-efficiency of multiple features to identify "expensive" outliers
-- **simulate_optimization_impact**: Predicts how much profit would increase if specific cost-saving measures were applied
 - **get_feature_unit_economics**: Calculates the core cost metrics for a specific feature
+- **simulate_optimization_impact**: Predicts how much profit would increase if specific cost-saving measures were applied
 
 
 ## 💬 Prompt Examples
