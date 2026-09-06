@@ -6,6 +6,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 |-----------|-------------|
 | [AcademyOcean](../mcps/academyocean.md) | LMS for smart corporate training — manage learners, courses, and training progress via AI. |
 | [Adzuna](../mcps/adzuna-alternative.md) | Search millions of job advertisements and access real-time labor market analytics, salary trends, and regional vacancy data. |
+| [AI Talent Concentration Risk Analyzer](../mcps/ai-talent-concentration-risk-analyzer.md) | Assess organizational vulnerability to AI talent loss and calculate retention costs. |
 | [Argyle](../mcps/argyle.md) | Verify employment and income with Argyle — track users, employments, and payouts via AI. |
 | [Ashby](../mcps/ashby.md) | Hire top talent faster with an all-in-one recruiting platform that combines ATS, scheduling, and hiring analytics. |
 | [Avionte](../mcps/avionte.md) | Manage staffing and recruiting workflows via Avionte — query talent profiles, work history, company details, and department data directly from your AI agent. |

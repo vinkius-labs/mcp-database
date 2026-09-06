@@ -21,6 +21,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [AI Feature Usage Analytics](../mcps/ai-feature-usage-analytics.md) | Analyze AI feature stickiness, usage distribution, and engagement trajectories. |
 | [AI Feature Value Realization](../mcps/ai-feature-value-realization.md) | Quantify the time to value and adoption efficiency of your AI features. |
 | [AI Feedback Loop Economics](../mcps/ai-feedback-loop-economics.md) | Calculate the costs and ROI of user feedback collection for AI model improvement. |
+| [AI Model Depreciation Rate](../mcps/ai-model-depreciation-rate.md) | Calculate model obsolescence velocity and reinvestment timing. |
+| [AI Model Performance Differentiation](../mcps/ai-model-performance-differentiation.md) | Quantitatively analyze AI model competitive advantage through performance, cost, and latency metrics. |
 | [AI Model Usage Analytics](../mcps/ai-model-usage-analytics.md) | Analyze AI model cost distribution and usage concentration across product features. |
 | [AI Output Quality Metrics Engine](../mcps/ai-output-quality-metrics-engine.md) | Quantifies AI performance using feedback, regeneration rates, and acceptance metrics. |
 | [AI Power User Analytics Engine](../mcps/ai-power-user-analytics-engine.md) | Quantify AI power user density, value multipliers, and feature depth. |
@@ -53,6 +55,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
 | [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
 | [Prompt Reuse Analyzer](../mcps/prompt-reuse-analyzer.md) | Analyze prompt template reuse, efficiency, and standardization opportunities. |
+| [RAG Economics Analyzer](../mcps/rag-economics-analyzer.md) | Calculate and optimize the total cost of ownership for RAG infrastructures. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |

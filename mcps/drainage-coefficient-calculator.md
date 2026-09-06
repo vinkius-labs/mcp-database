@@ -14,10 +14,10 @@ This MCP server provides technical tools for designing efficient tile drainage s
 
 
 ## Available Tools (4)
-- **calculate_drain_depth**: Determines the appropriate vertical placement for the drainage pipes
-- **calculate_drain_spacing**: Determines the optimal distance between lateral drain pipes
 - **design_system_summary**: Provides a complete design package (coefficient, spacing, and depth) for a specific field setup
 - **get_drainage_coefficient**: Determines the required rate of water removal for a specific scenario
+- **calculate_drain_depth**: Determines the appropriate vertical placement for the drainage pipes
+- **calculate_drain_spacing**: Determines the optimal distance between lateral drain pipes
 
 
 ## 💬 Prompt Examples

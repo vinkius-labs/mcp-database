@@ -8,7 +8,10 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Agent Rate Limiter Calculator](../mcps/agent-rate-limiter-calculator.md) | Deterministic distributed rate limiting for agentic workloads. |
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
 | [AI App Rate Limiting Economics](../mcps/ai-app-rate-limiting-economics.md) | Calculate the economic impact of rate-limiting strategies on AI infrastructure and revenue. |
+| [AI Energy Consumption & Scalability Modeler](../mcps/ai-energy-consumption-scalability-modeler.md) | Forecast power demand, energy costs, and sustainability metrics for AI infrastructure scaling. |
+| [AI Explainability Economics](../mcps/ai-explainability-economics.md) | Calculate the economic impact and infrastructure costs of AI explainability features. |
 | [AI Hardware Iteration Risk](../mcps/ai-hardware-iteration-risk.md) | Calculate hardware obsolescence risk and refresh investment for AI infrastructure. |
+| [AI Infrastructure GPU Economics](../mcps/ai-infrastructure-gpu-economics.md) | Calculate GPU profitability, payback periods, and break-even utilization. |
 | [AI Multi-Tenant Isolation Cost Modeler](../mcps/ai-multi-tenant-isolation-cost-modeler.md) | Calculate infrastructure costs, isolation overhead, and scaling economics for multi-tenant AI workloads. |
 | [AI Usage Metering Analytics](../mcps/ai-usage-metering-analytics.md) | Calculate the economic impact and infrastructure costs of high-precision usage metering. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |

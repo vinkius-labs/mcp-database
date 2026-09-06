@@ -14,10 +14,10 @@ This MCP server provides expert tools to evaluate aluminum toxicity in acidic so
 
 
 ## Available Tools (4)
-- **analyze_aluminum_risk**: 
 - **calculate_lime_requirement**: calculate_lime_requirement
-- **check_crop_vulnerability**: check_crop_vulnerability
 - **predict_root_impact**: predict_root_impact
+- **analyze_aluminum_risk**: 
+- **check_crop_vulnerability**: check_crop_vulnerability
 
 
 ## 💬 Prompt Examples

@@ -5,6 +5,7 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | Tool Name | Description |
 |-----------|-------------|
 | [Abacus AI (Enterprise AI Cloud)](../mcps/abacus-ai-enterprise-ai-cloud.md) | Manage the full machine learning lifecycle via Abacus AI — create projects, train models, and deploy real-time prediction endpoints. |
+| [AI Batch vs Real-time Economics Engine](../mcps/ai-batch-vs-real-time-economics-engine.md) | Evaluate cost-efficiency and profitability of Batch vs. Real-time AI processing architectures. |
 | [Akash Network (Decentralized GPU & Cloud API)](../mcps/akash-network-decentralized-gpu-cloud-api.md) | Deploy and manage decentralized GPU and cloud resources on Akash Network—create deployments, manage leases, and monitor escrow balances directly. |
 | [Apaleo](../mcps/apaleo.md) | Manage hotel reservations, properties, rooms, rate plans, folios, invoices, and availability for your Apaleo PMS through natural conversation. |
 | [AppDynamics (Application Performance Monitor API)](../mcps/appdynamics-application-performance-monitor-api.md) | Monitor application performance, business transactions, and infrastructure health rules directly from your AI agent. |

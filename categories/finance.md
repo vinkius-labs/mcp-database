@@ -71,6 +71,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Agent Cost Allocation Engine](../mcps/agent-cost-allocation-engine.md) | Deterministic cost allocation and chargeback calculator for multi-agent systems. |
 | [Agritourism Revenue Predictor](../mcps/agritourism-revenue-predictor.md) | Forecast revenue, visitor demand, and break-even points for agritourism enterprises. |
 | [AI Agent Workflow Cost Analyzer](../mcps/ai-agent-workflow-cost-analyzer.md) | Calculate the complete financial footprint of AI agent lifecycles, including error recovery and reliability costs. |
+| [AI API Margin Analyzer](../mcps/ai-api-margin-analyzer.md) | Analyze profitability and optimal pricing structures for AI API usage tiers. |
 | [AI App Development Cost Estimator](../mcps/ai-app-development-cost-estimator.md) | Calculate precise financial and temporal investment for AI application development. |
 | [AI App Observability Cost Calculator](../mcps/ai-app-observability-cost-calculator.md) | Calculate observability investment, MTTR value, and coverage gaps for AI applications. |
 | [AI App Recommendation System Cost](../mcps/ai-app-recommendation-system-cost.md) | Financial modeling for recommendation engine economics and infrastructure scaling. |
@@ -78,9 +79,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Benchmark ROI Analyzer](../mcps/ai-benchmark-roi-analyzer.md) | Quantify the financial impact and ROI of AI benchmark leadership positions. |
 | [AI Build vs Buy Decision Support](../mcps/ai-build-vs-buy-decision-support.md) | Evaluate the economic and strategic trade-offs between custom AI development and third-party APIs. |
 | [AI Content Moderation Economics](../mcps/ai-content-moderation-economics.md) | Calculate the economic impact of AI and human moderation strategies. |
+| [AI Context Window Economics](../mcps/ai-context-window-economics.md) | Analyze the financial impact of context window scaling on LLM inference costs. |
 | [AI Continuous Training Cost Calculator](../mcps/ai-continuous-training-cost-calculator.md) | Calculate the economic impact and ROI of continuous AI model retraining cycles. |
 | [AI Data Labeling Cost Optimizer](../mcps/ai-data-labeling-cost-optimizer.md) | Model and predict the financial impact of data labeling strategies, including active learning and automation savings. |
 | [AI Data Lineage Infrastructure Cost Calculator](../mcps/ai-data-lineage-infrastructure-cost-calculator.md) | Quantify the financial impact of data lineage, including tracking costs, compliance value, and debugging efficiency. |
+| [AI Data Moat Valuation Engine](../mcps/ai-data-moat-valuation-engine.md) | Quantify the economic and strategic value of proprietary datasets. |
 | [AI Data Pipeline Cost Analyzer](../mcps/ai-data-pipeline-cost-analyzer.md) | Calculate monthly operating costs and efficiency metrics for AI data pipelines. |
 | [AI Error Recovery Economics](../mcps/ai-error-recovery-economics.md) | Quantify the financial and experiential cost of AI errors and calculate ROI for recovery strategies. |
 | [AI Evaluation Cost Analyzer](../mcps/ai-evaluation-cost-analyzer.md) | Calculate and forecast the economic impact of AI evaluation infrastructure. |
@@ -88,17 +91,22 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Feature First-Mover Advantage Calculator](../mcps/ai-feature-first-mover-advantage-calculator.md) | Quantify the economic value and competitive moat of launching AI features ahead of the market. |
 | [AI Feature Flag Cost & Risk Modeler](../mcps/ai-feature-flag-cost-risk-modeler.md) | Calculate infrastructure costs, deployment velocity, and risk mitigation for AI feature flags. |
 | [AI Feature ROI Analyzer](../mcps/ai-feature-roi-analyzer.md) | Evaluate the financial efficiency and pricing viability of AI features at the user level. |
+| [AI Fine-Tuning Economics](../mcps/ai-fine-tuning-economics.md) | Analyze profitability and LTV impact of AI fine-tuning jobs. |
 | [AI Foundation Model Valuation Engine](../mcps/ai-foundation-model-valuation-engine.md) | Calculate enterprise value and market position for AI model companies. |
 | [AI Human Feedback Cost Calculator](../mcps/ai-human-feedback-cost-calculator.md) | Calculate RLHF and RLAIF cost structures, quality impact, and automation potential. |
+| [AI Inference Cost Economics](../mcps/ai-inference-cost-economics.md) | Calculate unit economics for AI model deployment, including cost per query, margins, and scale projections. |
 | [AI Knowledge Distillation ROI Calculator](../mcps/ai-knowledge-distillation-roi-calculator.md) | Calculate the economic value and break-even scale of model distillation projects. |
 | [AI Memory Cost Analyzer](../mcps/ai-memory-cost-analyzer.md) | Estimate and optimize the economic impact of AI conversation memory architectures. |
 | [AI Model A/B Testing Cost Engine](../mcps/ai-model-ab-testing-cost-engine.md) | Calculate infrastructure costs, time to significance, and ROI for AI model A/B tests. |
 | [AI Model Compression ROI](../mcps/ai-model-compression-roi.md) | Quantify the economic impact of AI model compression. |
+| [AI Model Distillation ROI](../mcps/ai-model-distillation-roi.md) | Financial modeling engine to evaluate the economic viability of model distillation. |
 | [AI Model Distribution Economics](../mcps/ai-model-distribution-economics.md) | Calculate cost structures, margins, and optimal distribution strategies for AI models. |
 | [AI Model Drift Detection & ROI Calculator](../mcps/ai-model-drift-detection-roi-calculator.md) | Calculate monitoring costs, early detection value, and ROI for AI model drift detection. |
 | [AI Model Ensemble Economics](../mcps/ai-model-ensemble-economics.md) | Calculate the economic efficiency and optimal configuration of AI model ensembles. |
 | [AI Model Fine-Tuning Service Margin](../mcps/ai-model-fine-tuning-service-margin.md) | Analyze profitability and long-term viability of AI fine-tuning services. |
 | [AI Model Registry Cost Structure](../mcps/ai-model-registry-cost-structure.md) | Quantify the economic impact, operating costs, and governance benefits of your AI model registry. |
+| [AI Model Training Cost Economics](../mcps/ai-model-training-cost-economics.md) | Analyze the financial impact of AI training, including compute costs, efficiency, and ROI. |
+| [AI Model Unit Economics](../mcps/ai-model-unit-economics.md) | Calculate gross margins, viability, and optimal pricing for AI model API services. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
@@ -468,6 +476,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Moving Average Ribbon Calculator](../mcps/moving-average-ribbon-calculator.md) | Analyze market trends and volatility using multi-layered Moving Average ribbons. |
 | [Moving Cost Comparator](../mcps/moving-cost-comparator.md) | Compare the financial impact of DIY truck rentals versus professional full-service moving companies. |
 | [MRR and ARR Calculator](../mcps/mrr-and-arr-calculator.md) | Calculate Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) from subscription data, broken down by plan segment. |
+| [Multi-Modal AI Economics Engine](../mcps/multi-modal-ai-economics-engine.md) | Calculate multi-modal AI costs, margins, and optimal pricing strategies. |
 | [Music Licensing Royalty Calculator](../mcps/music-licensing-royalty-calculator.md) | Estimate royalties for sync, mechanical, performance, and print music licensing. |
 | [Negative Volume Index Calculator](../mcps/negative-volume-index-calculator.md) | Calculate NVI and PVI to identify smart money activity and market sentiment. |
 | [Net Balance Minimizer](../mcps/net-balance-minimizer.md) | Efficiently settle group debts with the minimum number of transactions. |

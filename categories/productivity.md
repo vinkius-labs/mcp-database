@@ -50,6 +50,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Agent Workflow Cost Calculator](../mcps/agent-workflow-cost-calculator.md) | Calculate the exact financial footprint of multi-agent AI workflows. |
 | [agent-output-deduplicator](../mcps/agent-output-deduplicator.md) | Detects and removes redundant outputs from multi-agent workflows using Jaccard similarity and n-gram overlap. |
 | [AgentMail](../mcps/agentmail.md) | Give your AI agents their own email inbox to read, send, and reply to messages natively. |
+| [AI Agentic Workflow Cost Calculator](../mcps/ai-agentic-workflow-cost-calculator.md) | Calculate the financial economics of autonomous AI agent workflows. |
 | [AI Automation Time Savings Calculator](../mcps/ai-automation-time-savings-calculator.md) | Calculate the economic and operational impact of AI automation. |
 | [AI Content Generation Metrics](../mcps/ai-content-generation-metrics.md) | Calculate AI content generation volume, velocity, and utilization metrics. |
 | [AI Prompt Engineering Platform Economics](../mcps/ai-prompt-engineering-platform-economics.md) | Calculate ROI, adoption value, and strategic moat for prompt engineering platforms. |

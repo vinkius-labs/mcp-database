@@ -4,6 +4,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [AI Compute Supply Chain Risk Engine](../mcps/ai-compute-supply-chain-risk-engine.md) | Quantify GPU scarcity and cloud-based compute supply vulnerabilities. |
 | [Avocado Maturity Index](../mcps/avocado-maturity-index.md) | Calculate avocado maturity, shelf life, and market suitability. |
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Canola Oil Quality Predictor](../mcps/canola-oil-quality-predictor.md) | Predict canola oil grade, refining losses, and meal quality from seed characteristics. |

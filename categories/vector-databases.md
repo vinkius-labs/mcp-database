@@ -4,6 +4,7 @@ Explore the open database of **vector-databases** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [AI Embedding Cost Structure](../mcps/ai-embedding-cost-structure.md) | Calculates the economic impact and operational costs of embedding generation and vector storage. |
 | [Document Metadata Flattener](../mcps/document-metadata-flattener.md) | Flattens nested JSON metadata into dot-notation keys for vector store compatibility. |
 | [Embedding Dimension Optimizer](../mcps/embedding-dimension-optimizer.md) | A deterministic tool to balance embedding quality, latency, and storage efficiency. |
 

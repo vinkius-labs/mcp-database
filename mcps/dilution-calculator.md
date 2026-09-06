@@ -14,10 +14,10 @@ This MCP server provides laboratory professionals with precise tools for solutio
 
 
 ## Available Tools (4)
-- **calculate_serial_dilution_plan**: Generates a multi-step dilution sequence when a single step is impractical
 - **calculate_single_dilution**: Calculates the specific volumes needed for a one-step dilution
 - **get_dilution_factor_info**: Provides descriptive metadata about a specific dilution factor
 - **validate_mixing_ratio**: Checks if a specific ratio of stock to diluent is mathematically consistent with the target concentrations
+- **calculate_serial_dilution_plan**: Generates a multi-step dilution sequence when a single step is impractical
 
 
 ## 💬 Prompt Examples
