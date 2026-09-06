@@ -40,6 +40,8 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [Enterprise RFP Response Metrics](../mcps/enterprise-rfp-response-metrics.md) | Calculates RFP win rates, response efficiency, and strategic prioritization. |
 | [European Expansion Sequencing](../mcps/european-expansion-sequencing.md) | Determine the most efficient order for entering European markets by balancing economic opportunity against operational complexity. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
+| [Infrastructure Market Analyzer](../mcps/infrastructure-market-analyzer.md) | Evaluates competitive landscape, concentration, and defensive moats in infrastructure markets. |
+| [Infrastructure Switching Cost Analysis](../mcps/infrastructure-switching-cost-analysis.md) | Quantify customer switching costs, retention drivers, and market moat strength. |
 | [Innovation Moat Forecaster](../mcps/innovation-moat-forecaster.md) | Quantify the lifespan of competitive advantages and strategic moats. |
 | [Innovation Pivot Decision Analysis](../mcps/innovation-pivot-decision-analysis.md) | A strategic framework for evaluating business trajectories and pivot viability. |
 | [Innovation Platform Ecosystem Economics](../mcps/innovation-platform-ecosystem-economics.md) | Calculate ecosystem value, network multipliers, and growth potential. |

@@ -79,12 +79,15 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Benchmark ROI Analyzer](../mcps/ai-benchmark-roi-analyzer.md) | Quantify the financial impact and ROI of AI benchmark leadership positions. |
 | [AI Build vs Buy Decision Support](../mcps/ai-build-vs-buy-decision-support.md) | Evaluate the economic and strategic trade-offs between custom AI development and third-party APIs. |
 | [AI Content Moderation Economics](../mcps/ai-content-moderation-economics.md) | Calculate the economic impact of AI and human moderation strategies. |
+| [AI Context Caching Economics](../mcps/ai-context-caching-economics.md) | Analyze the financial and operational impact of LLM context caching. |
 | [AI Context Window Economics](../mcps/ai-context-window-economics.md) | Analyze the financial impact of context window scaling on LLM inference costs. |
 | [AI Continuous Training Cost Calculator](../mcps/ai-continuous-training-cost-calculator.md) | Calculate the economic impact and ROI of continuous AI model retraining cycles. |
+| [AI Custom Silicon Economics](../mcps/ai-custom-silicon-economics.md) | Analyze the economic viability of custom AI silicon versus GPU clusters. |
 | [AI Data Labeling Cost Optimizer](../mcps/ai-data-labeling-cost-optimizer.md) | Model and predict the financial impact of data labeling strategies, including active learning and automation savings. |
 | [AI Data Lineage Infrastructure Cost Calculator](../mcps/ai-data-lineage-infrastructure-cost-calculator.md) | Quantify the financial impact of data lineage, including tracking costs, compliance value, and debugging efficiency. |
 | [AI Data Moat Valuation Engine](../mcps/ai-data-moat-valuation-engine.md) | Quantify the economic and strategic value of proprietary datasets. |
 | [AI Data Pipeline Cost Analyzer](../mcps/ai-data-pipeline-cost-analyzer.md) | Calculate monthly operating costs and efficiency metrics for AI data pipelines. |
+| [AI Data Pipeline Cost Structure](../mcps/ai-data-pipeline-cost-structure.md) | Financial modeling for AI data pipeline economics and efficiency. |
 | [AI Error Recovery Economics](../mcps/ai-error-recovery-economics.md) | Quantify the financial and experiential cost of AI errors and calculate ROI for recovery strategies. |
 | [AI Evaluation Cost Analyzer](../mcps/ai-evaluation-cost-analyzer.md) | Calculate and forecast the economic impact of AI evaluation infrastructure. |
 | [AI Feature Expansion Impact Analyzer](../mcps/ai-feature-expansion-impact-analyzer.md) | Quantify the financial and behavioral impact of AI features on SaaS expansion revenue and upsell conversion. |
@@ -92,9 +95,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Feature Flag Cost & Risk Modeler](../mcps/ai-feature-flag-cost-risk-modeler.md) | Calculate infrastructure costs, deployment velocity, and risk mitigation for AI feature flags. |
 | [AI Feature ROI Analyzer](../mcps/ai-feature-roi-analyzer.md) | Evaluate the financial efficiency and pricing viability of AI features at the user level. |
 | [AI Fine-Tuning Economics](../mcps/ai-fine-tuning-economics.md) | Analyze profitability and LTV impact of AI fine-tuning jobs. |
+| [AI Fine-Tuning Market Analyzer](../mcps/ai-fine-tuning-market-analyzer.md) | Calculates TAM, SAM, and market share potential for AI fine-tuning services. |
 | [AI Foundation Model Valuation Engine](../mcps/ai-foundation-model-valuation-engine.md) | Calculate enterprise value and market position for AI model companies. |
+| [AI Gateway ROI Calculator](../mcps/ai-gateway-roi-calculator.md) | Calculate the financial return on investment for implementing an AI gateway. |
 | [AI Human Feedback Cost Calculator](../mcps/ai-human-feedback-cost-calculator.md) | Calculate RLHF and RLAIF cost structures, quality impact, and automation potential. |
 | [AI Inference Cost Economics](../mcps/ai-inference-cost-economics.md) | Calculate unit economics for AI model deployment, including cost per query, margins, and scale projections. |
+| [AI Inference Optimization ROI](../mcps/ai-inference-optimization-roi.md) | Calculate financial and performance ROI for AI inference optimizations. |
 | [AI Knowledge Distillation ROI Calculator](../mcps/ai-knowledge-distillation-roi-calculator.md) | Calculate the economic value and break-even scale of model distillation projects. |
 | [AI Memory Cost Analyzer](../mcps/ai-memory-cost-analyzer.md) | Estimate and optimize the economic impact of AI conversation memory architectures. |
 | [AI Model A/B Testing Cost Engine](../mcps/ai-model-ab-testing-cost-engine.md) | Calculate infrastructure costs, time to significance, and ROI for AI model A/B tests. |
@@ -108,14 +114,17 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Model Training Cost Economics](../mcps/ai-model-training-cost-economics.md) | Analyze the financial impact of AI training, including compute costs, efficiency, and ROI. |
 | [AI Model Unit Economics](../mcps/ai-model-unit-economics.md) | Calculate gross margins, viability, and optimal pricing for AI model API services. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
+| [AI Prompt Caching Economics](../mcps/ai-prompt-caching-economics.md) | Calculate the financial impact and ROI of LLM prompt caching strategies. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
 | [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Decomposes AI feature costs into actionable unit economics. |
 | [AI SaaS Gross Margin Analyzer](../mcps/ai-saas-gross-margin-analyzer.md) | Calculate and project gross margins for AI SaaS businesses, including AI API and compute costs. |
 | [AI SaaS Unit Economics Engine](../mcps/ai-saas-unit-economics-engine.md) | Calculate LTV, LTV:CAC, and AI cost impact for AI-driven SaaS models. |
+| [AI Safety & Alignment Cost Analyzer](../mcps/ai-safety-alignment-cost-analyzer.md) | Quantify the financial investment required for AI safety, alignment, and risk mitigation. |
 | [AI Safety Evaluation Score](../mcps/ai-safety-evaluation-score.md) | Translates technical AI safety metrics into financial risk profiles and safety posture scores. |
 | [AI Safety Guardrails Cost Analyzer](../mcps/ai-safety-guardrails-cost-analyzer.md) | Calculate the financial impact and risk reduction of AI safety guardrails. |
 | [AI Search Investment Modeler](../mcps/ai-search-investment-modeler.md) | Calculate infrastructure costs, latency impact, and relevance gains for AI-powered search enhancements. |
+| [AI TCO Decision Support](../mcps/ai-tco-decision-support.md) | Compare the 3-year Total Cost of Ownership between open-source and proprietary AI models. |
 | [AI Training Data Valuation Engine](../mcps/ai-training-data-valuation-engine.md) | Calculate the economic worth, scarcity premium, and licensing potential of AI training datasets. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
 | [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
@@ -188,6 +197,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Connors RSI Calculator](../mcps/connors-rsi-calculator.md) | Calculate Connors RSI and identify mean-reversion trading signals. |
 | [Conservation Program Payment Calculator](../mcps/conservation-program-payment-calculator.md) | Financial modeling for USDA conservation programs (CRP, EQIP, CSP) and crop economics. |
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
+| [Contract Backlog & Revenue Engine](../mcps/contract-backlog-revenue-engine.md) | Calculate contracted revenue backlog, recognized revenue, and future visibility. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
 | [Corporate Innovation ROI Engine](../mcps/corporate-innovation-roi-engine.md) | Quantifies financial and strategic returns for corporate innovation programs. |
@@ -390,6 +400,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [High-Low Index Calculator](../mcps/high-low-index-calculator.md) | Calculate market breadth, cumulative summation, and detect momentum divergence. |
 | [Historical Volatility Calculator](../mcps/historical-volatility-calculator.md) | Calculate annualized historical volatility, percentile ranks, and volatility cones. |
 | [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
+| [Hugging Face Deployment Economics](../mcps/hugging-face-deployment-economics.md) | Financial modeling for Hugging Face deployment costs and self-hosting comparisons. |
 | [IBAN and BIC Checksum Validator](../mcps/iban-and-bic-checksum-validator.md) | Verify the mathematical integrity of IBANs and the structural validity of BIC/SWIFT codes. |
 | [Ichimoku Cloud Calculator](../mcps/ichimoku-cloud-calculator.md) | Deterministic engine for Ichimoku Kinko Hyo indicator components and signals. |
 | [Ichimoku Cloud Strategy](../mcps/ichimoku-cloud-strategy.md) | Deterministic trend-following engine using Ichimoku Cloud indicators. |
@@ -405,6 +416,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Index Arbitrage Strategy](../mcps/index-arbitrage-strategy.md) | Detect and quantify cash-and-carry and reverse cash-and-carry arbitrage opportunities. |
 | [Inflation Erosion Calculator](../mcps/inflation-erosion-calculator.md) | Calculate the real purchasing power of money and visualize inflation's impact over time. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
+| [Infra Customer Concentration Risk](../mcps/infra-customer-concentration-risk.md) | Quantifies financial vulnerability by analyzing revenue distribution and customer stability. |
+| [Infra Energy Cost Exposure](../mcps/infra-energy-cost-exposure.md) | Quantify energy cost exposure and price sensitivity for infrastructure operations. |
+| [Infrastructure Depreciation & Cash Flow Analyzer](../mcps/infrastructure-depreciation-cash-flow-analyzer.md) | Quantify the impact of depreciation strategies on tax shields and liquidity. |
 | [Innovation Acquisition Economics](../mcps/innovation-acquisition-economics.md) | Evaluate the financial viability and integration risks of acquiring external innovations. |
 | [Innovation Incubator Economics](../mcps/innovation-incubator-economics.md) | Calculate incubator ROI, portfolio value, and failure tolerance. |
 | [Innovation Licensing Revenue Potential](../mcps/innovation-licensing-revenue-potential.md) | Quantify IP value, optimal licensing strategies, and negotiation leverage. |
@@ -539,6 +553,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Rate of Change Calculator](../mcps/rate-of-change-calculator.md) | Calculate deterministic Rate of Change (ROC) and Momentum to identify market trends and divergences. |
 | [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Real Estate ROI Analyzer](../mcps/real-estate-roi-analyzer.md) | Analyze investment property performance, cash flow, and long-term tax benefits. |
+| [Reasoning Model Economics](../mcps/reasoning-model-economics.md) | Financial modeling for reasoning-intensive LLM economics. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
 | [Relative Strength Strategy](../mcps/relative-strength-strategy.md) | A deterministic momentum strategy identifying assets outperforming a benchmark. |
@@ -551,6 +566,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Retirement Planning Engine](../mcps/retirement-planning-engine.md) | Project retirement savings growth, optimize Social Security benefits, and simulate withdrawal success. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
+| [Revenue Predictability Engine](../mcps/revenue-predictability-engine.md) | Analyzes revenue stability and predictability using recurring revenue and contract metrics. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [Reverse Cash-and-Carry Arbitrage Engine](../mcps/reverse-cash-and-carry-arbitrage-engine.md) | Identify and calculate deterministic arbitrage signals in backwardation markets. |
 | [Ride-Hail Surge Estimator](../mcps/ride-hail-surge-estimator.md) | Predict ride-hailing surge multipliers and total fares based on weather and peak hours. |

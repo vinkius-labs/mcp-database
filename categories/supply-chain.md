@@ -11,6 +11,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Chickpea Quality Grader](../mcps/chickpea-quality-grader.md) | Grades chickpea quality and predicts market suitability and value. |
 | [Demand Forecast Calculator](../mcps/demand-forecast-calculator.md) | Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing methods. |
 | [Fill Rate Calculator](../mcps/fill-rate-calculator.md) | Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs. |
+| [Infrastructure Supply Chain Risk Analyzer](../mcps/infrastructure-supply-chain-risk-analyzer.md) | Quantify supply chain vulnerabilities, single-source exposure, and mitigation costs. |
 | [Input Purchasing Optimizer](../mcps/input-purchasing-optimizer.md) | Optimizes agricultural procurement by balancing volume discounts, storage limits, and financing costs. |
 | [Lead Time Analyzer](../mcps/lead-time-analyzer.md) | Analyze and decompose supply chain lead times to identify bottlenecks. |
 | [LTL-FTL Comparator](../mcps/ltl-ftl-comparator.md) | Logistics decision engine to compare LTL and FTL shipment costs, risks, and break-even points. |

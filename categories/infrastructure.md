@@ -7,11 +7,14 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Agent Load Balancer Calculator](../mcps/agent-load-balancer-calculator.md) | Deterministic load balancing engine for distributing request rates across agent instances. |
 | [Agent Rate Limiter Calculator](../mcps/agent-rate-limiter-calculator.md) | Deterministic distributed rate limiting for agentic workloads. |
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
+| [AI API Rate Limit Economics](../mcps/ai-api-rate-limit-economics.md) | Quantifies the economic tension between API rate limiting costs and infrastructure scaling costs. |
 | [AI App Rate Limiting Economics](../mcps/ai-app-rate-limiting-economics.md) | Calculate the economic impact of rate-limiting strategies on AI infrastructure and revenue. |
 | [AI Energy Consumption & Scalability Modeler](../mcps/ai-energy-consumption-scalability-modeler.md) | Forecast power demand, energy costs, and sustainability metrics for AI infrastructure scaling. |
 | [AI Explainability Economics](../mcps/ai-explainability-economics.md) | Calculate the economic impact and infrastructure costs of AI explainability features. |
 | [AI Hardware Iteration Risk](../mcps/ai-hardware-iteration-risk.md) | Calculate hardware obsolescence risk and refresh investment for AI infrastructure. |
 | [AI Infrastructure GPU Economics](../mcps/ai-infrastructure-gpu-economics.md) | Calculate GPU profitability, payback periods, and break-even utilization. |
+| [AI MLOps Infrastructure Cost Analyzer](../mcps/ai-mlops-infrastructure-cost-analyzer.md) | Calculate and analyze the financial footprint of your MLOps lifecycle. |
+| [AI Model Versioning Cost](../mcps/ai-model-versioning-cost.md) | Calculate the financial and operational impact of managing AI model versions. |
 | [AI Multi-Tenant Isolation Cost Modeler](../mcps/ai-multi-tenant-isolation-cost-modeler.md) | Calculate infrastructure costs, isolation overhead, and scaling economics for multi-tenant AI workloads. |
 | [AI Usage Metering Analytics](../mcps/ai-usage-metering-analytics.md) | Calculate the economic impact and infrastructure costs of high-precision usage metering. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |
@@ -40,6 +43,19 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [European Data Center ROI Optimizer](../mcps/european-data-center-roi-optimizer.md) | Identify optimal European data center locations by balancing latency, energy costs, and GDPR compliance. |
 | [European Data Localization Economics](../mcps/european-data-localization-economics.md) | Calculate the financial and operational impact of European data residency requirements. |
 | [Idempotency Key Enforcer](../mcps/idempotency-key-enforcer.md) | Prevents duplicate execution of identical side-effectful operations using an in-memory LRU cache. |
+| [Infra Asset Lifecycle Coverage](../mcps/infra-asset-lifecycle-coverage.md) | Evaluates asset replacement readiness and technological risk. |
+| [Infra Break-Even Analyzer](../mcps/infra-break-even-analyzer.md) | Calculate infrastructure break-even timelines, cash flow inflection points, and runway safety. |
+| [Infra Capacity Planning ROI](../mcps/infra-capacity-planning-roi.md) | Calculates optimal capacity investment timing and ROI based on demand growth and lead times. |
+| [Infra Cash Flow Timing Mismatch](../mcps/infra-cash-flow-timing-mismatch.md) | Assess liquidity risk by modeling the temporal misalignment between capital expenditures and revenue realization. |
+| [Infra Marginal Cost Analyzer](../mcps/infra-marginal-cost-analyzer.md) | Calculates unit costs and capacity risks for new customer acquisition. |
+| [Infra Unit Economics & Gross Margin](../mcps/infra-unit-economics-gross-margin.md) | Calculate gross margin, cost breakdowns, and identify margin improvement levers for infrastructure businesses. |
+| [Infra-Regulatory Compliance Cost](../mcps/infra-regulatory-compliance-cost.md) | Calculates economic burden and strategic impact of regulatory requirements. |
+| [infra-revenue-per-asset](../mcps/infra-revenue-per-asset.md) | Calculates revenue productivity per asset to identify performance trends and underperforming infrastructure. |
+| [Infrastructure Asset Utilization](../mcps/infrastructure-asset-utilization.md) | Calculates infrastructure asset utilization, trends, and expansion timing. |
+| [Infrastructure Capex Analyzer](../mcps/infrastructure-capex-analyzer.md) | Analyze maintenance vs growth capex and infrastructure lifecycle health. |
+| [Infrastructure Capital Intensity Analyzer](../mcps/infrastructure-capital-intensity-analyzer.md) | Analyze capital intensity, spending splits, and asset efficiency for infrastructure businesses. |
+| [Infrastructure Scalability Analyzer](../mcps/infrastructure-scalability-analyzer.md) | Analyzes infrastructure scalability metrics including coefficients, economies of scale, and capacity elasticity. |
+| [Infrastructure Technology Obsolescence Risk Engine](../mcps/infrastructure-technology-obsolescence-risk-engine.md) | Quantify technology obsolescence and financial risk for infrastructure assets. |
 | [Kubernetes Architecture Prover](../mcps/kubernetes-architecture-prover.md) | An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload. |
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
 | [Load Balancer Distributor](../mcps/load-balancer-distributor.md) | Deterministic simulation engine for evaluating load balancing algorithms. |
@@ -52,6 +68,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Rate Limiter State Calculator](../mcps/rate-limiter-state-calculator.md) | Deterministic engine for evaluating Token Bucket, Leaky Bucket, and sliding window rate limiting states. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
 | [SNS Fanout & Filtering Calculator](../mcps/sns-fanout-filtering-calculator.md) | Calculate AWS SNS fanout, throughput, and filter policy complexity. |
+| [Vector Database TCO Calculator](../mcps/vector-database-tco-calculator.md) | Calculate the total cost of ownership for vector databases, comparing managed vs self-hosted models. |
 | [Voice AI Economics Calculator](../mcps/voice-ai-economics-calculator.md) | Calculate voice AI integration costs, infrastructure needs, and UX value. |
 | [vpc-cidr-calculator](../mcps/vpc-cidr-calculator.md) | Deterministic AWS VPC CIDR and subnet layout generator. |
 | [WebSocket Capacity Planner](../mcps/websocket-capacity-planner.md) | Estimate WebSocket connection limits, server fleet requirements, and network overhead. |

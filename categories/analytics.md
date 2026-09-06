@@ -28,6 +28,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [AI Power User Analytics Engine](../mcps/ai-power-user-analytics-engine.md) | Quantify AI power user density, value multipliers, and feature depth. |
 | [AI SaaS Feature Churn Correlation](../mcps/ai-saas-feature-churn-correlation.md) | Quantify the impact of AI features on customer retention and calculate prevented churn revenue. |
 | [AI SaaS Token Economics Engine](../mcps/ai-saas-token-economics-engine.md) | Analyze token consumption, feature efficiency, and tier-based costs for AI SaaS platforms. |
+| [AI Synthetic Data Economics](../mcps/ai-synthetic-data-economics.md) | Calculate the economic value, cost savings, and scalability of synthetic datasets. |
 | [AI Water Consumption Analytics](../mcps/ai-water-consumption-analytics.md) | Calculate water usage, sustainability risk, and cooling ROI for AI data centers. |
 | [Antibody Titer Calculator](../mcps/antibody-titer-calculator.md) | Precision tool for calculating antibody titers, EC50, and concentrations from assay data. |
 | [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |
