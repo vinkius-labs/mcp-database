@@ -4,6 +4,7 @@ Explore the open database of **meteorology** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Kite Wind Gradient Calculator](../mcps/kite-wind-gradient-calculator.md) | Calculate wind speed increases and power gains at different kite altitudes. |
 | [Wind Lull Predictor](../mcps/wind-lull-predictor.md) | Predict wind lull duration, minimum speeds, and recovery timing. |
 
 

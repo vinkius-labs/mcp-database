@@ -8,7 +8,10 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
 | [Kite Bladder Pressure Safety Engine](../mcps/kite-bladder-pressure-safety-engine.md) | Calculates kite bladder pressure shifts and safety risks from environmental changes. |
 | [Kite Drift Calculator](../mcps/kite-drift-calculator.md) | Calculate kite drift distance, direction, and recovery location. |
+| [Kite Hindenburg Recovery](../mcps/kite-hindenburg-recovery.md) | Calculates impact dynamics and recovery windows for falling kites. |
 | [Kite Leash Load Calculator](../mcps/kite-leash-load-calculator.md) | Calculates peak leash load and safety margins during kiteboarding release events. |
+| [Kite Safety System Diagnostic](../mcps/kite-safety-system-diagnostic.md) | Assess the health, compliance, and replacement needs of kite quick-release systems. |
+| [Kite Size Selector](../mcps/kite-size-selector.md) | Calculates optimal kite dimensions based on rider weight, wind, and equipment. |
 | [Kite Stall Predictor](../mcps/kite-stall-predictor.md) | Calculate kite stall speed, safety margins, and recovery actions. |
 | [Lineup Priority Logic Validator](../mcps/lineup-priority-logic-validator.md) | Deterministic surfing right-of-way and priority violation validator. |
 | [Noise Exposure Assessment](../mcps/noise-exposure-assessment.md) | Calculate workplace noise dose, TWA, and hearing protection requirements. |

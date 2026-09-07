@@ -35,6 +35,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Hypoglycemia Recovery Protocol](../mcps/hypoglycemia-recovery-protocol.md) | Deterministic 'Rule of 15' calculator for immediate hypoglycemia treatment. |
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Determine personalized healthy weight ranges and nutritional transition plans using physiological markers. |
 | [Insulin on Board Decay Calculator](../mcps/insulin-on-board-decay-calculator.md) | Calculate remaining active insulin and assess stacking risk. |
+| [Kite Session Energy Engine](../mcps/kite-session-energy-engine.md) | Calculate energy expenditure, hydration needs, and recovery time for kiteboarding sessions. |
 | [Lactate Threshold Estimator](../mcps/lactate-threshold-estimator.md) | Estimate metabolic lactate thresholds using effort-based metrics or heart rate drift analysis. |
 | [Menstrual Cycle Insulin Resistance Tracker](../mcps/menstrual-cycle-insulin-resistance-tracker.md) | Adjust insulin parameters based on menstrual cycle phases. |
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |

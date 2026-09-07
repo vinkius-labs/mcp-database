@@ -5,12 +5,18 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Barrel Ride Physics Simulator](../mcps/barrel-ride-physics-simulator.md) | Deterministic barrel riding physics and positioning calculator. |
+| [Board Carve Radius Engine](../mcps/board-carve-radius-engine.md) | Physics-driven engine for calculating surfboard turning mechanics, G-forces, and spray patterns. |
+| [Board Speed Calculation Engine](../mcps/board-speed-calculation-engine.md) | Simulate terminal velocity and acceleration for kiteboarding equipment. |
 | [Board Speed Record Simulator](../mcps/board-speed-record-simulator.md) | Calculate theoretical maximum speeds for kitefoiling and kiteboarding setups. |
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
+| [Foil Breach Recovery Dynamics](../mcps/foil-breach-recovery-dynamics.md) | Simulate hydrofoil breach physics and calculate recovery success. |
 | [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
 | [I-Ching Hexagram Divination](../mcps/i-ching-hexagram-divination.md) | Simulate traditional I Ching coin-toss divination to generate hexagrams and interpretations. |
 | [Impact Cushion Depth](../mcps/impact-cushion-depth.md) | Calculates required water depth and injury risk for body impacts. |
+| [Impact Force Estimator](../mcps/impact-force-estimator.md) | Calculate impact force and injury risk from water entries. |
+| [Jump Height Estimation](../mcps/jump-height-estimation.md) | Physics engine for kiteboarding jump metrics. |
 | [Kite Jump Parabola](../mcps/kite-jump-parabola.md) | Physics engine for modeling kiteboarder jump trajectories. |
+| [Kite Loop Mechanics](../mcps/kite-loop-mechanics.md) | Analyze physical forces, timing, and energy of kiteboarding loops. |
 | [Kite Loop Physics Engine](../mcps/kite-loop-physics-engine.md) | Calculates g-force, body load, and peak duration for kiteboarding loops. |
 | [Kite Sheeting Pressure Engine](../mcps/kite-sheeting-pressure-engine.md) | Calculates bar pressure, steering force, and feedback stability for kiteboarding. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |

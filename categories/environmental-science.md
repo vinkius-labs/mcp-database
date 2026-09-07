@@ -23,6 +23,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [Sediment Yield Estimator](../mcps/sediment-yield-estimator.md) | Estimates sediment yield from erosion and delivery using USLE and MUSLE models. |
 | [Spray Drift Model](../mcps/spray-drift-model.md) | Estimates pesticide drift distance and risk using agdrift equations. |
 | [Water Footprint Calculator](../mcps/water-footprint-calculator.md) | Calculates multi-dimensional water footprints for chemical manufacturing processes. |
+| [Wave Refraction Effect](../mcps/wave-refraction-effect.md) | Calculates wave refraction, breaking points, and point break intensity based on bathymetry. |
 | [Wind Shadow Zone](../mcps/wind-shadow-zone.md) | Calculate aerodynamic wind shadow and speed reduction caused by obstacles. |
 
 

@@ -8,6 +8,8 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Adsorption System Designer](../mcps/adsorption-system-designer.md) | Professional engineering tool for designing adsorption-based separation systems. |
 | [Aviation Weight and Balance](../mcps/aviation-weight-and-balance.md) | Deterministic aircraft weight, moment, and CG calculator with safety envelope validation. |
 | [Azeotrope Prediction Engine](../mcps/azeotrope-prediction-engine.md) | Predict azeotrope formation, properties, and pressure sensitivity. |
+| [Board Planing Speed Calculator](../mcps/board-planing-speed-calculator.md) | Calculate minimum planing speeds and drag profiles for surfboards. |
+| [Board Repair Estimator](../mcps/board-repair-estimator.md) | Estimate circuit board repair costs, time, and economic viability. |
 | [Centrifugation Design Engineer](../mcps/centrifugation-design-engineer.md) | Design and size industrial centrifugation systems using Stokes' law and centrifugal physics. |
 | [Ceramic Formulation Calculator](../mcps/ceramic-formulation-calculator.md) | Design ceramic batches and glazes by calculating oxide profiles, thermal expansion, and sintering temperatures. |
 | [Compaction Control Test](../mcps/compaction-control-test.md) | Analyzes soil compaction quality by comparing field test results against laboratory standards. |
@@ -26,18 +28,25 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Fin Pressure & Stress Analyzer](../mcps/fin-pressure-stress-analyzer.md) | Calculates hydrodynamic pressure, base stress, and structural break risk for aquatic fins. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Flare System Sizing](../mcps/flare-system-sizing.md) | Sizing emergency relief flare systems using API 521 methodologies. |
+| [Foil Carve Physics](../mcps/foil-carve-physics.md) | Calculate hydrofoil carving mechanics, bank angles, and structural loads. |
 | [Foundation Pile Layout Optimizer](../mcps/foundation-pile-layout-optimizer.md) | Optimizes pile quantity, positioning, and pile cap dimensions for structural foundations. |
 | [Foundation Settlement Calculator](../mcps/foundation-settlement-calculator.md) | Calculate immediate, consolidation, and total soil settlement for foundation engineering. |
 | [Grassed Waterway Designer](../mcps/grassed-waterway-designer.md) | Design stable grassed waterways using hydraulic modeling and vegetation retardance. |
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
+| [Hydrofoil Mast Structural Analysis](../mcps/hydrofoil-mast-structural-analysis.md) | Calculate mast bending, stress concentration, and material integrity for hydrofoil masts. |
+| [Hydrofoil Speed & Stability Calculator](../mcps/hydrofoil-speed-stability-calculator.md) | Calculate lift-off, stall, and optimal cruising speeds for hydrofoil setups. |
 | [Ion Exchange System Designer](../mcps/ion-exchange-system-designer.md) | Design ion exchange columns, calculate resin volumes, and estimate regeneration needs. |
 | [Kite Bridle Pulley Friction Engine](../mcps/kite-bridle-pulley-friction-engine.md) | Calculates pulley friction, efficiency loss, and steering delay for kite bridle systems. |
 | [Kite Bridle Tension Analyzer](../mcps/kite-bridle-tension-analyzer.md) | Calculates tension distribution and failure risks for kite bridle systems. |
 | [Kite Depower Mechanics](../mcps/kite-depower-mechanics.md) | Simulate kite depower mechanics including angle of attack, power reduction, and bar pressure. |
+| [Kite Leading Edge Stiffness Calculator](../mcps/kite-leading-edge-stiffness-calculator.md) | Calculate structural stiffness, deflection, and collapse risk for kite leading edges. |
 | [Kite Line Drag Calculator](../mcps/kite-line-drag-calculator.md) | Calculate hydrodynamic resistance and power losses for submerged kite tether lines. |
 | [Kite Line Stretch & Creep Analyzer](../mcps/kite-line-stretch-creep-analyzer.md) | Calculate elastic deformation, long-term creep, and tuning adjustments for kite lines. |
+| [Kite Line Vibration Analyzer](../mcps/kite-line-vibration-analyzer.md) | Calculate kite line natural frequency and resonance risk. |
+| [Kite Steering Mechanics](../mcps/kite-steering-mechanics.md) | Calculate bar rotation, pull force, and steering delay for kite control. |
 | [Leaching Process Design](../mcps/leaching-process-design.md) | Design efficient solid-liquid extraction processes using kinetic and equilibrium modeling. |
+| [Line Tension & Safety Analyzer](../mcps/line-tension-safety-analyzer.md) | Calculate kite line tension, stretch, and safety margins using catenary mechanics. |
 | [mat-foundation-design](../mcps/mat-foundation-design.md) | Engineering tool for mat foundation thickness, reinforcement, and settlement calculations. |
 | [Material Selection Database](../mcps/material-selection-database.md) | Identify, rank, and compare engineering materials based on environmental conditions and performance requirements. |
 | [McCabe-Thiele Method](../mcps/mccabe-thiele-method.md) | Perform binary distillation analysis including stage counts and feed locations. |
@@ -65,9 +74,11 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Steel Weld Inspection Engine](../mcps/steel-weld-inspection-engine.md) | Calculates weld quality compliance, discontinuity limits, and inspection planning based on AWS D1.1 and ISO 5817 standards. |
 | [Steve Jobs Vision Prover](../mcps/steve-jobs-vision-prover.md) | A product had settings menus with 47 options and 15 integrations. This tool forces it to kill features, absorb complexity, and own the whole experience. |
 | [Storage Tank Design (API 650)](../mcps/storage-tank-design-api-650.md) | Design atmospheric storage tanks following API 650 standards. |
+| [Strap Insert Stress Calculator](../mcps/strap-insert-stress-calculator.md) | Calculates mechanical stress and pull-out risk for snowboard strap inserts. |
 | [Strap Tension Calculator](../mcps/strap-tension-calculator.md) | Calculate strap tension and structural safety during high-G maneuvers. |
 | [Stripping Column Design Suite](../mcps/stripping-column-design-suite.md) | Engineering tools for designing stripping columns and optimizing volatile removal. |
 | [Structural Vibration Analysis](../mcps/structural-vibration-analysis.md) | Analyze floor vibration serviceability and natural frequencies. |
+| [Surfboard Fin Configurator](../mcps/surfboard-fin-configurator.md) | Calculate optimal fin geometry and setup for any wave condition. |
 | [Thermodynamic Model Selector](../mcps/thermodynamic-model-selector.md) | Select the optimal thermodynamic model for chemical process simulations. |
 | [Tie-back Anchored Wall Designer](../mcps/tie-back-anchored-wall-designer.md) | Design and analyze the stability of tie-back anchored retaining walls. |
 | [Truss Analysis Pro](../mcps/truss-analysis-pro.md) | Calculate internal forces, reactions, and deflection in truss structures. |

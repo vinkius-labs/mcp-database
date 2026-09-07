@@ -4,8 +4,10 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Apparent Wind Calculator](../mcps/apparent-wind-calculator.md) | Calculate apparent wind speed, angle, and power for kiteboarding. |
 | [Aspect Ratio Cropper](../mcps/aspect-ratio-cropper.md) | Calculate precise center-crop coordinates and pixel loss for any target aspect ratio. |
 | [Board Sink Rate Calculator](../mcps/board-sink-rate-calculator.md) | Calculate board sink rates, submergence times, and visibility loss. |
+| [Board Speed Variance Calculator](../mcps/board-speed-variance-calculator.md) | Calculates speed fluctuations and control difficulty for kiteboarders in gusty wind conditions. |
 | [Cake Serving Sizer](../mcps/cake-serving-sizer.md) | Calculate exact cake tier combinations and serving yields using Wilton standards. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
@@ -13,6 +15,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
 | [Kite Tether Drag Calculator](../mcps/kite-tether-drag-calculator.md) | Calculate aerodynamic drag, anchor load, and flight safety for tethered kites. |
+| [Kite Trim Tuning](../mcps/kite-trim-tuning.md) | Calculate precise kite trim settings and line lengths for optimal performance. |
 | [Kite Wind Range Chart](../mcps/kite-wind-range-chart.md) | Calculates optimal wind windows and coverage overlap for kiteboarding gear sets. |
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
 | [Leash Length Optimizer](../mcps/leash-length-optimizer.md) | Deterministic surfboard leash length and thickness calculator. |

@@ -5,6 +5,7 @@ Explore the open database of **kiteboarding** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [Beach Start Power Engine](../mcps/beach-start-power-engine.md) | Calculates physical requirements and optimal parameters for kiteboarding beach starts. |
+| [Kite Self-Landing Physics Engine](../mcps/kite-self-landing-physics-engine.md) | Predict descent speed and impact force for kiteboarders during self-landing maneuvers. |
 
 
 ---
