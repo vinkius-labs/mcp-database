@@ -14,10 +14,10 @@ This MCP server provides a specialized framework to evaluate how prepared an AI-
 
 
 ## Available Tools (4)
-- **calculate_readiness_score**: Provides a single high-level metric representing the overall readiness of a feature for globalThis deployment
 - **determine_localization_priority**: Ranks languages by the urgency required to improve their quality to meet globalThis standards
 - **evaluate_market_readiness**: Assesses whether a specific geographic market is ready for a feature rollout based on its language composition
 - **get_language_performance**: Analyzes how well a specific language is performing by looking at linguistic and AI-specific metrics
+- **calculate_readiness_score**: Provides a single high-level metric representing the overall readiness of a feature for globalThis deployment
 
 
 ## 💬 Prompt Examples
