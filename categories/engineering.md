@@ -32,6 +32,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Ion Exchange System Designer](../mcps/ion-exchange-system-designer.md) | Design ion exchange columns, calculate resin volumes, and estimate regeneration needs. |
+| [Kite Bridle Pulley Friction Engine](../mcps/kite-bridle-pulley-friction-engine.md) | Calculates pulley friction, efficiency loss, and steering delay for kite bridle systems. |
 | [Kite Bridle Tension Analyzer](../mcps/kite-bridle-tension-analyzer.md) | Calculates tension distribution and failure risks for kite bridle systems. |
 | [Kite Depower Mechanics](../mcps/kite-depower-mechanics.md) | Simulate kite depower mechanics including angle of attack, power reduction, and bar pressure. |
 | [Kite Line Drag Calculator](../mcps/kite-line-drag-calculator.md) | Calculate hydrodynamic resistance and power losses for submerged kite tether lines. |

@@ -6,6 +6,7 @@ Explore the open database of **physics** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Cycling Power Calculator](../mcps/cycling-power-calculator.md) | Calculate precise power requirements for cycling based on speed, gradient, and wind. |
 | [Room Acoustics Calculator](../mcps/room-acoustics-calculator.md) | Calculate RT60, absorption, and room modes for precise acoustic design. |
+| [Twintip Buoyancy & Recovery Planner](../mcps/twintip-buoyancy-recovery-planner.md) | Calculate board buoyancy, visibility, and recovery windows for lost surfboards. |
 
 
 ---
