@@ -14,9 +14,9 @@ This MCP server provides a suite of tools to analyze AWS Identity and Access Man
 
 
 ## Available Tools (4)
+- **check_entity_limits**: Determine if an IAM entity has exceeded its allowed number of attached managed or inline policies
 - **analyze_policy_structure**: Calculate the exact byte size of a provided IAM policy and check if it violates character-based constraints
 - **audit_account_capacity**: Check if the AWS account is approaching its cumulative limits for managed policies
-- **check_entity_limits**: Determine if an IAM entity has exceeded its allowed number of attached managed or inline policies
 - **simulate_access**: Simulate the outcome of a specific action request based on the hierarchy of IAM evaluation logic
 
 

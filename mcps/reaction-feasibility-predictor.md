@@ -14,10 +14,10 @@ This MCP server provides a suite of tools for chemical analysis. Use `analyze_th
 
 
 ## Available Tools (4)
-- **analyze_thermodynamics**: Determines if a reaction is energetically favorable by calculating the change in Gibbs Free Energy and the resulting equilibrium state
 - **assess_reaction_feasibility**: Provides a holistic verdict by combining thermodynamic favorability with kinetic accessibility
-- **evaluate_kinetics**: Assesses the speed of a reaction by evaluating the energy barrier required to reach the transition state
 - **simulate_condition_shift**: Predicts how changes in temperature will impact the thermodynamic stability and equilibrium of the reaction
+- **analyze_thermodynamics**: Determines if a reaction is energetically favorable by calculating the change in Gibbs Free Energy and the resulting equilibrium state
+- **evaluate_kinetics**: Assesses the speed of a reaction by evaluating the energy barrier required to reach the transition state
 
 
 ## 💬 Prompt Examples
