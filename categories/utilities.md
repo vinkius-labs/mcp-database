@@ -106,6 +106,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [Solitaire Solver](../mcps/solitaire-solver.md) | A deterministic engine for validating Klondike solitaire moves and identifying legal plays. |
+| [Spot Distance Calculation](../mcps/spot-distance-calculation.md) | Calculate great-circle distances, bearings, and travel times using spherical geometry. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
 | [Sudoku Grid Validator](../mcps/sudoku-grid-validator.md) | A deterministic engine for validating 9x9 Sudoku grid states and identifying rule violations. |

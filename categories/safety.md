@@ -13,6 +13,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Kite Safety System Diagnostic](../mcps/kite-safety-system-diagnostic.md) | Assess the health, compliance, and replacement needs of kite quick-release systems. |
 | [Kite Size Selector](../mcps/kite-size-selector.md) | Calculates optimal kite dimensions based on rider weight, wind, and equipment. |
 | [Kite Stall Predictor](../mcps/kite-stall-predictor.md) | Calculate kite stall speed, safety margins, and recovery actions. |
+| [Kite Wear Assessment](../mcps/kite-wear-assessment.md) | Assess kite structural integrity and remaining flight life. |
 | [Lineup Priority Logic Validator](../mcps/lineup-priority-logic-validator.md) | Deterministic surfing right-of-way and priority violation validator. |
 | [Noise Exposure Assessment](../mcps/noise-exposure-assessment.md) | Calculate workplace noise dose, TWA, and hearing protection requirements. |
 | [Process Safety Lead Indicator](../mcps/process-safety-lead-indicator.md) | Monitor proactive safety metrics like inspection completion, training compliance, and near-miss trends. |

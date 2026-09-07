@@ -13,6 +13,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
+| [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
 | [Kite Tether Drag Calculator](../mcps/kite-tether-drag-calculator.md) | Calculate aerodynamic drag, anchor load, and flight safety for tethered kites. |
 | [Kite Trim Tuning](../mcps/kite-trim-tuning.md) | Calculate precise kite trim settings and line lengths for optimal performance. |
@@ -23,6 +24,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
+| [Surfboard Buoyancy & Performance Engine](../mcps/surfboard-buoyancy-performance-engine.md) | Calculate surfboard buoyancy, paddle efficiency, and wave catch ability. |
 | [Surfboard Ding Repair Calculator](../mcps/surfboard-ding-repair-calculator.md) | Calculate exact resin, fiberglass, and curing time for surfboard repairs. |
 | [Surfboard Volume & Suitability Calculator](../mcps/surfboard-volume-suitability-calculator.md) | Calculate precise surfboard displacement volume and ideal buoyancy ratios. |
 | [Timelapse Calculator](../mcps/timelapse-calculator.md) | Plan precise timelapse sequences, storage needs, and golden hour windows. |

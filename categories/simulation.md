@@ -22,6 +22,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
 | [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |
 | [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |
+| [twintip-edge-hold](../mcps/twintip-edge-hold.md) | Simulate hydrodynamic performance, grip force, and pop potential for twin-tip boards. |
 
 
 ---

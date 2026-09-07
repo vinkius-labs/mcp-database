@@ -10,6 +10,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | [Kite Visibility Assessor](../mcps/kite-visibility-assessor.md) | Assess kite visibility and safety in various environmental conditions. |
 | [Kite Wind Window Analyzer](../mcps/kite-wind-window-analyzer.md) | Calculates effective wind window area and power zone dynamics using spherical cap geometry. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
+| [Wave Riding Angle](../mcps/wave-riding-angle.md) | Calculate optimal approach angles, section speeds, and air time potential for surfing. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |
 | [Wind Direction & Beach Orientation Analyzer](../mcps/wind-direction-beach-orientation-analyzer.md) | Analyze wind conditions and beach orientation to determine surfing suitability. |
 
