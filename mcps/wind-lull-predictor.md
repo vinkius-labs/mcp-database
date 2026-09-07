@@ -14,10 +14,10 @@ This MCP server provides precise atmospheric modeling to predict wind lulls. By 
 
 
 ## Available Tools (4)
+- **validate_forecast_stability**: Is the current forecast stable enough to predict a reliable lull?
 - **calculate_lull_metrics**: What is the expected duration, minimum speed, and recovery time for a lull based on current conditions?
 - **compare_location_risk**: How does the risk of a wind lull change between two different locations?
 - **estimate_recovery_window**: When will the wind return to normal after a lull begins?
-- **validate_forecast_stability**: Is the current forecast stable enough to predict a reliable lull?
 
 
 ## 💬 Prompt Examples

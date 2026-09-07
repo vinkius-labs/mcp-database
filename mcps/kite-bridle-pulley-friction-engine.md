@@ -14,10 +14,10 @@ This MCP server provides precise mechanical calculations for kite bridle steerin
 
 
 ## Available Tools (4)
-- **calculate_friction_impact**: Calculates the immediate physical forces and efficiency metrics for a single pulley setup
 - **estimate_environmental_degradation**: Predicts how much additional friction will be added due to external factors
 - **get_bearing_properties**: Retrieves the specific friction coefficient associated with a specific bearing type
 - **simulate_steering_response**: Determines if a specific steering command will be successful given the current friction state
+- **calculate_friction_impact**: Calculates the immediate physical forces and efficiency metrics for a single pulley setup
 
 
 ## 💬 Prompt Examples

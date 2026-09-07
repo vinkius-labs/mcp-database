@@ -14,10 +14,10 @@ This MCP server provides specialized tools for kite-surfers to analyze their ses
 
 
 ## Available Tools (4)
-- **estimate_tacking_penalty**: Calculates how much the tacking angle reduces the efficiency of upwind progress
-- **get_active_time_only**: Isolates the actual time spent moving during a session
 - **calculate_session_metrics**: Provides a comprehensive breakdown of all distance metrics for a specific kite-surfing session
 - **compare_session_efficiency**: Compares the total distance of two sessions to determine which was more productive
+- **estimate_tacking_penalty**: Calculates how much the tacking angle reduces the efficiency of upwind progress
+- **get_active_time_only**: Isolates the actual time spent moving during a session
 
 
 ## 💬 Prompt Examples

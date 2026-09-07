@@ -14,8 +14,8 @@ This MCP server helps kite enthusiasts manage the lifecycle of their equipment. 
 
 
 ## Available Tools (4)
-- **analyze_wear_impact**: Evaluates how environmental factors like UV and bladder wear are currently affecting the asset
 - **calculate_budget_allocation**: Calculates how much money should be set aside periodically to afford a replacement
+- **analyze_wear_impact**: Evaluates how environmental factors like UV and bladder wear are currently affecting the asset
 - **calculate_hourly_cost**: Determines the financial cost of every hour flown
 - **estimate_replacement_timeline**: Predicts how many hours of flight are left before the kite must be replaced
 
