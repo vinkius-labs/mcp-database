@@ -14,10 +14,10 @@ This MCP server provides tools to solve fundamental quantum mechanics problems f
 
 
 ## Available Tools (4)
-- **get_probability_density**: Calculates the probability density at a specific point in space
-- **get_wavefunction_amplitude**: Calculates the value of the wavefunction at a specific spatial coordinate
 - **calculate_energy_state**: Determines the specific energy level for a particle in a given box dimension and state
 - **list_energy_spectrum**: Provides a range of available energy levels for a particle within a specific box configuration
+- **get_probability_density**: Calculates the probability density at a specific point in space
+- **get_wavefunction_amplitude**: Calculates the value of the wavefunction at a specific spatial coordinate
 
 
 ## 💬 Prompt Examples

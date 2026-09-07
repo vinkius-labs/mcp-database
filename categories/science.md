@@ -28,6 +28,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Chromatography Protein Purification Designer](../mcps/chromatography-protein-purification-designer.md) | Design optimal chromatography parameters including column sizing, resin capacity, and elution strategies. |
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
+| [Cold Water Survival Estimator](../mcps/cold-water-survival-estimator.md) | Estimates survival time, hypothermia onset, and swim failure in cold water. |
 | [Colligative Properties Calculator](../mcps/colligative-properties-calculator.md) | Calculate boiling point elevation, freezing point depression, osmotic pressure, and vapor pressure lowering. |
 | [Collision Theory Calculator](../mcps/collision-theory-calculator.md) | Calculates collision parameters for gas molecules using kinetic theory. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |

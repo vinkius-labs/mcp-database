@@ -14,10 +14,10 @@ This MCP server provides tools to analyze quantum state transitions. It determin
 
 
 ## Available Tools (4)
-- **validate_quantum_state**: Checks the physical validity of a single quantum state definition
 - **analyze_transition_possibility**: Determines if a transition between two specific quantum states is allowed or forbidden under different multipole expansions
 - **calculate_transition_moment**: Computes the strength of the transition between two states
 - **list_forbidden_transitions**: Identifies which transitions from a given state are forbidden within a specific set of allowed multipole types
+- **validate_quantum_state**: Checks the physical validity of a single quantum state definition
 
 
 ## 💬 Prompt Examples

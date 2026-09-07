@@ -14,10 +14,10 @@ This MCP server provides specialized tools for construction logistics. It calcul
 
 
 ## Available Tools (4)
+- **calculate_delivery_schedule**: Generates a complete optimized timeline of when to order and when to receive rebar batches
 - **analyze_storage_utilization**: Evaluates how much of the site's storage capacity is being used throughout the project
 - **get_buffer_safety_status**: Determines if the current inventory levels are sufficient to prevent a work stoppage
 - **optimize_batch_sizes**: Adjusts the weight of individual deliveries to better fit transport constraints or fabrication limits
-- **calculate_delivery_schedule**: Generates a complete optimized timeline of when to order and when to receive rebar batches
 
 
 ## 💬 Prompt Examples

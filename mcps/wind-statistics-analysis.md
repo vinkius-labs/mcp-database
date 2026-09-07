@@ -14,10 +14,10 @@ This MCP server provides statistical tools to analyze historical wind data. It u
 
 
 ## Available Tools (4)
-- **wind_distribution_stats**: Calculates central tendency and dispersion metrics for a given set of wind speeds
 - **optimal_direction**: Identifies the most favorable wind direction for planning
 - **seasonality_metrics**: Evaluates how much wind patterns fluctuate across different seasons
 - **session_feasibility**: Determines if wind conditions are suitable for a planned session
+- **wind_distribution_stats**: Calculates central tendency and dispersion metrics for a given set of wind speeds
 
 
 ## 💬 Prompt Examples

@@ -16,10 +16,10 @@ This MCP server provides a specialized computation engine for determining the ph
 ## Available Tools (4)
 - **get_oscillator_frequency**: Calculates the fundamental vibrational frequency of the system
 - **get_system_summary**: Provides a high-level overview of the oscillator's fundamental properties
-- **get_wavefunction_properties**: Provides the probability characteristics of the particle at a specific quantum state
 - **get_energy_levels**: An optional anharmonic correction can be applied.
 
 Determines the quantized energy levels for a specific state
+- **get_wavefunction_properties**: Provides the probability characteristics of the particle at a specific quantum state
 
 
 ## 💬 Prompt Examples

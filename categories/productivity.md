@@ -114,6 +114,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Bear](../mcps/bear.md) | Manage your Bear notes via AI — search, create, and organize your markdown knowledge base autonomously. |
 | [Beekeeping Harvest Calculator](../mcps/beekeeping-harvest-calculator.md) | Deterministic honey yield, storage, and wax byproduct estimation. |
 | [Beeminder](../mcps/beeminder.md) | Commit to your goals via Beeminder — track progress, add datapoints, and monitor your road status directly from any AI agent. |
+| [Beginner Progression Score](../mcps/beginner-progression-score.md) | Track skill advancement and estimate time to mastery. |
 | [Bible API](../mcps/bible-api.md) | Search and retrieve scripture — audit Bible versions and verses via AI. |
 | [BibTeX Bibliography Parser](../mcps/bibtex-bibliography-parser.md) | Parse academic .bib bibliography files into structured JSON. Let your AI format citations in APA, IEEE, or Chicago style instantly local. |
 | [BigOven](../mcps/bigoven.md) | Access over a million recipes via BigOven — search dishes, read reviews, and explore collections directly from any AI agent. |

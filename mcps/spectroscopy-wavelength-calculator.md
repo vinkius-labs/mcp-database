@@ -14,10 +14,10 @@ This MCP server provides precise mathematical tools for spectroscopic analysis. 
 
 
 ## Available Tools (4)
+- **calculate_energy_from_wavelength**: Determines the energy required for a specific spectroscopic transition based on a known wavelength
 - **calculate_wavelength_from_energy**: Determines the wavelength of light associated with a specific energy level transition
 - **convert_spectral_units**: Facilitates the conversion between the four primary spectral measurements
 - **get_transition_characteristics**: Provides the expected spectral range and typical energy scale for a given transition type
-- **calculate_energy_from_wavelength**: Determines the energy required for a specific spectroscopic transition based on a known wavelength
 
 
 ## 💬 Prompt Examples

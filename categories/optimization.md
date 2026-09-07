@@ -22,6 +22,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Context Window Economics Optimizer](../mcps/context-window-economics-optimizer.md) | Calculate the financial and performance impact of LLM context management strategies. |
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
+| [Equipment Gear Ratio Optimizer](../mcps/equipment-gear-ratio-optimizer.md) | Optimize kite and board combinations for perfect wind range coverage. |
 | [Glass Cutting Optimizer](../mcps/glass-cutting-optimizer.md) | Deterministic 2D guillotine-style cutting optimizer for industrial glass fabrication. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
 | [Konbini Hack Macro Optimizer](../mcps/konbini-hack-macro-optimizer.md) | Find the most cost-effective nutritional hacks in Japanese convenience stores. |

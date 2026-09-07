@@ -449,6 +449,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Kelly Criterion Strategy](../mcps/kelly-criterion-strategy.md) | Deterministic position sizing using the Kelly Criterion to manage trading capital. |
 | [Keltner Channels Calculator](../mcps/keltner-channels-calculator.md) | Deterministic technical analysis for Keltner Channels, volatility squeezes, and breakouts. |
 | [Kite Wear Budgeter](../mcps/kite-wear-budgeter.md) | Calculate kite replacement timelines and budget needs based on flight hours and wear. |
+| [Kitesurfing Travel Budget Planner](../mcps/kitesurfing-travel-budget-planner.md) | Calculate total costs, gear fees, and savings for kitesurfing trips. |
 | [Klinger Oscillator Calculator](../mcps/klinger-oscillator-calculator.md) | Deterministic technical analysis engine for Klinger Volume Oscillator metrics. |
 | [Klinger Volume Oscillator (KVO) Calculator](../mcps/klinger-volume-oscillator-kvo-calculator.md) | Calculate precise Klinger Volume Oscillator values, signal crossovers, and price divergence. |
 | [Land Cash Rent Calculator](../mcps/land-cash-rent-calculator.md) | Determine equitable cash rent using crop-share equivalency, margin analysis, and yield probability. |

@@ -9,6 +9,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | [Kite Lofting Risk Assessment](../mcps/kite-lofting-risk-assessment.md) | Calculate kite lofting risk by balancing aerodynamic lift against rider weight and wind gusts. |
 | [Kite Visibility Assessor](../mcps/kite-visibility-assessor.md) | Assess kite visibility and safety in various environmental conditions. |
 | [Kite Wind Window Analyzer](../mcps/kite-wind-window-analyzer.md) | Calculates effective wind window area and power zone dynamics using spherical cap geometry. |
+| [Spot Hazard Rating](../mcps/spot-hazard-rating.md) | Quantify kitesurfing environmental risks and safety. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
 | [Wave Riding Angle](../mcps/wave-riding-angle.md) | Calculate optimal approach angles, section speeds, and air time potential for surfing. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |

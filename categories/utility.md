@@ -15,6 +15,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
+| [Kite Relaunch Probability](../mcps/kite-relaunch-probability.md) | Estimates kite relaunch success based on wind, water, and kite type. |
 | [Kite Tether Drag Calculator](../mcps/kite-tether-drag-calculator.md) | Calculate aerodynamic drag, anchor load, and flight safety for tethered kites. |
 | [Kite Trim Tuning](../mcps/kite-trim-tuning.md) | Calculate precise kite trim settings and line lengths for optimal performance. |
 | [Kite Wind Range Chart](../mcps/kite-wind-range-chart.md) | Calculates optimal wind windows and coverage overlap for kiteboarding gear sets. |
