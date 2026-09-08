@@ -15,8 +15,8 @@ This MCP server provides a deterministic analytical engine for market breadth an
 
 ## Available Tools (3)
 - **detect_divergences**: Identifies discrepancies between price action and cumulative breadth trends
-- **get_breadth_classification**: Categorizes the current market state based on volatility-adjusted and threshold-based breadth indicators
 - **calculate_tick_metrics**: Provides a comprehensive suite of cumulative, momentum, and statistical breadth metrics
+- **get_breadth_classification**: Categorizes the current market state based on volatility-adjusted and threshold-based breadth indicators
 
 
 ## 💬 Prompt Examples

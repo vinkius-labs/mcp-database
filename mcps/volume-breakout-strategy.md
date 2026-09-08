@@ -14,9 +14,9 @@ This MCP server provides deterministic trading signals by identifying momentum b
 
 
 ## Available Tools (3)
+- **get_trade_parameters**: Get trade execution levels
 - **analyze_breakout_metrics**: Analyze breakout strength
 - **calculate_signals**: 
-- **get_trade_parameters**: Get trade execution levels
 
 
 ## 💬 Prompt Examples

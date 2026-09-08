@@ -14,9 +14,9 @@ This MCP server provides a deterministic framework for identifying market regime
 
 
 ## Available Tools (3)
+- **get_trend_metrics**: Provides quantitative data regarding the current strength and momentum of the trend
 - **analyze_trend_regime**: Determines the current market state (Uptrend, Downtrend, or Sideways) based on ADX and Moving Average positioning
 - **calculate_trading_signals**: Identifies specific Buy or Sell signals based on the current trend regime and price action
-- **get_trend_metrics**: Provides quantitative data regarding the current strength and momentum of the trend
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides deterministic tools to calculate the Volatility Risk Pr
 
 
 ## Available Tools (3)
-- **analyze_vrp_trends**: 
 - **calculate_basic_vrp**: 
+- **analyze_vrp_trends**: 
 - **compare_iv_sources**: 
 
 

@@ -14,8 +14,8 @@ This MCP server provides a deterministic optimization engine for generating dail
 
 
 ## Available Tools (3)
-- **analyze_lst_performance**: Calculates historical discount, real yields, and comparative metrics for LSTs
 - **generate_trading_signals**: Produces BUY, SELL, or HOLD instructions based on LST analysis and TVL
+- **analyze_lst_performance**: Calculates historical discount, real yields, and comparative metrics for LSTs
 - **summarize_strategy_exposure**: Provides a high-level overview of current portfolio positioning and risk
 
 

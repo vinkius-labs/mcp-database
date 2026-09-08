@@ -15,8 +15,8 @@ This MCP server provides deterministic tools for managing governance participati
 
 ## Available Tools (3)
 - **analyze_voting_strategy**: Provides a comprehensive daily signal regarding whether a user should delegate, undelegate, or vote directly
-- **calculate_proposal_metrics**: Evaluates the health and likely outcome of specific governance proposals
 - **evaluate_delegation_profitability**: Determines if the yield from delegating tokens is worth the transaction costs
+- **calculate_proposal_metrics**: Evaluates the health and likely outcome of specific governance proposals
 
 
 ## 💬 Prompt Examples

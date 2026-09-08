@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for executing multi-factor momen
 
 ## Available Tools (3)
 - **analyze_persistence**: Determines the stability of a price trend by measuring how long momentum has remained positive
-- **calculate_signals**: Generates actionable buy, sell, or hold signals for a provided set of asset price data
 - **rank_assets**: Ranks multiple assets based on a weighted composite momentum score
+- **calculate_signals**: Generates actionable buy, sell, or hold signals for a provided set of asset price data
 
 
 ## 💬 Prompt Examples

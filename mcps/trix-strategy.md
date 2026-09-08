@@ -14,9 +14,9 @@ This MCP server provides a deterministic momentum trading strategy based on the 
 
 
 ## Available Tools (3)
-- **analyze_signal_performance**: Evaluates the historical accuracy and quality of the generated signals
 - **calculate_trix_metrics**: Calculates the raw TRIX oscillator, signal line, and secondary momentum indicators
 - **generate_trading_signals**: Analyzes TRIX metrics to identify specific BUY, SELL, or HOLD entry and exit signals
+- **analyze_signal_performance**: Evaluates the historical accuracy and quality of the generated signals
 
 
 ## 💬 Prompt Examples

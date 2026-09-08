@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to detect RSI divergences in price 
 
 
 ## Available Tools (3)
+- **get_signal_summary**: 
 - **calculate_rsi_divergence**: 
 - **identify_swing_points**: 
-- **get_signal_summary**: 
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides deterministic trading signals based on the Elder-Ray In
 
 
 ## Available Tools (3)
-- **analyze_market_regime**: Provide a high-level summary of the current market state
 - **calculate_elder_ray_metrics**: Compute fundamental Elder-Ray indicators and market force
 - **generate_trading_signals**: Evaluate price action and indicator trends to produce BUY, SELL, or HOLD signals
+- **analyze_market_regime**: Provide a high-level summary of the current market state
 
 
 ## 💬 Prompt Examples

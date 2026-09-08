@@ -14,8 +14,8 @@ This MCP server provides deterministic quantitative tools to capture the quality
 
 
 ## Available Tools (3)
-- **analyze_strategy_performance**: Evaluates the historical effectiveness of the quality factor and its risk characteristics
 - **calculate_quality_scores**: Computes the composite quality score for a set of stocks based on provided fundamental data
+- **analyze_strategy_performance**: Evaluates the historical effectiveness of the quality factor and its risk characteristics
 - **generate_trading_signals**: Determines the buy, sell, and hold actions for the portfolio based on quality rankings
 
 

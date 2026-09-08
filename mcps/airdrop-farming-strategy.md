@@ -14,10 +14,10 @@ This MCP server provides a decision engine for identifying high-value cryptocurr
 
 
 ## Available Tools (3)
-- **analyze_airdrop_opportunities**: Identifies which protocols in a provided list are worth interacting with based on scoring and ROI thresholds
 - **calculate_interaction_requirements**: g., DEX, Bridge, Lending) to get required actions.
 
 Determines the specific on-chain actions a user must take to qualify for a specific protocol
+- **analyze_airdrop_opportunities**: Identifies which protocols in a provided list are worth interacting with based on scoring and ROI thresholds
 - **estimate_economics**: Calculates the projected financial outcome (reward vs. cost) for a specific protocol interaction
 
 

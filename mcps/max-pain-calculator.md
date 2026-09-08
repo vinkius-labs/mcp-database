@@ -14,8 +14,8 @@ This MCP server provides precise tools for options traders to identify the Max P
 
 
 ## Available Tools (3)
-- **calculate_max_pain**: Determine the exact strike price that minimizes total loss for all option holders and assess pin risk
 - **get_strike_loss_breakdown**: Provide transparency by showing individual call and put losses at a specific strike
+- **calculate_max_pain**: Determine the exact strike price that minimizes total loss for all option holders and assess pin risk
 - **validate_market_data**: Ensure provided options data is logically consistent
 
 

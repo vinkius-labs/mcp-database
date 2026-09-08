@@ -14,9 +14,9 @@ This MCP server provides a deterministic mean-reversion trading strategy focused
 
 
 ## Available Tools (3)
-- **track_gap_status**: Monitors the status of an active or recent gap to measure how effectively the gap is being filled
 - **analyze_gap_opportunities**: Evaluates historical price data to identify valid gap-up or gap-down opportunities
 - **calculate_trade_signals**: Determines if a specific gap presents a valid entry signal based on intra-day price movement
+- **track_gap_status**: Monitors the status of an active or recent gap to measure how effectively the gap is being filled
 
 
 ## 💬 Prompt Examples

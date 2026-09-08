@@ -15,8 +15,8 @@ This MCP server provides a deterministic quantitative trading system that treats
 
 ## Available Tools (3)
 - **calculate_basket_performance**: Calculates core performance metrics for the basket and the benchmark
-- **evaluate_trading_signal**: Determines the specific trade action (BUY, SELL, HOLD)
 - **get_basket_composition**: Provides a summary of the basket composition and its relation to the benchmark
+- **evaluate_trading_signal**: Determines the specific trade action (BUY, SELL, HOLD)
 
 
 ## 💬 Prompt Examples
