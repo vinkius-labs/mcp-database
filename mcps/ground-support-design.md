@@ -14,10 +14,10 @@ This MCP server provides specialized geotechnical engineering tools for undergro
 
 
 ## Available Tools (4)
-- **get_design_summary**: Aggregates all design components into a single technical specification
 - **calculate_bolt_pattern**: Determines the required type, length, and spacing of rock bolts
 - **calculate_shotcrete_requirement**: Determines the necessary thickness of shotcrete to stabilize the excavation face
 - **evaluate_stability_safety_factor**: Provides a high-level assessment of whether a proposed support design is sufficient
+- **get_design_summary**: Aggregates all design components into a single technical specification
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for open-pit mine planning. It uses t
 
 
 ## Available Tools (4)
-- **calculate_block_values**: Transforms raw block model data and economic parameters into net profit/loss values for every individual block
 - **run_lg_optimization**: Executes the Lerchs-Grossmann algorithm to identify the set of blocks that form the most profitable pit shell
 - **summarize_pit_metrics**: Aggregates the results of an optimization into high-level business metrics
 - **validate_geotechnical_safety**: Checks if a proposed set of pit blocks adheres to the safety slope constraints
+- **calculate_block_values**: Transforms raw block model data and economic parameters into net profit/loss values for every individual block
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server provides specialized engineering tools for designing magnetic se
 
 ## Available Tools (4)
 - **compare_wet_vs_dry_parameters**: Provides a comparative analysis of how the separation performance would change if switching between wet and dry modes
-- **design_separation_circuit**: Generates a complete magnetic separation design including field strength, equipment type, and predicted efficiency
 - **evaluate_equipment_suitability**: Determines if a specific piece of magnetic equipment is capable of handling the provided mineral characteristics
 - **predict_efficiency_loss**: Calculates the potential loss of target minerals due to specific environmental or physical factors
+- **design_separation_circuit**: Generates a complete magnetic separation design including field strength, equipment type, and predicted efficiency
 
 
 ## 💬 Prompt Examples

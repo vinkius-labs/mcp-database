@@ -14,10 +14,10 @@ This MCP server provides precise navigational calculations based on the Haversin
 
 
 ## Available Tools (4)
-- **get_distance_to_landmark_collection**: Finds the closest landmark in a collection
+- **verify_navigation_feasibility**: Verifies if the target bearing is within the allowed deviation
 - **calculate_estimated_travel_time**: Calculates the estimated travel time in minutes
 - **get_distance_and_bearing**: Calculates the great-circle distance and bearing between two points
-- **verify_navigation_feasibility**: Verifies if the target bearing is within the allowed deviation
+- **get_distance_to_landmark_collection**: Finds the closest landmark in a collection
 
 
 ## 💬 Prompt Examples

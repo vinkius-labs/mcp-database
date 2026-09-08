@@ -14,10 +14,10 @@ This MCP server provides a predictive assessment engine to calculate the probabi
 
 
 ## Available Tools (4)
-- **analyze_collision_probability**: Detailed mathematical breakdown of the spatial overlap probability between kite lines
 - **calculate_risk_score**: Provides a single, normalized risk metric for a specific scenario
 - **generate_avoidance_strategies**: Provides actionable advice to mitigate the specific risks calculated
 - **identify_high_risk_zones**: Maps specific geographic areas where entanglement is most likely to occur
+- **analyze_collision_probability**: Detailed mathematical breakdown of the spatial overlap probability between kite lines
 
 
 ## 💬 Prompt Examples

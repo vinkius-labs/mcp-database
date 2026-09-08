@@ -14,9 +14,9 @@ This MCP server provides a specialized valuation engine for mineral assets. It a
 
 
 ## Available Tools (4)
+- **analyze_comparables**: Provides a comparative analysis by evaluating the subject property against a list of recent historical transactions
 - **apply_stage_and_jurisdiction_adjustments**: Adjusts a base valuation to account for development risks and regional instability
 - **calculate_dcf_value**: Calculates the intrinsic value of a property based on its projected future cash flows
-- **analyze_comparables**: Provides a comparative analysis by evaluating the subject property against a list of recent historical transactions
 - **calculate_market_valuation**: Estimates property value using current market benchmarks and comparable multiples
 
 

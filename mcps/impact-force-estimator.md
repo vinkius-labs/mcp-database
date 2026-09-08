@@ -15,9 +15,9 @@ This MCP server provides tools to estimate the physical impact of a body hitting
 
 ## Available Tools (4)
 - **assess_injury_risk**: Translates the calculated impact force into a standardized risk category
-- **calculate_impact_dynamics**: Calculates the fundamental physical values of the impact (force and time)
 - **get_position_area_preset**: Provides standardized surface area values for common body positions
 - **simulate_scenario_comparison**: Allows a user to compare two different fall scenarios
+- **calculate_impact_dynamics**: Calculates the fundamental physical values of the impact (force and time)
 
 
 ## 💬 Prompt Examples

@@ -16,8 +16,8 @@ This MCP server provides specialized tools for underground mining engineers to d
 ## Available Tools (4)
 - **analyze_stope_stability**: Determines if a proposed stope geometry is physically stable based on rock mass properties
 - **calculate_optimal_dimensions**: Suggests the most efficient stope dimensions that maximize extraction without exceeding safety limits
-- **generate_stability_chart**: Provides a summary of stability outcomes across various potential stope sizes to aid in sensitivity analysis
 - **get_extraction_ratio**: Calculates the percentage of the ore body being extracted relative to the total available volume
+- **generate_stability_chart**: Provides a summary of stability outcomes across various potential stope sizes to aid in sensitivity analysis
 
 
 ## 💬 Prompt Examples

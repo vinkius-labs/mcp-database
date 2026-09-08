@@ -14,10 +14,10 @@ This MCP server provides specialized tools for modeling power consumption in min
 
 
 ## Available Tools (4)
-- **calculate_total_utility_cost**: Determines the total monetary cost of electricity for a period, accounting for both usage and peak penalties
 - **compare_load_scenarios**: Evaluates how changing the operational load affects the total cost
 - **query_equipment_consumption**: Calculates the specific energy consumption and peak demand for a selected subset of equipment
 - **simulate_annual_profile**: Provides a high-level yearly projection of power needs and costs based on a full inventory
+- **calculate_total_utility_cost**: Determines the total monetary cost of electricity for a period, accounting for both usage and peak penalties
 
 
 ## 💬 Prompt Examples

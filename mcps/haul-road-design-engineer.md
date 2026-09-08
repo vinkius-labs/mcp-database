@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing haul roads 
 
 
 ## Available Tools (4)
-- **estimate_maintenance_schedule**: Predicts the frequency of required road upkeep
 - **calculate_curve_and_sight**: Ensures turns are safe for the vehicle speed and that drivers can see far enough ahead to stop
 - **calculate_road_geometry**: Determines the physical dimensions required for a specific vehicle and traffic profile
 - **design_surface_and_drainage**: Defines the structural and water-management needs of the road
+- **estimate_maintenance_schedule**: Predicts the frequency of required road upkeep
 
 
 ## 💬 Prompt Examples

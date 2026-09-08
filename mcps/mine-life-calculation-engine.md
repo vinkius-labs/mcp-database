@@ -15,8 +15,8 @@ This MCP server provides specialized tools for modeling the operational lifespan
 
 ## Available Tools (4)
 - **get_depletion_schedule**: Provides a yearly tracking of the dwindling ore reserves
-- **get_mine_life_summary**: Provides a high-level overview of the mine's operational duration and total extraction capability
 - **get_production_profile**: Generates a year-by-year breakdown of how much ore is produced
+- **get_mine_life_summary**: Provides a high-level overview of the mine's operational duration and total extraction capability
 - **validate_mine_parameters**: Validates whether a set of operational constraints is logically sound
 
 

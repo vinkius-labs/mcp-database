@@ -16,8 +16,8 @@ This MCP server provides specialized tools for underground mine planning. It all
 ## Available Tools (4)
 - **analyze_production_plan**: Evaluates if a proposed stoping sequence and development schedule can meet specified production targets
 - **calculate_resource_needs**: Determines the amount of equipment required to execute a specific mining schedule
-- **optimize_stope_availability**: Adjusts the stoping sequence to maximize the number of available stopes within equipment and development constraints
 - **validate_development_alignment**: Checks if the current development schedule provides sufficient access for the planned production volume
+- **optimize_stope_availability**: Adjusts the stoping sequence to maximize the number of available stopes within equipment and development constraints
 
 
 ## 💬 Prompt Examples

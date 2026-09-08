@@ -14,10 +14,10 @@ This MCP server provides essential engineering calculations for sizing tailings 
 
 
 ## Available Tools (4)
-- **optimize_flocculant_dosage**: Suggests the optimal chemical dosage to minimize diameter
 - **calculate_required_depth**: Calculates the necessary height of the thickener
 - **calculate_required_diameter**: Determines the minimum diameter required for a thickener
 - **predict_overflow_clarity**: Estimates the quality of the liquid exiting the top
+- **optimize_flocculant_dosage**: Suggests the optimal chemical dosage to minimize diameter
 
 
 ## 💬 Prompt Examples

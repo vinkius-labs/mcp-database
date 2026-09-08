@@ -15,8 +15,8 @@ This MCP server provides specialized tools to determine the financial security (
 
 ## Available Tools (4)
 - **calculate_annual_adjustment**: Updates the existing bond requirement to account for economic and operational changes
-- **calculate_initial_bond**: Determines the starting bond amount required at the beginning of an operation
 - **generate_release_schedule**: Provides a projection of when funds can be released back to the operator
+- **calculate_initial_bond**: Determines the starting bond amount required at the beginning of an operation
 - **validate_compliance_coverage**: Checks if the current bond amount is sufficient to cover the estimated third-party costs for the remaining work
 
 

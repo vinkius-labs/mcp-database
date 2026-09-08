@@ -14,9 +14,9 @@ This MCP server provides specialized tools for analyzing ventilation networks in
 
 
 ## Available Tools (4)
-- **calculate_network_resistance**: Determines the total resistance of the ventilation network or a specific sub-loop
 - **estimate_leakage_loss**: Quantifies the air lost to leakage within a specific branch or between two points
 - **evaluate_nvp_impact**: Determines how Natural Ventilation Pressure (NVP) affects the total pressure requirement
+- **calculate_network_resistance**: Determines the total resistance of the ventilation network or a specific sub-loop
 - **get_segment_friction_factor**: Calculates the friction factor for a specific airway segment
 
 

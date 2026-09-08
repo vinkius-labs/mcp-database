@@ -14,9 +14,9 @@ This MCP server provides essential engineering tools for designing ball mill gri
 
 
 ## Available Tools (4)
+- **calculate_power_requirement**: Determines the specific energy and total power needed to grind the material
 - **calculate_media_charge**: Estimates the quantity and weight of grinding media needed
 - **design_mill_dimensions**: Determines the physical size (diameter and length) of the mill
-- **calculate_power_requirement**: Determines the specific energy and total power needed to grind the material
 - **evaluate_grinding_efficiency**: Compares target size against expected size to verify if the design is adequate
 
 

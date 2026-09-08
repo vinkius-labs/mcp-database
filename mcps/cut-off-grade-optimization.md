@@ -14,10 +14,10 @@ This MCP server provides specialized tools for mining engineers and financial an
 
 
 ## Available Tools (4)
+- **simulate_production_schedule**: Projects the sequence of mining and processing activities over time based on a chosen grade
 - **calculate_break_even_grade**: Determines the minimum grade required to cover all incremental costs of processing
 - **evaluate_stockpile_viability**: Determines if diverted low-grade material should be stockpiled or sent to waste
 - **optimize_cut_off_grade**: Identifies the specific grade that maximizes the Net Present Value of the operation
-- **simulate_production_schedule**: Projects the sequence of mining and processing activities over time based on a chosen grade
 
 
 ## 💬 Prompt Examples

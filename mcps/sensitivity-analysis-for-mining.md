@@ -14,12 +14,12 @@ This MCP server provides specialized tools for mining project economic evaluatio
 
 
 ## Available Tools (4)
-- **evaluate_correlated_scenarios**: Analyzes the impact of multiple variables changing simultaneously when they are known to be linked
 - **rank_project_risks**: Produces a prioritized list of the most critical variables that could jeopardize project economics
 - **calculate_npv_sensitivity**: g., 0.1 for 10%).
 
 Determines how much the NPV changes when a single parameter is adjusted within a specified range
 - **generate_spider_diagram_data**: Provides the set of data points required to plot a spider chart showing the impact of multiple parameters
+- **evaluate_correlated_scenarios**: Analyzes the impact of multiple variables changing simultaneously when they are known to be linked
 
 
 ## 💬 Prompt Examples

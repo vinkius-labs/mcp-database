@@ -14,8 +14,8 @@ This MCP server provides specialized tools for mineral resource estimation. It a
 
 
 ## Available Tools (4)
-- **calculate_tonnage_and_grade**: Determines the total mass and the average concentration of the target metal within a defined area
 - **classify_reserves**: Assigns a confidence level (Proven or Probable) to the calculated reserves based on data density
+- **calculate_tonnage_and_grade**: Determines the total mass and the average concentration of the target metal within a defined area
 - **define_geological_domain**: Sets the spatial boundaries within which ore estimation is allowed to occur
 - **validate_data_integrity**: Ensures the provided drilling and assay data are spatially and logically consistent before processing
 

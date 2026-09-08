@@ -14,10 +14,10 @@ This MCP server provides specialized tools for mineral processing design. It all
 
 
 ## Available Tools (4)
-- **estimate_recovery**: Predicts the efficiency of the separation process for a chosen piece of equipment
-- **analyze_feed_feasibility**: Evaluates if a specific mineral stream is even capable of being separated via gravity methods
 - **optimize_circuit_parameters**: Suggests adjustments to the process to improve recovery or throughput
 - **select_equipment**: Determines the most suitable type of gravity separation equipment for a specific mineral feed
+- **analyze_feed_feasibility**: Evaluates if a specific mineral stream is even capable of being separated via gravity methods
+- **estimate_recovery**: Predicts the efficiency of the separation process for a chosen piece of equipment
 
 
 ## 💬 Prompt Examples

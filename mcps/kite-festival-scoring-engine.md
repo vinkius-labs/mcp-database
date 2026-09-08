@@ -14,7 +14,6 @@ This MCP server provides a specialized scoring engine for kite flying competitio
 
 
 ## Available Tools (4)
-- **calculate_trick_score**: Calculates the base value of a single maneuver
 - **calculate_weighted_score**: Applies competitive weighting and stylistic modifiers to a trick's base score
 - **evaluate_rankings**: Input must be a JSON string representing an array of objects with "name" and "score" fields.
 
@@ -22,6 +21,7 @@ Determines the final standing of all competitors in the event
 - **get_competition_summary**: Input must be a JSON string representing an array of objects with "name" and "score" fields.
 
 Provides a high-level overview of the current competition state
+- **calculate_trick_score**: Calculates the base value of a single maneuver
 
 
 ## 💬 Prompt Examples
