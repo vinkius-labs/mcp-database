@@ -16,8 +16,8 @@ This MCP server provides a precision toolkit for estimating the financial invest
 ## Available Tools (4)
 - **analyze_feature_distribution**: 
 - **calculate_delivery_timeline**: 
-- **estimate_total_investment**: 
 - **simulate_scope_impact**: 
+- **estimate_total_investment**: 
 
 
 ## 💬 Prompt Examples

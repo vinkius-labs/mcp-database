@@ -15,8 +15,8 @@ This MCP server provides high-precision scheduling for wine laboratory workflows
 
 ## Available Tools (4)
 - **calculate_daily_throughput**: Estimates how many samples of various types can be processed in a single day
-- **get_current_capacity**: Checks the available laboratory resources and current workload
 - **identify_bottlenecks**: Identifies which specific analysis type or equipment is causing delays
+- **get_current_capacity**: Checks the available laboratory resources and current workload
 - **schedule_sample_batch**: Determines the optimal timing and grouping for a new set of samples
 
 

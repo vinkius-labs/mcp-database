@@ -15,8 +15,8 @@ This MCP server provides decision support for sugarcane growers by modeling sucr
 
 ## Available Tools (4)
 - **calculate_optimal_harvest_window**: Determines the best dates to harvest to maximize sugar yield
-- **evaluate_ripener_impact**: Estimates how much a planned or past ripener application will shift the harvest timeline and sugar levels
 - **get_stress_indices**: Provides a diagnostic view of the current water stress and thermal status of the crop
+- **evaluate_ripener_impact**: Estimates how much a planned or past ripener application will shift the harvest timeline and sugar levels
 - **predict_cane_quality**: Predicts key quality metrics for a specific sugarcane plot at a target date
 
 

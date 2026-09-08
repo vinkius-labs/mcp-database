@@ -14,8 +14,8 @@ This MCP server provides precise tools for analyzing micronutrient accessibility
 
 
 ## Available Tools (4)
-- **calculate_availability_index**: Determine the availability factor for a specific micronutrient based on soil properties
 - **evaluate_nutrient_interactions**: Assess how existing nutrient levels affect the availability of target micronutrients
+- **calculate_availability_index**: Determine the availability factor for a specific micronutrient based on soil properties
 - **get_management_recommendation**: Provide a specific application strategy (Foliar vs. Soil) based on availability and soil constraints
 - **summarize_soil_health_profile**: Provide a comprehensive overview of the micronutrient status for a specific soil sample
 

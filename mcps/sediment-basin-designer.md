@@ -14,9 +14,9 @@ This MCP server provides specialized engineering tools for designing sediment ba
 
 
 ## Available Tools (4)
-- **estimate_settling_performance**: Evaluates if the designed basin can meet the trapping efficiency for specific particle sizes
 - **calculate_basin_dimensions**: Determines the physical size requirements (volume, area, depth) of the basin
 - **calculate_cleanout_schedule**: Predicts how often the basin must be emptied of sediment
+- **estimate_settling_performance**: Evaluates if the designed basin can meet the trapping efficiency for specific particle sizes
 - **validate_nrcs_compliance**: Checks if the proposed basin design adheres to NRCS safety and stability standards
 
 

@@ -15,9 +15,9 @@ This MCP server provides analytical tools to model the costs associated with AI 
 
 ## Available Tools (4)
 - **analyze_optimization_opportunities**: Analyze potential cost savings by changing memory strategies
+- **simulate_memory_efficiency_tradeoff**: Simulate the tradeoff between window size and cost
 - **calculate_conversation_runtime_cost**: Calculate the runtime cost of a conversation based on length and memory strategy
 - **calculate_storage_and_retrieval_overhead**: Calculate persistent storage and retrieval costs
-- **simulate_memory_efficiency_tradeoff**: Simulate the tradeoff between window size and cost
 
 
 ## 💬 Prompt Examples

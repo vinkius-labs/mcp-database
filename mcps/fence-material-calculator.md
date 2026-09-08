@@ -14,8 +14,8 @@ This MCP server provides a complete suite of tools to plan pasture enclosures. I
 
 
 ## Available Tools (4)
-- **calculate_basic_materials**: Determines the primary count of wire strands, line posts, and corner posts
 - **calculate_gate_requirements**: Adjusts the material count to account for gate openings and necessary gate posts
+- **calculate_basic_materials**: Determines the primary count of wire strands, line posts, and corner posts
 - **calculate_specialized_hardware**: Calculates specific components like insulators or mesh-specific hardware
 - **estimate_total_cost**: Provides a financial estimate for the entire project
 

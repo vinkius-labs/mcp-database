@@ -14,10 +14,10 @@ This MCP server provides specialized engineering calculations for livestock vent
 
 
 ## Available Tools (4)
-- **get_total_ventilation_requirement**: Determines the total cubic feet per minute (CFM) needed for the building
 - **calculate_fan_configuration**: Determines the number and specific sizes of fans required to meet the ventilation target
 - **estimate_inlet_requirements**: Calculates the necessary inlet area to prevent excessive air velocity
 - **generate_fan_staging_schedule**: Creates a sequence for turning fans on and off to maintain precise airflow control
+- **get_total_ventilation_requirement**: Determines the total cubic feet per minute (CFM) needed for the building
 
 
 ## 💬 Prompt Examples

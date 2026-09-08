@@ -7,17 +7,17 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Decomposes AI feature costs into actionable unit economics.
+Calculate cost per active user and scaling efficiency for AI platforms.
 
 ## Description
-This MCP server provides deep analytical insights into the unit economics of AI-driven software. It connects AI agents to your cost data, allowing them to calculate exact profitability per feature. Using tools like `get_feature_unit_economics` and `analyze_infrastructure_overhead`, agents can determine cost per use, cost per user, and how shared infrastructure costs are distributed. You can also use `compare_feature_efficiency` to find expensive outliers or `simulate_optimization_impact` to predict how techniques like caching or prompt compression will improve your margins.
+This MCP server provides financial analysis tools for AI-driven SaaS platforms. It helps operators understand the relationship between infrastructure expenses and user engagement. Use `get_current_cpu` to calculate the immediate cost per active user based on compute, API, and storage costs. Analyze growth patterns with `analyze_scaling_efficiency` to see if your platform is gaining or losing economies of scale. You can also use `get_cost_trend` to track cost evolution over time or `calculate_tier_impact` to predict how usage-based pricing tiers will affect your total expenditure.
 
 
 ## Available Tools (4)
-- **analyze_infrastructure_overhead**: Answers how much of the shared cloud infrastructure is being consumed by specific AI workloads
-- **compare_feature_efficiency**: Compares the cost-efficiency of multiple features to identify "expensive" outliers
-- **get_feature_unit_economics**: Calculates the core cost metrics for a specific feature
-- **simulate_optimization_impact**: Predicts how much profit would increase if specific cost-saving measures were applied
+- **calculate_tier_impact**: Predicts how moving users into different usage tiers will affect the total cost
+- **analyze_scaling_efficiency**: Determines if the platform is gaining or losing efficiency as it grows
+- **get_cost_trend**: Provides a high-level overview of how costs are evolving over a series of historical data points
+- **get_current_cpu**: Calculates the immediate cost per active user for a single billing period
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides deep analytical insights into the unit economics of AI-
 Here are some examples of how you can interact with the **AI SaaS Cost Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the cost per use for feature 'image-gen-v2'?"
+> "What is my current cost per active user if I spent $5000 total, with $2000 on compute, $2000 on APIs, and $1000 on storage, for 500 active users?"
 
 **🤖 AI Agent:**
-> The cost per use for 'image-gen-v2' is $0.045.
+> Your total operational cost is $5000, and your cost per active user is $10.00.
 
 ---
 
 **👤 You:**
-> "Compare the efficiency of 'chat-bot' and 'summarizer'."
+> "Is my platform becoming more efficient? Last month the CPU was $15.00, this month it is $12.00, and my users grew by 20%."
 
 **🤖 AI Agent:**
-> The 'summarizer' is more efficient with a cost per use of $0.01, while 'chat-bot' costs $0.05 per use.
+> Your efficiency status is improving.
 
 ---
 
 **👤 You:**
-> "How much profit will I gain if I apply 20% prompt compression to 'text-analyzer'?"
+> "What is the trend for these monthly CPU values: 12.50, 12.00, 11.50, 11.00?"
 
 **🤖 AI Agent:**
-> Applying 20% prompt compression to 'text-analyzer' is projected to increase profit by $1,250.00.
+> The cost trend is decreasing with low volatility.
 
 
 ## ❓ FAQ
 
-**Q: How does this tool calculate cost per feature?**
-It aggregates direct API costs, compute, and storage, then adds a proportional share of infrastructure overhead using `get_feature_unit_economics`.
+**Q: How do I calculate my current cost per user?**
+You can use the `get_current_cpu` tool by providing your monthly AI costs, active user count, and specific breakdowns for compute, API, and storage expenses.
 
-**Q: Can I predict the impact of model distillation?**
-Yes, you can use `simulate_optimization_impact` to predict how specific optimizations like model distillation will increase your profit margins.
+**Q: Can I predict future costs based on usage tiers?**
+Yes, the `calculate_tier_impact` tool allows you to input your current usage and tier thresholds to project total costs and identify when you will hit the next pricing tier.
 
-**Q: How are shared cloud costs handled?**
-Shared costs are distributed across features based on their relative usage volume, which can be analyzed via `analyze_infrastructure_overhead`.
+**Q: How is scaling efficiency determined?**
+The `analyze_scaling_efficiency` tool compares your current CPU against your previous CPU alongside your user growth rate to determine if your efficiency is improving or declining.
 
 
 ## Installation & Usage

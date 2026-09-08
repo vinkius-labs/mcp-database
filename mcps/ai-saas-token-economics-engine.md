@@ -14,10 +14,10 @@ This MCP server provides a suite of analytical tools to monitor and optimize the
 
 
 ## Available Tools (4)
-- **get_optimized_consumption_impact**: Estimates the savings gained from optimization and caching strategies
-- **get_tier_cost_analysis**: Calculates the financial burden of serving users across different subscription levels
 - **get_user_consumption_metrics**: Provides high-level average usage statistics per user
 - **get_feature_efficiency_breakdown**: Analyzes how much each feature contributes to the total token load
+- **get_optimized_consumption_impact**: Estimates the savings gained from optimization and caching strategies
+- **get_tier_cost_analysis**: Calculates the financial burden of serving users across different subscription levels
 
 
 ## 💬 Prompt Examples

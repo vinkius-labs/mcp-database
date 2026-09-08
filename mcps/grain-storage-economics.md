@@ -14,9 +14,9 @@ This MCP server provides a suite of economic tools to help farmers decide whethe
 
 
 ## Available Tools (4)
-- **evaluate_price_appreciation**: Calculates the potential revenue from selling grain after a storage period, accounting for quality loss
 - **analyze_sell_vs_store**: Compares the "Sell Now" scenario against the "Store" scenario to provide a clear decision-making metric
 - **calculate_storage_costs**: Determines the total cost of holding a specific quantity of grain for a defined period
+- **evaluate_price_appreciation**: Calculates the potential revenue from selling grain after a storage period, accounting for quality loss
 - **simulate_probabilistic_outcomes**: Generates a range of possible outcomes based on different market price scenarios to account for uncertainty
 
 

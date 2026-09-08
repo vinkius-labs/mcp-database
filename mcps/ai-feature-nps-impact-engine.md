@@ -14,10 +14,10 @@ This MCP server provides a specialized analytics engine to measure the specific 
 
 
 ## Available Tools (4)
-- **aggregate_segment_impact**: Provides a high-level summary of how AI is impacting different user demographics
 - **calculate_nps_lift**: Determines how much the AI feature is driving or dragging the overall product NPS
-- **evaluate_detractor_risk**: Predicts the likelihood of users becoming detractors based on their specific AI-related grievances
 - **quantify_feature_value**: Translates NPS and satisfaction data into a business-centric Value Perception metric
+- **aggregate_segment_impact**: Provides a high-level summary of how AI is impacting different user demographics
+- **evaluate_detractor_risk**: Predicts the likelihood of users becoming detractors based on their specific AI-related grievances
 
 
 ## 💬 Prompt Examples

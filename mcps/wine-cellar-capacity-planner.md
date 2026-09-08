@@ -15,9 +15,9 @@ This MCP server provides essential tools for winery capacity planning. It helps 
 
 ## Available Tools (4)
 - **get_seasonal_space_utilization**: Visualizes how cellar capacity changes throughout the year
+- **optimize_barrel_rotation**: Suggests a replacement and cleaning schedule to maximize barrel availability
 - **get_barrel_inventory_requirements**: Determines how many physical barrels are needed to support the planned aging regimes
 - **get_tank_capacity_needs**: Calculates the necessary volume for fermentation and primary storage tanks
-- **optimize_barrel_rotation**: Suggests a replacement and cleaning schedule to maximize barrel availability
 
 
 ## 💬 Prompt Examples

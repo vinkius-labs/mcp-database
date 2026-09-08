@@ -14,11 +14,11 @@ This MCP server provides precise modeling for hay drying in windrows. It uses th
 
 
 ## Available Tools (5)
+- **predict_rain_risk**: Evaluates the danger of moisture re-absorption due to upcoming weather events
+- **calculate_quality_loss**: Quantifies the loss in nutritional value and weight due to biological respiration
+- **estimate_baling_window**: Predicts how much time remains until the hay reaches the safe baling threshold
 - **get_current_drying_rate**: Calculates the immediate speed of moisture loss under current conditions
 - **get_optimal_conditioning**: Recommends the ideal state for hay management to balance speed and quality
-- **predict_rain_risk**: Evaluates the danger of moisture re-absorption due to upcoming weather events
-- **estimate_baling_window**: Predicts how much time remains until the hay reaches the safe baling threshold
-- **calculate_quality_loss**: Quantifies the loss in nutritional value and weight due to biological respiration
 
 
 ## 💬 Prompt Examples

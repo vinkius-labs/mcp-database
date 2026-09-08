@@ -14,9 +14,9 @@ This MCP server provides precise optimization for the hop drying process. It use
 
 
 ## Available Tools (4)
-- **get_drying_profile**: Generates the optimal sequence of temperatures and airflows to reach the target moisture
-- **estimate_quality_retention**: Predicts the percentage of alpha acids preserved after the drying process
 - **calculate_energy_metrics**: Calculates the total energy required and the efficiency of the process
+- **estimate_quality_retention**: Predicts the percentage of alpha acids preserved after the drying process
+- **get_drying_profile**: Generates the optimal sequence of temperatures and airflows to reach the target moisture
 - **simulate_drying_efficiency**: Compares different drying scenarios for the same batch of hops
 
 

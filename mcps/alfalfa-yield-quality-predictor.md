@@ -14,9 +14,9 @@ This MCP server provides advanced modeling for alfalfa management. It allows AI 
 
 
 ## Available Tools (4)
+- **optimize_cutting_schedule**: Recommends the ideal cutting interval to balance yield and quality
 - **evaluate_stand_persistence**: Assesses the long-term health and survival probability of the alfalfa stand
 - **get_quality_profile**: Provides a comparative overview of how quality metrics change over a range of possible cutting intervals
-- **optimize_cutting_schedule**: Recommends the ideal cutting interval to balance yield and quality
 - **predict_harvest_metrics**: Predicts the specific yield and nutritional quality of a single upcoming harvest
 
 

@@ -14,8 +14,8 @@ This MCP server provides a biological simulation engine to model the laying hen 
 
 
 ## Available Tools (4)
-- **compare_nutrition_strategies**: Provides a comparison of how different nutritional levels affect efficiency and weight
 - **get_production_curve**: Calculates the weekly performance metrics for a single production cycle
+- **compare_nutrition_strategies**: Provides a comparison of how different nutritional levels affect efficiency and weight
 - **predict_lifecycle_totals**: Estimates the total output and duration of a hen's productive life
 - **simulate_molt_intervention**: Evaluates how a specific molt timing affects the production trajectory
 

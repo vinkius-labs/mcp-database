@@ -14,9 +14,9 @@ This MCP server provides specialized tools for agricultural risk assessment. It 
 
 
 ## Available Tools (4)
+- **estimate_extreme_event_risk**: Evaluates the probability of severe weather events disrupting production
 - **analyze_season_shifts**: Determines how climate change affects the duration and timing of the growing season
 - **calculate_yield_impact**: Predicts the expected change in crop productivity based on projected climate shifts
-- **estimate_extreme_event_risk**: Evaluates the probability of severe weather events disrupting production
 - **generate_mitigation_strategies**: Provides actionable advice to reduce the impact of projected climate risks
 
 

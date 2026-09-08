@@ -14,10 +14,10 @@ This MCP server provides enologists with predictive modeling for tannin extracti
 
 
 ## Available Tools (4)
-- **calculate_optimal_maceration**: Identify the best time to stop skin contact to achieve a target sensory profile
-- **evaluate_varietal_impact**: Compare how different grape maturities will affect the final tannin profile
 - **predict_alcohol_influence**: Determine how rising alcohol levels will alter the extraction speed of tannins
 - **simulate_extraction_kinetics**: Predict the concentration of tannins over a specific period of time
+- **calculate_optimal_maceration**: Identify the best time to stop skin contact to achieve a target sensory profile
+- **evaluate_varietal_impact**: Compare how different grape maturities will affect the final tannin profile
 
 
 ## 💬 Prompt Examples

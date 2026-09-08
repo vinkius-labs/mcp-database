@@ -14,10 +14,10 @@ This MCP server provides a specialized analytics engine to measure how AI featur
 
 
 ## Available Tools (4)
-- **evaluate_adoption_timing**: Determines if AI feature adoption happened early enough to prevent churn
 - **analyze_at_risk_users**: Identifies users exhibiting behaviors suggesting they are losing AI feature value
-- **calculate_churn_impact**: Calculates how much the AI feature is reducing the churn rate
 - **calculate_prevention_value**: Calculates the monetary value of prevented churn
+- **calculate_churn_impact**: Calculates how much the AI feature is reducing the churn rate
+- **evaluate_adoption_timing**: Determines if AI feature adoption happened early enough to prevent churn
 
 
 ## 💬 Prompt Examples
