@@ -6,6 +6,7 @@ Explore the open database of **mining** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Grade-Tonnage Curve Model](../mcps/grade-tonnage-curve-model.md) | Analyze resource models to generate grade-tonnage curves and calculate ore quantities. |
 | [Reliability-Centered Maintenance (RCM)](../mcps/reliability-centered-maintenance-rcm.md) | Optimize mining equipment maintenance using RCM methodology. |
+| [Rock Burst Prediction](../mcps/rock-burst-prediction.md) | Predict rock burst potential in deep mines using stress and geological analysis. |
 
 
 ---

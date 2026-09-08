@@ -10,9 +10,11 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
+| [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
 | [Short-Term Mine Planning Optimizer](../mcps/short-term-mine-planning-optimizer.md) | Aligns equipment, grade, and stockpiles into actionable mining schedules. |
 | [Storage Unit Picker](../mcps/storage-unit-picker.md) | Calculate the required storage unit size based on your items' volume and stacking efficiency. |
 | [Table Seating Optimizer](../mcps/table-seating-optimizer.md) | Calculate venue capacity, table layouts, and space requirements for events. |
+| [Truck-Shovel Fleet Optimizer](../mcps/truck-shovel-fleet-optimizer.md) | Optimizes truck-to-shovel ratios, fleet size, and production capacity. |
 
 
 ---

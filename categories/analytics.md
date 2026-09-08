@@ -61,6 +61,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
 | [Prompt Reuse Analyzer](../mcps/prompt-reuse-analyzer.md) | Analyze prompt template reuse, efficiency, and standardization opportunities. |
 | [RAG Economics Analyzer](../mcps/rag-economics-analyzer.md) | Calculate and optimize the total cost of ownership for RAG infrastructures. |
+| [Reconciliation Analysis](../mcps/reconciliation-analysis.md) | Analyze mine production discrepancies by comparing resource models, mine output, and mill feed. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |

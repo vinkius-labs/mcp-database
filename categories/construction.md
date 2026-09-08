@@ -83,6 +83,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Giddyup](../mcps/giddyup.md) | Coordinate field service teams with job dispatching, route optimization, and real-time status updates for mobile workforces. |
 | [Gripr](../mcps/gripr.md) | Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools. |
 | [Ground Anchor Capacity Calculator](../mcps/ground-anchor-capacity-calculator.md) | Calculate ultimate capacity, bond length, and anchor geometry for geotechnical engineering. |
+| [Ground Freezing Design](../mcps/ground-freezing-design.md) | Engineering tool for calculating freeze-wall formation parameters for shaft and tunnel excavations. |
 | [Ground Freezing Design Tool](../mcps/ground-freezing-design-tool.md) | Calculates thermal and hydraulic parameters for artificial ground freezing. |
 | [Ground Improvement Design](../mcps/ground-improvement-design.md) | Technical design for soil improvement methods including stone columns, vibro-compaction, and grouting. |
 | [HDB Renovation Compliance Checker](../mcps/hdb-renovation-compliance-checker.md) | Validate HDB renovation plans against structural and regulatory rules. |
@@ -115,6 +116,8 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Secant Pile Wall Designer](../mcps/secant-pile-wall-designer.md) | Calculate structural and geotechnical parameters for secant pile retaining walls. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Sheet Pile Design](../mcps/sheet-pile-design.md) | Structural and geotechnical design for cantilever and anchored sheet pile walls. |
+| [Shotcrete Mix Design Engineer](../mcps/shotcrete-mix-design-engineer.md) | Calculate precise shotcrete mix proportions, fiber dosages, and accelerator requirements. |
+| [Shotcrete Thickness Design](../mcps/shotcrete-thickness-design.md) | Calculates required shotcrete thickness, reinforcement, and application layers for ground support. |
 | [Slab Thickness Design](../mcps/slab-thickness-design.md) | Calculates required slab thickness, reinforcement, and deflection compliance. |
 | [Slab Thickness Estimator](../mcps/slab-thickness-estimator.md) | Estimate minimum concrete slab thickness based on span and construction type. |
 | [Snow Load Calculator](../mcps/snow-load-calculator.md) | Calculate roof snow load (psf) based on ground snow load, environmental factors, and structural importance. |

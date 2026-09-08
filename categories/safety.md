@@ -18,6 +18,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Lineup Priority Logic Validator](../mcps/lineup-priority-logic-validator.md) | Deterministic surfing right-of-way and priority violation validator. |
 | [Noise Exposure Assessment](../mcps/noise-exposure-assessment.md) | Calculate workplace noise dose, TWA, and hearing protection requirements. |
 | [Process Safety Lead Indicator](../mcps/process-safety-lead-indicator.md) | Monitor proactive safety metrics like inspection completion, training compliance, and near-miss trends. |
+| [Rock Fall Modeling](../mcps/rock-fall-modeling.md) | Predict rock fall trajectories, impact forces, and barrier effectiveness. |
 | [Scuba Gas Planner](../mcps/scuba-gas-planner.md) | Deterministic gas consumption and depth limit calculations for scuba divers. |
 | [Water Depth Clearance](../mcps/water-depth-clearance.md) | Calculates safety margins and minimum water depth for aquatic maneuvers. |
 | [Wetsuit Thickness Recommender](../mcps/wetsuit-thickness-recommender.md) | Get precise wetsuit thickness and gear recommendations based on water temperature, air temperature, wind chill, and session duration. |

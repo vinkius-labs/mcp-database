@@ -26,6 +26,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Drill Pattern Optimization](../mcps/drill-pattern-optimization.md) | Optimize drill hole spacing and configuration based on geological variability and budget. |
 | [Equipment Gear Ratio Optimizer](../mcps/equipment-gear-ratio-optimizer.md) | Optimize kite and board combinations for perfect wind range coverage. |
 | [Glass Cutting Optimizer](../mcps/glass-cutting-optimizer.md) | Deterministic 2D guillotine-style cutting optimizer for industrial glass fabrication. |
+| [Grade Control Modeling](../mcps/grade-control-modeling.md) | Models grade control for ore/waste discrimination to optimize extraction accuracy. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
 | [Kite Quiver Builder](../mcps/kite-quiver-builder.md) | An intelligent engine that generates the ideal set of kite sizes for riders. |
 | [Konbini Hack Macro Optimizer](../mcps/konbini-hack-macro-optimizer.md) | Find the most cost-effective nutritional hacks in Japanese convenience stores. |
