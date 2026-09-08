@@ -1,0 +1,105 @@
+# Variogram Modeling Analysis MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/variogram-modeling-analysis)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [data-science](../categories/data-science.md)
+
+Compute experimental variograms and fit spatial continuity models.
+
+## Description
+This MCP server provides tools for geostatistical analysis of spatial autocorrelation. It allows AI agents to calculate an experimental variogram using `compute_experimental_variogram`, fit mathematical models like spherical or exponential via `fit_variogram_model`, and detect directional variation with `detect_anisotropy`. It also provides a high-level overview of spatial structures through `get_spatial_continuity_summary`.
+
+
+## Available Tools (4)
+- **compute_experimental_variogram**: Calculates the raw semivariance values for a set of spatial data points at specified intervals
+- **detect_anisotropy**: Determines if the spatial correlation varies significantly by direction
+- **fit_variogram_model**: Fits a mathematical model to the experimental variogram to derive continuous parameters
+- **get_spatial_continuity_summary**: Provides a high-level overview of the spatial structure of the dataset
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Variogram Modeling Analysis** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the experimental variogram for these points: [{'x': 0, 'y': 0, 'z': 10}, {'x': 1, 'y': 1, 'z': 12}, {'x': 2, 'y': 0, 'z': 11}] with a lag distance of 1 and max distance of 5."
+
+**🤖 AI Agent:**
+> [{"lag": 1, "semivariance": 1.33, "pairCount": 2}, {"lag": 2, "semivariance": 0.67, "pairCount": 1}]
+
+---
+
+**👤 You:**
+> "Fit a spherical model to these experimental points: [{'lag': 1, 'semivariance': 0.5, 'pairCount': 10}, {'lag': 2, 'semivariance': 1.2, 'pairCount': 8}, {'lag': 3, 'semivariance': 1.8, 'pairCount': 5}]."
+
+**🤖 AI Agent:**
+> {"nugget": 0.1, "sill": 2.0, "range": 3.5, "modelType": "spherical"}
+
+---
+
+**👤 You:**
+> "Check for anisotropy in this dataset using azimuths 0 and 90 degrees."
+
+**🤖 AI Agent:**
+> {"isAnisotropic": true, "anisotropyRatio": 0.65, "directionalRanges": [{"direction": 0, "range": 10.5}, {"direction": 90, "range": 6.8}]}
+
+
+## ❓ FAQ
+
+**Q: What is the purpose of this server?**
+It quantifies spatial correlation by calculating semivariance and fitting models to spatial data.
+
+**Q: How do I detect if my data has anisotropy?**
+You can use the `detect_anisotropy` tool by providing your spatial data and a list of azimuth directions to test.
+
+**Q: Can I fit specific mathematical models?**
+Yes, the `fit_variogram_model` tool supports various model types like spherical and exponential.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/variogram-modeling-analysis](https://vinkius.com/ai-agent-connect/variogram-modeling-analysis)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Variogram Modeling Analysis** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `variogram-modeling-analysis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Variogram Modeling Analysis** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "variogram-modeling-analysis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
