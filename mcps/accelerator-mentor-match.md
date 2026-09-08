@@ -14,9 +14,9 @@ This MCP server provides a specialized matching engine for accelerator programs.
 
 
 ## Available Tools (3)
-- **calculate_utilization_rate**: Measures the efficiency of mentor hour allocation to ensure workload balance
 - **evaluate_match_quality**: Provides a granular assessment of how good the specific pairings are based on expertise and stage
 - **analyze_match_coverage**: Determines how effectively the available mentors cover the total skill requirements of the startup cohort
+- **calculate_utilization_rate**: Measures the efficiency of mentor hour allocation to ensure workload balance
 
 
 ## 💬 Prompt Examples

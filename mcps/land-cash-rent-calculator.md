@@ -14,9 +14,9 @@ This MCP server provides precision tools for landowners and tenants to negotiate
 
 
 ## Available Tools (4)
-- **calculate_party_margins**: Answers how much profit both the landlord and the tenant will actually pocket at a specific rent level
-- **fetch_market_benchmarks**: Answers what the current local market rates are according to official data
 - **generate_rent_probability_range**: Answers what the "safe" rent range is given the uncertainty of crop yields
+- **fetch_market_benchmarks**: Answers what the current local market rates are according to official data
+- **calculate_party_margins**: Answers how much profit both the landlord and the tenant will actually pocket at a specific rent level
 - **get_rent_equivalency**: Answers how much cash rent is needed to match the value of a crop-share agreement
 
 

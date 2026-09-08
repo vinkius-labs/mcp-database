@@ -14,9 +14,9 @@ This MCP server provides tools to evaluate the quality and uniformity of candida
 
 
 ## Available Tools (3)
+- **calculate_score_adjustments**: Answers "How should we adjust individual scores to compensate for interviewer bias?"
 - **evaluate_calibration_needs**: Answers "Which interviewers or candidates require a calibration session to align standards?"
 - **get_scoring_consistency**: Answers "How much do our interviewers agree on candidate evaluations?"
-- **calculate_score_adjustments**: Answers "How should we adjust individual scores to compensate for interviewer bias?"
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides specialized risk analysis for accelerator funds. It all
 
 ## Available Tools (3)
 - **analyze_sector_exposure**: Analyze portfolio exposure across different sectors
-- **evaluate_portfolio_diversification**: Evaluate overall portfolio diversification health
 - **calculate_hhi_index**: Calculate the Herfindahl-Hirschman Index (HHI) for a list of investments
+- **evaluate_portfolio_diversification**: Evaluate overall portfolio diversification health
 
 
 ## 💬 Prompt Examples

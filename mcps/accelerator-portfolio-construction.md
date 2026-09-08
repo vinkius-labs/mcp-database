@@ -14,11 +14,11 @@ This MCP server provides a simulation engine to forecast the economic performanc
 
 
 ## Available Tools (3)
-- **simulate_portfolio_outcomes**: Simulates the economic outcomes of an accelerator cohort based on power law distributions
 - **calculate_reserve_requirements**: Calculates the follow-on capital reserves needed to support breakout companies
 - **compare_scenarios**: g., failure or breakout rates) impact the total return multiple.
 
 Compares the performance of a base configuration against a modified scenario
+- **simulate_portfolio_outcomes**: Simulates the economic outcomes of an accelerator cohort based on power law distributions
 
 
 ## 💬 Prompt Examples

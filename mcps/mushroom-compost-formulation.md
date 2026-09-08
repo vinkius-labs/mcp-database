@@ -14,9 +14,9 @@ This MCP server provides specialized tools for mushroom compost production. It u
 
 
 ## Available Tools (3)
+- **calculate_substrate_mix**: Determines the exact quantities of available raw materials needed to meet a specific target C:N ratio and moisture level at the lowest possible cost
 - **predict_compost_lifecycle**: Estimates the time required to complete the biological phases of composting based on environmental conditions
 - **validate_material_safety**: Checks if a proposed material mix contains any elements or ratios that would be toxic to mushroom mycelium
-- **calculate_substrate_mix**: Determines the exact quantities of available raw materials needed to meet a specific target C:N ratio and moisture level at the lowest possible cost
 
 
 ## 💬 Prompt Examples

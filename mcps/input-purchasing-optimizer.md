@@ -14,9 +14,9 @@ This MCP server provides advanced optimization tools for agricultural procuremen
 
 
 ## Available Tools (3)
+- **simulate_price_scenario**: Evaluates how different seasonal price fluctuations or changes in supplier discount tiers would affect the total cost
 - **check_storage_feasibility**: Validates if a proposed set of purchase quantities can physically fit within the available warehouse space
 - **get_optimal_procurement_plan**: Provides the complete recommended purchasing strategy to minimize total expenditure
-- **simulate_price_scenario**: Evaluates how different seasonal price fluctuations or changes in supplier discount tiers would affect the total cost
 
 
 ## 💬 Prompt Examples

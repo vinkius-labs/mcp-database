@@ -14,8 +14,8 @@ This MCP server provides tools to evaluate instructor performance within acceler
 
 
 ## Available Tools (3)
-- **get_effectiveness_trend**: Determine if an instructor's performance is improving, declining, or staying consistent
 - **recommend_instructors**: Suggest the most suitable instructors for a specific upcoming curriculum or session
+- **get_effectiveness_trend**: Determine if an instructor's performance is improving, declining, or staying consistent
 - **get_instructor_score**: Calculate a single, comprehensive effectiveness score for a specific instructor
 
 

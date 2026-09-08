@@ -15,8 +15,8 @@ This MCP server provides decision-support tools for grain producers to evaluate 
 
 ## Available Tools (3)
 - **analyze_risk_exposure**: Evaluates the stability and cost of a chosen hedging plan
-- **calculate_strategy_outcomes**: Compares the expected net price and financial outcomes across multiple marketing alternatives
 - **get_probability_distribution**: Provides a statistical view of potential price movements
+- **calculate_strategy_outcomes**: Compares the expected net price and financial outcomes across multiple marketing alternatives
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides precision tracking for accelerator programs. It allows 
 
 
 ## Available Tools (3)
-- **analyze_program_health**: Evaluates the entire accelerator program to determine if it is on track for the target graduation date
 - **get_milestone_status**: Provides a detailed snapshot of a specific milestone's progress and its relation to the overall program
+- **analyze_program_health**: Evaluates the entire accelerator program to determine if it is on track for the target graduation date
 - **predict_timeline_projection**: Uses current progress and historical velocity to forecast the completion date of all remaining milestones
 
 

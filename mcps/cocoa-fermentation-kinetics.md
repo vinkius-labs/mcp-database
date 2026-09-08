@@ -14,9 +14,9 @@ This MCP server provides a predictive modeling engine to simulate the biochemica
 
 
 ## Available Tools (3)
+- **calculate_fermentation_metrics**: Evaluates the quality and completeness of a completed fermentation based on a profile
 - **optimize_operational_schedule**: Recommends the best timing for manual interventions to reach a specific flavor target
 - **simulate_fermentation_profile**: Provides a continuous temporal view of the biochemical environment during the fermentation process
-- **calculate_fermentation_metrics**: Evaluates the quality and completeness of a completed fermentation based on a profile
 
 
 ## 💬 Prompt Examples

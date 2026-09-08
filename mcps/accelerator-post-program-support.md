@@ -14,9 +14,9 @@ This MCP server provides a specialized economic modeling engine to manage the re
 
 
 ## Available Tools (3)
-- **get_support_economics**: Calculates the total financial cost per alumnus and the overall resource distribution
 - **recommend_support_tiers**: Assigns specific service tiers to alumni based on their graduation recency and engagement levels
 - **validate_resource_capacity**: Checks if the requested support level for a specific subset of alumni is mathematically feasible
+- **get_support_economics**: Calculates the total financial cost per alumnus and the overall resource distribution
 
 
 ## 💬 Prompt Examples

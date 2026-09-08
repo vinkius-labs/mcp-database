@@ -14,8 +14,8 @@ This MCP server provides a quantitative framework to assess the viability of a s
 
 
 ## Available Tools (3)
-- **analyze_idea_viability**: 
 - **evaluate_experiment_quality**: 
+- **analyze_idea_viability**: 
 - **summarize_market_landscape**: 
 
 

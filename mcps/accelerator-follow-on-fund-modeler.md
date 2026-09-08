@@ -14,9 +14,9 @@ This MCP server provides specialized financial modeling for accelerator funds. I
 
 
 ## Available Tools (3)
-- **project_return_scenarios**: Estimates the potential returns to investors and carry to managers based on different success outcomes
 - **calculate_deployment_capacity**: Determines how much capital is available for investment and how much must be reserved for follow-on rights
 - **model_recycling_impact**: Calculates how reinvesting realized gains affects the total capital available for deployment
+- **project_return_scenarios**: Estimates the potential returns to investors and carry to managers based on different success outcomes
 
 
 ## 💬 Prompt Examples

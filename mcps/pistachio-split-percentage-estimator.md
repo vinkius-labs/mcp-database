@@ -15,8 +15,8 @@ This MCP server provides advanced predictive modeling for pistachio growers. It 
 
 ## Available Tools (3)
 - **analyze_uniformity_impact**: 
-- **estimate_split_composition**: 
 - **predict_harvest_dynamics**: 
+- **estimate_split_composition**: 
 
 
 ## 💬 Prompt Examples

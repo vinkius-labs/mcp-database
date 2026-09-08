@@ -14,9 +14,9 @@ This MCP server provides professional brewing tools to calculate International B
 
 
 ## Available Tools (3)
+- **calculate_single_addition_ibu**: Calculates the specific IBU contribution of a single hop addition
 - **calculate_total_recipe_bitterness**: Aggregates multiple hop additions to find the total IBU and the BU:GU ratio
 - **get_utilization_factors**: Retrieves the theoretical utilization multiplier constants
-- **calculate_single_addition_ibu**: Calculates the specific IBU contribution of a single hop addition
 
 
 ## 💬 Prompt Examples

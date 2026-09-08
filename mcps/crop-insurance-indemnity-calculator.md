@@ -16,8 +16,8 @@ This MCP server provides specialized tools for agricultural insurance calculatio
 ## Available Tools (4)
 - **analyze_insurance_break_even**: Performs a financial analysis to compare the cost of the insurance against the potential indemnity payouts
 - **calculate_yield_protection_indemnity**: Determines the indemnity payment for a farmer using the Yield Protection (YP) method
-- **calculate_revenue_protection_indemnity**: Determines the indemnity payment for a farmer using the Revenue Protection (RP) method, including the Harvest Price option
 - **calculate_prevented_planting_indemnity**: Calculates indemnity when environmental factors prevent a crop from being planted
+- **calculate_revenue_protection_indemnity**: Determines the indemnity payment for a farmer using the Revenue Protection (RP) method, including the Harvest Price option
 
 
 ## 💬 Prompt Examples

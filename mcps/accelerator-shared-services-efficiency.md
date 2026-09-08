@@ -14,9 +14,9 @@ This MCP server provides tools to measure the efficiency of the Shared Services 
 
 
 ## Available Tools (3)
+- **calculate_value_delivered**: 
 - **calculate_cost_efficiency**: 
 - **calculate_utilization_metrics**: 
-- **calculate_value_delivered**: 
 
 
 ## 💬 Prompt Examples

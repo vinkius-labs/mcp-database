@@ -14,10 +14,10 @@ This MCP server provides professional-grade financial analysis for agricultural 
 
 
 ## Available Tools (5)
-- **compare_to_benchmarks**: Compares calculated farm ratios against industry benchmarks
 - **get_efficiency_ratios**: Calculates efficiency ratios to assess asset productivity and cost management
 - **get_liquidity_ratios**: Calculates liquidity ratios to assess short-term financial obligations
 - **get_profitability_ratios**: Calculates profitability ratios to assess income generation efficiency
+- **compare_to_benchmarks**: Compares calculated farm ratios against industry benchmarks
 - **get_solvency_ratios**: Calculates solvency ratios to assess long-term financial stability
 
 

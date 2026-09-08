@@ -14,9 +14,9 @@ This MCP server provides predictive analytics for accelerator managers to foreca
 
 
 ## Available Tools (3)
+- **recommend_overbooking_strategy**: 
 - **analyze_tier_distribution**: 
 - **predict_attendance**: 
-- **recommend_overbooking_strategy**: 
 
 
 ## 💬 Prompt Examples

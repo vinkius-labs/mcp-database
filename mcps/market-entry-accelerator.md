@@ -14,9 +14,9 @@ This MCP server provides strategic modeling tools for portfolio expansion. Use `
 
 
 ## Available Tools (3)
-- **analyze_market_feasibility**: Determines if a market meets specific threshold criteria for investment
-- **calculate_entry_metrics**: Provides a comprehensive summary of the financial, temporal, and strategic impact of entering a specific market
 - **compare_market_opportunities**: Ranks multiple potential markets against each other to assist in portfolio prioritization
+- **calculate_entry_metrics**: Provides a comprehensive summary of the financial, temporal, and strategic impact of entering a specific market
+- **analyze_market_feasibility**: Determines if a market meets specific threshold criteria for investment
 
 
 ## 💬 Prompt Examples

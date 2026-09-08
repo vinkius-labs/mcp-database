@@ -14,9 +14,9 @@ This MCP server provides decision-support tools for accelerator managers to opti
 
 
 ## Available Tools (3)
-- **calculate_grant_economics**: Quantifies the financial and temporal value of applying for specific grants
 - **get_eligible_grants**: Filters a master list of available grants to identify which ones are actually applicable to a specific company
 - **prioritize_grant_opportunities**: Generates a ranked list of grants for a portfolio company to help decide resource allocation
+- **calculate_grant_economics**: Quantifies the financial and temporal value of applying for specific grants
 
 
 ## 💬 Prompt Examples

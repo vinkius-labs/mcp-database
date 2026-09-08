@@ -14,8 +14,8 @@ This MCP server provides tools to measure how acceleration programs reduce time-
 
 
 ## Available Tools (3)
-- **aggregate_acceleration_metrics**: Aggregate all acceleration performance indicators
 - **calculate_time_impact**: Calculate time saved and velocity multiplier
+- **aggregate_acceleration_metrics**: Aggregate all acceleration performance indicators
 - **evaluate_market_capture**: Evaluate the strategic value of speed
 
 
