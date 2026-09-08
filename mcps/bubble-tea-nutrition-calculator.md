@@ -15,8 +15,8 @@ This MCP server provides precise nutritional estimation for bubble tea customiza
 
 ## Available Tools (3)
 - **get_topping_nutrition**: Retrieves the calorie and sugar information for a specific topping
-- **validate_customization_params**: Checks if a combination of parameters is valid before performing heavy calculations
 - **calculate_drink_nutrition**: Calculates the full nutritional profile of a customized bubble tea order
+- **validate_customization_params**: Checks if a combination of parameters is valid before performing heavy calculations
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine to manage LLM context window con
 
 
 ## Available Tools (2)
-- **evaluate_compression_quality_tool**: 
 - **compress_conversation_tool**: 
+- **evaluate_compression_quality_tool**: 
 
 
 ## 💬 Prompt Examples

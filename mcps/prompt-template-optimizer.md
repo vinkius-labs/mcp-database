@@ -14,9 +14,9 @@ This MCP server provides mathematical precision for prompt engineering. Use `opt
 
 
 ## Available Tools (3)
-- **optimize_template**: Calculate the most efficient version of a prompt template based on a specific strategy
 - **analyze_prompt_efficiency**: Evaluate a single prompt configuration against established performance benchmarks
 - **calculate_variable_overhead**: Estimate the hidden cost of using templates with many dynamic variables
+- **optimize_template**: Calculate the most efficient version of a prompt template based on a specific strategy
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a deterministic optimization engine for Japanese conven
 
 
 ## Available Tools (3)
+- **validate_combination_feasibility**: Checks if a proposed combination of items meets specific user-defined constraints
 - **calculate_macro_efficiency**: Evaluates potential food combinations to find the most efficient hacks for a specific nutritional goal
 - **get_item_nutrition**: Retrieves the nutritional data for a single item
-- **validate_combination_feasibility**: Checks if a proposed combination of items meets specific user-defined constraints
 
 
 ## 💬 Prompt Examples

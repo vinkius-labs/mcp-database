@@ -15,8 +15,8 @@ This MCP server provides deterministic tools to solve the LLM routing problem. I
 
 ## Available Tools (3)
 - **analyze_routing_options**: 
-- **calculate_savings_projection**: 
 - **compare_model_profiles**: 
+- **calculate_savings_projection**: 
 
 
 ## 💬 Prompt Examples

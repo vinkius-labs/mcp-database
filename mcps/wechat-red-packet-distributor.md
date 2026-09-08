@@ -14,9 +14,9 @@ This MCP server provides precise mathematical models for distributing WeChat Red
 
 
 ## Available Tools (3)
+- **validate_hongbao_config**: Checks if a proposed distribution scenario is mathematically possible before attempting calculation
 - **calculate_distribution**: Generates the specific list of monetary amounts for each participant based on the selected strategy
 - **get_distribution_statistics**: Analyzes a generated list of amounts to provide insight into the fairness and volatility of the distribution
-- **validate_hongbao_config**: Checks if a proposed distribution scenario is mathematically possible before attempting calculation
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides precise financial visibility into multi-agent ecosystem
 
 ## Available Tools (3)
 - **calculate_agent_costs**: Computes the individual cost for every agent in the system using a specific allocation strategy
-- **get_resource_efficiency_summary**: Provides a high-level summary of how well the system is performing relative to its costs
 - **analyze_cost_health**: Evaluates system performance and identifies financial risks or inefficiencies
+- **get_resource_efficiency_summary**: Provides a high-level summary of how well the system is performing relative to its costs
 
 
 ## 💬 Prompt Examples

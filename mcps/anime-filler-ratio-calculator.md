@@ -14,9 +14,9 @@ This MCP server provides precise tools for anime fans to analyze series composit
 
 
 ## Available Tools (3)
-- **calculate_series_metrics**: Provides a complete statistical overview of a series' composition and the time required to watch it
 - **compare_series_pacing**: Evaluates how two different series compare in terms of their filler density
 - **generate_skip_list**: Identifies specific episodes that a viewer can skip to focus solely on the canon storyline
+- **calculate_series_metrics**: Provides a complete statistical overview of a series' composition and the time required to watch it
 
 
 ## 💬 Prompt Examples

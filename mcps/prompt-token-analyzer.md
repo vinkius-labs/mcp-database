@@ -14,8 +14,8 @@ This MCP server provides precise tools for managing token budgets in LLM workflo
 
 
 ## Available Tools (3)
-- **find_outlier_sections**: Identifies sections that are significantly larger or smaller than the average section size
 - **analyze_prompt_sections**: Performs a full breakdown of a prompt's token consumption and budget adherence
+- **find_outlier_sections**: Identifies sections that are significantly larger or smaller than the average section size
 - **get_section_stats**: Provides high-level summary statistics about the prompt's composition
 
 

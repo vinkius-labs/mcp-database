@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to measure how closely a set of pro
 
 
 ## Available Tools (3)
+- **validate_template_structure**: 
 - **calculate_reuse_metrics**: 
 - **get_similarity_report**: 
-- **validate_template_structure**: 
 
 
 ## 💬 Prompt Examples

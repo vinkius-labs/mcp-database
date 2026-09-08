@@ -14,9 +14,9 @@ This MCP server provides deterministic mathematical modeling for AI agent orches
 
 
 ## Available Tools (3)
-- **analyze_bottlenecks**: Identifies specific points of failure or delay within a completed execution plan
 - **evaluate_optimization_strategy**: Compares different orchestration patterns to recommend the best one based on the user's specific goal
 - **get_execution_plan**: Generates the specific execution sequence and performance metrics for a given agent workflow
+- **analyze_bottlenecks**: Identifies specific points of failure or delay within a completed execution plan
 
 
 ## 💬 Prompt Examples

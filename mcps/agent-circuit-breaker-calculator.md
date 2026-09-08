@@ -14,10 +14,10 @@ This MCP server provides a deterministic state machine and metrics engine to man
 
 
 ## Available Tools (4)
+- **get_operational_strategy**: Determines the fallback behavior and retry limits for the system
 - **analyze_health_metrics**: Calculates statistical indicators of agent health and triggers alerts for critical failure conditions
 - **calculate_state_transition**: Determines the next logical state of the circuit breaker based on current metrics and thresholds
 - **evaluate_bulkhead_status**: Analyzes the impact of failures across different agent types to manage isolation
-- **get_operational_strategy**: Determines the fallback behavior and retry limits for the system
 
 
 ## 💬 Prompt Examples

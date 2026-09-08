@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for processing timestamped metri
 
 
 ## Available Tools (3)
-- **check_alerts**: Checks for threshold violations
 - **process_metrics**: 
 - **analyze_trends**: Calculates trend direction
+- **check_alerts**: Checks for threshold violations
 
 
 ## 💬 Prompt Examples

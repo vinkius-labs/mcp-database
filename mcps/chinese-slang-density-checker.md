@@ -14,9 +14,9 @@ This MCP server provides deterministic analysis of Wangluo Yongyu (Chinese inter
 
 
 ## Available Tools (3)
-- **get_slang_categories**: Retrieves a list of pre-defined slang categories
 - **analyze_slang_density**: Calculates linguistic metrics for Chinese internet slang density
 - **validate_slang_term**: Checks if a specific string is a recognized valid slang term
+- **get_slang_categories**: Retrieves a list of pre-defined slang categories
 
 
 ## 💬 Prompt Examples

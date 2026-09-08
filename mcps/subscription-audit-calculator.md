@@ -15,8 +15,8 @@ This MCP server provides tools to audit your subscription portfolio. Use `audit_
 
 ## Available Tools (3)
 - **audit_subscriptions**: Audit subscriptions
-- **evaluate_single_subscription**: Evaluate single subscription
 - **get_standard_benchmarks**: Get benchmarks
+- **evaluate_single_subscription**: Evaluate single subscription
 
 
 ## 💬 Prompt Examples

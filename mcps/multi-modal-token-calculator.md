@@ -14,9 +14,9 @@ This MCP server provides precise tokenization calculations for multi-modal input
 
 
 ## Available Tools (3)
-- **analyze_modality_balance**: Analyzes how heavily a prompt relies on non-textual data
-- **calculate_token_usage**: Provides a comprehensive breakdown of total tokens, cost, and modality distribution
 - **optimize_image_resolution**: Suggests new image dimensions to minimize token usage while maintaining quality
+- **calculate_token_usage**: Provides a comprehensive breakdown of total tokens, cost, and modality distribution
+- **analyze_modality_balance**: Analyzes how heavily a prompt relies on non-textual data
 
 
 ## 💬 Prompt Examples

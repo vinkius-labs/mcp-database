@@ -15,8 +15,8 @@ This MCP server provides tools to measure the intensity of 'Kiasu' behaviors. Us
 
 ## Available Tools (3)
 - **calculate_kiasu_index**: 
-- **get_behavior_weights**: 
 - **get_kiasu_classification_ranges**: 
+- **get_behavior_weights**: 
 
 
 ## 💬 Prompt Examples

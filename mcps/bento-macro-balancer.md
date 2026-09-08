@@ -14,9 +14,9 @@ This MCP server provides deterministic nutritional analysis for traditional Japa
 
 
 ## Available Tools (3)
-- **analyze_bento_nutrition**: Calculates the complete nutritional profile and health flags for a specific bento configuration
 - **check_bento_balance**: Evaluates how closely the bento matches the traditional 4:3:2:1 weight ratio
 - **list_available_items**: Provides the user with the valid list of items and their nutritional constants for reference
+- **analyze_bento_nutrition**: Calculates the complete nutritional profile and health flags for a specific bento configuration
 
 
 ## 💬 Prompt Examples

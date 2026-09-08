@@ -14,9 +14,9 @@ The Batch Request Optimizer helps developers minimize costs and latency when sen
 
 
 ## Available Tools (3)
+- **analyze_batch_efficiency**: Calculates the economic and performance impact of the generated batch plan
 - **assess_batch_risk**: Evaluates the operational risks associated with the batching plan
 - **calculate_batch_plan**: Generates a specific grouping of requests based on the selected strategy
-- **analyze_batch_efficiency**: Calculates the economic and performance impact of the generated batch plan
 
 
 ## 💬 Prompt Examples

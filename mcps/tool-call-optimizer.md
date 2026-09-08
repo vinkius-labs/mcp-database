@@ -14,9 +14,9 @@ This MCP server provides precise tools to reduce the 'context tax' of AI agents.
 
 
 ## Available Tools (3)
+- **validate_tool_set**: Ensures that the optimized toolset is functionally complete and respects logical constraints
 - **apply_optimization_strategy**: Executes a specific logic to transform the toolset based on the requested strategy
 - **calculate_optimization_metrics**: Calculates the mathematical results of the optimization process
-- **validate_tool_set**: Ensures that the optimized toolset is functionally complete and respects logical constraints
 
 
 ## 💬 Prompt Examples
