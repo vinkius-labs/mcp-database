@@ -14,12 +14,12 @@ This MCP server provides advanced financial modeling to help businesses determin
 
 
 ## Available Tools (4)
+- **simulate_cash_flow**: Projects the immediate and long-term cash flow impact of choosing a specific term strategy
 - **analyze_term_efficiency**: Evaluates the financial viability of different term lengths to identify the best balance of discount and stability
 - **calculate_segment_strategy**: 0 to 1.0), and a list of available term lengths.
 
 Recommends a single optimal contract term based on customer characteristics
 - **compare_term_scenarios**: Provides a side-by-side comparison of two different term strategies to assist in negotiation
-- **simulate_cash_flow**: Projects the immediate and long-term cash flow impact of choosing a specific term strategy
 
 
 ## 💬 Prompt Examples

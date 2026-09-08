@@ -15,9 +15,9 @@ This MCP server provides precise technical calculations for concrete strength de
 
 ## Available Tools (4)
 - **estimate_form_removal**: Calculates the earliest safe moment to remove formwork
+- **calculate_curing_duration**: Determines the total number of days required for the concrete to reach a target strength
 - **estimate_loading_time**: Predicts when the structure can safely support design loads
 - **get_maturity_profile**: Provides a detailed look at how strength evolves over a specific timeframe
-- **calculate_curing_duration**: Determines the total number of days required for the concrete to reach a target strength
 
 
 ## 💬 Prompt Examples

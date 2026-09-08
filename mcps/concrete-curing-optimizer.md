@@ -15,9 +15,9 @@ This MCP server provides expert decision support for concrete construction. It c
 
 ## Available Tools (4)
 - **get_mix_hydration_profile**: Retrieves the characteristic strength gain properties for a specific concrete mix
+- **calculate_curing_strategy**: Determines the optimal curing method and the total duration required to reach target strength
 - **estimate_evaporation_risk**: Assesses the severity of moisture loss due to environmental factors
 - **validate_formwork_efficiency**: Adjusts the required water volume based on how well the formwork retains moisture
-- **calculate_curing_strategy**: Determines the optimal curing method and the total duration required to reach target strength
 
 
 ## 💬 Prompt Examples

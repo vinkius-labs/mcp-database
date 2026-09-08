@@ -14,10 +14,10 @@ This MCP server provides specialized structural engineering tools for designing 
 
 
 ## Available Tools (4)
+- **analyze_load_path**: Determine how forces migrate through the slab and identify critical stress zones
 - **calculate_shear_reinforcement**: Determine the specific steel needed to prevent shear failure near column heads or high-stress zones
 - **calculate_slab_thickness**: Determine the minimum required depth of the slab to satisfy strength and serviceability
 - **design_reinforcement_layout**: Specify the steel reinforcement required to act as the ties in the strut-and-tie model
-- **analyze_load_path**: Determine how forces migrate through the slab and identify critical stress zones
 
 
 ## 💬 Prompt Examples

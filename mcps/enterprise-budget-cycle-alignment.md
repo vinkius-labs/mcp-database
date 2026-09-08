@@ -14,10 +14,10 @@ This MCP server provides strategic planning capabilities to align fiscal timelin
 
 
 ## Available Tools (4)
+- **analyze_approval_complexity**: Calculates the necessary lead time required to secure a signature based on the transaction value
 - **detect_urgency_triggers**: Alerts the user to critical deadlines where missing a window results in lost budget
 - **forecast_budget_availability**: Predicts when funds will be accessible for spending
 - **get_engagement_strategy**: Identifies the best time to approach a customer to ensure budget availability
-- **analyze_approval_complexity**: Calculates the necessary lead time required to secure a signature based on the transaction value
 
 
 ## 💬 Prompt Examples

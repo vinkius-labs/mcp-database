@@ -14,10 +14,10 @@ This MCP server provides a suite of analytical tools to evaluate the effectivene
 
 
 ## Available Tools (4)
-- **calculate_conversion_metrics**: Calculates the fundamental conversion performance for a given set of demos
-- **evaluate_demo_quality**: Generates a quality score for a specific demonstration instance
 - **suggest_optimal_format**: Identifies the most effective demo configuration for a target audience
 - **analyze_stakeholder_impact**: Quantifies how the attendee composition affects the likelihood of conversion
+- **calculate_conversion_metrics**: Calculates the fundamental conversion performance for a given set of demos
+- **evaluate_demo_quality**: Generates a quality score for a specific demonstration instance
 
 
 ## 💬 Prompt Examples

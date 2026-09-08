@@ -14,8 +14,8 @@ This MCP server provides a complete suite of tools for chemical retrosynthesis. 
 
 
 ## Available Tools (4)
-- **analyze_disconnections**: Identifies the most logical points to break the target molecule to simplify its structure
 - **generate_route_tree**: Constructs a complete hierarchical map of the synthetic pathways from the target down to available precursors
+- **analyze_disconnections**: Identifies the most logical points to break the target molecule to simplify its structure
 - **identify_synthons**: Converts the identified strategic bond breaks into theoretical chemical fragments
 - **map_synthetic_equivalents**: Suggests real-world chemical reagents that can perform the function of the theoretical synthons
 

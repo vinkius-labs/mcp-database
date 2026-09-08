@@ -16,8 +16,8 @@ This MCP server provides analytical tools for electrochemical studies of electro
 ## Available Tools (4)
 - **analyze_kohlrausch_behavior**: Identifies the electrolyte type and applies Kohlrausch's law for strong electrolytes
 - **calculate_dissociation_parameters**: Analyzes the ionization behavior of weak electrolytes
-- **calculate_molar_conductivity**: Determines the molar conductivity of an electrolyte at a given concentration
 - **calculate_specific_conductivity**: Converts raw conductance measurements into specific conductivity
+- **calculate_molar_conductivity**: Determines the molar conductivity of an electrolyte at a given concentration
 
 
 ## 💬 Prompt Examples

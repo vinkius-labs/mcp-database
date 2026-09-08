@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing mat foundat
 
 
 ## Available Tools (4)
+- **analyze_foundation_geometry**: Validate the physical feasibility of the foundation dimensions and column layout
 - **calculate_mat_thickness**: Determine the required slab thickness based on structural requirements
 - **design_reinforcement**: Generate the required steel reinforcement pattern for the slab
 - **estimate_settlement**: Predict the vertical movement of the foundation into the soil
-- **analyze_foundation_geometry**: Validate the physical feasibility of the foundation dimensions and column layout
 
 
 ## 💬 Prompt Examples

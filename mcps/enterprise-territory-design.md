@@ -14,10 +14,10 @@ This MCP server provides a suite of optimization tools for enterprise sales orga
 
 
 ## Available Tools (4)
+- **optimize_account_distribution**: Reassigns accounts to territories to minimize workload imbalance and travel friction
 - **calculate_territory_balance**: Measures how equitably revenue and workload are distributed across all defined territories
 - **estimate_territory_capacity**: Calculates the effective working capacity of a specific territory or representative based on geographic constraints
 - **get_optimal_territory_size**: Suggests the ideal number of accounts or revenue value a single territory should hold to maintain health
-- **optimize_account_distribution**: Reassigns accounts to territories to minimize workload imbalance and travel friction
 
 
 ## 💬 Prompt Examples

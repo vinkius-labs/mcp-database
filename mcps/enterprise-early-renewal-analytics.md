@@ -15,9 +15,9 @@ This MCP server provides a performance analytics engine to measure the efficacy 
 
 ## Available Tools (4)
 - **analyze_discount_efficiency**: Evaluates whether the discounts provided are justified by the revenue gained through acceleration
+- **get_renewal_window_metrics**: Measures the temporal effectiveness of the early renewal program
 - **calculate_early_renewal_performance**: Provides a comprehensive summary of renewal performance for a specific set of contracts
 - **evaluate_health_adjusted_probability**: Predicts the likelihood of an upcoming early renewal based on customer sentiment and activity
-- **get_renewal_window_metrics**: Measures the temporal effectiveness of the early renewal program
 
 
 ## 💬 Prompt Examples

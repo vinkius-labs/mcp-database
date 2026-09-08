@@ -14,9 +14,9 @@ This MCP server provides specialized chemical analysis tools for nanoparticle sy
 
 
 ## Available Tools (4)
+- **get_stoichiometry_analysis**: Identifies the limiting reactant and theoretical mass limit
 - **get_mass_balance_report**: Analyzes mass distribution during the reaction
 - **get_particle_count**: Calculates the number of individual particles produced
-- **get_stoichiometry_analysis**: Identifies the limiting reactant and theoretical mass limit
 - **get_yield_metrics**: Calculates yield and efficiency of nanoparticle synthesis
 
 

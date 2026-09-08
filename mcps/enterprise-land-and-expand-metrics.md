@@ -15,9 +15,9 @@ This MCP server provides specialized analytics for B2B sales leaders to measure 
 
 ## Available Tools (4)
 - **simulate_expansion_projection**: Predicts future account value based on historical expansion rates and specific triggers
-- **analyze_trigger_efficiency**: Determines which expansion triggers are driving the most value relative to the timeline
 - **query_account_growth_roi**: Evaluates the financial effectiveness of the initial land deal relative to the growth it produced
 - **query_expansion_velocity**: Calculates how quickly a customer account is growing in terms of dollar value per month
+- **analyze_trigger_efficiency**: Determines which expansion triggers are driving the most value relative to the timeline
 
 
 ## 💬 Prompt Examples

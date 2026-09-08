@@ -14,12 +14,12 @@ This MCP server provides a specialized analytics engine for enterprise account g
 
 
 ## Available Tools (4)
-- **analyze_account_trend**: ]
-
-Determine the direction and velocity of seat adoption
 - **calculate_expansion_metrics**: Calculate high-level growth performance metrics over a specific period
 - **evaluate_adoption_depth**: Assess product embedding via departmental and use-case spread
 - **identify_expansion_opportunities**: Identify accounts primed for additional seat purchases
+- **analyze_account_trend**: ]
+
+Determine the direction and velocity of seat adoption
 
 
 ## 💬 Prompt Examples

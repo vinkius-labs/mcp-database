@@ -15,9 +15,9 @@ This MCP server provides advanced analytical tools to measure the quality and mo
 
 ## Available Tools (4)
 - **calculate_engagement_score**: Calculates the current qualitative health of stakeholder engagement
+- **summarize_stakeholder_landscape**: Provides a high-level breakdown of stakeholder influence and engagement
 - **calculate_engagement_velocity**: Calculates the rate of change in engagement over time
 - **identify_engagement_risks**: Identifies stakeholders requiring immediate attention based on thresholds
-- **summarize_stakeholder_landscape**: Provides a high-level breakdown of stakeholder influence and engagement
 
 
 ## 💬 Prompt Examples

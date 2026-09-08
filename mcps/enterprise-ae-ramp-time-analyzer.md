@@ -14,10 +14,10 @@ This MCP server provides analytical tools to model the progression of Account Ex
 
 
 ## Available Tools (4)
-- **evaluate_milestone_velocity**: Measures how quickly an AE is moving through their onboarding stages
-- **generate_ramp_curve**: Projects the expected percentage of quota attainment over a specific timeline
-- **project_attainment_trajectory**: Forecasts future revenue/quota performance based on current progress
 - **calculate_average_ramp_metrics**: Provides the core summary of an AE's expected time to full productivity
+- **evaluate_milestone_velocity**: Measures how quickly an AE is moving through their onboarding stages
+- **project_attainment_trajectory**: Forecasts future revenue/quota performance based on current progress
+- **generate_ramp_curve**: Projects the expected percentage of quota attainment over a specific timeline
 
 
 ## 💬 Prompt Examples

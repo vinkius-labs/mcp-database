@@ -14,11 +14,11 @@ This MCP server provides deep analytical insights into sales performance by calc
 
 
 ## Available Tools (5)
-- **get_aggregate_ads**: Calculates the total average deal size across all provided deal data
-- **get_discount_sensitivity_analysis**: Measures how heavily discounts are impacting the realized ADS
 - **get_product_mix_impact**: Evaluates how the distribution of different products influences the total ADS
 - **get_segment_ads_analysis**: Breaks down the average deal size by specific customer segments
 - **get_upsell_opportunity_report**: Identifies specific accounts or deal types where the current value is significantly lower than the segment potential
+- **get_aggregate_ads**: Calculates the total average deal size across all provided deal data
+- **get_discount_sensitivity_analysis**: Measures how heavily discounts are impacting the realized ADS
 
 
 ## 💬 Prompt Examples

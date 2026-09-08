@@ -14,9 +14,9 @@ This MCP server provides specialized tools for assessing concrete floor quality.
 
 
 ## Available Tools (4)
-- **analyze_f_number_compliance**: 
 - **calculate_grinding_needs**: 
 - **evaluate_straightedge_deviation**: 
+- **analyze_f_number_compliance**: 
 - **get_classification_standards**: 
 
 

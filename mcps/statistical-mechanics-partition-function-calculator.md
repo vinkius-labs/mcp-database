@@ -15,10 +15,10 @@ This MCP server provides specialized tools to compute the molecular partition fu
 
 ## Available Tools (5)
 - **calculate_electronic_partition_function**: Calculates the partition function for the electronic energy levels
-- **calculate_rotational_partition_function**: Calculates the partition function for the rotational motion of a molecule
-- **calculate_total_partition_function**: Aggregates all individual partition functions into a single total partition function
 - **calculate_translational_partition_function**: Calculates the partition function for the translational motion of a molecule
 - **calculate_vibrational_partition_function**: Calculates the partition function for the vibrational modes of a molecule
+- **calculate_rotational_partition_function**: Calculates the partition function for the rotational motion of a molecule
+- **calculate_total_partition_function**: Aggregates all individual partition functions into a single total partition function
 
 
 ## 💬 Prompt Examples

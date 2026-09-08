@@ -14,10 +14,10 @@ This MCP server provides tools to estimate fugitive emissions from industrial pr
 
 
 ## Available Tools (4)
-- **calculate_leak_impact**: Calculate the impact of detected leaks on total emissions
 - **evaluate_ldar_requirements**: Determine LDAR compliance requirements
 - **get_emissions_by_component**: Calculate total emissions by component type
 - **validate_service_compatibility**: Validate if a service type is compatible with available emission factors
+- **calculate_leak_impact**: Calculate the impact of detected leaks on total emissions
 
 
 ## 💬 Prompt Examples
