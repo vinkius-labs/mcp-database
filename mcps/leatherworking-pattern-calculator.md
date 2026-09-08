@@ -14,10 +14,10 @@ This MCP server provides deterministic calculations for leatherworking projects.
 
 
 ## Available Tools (4)
-- **calculate_yield**: Determine how many hides are needed based on the required area and leather type
-- **get_material_consumables**: Calculate the specific quantities of thread and edge finish required for the project
 - **get_net_area**: Calculate the total surface area of all pattern pieces before accounting for waste
 - **suggest_cutting_layout**: Provide a conceptual instruction for how pieces should be placed on a hide
+- **calculate_yield**: Determine how many hides are needed based on the required area and leather type
+- **get_material_consumables**: Calculate the specific quantities of thread and edge finish required for the project
 
 
 ## 💬 Prompt Examples

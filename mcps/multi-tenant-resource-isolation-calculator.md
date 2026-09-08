@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine to manage agentic workloads by c
 
 
 ## Available Tools (3)
-- **calculate_tenant_allocation**: Determines the exact resource allocation for every tenant based on the selected isolation strategy
 - **evaluate_system_health**: Analyzes the current state of the system to determine if the configuration is sustainable
+- **calculate_tenant_allocation**: Determines the exact resource allocation for every tenant based on the selected isolation strategy
 - **get_quota_lifecycle_schedule**: Provides the temporal configuration for when quotas are reset
 
 

@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to evaluate the glycemic impact 
 
 
 ## Available Tools (3)
+- **validate_food_item**: Checks if a single food item's nutritional data is physiologically plausible
 - **calculate_meal_impact**: Calculates the detailed glycemic impact of a specific combination of food items
 - **get_gl_category_thresholds**: Retrieves the boundary values used for classifying Glycemic Load
-- **validate_food_item**: Checks if a single food item's nutritional data is physiologically plausible
 
 
 ## 💬 Prompt Examples

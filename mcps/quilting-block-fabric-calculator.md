@@ -14,9 +14,9 @@ This MCP server provides precise mathematical calculations for quilters. Use `ca
 
 
 ## Available Tools (3)
+- **calculate_quilt_layout**: Calculates the total physical dimensions of the finished quilt based on block arrangement and decorative elements
 - **calculate_block_pieces**: Determines the exact dimensions to cut for every individual fabric component required to assemble the specified block pattern
 - **calculate_fabric_requirements**: Calculates the total yardage needed for each fabric color/position and the required dimensions for batting and backing
-- **calculate_quilt_layout**: Calculates the total physical dimensions of the finished quilt based on block arrangement and decorative elements
 
 
 ## 💬 Prompt Examples

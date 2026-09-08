@@ -14,9 +14,9 @@ This MCP server provides precise tools for determining surfing right-of-way and 
 
 
 ## Available Tools (3)
+- **get_lineup_summary**: Provides a high-level overview of the current lineup density and priority distribution
 - **calculate_lineup_priority**: Determines the priority ranking and right-of-way status for a group of surfers in a specific wave scenario
 - **validate_position_legality**: Checks if the current surfer positions relative to the wave direction are physically consistent with the wave's behavior
-- **get_lineup_summary**: Provides a high-level overview of the current lineup density and priority distribution
 
 
 ## 💬 Prompt Examples

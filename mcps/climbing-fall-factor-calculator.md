@@ -14,8 +14,8 @@ This MCP server provides precise climbing physics calculations to assess fall ri
 
 
 ## Available Tools (3)
-- **calculate_fall_metrics**: Calculates the fundamental physics of a fall to determine risk and impact
 - **compare_fall_scenarios**: Allows a user to compare the severity of two different fall setups
+- **calculate_fall_metrics**: Calculates the fundamental physics of a fall to determine risk and impact
 - **validate_equipment_safety**: Checks if the specific rope properties are suitable for the intended fall scenario
 
 

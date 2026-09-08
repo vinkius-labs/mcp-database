@@ -14,9 +14,9 @@ Manage token distribution across complex AI agent workflows. This MCP server pro
 
 
 ## Available Tools (3)
-- **calculate_allocation**: Distributes the total token budget among all stages using a chosen mathematical strategy
 - **analyze_allocation_health**: Evaluates the risks and inefficiencies of a specific allocation
 - **get_pipeline_summary**: Provides a high-level overview of the entire budget situation
+- **calculate_allocation**: Distributes the total token budget among all stages using a chosen mathematical strategy
 
 
 ## 💬 Prompt Examples

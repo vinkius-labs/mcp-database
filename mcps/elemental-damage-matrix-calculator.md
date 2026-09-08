@@ -14,9 +14,9 @@ This MCP server provides a deterministic toolset for analyzing elemental combat 
 
 
 ## Available Tools (3)
-- **identify_coverage**: Generates a clear mapping of which elements are superior to others
 - **analyze_effectiveness**: Calculates specific combat outcomes and high-level balance metrics for a given set of elements, multipliers, and enemies
 - **find_combat_cycles**: Identifies circular relationships between elements (Rock-Paper-Scissors patterns)
+- **identify_coverage**: Generates a clear mapping of which elements are superior to others
 
 
 ## 💬 Prompt Examples

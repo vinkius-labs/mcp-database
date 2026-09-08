@@ -14,9 +14,9 @@ This MCP server provides a deterministic zero-based budgeting engine. It allows 
 
 
 ## Available Tools (3)
+- **calculate_budget_allocation**: 
 - **get_category_summary**: Provides high-level budget summary
 - **validate_expense_structure**: Validates expense list structure
-- **calculate_budget_allocation**: 
 
 
 ## 💬 Prompt Examples

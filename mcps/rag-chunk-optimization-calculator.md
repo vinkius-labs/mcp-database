@@ -14,8 +14,8 @@ This MCP server provides precise mathematical tools to optimize Retrieval-Augmen
 
 
 ## Available Tools (3)
-- **calculate_chunk_metrics**: Calculates the structural impact of current chunking parameters
 - **compare_chunk_strategies**: Evaluates how different chunking configurations would perform
+- **calculate_chunk_metrics**: Calculates the structural impact of current chunking parameters
 - **get_optimization_bounds**: Determines the mathematical limits of the context window
 
 

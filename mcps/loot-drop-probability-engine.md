@@ -15,8 +15,8 @@ This MCP server provides deterministic statistical analysis for game loot system
 
 ## Available Tools (3)
 - **analyze_loot_probabilities**: Calculates the core statistical likelihoods for a specific target item within a loot table, accounting for both standard rates and pity mechanics
-- **calculate_economic_metrics**: Evaluates the financial/value impact of a single loot roll
 - **summarize_rarity_distribution**: Provides a high-level view of how items are distributed across different rarity tiers
+- **calculate_economic_metrics**: Evaluates the financial/value impact of a single loot roll
 
 
 ## 💬 Prompt Examples

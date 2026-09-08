@@ -14,9 +14,9 @@ This MCP server provides a deterministic toolset for managing virtual economies.
 
 
 ## Available Tools (3)
+- **simulate_price_evolution**: Project the movement of item prices over a specific time period
 - **analyze_economy_health**: Assess the current stability of the economy and identify critical warnings
 - **calculate_equilibrium_adjustment**: Determine the exact change needed in currency sinks to halt inflation
-- **simulate_price_evolution**: Project the movement of item prices over a specific time period
 
 
 ## 💬 Prompt Examples

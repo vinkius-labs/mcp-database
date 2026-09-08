@@ -14,8 +14,8 @@ This MCP server provides precise tools for textile dye formulation. It calculate
 
 
 ## Available Tools (3)
-- **calculate_bath_parameters**: Calculate total water volume and required chemical modifiers
 - **calculate_dye_formulation**: Determine the exact mass of each individual dye powder required
+- **calculate_bath_parameters**: Calculate total water volume and required chemical modifiers
 - **validate_recipe_consistency**: Verify if a completed recipe adheres to safe industrial manufacturing standards
 
 

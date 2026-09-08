@@ -15,8 +15,8 @@ The Polygon Budget Allocator is a precision tool for game developers to manage s
 
 ## Available Tools (4)
 - **get_lod_strategies**: Retrieves the standardized polygon scaling factors for different Level of Detail tiers
-- **analyze_scene_budget**: Evaluates the current scene state against the total polygon budget to determine allocations, utilization, and necessary optimizations
 - **calculate_resource_limits**: Determines the secondary resource constraints (texture memory and shader complexity) based on the primary polygon budget
+- **analyze_scene_budget**: Evaluates the current scene state against the total polygon budget to determine allocations, utilization, and necessary optimizations
 - **optimize_draw_calls**: Suggests how to group objects to minimize draw calls via static batching
 
 

@@ -14,9 +14,9 @@ Plan your next barbecue with precision. This MCP server provides a deterministic
 
 
 ## Available Tools (3)
+- **get_thermal_targets**: Get target internal temperatures for specific meat types
 - **calculate_cooking_schedule**: Calculate cooking schedule and fuel requirements
 - **calculate_meat_requirements**: Calculate raw meat requirements based on guests, appetite, and style
-- **get_thermal_targets**: Get target internal temperatures for specific meat types
 
 
 ## 💬 Prompt Examples

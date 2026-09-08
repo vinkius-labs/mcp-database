@@ -15,8 +15,8 @@ This MCP server provides deterministic tools to normalize powerlifting performan
 
 ## Available Tools (3)
 - **calculate_strength_scores**: Calculates standard powerlifting coefficients (Wilks, DOTS, IPF GL) for a lifter
-- **rank_lifters_by_coefficient**: Ranks a list of lifters based on a specific coefficient
 - **get_weight_class**: Identifies the official competition weight class for a lifter
+- **rank_lifters_by_coefficient**: Ranks a list of lifters based on a specific coefficient
 
 
 ## 💬 Prompt Examples

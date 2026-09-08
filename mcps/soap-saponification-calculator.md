@@ -15,10 +15,10 @@ This MCP server provides precise chemical calculations for soap makers. Use `cal
 
 ## Available Tools (3)
 - **analyze_soap_quality**: Evaluates predicted soap properties against industry benchmarks
-- **calculate_formulation**: Calculates exact chemical requirements and soap quality metrics for a blend of oils
 - **get_oil_data**: g., "Olive", "Coconut").
 
 Provides specific chemical constants for a given oil
+- **calculate_formulation**: Calculates exact chemical requirements and soap quality metrics for a blend of oils
 
 
 ## 💬 Prompt Examples

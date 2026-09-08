@@ -14,9 +14,9 @@ This MCP server provides tools to transform a preparation window into a balanced
 
 
 ## Available Tools (3)
+- **optimize_milestone_spacing**: 
 - **calculate_timeline**: 
 - **evaluate_readiness**: 
-- **optimize_milestone_spacing**: 
 
 
 ## 💬 Prompt Examples

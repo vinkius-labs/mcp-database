@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to validate 9x9 Sudoku grids. It
 
 
 ## Available Tools (3)
-- **check_completeness**: Quickly determines if the puzzle is ready to be evaluated as a finished solution
 - **get_box_coordinates**: Maps a box index to its constituent cell coordinates for localized validation
 - **validate_grid_state**: Checks if the current grid state adheres to Sudoku rules and identifies specific conflicts
+- **check_completeness**: Quickly determines if the puzzle is ready to be evaluated as a finished solution
 
 
 ## 💬 Prompt Examples

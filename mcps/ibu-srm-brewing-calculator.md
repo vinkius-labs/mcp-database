@@ -14,8 +14,8 @@ This MCP server provides precise brewing calculations for beer production. Use `
 
 
 ## Available Tools (3)
-- **calculate_bitterness**: Calculate total bitterness (IBU) and contribution per hop addition
 - **calculate_color**: Calculate final SRM color and its description
+- **calculate_bitterness**: Calculate total bitterness (IBU) and contribution per hop addition
 - **simulate_boil_process**: Predict final volume and volume lost during boil
 
 

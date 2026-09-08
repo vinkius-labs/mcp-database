@@ -14,9 +14,9 @@ This MCP server provides deterministic tools for character animation resource ma
 
 
 ## Available Tools (3)
-- **evaluate_runtime_budget**: 
 - **analyze_animation_metrics**: 
 - **calculate_optimization_potential**: 
+- **evaluate_runtime_budget**: 
 
 
 ## 💬 Prompt Examples
