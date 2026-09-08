@@ -12,7 +12,9 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | [Founder Vision Prover](../mcps/founder-vision-prover.md) | A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months. |
 | [Genealogy Kinship Calculator](../mcps/genealogy-kinship-calculator.md) | Calculate exact kinship terms, civil law degrees, and biological coefficients. |
 | [MinHash Text Deduplicator](../mcps/minhash-text-deduplicator.md) | Detect near-duplicate texts using MinHash signatures and Jaccard similarity. |
+| [Ore Reserve Estimator](../mcps/ore-reserve-estimator.md) | Estimates mineral ore reserves using geostatistical interpolation and geological constraints. |
 | [rag-chunk-boundary-optimizer](../mcps/rag-chunk-boundary-optimizer-1.md) | Analyzes text chunking strategies for RAG pipelines by measuring overlap, sentence integrity, and semantic continuity. |
+| [Resource Model Validation](../mcps/resource-model-validation.md) | Validate mineral resource block models using statistical analysis and spatial swath plots. |
 | [Western Blot Quantification](../mcps/western-blot-quantification.md) | Quantify protein expression from western blot data using densitometry and statistical analysis. |
 
 

@@ -13,6 +13,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [AI Quantization Cost-Benefit Engine](../mcps/ai-quantization-cost-benefit-engine.md) | Evaluate the economic and performance impact of model quantization. |
 | [Animation Frame Timing & Memory Calculator](../mcps/animation-frame-timing-memory-calculator.md) | Calculate animation duration, memory footprint, and optimization potential for skeletal animations. |
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
+| [Blending Optimization Mining](../mcps/blending-optimization-mining.md) | Optimize ore blending using linear programming to meet grade constraints and maximize value. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
 | [CloudFront Cache Analyzer](../mcps/cloudfront-cache-analyzer.md) | Calculate AWS CloudFront cache hit ratios, origin load reduction, and TTL optimization. |
@@ -22,9 +23,11 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Context Window Economics Optimizer](../mcps/context-window-economics-optimizer.md) | Calculate the financial and performance impact of LLM context management strategies. |
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
+| [Drill Pattern Optimization](../mcps/drill-pattern-optimization.md) | Optimize drill hole spacing and configuration based on geological variability and budget. |
 | [Equipment Gear Ratio Optimizer](../mcps/equipment-gear-ratio-optimizer.md) | Optimize kite and board combinations for perfect wind range coverage. |
 | [Glass Cutting Optimizer](../mcps/glass-cutting-optimizer.md) | Deterministic 2D guillotine-style cutting optimizer for industrial glass fabrication. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
+| [Kite Quiver Builder](../mcps/kite-quiver-builder.md) | An intelligent engine that generates the ideal set of kite sizes for riders. |
 | [Konbini Hack Macro Optimizer](../mcps/konbini-hack-macro-optimizer.md) | Find the most cost-effective nutritional hacks in Japanese convenience stores. |
 | [KV Cache Memory Optimizer](../mcps/kv-cache-memory-optimizer.md) | Deterministic calculator for LLM KV cache memory, throughput, and optimization analysis. |
 | [Model Routing Efficiency Calculator](../mcps/model-routing-efficiency-calculator.md) | Optimize LLM selection by analyzing cost-quality trade-offs and task complexity. |
@@ -41,6 +44,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Tick Rate & Bandwidth Calculator](../mcps/tick-rate-bandwidth-calculator.md) | Calculate multiplayer network load, stability, and optimal server configurations. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
+| [Underground Production Scheduler](../mcps/underground-production-scheduler.md) | Optimize mining sequences, development schedules, and resource allocation for underground mines. |
 | [Wave Period Matching](../mcps/wave-period-matching.md) | Synchronize kiteboarding tricks with wave energy and wind gusts. |
 | [Woodworking Cut List Optimizer](../mcps/woodworking-cut-list-optimizer.md) | Minimize lumber waste with deterministic 1D bin packing for cutting plans. |
 

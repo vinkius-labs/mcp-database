@@ -7,6 +7,7 @@ Explore the open database of **entertainment** Model Context Protocol (MCP) serv
 | [Karaoke Scoring Simulator](../mcps/karaoke-scoring-simulator.md) | A deterministic simulator for Japanese karaoke scoring (DAM/JOYSOUND) based on pitch, rhythm, and vibrato. |
 | [Lenormand Draw](../mcps/lenormand-draw.md) | Draw random Lenormand cards and discover traditional pair interpretations. |
 | [Tarot Card Drawer](../mcps/tarot-card-drawer.md) | A cryptographically secure random generator for Tarot card draws, spreads, and deck analysis. |
+| [Zelda Universe Encyclopedia](../mcps/zelda-universe-encyclopedia.md) | The complete Legend of Zelda encyclopedia as an MCP: all 32 games (1986-today), 400+ monsters, bosses, dungeons, items (Master Sword), places and characters — searchable, keyless. |
 
 
 ---

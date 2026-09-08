@@ -6,6 +6,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 |-----------|-------------|
 | [Accessibility Checker](../mcps/accessibility-checker.md) | Verify building compliance against universal accessibility standards (USA/EU) for corridors, ramps, and restrooms. |
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
+| [Backfill Design Calculator](../mcps/backfill-design-calculator.md) | Design underground mine backfill mixes by calculating cement requirements and curing times. |
 | [Basement Waterproofing Designer](../mcps/basement-waterproofing-designer.md) | Technical tool for designing basement waterproofing systems, including membranes and drainage. |
 | [Beam Design Simplified](../mcps/beam-design-simplified.md) | Calculate reinforced concrete beam parameters including steel area, bar selection, and shear reinforcement. |
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |

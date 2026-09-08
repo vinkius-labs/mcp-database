@@ -6,6 +6,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Board Float Time Calculator](../mcps/board-float-time-calculator.md) | Calculate board buoyancy, visibility, and retrieval urgency after a rider fall. |
 | [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
+| [Hydrofoil Mast Selector](../mcps/hydrofoil-mast-selector.md) | Recommends optimal mast length based on rider skill, water depth, and wave conditions. |
 | [Kite Bladder Pressure Safety Engine](../mcps/kite-bladder-pressure-safety-engine.md) | Calculates kite bladder pressure shifts and safety risks from environmental changes. |
 | [Kite Drift Calculator](../mcps/kite-drift-calculator.md) | Calculate kite drift distance, direction, and recovery location. |
 | [Kite Hindenburg Recovery](../mcps/kite-hindenburg-recovery.md) | Calculates impact dynamics and recovery windows for falling kites. |

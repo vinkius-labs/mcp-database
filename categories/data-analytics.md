@@ -13,6 +13,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [AeroAPI (FlightAware)](../mcps/aeroapi-flightaware.md) | Track global flights — audit departures, arrivals, and airports via IA. |
 | [AeroDataBox](../mcps/aerodatabox.md) | Access real-time flight status, airport flight information displays (FIDS), historical flight data, and airport delay statistics directly from your AI agent. |
 | [Agro](../mcps/agro.md) | Monitor agricultural land using satellite imagery, weather data, and soil metrics directly from your AI agent. |
+| [Air France-KLM Flights](../mcps/air-france-klm-flights.md) | Air France-KLM official Open Data APIs: live flight status by route or airport (AF/KL network, delays, gates) and commercial offers search with prices — apikey auth via the AFKL Developer Portal. |
 | [ALESP (Assembleia SP)](../mcps/alesp-assembleia-sp.md) | Access open data from the Legislative Assembly of São Paulo, including deputy info, expenses, and legislative proposals. |
 | [Alpha Vantage](../mcps/alpha-vantage.md) | Access stock market data via Alpha Vantage — get real-time quotes, time series, technical indicators and crypto/forex data from any AI agent. |
 | [Alpha Vantage](../mcps/alpha-vantage-alternative.md) | Access real-time and historical stock market data, financial statements, and economic indicators directly from your AI agent. |
@@ -29,6 +30,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [API-Futebol (Brazilian Football)](../mcps/api-futebol-brazilian-football.md) | The definitive server for Brazilian football — track Brasileirão, Copa do Brasil, and State Leagues via AI. |
 | [AQICN](../mcps/aqicn.md) | Access real-time Air Quality Index (AQI) data, pollutant levels, and weather conditions from over 30,000 stations worldwide. |
 | [Aracaju](../mcps/aracaju.md) | Access Aracaju's transparency data—revenues, expenses, bids, contracts, and payroll—directly from your AI agent. |
+| [Are.na Visual Research](../mcps/arena-visual-research.md) | Are.na as an MCP: search visual research channels, pull blocks (images, links, text, PDFs) with metadata, explore user collections and research thread maps — public v2 API, no key needed for discovery. |
 | [Asian Development Bank](../mcps/asian-development-bank.md) | Access comprehensive macroeconomic indicators for 49 Asia-Pacific economies — GDP, inflation, trade, population, and more — directly from the ADB. |
 | [Aviationstack](../mcps/aviationstack.md) | Global aviation data platform — track real-time flights, airports, and airline data via AI. |
 | [AviationStack](../mcps/aviationstack-alternative.md) | Real-time flight tracking and global aviation data — monitor flights, routes, airports, and airline schedules directly from any AI agent. |
@@ -43,6 +45,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [BLS Prices — Consumer Price Index (CPI) & Inflation](../mcps/bls-prices-consumer-price-index-cpi-inflation.md) | Access the official source of US inflation data. Retrieve the Consumer Price Index (CPI-U), Producer Price Index (PPI), and precise historic metrics on the cost of living using the BLS v2 API. |
 | [BLS Public Data API](../mcps/bls-public-data-api.md) | Access labor statistics — audit economic series and trends via AI. |
 | [Blur (NFT Trading Marketplace API)](../mcps/blur-nft-trading-marketplace-api.md) | Access real-time NFT market data, floor prices, and execute trades on Blur directly from your AI agent. |
+| [BPstat Banco de Portugal](../mcps/bpstat-banco-de-portugal.md) | Banco de Portugal's official statistics API: interest rates, inflation metrics, monetary aggregates, balance of payments, credit, reserves and national financial accounts — navigable by domain tree, with time-series observations, zero-auth. |
 | [Brasil.io](../mcps/brasilio.md) | Access structured Brazilian public data — query COVID-19 stats, company records, and socio-economic datasets directly from your AI agent. |
 | [Brave New Coin](../mcps/brave-new-coin.md) | Access institutional-grade cryptocurrency data via Brave New Coin — track prices, markets, and historical data directly from any AI agent. |
 | [Brawl Stars](../mcps/brawl-stars.md) | Access real-time Brawl Stars data — track player stats, battle logs, club rankings, and event rotations directly from your AI agent. |
@@ -52,6 +55,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Caiyun Weather / 彩云天气](../mcps/caiyun-weather.md) | China's leading high-precision weather service — get minute-level precipitation and air quality via AI. |
 | [Campinas Open Data](../mcps/campinas-open-data.md) | Access public data from Campinas, Brazil — search datasets, resources, and city organizations directly from your AI agent. |
 | [Campinas Open Data](../mcps/campinas-open-data-alternative.md) | Access public data from Campinas, Brazil — search datasets, resources, and city organizations directly from your AI agent. |
+| [Caterpillar Cat Digital](../mcps/caterpillar-cat-digital.md) | Caterpillar Cat Digital APIs as an MCP: equipment diagnostic services, telemetry billing records and the public Cat AI Assistant configuration — api.cat.com gateway with Bearer auth from the Cat Developer Program. |
 | [CDC WONDER (Epidemiologic Data)](../mcps/cdc-wonder-epidemiologic-data.md) | Access public health data from the CDC WONDER system, including mortality, births, and vaccine adverse events directly through your AI agent. |
 | [Charity Navigator](../mcps/charity-navigator.md) | Search and evaluate US nonprofits — get charity ratings, financial health, advisories and cause data from any AI agent. |
 | [ChartMogul](../mcps/chartmogul.md) | Analyze subscription revenue and SaaS metrics via ChartMogul — track MRR, churn, and customer growth directly from any AI agent. |
@@ -81,6 +85,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [CurrencyBeacon](../mcps/currencybeacon.md) | Access real-time and historical currency exchange rates, perform conversions, and analyze financial time-series data directly. |
 | [CVM Dados Abertos](../mcps/cvm-dados-abertos.md) | Access Brazilian capital markets data directly from the CVM Open Data portal — query investment funds, listed companies, and financial reports. |
 | [Dades Obertes Catalunya](../mcps/dades-obertes-catalunya.md) | Access Catalonia's Open Data portal — search catalogs and query datasets using SoQL to extract public information directly. |
+| [Dados.gov.pt Open Data](../mcps/dadosgovpt-open-data.md) | Portugal's national open data catalog: search 20,000+ datasets from ministries, municipalities and public bodies, inspect resources, preview CSV/JSON data and browse publishing organizations — all zero-auth. |
 | [DappRadar (Web3 Dapp & NFT Analytics)](../mcps/dappradar-web3-dapp-nft-analytics.md) | Access real-time Web3 data via DappRadar — analyze dapps, NFT collections, and blockchain ecosystem metrics directly from your AI agent. |
 | [Data.gov Catalog](../mcps/datagov-catalog.md) | Access the official US Government open data catalog. Search thousands of datasets, organizations, and spatial data directly from your AI agent. |
 | [Databox](../mcps/databox.md) | Visualize KPIs from hundreds of data sources in custom dashboards that keep your entire team focused on what matters. |
@@ -94,6 +99,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [DOD Contracts (FPDS)](../mcps/dod-contracts-fpds.md) | Search and analyze Department of Defense (DOD) and federal contracts via the FPDS Atom Feed directly from your AI agent. |
 | [DOT Transportation / 美国交通部](../mcps/dot-transportation.md) | Official U.S. DOT transportation data — decode VINs, check safety recalls, and audit ratings via AI. |
 | [Douyu](../mcps/douyu.md) | Automate game broadcasting metrics via the Douyu API — monitor live streamer activity, track esports massive bullet-chats, and extract audience retention natively from any AI agent. |
+| [Dribbble Discovery](../mcps/dribbble-discovery.md) | Dribbble design discovery as an MCP: popular and recent shots, full shot details, designer portfolios, user profiles and design studio teams — official API v2 read-only (OAuth Bearer, 60 req/min). |
 | [Dune Analytics (Web3 SQL Analytics API)](../mcps/dune-analytics-web3-sql-analytics-api.md) | Execute SQL queries on blockchain data via Dune Analytics — track executions, fetch results, and analyze Web3 metrics directly from your AI agent. |
 | [eBird](../mcps/ebird.md) | Access real-time bird sightings, hotspots, and taxonomic data from the global eBird database directly from your AI agent. |
 | [EIA Coal & Mining — Solid Fuels Intelligence](../mcps/eia-coal-mining-solid-fuels-intelligence.md) | U.S. coal industry data: mine-level production for every operating mine, market prices by rank (bituminous, subbituminous, lignite, anthracite), quality metrics (heat, sulfur, ash), international trade, reserves, and nuclear facility outages. |
@@ -158,11 +164,13 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [IEX Cloud](../mcps/iex-cloud.md) | Access real-time and historical financial data, stock quotes, crypto, and market metrics directly from your AI agent. |
 | [Image-Charts](../mcps/image-charts.md) | Generate professional charts, graphs, and QR codes instantly — transform raw data into high-quality images directly within your AI conversations. |
 | [ImageCharts](../mcps/imagecharts.md) | Generate charts and graphs as images from URL parameters with a simple API that creates data visualizations on the fly. |
+| [INE Portugal Official Statistics](../mcps/ine-portugal-official-statistics.md) | Statistics Portugal (INE) official indicator API: CPI, unemployment, population, GDP, wages and hundreds of series broken down by NUTS regions and all 3000+ municipalities — keyless, no registration. |
 | [Inep Dados Abertos](../mcps/inep-dados-abertos.md) | Access official Brazilian educational data from INEP — query Censo Escolar, ENEM, and higher education statistics directly. |
 | [Interest Amortization Engine](../mcps/interest-amortization-engine.md) | Generate exact SAC and Price (French) amortization schedules for real estate litigation. |
 | [Intrinio](../mcps/intrinio.md) | Access real-time and historical financial market data via Intrinio API. |
 | [ItemPath](../mcps/itempath.md) | Manage inventory, materials, and orders via ItemPath API. |
 | [Japan e-Stat](../mcps/japan-e-stat.md) | Query official Japanese government statistics — population, GDP, industry, trade, employment, and more — from the e-Stat national database. |
+| [Johnson Controls Metasys](../mcps/johnson-controls-metasys.md) | Johnson Controls Metasys building automation as an MCP: browse the object tree, live alarms with annotations, equipment, network devices and spaces — official REST API v4 with bearer JWT auth. |
 | [JSONCargo Maritime](../mcps/jsoncargo-maritime.md) | Track global vessels — audit voyages and ports via AI. |
 | [KeepTrack Space Intelligence](../mcps/keeptrack-space-intelligence.md) | Universal space intelligence — search satellites, orbital debris, and launches via AI. |
 | [Kelley Blue Book Valuation](../mcps/kelley-blue-book-valuation.md) | Get vehicle valuations and market data via Kelley Blue Book — search cars, get trade-in values, and fair market pricing. |
@@ -173,12 +181,16 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Legal Fees Apportionment Engine](../mcps/legal-fees-apportionment-engine.md) | Split judicial awards and attorney fees across multiple parties with exact, auditable proportional math. |
 | [LegiScan Legislation Lookup](../mcps/legiscan-legislation-lookup.md) | Universal legislative intelligence — search bills, votes, and state laws via AI. |
 | [lemon.markets](../mcps/lemonmarkets.md) | Trade European stocks and ETFs and access real-time market data via lemon.markets. |
+| [Letterboxd](../mcps/letterboxd.md) | Letterboxd API v0 as an MCP: film search, full film details with rating histograms, member profiles and diaries — official HMAC-SHA256 signed API (access granted by request). |
 | [Liftoff](../mcps/liftoff.md) | Access mobile advertising performance reports and metadata via the Liftoff REST API. |
 | [Logflare (Log Management Analytics)](../mcps/logflare-log-management-analytics.md) | Streamline log management and analytics via Logflare — ingest events, execute ad-hoc SQL queries, and trigger pre-configured endpoints directly from your AI agent. |
 | [LTV Cohort Calculator](../mcps/ltv-cohort-calculator.md) | Calculate Customer Lifetime Value (LTV) for any acquisition cohort, projecting future revenue trends. |
 | [Lucidya](../mcps/lucidya.md) | Monitor social media, analyze sentiment, and manage customer data via the Lucidya API. |
+| [Lufthansa Open API](../mcps/lufthansa-open-api.md) | The official Lufthansa Open API as an MCP: airport/country/airline reference data, nearest-airports, flight schedules, live flight status by flight or route, and lounge finders — OAuth client_credentials auth. |
 | [LunarCrush (Social Intelligence for Crypto Assets)](../mcps/lunarcrush-social-intelligence-for-crypto-assets.md) | Access real-time social intelligence for crypto assets — track Galaxy Scores, AltRank, and market sentiment directly from your AI agent. |
 | [MACD & RSI Oscillator Engine](../mcps/macd-rsi-oscillator-engine.md) | Calculate exact MACD and Relative Strength Index (RSI) technical indicators local for quantitative analysis. |
+| [Maersk Shipping](../mcps/maersk-shipping.md) | Maersk container shipping APIs as an MCP: shipment tracking by container/waybill, waybill document lookup, ocean products, locations, vessel schedules, port calls and deadlines — api.maersk.com with Basic/Bearer integration auth. |
+| [Magic: The Gathering Cards & Sets](../mcps/magic-the-gathering-cards-sets.md) | Magic: The Gathering as an MCP: search 30+ years of cards across 500+ sets by name/color/CMC/type, browse sets, resolve Gatherer ids, check types — and open virtual booster packs from Alpha to today. Keyless. |
 | [MapQuest](../mcps/mapquest.md) | Mapping and location services via MapQuest — geocoding, directions, and POI search. |
 | [Mapulus](../mcps/mapulus.md) | Mapulus Location Intelligence for Australia — access boundaries, demographics, and spatial analytics. |
 | [Marketaux](../mcps/marketaux.md) | Financial news and stock market intelligence — track global market sentiment and trending news. |
@@ -206,6 +218,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Netrows](../mcps/netrows.md) | Track global flights via Netrows Aviation API — search flights, monitor aircraft, check airport data, and access airline schedules from any AI agent. |
 | [NHL](../mcps/nhl.md) | Access real-time NHL scores, schedules, standings, and player statistics directly from your AI agent. |
 | [NIH RePORTER (Research Funding)](../mcps/nih-reporter-research-funding.md) | Access the NIH RePORTER database to search for research projects, funding details, and associated publications. |
+| [Nokia NSP Network APIs](../mcps/nokia-nsp-network-apis.md) | Nokia Network Services Platform as an MCP: network inventory, nodes, active alarms, topology and device OAM (ping/traceroute) across SR OS / SR Linux networks — official NSP REST APIs with OAuth2 client_credentials. |
 | [NREL Solar Resource](../mcps/nrel-solar-resource.md) | Access NREL's solar irradiance data and National Solar Radiation Database (NSRDB) information for any US location directly from your AI agent. |
 | [Nutritionix](../mcps/nutritionix.md) | Analyze food nutrition from natural language using the industry-leading NLP engine — type any meal description and get instant, precise calorie and macro data. |
 | [NWS (National Weather Service)](../mcps/nws-national-weather-service.md) | Access real-time weather data, forecasts, and active alerts directly from the National Weather Service. |
@@ -229,6 +242,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [OpenFEC (Federal Election Commission)](../mcps/openfec-federal-election-commission.md) | Access real-time federal campaign finance data — search candidates, track committee filings, and analyze election financial totals directly. |
 | [OpenLigaDB](../mcps/openligadb.md) | Manage football results — audit match data, standings, and leagues via AI. |
 | [OpenSky](../mcps/opensky.md) | Access real-time and historical global flight tracking data — monitor aircraft states, flight trajectories, and airport traffic directly from your AI agent. |
+| [OpenTable Partner](../mcps/opentable-partner.md) | OpenTable partner APIs as an MCP: real-time table availability, booking policies, reservation feeds, guest CRM sync, POS data and diner reviews — official platform API with OAuth2 client_credentials. |
 | [OpenWeatherMap](../mcps/openweathermap.md) | Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap. |
 | [Optimizely](../mcps/optimizely.md) | Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent. |
 | [Oura](../mcps/oura.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
@@ -261,6 +275,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Redash](../mcps/redash.md) | Connect to Redash to manage SQL queries, execute data visualizations, and monitor dashboards directly from your AI agent. |
 | [Reservoir (NFT Liquidity API)](../mcps/reservoir-nft-liquidity-api.md) | Access aggregated NFT liquidity, metadata, and real-time pricing across all major marketplaces via the Reservoir API. |
 | [Road511](../mcps/road511.md) | Access real-time US and Canada traffic data via Road511 — track incidents, monitor cameras, check road conditions, and analyze trends from any AI agent. |
+| [Rockwell Automation Catalog](../mcps/rockwell-automation-catalog.md) | Rockwell Automation Experience (X) APIs as an MCP: universal search across the product catalog (ControlLogix, PowerFlex, PanelView...) and the partner directory (System Integrators, distributors) — api.rockwellautomation.com with OAuth2 client auth. |
 | [Rondônia Dados Abertos](../mcps/rondonia-dados-abertos.md) | Access official open data from the State of Rondônia — query datasets, transparency records, payroll, and public spending. |
 | [SafeCube Container Tracking](../mcps/safecube-container-tracking.md) | Track maritime containers — audit shipments and events via AI. |
 | [SafeGraph](../mcps/safegraph.md) | Integrate SafeGraph's premier geospatial dataset into your AI. Discover detailed POIs, analyze foot traffic patterns, and process precise building geometries seamlessly from conversational prompts. |
@@ -273,11 +288,14 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [SerpApi](../mcps/serpapi-extended.md) | Access real-time search engine results from Google, Bing, and more via SerpApi — perform structured searches, find locations, and monitor account usage. |
 | [Serper](../mcps/serper-alternative.md) | Perform fast Google searches — audit web results, images, news, and places via AI. |
 | [SERPHouse](../mcps/serphouse.md) | Grant your AI agent unfiltered real-time access to Google and Bing SERP data to scrape organic search results and dynamic pricing. |
+| [Siemens Insights Hub (Industrial IoT)](../mcps/siemens-insights-hub-industrial-iot.md) | Siemens Insights Hub (formerly MindSphere) as an MCP: industrial assets, asset types, IoT time series of sensor data, latest values and event management — official Technical Token Manager auth (X-SPACE-AUTH-KEY). |
 | [Sigma Computing](../mcps/sigma-computing.md) | Equip your AI agent to audaciously navigate your Sigma data workflows. List core workbooks, map connections, trace dataset lineage, and monitor organization teams directly from your IDE. |
 | [Simple Analytics](../mcps/simple-analytics.md) | Privacy-first web analytics without cookies. Fetch aggregated stats, export raw data, and manage your websites directly from your AI agent. |
 | [SITA Airport Reference API](../mcps/sita-airport-reference-api.md) | Query global airport infrastructure data — IATA codes, terminals, gates, and reference metadata via AI. |
+| [SNS Portugal Health Transparency](../mcps/sns-portugal-health-transparency.md) | Official Portuguese national health service (SNS) open data: SNS24 calls, consultations, surgeries, transplants, blood donors, clinical trials, medicines and the SNS budget — queryable with filters and pagination, zero-auth. |
 | [SolarAnywhere API](../mcps/solaranywhere-api.md) | Monitor solar data — audit irradiance and sites via AI. |
 | [South Korea KOSIS](../mcps/south-korea-kosis.md) | Query official South Korean government statistics — demographics, GDP, trade, technology, and industry — from the KOSIS national database. |
+| [Space Launches & Astronauts](../mcps/space-launches-astronauts.md) | Every rocket launch on Earth, as an MCP: upcoming and past launches (SpaceX, NASA, Roscosmos, CASC...), astronauts in orbit, agencies, rocket specs — Launch Library 2, anonymous or with API token for high rate limits. |
 | [SportDB](../mcps/sportdb.md) | Access live scores, standings, fixtures, and player data across football, basketball, hockey, and tennis from any AI agent. |
 | [SportsDB](../mcps/sportsdb.md) | Access global sports data via AI — search teams, players, and events, track scores, league tables, and match history across 200+ leagues. |
 | [SPTrans Olho Vivo](../mcps/sptrans-olho-vivo.md) | Access real-time public transit data for São Paulo — track bus positions, check arrival forecasts, and locate stops across the city. |
@@ -298,6 +316,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [ThinkingData / 数数科技](../mcps/thinkingdata.md) | Dominant games and app analytics platform — query events, audit users, and track data via AI. |
 | [ThoughtSpot](../mcps/thoughtspot.md) | Search and analyze business data by interacting directly with your ThoughtSpot metadata and Liveboards via your AI agent. |
 | [TokenTerminal (Crypto Financial Data)](../mcps/tokenterminal-crypto-financial-data.md) | Access institutional-grade crypto financial data — query project metrics, track revenue, and analyze market trends directly from your AI agent. |
+| [Tokyo Open Data Portal](../mcps/tokyo-open-data-portal.md) | Tokyo Metropolitan Government's official open data portal: 9,600+ datasets on disaster prevention, tourism, transport (Toei subway), health, environment and the city budget — searchable with pagination, keyless. |
 | [TollGuru](../mcps/tollguru-alternative.md) | Global toll intelligence — calculate costs by address, coordinates, polyline, or GPS tracks with fuel estimates and multi-vehicle support. |
 | [TollGuru](../mcps/tollguru.md) | Calculate tolls and trip costs via TollGuru — get toll plaza details, fuel costs, and route optimization for any route across 50+ countries from any AI agent. |
 | [Tomorrow.io](../mcps/tomorrowio-plus.md) | Access hyper-local weather data, real-time conditions, forecasts, and historical weather directly from your AI agent. |
@@ -325,8 +344,10 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Weatherbit](../mcps/weatherbit.md) | Get real-time weather, forecasts, historical data, severe alerts and air quality for any location worldwide. |
 | [Weatherbit](../mcps/weatherbit-alternative.md) | Access real-time weather data, 16-day forecasts, air quality metrics, and severe weather alerts globally. |
 | [Wenjuanxing / 问卷星](../mcps/wenjuanxing.md) | Leading online survey and form platform in China — manage questionnaires, responses, and reports via AI. |
+| [Whisky Auction Market](../mcps/whisky-auction-market.md) | The whisky collectibles market as an MCP: real auction data for 160 distilleries (Macallan, Ardbeg, Yamazaki) — monthly bid min/mean/max, trading volumes, price spikes and global market overview. Keyless. |
 | [WHO Athena API](../mcps/who-athena-api.md) | Access global health data — audit indicators and trends via AI. |
 | [Wootric](../mcps/wootric.md) | Manage Wootric customer feedback — track end users, survey responses, and declines directly from your AI agent. |
+| [Workday Talent & Skills](../mcps/workday-talent-skills.md) | Workday Talent & Skills Cloud as an MCP: people directory, direct reports, inbox tasks, worker skills (read + write) and organization headcount — official REST API v3 with OAuth 2.0 refresh-token auth. |
 | [World Bank Education & Health](../mcps/world-bank-education-health.md) | Retrieve global life expectancy, infant mortality, literacy rates, and social welfare statistics without any authentication. |
 | [Zengain](../mcps/zengain.md) | Identify high-intent website visitors by company and reach out to warm leads before they fill out a form or contact you. |
 | [Zenserp](../mcps/zenserp.md) | Scrape live search engine results (SERP) from Google, Bing, Yandex, and DuckDuckGo using Zenserp's high-speed API. |

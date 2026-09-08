@@ -408,7 +408,6 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Moesif](../mcps/moesif.md) | Monitor and analyze API traffic with Moesif — log events, track user/company profiles, and query API analytics directly from your AI agent. |
 | [Moonriver (Moonriver Block Explorer API)](../mcps/moonriver-moonriver-block-explorer-api.md) | Query Moonriver blockchain data—blocks, transactions, account balances, and EVM tokens—directly from your AI agent. |
 | [Moonscan (Moonbeam Network Explorer)](../mcps/moonscan-moonbeam-network-explorer.md) | Access Moonbeam blockchain data via Moonscan — check GLMR balances, track transactions, and inspect smart contracts directly from any AI agent. |
-| [Multi-Agent Coordination Pattern Validator](../mcps/multi-agent-coordination-pattern-validator.md) | Validates structural and logical integrity of multi-agent orchestration patterns. |
 | [Multi-Modal Token Calculator](../mcps/multi-modal-token-calculator.md) | Deterministic token estimation for text, image, and audio across major LLM architectures. |
 | [N-Gram Frequency Engine](../mcps/n-gram-frequency-engine.md) | Exact deterministic unigram, bigram, and trigram counting over huge texts. Save tokens and guarantee 100% accurate phrase counts. |
 | [Nakama](../mcps/nakama.md) | Automate your game backend via Nakama — manage authentication, user profiles, social features, and storage directly from any AI agent. |
@@ -600,7 +599,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Task IO Mapping Validator](../mcps/task-io-mapping-validator.md) | Validates data continuity and key mapping between sequential tasks in AI agent pipelines. |
 | [Tatum (Blockchain Infra)](../mcps/tatum-blockchain-infra.md) | Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains. |
 | [Tenderly (Ethereum Dev Platform)](../mcps/tenderly-ethereum-dev-platform.md) | Simulate Ethereum transactions, create Virtual TestNets, and monitor on-chain events directly from your AI agent. |
-| [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Detects empty or ineffective test scaffolding by calculating the ratio of assertions to test blocks. |
+| [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Measure the ratio of test assertions to test cases to identify ineffective or empty test scaffolding. |
 | [Test Coverage Analyzer](../mcps/test-coverage-analyzer.md) | Analyze test coverage and identify high-risk untested code using AST analysis. |
 | [test-regression-runner](../mcps/test-regression-runner.md) | Automated verification system that executes targeted test suites and detects regressions or flakiness. |
 | [Testim](../mcps/testim.md) | Trigger automated AI tests, inspect execution logs, and manage branches natively via your AI agent. |

@@ -8,6 +8,7 @@ Explore the open database of **ai-agents** Model Context Protocol (MCP) servers.
 | [Agent Memory Optimization Calculator](../mcps/agent-memory-optimization-calculator.md) | Optimize agentic memory hierarchies with precise allocation and decay analysis. |
 | [Agent Semantic Deduplication Engine](../mcps/agent-semantic-deduplication-engine.md) | A deterministic tool for calculating semantic similarity and deduplicating multi-agent outputs. |
 | [Agent Token Budget Allocator](../mcps/agent-token-budget-allocator.md) | Deterministic token budget allocation for multi-agent pipelines. |
+| [Multi-Agent Coordination Pattern Validator](../mcps/multi-agent-coordination-pattern-validator.md) | A diagnostic engine to validate the structural integrity and logical flow of multi-agent orchestration patterns. |
 | [Token Budget Allocation Optimizer](../mcps/token-budget-allocation-optimizer.md) | Distribute and optimize token budgets across multi-agent pipelines. |
 
 

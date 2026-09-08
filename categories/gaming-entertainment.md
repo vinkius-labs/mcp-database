@@ -4,6 +4,7 @@ Explore the open database of **gaming-entertainment** Model Context Protocol (MC
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Minecraft Server Status & Players](../mcps/minecraft-server-status-players.md) | Minecraft live infrastructure as an MCP: Java + Bedrock server status (player counts, MOTD, versions), player profile/UUID lookup, skin renders and the official 910-version Mojang manifest — keyless. |
 | [TheCocktailDB](../mcps/thecocktaildb-extended.md) | Access a massive database of cocktail recipes and ingredients — search by name, filter by alcohol content, and discover new drinks. |
 | [Tronald Dump](../mcps/tronald-dump.md) | Access the world's smartest database of Donald Trump quotes. Search by tag, keyword, or get random insights directly in your AI agent. |
 | [Untappd](../mcps/untappd.md) | Track beers, breweries, and venues. Access check-in feeds, beer metadata, and manage your social drinking profile directly from your AI agent. |

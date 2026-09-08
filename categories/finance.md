@@ -117,7 +117,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Prompt Caching Economics](../mcps/ai-prompt-caching-economics.md) | Calculate the financial impact and ROI of LLM prompt caching strategies. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
-| [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Decomposes AI feature costs into actionable unit economics. |
+| [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Calculate cost per active user and scaling efficiency for AI platforms. |
 | [AI SaaS Gross Margin Analyzer](../mcps/ai-saas-gross-margin-analyzer.md) | Calculate and project gross margins for AI SaaS businesses, including AI API and compute costs. |
 | [AI SaaS Unit Economics Engine](../mcps/ai-saas-unit-economics-engine.md) | Calculate LTV, LTV:CAC, and AI cost impact for AI-driven SaaS models. |
 | [AI Safety & Alignment Cost Analyzer](../mcps/ai-safety-alignment-cost-analyzer.md) | Quantify the financial investment required for AI safety, alignment, and risk mitigation. |
@@ -224,6 +224,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Currency Converter Fixed](../mcps/currency-converter-fixed.md) | Deterministic historical currency conversion using ECB rates. |
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
+| [Cut-Off Grade Optimization](../mcps/cut-off-grade-optimization.md) | Optimize mining cut-off grades to maximize NPV and production efficiency. |
 | [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [DeFi Options Strategy Engine](../mcps/defi-options-strategy-engine.md) | Deterministic volatility trading signals for DeFi options protocols. |
@@ -285,6 +286,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Enterprise Sales Capacity Planner](../mcps/enterprise-sales-capacity-planner.md) | Calculate sales headcount, revenue capacity, and hiring timelines. |
 | [Enterprise TCV Calculator](../mcps/enterprise-tcv-calculator.md) | Calculate Total Contract Value, revenue splits, and expected lifetime value for enterprise contracts. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
+| [Equipment Replacement Analysis](../mcps/equipment-replacement-analysis.md) | Determine the optimal timing for industrial equipment replacement using economic lifecycle modeling. |
 | [ETF Arbitrage Strategy](../mcps/etf-arbitrage-strategy.md) | Identify and quantify arbitrage opportunities between ETF market prices and NAV. |
 | [EU Employment Termination Calculator](../mcps/eu-employment-termination-calculator.md) | Estimate statutory severance pay for Germany, France, Spain, and Portugal. |
 | [EU GDPR Fine Estimator](../mcps/eu-gdpr-fine-estimator.md) | Estimate potential GDPR administrative fines based on violation type and annual turnover. |
@@ -485,6 +487,18 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Mean-Reversion Ensemble Strategy](../mcps/mean-reversion-ensemble-strategy.md) | An algorithmic trading engine that uses an ensemble of RSI, Bollinger Bands, and Z-Score to identify high-probability mean-reversion entries. |
 | [Media Mix Efficiency Calculator](../mcps/media-mix-efficiency-calculator.md) | Calculate channel efficiency (CPL, CPA, ROAS) and get a data-driven budget reallocation plan to maximize conversions. |
 | [Merger Arbitrage Strategy](../mcps/merger-arbitrage-strategy.md) | A deterministic risk arbitrage engine for evaluating merger deals and generating buy/short signals. |
+| [Metal Price Forecast Model](../mcps/metal-price-forecast-model.md) | Generates metal price trajectories and economic scenario probabilities. |
+| [Mine Breakeven Analysis](../mcps/mine-breakeven-analysis.md) | Calculate economic thresholds for mining operations. |
+| [Mine Capital Cost Estimator](../mcps/mine-capital-cost-estimator.md) | Calculates pre-production and sustaining CAPEX for mining projects. |
+| [Mine Closure Cost Estimator](../mcps/mine-closure-cost-estimator.md) | Calculate total financial liability for mine closure, including remediation and monitoring. |
+| [Mine Dewatering Cost Estimator](../mcps/mine-dewatering-cost-estimator.md) | Calculate capital, power, and operating costs for mine dewatering systems. |
+| [Mine Operating Cost Estimator](../mcps/mine-operating-cost-estimator.md) | Calculate annual mining costs, cost per tonne, and detailed expense breakdowns. |
+| [Mine Water Treatment Cost Estimator](../mcps/mine-water-treatment-cost-estimator.md) | Estimates lifecycle costs for mine water treatment based on volume and contaminants. |
+| [Mineral Property Valuation Engine](../mcps/mineral-property-valuation-engine.md) | Computes mineral asset values using DCF, market multiples, and risk adjustments. |
+| [Mining Joint Venture Structuring Engine](../mcps/mining-joint-venture-structuring-engine.md) | Design and simulate mining joint venture agreements by modeling capital, equity, and governance. |
+| [Mining Project NPV Analysis](../mcps/mining-project-npv-analysis.md) | Financial feasibility analysis for mining projects using DCF modeling. |
+| [Mining Project Risk Analysis](../mcps/mining-project-risk-analysis.md) | Perform Monte Carlo simulations to assess financial risk and uncertainty in mining projects. |
+| [Mining Tax Regime Analysis](../mcps/mining-tax-regime-analysis.md) | Quantify fiscal impact, government take, and effective tax rates for mining projects. |
 | [Momentum Factor Strategy](../mcps/momentum-factor-strategy.md) | A deterministic cross-sectional momentum engine for generating long/short signals. |
 | [Momentum Reversal Strategy](../mcps/momentum-reversal-strategy.md) | A deterministic contrarian strategy to identify beaten-down assets and overextended momentum. |
 | [Momentum Strategy Engine](../mcps/momentum-strategy-engine.md) | Deterministic multi-factor momentum strategy for generating actionable trading signals. |
@@ -560,6 +574,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Real Estate ROI Analyzer](../mcps/real-estate-roi-analyzer.md) | Analyze investment property performance, cash flow, and long-term tax benefits. |
 | [Reasoning Model Economics](../mcps/reasoning-model-economics.md) | Financial modeling for reasoning-intensive LLM economics. |
+| [Reclamation Bond Calculator](../mcps/reclamation-bond-calculator.md) | Calculates financial security requirements for land reclamation. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
 | [Relative Strength Strategy](../mcps/relative-strength-strategy.md) | A deterministic momentum strategy identifying assets outperforming a benchmark. |
@@ -582,6 +597,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Rogers-Satchell Volatility Calculator](../mcps/rogers-satchell-volatility-calculator.md) | Deterministic, drift-independent volatility estimation using OHLC data. |
 | [Roll Yield Strategy Engine](../mcps/roll-yield-strategy-engine.md) | A deterministic signal engine for capturing returns from futures curve structures. |
 | [Round Robin Generator](../mcps/round-robin-generator.md) | Generate all possible smaller parlays from a larger set of bets. |
+| [Royalty Calculation Mining](../mcps/royalty-calculation-mining.md) | Calculates mining royalty obligations using ad valorem and unit-based methods. |
 | [RSI Calculator](../mcps/rsi-calculator.md) | Deterministic Relative Strength Index (RSI) calculator with smoothing and divergence detection. |
 | [RSI Divergence Strategy](../mcps/rsi-divergence-strategy.md) | Identify bullish and bearish RSI divergence signals for mean-reversion trading. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
@@ -598,6 +614,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Secondary Market Liquidity Accelerator](../mcps/secondary-market-liquidity-accelerator.md) | Estimates cash value and optimal exit timing for private equity stakes. |
 | [Secondhand Value Calculator](../mcps/secondhand-value-calculator.md) | Estimate the current market value and optimal resale strategy for used items. |
 | [Security Deposit Deductor](../mcps/security-deposit-deductor.md) | Calculate security deposit refunds by itemizing repair costs. |
+| [Sensitivity Analysis for Mining](../mcps/sensitivity-analysis-for-mining.md) | Evaluate NPV fluctuations and project risks through parameter sensitivity analysis. |
 | [Sensitivity Analysis Matrix](../mcps/sensitivity-analysis-matrix.md) | Generates sensitivity matrices for price and yield combinations to identify profit/loss zones. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |

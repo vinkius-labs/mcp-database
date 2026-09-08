@@ -11,6 +11,7 @@ Explore the open database of **audio-music** Model Context Protocol (MCP) server
 | [Deezer](../mcps/deezer.md) | Search music, browse artists, albums and playlists, and explore charts via AI. |
 | [Last.fm](../mcps/lastfm-alternative.md) | Manage your music profile via Last.fm — get track metadata, scrobble songs, update your now playing status, and query user profiles. |
 | [Lyrics.ovh](../mcps/lyricsovh.md) | Retrieve song lyrics and music suggestions instantly. Search by artist and title or explore suggestions for any search term. |
+| [Mixcloud Shows & Mixes](../mcps/mixcloud-shows-mixes.md) | Mixcloud as an MCP: search DJ mixes, radio shows and podcasts, get full cloudcast details with tracklists, browse uploader catalogues and 38 genre categories — public read-only API, no key needed. |
 | [MusicBrainz](../mcps/musicbrainz.md) | Explore the open music encyclopedia — search artists, albums, tracks, labels and musical works. |
 | [Musixmatch](../mcps/musixmatch.md) | Largest music lyrics database — search tracks, retrieve lyrics, and identify artists via AI. |
 | [Musixmatch](../mcps/musixmatch-alternative.md) | Access the world's largest lyrics database — search tracks, retrieve synchronized subtitles, and explore global music charts directly from your AI agent. |

@@ -105,6 +105,7 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [String](../mcps/string.md) | Engage mobile app users with targeted push notifications, in-app messages, and behavioral triggers that improve retention. |
 | [String Alternative](../mcps/string-alternative.md) | Engage mobile app users with targeted push notifications, in-app messages, and behavioral triggers that improve retention. |
 | [Submail / 赛邮云](../mcps/submail.md) | Powerful SMS, Email, and Voice communication platform — orchestrate multi-channel messaging via AI. |
+| [SurveyMonkey Insights & Automation](../mcps/surveymonkey-insights-automation.md) | The automation side of SurveyMonkey: real-time response webhooks, contacts CRM with bulk import, organization/seat info, survey response trends and account checks — official API v3, OAuth long-lived token. |
 | [Swiftfox](../mcps/swiftfox.md) | Generate product mockups and marketing visuals instantly with AI that places your designs on real-world backgrounds. |
 | [Symbl.ai](../mcps/symblai.md) | Extract conversation intelligence from audio, video, and text — get summaries, action items, and topics directly from any AI agent. |
 | [Tatango](../mcps/tatango.md) | Run high-volume SMS and MMS campaigns for enterprise marketing with compliance tools that keep you TCPA-safe at scale. |

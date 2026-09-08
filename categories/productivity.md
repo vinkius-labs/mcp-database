@@ -380,6 +380,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Enterprise SDR Productivity Metrics](../mcps/enterprise-sdr-productivity-metrics.md) | Calculate SDR efficiency, capacity, and performance benchmarks for enterprise sales teams. |
 | [EnterpriseAlumni](../mcps/enterprisealumni.md) | Equip your AI agent to manage alumni networks, track engagement, and monitor member profiles via the EnterpriseAlumni API. |
 | [Envoy](../mcps/envoy.md) | Manage workplace operations via Envoy — register visitors, book desks and rooms, track deliveries, and monitor office capacity directly from any AI agent. |
+| [Equipment Availability Analysis](../mcps/equipment-availability-analysis.md) | Quantify industrial equipment performance using availability, utilization, and OEE metrics. |
 | [Equity Split Calculator](../mcps/equity-split-calculator.md) | Calculate fair ownership distribution among co-founders using weighted factors or dynamic slicing. |
 | [Ergonomic Workstation Calculator](../mcps/ergonomic-workstation-calculator.md) | Generates precise ergonomic workstation configurations based on anthropometric measurements. |
 | [Espresso Extraction Calculator](../mcps/espresso-extraction-calculator.md) | Calculate espresso extraction yield, brew ratio, and dose adjustments. |

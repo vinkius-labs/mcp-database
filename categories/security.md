@@ -71,6 +71,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
 | [URL SSRF Prevention Validator](../mcps/url-ssrf-prevention-validator.md) | Prevents SSRF attacks by validating URL schemes and blocking internal IP ranges. |
 | [Vigenère Cipher Engine](../mcps/vigenere-cipher-engine.md) | Deterministic Vigenère cipher encoder and decoder that preserves text formatting. |
+| [Vodafone Network APIs (CAMARA)](../mcps/vodafone-network-apis-camara.md) | Vodafone Developer Marketplace network APIs as an MCP: phone number verification, SIM swap detection (fraud), device status/location — CAMARA-compliant official APIs with OAuth2 client_credentials. |
 | [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator-alternative.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
