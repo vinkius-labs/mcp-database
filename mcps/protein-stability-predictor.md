@@ -14,10 +14,10 @@ This MCP server provides specialized tools for analyzing the thermodynamic and k
 
 
 ## Available Tools (4)
-- **estimate_shelf_life**: Predicts how long a protein remains stable under specific storage conditions
-- **evaluate_formulation_impact**: Compares how different buffer compositions affect the protein's stability
-- **predict_thermal_stability**: Determines the temperature at which a protein undergoes significant unfolding
 - **calculate_aggregation_risk**: Evaluates the likelihood of the protein forming insoluble aggregates
+- **estimate_shelf_life**: Predicts how long a protein remains stable under specific storage conditions
+- **predict_thermal_stability**: Determines the temperature at which a protein undergoes significant unfolding
+- **evaluate_formulation_impact**: Compares how different buffer compositions affect the protein's stability
 
 
 ## 💬 Prompt Examples

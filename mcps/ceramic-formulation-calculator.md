@@ -14,8 +14,8 @@ This MCP server provides specialized tools for ceramic engineers to design preci
 
 
 ## Available Tools (4)
-- **calculate_batch_composition**: Determines the necessary quantities of raw materials to achieve a specific target oxide profile
 - **calculate_glaze_compatibility**: Evaluates if a proposed glaze formulation is chemically and physically compatible with a ceramic body
+- **calculate_batch_composition**: Determines the necessary quantities of raw materials to achieve a specific target oxide profile
 - **calculate_thermal_expansion**: Calculates the Coefficient of Thermal Expansion (CTE) for a given chemical formulation
 - **predict_sintering_temperature**: Estimates the temperature at which a specific formulation will undergo significant densification
 

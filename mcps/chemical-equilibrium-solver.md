@@ -15,9 +15,9 @@ This MCP server provides computational tools to solve complex chemical equilibri
 
 ## Available Tools (4)
 - **solve_equilibrium**: Calculates the final concentrations of all species once the system reaches equilibrium
+- **get_species_distribution**: Generates data points representing how species concentrations change relative to a specific parameter
 - **summarize_equilibrium_state**: Provides a high-level qualitative summary of the equilibrium state
 - **validate_system_consistency**: Checks if the provided set of reactions and initial conditions represent a mathematically solvable and physically possible chemical system
-- **get_species_distribution**: Generates data points representing how species concentrations change relative to a specific parameter
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides precise chemical energy calculations. Use `calculate_to
 
 
 ## Available Tools (4)
-- **compare_bond_strengths**: Compares two or more bond types to identify which is stronger or weaker
-- **calculate_total_bond_energy**: Calculates the total energy required to break all bonds in a given set of molecules or a list of specific bonds
 - **calculate_reaction_enthalpy**: Determines the enthalpy of a chemical reaction by comparing the energy used to break reactant bonds against the energy released by forming product bonds
 - **get_bond_dissociation_energy**: Provides the energy required to break a specific single bond, allowing the user to distinguish between average values and specific molecular bond strengths
+- **calculate_total_bond_energy**: Calculates the total energy required to break all bonds in a given set of molecules or a list of specific bonds
+- **compare_bond_strengths**: Compares two or more bond types to identify which is stronger or weaker
 
 
 ## 💬 Prompt Examples

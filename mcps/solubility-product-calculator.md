@@ -14,9 +14,9 @@ This MCP server provides specialized chemical tools for analyzing solubility equ
 
 
 ## Available Tools (4)
-- **calculate_ksp**: Determines the solubility product constant when ion concentrations are provided
 - **predict_precipitation**: Predicts whether a precipitate will form given a set of ion concentrations
 - **calculate_molar_solubility**: Calculates the maximum molar solubility of a salt given its Ksp and the presence of common ions
+- **calculate_ksp**: Determines the solubility product constant when ion concentrations are provided
 - **calculate_solubility_with_complexation**: Calculates the increased molar solubility of a salt when a complex-forming ligand is present
 
 

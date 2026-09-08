@@ -14,9 +14,9 @@ This MCP server provides specialized tools for processing and analyzing flow cyt
 
 
 ## Available Tools (4)
-- **apply_compensation**: Adjusts fluorescence data to correct for spectral overlap between fluorophores
 - **analyze_populations**: Calculates the percentage and statistical metrics for defined cell populations
 - **evaluate_isotype_background**: Determines the level of non-specific binding to establish a baseline for true fluorescence
+- **apply_compensation**: Adjusts fluorescence data to correct for spectral overlap between fluorophores
 - **get_population_statistics**: Provides detailed distribution metrics for a specific gated subset
 
 

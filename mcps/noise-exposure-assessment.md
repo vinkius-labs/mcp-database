@@ -14,8 +14,8 @@ This MCP server provides professional tools for evaluating workplace acoustic ri
 
 
 ## Available Tools (4)
-- **assess_protection_needs**: Determines if hearing protection is required and suggests the necessary reduction level
 - **calculate_cumulative_exposure**: Aggregates multiple noise events into a total daily exposure profile
+- **assess_protection_needs**: Determines if hearing protection is required and suggests the necessary reduction level
 - **calculate_single_task_exposure**: Calculates the noise dose contributed by a single, continuous noise event
 - **get_regulatory_limits**: Provides the standard thresholds for noise exposure based on regional regulations
 

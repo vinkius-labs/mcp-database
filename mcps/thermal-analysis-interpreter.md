@@ -14,9 +14,9 @@ This MCP server provides specialized tools for interpreting thermal analysis dat
 
 
 ## Available Tools (4)
-- **estimate_kinetics**: Estimates the kinetic parameters of a decomposition process
 - **analyze_tga_stability**: Identifies mass loss events and decomposition temperatures from TGA data
 - **calculate_phase_transitions**: Detects phase changes and melting points from DSC or DTA data
+- **estimate_kinetics**: Estimates the kinetic parameters of a decomposition process
 - **quantify_enthalpy**: Calculates the energy associated with a specific thermal event
 
 

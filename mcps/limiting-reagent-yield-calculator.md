@@ -16,8 +16,8 @@ This MCP server provides a suite of precision stoichiometry tools for chemical a
 ## Available Tools (4)
 - **analyze_reaction_composition**: Identifies the stoichiometric roles and identifies the limiting reagent from a set of reactants
 - **calculate_actual_and_percent_yield**: Calculates how much product was actually obtained and the efficiency of the reaction
-- **calculate_atom_economy**: Evaluates the inherent efficiency of the chemical process regarding mass usage
 - **calculate_theoretical_yield**: Determines the maximum possible mass or moles of the desired product
+- **calculate_atom_economy**: Evaluates the inherent efficiency of the chemical process regarding mass usage
 
 
 ## 💬 Prompt Examples

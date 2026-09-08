@@ -14,9 +14,9 @@ This MCP server provides a strategic decision-support system to calculate the op
 
 
 ## Available Tools (4)
-- **calculate_capacity_availability**: Calculates the remaining engineering headroom after accounting for feature pressure
-- **assess_refactoring_risk**: Evaluates the danger of delaying refactoring
 - **analyze_cost_benefit**: Compares the cost of performing refactoring against the savings in development velocity
+- **assess_refactoring_risk**: Evaluates the danger of delaying refactoring
+- **calculate_capacity_availability**: Calculates the remaining engineering headroom after accounting for feature pressure
 - **find_optimal_schedule**: Determines the best sequence and timing for refactoring tasks
 
 

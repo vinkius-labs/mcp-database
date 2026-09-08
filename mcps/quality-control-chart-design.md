@@ -14,9 +14,9 @@ This MCP server provides essential tools for Statistical Process Control (SPC). 
 
 
 ## Available Tools (4)
-- **generate_individual_limits**: Specifically calculates limits for processes where measurements are taken one at a time (Individual charts)
 - **analyze_process_stability**: Determines if a process is in a state of statistical control based on provided measurements and chart type
 - **calculate_control_parameters**: Generates the mathematical boundaries for a specific SPC chart type
+- **generate_individual_limits**: Specifically calculates limits for processes where measurements are taken one at a time (Individual charts)
 - **detect_out_of_control_patterns**: Identifies specific non-random patterns in a sequence of data points
 
 

@@ -15,9 +15,9 @@ This MCP server provides specialized tools for X-ray Diffraction (XRD) analysis.
 
 ## Available Tools (4)
 - **analyze_microstrain**: Separates the microstrain component from the total peak broadening
-- **calculate_scherrer_size**: Calculates the crystallite size using the Scherrer equation
 - **estimate_instrumental_broadening**: Determines the width contribution caused by the measurement equipment
 - **perform_williamson_hall_analysis**: Conducts a comprehensive analysis by combining size and strain effects
+- **calculate_scherrer_size**: Calculates the crystallite size using the Scherrer equation
 
 
 ## 💬 Prompt Examples

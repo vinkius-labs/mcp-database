@@ -14,9 +14,9 @@ This MCP server provides advanced analytical capabilities for mass spectrometry.
 
 
 ## Available Tools (4)
-- **identify_fragmentation_pathways**: Interprets the relationship between the molecular ion and lower-mass peaks to suggest structural breakdowns
 - **analyze_peaks**: Performs the primary calculation of fundamental spectral characteristics from raw data
 - **estimate_elemental_composition**: Uses isotopic ratios to predict the presence of specific elements like Chlorine or Bromine
+- **identify_fragmentation_pathways**: Interprets the relationship between the molecular ion and lower-mass peaks to suggest structural breakdowns
 - **validate_spectral_integrity**: Checks the quality of the input data to ensure it is suitable for scientific interpretation
 
 

@@ -14,9 +14,9 @@ This MCP server provides specialized tools for interpreting Nuclear Magnetic Res
 
 
 ## Available Tools (4)
-- **analyze_proton_environments**: Identify the specific chemical environments of protons based on provided spectral data
 - **calculate_neighboring_protons**: Determine the number of neighboring protons for a specific signal based on its observed splitting
 - **identify_molecular_symmetry**: Evaluate if a proposed set of proton environments is consistent with molecular symmetry
+- **analyze_proton_environments**: Identify the specific chemical environments of protons based on provided spectral data
 - **suggest_molecular_structure**: Propose potential molecular frameworks that satisfy all provided NMR constraints
 
 

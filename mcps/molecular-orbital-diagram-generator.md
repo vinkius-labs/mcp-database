@@ -14,10 +14,10 @@ This MCP server provides computational chemistry tools to model electronic struc
 
 
 ## Available Tools (4)
+- **validate_electron_distribution**: 
 - **analyze_diatomic_molecule**: 
 - **analyze_polyatomic_molecule**: 
 - **get_orbital_energy_gap**: 
-- **validate_electron_distribution**: 
 
 
 ## 💬 Prompt Examples

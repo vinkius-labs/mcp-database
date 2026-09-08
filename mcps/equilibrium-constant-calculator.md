@@ -15,10 +15,10 @@ A specialized computational engine for chemical equilibrium. This MCP server pro
 
 ## Available Tools (5)
 - **convert_kc_to_kp**: Relates the concentration-based constant Kc to the pressure-based constant Kp
+- **solve_equilibrium_concentrations**: Predicts the final concentrations of all species given initial amounts and the equilibrium constant
 - **calculate_kc**: Calculates the equilibrium constant Kc based on known equilibrium concentrations
 - **calculate_kp**: Calculates the equilibrium constant Kp based on known equilibrium partial pressures
 - **calculate_reaction_quotient**: Determines the current state of a reaction relative to its equilibrium
-- **solve_equilibrium_concentrations**: Predicts the final concentrations of all species given initial amounts and the equilibrium constant
 
 
 ## 💬 Prompt Examples

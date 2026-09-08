@@ -14,10 +14,10 @@ This MCP server provides essential tools for laboratory and industrial safety by
 
 
 ## Available Tools (4)
+- **verify_storage_safety**: Provides a final safety audit of a proposed storage arrangement
 - **analyze_segregation_needs**: Determines if a set of chemicals can be stored together or if they require physical separation
 - **assign_storage_cabinets**: Groups chemicals into the most efficient and safe cabinet assignments
 - **calculate_containment_requirements**: Determines the type and volume of secondary containment needed to prevent leaks from mixing
-- **verify_storage_safety**: Provides a final safety audit of a proposed storage arrangement
 
 
 ## 💬 Prompt Examples

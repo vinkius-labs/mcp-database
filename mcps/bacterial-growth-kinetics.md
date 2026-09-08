@@ -16,8 +16,8 @@ This MCP server provides tools to analyze bacterial population dynamics using Op
 ## Available Tools (4)
 - **get_growth_parameters**: Extracts key physiological constants from a set of OD measurements
 - **predict_future_growth**: Estimates the future state of a culture based on current growth trends
-- **simulate_substrate_limitation**: Models how changing nutrient availability affects the growth curve
 - **validate_growth_data**: Checks the quality and integrity of raw experimental data
+- **simulate_substrate_limitation**: Models how changing nutrient availability affects the growth curve
 
 
 ## 💬 Prompt Examples

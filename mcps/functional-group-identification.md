@@ -14,10 +14,10 @@ This MCP server provides organic chemists with a suite of diagnostic tools to an
 
 
 ## Available Tools (4)
-- **analyze_group_interactions**: Analyzes how multiple functional groups within the same molecule influence each other's properties
+- **predict_reactivity**: Determines the chemical behavior and reactivity level of the identified functional groups
 - **get_characteristic_reactions**: Lists common chemical reactions that the molecule is likely to undergo based on its functional groups
 - **identify_groups**: Identifies all present functional groups within a given molecular description
-- **predict_reactivity**: Determines the chemical behavior and reactivity level of the identified functional groups
+- **analyze_group_interactions**: Analyzes how multiple functional groups within the same molecule influence each other's properties
 
 
 ## 💬 Prompt Examples

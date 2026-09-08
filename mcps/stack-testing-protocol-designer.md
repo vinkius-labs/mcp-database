@@ -14,10 +14,10 @@ This MCP server provides specialized tools for designing compliant air emission 
 
 
 ## Available Tools (4)
-- **calculate_traverse_points**: Calculates the number and specific locations of sampling points across the stack diameter
 - **determine_test_duration**: Calculates the minimum time required to conduct the test
 - **get_sampling_strategy**: Determines the optimal vertical sampling location within the stack
 - **validate_protocol_compliance**: Evaluates a proposed protocol against specific regulatory requirements
+- **calculate_traverse_points**: Calculates the number and specific locations of sampling points across the stack diameter
 
 
 ## 💬 Prompt Examples

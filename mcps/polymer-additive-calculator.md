@@ -14,9 +14,9 @@ This MCP server provides specialized tools for polymer compounding engineers to 
 
 
 ## Available Tools (4)
-- **calculate_concentration**: Determines the weight percentage of an additive in the final formulation
 - **calculate_phr_to_mass**: Converts relative additive amounts (PHR) into specific mass values for a given resin quantity
 - **calculate_masterbatch_requirement**: Calculates the necessary mass of a masterbatch to achieve a specific PHR of a pure additive
+- **calculate_concentration**: Determines the weight percentage of an additive in the final formulation
 - **scale_batch_size**: Calculates the required mass of all components to reach a specific target finished product weight
 
 

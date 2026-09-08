@@ -14,11 +14,11 @@ This MCP server provides tools to calculate the real cost of technical debt. It 
 
 
 ## Available Tools (5)
-- **calculate_velocity_loss**: 
 - **evaluate_refactoring_roi**: 
 - **forecast_debt_growth**: 
 - **generate_repayment_plan**: 
 - **get_debt_summary**: 
+- **calculate_velocity_loss**: 
 
 
 ## 💬 Prompt Examples
