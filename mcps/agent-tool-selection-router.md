@@ -14,9 +14,9 @@ The Agent Tool Selection Router is a decision-making engine that optimizes how A
 
 
 ## Available Tools (3)
+- **validate_tool_constraints**: Ensure proposed tool selection does not violate operational constraints
 - **calculate_tool_scores**: Calculate deterministic scores for available tools based on intent and environment
 - **plan_tool_execution_path**: Determine the sequence of actions, including potential fallbacks and tool chaining
-- **validate_tool_constraints**: Ensure proposed tool selection does not violate operational constraints
 
 
 ## 💬 Prompt Examples

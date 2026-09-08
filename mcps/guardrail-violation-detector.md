@@ -14,8 +14,8 @@ This MCP server provides deterministic scoring for agent outputs to ensure safet
 
 
 ## Available Tools (3)
-- **get_guardrail_configuration**: Retrieves the current active rules and their definitions
 - **analyze_output_violations**: Performs a full audit of an agent response against a set of rules
+- **get_guardrail_configuration**: Retrieves the current active rules and their definitions
 - **get_historical_false_positive_rate**: Retrieves the accuracy metric for a specific guardrail rule
 
 

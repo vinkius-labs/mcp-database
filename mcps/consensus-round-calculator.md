@@ -14,10 +14,10 @@ This MCP server provides deterministic tools to simulate the Raft consensus algo
 
 
 ## Available Tools (4)
-- **simulate_election**: Evaluates the current state of an election to determine if a leader has been elected or if a split vote occurred
 - **validate_log_replication**: Checks if log entries can be successfully committed or if there are consistency violations
-- **get_quorum_threshold**: Determines the minimum number of agents needed to reach a consensus or win an election
 - **estimate_election_timing**: Predicts how long a leader election process is expected to take
+- **simulate_election**: Evaluates the current state of an election to determine if a leader has been elected or if a split vote occurred
+- **get_quorum_threshold**: Determines the minimum number of agents needed to reach a consensus or win an election
 
 
 ## 💬 Prompt Examples

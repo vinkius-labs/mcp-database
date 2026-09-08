@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine for trading scheduled market eve
 
 
 ## Available Tools (3)
-- **analyze_event_opportunity**: Evaluates if a specific upcoming event presents a tradable volatility or directional opportunity
 - **calculate_event_statistics**: Quantifies the historical reliability and characteristics of a specific event type
+- **analyze_event_opportunity**: Evaluates if a specific upcoming event presents a tradable volatility or directional opportunity
 - **validate_market_conditions**: Ensures the current market environment meets minimum liquidity and data integrity requirements
 
 

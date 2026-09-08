@@ -14,9 +14,9 @@ This MCP server provides a suite of tools to validate agentic workflows modeled 
 
 
 ## Available Tools (3)
-- **validate_workflow_structure**: Performs a fundamental structural integrity check on the state machine topology
 - **analyze_workflow_metrics**: Calculates statistical properties and complexity of the workflow paths
 - **check_workflow_constraints**: Validates specific business logic constraints like decision completeness and timeout coverage
+- **validate_workflow_structure**: Performs a fundamental structural integrity check on the state machine topology
 
 
 ## 💬 Prompt Examples

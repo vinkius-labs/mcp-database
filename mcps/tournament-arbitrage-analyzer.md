@@ -15,8 +15,8 @@ This MCP server provides deterministic tools for analyzing tournament betting ma
 
 ## Available Tools (3)
 - **analyze_market_efficiency**: Evaluates the health of the market and identifies the presence of bookmaker margin
-- **calculate_optimal_stakes**: Calculates the exact amount of money to bet on each participant to guarantee a fixed payout
 - **check_arbitrage_opportunity**: Determines if a risk-free arbitrage exists within a set of tournament market prices
+- **calculate_optimal_stakes**: Calculates the exact amount of money to bet on each participant to guarantee a fixed payout
 
 
 ## 💬 Prompt Examples

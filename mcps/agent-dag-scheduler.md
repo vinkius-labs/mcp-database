@@ -14,8 +14,8 @@ This MCP server provides a deterministic execution engine for multi-agent workfl
 
 
 ## Available Tools (3)
-- **analyze_workflow_structure**: Validates the integrity of the provided task graph and determines the fundamental execution sequence
 - **get_task_timing_details**: Provides a deep dive into the temporal constraints of a specific task within a specific schedule
+- **analyze_workflow_structure**: Validates the integrity of the provided task graph and determines the fundamental execution sequence
 - **simulate_execution_schedule**: Calculates the actual timing and resource utilization of the workflow given a limited number of execution slots
 
 

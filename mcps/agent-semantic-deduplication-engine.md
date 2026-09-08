@@ -14,8 +14,8 @@ This MCP server provides a suite of tools to analyze and reduce redundancy in mu
 
 
 ## Available Tools (3)
-- **calculate_similarity_matrix**: Generates a complete map of semantic relationships between all provided agent outputs
 - **execute_deduplication**: Applies a specific strategy to reduce the set of outputs to a unique set
+- **calculate_similarity_matrix**: Generates a complete map of semantic relationships between all provided agent outputs
 - **identify_duplicate_clusters**: Groups redundant outputs into distinct semantic clusters based on a user-defined threshold
 
 

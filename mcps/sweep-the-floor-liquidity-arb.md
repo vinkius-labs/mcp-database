@@ -14,11 +14,11 @@ This MCP server provides deterministic tools to exploit thin liquidity in long-t
 
 
 ## Available Tools (3)
-- **calculate_price_impact**: 
 - **evaluate_opportunity**: 10
 
 Evaluate if a trade is a viable arbitrage
 - **generate_exit_strategy**: 
+- **calculate_price_impact**: 
 
 
 ## 💬 Prompt Examples

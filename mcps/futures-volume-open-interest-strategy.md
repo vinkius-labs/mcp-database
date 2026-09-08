@@ -15,8 +15,8 @@ This MCP server provides a deterministic analysis engine for futures markets. It
 
 ## Available Tools (3)
 - **analyze_market_momentum**: 
-- **calculate_market_health_metrics**: Quantifies market structural composition
 - **get_trend_summaries**: Provides high-level trend and volatility overview
+- **calculate_market_health_metrics**: Quantifies market structural composition
 
 
 ## 💬 Prompt Examples

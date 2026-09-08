@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to analyze the shape of the futures
 
 
 ## Available Tools (3)
-- **analyze_curve_shape**: Calculates the fundamental geometric properties of the current futures term structure
 - **evaluate_trading_signal**: Generates specific BUY, SELL, or HOLD signals based on slope, moving averages, and volatility filters
 - **select_optimal_contract**: Identifies the specific contract month that offers the best risk/reward profile
+- **analyze_curve_shape**: Calculates the fundamental geometric properties of the current futures term structure
 
 
 ## 💬 Prompt Examples

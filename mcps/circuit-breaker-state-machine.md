@@ -15,8 +15,8 @@ This MCP server provides a deterministic state machine to manage stability in ag
 
 ## Available Tools (3)
 - **evaluate_cascading_risk**: Assesses the impact of the current circuit state on the wider agent ecosystem
-- **get_current_status**: Provides a real-time snapshot of the circuit's health and readiness
 - **predict_next_transition**: Forecasts the likely next state change based on current trends
+- **get_current_status**: Provides a real-time snapshot of the circuit's health and readiness
 
 
 ## 💬 Prompt Examples

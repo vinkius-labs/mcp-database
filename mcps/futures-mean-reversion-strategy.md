@@ -14,8 +14,8 @@ This MCP server provides a deterministic framework for commodity trading based o
 
 
 ## Available Tools (3)
-- **calculate_reversal_signals**: Generates specific buy and sell recommendations based on recent commodity price performance
 - **get_commodity_performance_stats**: Provides historical context on how specific commodities have behaved during extreme price moves
+- **calculate_reversal_signals**: Generates specific buy and sell recommendations based on recent commodity price performance
 - **validate_liquidity_and_thresholds**: Verifies if a specific set of trading signals meets the safety and profitability requirements of the strategy
 
 

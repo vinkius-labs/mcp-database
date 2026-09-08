@@ -14,9 +14,9 @@ This MCP server provides a deterministic optimization engine for managing agent 
 
 
 ## Available Tools (3)
+- **simulate_migration_impact**: Estimates cost/benefit of rebalancing tasks
 - **analyze_resource_bottlenecks**: Identifies capacity or communication bottlenecks
 - **optimize_execution_schedule**: 
-- **simulate_migration_impact**: Estimates cost/benefit of rebalancing tasks
 
 
 ## 💬 Prompt Examples
