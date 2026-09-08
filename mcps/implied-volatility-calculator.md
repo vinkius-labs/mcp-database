@@ -15,8 +15,8 @@ This MCP server provides high-precision tools for quantitative finance. It uses 
 
 ## Available Tools (3)
 - **calculate_single_iv**: Calculates the implied volatility for a single European option using the Newton-Raphson method
-- **calculate_volatility_smile**: Generates a set of implied volatilities across multiple strike prices to visualize the volatility smile
 - **calculate_volatility_term_structure**: Generates a set of implied volatilities across different expiration dates to visualize the volatility term structure
+- **calculate_volatility_smile**: Generates a set of implied volatilities across multiple strike prices to visualize the volatility smile
 
 
 ## 💬 Prompt Examples

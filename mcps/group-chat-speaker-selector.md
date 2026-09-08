@@ -14,9 +14,9 @@ This MCP server provides a deterministic selection engine for multi-agent orches
 
 
 ## Available Tools (3)
-- **get_agent_eligibility**: Checks if a specific agent is currently permitted to speak based on the conversation fairness rules
 - **select_next_speaker**: Determines which agent should speak next based on a specific strategy and current conversation state
 - **update_speaker_history**: Records a completed turn to update the historical participation data
+- **get_agent_eligibility**: Checks if a specific agent is currently permitted to speak based on the conversation fairness rules
 
 
 ## 💬 Prompt Examples

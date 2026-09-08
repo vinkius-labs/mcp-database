@@ -14,9 +14,9 @@ The Routing Logic Evaluator is a specialized decision engine designed to manage 
 
 
 ## Available Tools (3)
-- **get_routing_summary**: Provides a high-level overview of the routing logic density and complexity for a given set of rules
-- **evaluate_routing**: Determines which node the orchestration should move to next based on the current state and a list of rules
 - **validate_condition_schema**: Ensures a proposed routing rule follows the correct structure before it is used in a live orchestration
+- **evaluate_routing**: Determines which node the orchestration should move to next based on the current state and a list of rules
+- **get_routing_summary**: Provides a high-level overview of the routing logic density and complexity for a given set of rules
 
 
 ## 💬 Prompt Examples

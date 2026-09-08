@@ -14,9 +14,9 @@ This MCP server provides a deterministic verification engine to ensure AI agents
 
 
 ## Available Tools (3)
-- **check_file_integrity**: Verifies that specific files exist and contain expected content patterns
 - **verify_task_completion**: Performs a full audit of a task by evaluating all provided criteria
 - **execute_environment_check**: Runs shell commands to verify the technical health of the workspace
+- **check_file_integrity**: Verifies that specific files exist and contain expected content patterns
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a deterministic technical analysis engine for the Willi
 
 
 ## Available Tools (3)
+- **identify_failure_swings**: Detects potential trend reversal signals based on failed momentum attempts
 - **calculate_williams_r**: Computes the raw Williams %R values for a provided series of price data
 - **detect_divergence**: Identifies discrepancies between price action and momentum strength
-- **identify_failure_swings**: Detects potential trend reversal signals based on failed momentum attempts
 
 
 ## 💬 Prompt Examples

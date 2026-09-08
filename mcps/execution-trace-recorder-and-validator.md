@@ -14,9 +14,9 @@ This MCP server provides essential diagnostic tools to solve the 'black box' pro
 
 
 ## Available Tools (3)
-- **record_trace_step**: Records a single discrete execution event within an agent's lifecycle
-- **detect_anomalies**: Analyzes a trace to find non-deterministic behavior and significant timing outliers
 - **validate_trace_integrity**: Checks a collection of recorded steps to ensure the chain is unbroken and logically consistent
+- **detect_anomalies**: Analyzes a trace to find non-deterministic behavior and significant timing outliers
+- **record_trace_step**: Records a single discrete execution event within an agent's lifecycle
 
 
 ## 💬 Prompt Examples

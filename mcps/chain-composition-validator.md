@@ -14,9 +14,9 @@ This MCP server provides tools to ensure that LangChain Chains and LangGraph Sta
 
 
 ## Available Tools (3)
+- **verify_schema_compatibility**: Isolates and validates the data contract between two specific connected steps
 - **analyze_pipeline_integrity**: Performs a full structural and logical validation of the entire chain/graph composition
 - **find_unreachable_nodes**: Identifies configuration errors where certain steps are defined but cannot be executed within the flow
-- **verify_schema_compatibility**: Isolates and validates the data contract between two specific connected steps
 
 
 ## 💬 Prompt Examples

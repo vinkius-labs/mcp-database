@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for calculating the Kaufman Adap
 
 ## Available Tools (3)
 - **calculate_kama_series**: Computes the full sequence of KAMA values and trend metrics for a provided set of prices
-- **get_latest_kama_status**: Extracts the most recent trend and volatility data from a pre-calculated series
 - **analyze_kama_volatility_regime**: Determines whether the market is currently in a trending or ranging regime based on the efficiency of recent movements
+- **get_latest_kama_status**: Extracts the most recent trend and volatility data from a pre-calculated series
 
 
 ## 💬 Prompt Examples

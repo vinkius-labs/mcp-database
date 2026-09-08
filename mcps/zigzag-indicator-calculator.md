@@ -14,9 +14,9 @@ This MCP server provides precise tools for technical analysis of price action. I
 
 
 ## Available Tools (3)
-- **analyze_swing_metrics**: Calculates the intensity and duration of the movements between the detected pivots
 - **detect_swing_pivots**: Identifies all confirmed high and low pivot points within a price series based on a deviation threshold
 - **interpret_market_structure**: Provides high-level hints regarding whether the sequence of pivots resembles an impulse or corrective wave pattern
+- **analyze_swing_metrics**: Calculates the intensity and duration of the movements between the detected pivots
 
 
 ## 💬 Prompt Examples
