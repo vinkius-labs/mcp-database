@@ -15,9 +15,9 @@ This MCP server provides specialized tools to calculate the economic strength of
 
 ## Available Tools (4)
 - **assess_replication_risk**: Assess risk
-- **calculate_moat_valuation**: Calculate moat value
-- **compare_data_assets**: Compare assets
 - **predict_advantage_decay**: Predict decay
+- **compare_data_assets**: Compare assets
+- **calculate_moat_valuation**: Calculate moat value
 
 
 ## 💬 Prompt Examples

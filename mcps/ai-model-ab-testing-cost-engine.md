@@ -15,9 +15,9 @@ This MCP server provides a specialized calculation engine for managing the finan
 
 ## Available Tools (4)
 - **calculate_experiment_roi**: Evaluates the economic viability of an AI model change
-- **aggregate_concurrent_costs**: Sums the total infrastructure burden of all running A/B tests
 - **calculate_experiment_cost**: Calculates the specific financial cost for a single experiment based on its unique parameters
 - **estimate_time_to_significance**: Predicts how long an experiment must run before the results are statistically valid
+- **aggregate_concurrent_costs**: Sums the total infrastructure burden of all running A/B tests
 
 
 ## 💬 Prompt Examples

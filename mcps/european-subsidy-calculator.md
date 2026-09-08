@@ -16,8 +16,8 @@ This MCP server provides tools to navigate the complexities of European Union re
 ## Available Tools (4)
 - **calculate_net_benefit**: Determines the final economic value of the subsidy after all obligations are considered
 - **calculate_potential_subsidy**: Determines the maximum amount of subsidy a company can theoretically claim
-- **validate_state_aid_compliance**: Checks if a proposed subsidy amount exceeds the legal limits set by EU State Aid rules
 - **estimate_conditionality_costs**: Calculates the cost of meeting the requirements attached to a subsidy
+- **validate_state_aid_compliance**: Checks if a proposed subsidy amount exceeds the legal limits set by EU State Aid rules
 
 
 ## 💬 Prompt Examples

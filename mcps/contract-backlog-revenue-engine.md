@@ -14,10 +14,10 @@ This MCP server provides advanced financial analysis for revenue management. It 
 
 
 ## Available Tools (4)
+- **analyze_cancellation_impact**: Analyze the expected loss if volatile contracts are canceled
 - **calculate_total_backlog**: Calculate the total remaining revenue currently sitting in the backlog
 - **evaluate_execution_risk**: Evaluate how much projected backlog is at risk due to delivery uncertainties
 - **get_revenue_recognition_forecast**: Forecast how much revenue will be recognized in each of the upcoming months
-- **analyze_cancellation_impact**: Analyze the expected loss if volatile contracts are canceled
 
 
 ## 💬 Prompt Examples

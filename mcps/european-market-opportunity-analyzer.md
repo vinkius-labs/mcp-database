@@ -16,8 +16,8 @@ This MCP server provides advanced modeling for analyzing the European economic l
 ## Available Tools (4)
 - **project_future_market_size**: Calculates the projected value of the European market over a specific timeframe
 - **calculate_regional_addressable_markets**: Determines the specific dollar value of the reachable market for each targeted country
-- **rank_priority_markets**: Identifies which countries offer the best opportunity for entry
 - **evaluate_penetration_potential**: Estimates the realistic revenue capture for a specific country based on market friction
+- **rank_priority_markets**: Identifies which countries offer the best opportunity for entry
 
 
 ## 💬 Prompt Examples

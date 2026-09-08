@@ -14,10 +14,10 @@ This MCP server provides essential financial modeling tools to manage capital ex
 
 
 ## Available Tools (4)
+- **analyze_cash_flow_timing**: Identifies potential liquidity crises where capex timing precedes cash generation
 - **calculate_financing_requirement**: Determines how much external capital must be raised after utilizing internal funds and existing debt capacity
 - **estimate_dilution_impact**: Calculates the impact on current shareholders if the financing requirement is met via equity issuance
 - **get_funding_gap_summary**: Provides a high-level overview of the immediate capital shortfall
-- **analyze_cash_flow_timing**: Identifies potential liquidity crises where capex timing precedes cash generation
 
 
 ## 💬 Prompt Examples

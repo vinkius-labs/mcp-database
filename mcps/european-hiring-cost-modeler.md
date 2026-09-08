@@ -15,9 +15,9 @@ This MCP server provides precise financial modeling for hiring across European j
 
 ## Available Tools (4)
 - **calculate_exit_liability**: Estimates the financial risk associated with employee turnover and notice periods
-- **calculate_fully_loaded_costs**: Determines the total cost of hiring a specific headcount in various countries
-- **evaluate_location_strategy**: Identifies the most cost-effective locations based on specific constraints
 - **get_country_cost_index**: Compares the relative cost of different countries against a selected baseline
+- **evaluate_location_strategy**: Identifies the most cost-effective locations based on specific constraints
+- **calculate_fully_loaded_costs**: Determines the total cost of hiring a specific headcount in various countries
 
 
 ## 💬 Prompt Examples

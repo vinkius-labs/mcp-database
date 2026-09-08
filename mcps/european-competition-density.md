@@ -15,9 +15,9 @@ This MCP server provides advanced modeling for the European competitive landscap
 
 ## Available Tools (4)
 - **analyze_market_concentration**: Determines the level of market concentration using the HHI model
-- **identify_white_space**: Pinpoints untapped market segments or regions with low competitive pressure
 - **calculate_competitive_intensity**: Assesses the total pressure in a market by combining share distribution with external actors
 - **evaluate_cross_border_risk**: Predicts how competition in one country might impact the competitive landscape of neighboring countries
+- **identify_white_space**: Pinpoints untapped market segments or regions with low competitive pressure
 
 
 ## 💬 Prompt Examples

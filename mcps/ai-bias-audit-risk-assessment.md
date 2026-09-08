@@ -15,9 +15,9 @@ This MCP server provides critical tools for assessing the risk profile of Artifi
 
 ## Available Tools (4)
 - **calculate_bias_risk_score**: Determines the total organizational risk score of an AI system
+- **estimate_legal_liability**: Calculates the potential financial impact of legal penalties
 - **get_audit_summary**: Provides a high-level overview of the current bias status
 - **project_remediation_effort**: Predicts the time and resource requirements to mitigate identified bias
-- **estimate_legal_liability**: Calculates the potential financial impact of legal penalties
 
 
 ## 💬 Prompt Examples

@@ -18,8 +18,8 @@ This MCP server provides specialized analytics for monitoring customer stability
 - **analyze_retention_by_tier**: g., Enterprise, SMB).
 
 Analyzes retention rates across different customer tiers
-- **calculate_logo_retention**: Calculates the overall logo retention rate for the period
 - **summarize_churn_reasons**: Summarizes the reasons why customers are churning
+- **calculate_logo_retention**: Calculates the overall logo retention rate for the period
 
 
 ## 💬 Prompt Examples

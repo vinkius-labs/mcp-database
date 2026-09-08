@@ -15,9 +15,9 @@ This MCP server provides specialized economic modeling tools to analyze the prof
 
 ## Available Tools (4)
 - **optimize_distribution_mix**: Determines the ideal distribution strategy to maximize total profit
-- **validate_model_parameters**: Ensures that the provided economic variables are logically consistent
-- **analyze_channel_economics**: Calculates the fundamental cost and margin metrics for a specific distribution channel
 - **compare_channel_performance**: Compares the profitability and efficiency of multiple channels
+- **analyze_channel_economics**: Calculates the fundamental cost and margin metrics for a specific distribution channel
+- **validate_model_parameters**: Ensures that the provided economic variables are logically consistent
 
 
 ## 💬 Prompt Examples

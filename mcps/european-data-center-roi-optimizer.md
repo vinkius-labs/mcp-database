@@ -14,10 +14,10 @@ This MCP server provides a decision-support engine for infrastructure planning. 
 
 
 ## Available Tools (4)
+- **compare_location_costs**: Provides a detailed financial breakdown between specific data center sites
 - **find_optimal_locations**: Identifies the best candidate locations based on user distributions, latency, and energy costs
 - **get_latency_heatmap**: Visualizes the predicted latency impact of a single data center location across the user distribution
 - **validate_regulatory_compliance**: Checks if a specific data center location meets the legal requirements for a given data type
-- **compare_location_costs**: Provides a detailed financial breakdown between specific data center sites
 
 
 ## 💬 Prompt Examples

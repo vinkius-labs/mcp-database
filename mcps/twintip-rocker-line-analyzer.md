@@ -14,10 +14,10 @@ This MCP server provides hydrodynamic analysis for twin-tip boards. It calculate
 
 
 ## Available Tools (4)
-- **analyze_chop_handling**: Predicts how the board's geometry will react to turbulent water (chop)
-- **evaluate_planing_efficiency**: Calculates how efficiently the board transitions to a plane across a specific speed range
-- **get_hydrodynamic_summary**: Provides a high-level summary of the board's performance characteristics
 - **get_planing_threshold**: Determines the minimum speed required for the board to begin planing
+- **evaluate_planing_efficiency**: Calculates how efficiently the board transitions to a plane across a specific speed range
+- **analyze_chop_handling**: Predicts how the board's geometry will react to turbulent water (chop)
+- **get_hydrodynamic_summary**: Provides a high-level summary of the board's performance characteristics
 
 
 ## 💬 Prompt Examples

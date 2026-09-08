@@ -16,8 +16,8 @@ This MCP server provides advanced financial intelligence for European market exp
 ## Available Tools (4)
 - **analyze_revenue_concentration**: Determines how concentrated or diversified the current revenue stream is across the European region
 - **calculate_expansion_opportunity**: Identifies which countries present the best prospects for new revenue growth
-- **generate_country_prioritization**: Produces a ranked list of countries to guide strategic expansion decisions
 - **predict_revenue_impact**: Estimates how currency volatility and local pricing strategies will affect actual realized revenue
+- **generate_country_prioritization**: Produces a ranked list of countries to guide strategic expansion decisions
 
 
 ## 💬 Prompt Examples

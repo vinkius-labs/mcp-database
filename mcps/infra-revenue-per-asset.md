@@ -16,8 +16,8 @@ This MCP server provides tools to analyze the economic efficiency of infrastruct
 ## Available Tools (4)
 - **asset_productivity_tool**: Calculates the core revenue per asset metric for a specific asset or asset group
 - **identify_underperforming_assets_tool**: Flags assets that are failing to meet efficiency benchmarks
-- **productivity_trend_tool**: Determines if the economic performance of an asset group is improving, declining, or stable
 - **utilization_adjusted_efficiency_tool**: Adjusts the productivity metric to account for how much an asset is being used versus its age
+- **productivity_trend_tool**: Determines if the economic performance of an asset group is improving, declining, or stable
 
 
 ## 💬 Prompt Examples

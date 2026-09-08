@@ -14,10 +14,10 @@ This MCP server provides a specialized modeling engine for kiteboarders to optim
 
 
 ## Available Tools (4)
-- **analyze_quiver_overlap**: Identifies where different kites in the quiver can be used interchangeably
-- **calculate_kite_ranges**: Determines the specific wind window (minimum to maximum knots) for every kite provided in the set
 - **get_optimized_quiver_recommendation**: Suggests if the current kite set is sufficient or if a specific size is missing to bridge a gap
 - **identify_quiver_gaps**: Finds wind speed intervals where the rider has no suitable kite
+- **analyze_quiver_overlap**: Identifies where different kites in the quiver can be used interchangeably
+- **calculate_kite_ranges**: Determines the specific wind window (minimum to maximum knots) for every kite provided in the set
 
 
 ## 💬 Prompt Examples

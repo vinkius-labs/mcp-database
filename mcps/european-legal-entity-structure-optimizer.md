@@ -14,10 +14,10 @@ This MCP server provides decision-support tools for businesses expanding within 
 
 
 ## Available Tools (4)
-- **evaluate_holding_company_efficiency**: Determines if adding a Holding Company layer improves the overall tax and capital flow of the structure
 - **analyze_structure_optimization**: Provides the primary recommendation for a company's legal footprint based on its expansion goals
 - **calculate_operational_complexity_index**: Quantifies the total administrative burden of a proposed multi-country structure
 - **compare_branch_vs_subsidiary**: Specifically evaluates the trade-off between extending a parent company via a branch or forming a new local subsidiary
+- **evaluate_holding_company_efficiency**: Determines if adding a Holding Company layer improves the overall tax and capital flow of the structure
 
 
 ## 💬 Prompt Examples

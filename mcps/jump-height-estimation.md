@@ -14,10 +14,10 @@ This MCP server provides a specialized physics engine for kiteboarders to simula
 
 
 ## Available Tools (4)
+- **estimate_landing_impact**: Evaluates the safety/intensity of the landing based on the flight trajectory
 - **analyze_lift_efficiency**: Determines how much of the jump's height is attributed to kite lift versus pure projectile motion
 - **calculate_jump_metrics**: Provides a full profile of the jump based on the initial takeoff conditions
 - **compare_jump_scenarios**: Compares two different sets of takeoff conditions to see which yields a higher jump
-- **estimate_landing_impact**: Evaluates the safety/intensity of the landing based on the flight trajectory
 
 
 ## 💬 Prompt Examples

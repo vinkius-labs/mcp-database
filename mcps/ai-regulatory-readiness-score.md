@@ -14,10 +14,10 @@ This MCP server provides tools to assess an organization's preparedness for evol
 
 
 ## Available Tools (4)
-- **identify_compliance_gaps**: Details the specific areas where the organization is falling short of regulatory standards
 - **assess_penalty_risk**: Quantifies the potential financial impact of non-compliance
 - **calculate_readiness_score**: Provides a high-level overview of the organization's current compliance status
 - **estimate_remediation_investment**: Projects the financial cost required to reach full compliance based on existing gaps
+- **identify_compliance_gaps**: Details the specific areas where the organization is falling short of regulatory standards
 
 
 ## 💬 Prompt Examples

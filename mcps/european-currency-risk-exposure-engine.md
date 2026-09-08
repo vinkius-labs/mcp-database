@@ -15,9 +15,9 @@ This MCP server provides specialized risk management tools for European business
 
 ## Available Tools (4)
 - **analyze_currency_dynamics**: Provides a comparative risk assessment of different European currency pairs relative to the Euro
-- **estimate_hedging_cost**: Calculates the total financial outlay required to hedge the identified currency exposures
-- **calculate_net_exposure**: Determines the total net amount of money at risk for each non-EUR currency, converted to Euro
 - **determine_optimal_strategy**: Recommends whether to hedge or remain unhedged based on the risk-to-cost ratio
+- **calculate_net_exposure**: Determines the total net amount of money at risk for each non-EUR currency, converted to Euro
+- **estimate_hedging_cost**: Calculates the total financial outlay required to hedge the identified currency exposures
 
 
 ## 💬 Prompt Examples

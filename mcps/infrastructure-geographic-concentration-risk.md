@@ -14,10 +14,10 @@ This MCP server provides tools to quantify the risk exposure of infrastructure a
 
 
 ## Available Tools (4)
-- **analyze_dependency_risk**: Assess the systemic risk caused by connections between different geographic areas
 - **calculate_diversification_strategy**: Suggest how to redistribute assets or revenue to lower the concentration score
 - **get_geographic_concentration_score**: Determine the overall risk level of the entire portfolio based on geographic distribution
 - **get_regional_exposure_report**: Identify which specific regions present the highest risk to the organization
+- **analyze_dependency_risk**: Assess the systemic risk caused by connections between different geographic areas
 
 
 ## 💬 Prompt Examples

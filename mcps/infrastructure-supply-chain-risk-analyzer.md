@@ -15,9 +15,9 @@ This MCP server provides specialized tools to assess infrastructure supply chain
 
 ## Available Tools (4)
 - **analyze_single_source_exposure**: Identifies the impact of relying on a single provider for specific items
+- **evaluate_supply_recovery_timeline**: Determines the time window of vulnerability when a primary supplier is lost
 - **calculate_concentration_risk**: Evaluates the risk score stemming from the distribution of supply among existing vendors
 - **estimate_mitigation_costs**: Calculates the financial requirement to address identified supply chain gaps
-- **evaluate_supply_recovery_timeline**: Determines the time window of vulnerability when a primary supplier is lost
 
 
 ## 💬 Prompt Examples

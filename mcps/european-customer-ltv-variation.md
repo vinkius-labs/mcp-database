@@ -15,9 +15,9 @@ This MCP server provides a decision-support engine for analyzing European market
 
 ## Available Tools (4)
 - **rank_european_markets**: Generates a prioritized list of countries for expansion or resource allocation
+- **evaluate_market_attractiveness**: Adjusts LTV expectations based on qualitative market forces like competition and spending power
 - **calculate_country_ltv**: Calculates the projected lifetime value for a single European country
 - **calculate_efficiency_ratios**: Determines the LTV to CAC ratio to assess market profitability
-- **evaluate_market_attractiveness**: Adjusts LTV expectations based on qualitative market forces like competition and spending power
 
 
 ## 💬 Prompt Examples

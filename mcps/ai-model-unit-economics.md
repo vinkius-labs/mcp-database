@@ -14,10 +14,10 @@ This MCP server provides essential financial modeling tools for AI model busines
 
 
 ## Available Tools (4)
+- **check_viability**: Determines if the current unit economics meet the business's profitability thresholds
 - **get_margin_analysis**: Calculates the current gross margin percentage for a specific pricing scenario
 - **optimize_pricing**: Suggests an adjusted price per call to achieve a target gross margin
 - **calculate_tiered_pricing**: Evaluates how volume discounts across different usage tiers impact total profitability
-- **check_viability**: Determines if the current unit economics meet the business's profitability thresholds
 
 
 ## 💬 Prompt Examples
