@@ -14,9 +14,9 @@ This MCP server provides a deterministic way to handle Ethereum transaction data
 
 
 ## Available Tools (3)
-- **decode_calldata_payload**: Parses a hex string of Ethereum calldata into readable values
 - **extract_function_selector**: Generates the 4-byte function selector from a given signature
 - **encode_function_call**: Transforms a function signature and its arguments into valid Ethereum calldata
+- **decode_calldata_payload**: Parses a hex string of Ethereum calldata into readable values
 
 
 ## 💬 Prompt Examples

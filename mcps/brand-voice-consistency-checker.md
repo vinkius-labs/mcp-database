@@ -15,8 +15,8 @@ The Brand Voice Consistency Checker is an automated validator that ensures your 
 
 ## Available Tools (3)
 - **check_syntax**: Evaluates sentence structure and punctuation against brand rules
-- **check_vocabulary**: Checks for banned words and tracks preferred brand terminology
 - **calculate_alignment**: Measures qualitative attributes like tone and readability
+- **check_vocabulary**: Checks for banned words and tracks preferred brand terminology
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides tools to analyze autonomous agent communication logs. I
 
 
 ## Available Tools (3)
-- **trace_message_path**: 
 - **calculate_efficiency_metrics**: 
 - **validate_envelope_structure**: 
+- **trace_message_path**: 
 
 
 ## 💬 Prompt Examples

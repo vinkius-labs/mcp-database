@@ -14,9 +14,9 @@ The Multi-Agent Communication Protocol Validator is an analytical engine designe
 
 
 ## Available Tools (3)
-- **trace_message_path**: 
 - **calculate_efficiency_metrics**: 
 - **validate_envelope_structure**: 
+- **trace_message_path**: 
 
 
 ## 💬 Prompt Examples

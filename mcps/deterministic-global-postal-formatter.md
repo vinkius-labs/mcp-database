@@ -22,7 +22,7 @@ Customer address pipelines are notoriously fragile. AI models frequently struggl
 ## Available Tools (1)
 - **format_postal_code**: Provide the raw postal code string and select the ISO 2-letter country code.
 
-Validates and formats global postal codes (e.g. BR CEP, US ZIP, UK Postcode) using strict deterministic regex rules
+Validates and formats globalThis postal codes (e.g. BR CEP, US ZIP, UK Postcode) using strict deterministic regex rules
 
 
 ## 💬 Prompt Examples

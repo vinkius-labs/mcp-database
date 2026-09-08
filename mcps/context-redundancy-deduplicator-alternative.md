@@ -14,9 +14,9 @@ This MCP server provides tools to identify exact overlapping N-gram sequences ac
 
 
 ## Available Tools (3)
+- **find_duplicate_segments**: Isolate and identify the specific text blocks that are identical across the provided documents
 - **analyze_redundancy**: Perform a comprehensive redundancy analysis across a set of documents using a specific N-gram size
 - **calculate_savings_projection**: Estimate the impact of deduplication on context window limits or storage
-- **find_duplicate_segments**: Isolate and identify the specific text blocks that are identical across the provided documents
 
 
 ## 💬 Prompt Examples

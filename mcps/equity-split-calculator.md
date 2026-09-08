@@ -14,13 +14,13 @@ The Equity Split Calculator removes ambiguity from equity negotiations by transf
 
 
 ## Available Tools (3)
-- **generate_equity_audit**: Generates a qualitative justification for the calculated equity
 - **calculate_dynamic_slices**: Multipliers are applied to cash, IP, equipment, and time.
 
 Converts raw contributions into slices using multipliers
 - **calculate_weighted_split**: Weights must sum to 1.
 
 Calculates equity distribution based on fixed pillar weights
+- **generate_equity_audit**: Generates a qualitative justification for the calculated equity
 
 
 ## 💬 Prompt Examples

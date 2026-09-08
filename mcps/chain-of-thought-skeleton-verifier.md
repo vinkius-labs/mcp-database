@@ -14,9 +14,9 @@ The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit
 
 
 ## Available Tools (3)
+- **validate_sequence_flow**: Checks if the order of identified blocks adheres to the logical ReAct loop
 - **analyze_structure**: Performs a deep structural scan of a raw agent output string to validate its skeleton
 - **get_ratio_metrics**: Calculates higher-level behavioral metrics derived from the structural analysis
-- **validate_sequence_flow**: Checks if the order of identified blocks adheres to the logical ReAct loop
 
 
 ## 💬 Prompt Examples

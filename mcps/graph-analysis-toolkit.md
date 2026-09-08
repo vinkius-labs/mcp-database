@@ -14,9 +14,9 @@ The Graph Analysis Toolkit is a specialized engine for deep structural analysis 
 
 
 ## Available Tools (5)
-- **calculate_centrality_metrics**: Rank nodes based on influence and position
-- **detect_structural_vulnerabilities**: Identify critical nodes and edges that break connectivity
 - **analyze_graph_connectivity**: Assess graph interconnectedness and identify isolated groups
+- **detect_structural_vulnerabilities**: Identify critical nodes and edges that break connectivity
+- **calculate_centrality_metrics**: Rank nodes based on influence and position
 - **check_graph_isomorphism**: Determine if two graphs are structurally identical
 - **get_node_degrees**: Determine incoming and outgoing connections for nodes
 

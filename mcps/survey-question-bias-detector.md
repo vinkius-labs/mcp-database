@@ -14,15 +14,15 @@ The Survey Question Bias Detector identifies methodological errors in surveys an
 
 
 ## Available Tools (5)
-- **check_conjunction_complexity**: Identify double-barreled questions
-- **identify_negation_confusion**: , that might create double negatives.
-
-Detect double negatives in a question
+- **evaluate_cognitive_load**: Assess the complexity and length of a question
 - **scan_leading_language**: s., "amazing", "must").
 
 Detect biased or leading language in a survey question
+- **identify_negation_confusion**: , that might create double negatives.
+
+Detect double negatives in a question
 - **verify_scale_symmetry**: Check if a response scale is balanced
-- **evaluate_cognitive_load**: Assess the complexity and length of a question
+- **check_conjunction_complexity**: Identify double-barreled questions
 
 
 ## 💬 Prompt Examples

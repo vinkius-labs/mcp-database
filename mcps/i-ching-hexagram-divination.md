@@ -14,9 +14,9 @@ This MCP server provides a digital bridge to the ancient wisdom of the I Ching. 
 
 
 ## Available Tools (3)
+- **perform_divination**: Perform a new I-Ching divination
 - **get_interpretation**: Get the interpretation for a specific hexagram ID
 - **calculate_transformation**: Calculate the resulting hexagram after mutations
-- **perform_divination**: Perform a new I-Ching divination
 
 
 ## 💬 Prompt Examples
