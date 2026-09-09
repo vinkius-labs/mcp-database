@@ -14,9 +14,9 @@ This MCP server provides specialized tools for designing electrowinning circuits
 
 
 ## Available Tools (4)
-- **design_cathode_surface**: Calculates the necessary cathode surface area based on desired current density
 - **calculate_cell_dimensions**: Determines the physical configuration of the cell, including electrode spacing
 - **calculate_production_current**: Determines the total electrical current required to achieve a specific metal production rate
+- **design_cathode_surface**: Calculates the necessary cathode surface area based on desired current density
 - **estimate_power_requirements**: Estimates the electrical energy consumption for the electrowinning process
 
 

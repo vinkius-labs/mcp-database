@@ -14,10 +14,10 @@ This MCP server provides engineering tools to design carbon adsorption circuits 
 
 
 ## Available Tools (4)
-- **calculate_carbon_inventory**: Determines the total mass of activated carbon required for the circuit
-- **predict_isotherm_loading**: Predicts how much gold will be on the carbon at equilibrium for a given concentration
 - **calculate_advance_rate**: Calculates how fast carbon must be replenished or moved to maintain efficiency
+- **calculate_carbon_inventory**: Determines the total mass of activated carbon required for the circuit
 - **design_tank_dimensions**: Calculates the physical volume required for the adsorption vessels
+- **predict_isotherm_loading**: Predicts how much gold will be on the carbon at equilibrium for a given concentration
 
 
 ## 💬 Prompt Examples

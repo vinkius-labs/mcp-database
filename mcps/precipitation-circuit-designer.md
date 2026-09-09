@@ -14,8 +14,8 @@ This MCP server provides specialized engineering tools for designing hydrometall
 
 
 ## Available Tools (4)
-- **calculate_reactor_dimensions**: Determines the physical size of the reactor needed for the circuit
 - **analyze_kinetics_feasibility**: Evaluates if the desired recovery and retention time are chemically feasible
+- **calculate_reactor_dimensions**: Determines the physical size of the reactor needed for the circuit
 - **design_precipitation_circuit**: Performs a complete circuit design by integrating all inputs into a cohesive plan
 - **get_reagent_requirements**: Calculates the amount of reagent needed to achieve a specific metal recovery
 

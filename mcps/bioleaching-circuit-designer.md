@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing sulfide ore
 
 
 ## Available Tools (4)
-- **calculate_heap_design**: Calculates the physical requirements for a heap leaching operation
 - **calculate_tank_design**: Calculates the sizing and aeration for stirred-tank reactor bioleaching
 - **compare_leaching_modes**: Compares the efficiency and requirements of heap vs. tank leaching
 - **validate_microbial_viability**: Checks if the provided temperature and kinetic activity are compatible with known biological thresholds
+- **calculate_heap_design**: Calculates the physical requirements for a heap leaching operation
 
 
 ## 💬 Prompt Examples

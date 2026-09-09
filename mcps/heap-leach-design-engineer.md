@@ -14,9 +14,9 @@ This MCP server provides specialized hydrometallurgical engineering tools for de
 
 
 ## Available Tools (4)
-- **optimize_irrigation_flow_tool**: Calculates the necessary irrigation rate to maintain optimal moisture without surface flooding
 - **calculate_pad_footprint_tool**: Determines the required surface area of the leach pad based on total ore volume and preferred stack height
 - **estimate_leach_duration_tool**: Predicts how long the leach cycle will last given the ore volume and irrigation capacity
+- **optimize_irrigation_flow_tool**: Calculates the necessary irrigation rate to maintain optimal moisture without surface flooding
 - **validate_stack_stability_tool**: Checks if the proposed stack height is safe based on the ore's physical properties
 
 
