@@ -16,6 +16,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Human Approval Gate Manager](../mcps/human-approval-gate-manager.md) | Manages deterministic human-in-the-loop approval gates for agent actions. |
+| [Intelligent Completion Design Engine](../mcps/intelligent-completion-design-engine.md) | Design intelligent completion systems by calculating ICV sizes, control lines, and HPU requirements. |
 | [JSONPath Query Executor](../mcps/jsonpath-query-executor.md) | Execute deterministic JSONPath queries against any JSON data. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
 | [Postgres Migration Dependency Resolver](../mcps/postgres-migration-dependency-resolver.md) | Resolves the execution order of SQL migrations using graph theory to prevent deployment errors. |

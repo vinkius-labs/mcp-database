@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,111 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,160 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,14 +11,14 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (1011 servers)
-- [finance](categories/finance.md) (750 servers)
+- [finance](categories/finance.md) (751 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (586 servers)
 - [data-analytics](categories/data-analytics.md) (350 servers)
 - [marketing-automation](categories/marketing-automation.md) (241 servers)
+- [engineering](categories/engineering.md) (215 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [agriculture](categories/agriculture.md) (188 servers)
-- [engineering](categories/engineering.md) (174 servers)
 - [construction](categories/construction.md) (149 servers)
 - [science](categories/science.md) (140 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
@@ -31,8 +31,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
 - [infrastructure](categories/infrastructure.md) (81 servers)
+- [analytics](categories/analytics.md) (79 servers)
 - [health](categories/health.md) (77 servers)
-- [analytics](categories/analytics.md) (76 servers)
 - [security](categories/security.md) (71 servers)
 - [human-resources](categories/human-resources.md) (65 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
@@ -65,8 +65,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [utility](categories/utility.md) (29 servers)
 - [chemistry](categories/chemistry.md) (28 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
+- [automation](categories/automation.md) (25 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
-- [automation](categories/automation.md) (24 servers)
 - [environmental-science](categories/environmental-science.md) (24 servers)
 - [gaming](categories/gaming.md) (24 servers)
 - [superpower](categories/superpower.md) (23 servers)
@@ -78,7 +78,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [social-media](categories/social-media.md) (16 servers)
 - [architecture](categories/architecture.md) (15 servers)
 - [business](categories/business.md) (15 servers)
-- [data-analysis](categories/data-analysis.md) (12 servers)
+- [data-analysis](categories/data-analysis.md) (13 servers)
 - [event-management](categories/event-management.md) (12 servers)
 - [inventory-management](categories/inventory-management.md) (12 servers)
 - [observability](categories/observability.md) (12 servers)
@@ -261,12 +261,14 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [navigation](categories/navigation.md) (1 servers)
 - [nlp](categories/nlp.md) (1 servers)
 - [occupational-health](categories/occupational-health.md) (1 servers)
+- [oil-and-gas](categories/oil-and-gas.md) (1 servers)
 - [operations](categories/operations.md) (1 servers)
 - [orchestration](categories/orchestration.md) (1 servers)
 - [outdoor-sports](categories/outdoor-sports.md) (1 servers)
 - [parsing](categories/parsing.md) (1 servers)
 - [predictive-analytics](categories/predictive-analytics.md) (1 servers)
 - [predictive-modeling](categories/predictive-modeling.md) (1 servers)
+- [process-control](categories/process-control.md) (1 servers)
 - [procurement](categories/procurement.md) (1 servers)
 - [rag](categories/rag.md) (1 servers)
 - [rate-limiting](categories/rate-limiting.md) (1 servers)

@@ -521,6 +521,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [NFT Floor Price Strategy](../mcps/nft-floor-price-strategy.md) | Deterministic mean-reversion strategy for NFT floor prices. |
 | [Numismatic Grading & Value Estimator](../mcps/numismatic-grading-value-estimator.md) | Calculate Sheldon grades and market values for US coins. |
 | [OBV Calculator](../mcps/obv-calculator.md) | Deterministic On-Balance Volume (OBV) analysis engine. |
+| [Oil Field Economics Model](../mcps/oil-field-economics-model.md) | Perform detailed economic analysis for oil field developments using DCF modeling. |
 | [Opening Range Breakout Strategy](../mcps/opening-range-breakout-strategy.md) | A deterministic intraday strategy that identifies price breakouts from the initial market opening range. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
 | [Options Gamma Scalping Strategy](../mcps/options-gamma-scalping-strategy.md) | Simulate delta-neutral gamma scalping with automated hedging and cost analysis. |

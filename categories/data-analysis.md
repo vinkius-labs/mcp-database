@@ -15,6 +15,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | [Ore Reserve Estimator](../mcps/ore-reserve-estimator.md) | Estimates mineral ore reserves using geostatistical interpolation and geological constraints. |
 | [rag-chunk-boundary-optimizer](../mcps/rag-chunk-boundary-optimizer-1.md) | Analyzes text chunking strategies for RAG pipelines by measuring overlap, sentence integrity, and semantic continuity. |
 | [Resource Model Validation](../mcps/resource-model-validation.md) | Validate mineral resource block models using statistical analysis and spatial swath plots. |
+| [Well Stimulation Evaluation](../mcps/well-stimulation-evaluation.md) | Assess the effectiveness of well stimulation treatments using skin factor and productivity metrics. |
 | [Western Blot Quantification](../mcps/western-blot-quantification.md) | Quantify protein expression from western blot data using densitometry and statistical analysis. |
 
 

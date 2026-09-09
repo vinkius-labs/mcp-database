@@ -54,9 +54,11 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |
 | [Maintenance Cost Analysis](../mcps/maintenance-cost-analysis.md) | Analyze mining equipment efficiency and maintenance reliability. |
 | [Mass Balance Analytical](../mcps/mass-balance-analytical.md) | Calculates chemical mass balance, recovery rates, and method efficiency for laboratory procedures. |
+| [Metallurgical Accounting](../mcps/metallurgical-accounting.md) | Precise metal balance, recovery reconciliation, and loss identification for mining operations. |
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
 | [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
@@ -78,6 +80,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Waste Minimization Analysis](../mcps/waste-minimization-analysis.md) | Analyze waste generation, reduction opportunities, and recycling potential using the waste hierarchy. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
+| [Wellbore Cleaning Efficiency](../mcps/wellbore-cleaning-efficiency.md) | Evaluates hole cleaning effectiveness and cuttings transport efficiency. |
 | [Wine Redox Stability Diagnostic](../mcps/wine-redox-stability-diagnostic.md) | Analyzes redox potential and chemical fault risks in wine. |
 | [Zero-shot vs Few-shot Ratio Calculator](../mcps/zero-shot-vs-few-shot-ratio-calculator-alternative.md) | Quantify prompt composition by measuring the density of few-shot examples against instructions. |
 
