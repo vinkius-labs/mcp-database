@@ -14,8 +14,8 @@ This MCP server provides specialized tools for deep mining safety. It allows AI 
 
 
 ## Available Tools (4)
-- **analyze_burst_potential**: Determine the immediate likelihood of a rock burst based on current mine conditions
 - **calculate_critical_depth**: Identify the depth at which the mine environment becomes susceptible to rock burst phenomena
+- **analyze_burst_potential**: Determine the immediate likelihood of a rock burst based on current mine conditions
 - **evaluate_geological_risk**: Assess how structural geological features contribute to overall instability
 - **recommend_mitigation_plan**: Provide actionable engineering strategies to reduce rock burst risk
 

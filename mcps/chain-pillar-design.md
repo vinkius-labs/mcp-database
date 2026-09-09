@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for longwall mining stabi
 
 
 ## Available Tools (4)
-- **simulate_loading_scenario**: Models how the abutment load shifts between yield pillars and chain pillars
+- **calculate_subsidence_impact**: Predicts the potential surface movement based on the pillar design and seam characteristics
 - **evaluate_stability**: Assesses the safety of a proposed pillar design against environmental and operational constraints
 - **get_pillar_dimensions**: Determines the required width of a chain pillar based on specific mining geometry and loading conditions
-- **calculate_subsidence_impact**: Predicts the potential surface movement based on the pillar design and seam characteristics
+- **simulate_loading_scenario**: Models how the abutment load shifts between yield pillars and chain pillars
 
 
 ## 💬 Prompt Examples
