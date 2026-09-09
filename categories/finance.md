@@ -200,6 +200,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Contract Backlog & Revenue Engine](../mcps/contract-backlog-revenue-engine.md) | Calculate contracted revenue backlog, recognized revenue, and future visibility. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
+| [CORDIS EU Research Funding](../mcps/cordis-eu-research-funding.md) | Official EU research & innovation funding database: search Horizon Europe and H2020 projects, exploitable results and news, full project factsheets with EU contribution amounts, coordinators and dates — zero auth. |
 | [Corporate Innovation ROI Engine](../mcps/corporate-innovation-roi-engine.md) | Quantifies financial and strategic returns for corporate innovation programs. |
 | [Correlation Matrix Calculator](../mcps/correlation-matrix-calculator.md) | Deterministic asset correlation and covariance calculator for financial time series. |
 | [Correlation Matrix Hedging](../mcps/correlation-matrix-hedging.md) | Calculate precise hedge ratios and risk profiles for correlated prediction markets. |
@@ -295,6 +296,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EU Social Contributions Calculator](../mcps/eu-social-contributions-calculator.md) | Estimate employee and employer social security contributions for France, Germany, Spain, Italy, and Portugal. |
 | [EU Transfer Pricing Checker](../mcps/eu-transfer-pricing-checker.md) | Verify intercompany transaction compliance with OECD Arm's Length Principle using industry benchmarks. |
 | [EU VAT Calculator](../mcps/eu-vat-calculator.md) | Calculate EU VAT rates, transaction taxes, and compliance rules for 27 member states. |
+| [EU VAT Validator (VIES)](../mcps/eu-vat-validator-vies.md) | Official EU VIES VAT validation for all 27 member states: instant validity checks, registered company name and address, trader-match scoring, batch checks and service-status monitoring — zero auth. |
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
 | [European Bankruptcy Law Impact Analyzer](../mcps/european-bankruptcy-law-impact-analyzer.md) | Assess insolvency risk, creditor recovery, and director liability across EU jurisdictions. |
 | [European Cloud Cost & Sovereignty Modeler](../mcps/european-cloud-cost-sovereignty-modeler.md) | Calculate cloud expenditures and evaluate EU data residency compliance. |

@@ -4,6 +4,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Acid Rock Drainage Prediction](../mcps/acid-rock-drainage-prediction.md) | Predict environmental risk from acid rock drainage using geochemical and kinetic data. |
 | [Aluminum Toxicity Risk Assessment](../mcps/aluminum-toxicity-risk-assessment.md) | Assess aluminum toxicity risk in acidic soils and calculate lime requirements. |
 | [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Carbon Footprint Calculator for Chemical Processes](../mcps/carbon-footprint-calculator-for-chemical-processes.md) | Calculate Scope 1, 2, and 3 emissions and intensity for chemical manufacturing using GHG Protocol. |
@@ -18,10 +19,12 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [No-Till Transition Impact](../mcps/no-till-transition-impact.md) | Models soil health, yield trajectories, and compaction risks during the shift to no-till farming. |
 | [Nutrient Runoff Loss Model](../mcps/nutrient-runoff-loss-model.md) | Simulates nitrogen and phosphorus loss from agricultural fields due to runoff. |
 | [Orchard Frost Protection](../mcps/orchard-frost-protection.md) | Calculate water requirements, mortality risks, and compare frost protection methods. |
+| [Pit Lake Prediction Model](../mcps/pit-lake-prediction-model.md) | Predicts pit lake formation, water levels, and water quality evolution. |
 | [Runoff Curve Number Calculator](../mcps/runoff-curve-number-calculator.md) | Calculate surface runoff using the SCS Curve Number method. |
 | [Rye Ergot Risk Predictor](../mcps/rye-ergot-risk-predictor.md) | Predicts ergot contamination risk and economic impact in rye production. |
 | [Sediment Yield Estimator](../mcps/sediment-yield-estimator.md) | Estimates sediment yield from erosion and delivery using USLE and MUSLE models. |
 | [Spray Drift Model](../mcps/spray-drift-model.md) | Estimates pesticide drift distance and risk using agdrift equations. |
+| [Tailings Geochemistry Modeling](../mcps/tailings-geochemistry-modeling.md) | Predict leachate quality and element mobility in tailings piles. |
 | [Water Footprint Calculator](../mcps/water-footprint-calculator.md) | Calculates multi-dimensional water footprints for chemical manufacturing processes. |
 | [Wave Refraction Effect](../mcps/wave-refraction-effect.md) | Calculates wave refraction, breaking points, and point break intensity based on bathymetry. |
 | [Wind Shadow Zone](../mcps/wind-shadow-zone.md) | Calculate aerodynamic wind shadow and speed reduction caused by obstacles. |

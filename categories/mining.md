@@ -4,9 +4,12 @@ Explore the open database of **mining** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Flotation Reagent Dosage Calculator](../mcps/flotation-reagent-dosage-calculator.md) | Calculates precise flotation reagent requirements based on ore mineralogy and plant conditions. |
 | [Grade-Tonnage Curve Model](../mcps/grade-tonnage-curve-model.md) | Analyze resource models to generate grade-tonnage curves and calculate ore quantities. |
 | [Reliability-Centered Maintenance (RCM)](../mcps/reliability-centered-maintenance-rcm.md) | Optimize mining equipment maintenance using RCM methodology. |
 | [Rock Burst Prediction](../mcps/rock-burst-prediction.md) | Predict rock burst potential in deep mines using stress and geological analysis. |
+| [Solvent Extraction Circuit Designer](../mcps/solvent-extraction-circuit-designer.md) | Design copper or uranium solvent extraction circuits by calculating stages, equipment sizing, and reagent loading. |
+| [Thermal Environment Prediction](../mcps/thermal-environment-prediction.md) | Predicts thermal conditions and heat stress in underground excavations. |
 
 
 ---

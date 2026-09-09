@@ -11,30 +11,42 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Backfill Strength Requirements](../mcps/backfill-strength-requirements.md) | Calculate required UCS, binder content, and curing time for mine backfill. |
 | [Ball Mill Sizing & Design](../mcps/ball-mill-sizing-design.md) | Calculate mill dimensions, power requirements, and media charge for mineral processing circuits. |
 | [Bench Design Parameters](../mcps/bench-design-parameters.md) | Calculate optimal open-pit bench geometry including height, width, and inter-ramp angles. |
+| [Bioleaching Circuit Designer](../mcps/bioleaching-circuit-designer.md) | Design bioleaching circuits by calculating reactor volumes, aeration, and retention times. |
 | [Blast Fragmentation Model](../mcps/blast-fragmentation-model.md) | Predict rock fragmentation size distributions using the Kuz-Ram model. |
 | [Blast Vibration Predictor](../mcps/blast-vibration-predictor.md) | Predict ground vibration intensity and regulatory compliance from blasting events. |
 | [Blasting Pattern Design Engine](../mcps/blasting-pattern-design-engine.md) | Calculate optimized blast parameters for mining operations. |
 | [Board Planing Speed Calculator](../mcps/board-planing-speed-calculator.md) | Calculate minimum planing speeds and drag profiles for surfboards. |
 | [Board Repair Estimator](../mcps/board-repair-estimator.md) | Estimate circuit board repair costs, time, and economic viability. |
+| [Bond Work Index Calculator](../mcps/bond-work-index-calculator.md) | Calculate Bond Work Index (BWi), grinding energy requirements, and circuit power. |
 | [Cable Bolt Design Engineer](../mcps/cable-bolt-design-engineer.md) | Automated engineering tool for designing cable bolt support systems in underground excavations. |
+| [Carbon Adsorption Design](../mcps/carbon-adsorption-design.md) | Design carbon adsorption circuits for gold recovery processes. |
+| [Carbon Stripping Circuit Designer](../mcps/carbon-stripping-circuit-designer.md) | Design gold elution circuits by calculating vessel sizes, timing, and reagent needs. |
 | [Cemented Backfill Mix Designer](../mcps/cemented-backfill-mix-designer.md) | Calculate optimal binder content, water-to-cement ratios, and flow characteristics for mining backfill. |
+| [Centrifugal Concentrator Design Tool](../mcps/centrifugal-concentrator-design-tool.md) | Design centrifugal concentrator circuits by calculating unit capacity, circuit configuration, and fluidization parameters. |
 | [Centrifugation Design Engineer](../mcps/centrifugation-design-engineer.md) | Design and size industrial centrifugation systems using Stokes' law and centrifugal physics. |
 | [Ceramic Formulation Calculator](../mcps/ceramic-formulation-calculator.md) | Design ceramic batches and glazes by calculating oxide profiles, thermal expansion, and sintering temperatures. |
 | [Chain Pillar Design](../mcps/chain-pillar-design.md) | Calculate stable chain pillar dimensions and stability metrics for longwall mining. |
+| [Classification Efficiency Model](../mcps/classification-efficiency-model.md) | Models classification efficiency for hydrocyclones and screens using partition curves and separation metrics. |
+| [Column Flotation Design](../mcps/column-flotation-design.md) | Design mineral processing column flotation circuits with precise geometry and hydraulic calculations. |
+| [Comminution Circuit Designer](../mcps/comminution-circuit-designer.md) | Design optimal mineral processing circuits, equipment sizing, and energy requirements. |
 | [Compaction Control Test](../mcps/compaction-control-test.md) | Analyzes soil compaction quality by comparing field test results against laboratory standards. |
 | [Composite Material Design](../mcps/composite-material-design.md) | Calculate mechanical properties, optimal fiber content, and laminate stiffness for composite materials. |
 | [Compressor Sizing Calculator](../mcps/compressor-sizing-calculator.md) | Thermodynamic tool for sizing gas compressor stages, power, and intercooling. |
 | [Concentrator Capacity Expansion Evaluator](../mcps/concentrator-capacity-expansion-evaluator.md) | Evaluates capital expenditures and economic viability for concentrator capacity increases. |
 | [Concrete Two-Way Slab Designer](../mcps/concrete-two-way-slab-designer.md) | Automated ACI-compliant design for two-way reinforced concrete slabs. |
 | [Concrete Wash Water Treatment Engine](../mcps/concrete-wash-water-treatment-engine.md) | Calculates chemical neutralization and physical settling requirements for concrete wash water. |
+| [Consolidating Settlement Model](../mcps/consolidating-settlement-model.md) | Calculates primary and secondary settlement of mine tailings using Terzaghi theory. |
 | [Corrosion Kinetics Engine](../mcps/corrosion-kinetics-engine.md) | Calculates corrosion current, material loss rates, and analyzes Evans diagrams from electrochemical data. |
 | [Corrosion Rate Calculator](../mcps/corrosion-rate-calculator.md) | Calculate corrosion rates, penetration depth, and remaining service life from weight loss or electrochemical data. |
+| [Cover System Design for Tailings](../mcps/cover-system-design-for-tailings.md) | Design engineered covers for tailings closure by calculating thickness, material needs, and performance. |
 | [Crown Pillar Thickness Calculator](../mcps/crown-pillar-thickness-calculator.md) | Determine required crown pillar thickness and stability safety for underground mining. |
 | [Crusher Selection & Sizing](../mcps/crusher-selection-sizing.md) | Select optimal crusher types and calculate sizing, power, and wear requirements. |
 | [Crystallizer Design Engine](../mcps/crystallizer-design-engine.md) | Designs crystallization equipment by applying kinetics to production requirements. |
 | [Cyclone Design Simulation](../mcps/cyclone-design-simulation.md) | Design hydrocyclone circuits by calculating dimensions, capacity, and efficiency. |
+| [Dense Media Separation (DMS) Designer](../mcps/dense-media-separation-dms-designer.md) | Design efficient DMS circuits by calculating equipment dimensions, media properties, and separation performance. |
 | [Distillation Column Designer](../mcps/distillation-column-designer.md) | Design binary distillation columns by calculating stages, feed locations, and diameters. |
 | [Dryer Design Engineering Tool](../mcps/dryer-design-engineering-tool.md) | Calculate dryer sizing, residence time, and energy demand for industrial drying processes. |
+| [Electrowinning Cell Designer](../mcps/electrowinning-cell-designer.md) | Calculates electrochemical parameters and physical dimensions for metal recovery cells. |
 | [Evaporator Design Engineer](../mcps/evaporator-design-engineer.md) | Calculate thermal requirements and equipment dimensions for industrial evaporation systems. |
 | [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
 | [Extraction Column Design Tool](../mcps/extraction-column-design-tool.md) | Design liquid-liquid extraction columns by calculating stages, diameter, height, and hydrodynamics. |
@@ -42,7 +54,9 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Fin Pressure & Stress Analyzer](../mcps/fin-pressure-stress-analyzer.md) | Calculates hydrodynamic pressure, base stress, and structural break risk for aquatic fins. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Flare System Sizing](../mcps/flare-system-sizing.md) | Sizing emergency relief flare systems using API 521 methodologies. |
+| [Flotation Cell Sizing](../mcps/flotation-cell-sizing.md) | Calculate flotation cell volumes, counts, and bank configurations for mineral processing circuits. |
 | [Flotation Circuit Designer](../mcps/flotation-circuit-designer.md) | Design mineral flotation circuits by modeling kinetic separation based on ore characteristics. |
+| [Flotation Kinetics Modeler](../mcps/flotation-kinetics-modeler.md) | Models flotation kinetics from test data to predict recovery and residence time. |
 | [Foil Carve Physics](../mcps/foil-carve-physics.md) | Calculate hydrofoil carving mechanics, bank angles, and structural loads. |
 | [Foundation Pile Layout Optimizer](../mcps/foundation-pile-layout-optimizer.md) | Optimizes pile quantity, positioning, and pile cap dimensions for structural foundations. |
 | [Foundation Settlement Calculator](../mcps/foundation-settlement-calculator.md) | Calculate immediate, consolidation, and total soil settlement for foundation engineering. |
@@ -50,12 +64,16 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Gravity Separation Design Engine](../mcps/gravity-separation-design-engine.md) | Select optimal gravity separation equipment and estimate recovery performance. |
 | [Ground Support Design](../mcps/ground-support-design.md) | Calculate optimal rock bolt patterns and shotcrete thickness for underground excavations. |
 | [Ground Support Selection](../mcps/ground-support-selection.md) | Specialized decision-support for geotechnical excavation stability. |
+| [Heap Leach Design Engineer](../mcps/heap-leach-design-engineer.md) | Professional engineering tool for designing gold and copper heap leach pads. |
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
+| [HPGR Circuit Design Tool](../mcps/hpgr-circuit-design-tool.md) | Calculate HPGR roll dimensions, operating pressure, and throughput efficiency. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Hydrofoil Mast Structural Analysis](../mcps/hydrofoil-mast-structural-analysis.md) | Calculate mast bending, stress concentration, and material integrity for hydrofoil masts. |
 | [Hydrofoil Speed & Stability Calculator](../mcps/hydrofoil-speed-stability-calculator.md) | Calculate lift-off, stall, and optimal cruising speeds for hydrofoil setups. |
 | [In-Situ Stress Measurement](../mcps/in-situ-stress-measurement.md) | Interprets in-situ stress measurement data from overcoring, hydraulic fracturing, or acoustic emission. |
+| [Instrumentation Plan Development](../mcps/instrumentation-plan-development.md) | Develop comprehensive instrumentation plans for mining excavations by analyzing geotechnical risks and monitoring goals. |
 | [Ion Exchange System Designer](../mcps/ion-exchange-system-designer.md) | Design ion exchange columns, calculate resin volumes, and estimate regeneration needs. |
+| [Jig Separation Design](../mcps/jig-separation-design.md) | Technical tool for designing jigging circuits based on mineral density and throughput. |
 | [Kinematic Analysis for Rock Slopes](../mcps/kinematic-analysis-for-rock-slopes.md) | Perform kinematic analysis for rock slopes to identify planar, wedge, and toppling failure modes. |
 | [Kite Bridle Pulley Friction Engine](../mcps/kite-bridle-pulley-friction-engine.md) | Calculates pulley friction, efficiency loss, and steering delay for kite bridle systems. |
 | [Kite Bridle Tension Analyzer](../mcps/kite-bridle-tension-analyzer.md) | Calculates tension distribution and failure risks for kite bridle systems. |
@@ -74,22 +92,30 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Material Selection Database](../mcps/material-selection-database.md) | Identify, rank, and compare engineering materials based on environmental conditions and performance requirements. |
 | [McCabe-Thiele Method](../mcps/mccabe-thiele-method.md) | Perform binary distillation analysis including stage counts and feed locations. |
 | [Membrane Separation Design](../mcps/membrane-separation-design.md) | Model and size membrane separation systems with transport equations. |
+| [Methane Drainage System Design](../mcps/methane-drainage-system-design.md) | Design optimal methane drainage layouts and vacuum requirements for gassy coal mines. |
 | [Mine Dewatering Design](../mcps/mine-dewatering-design.md) | Design efficient dewatering systems for open-pit and underground mines. |
+| [Mine Dewatering System Design](../mcps/mine-dewatering-system-design.md) | Engineering tools for designing mine dewatering infrastructure, including pump capacity and piping. |
 | [Mine Life Calculation Engine](../mcps/mine-life-calculation-engine.md) | Simulate mine lifespan, production profiles, and reserve depletion. |
 | [Mine Power Distribution Designer](../mcps/mine-power-distribution-designer.md) | Design electrical distribution networks for mining environments, including transformer sizing and cable selection. |
 | [Mine Production Scheduler](../mcps/mine-production-scheduler.md) | Optimizes mine production schedules, cutoff grades, and NPV using linear programming. |
+| [Mine Site Drainage Design](../mcps/mine-site-drainage-design.md) | Hydrological engineering tools for designing mine site drainage, sizing infrastructure, and managing sediment risk. |
 | [Mine Ventilation Cost Optimizer](../mcps/mine-ventilation-cost-optimizer.md) | Optimize underground mine ventilation by calculating required airflow and selecting the most cost-effective fans. |
 | [Mine Ventilation Design](../mcps/mine-ventilation-design.md) | Engineering tool for calculating airflow, pressure losses, and fan selection for underground mines. |
+| [Mine Ventilation Network Solver](../mcps/mine-ventilation-network-solver.md) | Simulate airflows, pressures, and fan operating points in underground mine ventilation networks. |
 | [Mine Water Management System](../mcps/mine-water-management-system.md) | Design mine water infrastructure by calculating storage, treatment, and discharge compliance. |
 | [Open Pit Pushback Designer](../mcps/open-pit-pushback-designer.md) | Design incremental pit expansions by calculating boundaries, material volumes, and production feasibility. |
+| [Ore Sorting Optimization](../mcps/ore-sorting-optimization.md) | Optimize ore sorting circuit design through grade distribution analysis and capacity modeling. |
 | [Oxygen Transfer Coefficient Calculator](../mcps/oxygen-transfer-coefficient-calculator.md) | Estimates oxygen mass transfer (kLa), OTR, and power requirements for bioreactors. |
 | [Passivation Potential Determination](../mcps/passivation-potential-determination.md) | Extracts critical electrochemical parameters from polarization curves of active-passive metals. |
+| [Paste Backfill Pipeline Design](../mcps/paste-backfill-pipeline-design.md) | Design mining transport pipelines for paste backfill, calculating diameters, pressure drops, and pump needs. |
 | [Pillar Design Empirical](../mcps/pillar-design-empirical.md) | Calculate rock pillar stability using empirical geotechnical formulas. |
 | [Pinch Analysis Utilities](../mcps/pinch-analysis-utilities.md) | Thermodynamic target calculation and heat recovery optimization using pinch technology. |
 | [Piping System Design](../mcps/piping-system-design.md) | Professional engineering tool for calculating pipe diameters, pressure drops, and pump head requirements. |
 | [Pit Optimization (Lerchs-Grossmann)](../mcps/pit-optimization-lerchs-grossmann.md) | Calculate optimal open-pit mine limits using the Lerchs-Grossmann algorithm. |
 | [Pit Slope Stability Analysis](../mcps/pit-slope-stability-analysis.md) | Calculate factor of safety and identify critical slip surfaces for open-pit mine slopes. |
 | [Polymer Additive Calculator](../mcps/polymer-additive-calculator.md) | Calculate precise additive concentrations, PHR, and batch sizes for polymer formulations. |
+| [Precipitation Circuit Designer](../mcps/precipitation-circuit-designer.md) | Engineering tool for designing metal recovery precipitation circuits. |
+| [Pressure Oxidation (POX) Design Suite](../mcps/pressure-oxidation-pox-design-suite.md) | Technical design tools for pressure oxidation (POX) circuits in refractory gold processing. |
 | [Prestress Loss Calculation](../mcps/prestress-loss-calculation.md) | Estimates prestress losses in concrete due to elastic, creep, shrinkage, and relaxation factors. |
 | [Process Control Loop Designer](../mcps/process-control-loop-designer.md) | Design optimal control loops by calculating PID parameters, sizing valves, and selecting sensors. |
 | [Process Hazard Analysis Tool](../mcps/process-hazard-analysis-tool.md) | Systematic documentation and risk assessment for industrial process hazards. |
@@ -97,17 +123,28 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Reactor Design Batch](../mcps/reactor-design-batch.md) | Calculate reactor sizing, thermal safety, and production schedules for batch chemical processes. |
 | [Reactor Design CSTR](../mcps/reactor-design-cstr.md) | Calculate reactor volume, residence time, and conversion for CSTR systems. |
 | [Reactor Design PFR](../mcps/reactor-design-pfr.md) | Calculate physical parameters and performance metrics for Plug Flow Reactors. |
+| [Refrigeration Requirement Deep Mines](../mcps/refrigeration-requirement-deep-mines.md) | Calculate total cooling loads and refrigeration capacity for deep mining environments. |
+| [Regrind Circuit Designer](../mcps/regrind-circuit-designer.md) | Design optimal fine grinding circuits by selecting mill types and calculating power and media wear. |
 | [Rehabilitation Planning Model](../mcps/rehabilitation-planning-model.md) | Design, schedule, and validate mine rehabilitation programs. |
 | [Relief Valve Sizing](../mcps/relief-valve-sizing.md) | Calculates pressure relief valve requirements using API 520/521 standards. |
 | [Resource Classification System](../mcps/resource-classification-system.md) | Classifies mineral resources into JORC or NI 43-101 categories. |
 | [Retaining Wall Stability Analyzer](../mcps/retaining-wall-stability-analyzer.md) | Evaluates structural integrity of retaining walls against overturning, sliding, and bearing failure. |
+| [Roaster Circuit Design](../mcps/roaster-circuit-design.md) | Engineering tool for designing roasting circuits for refractory ores. |
 | [Rock Mass Characterization](../mcps/rock-mass-characterization.md) | Quantify rock mass quality using RMR, Q-system, and GSI classification methods. |
 | [Rock Mechanics Analysis](../mcps/rock-mechanics-analysis.md) | Analyze rock mass stability and determine mining support requirements. |
+| [SAG Mill Pinion Power Calculator](../mcps/sag-mill-pinion-power-calculator.md) | Calculate mechanical and electrical power requirements for SAG mill pinions. |
 | [SAG Mill Sizing & Design](../mcps/sag-mill-sizing-design.md) | Calculate optimal SAG mill dimensions, power requirements, and ball charge. |
+| [SAG Mill Specific Energy Calculator](../mcps/sag-mill-specific-energy-calculator.md) | Estimates energy consumption, power draw, and throughput for SAG mills. |
+| [Screen Sizing & Configuration](../mcps/screen-sizing-configuration.md) | Calculate optimal screen area, aperture sizes, and deck layouts for vibrating screens. |
 | [Sediment Basin Designer](../mcps/sediment-basin-designer.md) | Design erosion control sediment basins using settling theory and NRCS standards. |
+| [Seepage Analysis for Tailings](../mcps/seepage-analysis-for-tailings.md) | Analyze seepage, phreatic surfaces, and exit gradients in tailings storage facilities. |
+| [Shaking Table Design Engineer](../mcps/shaking-table-design-engineer.md) | Calculates physical parameters and capacity requirements for mineral processing shaking tables. |
 | [Site Remediation Planner](../mcps/site-remediation-planner.md) | Generates comprehensive remediation strategies, timelines, and cost estimates for contaminated sites. |
+| [Slope Radar Monitoring Setup](../mcps/slope-radar-monitoring-setup.md) | Automated planning and configuration for slope stability radar deployment. |
 | [Slope Stability Analysis for Open Pit Mines](../mcps/slope-stability-analysis-for-open-pit-mines.md) | Analyze slope stability using limit equilibrium methods to calculate Factor of Safety and failure modes. |
+| [Smelter Mass Balance Engine](../mcps/smelter-mass-balance-engine.md) | Calculate mass distributions, metal recoveries, and off-gas compositions for smelting operations. |
 | [Soil Nail Wall Design](../mcps/soil-nail-wall-design.md) | Engineering tool for soil nail wall stability and nail design. |
+| [Spiral Concentrator Design](../mcps/spiral-concentrator-design.md) | Design mineral processing spiral concentrator circuits based on ore characteristics. |
 | [Stack Testing Protocol Designer](../mcps/stack-testing-protocol-designer.md) | Automated design of air emission testing protocols using EPA methods. |
 | [Steel Braced Frame Drift Calculator](../mcps/steel-braced-frame-drift-calculator.md) | Calculates inter-story drift, drift ratios, and brace stiffness requirements for steel braced frames. |
 | [Steel Simple Connection Designer](../mcps/steel-simple-connection-designer.md) | Design AISC-compliant simple shear connections for steel structures. |
@@ -124,6 +161,8 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Subsidence Prediction Model](../mcps/subsidence-prediction-model.md) | Predict surface subsidence and movement caused by underground mining activities. |
 | [Surfboard Fin Configurator](../mcps/surfboard-fin-configurator.md) | Calculate optimal fin geometry and setup for any wave condition. |
 | [Tailings Dam Safety Assessment](../mcps/tailings-dam-safety-assessment.md) | Professional engineering tool for evaluating tailings dam stability, seismic resilience, and flood risk. |
+| [Tailings Dam Stability Analyzer](../mcps/tailings-dam-stability-analyzer.md) | Engineering tool for assessing tailings dam slope stability and critical failure conditions. |
+| [Tailings Deposition Modeling](../mcps/tailings-deposition-modeling.md) | Simulate physical evolution of tailings storage facilities. |
 | [Tailings Storage Facility Design](../mcps/tailings-storage-facility-design.md) | Design tailings storage facilities (TSFs) using production, topography, and water balance data. |
 | [Tailings Water Balance](../mcps/tailings-water-balance.md) | Calculate water inventory and hydrologic stability for tailings storage facilities. |
 | [Thermodynamic Model Selector](../mcps/thermodynamic-model-selector.md) | Select the optimal thermodynamic model for chemical process simulations. |
@@ -135,6 +174,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Vapor-Liquid Equilibrium Engine](../mcps/vapor-liquid-equilibrium-engine.md) | Calculate bubble points, dew points, and phase equilibrium properties for chemical mixtures. |
 | [Ventilation Pressure Survey Analyzer](../mcps/ventilation-pressure-survey-analyzer.md) | Analyzes ventilation pressure survey data to determine friction factors, leakage, and system resistance. |
 | [Ventilation Rate Calculator](../mcps/ventilation-rate-calculator.md) | Calculates required ventilation rates, exhaust flow, and make-up air for chemical safety. |
+| [Vertical Mill Sizing](../mcps/vertical-mill-sizing.md) | Calculate dimensions, power, and media charge for vertical stirred mills. |
 | [Vessel Design Calculator](../mcps/vessel-design-calculator.md) | Professional ASME-compliant pressure vessel dimension and structural requirement calculator. |
 | [VOC Emission Calculator](../mcps/voc-emission-calculator.md) | Calculate VOC emissions and control efficiency using EPA-aligned methodologies. |
 | [Wedge Failure Analysis](../mcps/wedge-failure-analysis.md) | Analyze rock wedge stability, geometry, and support requirements. |

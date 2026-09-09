@@ -114,6 +114,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Scaffolding Load Capacity Calculator](../mcps/scaffolding-load-capacity-calculator.md) | Calculates safe working loads, bracing requirements, and stability for scaffolding. |
 | [SCC Mix Designer](../mcps/scc-mix-designer.md) | Design high-performance Self-Compacting Concrete (SCC) mixes using EFNARC guidelines. |
 | [Secant Pile Wall Designer](../mcps/secant-pile-wall-designer.md) | Calculate structural and geotechnical parameters for secant pile retaining walls. |
+| [Sediment Control Design](../mcps/sediment-control-design.md) | Calculates pond dimensions, trap efficiency, and settling requirements for erosion control. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Sheet Pile Design](../mcps/sheet-pile-design.md) | Structural and geotechnical design for cantilever and anchored sheet pile walls. |
 | [Shotcrete Mix Design Engineer](../mcps/shotcrete-mix-design-engineer.md) | Calculate precise shotcrete mix proportions, fiber dosages, and accelerator requirements. |

@@ -42,6 +42,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [ECS Task Sizing Calculator](../mcps/ecs-task-sizing-calculator.md) | Calculate precise AWS ECS task resources, EC2 capacity, and scaling configurations. |
 | [European Data Center ROI Optimizer](../mcps/european-data-center-roi-optimizer.md) | Identify optimal European data center locations by balancing latency, energy costs, and GDPR compliance. |
 | [European Data Localization Economics](../mcps/european-data-localization-economics.md) | Calculate the financial and operational impact of European data residency requirements. |
+| [Geotechnical Monitoring System Designer](../mcps/geotechnical-monitoring-system-designer.md) | Design comprehensive geotechnical monitoring programs by mapping hazards to instrument deployment plans. |
 | [Haul Road Design Engineer](../mcps/haul-road-design-engineer.md) | Design safe and efficient haul roads for open-pit mining operations. |
 | [Idempotency Key Enforcer](../mcps/idempotency-key-enforcer.md) | Prevents duplicate execution of identical side-effectful operations using an in-memory LRU cache. |
 | [Infra Asset Lifecycle Coverage](../mcps/infra-asset-lifecycle-coverage.md) | Evaluates asset replacement readiness and technological risk. |
