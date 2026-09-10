@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,170 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,174 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -22,7 +22,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [construction](categories/construction.md) (149 servers)
 - [science](categories/science.md) (140 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
-- [communication-messaging](categories/communication-messaging.md) (128 servers)
+- [communication-messaging](categories/communication-messaging.md) (129 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
 - [utilities](categories/utilities.md) (126 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
@@ -33,7 +33,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [infrastructure](categories/infrastructure.md) (81 servers)
 - [analytics](categories/analytics.md) (79 servers)
 - [health](categories/health.md) (77 servers)
-- [security](categories/security.md) (71 servers)
+- [security](categories/security.md) (73 servers)
 - [human-resources](categories/human-resources.md) (65 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (59 servers)
@@ -260,6 +260,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [mindfulness](categories/mindfulness.md) (1 servers)
 - [music-theory](categories/music-theory.md) (1 servers)
 - [navigation](categories/navigation.md) (1 servers)
+- [news-media](categories/news-media.md) (1 servers)
 - [nlp](categories/nlp.md) (1 servers)
 - [occupational-health](categories/occupational-health.md) (1 servers)
 - [operations](categories/operations.md) (1 servers)

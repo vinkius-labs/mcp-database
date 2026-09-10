@@ -66,6 +66,7 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Jiguang Aurora / 极光](../mcps/jiguang-aurora.md) | Dominant push notification platform in China — manage device segments, schedules, and delivery reports via AI. |
 | [join.me](../mcps/joinme.md) | Start instant video meetings with screen sharing and recording that works in the browser with no downloads required. |
 | [Kontak](../mcps/kontak.md) | Manage communications — list messages, send SMS, and audit contacts. |
+| [Lemmy.World](../mcps/lemmyworld.md) | Read and analyze lemmy.world — the largest Lemmy instance: posts, comment threads, communities, user profiles and the public moderation log, straight from your AI agent. |
 | [LiveKit](../mcps/livekit.md) | Manage real-time video, audio, and data sessions via LiveKit — create rooms, manage participants, and trigger recordings directly from your AI agent. |
 | [Loops.so](../mcps/loopsso.md) | Manage email marketing and transactional emails via Loops.so — handle contacts, campaigns, and events directly from your AI agent. |
 | [Mail-in-a-Box](../mcps/mail-in-a-box.md) | Manage mail users, aliases, and system health via the Mail-in-a-Box REST API. |
