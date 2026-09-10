@@ -35,30 +35,30 @@ Connect any AI agent to **lemmy.world**, the largest Lemmy instance of the Fediv
 
 
 ## Available Tools (8)
-- **get_modlog**: Use it for transparency checks: why a post disappeared, who got banned where, moderation patterns of a community (pass community_id from search results). Paginate with page and limit (max 50). Entries are newest-first.
+- **list_posts**: Returns posts with title, URL, body excerpt, creator, community and engagement counts (score, comments). Without community_name you get the whole-instance feed; pass community_name (e.g. "technology") to see one community. Use sort to slice by relevance: Hot for what is trending now, TopDay/TopWeek/TopMonth for popular in a window, TopAll for the best ever, New for the latest. Paginate with page and limit (max 50) — do NOT expect all posts in one call. Combine with list_comments on a post id to read the discussion.
 
-Public moderation log: removed posts/comments, bans and community actions
+List posts on lemmy.world — the frontpage, a specific community, or top of a time window
 - **get_post**: Use it to inspect a specific post found via list_posts or search. To read the discussion, feed the same id to list_comments. IDs are large integers (e.g. 51703042).
 
 Fetch a single post by ID with full details and engagement counts
-- **get_site_stats**: Cheap and keyless — use it first to gauge instance size and activity, or to answer "how big is lemmy.world".
-
-Instance-wide stats for lemmy.world: user counts, activity levels and admin list
-- **get_user**: username is the local handle WITHOUT the @instance suffix (e.g. "ruud", not "ruud@lemmy.world"); for users federated from other instances, find their person_id via search (type_=Users) and pass person_id instead. Use it to check who is behind a post/comment or to see what someone has been posting.
-
-Fetch a user profile by username with their recent posts and comments
 - **list_comments**: Pass post_id (from list_posts, get_post or search) to read that post's discussion — this is THE tool for reading replies. max_depth controls nesting (1 = top-level only, 3-6 shows the back-and-forth); sort=Top gives best-first, New gives latest. IMPORTANT: limit counts only TOP-LEVEL comments — nested replies up to max_depth are returned in addition, so a page can contain far more items than limit. Keep limit small (5-10) when max_depth > 1. Paginate with page for more top-level comments; deep threads may need several pages.
 
 Read the comment thread of a post
 - **list_communities**: Use q to filter by keyword (e.g. q="gaming") or omit it to list the biggest. sort=TopAll ranks by subscribers (stable); Hot ranks by current activity. Community names (for list_posts community_name) are lowercase, e.g. "technology", "asklemmy", "games". Paginate with page and limit (max 50).
 
 Browse or search communities (subreddits) on lemmy.world, with subscriber counts
-- **list_posts**: Returns posts with title, URL, body excerpt, creator, community and engagement counts (score, comments). Without community_name you get the whole-instance feed; pass community_name (e.g. "technology") to see one community. Use sort to slice by relevance: Hot for what is trending now, TopDay/TopWeek/TopMonth for popular in a window, TopAll for the best ever, New for the latest. Paginate with page and limit (max 50) — do NOT expect all posts in one call. Combine with list_comments on a post id to read the discussion.
-
-List posts on lemmy.world — the frontpage, a specific community, or top of a time window
 - **search**: type_ narrows the result kind: Posts, Comments, Communities, Users or Url (search by link URL); All returns every kind in one response. Results come back grouped per type with the matching views — post results include the post id you can feed to get_post/list_comments, community results include names usable in list_posts. sort=TopAll finds highest-scored matches; sort=New finds the freshest. Search is exact-keyword based (no fuzzy matching) — try multiple phrasings if results are thin. Paginate with page and limit (max 50).
 
 Search posts, comments, communities and users on lemmy.world by keyword
+- **get_user**: username is the local handle WITHOUT the @instance suffix (e.g. "ruud", not "ruud@lemmy.world"); for users federated from other instances, find their person_id via search (type_=Users) and pass person_id instead. Use it to check who is behind a post/comment or to see what someone has been posting.
+
+Fetch a user profile by username with their recent posts and comments
+- **get_site_stats**: Cheap and keyless — use it first to gauge instance size and activity, or to answer "how big is lemmy.world".
+
+Instance-wide stats for lemmy.world: user counts, activity levels and admin list
+- **get_modlog**: Use it for transparency checks: why a post disappeared, who got banned where, moderation patterns of a community (pass community_id from search results). Paginate with page and limit (max 50). Entries are newest-first.
+
+Public moderation log: removed posts/comments, bans and community actions
 
 
 ## 💬 Prompt Examples

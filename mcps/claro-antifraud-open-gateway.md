@@ -31,27 +31,27 @@ Antifraud and risk agents, fintech onboarding flows, account-takeover detection,
 
 
 ## Available Tools (7)
-- **get_sim_swap_date**: Use when you need the exact moment rather than a yes/no — forensics, fraud case review, or deciding how stale a SIM-based authentication is. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). A response with no change date means no swap was recorded for the line.
-
-Get the timestamp of the last SIM card change on a Claro phone number (GSMA SIM Swap retrieve-date)
-- **verify_device_location**: Use for fraud checks (falsified GPS), delivery validation and geofence spot-checks. accuracy_km between 2 and 200 (bigger = more forgiving). The check only works while the phone is connected to the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required before running it. phone_number may be sent with or without the leading "+" ("+5511974129777" or "+5511974129777"). To get the actual coordinates instead of a yes/no, use retrieve_device_location.
-
-Verify whether a device is physically inside a given area (lat/long circle, 2-200 km radius) — returns verificationResult true/false
-- **check_number_recycling**: Use to validate stale databases: a number that was recycled means your stored customer data no longer belongs to that line, so registrations, contacts and marketing lists built on it are pointing at a stranger. specified_date = ISO 8601 date-time (e.g. "2025-01-01T00:00:00Z"); phone_number in E.164, leading + optional. Combine with get_sim_tenure for a full picture of the line's ownership stability.
-
-Check whether a phone number was recycled (assigned to a new owner) since a given date (GSMA Number Recycling)
 - **check_sim_swap**: Use before password resets, high-value transactions and session elevation: a recent SIM swap is the classic account-takeover signal. max_age_hours = how far back to look, 1 to 2400 hours, default 240 (10 days); shorter windows are stricter. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). To get the exact timestamp of the last swap instead, use get_sim_swap_date.
 
 Check whether a Claro phone number had its SIM card swapped recently — the core account-takeover antifraud check (GSMA SIM Swap)
-- **get_lbs_device_location**: Coarsest and cheapest of the location checks — use for asset/fleet monitoring and region-level checks. location_type "LAST" gives the most recent reading. The LBS service enforces a per-MSISDN rate ceiling: a 429 means you polled that number too often — back off rather than retry immediately. network_msisdn = country code + number, digits only ("5521912345678"). User consent applies under LGPD.
+- **get_sim_swap_date**: Use when you need the exact moment rather than a yes/no — forensics, fraud case review, or deciding how stale a SIM-based authentication is. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). A response with no change date means no swap was recorded for the line.
 
-Get the last known cell-level location of a Claro device via the legacy LBS platform — coordinates, area type and accuracy radius
+Get the timestamp of the last SIM card change on a Claro phone number (GSMA SIM Swap retrieve-date)
 - **get_line_change_alerts**: The strongest antifraud pattern: a SIM change right before a password reset or high-value transaction is classic account takeover. event_types defaults to "SIMCARD_CHANGED,DEVICE_CHANGED"; add MSISDN_CHANGED and SUBSCRIPTION_CANCELED when reviewing onboarding or fraud cases. Requires the optional credential CLARO_CUSTOMER_ID. network_msisdn = country code + number, digits only ("5521987654321").
 
 Check recent operational changes on a Claro mobile line: SIM-chip swap, device change, number change, subscription cancel — the core account-takeover antifraud signal
+- **check_number_recycling**: Use to validate stale databases: a number that was recycled means your stored customer data no longer belongs to that line, so registrations, contacts and marketing lists built on it are pointing at a stranger. specified_date = ISO 8601 date-time (e.g. "2025-01-01T00:00:00Z"); phone_number in E.164, leading + optional. Combine with get_sim_tenure for a full picture of the line's ownership stability.
+
+Check whether a phone number was recycled (assigned to a new owner) since a given date (GSMA Number Recycling)
+- **verify_device_location**: Use for fraud checks (falsified GPS), delivery validation and geofence spot-checks. accuracy_km between 2 and 200 (bigger = more forgiving). The check only works while the phone is connected to the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required before running it. phone_number may be sent with or without the leading "+" ("+5511974129777" or "+5511974129777"). To get the actual coordinates instead of a yes/no, use retrieve_device_location.
+
+Verify whether a device is physically inside a given area (lat/long circle, 2-200 km radius) — returns verificationResult true/false
 - **retrieve_device_location**: Use when you need where the device was (nearest-city level trust, asset tracking checks) rather than a yes/no inside-test. max_age_seconds limits how fresh the reading must be (e.g. "600" = only data up to 10 minutes old; omit for the freshest available). The device must be on the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required. phone_number in E.164, leading + optional.
 
 Get the last known location of a device on the Claro network (GSMA Device Location retrieval) — area and timestamp
+- **get_lbs_device_location**: Coarsest and cheapest of the location checks — use for asset/fleet monitoring and region-level checks. location_type "LAST" gives the most recent reading. The LBS service enforces a per-MSISDN rate ceiling: a 429 means you polled that number too often — back off rather than retry immediately. network_msisdn = country code + number, digits only ("5521912345678"). User consent applies under LGPD.
+
+Get the last known cell-level location of a Claro device via the legacy LBS platform — coordinates, area type and accuracy radius
 
 
 ## 💬 Prompt Examples

@@ -35,30 +35,30 @@ Connect your AI agent to **Wykop.pl**, Poland's largest social news aggregator a
 
 
 ## Available Tools (8)
-- **list_link_comments**: sort=best gives top-voted first, newest/oldest chronological. This is THE tool for reading link discussions. Paginate with page and limit (1-50).
-
-Read the comment discussion of a Wykop link
-- **get_entry**: Use it to inspect a specific entry found via list_entries or search. IDs are large integers.
-
-Fetch a single microblog entry by ID with its content and vote stats
 - **get_link**: Use it to inspect a specific link found via list_links or search. To read the discussion, feed the same id to list_link_comments. IDs are large integers.
 
 Fetch a single Wykop link by ID with full details and vote stats
-- **get_profile**: Use it to check who is behind a link or entry, or to gauge how active/influential a user is. The username is the handle without the @ (e.g. "wykop").
+- **list_link_comments**: sort=best gives top-voted first, newest/oldest chronological. This is THE tool for reading link discussions. Paginate with page and limit (1-50).
 
-Fetch a Wykop user public profile: bio, location, links/entries activity summary and followers
-- **get_tag_stream**: sort=all returns everything chronologically, best returns top-voted. Use for topic research: Polish communities organize heavily around tags like #programowanie, #polityka, #gamedev. Filter by year/month for historical research. Paginate with page and limit (1-50).
-
-Browse all content under one Wykop tag (#hashtag) — entries and/or links
+Read the comment discussion of a Wykop link
 - **list_entries**: sort=hot gives the trending entries (combine last_update to window: 1,2,3,6 or 12 hours), newest gives latest, active gives most-recently-commented. Entries have text content, optional photo/embed, author and vote counts. Paginate with page and limit (1-50, default 20).
 
 Browse the Wykop microblog ("wpisy") — short posts with votes, like a Polish Twitter/mastodon stream
-- **list_links**: type_="homepage" returns links already promoted to the main page; type_="upcoming" returns the Wykopalisko queue (new links awaiting promotion). sort: newest, active, commented or digged. Each item has title, source URL, author, vote counts (up/down) and comment count — feed the id to get_link for details or list_link_comments for the discussion. Paginate with page and limit (1-50, default 20).
+- **get_entry**: Use it to inspect a specific entry found via list_entries or search. IDs are large integers.
 
-Browse Wykop.pl links (news posts) — main page or upcoming queue, with votes and comment counts
+Fetch a single microblog entry by ID with its content and vote stats
+- **get_tag_stream**: sort=all returns everything chronologically, best returns top-voted. Use for topic research: Polish communities organize heavily around tags like #programowanie, #polityka, #gamedev. Filter by year/month for historical research. Paginate with page and limit (1-50).
+
+Browse all content under one Wykop tag (#hashtag) — entries and/or links
 - **search**: type_ picks the result kind: links, entries, users or all. The query supports words plus prefixes: "@username" restricts to a user, "#tagname" to a tag. sort=score (relevance), popular, comments or newest. Results come back as link/entry/user objects — link and entry ids feed get_link/get_entry/list_link_comments. Search is Polish-content-first: try Polish phrasings for better recall. Paginate with page and limit (1-50, default 20).
 
 Search Wykop links, entries and users by phrase — supports @user and #tag filters
+- **get_profile**: Use it to check who is behind a link or entry, or to gauge how active/influential a user is. The username is the handle without the @ (e.g. "wykop").
+
+Fetch a Wykop user public profile: bio, location, links/entries activity summary and followers
+- **list_links**: type_="homepage" returns links already promoted to the main page; type_="upcoming" returns the Wykopalisko queue (new links awaiting promotion). sort: newest, active, commented or digged. Each item has title, source URL, author, vote counts (up/down) and comment count — feed the id to get_link for details or list_link_comments for the discussion. Paginate with page and limit (1-50, default 20).
+
+Browse Wykop.pl links (news posts) — main page or upcoming queue, with votes and comment counts
 
 
 ## 💬 Prompt Examples
