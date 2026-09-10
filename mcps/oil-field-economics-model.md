@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for oil and gas economic eval
 
 
 ## Available Tools (4)
-- **calculate_project_economics**: Calculates core economic metrics (NPV, IRR, Payout, ROI) for a single development scenario
 - **compare_scenarios**: Compares two different development scenarios
 - **get_production_summary**: Provides a high-level overview of the physical production characteristics
 - **run_sensitivity_analysis**: Evaluates how changes in key variables impact the project NPV
+- **calculate_project_economics**: Calculates core economic metrics (NPV, IRR, Payout, ROI) for a single development scenario
 
 
 ## 💬 Prompt Examples

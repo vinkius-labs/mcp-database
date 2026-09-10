@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,160 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,170 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,12 +11,12 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (1011 servers)
-- [finance](categories/finance.md) (751 servers)
+- [finance](categories/finance.md) (759 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (586 servers)
 - [data-analytics](categories/data-analytics.md) (350 servers)
 - [marketing-automation](categories/marketing-automation.md) (241 servers)
-- [engineering](categories/engineering.md) (215 servers)
+- [engineering](categories/engineering.md) (216 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [agriculture](categories/agriculture.md) (188 servers)
 - [construction](categories/construction.md) (149 servers)
@@ -190,6 +190,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [media-production](categories/media-production.md) (2 servers)
 - [monitoring](categories/monitoring.md) (2 servers)
 - [networking](categories/networking.md) (2 servers)
+- [oil-and-gas](categories/oil-and-gas.md) (2 servers)
 - [operations-management](categories/operations-management.md) (2 servers)
 - [pet-care](categories/pet-care.md) (2 servers)
 - [psychology](categories/psychology.md) (2 servers)
@@ -261,7 +262,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [navigation](categories/navigation.md) (1 servers)
 - [nlp](categories/nlp.md) (1 servers)
 - [occupational-health](categories/occupational-health.md) (1 servers)
-- [oil-and-gas](categories/oil-and-gas.md) (1 servers)
 - [operations](categories/operations.md) (1 servers)
 - [orchestration](categories/orchestration.md) (1 servers)
 - [outdoor-sports](categories/outdoor-sports.md) (1 servers)

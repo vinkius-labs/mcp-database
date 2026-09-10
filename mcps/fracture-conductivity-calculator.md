@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for hydraulic fracturing 
 
 
 ## Available Tools (4)
-- **predict_productivity_gain**: Estimates the impact of the fracture on well performance
 - **calculate_dimensionless_conductivity**: Calculates the Fcd value to evaluate fracture effectiveness
 - **calculate_fracture_conductivity**: Determines the base conductivity of the hydraulic fracture
 - **estimate_stress_degradation**: Adjusts proppant permeability based on reservoir stress conditions
+- **predict_productivity_gain**: Estimates the impact of the fracture on well performance
 
 
 ## 💬 Prompt Examples

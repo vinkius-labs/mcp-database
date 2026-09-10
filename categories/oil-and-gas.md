@@ -5,6 +5,7 @@ Explore the open database of **oil-and-gas** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Equivalent Circulating Density (ECD) Calculator](../mcps/equivalent-circulating-density-ecd-calculator.md) | Calculate ECD profiles, cuttings impact, and environmental adjustments for drilling fluids. |
+| [Tieback vs Standalone Economics](../mcps/tieback-vs-standalone-economics.md) | Compare the financial viability of tieback vs standalone offshore developments. |
 
 
 ---

@@ -138,6 +138,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Piping System Design](../mcps/piping-system-design.md) | Professional engineering tool for calculating pipe diameters, pressure drops, and pump head requirements. |
 | [Pit Optimization (Lerchs-Grossmann)](../mcps/pit-optimization-lerchs-grossmann.md) | Calculate optimal open-pit mine limits using the Lerchs-Grossmann algorithm. |
 | [Pit Slope Stability Analysis](../mcps/pit-slope-stability-analysis.md) | Calculate factor of safety and identify critical slip surfaces for open-pit mine slopes. |
+| [Platform Sizing & Economics](../mcps/platform-sizing-economics.md) | Optimize offshore platform selection and physical dimensions based on production and environment. |
 | [Polymer Additive Calculator](../mcps/polymer-additive-calculator.md) | Calculate precise additive concentrations, PHR, and batch sizes for polymer formulations. |
 | [Post-Frac Production Forecast](../mcps/post-frac-production-forecast.md) | Predict well production lifecycles, flow regime transitions, and EUR following hydraulic fracturing. |
 | [Precipitation Circuit Designer](../mcps/precipitation-circuit-designer.md) | Engineering tool for designing metal recovery precipitation circuits. |

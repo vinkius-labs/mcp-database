@@ -14,10 +14,10 @@ This MCP server provides analytical tools to evaluate the performance impact of 
 
 
 ## Available Tools (4)
-- **analyze_skin_impact**: Calculates how effectively the treatment removed near-wellbore damage
 - **calculate_productivity_gain**: Determines the relative increase in the well's ability to produce fluids
 - **evaluate_treatment_efficiency**: Assesses the technical effectiveness of the specific treatment method used
 - **summarize_well_performance**: Provides a comprehensive snapshot of the well's state change
+- **analyze_skin_impact**: Calculates how effectively the treatment removed near-wellbore damage
 
 
 ## 💬 Prompt Examples

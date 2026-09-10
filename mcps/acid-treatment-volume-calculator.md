@@ -14,10 +14,10 @@ This MCP server provides specialized tools for matrix acidizing design. It allow
 
 
 ## Available Tools (4)
-- **calculate_injection_parameters**: Determines the appropriate flow rate to maintain control over the acid front
 - **evaluate_reaction_impact**: Analyzes the potential for secondary damage from reaction products
 - **get_treatment_volume**: Determines the total volume of acid required to treat the damaged zone
 - **predict_skin_reduction**: Estimates the improvement in well productivity after the acid treatment
+- **calculate_injection_parameters**: Determines the appropriate flow rate to maintain control over the acid front
 
 
 ## 💬 Prompt Examples

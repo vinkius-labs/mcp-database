@@ -189,6 +189,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [COE Bidding Optimizer](../mcps/coe-bidding-optimizer.md) | Deterministic bidding strategy calculator for Singapore COE auctions. |
 | [Commitment of Traders (COT) Strategy](../mcps/commitment-of-traders-cot-strategy.md) | Analyze commercial and non-commercial positioning to generate deterministic trading signals. |
 | [Commodity Basis Analyzer](../mcps/commodity-basis-analyzer.md) | Analyze grain basis patterns and receive optimal delivery timing recommendations. |
+| [Commodity Hedging Strategy Analyzer](../mcps/commodity-hedging-strategy-analyzer.md) | Analyze commodity exposure and optimize hedging strategies using swaps, collars, and options. |
 | [Commodity Price Converter](../mcps/commodity-price-converter.md) | Convert commodity prices across units and currencies instantly. |
 | [Commodity Selection Index Calculator](../mcps/commodity-selection-index-calculator.md) | Calculate the Commodity Selection Index (CSI) to identify momentum-driven trends relative to volatility. |
 | [Compensation Band Generator](../mcps/compensation-band-generator.md) | Generate structured compensation packages including base salary, bonus targets, and equity ranges based on global market data. |
@@ -230,6 +231,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [DeFi Options Strategy Engine](../mcps/defi-options-strategy-engine.md) | Deterministic volatility trading signals for DeFi options protocols. |
 | [Demo Day Conversion Analytics](../mcps/demo-day-conversion-analytics.md) | Analyze demo day success using a multi-stage funnel model and investor quality scoring. |
+| [Depletion Allowance Calculator](../mcps/depletion-allowance-calculator.md) | Calculate tax-deductible depletion allowances for oil and gas properties. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
 | [Detour Gas Savings Evaluator](../mcps/detour-gas-savings-evaluator.md) | Determine if driving off-route for cheaper gas saves money. |
 | [Detrended Price Oscillator (DPO) Calculator](../mcps/detrended-price-oscillator-dpo-calculator.md) | Identify price cycles and momentum oscillations by removing trends from price series. |
@@ -339,6 +341,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Financial Ratios Calculator](../mcps/financial-ratios-calculator.md) | Calculate essential financial health indicators including liquidity, solvency, and interest coverage ratios. |
 | [Fine-tuning Investment Decision Engine](../mcps/fine-tuning-investment-decision-engine.md) | Calculate the financial viability and ROI of fine-tuning AI models. |
 | [FIRE Calculator](../mcps/fire-calculator.md) | Estimate your timeline and capital requirements for Financial Independence, Retire Early (FIRE). |
+| [Fiscal Regime Analysis](../mcps/fiscal-regime-analysis.md) | Analyze economic outcomes for oil and gas projects using Concessionary and PSC models. |
 | [Fisher Transform Calculator](../mcps/fisher-transform-calculator.md) | Deterministic Ehlers Fisher Transform for trend and reversal detection. |
 | [Fisher Transform Strategy](../mcps/fisher-transform-strategy.md) | A deterministic mean-reversion strategy using Fisher Transform to identify market exhaustion. |
 | [Flash Loan Arbitrage Strategy](../mcps/flash-loan-arbitrage-strategy.md) | Identify and validate profitable flash loan arbitrage opportunities across DEXs. |
@@ -382,6 +385,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Gap Fill Strategy](../mcps/gap-fill-strategy.md) | Identify and trade mean-reversion opportunities using deterministic gap fill logic. |
 | [Garman-Klass Volatility Calculator](../mcps/garman-klass-volatility-calculator.md) | Calculate efficient Garman-Klass volatility using OHLC data. |
 | [Gas Fee Estimator](../mcps/gas-fee-estimator.md) | Estimate blockchain transaction costs for EVM-compatible chains. |
+| [Gas Monetization Evaluator](../mcps/gas-monetization-evaluator.md) | Evaluates gas monetization alternatives based on reserves, composition, and market distance. |
 | [Gas vs EV Fuel Savings Calculator](../mcps/gas-vs-ev-fuel-savings-calculator.md) | Compare the long-term costs of gasoline and electric vehicles. |
 | [GDPR Compliance Impact Analyzer](../mcps/gdpr-compliance-impact-analyzer.md) | Calculate GDPR compliance costs, risk exposure, and ROI. |
 | [Geographic Expansion ROI Accelerator](../mcps/geographic-expansion-roi-accelerator.md) | Quantify financial viability and operational readiness for entering new geographic markets. |
@@ -468,6 +472,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
 | [Livestock Depreciation Model](../mcps/livestock-depreciation-model.md) | Calculate livestock depreciation using IRS-aligned methods for breeding stock. |
 | [Livestock Expansion Budgeting](../mcps/livestock-expansion-budgeting.md) | Financial planning tool for modeling livestock expansion costs, revenues, and cash flows. |
+| [LNG Project Economics](../mcps/lng-project-economics.md) | Economic analysis for LNG value chains, including delivered cost, NPV, and break-even price. |
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
@@ -544,6 +549,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Perp DEX Funding Rate Manipulation Strategy](../mcps/perp-dex-funding-rate-manipulation-strategy.md) | Detect and exploit artificial funding rate spikes in perpetual DEXs. |
 | [Pet Cost Lifetime Estimator](../mcps/pet-cost-lifetime-estimator.md) | Estimate the total lifetime cost of owning a dog or cat, including upfront and annual expenses. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
+| [Petroleum Revenue Tax Calculator](../mcps/petroleum-revenue-tax-calculator.md) | Calculates petroleum revenue tax (PRT) liability and after-tax cash flow. |
 | [Pinduoduo Group-Buying Calculator](../mcps/pinduoduo-group-buying-calculator.md) | Calculate savings and social urgency for group-buying deals. |
 | [Pipeline Velocity Calculator](../mcps/pipeline-velocity-calculator.md) | Calculate sales pipeline velocity ($/day) and identify which operational metric (opportunities, close rate, or ACV) must improve to hit your revenue targets. |
 | [PIS/COFINS Tax Calculator](../mcps/piscofins-tax-calculator.md) | Calculate PIS and COFINS tax liabilities for cumulative and non-cumulative regimes. |
@@ -564,6 +570,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Pricing Strategy Calculator](../mcps/pricing-strategy-calculator.md) | Calculate optimal price points using Cost-Plus, Value-Based, and Competitive methodologies. |
 | [Pro-Labore Tax Calculator](../mcps/pro-labore-tax-calculator.md) | Calculate INSS, IRRF, and compare compensation strategies for business partners. |
 | [Process Economics Evaluation](../mcps/process-economics-evaluation.md) | Analyze the financial viability of chemical manufacturing processes. |
+| [Production Sharing Contract Model](../mcps/production-sharing-contract-model.md) | Models the economic distribution of resources within a Production Sharing Contract (PSC). |
 | [Prorated Rent Calculator](../mcps/prorated-rent-calculator.md) | Calculate exact rent for partial months. |
 | [Protective Collar Strategy](../mcps/protective-collar-strategy.md) | A deterministic hedging engine for locking in profits and mitigating downside risk using protective collars. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
@@ -601,6 +608,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Roll Yield Strategy Engine](../mcps/roll-yield-strategy-engine.md) | A deterministic signal engine for capturing returns from futures curve structures. |
 | [Round Robin Generator](../mcps/round-robin-generator.md) | Generate all possible smaller parlays from a larger set of bets. |
 | [Royalty Calculation Mining](../mcps/royalty-calculation-mining.md) | Calculates mining royalty obligations using ad valorem and unit-based methods. |
+| [Royalty Calculation Model](../mcps/royalty-calculation-model.md) | Calculates oil and gas royalty payments using jurisdictional rules. |
 | [RSI Calculator](../mcps/rsi-calculator.md) | Deterministic Relative Strength Index (RSI) calculator with smoothing and divergence detection. |
 | [RSI Divergence Strategy](../mcps/rsi-divergence-strategy.md) | Identify bullish and bearish RSI divergence signals for mean-reversion trading. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
