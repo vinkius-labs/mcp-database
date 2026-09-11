@@ -18,6 +18,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Buffer Solution Calculator](../mcps/buffer-solution-calculator.md) | Calculate buffer solution properties including required ratios, pH shifts, and capacity. |
 | [Butler-Volmer Equation Solver](../mcps/butler-volmer-equation-solver.md) | Calculates electrochemical kinetics, current densities, and activation energies using the Butler-Volmer model. |
+| [Capillary Pressure Model](../mcps/capillary-pressure-model.md) | Calculates capillary pressure curves, threshold pressure, and transition zone thickness. |
 | [Catalyst Performance Evaluator](../mcps/catalyst-performance-evaluator.md) | Calculates TOF, TON, selectivity, and deactivation rates for heterogeneous catalysis. |
 | [Catalyst-Effect-Model](../mcps/catalyst-effect-model.md) | Models chemical reaction rate changes caused by catalysts. |
 | [Catalytic Cycle Analyzer](../mcps/catalytic-cycle-analyzer.md) | Analyze organometallic catalytic cycles, kinetics, and stability. |
@@ -47,9 +48,11 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Energy Balance Calculator](../mcps/energy-balance-calculator.md) | Calculate sensible heat, phase changes, mixing temperatures, and process efficiency. |
 | [Enzyme Inhibition Analysis](../mcps/enzyme-inhibition-analysis.md) | Determine enzyme inhibition mechanisms and kinetic parameters like Ki and IC50. |
 | [Fermentation Kinetics Model](../mcps/fermentation-kinetics-model.md) | Models fermentation process kinetics to determine growth and production rates. |
+| [Fractional Flow Equation Toolset](../mcps/fractional-flow-equation-toolset.md) | Calculate fractional flow curves, breakthrough saturation, and gravity effects in reservoir displacement. |
 | [Fuel Cell Performance Engine](../mcps/fuel-cell-performance-engine.md) | Calculate thermodynamic and electrochemical performance metrics for fuel cells. |
 | [Functional Group Identification](../mcps/functional-group-identification.md) | Identify functional groups, predict reactivity, and analyze chemical interactions. |
 | [Gas Law Calculator](../mcps/gas-law-calculator.md) | Compute ideal and real gas behavior using Van der Waals corrections. |
+| [Gas PVT Properties Calculator](../mcps/gas-pvt-properties-calculator.md) | Calculate real gas properties like Z-factor, density, and viscosity. |
 | [Gel Electrophoresis Analysis](../mcps/gel-electrophoresis-analysis.md) | Calculate DNA/protein fragment sizes and Rf values using gel calibration. |
 | [Gemstone Weight Calculator](../mcps/gemstone-weight-calculator.md) | Estimate gemstone carat weight and market value using physical dimensions. |
 | [Gibbs Free Energy Prediction](../mcps/gibbs-free-energy-prediction.md) | Predicts reaction spontaneity using Gibbs free energy calculations. |
@@ -78,8 +81,10 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Named Reaction Database](../mcps/named-reaction-database.md) | A specialized lookup service for organic named reactions, mechanisms, and substrate compatibility. |
 | [Nanoparticle Surface Area Analyzer](../mcps/nanoparticle-surface-area-analyzer.md) | Calculate specific surface area, surface atom fraction, and size distribution for nanoparticles. |
 | [Nanostructure Size Distribution Analyzer](../mcps/nanostructure-size-distribution-analyzer.md) | Calculates nanoparticle size distribution metrics from DLS and TEM data. |
+| [Natural Gas Compressibility Factor Engine](../mcps/natural-gas-compressibility-factor-engine.md) | High-precision Z-factor calculations using industry-standard correlations. |
 | [Nernst Equation Solver](../mcps/nernst-equation-solver.md) | Calculate electrochemical cell potentials and concentration requirements using the Nernst equation. |
 | [NMR Spectrum Interpreter](../mcps/nmr-spectrum-interpreter.md) | Analyze NMR spectra to determine molecular structures. |
+| [Oil PVT Properties Calculator](../mcps/oil-pvt-properties-calculator.md) | Calculates critical crude oil PVT properties like bubble point, viscosity, and formation volume factor. |
 | [Organic Synthesis Planner](../mcps/organic-synthesis-planner.md) | Automated retrosynthetic analysis and synthetic route planning for organic molecules. |
 | [Organometallic Property Analyzer](../mcps/organometallic-property-analyzer.md) | Analyze electronic structure, oxidation states, and stability of organometallic complexes. |
 | [Osmotic Pressure Calculator](../mcps/osmotic-pressure-calculator.md) | Calculate osmotic pressure, molecular weight, and water activity for chemical solutions. |
@@ -106,6 +111,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Reaction Mechanism Simulator](../mcps/reaction-mechanism-simulator.md) | Predict organic reaction pathways, mechanisms, and energetic profiles. |
 | [Reaction Rate Calculator](../mcps/reaction-rate-calculator.md) | Calculate reaction orders, rate constants, half-lives, and concentration profiles. |
 | [Reagent Selection Guide](../mcps/reagent-selection-guide.md) | Identify optimal reagents, reaction conditions, and selectivity for chemical transformations. |
+| [Relative Permeability Engine](../mcps/relative-permeability-engine.md) | Generates multi-phase relative permeability curves using Corey and empirical models. |
 | [Restriction Enzyme Analysis](../mcps/restriction-enzyme-analysis.md) | Analyze DNA digestion patterns, fragment sizes, and enzyme characteristics. |
 | [Retrosynthetic Analysis Engine](../mcps/retrosynthetic-analysis-engine.md) | Deconstruct complex molecules into simpler precursors using strategic disconnection analysis. |
 | [Sedimentation Velocity Dynamics](../mcps/sedimentation-velocity-dynamics.md) | Calculate particle sedimentation coefficients, terminal velocities, and Svedberg constants. |

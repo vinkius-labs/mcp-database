@@ -13,6 +13,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | [Groundwater Monitoring Program Designer](../mcps/groundwater-monitoring-program-designer.md) | Design comprehensive groundwater monitoring strategies including well placement and sampling schedules. |
 | [Hazardous Waste Classifier](../mcps/hazardous-waste-classifier.md) | Classifies waste streams as hazardous or non-hazardous using RCRA and EU standards. |
 | [Permit Compliance Tracking](../mcps/permit-compliance-tracking.md) | Monitor and validate environmental permit adherence across air, water, and waste media. |
+| [Reporting Compliance Calendar](../mcps/reporting-compliance-calendar.md) | Automated regulatory reporting schedules and compliance tracking for oil and gas operations. |
 | [SDS Hazard Communication Evaluator](../mcps/sds-hazard-communication-evaluator.md) | Evaluates Safety Data Sheet (SDS) compliance against GHS and OSHA HCS standards. |
 
 

@@ -16,6 +16,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Embedding Similarity Calculator](../mcps/embedding-similarity-calculator.md) | Calculate mathematical distances and similarity scores between multidimensional numerical vectors. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
+| [Exploration Success Probability Engine](../mcps/exploration-success-probability-engine.md) | Assess geological exploration risk and discovery likelihood. |
 | [Field of View & Frustum Calculator](../mcps/field-of-view-frustum-calculator.md) | Calculate precise frustum geometry, object visibility, and LOD recommendations for 3D engines. |
 | [FOV to Focal Length Converter](../mcps/fov-to-focal-length-converter.md) | Convert between Field of View (degrees) and Focal Length (mm) for various sensor formats. |
 | [Gacha Pity Probability Calculator](../mcps/gacha-pity-probability-calculator.md) | Simulate gacha pity mechanics and analyze monetization impact. |

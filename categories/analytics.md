@@ -39,6 +39,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
+| [Emissions Reporting Calculator](../mcps/emissions-reporting-calculator.md) | Calculate annual emissions, GHG intensity, and regulatory reporting status. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
@@ -70,6 +71,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
+| [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |

@@ -9,7 +9,6 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Claude Computer Use Coordinate Normalizer](../mcps/claude-computer-use-coordinate-normalizer.md) | Transforms absolute pixel coordinates into the standardized 1024x768 viewport space for Anthropic's Computer Use API. |
 | [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |
 | [Conversation Termination Evaluator](../mcps/conversation-termination-evaluator.md) | Prevents runaway agent loops by detecting repetition and stagnation. |
-| [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Git Atomic Operations Validator](../mcps/git-atomic-operations-validator.md) | Prevent destructive Git operations and enforce commit standards. |
