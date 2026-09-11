@@ -1,6 +1,6 @@
 # Claro Antifraud (Open Gateway) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/claro-antifraud-open-gateway)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/claro-antifraud-open-gateway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,7 +106,7 @@ check_sim_swap is the standard CAMARA signal (yes/no within an hour window, up t
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/claro-antifraud-open-gateway](https://vinkius.com/ai-agent-connect/claro-antifraud-open-gateway)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/claro-antifraud-open-gateway](https://vinkius.com/en/ai-agent-connect/claro-antifraud-open-gateway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
