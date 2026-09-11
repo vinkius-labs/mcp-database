@@ -4,6 +4,7 @@ Explore the open database of **energy** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Enhanced Oil Recovery Screening](../mcps/enhanced-oil-recovery-screening.md) | Evaluates technical feasibility and recovery uplift for EOR methods. |
 | [Home Energy Emissions Calculator](../mcps/home-energy-emissions-calculator.md) | Calculate CO2 emissions from electricity usage based on regional grid intensity. |
 | [Kite Power Calculation Engine](../mcps/kite-power-calculation-engine.md) | Calculate aerodynamic lift, apparent wind, and power zone impact for kite flight. |
 | [Kite Power Variance Engine](../mcps/kite-power-variance-engine.md) | Calculates power volatility, gust severity, and control margins for kite-based wind energy systems. |

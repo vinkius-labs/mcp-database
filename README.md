@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,224 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,239 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -15,8 +15,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (586 servers)
 - [data-analytics](categories/data-analytics.md) (350 servers)
+- [engineering](categories/engineering.md) (247 servers)
 - [marketing-automation](categories/marketing-automation.md) (241 servers)
-- [engineering](categories/engineering.md) (233 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [agriculture](categories/agriculture.md) (188 servers)
 - [construction](categories/construction.md) (149 servers)
@@ -124,6 +124,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [automotive](categories/automotive.md) (5 servers)
 - [crm](categories/crm.md) (5 servers)
 - [data](categories/data.md) (5 servers)
+- [energy](categories/energy.md) (5 servers)
 - [gaming-entertainment](categories/gaming-entertainment.md) (5 servers)
 - [learning-training](categories/learning-training.md) (5 servers)
 - [nutrition](categories/nutrition.md) (5 servers)
@@ -135,7 +136,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [complex-reasoning](categories/complex-reasoning.md) (4 servers)
 - [data-engineering](categories/data-engineering.md) (4 servers)
 - [distributed-systems](categories/distributed-systems.md) (4 servers)
-- [energy](categories/energy.md) (4 servers)
 - [entertainment](categories/entertainment.md) (4 servers)
 - [legal](categories/legal.md) (4 servers)
 - [logistics-supply-chain](categories/logistics-supply-chain.md) (4 servers)
