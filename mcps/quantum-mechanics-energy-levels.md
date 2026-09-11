@@ -1,6 +1,6 @@
 # Quantum Mechanics Energy Levels MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/quantum-mechanics-energy-levels)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/quantum-mechanics-energy-levels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,7 +63,7 @@ Yes, tools like `calculate_particle_in_box` and `calculate_harmonic_oscillator` 
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/quantum-mechanics-energy-levels](https://vinkius.com/ai-agent-connect/quantum-mechanics-energy-levels)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/quantum-mechanics-energy-levels](https://vinkius.com/en/ai-agent-connect/quantum-mechanics-energy-levels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
