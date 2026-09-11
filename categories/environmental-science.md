@@ -11,6 +11,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [Cover Crop Biomass Predictor](../mcps/cover-crop-biomass-predictor.md) | Predict cover crop biomass, nitrogen content, and optimal termination timing. |
 | [Farm-Gate Nitrogen Balance](../mcps/farm-gate-nitrogen-balance.md) | Calculates whole-farm nitrogen balance, efficiency, and environmental risk indicators. |
 | [GDU Accumulator](../mcps/gdu-accumulator.md) | Predict crop development stages and harvest timing using Growing Degree Units (GDU). |
+| [Groundwater Contamination Modeler](../mcps/groundwater-contamination-modeler.md) | Predicts hydrocarbon plume migration, contaminant concentrations, and remediation needs. |
 | [Groundwater Recharge Estimator](../mcps/groundwater-recharge-estimator.md) | Estimates groundwater recharge and well yield impacts using water balance and mass balance methods. |
 | [Hay Drying Model](../mcps/hay-drying-model.md) | Predicts hay drying rates, baling windows, and rain damage risks. |
 | [Infiltration Rate Estimator](../mcps/infiltration-rate-estimator.md) | Estimates soil infiltration rates and runoff risks using physical soil properties. |

@@ -16,6 +16,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | [rag-chunk-boundary-optimizer](../mcps/rag-chunk-boundary-optimizer-1.md) | Analyzes text chunking strategies for RAG pipelines by measuring overlap, sentence integrity, and semantic continuity. |
 | [Reservoir Heterogeneity Index](../mcps/reservoir-heterogeneity-index.md) | Quantify reservoir heterogeneity using Dykstra-Parsons and Lorenz coefficients. |
 | [Resource Model Validation](../mcps/resource-model-validation.md) | Validate mineral resource block models using statistical analysis and spatial swath plots. |
+| [Soil Remediation Design](../mcps/soil-remediation-design.md) | Design engineered soil remediation strategies based on contamination profiles and soil characteristics. |
 | [Well Stimulation Evaluation](../mcps/well-stimulation-evaluation.md) | Assess the effectiveness of well stimulation treatments using skin factor and productivity metrics. |
 | [Western Blot Quantification](../mcps/western-blot-quantification.md) | Quantify protein expression from western blot data using densitometry and statistical analysis. |
 

@@ -24,6 +24,7 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | [Polymerization Mechanism Predictor](../mcps/polymerization-mechanism-predictor.md) | Predict polymerization mechanisms and kinetic properties of polymers. |
 | [Protein-Ligand Docking Score](../mcps/protein-ligand-docking-score.md) | Evaluates protein-ligand binding affinity and interaction characteristics from docking poses. |
 | [Safety Data Sheet Synthesis](../mcps/safety-data-sheet-synthesis.md) | Generates regulatory-compliant GHS Safety Data Sheet (SDS) summaries from chemical data. |
+| [Scale Prediction Model](../mcps/scale-prediction-model.md) | Predicts mineral scale formation in oilfield operations using water chemistry and environmental data. |
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
 | [Sustainable Chemistry Assessment](../mcps/sustainable-chemistry-assessment.md) | Quantify environmental impact and green chemistry compliance of chemical processes. |

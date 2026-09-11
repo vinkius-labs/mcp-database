@@ -4,6 +4,7 @@ Explore the open database of **fluid-dynamics** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Corrosion Inhibitor Dosing Optimizer](../mcps/corrosion-inhibitor-dosing-optimizer.md) | Calculates precise inhibitor injection rates and dosing schedules based on fluid dynamics. |
 | [Spill Volume Estimation Engine](../mcps/spill-volume-estimation-engine.md) | Calculates chemical spill volume, spread area, and containment requirements. |
 
 

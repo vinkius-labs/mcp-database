@@ -5,6 +5,10 @@ Explore the open database of **oil-and-gas** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Equivalent Circulating Density (ECD) Calculator](../mcps/equivalent-circulating-density-ecd-calculator.md) | Calculate ECD profiles, cuttings impact, and environmental adjustments for drilling fluids. |
+| [H2S Exposure Assessment](../mcps/h2s-exposure-assessment.md) | Assess H2S toxicity risks and safety protocols for oil and gas operations. |
+| [Hydrate Formation Prediction](../mcps/hydrate-formation-prediction.md) | Predict gas hydrate formation conditions and calculate chemical inhibition dosages. |
+| [Pigging Frequency Optimizer](../mcps/pigging-frequency-optimizer.md) | Optimize pipeline pigging intervals and select cleaning tools based on deposition rates and risk. |
+| [Produced Water Quality Model](../mcps/produced-water-quality-model.md) | Models produced water quality for discharge or reinjection. |
 | [Tieback vs Standalone Economics](../mcps/tieback-vs-standalone-economics.md) | Compare the financial viability of tieback vs standalone offshore developments. |
 
 

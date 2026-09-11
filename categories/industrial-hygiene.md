@@ -4,6 +4,7 @@ Explore the open database of **industrial-hygiene** Model Context Protocol (MCP)
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Benzene Exposure Monitoring](../mcps/benzene-exposure-monitoring.md) | Design and manage occupational health programs for benzene exposure monitoring. |
 | [Occupational Exposure Limit Comparison](../mcps/occupational-exposure-limit-comparison.md) | Compare chemical concentrations against PEL, TLV, and REL standards. |
 
 

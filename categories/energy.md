@@ -4,6 +4,7 @@ Explore the open database of **energy** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [CO2 Emission Tracker](../mcps/co2-emission-tracker.md) | Quantify Scope 1, 2, and 3 emissions and carbon intensity for oil and gas operations. |
 | [Enhanced Oil Recovery Screening](../mcps/enhanced-oil-recovery-screening.md) | Evaluates technical feasibility and recovery uplift for EOR methods. |
 | [Home Energy Emissions Calculator](../mcps/home-energy-emissions-calculator.md) | Calculate CO2 emissions from electricity usage based on regional grid intensity. |
 | [Kite Power Calculation Engine](../mcps/kite-power-calculation-engine.md) | Calculate aerodynamic lift, apparent wind, and power zone impact for kite flight. |
