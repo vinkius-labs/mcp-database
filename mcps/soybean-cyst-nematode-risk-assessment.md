@@ -1,6 +1,6 @@
 # Soybean Cyst Nematode Risk Assessment MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/soybean-cyst-nematode-risk-assessment)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/soybean-cyst-nematode-risk-assessment)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,7 +63,7 @@ Soil texture is a key input for `calculate_population_growth` because it influen
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/soybean-cyst-nematode-risk-assessment](https://vinkius.com/ai-agent-connect/soybean-cyst-nematode-risk-assessment)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/soybean-cyst-nematode-risk-assessment](https://vinkius.com/en/ai-agent-connect/soybean-cyst-nematode-risk-assessment)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
