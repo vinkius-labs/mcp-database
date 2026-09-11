@@ -1,6 +1,6 @@
 # Magic: The Gathering Cards & Sets MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/magic-the-gathering-cards-sets)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/magic-the-gathering-cards-sets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,7 +104,7 @@ Use single letters: U (blue), W (white), B (black), R (red), G (green). "colors=
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/magic-the-gathering-cards-sets](https://vinkius.com/ai-agent-connect/magic-the-gathering-cards-sets)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/magic-the-gathering-cards-sets](https://vinkius.com/en/ai-agent-connect/magic-the-gathering-cards-sets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
