@@ -41,7 +41,7 @@ AI agents describe outcomes and call them procedures. 'Process the data,' 'handl
 
 
 ## Available Tools (1)
-- **validate_ada_algorithm**: You must: (1) SEQUENCE STEPS — specify each operation in exact order with input, action, and output, (2) EXTRACT ABSTRACTION — identify the general pattern beyond this specific instance, (3) ANALYZE EDGE CASES — test empty input, boundary values, malformed data, termination conditions, (4) DECOMPOSE OPERATIONS — break every high-level operation into its primitive components, (5) BOUND SCOPE — state what the solution CAN do AND what it CANNOT do. If rejected, fix the specific algorithmic gap the engine identifies.
+- **validate_ada_algorithm**: You must: (1) SEQUENCE STEPS — specify each operation in exact order with input, action, and output, (2) EXTRACT ABSTRACTION — identify the general pattern beyond this specific instance, (3) ANALYZE EDGE CASES — test empty input, boundary values, malformed data, termination conditions, (4) DECOMPOSE OPERATIONS — break every high-level operation into its primitive components, (5) BOUND SCOPE — state what the solution CAN do AND what it CANNOT do. If rejected, fix the specific algorithmic gap the engine identifies.Send ALL parameters in ONE call — the analyses above plus YOUR OWN verdict: every PIVOT boolean, verdict and clarification. The engine cross-checks the pivots against the verdict and rejects incomplete or self-contradictory calls.
 
 Forces the agent to think like Ada Lovelace — specify operations in precise sequential order, extract the general pattern beyond the specific case, analyze edge cases and boundaries, decompose high-level operations into primitives, and honestly bound what the solution can and cannot do
 
