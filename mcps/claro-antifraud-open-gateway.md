@@ -22,7 +22,7 @@ Line & location security checks on the official Claro Brasil gateway: SIM swap c
 - **LBS Device Location** — cell-level last position from the legacy LBS platform (coordinates, accuracy radius, validation time)
 
 ### Authentication
-1. Register an app in the **Claro Insight marketplace** (claroinsight.com.br) to get a Client ID + Client Secret and your Customer ID (trials with 1.000 requests per API)
+1. Register an app in the **Claro Insight marketplace** (www.claro.com.br) to get a Client ID + Client Secret and your Customer ID (trials with 1.000 requests per API)
 2. The MCP mints a token at `POST https://api.claro.com.br/oauth2/v1/token` (`grant_type=client_credentials`) and refreshes it automatically
 3. Every call carries your marketplace Customer ID as the `X-CustomerID` header
 
@@ -31,9 +31,12 @@ Antifraud and risk agents, fintech onboarding flows, account-takeover detection,
 
 
 ## Available Tools (7)
-- **check_sim_swap**: Use before password resets, high-value transactions and session elevation: a recent SIM swap is the classic account-takeover signal. max_age_hours = how far back to look, 1 to 2400 hours, default 240 (10 days); shorter windows are stricter. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). To get the exact timestamp of the last swap instead, use get_sim_swap_date.
+- **get_lbs_device_location**: Coarsest and cheapest of the location checks — use for asset/fleet monitoring and region-level checks. location_type "LAST" gives the most recent reading. The LBS service enforces a per-MSISDN rate ceiling: a 429 means you polled that number too often — back off rather than retry immediately. network_msisdn = country code + number, digits only ("5521912345678"). User consent applies under LGPD.
 
-Check whether a Claro phone number had its SIM card swapped recently — the core account-takeover antifraud check (GSMA SIM Swap)
+Get the last known cell-level location of a Claro device via the legacy LBS platform — coordinates, area type and accuracy radius
+- **retrieve_device_location**: Use when you need where the device was (nearest-city level trust, asset tracking checks) rather than a yes/no inside-test. max_age_seconds limits how fresh the reading must be (e.g. "600" = only data up to 10 minutes old; omit for the freshest available). The device must be on the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required. phone_number in E.164, leading + optional.
+
+Get the last known location of a device on the Claro network (GSMA Device Location retrieval) — area and timestamp
 - **get_sim_swap_date**: Use when you need the exact moment rather than a yes/no — forensics, fraud case review, or deciding how stale a SIM-based authentication is. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). A response with no change date means no swap was recorded for the line.
 
 Get the timestamp of the last SIM card change on a Claro phone number (GSMA SIM Swap retrieve-date)
@@ -46,12 +49,9 @@ Check whether a phone number was recycled (assigned to a new owner) since a give
 - **verify_device_location**: Use for fraud checks (falsified GPS), delivery validation and geofence spot-checks. accuracy_km between 2 and 200 (bigger = more forgiving). The check only works while the phone is connected to the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required before running it. phone_number may be sent with or without the leading "+" ("+5511974129777" or "+5511974129777"). To get the actual coordinates instead of a yes/no, use retrieve_device_location.
 
 Verify whether a device is physically inside a given area (lat/long circle, 2-200 km radius) — returns verificationResult true/false
-- **retrieve_device_location**: Use when you need where the device was (nearest-city level trust, asset tracking checks) rather than a yes/no inside-test. max_age_seconds limits how fresh the reading must be (e.g. "600" = only data up to 10 minutes old; omit for the freshest available). The device must be on the Claro mobile data network, and user consent is mandatory under LGPD — tell the user consent is required. phone_number in E.164, leading + optional.
+- **check_sim_swap**: Use before password resets, high-value transactions and session elevation: a recent SIM swap is the classic account-takeover signal. max_age_hours = how far back to look, 1 to 2400 hours, default 240 (10 days); shorter windows are stricter. phone_number in E.164, leading + optional ("+5511999999999" or "5511999999999"). To get the exact timestamp of the last swap instead, use get_sim_swap_date.
 
-Get the last known location of a device on the Claro network (GSMA Device Location retrieval) — area and timestamp
-- **get_lbs_device_location**: Coarsest and cheapest of the location checks — use for asset/fleet monitoring and region-level checks. location_type "LAST" gives the most recent reading. The LBS service enforces a per-MSISDN rate ceiling: a 429 means you polled that number too often — back off rather than retry immediately. network_msisdn = country code + number, digits only ("5521912345678"). User consent applies under LGPD.
-
-Get the last known cell-level location of a Claro device via the legacy LBS platform — coordinates, area type and accuracy radius
+Check whether a Claro phone number had its SIM card swapped recently — the core account-takeover antifraud check (GSMA SIM Swap)
 
 
 ## 💬 Prompt Examples
@@ -96,7 +96,7 @@ Need the actual coordinates instead of a yes/no? I can pull the last known area 
 ## ❓ FAQ
 
 **Q: How do I get the credentials?**
-Register at claroinsight.com.br (Marketplace API Claro) and subscribe to the APIs you need — most offer a free trial with 1.000 requests for 3 months. The marketplace issues a Client ID, Client Secret and your Customer ID. This MCP exchanges them at POST https://api.claro.com.br/oauth2/v1/token (grant_type=client_credentials) for a bearer token (24h TTL) that it refreshes automatically; the Customer ID rides along as the X-CustomerID header on every call.
+Register at www.claro.com.br (Marketplace API Claro) and subscribe to the APIs you need — most offer a free trial with 1.000 requests for 3 months. The marketplace issues a Client ID, Client Secret and your Customer ID. This MCP exchanges them at POST https://api.claro.com.br/oauth2/v1/token (grant_type=client_credentials) for a bearer token (24h TTL) that it refreshes automatically; the Customer ID rides along as the X-CustomerID header on every call.
 
 **Q: Which check should I use for account-takeover detection?**
 check_sim_swap is the standard CAMARA signal (yes/no within an hour window, up to 2400h). For forensics use get_sim_swap_date for the exact timestamp, and get_line_change_alerts for Claro's own event stream (chip, device, MSISDN and subscription events). Device location checks are LGPD-sensitive: user consent is mandatory and the phone must be on the Claro mobile data network.

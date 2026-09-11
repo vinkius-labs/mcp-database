@@ -10,7 +10,7 @@
 The official Claro Brasil API marketplace as an MCP: SIM tenure checks, GSMA KYC match & fill-in, CPF-vs-phone and CPF-vs-address validation, Claro Score credit scoring and facial biometrics lookup — OAuth client_credentials.
 
 ## Description
-The **official Claro Insight API Marketplace** (claroinsight.com.br) as a single MCP server — Claro Brasil's carrier-grade identity, antifraud and scoring APIs, including the GSMA Open Gateway suite.
+The **official Claro Insight API Marketplace** (www.claro.com.br) as a single MCP server — Claro Brasil's carrier-grade identity, antifraud and scoring APIs, including the GSMA Open Gateway suite.
 
 ### What you can do
 - **SIM tenure** — how long a phone number has been active on the Claro network, with the associated plan
@@ -34,21 +34,21 @@ Onboarding and identity-verification flows, fintech/antifraud agents, credit and
 - **validate_phone**: Use to catch borrowed or mis-typed phone numbers in onboarding, payments and account recovery. cpf = 11 digits; network_msisdn = country code + number, digits only ("5521987654321"). Requires the optional credential CLARO_CUSTOMER_ID.
 
 Validate whether a CPF and a mobile number belong to the same person (Claro Valida Telefone)
+- **validate_address**: Use to catch fake or borrowed addresses during onboarding and delivery/credit flows. Send the full combo: cpf, zip_code (8 digits, numbers only), address_number (street number) and network_msisdn (country code + number, digits only). Requires the optional credential CLARO_CUSTOMER_ID.
+
+Validate whether a CPF/phone really belongs to an address — antenna-proximity score (Claro Valida Endereço 2.0)
+- **check_face_biometrics**: Use to decide the onboarding path: exists=true lets you run a face comparison against the registered biometric; exists=false means fall back to document verification. CPF is zero-padded to 11 digits automatically. Two useful signals that look like errors but are not: a "customer not found in base" response means the CPF is not in the Claro base at all (inform the user, do not retry), and a forbidden-style response means the user's connection is established on the operator network — which itself confirms the line is on Claro.
+
+Check whether a CPF has a registered facial biometric in the Claro customer database (Face Match exists-check)
 - **kyc_match**: Include every field the user provided — each verified field strengthens the overall verdict, and any failed field is a strong identity-fraud signal; phone_number alone is valid when that is all you have. Use in digital onboarding and account-opening flows. phone_number in E.164 ("+5511999999999"); id_document = CPF digits; birthdate = YYYY-MM-DD. A "not found" style response means the number is not in the Claro base, not a mismatch.
 
 Match user-supplied identity data (phone, ID document, name, birthdate) against Claro verified records — per-field match verdict for onboarding
 - **kyc_fill_in**: Use to pre-fill onboarding forms instead of asking the user to type them: raises conversion and cuts identity-fraud risk. Only the phone number is needed. phone_number in E.164 ("+5511999999999"). Tell the user their data comes from their operator records and was legally authorized — LGPD applies.
 
 Auto-fill onboarding registration data (full name, CPF, birthdate, address, e-mail) from a Claro Brasil phone number
-- **validate_address**: Use to catch fake or borrowed addresses during onboarding and delivery/credit flows. Send the full combo: cpf, zip_code (8 digits, numbers only), address_number (street number) and network_msisdn (country code + number, digits only). Requires the optional credential CLARO_CUSTOMER_ID.
-
-Validate whether a CPF/phone really belongs to an address — antenna-proximity score (Claro Valida Endereço 2.0)
 - **get_credit_score**: Distinctive versus traditional bureaus: it is built from Claro customer payment behavior, so it also scores unbanked people. Use for credit decisions, offer eligibility and risk triage. cpf = 11 digits, numbers only. Requires the optional credential CLARO_CUSTOMER_ID.
 
 Get the Claro Score (0-1000) for a CPF — credit-risk scoring built from Claro payment behavior, covering unbanked consumers too
-- **check_face_biometrics**: Use to decide the onboarding path: exists=true lets you run a face comparison against the registered biometric; exists=false means fall back to document verification. CPF is zero-padded to 11 digits automatically. Two useful signals that look like errors but are not: a "customer not found in base" response means the CPF is not in the Claro base at all (inform the user, do not retry), and a forbidden-style response means the user's connection is established on the operator network — which itself confirms the line is on Claro.
-
-Check whether a CPF has a registered facial biometric in the Claro customer database (Face Match exists-check)
 - **get_sim_tenure**: Use as a trust signal in onboarding and identity checks: a number with very short tenure is riskier for account opening and credit decisions. phone_number = country code + number, digits only ("5511999999999"). If the response says the number is not in the base, tell the user the line is not a Claro Brasil number rather than treating it as an error.
 
 Check how long a Claro Brasil phone number has been active on the network and which plan the line has
@@ -96,7 +96,7 @@ Any field that fails is a strong onboarding fraud signal. Want to auto-fill the 
 ## ❓ FAQ
 
 **Q: How do I get the Client ID/Secret?**
-Register at claroinsight.com.br (Marketplace API Claro) and subscribe to the APIs you need — most offer a free trial with 1.000 requests for 3 months. The marketplace issues a Client ID + Client Secret; this MCP exchanges them at POST https://api.claro.com.br/oauth2/v1/token (grant_type=client_credentials) and refreshes the bearer automatically.
+Register at www.claro.com.br (Marketplace API Claro) and subscribe to the APIs you need — most offer a free trial with 1.000 requests for 3 months. The marketplace issues a Client ID + Client Secret; this MCP exchanges them at POST https://api.claro.com.br/oauth2/v1/token (grant_type=client_credentials) and refreshes the bearer automatically.
 
 **Q: Which tools need the optional Customer ID?**
 Every tool sends your marketplace identifier as the X-CustomerID header — configure the three credentials (Client ID, Client Secret, Customer ID) once at activation and all seven tools work. Phone formats differ: the customers/* APIs (score, phone & address validation) and tenure use digits-only MSISDNs (5511999999999), while the GSMA mobile/v1 endpoints (KYC match & fill-in) use E.164 (+5511999999999). Face Match takes the CPF and zero-pads it automatically.
