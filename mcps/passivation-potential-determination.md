@@ -1,6 +1,6 @@
 # Passivation Potential Determination MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/passivation-potential-determination)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/passivation-potential-determination)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,7 +63,7 @@ Yes, the `detect_pitting_breakdown` tool is specifically designed to identify th
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/passivation-potential-determination](https://vinkius.com/ai-agent-connect/passivation-potential-determination)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/passivation-potential-determination](https://vinkius.com/en/ai-agent-connect/passivation-potential-determination)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
