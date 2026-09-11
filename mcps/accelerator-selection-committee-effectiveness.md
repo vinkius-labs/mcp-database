@@ -1,6 +1,6 @@
 # Accelerator Selection Committee Effectiveness MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/accelerator-selection-committee-effectiveness)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/accelerator-selection-committee-effectiveness)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -62,7 +62,7 @@ The `get_predictive_performance` tool evaluates decisions made, prediction accur
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/accelerator-selection-committee-effectiveness](https://vinkius.com/ai-agent-connect/accelerator-selection-committee-effectiveness)
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/accelerator-selection-committee-effectiveness](https://vinkius.com/en/ai-agent-connect/accelerator-selection-committee-effectiveness)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
