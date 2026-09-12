@@ -14,10 +14,10 @@ This MCP server provides a complete engineering suite for designing acrylic acid
 
 
 ## Available Tools (4)
-- **calculate_separation_train**: Determines the configuration of purification units required to reach the target product state
 - **design_reactor_system**: Calculates the physical reactor specifications and the necessary catalyst type based on raw material inputs
 - **estimate_byproduct_profile**: Predicts the quantity and types of byproducts generated during the oxidation process
 - **evaluate_economic_feasibility**: Assesses if the plant design is viable based on feedstock costs and product value
+- **calculate_separation_train**: Determines the configuration of purification units required to reach the target product state
 
 
 ## 💬 Prompt Examples

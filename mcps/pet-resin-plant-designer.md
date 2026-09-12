@@ -14,12 +14,12 @@ This MCP server provides specialized engineering tools for designing Polyethylen
 
 
 ## Available Tools (4)
-- **design_liquid_phase_reactors**: Sizes the primary melt-phase reactors (Esterification, Prepolymerization, and Finishing)
-- **evaluate_ssp_requirement**: Determines if a Solid-State Polymerization (SSP) unit is necessary
 - **generate_plant_summary**: Inputs must be JSON strings.
 
 Aggregates all design data into a single coherent plant configuration report
 - **calculate_mass_balance**: Determines the required feedstock amounts to meet a target production capacity
+- **design_liquid_phase_reactors**: Sizes the primary melt-phase reactors (Esterification, Prepolymerization, and Finishing)
+- **evaluate_ssp_requirement**: Determines if a Solid-State Polymerization (SSP) unit is necessary
 
 
 ## 💬 Prompt Examples

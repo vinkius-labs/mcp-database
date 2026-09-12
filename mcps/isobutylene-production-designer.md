@@ -14,10 +14,10 @@ This MCP server provides specialized tools for chemical engineers to design isob
 
 
 ## Available Tools (4)
-- **calculate_production_yield**: Estimate the total amount of usable isobutylene that can be produced
 - **compare_process_scenarios**: Evaluate multiple production pathways to find the best balance of yield and grade
 - **select_optimal_process**: Identify the most efficient production technology for a specific feedstock
 - **analyze_feedstock_suitability**: Determine if a given C4 cut is viable for isobutylene production based on its properties
+- **calculate_production_yield**: Estimate the total amount of usable isobutylene that can be produced
 
 
 ## 💬 Prompt Examples

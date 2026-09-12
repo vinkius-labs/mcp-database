@@ -15,9 +15,9 @@ This MCP server provides specialized engineering tools to design propylene produ
 
 ## Available Tools (4)
 - **design_catalyst_system**: Specifies the necessary catalyst mass and type to support the production capacity
+- **calculate_reactor_specs**: Determines the physical requirements and operational parameters of the reactor based on the chosen technology
 - **estimate_propylene_yield**: Calculates the expected output efficiency of the plant
 - **validate_process_feasibility**: An audit tool to check if the combination of feedstock, technology, and capacity is chemically and economically viable
-- **calculate_reactor_specs**: Determines the physical requirements and operational parameters of the reactor based on the chosen technology
 
 
 ## 💬 Prompt Examples

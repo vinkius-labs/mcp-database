@@ -14,8 +14,8 @@ This MCP server provides specialized engineering tools for designing acetylene p
 
 
 ## Available Tools (4)
-- **design_reactor**: Determines the physical specifications of the primary reaction vessel
 - **evaluate_safety_protocols**: Generates a mandatory safety compliance profile for the specific plant design
+- **design_reactor**: Determines the physical specifications of the primary reaction vessel
 - **generate_plant_summary**: Consolidates reactor, purification, and safety data into a high-level engineering overview
 - **calculate_purification_requirements**: Defines the necessary downstream equipment to clean the raw acetylene produced
 

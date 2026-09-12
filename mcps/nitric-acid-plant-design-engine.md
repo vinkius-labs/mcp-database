@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing nitric acid
 
 
 ## Available Tools (4)
-- **compare_pressure_processes**: Evaluates the efficiency and scale differences between single-pressure and dual-pressure designs
-- **design_nox_abatement_system**: Calculates the requirements for reducing nitrogen oxide emissions
 - **calculate_absorption_tower_dimensions**: Determines the physical dimensions and requirements for the absorption tower
 - **calculate_oxidation_reactor_specs**: Determines the required scale and parameters for the ammonia oxidation reactor
+- **compare_pressure_processes**: Evaluates the efficiency and scale differences between single-pressure and dual-pressure designs
+- **design_nox_abatement_system**: Calculates the requirements for reducing nitrogen oxide emissions
 
 
 ## 💬 Prompt Examples

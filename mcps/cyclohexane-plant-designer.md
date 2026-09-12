@@ -15,9 +15,9 @@ This MCP server provides specialized engineering tools for designing industrial 
 
 ## Available Tools (4)
 - **calculate_reactor_spec**: Determines the necessary physical dimensions and operational parameters of the reactor
-- **compare_phase_efficiency**: Provides a comparative analysis of liquid-phase vs. vapor-phase for a specific set of inputs
 - **estimate_hydrogen_demand**: Calculates the total hydrogen required to support the planned production
 - **verify_purity_compliance**: Validates if the designed process can meet the specific purity requirements
+- **compare_phase_efficiency**: Provides a comparative analysis of liquid-phase vs. vapor-phase for a specific set of inputs
 
 
 ## 💬 Prompt Examples

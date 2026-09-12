@@ -14,10 +14,10 @@ This MCP server provides a complete suite of engineering tools for designing but
 
 
 ## Available Tools (4)
+- **analyze_feedstock_composition**: 
 - **calculate_process_yield**: 
 - **design_extraction_column**: 
 - **select_optimal_solvent**: 
-- **analyze_feedstock_composition**: 
 
 
 ## 💬 Prompt Examples

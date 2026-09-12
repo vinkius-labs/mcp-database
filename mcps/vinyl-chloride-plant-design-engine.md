@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for designing and simulating 
 
 
 ## Available Tools (4)
+- **calculate_plant_configuration**: Determines the required scale of all major plant components based on target VCM production
 - **check_feasibility**: Validates if a proposed plant design can operate within the constraints of available chemical stockpiles
 - **evaluate_feedstock_requirements**: Calculates the necessary quantities of ethylene and chlorine to support the plant design
 - **simulate_process_imbalance**: Analyzes the impact of feedstock shortages or capacity mismatches on the plant equilibrium
-- **calculate_plant_configuration**: Determines the required scale of all major plant components based on target VCM production
 
 
 ## 💬 Prompt Examples

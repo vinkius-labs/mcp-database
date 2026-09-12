@@ -14,10 +14,10 @@ This MCP server provides engineering tools for designing carbon black production
 
 
 ## Available Tools (4)
+- **get_collection_system_requirements**: Defines the filtration and separation hardware needed to recover the product
 - **get_plant_summary**: Provides a consolidated overview of the entire plant design
 - **get_quench_system_design**: Calculates the cooling requirements and equipment scale for the quench stage
 - **get_reactor_specifications**: Determines the necessary dimensions and thermal parameters for the primary reaction furnace
-- **get_collection_system_requirements**: Defines the filtration and separation hardware needed to recover the product
 
 
 ## 💬 Prompt Examples

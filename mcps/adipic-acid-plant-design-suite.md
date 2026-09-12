@@ -15,9 +15,9 @@ This MCP server provides specialized engineering calculations for industrial adi
 
 ## Available Tools (4)
 - **calculate_environmental_impact**: Predicts the nitrogen oxide emissions and the impact of abatement systems
+- **calculate_feedstock_requirements**: Determines the amount of cyclohexane needed to meet a specific production target
 - **estimate_oxidation_parameters**: Calculates the chemical requirements for the oxidation stages
 - **optimize_recycling_loop**: Evaluates how recycling unreacted components affects the overall plant efficiency
-- **calculate_feedstock_requirements**: Determines the amount of cyclohexane needed to meet a specific production target
 
 
 ## 💬 Prompt Examples

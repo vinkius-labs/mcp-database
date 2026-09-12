@@ -14,9 +14,9 @@ This MCP server provides a suite of chemical engineering tools to design synthet
 
 
 ## Available Tools (4)
+- **calculate_reactor_specs**: Determines the required physical parameters for the polymerization reactor
 - **check_monomer_feasibility**: Validates if the available feedstock is sufficient to meet the design capacity
 - **design_coagulation_system**: Determines the requirements for converting liquid emulsion into solid rubber crumbs
-- **calculate_reactor_specs**: Determines the required physical parameters for the polymerization reactor
 - **estimate_finishing_requirements**: Calculates the scale of the final drying, stripping, and pelletizing stages
 
 

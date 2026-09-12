@@ -14,10 +14,10 @@ This MCP server provides specialized engineering calculations for designing a Pu
 
 
 ## Available Tools (4)
-- **design_catalyst_system**: Specifies the required catalyst composition and concentration for the oxidation
-- **estimate_solvent_recovery**: Calculates the efficiency and mass of acetic acid that must be recovered
 - **evaluate_purification_stage**: Calculates the purification requirements to meet specific product grades
 - **calculate_oxidation_reactor**: Determines the necessary reactor size and operating conditions based on feed availability
+- **design_catalyst_system**: Specifies the required catalyst composition and concentration for the oxidation
+- **estimate_solvent_recovery**: Calculates the efficiency and mass of acetic acid that must be recovered
 
 
 ## 💬 Prompt Examples
