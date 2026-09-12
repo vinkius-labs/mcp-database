@@ -14,10 +14,10 @@ This MCP server connects AI agents to circular economy frameworks for the oil an
 
 
 ## Available Tools (4)
-- **calculate_economic_impact**: Estimate the financial benefit of implementing a specific circular economy opportunity
-- **analyze_material_flows**: Map the movement of specific materials through a facility to identify waste generation
 - **assess_compliance_risk**: Check if a proposed circular economy action meets regional environmental regulations
+- **calculate_economic_impact**: Estimate the financial benefit of implementing a specific circular economy opportunity
 - **evaluate_circular_options**: Determine the most viable circularity pathways for a specific waste stream
+- **analyze_material_flows**: Map the movement of specific materials through a facility to identify waste generation
 
 
 ## 💬 Prompt Examples

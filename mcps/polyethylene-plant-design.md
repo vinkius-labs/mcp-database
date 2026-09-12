@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing polyethylen
 
 
 ## Available Tools (4)
-- **estimate_comonomer_needs**: Calculates the amount of alpha-olefin required to achieve the specific branching of the polymer
 - **predict_product_properties**: Forecasts the final physical characteristics of the polymer based on design parameters
 - **calculate_reactor_specifications**: Determines the physical size and fundamental operating requirements for a new production unit
 - **determine_catalyst_system**: Identifies the appropriate chemical catalyst needed to achieve the desired polymer grade
+- **estimate_comonomer_needs**: Calculates the amount of alpha-olefin required to achieve the specific branching of the polymer
 
 
 ## 💬 Prompt Examples

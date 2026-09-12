@@ -14,10 +14,10 @@ This MCP server provides advanced simulation tools for ethylene plant operations
 
 
 ## Available Tools (4)
-- **optimize_severity**: 
-- **analyze_feedstock_sensitivity**: 
 - **calculate_yield_profile**: 
 - **compare_furnace_efficiency**: 
+- **optimize_severity**: 
+- **analyze_feedstock_sensitivity**: 
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a suite of tools to assess water security and operation
 
 
 ## Available Tools (4)
-- **recommend_mitigation**: Suggests actionable strategies to reduce water risk based on the calculated stress profile
 - **analyze_seasonal_impact**: Evaluates how specific times of the year affect water security at a location
 - **calculate_risk_score**: Provides a nuanced risk assessment by adding seasonal and competitive factors to the baseline
 - **get_baseline_stress**: Calculates the fundamental water stress based on raw availability and consumption
+- **recommend_mitigation**: Suggests actionable strategies to reduce water risk based on the calculated stress profile
 
 
 ## 💬 Prompt Examples

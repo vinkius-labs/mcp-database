@@ -14,10 +14,10 @@ This MCP server provides specialized tools for calculating methane emissions and
 
 
 ## Available Tools (4)
-- **calculate_total_emissions**: Determines the aggregate methane mass emitted by an entire facility or operational area
-- **identify_reduction_opportunities**: Simulates how much methane could be saved by upgrading specific equipment
 - **audit_equipment_compliance**: Checks if the current equipment configuration meets specific methodology thresholds (EPA or OGMP)
 - **calculate_emission_intensity**: Evaluates the relative environmental impact of operations by normalizing emissions against production volume
+- **calculate_total_emissions**: Determines the aggregate methane mass emitted by an entire facility or operational area
+- **identify_reduction_opportunities**: Simulates how much methane could be saved by upgrading specific equipment
 
 
 ## 💬 Prompt Examples

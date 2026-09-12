@@ -14,10 +14,10 @@ This MCP server provides a specialized engine for quantifying greenhouse gas (GH
 
 
 ## Available Tools (4)
+- **calculate_scope_3_emissions**: Quantifies downstream and upstream value chain emissions
 - **calculate_emissions_summary**: Aggregates all scopes and calculates operational efficiency metrics
 - **calculate_scope_1_emissions**: Quantifies all direct emissions produced by the operator's facilities
 - **calculate_scope_2_emissions**: Quantifies indirect emissions from purchased energy
-- **calculate_scope_3_emissions**: Quantifies downstream and upstream value chain emissions
 
 
 ## 💬 Prompt Examples

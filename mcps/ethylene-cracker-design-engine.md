@@ -14,9 +14,9 @@ This MCP server provides advanced modeling for ethylene cracker (steam cracker) 
 
 
 ## Available Tools (4)
-- **estimate_coking_impact**: To evaluate the operational lifespan and maintenance requirements of the furnace
 - **assess_feedstock_flexibility**: To check if a designed furnace can handle an alternative feedstock without violating design constraints
 - **calculate_furnace_parameters**: To determine the physical and operational design of the furnace based on target capacity and feedstock
+- **estimate_coking_impact**: To evaluate the operational lifespan and maintenance requirements of the furnace
 - **predict_product_slate**: To forecast the chemical composition of the output based on a specific furnace configuration
 
 

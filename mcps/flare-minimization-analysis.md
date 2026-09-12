@@ -14,10 +14,10 @@ This MCP server provides specialized tools to analyze gas flaring in industrial 
 
 
 ## Available Tools (4)
+- **analyze_flare_composition**: Determine the specific properties and potential energy content of a gas stream based on its chemical makeup
 - **calculate_reduction_potential**: Quantify how much gas can be saved based on current flare volumes and identified root causes
 - **evaluate_economic_value**: Translate recovered gas volumes into monetary terms
 - **prioritize_opportunities**: Rank different reduction projects to guide capital allocation and engineering focus
-- **analyze_flare_composition**: Determine the specific properties and potential energy content of a gas stream based on its chemical makeup
 
 
 ## 💬 Prompt Examples

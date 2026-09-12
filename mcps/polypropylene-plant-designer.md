@@ -15,9 +15,9 @@ This MCP server provides specialized tools for designing polypropylene productio
 
 ## Available Tools (4)
 - **estimate_hydrogen_control_parameters**: Determines the hydrogen levels needed to achieve desired molecular properties
+- **design_product_grades**: Identifies the specific product grades that can be produced with a given configuration
 - **get_reactor_configuration**: Determines the necessary reactor setup for a specific plant design
 - **calculate_catalyst_needs**: Calculates the amount of catalyst required to sustain production
-- **design_product_grades**: Identifies the specific product grades that can be produced with a given configuration
 
 
 ## 💬 Prompt Examples
