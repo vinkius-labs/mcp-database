@@ -5,19 +5,19 @@
 
 ## Overview
 
-**Category:** [utilities](../categories/utilities.md)
+**Category:** [energy](../categories/energy.md)
 
-Estimate your annual carbon emissions from home energy, travel, and lifestyle choices.
+Quantify GHG emissions for oil and gas operations using GHG Protocol and IPCC standards.
 
 ## Description
-The Carbon Footprint Calculator provides a detailed breakdown of your environmental impact. Use `calculate_home_emissions` to analyze electricity, gas, and heating oil usage; `calculate_travel_emissions` for car, flight, and public transit mileage; and `calculate_lifestyle_emissions` to assess the impact of diet and shopping habits. Finally, use `generate_footprint_report` to compare your total footprint against USA or Europe benchmarks and discover actionable reduction strategies.
+This MCP server provides a specialized engine for quantifying greenhouse gas (GHG) emissions across the lifecycle of oil and gas operations. It allows AI agents to calculate Scope 1, 2, and 3 emissions, determine emission intensity, and identify reduction opportunities. Using tools like `calculate_scope_1_emissions`, `calculate_scope_2_emissions`, and `calculate_scope_3_emissions`, agents can accurately model direct combustion, purchased energy, and value chain impacts. The `calculate_emissions_summary` tool aggregates these results to provide a complete operational efficiency overview, accounting for flaring, venting, and fugitive emissions.
 
 
 ## Available Tools (4)
-- **calculate_lifestyle_emissions**: Calculate carbon emissions from lifestyle choices
-- **calculate_home_emissions**: Calculate carbon emissions from home energy usage
-- **calculate_travel_emissions**: Calculate carbon emissions from transportation
-- **generate_footprint_report**: Generate a regional carbon footprint report
+- **calculate_emissions_summary**: Aggregates all scopes and calculates operational efficiency metrics
+- **calculate_scope_1_emissions**: Quantifies all direct emissions produced by the operator's facilities
+- **calculate_scope_2_emissions**: Quantifies indirect emissions from purchased energy
+- **calculate_scope_3_emissions**: Quantifies downstream and upstream value chain emissions
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ The Carbon Footprint Calculator provides a detailed breakdown of your environmen
 Here are some examples of how you can interact with the **Carbon Footprint Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How much carbon is produced by 500 kWh of electricity and 10 therms of gas?"
+> "Calculate the Scope 1 emissions for a facility with 500 units of fuel, 50 units of flaring, 10 units of venting, and 5 units of fugitive leaks."
 
 **🤖 AI Agent:**
-> Your home energy usage produces approximately 25.4 kg of CO2e, with the breakdown being 10.2 kg from electricity and 15.2 kg from natural gas.
+> The total Scope 1 emissions are 1250.5 tonnes of CO2e, consisting of fuel combustion, flaring, venting, and fugitive components.
 
 ---
 
 **👤 You:**
-> "Calculate my travel emissions for driving 1000 miles and flying 500 miles."
+> "What is the emission intensity if total GHG is 5000 tonnes and total production is 10000 barrels?"
 
 **🤖 AI Agent:**
-> Your transportation impact is 142.5 kg of CO2e, consisting of 85 kg from car travel and 57.5 kg from your flight.
+> The emission intensity is 0.5 tonnes of CO2e per barrel.
 
 ---
 
 **👤 You:**
-> "What is my footprint intensity if I have 50kg home, 40kg travel, and 30kg lifestyle emissions in the USA?"
+> "Calculate Scope 2 emissions for 1000 units of electricity and 200 units of thermal energy."
 
 **🤖 AI Agent:**
-> Your total annual footprint is 120 kg CO2e. This falls into the 'Low' intensity tier, as it is significantly below the USA national average.
+> The total Scope 2 emissions are 450.0 tonnes of CO2e.
 
 
 ## ❓ FAQ
 
-**Q: How does the calculator determine my home emissions?**
-The `calculate_home_emissions` tool uses standardized EPA emission factors to convert your electricity (kWh), natural gas (therms), and heating oil (gallons) usage into kilograms of CO2e.
+**Q: What emission scopes are supported?**
+The server supports Scope 1 (direct), Scope 2 (indirect from purchased energy), and Scope 3 (value chain) emissions.
 
-**Q: Can I compare my footprint to a specific region?**
-Yes. By using the `generate_footprint_report` tool, you can input your calculated emissions and specify either 'USA' or 'Europe' to see how you compare to regional benchmarks.
+**Q: How are reduction opportunities identified?**
+Reduction opportunities are identified by analyzing the ratio of venting and flaring to total fuel consumption via the `calculate_emissions_summary` tool.
 
-**Q: Does the tool include dietary impacts?**
-Yes, the `calculate_lifestyle_emissions` tool calculates annual CO2e based on your weekly meat and vegetarian servings, as well as your annual spending on goods.
+**Q: Which standards does this follow?**
+Calculations follow the Greenhouse Gas (GHG) Protocol and IPCC methodologies.
 
 
 ## Installation & Usage

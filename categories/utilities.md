@@ -26,7 +26,6 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Calendar Converter](../mcps/calendar-converter.md) | Convert dates between 15+ calendar systems including Gregorian, Chinese, Persian, and Japanese Era. |
 | [Calorie Burn Estimator](../mcps/calorie-burn-estimator.md) | Calculate energy expenditure using MET values, body weight, and activity duration. |
 | [Calories Burned Calculator](../mcps/calories-burned-calculator.md) | Calculate calories burned using MET values and heart rate data. |
-| [Carbon Footprint Calculator](../mcps/carbon-footprint-calculator.md) | Estimate your annual carbon emissions from home energy, travel, and lifestyle choices. |
 | [Char-to-Token Estimator](../mcps/char-to-token-estimator.md) | Predict token usage for different LLMs using language-specific character ratios. |
 | [Chinese Lucky Number Analyzer](../mcps/chinese-lucky-number-analyzer.md) | Analyze the numerological significance of numbers based on Chinese cultural symbolism. |
 | [Compression Ratio Calculator](../mcps/compression-ratio-calculator.md) | A deterministic utility to evaluate text compression performance. |

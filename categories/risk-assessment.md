@@ -8,6 +8,7 @@ Explore the open database of **risk-assessment** Model Context Protocol (MCP) se
 | [Framingham Cardiovascular Risk Calculator](../mcps/framingham-cardiovascular-risk-calculator.md) | Calculates your estimated 10-year cardiovascular risk percentage and estimates your vascular age using medical guidelines. |
 | [PPE Requirements Assessment](../mcps/ppe-requirements-assessment.md) | Determines mandatory Personal Protective Equipment based on work activities and hazards. |
 | [TIMI Score Calculator for ACS Risk Stratification](../mcps/timi-score-calculator-for-acs-risk-stratification.md) | Calculates a quantitative TIMI score and provides guideline-based risk stratification for acute coronary syndrome (ACS) management. |
+| [Water Stress Assessment](../mcps/water-stress-assessment.md) | Evaluates operational water risk by analyzing local availability, consumption, and environmental stressors. |
 
 
 ---

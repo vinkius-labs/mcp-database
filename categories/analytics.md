@@ -57,6 +57,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Maintenance Cost Analysis](../mcps/maintenance-cost-analysis.md) | Analyze mining equipment efficiency and maintenance reliability. |
 | [Mass Balance Analytical](../mcps/mass-balance-analytical.md) | Calculates chemical mass balance, recovery rates, and method efficiency for laboratory procedures. |
 | [Metallurgical Accounting](../mcps/metallurgical-accounting.md) | Precise metal balance, recovery reconciliation, and loss identification for mining operations. |
+| [Methane Emission Quantification](../mcps/methane-emission-quantification.md) | Quantify methane emissions and intensity for oil and gas operations. |
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |

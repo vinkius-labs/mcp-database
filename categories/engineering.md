@@ -76,6 +76,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Emission Calculations for Flaring](../mcps/emission-calculations-for-flaring.md) | Calculate environmental emissions from flaring operations using EPA AP-42 standards. |
 | [Environmental Impact Assessment](../mcps/environmental-impact-assessment.md) | Conduct structured environmental impact assessments using professional EIA methodologies. |
 | [ESP Sizing & Configuration](../mcps/esp-sizing-configuration.md) | Calculates optimal electric submersible pump (ESP) configurations, including pump stages, motor size, and electrical systems. |
+| [Ethylene Cracker Design Engine](../mcps/ethylene-cracker-design-engine.md) | A specialized design engine for modeling steam cracking processes and furnace parameters. |
 | [Evaporator Design Engineer](../mcps/evaporator-design-engineer.md) | Calculate thermal requirements and equipment dimensions for industrial evaporation systems. |
 | [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
 | [Extraction Column Design Tool](../mcps/extraction-column-design-tool.md) | Design liquid-liquid extraction columns by calculating stages, diameter, height, and hydrodynamics. |
@@ -177,6 +178,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Pit Optimization (Lerchs-Grossmann)](../mcps/pit-optimization-lerchs-grossmann.md) | Calculate optimal open-pit mine limits using the Lerchs-Grossmann algorithm. |
 | [Pit Slope Stability Analysis](../mcps/pit-slope-stability-analysis.md) | Calculate factor of safety and identify critical slip surfaces for open-pit mine slopes. |
 | [Platform Sizing & Economics](../mcps/platform-sizing-economics.md) | Optimize offshore platform selection and physical dimensions based on production and environment. |
+| [Polyethylene Plant Design](../mcps/polyethylene-plant-design.md) | Design polyethylene production plants by calculating reactor specs, catalyst systems, and product properties. |
 | [Polymer Additive Calculator](../mcps/polymer-additive-calculator.md) | Calculate precise additive concentrations, PHR, and batch sizes for polymer formulations. |
 | [Post-Frac Production Forecast](../mcps/post-frac-production-forecast.md) | Predict well production lifecycles, flow regime transitions, and EUR following hydraulic fracturing. |
 | [Precipitation Circuit Designer](../mcps/precipitation-circuit-designer.md) | Engineering tool for designing metal recovery precipitation circuits. |
@@ -190,6 +192,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Production Forecasting Model](../mcps/production-forecasting-model.md) | Predict oil and gas production rates using reservoir data and decline curve analysis. |
 | [Proppant Transport Model](../mcps/proppant-transport-model.md) | Simulates proppant settling and concentration within hydraulic fractures. |
 | [Pump Sizing Calculator](../mcps/pump-sizing-calculator.md) | Professional engineering tool for pump sizing, power calculation, and cavitation safety analysis. |
+| [PVC Plant Design Engineer](../mcps/pvc-plant-design-engineer.md) | Simulate and design PVC production facilities using polymerization kinetics. |
 | [Quantitative Risk Assessment (QRA)](../mcps/quantitative-risk-assessment-qra.md) | Perform safety and environmental impact modeling for oil and gas facilities. |
 | [Reactor Design Batch](../mcps/reactor-design-batch.md) | Calculate reactor sizing, thermal safety, and production schedules for batch chemical processes. |
 | [Reactor Design CSTR](../mcps/reactor-design-cstr.md) | Calculate reactor volume, residence time, and conversion for CSTR systems. |
