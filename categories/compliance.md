@@ -5,18 +5,25 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Comparison Copy Fairness Scorer](../mcps/comparison-copy-fairness-scorer.md) | Audit marketing copy and comparison tables for claim verifiability, feature balance, and disparagement risk. |
+| [Confined Space Entry Program](../mcps/confined-space-entry-program.md) | Generates OSHA-compliant safety protocols, atmospheric monitoring, and rescue plans for confined space entries. |
 | [Data Lineage Tracker](../mcps/data-lineage-tracker.md) | Track the provenance and lifecycle of data objects through LLM pipelines. |
 | [Delio](../mcps/delio.md) | Automate wealth management workflows via Delio Core OS — manage deals, investors, portfolio transactions, compliance forms, and platform users from any AI agent. |
 | [Effluent Discharge Compliance](../mcps/effluent-discharge-compliance.md) | Evaluates pollutant discharge compliance with regulatory limits and calculates required treatment levels. |
+| [Emergency Drill Scheduler](../mcps/emergency-drill-scheduler.md) | Automate emergency response drill planning, frequency calculation, and scenario selection. |
 | [Environmental Release Reporting](../mcps/environmental-release-reporting.md) | Determines reporting requirements, timelines, and thresholds for chemical releases. |
 | [Fugitive Emissions Estimator](../mcps/fugitive-emissions-estimator.md) | Calculate fugitive emissions and LDAR compliance requirements for industrial equipment. |
 | [Groundwater Monitoring Program Designer](../mcps/groundwater-monitoring-program-designer.md) | Design comprehensive groundwater monitoring strategies including well placement and sampling schedules. |
 | [Hazardous Chemical Inventory Manager](../mcps/hazardous-chemical-inventory-manager.md) | Manage chemical safety, storage compliance, and regulatory reporting. |
 | [Hazardous Waste Classifier](../mcps/hazardous-waste-classifier.md) | Classifies waste streams as hazardous or non-hazardous using RCRA and EU standards. |
+| [Hot Work Permit System](../mcps/hot-work-permit-system.md) | Automated safety compliance for hot work operations. |
+| [Lockout/Tagout Procedure Generator](../mcps/lockouttagout-procedure-generator.md) | Generates OSHA-compliant lockout/tagout (LOTO) procedures for industrial equipment. |
 | [Permit Compliance Tracking](../mcps/permit-compliance-tracking.md) | Monitor and validate environmental permit adherence across air, water, and waste media. |
+| [Process Safety Management Audit](../mcps/process-safety-management-audit.md) | Automated OSHA 1910.119 compliance auditing for hazardous chemical facilities. |
+| [Radioactive Material Management](../mcps/radioactive-material-management.md) | Manage NORM compliance and radiation safety for oil and gas operations. |
 | [Reporting Compliance Calendar](../mcps/reporting-compliance-calendar.md) | Automated regulatory reporting schedules and compliance tracking for oil and gas operations. |
 | [SDS Hazard Communication Evaluator](../mcps/sds-hazard-communication-evaluator.md) | Evaluates Safety Data Sheet (SDS) compliance against GHS and OSHA HCS standards. |
 | [Venting & Fugitive Emissions Calculator](../mcps/venting-fugitive-emissions-calculator.md) | Calculate methane and VOC emissions from oil and gas facilities using EPA methods. |
+| [Waste Management Classification](../mcps/waste-management-classification.md) | Classifies oil and gas waste for regulatory compliance and disposal. |
 
 
 ---

@@ -6,6 +6,7 @@ Explore the open database of **analysis** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Chord Progression Analyzer](../mcps/chord-progression-analyzer.md) | Analyze chord sequences to identify Roman numeral functions, harmonic patterns, and emotional context. |
 | [Elemental Damage Matrix Calculator](../mcps/elemental-damage-matrix-calculator.md) | Calculate elemental effectiveness, combat cycles, and balance metrics. |
+| [Incident Investigation Analysis](../mcps/incident-investigation-analysis.md) | Analyze incident data using root cause methodologies like 5-Why and Fishbone. |
 | [Multi-Language Token Estimator](../mcps/multi-language-token-estimator.md) | Analyze text composition and estimate token counts across multiple languages. |
 | [Singlish Authenticity Scorer](../mcps/singlish-authenticity-scorer.md) | Analyze the linguistic authenticity of Singlish text using particle density and syntax patterns. |
 | [Tempo Tap Analyzer](../mcps/tempo-tap-analyzer.md) | Analyze rhythmic timing, BPM, and groove stability from tap sequences. |

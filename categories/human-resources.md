@@ -39,6 +39,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [Gem](../mcps/gem.md) | Manage recruitment CRM pipelines, track candidates, and oversee outreach via AI agents with Gem. |
 | [Giftpack](../mcps/giftpack.md) | Send corporate gifts at scale with AI-curated selections that match recipient preferences and company budget guidelines. |
 | [GlassFrog](../mcps/glassfrog.md) | Manage Holacracy circles, roles, and tactical projects via AI agents with GlassFrog. |
+| [HSE Training Needs Analysis](../mcps/hse-training-needs-analysis.md) | Analyze HSE training requirements, competency gaps, and refresher schedules. |
 | [InfoVetted](../mcps/infovetted.md) | Screen and verify candidate backgrounds with employment checks, education verification, and criminal record searches. |
 | [Innform](../mcps/innform.md) | Train your team with an LMS that creates courses from your content, tracks completion, and gamifies the learning experience. |
 | [iSpring Learn](../mcps/ispring-learn.md) | Train employees with a corporate LMS that delivers SCORM courses, tracks certifications, and generates compliance reports. |

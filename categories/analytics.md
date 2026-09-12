@@ -50,6 +50,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |
 | [Kite-Surf Distance Calculator](../mcps/kite-surf-distance-calculator.md) | Calculate kite-surfing session metrics including total distance, upwind/downwind travel, and active duration. |
 | [Leaching Kinetics Model](../mcps/leaching-kinetics-model.md) | Models metal leaching kinetics to determine rate constants, activation energy, and leach time predictions. |
+| [Leading-Lagging Indicators](../mcps/leading-lagging-indicators.md) | Track HSE safety performance using reactive lagging and proactive leading indicators. |
 | [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
 | [Limit of Detection Calculator](../mcps/limit-of-detection-calculator.md) | Calculate LOD, LOQ, and noise profiles using IUPAC-compliant statistical methods. |
 | [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |

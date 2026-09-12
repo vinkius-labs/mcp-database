@@ -74,6 +74,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Dryer Design Engineering Tool](../mcps/dryer-design-engineering-tool.md) | Calculate dryer sizing, residence time, and energy demand for industrial drying processes. |
 | [Electrowinning Cell Designer](../mcps/electrowinning-cell-designer.md) | Calculates electrochemical parameters and physical dimensions for metal recovery cells. |
 | [Emission Calculations for Flaring](../mcps/emission-calculations-for-flaring.md) | Calculate environmental emissions from flaring operations using EPA AP-42 standards. |
+| [Environmental Impact Assessment](../mcps/environmental-impact-assessment.md) | Conduct structured environmental impact assessments using professional EIA methodologies. |
 | [ESP Sizing & Configuration](../mcps/esp-sizing-configuration.md) | Calculates optimal electric submersible pump (ESP) configurations, including pump stages, motor size, and electrical systems. |
 | [Evaporator Design Engineer](../mcps/evaporator-design-engineer.md) | Calculate thermal requirements and equipment dimensions for industrial evaporation systems. |
 | [Explosion Hazard Analysis](../mcps/explosion-hazard-analysis.md) | Analyze explosion risks, overpressure, and safe standoff distances for flammable materials. |
@@ -104,6 +105,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Gravity Separation Design Engine](../mcps/gravity-separation-design-engine.md) | Select optimal gravity separation equipment and estimate recovery performance. |
 | [Ground Support Design](../mcps/ground-support-design.md) | Calculate optimal rock bolt patterns and shotcrete thickness for underground excavations. |
 | [Ground Support Selection](../mcps/ground-support-selection.md) | Specialized decision-support for geotechnical excavation stability. |
+| [hazard-operability-study](../mcps/hazard-operability-study.md) | A structured tool for conducting HAZOP studies on industrial processes. |
 | [Heap Leach Design Engineer](../mcps/heap-leach-design-engineer.md) | Professional engineering tool for designing gold and copper heap leach pads. |
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
 | [Heat Exchanger Sizing Pro](../mcps/heat-exchanger-sizing-pro.md) | Calculate heat transfer area, LMTD, and physical dimensions for shell and tube heat exchangers. |
@@ -188,6 +190,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Production Forecasting Model](../mcps/production-forecasting-model.md) | Predict oil and gas production rates using reservoir data and decline curve analysis. |
 | [Proppant Transport Model](../mcps/proppant-transport-model.md) | Simulates proppant settling and concentration within hydraulic fractures. |
 | [Pump Sizing Calculator](../mcps/pump-sizing-calculator.md) | Professional engineering tool for pump sizing, power calculation, and cavitation safety analysis. |
+| [Quantitative Risk Assessment (QRA)](../mcps/quantitative-risk-assessment-qra.md) | Perform safety and environmental impact modeling for oil and gas facilities. |
 | [Reactor Design Batch](../mcps/reactor-design-batch.md) | Calculate reactor sizing, thermal safety, and production schedules for batch chemical processes. |
 | [Reactor Design CSTR](../mcps/reactor-design-cstr.md) | Calculate reactor volume, residence time, and conversion for CSTR systems. |
 | [Reactor Design PFR](../mcps/reactor-design-pfr.md) | Calculate physical parameters and performance metrics for Plug Flow Reactors. |
@@ -208,6 +211,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Roaster Circuit Design](../mcps/roaster-circuit-design.md) | Engineering tool for designing roasting circuits for refractory ores. |
 | [Rock Mass Characterization](../mcps/rock-mass-characterization.md) | Quantify rock mass quality using RMR, Q-system, and GSI classification methods. |
 | [Rock Mechanics Analysis](../mcps/rock-mechanics-analysis.md) | Analyze rock mass stability and determine mining support requirements. |
+| [Safety Integrity Level Verification](../mcps/safety-integrity-level-verification.md) | Verify SIL achievement and SIF reliability using IEC 61508/61511 standards. |
 | [Safety Valve Sizing](../mcps/safety-valve-sizing.md) | Calculate SSSV dimensions, flow coefficients, and pressure drops. |
 | [SAG Mill Pinion Power Calculator](../mcps/sag-mill-pinion-power-calculator.md) | Calculate mechanical and electrical power requirements for SAG mill pinions. |
 | [SAG Mill Sizing & Design](../mcps/sag-mill-sizing-design.md) | Calculate optimal SAG mill dimensions, power requirements, and ball charge. |

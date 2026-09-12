@@ -9,6 +9,7 @@ Explore the open database of **oil-and-gas** Model Context Protocol (MCP) server
 | [Hydrate Formation Prediction](../mcps/hydrate-formation-prediction.md) | Predict gas hydrate formation conditions and calculate chemical inhibition dosages. |
 | [Pigging Frequency Optimizer](../mcps/pigging-frequency-optimizer.md) | Optimize pipeline pigging intervals and select cleaning tools based on deposition rates and risk. |
 | [Produced Water Quality Model](../mcps/produced-water-quality-model.md) | Models produced water quality for discharge or reinjection. |
+| [Respiratory Protection Selection](../mcps/respiratory-protection-selection.md) | Selects appropriate respiratory protection for oil and gas operations using NIOSH standards. |
 | [Tieback vs Standalone Economics](../mcps/tieback-vs-standalone-economics.md) | Compare the financial viability of tieback vs standalone offshore developments. |
 
 
