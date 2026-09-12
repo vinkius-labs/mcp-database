@@ -5,6 +5,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | Tool Name | Description |
 |-----------|-------------|
 | [Acid Rock Drainage Prediction](../mcps/acid-rock-drainage-prediction.md) | Predict environmental risk from acid rock drainage using geochemical and kinetic data. |
+| [Adipic Acid Plant Design Suite](../mcps/adipic-acid-plant-design-suite.md) | Engineering tool for designing adipic acid production plants and calculating environmental impact. |
 | [Aluminum Toxicity Risk Assessment](../mcps/aluminum-toxicity-risk-assessment.md) | Assess aluminum toxicity risk in acidic soils and calculate lime requirements. |
 | [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Carbon Footprint Calculator for Chemical Processes](../mcps/carbon-footprint-calculator-for-chemical-processes.md) | Calculate Scope 1, 2, and 3 emissions and intensity for chemical manufacturing using GHG Protocol. |

@@ -5,6 +5,7 @@ Explore the open database of **chemical-engineering** Model Context Protocol (MC
 | Tool Name | Description |
 |-----------|-------------|
 | [Ethylene Plant Yield Model](../mcps/ethylene-plant-yield-model.md) | Simulate and optimize petrochemical product yields from steam cracking processes. |
+| [Isobutylene Production Designer](../mcps/isobutylene-production-designer.md) | Optimize isobutylene production by analyzing feedstock suitability and selecting optimal separation processes. |
 
 
 ---

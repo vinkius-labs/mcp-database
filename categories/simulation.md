@@ -19,6 +19,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Kite Loop Mechanics](../mcps/kite-loop-mechanics.md) | Analyze physical forces, timing, and energy of kiteboarding loops. |
 | [Kite Loop Physics Engine](../mcps/kite-loop-physics-engine.md) | Calculates g-force, body load, and peak duration for kiteboarding loops. |
 | [Kite Sheeting Pressure Engine](../mcps/kite-sheeting-pressure-engine.md) | Calculates bar pressure, steering force, and feedback stability for kiteboarding. |
+| [MTBE Production Plant Designer](../mcps/mtbe-production-plant-designer.md) | Chemical engineering simulation for MTBE synthesis and reactor design. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
 | [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |
 | [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |
