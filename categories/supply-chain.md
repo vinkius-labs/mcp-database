@@ -6,6 +6,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 |-----------|-------------|
 | [AI Compute Supply Chain Risk Engine](../mcps/ai-compute-supply-chain-risk-engine.md) | Quantify GPU scarcity and cloud-based compute supply vulnerabilities. |
 | [Avocado Maturity Index](../mcps/avocado-maturity-index.md) | Calculate avocado maturity, shelf life, and market suitability. |
+| [Batch Chemical Process Scheduler](../mcps/batch-chemical-process-scheduler.md) | Optimizes batch production sequences, equipment utilization, and resource allocation. |
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Canola Oil Quality Predictor](../mcps/canola-oil-quality-predictor.md) | Predict canola oil grade, refining losses, and meal quality from seed characteristics. |
 | [Chickpea Quality Grader](../mcps/chickpea-quality-grader.md) | Grades chickpea quality and predicts market suitability and value. |
@@ -24,6 +25,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
+| [Petrochemical Complex Planner](../mcps/petrochemical-complex-planner.md) | Optimize product slates, unit capacities, and feedstock mixes for integrated petrochemical complexes. |
 | [Potato Sprout Control & Storage Management](../mcps/potato-sprout-control-storage-management.md) | Manage potato dormancy and calculate CIPC inhibitor application rates. |
 | [Rebar Scheduling Optimization](../mcps/rebar-scheduling-optimization.md) | Optimize just-in-time rebar deliveries to balance site storage and installation rates. |
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |

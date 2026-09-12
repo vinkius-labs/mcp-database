@@ -11,6 +11,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Adsorption System Designer](../mcps/adsorption-system-designer.md) | Professional engineering tool for designing adsorption-based separation systems. |
 | [Ammonia Plant Design Suite](../mcps/ammonia-plant-design-suite.md) | Design ammonia synthesis plants using Haber-Bosch process modeling. |
 | [Asphaltene Precipitation Predictor](../mcps/asphaltene-precipitation-predictor.md) | Predicts asphaltene precipitation onset, flocculation, and deposition risks in crude oil systems. |
+| [Atmospheric Distillation Design](../mcps/atmospheric-distillation-design.md) | Design atmospheric distillation units by calculating stages, yields, and energy requirements. |
 | [Aviation Weight and Balance](../mcps/aviation-weight-and-balance.md) | Deterministic aircraft weight, moment, and CG calculator with safety envelope validation. |
 | [Azeotrope Prediction Engine](../mcps/azeotrope-prediction-engine.md) | Predict azeotrope formation, properties, and pressure sensitivity. |
 | [Backfill Strength Requirements](../mcps/backfill-strength-requirements.md) | Calculate required UCS, binder content, and curing time for mine backfill. |
@@ -102,6 +103,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Flotation Cell Sizing](../mcps/flotation-cell-sizing.md) | Calculate flotation cell volumes, counts, and bank configurations for mineral processing circuits. |
 | [Flotation Circuit Designer](../mcps/flotation-circuit-designer.md) | Design mineral flotation circuits by modeling kinetic separation based on ore characteristics. |
 | [Flotation Kinetics Modeler](../mcps/flotation-kinetics-modeler.md) | Models flotation kinetics from test data to predict recovery and residence time. |
+| [Fluid Catalytic Cracking (FCC) Design Suite](../mcps/fluid-catalytic-cracking-fcc-design-suite.md) | Design FCC units for heavy oil conversion by calculating yields, circulation rates, and thermal balances. |
 | [Foil Carve Physics](../mcps/foil-carve-physics.md) | Calculate hydrofoil carving mechanics, bank angles, and structural loads. |
 | [Formaldehyde Plant Design Suite](../mcps/formaldehyde-plant-design-suite.md) | Technical engineering tools for designing formaldehyde production plants, covering reactor selection and stability. |
 | [Foundation Pile Layout Optimizer](../mcps/foundation-pile-layout-optimizer.md) | Optimizes pile quantity, positioning, and pile cap dimensions for structural foundations. |
@@ -290,6 +292,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Twintip Flex Effect Engine](../mcps/twintip-flex-effect-engine.md) | Physics-based engine for calculating snowboard pop and comfort. |
 | [Underground Mining Method Selector](../mcps/underground-mining-method-selector.md) | Evaluates geological parameters to recommend optimal underground mining methods. |
 | [Urea Plant Design Engineer](../mcps/urea-plant-design-engineer.md) | Specialized engineering tool for urea production plant design and feedstock validation. |
+| [Vacuum Distillation Unit (VDU) Designer](../mcps/vacuum-distillation-unit-vdu-designer.md) | Technical design tool for calculating VDU column geometry, separation stages, flash zone conditions, and product yields. |
 | [Vapor-Liquid Equilibrium Engine](../mcps/vapor-liquid-equilibrium-engine.md) | Calculate bubble points, dew points, and phase equilibrium properties for chemical mixtures. |
 | [Ventilation Pressure Survey Analyzer](../mcps/ventilation-pressure-survey-analyzer.md) | Analyzes ventilation pressure survey data to determine friction factors, leakage, and system resistance. |
 | [Ventilation Rate Calculator](../mcps/ventilation-rate-calculator.md) | Calculates required ventilation rates, exhaust flow, and make-up air for chemical safety. |

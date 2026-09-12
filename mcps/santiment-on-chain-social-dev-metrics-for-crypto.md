@@ -33,14 +33,14 @@ Connect **Santiment** to your AI agent to unlock institutional-grade crypto mark
 
 
 ## Available Tools (4)
-- **list_projects**: List Santiment projects with their names and slugs
 - **filter_projects_by_metric**: Filter projects by a metric threshold
-- **get_metric_timeseries**: Call list_projects to find valid slugs.
-
-Fetch timeseries data for a metric and asset slug
 - **get_metric_multiple_slugs**: Slugs are Santiment identifiers, not tickers ("worldcoin-org", not "wld"). Call list_projects first if unsure.
 
 Fetch timeseries data for a metric across multiple slugs
+- **get_metric_timeseries**: Call list_projects to find valid slugs.
+
+Fetch timeseries data for a metric and asset slug
+- **list_projects**: List Santiment projects with their names and slugs
 
 
 ## 💬 Prompt Examples

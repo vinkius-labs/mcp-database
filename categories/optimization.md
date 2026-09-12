@@ -33,6 +33,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [KV Cache Memory Optimizer](../mcps/kv-cache-memory-optimizer.md) | Deterministic calculator for LLM KV cache memory, throughput, and optimization analysis. |
 | [Model Routing Efficiency Calculator](../mcps/model-routing-efficiency-calculator.md) | Optimize LLM selection by analyzing cost-quality trade-offs and task complexity. |
 | [Model Routing Optimizer](../mcps/model-routing-optimizer.md) | A deterministic engine for selecting the optimal LLM based on cost, quality, and latency. |
+| [Petrochemical Utilities Balance](../mcps/petrochemical-utilities-balance.md) | Calculate steam, power, and utility equilibrium for petrochemical complexes. |
 | [Polygon Budget Allocator](../mcps/polygon-budget-allocator.md) | Optimize game performance with deterministic polygon budget distribution and resource modeling. |
 | [Prefix Cache Savings Calculator](../mcps/prefix-cache-savings-calculator.md) | Calculate exact token savings from LLM prefix caching. |
 | [RAG Chunk Optimization Calculator](../mcps/rag-chunk-optimization-calculator.md) | Deterministic tool for optimizing RAG chunk size and overlap parameters. |
