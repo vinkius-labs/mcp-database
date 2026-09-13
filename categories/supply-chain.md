@@ -27,8 +27,11 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
 | [Petrochemical Complex Planner](../mcps/petrochemical-complex-planner.md) | Optimize product slates, unit capacities, and feedstock mixes for integrated petrochemical complexes. |
 | [Potato Sprout Control & Storage Management](../mcps/potato-sprout-control-storage-management.md) | Manage potato dormancy and calculate CIPC inhibitor application rates. |
+| [Product Loading Scheduler](../mcps/product-loading-scheduler.md) | Optimizes product loading sequences, asset assignments, and throughput metrics. |
 | [Rebar Scheduling Optimization](../mcps/rebar-scheduling-optimization.md) | Optimize just-in-time rebar deliveries to balance site storage and installation rates. |
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |
+| [Refinery Blending Optimization](../mcps/refinery-blending-optimization.md) | Optimizes refinery product blending using linear programming to maximize margins and ensure compliance. |
+| [Refinery Utilization Planning](../mcps/refinery-utilization-planning.md) | Optimize refinery throughput, maintenance timing, and inventory levels. |
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |

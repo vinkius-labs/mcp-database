@@ -5,6 +5,7 @@ Explore the open database of **industrial** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Air Quality Dispersion Model](../mcps/air-quality-dispersion-model.md) | Predict pollutant dispersion and ground-level concentrations from industrial sources. |
+| [Refinery CO2 Emissions Calculator](../mcps/refinery-co2-emissions-calculator.md) | Quantify Scope 1 and Scope 2 emissions, emission intensity, and carbon balance for refinery operations. |
 
 
 ---

@@ -4,8 +4,11 @@ Explore the open database of **chemical-engineering** Model Context Protocol (MC
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Catalytic Reformer Design Suite](../mcps/catalytic-reformer-design-suite.md) | Optimize catalytic reforming units for gasoline production and hydrogen yield. |
 | [Ethylene Plant Yield Model](../mcps/ethylene-plant-yield-model.md) | Simulate and optimize petrochemical product yields from steam cracking processes. |
 | [Isobutylene Production Designer](../mcps/isobutylene-production-designer.md) | Optimize isobutylene production by analyzing feedstock suitability and selecting optimal separation processes. |
+| [Sulfur Recovery Unit Design](../mcps/sulfur-recovery-unit-design.md) | Design Claus sulfur recovery units by optimizing catalytic stages and air requirements. |
+| [Visbreaker Unit Design](../mcps/visbreaker-unit-design.md) | Design visbreaker units for viscosity reduction using atmospheric residue properties. |
 
 
 ---

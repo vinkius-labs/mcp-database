@@ -214,6 +214,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Covered Call Strategy Engine](../mcps/covered-call-strategy-engine.md) | Deterministic signaling and backtesting for covered call option strategies. |
 | [CPF Allocation Calculator](../mcps/cpf-allocation-calculator.md) | Calculate exact CPF contributions and account allocations for Singapore Citizens and PRs. |
 | [CPF Optimization Strategy](../mcps/cpf-optimization-strategy.md) | Deterministic CPF allocation and projection engine for Singaporeans aged 20-35. |
+| [Crack Spread Analysis](../mcps/crack-spread-analysis.md) | Analyze refinery profitability by calculating crack spreads and hedge ratios. |
 | [Crack Spread Strategy](../mcps/crack-spread-strategy.md) | Analyze refining margins and identify mean-reversion opportunities using a 3:2:1 crack spread model. |
 | [Credit Card Payoff Engine](../mcps/credit-card-payoff-engine.md) | Calculate exact credit card payoff timelines, interest costs, and compare repayment strategies using daily compounding logic. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
@@ -603,6 +604,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Reclamation Bond Calculator](../mcps/reclamation-bond-calculator.md) | Calculates financial security requirements for land reclamation. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
+| [Refinery Margin Calculator](../mcps/refinery-margin-calculator.md) | Calculate refinery gross margins, net margins, and crack spreads. |
 | [Relative Strength Strategy](../mcps/relative-strength-strategy.md) | A deterministic momentum strategy identifying assets outperforming a benchmark. |
 | [Relative Vigor Index (RVI) Calculator](../mcps/relative-vigor-index-rvi-calculator.md) | Deterministic technical analysis tool for RVI, signal lines, and momentum signals. |
 | [Relative Volatility Index (RVI) Calculator](../mcps/relative-volatility-index-rvi-calculator.md) | Calculate and analyze volatility momentum using the Relative Volatility Index. |
