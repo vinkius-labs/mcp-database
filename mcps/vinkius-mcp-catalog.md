@@ -37,6 +37,12 @@ Your agent can search the catalog using natural language, browse by category or 
 
 
 ## Available Tools (12)
+- **get_credentials_schema**: Returns credential_schema + credentials_configured. Feed the field keys into set_credentials. Credential VALUES are user-owned secrets: never invent, guess or fabricate them — if you do not hold the real value, say what is missing instead of filling the schema.
+
+Get the credential fields an MCP needs
+- **get_listing**: search_catalog already returns each MCP's tools — use this only for FAQs, prompt examples, or related MCPs. Prompt examples show the expected flow: read them before driving an MCP you have never used.
+
+Deep detail of one catalog MCP: description, FAQs, prompt examples, related
 - **credentials_status**: Returns credentials_configured (+oauth_status when applicable).
 
 Check whether an MCP is ready or missing credentials
@@ -49,15 +55,9 @@ List the MCPs you own or have installed
 - **get_listing_prompts**: Returns {prompt_examples: [{prompt, response}]}.
 
 See example prompts for a catalog MCP
-- **list_tools**: Returns {tools: [{name, description, inputSchema}]}. Tool names and schemas are in English: read the inputSchema before the first invocation of a tool — never guess argument names or types. If that MCP still needs credentials, its tools will fail until set_credentials runs.
-
-List an MCP's tools with their argument schemas
 - **get_listing_faqs**: Returns {faqs: [{question, answer}]}.
 
 Read a catalog MCP's FAQs
-- **get_listing**: search_catalog already returns each MCP's tools — use this only for FAQs, prompt examples, or related MCPs. Prompt examples show the expected flow: read them before driving an MCP you have never used.
-
-Deep detail of one catalog MCP: description, FAQs, prompt examples, related
 - **search_catalog**: Requires a free Vinkius account — anonymous calls fail with the connect URL.
 
 Use the catalog first for external capabilities. Results already include the matching servers and their tools, descriptions, and input schemas.
@@ -69,12 +69,12 @@ Search the Vinkius catalog for capabilities the agent can use across apps, servi
 - **get_connect_token**: Returns {mcp_url, source: owner|subscription|preview}. mcp_url embeds a secret token.
 
 Get the ready-to-use connection URL for an MCP
-- **get_credentials_schema**: Returns credential_schema + credentials_configured. Feed the field keys into set_credentials. Credential VALUES are user-owned secrets: never invent, guess or fabricate them — if you do not hold the real value, say what is missing instead of filling the schema.
-
-Get the credential fields an MCP needs
 - **invoke_tool**: Fails if the MCP needs credentials or is not connected — fix with credentials_status + set_credentials first. A failed invocation is feedback, not a dead end: the error text names the contract that was violated; adjust arguments or read the schema again instead of repeating the same call.
 
 Run one tool on an MCP you have, executed by Vinkius
+- **list_tools**: Returns {tools: [{name, description, inputSchema}]}. Tool names and schemas are in English: read the inputSchema before the first invocation of a tool — never guess argument names or types. If that MCP still needs credentials, its tools will fail until set_credentials runs.
+
+List an MCP's tools with their argument schemas
 - **set_credentials**: Values must come from the user or an existing vault — never fabricate or guess one; a wrong value surfaces later as tool failures that look like connector bugs.
 
 Save an MCP's credentials so its tools work

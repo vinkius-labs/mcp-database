@@ -14,10 +14,10 @@ This MCP server provides specialized tools for reservoir engineering by interpre
 
 
 ## Available Tools (4)
-- **analyze_storativity**: Calculates the porosity-compressibility product to determine the reservoir's storage capacity
-- **analyze_transmissibility**: Calculates the permeability-thickness product based on the relationship between pulse amplitude and response attenuation
 - **calculate_geometry_type**: Identifies the reservoir flow regime based on the pressure response behavior
+- **analyze_storativity**: Calculates the porosity-compressibility product to determine the reservoir's storage capacity
 - **estimate_time_lag_effects**: Quantifies the delay in pressure propagation to validate the depth or distance of the test observations
+- **analyze_transmissibility**: Calculates the permeability-thickness product based on the relationship between pulse amplitude and response attenuation
 
 
 ## 💬 Prompt Examples

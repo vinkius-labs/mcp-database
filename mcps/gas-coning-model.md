@@ -14,10 +14,10 @@ This MCP server provides specialized tools for reservoir engineers to manage gas
 
 
 ## Available Tools (4)
-- **evaluate_well_placement**: Analyzes how different well completions affect coning risk
-- **simulate_gor_evolution**: Models the progression of the gas-oil ratio over a production lifecycle
 - **calculate_critical_rate**: Determines the maximum safe production rate to prevent or delay gas coning
+- **evaluate_well_placement**: Analyzes how different well completions affect coning risk
 - **predict_breakthrough**: Estimates when gas will first reach the wellbore
+- **simulate_gor_evolution**: Models the progression of the gas-oil ratio over a production lifecycle
 
 
 ## 💬 Prompt Examples

@@ -5,19 +5,19 @@
 
 ## Overview
 
-**Category:** [engineering](../categories/engineering.md)
+**Category:** [environmental](../categories/environmental.md)
 
-Predict surface subsidence and movement caused by underground mining activities.
+Predict surface subsidence and geological risks from reservoir compaction.
 
 ## Description
-This MCP server provides technical tools for estimating surface deformation resulting from underground extraction. It allows users to calculate the peak vertical displacement using `calculate_max_subsidence`, visualize the subsidence trough with `generate_subsidence_profile`, estimate the total surface footprint via `estimate_affected_area`, and verify stability using `check_critical_width_threshold`. It is designed for geotechnical analysis and mining impact assessment.
+This MCP server provides specialized tools for geological engineering to model surface movement caused by subsurface reservoir compaction. Use `calculate_subsidence_profile` to determine the spatial distribution of vertical displacement, and `estimate_affected_area` to define the geographic footprint of the subsidence event. The model also includes `evaluate_fault_risk` to assess the likelihood of geological instability and `get_reservoir_summary` for high-level compaction analysis.
 
 
 ## Available Tools (4)
-- **calculate_max_subsidence**: Determines the peak vertical displacement at the center of a mining panel
-- **check_critical_width_threshold**: Determines if the current mining width is sufficient to cause surface movement
-- **estimate_affected_area**: Calculates the total surface area impacted by mining-induced movement
-- **generate_subsidence_profile**: Provides a set of displacement values across a distance from the center of the mine
+- **estimate_affected_area**: Define the geographic footprint of the subsidence event
+- **calculate_subsidence_profile**: Determine the spatial distribution and peak magnitude of surface movement
+- **evaluate_fault_risk**: Assess the likelihood of geological instability caused by predicted subsidence
+- **get_reservoir_summary**: Provide a high-level overview of reservoir characteristics and impact
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides technical tools for estimating surface deformation resu
 Here are some examples of how you can interact with the **Subsidence Prediction Model** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the maximum subsidence for a Longwall mine with 3m thickness at 500m depth and rock stiffness of 50?"
+> "Calculate the subsidence profile for a reservoir at 1500m depth, 50m thick, with 5m compaction and 200MPa overburden stiffness using the geertsma model."
 
 **🤖 AI Agent:**
-> The maximum subsidence for this mining configuration is 1.2 meters.
+> The peak vertical displacement is 12.4 meters, with the subsidence profile tapering off as distance from the center increases.
 
 ---
 
 **👤 You:**
-> "Will a mining width of 40m cause surface movement at 300m depth with these rock properties?"
+> "What is the risk to a fault located 200m from a subsidence center with a max subsidence of 15m and a fault orientation of 45 degrees?"
 
 **🤖 AI Agent:**
-> No, the current mining width is below the critical threshold, so the surface is expected to remain stable.
+> The risk level is classified as high due to the proximity of the fault to the peak displacement.
 
 ---
 
 **👤 You:**
-> "Calculate the total area impacted by a mine with 100m width, 400m depth, and an angle of draw of 35 degrees."
+> "Provide a summary for a reservoir at 2000m depth, 80m thick, with 10m compaction."
 
 **🤖 AI Agent:**
-> The total affected surface area is 15,420 square meters.
+> The compaction ratio is 0.125 and the pressure impact factor is 0.85.
 
 
 ## ❓ FAQ
 
-**Q: How do I calculate the maximum surface sinking?**
-Use the `calculate_max_subsidence` tool by providing the mining method, extraction thickness, depth, and rock stiffness.
+**Q: How do I calculate the area affected by ground movement?**
+You can use the `estimate_affected_area` tool by providing the subsidence profile data and a displacement threshold value.
 
-**Q: Can I see the shape of the subsidence trough?**
-Yes, the `generate_subsidence_profile` tool provides a set of displacement values across distances to visualize the trough.
+**Q: Can this model predict fault reactivation?**
+Yes, the `evaluate_fault_risk` tool assesses the likelihood of geological instability based on peak subsidence and proximity to known faults.
 
-**Q: How is the affected area determined?**
-The `estimate_affected_area` tool calculates the total surface footprint based on the mining width, depth, and angle of draw.
+**Q: What models are supported for subsidence calculation?**
+The `calculate_subsidence_profile` tool supports both Geertsma and numerical modeling approaches.
 
 
 ## Installation & Usage

@@ -14,8 +14,8 @@ This MCP server provides specialized tools for modeling the inflow performance o
 
 
 ## Available Tools (4)
-- **calculate_aof**: Determines the theoretical maximum flow rate (AOF) for the well
 - **analyze_two_phase_impact**: Evaluates how the presence of gas affects the inflow performance
+- **calculate_aof**: Determines the theoretical maximum flow rate (AOF) for the well
 - **calculate_ipr_curve**: Generates a set of flow rate data points across a range of bottomhole pressures to model the IPR curve
 - **calculate_optimal_drawdown**: Identifies the ideal pressure drop to maximize production efficiency
 

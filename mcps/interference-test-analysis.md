@@ -14,9 +14,9 @@ This MCP server provides advanced reservoir engineering tools to analyze interfe
 
 
 ## Available Tools (4)
-- **calculate_reservoir_properties**: Derives fundamental physical properties of the reservoir using the diffusivity relationship
-- **get_connectivity_profile**: Evaluates the hydraulic communication between a specific pair of wells
 - **analyze_directional_permeability**: Determines the anisotropy of the reservoir by comparing responses across different orientations
+- **get_connectivity_profile**: Evaluates the hydraulic communication between a specific pair of wells
+- **calculate_reservoir_properties**: Derives fundamental physical properties of the reservoir using the diffusivity relationship
 - **detect_reservoir_boundaries**: Identifies the presence and location of reservoir limits such as faults or edges
 
 
