@@ -100,6 +100,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Fine-Tuning Market Analyzer](../mcps/ai-fine-tuning-market-analyzer.md) | Calculates TAM, SAM, and market share potential for AI fine-tuning services. |
 | [AI Foundation Model Valuation Engine](../mcps/ai-foundation-model-valuation-engine.md) | Calculate enterprise value and market position for AI model companies. |
 | [AI Gateway ROI Calculator](../mcps/ai-gateway-roi-calculator.md) | Calculate the financial return on investment for implementing an AI gateway. |
+| [AI Governance Cost Calculator](../mcps/ai-governance-cost-calculator.md) | Calculate implementation costs, compliance expenses, and risk reduction value for AI governance. |
 | [AI Human Feedback Cost Calculator](../mcps/ai-human-feedback-cost-calculator.md) | Calculate RLHF and RLAIF cost structures, quality impact, and automation potential. |
 | [AI Inference Cost Economics](../mcps/ai-inference-cost-economics.md) | Calculate unit economics for AI model deployment, including cost per query, margins, and scale projections. |
 | [AI Inference Optimization ROI](../mcps/ai-inference-optimization-roi.md) | Calculate financial and performance ROI for AI inference optimizations. |
@@ -115,6 +116,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Model Registry Cost Structure](../mcps/ai-model-registry-cost-structure.md) | Quantify the economic impact, operating costs, and governance benefits of your AI model registry. |
 | [AI Model Training Cost Economics](../mcps/ai-model-training-cost-economics.md) | Analyze the financial impact of AI training, including compute costs, efficiency, and ROI. |
 | [AI Model Unit Economics](../mcps/ai-model-unit-economics.md) | Calculate gross margins, viability, and optimal pricing for AI model API services. |
+| [AI Operating Model Transformation](../mcps/ai-operating-model-transformation.md) | Quantify AI transformation investment, productivity gains, and implementation timelines. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
 | [AI Prompt Caching Economics](../mcps/ai-prompt-caching-economics.md) | Calculate the financial impact and ROI of LLM prompt caching strategies. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
@@ -559,8 +561,14 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
 | [Partial Budgeting Tool](../mcps/partial-budgeting-tool.md) | Analyze the financial impact of management changes using incremental revenue and cost modeling. |
 | [PE AI Acquisition Synergy Analyzer](../mcps/pe-ai-acquisition-synergy-analyzer.md) | Quantify strategic and financial benefits of AI-focused acquisitions. |
+| [PE AI Carve-out Complexity Engine](../mcps/pe-ai-carve-out-complexity-engine.md) | Quantifies technical and financial complexities of spinning off AI business units. |
+| [PE AI Data Assets Valuation](../mcps/pe-ai-data-assets-valuation.md) | Estimate the economic and strategic worth of proprietary AI datasets. |
+| [PE AI Exit Multiple Impact](../mcps/pe-ai-exit-multiple-impact.md) | Quantify how AI capabilities enhance exit valuations for private equity assets. |
+| [PE AI IP Portfolio Strength](../mcps/pe-ai-ip-portfolio-strength.md) | Quantifies AI IP moat strength and strategic value for Private Equity investments. |
 | [PE AI Margin Enhancer](../mcps/pe-ai-margin-enhancer.md) | Calculates the impact of AI on operating margins, EBITDA uplift, and ROI. |
 | [PE AI Maturity Assessment Engine](../mcps/pe-ai-maturity-assessment-engine.md) | Analytical engine for Private Equity firms to evaluate AI readiness and value potential during due diligence. |
+| [PE AI Secondary Buyout Feasibility](../mcps/pe-ai-secondary-buyout-feasibility.md) | Assess the commercial attractiveness of acquiring AI-driven assets through secondary buyouts. |
+| [PE AI Strategic Buyer Identification](../mcps/pe-ai-strategic-buyer-identification.md) | Identify AI-focused strategic acquirers using technical synergy and M&A behavior analysis. |
 | [PE AI Technology Due Diligence](../mcps/pe-ai-technology-due-diligence.md) | Quantify technical risk, remediation costs, and investment viability for AI-driven assets. |
 | [PE AI Value Creation Planner](../mcps/pe-ai-value-creation-planner.md) | Quantify the economic impact of AI implementation for Private Equity. |
 | [PE Deal Sourcing ROI Analyzer](../mcps/pe-deal-sourcing-roi-analyzer.md) | Calculate PE deal sourcing ROI and optimize channel budget allocation. |

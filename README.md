@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,471 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **8,481 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,7 +11,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (1011 servers)
-- [finance](categories/finance.md) (788 servers)
+- [finance](categories/finance.md) (796 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (586 servers)
 - [engineering](categories/engineering.md) (365 servers)
@@ -34,7 +34,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [infrastructure](categories/infrastructure.md) (87 servers)
 - [health](categories/health.md) (77 servers)
 - [security](categories/security.md) (73 servers)
-- [human-resources](categories/human-resources.md) (66 servers)
+- [human-resources](categories/human-resources.md) (67 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (59 servers)
 - [fort-knox](categories/fort-knox.md) (58 servers)
@@ -264,6 +264,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [marketing-tools](categories/marketing-tools.md) (1 servers)
 - [media-entertainment](categories/media-entertainment.md) (1 servers)
 - [medical](categories/medical.md) (1 servers)
+- [mergers-and-acquisitions](categories/mergers-and-acquisitions.md) (1 servers)
 - [metabolic-tools](categories/metabolic-tools.md) (1 servers)
 - [mindfulness](categories/mindfulness.md) (1 servers)
 - [music-theory](categories/music-theory.md) (1 servers)
