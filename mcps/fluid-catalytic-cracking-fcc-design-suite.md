@@ -14,10 +14,10 @@ This MCP server provides a complete suite of engineering tools for designing Flu
 
 
 ## Available Tools (4)
-- **determine_catalyst_circulation**: Calculates the required mass flow of catalyst to maintain the reaction and heat balance
-- **evaluate_regenerator_conditions**: Predicts the thermal and chemical environment within the regenerator
 - **analyze_deactivation_risk**: Assesses how quickly the catalyst will lose effectiveness
 - **calculate_product_yields**: Determines the expected volume distribution of products based on feed and catalyst inputs
+- **determine_catalyst_circulation**: Calculates the required mass flow of catalyst to maintain the reaction and heat balance
+- **evaluate_regenerator_conditions**: Predicts the thermal and chemical environment within the regenerator
 
 
 ## 💬 Prompt Examples

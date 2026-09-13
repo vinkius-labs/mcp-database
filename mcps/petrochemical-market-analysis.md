@@ -14,10 +14,10 @@ This MCP server provides deep analytical insights into the petrochemical industr
 
 
 ## Available Tools (4)
-- **forecast_price_outlook**: Forecasts the expected price direction for a product
-- **analyze_supply_demand_balance**: Analyzes the supply-demand balance for a specific petrochemical product in a region
 - **calculate_operating_rates**: Calculates the current operating rate for a specific product in a region
+- **forecast_price_outlook**: Forecasts the expected price direction for a product
 - **map_trade_flows**: Maps the trade flows of a product between two regions
+- **analyze_supply_demand_balance**: Analyzes the supply-demand balance for a specific petrochemical product in a region
 
 
 ## 💬 Prompt Examples

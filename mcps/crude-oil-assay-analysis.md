@@ -14,10 +14,10 @@ This MCP server provides essential tools for refinery planning and crude oil cha
 
 
 ## Available Tools (4)
-- **calculate_yield_distribution**: 
 - **estimate_product_qualities**: 
 - **evaluate_blend_compatibility**: 
 - **get_crude_classification**: 
+- **calculate_yield_distribution**: 
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for chemical manufacturing optimizati
 
 
 ## Available Tools (4)
-- **analyze_equipment_efficiency**: Evaluates how well the current equipment set is being used over a specific period
+- **calculate_production_schedule**: Generates an optimized sequence of batches to meet demand while minimizing idle time and changeovers
 - **check_resource_conflicts**: Identifies overlapping requirements for shared resources across different scheduled batches
 - **estimate_batch_cycle_times**: Predicts the duration of individual batches and the total time required for specific production runs
-- **calculate_production_schedule**: Generates an optimized sequence of batches to meet demand while minimizing idle time and changeovers
+- **analyze_equipment_efficiency**: Evaluates how well the current equipment set is being used over a specific period
 
 
 ## 💬 Prompt Examples

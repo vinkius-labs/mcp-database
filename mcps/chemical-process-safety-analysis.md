@@ -14,10 +14,10 @@ This MCP server provides specialized tools for petrochemical process safety mana
 
 
 ## Available Tools (4)
-- **model_consequences**: Estimate the physical impact of a specific hazard scenario
-- **analyze_hazard_scenarios**: Identify and categorize potential hazardous event sequences based on HAZOP deviations
-- **calculate_sil_requirements**: Determine the necessary Safety Integrity Level (SIL) to mitigate a specific risk
 - **evaluate_process_safety_status**: Provide a high-level summary of the safety health of a petrochemical unit
+- **analyze_hazard_scenarios**: Identify and categorize potential hazardous event sequences based on HAZOP deviations
+- **model_consequences**: Estimate the physical impact of a specific hazard scenario
+- **calculate_sil_requirements**: Determine the necessary Safety Integrity Level (SIL) to mitigate a specific risk
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for modeling integrated petrochemical
 
 
 ## Available Tools (4)
-- **optimize_feedstock_mix**: Identifies the best combination of different feedstock types to minimize costs while meeting production targets
-- **validate_unit_capacities**: Checks if a proposed product slate is physically achievable given the constraints of the plant equipment
 - **calculate_integration_benefits**: Quantifies the economic advantage of using byproducts within the complex instead of selling them as standalone products
+- **optimize_feedstock_mix**: Identifies the best combination of different feedstock types to minimize costs while meeting production targets
 - **plan_product_slate**: Determines the most profitable mix of products based on current market conditions and feedstock constraints
+- **validate_unit_capacities**: Checks if a proposed product slate is physically achievable given the constraints of the plant equipment
 
 
 ## 💬 Prompt Examples

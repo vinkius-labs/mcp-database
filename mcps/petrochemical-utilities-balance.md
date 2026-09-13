@@ -15,8 +15,8 @@ This MCP server provides tools to manage utility equilibrium in petrochemical co
 
 ## Available Tools (4)
 - **calculate_power_status**: Determines whether the complex needs to buy electricity or can sell it
-- **calculate_steam_balance**: Determines if the complex has a surplus or deficit of steam
 - **evaluate_heat_integration_potential**: Estimates the reduction in utility demand achievable through pinch analysis
+- **calculate_steam_balance**: Determines if the complex has a surplus or deficit of steam
 - **get_unit_demands**: Retrieve the specific utility requirements for a given process unit
 
 

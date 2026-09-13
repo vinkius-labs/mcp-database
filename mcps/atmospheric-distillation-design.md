@@ -14,10 +14,10 @@ This MCP server provides engineering tools to design Atmospheric Distillation Un
 
 
 ## Available Tools (4)
-- **optimize_pumparounds**: Calculates the optimal location and flow of heat removal to maximize energy efficiency
 - **calculate_column_stages**: Determines the necessary number of theoretical stages to achieve separation
 - **estimate_product_yields**: Predicts the volume of each product fraction produced from a specific crude
 - **evaluate_energy_consumption**: Calculates the total heat required for the furnace and the cooling required for products and pumparounds
+- **optimize_pumparounds**: Calculates the optimal location and flow of heat removal to maximize energy efficiency
 
 
 ## 💬 Prompt Examples

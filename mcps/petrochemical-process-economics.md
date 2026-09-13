@@ -14,10 +14,10 @@ This MCP server provides a complete techno-economic modeling suite for petrochem
 
 
 ## Available Tools (4)
-- **run_sensitivity_analysis**: Identifies which economic driver has the most significant impact on the project's NPV
 - **calculate_project_npv**: Evaluates the long-term financial viability of the plant investment
 - **get_process_margin**: Determines the profitability per unit of production
 - **get_production_cost**: Calculates the total cost of producing a specific volume of product
+- **run_sensitivity_analysis**: Identifies which economic driver has the most significant impact on the project's NPV
 
 
 ## 💬 Prompt Examples
