@@ -12,7 +12,10 @@ Explore the open database of **energy** Model Context Protocol (MCP) servers.
 | [Home Energy Emissions Calculator](../mcps/home-energy-emissions-calculator.md) | Calculate CO2 emissions from electricity usage based on regional grid intensity. |
 | [Kite Power Calculation Engine](../mcps/kite-power-calculation-engine.md) | Calculate aerodynamic lift, apparent wind, and power zone impact for kite flight. |
 | [Kite Power Variance Engine](../mcps/kite-power-variance-engine.md) | Calculates power volatility, gust severity, and control margins for kite-based wind energy systems. |
+| [Petrophysical Analysis](../mcps/petrophysical-analysis.md) | Perform detailed petrophysical evaluations including Archie parameter calculation and water saturation modeling. |
 | [PRMS Reserves Categorization](../mcps/prms-reserves-categorization.md) | Classify petroleum volumes into PRMS categories like 1P, 2P, and 3P. |
+| [Reservoir Characterization Model](../mcps/reservoir-characterization-model.md) | Analyzes petrophysical data to characterize reservoir properties and flow units. |
+| [Well Log Interpretation](../mcps/well-log-interpretation.md) | Interprets open-hole well logs to evaluate formation properties and identify hydrocarbons. |
 
 
 ---

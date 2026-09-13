@@ -102,6 +102,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Fin Pressure & Stress Analyzer](../mcps/fin-pressure-stress-analyzer.md) | Calculates hydrodynamic pressure, base stress, and structural break risk for aquatic fins. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Fired Heater Design Engineer](../mcps/fired-heater-design-engineer.md) | Professional engineering tool for sizing radiant sections, tube coils, and calculating fuel efficiency for industrial fired heaters. |
+| [Flare Gas Recovery System Designer](../mcps/flare-gas-recovery-system-designer.md) | Engineering design tool for sizing compressors and calculating economic viability of flare gas recovery. |
 | [Flare Radiation Modeling](../mcps/flare-radiation-modeling.md) | Calculate thermal radiation intensity, exclusion zones, and stack heights using API 521 standards. |
 | [Flare System Design](../mcps/flare-system-design.md) | Professional engineering tool for designing flare stacks and relief systems using API 520/521 standards. |
 | [Flare System Sizing](../mcps/flare-system-sizing.md) | Sizing emergency relief flare systems using API 521 methodologies. |
@@ -111,6 +112,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Fluid Catalytic Cracking (FCC) Design Suite](../mcps/fluid-catalytic-cracking-fcc-design-suite.md) | Design FCC units for heavy oil conversion by calculating yields, circulation rates, and thermal balances. |
 | [Foil Carve Physics](../mcps/foil-carve-physics.md) | Calculate hydrofoil carving mechanics, bank angles, and structural loads. |
 | [Formaldehyde Plant Design Suite](../mcps/formaldehyde-plant-design-suite.md) | Technical engineering tools for designing formaldehyde production plants, covering reactor selection and stability. |
+| [Formation Damage Assessment](../mcps/formation-damage-assessment.md) | Analyze wellbore damage, skin factors, and permeability reduction. |
 | [Foundation Pile Layout Optimizer](../mcps/foundation-pile-layout-optimizer.md) | Optimizes pile quantity, positioning, and pile cap dimensions for structural foundations. |
 | [Foundation Settlement Calculator](../mcps/foundation-settlement-calculator.md) | Calculate immediate, consolidation, and total soil settlement for foundation engineering. |
 | [Frac-Pack Design Suite](../mcps/frac-pack-design-suite.md) | Engineering tools for designing frac-pack completions and optimizing sand control. |
@@ -232,11 +234,13 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Reactor Design CSTR](../mcps/reactor-design-cstr.md) | Calculate reactor volume, residence time, and conversion for CSTR systems. |
 | [Reactor Design PFR](../mcps/reactor-design-pfr.md) | Calculate physical parameters and performance metrics for Plug Flow Reactors. |
 | [Reagent Storage & Handling](../mcps/reagent-storage-handling.md) | Design safe reagent storage, pumping, and containment systems. |
+| [Refinery Safety Instrumented Systems (SIS) Designer](../mcps/refinery-safety-instrumented-systems-sis-designer.md) | Design and validate safety instrumented systems (SIS) following IEC 61511 standards. |
 | [Refinery Water Balance Engine](../mcps/refinery-water-balance-engine.md) | Models water mass balances, consumption, and recycling efficiency for refinery operations. |
 | [Refining Circuit Designer](../mcps/refining-circuit-designer.md) | Design optimal metal refining circuits by selecting methods and sizing equipment. |
 | [Refrigeration Requirement Deep Mines](../mcps/refrigeration-requirement-deep-mines.md) | Calculate total cooling loads and refrigeration capacity for deep mining environments. |
 | [Regrind Circuit Designer](../mcps/regrind-circuit-designer.md) | Design optimal fine grinding circuits by selecting mill types and calculating power and media wear. |
 | [Rehabilitation Planning Model](../mcps/rehabilitation-planning-model.md) | Design, schedule, and validate mine rehabilitation programs. |
+| [Relief System Design](../mcps/relief-system-design.md) | Design pressure relief systems for refinery equipment using API 520/521 standards. |
 | [Relief Valve Sizing](../mcps/relief-valve-sizing.md) | Calculates pressure relief valve requirements using API 520/521 standards. |
 | [Reserves Estimation Volumetric](../mcps/reserves-estimation-volumetric.md) | Calculate oil and gas in place and recoverable reserves using the volumetric method. |
 | [Reservoir Material Balance Engine](../mcps/reservoir-material-balance-engine.md) | Quantify hydrocarbon volumes and identify reservoir drive mechanisms. |

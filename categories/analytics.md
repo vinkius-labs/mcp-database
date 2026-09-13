@@ -71,6 +71,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Reconciliation Analysis](../mcps/reconciliation-analysis.md) | Analyze mine production discrepancies by comparing resource models, mine output, and mill feed. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
+| [Refinery Emission Inventory Engine](../mcps/refinery-emission-inventory-engine.md) | Quantify pollutant emissions from refinery operations using standardized emission factors. |
+| [Refinery Utility Balancer](../mcps/refinery-utility-balancer.md) | Analyze and balance refinery utility supplies including steam, power, water, and air. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
