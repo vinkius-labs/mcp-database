@@ -71,6 +71,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Infrastructure Technology Obsolescence Risk Engine](../mcps/infrastructure-technology-obsolescence-risk-engine.md) | Quantify technology obsolescence and financial risk for infrastructure assets. |
 | [Kubernetes Architecture Prover](../mcps/kubernetes-architecture-prover.md) | An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload. |
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
+| [LNG Terminal Capacity Analyzer](../mcps/lng-terminal-capacity-analyzer.md) | Calculate LNG import terminal capacity, throughput, and storage utilization. |
 | [Load Balancer Distributor](../mcps/load-balancer-distributor.md) | Deterministic simulation engine for evaluating load balancing algorithms. |
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
 | [ML Experiment Tracking Cost Analyzer](../mcps/ml-experiment-tracking-cost-analyzer.md) | Calculate infrastructure, storage, and knowledge management costs for ML experiments. |
@@ -78,10 +79,14 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Offtake Agreement Eligibility Analysis](../mcps/offtake-agreement-eligibility-analysis.md) | Calculates the financial value, financing impact, and credit enhancement of offtake agreements. |
 | [OpenSearch Shard Calculator](../mcps/opensearch-shard-calculator.md) | Deterministic AWS OpenSearch shard distribution and resource allocation calculator. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
+| [Pipeline Compressor Station Designer](../mcps/pipeline-compressor-station-designer.md) | Design pipeline compressor stations by calculating equipment scale, power, and fuel needs. |
+| [Pipeline Integrity Management](../mcps/pipeline-integrity-management.md) | Plan and manage pipeline integrity programs using risk-based methodologies. |
+| [Pipeline Repair Method Selection](../mcps/pipeline-repair-method-selection.md) | Technical decision-support for selecting optimal pipeline repair strategies. |
 | [Pub-Sub Topic Router](../mcps/pub-sub-topic-router.md) | Deterministic routing engine for hierarchical topic patterns and wildcard subscriptions. |
 | [Rate Limiter State Calculator](../mcps/rate-limiter-state-calculator.md) | Deterministic engine for evaluating Token Bucket, Leaky Bucket, and sliding window rate limiting states. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
 | [SNS Fanout & Filtering Calculator](../mcps/sns-fanout-filtering-calculator.md) | Calculate AWS SNS fanout, throughput, and filter policy complexity. |
+| [Subsea Pipeline Design Engineer](../mcps/subsea-pipeline-design-engineer.md) | Calculates structural requirements, stability, and installation methods for subsea pipelines. |
 | [Vector Database TCO Calculator](../mcps/vector-database-tco-calculator.md) | Calculate the total cost of ownership for vector databases, comparing managed vs self-hosted models. |
 | [Voice AI Economics Calculator](../mcps/voice-ai-economics-calculator.md) | Calculate voice AI integration costs, infrastructure needs, and UX value. |
 | [vpc-cidr-calculator](../mcps/vpc-cidr-calculator.md) | Deterministic AWS VPC CIDR and subnet layout generator. |

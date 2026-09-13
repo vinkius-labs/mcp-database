@@ -62,6 +62,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Pipeline Flow Assurance](../mcps/pipeline-flow-assurance.md) | Analyze fluid transport risks, hydrate formation, and wax deposition in subsea and terrestrial pipelines. |
 | [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |

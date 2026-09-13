@@ -4,6 +4,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Asphaltene Deposition Model](../mcps/asphaltene-deposition-model.md) | Predicts asphaltene precipitation and deposition in reservoirs and wellbores. |
 | [Barrel Ride Physics Simulator](../mcps/barrel-ride-physics-simulator.md) | Deterministic barrel riding physics and positioning calculator. |
 | [Board Carve Radius Engine](../mcps/board-carve-radius-engine.md) | Physics-driven engine for calculating surfboard turning mechanics, G-forces, and spray patterns. |
 | [Board Speed Calculation Engine](../mcps/board-speed-calculation-engine.md) | Simulate terminal velocity and acceleration for kiteboarding equipment. |
@@ -11,6 +12,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
 | [Foil Breach Recovery Dynamics](../mcps/foil-breach-recovery-dynamics.md) | Simulate hydrofoil breach physics and calculate recovery success. |
 | [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
+| [History Matching Quality](../mcps/history-matching-quality.md) | Quantifies the alignment between simulated reservoir production and observed historical data. |
 | [I-Ching Hexagram Divination](../mcps/i-ching-hexagram-divination.md) | Simulate traditional I Ching coin-toss divination to generate hexagrams and interpretations. |
 | [Impact Cushion Depth](../mcps/impact-cushion-depth.md) | Calculates required water depth and injury risk for body impacts. |
 | [Impact Force Estimator](../mcps/impact-force-estimator.md) | Calculate impact force and injury risk from water entries. |

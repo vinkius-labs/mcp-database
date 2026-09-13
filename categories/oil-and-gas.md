@@ -8,6 +8,7 @@ Explore the open database of **oil-and-gas** Model Context Protocol (MCP) server
 | [H2S Exposure Assessment](../mcps/h2s-exposure-assessment.md) | Assess H2S toxicity risks and safety protocols for oil and gas operations. |
 | [Horizontal Well IPR Analyzer](../mcps/horizontal-well-ipr-analyzer.md) | Generates Inflow Performance Relationship (IPR) curves and performance metrics for horizontal wells. |
 | [Hydrate Formation Prediction](../mcps/hydrate-formation-prediction.md) | Predict gas hydrate formation conditions and calculate chemical inhibition dosages. |
+| [Inflow Profile Optimization](../mcps/inflow-profile-optimization.md) | Optimizes production inflow by balancing reservoir characteristics with well completion settings. |
 | [Pigging Frequency Optimizer](../mcps/pigging-frequency-optimizer.md) | Optimize pipeline pigging intervals and select cleaning tools based on deposition rates and risk. |
 | [Produced Water Quality Model](../mcps/produced-water-quality-model.md) | Models produced water quality for discharge or reinjection. |
 | [Respiratory Protection Selection](../mcps/respiratory-protection-selection.md) | Selects appropriate respiratory protection for oil and gas operations using NIOSH standards. |

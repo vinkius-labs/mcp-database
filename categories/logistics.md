@@ -10,13 +10,22 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
+| [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
+| [LNG Carrier Fleet Sizer](../mcps/lng-carrier-fleet-sizer.md) | Optimize LNG fleet sizing and logistics planning. |
+| [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
+| [Oil Tanker Voyage Planner](../mcps/oil-tanker-voyage-planner.md) | Calculate voyage duration, fuel consumption, and maritime profitability. |
+| [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
+| [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
+| [Shipping Route Optimization](../mcps/shipping-route-optimization.md) | Optimize maritime routes for tankers using weather-aware routing and fuel efficiency calculations. |
 | [Short-Term Mine Planning Optimizer](../mcps/short-term-mine-planning-optimizer.md) | Aligns equipment, grade, and stockpiles into actionable mining schedules. |
 | [Spill Response Equipment Planner](../mcps/spill-response-equipment-planner.md) | Determines necessary spill response equipment, quantities, and strategic deployment locations. |
 | [Storage Unit Picker](../mcps/storage-unit-picker.md) | Calculate the required storage unit size based on your items' volume and stacking efficiency. |
 | [Table Seating Optimizer](../mcps/table-seating-optimizer.md) | Calculate venue capacity, table layouts, and space requirements for events. |
 | [Tank Farm Optimization](../mcps/tank-farm-optimization.md) | Optimize refinery tank farm operations including tank allocation, blending schedules, and inventory buffers. |
+| [Tanker Fleet Optimization](../mcps/tanker-fleet-optimization.md) | Optimize tanker fleet sizing, vessel mix, and charter strategies for oil transportation. |
+| [Tanker Loading Rate Optimizer](../mcps/tanker-loading-rate-optimizer.md) | Optimizes tanker loading rates by balancing vessel capacity, shore infrastructure, and safety constraints. |
 | [Truck-Shovel Fleet Optimizer](../mcps/truck-shovel-fleet-optimizer.md) | Optimizes truck-to-shovel ratios, fleet size, and production capacity. |
 
 

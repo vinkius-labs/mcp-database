@@ -15,6 +15,10 @@ Explore the open database of **energy** Model Context Protocol (MCP) servers.
 | [Petrophysical Analysis](../mcps/petrophysical-analysis.md) | Perform detailed petrophysical evaluations including Archie parameter calculation and water saturation modeling. |
 | [PRMS Reserves Categorization](../mcps/prms-reserves-categorization.md) | Classify petroleum volumes into PRMS categories like 1P, 2P, and 3P. |
 | [Reservoir Characterization Model](../mcps/reservoir-characterization-model.md) | Analyzes petrophysical data to characterize reservoir properties and flow units. |
+| [Reservoir Compaction Model](../mcps/reservoir-compaction-model.md) | Quantifies reservoir deformation, subsidence, and compaction drive. |
+| [Reservoir Monitoring Interpretation](../mcps/reservoir-monitoring-interpretation.md) | Interprets reservoir monitoring data to identify bypassed oil and recommend field interventions. |
+| [Surfactant Flood Designer](../mcps/surfactant-flood-designer.md) | Designs surfactant floods for Enhanced Oil Recovery (EOR) by modeling phase behavior and IFT reduction. |
+| [Waterflood Performance Prediction](../mcps/waterflood-performance-prediction.md) | Forecast oil recovery, water cut, and sweep efficiency for waterflood operations. |
 | [Well Log Interpretation](../mcps/well-log-interpretation.md) | Interprets open-hole well logs to evaluate formation properties and identify hydrocarbons. |
 
 

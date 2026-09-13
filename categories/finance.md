@@ -76,6 +76,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI App Development Cost Estimator](../mcps/ai-app-development-cost-estimator.md) | Calculate precise financial and temporal investment for AI application development. |
 | [AI App Observability Cost Calculator](../mcps/ai-app-observability-cost-calculator.md) | Calculate observability investment, MTTR value, and coverage gaps for AI applications. |
 | [AI App Recommendation System Cost](../mcps/ai-app-recommendation-system-cost.md) | Financial modeling for recommendation engine economics and infrastructure scaling. |
+| [AI Automation ROI Engine](../mcps/ai-automation-roi-engine.md) | Calculate financial ROI, NPV, and risk-adjusted returns for AI automation projects. |
 | [AI Batch Economics Engine](../mcps/ai-batch-economics-engine.md) | Calculate savings and optimal batching strategies for AI workloads. |
 | [AI Benchmark ROI Analyzer](../mcps/ai-benchmark-roi-analyzer.md) | Quantify the financial impact and ROI of AI benchmark leadership positions. |
 | [AI Build vs Buy Decision Support](../mcps/ai-build-vs-buy-decision-support.md) | Evaluate the economic and strategic trade-offs between custom AI development and third-party APIs. |
@@ -118,6 +119,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Prompt Caching Economics](../mcps/ai-prompt-caching-economics.md) | Calculate the financial impact and ROI of LLM prompt caching strategies. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
+| [AI Revenue Growth Accelerator](../mcps/ai-revenue-growth-accelerator.md) | Calculate AI-driven revenue growth, investment needs, and growth timelines. |
 | [AI SaaS Cost Analyzer](../mcps/ai-saas-cost-analyzer.md) | Calculate cost per active user and scaling efficiency for AI platforms. |
 | [AI SaaS Gross Margin Analyzer](../mcps/ai-saas-gross-margin-analyzer.md) | Calculate and project gross margins for AI SaaS businesses, including AI API and compute costs. |
 | [AI SaaS Unit Economics Engine](../mcps/ai-saas-unit-economics-engine.md) | Calculate LTV, LTV:CAC, and AI cost impact for AI-driven SaaS models. |
@@ -556,6 +558,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Parkinson Volatility Calculator](../mcps/parkinson-volatility-calculator.md) | Calculate precise Parkinson volatility using high-low price ranges. |
 | [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
 | [Partial Budgeting Tool](../mcps/partial-budgeting-tool.md) | Analyze the financial impact of management changes using incremental revenue and cost modeling. |
+| [PE AI Acquisition Synergy Analyzer](../mcps/pe-ai-acquisition-synergy-analyzer.md) | Quantify strategic and financial benefits of AI-focused acquisitions. |
+| [PE AI Margin Enhancer](../mcps/pe-ai-margin-enhancer.md) | Calculates the impact of AI on operating margins, EBITDA uplift, and ROI. |
+| [PE AI Maturity Assessment Engine](../mcps/pe-ai-maturity-assessment-engine.md) | Analytical engine for Private Equity firms to evaluate AI readiness and value potential during due diligence. |
+| [PE AI Technology Due Diligence](../mcps/pe-ai-technology-due-diligence.md) | Quantify technical risk, remediation costs, and investment viability for AI-driven assets. |
+| [PE AI Value Creation Planner](../mcps/pe-ai-value-creation-planner.md) | Quantify the economic impact of AI implementation for Private Equity. |
+| [PE Deal Sourcing ROI Analyzer](../mcps/pe-deal-sourcing-roi-analyzer.md) | Calculate PE deal sourcing ROI and optimize channel budget allocation. |
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Percentage Price Oscillator (PPO) Engine](../mcps/percentage-price-oscillator-ppo-engine.md) | A deterministic engine for calculating normalized price momentum via PPO indicators. |

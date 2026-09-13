@@ -7,6 +7,7 @@ Explore the open database of **maritime** Model Context Protocol (MCP) servers.
 | [Kite Drift Launch](../mcps/kite-drift-launch.md) | Calculates precise timing and physical parameters for kite deployment during drift launch procedures. |
 | [Reef Depth Safety](../mcps/reef-depth-safety.md) | Assess reef navigation safety using tide, wave, and depth data. |
 | [Self-Rescue Distance](../mcps/self-rescue-distance.md) | Assess kiteboarding self-rescue capability and drift risk. |
+| [Terminal Spill Response Plan](../mcps/terminal-spill-response-plan.md) | Develop oil spill response plans by modeling discharge scenarios, environmental risk, and resource deployment. |
 | [Wave Peak Tracking](../mcps/wave-peak-tracking.md) | Calculate wave peak displacement, set direction, and stability forecasts. |
 
 

@@ -21,6 +21,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Metrc](../mcps/metrc.md) | Cannabis track-and-trace via Metrc — track facilities, items, plants, and harvests. |
 | [Mining Supply Chain Optimizer](../mcps/mining-supply-chain-optimizer.md) | Optimize mining inventory, safety stock, and logistics costs. |
 | [NMFC Freight Class Calculator](../mcps/nmfc-freight-class-calculator.md) | Determine NMFC freight class and shipping cost impact using density-based calculations. |
+| [Oil Supply Chain Optimizer](../mcps/oil-supply-chain-optimizer.md) | Optimize crude oil routing, inventory levels, and quality compliance across the supply chain. |
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
@@ -35,6 +36,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |
+| [Tank Storage Capacity Planning](../mcps/tank-storage-capacity-planning.md) | Plan industrial tank infrastructure by calculating required volumes, tank counts, and turnover efficiency. |
 | [Warehouse ABC Slotting Optimizer](../mcps/warehouse-abc-slotting-optimizer.md) | Optimize warehouse SKU placement using ABC analysis to minimize travel distance. |
 | [Warehouse Capacity Calculator](../mcps/warehouse-capacity-calculator.md) | Calculate warehouse storage density, utilization rates, and financial implications of pallet vacancy. |
 | [Wine Club Fulfillment Planner](../mcps/wine-club-fulfillment-planner.md) | Plans wine club shipment logistics, labor requirements, and seasonal staffing needs. |

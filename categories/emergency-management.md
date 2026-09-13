@@ -5,6 +5,7 @@ Explore the open database of **emergency-management** Model Context Protocol (MC
 | Tool Name | Description |
 |-----------|-------------|
 | [Emergency Planning Zones](../mcps/emergency-planning-zones.md) | Calculates protective action distances and emergency response strategies for chemical hazards. |
+| [Pipeline Emergency Response](../mcps/pipeline-emergency-response.md) | Generates comprehensive emergency response protocols for pipeline incidents. |
 
 
 ---
