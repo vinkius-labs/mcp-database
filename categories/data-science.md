@@ -6,6 +6,7 @@ Explore the open database of **data-science** Model Context Protocol (MCP) serve
 |-----------|-------------|
 | [BM25 Context Relevance Scorer](../mcps/bm25-context-relevance-scorer.md) | Deterministic BM25 relevance scoring engine for RAG optimization. |
 | [Drill Hole Compositing](../mcps/drill-hole-compositing.md) | Standardize irregular assay data into uniform intervals for geological modeling. |
+| [Pressure Buildup Analysis Engine](../mcps/pressure-buildup-analysis-engine.md) | Analytical engine for evaluating reservoir performance through pressure buildup test data. |
 | [Signal Filter Designer](../mcps/signal-filter-designer.md) | Apply digital filters like low-pass, high-pass, SMA, EMA, and Peaking EQ to signal arrays. |
 | [String Similarity Batch](../mcps/string-similarity-batch.md) | High-performance string similarity computations for batch processing of large text arrays using algorithms like Levenshtein and Jaro-Winkler. |
 | [Variogram Modeling Analysis](../mcps/variogram-modeling-analysis.md) | Compute experimental variograms and fit spatial continuity models. |

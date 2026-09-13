@@ -6,12 +6,14 @@ Explore the open database of **oil-and-gas** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Equivalent Circulating Density (ECD) Calculator](../mcps/equivalent-circulating-density-ecd-calculator.md) | Calculate ECD profiles, cuttings impact, and environmental adjustments for drilling fluids. |
 | [H2S Exposure Assessment](../mcps/h2s-exposure-assessment.md) | Assess H2S toxicity risks and safety protocols for oil and gas operations. |
+| [Horizontal Well IPR Analyzer](../mcps/horizontal-well-ipr-analyzer.md) | Generates Inflow Performance Relationship (IPR) curves and performance metrics for horizontal wells. |
 | [Hydrate Formation Prediction](../mcps/hydrate-formation-prediction.md) | Predict gas hydrate formation conditions and calculate chemical inhibition dosages. |
 | [Pigging Frequency Optimizer](../mcps/pigging-frequency-optimizer.md) | Optimize pipeline pigging intervals and select cleaning tools based on deposition rates and risk. |
 | [Produced Water Quality Model](../mcps/produced-water-quality-model.md) | Models produced water quality for discharge or reinjection. |
 | [Respiratory Protection Selection](../mcps/respiratory-protection-selection.md) | Selects appropriate respiratory protection for oil and gas operations using NIOSH standards. |
 | [Slop Oil Recovery System](../mcps/slop-oil-recovery-system.md) | Technical design tool for sizing equipment and calculating economic yields for industrial slop oil treatment. |
 | [Tieback vs Standalone Economics](../mcps/tieback-vs-standalone-economics.md) | Compare the financial viability of tieback vs standalone offshore developments. |
+| [Water Coning Model](../mcps/water-coning-model.md) | Predict water coning behavior and breakthrough timing in oil reservoirs. |
 
 
 ---

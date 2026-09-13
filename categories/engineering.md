@@ -12,6 +12,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Alkylation Unit Design](../mcps/alkylation-unit-design.md) | Design high-octane gasoline components by calculating reactor dimensions, yields, and acid economics. |
 | [Amine Treating Unit Design](../mcps/amine-treating-unit-design.md) | Design amine treating units for acid gas removal by calculating equipment dimensions and energy requirements. |
 | [Ammonia Plant Design Suite](../mcps/ammonia-plant-design-suite.md) | Design ammonia synthesis plants using Haber-Bosch process modeling. |
+| [Aquifer Influx Model](../mcps/aquifer-influx-model.md) | Simulates water influx from aquifers into reservoirs using advanced hydraulic models. |
 | [Asphaltene Precipitation Predictor](../mcps/asphaltene-precipitation-predictor.md) | Predicts asphaltene precipitation onset, flocculation, and deposition risks in crude oil systems. |
 | [Atmospheric Distillation Design](../mcps/atmospheric-distillation-design.md) | Design atmospheric distillation units by calculating stages, yields, and energy requirements. |
 | [Aviation Weight and Balance](../mcps/aviation-weight-and-balance.md) | Deterministic aircraft weight, moment, and CG calculator with safety envelope validation. |
@@ -120,6 +121,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Fracture Height Growth Predictor](../mcps/fracture-height-growth-predictor.md) | Predicts hydraulic fracture height growth and containment effectiveness. |
 | [Fuel Oil Blend Calculator](../mcps/fuel-oil-blend-calculator.md) | Predicts physical and chemical properties of heavy fuel oil blends. |
 | [Gas Compression Power](../mcps/gas-compression-power.md) | Calculate mechanical power, thermal characteristics, and stage configurations for industrial gas compression. |
+| [Gas Coning Model](../mcps/gas-coning-model.md) | Predict gas coning in oil reservoirs and calculate critical production rates. |
 | [Gas Injection Miscibility Engine](../mcps/gas-injection-miscibility-engine.md) | Calculates Minimum Miscibility Pressure (MMP) and analyzes EOR gas injection mechanisms. |
 | [Gas Lift Design Optimization](../mcps/gas-lift-design-optimization.md) | Optimize gas lift systems by calculating valve spacing, injection depths, and production improvements. |
 | [Gas Well Deliverability Analyzer](../mcps/gas-well-deliverability-analyzer.md) | Calculate Absolute Open Flow (AOF) and analyze gas well deliverability with non-Darcy turbulence effects. |
@@ -133,6 +135,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Heap Leach Design Engineer](../mcps/heap-leach-design-engineer.md) | Professional engineering tool for designing gold and copper heap leach pads. |
 | [Heat Exchanger Network Synthesis](../mcps/heat-exchanger-network-synthesis.md) | Design optimal heat exchanger networks using Pinch Analysis to minimize utility consumption. |
 | [Heat Exchanger Sizing Pro](../mcps/heat-exchanger-sizing-pro.md) | Calculate heat transfer area, LMTD, and physical dimensions for shell and tube heat exchangers. |
+| [Horizontal Well Productivity Engine](../mcps/horizontal-well-productivity-engine.md) | Calculate horizontal well productivity, optimal length, and penetration effects. |
 | [HPGR Circuit Design Tool](../mcps/hpgr-circuit-design-tool.md) | Calculate HPGR roll dimensions, operating pressure, and throughput efficiency. |
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Hydraulic Fracture Design Suite](../mcps/hydraulic-fracture-design-suite.md) | Advanced tools for calculating fracture geometry, leakoff, and proppant transport. |
@@ -227,6 +230,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Proppant Transport Model](../mcps/proppant-transport-model.md) | Simulates proppant settling and concentration within hydraulic fractures. |
 | [Propylene Oxide Plant Designer](../mcps/propylene-oxide-plant-designer.md) | Engineering tool for designing Propylene Oxide production plants and calculating yields. |
 | [Propylene Production Designer](../mcps/propylene-production-designer.md) | Engineering design tool for modeling on-purpose propylene production pathways. |
+| [Pulse Test Interpretation](../mcps/pulse-test-interpretation.md) | Analyzes pressure pulse sequences to characterize reservoir permeability, porosity, and geometry. |
 | [Pump Sizing Calculator](../mcps/pump-sizing-calculator.md) | Professional engineering tool for pump sizing, power calculation, and cavitation safety analysis. |
 | [PVC Plant Design Engineer](../mcps/pvc-plant-design-engineer.md) | Simulate and design PVC production facilities using polymerization kinetics. |
 | [Quantitative Risk Assessment (QRA)](../mcps/quantitative-risk-assessment-qra.md) | Perform safety and environmental impact modeling for oil and gas facilities. |
@@ -243,6 +247,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Relief System Design](../mcps/relief-system-design.md) | Design pressure relief systems for refinery equipment using API 520/521 standards. |
 | [Relief Valve Sizing](../mcps/relief-valve-sizing.md) | Calculates pressure relief valve requirements using API 520/521 standards. |
 | [Reserves Estimation Volumetric](../mcps/reserves-estimation-volumetric.md) | Calculate oil and gas in place and recoverable reserves using the volumetric method. |
+| [Reservoir Limit Test](../mcps/reservoir-limit-test.md) | Identify geological boundaries, drainage areas, and aquifer support using pressure transient analysis. |
 | [Reservoir Material Balance Engine](../mcps/reservoir-material-balance-engine.md) | Quantify hydrocarbon volumes and identify reservoir drive mechanisms. |
 | [Reservoir Permeability Estimator](../mcps/reservoir-permeability-estimator.md) | Estimates permeability, skin factor, and wellbore storage from pressure transient data. |
 | [Reservoir Pressure Predictor](../mcps/reservoir-pressure-predictor.md) | Predict reservoir pressure decline using the Material Balance Equation. |
@@ -330,6 +335,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Well Productivity Index Analyzer](../mcps/well-productivity-index-analyzer.md) | Calculate productivity indices, assess skin damage, and identify stimulation candidates. |
 | [Well Stimulation Design](../mcps/well-stimulation-design.md) | Optimize matrix acidizing and hydraulic fracturing treatments. |
 | [Well Trajectory Design](../mcps/well-trajectory-design.md) | Design and validate precise wellbore paths for directional and horizontal drilling. |
+| [Well-Test Interpretation](../mcps/well-test-interpretation.md) | Analyzes pressure transient data to characterize reservoir properties and wellbore performance. |
 | [Wellbore Heat Transfer Engine](../mcps/wellbore-heat-transfer-engine.md) | Calculates temperature profiles and thermal energy exchange in producing or injecting wells. |
 | [Wellbore Pressure Drop Model](../mcps/wellbore-pressure-drop-model.md) | Calculates multiphase pressure profiles and flow regimes in wellbores. |
 | [Wellbore Stability Analysis](../mcps/wellbore-stability-analysis.md) | Predict drilling safety windows by calculating mechanical integrity against formation stresses and pore pressures. |
