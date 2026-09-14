@@ -24,6 +24,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Leatherworking Pattern Calculator](../mcps/leatherworking-pattern-calculator.md) | Calculate leather area, hide yield, and material consumables for leathercraft projects. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
+| [Snowboard Detune Zone Calculator](../mcps/snowboard-detune-zone-calculator.md) | Calculate optimal edge detuning parameters to prevent edge catches during park riding. |
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
 | [Surfboard Buoyancy & Performance Engine](../mcps/surfboard-buoyancy-performance-engine.md) | Calculate surfboard buoyancy, paddle efficiency, and wave catch ability. |
 | [Surfboard Ding Repair Calculator](../mcps/surfboard-ding-repair-calculator.md) | Calculate exact resin, fiberglass, and curing time for surfboard repairs. |

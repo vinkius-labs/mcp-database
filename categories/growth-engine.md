@@ -22,6 +22,7 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Criteo Retail Media API](../mcps/criteo-retail-media-api.md) | Equip your AI agent to manage Criteo retail campaigns, line items, and product data directly via the Criteo API. |
 | [Drift](../mcps/drift.md) | Equip your AI agent to manage conversations, track contacts, and monitor agent availability via the Drift API. |
 | [Drip](../mcps/drip-alternative.md) | Manage subscribers, campaigns, and events in Drip via your AI Agent. |
+| [FullEnrich](../mcps/fullenrich.md) | Find verified work emails, personal emails and mobile numbers across 25+ data vendors with one waterfall. |
 | [GitHub Market Intelligence](../mcps/github-market-intelligence.md) | Transform GitHub into your primary growth engine. Deploy autonomous agents to intercept competitor issues, track trending repos, and engage developers in real-time. |
 | [GoHighLevel](../mcps/gohighlevel.md) | Equip your AI agent with direct access to GoHighLevel — manage contacts, pipelines, and campaigns without opening the CRM dashboard. |
 | [HighLevel](../mcps/highlevel.md) | Automate CRM and marketing via HighLevel — manage contacts, opportunities, and calendars directly from any AI agent. |

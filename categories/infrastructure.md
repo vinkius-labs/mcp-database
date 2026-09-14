@@ -12,6 +12,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [AI Energy Consumption & Scalability Modeler](../mcps/ai-energy-consumption-scalability-modeler.md) | Forecast power demand, energy costs, and sustainability metrics for AI infrastructure scaling. |
 | [AI Explainability Economics](../mcps/ai-explainability-economics.md) | Calculate the economic impact and infrastructure costs of AI explainability features. |
 | [AI Hardware Iteration Risk](../mcps/ai-hardware-iteration-risk.md) | Calculate hardware obsolescence risk and refresh investment for AI infrastructure. |
+| [AI Infrastructure Cost Optimizer](../mcps/ai-infrastructure-cost-optimizer.md) | Calculate potential savings and implementation costs for AI computing infrastructure. |
 | [AI Infrastructure GPU Economics](../mcps/ai-infrastructure-gpu-economics.md) | Calculate GPU profitability, payback periods, and break-even utilization. |
 | [AI MLOps Infrastructure Cost Analyzer](../mcps/ai-mlops-infrastructure-cost-analyzer.md) | Calculate and analyze the financial footprint of your MLOps lifecycle. |
 | [AI Model Versioning Cost](../mcps/ai-model-versioning-cost.md) | Calculate the financial and operational impact of managing AI model versions. |

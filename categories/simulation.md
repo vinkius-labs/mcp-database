@@ -5,10 +5,12 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Asphaltene Deposition Model](../mcps/asphaltene-deposition-model.md) | Predicts asphaltene precipitation and deposition in reservoirs and wellbores. |
+| [Backside Spin Mechanics Analyzer](../mcps/backside-spin-mechanics-analyzer.md) | Physics-based analysis of backside snowboard rotations, focusing on edge release and landing stability. |
 | [Barrel Ride Physics Simulator](../mcps/barrel-ride-physics-simulator.md) | Deterministic barrel riding physics and positioning calculator. |
 | [Board Carve Radius Engine](../mcps/board-carve-radius-engine.md) | Physics-driven engine for calculating surfboard turning mechanics, G-forces, and spray patterns. |
 | [Board Speed Calculation Engine](../mcps/board-speed-calculation-engine.md) | Simulate terminal velocity and acceleration for kiteboarding equipment. |
 | [Board Speed Record Simulator](../mcps/board-speed-record-simulator.md) | Calculate theoretical maximum speeds for kitefoiling and kiteboarding setups. |
+| [Cork Spin Physics Engine](../mcps/cork-spin-physics-engine.md) | Calculate 3D rotational dynamics for off-axis cork spins in freestyle sports. |
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
 | [Foil Breach Recovery Dynamics](../mcps/foil-breach-recovery-dynamics.md) | Simulate hydrofoil breach physics and calculate recovery success. |
 | [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
@@ -22,7 +24,10 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Kite Loop Physics Engine](../mcps/kite-loop-physics-engine.md) | Calculates g-force, body load, and peak duration for kiteboarding loops. |
 | [Kite Sheeting Pressure Engine](../mcps/kite-sheeting-pressure-engine.md) | Calculates bar pressure, steering force, and feedback stability for kiteboarding. |
 | [MTBE Production Plant Designer](../mcps/mtbe-production-plant-designer.md) | Chemical engineering simulation for MTBE synthesis and reactor design. |
+| [Ollie Pop Height Simulator](../mcps/ollie-pop-height-simulator.md) | A biomechanical simulator for calculating skateboarding ollie jump performance. |
+| [Rail Approach Speed Calculator](../mcps/rail-approach-speed-calculator.md) | Physics-based engine to calculate rider velocity and speed loss on rail features. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
+| [Snowboard Pressure Distribution Simulator](../mcps/snowboard-pressure-distribution-simulator.md) | Simulates weight and pressure distribution on a snowboard based on rider physics and snow conditions. |
 | [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |
 | [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |
 | [twintip-edge-hold](../mcps/twintip-edge-hold.md) | Simulate hydrodynamic performance, grip force, and pop potential for twin-tip boards. |

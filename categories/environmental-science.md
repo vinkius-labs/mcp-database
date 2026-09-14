@@ -25,6 +25,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [Runoff Curve Number Calculator](../mcps/runoff-curve-number-calculator.md) | Calculate surface runoff using the SCS Curve Number method. |
 | [Rye Ergot Risk Predictor](../mcps/rye-ergot-risk-predictor.md) | Predicts ergot contamination risk and economic impact in rye production. |
 | [Sediment Yield Estimator](../mcps/sediment-yield-estimator.md) | Estimates sediment yield from erosion and delivery using USLE and MUSLE models. |
+| [Snow Density Measurement](../mcps/snow-density-measurement.md) | Calculate snow density, water equivalent, and snow load from stratified samples. |
 | [Spray Drift Model](../mcps/spray-drift-model.md) | Estimates pesticide drift distance and risk using agdrift equations. |
 | [Tailings Geochemistry Modeling](../mcps/tailings-geochemistry-modeling.md) | Predict leachate quality and element mobility in tailings piles. |
 | [Tanker Spill Response Modeling](../mcps/tanker-spill-response-modeling.md) | Models oil spill trajectory, weathering, and shoreline impact. |

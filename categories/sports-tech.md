@@ -6,6 +6,7 @@ Explore the open database of **sports-tech** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Kite Maneuverability Physics](../mcps/kite-maneuverability-physics.md) | Calculate kite turning radius, angular velocity, and power spikes. |
 | [Safety Release Tension Calculator](../mcps/safety-release-tension-calculator.md) | Calculates mechanical tension and safety margins for kite release mechanisms. |
+| [Snowboard Sintered Base Performance Engine](../mcps/snowboard-sintered-base-performance-engine.md) | Calculate glide efficiency, wax longevity, and optimal maintenance for sintered snowboard bases. |
 
 
 ---

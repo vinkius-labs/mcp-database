@@ -4,6 +4,7 @@ Explore the open database of **physics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Avalanche Transceiver Range Calculator](../mcps/avalanche-transceiver-range-calculator.md) | Calculates effective search radius, strip width, and manpower for avalanche rescue operations. |
 | [Cycling Power Calculator](../mcps/cycling-power-calculator.md) | Calculate precise power requirements for cycling based on speed, gradient, and wind. |
 | [Kite Power Spike Analyzer](../mcps/kite-power-spike-analyzer.md) | Analyzes energy surges and apparent wind dynamics for kite propulsion systems. |
 | [Room Acoustics Calculator](../mcps/room-acoustics-calculator.md) | Calculate RT60, absorption, and room modes for precise acoustic design. |

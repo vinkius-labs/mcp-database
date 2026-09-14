@@ -79,6 +79,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
+| [Snowboard Rocker Profile Analyzer](../mcps/snowboard-rocker-profile-analyzer.md) | Predict snowboard performance metrics like float, edge grip, and terrain suitability based on rocker geometry. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |

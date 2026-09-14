@@ -5,6 +5,7 @@ Explore the open database of **equipment-analysis** Model Context Protocol (MCP)
 | Tool Name | Description |
 |-----------|-------------|
 | [Kite Depower Range Calculator](../mcps/kite-depower-range-calculator.md) | Calculate effective depower, wind range, and gust safety for kiteboarding equipment. |
+| [Snowboard Boot Flex Analyzer](../mcps/snowboard-boot-flex-analyzer.md) | Calculate how boot stiffness, rider weight, and terrain impact snowboarding performance. |
 
 
 ---

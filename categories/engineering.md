@@ -162,6 +162,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Isomerization Unit Design](../mcps/isomerization-unit-design.md) | Design and optimize light naphtha isomerization units using chemical equilibrium models. |
 | [Jig Separation Design](../mcps/jig-separation-design.md) | Technical tool for designing jigging circuits based on mineral density and throughput. |
 | [Kick Tolerance Calculator](../mcps/kick-tolerance-calculator.md) | Calculate critical well control safety limits including MAASP and maximum influx volume. |
+| [Kicker Transition Radius Calculator](../mcps/kicker-transition-radius-calculator.md) | Calculate optimal jump geometry and rider forces based on speed, weight, and snow conditions. |
 | [Kinematic Analysis for Rock Slopes](../mcps/kinematic-analysis-for-rock-slopes.md) | Perform kinematic analysis for rock slopes to identify planar, wedge, and toppling failure modes. |
 | [Kite Bridle Pulley Friction Engine](../mcps/kite-bridle-pulley-friction-engine.md) | Calculates pulley friction, efficiency loss, and steering delay for kite bridle systems. |
 | [Kite Bridle Tension Analyzer](../mcps/kite-bridle-tension-analyzer.md) | Calculates tension distribution and failure risks for kite bridle systems. |
@@ -299,6 +300,8 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Slope Radar Monitoring Setup](../mcps/slope-radar-monitoring-setup.md) | Automated planning and configuration for slope stability radar deployment. |
 | [Slope Stability Analysis for Open Pit Mines](../mcps/slope-stability-analysis-for-open-pit-mines.md) | Analyze slope stability using limit equilibrium methods to calculate Factor of Safety and failure modes. |
 | [Smelter Mass Balance Engine](../mcps/smelter-mass-balance-engine.md) | Calculate mass distributions, metal recoveries, and off-gas compositions for smelting operations. |
+| [Snowboard Core Profile Analyzer](../mcps/snowboard-core-profile-analyzer.md) | Engineering analysis of snowboard core geometry and material stiffness. |
+| [Snowboard Laminate Analyzer](../mcps/snowboard-laminate-analyzer.md) | Calculates snowboard performance metrics like stiffness, torsional rigidity, and impact resistance based on laminate layup. |
 | [Soil Nail Wall Design](../mcps/soil-nail-wall-design.md) | Engineering tool for soil nail wall stability and nail design. |
 | [Sour Water Stripper Design Tool](../mcps/sour-water-stripper-design-tool.md) | Design and size Sour Water Stripper (SWS) units for acid gas removal. |
 | [Spiral Concentrator Design](../mcps/spiral-concentrator-design.md) | Design mineral processing spiral concentrator circuits based on ore characteristics. |

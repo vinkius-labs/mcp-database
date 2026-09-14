@@ -85,12 +85,14 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Context Window Economics](../mcps/ai-context-window-economics.md) | Analyze the financial impact of context window scaling on LLM inference costs. |
 | [AI Continuous Training Cost Calculator](../mcps/ai-continuous-training-cost-calculator.md) | Calculate the economic impact and ROI of continuous AI model retraining cycles. |
 | [AI Custom Silicon Economics](../mcps/ai-custom-silicon-economics.md) | Analyze the economic viability of custom AI silicon versus GPU clusters. |
+| [AI Customer Concentration Mitigation](../mcps/ai-customer-concentration-mitigation.md) | Calculate diversification potential and risk reduction using AI-driven strategic models. |
 | [AI Data Labeling Cost Optimizer](../mcps/ai-data-labeling-cost-optimizer.md) | Model and predict the financial impact of data labeling strategies, including active learning and automation savings. |
 | [AI Data Lineage Infrastructure Cost Calculator](../mcps/ai-data-lineage-infrastructure-cost-calculator.md) | Quantify the financial impact of data lineage, including tracking costs, compliance value, and debugging efficiency. |
 | [AI Data Moat Valuation Engine](../mcps/ai-data-moat-valuation-engine.md) | Quantify the economic and strategic value of proprietary datasets. |
 | [AI Data Pipeline Cost Analyzer](../mcps/ai-data-pipeline-cost-analyzer.md) | Calculate monthly operating costs and efficiency metrics for AI data pipelines. |
 | [AI Data Pipeline Cost Structure](../mcps/ai-data-pipeline-cost-structure.md) | Financial modeling for AI data pipeline economics and efficiency. |
 | [AI Error Recovery Economics](../mcps/ai-error-recovery-economics.md) | Quantify the financial and experiential cost of AI errors and calculate ROI for recovery strategies. |
+| [AI ESG Scoring Engine](../mcps/ai-esg-scoring-engine.md) | Calculate holistic AI ESG scores, compliance gaps, and required investment needs. |
 | [AI Evaluation Cost Analyzer](../mcps/ai-evaluation-cost-analyzer.md) | Calculate and forecast the economic impact of AI evaluation infrastructure. |
 | [AI Feature Expansion Impact Analyzer](../mcps/ai-feature-expansion-impact-analyzer.md) | Quantify the financial and behavioral impact of AI features on SaaS expansion revenue and upsell conversion. |
 | [AI Feature First-Mover Advantage Calculator](../mcps/ai-feature-first-mover-advantage-calculator.md) | Quantify the economic value and competitive moat of launching AI features ahead of the market. |
@@ -113,12 +115,16 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Model Drift Detection & ROI Calculator](../mcps/ai-model-drift-detection-roi-calculator.md) | Calculate monitoring costs, early detection value, and ROI for AI model drift detection. |
 | [AI Model Ensemble Economics](../mcps/ai-model-ensemble-economics.md) | Calculate the economic efficiency and optimal configuration of AI model ensembles. |
 | [AI Model Fine-Tuning Service Margin](../mcps/ai-model-fine-tuning-service-margin.md) | Analyze profitability and long-term viability of AI fine-tuning services. |
+| [AI Model Performance Degradation Predictor](../mcps/ai-model-performance-degradation-predictor.md) | Quantify financial and operational requirements for maintaining AI model performance. |
 | [AI Model Registry Cost Structure](../mcps/ai-model-registry-cost-structure.md) | Quantify the economic impact, operating costs, and governance benefits of your AI model registry. |
 | [AI Model Training Cost Economics](../mcps/ai-model-training-cost-economics.md) | Analyze the financial impact of AI training, including compute costs, efficiency, and ROI. |
 | [AI Model Unit Economics](../mcps/ai-model-unit-economics.md) | Calculate gross margins, viability, and optimal pricing for AI model API services. |
 | [AI Operating Model Transformation](../mcps/ai-operating-model-transformation.md) | Quantify AI transformation investment, productivity gains, and implementation timelines. |
+| [AI Patent Monetization Engine](../mcps/ai-patent-monetization-engine.md) | Calculate revenue potential, enforcement ROI, and strategic licensing paths for AI patent portfolios. |
 | [AI Personalization ROI Modeler](../mcps/ai-personalization-roi-modeler.md) | Estimate the financial impact and payback period of AI personalization features. |
+| [AI Platform Build vs Buy Decision Engine](../mcps/ai-platform-build-vs-buy-decision-engine.md) | Evaluate the economic and strategic viability of building or buying an AI platform. |
 | [AI Prompt Caching Economics](../mcps/ai-prompt-caching-economics.md) | Calculate the financial impact and ROI of LLM prompt caching strategies. |
+| [AI R&D Efficiency Analytics](../mcps/ai-rd-efficiency-analytics.md) | Evaluate AI R&D productivity by correlating spend with innovation outputs. |
 | [AI Reasoning Cost Engine](../mcps/ai-reasoning-cost-engine.md) | Calculate unit economics and scaling costs for reasoning-heavy AI applications. |
 | [AI Response Caching ROI Calculator](../mcps/ai-response-caching-roi-calculator.md) | Calculate the financial impact and payback period of AI response caching. |
 | [AI Revenue Growth Accelerator](../mcps/ai-revenue-growth-accelerator.md) | Calculate AI-driven revenue growth, investment needs, and growth timelines. |
@@ -131,6 +137,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [AI Search Investment Modeler](../mcps/ai-search-investment-modeler.md) | Calculate infrastructure costs, latency impact, and relevance gains for AI-powered search enhancements. |
 | [AI TCO Decision Support](../mcps/ai-tco-decision-support.md) | Compare the 3-year Total Cost of Ownership between open-source and proprietary AI models. |
 | [AI Training Data Valuation Engine](../mcps/ai-training-data-valuation-engine.md) | Calculate the economic worth, scarcity premium, and licensing potential of AI training datasets. |
+| [AI Transformation Change Management](../mcps/ai-transformation-change-management.md) | Quantify the human and organizational costs of AI integration. |
+| [AI Use Case Diversification Engine](../mcps/ai-use-case-diversification-engine.md) | Models revenue growth, investment requirements, and ROI for AI expansion opportunities. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
 | [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
@@ -173,6 +181,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
 | [Calendar Spread Bull Strategy](../mcps/calendar-spread-bull-strategy.md) | Quantitative tool for identifying bull calendar spread signals using z-score and backwardation analysis. |
 | [Candlestick Pattern Recognizer](../mcps/candlestick-pattern-recognizer.md) | Identify single, two, and three-bar candlestick patterns from price data. |
+| [CAPEX Efficiency Modeler](../mcps/capex-efficiency-modeler.md) | Quantify the financial impact of AI on capital expenditure and asset productivity. |
 | [CAPM Calculator](../mcps/capm-calculator.md) | Calculate expected asset returns using the Capital Asset Pricing Model (CAPM) and evaluate investment attractiveness. |
 | [Car True Cost Calculator](../mcps/car-true-cost-calculator.md) | Calculate the total 5-year cost of vehicle ownership, including depreciation and maintenance. |
 | [Carbon Credit Farm Calculator](../mcps/carbon-credit-farm-calculator.md) | Estimate potential carbon credit generation from agricultural land use and sequestration models. |
@@ -235,6 +244,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
 | [Cut-Off Grade Optimization](../mcps/cut-off-grade-optimization.md) | Optimize mining cut-off grades to maximize NPV and production efficiency. |
+| [Data Partnership Monetization](../mcps/data-partnership-monetization.md) | Calculate the economic and strategic value of data-sharing agreements for AI training. |
 | [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [DeFi Options Strategy Engine](../mcps/defi-options-strategy-engine.md) | Deterministic volatility trading signals for DeFi options protocols. |
@@ -562,9 +572,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Partial Budgeting Tool](../mcps/partial-budgeting-tool.md) | Analyze the financial impact of management changes using incremental revenue and cost modeling. |
 | [PE AI Acquisition Synergy Analyzer](../mcps/pe-ai-acquisition-synergy-analyzer.md) | Quantify strategic and financial benefits of AI-focused acquisitions. |
 | [PE AI Carve-out Complexity Engine](../mcps/pe-ai-carve-out-complexity-engine.md) | Quantifies technical and financial complexities of spinning off AI business units. |
+| [PE AI Compliance & Risk Exposure](../mcps/pe-ai-compliance-risk-exposure.md) | Quantify regulatory risk and remediation costs for AI-driven portfolio companies. |
 | [PE AI Data Assets Valuation](../mcps/pe-ai-data-assets-valuation.md) | Estimate the economic and strategic worth of proprietary AI datasets. |
 | [PE AI Exit Multiple Impact](../mcps/pe-ai-exit-multiple-impact.md) | Quantify how AI capabilities enhance exit valuations for private equity assets. |
 | [PE AI IP Portfolio Strength](../mcps/pe-ai-ip-portfolio-strength.md) | Quantifies AI IP moat strength and strategic value for Private Equity investments. |
+| [PE AI IPO Readiness Narrative](../mcps/pe-ai-ipo-readiness-narrative.md) | Quantify AI-driven value propositions and IPO readiness for private equity firms. |
 | [PE AI Margin Enhancer](../mcps/pe-ai-margin-enhancer.md) | Calculates the impact of AI on operating margins, EBITDA uplift, and ROI. |
 | [PE AI Maturity Assessment Engine](../mcps/pe-ai-maturity-assessment-engine.md) | Analytical engine for Private Equity firms to evaluate AI readiness and value potential during due diligence. |
 | [PE AI Secondary Buyout Feasibility](../mcps/pe-ai-secondary-buyout-feasibility.md) | Assess the commercial attractiveness of acquiring AI-driven assets through secondary buyouts. |
@@ -797,6 +809,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Wine Warehouse Logistics & Cost Modeler](../mcps/wine-warehouse-logistics-cost-modeler.md) | Calculate wine storage footprints, monthly costs, and warehouse economic models. |
 | [Workers' Compensation Premium Calculator](../mcps/workers-compensation-premium-calculator.md) | Estimate workers' comp premiums, deposits, and audit adjustments based on payroll, EMR, and region. |
 | [Working Capital Calculator](../mcps/working-capital-calculator.md) | Calculate your Cash Conversion Cycle and Working Capital Need instantly. |
+| [Working Capital Optimization AI](../mcps/working-capital-optimization-ai.md) | Calculate the financial impact of AI-driven improvements on working capital and cash flow. |
 | [Y Combinator Deal Economics Calculator](../mcps/y-combinator-deal-economics-calculator.md) | Calculate YC equity stakes, dilution, and deal scenarios. |
 | [Yield Curve Analyzer](../mcps/yield-curve-analyzer.md) | Analyze interest rate curves, identify spreads, and detect recession signals. |
 | [ZigZag Indicator Calculator](../mcps/zigzag-indicator-calculator.md) | Detect price swing points and analyze market structure using deterministic ZigZag logic. |

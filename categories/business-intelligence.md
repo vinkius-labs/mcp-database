@@ -19,6 +19,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [AI Feature Conversion Impact Analyzer](../mcps/ai-feature-conversion-impact-analyzer.md) | Quantify the business impact of AI features on SaaS conversion rates and trial timelines. |
 | [AI Feature Retention Analyzer](../mcps/ai-feature-retention-analyzer.md) | Quantify the impact of AI features on user retention and ROI. |
 | [AI Latency Perception Score](../mcps/ai-latency-perception-score.md) | Quantify the business impact of AI response delays on user satisfaction and revenue. |
+| [AI Moat Durability Analyzer](../mcps/ai-moat-durability-analyzer.md) | Quantify the sustainability of AI competitive advantages using the Moat Durability Model. |
 | [AI SaaS Feature Competitive Differentiation](../mcps/ai-saas-feature-competitive-differentiation.md) | Quantify AI feature moats, differentiation scores, and market sustainability. |
 | [Arbox](../mcps/arbox.md) | Manage members, schedule, coaches, leads, payments, and CRM for your Arbox-powered fitness studio through natural conversation. |
 | [AskNicely](../mcps/asknicely.md) | Manage customer experience and NPS surveys with AskNicely — track responses and audit sentiment via AI. |

@@ -15,6 +15,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
 | [Chemical Exposure Assessment](../mcps/chemical-exposure-assessment.md) | Quantify worker chemical exposure and assess risk levels. |
+| [Cold Injury Risk Calculator](../mcps/cold-injury-risk-calculator.md) | Assess frostbite and hypothermia risks based on temperature, wind, and clothing. |
 | [Continuous Glucose Trend Arrow Calculator](../mcps/continuous-glucose-trend-arrow-calculator.md) | Predictive CGM velocity and trend arrow analysis. |
 | [Continuous Glucose Trend Calculator](../mcps/continuous-glucose-trend-calculator.md) | Predictive CGM glucose velocity and trend arrow analysis. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |

@@ -9,6 +9,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
 | [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
 | [Atom Economy Calculator](../mcps/atom-economy-calculator.md) | Calculate atom economy, E-factor, and waste metrics for chemical reactions. |
+| [Avalanche Airbag Deployment Simulator](../mcps/avalanche-airbag-deployment-simulator.md) | Simulate airbag effectiveness and survival probability in avalanche scenarios. |
 | [Battery Capacity Calculator](../mcps/battery-capacity-calculator.md) | Calculate theoretical capacity, energy density, and electrochemical performance metrics. |
 | [Beer-Lambert Law Calculator](../mcps/beer-lambert-law-calculator.md) | Calculate absorbance, concentration, molar absorptivity, and detection limits for spectroscopy. |
 | [Bioassay Potency Calculator](../mcps/bioassay-potency-calculator.md) | Calculate relative potency and analyze dose-response parallelism. |
@@ -117,6 +118,8 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Sedimentation Velocity Dynamics](../mcps/sedimentation-velocity-dynamics.md) | Calculate particle sedimentation coefficients, terminal velocities, and Svedberg constants. |
 | [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
 | [Slope Stability Analysis](../mcps/slope-stability-analysis.md) | Evaluate soil slope stability using Bishop's simplified method. |
+| [Snow Crystal Size Effect](../mcps/snow-crystal-size-effect.md) | Models the impact of snow crystal morphology and environment on skiing performance. |
+| [Snowpack Stability Analyzer](../mcps/snowpack-stability-analyzer.md) | Interprets snowpack stability tests to assess avalanche risk and terrain safety. |
 | [Solid-State Structure Predictor](../mcps/solid-state-structure-predictor.md) | Predict crystal structures, coordination numbers, and unit cell parameters for inorganic solids. |
 | [Solution Concentration Calculator](../mcps/solution-concentration-calculator.md) | Calculate molarity, molality, mass percent, and other chemical concentrations. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |

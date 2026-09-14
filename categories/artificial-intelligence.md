@@ -8,7 +8,9 @@ Explore the open database of **artificial-intelligence** Model Context Protocol 
 | [AcoustID](../mcps/acoustid.md) | Identify songs by audio fingerprint — like Shazam for developers. Search recordings by name, artist or MusicBrainz ID. |
 | [ACRCloud Music Recognition](../mcps/acrcloud-music-recognition.md) | Identify and explore music via ACRCloud — recognize songs from audio files and retrieve rich metadata. |
 | [Affinity](../mcps/affinity.md) | Relationship intelligence and CRM — manage lists, contacts, and interactions via AI. |
+| [AI Cyber Risk Assessment Engine](../mcps/ai-cyber-risk-assessment-engine.md) | Quantify AI-specific cyber risk, loss exposure, and security investment needs. |
 | [AI IP Protection Economics](../mcps/ai-ip-protection-economics.md) | Quantify the economic value and defensive strength of AI intellectual property. |
+| [AI Talent Retention Economics](../mcps/ai-talent-retention-economics.md) | Calculate the economic impact of retaining specialized AI talent and evaluate retention ROI. |
 | [Airparser](../mcps/airparser.md) | AI data extraction orchestration — parse PDFs, emails, and images into structured data via AI. |
 | [AlgoDocs](../mcps/algodocs.md) | AI document extraction orchestration — parse PDFs, images, and Word docs via AI. |
 | [AudD Music Recognition](../mcps/audd-music-recognition.md) | Universal music recognition — identify songs from URLs, search lyrics, and find streaming links via AI. |
