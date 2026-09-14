@@ -7,6 +7,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Board Float Time Calculator](../mcps/board-float-time-calculator.md) | Calculate board buoyancy, visibility, and retrieval urgency after a rider fall. |
 | [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
 | [Hydrofoil Mast Selector](../mcps/hydrofoil-mast-selector.md) | Recommends optimal mast length based on rider skill, water depth, and wave conditions. |
+| [Impact Force Physics Engine](../mcps/impact-force-physics-engine.md) | Calculates impact forces, knee loads, and injury risks for landings. |
 | [Kite Bladder Pressure Safety Engine](../mcps/kite-bladder-pressure-safety-engine.md) | Calculates kite bladder pressure shifts and safety risks from environmental changes. |
 | [Kite Drift Calculator](../mcps/kite-drift-calculator.md) | Calculate kite drift distance, direction, and recovery location. |
 | [Kite Hindenburg Recovery](../mcps/kite-hindenburg-recovery.md) | Calculates impact dynamics and recovery windows for falling kites. |
@@ -20,6 +21,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Process Safety Lead Indicator](../mcps/process-safety-lead-indicator.md) | Monitor proactive safety metrics like inspection completion, training compliance, and near-miss trends. |
 | [Rock Fall Modeling](../mcps/rock-fall-modeling.md) | Predict rock fall trajectories, impact forces, and barrier effectiveness. |
 | [Scuba Gas Planner](../mcps/scuba-gas-planner.md) | Deterministic gas consumption and depth limit calculations for scuba divers. |
+| [Slope Steepness Rating](../mcps/slope-steepness-rating.md) | Assess ski and snowboard slope difficulty using geometry and environmental factors. |
 | [Water Depth Clearance](../mcps/water-depth-clearance.md) | Calculates safety margins and minimum water depth for aquatic maneuvers. |
 | [Wetsuit Thickness Recommender](../mcps/wetsuit-thickness-recommender.md) | Get precise wetsuit thickness and gear recommendations based on water temperature, air temperature, wind chill, and session duration. |
 

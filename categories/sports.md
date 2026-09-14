@@ -5,12 +5,16 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Billiards Cut Angle Calculator](../mcps/billiards-cut-angle-calculator.md) | Deterministic geometry engine for precision pool and billiards shot mechanics. |
+| [Binding Angle Setup](../mcps/binding-angle-setup.md) | Calculates optimal snowboard binding angles based on riding style and biomechanics. |
+| [Binding Stance Optimizer](../mcps/binding-stance-optimizer.md) | Calculates optimal snowboard binding width, angles, and setback based on rider anatomy. |
 | [Caballerial Rotation Speed](../mcps/caballerial-rotation-speed.md) | Calculates technical rotation requirements and landing stability for caballerial-style skateboarding maneuvers. |
 | [Kite Festival Scoring Engine](../mcps/kite-festival-scoring-engine.md) | Calculates competition scores, weighted results, and athlete rankings for kite flying events. |
 | [Pop-Up Mechanics Analyzer](../mcps/pop-up-mechanics-analyzer.md) | Calculate the explosive force and power required for a surfer's pop-up maneuver. |
 | [Power Stroke Duration](../mcps/power-stroke-duration.md) | Calculate optimal kite power stroke metrics and maneuver stability. |
 | [Snowboard Running Length Calculator](../mcps/snowboard-running-length-calculator.md) | Calculate effective running length, float zone, and edge engagement for snowboards. |
 | [Spin Landing Timing](../mcps/spin-landing-timing.md) | Calculate precise spin initiation and landing milestones for aerial rotations. |
+| [Switch Carve Difficulty Analyzer](../mcps/switch-carve-difficulty-analyzer.md) | Quantify the physical and technical complexity of switch carving maneuvers. |
+| [Tuck Speed Optimizer](../mcps/tuck-speed-optimizer.md) | Optimize rider aerodynamics using precise tuck angle modeling. |
 | [Water Start Power](../mcps/water-start-power.md) | Calculate the physical requirements and timing for a successful kitesurfing water start. |
 | [Wave Jump Timing](../mcps/wave-jump-timing.md) | Calculate optimal launch points, timing windows, and boost potential for kite surfing jumps. |
 | [Wave Section Speed Predictor](../mcps/wave-section-speed-predictor.md) | Predictive modeling for surfer velocity and timing to navigate wave sections. |

@@ -14,9 +14,9 @@ This MCP server provides a specialized simulation engine to assess how avalanche
 
 
 ## Available Tools (4)
+- **get_system_efficiency_report**: Provides a high-level summary of the airbag's performance for a given scenario
 - **calculate_deployment_window**: Determines the optimal timing for airbag activation to maximize surface presence
 - **get_survival_assessment**: Evaluates the likelihood of survival for a user in a specific avalanche scenario
-- **get_system_efficiency_report**: Provides a high-level summary of the airbag's performance for a given scenario
 - **simulate_burial_dynamics**: Calculates the physical position of the user within the snow flow
 
 

@@ -14,8 +14,8 @@ This MCP server provides precise calculations for splitboard backcountry touring
 
 
 ## Available Tools (4)
-- **calculate_calories_burned**: Calculate total calories burned during the tour
 - **get_efficiency_metrics**: Get efficiency metrics for the environment
+- **calculate_calories_burned**: Calculate total calories burned during the tour
 - **get_touring_time**: Calculate estimated touring time including breaks
 - **recommend_pace**: Recommend an optimal pace for the tour
 

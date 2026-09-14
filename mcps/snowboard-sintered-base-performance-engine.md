@@ -14,10 +14,10 @@ This MCP server provides specialized calculation tools for snowboard technicians
 
 
 ## Available Tools (4)
-- **estimate_wax_longevity**: Predicts how many hours of riding remain before the wax level drops below a functional threshold
 - **analyze_structure_suitability**: Evaluates if a specific base structure pattern is appropriate for the current snow temperature and riding speed
 - **calculate_glide_efficiency**: Determines how fast the board will glide under current conditions
 - **determine_optimal_wax_timing**: Recommends exactly when the user should re-apply wax to maintain peak performance
+- **estimate_wax_longevity**: Predicts how many hours of riding remain before the wax level drops below a functional threshold
 
 
 ## 💬 Prompt Examples

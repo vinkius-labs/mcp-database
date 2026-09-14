@@ -119,6 +119,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
 | [Slope Stability Analysis](../mcps/slope-stability-analysis.md) | Evaluate soil slope stability using Bishop's simplified method. |
 | [Snow Crystal Size Effect](../mcps/snow-crystal-size-effect.md) | Models the impact of snow crystal morphology and environment on skiing performance. |
+| [Snow Hardness Testing](../mcps/snow-hardness-testing.md) | Converts physical snow penetration data into actionable hardness indices and performance predictions. |
 | [Snowpack Stability Analyzer](../mcps/snowpack-stability-analyzer.md) | Interprets snowpack stability tests to assess avalanche risk and terrain safety. |
 | [Solid-State Structure Predictor](../mcps/solid-state-structure-predictor.md) | Predict crystal structures, coordination numbers, and unit cell parameters for inorganic solids. |
 | [Solution Concentration Calculator](../mcps/solution-concentration-calculator.md) | Calculate molarity, molality, mass percent, and other chemical concentrations. |

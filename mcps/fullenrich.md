@@ -36,9 +36,6 @@ Enrichment is asynchronous: the agent submits a batch, receives an enrichment ID
 
 
 ## Available Tools (8)
-- **get_enrichment_results**: 164, plus the profile when linkedin_url was provided. While IN_PROGRESS the API errors — wait and retry instead of polling every few seconds.
-
-Fetch the status and enriched records of a bulk job
 - **lookup_company**: Provide at least one identifier; domain or professional-network URL/ID give the most reliable match.
 
 Look up a single company and its firmographic profile
@@ -57,6 +54,9 @@ Get the current workspace credit balance
 - **lookup_person**: Provide at least one identifier — a professional-network URL/ID is the most reliable; a name alone is ambiguous, combine it with a company identifier.
 
 Look up a single professional and their full profile
+- **get_enrichment_results**: 164, plus the profile when linkedin_url was provided. While IN_PROGRESS the API errors — wait and retry instead of polling every few seconds.
+
+Fetch the status and enriched records of a bulk job
 - **search_people**: Synchronous and consumes no credits. Paginate with limit (max 100) and offset; beyond offset 10000 pass the search_after cursor returned in the previous response.
 
 Search a database of 800M professionals with structured filters

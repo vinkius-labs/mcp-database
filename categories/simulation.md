@@ -19,6 +19,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Impact Cushion Depth](../mcps/impact-cushion-depth.md) | Calculates required water depth and injury risk for body impacts. |
 | [Impact Force Estimator](../mcps/impact-force-estimator.md) | Calculate impact force and injury risk from water entries. |
 | [Jump Height Estimation](../mcps/jump-height-estimation.md) | Physics engine for kiteboarding jump metrics. |
+| [Jump Trajectory Analysis](../mcps/jump-trajectory-analysis.md) | Physics-based simulation for calculating jump flight paths, peak height, and landing impact. |
 | [Kite Jump Parabola](../mcps/kite-jump-parabola.md) | Physics engine for modeling kiteboarder jump trajectories. |
 | [Kite Loop Mechanics](../mcps/kite-loop-mechanics.md) | Analyze physical forces, timing, and energy of kiteboarding loops. |
 | [Kite Loop Physics Engine](../mcps/kite-loop-physics-engine.md) | Calculates g-force, body load, and peak duration for kiteboarding loops. |
@@ -27,6 +28,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Ollie Pop Height Simulator](../mcps/ollie-pop-height-simulator.md) | A biomechanical simulator for calculating skateboarding ollie jump performance. |
 | [Rail Approach Speed Calculator](../mcps/rail-approach-speed-calculator.md) | Physics-based engine to calculate rider velocity and speed loss on rail features. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
+| [Snowboard Magnet Traction](../mcps/snowboard-magnet-traction.md) | Simulates edge bump effects on snowboard grip and carving performance. |
 | [Snowboard Pressure Distribution Simulator](../mcps/snowboard-pressure-distribution-simulator.md) | Simulates weight and pressure distribution on a snowboard based on rider physics and snow conditions. |
 | [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |
 | [Toxic Release Modeling Engine](../mcps/toxic-release-modeling-engine.md) | Simulate toxic gas dispersion, evacuation zones, and exposure risks using Gaussian models. |

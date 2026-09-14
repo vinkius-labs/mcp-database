@@ -300,7 +300,9 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Slope Radar Monitoring Setup](../mcps/slope-radar-monitoring-setup.md) | Automated planning and configuration for slope stability radar deployment. |
 | [Slope Stability Analysis for Open Pit Mines](../mcps/slope-stability-analysis-for-open-pit-mines.md) | Analyze slope stability using limit equilibrium methods to calculate Factor of Safety and failure modes. |
 | [Smelter Mass Balance Engine](../mcps/smelter-mass-balance-engine.md) | Calculate mass distributions, metal recoveries, and off-gas compositions for smelting operations. |
+| [Snowboard Binding Impact Analyzer](../mcps/snowboard-binding-impact-analyzer.md) | Calculate how binding stiffness, type, and mounting position affect board flex and vibration damping. |
 | [Snowboard Core Profile Analyzer](../mcps/snowboard-core-profile-analyzer.md) | Engineering analysis of snowboard core geometry and material stiffness. |
+| [Snowboard Dampening Layers](../mcps/snowboard-dampening-layers.md) | Calculates dampening layer effectiveness and ride stability for snowboard construction. |
 | [Snowboard Laminate Analyzer](../mcps/snowboard-laminate-analyzer.md) | Calculates snowboard performance metrics like stiffness, torsional rigidity, and impact resistance based on laminate layup. |
 | [Soil Nail Wall Design](../mcps/soil-nail-wall-design.md) | Engineering tool for soil nail wall stability and nail design. |
 | [Sour Water Stripper Design Tool](../mcps/sour-water-stripper-design-tool.md) | Design and size Sour Water Stripper (SWS) units for acid gas removal. |

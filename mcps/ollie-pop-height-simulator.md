@@ -14,10 +14,10 @@ This MCP server provides precise biomechanical analysis of skateboarding ollie m
 
 
 ## Available Tools (4)
+- **compare_rider_techniques**: Compares two different sets of technique inputs to determine which results in a higher ollie
 - **simulate_timing_sensitivity**: Evaluates how sensitive the ollie height is to deviations in the rider's pop timing
 - **analyze_board_efficiency**: Determines how effectively the specific board is converting the rider's force into vertical lift
 - **calculate_jump_metrics**: Calculates the primary performance outcomes of an ollie based on technique inputs
-- **compare_rider_techniques**: Compares two different sets of technique inputs to determine which results in a higher ollie
 
 
 ## 💬 Prompt Examples
