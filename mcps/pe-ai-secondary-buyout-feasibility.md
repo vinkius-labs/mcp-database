@@ -16,8 +16,8 @@ This MCP server provides decision-support tools for private equity sponsors eval
 ## Available Tools (4)
 - **assess_sponsor_fit**: Evaluates how well the target asset aligns with a specific buyer's profile
 - **calculate_valuation_expectation**: Estimates the expected purchase price for the AI asset
-- **get_sbo_probability**: Calculates the likelihood of a successful secondary buyout transaction
 - **run_feasibility_summary**: Provides a consolidated overview of the buyout's viability
+- **get_sbo_probability**: Calculates the likelihood of a successful secondary buyout transaction
 
 
 ## 💬 Prompt Examples

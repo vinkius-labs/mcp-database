@@ -14,10 +14,10 @@ This MCP server provides a comprehensive financial framework for AI governance. 
 
 
 ## Available Tools (4)
-- **calculate_regulatory_overhead**: 
-- **compute_total_governance_economics**: 
 - **estimate_infrastructure_impact**: 
 - **get_use_case_cost_profile**: 
+- **calculate_regulatory_overhead**: 
+- **compute_total_governance_economics**: 
 
 
 ## 💬 Prompt Examples

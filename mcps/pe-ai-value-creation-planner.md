@@ -14,10 +14,10 @@ This MCP server provides financial modeling tools for Private Equity professiona
 
 
 ## Available Tools (4)
-- **estimate_implementation_timeline**: Projects the timeline for value realization
 - **assess_capability_gap**: Evaluates organizational readiness for AI
 - **calculate_roi**: Measures the profitability of the AI investment
 - **calculate_total_value**: Calculates the net economic impact of AI initiatives
+- **estimate_implementation_timeline**: Projects the timeline for value realization
 
 
 ## 💬 Prompt Examples

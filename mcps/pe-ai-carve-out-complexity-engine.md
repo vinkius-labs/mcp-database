@@ -14,8 +14,8 @@ This MCP server provides specialized assessment tools for Private Equity firms t
 
 
 ## Available Tools (4)
-- **get_carve_out_cost_estimate**: Calculates the projected financial investment required to decouple AI assets
 - **get_capability_gap_analysis**: Identifies what the new entity lacks to operate without the parent company
+- **get_carve_out_cost_estimate**: Calculates the projected financial investment required to decouple AI assets
 - **get_carve_out_summary**: Provides a high-level executive overview of the entire carve-out profile
 - **get_timeline_risk_assessment**: Evaluates the probability and impact of delays in reaching operational independence
 

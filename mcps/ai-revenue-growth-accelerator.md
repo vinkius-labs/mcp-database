@@ -14,9 +14,9 @@ This MCP server provides a suite of tools to model the financial impact of AI im
 
 
 ## Available Tools (4)
-- **get_sales_productivity_impact**: Calculates the specific revenue lift resulting from sales team efficiency improvements
-- **get_investment_feasibility**: Determines if the required investment for AI implementation is within acceptable limits relative to the projected revenue
 - **get_market_opportunity_impact**: Evaluates how much of the market expansion opportunity is realistically captured through AI product features
+- **get_investment_feasibility**: Determines if the required investment for AI implementation is within acceptable limits relative to the projected revenue
+- **get_sales_productivity_impact**: Calculates the specific revenue lift resulting from sales team efficiency improvements
 - **get_revenue_acceleration_projections**: Calculates the core incremental revenue and growth timeline based on provided business levers
 
 

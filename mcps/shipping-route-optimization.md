@@ -14,10 +14,10 @@ This MCP server provides specialized maritime logistics tools for oil and gas ta
 
 
 ## Available Tools (4)
-- **check_route_compliance**: Validates that a proposed route does not violate maritime restrictions or vessel draft constraints
 - **get_optimal_route**: Calculates the most efficient path between two points considering all environmental and vessel constraints
 - **analyze_weather_impact**: Evaluates how current or forecasted weather conditions along a specific route will affect vessel performance
 - **calculate_vessel_consumption**: Predicts fuel usage based on vessel-specific efficiency curves and environmental resistance
+- **check_route_compliance**: Validates that a proposed route does not violate maritime restrictions or vessel draft constraints
 
 
 ## 💬 Prompt Examples

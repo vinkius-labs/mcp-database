@@ -14,10 +14,10 @@ This MCP server provides a comprehensive framework for assessing an organization
 
 
 ## Available Tools (4)
+- **calculate_talent_scarcity_impact**: Determines how much the difficulty of finding talent will inflate recruitment costs
+- **assess_retention_risk**: Evaluates the likelihood of losing key personnel and the cost to prevent it
 - **evaluate_leadership_readiness**: Provides a high-level overview of the organization's current AI leadership standing
 - **generate_gap_analysis**: Produces a detailed qualitative report of where the management structure is failing the AI strategy
-- **assess_retention_risk**: Evaluates the likelihood of losing key personnel and the cost to prevent it
-- **calculate_talent_scarcity_impact**: Determines how much the difficulty of finding talent will inflate recruitment costs
 
 
 ## 💬 Prompt Examples

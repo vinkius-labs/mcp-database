@@ -14,10 +14,10 @@ This MCP server provides specialized financial modeling tools for Private Equity
 
 
 ## Available Tools (4)
-- **calculate_margin_impact**: Evaluates the direct impact of AI on the current EBITDA margin and absolute earnings
-- **estimate_roi_timeline**: Determines how long it takes for the AI investment to pay for itself
 - **analyze_leverage_and_scale**: Calculates how the efficiency of the AI solution changes as the business grows
+- **calculate_margin_impact**: Evaluates the direct impact of AI on the current EBITDA margin and absolute earnings
 - **compare_scenarios**: Allows a user to compare a "Baseline" (no AI) against an "AI Enhanced" scenario
+- **estimate_roi_timeline**: Determines how long it takes for the AI investment to pay for itself
 
 
 ## 💬 Prompt Examples
