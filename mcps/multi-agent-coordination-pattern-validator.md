@@ -14,9 +14,9 @@ This MCP server provides a suite of diagnostic tools to prevent runtime orchestr
 
 
 ## Available Tools (3)
+- **verify_instruction_consistency**: Ensures that the instructions or roles assigned to agents do not contradict the governing coordination pattern
 - **check_topology_integrity**: Detects logical flaws in the agent network such as infinite loops or isolated agents
 - **validate_coordination_structure**: Validates if the provided agent definitions conform to the specific structural requirements of the chosen coordination pattern
-- **verify_instruction_consistency**: Ensures that the instructions or roles assigned to agents do not contradict the governing coordination pattern
 
 
 ## 💬 Prompt Examples

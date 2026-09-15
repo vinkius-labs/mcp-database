@@ -14,9 +14,9 @@ Agent Loop Detector provides specialized monitoring for multi-agent orchestratio
 
 
 ## Available Tools (3)
+- **get_fingerprint_analysis**: Provides a breakdown of how many times each unique action fingerprint has occurred in the current history
 - **calculate_current_cycle_metrics**: Analyzes a specific detected cycle to provide detailed insights into the nature of the loop
 - **check_for_loops**: Determines if the current sequence of agent actions has entered an infinite loop or repetitive cycle
-- **get_fingerprint_analysis**: Provides a breakdown of how many times each unique action fingerprint has occurred in the current history
 
 
 ## 💬 Prompt Examples
