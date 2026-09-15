@@ -1,0 +1,109 @@
+# Startup NPS Analysis Engine MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/startup-nps-analysis-engine)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [business-intelligence](../categories/business-intelligence.md)
+
+A specialized analytical engine for evaluating Net Promoter Score (NPS) health, statistical reliability, and segment performance.
+
+## Description
+This MCP server provides a suite of analytical tools to evaluate customer loyalty through Net Promoter Score (NPS) methodology. It allows AI agents to perform core NPS calculations using `calculate_nps_core`, assess the statistical significance of results with `validate_statistical_reliability`, compare performance across user groups via `analyze_segment_performance`, and evaluate survey validity through `evaluate_survey_health`.
+
+
+## Available Tools (4)
+- **analyze_segment_performance**: Each object must contain segmentName, promoterPercentage, passivePercentage, and detractorPercentage.
+
+Compares NPS metrics across different user segments
+- **calculate_nps_core**: They must sum to 100.
+
+Calculates the primary NPS metric from raw percentage distributions
+- **evaluate_survey_health**: Assesses the impact of response rates and potential bias on the validity of the results
+- **validate_statistical_reliability**: Determines if the current NPS score is statistically significant based on sample size
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Startup NPS Analysis Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the NPS score for 60% promoters, 30% passives, and 10% detractors."
+
+**🤖 AI Agent:**
+> The NPS score is 50, which is categorized as Positive.
+
+---
+
+**👤 You:**
+> "Is an NPS score of 45 statistically significant with 500 responses out of a population of 1000?"
+
+**🤖 AI Agent:**
+> Yes, the result is statistically significant with a margin of error that maintains the sentiment category.
+
+---
+
+**👤 You:**
+> "Assess the survey health for 100 responses out of 1000 invited, with 15% detractors."
+
+**🤖 AI Agent:**
+> The response rate is 10%, and the bias risk is High due to the low response rate.
+
+
+## ❓ FAQ
+
+**Q: How is the NPS score calculated?**
+The score is calculated by subtracting the percentage of Detractors from the percentage of Promoters.
+
+**Q: Can I check if my survey results are statistically significant?**
+Yes, you can use the `validate_statistical_reliability` tool to determine if your sample size provides enough confidence in the results.
+
+**Q: How does the engine handle different user segments?**
+The `analyze_segment_performance` tool allows you to compare NPS metrics across various groups like Enterprise or SMB to find friction points.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/startup-nps-analysis-engine](https://vinkius.com/en/ai-agent-connect/startup-nps-analysis-engine)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Startup NPS Analysis Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `startup-nps-analysis-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Startup NPS Analysis Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "startup-nps-analysis-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
