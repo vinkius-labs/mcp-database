@@ -161,6 +161,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Ion Exchange System Designer](../mcps/ion-exchange-system-designer.md) | Design ion exchange columns, calculate resin volumes, and estimate regeneration needs. |
 | [Isomerization Unit Design](../mcps/isomerization-unit-design.md) | Design and optimize light naphtha isomerization units using chemical equilibrium models. |
 | [Jig Separation Design](../mcps/jig-separation-design.md) | Technical tool for designing jigging circuits based on mineral density and throughput. |
+| [Jump Kicker Design](../mcps/jump-kicker-design.md) | Design precise jump kicker geometry using trajectory optimization. |
 | [Kick Tolerance Calculator](../mcps/kick-tolerance-calculator.md) | Calculate critical well control safety limits including MAASP and maximum influx volume. |
 | [Kicker Transition Radius Calculator](../mcps/kicker-transition-radius-calculator.md) | Calculate optimal jump geometry and rider forces based on speed, weight, and snow conditions. |
 | [Kinematic Analysis for Rock Slopes](../mcps/kinematic-analysis-for-rock-slopes.md) | Perform kinematic analysis for rock slopes to identify planar, wedge, and toppling failure modes. |
@@ -304,6 +305,9 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Snowboard Core Profile Analyzer](../mcps/snowboard-core-profile-analyzer.md) | Engineering analysis of snowboard core geometry and material stiffness. |
 | [Snowboard Dampening Layers](../mcps/snowboard-dampening-layers.md) | Calculates dampening layer effectiveness and ride stability for snowboard construction. |
 | [Snowboard Laminate Analyzer](../mcps/snowboard-laminate-analyzer.md) | Calculates snowboard performance metrics like stiffness, torsional rigidity, and impact resistance based on laminate layup. |
+| [Snowboard Sidecut Radius Engine](../mcps/snowboard-sidecut-radius-engine.md) | Calculate effective turning radius, turn initiation, and carve quality for snowboards. |
+| [Snowboard Torsion Physics Engine](../mcps/snowboard-torsion-physics-engine.md) | Models torsional flex, edge engagement, and carving precision for snowboards. |
+| [Snowboard Vibration Analysis](../mcps/snowboard-vibration-analysis.md) | Calculate vibration amplitude, damping effectiveness, and chatter speed for snowboards. |
 | [Soil Nail Wall Design](../mcps/soil-nail-wall-design.md) | Engineering tool for soil nail wall stability and nail design. |
 | [Sour Water Stripper Design Tool](../mcps/sour-water-stripper-design-tool.md) | Design and size Sour Water Stripper (SWS) units for acid gas removal. |
 | [Spiral Concentrator Design](../mcps/spiral-concentrator-design.md) | Design mineral processing spiral concentrator circuits based on ore characteristics. |
@@ -326,6 +330,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Subsea Completion Design](../mcps/subsea-completion-design.md) | Design subsea completion systems including tree architecture, tubing hangers, and control infrastructure. |
 | [Sucker Rod Pump Design Engine](../mcps/sucker-rod-pump-design-engine.md) | Technical design engine for API 11L compliant sucker rod pump configurations. |
 | [Sulfuric Acid Plant Design](../mcps/sulfuric-acid-plant-design.md) | Professional engineering tool for designing sulfuric acid production facilities using the contact process. |
+| [Surfboard Buoyancy Calculator](../mcps/surfboard-buoyancy-calculator.md) | Calculate surfboard buoyancy, displacement, and stability metrics. |
 | [Surfboard Fin Configurator](../mcps/surfboard-fin-configurator.md) | Calculate optimal fin geometry and setup for any wave condition. |
 | [Synthetic Rubber Plant Designer](../mcps/synthetic-rubber-plant-designer.md) | Engineering tools for designing synthetic rubber production facilities. |
 | [Tailings Dam Safety Assessment](../mcps/tailings-dam-safety-assessment.md) | Professional engineering tool for evaluating tailings dam stability, seismic resilience, and flood risk. |

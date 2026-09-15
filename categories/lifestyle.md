@@ -33,6 +33,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
 | [Soap Saponification Calculator](../mcps/soap-saponification-calculator.md) | Deterministic cold-process soap formulation calculator for precise lye and water requirements. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
+| [Surf Equipment Sizing for Youth](../mcps/surf-equipment-sizing-for-youth.md) | Calculates surfboard dimensions, volume, and wetsuit sizes for youth surfers based on growth and skill. |
 | [Surf Wax Consumption Estimator](../mcps/surf-wax-consumption-estimator.md) | Calculate surfboard deck area and monthly wax requirements based on water temperature. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
 | [Tattoo Time Estimator](../mcps/tattoo-time-estimator.md) | Calculate tattoo session duration, number of appointments, and healing time. |

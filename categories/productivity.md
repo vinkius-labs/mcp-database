@@ -82,6 +82,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AntEater](../mcps/anteater.md) | Monitor website changes, detect content updates, and receive alerts when key pages are modified across your digital properties. |
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
 | [API Design Prover](../mcps/api-design-prover.md) | An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written. |
+| [API Integration ROI Modeler](../mcps/api-integration-roi-modeler.md) | Calculate the economic viability and payback period for software API integrations. |
 | [Apidog](../mcps/apidog.md) | Sync your Apidog workspace with your AI agent — list projects, fetch endpoint schemas, and export full OpenAPI specifications instantly. |
 | [Appcues](../mcps/appcues.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [Appcues](../mcps/appcues-alternative.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
@@ -221,6 +222,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Clustdoc](../mcps/clustdoc.md) | Collect client documents, track submission progress, and streamline onboarding with organized intake workflows. |
 | [Clustdoc](../mcps/clustdoc-alternative.md) | Collect client documents, track submission progress, and streamline onboarding with organized intake workflows. |
 | [Cnnect](../mcps/cnnect.md) | Streamline business networking with digital business cards, contact management, and relationship tracking for professionals. |
+| [Coaching Session Planner](../mcps/coaching-session-planner.md) | Generates structured surf coaching session plans, drill progressions, and feedback strategies. |
 | [Coassemble](../mcps/coassemble.md) | Manage online training and LMS via Coassemble — track courses, monitor enrolments, and manage student groups directly from any AI agent. |
 | [Cobot](../mcps/cobot.md) | Manage coworking spaces via Cobot — track memberships, monitor bookings, and manage resources directly from any AI agent. |
 | [Cocktail API](../mcps/cocktail-api.md) | Search cocktail recipes — audit ingredients and instructions via AI. |
@@ -243,6 +245,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Context Engineering Prover](../mcps/context-engineering-prover.md) | An AI dumped 80,000 tokens into a prompt — 64,000 of them unreferenced noise. It said 'best practice' to justify the structure and 'looks good' to measure quality. That is not context engineering — that is a copy-paste pipeline. This tool forces five context axes: relevance auditing, priority structuring, token budgeting, evidence grounding, and quality measurement. |
 | [Contract Review Prover](../mcps/contract-review-prover.md) | AI models summarize contracts instead of analyzing them. This tool forces clause-level rigor: score risk per clause (1-5), identify missing legal protections, verify jurisdiction conflicts, quantify financial exposure in currency, and map negotiation leverage. This is structured analysis, not legal advice. |
 | [Contract Termination Calculator](../mcps/contract-termination-calculator.md) | Analyze the financial impact of breaking leases or service contracts early. |
+| [Contractor vs Employee Cost Analyzer](../mcps/contractor-vs-employee-cost-analyzer.md) | Compare the true economic impact of hiring employees versus contractors. |
 | [Convertio](../mcps/convertio.md) | Enable your AI agent to convert images, documents, audio, and video files across hundreds of formats using the Convertio API. |
 | [Copper CRM](../mcps/copper-crm.md) | Equip your AI agent to manage leads, people, and sales opportunities directly within Copper CRM. |
 | [Copy.ai](../mcps/copyai.md) | Equip your AI agent to automate content production and business processes using Copy.ai Workflows. |
@@ -690,6 +693,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Odoo Project](../mcps/odoo-project.md) | Create projects, manage tasks, log timesheets — Odoo Project Management through natural conversation. |
 | [OfficeRnD Hybrid](../mcps/officernd-hybrid.md) | Hybrid work management — book desks, rooms, and manage office resources via OfficeRnD. |
 | [Officevibe](../mcps/officevibe.md) | Manage employee engagement via Officevibe — track pulse survey scores, feedback, and NPS directly from your AI agent. |
+| [OKR Progress Tracking](../mcps/okr-progress-tracking.md) | Calculate OKR progress, forecasts, and stretch assessments. |
 | [Omnivore (Read-Later)](../mcps/omnivore-read-later.md) | Manage your Omnivore library — search articles, read full content, and save new links directly from your AI agent. |
 | [On-Call Economics Engine](../mcps/on-call-economics-engine.md) | Quantify the economic impact of on-call rotations by balancing compensation costs against burnout and attrition risks. |
 | [Onboard.io Implementation](../mcps/onboardio-implementation.md) | Automate and manage customer onboarding via Onboard.io — track launch plans, tasks, and progress directly from your AI agent. |
@@ -869,7 +873,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Superblocks](../mcps/superblocks.md) | Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent. |
 | [Superdocu](../mcps/superdocu.md) | Automate document collection and client onboarding with Superdocu and AI agents. |
 | [SuperSaaS](../mcps/supersaas.md) | Automate online scheduling and bookings via SuperSaaS — manage schedules, appointments, and users directly from any AI agent. |
+| [Surf Goal Framework](../mcps/surf-goal-framework.md) | Transform surfing aspirations into actionable SMART goal roadmaps. |
+| [Surf Performance Journaling System](../mcps/surf-performance-journaling-system.md) | A structured system to design surf performance journals, balancing qualitative feel with quantitative metrics. |
 | [Surf Session Efficiency Metrics](../mcps/surf-session-efficiency-metrics.md) | Analyze surfing session performance and efficiency. |
+| [Surf Trip Preparation Checklist](../mcps/surf-trip-preparation-checklist.md) | Generate comprehensive surf trip checklists including gear, documents, and schedules. |
 | [SurveySparrow](../mcps/surveysparrow.md) | Collect feedback with conversational surveys that feel like chat and boost completion rates across employee and customer programs. |
 | [Sushi Rice & Ingredient Calculator](../mcps/sushi-rice-ingredient-calculator.md) | Calculate exact quantities of uncooked rice, seasoning, nori, and protein for sushi production. |
 | [Systran (Machine Translation API)](../mcps/systran-machine-translation-api.md) | Professional machine translation and linguistic analysis via Systran — translate text, detect languages, and perform dictionary lookups. |

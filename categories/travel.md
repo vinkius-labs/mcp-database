@@ -5,12 +5,15 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Airline Baggage Calculator](../mcps/airline-baggage-calculator.md) | Calculate baggage allowances and excess fees based on airline, fare class, and route. |
+| [Altitude Sickness Risk Assessment](../mcps/altitude-sickness-risk-assessment.md) | Calculate AMS risk, acclimatization needs, and safety protocols for high-altitude trips. |
 | [Baggage Allowance Comparator](../mcps/baggage-allowance-comparator.md) | Compare airline baggage dimensions, weight limits, and sports equipment fees. |
+| [Board Quiver Planner](../mcps/board-quiver-planner.md) | Optimize your surfboard quiver for any trip or wave conditions. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
 | [jp-train-transfer-minimizer](../mcps/jp-train-transfer-minimizer.md) | Calculate precise Japanese train route metrics including transfer penalties. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
 | [Shinkansen Routing Optimizer](../mcps/shinkansen-routing-optimizer.md) | Deterministic Japanese Shinkansen travel time and fare calculator. |
 | [Singapore MRT Delay Compensation Calculator](../mcps/singapore-mrt-delay-compensation-calculator.md) | Determine eligibility for MRT delay compensation based on official transit rules. |
+| [Surf Camp Selection Tool](../mcps/surf-camp-selection-tool.md) | Find and rank the perfect surf camps based on your skill, budget, and goals. |
 | [Surf Destination Profile Matcher](../mcps/surf-destination-profile-matcher.md) | Find your perfect surf spot using deterministic profile matching. |
 | [Surf Trip Car Packing Optimizer](../mcps/surf-trip-car-packing-optimizer.md) | Calculate if your surfboards will fit in your vehicle trunk using nesting efficiency logic. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |

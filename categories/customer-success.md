@@ -4,6 +4,7 @@ Explore the open database of **customer-success** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Customer Health Score](../mcps/customer-health-score.md) | Calculate customer health, churn risk, and expansion opportunities. |
 | [Enterprise Health Score Calculation](../mcps/enterprise-health-score-calculation.md) | Calculate multi-dimensional customer health scores, trends, and risk indicators. |
 
 

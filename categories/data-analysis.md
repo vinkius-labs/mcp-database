@@ -8,6 +8,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | [Biosimilar Comparability Analysis](../mcps/biosimilar-comparability-analysis.md) | Professional analytical assessment tool for evaluating biosimilarity between reference biologics and biosimilar candidates. |
 | [Cell Viability Calculation Engine](../mcps/cell-viability-calculation-engine.md) | Calculate cell viability, IC50, and growth inhibition from assay data. |
 | [Chinese Slang Density Checker](../mcps/chinese-slang-density-checker.md) | Analyze the prevalence and trendiness of Chinese internet slang in text. |
+| [Community Surf Program Impact](../mcps/community-surf-program-impact.md) | Quantifies social, physical, and community-level impact of surf-based outreach programs. |
 | [Dialogue Tree Complexity Analyzer](../mcps/dialogue-tree-complexity-analyzer.md) | Analyze structural complexity, branching, and localization costs of dialogue trees. |
 | [Founder Vision Prover](../mcps/founder-vision-prover.md) | A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months. |
 | [Genealogy Kinship Calculator](../mcps/genealogy-kinship-calculator.md) | Calculate exact kinship terms, civil law degrees, and biological coefficients. |

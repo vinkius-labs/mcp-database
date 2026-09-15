@@ -6,20 +6,25 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Accelerator Marketing ROI Analyzer](../mcps/accelerator-marketing-roi-analyzer.md) | Analyze marketing efficiency and ROI for accelerator program pipelines. |
 | [Ad Copy Compliance Checker](../mcps/ad-copy-compliance-checker.md) | Audit ad copy against platform character limits and content policies. |
+| [Affiliate Program Economics](../mcps/affiliate-program-economics.md) | Financial modeling for affiliate program profitability and unit economics. |
 | [AI Benchmark Performance & Value Analyzer](../mcps/ai-benchmark-performance-value-analyzer.md) | Quantify the economic impact of AI benchmark leadership on brand equity and marketing ROI. |
 | [Bluesky Automation](../mcps/bluesky-automation.md) | Full-spectrum Bluesky automation — 20 tools for publishing, engagement, analytics, social listening, and lead generation via the AT Protocol. |
 | [BuiltWith Tech Lookup](../mcps/builtwith-tech-lookup.md) | Universal website technology intelligence — detect CMS, analytics, and frameworks via AI. |
 | [Cart Abandonment Email Scorer](../mcps/cart-abandonment-email-scorer.md) | Analyze email copy for urgency, scarcity, and incentive clarity. |
 | [Claim Substantiation Checker](../mcps/claim-substantiation-checker.md) | Scans marketing copy for factual and numeric claims requiring substantiation. |
 | [CMO Marketing Prover](../mcps/cmo-marketing-prover.md) | A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation. |
+| [Cohort Analysis](../mcps/cohort-analysis.md) | Analyze customer cohort behavior through retention curves, LTV, and decay rates. |
 | [Content Pillar Rotator](../mcps/content-pillar-rotator.md) | Automate content variety by rotating categories through a defined period while preventing repetition. |
 | [Content ROI Calculator](../mcps/content-roi-calculator.md) | Calculate production costs, attributed revenue, and profitability metrics for content marketing assets. |
 | [Conversion Funnel Copy Scorer](../mcps/conversion-funnel-copy-scorer.md) | Analyze marketing funnel stages for message match, friction words, and CTA alignment. |
 | [crm4 solution](../mcps/crm4-solution.md) | Italian lead management and call center CRM. |
 | [Crowdfunding Pitch Scorer](../mcps/crowdfunding-pitch-scorer.md) | Analyze crowdfunding campaign effectiveness using linguistic analysis of narrative ratio, rewards, and trust. |
+| [Customer Acquisition Cost Engine](../mcps/customer-acquisition-cost-engine.md) | Calculate blended CAC, channel-specific costs, and payback periods. |
+| [Customer Segmentation Value](../mcps/customer-segmentation-value.md) | Analyze segment-level unit economics, LTV, CAC, and prioritization. |
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |
 | [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |
 | [Douyin Engagement Algorithm](../mcps/douyin-engagement-algorithm.md) | Calculate precise video engagement scores and viral potential for Douyin and TikTok content. |
+| [Email Marketing Effectiveness](../mcps/email-marketing-effectiveness.md) | Calculate key email marketing KPIs and perform funnel analysis. |
 | [eSputnik](../mcps/esputnik.md) | Omnichannel marketing automation with eSputnik. |
 | [European CAC Analytics Engine](../mcps/european-cac-analytics-engine.md) | Calculate and optimize Customer Acquisition Costs (CAC) across European markets. |
 | [European Churn Analysis Engine](../mcps/european-churn-analysis-engine.md) | Calculates churn variation, drivers, and retention priorities across European markets. |
@@ -28,6 +33,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Influencer ROI Calculator](../mcps/influencer-roi-calculator.md) | Calculate the financial impact, EMV, and profitability of influencer marketing campaigns. |
 | [Instagram Engagement Predictor](../mcps/instagram-engagement-predictor.md) | Predict Instagram engagement rates and likes for the Singapore market. |
 | [Keyword Intent Classifier](../mcps/keyword-intent-classifier.md) | Categorize search keywords by intent, length, and marketing funnel stage. |
+| [Lead Conversion Funnel Analyzer](../mcps/lead-conversion-funnel-analyzer.md) | Analyze user journeys and identify drop-off points in your conversion funnel. |
 | [LinkedIn Engagement Scorer](../mcps/linkedin-engagement-scorer.md) | Quantify the effectiveness of LinkedIn post Call-to-Actions (CT0As) and engagement triggers in text. |
 | [LinkedIn Hashtag Strategy Validator](../mcps/linkedin-hashtag-strategy-validator.md) | Analyze LinkedIn hashtag usage for density, accessibility, and strategic positioning. |
 | [LinkedIn Link Penalty and Placement Analyzer](../mcps/linkedin-link-penalty-and-placement-analyzer.md) | Analyzes LinkedIn post text to identify external link placement risks and bypass phrase detection. |
@@ -40,6 +46,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Personalization Token Validator](../mcps/personalization-token-validator.md) | Validate syntax, fallback availability, and linguistic safety of dynamic merge fields in templates. |
 | [Persuasion Framework Scorer](../mcps/persuasion-framework-scorer.md) | Scans copy for structural and persuasive patterns using Cialdini's principles and copywriting frameworks. |
 | [Placer.ai](../mcps/placerai.md) | Access foot traffic analytics — track visit trends, demographics, and trade areas directly from any AI agent. |
+| [PPC Campaign Efficiency Analyzer](../mcps/ppc-campaign-efficiency-analyzer.md) | Calculates advanced PPC metrics including CTR, CPC, CPA, ROAS, and break-even thresholds. |
 | [Pricing Psychology Calculator](../mcps/pricing-psychology-calculator.md) | Analyze price presentation strategies like charm pricing, anchoring, and the decoy effect. |
 | [Product Description FAB Analyzer](../mcps/product-description-fab-analyzer.md) | Audit your product copy for Feature-Advantage-Benefit (FAB) structural integrity and persuasive impact. |
 | [Push Notification Optimizer](../mcps/push-notification-optimizer.md) | Validate mobile push notification copy for character limits, engagement, and efficiency. |
@@ -47,6 +54,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Review Response Template Scorer](../mcps/review-response-template-scorer.md) | Automated evaluation of business response quality, personalization, and tone alignment. |
 | [Sales Efficiency Calculator](../mcps/sales-efficiency-calculator.md) | Analyze SaaS unit economics, CAC payback periods, and budget reallocation potential across channels. |
 | [SEO Analyst Prover](../mcps/seo-analyst-prover.md) | A startup published 50 blog posts targeting 'high volume keywords.' Six months later: zero organic traffic. Why? Nobody checked indexation — 23 pages had noindex tags from staging. 12 pages cannibalized the same keyword. The site had 89 orphan pages with zero internal links. LCP was 4.8 seconds on mobile. And the 'high volume' keywords had KD 75 against DA 28. This tool forces five SEO axes: technical audit before content, keyword strategy with KD vs DA analysis, content clusters with information gain, backlink profile with competitor gap, and competitive positioning with share of voice. |
+| [SEO Traffic Forecast Engine](../mcps/seo-traffic-forecast-engine.md) | Predict organic traffic growth using keyword rankings, content velocity, and domain authority trends. |
 | [SEO Traffic Value Calculator](../mcps/seo-traffic-value-calculator.md) | Estimate the monetary worth of organic search traffic by converting keyword rankings and CTR into advertising spend equivalence. |
 | [SERP Snippet Previewer](../mcps/serp-snippet-previewer.md) | Simulate Google Desktop and Mobile search snippets with pixel-based truncation analysis. |
 | [SMS Marketing Compliance Checker](../mcps/sms-marketing-compliance-checker.md) | Validate SMS marketing copy for encoding efficiency, regulatory compliance, and link optimization. |
@@ -59,7 +67,6 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Twitter CTA and Engagement Scorer](../mcps/twitter-cta-and-engagement-scorer.md) | Analyze Twitter/X posts for engagement effectiveness, classifying CTAs and detecting algorithmic triggers. |
 | [Twitter Hashtag Strategy Validator](../mcps/twitter-hashtag-strategy-validator.md) | Analyze X (formerly Twitter) posts for hashtag optimization, accessibility, and strategic reach. |
 | [Upsell & Cross-sell Copy Analyzer](../mcps/upsell-cross-sell-copy-analyzer.md) | Analyze up-sell and cross-sell copy for economic clarity, product relevance, and linguistic friction. |
-| [Viral Coefficient Calculator](../mcps/viral-coefficient-calculator.md) | Calculate K-factor, growth status, and project user base expansion through viral loops. |
 | [Webinar Registration Copy Analyzer](../mcps/webinar-registration-copy-analyzer.md) | Audit webinar registration pages for conversion optimization potential. |
 | [Xiaohongshu (RED) Title Optimizer](../mcps/xiaohongshu-red-title-optimizer.md) | Transform base headlines into viral Xiaohongshu titles using weighted character counts and keyword density rules. |
 

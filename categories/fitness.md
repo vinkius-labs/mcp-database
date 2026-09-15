@@ -5,13 +5,17 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Balanced Rep Calibrator](../mcps/balanced-rep-calibrator.md) | Distribute total repetitions across sets uniformly to avoid small final sets. |
+| [Core Strength Surf Requirements](../mcps/core-strength-surf-requirements.md) | Biomechanical calculator for surfing core strength, endurance, and training load. |
 | [Drop Set Percentage Calculator](../mcps/drop-set-percentage-calculator.md) | Calculate exact weight reductions for consecutive drop sets. |
 | [Kiteboarding Session Estimator](../mcps/kiteboarding-session-estimator.md) | Predict physiological session limits, rest intervals, and hydration needs for kiteboarders. |
+| [Learning Curve Projection](../mcps/learning-curve-projection.md) | Predictive modeling for surfing skill progression. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate 1RM using multiple models and generate structured warm-up routines. |
+| [Paddle Power Calculator](../mcps/paddle-power-calculator.md) | Calculate mechanical power, energy expenditure, and efficiency for paddlers. |
 | [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Automate 12-week strength training schedules with safety-capped linear progression. |
 | [Pyramid Scheme Builder](../mcps/pyramid-scheme-builder.md) | Generate and compare training repetition sequences using pyramidal progression. |
 | [Splitboard Touring Efficiency](../mcps/splitboard-touring-efficiency.md) | Calculate touring time, calories burned, and optimal pacing for splitboard backcountry trips. |
 | [Sport-Specific Fitness Testing](../mcps/sport-specific-fitness-testing.md) | Generate standardized physical testing protocols, athletic benchmarks, and composite fitness scores for various sports. |
+| [Switch Riding Difficulty](../mcps/switch-riding-difficulty.md) | Calculate switch riding proficiency and practice requirements. |
 | [Target Rep Divider](../mcps/target-rep-divider.md) | Split total repetition targets into equal sets and identify remaining reps. |
 
 

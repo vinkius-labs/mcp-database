@@ -13,6 +13,8 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [Pipefy](../mcps/pipefy.md) | Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent. |
 | [Productive](../mcps/productive.md) | Manage your entire agency workflow via Productive — fetch budgets, analyze time entries, track deals, and monitor project health directly from any AI agent. |
 | [ProofHub](../mcps/proofhub.md) | Empower your AI agent to manage your ProofHub projects — list tasks, create to-dos, read discussions, and track timesheets instantly. |
+| [Sprint Velocity Trend](../mcps/sprint-velocity-trend.md) | Analyzes historical sprint performance to forecast capacity and identify velocity patterns. |
+| [Technical Debt Ratio Analyzer](../mcps/technical-debt-ratio-analyzer.md) | Calculates technical debt accumulation and provides strategic investment recommendations. |
 | [Venture Studio Timeline Planner](../mcps/venture-studio-timeline-planner.md) | Estimate venture launch timelines and identify critical bottlenecks. |
 
 

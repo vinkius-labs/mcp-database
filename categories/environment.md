@@ -4,6 +4,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Avalanche Risk Assessment](../mcps/avalanche-risk-assessment.md) | Evaluates snow stability and terrain hazards to determine avalanche danger levels. |
 | [Biodiversity Impact Assessment](../mcps/biodiversity-impact-assessment.md) | Assess ecological impacts from industrial operations using habitat and species data. |
 | [Indoor Air Quality Assessment](../mcps/indoor-air-quality-assessment.md) | Evaluates chemical laboratory safety through IAQ indexing and ventilation analysis. |
 | [Kite Line Tangle Risk Assessment](../mcps/kite-line-tangle-risk-assessment.md) | Predictive engine for calculating kite line entanglement probability. |

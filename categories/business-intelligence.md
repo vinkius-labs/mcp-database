@@ -40,6 +40,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [Enterprise QBR Effectiveness Engine](../mcps/enterprise-qbr-effectiveness-engine.md) | Quantify the business impact and operational quality of Quarterly Business Reviews. |
 | [Enterprise RFP Response Metrics](../mcps/enterprise-rfp-response-metrics.md) | Calculates RFP win rates, response efficiency, and strategic prioritization. |
 | [European Expansion Sequencing](../mcps/european-expansion-sequencing.md) | Determine the most efficient order for entering European markets by balancing economic opportunity against operational complexity. |
+| [Freemium Conversion Analytics](../mcps/freemium-conversion-analytics.md) | Quantify user transitions from free tiers to paid subscriptions using a multi-stage funnel model. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
 | [Infrastructure Market Analyzer](../mcps/infrastructure-market-analyzer.md) | Evaluates competitive landscape, concentration, and defensive moats in infrastructure markets. |
 | [Infrastructure Switching Cost Analysis](../mcps/infrastructure-switching-cost-analysis.md) | Quantify customer switching costs, retention drivers, and market moat strength. |
@@ -58,9 +59,12 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [OpenCorporates](../mcps/opencorporates.md) | Access the largest open database of companies — audit corporate records and officers via AI. |
 | [OpenEI](../mcps/openei.md) | US electricity rate intelligence — query utility rates by location, sector, and tariff via AI for solar and energy analysis. |
 | [Pike13](../mcps/pike13.md) | Manage classes, clients, staff, invoices, visits, and analytics for your Pike13-powered fitness studio through natural conversation. |
+| [Product-Market Fit Score Engine](../mcps/product-market-fit-score-engine.md) | Quantify product-market fit using Sean Ellis methodology and business metrics. |
 | [Risk Matrix Calculator](../mcps/risk-matrix-calculator.md) | Quantify risk levels using configurable assessment matrices. |
+| [Startup NPS Analysis Engine](../mcps/startup-nps-analysis-engine.md) | A specialized analytical engine for evaluating Net Promoter Score (NPS) health, statistical reliability, and segment performance. |
 | [TeamUp](../mcps/teamup.md) | Manage events, customers, coaches, memberships, and payments for your TeamUp-powered fitness studio through natural conversation. |
 | [Vendor Scorecard Calculator](../mcps/vendor-scorecard-calculator.md) | Calculate and monitor supplier performance using weighted metrics. |
+| [Viral Coefficient Calculator](../mcps/viral-coefficient-calculator.md) | Calculate viral growth, expansion multipliers, and time to scale. |
 
 
 ---

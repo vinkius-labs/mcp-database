@@ -5,6 +5,7 @@ Explore the open database of **recommendation** Model Context Protocol (MCP) ser
 | Tool Name | Description |
 |-----------|-------------|
 | [Snowboard Dimension Expert](../mcps/snowboard-dimension-expert.md) | Calculate optimal snowboard length, width, and effective edge based on rider profile. |
+| [Snowboard Flex Selection](../mcps/snowboard-flex-selection.md) | Calculates optimal snowboard stiffness, torsional profile, and dampening needs. |
 
 
 ---

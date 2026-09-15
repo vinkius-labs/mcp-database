@@ -26,6 +26,8 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Snow Density Loading](../mcps/snow-density-loading.md) | Calculate rider sinkage and flotation capacity based on snow properties. |
 | [Snowboard Detune Zone Calculator](../mcps/snowboard-detune-zone-calculator.md) | Calculate optimal edge detuning parameters to prevent edge catches during park riding. |
+| [Snowboard Weight Distribution & Float Calculator](../mcps/snowboard-weight-distribution-float-calculator.md) | Calculate weight distribution and powder flotation based on your snowboard setup. |
+| [Snowboard Width Selector](../mcps/snowboard-width-selector.md) | Calculate optimal snowboard waist width to prevent toe drag based on boot size and binding geometry. |
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
 | [Surfboard Buoyancy & Performance Engine](../mcps/surfboard-buoyancy-performance-engine.md) | Calculate surfboard buoyancy, paddle efficiency, and wave catch ability. |
 | [Surfboard Ding Repair Calculator](../mcps/surfboard-ding-repair-calculator.md) | Calculate exact resin, fiberglass, and curing time for surfboard repairs. |
@@ -34,6 +36,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Token Counter and Budget Enforcer](../mcps/token-counter-and-budget-enforcer.md) | Estimates token usage and enforces strict cumulative budget limits for AI agents. |
 | [Tool Output Truncator and Size Limiter](../mcps/tool-output-truncator-and-size-limiter.md) | Safely shrinks tool outputs to fit byte limits without breaking multi-byte characters. |
 | [Unit Fraction Simplifier](../mcps/unit-fraction-simplifier.md) | Decomposes decimal measurements into the simplest combination of standard volume and length units. |
+| [Wax Selection Guide](../mcps/wax-selection-guide.md) | Recommends specialized ski waxes based on real-time snow and environmental conditions. |
 | [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |
 
 

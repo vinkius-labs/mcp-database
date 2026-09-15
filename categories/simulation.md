@@ -28,6 +28,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Ollie Pop Height Simulator](../mcps/ollie-pop-height-simulator.md) | A biomechanical simulator for calculating skateboarding ollie jump performance. |
 | [Rail Approach Speed Calculator](../mcps/rail-approach-speed-calculator.md) | Physics-based engine to calculate rider velocity and speed loss on rail features. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
+| [Snowboard Effective Edge Calculator](../mcps/snowboard-effective-edge-calculator.md) | Calculate effective edge length, edge hold force, and turn stability for snowboards. |
 | [Snowboard Magnet Traction](../mcps/snowboard-magnet-traction.md) | Simulates edge bump effects on snowboard grip and carving performance. |
 | [Snowboard Pressure Distribution Simulator](../mcps/snowboard-pressure-distribution-simulator.md) | Simulates weight and pressure distribution on a snowboard based on rider physics and snow conditions. |
 | [Surfboard Rail Bite Calculator](../mcps/surfboard-rail-bite-calculator.md) | Calculate hydrodynamic rail hold, max lean angle, and drift thresholds for surfboard performance. |

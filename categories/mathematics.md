@@ -41,6 +41,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Projectile Trajectory Simulator](../mcps/projectile-trajectory-simulator.md) | Deterministic physics engine for precise projectile flight path simulation and target analysis. |
 | [Quest Branching Factor Calculator](../mcps/quest-branching-factor-calculator.md) | Quantify narrative complexity and state explosion in branching quest systems. |
 | [Sailing VMG Calculator](../mcps/sailing-vmg-calculator.md) | Deterministic sailing vector math and performance calculator for wind and speed analysis. |
+| [Slope Vertical Drop Calculator](../mcps/slope-vertical-drop-calculator.md) | Calculate vertical elevation changes, steepness, and terrain profiles. |
 | [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
 | [Swell Refraction Calculator](../mcps/swell-refraction-calculator.md) | Predict wave refraction, height changes, and breaking stability using Snell's and Green's Laws. |
 | [Synth FM Ratio Calculator](../mcps/synth-fm-ratio-calculator.md) | A deterministic FM synthesis engine for calculating harmonic ratios and sideband spectra. |

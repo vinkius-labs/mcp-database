@@ -5,6 +5,7 @@ Explore the open database of **sports-analytics** Model Context Protocol (MCP) s
 | Tool Name | Description |
 |-----------|-------------|
 | [Frontside Spin Mechanics Engine](../mcps/frontside-spin-mechanics-engine.md) | Analyze snowboarding and skiing spin physics, from takeoff dynamics to landing stability. |
+| [Video Analysis Metrics](../mcps/video-analysis-metrics.md) | Generates quantitative metrics from surf video analysis. |
 
 
 ---

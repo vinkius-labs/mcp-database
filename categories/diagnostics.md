@@ -4,6 +4,7 @@ Explore the open database of **diagnostics** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Snowboard Edge Maintenance Diagnostic](../mcps/snowboard-edge-maintenance-diagnostic.md) | Calculate edge sharpening needs, wear severity, and detune zones for snowboards. |
 | [Workflow Convergence Verifier](../mcps/workflow-convergence-verifier.md) | Monitors agentic workflows to detect stability, convergence, and infinite loops. |
 | [workflow-convergence-verifier](../mcps/workflow-convergence-verifier-1.md) | Analyzes agent workflows to detect stability, convergence, or infinite loops. |
 

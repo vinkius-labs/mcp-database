@@ -57,6 +57,8 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Stoichiometry Calculator](../mcps/stoichiometry-calculator.md) | Perform precise chemical stoichiometry calculations including limiting reagents and theoretical yields. |
 | [Structural Isomer Counter](../mcps/structural-isomer-counter.md) | Identify and count constitutional isomers for organic molecular formulas. |
 | [Study Abroad Cost Estimator](../mcps/study-abroad-cost-estimator.md) | Calculates a comprehensive budget for international studies in USD, EUR, and BRL. |
+| [Surf Coaching Certification Pathway Mapper](../mcps/surf-coaching-certification-pathway-mapper.md) | Maps professional development roadmaps for surf coaches by analyzing credentials and career goals. |
+| [Surf School Curriculum Designer](../mcps/surf-school-curriculum-designer.md) | Generates structured surf lesson plans, skill progression paths, and assessment rubrics. |
 | [Tarot Spread Structure Generator](../mcps/tarot-spread-structure-generator.md) | Provides deterministic structural blueprints for tarot spreads, including positions and reading sequences. |
 | [Transition Metal Chemistry Predictor](../mcps/transition-metal-chemistry-predictor.md) | Predict electronic, magnetic, and optical properties of transition metal complexes. |
 | [Verb Conjugation Engine](../mcps/verb-conjugation-engine.md) | Deterministic morphological engine for Romance language verb conjugation. |

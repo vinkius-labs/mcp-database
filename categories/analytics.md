@@ -9,6 +9,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Accelerator Pitch Deck Feedback Quality](../mcps/accelerator-pitch-deck-feedback-quality.md) | Analyze pitch deck improvement velocity and feedback effectiveness. |
 | [Accelerator Program Intensity Scorer](../mcps/accelerator-program-intensity-scorer.md) | Quantify operational pressure and burnout risk in startup accelerator programs. |
 | [Accelerator Program Optimizer](../mcps/accelerator-program-optimizer.md) | Optimize accelerator program lengths using startup performance and funding data. |
+| [Activation Rate Optimization](../mcps/activation-rate-optimization.md) | Analyze onboarding performance and identify friction points in the user journey. |
 | [Agent Benchmark Comparison Engine](../mcps/agent-benchmark-comparison-engine.md) | A deterministic engine for ranking and comparing LLM agents based on performance metrics. |
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
 | [AI Data Preparation Estimator](../mcps/ai-data-preparation-estimator.md) | Calculate data preparation costs, timelines, and quality impact. |
@@ -53,6 +54,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Leaching Kinetics Model](../mcps/leaching-kinetics-model.md) | Models metal leaching kinetics to determine rate constants, activation energy, and leach time predictions. |
 | [Leading-Lagging Indicators](../mcps/leading-lagging-indicators.md) | Track HSE safety performance using reactive lagging and proactive leading indicators. |
 | [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
+| [Lift Capacity & Timing Engine](../mcps/lift-capacity-timing-engine.md) | Calculate lift line wait times, optimal cycle durations, and daily operational capacity. |
 | [Limit of Detection Calculator](../mcps/limit-of-detection-calculator.md) | Calculate LOD, LOQ, and noise profiles using IUPAC-compliant statistical methods. |
 | [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |
 | [Maintenance Cost Analysis](../mcps/maintenance-cost-analysis.md) | Analyze mining equipment efficiency and maintenance reliability. |
@@ -78,6 +80,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
+| [Skill Level Assessment Tool](../mcps/skill-level-assessment-tool.md) | Objectively assess surfer proficiency, progression, and learning priorities. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Snowboard Rocker Profile Analyzer](../mcps/snowboard-rocker-profile-analyzer.md) | Predict snowboard performance metrics like float, edge grip, and terrain suitability based on rocker geometry. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |

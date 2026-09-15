@@ -43,6 +43,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [HSE Training Needs Analysis](../mcps/hse-training-needs-analysis.md) | Analyze HSE training requirements, competency gaps, and refresher schedules. |
 | [InfoVetted](../mcps/infovetted.md) | Screen and verify candidate backgrounds with employment checks, education verification, and criminal record searches. |
 | [Innform](../mcps/innform.md) | Train your team with an LMS that creates courses from your content, tracks completion, and gamifies the learning experience. |
+| [International Hiring Cost Modeler](../mcps/international-hiring-cost-modeler.md) | Model and compare the financial impact of hiring via EOR versus local entities. |
 | [iSpring Learn](../mcps/ispring-learn.md) | Train employees with a corporate LMS that delivers SCORM courses, tracks certifications, and generates compliance reports. |
 | [Jibble](../mcps/jibble.md) | Track time, attendance, and projects via Jibble API. |
 | [KeyPay](../mcps/keypay.md) | Manage payroll, employees, and pay runs via the Employment Hero Payroll (KeyPay) API. |
@@ -69,6 +70,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [Rippling](../mcps/rippling.md) | Manage your workforce via Rippling — list employees, update profiles, and manage departments directly from any AI agent. |
 | [Salary.com API](../mcps/salarycom-api.md) | Access salary benchmarks — audit compensation and jobs via AI. |
 | [SmartHR](../mcps/smarthr.md) | Empower your AI to manage employee records, organizational structures, and payrolls directly from your SmartHR workspace. |
+| [Startup Employee Retention Analytics](../mcps/startup-employee-retention-analytics.md) | Analyze workforce stability, turnover trends, and equity-driven churn risk. |
 | [Talexio](../mcps/talexio.md) | Manage HR and payroll for Mediterranean businesses with employee onboarding, leave tracking, and local compliance built in. |
 | [VolunteerHub](../mcps/volunteerhub.md) | Coordinate volunteers with event sign-ups, hour tracking, and communication tools built for nonprofits and community organizations. |
 

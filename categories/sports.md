@@ -7,12 +7,19 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 | [Billiards Cut Angle Calculator](../mcps/billiards-cut-angle-calculator.md) | Deterministic geometry engine for precision pool and billiards shot mechanics. |
 | [Binding Angle Setup](../mcps/binding-angle-setup.md) | Calculates optimal snowboard binding angles based on riding style and biomechanics. |
 | [Binding Stance Optimizer](../mcps/binding-stance-optimizer.md) | Calculates optimal snowboard binding width, angles, and setback based on rider anatomy. |
+| [Butter Trick Mechanics](../mcps/butter-trick-mechanics.md) | Physics-based calculations for snowboarding butter tricks. |
 | [Caballerial Rotation Speed](../mcps/caballerial-rotation-speed.md) | Calculates technical rotation requirements and landing stability for caballerial-style skateboarding maneuvers. |
+| [Carve Turn Radius Physics](../mcps/carve-turn-radius-physics.md) | Physics-based calculator for snowboard carving mechanics and performance. |
+| [Halfpipe Velocity Entry](../mcps/halfpipe-velocity-entry.md) | Calculate precise entry speeds, pump timing, and exit velocities for halfpipe riding. |
+| [Junior Surfer Development Pathway](../mcps/junior-surfer-development-pathway.md) | Generates structured athletic progression routes for junior surfers using the LTAD model. |
 | [Kite Festival Scoring Engine](../mcps/kite-festival-scoring-engine.md) | Calculates competition scores, weighted results, and athlete rankings for kite flying events. |
+| [Pop-Up Mechanics Analysis](../mcps/pop-up-mechanics-analysis.md) | Biomechanical analysis of surfing pop-up efficiency. |
 | [Pop-Up Mechanics Analyzer](../mcps/pop-up-mechanics-analyzer.md) | Calculate the explosive force and power required for a surfer's pop-up maneuver. |
 | [Power Stroke Duration](../mcps/power-stroke-duration.md) | Calculate optimal kite power stroke metrics and maneuver stability. |
 | [Snowboard Running Length Calculator](../mcps/snowboard-running-length-calculator.md) | Calculate effective running length, float zone, and edge engagement for snowboards. |
+| [Snowboard Spin Physics](../mcps/snowboard-spin-physics.md) | Calculate pre-rotation, timing, and difficulty for snowboard aerial spins. |
 | [Spin Landing Timing](../mcps/spin-landing-timing.md) | Calculate precise spin initiation and landing milestones for aerial rotations. |
+| [Surf Technique Breakdown](../mcps/surf-technique-breakdown.md) | Decompose surfing maneuvers into technical phases and body checkpoints. |
 | [Switch Carve Difficulty Analyzer](../mcps/switch-carve-difficulty-analyzer.md) | Quantify the physical and technical complexity of switch carving maneuvers. |
 | [Tuck Speed Optimizer](../mcps/tuck-speed-optimizer.md) | Optimize rider aerodynamics using precise tuck angle modeling. |
 | [Water Start Power](../mcps/water-start-power.md) | Calculate the physical requirements and timing for a successful kitesurfing water start. |

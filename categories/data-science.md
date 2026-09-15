@@ -4,6 +4,7 @@ Explore the open database of **data-science** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Aha Moment Identification](../mcps/aha-moment-identification.md) | Identify the specific user behaviors that correlate most strongly with long-term retention. |
 | [BM25 Context Relevance Scorer](../mcps/bm25-context-relevance-scorer.md) | Deterministic BM25 relevance scoring engine for RAG optimization. |
 | [Drill Hole Compositing](../mcps/drill-hole-compositing.md) | Standardize irregular assay data into uniform intervals for geological modeling. |
 | [Pressure Buildup Analysis Engine](../mcps/pressure-buildup-analysis-engine.md) | Analytical engine for evaluating reservoir performance through pressure buildup test data. |

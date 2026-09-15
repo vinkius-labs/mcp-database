@@ -141,6 +141,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Loop Subscriptions](../mcps/loop-subscriptions.md) | Subscription management for Shopify — manage recurring orders and customers via Loop. |
 | [Loyverse](../mcps/loyverse.md) | Free POS and inventory management system. |
 | [MailboxPower](../mcps/mailboxpower.md) | Delight contacts with personalized physical gifts, greeting cards, and direct mail sent automatically from your CRM. |
+| [Marketplace Liquidity Engine](../mcps/marketplace-liquidity-engine.md) | Analyze marketplace health with real-time liquidity metrics. |
 | [Marketplacer (Enterprise Marketplace Platform)](../mcps/marketplacer-enterprise-marketplace-platform.md) | Manage your enterprise marketplace via Marketplacer — list products, track orders, and audit seller networks. |
 | [Maropost](../mcps/maropost.md) | Automate marketing and commerce via Maropost — manage contacts, campaigns, and workflows. |
 | [Memberstack](../mcps/memberstack.md) | Member authentication and user management via Memberstack — manage members, plans, and custom fields. |

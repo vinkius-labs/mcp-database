@@ -11,8 +11,13 @@ Explore the open database of **product-management** Model Context Protocol (MCP)
 | [AI Feature Onboarding Analyzer](../mcps/ai-feature-onboarding-analyzer.md) | Analyze AI feature adoption efficiency using funnel metrics and TTV analysis. |
 | [AI Improvement Velocity Tracker](../mcps/ai-improvement-velocity-tracker.md) | Quantify the speed and effectiveness of your AI model improvement cycles. |
 | [Cohort Retention Analytics](../mcps/cohort-retention-analytics.md) | Analyze cohort retention curves, average user lifetime, and benchmark performance against industry standards. |
+| [Feature Adoption Analytics](../mcps/feature-adoption-analytics.md) | Quantify feature success through adoption velocity, saturation estimates, and retention impact modeling. |
+| [North Star Metric Derivation](../mcps/north-star-metric-derivation.md) | Decompose high-level value into a structured North Star Metric hierarchy. |
+| [Product Usage & Engagement Engine](../mcps/product-usage-engagement-engine.md) | Analyze product stickiness, engagement scores, and user retention correlations. |
 | [Product-Market Fit Diagnostic Engine](../mcps/product-market-fit-diagnostic-engine.md) | Evaluates product maturity and market resonance using retention, sentiment, and growth signals. |
 | [Retention Curve Analyzer](../mcps/retention-curve-analyzer.md) | Analyze cohort retention curves to identify stability versus churn and compare against industry benchmarks. |
+| [Startup Feature Prioritization](../mcps/startup-feature-prioritization.md) | Prioritize product features using the RICE framework. |
+| [Startup Onboarding Effectiveness](../mcps/startup-onboarding-effectiveness.md) | Quantify onboarding success by analyzing speed to value, completion rates, and retention. |
 | [User Research ROI Calculator](../mcps/user-research-roi-calculator.md) | Calculate the economic return and strategic value of user research investments. |
 
 

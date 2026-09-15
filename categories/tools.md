@@ -7,6 +7,7 @@ Explore the open database of **tools** Model Context Protocol (MCP) servers.
 | [Archery FOC & Ballistics Calculator](../mcps/archery-foc-ballistics-calculator.md) | Calculate arrow FOC, mass, ballistic energy, and spine impact. |
 | [Board Ding Repair Assistant](../mcps/board-ding-repair-assistant.md) | Calculate repair methods, material needs, and water damage risks for surfboards. |
 | [Ceramic Shrinkage & Glaze Calculator](../mcps/ceramic-shrinkage-glaze-calculator.md) | Calculate precise wet clay dimensions and glaze requirements for ceramic production. |
+| [Snowboard Base Repair Assistant](../mcps/snowboard-base-repair-assistant.md) | Assess snowboard base damage and get detailed repair plans. |
 
 
 ---

@@ -4,6 +4,7 @@ Explore the open database of **accessibility** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Adaptive Surfing Equipment Recommender](../mcps/adaptive-surfing-equipment-recommender.md) | Tailored equipment recommendations for adaptive surfers based on physical profiles and goals. |
 | [AI Feature Accessibility Scorer](../mcps/ai-feature-accessibility-scorer.md) | Assess accessibility health for AI features using WCAG standards. |
 | [Image SEO Auditor](../mcps/image-seo-auditor.md) | Automated analysis of image metadata to identify SEO and accessibility violations. |
 | [Microcopy UX Friction Analyzer](../mcps/microcopy-ux-friction-analyzer.md) | Audit UX microcopy for clarity, friction, and actionability. |
