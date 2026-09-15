@@ -6,6 +6,7 @@ Explore the open database of **meteorology** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Kite Wind Gradient Calculator](../mcps/kite-wind-gradient-calculator.md) | Calculate wind speed increases and power gains at different kite altitudes. |
 | [Snow Crystal Structure Analyzer](../mcps/snow-crystal-structure-analyzer.md) | Predict snow crystal morphology, friction, and riding quality. |
+| [Wave Height Predictor](../mcps/wave-height-predictor.md) | Predict significant wave height, period, and energy using SMB equations. |
 | [Wind Gradient Effect](../mcps/wind-gradient-effect.md) | Calculate wind speed variation with height using logarithmic profiles. |
 | [Wind Lull Predictor](../mcps/wind-lull-predictor.md) | Predict wind lull duration, minimum speeds, and recovery timing. |
 

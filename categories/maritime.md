@@ -9,6 +9,7 @@ Explore the open database of **maritime** Model Context Protocol (MCP) servers.
 | [Self-Rescue Distance](../mcps/self-rescue-distance.md) | Assess kiteboarding self-rescue capability and drift risk. |
 | [Terminal Spill Response Plan](../mcps/terminal-spill-response-plan.md) | Develop oil spill response plans by modeling discharge scenarios, environmental risk, and resource deployment. |
 | [Wave Peak Tracking](../mcps/wave-peak-tracking.md) | Calculate wave peak displacement, set direction, and stability forecasts. |
+| [Wave Period Calculator](../mcps/wave-period-calculator.md) | Calculates wave period characteristics including peak, significant, and distribution data. |
 
 
 ---

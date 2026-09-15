@@ -68,6 +68,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Twitter Hashtag Strategy Validator](../mcps/twitter-hashtag-strategy-validator.md) | Analyze X (formerly Twitter) posts for hashtag optimization, accessibility, and strategic reach. |
 | [Upsell & Cross-sell Copy Analyzer](../mcps/upsell-cross-sell-copy-analyzer.md) | Analyze up-sell and cross-sell copy for economic clarity, product relevance, and linguistic friction. |
 | [Webinar Registration Copy Analyzer](../mcps/webinar-registration-copy-analyzer.md) | Audit webinar registration pages for conversion optimization potential. |
+| [WhatsApp Channels](../mcps/whatsapp-channels.md) | Post text and media to WhatsApp Channels from any AI agent — create channels, publish posts, search public channels and read their feed. |
 | [Xiaohongshu (RED) Title Optimizer](../mcps/xiaohongshu-red-title-optimizer.md) | Transform base headlines into viral Xiaohongshu titles using weighted character counts and keyword density rules. |
 
 

@@ -15,6 +15,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 | [Groundwater Contamination Modeler](../mcps/groundwater-contamination-modeler.md) | Predicts hydrocarbon plume migration, contaminant concentrations, and remediation needs. |
 | [Groundwater Recharge Estimator](../mcps/groundwater-recharge-estimator.md) | Estimates groundwater recharge and well yield impacts using water balance and mass balance methods. |
 | [Hay Drying Model](../mcps/hay-drying-model.md) | Predicts hay drying rates, baling windows, and rain damage risks. |
+| [Impact Zone Velocity](../mcps/impact-zone-velocity.md) | Calculates water velocity, acceleration, and impact force in wave impact zones. |
 | [Infiltration Rate Estimator](../mcps/infiltration-rate-estimator.md) | Estimates soil infiltration rates and runoff risks using physical soil properties. |
 | [Life Cycle Assessment Simplified](../mcps/life-cycle-assessment-simplified.md) | Perform simplified life cycle assessments for chemical products to identify environmental impacts and hotspots. |
 | [Manure Nutrient Calculator](../mcps/manure-nutrient-calculator.md) | Calculate plant-available nutrients and environmental risks from manure applications. |

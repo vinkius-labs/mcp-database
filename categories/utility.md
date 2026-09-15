@@ -11,6 +11,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Cake Serving Sizer](../mcps/cake-serving-sizer.md) | Calculate exact cake tier combinations and serving yields using Wilton standards. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
+| [Duck Dive Depth Calculator](../mcps/duck-dive-depth-calculator.md) | Calculate required dive depth, timing, and effort for successful duck dives. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
@@ -35,6 +36,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Timelapse Calculator](../mcps/timelapse-calculator.md) | Plan precise timelapse sequences, storage needs, and golden hour windows. |
 | [Token Counter and Budget Enforcer](../mcps/token-counter-and-budget-enforcer.md) | Estimates token usage and enforces strict cumulative budget limits for AI agents. |
 | [Tool Output Truncator and Size Limiter](../mcps/tool-output-truncator-and-size-limiter.md) | Safely shrinks tool outputs to fit byte limits without breaking multi-byte characters. |
+| [Tube Ride Duration Calculator](../mcps/tube-ride-duration-calculator.md) | Estimate tube ride duration, speed requirements, and exit windows using wave dynamics. |
 | [Unit Fraction Simplifier](../mcps/unit-fraction-simplifier.md) | Decomposes decimal measurements into the simplest combination of standard volume and length units. |
 | [Wax Selection Guide](../mcps/wax-selection-guide.md) | Recommends specialized ski waxes based on real-time snow and environmental conditions. |
 | [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |

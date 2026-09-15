@@ -36,6 +36,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Petrochemical Utilities Balance](../mcps/petrochemical-utilities-balance.md) | Calculate steam, power, and utility equilibrium for petrochemical complexes. |
 | [Polygon Budget Allocator](../mcps/polygon-budget-allocator.md) | Optimize game performance with deterministic polygon budget distribution and resource modeling. |
 | [Prefix Cache Savings Calculator](../mcps/prefix-cache-savings-calculator.md) | Calculate exact token savings from LLM prefix caching. |
+| [Quad Fin Configuration Optimizer](../mcps/quad-fin-configuration-optimizer.md) | Optimize quad fin setups using hydrodynamic calculations for specific wave and board profiles. |
 | [RAG Chunk Optimization Calculator](../mcps/rag-chunk-optimization-calculator.md) | Deterministic tool for optimizing RAG chunk size and overlap parameters. |
 | [RAG Chunk Selection Optimizer](../mcps/rag-chunk-selection-optimizer.md) | A deterministic engine to select the most effective RAG information chunks within token budgets. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
@@ -48,6 +49,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Tick Rate & Bandwidth Calculator](../mcps/tick-rate-bandwidth-calculator.md) | Calculate multiplayer network load, stability, and optimal server configurations. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
+| [Traction Pad Positioning Optimizer](../mcps/traction-pad-positioning-optimizer.md) | Calculates precise surfboard traction pad placement, arch geometry, and kick angles. |
 | [Underground Production Scheduler](../mcps/underground-production-scheduler.md) | Optimize mining sequences, development schedules, and resource allocation for underground mines. |
 | [Wave Period Matching](../mcps/wave-period-matching.md) | Synchronize kiteboarding tricks with wave energy and wind gusts. |
 | [Woodworking Cut List Optimizer](../mcps/woodworking-cut-list-optimizer.md) | Minimize lumber waste with deterministic 1D bin packing for cutting plans. |

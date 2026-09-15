@@ -10,6 +10,8 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 | [Butter Trick Mechanics](../mcps/butter-trick-mechanics.md) | Physics-based calculations for snowboarding butter tricks. |
 | [Caballerial Rotation Speed](../mcps/caballerial-rotation-speed.md) | Calculates technical rotation requirements and landing stability for caballerial-style skateboarding maneuvers. |
 | [Carve Turn Radius Physics](../mcps/carve-turn-radius-physics.md) | Physics-based calculator for snowboard carving mechanics and performance. |
+| [Current Strength Predictor](../mcps/current-strength-predictor.md) | Predict water movement, rip currents, and drift at surf breaks. |
+| [Cutback Trajectory Calculator](../mcps/cutback-trajectory-calculator.md) | Calculates optimal cutback points, turn radii, and re-entry angles for surfers. |
 | [Halfpipe Velocity Entry](../mcps/halfpipe-velocity-entry.md) | Calculate precise entry speeds, pump timing, and exit velocities for halfpipe riding. |
 | [Junior Surfer Development Pathway](../mcps/junior-surfer-development-pathway.md) | Generates structured athletic progression routes for junior surfers using the LTAD model. |
 | [Kite Festival Scoring Engine](../mcps/kite-festival-scoring-engine.md) | Calculates competition scores, weighted results, and athlete rankings for kite flying events. |
@@ -19,11 +21,15 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 | [Snowboard Running Length Calculator](../mcps/snowboard-running-length-calculator.md) | Calculate effective running length, float zone, and edge engagement for snowboards. |
 | [Snowboard Spin Physics](../mcps/snowboard-spin-physics.md) | Calculate pre-rotation, timing, and difficulty for snowboard aerial spins. |
 | [Spin Landing Timing](../mcps/spin-landing-timing.md) | Calculate precise spin initiation and landing milestones for aerial rotations. |
+| [Surf Photography Positioning](../mcps/surf-photography-positioning.md) | Determine optimal camera placement, distance, and timing for surf photography. |
 | [Surf Technique Breakdown](../mcps/surf-technique-breakdown.md) | Decompose surfing maneuvers into technical phases and body checkpoints. |
 | [Switch Carve Difficulty Analyzer](../mcps/switch-carve-difficulty-analyzer.md) | Quantify the physical and technical complexity of switch carving maneuvers. |
+| [Tides Effect Calculator](../mcps/tides-effect-calculator.md) | Predict wave quality and current strength based on tidal movement and bathymetry. |
 | [Tuck Speed Optimizer](../mcps/tuck-speed-optimizer.md) | Optimize rider aerodynamics using precise tuck angle modeling. |
 | [Water Start Power](../mcps/water-start-power.md) | Calculate the physical requirements and timing for a successful kitesurfing water start. |
+| [Wave Forecast Interpreter](../mcps/wave-forecast-interpreter.md) | Translates raw oceanographic data into actionable surf conditions. |
 | [Wave Jump Timing](../mcps/wave-jump-timing.md) | Calculate optimal launch points, timing windows, and boost potential for kite surfing jumps. |
+| [Wave Riding Speed Calculator](../mcps/wave-riding-speed-calculator.md) | Calculate peak, average, and sectional wave riding speeds based on wave physics and board dynamics. |
 | [Wave Section Speed Predictor](../mcps/wave-section-speed-predictor.md) | Predictive modeling for surfer velocity and timing to navigate wave sections. |
 | [Wave-Current Combined](../mcps/wave-current-combined.md) | Calculates the combined influence of wave and current velocities on surf conditions. |
 | [Wind Window Analysis](../mcps/wind-window-analysis.md) | Analyze wind window geometry, power zones, and optimal kite positioning. |

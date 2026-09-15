@@ -48,6 +48,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |
 | [Vector Similarity Threshold Enforcer](../mcps/vector-similarity-threshold-enforcer.md) | Compute exact vector similarity scores and enforce strict relevance thresholds for RAG pipelines. |
 | [Wave Face Angle & Barrel Geometry Calculator](../mcps/wave-face-angle-barrel-geometry-calculator.md) | Calculate wave face angles, barrel potential, wave speed, and ride duration. |
+| [Wave Shoaling Calculator](../mcps/wave-shoaling-calculator.md) | Calculates wave height changes and shoaling coefficients as waves approach shallow water. |
 | [Waveform Generator](../mcps/waveform-generator.md) | Generate high-fidelity digital audio waveforms and noise profiles. |
 | [Weaving Warp & Weft Calculator](../mcps/weaving-warp-weft-calculator.md) | Calculate precise warp and weft yarn requirements for loom weaving. |
 | [Woodturning Speed Calculator](../mcps/woodturning-speed-calculator.md) | Deterministic RPM and surface speed calculations for safe woodturning. |

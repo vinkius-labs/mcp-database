@@ -4,8 +4,10 @@ Explore the open database of **hydrodynamics** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Fin Setup Optimizer](../mcps/fin-setup-optimizer.md) | Optimize your surfboard fin configuration for any wave condition. |
 | [Hydrofoil Risk Assessment Engine](../mcps/hydrofoil-risk-assessment-engine.md) | Predict and mitigate ventilation and cavitation risks for hydrofoil vessels. |
 | [Kite Recovery Assistant](../mcps/kite-recovery-assistant.md) | Calculates recovery probability, techniques, and time estimates for inverted kites. |
+| [Planing Surface Area Calculator](../mcps/planing-surface-area-calculator.md) | Calculate hydrodynamic planing metrics, stability, and rocker impact for boards. |
 | [Twintip Rocker Line Analyzer](../mcps/twintip-rocker-line-analyzer.md) | Analyze how board rocker affects planing, speed thresholds, and chop handling. |
 
 

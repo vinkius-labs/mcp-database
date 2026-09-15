@@ -15,7 +15,10 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Singapore MRT Delay Compensation Calculator](../mcps/singapore-mrt-delay-compensation-calculator.md) | Determine eligibility for MRT delay compensation based on official transit rules. |
 | [Surf Camp Selection Tool](../mcps/surf-camp-selection-tool.md) | Find and rank the perfect surf camps based on your skill, budget, and goals. |
 | [Surf Destination Profile Matcher](../mcps/surf-destination-profile-matcher.md) | Find your perfect surf spot using deterministic profile matching. |
+| [Surf Travel Carbon Footprint](../mcps/surf-travel-carbon-footprint.md) | Quantify and mitigate the carbon footprint of your surf trips. |
 | [Surf Trip Car Packing Optimizer](../mcps/surf-trip-car-packing-optimizer.md) | Calculate if your surfboards will fit in your vehicle trunk using nesting efficiency logic. |
+| [Surfability Index Calculator](../mcps/surfability-index-calculator.md) | Quantifies surf quality using environmental and social variables. |
+| [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
 | [Visa Requirement Checker](../mcps/visa-requirement-checker.md) | Check visa requirements, travel advisories, and passport validity rules globally. |
 

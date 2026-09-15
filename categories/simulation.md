@@ -10,6 +10,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Board Carve Radius Engine](../mcps/board-carve-radius-engine.md) | Physics-driven engine for calculating surfboard turning mechanics, G-forces, and spray patterns. |
 | [Board Speed Calculation Engine](../mcps/board-speed-calculation-engine.md) | Simulate terminal velocity and acceleration for kiteboarding equipment. |
 | [Board Speed Record Simulator](../mcps/board-speed-record-simulator.md) | Calculate theoretical maximum speeds for kitefoiling and kiteboarding setups. |
+| [Bottom Turn Mechanics](../mcps/bottom-turn-mechanics.md) | Analyze surfing bottom turn physics, G-forces, and board suitability. |
 | [Cork Spin Physics Engine](../mcps/cork-spin-physics-engine.md) | Calculate 3D rotational dynamics for off-axis cork spins in freestyle sports. |
 | [Edge Latency Simulator](../mcps/edge-latency-simulator.md) | Estimates network latency for edge-computing deployment scenarios using geographic distance heuristics. |
 | [Foil Breach Recovery Dynamics](../mcps/foil-breach-recovery-dynamics.md) | Simulate hydrofoil breach physics and calculate recovery success. |
@@ -26,6 +27,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 | [Kite Sheeting Pressure Engine](../mcps/kite-sheeting-pressure-engine.md) | Calculates bar pressure, steering force, and feedback stability for kiteboarding. |
 | [MTBE Production Plant Designer](../mcps/mtbe-production-plant-designer.md) | Chemical engineering simulation for MTBE synthesis and reactor design. |
 | [Ollie Pop Height Simulator](../mcps/ollie-pop-height-simulator.md) | A biomechanical simulator for calculating skateboarding ollie jump performance. |
+| [Priority Rule Simulation](../mcps/priority-rule-simulation.md) | Simulates competitive surfing priority, right-of-way, and tactical positioning. |
 | [Rail Approach Speed Calculator](../mcps/rail-approach-speed-calculator.md) | Physics-based engine to calculate rider velocity and speed loss on rail features. |
 | [Rider Impact Velocity Engine](../mcps/rider-impact-velocity-engine.md) | High-precision kinematic engine for calculating water impact profiles. |
 | [Snowboard Effective Edge Calculator](../mcps/snowboard-effective-edge-calculator.md) | Calculate effective edge length, edge hold force, and turn stability for snowboards. |

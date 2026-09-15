@@ -11,6 +11,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | [Learning Curve Projection](../mcps/learning-curve-projection.md) | Predictive modeling for surfing skill progression. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate 1RM using multiple models and generate structured warm-up routines. |
 | [Paddle Power Calculator](../mcps/paddle-power-calculator.md) | Calculate mechanical power, energy expenditure, and efficiency for paddlers. |
+| [Paddle Speed Calculator](../mcps/paddle-speed-calculator.md) | Predict paddling speed, catch rates, and wave count potential for surfboards. |
 | [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Automate 12-week strength training schedules with safety-capped linear progression. |
 | [Pyramid Scheme Builder](../mcps/pyramid-scheme-builder.md) | Generate and compare training repetition sequences using pyramidal progression. |
 | [Splitboard Touring Efficiency](../mcps/splitboard-touring-efficiency.md) | Calculate touring time, calories burned, and optimal pacing for splitboard backcountry trips. |

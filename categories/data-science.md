@@ -10,6 +10,7 @@ Explore the open database of **data-science** Model Context Protocol (MCP) serve
 | [Pressure Buildup Analysis Engine](../mcps/pressure-buildup-analysis-engine.md) | Analytical engine for evaluating reservoir performance through pressure buildup test data. |
 | [Signal Filter Designer](../mcps/signal-filter-designer.md) | Apply digital filters like low-pass, high-pass, SMA, EMA, and Peaking EQ to signal arrays. |
 | [String Similarity Batch](../mcps/string-similarity-batch.md) | High-performance string similarity computations for batch processing of large text arrays using algorithms like Levenshtein and Jaro-Winkler. |
+| [Surf Forecast Accuracy Diagnostic](../mcps/surf-forecast-accuracy-diagnostic.md) | Evaluate surf forecast precision by comparing predicted wave conditions against real-world observations. |
 | [Variogram Modeling Analysis](../mcps/variogram-modeling-analysis.md) | Compute experimental variograms and fit spatial continuity models. |
 | [Wine Color Extraction Model](../mcps/wine-color-extraction-model.md) | Models anthocyanin extraction and color stability during red wine fermentation. |
 

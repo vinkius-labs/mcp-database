@@ -13,9 +13,13 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | [Kite Wind Window Analyzer](../mcps/kite-wind-window-analyzer.md) | Calculates effective wind window area and power zone dynamics using spherical cap geometry. |
 | [Slope Aspect Effect](../mcps/slope-aspect-effect.md) | Calculates snow stability and solar/wind exposure based on terrain aspect. |
 | [Spot Hazard Rating](../mcps/spot-hazard-rating.md) | Quantify kitesurfing environmental risks and safety. |
+| [Surf Break Classifier](../mcps/surf-break-classifier.md) | Classifies surf break types and predicts wave quality based on bathymetry and swell conditions. |
+| [Surf Break Conservation Impact](../mcps/surf-break-conservation-impact.md) | Assess environmental impacts on surf breaks from coastal development. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
 | [Wave Riding Angle](../mcps/wave-riding-angle.md) | Calculate optimal approach angles, section speeds, and air time potential for surfing. |
+| [Wax Application Pattern Optimizer](../mcps/wax-application-pattern-optimizer.md) | Determine the ideal wax type, layer count, and re-application timing based on water and air temperatures. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |
+| [Wetsuit Thickness Calculator](../mcps/wetsuit-thickness-calculator.md) | Determine optimal neoprene thickness for thermal comfort. |
 | [Wind Direction & Beach Orientation Analyzer](../mcps/wind-direction-beach-orientation-analyzer.md) | Analyze wind conditions and beach orientation to determine surfing suitability. |
 
 

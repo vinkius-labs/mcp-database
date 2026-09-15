@@ -13,6 +13,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Chope Tissue Optimization](../mcps/chope-tissue-optimization.md) | Deterministic strategy calculator for optimizing table reservations in food courts. |
 | [Dating App Success Predictor](../mcps/dating-app-success-predictor.md) | Predict dating app engagement and match timelines in Singapore. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
+| [Drop Angle Calculator](../mcps/drop-angle-calculator.md) | Calculate optimal takeoff angles, speeds, and positioning for surfing based on wave physics. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
@@ -35,6 +36,8 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Surf Equipment Sizing for Youth](../mcps/surf-equipment-sizing-for-youth.md) | Calculates surfboard dimensions, volume, and wetsuit sizes for youth surfers based on growth and skill. |
 | [Surf Wax Consumption Estimator](../mcps/surf-wax-consumption-estimator.md) | Calculate surfboard deck area and monthly wax requirements based on water temperature. |
+| [Surfboard Dimension Guide](../mcps/surfboard-dimension-guide.md) | Get precise surfboard dimensions based on your height, weight, skill, and wave conditions. |
+| [Surfboard Volume Calculator](../mcps/surfboard-volume-calculator.md) | Calculate optimal surfboard volume, distribution, and buoyancy based on surfer profile and wave conditions. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
 | [Tattoo Time Estimator](../mcps/tattoo-time-estimator.md) | Calculate tattoo session duration, number of appointments, and healing time. |
 | [Valid Outfit Generator](../mcps/valid-outfit-generator.md) | Calculate and sample valid clothing combinations based on formality consistency rules. |

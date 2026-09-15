@@ -986,6 +986,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wallabag (Pocket Alternative)](../mcps/wallabag-pocket-alternative.md) | Manage your self-hosted read-it-later list — save URLs, organize with tags, and retrieve article content directly from your AI agent. |
 | [Warehouse Picking Productivity Calculator](../mcps/warehouse-picking-productivity-calculator.md) | Measure warehouse picking efficiency, error rates, and operational costs. |
 | [Wave Accounting](../mcps/wave-accounting.md) | Manage customers, invoices, and accounting workflows on Wave — the money management tool for small businesses. |
+| [Wave Count Predictor](../mcps/wave-count-predictor.md) | Predict wave counts, wait times, and optimal lineup positioning for surfing sessions. |
 | [Weighted Average Calculator](../mcps/weighted-average-calculator.md) | Predict academic performance and calculate required grades to pass subjects. |
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |
 | [WHOOP](../mcps/whoop.md) | Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent. |

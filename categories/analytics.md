@@ -37,6 +37,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Catalyst Lifetime Prediction](../mcps/catalyst-lifetime-prediction.md) | Predict catalyst operational lifespan and deactivation kinetics. |
+| [Combination Score Analysis](../mcps/combination-score-analysis.md) | Analyze two-wave scoring potential, calculate backup requirements, and predict winning outcomes. |
+| [Competition Heat Strategy](../mcps/competition-heat-strategy.md) | Optimized heat strategies for professional surfing competitions. |
 | [Conductivity Measurement Analysis](../mcps/conductivity-measurement-analysis.md) | Analyze electrolyte properties including molar conductivity and dissociation. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
@@ -46,6 +48,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
+| [Heat Remaining Time Management](../mcps/heat-remaining-time-management.md) | Strategic analysis of competition heat status, wave urgency, and performance risk. |
 | [Image Generation Economics](../mcps/image-generation-economics.md) | Calculate image generation costs, storage scaling, and quality-cost trade-offs. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
@@ -78,6 +81,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Refinery Utility Balancer](../mcps/refinery-utility-balancer.md) | Analyze and balance refinery utility supplies including steam, power, water, and air. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
+| [Scoring Potential Calculator](../mcps/scoring-potential-calculator.md) | Estimates competitive scoring potential by analyzing wave quality and maneuver execution. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
 | [Skill Level Assessment Tool](../mcps/skill-level-assessment-tool.md) | Objectively assess surfer proficiency, progression, and learning priorities. |
@@ -86,11 +90,14 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
+| [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Waste Minimization Analysis](../mcps/waste-minimization-analysis.md) | Analyze waste generation, reduction opportunities, and recycling potential using the waste hierarchy. |
+| [Wave Catching Efficiency](../mcps/wave-catching-efficiency.md) | Analyze wave catching probability and technical takeoff windows. |
+| [Wave-Selection-Priority](../mcps/wave-selection-priority.md) | Determine surfer priority, optimal takeoff zones, and wave-sharing potential. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
 | [Wellbore Cleaning Efficiency](../mcps/wellbore-cleaning-efficiency.md) | Evaluates hole cleaning effectiveness and cuttings transport efficiency. |
 | [Wine Redox Stability Diagnostic](../mcps/wine-redox-stability-diagnostic.md) | Analyzes redox potential and chemical fault risks in wine. |

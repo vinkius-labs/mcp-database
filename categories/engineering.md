@@ -103,8 +103,11 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Extraction Column Design Tool](../mcps/extraction-column-design-tool.md) | Design liquid-liquid extraction columns by calculating stages, diameter, height, and hydrodynamics. |
 | [Field Development Optimization](../mcps/field-development-optimization.md) | Optimize reservoir development plans, drilling schedules, and facility sizing. |
 | [Filter Sizing Design](../mcps/filter-sizing-design.md) | Technical sizing for dewatering equipment based on slurry characteristics. |
+| [Fin Cant Angle Analysis](../mcps/fin-cant-angle-analysis.md) | Analyzes the impact of fin cant angles on aerodynamic stability and maneuverability. |
+| [Fin Flex Dynamics Analyzer](../mcps/fin-flex-dynamics-analyzer.md) | Analyzes fin deformation, recoil timing, and speed vs control balance. |
 | [Fin Pressure & Stress Analyzer](../mcps/fin-pressure-stress-analyzer.md) | Calculates hydrodynamic pressure, base stress, and structural break risk for aquatic fins. |
 | [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
+| [Fin Toe Angle Effect Analyzer](../mcps/fin-toe-angle-effect-analyzer.md) | Analyze how fin toe angle adjustments influence hydrodynamic performance, drag, and drive-to-release ratios. |
 | [Fired Heater Design Engineer](../mcps/fired-heater-design-engineer.md) | Professional engineering tool for sizing radiant sections, tube coils, and calculating fuel efficiency for industrial fired heaters. |
 | [Flare Gas Recovery System Designer](../mcps/flare-gas-recovery-system-designer.md) | Engineering design tool for sizing compressors and calculating economic viability of flare gas recovery. |
 | [Flare Radiation Modeling](../mcps/flare-radiation-modeling.md) | Calculate thermal radiation intensity, exclusion zones, and stack heights using API 521 standards. |
@@ -148,6 +151,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Hydraulic Conductivity Calculator](../mcps/hydraulic-conductivity-calculator.md) | Calculates saturated and unsaturated hydraulic conductivity using physical soil properties. |
 | [Hydraulic Fracture Design Suite](../mcps/hydraulic-fracture-design-suite.md) | Advanced tools for calculating fracture geometry, leakoff, and proppant transport. |
 | [Hydrocracker Unit Design](../mcps/hydrocracker-unit-design.md) | Engineering tool for sizing hydrocracker reactors, estimating hydrogen demand, and predicting product yields. |
+| [Hydrodynamic Resistance Calculator](../mcps/hydrodynamic-resistance-calculator.md) | Calculate hydrodynamic drag, power requirements, and speed loss for surfboards. |
 | [Hydrofoil Mast Structural Analysis](../mcps/hydrofoil-mast-structural-analysis.md) | Calculate mast bending, stress concentration, and material integrity for hydrofoil masts. |
 | [Hydrofoil Speed & Stability Calculator](../mcps/hydrofoil-speed-stability-calculator.md) | Calculate lift-off, stall, and optimal cruising speeds for hydrofoil setups. |
 | [Hydrogen Peroxide Plant Designer](../mcps/hydrogen-peroxide-plant-designer.md) | Automated design tool for industrial hydrogen peroxide production using the Anthraquinone (AO) process. |
@@ -332,6 +336,9 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Sulfuric Acid Plant Design](../mcps/sulfuric-acid-plant-design.md) | Professional engineering tool for designing sulfuric acid production facilities using the contact process. |
 | [Surfboard Buoyancy Calculator](../mcps/surfboard-buoyancy-calculator.md) | Calculate surfboard buoyancy, displacement, and stability metrics. |
 | [Surfboard Fin Configurator](../mcps/surfboard-fin-configurator.md) | Calculate optimal fin geometry and setup for any wave condition. |
+| [Surfboard Physics Engine](../mcps/surfboard-physics-engine.md) | Calculate rotational inertia, maneuverability, and turning resistance for surfboards. |
+| [Surfboard Speed Optimizer](../mcps/surfboard-speed-optimizer.md) | Optimizes surfboard dimensions for maximum velocity based on wave dynamics and rider style. |
+| [Surfboard Stringer Designer](../mcps/surfboard-stringer-designer.md) | Design optimal surfboard stringer configurations based on rider weight and performance goals. |
 | [Synthetic Rubber Plant Designer](../mcps/synthetic-rubber-plant-designer.md) | Engineering tools for designing synthetic rubber production facilities. |
 | [Tailings Dam Safety Assessment](../mcps/tailings-dam-safety-assessment.md) | Professional engineering tool for evaluating tailings dam stability, seismic resilience, and flood risk. |
 | [Tailings Dam Stability Analyzer](../mcps/tailings-dam-stability-analyzer.md) | Engineering tool for assessing tailings dam slope stability and critical failure conditions. |
@@ -346,6 +353,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [Thermal Recovery Design](../mcps/thermal-recovery-design.md) | Simulate and optimize thermal enhanced oil recovery (EOR) projects. |
 | [Thermodynamic Model Selector](../mcps/thermodynamic-model-selector.md) | Select the optimal thermodynamic model for chemical process simulations. |
 | [Thickener Sizing & Design](../mcps/thickener-sizing-design.md) | Calculate thickener diameter, depth, and overflow clarity using Coe-Clevenger or Talmage-Fitch models. |
+| [Thruster Fin Placement Optimizer](../mcps/thruster-fin-placement-optimizer.md) | Optimizes surfboard fin configuration based on board geometry and wave conditions. |
 | [Tie-back Anchored Wall Designer](../mcps/tie-back-anchored-wall-designer.md) | Design and analyze the stability of tie-back anchored retaining walls. |
 | [Torque and Drag Analysis](../mcps/torque-and-drag-analysis.md) | Calculates hook load, surface torque, side forces, and buckling risk for wellbore operations. |
 | [Truss Analysis Pro](../mcps/truss-analysis-pro.md) | Calculate internal forces, reactions, and deflection in truss structures. |
@@ -365,6 +373,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 | [VOC Emission Calculator](../mcps/voc-emission-calculator.md) | Calculate VOC emissions and control efficiency using EPA-aligned methodologies. |
 | [Water Recovery Circuit Designer](../mcps/water-recovery-circuit-designer.md) | Models water flow and recycling efficiency for industrial processing plants. |
 | [Waterflood Pattern Optimizer](../mcps/waterflood-pattern-optimizer.md) | Optimize waterflood pattern design and predict oil recovery. |
+| [Wave Energy Calculator](../mcps/wave-energy-calculator.md) | Calculate wave energy density, power, and total energy in wave trains. |
 | [Wax Deposition Predictor](../mcps/wax-deposition-predictor.md) | Predicts wax buildup in oil pipelines and wells to optimize maintenance. |
 | [Wedge Failure Analysis](../mcps/wedge-failure-analysis.md) | Analyze rock wedge stability, geometry, and support requirements. |
 | [Well Control Modeling](../mcps/well-control-modeling.md) | Calculate kill mud weight, generate kill sheets, and simulate pressure profiles for well control operations. |

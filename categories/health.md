@@ -12,6 +12,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Bento Macro Balancer](../mcps/bento-macro-balancer.md) | Calculate precise nutritional profiles and traditional balance ratios for Japanese bento boxes. |
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Body Mass Index & Metabolic Calculator](../mcps/body-mass-index-metabolic-calculator.md) | Calculate BMI, BMR, TDEE, and macronutrient needs for metabolic health. |
+| [Breath-Hold Capacity Estimator](../mcps/breath-hold-capacity-estimator.md) | Predict apnea capabilities and optimize training for surfers. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
@@ -85,6 +86,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Surf Fitness Assessment](../mcps/surf-fitness-assessment.md) | Evaluate surf-specific physical readiness using discipline-based metrics. |
 | [Surf Injury Prevention Program](../mcps/surf-injury-prevention-program.md) | Customized injury prevention protocols for surfers based on injury history and biomechanics. |
 | [Surf Session Calorie Burn](../mcps/surf-session-calorie-burn.md) | Calculate calories burned during surfing sessions based on intensity and activity breakdown. |
+| [Surf Session Duration Calculator](../mcps/surf-session-duration-calculator.md) | Calculate safe surf session durations and rest strategies based on water temperature, wave intensity, and fitness. |
 | [Time in Range Analyzer](../mcps/time-in-range-analyzer.md) | Calculates clinical glycemic control metrics like TIR, GMI, and CV from glucose readings. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |
