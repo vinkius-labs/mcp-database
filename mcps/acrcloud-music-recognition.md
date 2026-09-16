@@ -33,11 +33,11 @@ Connect your AI agent to **ACRCloud**, the world-leading automatic content recog
 
 
 ## Available Tools (5)
-- **get_track_by_isrc**: Retrieve detailed metadata for a track using its ISRC code
 - **identify_music_from_url**: Identify a song from an audio file URL (e.g., mp3, wav)
 - **search_albums**: Search for music albums by title or artist
 - **search_artists**: Search for music artists by name
 - **search_tracks**: Search for music tracks by name, artist, or lyric fragments
+- **get_track_by_isrc**: Retrieve detailed metadata for a track using its ISRC code
 
 
 ## 💬 Prompt Examples
@@ -122,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

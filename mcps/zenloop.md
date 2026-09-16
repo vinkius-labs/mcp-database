@@ -34,15 +34,15 @@ Connect your **Zenloop** account to any AI agent to streamline your Net Promoter
 
 
 ## Available Tools (8)
-- **create_embed_answer**: Create a new survey response for a Website Embed channel
-- **create_email_answer**: Create a new survey response for an Email Embed channel
-- **create_link_answer**: Create a new survey response for a Link channel
-- **create_overlay_answer**: Create a new survey response for a Website Overlay channel
 - **get_account_details**: Get Zenloop account information
-- **get_survey_details**: Get details for a specific survey
 - **list_survey_answers**: Can be filtered by date.
 
 List answers (responses) for a survey
+- **create_email_answer**: Create a new survey response for an Email Embed channel
+- **create_embed_answer**: Create a new survey response for a Website Embed channel
+- **create_link_answer**: Create a new survey response for a Link channel
+- **get_survey_details**: Get details for a specific survey
+- **create_overlay_answer**: Create a new survey response for a Website Overlay channel
 - **list_surveys**: List all configured surveys
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

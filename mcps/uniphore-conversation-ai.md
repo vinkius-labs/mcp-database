@@ -33,16 +33,16 @@ Uniphore is a leading Conversation AI platform used by sales, support, and succe
 
 
 ## Available Tools (8)
-- **get_meeting_analytics**: Get conversation analytics and insights for a meeting
-- **get_transcript**: Get the full transcript of a meeting
-- **list_topics**: List all tracked topics and keywords in the organization
 - **get_action_items**: Get action items extracted from a meeting
 - **get_meeting**: Get details of a specific meeting
 - **list_meetings**: Use this to discover meeting IDs before querying specific details.
 
 List all recorded meetings and calls
+- **get_meeting_analytics**: Get conversation analytics and insights for a meeting
 - **search_meetings**: Search meetings by keyword or topic
 - **get_meeting_summary**: Get the AI-generated summary of a meeting
+- **get_transcript**: Get the full transcript of a meeting
+- **list_topics**: List all tracked topics and keywords in the organization
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

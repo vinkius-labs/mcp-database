@@ -35,19 +35,9 @@ Eliminate messy IDE switching while structuring robust Headless projects. Let th
 
 
 ## Available Tools (10)
-- **update_cms_document**: Provide the document ID and JSON updates.
-
-Updates fields of an existing document in Umbraco
-- **create_cms_document**: Provide the document data as a JSON object adhering to the schema.
-
-Creates a new document in the Umbraco CMS
 - **delete_cms_document**: This action is irreversible.
 
 Permanently deletes a document from the Umbraco CMS
-- **query_delivery_content**: g., "contentType:blogPost").
-
-Filters content items using the Umbraco Delivery API query syntax
-- **get_delivery_content_by_id**: Retrieves a specific content item by its GUID or numeric ID via Delivery API
 - **get_delivery_content_by_path**: g., "/home/about").
 
 Retrieves a specific content item by its URL path
@@ -55,8 +45,18 @@ Retrieves a specific content item by its URL path
 - **list_delivery_content**: Supports pagination via take and skip.
 
 Lists content available via the Umbraco Delivery API
-- **list_document_types**: Lists all document types (schemas) defined in Umbraco
 - **list_media_assets**: Lists media assets (images, files) from the Umbraco Media library
+- **update_cms_document**: Provide the document ID and JSON updates.
+
+Updates fields of an existing document in Umbraco
+- **create_cms_document**: Provide the document data as a JSON object adhering to the schema.
+
+Creates a new document in the Umbraco CMS
+- **get_delivery_content_by_id**: Retrieves a specific content item by its GUID or numeric ID via Delivery API
+- **query_delivery_content**: g., "contentType:blogPost").
+
+Filters content items using the Umbraco Delivery API query syntax
+- **list_document_types**: Lists all document types (schemas) defined in Umbraco
 
 
 ## 💬 Prompt Examples
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

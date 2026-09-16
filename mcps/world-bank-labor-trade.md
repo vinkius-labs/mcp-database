@@ -27,11 +27,11 @@ Supply chain analysts, trade researchers, HR strategists, and international busi
 
 
 ## Available Tools (5)
-- **get_fdi**: Get Foreign Direct Investment, net inflows (% of GDP)
-- **get_labor_force**: Get total labor force
-- **get_exports**: Get exports of goods/services (% of GDP)
-- **get_labor_trade_indicator**: Get any World Bank labor/trade indicator by code
 - **get_unemployment_rate**: Get unemployment total (% of labor force)
+- **get_labor_force**: Get total labor force
+- **get_fdi**: Get Foreign Direct Investment, net inflows (% of GDP)
+- **get_labor_trade_indicator**: Get any World Bank labor/trade indicator by code
+- **get_exports**: Get exports of goods/services (% of GDP)
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

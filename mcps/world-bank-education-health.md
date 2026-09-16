@@ -27,11 +27,11 @@ Public health analysts, educators, policy makers, and humanitarian organizations
 
 
 ## Available Tools (5)
-- **get_infant_mortality**: Get infant mortality rate
-- **get_edu_health_indicator**: Get any World Bank education/health indicator by code
-- **get_health_expenditure**: Get current health expenditure (% of GDP)
 - **get_life_expectancy**: Get life expectancy at birth
 - **get_literacy_rate**: Get adult literacy rate
+- **get_edu_health_indicator**: Get any World Bank education/health indicator by code
+- **get_infant_mortality**: Get infant mortality rate
+- **get_health_expenditure**: Get current health expenditure (% of GDP)
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

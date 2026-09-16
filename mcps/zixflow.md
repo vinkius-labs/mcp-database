@@ -38,13 +38,13 @@ Connect your **Zixflow** workspace to any AI agent to automate your sales and CR
 
 Create a new record in a collection
 - **delete_collection_record**: Delete a record from a collection
-- **list_collections**: List all collections (People, Company, etc.)
+- **get_record_details**: Get details for a specific record
+- **list_wallet_transactions**: List Zixflow wallet transactions
 - **update_collection_record**: Update an existing record
+- **list_collections**: List all collections (People, Company, etc.)
 - **list_collection_records**: Requires a JSON body for filtering/sorting.
 
 List records within a specific collection
-- **get_record_details**: Get details for a specific record
-- **list_wallet_transactions**: List Zixflow wallet transactions
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

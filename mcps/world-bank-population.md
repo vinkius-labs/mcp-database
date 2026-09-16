@@ -30,9 +30,9 @@ NGOs, sociologists, government researchers, and urban planners.
 - **get_poverty**: 15 a day at 2017 international prices.
 
 Get poverty headcount ratio at .15 a day
+- **get_gini_index**: Get Gini index
 - **get_social_indicator**: Get any World Bank popupation/social indicator by code
 - **get_total_population**: Get total population
-- **get_gini_index**: Get Gini index
 - **get_population_growth**: Get annual population growth percentage
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
