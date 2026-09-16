@@ -15,9 +15,9 @@ This MCP server provides specialized tools for genetic engineering and synthetic
 
 ## Available Tools (4)
 - **analyze_codon_usage**: Provides a statistical profile of the codon usage of a DNA sequence relative to a host
+- **validate_host_compatibility**: Checks if a specific protein sequence is likely to be compatible with a host's translation machinery
 - **calculate_complexity_metrics**: Evaluates the physical and structural properties of a DNA sequence
 - **optimize_sequence**: Generates an optimized DNA sequence for a given protein sequence based on a specific expression host
-- **validate_host_compatibility**: Checks if a specific protein sequence is likely to be compatible with a host's translation machinery
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -15,9 +15,9 @@ This MCP server provides specialized tools for biochemical assay analysis. It us
 
 ## Available Tools (4)
 - **interpolate_unknowns**: Calculates concentrations for unknown samples based on a fitted 4PL curve
-- **calculate_precision_metrics**: Evaluates assay reliability through replicate analysis
-- **get_curve_parameters**: Calculates the mathematical model of the standard curve using 4PL regression
 - **validate_assay_range**: Checks if unknown samples are within the valid measurable range of the standard curve
+- **get_curve_parameters**: Calculates the mathematical model of the standard curve using 4PL regression
+- **calculate_precision_metrics**: Evaluates assay reliability through replicate analysis
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

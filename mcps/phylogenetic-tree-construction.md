@@ -14,10 +14,18 @@ This MCP server provides specialized tools for evolutionary biology. It allows A
 
 
 ## Available Tools (4)
-- **build_distance_tree**: Construct a phylogenetic tree using distance-based algorithms
-- **build_likelihood_tree**: Construct a phylogenetic tree using Maximum Likelihood estimation
-- **calculate_evolutionary_distances**: Generate a raw distance matrix from an alignment without building a full tree
-- **evaluate_tree_reliability**: Analyze the statistical confidence and stability of a previously constructed tree
+- **build_distance_tree**: Provide a valid alignment and model.
+
+Construct a phylogenetic tree using distance-based algorithms
+- **build_likelihood_tree**: Provide an alignment, substitution model, and bootstrap iterations.
+
+Construct a phylogenetic tree using Maximum Likelihood estimation
+- **calculate_evolutionary_distances**: Provide the alignment and distance model.
+
+Generate a raw distance matrix from an alignment without building a full tree
+- **evaluate_tree_reliability**: Provide the tree topology, original alignment, and resampling method.
+
+Analyze the statistical confidence and stability of a previously constructed tree
 
 
 ## 💬 Prompt Examples
@@ -108,4 +116,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,12 +14,12 @@ This MCP server provides a specialized toolset for CRISPR-Cas9 genome editing de
 
 
 ## Available Tools (4)
-- **assess_off_target_risk**: Predicts the danger of unintended cleavage by searching the genome for similar sequences
-- **design_grna_sequences**: Generates candidate guide RNA sequences based on identified target locations and PAM sites
 - **evaluate_on_target_efficiency**: Calculates the predicted effectiveness of specific guide sequences at their intended target
+- **design_grna_sequences**: Generates candidate guide RNA sequences based on identified target locations and PAM sites
 - **find_pam_sites**: g., "NGG").
 
 Identifies all valid locations within a target gene where a PAM sequence exists to allow Cas9 binding
+- **assess_off_target_risk**: Predicts the danger of unintended cleavage by searching the genome for similar sequences
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

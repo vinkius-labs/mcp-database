@@ -15,11 +15,11 @@ This MCP server provides specialized tools for analyzing protein primary sequenc
 
 ## Available Tools (4)
 - **get_amino_acid_propensities**: Retrieves the specific propensity values for amino acids used in secondary structure prediction
-- **compare_prediction_methods**: Compares the results of Chou-Fasman and GOR methods for a single sequence
 - **predict_structure_chou_fasman**: Predicts the secondary structure of a protein sequence using the Chou-Fasman statistical propensity method
 - **predict_structure_gor**: Note that GOR requires a minimum sequence length for window calculation.
 
 Predicts the secondary structure of a protein sequence using the GOR (information theory) approach
+- **compare_prediction_methods**: Compares the results of Chou-Fasman and GOR methods for a single sequence
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

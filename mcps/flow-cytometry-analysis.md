@@ -14,8 +14,8 @@ This MCP server provides specialized tools for processing and analyzing flow cyt
 
 
 ## Available Tools (4)
-- **analyze_populations**: Calculates the percentage and statistical metrics for defined cell populations
 - **evaluate_isotype_background**: Determines the level of non-specific binding to establish a baseline for true fluorescence
+- **analyze_populations**: Calculates the percentage and statistical metrics for defined cell populations
 - **apply_compensation**: Adjusts fluorescence data to correct for spectral overlap between fluorophores
 - **get_population_statistics**: Provides detailed distribution metrics for a specific gated subset
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

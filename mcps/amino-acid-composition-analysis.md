@@ -14,10 +14,12 @@ This MCP server provides advanced biochemical analysis for proteins. Use `analyz
 
 
 ## Available Tools (4)
+- **get_nutritional_profile**: Provides a detailed breakdown of nutritional adequacy based on existing composition data
 - **analyze_hydrolysate**: Evaluates protein quality from mass-based laboratory data
 - **analyze_sequence**: Calculates composition and physical properties from a raw protein primary structure
-- **calculate_molecular_properties**: Specifically computes physical mass and residue-level metrics
-- **get_nutritional_profile**: Provides a detailed breakdown of nutritional adequacy based on existing composition data
+- **calculate_molecular_properties**: Provide the protein sequence.
+
+Specifically computes physical mass and residue-level metrics
 
 
 ## 💬 Prompt Examples
@@ -102,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

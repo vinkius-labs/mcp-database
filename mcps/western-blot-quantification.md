@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for analyzing western blot re
 
 
 ## Available Tools (4)
-- **analyze_band_densities**: Calculates the corrected intensity of protein bands after removing background noise
-- **calculate_fold_change**: Determines the magnitude of change in protein expression between groups
 - **evaluate_statistical_significance**: Assesses whether differences between experimental groups are statistically meaningful
+- **calculate_fold_change**: Determines the magnitude of change in protein expression between groups
 - **normalize_protein_expression**: Adjusts target protein levels based on loading controls
+- **analyze_band_densities**: Calculates the corrected intensity of protein bands after removing background noise
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

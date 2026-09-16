@@ -15,9 +15,9 @@ This MCP server provides a specialized suite of tools for performing regulatory-
 
 ## Available Tools (4)
 - **calculate_similarity_score**: Computes a mathematical similarity index between the reference and biosimilar for a specific attribute
-- **generate_comparability_summary**: Aggregates all analytical findings into a high-level executive report for regulatory review
 - **get_cqa_profile**: Retrieves the specific set of Critical Quality Attributes and their corresponding acceptance criteria
 - **perform_gap_analysis**: Identifies significant deviations between the two products across all measured attributes
+- **generate_comparability_summary**: Aggregates all analytical findings into a high-level executive report for regulatory review
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

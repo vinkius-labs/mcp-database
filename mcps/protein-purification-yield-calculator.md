@@ -14,10 +14,10 @@ This MCP server provides a specialized calculation engine for biochemical resear
 
 
 ## Available Tools (4)
+- **calculate_step_metrics**: Calculates the essential purity and recovery metrics for a single purification step
+- **validate_purification_log**: Checks a sequence of purification steps for logical consistency
 - **compare_purification_stages**: Compares two different stages of a purification process
 - **get_method_efficiency_thresholds**: Provides expected yield and purification factor ranges for a specific purification method
-- **validate_purification_log**: Checks a sequence of purification steps for logical consistency
-- **calculate_step_metrics**: Calculates the essential purity and recovery metrics for a single purification step
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

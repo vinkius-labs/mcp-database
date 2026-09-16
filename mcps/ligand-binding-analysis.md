@@ -14,10 +14,10 @@ This MCP server provides specialized tools for analyzing ligand-receptor interac
 
 
 ## Available Tools (4)
+- **validate_experimental_data**: Checks the integrity and biological plausibility of the provided binding dataset
 - **analyze_hill_cooperativity**: Calculates the degree of cooperativity between ligands using Hill plot analysis
 - **analyze_scatchard_binding**: Determines binding affinity and capacity using the Scatchard linearization method
 - **get_binding_summary**: Provides a high-level qualitative interpretation of the binding characteristics
-- **validate_experimental_data**: Checks the integrity and biological plausibility of the provided binding dataset
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

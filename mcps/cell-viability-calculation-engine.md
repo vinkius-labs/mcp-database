@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for biological research. I
 
 
 ## Available Tools (4)
-- **summarize_assay**: Aggregates multiple data points into a structured report of an experiment's findings
-- **viability_percentage**: Calculates the percentage of surviving cells for a specific treatment relative to the control
 - **estimate_ic50**: Estimates the concentration of a drug that causes 50% reduction in viability
 - **growth_inhibition**: Determines the percentage of cell growth that has been suppressed by a treatment
+- **summarize_assay**: Aggregates multiple data points into a structured report of an experiment's findings
+- **viability_percentage**: Calculates the percentage of surviving cells for a specific treatment relative to the control
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

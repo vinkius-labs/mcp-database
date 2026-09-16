@@ -14,10 +14,10 @@ This MCP server provides specialized tools for analyzing the thermodynamic stabi
 
 
 ## Available Tools (4)
-- **analyze_interactions**: Identifies and categorizes the types of chemical bonds formed between the ligand and the protein
 - **compare_poses**: Compares multiple docking configurations to find the most stable binding mode
 - **get_binding_energy**: Calculates the total estimated binding affinity for a specific docking pose
 - **identify_binding_site**: Maps the specific protein residues that are in immediate proximity to the ligand
+- **analyze_interactions**: Identifies and categorizes the types of chemical bonds formed between the ligand and the protein
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

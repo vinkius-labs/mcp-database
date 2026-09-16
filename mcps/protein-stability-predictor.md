@@ -15,9 +15,9 @@ This MCP server provides specialized tools for analyzing the thermodynamic and k
 
 ## Available Tools (4)
 - **calculate_aggregation_risk**: Evaluates the likelihood of the protein forming insoluble aggregates
-- **estimate_shelf_life**: Predicts how long a protein remains stable under specific storage conditions
-- **predict_thermal_stability**: Determines the temperature at which a protein undergoes significant unfolding
 - **evaluate_formulation_impact**: Compares how different buffer compositions affect the protein's stability
+- **predict_thermal_stability**: Determines the temperature at which a protein undergoes significant unfolding
+- **estimate_shelf_life**: Predicts how long a protein remains stable under specific storage conditions
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
