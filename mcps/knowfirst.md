@@ -29,23 +29,23 @@ Connect your AI agent to **KnowFirst**, the leading provider of real-time data i
 
 ## Available Tools (10)
 - **get_entity_profile**: Get complete intelligence profile for an entity
-- **get_market_intelligence_trends**: g., Tech, Finance).
-
-Get current market trends by category
-- **list_entity_data_points**: List raw data points for an entity
-- **list_intelligence_sources**: g., Public Records, Social Signals, News).
-
-List all data sources used by KnowFirst
 - **search_intelligence_entities**: Returns unique entity IDs.
 
 Search for specific entities in the intelligence database
-- **get_entity_connections**: Graph the connections of an entity
 - **search_data_sources**: Search for specific data sources
-- **audit_entity_changes**: Audit historical changes for an entity
+- **list_intelligence_sources**: g., Public Records, Social Signals, News).
+
+List all data sources used by KnowFirst
+- **get_market_intelligence_trends**: g., Tech, Finance).
+
+Get current market trends by category
 - **check_knowfirst_api_status**: Check the status of the KnowFirst API
+- **audit_entity_changes**: Audit historical changes for an entity
 - **query_custom_intelligence**: Provide the query parameters as a JSON string.
 
 Execute a custom intelligence query
+- **list_entity_data_points**: List raw data points for an entity
+- **get_entity_connections**: Graph the connections of an entity
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

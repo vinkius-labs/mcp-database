@@ -36,15 +36,15 @@ Connect your **Mnemonic** account to your AI agent and unlock deep insights into
 
 ## Available Tools (12)
 - **get_collection_details**: Get NFT collection info
-- **get_contract_metadata**: Get smart contract metadata
-- **get_nft_owners**: Get owners of an NFT
-- **get_wallet_nfts**: Get all NFTs owned by a wallet
 - **list_transfers**: Query NFT transfer events
 - **get_collection_distribution**: Get ownership distribution
 - **get_collection_stats**: Get collection statistics
+- **get_contract_metadata**: Get smart contract metadata
 - **get_nft_details**: Get detailed NFT metadata
+- **get_nft_owners**: Get owners of an NFT
 - **get_nft_prices**: Get NFT market pricing data
 - **get_wallet_history**: Get wallet transaction history
+- **get_wallet_nfts**: Get all NFTs owned by a wallet
 - **list_collection_tokens**: List tokens in a collection
 - **search_collections**: Search for NFT collections
 
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

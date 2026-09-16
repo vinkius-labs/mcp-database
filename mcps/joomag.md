@@ -17,9 +17,6 @@ Empower your AI agents with Joomag's digital publishing platform. This MCP serve
 - **get_account**: Useful for system health checks or verifying access.
 
 Retrieves Joomag account details
-- **get_issue**: Use this for deep-dive analysis of a specific edition.
-
-Retrieves details for a specific issue
 - **get_publication**: Returns metadata, branding settings, and access configurations. Use this to understand the high-level setup of a digital publication.
 
 Retrieves details for a specific publication
@@ -32,15 +29,18 @@ Lists all Joomag marketing campaigns
 - **list_collections**: Useful for hierarchical organization or identifying thematic groupings of content.
 
 Lists all publication collections
-- **list_contacts**: Includes names, emails, and subscription status. Use this when the user needs to manage or audit the audience list.
-
-Lists all contacts in Joomag CRM
 - **list_issues**: Each issue represents a specific version or date-based release. Use this when the user wants to see the content history or find a specific issue ID for a magazine or catalog.
 
 Lists all issues associated with a specific publication
 - **list_publications**: Returns publication titles, IDs, and basic settings. Use this to identify which publications are available for further issue management or analytics.
 
 Lists all Joomag publications
+- **get_issue**: Use this for deep-dive analysis of a specific edition.
+
+Retrieves details for a specific issue
+- **list_contacts**: Includes names, emails, and subscription status. Use this when the user needs to manage or audit the audience list.
+
+Lists all contacts in Joomag CRM
 - **list_subscriptions**: Use this to audit paying or registered users who have access to restricted content.
 
 Lists all active subscriptions
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

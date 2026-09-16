@@ -29,16 +29,20 @@ Connect your AI agent to **Kontak** to automate your customer communications and
 
 
 ## Available Tools (10)
-- **get_kontak_account_info**: Get account settings and info
-- **list_kontak_webhooks**: List configured webhooks
 - **send_outbound_sms**: Send a new SMS message
+- **list_kontak_templates**: Use this tool to see all possible template IDs.
+
+List available message templates
 - **get_contact_details**: Get details for a specific contact
-- **get_message_details**: Get details for a specific message
-- **list_kontak_contacts**: List all contacts
-- **list_kontak_messages**: List all sent and received messages
-- **list_kontak_templates**: List available message templates
 - **list_kontak_tags**: List all contact tags
+- **get_kontak_account_info**: Get account settings and info
+- **list_kontak_webhooks**: Use this tool to verify all registered webhook endpoints.
+
+List configured webhooks
 - **get_kontak_audit_logs**: Retrieve system audit logs
+- **get_message_details**: Get details for a specific message
+- **list_kontak_messages**: List all sent and received messages
+- **list_kontak_contacts**: List all contacts
 
 
 ## 💬 Prompt Examples
@@ -123,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

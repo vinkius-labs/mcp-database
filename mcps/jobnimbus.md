@@ -14,18 +14,18 @@ Empower your AI agents with JobNimbus's specialized CRM for contractors. This MC
 
 
 ## Available Tools (10)
+- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
+
+Retrieves details for a specific job
+- **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
+
+Retrieves details for a specific contact
 - **list_boards**: Useful for navigating the account structure.
 
 Lists all configured boards
 - **list_contacts**: Returns names, contact types, and IDs. Use this to identify clients or start a search for a specific customer.
 
 Lists all contacts in JobNimbus
-- **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
-
-Retrieves details for a specific contact
-- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
-
-Retrieves details for a specific job
 - **list_jobs**: Includes job titles, status, and IDs. Essential for monitoring project flow and upcoming work.
 
 Lists all jobs in JobNimbus
@@ -35,15 +35,15 @@ Lists all products and services
 - **list_tasks**: Returns task descriptions, due dates, and IDs. Use this to help the user manage their daily workload or audit team activities.
 
 Lists all tasks
-- **list_payments**: Essential for monitoring revenue and project billing status.
-
-Lists all recent payments
-- **list_workflows**: Useful for understanding the steps in the company's business processes.
-
-Lists all configured workflows
 - **list_users**: Useful for identifying sales reps or project managers.
 
 Lists all users in the organization
+- **list_workflows**: Useful for understanding the steps in the company's business processes.
+
+Lists all configured workflows
+- **list_payments**: Essential for monitoring revenue and project billing status.
+
+Lists all recent payments
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

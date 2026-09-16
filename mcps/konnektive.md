@@ -28,16 +28,7 @@ Connect your AI agent to **Konnektive CRM** to automate and streamline your e-co
 
 
 ## Available Tools (10)
-- **list_billing_campaigns**: List all campaigns
-- **list_fulfillment_houses**: List fulfillment centers
-- **list_konnektive_products**: List all products
-- **update_order_shipping_address**: Provide address as a JSON string.
-
-Update the shipping address for an order
 - **get_customer_details**: Get details for a specific customer
-- **get_konnektive_audit_logs**: Provide filters as a JSON string.
-
-Retrieve system audit logs
 - **get_order_details**: Get details for a specific order
 - **query_konnektive_customers**: Provide filters as a JSON string.
 
@@ -45,6 +36,17 @@ Search for customers
 - **query_konnektive_transactions**: Provide filters as a JSON string.
 
 Search for payment transactions
+- **list_billing_campaigns**: List all campaigns
+- **list_konnektive_products**: List all products
+- **update_order_shipping_address**: Provide address as a JSON string.
+
+Update the shipping address for an order
+- **list_fulfillment_houses**: Do not use this tool if you need specific location details.
+
+List fulfillment centers
+- **get_konnektive_audit_logs**: Provide filters as a JSON string.
+
+Retrieve system audit logs
 - **query_konnektive_orders**: Provide filters as a JSON string.
 
 Search for orders in Konnektive
@@ -132,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

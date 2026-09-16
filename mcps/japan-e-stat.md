@@ -22,12 +22,12 @@ Free API key required (instant registration at e-stat.go.jp). Japan publishes so
 
 
 ## Available Tools (2)
-- **search_japan_statistics**: Returns table IDs, organization names, titles, and survey dates. Use the returned table ID with get_japan_stats_data to retrieve actual numbers. Keywords work in both English and Japanese. Common topics: population, GDP, industry, trade, employment, tourism, education, health.
-
-Search for statistical tables in the Japanese Government e-Stat database
 - **get_japan_stats_data**: Use search_japan_statistics first to find the correct table ID. Returns category-classified data with time periods, areas, and values.
 
 Retrieve statistical data from a specific Japanese Government e-Stat table
+- **search_japan_statistics**: Returns table IDs, organization names, titles, and survey dates. Use the returned table ID with get_japan_stats_data to retrieve actual numbers. Keywords work in both English and Japanese. Common topics: population, GDP, industry, trade, employment, tourism, education, health.
+
+Search for statistical tables in the Japanese Government e-Stat database
 
 
 ## 💬 Prompt Examples
@@ -112,4 +112,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
