@@ -14,12 +14,12 @@ This MCP server provides analytical tools for immunoassays. It allows AI agents 
 
 
 ## Available Tools (4)
+- **calculate_antibody_concentration**: Converts the calculated EC50 or endpoint into an absolute concentration value
 - **calculate_endpoint_titer**: Determines the highest dilution factor that still yields a measurable signal above the noise
 - **fit_dose_response_curve**: g., 4PL) to dilution and signal data.
 
 Fits the experimental data to a sigmoidal model to derive curve characteristics
 - **validate_assay_quality**: Evaluates if the provided dilution series is reliable enough for titration calculations
-- **calculate_antibody_concentration**: Converts the calculated EC50 or endpoint into an absolute concentration value
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

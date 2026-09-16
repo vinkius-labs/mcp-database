@@ -14,10 +14,10 @@ This MCP server provides a suite of tools for performing Flux Balance Analysis (
 
 
 ## Available Tools (4)
-- **run_fba**: Performs the core Flux Balance Analysis (FBA) to find the optimal distribution of fluxes
-- **validate_model_consistency**: Checks the mathematical integrity of a stoichiometric model before running optimization
 - **calculate_yield_efficiency**: Quantifies the efficiency of converting a specific substrate into biomass or a target product
 - **identify_limiting_reactions**: Determines which metabolic reactions are currently restricting the maximization of the system's objective
+- **run_fba**: Performs the core Flux Balance Analysis (FBA) to find the optimal distribution of fluxes
+- **validate_model_consistency**: Checks the mathematical integrity of a stoichiometric model before running optimization
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

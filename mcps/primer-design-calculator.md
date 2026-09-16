@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for PCR primer design. It all
 
 
 ## Available Tools (4)
-- **analyze_stability**: Evaluates the risk of secondary structures like hairpins and dimers for a specific primer or pair
-- **calculate_thermodynamics**: Provides detailed physical properties for a specific DNA sequence
 - **design_primers**: Generates a pair of optimal primers based on a target DNA sequence and user-defined constraints
 - **verify_specificity**: Checks if the proposed primers will bind to unintended locations in a provided genomic reference
+- **analyze_stability**: Evaluates the risk of secondary structures like hairpins and dimers for a specific primer or pair
+- **calculate_thermodynamics**: Provides detailed physical properties for a specific DNA sequence
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

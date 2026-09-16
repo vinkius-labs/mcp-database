@@ -14,10 +14,10 @@ This MCP server provides specialized tools for nucleic acid quantitation. It all
 
 
 ## Available Tools (4)
-- **get_dna_concentration**: Calculates the concentration of DNA based on absorbance at 260nm and the structural form of the DNA
 - **get_expected_yield**: Calculates the total mass of DNA present in a sample of a given volume
 - **get_purity_assessment**: Provides a qualitative assessment of the DNA sample's purity based on the A260/A280 ratio
 - **get_purity_ratio**: Determines the purity of the DNA sample by comparing the absorbance at 260nm to the absorbance at 280nm
+- **get_dna_concentration**: Calculates the concentration of DNA based on absorbance at 260nm and the structural form of the DNA
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

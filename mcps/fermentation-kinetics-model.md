@@ -14,10 +14,10 @@ This MCP server provides tools to model fermentation process kinetics. It allows
 
 
 ## Available Tools (4)
-- **analyze_inhibition_impact**: Quantifies how much current substrate concentration slows down the growth rate
 - **calculate_growth_metrics**: Calculates specific growth rate, growth model type, and substrate consumption rate from biomass and substrate data
 - **calculate_yield_coefficients**: Determines efficiency of substrate conversion to biomass and product
 - **predict_future_concentrations**: Estimates future levels of substrate, biomass, and product using current kinetic parameters
+- **analyze_inhibition_impact**: Quantifies how much current substrate concentration slows down the growth rate
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
