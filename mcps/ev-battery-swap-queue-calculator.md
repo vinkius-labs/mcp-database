@@ -14,9 +14,9 @@ This MCP server provides deterministic tools for managing EV battery swap statio
 
 
 ## Available Tools (3)
-- **estimate_swap_queue**: Calculates the expected wait time and total service time for a vehicle entering a specific station queue
 - **calculate_range_safety**: Determines if a vehicle can safely reach the station and complete the swap based on its current battery state and vehicle efficiency
 - **get_station_status**: Provides a high-level overview of station capacity and current throughput efficiency
+- **estimate_swap_queue**: Calculates the expected wait time and total service time for a vehicle entering a specific station queue
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

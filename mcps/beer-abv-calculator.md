@@ -14,9 +14,9 @@ This MCP server provides precise tools for homebrewers to analyze fermentation d
 
 
 ## Available Tools (3)
+- **convert_gravity_units**: Converts a gravity measurement between Specific Gravity and Plato
 - **validate_fermentation_sanity**: Checks if the provided gravity readings are physically possible in a brewing context
 - **calculate_abv_metrics**: Calculates primary fermentation metrics including alcohol content, attenuation, and caloric density
-- **convert_gravity_units**: Converts a gravity measurement between Specific Gravity and Plato
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

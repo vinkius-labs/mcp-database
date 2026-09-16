@@ -14,9 +14,9 @@ This MCP server provides deterministic relationship analysis based on Chinese Ba
 
 
 ## Available Tools (3)
+- **calculate_elemental_affinity**: Determine the compatibility score based solely on the Day Master elements of two individuals
 - **calculate_zodiac_affinity**: Determine the compatibility score based on the zodiac animals of two individuals
 - **get_relationship_compatibility**: Provide the final, comprehensive compatibility assessment by combining elemental and zodiac scores
-- **calculate_elemental_affinity**: Determine the compatibility score based solely on the Day Master elements of two individuals
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
