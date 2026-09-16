@@ -34,16 +34,28 @@ Connect your **Beekeeper** account to any AI agent and streamline your internal 
 
 
 ## Available Tools (10)
-- **list_posts**: List posts in a specific stream
-- **create_post**: Create a new post in a stream
-- **get_tenant_info**: Retrieve Beekeeper tenant information
-- **get_user**: Get details of a specific user
+- **list_posts**: Must provide the Stream ID.
+
+List posts in a specific stream
 - **list_groups**: List Beekeeper groups
-- **list_messages**: List messages in a conversation
-- **send_message**: Send a direct message to a user
-- **search_users**: Search for users by name or email
+- **list_messages**: Must provide the Conversation ID.
+
+List messages in a conversation
 - **list_users**: List all Beekeeper users
 - **list_streams**: List Beekeeper streams (channels)
+- **get_tenant_info**: Retrieve Beekeeper tenant information
+- **get_user**: Provide the required User ID.
+
+Get details of a specific user
+- **search_users**: Use this tool for name or email searches.
+
+Search for users by name or email
+- **send_message**: Requires the recipient’s User ID.
+
+Send a direct message to a user
+- **create_post**: Requires both Stream ID and post content.
+
+Create a new post in a stream
 
 
 ## 💬 Prompt Examples
@@ -128,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,15 +34,33 @@ Connect your **BIM 360 Field** account to any AI agent and orchestrate your cons
 
 
 ## Available Tools (9)
-- **list_checklists**: List checklists for a project
-- **list_issue_types**: List configured issue types for a project
-- **list_projects**: List all accessible BIM 360 Field projects
-- **get_project**: Get details of a specific project
-- **list_companies**: List companies associated with a project
-- **list_users**: List users associated with a project
-- **list_issues**: List issues for a project
-- **list_locations**: List locations configured for a project
-- **list_tasks**: List tasks/equipment for a project
+- **list_checklists**: Must provide a project ID.
+
+List checklists for a project
+- **list_issues**: Must provide a project ID.
+
+List issues for a project
+- **list_locations**: Must provide a project ID.
+
+List locations configured for a project
+- **list_projects**: Do not specify a project ID.
+
+List all accessible BIM 360 Field projects
+- **list_users**: Must provide a project ID.
+
+List users associated with a project
+- **get_project**: Provide a valid project ID.
+
+Get details of a specific project
+- **list_companies**: Must provide a project ID.
+
+List companies associated with a project
+- **list_tasks**: Must provide a project ID.
+
+List tasks/equipment for a project
+- **list_issue_types**: Must provide a project ID.
+
+List configured issue types for a project
 
 
 ## 💬 Prompt Examples
@@ -127,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

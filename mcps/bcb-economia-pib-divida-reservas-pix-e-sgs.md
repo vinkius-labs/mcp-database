@@ -26,12 +26,6 @@ Brazilian economic data.
 - **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
 
 Obter as reservas internacionais do Brasil em USD
-- **get_desemprego**: Indicador trimestral do mercado de trabalho brasileiro. Série SGS: 24369.
-
-Obter a taxa de desemprego do Brasil (PNAD)
-- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
-
-Obter o PIB mensal do Brasil — variação percentual
 - **get_balanca_comercial**: O Brasil é um grande exportador de commodities agrícolas, minério e petróleo. Série SGS: 22707.
 
 Obter o saldo da balança comercial brasileira
@@ -41,6 +35,12 @@ Obter a dívida líquida do setor público como % do PIB
 - **get_pix_estatisticas**: O PIX é o sistema de pagamentos instantâneos do Brasil, operado pelo BCB. Lançado em novembro de 2020, já é o meio de pagamento mais usado no país.
 
 Obter estatísticas do PIX — volume e quantidade de transações
+- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
+
+Obter o PIB mensal do Brasil — variação percentual
+- **get_desemprego**: Indicador trimestral do mercado de trabalho brasileiro. Série SGS: 24369.
+
+Obter a taxa de desemprego do Brasil (PNAD)
 - **get_serie_bcb**: 000+ séries do Sistema Gerenciador de Séries Temporais (SGS). Pesquise códigos em bcb.gov.br/estabilidadefinanceira/seriestemporais. Exemplos: 11 (Selic), 433 (IPCA), 1 (Dólar).
 
 Consultar qualquer série temporal do BCB pelo código SGS
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

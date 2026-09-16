@@ -30,10 +30,16 @@ The **AskNicely MCP Server** provides a powerful natural language interface to y
 
 ## Available Tools (5)
 - **get_statistics**: Get aggregate NPS statistics and summary
-- **list_contacts**: List contacts in your AskNicely account
+- **list_responses**: Use the start and limit parameters for pagination.
+
+List NPS survey responses from AskNicely
 - **get_account_check**: Verify AskNicely account connection
-- **list_responses**: List NPS survey responses from AskNicely
-- **trigger_survey**: Add a contact and trigger a survey immediately
+- **list_contacts**: Specify start and limit for pagination.
+
+List contacts in your AskNicely account
+- **trigger_survey**: Provide both the contact name and email.
+
+Add a contact and trigger a survey immediately
 
 
 ## 💬 Prompt Examples
@@ -118,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -41,15 +41,15 @@ Automate mixing and mastering of audio tracks
 - **list_voices**: You can filter by language, gender, or provider.
 
 List and search for available AI voices
-- **list_sound_templates**: List available music and sound design templates
-- **get_voice_details**: Provide a valid voice ID.
-
-Get detailed information for a specific voice
 - **create_story**: Pass a JSON string describing the story content.
 
 Create a long-form audio story
+- **get_voice_details**: Provide a valid voice ID.
+
+Get detailed information for a specific voice
 - **get_audioform**: Get the status and final URL of an Audioform
 - **list_media_files**: List your uploaded and generated media files
+- **list_sound_templates**: List available music and sound design templates
 - **text_to_speech**: Generate speech from text using an AI voice
 
 
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
