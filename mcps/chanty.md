@@ -33,16 +33,16 @@ Connect your **Chanty** workspace to any AI agent and command your team's commun
 
 
 ## Available Tools (10)
-- **delete_conversation**: Irreversibly vaporize explicit Channel spaces terminating histories
-- **list_conversations**: Perform structural extraction of properties driving active Chanty layouts
 - **send_message**: Provision a highly-available JSON Payload dropping messages into Chanty Chats
+- **get_profile**: Inspect deep internal arrays evaluating self-assigned permissions
+- **set_status**: Mutate global Web CRM boundaries substituting plain Status texts
+- **invite_member**: Dispatch an automated JSON block emitting email triggers
 - **create_conversation**: Bootstrap an entirely empty structural chat Room dynamically
+- **delete_conversation**: Irreversibly vaporize explicit Channel spaces terminating histories
 - **delete_message**: Obliterate mapped HTTP bounds removing specific Texts
 - **list_messages**: Identify bounded routing spaces verifying explicit historical messages
-- **get_profile**: Inspect deep internal arrays evaluating self-assigned permissions
+- **list_conversations**: Perform structural extraction of properties driving active Chanty layouts
 - **list_members**: Retrieve explicit Directory maps tracking User IDs
-- **set_status**: Mutate globalThis Web CRM boundaries substituting plain Status texts
-- **invite_member**: Dispatch an automated JSON block emitting email triggers
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

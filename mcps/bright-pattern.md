@@ -34,16 +34,22 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 
 
 ## Available Tools (10)
+- **get_tenant_config**: This function requires no arguments.
+
+Retrieve core tenant configuration
+- **get_interaction_details**: Use the interaction’s unique ID.
+
+Get metadata for a specific interaction
 - **get_realtime_stats**: Get real-time contact center statistics
-- **get_tenant_config**: Retrieve core tenant configuration
-- **get_interaction_details**: Get metadata for a specific interaction
-- **get_user**: Get details of a specific user
-- **list_interactions**: List recent interactions (calls, chats)
-- **list_users**: List all contact center users
+- **get_user**: Provide the user’s ID.
+
+Get details of a specific user
 - **list_campaigns**: List all outbound campaigns
-- **list_teams**: List all agent teams
+- **list_interactions**: List recent interactions (calls, chats)
 - **list_services**: List all contact center services
 - **list_skills**: List all configured agent skills
+- **list_teams**: List all agent teams
+- **list_users**: List all contact center users
 
 
 ## 💬 Prompt Examples
@@ -128,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

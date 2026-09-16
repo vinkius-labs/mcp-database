@@ -34,16 +34,18 @@ Connect your **CallFire** account to any AI agent and manage your voice and SMS 
 
 
 ## Available Tools (10)
-- **list_calls**: List all calls
-- **list_texts**: List all text messages
+- **list_webhooks**: List all webhooks
 - **get_call**: Get a specific call
 - **get_campaign**: Get a specific broadcast campaign
 - **get_contact**: Get a specific contact
 - **get_text**: Get a specific text message
 - **get_webhook**: Get a specific webhook
-- **list_campaigns**: List all broadcast campaigns
+- **list_calls**: List all calls
+- **list_campaigns**: Use this tool to view the full list of active campaigns.
+
+List all broadcast campaigns
 - **list_contacts**: List all contacts
-- **list_webhooks**: List all webhooks
+- **list_texts**: List all text messages
 
 
 ## 💬 Prompt Examples
@@ -128,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
