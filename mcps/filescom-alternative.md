@@ -35,13 +35,13 @@ Connect your **Files.com** secure storage account to any AI agent and simplify h
 
 
 ## Available Tools (8)
-- **delete_file**: Delete a file or folder
-- **create_folder**: Create a new folder
-- **get_file_details**: Get details for a specific file
+- **list_users**: List Files.com users
 - **list_activity_history**: List file activity history
+- **create_folder**: Create a new folder
+- **delete_file**: Delete a file or folder
+- **get_file_details**: Get details for a specific file
 - **list_folders**: List Files.com folders
 - **list_user_groups**: List organizational groups
-- **list_users**: List Files.com users
 - **list_permissions**: List file permissions
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

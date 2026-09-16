@@ -35,36 +35,31 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 
 
 ## Available Tools (34)
-- **isolate_audio**: Remove background noise from audio
 - **create_project**: Provide a name; default voice IDs are optional.
 
 Create a Studio project
-- **create_single_use_token**: Create a single-use token
-- **get_history_item**: Provide a valid history item ID.
-
-Get details of a history item
 - **get_voice**: Provide a valid voice ID to retrieve information.
 
 Get details for a specific voice
 - **list_agents**: List Conversational AI agents
-- **list_dictionaries**: List pronunciation dictionaries
 - **stream_isolate_audio**: Stream audio isolation
-- **add_dictionary_from_file**: The file_base64 parameter is required for the operation.
-
-Add pronunciation dictionary from a PLS file
 - **add_dictionary_from_rules**: Provide the rules array if the dictionary name is omitted.
 
 Add pronunciation dictionary from rules
+- **add_dictionary_from_file**: The file_base64 parameter is required for the operation.
+
+Add pronunciation dictionary from a PLS file
+- **isolate_audio**: Remove background noise from audio
 - **create_agent**: Supply a name and the required conversation configuration.
 
 Create a Conversational AI agent
 - **create_designed_voice**: Save a designed voice
 - **create_dub**: Create a dubbing project
+- **create_single_use_token**: Create a single-use token
 - **create_speech**: Convert text to speech
 - **delete_history_item**: Ensure the history item ID is correct.
 
 Delete a history item
-- **convert_speech**: Voice Changer (Speech to Speech)
 - **delete_voice**: Ensure the voice ID is correct before proceeding with deletion.
 
 Delete a custom voice
@@ -81,24 +76,29 @@ Get status of a dubbing project
 - **get_history_audio**: Use the specific history item ID.
 
 Download audio for a history item
-- **get_snapshot**: Supply the project ID and snapshot ID.
+- **get_history_item**: Provide a valid history item ID.
 
-Get a project snapshot
+Get details of a history item
 - **get_user**: Get user info and subscription details
 - **list_agent_branches**: Supply the agent’s unique ID.
 
 List branches for a Conversational AI agent
+- **list_dictionaries**: List pronunciation dictionaries
 - **list_dubs**: List dubbing projects
 - **list_history**: Get generated items history
-- **list_models**: ).
-
-List available models
 - **list_projects**: Provide project details to list them.
 
 List Studio projects
 - **list_voices**: List available voices
 - **stream_convert_speech**: Stream Voice Changer (Speech to Speech)
 - **stream_speech**: Stream text to speech
+- **convert_speech**: Voice Changer (Speech to Speech)
+- **get_snapshot**: Supply the project ID and snapshot ID.
+
+Get a project snapshot
+- **list_models**: ).
+
+List available models
 
 
 ## 💬 Prompt Examples
@@ -183,4 +183,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

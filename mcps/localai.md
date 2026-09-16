@@ -36,20 +36,16 @@ Connect your **LocalAI** instance to any AI agent and leverage powerful multimod
 
 ## Available Tools (19)
 - **detect_objects**: Detect objects in an image
+- **rerank_documents**: Rerank documents based on a query
+- **chat_completions**: Generate chat completions (OpenAI compatible)
+- **create_embeddings**: Create text embeddings
+- **face_analyze**: Analyze face demographics
+- **face_register**: Enroll a face into the store
+- **face_verify**: Verify faces (1:1)
 - **generate_image**: Supports negative prompts using | separator.
 
 Generate images from text prompts
-- **rerank_documents**: Rerank documents based on a query
-- **open_responses**: Generate open responses
-- **face_analyze**: Analyze face demographics
 - **get_auth_status**: Check authentication state and providers
-- **apply_model**: Install a model from the gallery
-- **face_identify**: Identify faces (1:N)
-- **face_register**: Enroll a face into the store
-- **anthropic_messages**: Generate messages (Anthropic compatible)
-- **chat_completions**: Generate chat completions (OpenAI compatible)
-- **create_embeddings**: Create text embeddings
-- **face_verify**: Verify faces (1:1)
 - **get_auth_usage**: View personal token usage
 - **get_system_info**: View system and backend info
 - **get_version**: Get LocalAI version
@@ -58,6 +54,10 @@ Generate images from text prompts
 - **transcribe_audio**: Pass the file data or path as required by your LocalAI setup.
 
 Transcribe audio to text
+- **anthropic_messages**: Generate messages (Anthropic compatible)
+- **open_responses**: Generate open responses
+- **apply_model**: Install a model from the gallery
+- **face_identify**: Identify faces (1:N)
 
 
 ## 💬 Prompt Examples
@@ -142,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

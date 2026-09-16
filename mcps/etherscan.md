@@ -34,26 +34,26 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 
 
 ## Available Tools (19)
-- **get_balance_multi**: Get native token balances for multiple addresses
+- **get_source_code**: Get Contract Source Code
 - **get_abi**: Get Contract ABI
 - **get_address_tag**: Get address name tag (PRO Plus)
-- **get_block_number**: Get latest block number
-- **get_eth_price**: Get Ether last price
-- **get_gas_oracle**: Get Gas Oracle
-- **get_source_code**: Get Contract Source Code
-- **get_transaction_by_hash**: Get transaction by hash
-- **get_token_1155_tx**: Get ERC-1155 token transfers for an address
 - **get_address_token_balance**: Get address portfolio (PRO)
+- **get_balance_multi**: Get native token balances for multiple addresses
 - **get_balance**: Get native token balance for an address
 - **get_block_no_by_time**: Get block number by timestamp
+- **get_block_number**: Get latest block number
+- **get_eth_price**: Get Ether last price
 - **get_eth_supply**: Get total supply of Ether
+- **get_gas_oracle**: Get Gas Oracle
 - **get_logs**: Get event logs
+- **get_transaction_by_hash**: Get transaction by hash
+- **get_token_1155_tx**: Get ERC-1155 token transfers for an address
 - **get_token_nft_tx**: Get ERC-721 token transfers for an address
 - **get_token_tx**: Get ERC-20 token transfers for an address
+- **get_tx_list_internal**: Get internal transactions for an address
 - **get_tx_list**: Max 10,000 records.
 
 Get normal transactions for an address
-- **get_tx_list_internal**: Get internal transactions for an address
 - **verify_source_code**: Verify Contract Source Code
 
 
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
