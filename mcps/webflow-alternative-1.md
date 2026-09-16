@@ -34,29 +34,29 @@ Connect your **Webflow** account to any AI agent to automate your web design and
 
 
 ## Available Tools (19)
-- **get_collection**: Get details for a specific CMS collection
-- **get_form**: Get schema for a specific form
 - **list_forms**: List forms for a site
 - **list_items**: List items in a CMS collection
-- **list_pages**: List pages for a site
-- **list_sites**: List all Webflow sites
-- **publish_site**: Limited to 1 successful publish per minute.
+- **list_collections**: List CMS collections for a site
+- **list_assets**: ) uploaded to a specific site.
 
-Publish a Webflow site
+List assets for a site
 - **create_items**: Create items in a CMS collection
 - **create_webhook**: Create a webhook for a site
 - **delete_asset**: Delete an asset from a site
 - **delete_items**: Delete items from a CMS collection
+- **get_collection**: Get details for a specific CMS collection
+- **get_form**: Get schema for a specific form
 - **get_page**: Get metadata for a specific page
 - **get_site**: Get details for a specific Webflow site
-- **list_assets**: ) uploaded to a specific site.
+- **list_pages**: List pages for a site
+- **publish_site**: Limited to 1 successful publish per minute.
 
-List assets for a site
-- **list_collections**: List CMS collections for a site
-- **list_webhooks**: List webhooks for a site
+Publish a Webflow site
+- **list_sites**: List all Webflow sites
 - **update_items**: Update items in a CMS collection
 - **update_page**: Update metadata for a specific page
 - **upload_asset**: Upload an asset to a site
+- **list_webhooks**: List webhooks for a site
 
 
 ## 💬 Prompt Examples
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

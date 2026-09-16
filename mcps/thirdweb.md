@@ -33,35 +33,87 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 
 
 ## Available Tools (29)
-- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
-- **get_user_details**: Search for users in your project
-- **pregenerate_wallet**: Create a wallet for a user before they first log in
-- **query_transactions**: Fetch transaction history for a contract
-- **read_contract**: Execute one or more read-only calls (multicall)
-- **send_raw_transactions**: Broadcast encoded transactions
 - **list_solana_wallets**: List Solana wallets
-- **broadcast_solana_transaction**: Broadcast a transaction on Solana
-- **execute_solana_swap**: Execute a token swap on Solana Mainnet
-- **fetch_with_payment**: Proxy a request to a paid API using x402
-- **list_transactions**: List transactions
-- **query_events**: Fetch historical events for a contract
-- **sign_solana_transaction**: Sign a transaction on Solana
-- **unlink_profile**: Unlink a social identity from a wallet address
-- **verify_payment**: Validate a signed payment payload (x402)
-- **write_contract**: Execute one or more state-changing calls atomically
-- **deploy_contract**: Deploy a contract using bytecode and ABI
-- **get_payment_requirements**: Generate payment requirements for a resource (x402)
-- **get_solana_balance**: Get Solana wallet balance
-- **get_transaction_status**: Get status of a transaction
+- **sign_solana_transaction**: Pass the transaction data as a JSON string.
+
+Sign a transaction on Solana
+- **get_payment_requirements**: Pass the resource details as a JSON string.
+
+Generate payment requirements for a resource (x402)
+- **get_solana_balance**: Pass the wallet’s public address.
+
+Get Solana wallet balance
+- **get_transaction_status**: Use the unique transaction ID.
+
+Get status of a transaction
 - **get_wallet_me**: Retrieve details of the authenticated user
-- **initiate_auth**: Start authentication process for email, phone, passkey, or SIWE
-- **link_profile**: Tie multiple social identities to a single wallet address
-- **send_solana_tokens**: Send Solana tokens
-- **settle_payment**: Submit the payment on-chain (x402)
-- **sign_solana_message**: Sign a message on Solana
-- **social_auth**: OAuth flow for social providers
-- **complete_auth**: Verify challenge and complete login
-- **create_solana_wallet**: Create a Solana wallet
+- **link_profile**: Pass the JWT of the account to link.
+
+Tie multiple social identities to a single wallet address
+- **settle_payment**: Pass the payment details as a JSON string.
+
+Submit the payment on-chain (x402)
+- **broadcast_solana_transaction**: Supply the transaction data as a JSON string.
+
+Broadcast a transaction on Solana
+- **deploy_contract**: Provide the network ID for the deployment.
+
+Deploy a contract using bytecode and ABI
+- **execute_solana_swap**: Provide the swap data as a JSON string.
+
+Execute a token swap on Solana Mainnet
+- **fetch_with_payment**: Supply all required parameters, including the target URL.
+
+Proxy a request to a paid API using x402
+- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
+- **get_user_details**: Provide at least one search criterion.
+
+Search for users in your project
+- **initiate_auth**: Provide the required credentials based on the chosen method.
+
+Start authentication process for email, phone, passkey, or SIWE
+- **list_transactions**: Specify the sender address if filtering is required.
+
+List transactions
+- **pregenerate_wallet**: Specify the type and email address.
+
+Create a wallet for a user before they first log in
+- **query_events**: Provide the network ID and contract address, and optionally filter by topics.
+
+Fetch historical events for a contract
+- **query_transactions**: Provide the network ID and contract address.
+
+Fetch transaction history for a contract
+- **read_contract**: Provide the target network ID and the calls array.
+
+Execute one or more read-only calls (multicall)
+- **send_raw_transactions**: Ensure the transactions array is correctly formatted.
+
+Broadcast encoded transactions
+- **send_solana_tokens**: Include the network ID and specify the amount.
+
+Send Solana tokens
+- **sign_solana_message**: Provide the message string as the sole argument.
+
+Sign a message on Solana
+- **social_auth**: Specify the provider and the return URL.
+
+OAuth flow for social providers
+- **unlink_profile**: Specify the provider type and associated identifiers.
+
+Unlink a social identity from a wallet address
+- **verify_payment**: Pass the payment payload as a JSON string.
+
+Validate a signed payment payload (x402)
+- **write_contract**: Specify the chain ID, calls, and sender address.
+
+Execute one or more state-changing calls atomically
+- **complete_auth**: Use the appropriate method and required credentials.
+
+Verify challenge and complete login
+- **create_solana_wallet**: Provide a descriptive label for the wallet.
+
+Create a Solana wallet
 
 
 ## 💬 Prompt Examples
@@ -146,4 +198,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

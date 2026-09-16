@@ -33,24 +33,52 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 
 
 ## Available Tools (18)
-- **get_kv_list**: Retrieve items from a KV Store list
-- **rpc_eth_getlogs**: Returns an array of all logs matching a given filter object
-- **rpc_eth_gettransactionreceipt**: Returns the receipt of a transaction by hash
-- **delete_kv_set**: Delete a KV Store key-value pair
-- **delete_stream**: Delete a QuickNode stream
-- **delete_webhook**: Delete a QuickNode webhook
-- **get_stream**: Retrieve details of a specific QuickNode stream
-- **list_streams**: List all active QuickNode streams
-- **list_webhooks**: Retrieve all QuickNode webhooks
-- **rpc_eth_blocknumber**: Returns the number of the most recent block
-- **update_stream**: Update an existing QuickNode stream
-- **create_kv_list**: Create a new KV Store list
-- **create_kv_set**: Create a KV Store key-value pair
 - **create_stream**: Create a new QuickNode stream
 - **create_webhook**: Create a webhook from a template
-- **get_kv_set**: Retrieve a value from KV Store sets
-- **rpc_eth_call**: Executes a new message call immediately without creating a transaction
-- **update_kv_list**: Add or remove items from a KV Store list
+- **delete_kv_set**: Specify the key to be removed.
+
+Delete a KV Store key-value pair
+- **delete_stream**: Ensure the provided Stream ID is correct.
+
+Delete a QuickNode stream
+- **delete_webhook**: Use the unique Webhook ID for deletion.
+
+Delete a QuickNode webhook
+- **get_kv_list**: Specify the key of the list to query.
+
+Retrieve items from a KV Store list
+- **get_kv_set**: Provide the key associated with the desired value.
+
+Retrieve a value from KV Store sets
+- **get_stream**: Provide a valid Stream ID.
+
+Retrieve details of a specific QuickNode stream
+- **list_streams**: Do not attempt to list non-existent streams.
+
+List all active QuickNode streams
+- **list_webhooks**: Retrieve all QuickNode webhooks
+- **rpc_eth_blocknumber**: This tool requires no input parameters.
+
+Returns the number of the most recent block
+- **rpc_eth_call**: Provide the transaction object and block number.
+
+Executes a new message call immediately without creating a transaction
+- **rpc_eth_getlogs**: Provide a filter object JSON string.
+
+Returns an array of all logs matching a given filter object
+- **rpc_eth_gettransactionreceipt**: Provide a valid transaction hash as input.
+
+Returns the receipt of a transaction by hash
+- **update_kv_list**: Must specify a key and either add or remove items.
+
+Add or remove items from a KV Store list
+- **update_stream**: Must provide both a Stream ID and at least one update parameter.
+
+Update an existing QuickNode stream
+- **create_kv_list**: Create a new KV Store list
+- **create_kv_set**: Both the key and value must be provided.
+
+Create a KV Store key-value pair
 
 
 ## 💬 Prompt Examples
@@ -135,4 +163,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
