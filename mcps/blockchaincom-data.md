@@ -36,15 +36,25 @@ Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cr
 
 ## Available Tools (10)
 - **get_network_stats**: Get general Bitcoin network statistics
-- **get_ticker**: Get current BTC prices in various fiat currencies
 - **get_block_count**: Get the current total block count (height)
-- **get_block**: Get details of a specific block by hash
-- **get_chart**: Retrieve historical chart data (e.g. market-price, n-transactions)
-- **get_latest_block**: Get details of the latest Bitcoin block
+- **get_latest_block**: Do not specify a block hash.
+
+Get details of the latest Bitcoin block
+- **get_address**: Must provide the target address.
+
+Get balance and transaction history for a Bitcoin address
+- **get_block**: Provide the required block hash.
+
+Get details of a specific block by hash
+- **get_chart**: Specify the chart name.
+
+Retrieve historical chart data (e.g. market-price, n-transactions)
 - **get_mempool_stats**: Get current mempool statistics
+- **get_ticker**: Get current BTC prices in various fiat currencies
+- **get_transaction**: Provide the required transaction hash.
+
+Get details of a specific transaction by hash
 - **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
-- **get_address**: Get balance and transaction history for a Bitcoin address
-- **get_transaction**: Get details of a specific transaction by hash
 
 
 ## 💬 Prompt Examples
@@ -129,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

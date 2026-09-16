@@ -34,16 +34,30 @@ Connect your **Bloom Credit** account to any AI agent and orchestrate your credi
 
 
 ## Available Tools (10)
-- **create_consumer**: Create a new consumer profile
-- **get_consumer**: Get specific consumer details
+- **create_consumer**: You must provide both a first and last name.
+
+Create a new consumer profile
+- **create_order**: Specify the data type (e.g. credit_report) for the request.
+
+Order credit data for a consumer
+- **get_account_info**: This function requires no parameters.
+
+Get authenticated account profile info
+- **get_consumer**: Provide a valid consumer ID to fetch the correct profile.
+
+Get specific consumer details
+- **get_order**: Use the order ID to ensure accurate retrieval.
+
+Get specific order details
+- **get_report_data**: Pass the correct order ID to access the data.
+
+Get detailed credit report data for an order
+- **list_consumers**: This tool retrieves a list of available consumer profiles.
+
+List all consumers in the system
 - **list_furnishments**: List credit reporting furnishment accounts
-- **list_organizations**: List all accessible organizations
-- **get_report_data**: Get detailed credit report data for an order
 - **list_orders**: List all credit data orders
-- **create_order**: Order credit data for a consumer
-- **get_account_info**: Get authenticated account profile info
-- **get_order**: Get specific order details
-- **list_consumers**: List all consumers in the system
+- **list_organizations**: List all accessible organizations
 
 
 ## 💬 Prompt Examples
@@ -128,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

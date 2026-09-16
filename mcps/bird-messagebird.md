@@ -33,22 +33,22 @@ Connect **Bird** (formerly MessageBird) to your AI agents to orchestrate omnicha
 
 
 ## Available Tools (10)
-- **get_call**: Fetch the details of a single voice call
-- **get_contact**: Retrieve detailed information about a specific contact profile
-- **get_conversation**: Fetch the detailed metadata and status of a single conversation by its unique ID
-- **list_contacts**: List all customer contact profiles stored in the workspace
-- **list_conversations**: Retrieve a list of all ongoing or archived conversations in the Bird workspace
-- **list_messages**: List all individual messages within a specific conversation thread
-- **update_contact**: Data should be a JSON string, e.g., '{"displayName":"New Name"}'.
-
-Update the metadata or identifiers of an existing contact
 - **create_contact**: Identifiers should be a JSON string, e.g., '[{"key":"phone","value":"+123"}]'.
 
 Create a new contact profile in the Bird workspace
+- **get_call**: Fetch the details of a single voice call
+- **get_conversation**: Fetch the detailed metadata and status of a single conversation by its unique ID
 - **list_calls**: List all voice calls made or received in the workspace
+- **get_contact**: Retrieve detailed information about a specific contact profile
+- **list_contacts**: List all customer contact profiles stored in the workspace
+- **list_conversations**: Retrieve a list of all ongoing or archived conversations in the Bird workspace
+- **list_messages**: List all individual messages within a specific conversation thread
 - **send_message**: You must provide a valid channelId (e.g., for SMS or WhatsApp).
 
 Send a new message to a recipient through a specific communication channel (SMS, WhatsApp, etc.)
+- **update_contact**: Data should be a JSON string, e.g., '{"displayName":"New Name"}'.
+
+Update the metadata or identifiers of an existing contact
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

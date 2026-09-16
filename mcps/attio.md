@@ -36,18 +36,11 @@ No more manual updating of individual CRM records or missing critical relationsh
 
 
 ## Available Tools (14)
-- **get_object**: Get object schema
-- **list_objects**: List all CRM objects
-- **delete_record**: This action is irreversible.
-
-Delete a record
-- **get_list_entries**: Get entries from a list
-- **list_lists**: List all lists
-- **list_notes**: List notes on a record
-- **list_records**: Use "companies" for companies, "people" for contacts, "deals" for deals.
-
-List records for any object
 - **list_tasks**: List all tasks
+- **update_record**: Only provided attributes are changed.
+
+Update an existing record
+- **list_lists**: List all lists
 - **check_attio_status**: Verify Attio API connectivity
 - **create_note**: Useful for logging meeting notes, call summaries, or updates.
 
@@ -56,10 +49,17 @@ Create a note on a record
 
 Create a new record
 - **create_task**: Create a new task
-- **update_record**: Only provided attributes are changed.
+- **delete_record**: This action is irreversible.
 
-Update an existing record
+Delete a record
+- **get_list_entries**: Get entries from a list
+- **get_object**: Get object schema
 - **get_record**: Get a specific record
+- **list_notes**: List notes on a record
+- **list_objects**: List all CRM objects
+- **list_records**: Use "companies" for companies, "people" for contacts, "deals" for deals.
+
+List records for any object
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

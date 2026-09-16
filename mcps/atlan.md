@@ -38,11 +38,11 @@ Your AI agent gains deep context about what data means, where it lives, and who 
 ## Available Tools (6)
 - **list_personas**: List all Atlan Personas
 - **list_users**: List all users in the Atlan workspace
+- **list_glossaries**: List all business glossaries in Atlan
 - **search_assets**: Search for data assets in the Atlan Data Catalog
 - **list_classifications**: ) configured in Atlan for data governance purposes.
 
 List all classifications defined in Atlan
-- **list_glossaries**: List all business glossaries in Atlan
 - **list_purposes**: List all Atlan Purposes
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

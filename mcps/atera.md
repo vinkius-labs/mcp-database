@@ -30,12 +30,22 @@ The **Atera MCP Server** provides your AI agent with a powerful interface to you
 
 ## Available Tools (9)
 - **list_tickets**: List all support tickets
-- **create_ticket**: Create a new support ticket
-- **list_agents**: List all monitored agents (devices) in Atera
+- **get_ticket**: Provide the required Ticket ID.
+
+Get details for a specific ticket
 - **get_account_check**: Verify Atera account connection
-- **get_agent**: Get details for a specific agent
-- **get_customer**: Get details for a specific customer
-- **get_ticket**: Get details for a specific ticket
+- **create_ticket**: You must provide a title and description.
+
+Create a new support ticket
+- **get_agent**: Provide the required Agent ID.
+
+Get details for a specific agent
+- **get_customer**: Provide the required Customer ID.
+
+Get details for a specific customer
+- **list_agents**: Do not use this tool if you need specific agent details.
+
+List all monitored agents (devices) in Atera
 - **list_alerts**: List recent system alerts
 - **list_customers**: List all customers (organizations)
 
@@ -122,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
