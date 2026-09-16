@@ -34,15 +34,15 @@ Connect to **Irys**, the provenance layer for permanent data storage. This MCP s
 
 
 ## Available Tools (8)
-- **submit_transaction**: Submit a signed data transaction
-- **get_transaction**: Retrieve metadata for a specific transaction ID
+- **get_price**: Get storage price for a specific token and data size
 - **get_balance**: Get balance for a specific address
 - **fund_account**: Submit a funding transaction receipt
+- **get_transaction**: Retrieve metadata for a specific transaction ID
 - **get_info**: Get Irys node metadata
-- **get_price**: Get storage price for a specific token and data size
 - **query_transactions**: Use this to find historical transactions by tag.
 
 Search and filter transaction metadata via GraphQL
+- **submit_transaction**: Submit a signed data transaction
 - **withdraw_account**: Initiate a withdrawal request
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

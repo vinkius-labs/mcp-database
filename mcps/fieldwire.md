@@ -36,25 +36,25 @@ No more switching between mobile apps and desktop browsers to check the status o
 
 
 ## Available Tools (17)
-- **list_project_users**: List users in a Fieldwire project
-- **batch_update_statuses**: Batch create, update, or delete task statuses
+- **batch_move_floorplans**: Move floorplans to collections
 - **create_project**: Create a new Fieldwire project
-- **enable_collections**: Enable collections for floorplans in a project
+- **create_sheet_upload**: Create a sheet upload after uploading to S3
+- **create_task**: Create a new task in a Fieldwire project
 - **get_form_full**: If a job is triggered, it returns a jid. Call again with the jid to poll until the full JSON payload is returned.
 
 Get full data for a form (triggers job or polls)
 - **get_project**: Get details for a specific Fieldwire project
+- **invite_user**: Invite a user to the Fieldwire account
+- **list_project_users**: List users in a Fieldwire project
 - **list_projects**: List all projects in the Fieldwire account
 - **list_statuses**: Get custom task statuses for a project
 - **list_task_bubbles**: Get comments and media (bubbles) for a task
-- **list_tasks**: List tasks in a Fieldwire project
-- **batch_move_floorplans**: Move floorplans to collections
-- **create_sheet_upload**: Create a sheet upload after uploading to S3
-- **create_task**: Create a new task in a Fieldwire project
-- **invite_user**: Invite a user to the Fieldwire account
+- **batch_update_statuses**: Batch create, update, or delete task statuses
+- **enable_collections**: Enable collections for floorplans in a project
 - **list_floorplans**: List floorplans in a Fieldwire project
-- **add_aws_post_tokens**: Generate AWS POST tokens for uploading files
+- **list_tasks**: List tasks in a Fieldwire project
 - **update_task**: Update an existing Fieldwire task
+- **add_aws_post_tokens**: Generate AWS POST tokens for uploading files
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -26,14 +26,13 @@ Connect your **Forefront** account to any AI agent to harness powerful language 
 
 
 ## Available Tools (10)
-- **create_pipeline_dataset**: Provide both the pipeline ID and the desired dataset name.
-
-Create a dataset from a pipeline selection
 - **create_pipeline**: Specify a unique name for the pipeline.
 
 Create a new pipeline to collect LLM outputs
 - **list_pipelines**: Returns a list of your pipelines
-- **create_fine_tune**: Creates a fine-tuning job
+- **get_pipeline**: Provide the required pipeline ID.
+
+Returns a pipeline object by ID
 - **add_pipeline_data**: Ensure you provide the pipeline ID and message data.
 
 Add data samples to a pipeline
@@ -43,11 +42,12 @@ Creates a model response for the given chat conversation
 - **create_completion**: Pass a single prompt string.
 
 Creates a completion response for a given prompt
+- **create_fine_tune**: Creates a fine-tuning job
+- **create_pipeline_dataset**: Provide both the pipeline ID and the desired dataset name.
+
+Create a dataset from a pipeline selection
 - **get_pipeline_count**: Get count of pipeline selection
 - **get_pipeline_samples**: Get data samples for a pipeline selection
-- **get_pipeline**: Provide the required pipeline ID.
-
-Returns a pipeline object by ID
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,16 +33,16 @@ Connect your **Fresha** workspace to any AI agent and gain deep insights into yo
 
 
 ## Available Tools (11)
-- **list_products**: List Fresha products via OData
-- **list_inventory**: List Fresha inventory via OData
+- **list_reviews**: List Fresha reviews via OData
 - **list_clients**: List Fresha clients via OData
 - **list_sale_items**: List Fresha sale items via OData
 - **list_services**: List Fresha services via OData
 - **list_staff**: List Fresha staff via OData
-- **list_appointments**: List Fresha appointments via OData
 - **list_appointment_services**: List Fresha appointment services via OData
+- **list_appointments**: List Fresha appointments via OData
+- **list_inventory**: List Fresha inventory via OData
 - **list_locations**: List Fresha locations via OData
-- **list_reviews**: List Fresha reviews via OData
+- **list_products**: List Fresha products via OData
 - **list_sales**: List Fresha sales via OData
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,9 +33,9 @@ Connect **IPdata** to your AI agent to instantly analyze IP addresses and Autono
 
 
 ## Available Tools (3)
+- **lookup_asn**: Lookup details for an Autonomous System Number (ASN)
 - **lookup_ip**: Lookup details for a specific IP address
 - **lookup_own_ip**: Lookup the location and threat profile of the current IP
-- **lookup_asn**: Lookup details for an Autonomous System Number (ASN)
 
 
 ## 💬 Prompt Examples
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

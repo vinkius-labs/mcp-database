@@ -34,31 +34,43 @@ Connect your **Kayako** helpdesk to any AI agent to streamline your customer sup
 
 
 ## Available Tools (21)
-- **list_views**: List Kayako views
-- **create_case**: Create a new Kayako case
-- **create_file**: Upload a file to Kayako
-- **create_user**: Create a new Kayako user
-- **get_me**: Get current Kayako user details
-- **list_locales**: List Kayako locales
-- **list_macros**: List Kayako macros
-- **list_sections**: List Kayako Help Center sections
-- **list_team_members**: List members of a specific Kayako team
-- **list_triggers**: List Kayako automation triggers
-- **list_users**: Supports pagination and partial output.
+- **list_article_comments**: List comments for a specific Kayako article
+- **list_categories**: Do not query categories without specifying a search term.
 
-List Kayako users
+List Kayako Help Center categories
+- **list_locales**: This tool does not require parameters.
+
+List Kayako locales
+- **list_teams**: List Kayako teams
+- **list_articles**: Do not query articles without specifying a search term.
+
+List Kayako Help Center articles
 - **list_brands**: List Kayako brands
 - **list_case_posts**: List posts for a specific Kayako case
 - **list_cases**: Supports pagination and partial output.
 
 List Kayako cases (conversations)
-- **list_article_comments**: List comments for a specific Kayako article
-- **list_articles**: List Kayako Help Center articles
-- **list_categories**: List Kayako Help Center categories
+- **create_user**: Create a new Kayako user
 - **list_endpoints**: List Kayako automation endpoints
-- **list_monitors**: List Kayako automation monitors
+- **list_macros**: List Kayako macros
+- **get_me**: Get current Kayako user details
+- **list_monitors**: Do not query monitors without specifying a search term.
+
+List Kayako automation monitors
 - **list_organizations**: List Kayako organizations
-- **list_teams**: List Kayako teams
+- **list_sections**: Do not query sections without specifying a search term.
+
+List Kayako Help Center sections
+- **list_team_members**: List members of a specific Kayako team
+- **list_triggers**: Do not query triggers without specifying a search term.
+
+List Kayako automation triggers
+- **list_users**: Supports pagination and partial output.
+
+List Kayako users
+- **list_views**: List Kayako views
+- **create_case**: Create a new Kayako case
+- **create_file**: Upload a file to Kayako
 
 
 ## 💬 Prompt Examples
@@ -143,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

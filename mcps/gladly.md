@@ -34,26 +34,26 @@ Connect your **Gladly** platform to any AI agent to streamline your customer ser
 
 
 ## Available Tools (20)
-- **delete_business_hours**: Delete business hours
 - **add_answer**: Add a new answer
+- **create_business_hours**: Create business hours
 - **delete_answer**: Delete an answer
-- **get_agent**: Get a specific Gladly agent
+- **delete_business_hours**: Delete business hours
 - **get_agent_call_recording**: Get agent call recording status
+- **get_agent**: Get a specific Gladly agent
 - **get_answer_content**: Get answer content
-- **get_business_hours**: Get business hours
-- **get_public_answer**: Get a specific public answer
 - **list_agents**: List Gladly agents
 - **list_audiences**: List audiences
 - **list_business_hours**: List business hours
+- **send_email**: Send an email message
+- **update_agent_call_recording**: Update agent call recording status
+- **update_answer_content**: Add or update answer content
+- **update_answer**: Update an existing answer
+- **update_business_hours**: Update business hours
+- **get_business_hours**: Get business hours
+- **get_public_answer**: Get a specific public answer
 - **list_public_answers**: List public answers
 - **search_public_answers**: Search public answers
 - **send_sms**: Send an SMS message
-- **update_agent_call_recording**: Update agent call recording status
-- **update_business_hours**: Update business hours
-- **create_business_hours**: Create business hours
-- **send_email**: Send an email message
-- **update_answer**: Update an existing answer
-- **update_answer_content**: Add or update answer content
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

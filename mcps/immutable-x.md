@@ -34,23 +34,37 @@ Connect your **Immutable** developer account to any AI agent to manage Web3 gami
 
 
 ## Available Tools (17)
-- **list_listings**: List all orderbook listings
-- **list_mint_requests**: List mint requests for a collection
+- **fulfill_order**: The body must contain the necessary fulfillment payload.
+
+Fulfill an orderbook order
+- **get_passport_profile**: Requires a valid Access Token for authentication.
+
+Get Passport user profile (requires Access Token)
 - **list_nfts**: List all NFTs
-- **fulfill_order**: Fulfill an orderbook order
-- **get_activity**: Get a specific activity by ID
-- **list_collections**: List all NFT collections
-- **get_passport_profile**: Get Passport user profile (requires Access Token)
-- **list_tokens**: List ERC20 tokens
-- **refresh_collection_metadata**: Refresh metadata for a collection
-- **update_passport_username**: Update Passport username (requires Access Token)
-- **create_bid**: Create an orderbook bid
-- **create_listing**: Create an orderbook listing
+- **create_bid**: The body must contain the bid details.
+
+Create an orderbook bid
+- **create_listing**: The body must contain the full listing details.
+
+Create an orderbook listing
+- **get_activity**: The activity ID must be provided.
+
+Get a specific activity by ID
 - **get_collection**: Get collection details by contract address
 - **get_nft**: Get NFT details by token ID
-- **get_token**: Get ERC20 token by contract address
+- **get_token**: Provide both the chain name and contract address.
+
+Get ERC20 token by contract address
 - **list_activities**: List all activities on an Immutable chain
+- **list_collections**: List all NFT collections
+- **list_listings**: List all orderbook listings
+- **list_mint_requests**: List mint requests for a collection
+- **list_tokens**: Specify the target chain name.
+
+List ERC20 tokens
 - **mint_nfts**: Mint NFTs (requires Secret API Key)
+- **refresh_collection_metadata**: Refresh metadata for a collection
+- **update_passport_username**: Update Passport username (requires Access Token)
 
 
 ## 💬 Prompt Examples
@@ -135,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
