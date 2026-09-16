@@ -36,17 +36,35 @@ Connect your **Green Street** account to any AI agent and take full control of y
 
 ## Available Tools (12)
 - **get_forecast_scenarios**: Retrieve forward-looking market and sector projections
-- **get_market_grades**: Get grades and rankings for a specific market
-- **get_market_projections**: Get forward-looking NOI projections for a market
-- **get_earnings_metrics**: Get FFO/FAD earnings data for a company
-- **get_historical_transactions**: Retrieve historical transaction summaries
-- **get_market_sector_summary**: Get analytics and grades for a specific market sector
-- **get_company_summary**: Get financial summary for a specific company by symbol
-- **get_nav_estimates**: Get Net Asset Value (NAV) estimates for a company
-- **get_news_articles**: Search and retrieve commercial real estate news
-- **get_portfolio_breakout**: Get geographic and property-type breakouts for a portfolio
+- **get_market_grades**: Must provide the name or ID of the market.
+
+Get grades and rankings for a specific market
+- **get_earnings_metrics**: Provide the company’s ticker symbol.
+
+Get FFO/FAD earnings data for a company
+- **get_historical_transactions**: Optionally filter results by a specific market.
+
+Retrieve historical transaction summaries
+- **get_nav_estimates**: Provide the company’s ticker symbol.
+
+Get Net Asset Value (NAV) estimates for a company
+- **get_news_articles**: Use a specific keyword for accurate results.
+
+Search and retrieve commercial real estate news
+- **get_portfolio_breakout**: Provide the company’s ticker symbol.
+
+Get geographic and property-type breakouts for a portfolio
 - **list_companies**: List all REITs and real estate companies covered by Green Street
 - **list_sectors**: List available real estate sectors
+- **get_market_projections**: Must specify the target market name or ID.
+
+Get forward-looking NOI projections for a market
+- **get_market_sector_summary**: Must provide a valid sector name.
+
+Get analytics and grades for a specific market sector
+- **get_company_summary**: Must provide a valid company symbol.
+
+Get financial summary for a specific company by symbol
 
 
 ## 💬 Prompt Examples
@@ -131,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

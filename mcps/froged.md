@@ -35,17 +35,17 @@ Connect your **Froged** account to any AI agent to automate your customer succes
 
 
 ## Available Tools (11)
-- **verify_api_status**: Verify API connection
-- **get_chat_details**: Get conversation history
-- **get_contact_details**: Get contact metadata
-- **list_support_conversations**: List support chats
-- **upsert_contact**: Create/Update contact
-- **list_marketing_campaigns**: List active campaigns
 - **list_behavioral_events**: List tracked events
-- **list_cs_contacts**: List Froged contacts
 - **list_kb_articles**: List help articles
 - **send_chat_message**: Send support reply
+- **get_contact_details**: Get contact metadata
+- **get_chat_details**: Get conversation history
+- **list_marketing_campaigns**: List active campaigns
+- **list_cs_contacts**: List Froged contacts
+- **list_support_conversations**: List support chats
 - **track_custom_event**: Track user behavior
+- **upsert_contact**: Create/Update contact
+- **verify_api_status**: Verify API connection
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

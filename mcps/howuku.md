@@ -14,16 +14,32 @@ Empower your AI agents to analyze user behavior on your websites. This MCP serve
 
 
 ## Available Tools (10)
-- **get_me**: Gets current authenticated user info
-- **get_project**: Retrieves details for a specific project
-- **list_events**: Lists custom tracking events for a project
-- **list_projects**: Lists Howuku projects (sites)
-- **list_feedback**: Lists visual feedback items for a project
-- **list_funnels**: Lists conversion funnels for a project
-- **list_heatmaps**: Lists heatmaps for a project
+- **list_events**: Provide the project ID to ensure accurate results.
+
+Lists custom tracking events for a project
+- **get_project**: Provide the project ID as the required argument.
+
+Retrieves details for a specific project
+- **list_funnels**: Specify the project ID to retrieve relevant funnels.
+
+Lists conversion funnels for a project
+- **list_heatmaps**: Supply the project ID to scope the search.
+
+Lists heatmaps for a project
 - **list_organizations**: Lists organizations associated with your account
-- **list_recordings**: Lists session recordings for a project
-- **list_surveys**: Lists surveys for a project
+- **list_projects**: Lists Howuku projects (sites)
+- **list_recordings**: You must provide the project ID.
+
+Lists session recordings for a project
+- **list_surveys**: Use the project ID to filter results.
+
+Lists surveys for a project
+- **get_me**: No arguments are needed.
+
+Gets current authenticated user info
+- **list_feedback**: Pass the project ID to narrow down the results.
+
+Lists visual feedback items for a project
 
 
 ## 💬 Prompt Examples
@@ -108,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
