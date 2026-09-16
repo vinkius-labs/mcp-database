@@ -15,8 +15,8 @@ This MCP server provides precise culinary calculations to determine exactly how 
 
 ## Available Tools (3)
 - **get_texture_descriptions**: Get culinary descriptions for egg donness levels
-- **validate_egg_parameters**: Validate egg cooking parameters
 - **calculate_boiling_time**: Calculate the required boiling time for an egg
+- **validate_egg_parameters**: Validate egg cooking parameters
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -15,9 +15,9 @@ This MCP server provides precise estimation tools for bakers to manage fermentat
 
 ## Available Tools (4)
 - **calculate_cold_delay**: Calculates the additional time required when moving dough to a refrigerator
-- **get_bulk_fermentation_duration**: Estimates the time required for bulk fermentation
 - **get_final_proof_duration**: Estimates the time required for final proofing
 - **validate_fermentation_environment**: Checks if the provided yeast and temperature settings are within safe or standard baking parameters
+- **get_bulk_fermentation_duration**: Estimates the time required for bulk fermentation
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

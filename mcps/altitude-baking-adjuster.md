@@ -14,8 +14,8 @@ Baking at higher elevations requires specific recipe modifications due to decrea
 
 
 ## Available Tools (3)
-- **adjust_liquid_volume**: Adjust liquid volume for altitude
 - **adjust_leavening**: Adjust leavening agent for altitude
+- **adjust_liquid_volume**: Adjust liquid volume for altitude
 - **adjust_oven_conditions**: Adjust oven temperature and time for altitude
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
