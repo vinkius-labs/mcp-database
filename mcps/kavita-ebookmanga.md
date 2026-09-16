@@ -34,10 +34,10 @@ No more manual clicks in the web UI just to refresh your latest manga chapters. 
 
 
 ## Available Tools (4)
-- **check_authkey_expires**: Check API key expiration date
 - **scan_all_libraries**: Trigger a scan of all libraries
 - **scan_library**: Trigger a scan for a specific library
 - **authenticate**: Authenticate and receive a JWT token
+- **check_authkey_expires**: Check API key expiration date
 
 
 ## 💬 Prompt Examples
@@ -122,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
