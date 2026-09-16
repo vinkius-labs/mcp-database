@@ -14,9 +14,9 @@ This MCP server provides decision-support tools for managing the complex transit
 
 
 ## Available Tools (3)
+- **generate_royalty_structure**: Determines appropriate royalty percentages and milestone payment triggers
 - **calculate_equity_split**: Recommends a specific equity distribution between the university and the founding team
 - **create_negotiation_framework**: Provides a strategic roadmap for founders and TTO officers to reach an agreement
-- **generate_royalty_structure**: Determines appropriate royalty percentages and milestone payment triggers
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
