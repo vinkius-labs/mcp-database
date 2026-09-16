@@ -34,21 +34,21 @@ Connect to the **Arweave** network and manage permanent data storage through nat
 
 
 ## Available Tools (13)
-- **get_transaction**: Retrieve a transaction by its ID
+- **query_graphql**: Execute a GraphQL query against the Arweave network
 - **get_transaction_data**: Retrieve the data associated with a transaction
 - **get_transaction_offset**: Get the byte offset and size of the transaction data
-- **get_transaction_status**: g., pending, confirmed).
-
-Get the status of a transaction
-- **get_wallet_balance**: Get the balance of a wallet address in Winstons
-- **get_network_info**: Get current Arweave network status
-- **get_peers**: Get a list of peer addresses known to the node
-- **query_graphql**: Execute a GraphQL query against the Arweave network
-- **submit_transaction**: Submit a new transaction to the network
 - **get_block_by_hash**: Retrieve a block by its hash
 - **get_block_by_height**: Retrieve a block by its height
 - **get_storage_price**: Get the cost in Winstons to store data
+- **get_transaction_status**: g., pending, confirmed).
+
+Get the status of a transaction
+- **get_transaction**: Retrieve a transaction by its ID
+- **get_wallet_balance**: Get the balance of a wallet address in Winstons
 - **get_wallet_last_tx**: Get the ID of the last transaction sent by the wallet
+- **get_network_info**: Get current Arweave network status
+- **get_peers**: Get a list of peer addresses known to the node
+- **submit_transaction**: Submit a new transaction to the network
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
