@@ -35,18 +35,18 @@ Connect your **vCita** business management account to any AI agent and simplify 
 
 
 ## Available Tools (12)
-- **get_api_status**: Get account status
+- **create_new_booking**: Schedule a service
+- **create_crm_client**: Add new customer
 - **get_client_details**: Get client info
 - **list_scheduled_appointments**: List bookings
-- **list_client_invoices**: List all invoices
 - **list_crm_clients**: List CRM customers
-- **list_offered_services**: List bookable services
-- **list_price_estimates**: List client estimates
 - **list_recorded_payments**: List transactions
-- **cancel_appointment**: Cancel booking
-- **create_crm_client**: Add new customer
-- **create_new_booking**: Schedule a service
+- **get_api_status**: Get account status
 - **list_staff_members**: List team users
+- **list_price_estimates**: List client estimates
+- **list_client_invoices**: List all invoices
+- **list_offered_services**: List bookable services
+- **cancel_appointment**: Cancel booking
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

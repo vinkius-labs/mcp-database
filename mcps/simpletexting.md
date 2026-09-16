@@ -36,18 +36,18 @@ No more manual typing or list exporting. Your AI acts as a dedicated marketing m
 
 
 ## Available Tools (12)
+- **create_subscriber**: Add new contact
+- **get_api_status**: Check connection
+- **list_subscribers**: List SMS contacts
+- **list_contact_lists**: List static groups
+- **list_audience_segments**: List dynamic segments
+- **list_active_webhooks**: Get event configs
+- **schedule_sms_delivery**: Schedule future SMS
+- **send_sms_message**: Send text message
+- **update_subscriber_info**: Modify contact data
 - **remove_subscriber**: Delete contact
 - **get_subscriber_details**: Get contact info
 - **list_chat_conversations**: Get message history
-- **list_contact_lists**: List static groups
-- **send_sms_message**: Send text message
-- **list_active_webhooks**: Get event configs
-- **create_subscriber**: Add new contact
-- **get_api_status**: Check connection
-- **list_audience_segments**: List dynamic segments
-- **list_subscribers**: List SMS contacts
-- **schedule_sms_delivery**: Schedule future SMS
-- **update_subscriber_info**: Modify contact data
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

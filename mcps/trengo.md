@@ -35,20 +35,20 @@ Connect your **Trengo** omnichannel inbox to any AI agent and simplify how you m
 
 
 ## Available Tools (12)
+- **list_messages**: List ticket messages
 - **create_ticket**: Create a new ticket
 - **get_account_profile**: Get current user profile
 - **get_ticket**: Get ticket details
-- **list_messages**: List ticket messages
 - **list_channels**: ).
 
 List communication channels
 - **list_contacts**: List all contacts
-- **list_team_members**: List team users
 - **list_tickets**: List all support tickets
-- **list_webhooks**: List configured webhooks
+- **list_team_members**: List team users
 - **update_ticket**: Update ticket status
 - **send_message**: Send a message
 - **create_webhook**: Create a new webhook
+- **list_webhooks**: List configured webhooks
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

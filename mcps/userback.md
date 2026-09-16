@@ -34,12 +34,12 @@ Connect your **Userback** account to any AI agent and simplify how you collect a
 
 
 ## Available Tools (6)
-- **get_project_details**: Get details for a specific project
-- **list_account_users**: List account users
-- **list_feedbacks**: List Userback feedbacks
-- **list_userback_projects**: List Userback projects
 - **create_feedback_entry**: Create a new feedback entry
 - **get_feedback_details**: Get details for a specific feedback
+- **get_project_details**: Get details for a specific project
+- **list_feedbacks**: List Userback feedbacks
+- **list_userback_projects**: List Userback projects
+- **list_account_users**: List account users
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
