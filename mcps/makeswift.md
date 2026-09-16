@@ -27,15 +27,15 @@ Connect your **Makeswift** site to any AI agent and simplify your visual buildin
 
 
 ## Available Tools (10)
-- **get_page**: Get details for a specific page
 - **get_site_details**: Get current Makeswift site details
-- **list_components**: List registered components
 - **list_hostnames**: List site hostnames
-- **list_pages**: List all pages in the site
-- **list_redirects**: List site redirects
+- **list_components**: List registered components
 - **create_snapshot**: Create a new content snapshot
+- **get_page**: Get details for a specific page
 - **get_snapshot**: Get details for a specific snapshot
 - **list_locales**: List configured site locales
+- **list_pages**: List all pages in the site
+- **list_redirects**: List site redirects
 - **list_snapshots**: List content snapshots
 
 
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

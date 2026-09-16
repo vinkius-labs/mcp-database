@@ -34,12 +34,12 @@ Connect your **Jitbit** instance to any AI agent and manage your helpdesk throug
 
 
 ## Available Tools (6)
+- **list_ticket_categories**: List helpdesk categories
+- **list_account_users**: List helpdesk users
+- **get_ticket_details**: Get details for a specific ticket
 - **list_kb_articles**: List knowledge base articles
 - **create_support_ticket**: Add a new ticket
-- **get_ticket_details**: Get details for a specific ticket
-- **list_ticket_categories**: List helpdesk categories
 - **list_tickets**: List helpdesk tickets
-- **list_account_users**: List helpdesk users
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

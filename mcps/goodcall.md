@@ -36,19 +36,19 @@ Connect your **Goodcall** account to any AI agent and manage your virtual phone 
 
 
 ## Available Tools (13)
-- **check_goodcall_status**: Verify connectivity
 - **get_analytics**: Get call analytics
 - **get_call_summary**: Get call summary
-- **update_agent**: Update an agent
-- **list_missed_calls**: List missed calls
-- **get_agent**: Get agent details
 - **get_call**: Get call details
-- **get_transcript**: Get call transcript
 - **list_agents**: List AI agents
 - **list_bookings**: List bookings
-- **list_calls**: List all calls
 - **list_calls_by_agent**: List calls by agent
+- **list_missed_calls**: List missed calls
+- **check_goodcall_status**: Verify connectivity
+- **get_agent**: Get agent details
+- **get_transcript**: Get call transcript
+- **list_calls**: List all calls
 - **list_faqs**: List FAQs
+- **update_agent**: Update an agent
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

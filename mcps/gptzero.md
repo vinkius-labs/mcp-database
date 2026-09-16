@@ -37,9 +37,9 @@ No more manual copy-pasting into web detectors. Your AI acts as your dedicated a
 
 ## Available Tools (4)
 - **get_current_user**: Get authenticated user profile
+- **submit_prediction_feedback**: Provide feedback on a prediction
 - **get_api_quotas**: Check remaining API credits
 - **detect_ai_in_text**: Analyze text for AI generation
-- **submit_prediction_feedback**: Provide feedback on a prediction
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

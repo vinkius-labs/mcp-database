@@ -29,13 +29,13 @@ Connect your **ImageRouter** account to any AI agent and manage AI image generat
 - **edit_image**: Edit an existing image
 - **generate_image_advanced**: Generate with full options
 - **generate_image**: Generate an image from text
-- **generate_variation**: Generate image variation
-- **get_model**: Get model details
 - **get_generation_status**: Check generation status
-- **list_models_by_category**: List models by category
 - **list_models**: List available models
 - **list_styles**: List image styles
 - **upscale_image**: Upscale an image
+- **generate_variation**: Generate image variation
+- **get_model**: Get model details
+- **list_models_by_category**: List models by category
 
 
 ## 💬 Prompt Examples
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
