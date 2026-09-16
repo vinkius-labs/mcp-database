@@ -35,14 +35,14 @@ Integrate **DoiT**, the leading cloud cost management and optimization platform,
 ## Available Tools (10)
 - **get_billing_cost_summary**: Retrieve a high-level summary of total cloud spending across all platforms
 - **list_cloud_assets**: List all cloud assets (AWS, GCP, Azure) managed by DoiT
-- **list_exceeded_cost_budgets**: Identify budgets that have exceeded their configured spending limits
-- **list_cost_anomalies**: List all detected cloud cost anomalies and unexpected spending spikes
 - **list_critical_cost_spikes**: Identify high-severity cost anomalies that require immediate attention
-- **list_cost_budgets**: List all cloud spending budgets configured in DoiT
-- **list_connected_cloud_accounts**: List all connected AWS, GCP, or Azure accounts
-- **search_cloud_assets**: Search for cloud assets using a name keyword
 - **get_doit_account_metadata**: Retrieve metadata for the current DoiT organization
 - **get_asset_details**: Get detailed configuration and cost data for a specific cloud asset
+- **list_cost_anomalies**: List all detected cloud cost anomalies and unexpected spending spikes
+- **list_cost_budgets**: List all cloud spending budgets configured in DoiT
+- **list_connected_cloud_accounts**: List all connected AWS, GCP, or Azure accounts
+- **list_exceeded_cost_budgets**: Identify budgets that have exceeded their configured spending limits
+- **search_cloud_assets**: Search for cloud assets using a name keyword
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

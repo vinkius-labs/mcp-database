@@ -33,16 +33,16 @@ Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, direc
 
 
 ## Available Tools (10)
-- **list_crm_contacts**: List all contacts in your EngageBay account
-- **list_crm_tasks**: List all CRM tasks and follow-ups
 - **list_latest_sales_opportunities**: Identify the most recently created or updated sales deals
-- **get_contact_profile**: Get detailed profile and interaction history for a specific contact
-- **get_deal_details**: Get detailed settings and status for a specific sales deal
 - **get_engagebay_account_metadata**: Retrieve metadata and limits for your EngageBay account
+- **get_contact_profile**: Get detailed profile and interaction history for a specific contact
 - **list_crm_companies**: List all companies/organizations in your CRM
+- **list_crm_contacts**: List all contacts in your EngageBay account
+- **list_successfully_closed_deals**: Identify deals that have reached the "Won" or "Closed" stage
+- **get_deal_details**: Get detailed settings and status for a specific sales deal
 - **quick_crm_volume_audit**: Retrieve a high-level summary of contacts, deals, and tasks
 - **list_sales_deals**: List all sales deals and opportunities
-- **list_successfully_closed_deals**: Identify deals that have reached the "Won" or "Closed" stage
+- **list_crm_tasks**: List all CRM tasks and follow-ups
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
