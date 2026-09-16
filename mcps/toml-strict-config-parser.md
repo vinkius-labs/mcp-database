@@ -14,11 +14,11 @@ The TOML Strict Config Parser provides a reliable way to convert raw TOML text i
 
 
 ## Available Tools (3)
-- **validate_toml_syntax**: Validates the syntax of a TOML string
-- **get_toml_structural_summary**: Provides a summary of the TOML structure
 - **parse_toml_string**: Returns parsed JSON, section count, and errors.
 
 Parses a TOML string into a JSON object
+- **validate_toml_syntax**: Validates the syntax of a TOML string
+- **get_toml_structural_summary**: Provides a summary of the TOML structure
 
 
 ## 💬 Prompt Examples
@@ -108,4 +108,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

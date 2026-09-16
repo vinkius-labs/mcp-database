@@ -14,8 +14,8 @@ The Markdown Table to JSON Converter is a specialized utility designed for relia
 
 
 ## Available Tools (3)
-- **convert_table_to_json**: Convert a markdown table to a JSON array
 - **extract_all_tables**: Extract all markdown tables from a document
+- **convert_table_to_json**: Convert a markdown table to a JSON array
 - **validate_table**: Validate the structure of a markdown table
 
 
@@ -108,4 +108,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
