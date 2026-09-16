@@ -34,32 +34,32 @@ Connect your **Heroku** account to any AI agent and take full control of your cl
 
 
 ## Available Tools (10)
+- **create_app**: Provision a fresh structural App container on Heroku
 - **delete_app**: Traffic routing instantly yields persistent 404/no web-dynos responses. Highly destructive.
 
 Permanently wipe an active App from Heroku servers
 - **list_addons**: Retrieve third-party Platform Add-ons mapping to an App
-- **list_dynos**: 1, worker.1). Tracks exactly whether the dyno is "up", "crashed", "idle", or "starting" based on the internal slug runner engine's telemetry.
-
-List discrete containerized Dynos executing inside an App
-- **restart_all_dynos**: Often resolves ephemeral memory-leaks in Node.js or Ruby runtimes stalling standard request processing.
-
-Hard reboot all containers tied to an entire Application
-- **toggle_maintenance_mode**: Crucial for orchestrating complex sequential database migrations without encountering corrupted states from active sessions.
-
-Rapidly switch an Application's Maintenance Mode switch
-- **create_app**: Provision a fresh structural App container on Heroku
-- **get_app_info**: g. heroku-22, heroku-24). Confirms exact application routing URL mapping, total slug (code) size in memory, and regional datacenter placements (US or EU) verifying globalThis latency strategies.
-
-Fetch intricate runtime constraints and framework details of an App
 - **list_apps**: Use this to discover App IDs, web URL designations, and git repository targets required to execute operational commands downstream.
 
 List all standard applications actively hosted on Heroku PaaS
+- **list_dynos**: 1, worker.1). Tracks exactly whether the dyno is "up", "crashed", "idle", or "starting" based on the internal slug runner engine's telemetry.
+
+List discrete containerized Dynos executing inside an App
 - **list_config_vars**: Retrieves highly confidential database tokens `DATABASE_URL`, SendGrid passwords, or OAuth keys.
 
 Dump decrypted Application Environment Variables
 - **restart_specific_dyno**: Exceedingly useful for unsticking hung asynchronous queue workers without impacting active web traffic on the primary frontend replicas.
 
 Selectively reboot one isolated Dyno instance (e.g. worker.2)
+- **restart_all_dynos**: Often resolves ephemeral memory-leaks in Node.js or Ruby runtimes stalling standard request processing.
+
+Hard reboot all containers tied to an entire Application
+- **toggle_maintenance_mode**: Crucial for orchestrating complex sequential database migrations without encountering corrupted states from active sessions.
+
+Rapidly switch an Application's Maintenance Mode switch
+- **get_app_info**: g. heroku-22, heroku-24). Confirms exact application routing URL mapping, total slug (code) size in memory, and regional datacenter placements (US or EU) verifying global latency strategies.
+
+Fetch intricate runtime constraints and framework details of an App
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

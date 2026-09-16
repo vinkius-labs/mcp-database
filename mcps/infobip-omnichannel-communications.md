@@ -38,17 +38,17 @@ Connect your **Infobip** account to any AI agent and take full control of your g
 - **upsert_crm_person**: 164 bindings tracking real UUID attributes natively establishing marketing profiles inherently.
 
 Bootstrap an entirely empty structural Contact vector inside People CDP
-- **get_person_details**: Retrieve the exact structural matching verifying InfoBip Person arrays
-- **dispatch_html_email**: Perform structural extraction of properties spanning the Infobip Email API
-- **update_person_name**: Mutate globalThis Web CRM parameters modifying explicit People identifiers
 - **delete_crm_person**: Irreversibly vaporize explicit CDP profiles securing GDPR deletes natively
+- **get_delivery_reports**: Inspect deep internal metrics tracking global SMS handoffs
+- **get_person_details**: Retrieve the exact structural matching verifying InfoBip Person arrays
+- **list_sms_logs**: Retrieve explicit Cloud logging tracing sent SMS bounds over past days
+- **list_crm_people**: Enumerate explicitly attached structured profiles identifying entire Audiences
+- **dispatch_html_email**: Perform structural extraction of properties spanning the Infobip Email API
 - **dispatch_sms_message**: 164 parameters executing international drops securely.
 
 Provision a highly-available JSON Payload routing natively into Infobip SMS
 - **dispatch_whatsapp_message**: Identify bounded routing spaces converting JSON texts towards Meta Whatsapp APIs
-- **get_delivery_reports**: Inspect deep internal metrics tracking globalThis SMS handoffs
-- **list_crm_people**: Enumerate explicitly attached structured profiles identifying entire Audiences
-- **list_sms_logs**: Retrieve explicit Cloud logging tracing sent SMS bounds over past days
+- **update_person_name**: Mutate global Web CRM parameters modifying explicit People identifiers
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

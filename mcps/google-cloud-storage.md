@@ -37,18 +37,42 @@ No more manual navigation through the GCP Console for routine file checks. Your 
 
 
 ## Available Tools (12)
-- **delete_object**: Remove an object from a bucket
-- **get_bucket_iam**: Get IAM policy for a bucket
-- **get_object_metadata**: Get metadata for a specific object (file)
-- **get_project_service_account**: Check the storage service account for the project
-- **list_bucket_acl**: Check bucket permissions
-- **list_buckets**: List all buckets in the project
-- **list_object_acl**: Check permissions for a specific object
-- **list_objects**: List objects within a bucket
-- **copy_object**: Copy an object within or between buckets
-- **get_bucket_metadata**: Get metadata for a specific bucket
-- **list_hmac_keys**: List HMAC keys for a service account
-- **upload_object**: Upload a new file to a bucket
+- **get_project_service_account**: Do not specify any parameters.
+
+Check the storage service account for the project
+- **delete_object**: Both the bucket and object names are required.
+
+Remove an object from a bucket
+- **get_bucket_iam**: Provide the bucket name.
+
+Get IAM policy for a bucket
+- **get_bucket_metadata**: Provide the required bucket name.
+
+Get metadata for a specific bucket
+- **get_object_metadata**: Supply both the bucket and object names.
+
+Get metadata for a specific object (file)
+- **list_bucket_acl**: Provide the name of the bucket.
+
+Check bucket permissions
+- **list_buckets**: Do not specify any parameters.
+
+List all buckets in the project
+- **list_hmac_keys**: Pass the service account email address.
+
+List HMAC keys for a service account
+- **list_object_acl**: Supply both the bucket and object names.
+
+Check permissions for a specific object
+- **list_objects**: Optionally filter results using a prefix.
+
+List objects within a bucket
+- **upload_object**: Provide the bucket name, object name, and file content.
+
+Upload a new file to a bucket
+- **copy_object**: Specify all four required names: source bucket, source object, destination bucket, and destination object.
+
+Copy an object within or between buckets
 
 
 ## 💬 Prompt Examples
@@ -133,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
