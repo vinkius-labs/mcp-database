@@ -16,8 +16,8 @@ This MCP server provides a diagnostic engine to evaluate how well a product sati
 ## Available Tools (4)
 - **analyze_retention_health**: Evaluates whether the user base is stabilizing or leaking
 - **calculate_pmf_score**: Provides the primary quantitative assessment of product health
-- **evaluate_growth_efficiency**: Determines if growth is sustainable and driven by market demand
 - **get_improvement_priorities**: Identifies specific areas of the business model that require intervention to increase PMF
+- **evaluate_growth_efficiency**: Determines if growth is sustainable and driven by market demand
 
 
 ## 💬 Prompt Examples

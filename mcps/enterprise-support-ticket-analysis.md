@@ -14,8 +14,8 @@ This MCP server provides deep analytical insights into enterprise support operat
 
 
 ## Available Tools (4)
-- **analyze_escalation_impact**: 
 - **calculate_resolution_efficiency**: 
+- **analyze_escalation_impact**: 
 - **evaluate_account_health**: 
 - **get_account_ticket_summary**: 
 

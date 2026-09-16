@@ -14,10 +14,18 @@ This MCP server provides tools to measure how effectively an AI product evolves 
 
 
 ## Available Tools (4)
-- **calculate_feedback_efficiency**: Analyzes how effectively the team is turning raw feedback into model upgrades
-- **get_satisfaction_metrics**: Correlates model improvements with user sentiment
-- **get_velocity_summary**: Provides a high-level overview of the current AI improvement performance
-- **analyze_improvement_latency**: Measures the time delay in the improvement loop
+- **calculate_feedback_efficiency**: Provide all three required metrics.
+
+Analyzes how effectively the team is turning raw feedback into model upgrades
+- **get_satisfaction_metrics**: Pass both improvement rate and implementation percentage.
+
+Correlates model improvements with user sentiment
+- **get_velocity_summary**: Use this to check overall system health.
+
+Provides a high-level overview of the current AI improvement performance
+- **analyze_improvement_latency**: Ensure both rate and time metrics are provided.
+
+Measures the time delay in the improvement loop
 
 
 ## 💬 Prompt Examples

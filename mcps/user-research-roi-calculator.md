@@ -15,8 +15,8 @@ This MCP server provides a suite of analytical tools to evaluate the financial a
 
 ## Available Tools (4)
 - **get_insight_efficiency**: Determines how effectively the research team is converting information into product movement
-- **get_methodology_impact**: Evaluates how the specific combination of research methods influences the overall quality and cost profile
 - **estimate_optimal_investment**: Suggests the ideal budget allocation to balance research costs against potential product gains
+- **get_methodology_impact**: Evaluates how the specific combination of research methods influences the overall quality and cost profile
 - **get_research_roi**: Calculates the total financial return on a specific research engagement
 
 

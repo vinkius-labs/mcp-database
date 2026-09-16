@@ -14,12 +14,12 @@ This MCP server provides specialized analytics for monitoring customer stability
 
 
 ## Available Tools (4)
-- **get_churn_prediction_indicators**: Identifies emerging churn risks based on tier data and churn events
+- **calculate_logo_retention**: Calculates the overall logo retention rate for the period
 - **analyze_retention_by_tier**: g., Enterprise, SMB).
 
 Analyzes retention rates across different customer tiers
+- **get_churn_prediction_indicators**: Identifies emerging churn risks based on tier data and churn events
 - **summarize_churn_reasons**: Summarizes the reasons why customers are churning
-- **calculate_logo_retention**: Calculates the overall logo retention rate for the period
 
 
 ## 💬 Prompt Examples

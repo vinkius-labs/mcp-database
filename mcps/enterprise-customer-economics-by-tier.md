@@ -15,9 +15,9 @@ This MCP server provides analytical tools to evaluate the profitability of diffe
 
 ## Available Tools (4)
 - **calculate_tier_economics**: Calculates core unit economic metrics for a specific set of customer tiers
+- **simulate_expansion_impact**: Predicts how changes in the expansion rate of a specific tier will affect its overall LTV:CAC ratio
 - **compare_tiers_efficiency**: Provides a side-by-side comparison of two specific tiers to determine which is more capital-efficient
 - **get_tier_prioritization**: Ranks customer tiers to identify which segments offer the best return on investment
-- **simulate_expansion_impact**: Predicts how changes in the expansion rate of a specific tier will affect its overall LTV:CAC ratio
 
 
 ## 💬 Prompt Examples

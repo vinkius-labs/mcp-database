@@ -14,10 +14,10 @@ This MCP server provides a strategic analysis engine to quantify the success rat
 
 
 ## Available Tools (4)
-- **analyze_competitor_efficacy**: Evaluates how effectively the target solution performs against different types of incumbents
 - **calculate_displacement_metrics**: Provides the core quantitative summary of displacement performance
 - **evaluate_friction_impact**: Quantifies how much switching costs and incumbent strength are hindering displacement success
 - **generate_displacement_playbook**: Recommends tactical shifts based on historical win/loss data and friction factors
+- **analyze_competitor_efficacy**: Evaluates how effectively the target solution performs against different types of incumbents
 
 
 ## 💬 Prompt Examples

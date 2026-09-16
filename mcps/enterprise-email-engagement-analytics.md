@@ -14,10 +14,10 @@ This MCP server provides a specialized analytics engine to measure the engagemen
 
 
 ## Available Tools (4)
-- **analyze_campaign_engagement**: Calculates the core engagement metrics for a specific email campaign
 - **assess_driver_impact**: Evaluates how qualitative factors influenced engagement outcomes
 - **evaluate_effectiveness_by_type**: Compares engagement performance across different email categories
 - **get_engagement_benchmarks**: Provides standard engagement thresholds for different email types
+- **analyze_campaign_engagement**: Calculates the core engagement metrics for a specific email campaign
 
 
 ## 💬 Prompt Examples

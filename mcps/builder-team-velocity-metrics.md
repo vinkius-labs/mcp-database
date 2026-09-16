@@ -14,10 +14,10 @@ This MCP server provides a specialized analytics engine to evaluate software bui
 
 
 ## Available Tools (4)
+- **identify_improvement_areas**: Pinpoints specific bottlenecks within the team's workflow
 - **calculate_efficiency_score**: Provides a single holistic metric of team performance by balancing output and quality
 - **evaluate_delivery_speed**: Analyzes how quickly the team moves work through the pipeline
 - **get_velocity_per_member**: Determines the individual throughput capacity of a team
-- **identify_improvement_areas**: Pinpoints specific bottlenecks within the team's workflow
 
 
 ## 💬 Prompt Examples

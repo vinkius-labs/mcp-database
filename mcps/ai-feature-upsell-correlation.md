@@ -14,10 +14,10 @@ This MCP server provides tools to measure how AI feature adoption drives revenue
 
 
 ## Available Tools (4)
+- **identify_upgrade_triggers**: Pinpoint specific conditions that suggest a user is ready to upgrade
 - **analyze_tier_impact**: Evaluate how different subscription tiers influence the effectiveness of AI features
 - **calculate_revenue_attribution**: Translate the abstract lift into actual dollar amounts to justify AI investment
 - **calculate_upsell_lift**: Calculate the percentage increase in upgrade probability attributed to AI feature usage
-- **identify_upgrade_triggers**: Pinpoint specific conditions that suggest a user is ready to upgrade
 
 
 ## 💬 Prompt Examples

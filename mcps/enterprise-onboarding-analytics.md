@@ -15,9 +15,9 @@ This MCP server provides tools to analyze the customer onboarding journey throug
 
 ## Available Tools (4)
 - **calculate_step_dropoff**: Identifies which stages of the onboarding funnel are causing the most customer attrition
-- **compare_segment_performance**: Compares onboarding efficiency across different customer tiers
-- **analyze_completion_metrics**: Calculates the overall success rate of the onboarding process
 - **get_onboarding_duration**: Determines the average time taken for customers to complete onboarding
+- **analyze_completion_metrics**: Calculates the overall success rate of the onboarding process
+- **compare_segment_performance**: Compares onboarding efficiency across different customer tiers
 
 
 ## 💬 Prompt Examples

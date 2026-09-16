@@ -14,8 +14,8 @@ This MCP server provides deep visibility into customer attrition by segmenting d
 
 
 ## Available Tools (4)
-- **compare_tiers_performance**: Compares key churn metrics across two different tiers to identify disproportionate loss
 - **analyze_risk_indicators**: Evaluates whether a tier is experiencing "dangerous" churn patterns based on revenue and logo correlations
+- **compare_tiers_performance**: Compares key churn metrics across two different tiers to identify disproportionate loss
 - **get_churn_reason_distribution**: Identifies the most common reasons why customers are leaving within a specific tier
 - **get_tier_summary**: Provides a high-level overview of churn metrics for a specific customer tier
 

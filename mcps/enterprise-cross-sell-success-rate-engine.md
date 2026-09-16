@@ -16,8 +16,8 @@ This MCP server provides a specialized analytics engine for evaluating cross-sel
 ## Available Tools (4)
 - **calculate_success_metrics**: Calculates the current cross-sell efficiency metrics
 - **analyze_product_affinity**: Analyzes the strength of relationships between product pairs
-- **generate_cross_sell_playbook**: Generates actionable strategic recommendations for sales teams
 - **evaluate_customer_fit**: Evaluates how well a product matches a customer's needs
+- **generate_cross_sell_playbook**: Generates actionable strategic recommendations for sales teams
 
 
 ## 💬 Prompt Examples

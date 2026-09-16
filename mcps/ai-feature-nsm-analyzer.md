@@ -14,10 +14,10 @@ This MCP server provides a mathematical framework to measure how AI-driven featu
 
 
 ## Available Tools (4)
+- **rank_feature_priority**: Generates a final priority ranking for an AI feature by combining mathematical impact with strategic intent
 - **evaluate_leading_indicator**: Determines how predictive a specific leading indicator is for the North Star Metric
 - **get_feature_impact_summary**: Provides a high-level overview of a feature's health and contribution status
 - **get_nsm_contribution**: Calculates the specific percentage of the North Star Metric that is driven by a specific AI feature
-- **rank_feature_priority**: Generates a final priority ranking for an AI feature by combining mathematical impact with strategic intent
 
 
 ## 💬 Prompt Examples

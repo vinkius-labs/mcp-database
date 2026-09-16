@@ -14,10 +14,10 @@ This MCP server provides tools to quantify the operational impact of AI-driven s
 
 
 ## Available Tools (4)
-- **allocate_support_cost**: Calculates the total financial cost attributed to supporting a specific AI feature
 - **analyze_onboarding_impact**: Assesses how the quality of user onboarding influences the immediate support load
 - **calculate_support_burden**: Determines the normalized support intensity for a specific AI feature
 - **evaluate_documentation_roi**: Determines if the investment in documentation is yielding a positive financial return
+- **allocate_support_cost**: Calculates the total financial cost attributed to supporting a specific AI feature
 
 
 ## 💬 Prompt Examples

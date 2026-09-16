@@ -16,8 +16,8 @@ This MCP server provides deep insights into enterprise meeting efficiency. It al
 ## Available Tools (4)
 - **calculate_meeting_quality**: Evaluates the effectiveness of meetings based on their outcomes
 - **evaluate_reminder_effectiveness**: Determines how the frequency of reminders impacts the likelihood of a meeting being held
-- **get_show_rate_summary**: Calculates the high-level attendance percentage for a specific subset of meetings
 - **analyze_no_show_patterns**: Identifies which combinations of factors are most likely to result in a no-show
+- **get_show_rate_summary**: Calculates the high-level attendance percentage for a specific subset of meetings
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides deep insights into how users interact with AI capabilit
 
 
 ## Available Tools (4)
-- **get_engagement_trajectory**: Determines the direction and velocity of AI engagement
-- **get_segment_comparison**: Compares AI engagement metrics across different user tiers
 - **get_stickiness_metrics**: Calculates the stickiness ratio (DAU/MAU) for a specific user segment
 - **get_usage_distribution**: Analyzes the distribution of AI usage intensities across users
+- **get_engagement_trajectory**: Determines the direction and velocity of AI engagement
+- **get_segment_comparison**: Compares AI engagement metrics across different user tiers
 
 
 ## 💬 Prompt Examples

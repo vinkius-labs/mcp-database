@@ -15,9 +15,9 @@ This MCP server provides an analytics engine for SaaS platforms to measure the i
 
 ## Available Tools (4)
 - **analyze_feature_depth**: Evaluates how deeply users are integrating AI into their workflows
-- **calculate_value_multiplier**: Quantifies the relative importance of power users to the platform's overall utility
 - **get_power_user_density**: Determines what portion of the user base qualifies as power users
 - **predict_conversion_rate**: Estimates the likelihood of standard users becoming power users based on their current trajectory
+- **calculate_value_multiplier**: Quantifies the relative importance of power users to the platform's overall utility
 
 
 ## 💬 Prompt Examples

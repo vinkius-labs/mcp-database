@@ -14,9 +14,9 @@ This MCP server provides diagnostic tools to measure and mitigate user abandonme
 
 
 ## Available Tools (4)
+- **get_abandonment_summary**: Provides a high-level overview of feature health
 - **analyze_dropoff_points**: Identifies exactly where in the feature flow users are exiting
 - **calculate_feature_friction**: Quantifies the combined impact of complexity and user sentiment on the feature's usability
-- **get_abandonment_summary**: Provides a high-level overview of feature health
 - **get_recovery_recommendations**: Suggests actionable improvements based on identified abandonment patterns
 
 
