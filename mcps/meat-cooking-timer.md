@@ -14,9 +14,9 @@ The Meat Cooking Timer MCP server provides AI agents with the ability to calcula
 
 
 ## Available Tools (3)
-- **get_target_temperature**: Get the required internal temperature for a meat type and doneness level
-- **calculate_cooking_time**: Estimate the total cooking time required
 - **validate_cooking_context**: Verify if a cut of meat is appropriate for a method
+- **calculate_cooking_time**: Estimate the total cooking time required
+- **get_target_temperature**: Get the required internal temperature for a meat type and doneness level
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
