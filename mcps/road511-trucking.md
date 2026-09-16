@@ -41,12 +41,6 @@ No more navigating multiple state 511 websites or manually checking truck route 
 
 
 ## Available Tools (10)
-- **get_truck_parking**: Returns parking facility names, locations, capacity information, real-time availability (where available), amenity details, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for Hours of Service (HOS) compliance planning, rest stop scheduling, parking shortage awareness, and safe stopping location identification. AI agents should reference this when users ask "where can I park my truck near Chicago", "show truck parking availability along I-70", or need parking location data for HOS-compliant route planning.
-
-Get truck parking availability and locations across US and Canada
-- **get_weigh_stations**: Returns station names, locations, operating hours, bypass program participation (PrePass, Drivewyze, NORPASS), open/closed status, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for compliance planning, bypass program routing, weigh stop scheduling, and weight inspection awareness. AI agents should use this when users ask "show weigh stations on I-5 in Oregon", "are there open weigh stations near this location", or need weigh station data for route planning and compliance management.
-
-Get weigh station locations and status across US and Canada
 - **get_bridge_clearances**: Returns bridge location coordinates, clearance height in feet/meters, bridge identifier, road name, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for truck height compliance planning, low bridge avoidance, oversized load routing, and fleet safety management. AI agents should use this when users ask "find low bridges under 14 feet on I-95", "what bridge clearances exist in this area", or need vertical clearance data for truck route planning.
 
 Get bridge clearance heights from the National Bridge Inventory for truck route planning
@@ -62,12 +56,18 @@ Get summary statistics and data source health for trucking data across all juris
 - **get_truck_incidents**: Returns incident type, severity, affected roads, start and end times, descriptions, detour information, and geometry. Supports filtering by jurisdiction, road name, severity, status, and geographic area. Essential for route disruption awareness, detour planning, delivery time estimation, and freight safety. AI agents should use this when users ask "show incidents affecting truck routes in Illinois", "is there construction on I-80 in Pennsylvania", or need current traffic incident data for truck route planning.
 
 Get traffic incidents affecting truck routes including closures, construction, and advisories
+- **get_truck_parking**: Returns parking facility names, locations, capacity information, real-time availability (where available), amenity details, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for Hours of Service (HOS) compliance planning, rest stop scheduling, parking shortage awareness, and safe stopping location identification. AI agents should reference this when users ask "where can I park my truck near Chicago", "show truck parking availability along I-70", or need parking location data for HOS-compliant route planning.
+
+Get truck parking availability and locations across US and Canada
 - **get_truck_routes**: Returns route geometry, jurisdiction, route designation, and descriptive information. Supports filtering by jurisdiction (state/province), bounding box, and radius search from coordinates. Essential for truck route planning, freight corridor analysis, compliance verification, and logistics routing. AI agents should use this when users ask "show me STAA truck routes in California", "find NHFN corridors in Texas", or need official truck-designated highway data for route planning and compliance.
 
 Get STAA truck routes and NHFN freight corridors across US and Canada
 - **get_truck_stops**: Returns stop names, addresses, coordinates, available services (fuel, food, showers, repair), and operating hours. Supports filtering by jurisdiction, bounding box, and radius search. Essential for trip planning, fuel stop scheduling, driver rest planning, and freight corridor services identification. AI agents should use this when users ask "find truck stops along I-80 in Iowa", "show travel plazas within 50 miles of this point", or need truck stop locations for route planning and driver scheduling.
 
 Get truck stops and travel plazas across US and Canada for trip planning
+- **get_weigh_stations**: Returns station names, locations, operating hours, bypass program participation (PrePass, Drivewyze, NORPASS), open/closed status, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for compliance planning, bypass program routing, weigh stop scheduling, and weight inspection awareness. AI agents should use this when users ask "show weigh stations on I-5 in Oregon", "are there open weigh stations near this location", or need weigh station data for route planning and compliance management.
+
+Get weigh station locations and status across US and Canada
 - **get_weight_restrictions**: Returns restriction details including affected roads, weight limits, effective dates, restriction type (seasonal, permanent, temporary), severity, and jurisdiction. Supports filtering by jurisdiction, road name, severity, and geographic area. Essential for weight compliance verification, seasonal route planning, load planning, and avoiding weight violation fines. AI agents should reference this when users ask "are there seasonal weight restrictions in Minnesota right now", "show weight limits on this route", or need current weight restriction data for freight planning.
 
 Get truck weight restrictions including seasonal restrictions across US and Canada
@@ -155,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

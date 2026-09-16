@@ -34,12 +34,6 @@ Connect to **AcoustID** and identify music from audio fingerprints through natur
 
 
 ## Available Tools (5)
-- **lookup_by_fingerprint**: Returns matching recordings from the AcoustID database with song titles, artists, MusicBrainz IDs and match confidence scores. Requires the fingerprint string and audio duration in seconds. Use meta="recordings" for full recording details.
-
-Identify a song by audio fingerprint
-- **get_recording_metadata**: Returns all associated MusicBrainz recordings, artists, release groups and fingerprints linked to this AcoustID.
-
-Get full metadata for a recording by AcoustID
 - **search_by_mbid**: Returns all AcoustID fingerprints linked to that MusicBrainz recording, useful for finding multiple audio fingerprints of the same song.
 
 Search for AcoustIDs by MusicBrainz ID
@@ -49,6 +43,12 @@ Search for recordings by name and/or artist
 - **submit_fingerprint**: Requires the Chromaprint fingerprint string and audio duration. Optionally include recording name and artist for new songs. Returns the newly created AcoustID.
 
 Submit an audio fingerprint to AcoustID
+- **get_recording_metadata**: Returns all associated MusicBrainz recordings, artists, release groups and fingerprints linked to this AcoustID.
+
+Get full metadata for a recording by AcoustID
+- **lookup_by_fingerprint**: Returns matching recordings from the AcoustID database with song titles, artists, MusicBrainz IDs and match confidence scores. Requires the fingerprint string and audio duration in seconds. Use meta="recordings" for full recording details.
+
+Identify a song by audio fingerprint
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

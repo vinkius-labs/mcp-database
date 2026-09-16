@@ -24,18 +24,18 @@ Built for CrossFit boxes, independent gyms, and S&C facilities.
 
 
 ## Available Tools (8)
-- **get_customer**: Get member profile
+- **list_plans**: Includes pricing and billing cycle.
+
+List membership plans
 - **list_messages**: List sent messages
 - **list_webhooks**: List active webhooks
+- **get_customer**: Get member profile
 - **search_customers**: Returns profile, active plan, check-in count, and billing status.
 
 Search gym members
 - **list_appointments**: List PT appointments
 - **list_checkins**: List gym check-ins
 - **list_classes**: List scheduled classes
-- **list_plans**: Includes pricing and billing cycle.
-
-List membership plans
 
 
 ## 💬 Prompt Examples
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
