@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to verify if renovation actions 
 
 
 ## Available Tools (3)
-- **get_permitted_materials**: Retrieves the technical constraints and requirements for specific renovation materials
 - **check_renovation_compliance**: Determines if a specific renovation plan is legal and safe
 - **validate_permit_eligibility**: Checks if a specific permit can be applied for based on the flat's characteristics
+- **get_permitted_materials**: Retrieves the technical constraints and requirements for specific renovation materials
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
