@@ -22,13 +22,13 @@ Researchers exploring FRED's catalog, data engineers building automated pipeline
 
 
 ## Available Tools (3)
-- **get_series_by_tags**: Powerful for discovering related series. Example: tag_names="usa;gdp" returns all US GDP series. Combine with exclude_tag_names to refine.
-
-Get FRED series matching specific tags
 - **search_tags**: Search by text or get all tags. Tags include geographic (usa, europe), topic (gdp, inflation), source (bls, bea), and frequency (monthly, quarterly) labels.
 
 Search or browse FRED tags
 - **list_sources**: List all FRED data sources
+- **get_series_by_tags**: Powerful for discovering related series. Example: tag_names="usa;gdp" returns all US GDP series. Combine with exclude_tag_names to refine.
+
+Get FRED series matching specific tags
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

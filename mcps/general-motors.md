@@ -39,15 +39,6 @@ Perfect for **GM vehicle owners**, **fleet managers**, **service advisors**, and
 - **get_tire_pressure**: Requires VIN. Use this to identify leaks, ensure safety, or prepare for long trips.
 
 Get the current tire pressure readings for all four tires
-- **unlock_doors**: Requires VIN. Returns command status. Use this to let a passenger in or if keys are locked inside.
-
-Unlock the doors of a specific GM vehicle remotely
-- **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
-
-Trigger the horn of a GM vehicle to locate it
-- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
-
-Flash the headlights and taillights of a GM vehicle
 - **get_charge_status**: Requires VIN. Use this to manage EV range anxiety or schedule charging during off-peak hours.
 
 Get the charging status and battery level of a GM EV (Bolt, Ultium, etc)
@@ -78,6 +69,15 @@ Remotely start the engine of a GM vehicle
 - **stop_vehicle**: Requires VIN. Returns command status. Use this to cancel a remote start if the vehicle is now in use or if there is a safety concern.
 
 Remotely stop the running engine of a GM vehicle
+- **unlock_doors**: Requires VIN. Returns command status. Use this to let a passenger in or if keys are locked inside.
+
+Unlock the doors of a specific GM vehicle remotely
+- **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
+
+Trigger the horn of a GM vehicle to locate it
+- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
+
+Flash the headlights and taillights of a GM vehicle
 
 
 ## 💬 Prompt Examples
@@ -162,4 +162,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
