@@ -36,16 +36,16 @@ No more manual searching for 'who is doing what' or missing critical team progre
 
 
 ## Available Tools (10)
-- **get_user_activity**: Get activity for a specific team member
 - **list_contacts**: List all shared contacts
 - **get_contact_history**: Get communication history for a contact
+- **list_users**: List all team members
+- **get_user**: Get details of a specific team member
 - **check_anteater_status**: Verify AntEater API connectivity
 - **get_profile**: Get your authenticated user profile
-- **search_activity**: Search team activity across Slack and email
-- **list_users**: List all team members
-- **search_contacts**: Search contacts by name or company
 - **list_recent_activity**: List recent team activity
-- **get_user**: Get details of a specific team member
+- **search_activity**: Search team activity across Slack and email
+- **search_contacts**: Search contacts by name or company
+- **get_user_activity**: Get activity for a specific team member
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

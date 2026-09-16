@@ -14,18 +14,36 @@ The AskHandle MCP server enables your AI agent to manage chat rooms, messages, l
 
 
 ## Available Tools (12)
-- **create_room**: Create a new chat room
-- **create_webhook**: Create a new webhook subscription
 - **list_leads**: List all leads captured
-- **list_messages**: List messages, optionally filtered by room
-- **list_rooms**: List all chat rooms
-- **retrieve_room**: Get details of a specific chat room
-- **create_lead**: Create a new lead
-- **delete_webhook**: Delete a webhook subscription
+- **retrieve_room**: Provide the required room ID.
+
+Get details of a specific chat room
+- **create_lead**: Always include necessary lead details in the body.
+
+Create a new lead
+- **create_room**: Always include necessary room details in the body.
+
+Create a new chat room
+- **create_webhook**: Always include necessary webhook details in the body.
+
+Create a new webhook subscription
 - **get_me**: Check API connectivity and get account context
+- **list_messages**: Optionally filter results using a room ID.
+
+List messages, optionally filtered by room
+- **list_rooms**: Do not specify a room ID when listing all rooms.
+
+List all chat rooms
+- **send_message**: Both room ID and message content are required.
+
+Send a message to a chat room
+- **delete_webhook**: Provide the required webhook ID.
+
+Delete a webhook subscription
 - **list_webhooks**: List all configured webhooks
-- **retrieve_lead**: Get details of a specific lead
-- **send_message**: Send a message to a chat room
+- **retrieve_lead**: Provide the required lead ID.
+
+Get details of a specific lead
 
 
 ## 💬 Prompt Examples
@@ -110,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
