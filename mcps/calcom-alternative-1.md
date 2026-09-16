@@ -34,28 +34,62 @@ Connect your **Cal.com** account to any AI agent to streamline your scheduling w
 
 
 ## Available Tools (20)
-- **cancel_booking**: Cancel a booking
-- **update_schedule**: Update a schedule
-- **update_event_type**: Update an event type
-- **charge_credits**: Charge credits
-- **create_membership**: Create an organization membership
-- **create_schedule**: Create a schedule
-- **create_team**: Create a team
-- **get_booking**: Get a specific booking by UID
-- **get_busy_times**: Get busy times
+- **get_slots**: Provide the username, event slug, and desired time range.
+
+Get available slots
+- **create_webhook**: Provide a subscriber URL and specify triggers if necessary.
+
+Create a webhook
+- **get_booking**: Pass the unique booking UID to identify the record.
+
+Get a specific booking by UID
+- **get_busy_times**: Specify the date range and the target timezone.
+
+Get busy times
 - **get_me**: Get current user profile
-- **list_event_types**: Get all event types
+- **list_event_types**: Filter results using username or organization slug.
+
+Get all event types
 - **list_out_of_office**: Get all out-of-office (OOO) entries
-- **list_schedules**: Get all schedules
-- **reschedule_booking**: Reschedule a booking
+- **create_team**: Supply a name and slug, and specify a timezone if needed.
+
+Create a team
+- **get_credits**: Use this tool only when a credit check is explicitly requested.
+
+Check available credits balance
+- **create_schedule**: Provide a name and timezone, and optionally set it as default.
+
+Create a schedule
+- **create_membership**: Supply the organization ID and the user’s email address.
+
+Create an organization membership
+- **cancel_booking**: You must provide the booking UID and a reason for cancellation.
+
+Cancel a booking
+- **charge_credits**: Provide the amount and a reason for the charge.
+
+Charge credits
 - **create_booking**: Requires either eventTypeId OR (eventTypeSlug + username).
 
 Create a new Cal.com booking
-- **create_event_type**: Create a new event type
-- **create_webhook**: Create a webhook
-- **get_credits**: Check available credits balance
-- **get_slots**: Get available slots
-- **list_bookings**: Get all bookings
+- **create_event_type**: Provide a title and slug, and specify the duration if required.
+
+Create a new event type
+- **list_bookings**: Use the cursor parameter for subsequent pages of results.
+
+Get all bookings
+- **list_schedules**: Do not use this tool if you need a specific date range.
+
+Get all schedules
+- **reschedule_booking**: Specify the booking UID and the new start time.
+
+Reschedule a booking
+- **update_event_type**: Supply the eventTypeId and at least one field to update.
+
+Update an event type
+- **update_schedule**: Supply the schedule ID and the fields to update.
+
+Update a schedule
 
 
 ## 💬 Prompt Examples
@@ -140,4 +174,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,26 +35,20 @@ No more manual searching through complex ATS interfaces. Your AI acts as a dedic
 
 
 ## Available Tools (14)
-- **upsert_data_hub_records**: Provide the payload as a JSON string.
+- **create_entity**: The data must be a valid JSON string representing the entity properties.
 
-Upsert records into Bullhorn Data Hub
+Create a new Bullhorn entity
 - **create_event_subscription**: Create an event subscription
 - **delete_entity**: Delete a Bullhorn entity
 - **delete_event_subscription**: Delete an event subscription
 - **find_data_hub_records**: Provide the criteria as a JSON string.
 
 Find records in Bullhorn Data Hub
+- **get_all_corp_notes**: Get all notes for a ClientCorporation
 - **get_associations**: Requires a JSON string for the request body containing ids, start, count, etc.
 
 Retrieve associated entity IDs for multiple parent entities
 - **get_entities**: Get multiple Bullhorn entities by IDs
-- **get_events**: Note: Consuming events purges them from the subscription queue.
-
-Retrieve and consume events from a subscription
-- **create_entity**: The data must be a valid JSON string representing the entity properties.
-
-Create a new Bullhorn entity
-- **get_all_corp_notes**: Get all notes for a ClientCorporation
 - **get_entitlements**: Get entity entitlements for the current user
 - **get_entity**: g., Candidate, JobOrder) by its ID. You must specify the fields to return.
 
@@ -65,6 +59,12 @@ Get to-many associations for an entity
 - **update_entity**: The data must be a valid JSON string containing the fields to update.
 
 Update an existing Bullhorn entity
+- **upsert_data_hub_records**: Provide the payload as a JSON string.
+
+Upsert records into Bullhorn Data Hub
+- **get_events**: Note: Consuming events purges them from the subscription queue.
+
+Retrieve and consume events from a subscription
 
 
 ## 💬 Prompt Examples
@@ -154,4 +154,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

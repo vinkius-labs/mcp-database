@@ -33,42 +33,21 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 
 
 ## Available Tools (41)
-- **calculate_used_tmv**: Supply the Style ID, ZIP Code, and mileage.
+- **get_reviews_by_make_model_year**: Provide the make, model, and year.
 
-Get TMV price for a used car
-- **list_equipments**: Provide the style ID.
+Get car consumer ratings and reviews by make/model/year
+- **get_reviews_by_style**: Provide the style ID to proceed.
 
-Get equipments list
-- **get_photos_by_make_model_year**: Provide all three required vehicle identifiers.
+Get car consumer ratings and reviews by style ID
+- **get_safety_by_make_model_year**: All three parameters must be provided.
 
-Find photos by make/model/year
-- **submit_dealer_review_comment**: Ensure the body contains all required comment data.
+Get safety ratings by make/model/year
+- **get_safety_by_style**: Provide the style ID to proceed.
 
-Submit dealer review comment
-- **get_makes_with_tco**: Do not query without specifying a required parameter.
+Get safety ratings by style ID
+- **get_squish_vin**: The VIN must be the first 11 digits minus the 9th digit.
 
-Get car makes with TCO value
-- **calculate_new_tmv**: Supply both the Style ID and ZIP Code.
-
-Get TMV price for a new car
-- **calculate_typically_equipped_used_tmv**: Supply both the Style ID and ZIP Code.
-
-Get TMV price for a typically equipped used car
-- **get_color**: Provide the color ID.
-
-Get color details by ID
-- **get_dealer_reviews**: Provide the dealer ID.
-
-Get dealer ratings and reviews by dealer ID
-- **get_dealership_franchises**: Provide the required Dealership ID.
-
-Find dealership franchises
-- **get_editorial_make**: Provide the make name.
-
-Get editorial make overview
-- **get_editorial_model**: Provide the make and model names.
-
-Get editorial model overview
+Get vehicle details by Squish VIN
 - **get_editorial_model_year**: Provide make, model, and year.
 
 Get editorial model/year overview
@@ -94,6 +73,9 @@ Get details on a specific car make
 - **list_makes**: Use makeNiceName to filter results.
 
 Get a list of car makes
+- **get_makes_with_tco**: Do not query without specifying a required parameter.
+
+Get car makes with TCO value
 - **list_model_years**: Filter by makeNiceName and modelNiceName.
 
 Get a list of model years
@@ -103,6 +85,12 @@ Get a list of models
 - **get_models_with_tco**: Provide the Make ID.
 
 Get car models with TCO value
+- **calculate_used_tmv**: Supply the Style ID, ZIP Code, and mileage.
+
+Get TMV price for a used car
+- **list_equipments**: Provide the style ID.
+
+Get equipments list
 - **get_new_tco_details**: Supply the Style ID and ZIP Code.
 
 Get TCO details for new car
@@ -115,30 +103,42 @@ Get TMV price for a new car by MSRP and VIN
 - **get_new_total_cash_price**: Supply both the Style ID and ZIP Code.
 
 Get the Total Cash Price for a new car
+- **get_photos_by_make_model_year**: Provide all three required vehicle identifiers.
+
+Find photos by make/model/year
 - **get_photos_by_style**: Pass the required style ID.
 
 Find photos by style ID
 - **get_recalls**: Use this tool only when the model year is known.
 
 Get vehicle recalls by car model year ID
-- **get_reviews_by_make_model_year**: Provide the make, model, and year.
+- **get_dealer_reviews**: Provide the dealer ID.
 
-Get car consumer ratings and reviews by make/model/year
-- **get_reviews_by_style**: Provide the style ID to proceed.
+Get dealer ratings and reviews by dealer ID
+- **calculate_new_tmv**: Supply both the Style ID and ZIP Code.
 
-Get car consumer ratings and reviews by style ID
-- **get_safety_by_make_model_year**: All three parameters must be provided.
+Get TMV price for a new car
+- **calculate_typically_equipped_used_tmv**: Supply both the Style ID and ZIP Code.
 
-Get safety ratings by make/model/year
-- **get_safety_by_style**: Provide the style ID to proceed.
+Get TMV price for a typically equipped used car
+- **get_color**: Provide the color ID.
 
-Get safety ratings by style ID
-- **get_squish_vin**: The VIN must be the first 11 digits minus the 9th digit.
+Get color details by ID
+- **get_dealership_franchises**: Provide the required Dealership ID.
 
-Get vehicle details by Squish VIN
+Find dealership franchises
+- **get_editorial_make**: Provide the make name.
+
+Get editorial make overview
+- **get_editorial_model**: Provide the make and model names.
+
+Get editorial model overview
 - **list_styles**: Filter by makeNiceName and modelNiceName.
 
 Get a list of styles
+- **submit_dealer_review_comment**: Ensure the body contains all required comment data.
+
+Submit dealer review comment
 - **submit_dealer_review**: Ensure the body contains all required review data.
 
 Submit dealer review
@@ -238,4 +238,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
