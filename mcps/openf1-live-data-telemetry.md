@@ -33,21 +33,21 @@ Transform your AI agent into a professional Formula 1 data analyst with **OpenF1
 
 
 ## Available Tools (15)
+- **get_team_radio**: Get team radio recording links
+- **get_session_results**: Get final classification for a session
+- **get_car_telemetry**: Get technical telemetry for a car
+- **list_drivers**: List F1 drivers for a session
 - **get_lap_times**: Get lap and sector times
 - **list_overtakes**: List all overtakes during a race
 - **get_weather_data**: Get track and air weather data
 - **get_driver_intervals**: Get intervals and gaps between drivers
-- **get_session_results**: Get final classification for a session
 - **list_pit_stops**: List pit stop durations
-- **list_drivers**: List F1 drivers for a session
 - **get_starting_grid**: Get the initial race starting grid
-- **get_team_radio**: Get team radio recording links
 - **get_race_control_messages**: Get FIA race control messages
 - **list_sessions**: List F1 sessions for a year
 - **get_driver_standings**: Get current driver championship standings
 - **get_team_standings**: Get current team championship standings
 - **list_tyre_stints**: List tyre strategy and stints
-- **get_car_telemetry**: Get technical telemetry for a car
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

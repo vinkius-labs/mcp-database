@@ -38,27 +38,27 @@ No more navigating complex Quick Stats interfaces to find crop yields or livesto
 
 
 ## Available Tools (8)
-- **get_livestock_summary**: Requires a commodity name (e.g. CATTLE, HOGS, CHICKENS, MILK, EGGS). Optionally filter by state and year.
-
-Get livestock production summary from USDA NASS
-- **get_quick_stats**: Accepts parameters: sector (CROPS, ANIMALS & PRODUCTS, ECONOMICS, DEMOGRAPHICS), commodity, group, commodity_desc, state, year, freq (ANNUAL, MONTHLY), unit_desc, source_desc. Returns statistical data with value, unit, state, year and commodity information. Use get_param_values to discover valid parameter values before querying.
-
-Query USDA NASS Quick Stats database
 - **get_survey_info**: This is useful for understanding what data is available and how frequently it is collected.
 
 Get information about USDA NASS surveys
-- **search_by_commodity**: Optionally filter by state, year and sector. This is a broad search that returns all available data for the commodity, including production, price, inventory and acreage statistics.
-
-Search Quick Stats by commodity name
-- **get_economics_data**: Optionally filter by commodity, state and year. Sector is automatically set to ECONOMICS.
-
-Get agricultural economics data from USDA NASS
 - **get_demographics_data**: Optionally filter by state and year. Sector is automatically set to DEMOGRAPHICS.
 
 Get farm demographics data from USDA NASS
+- **get_economics_data**: Optionally filter by commodity, state and year. Sector is automatically set to ECONOMICS.
+
+Get agricultural economics data from USDA NASS
+- **get_livestock_summary**: Requires a commodity name (e.g. CATTLE, HOGS, CHICKENS, MILK, EGGS). Optionally filter by state and year.
+
+Get livestock production summary from USDA NASS
 - **get_param_values**: Parameters include: sector, group, commodity, commodity_desc, short_desc, source_desc, util_desc, unit_desc, freq_desc, domain_desc, state, county. Use this to discover what values you can filter by before making queries.
 
 Get valid values for a Quick Stats parameter
+- **get_quick_stats**: Accepts parameters: sector (CROPS, ANIMALS & PRODUCTS, ECONOMICS, DEMOGRAPHICS), commodity, group, commodity_desc, state, year, freq (ANNUAL, MONTHLY), unit_desc, source_desc. Returns statistical data with value, unit, state, year and commodity information. Use get_param_values to discover valid parameter values before querying.
+
+Query USDA NASS Quick Stats database
+- **search_by_commodity**: Optionally filter by state, year and sector. This is a broad search that returns all available data for the commodity, including production, price, inventory and acreage statistics.
+
+Search Quick Stats by commodity name
 - **get_crop_summary**: Requires a commodity name (e.g. CORN, SOYBEANS, WHEAT, COTTON). Optionally filter by state and year. Returns detailed statistics with units, geographic scope and time period.
 
 Get crop production summary from USDA NASS
@@ -149,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
