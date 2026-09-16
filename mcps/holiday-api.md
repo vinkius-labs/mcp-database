@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire global event and holiday resear
 
 
 ## Available Tools (5)
+- **list_supported_languages**: List all languages supported by Holiday API
 - **get_holidays**: Get public holidays for a country and year
 - **get_next_workday**: Get the date after a number of workdays from a start date
 - **get_workdays_count**: Count the number of workdays between two dates
 - **list_supported_countries**: List all countries supported by Holiday API
-- **list_supported_languages**: List all languages supported by Holiday API
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
