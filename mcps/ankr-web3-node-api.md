@@ -36,38 +36,100 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 
 
 ## Available Tools (32)
-- **getTransaction**: Returns details for a confirmed transaction
-- **ankr_getBlocks**: Retrieves full info for a range of blocks
-- **ankr_getInteractions**: Lists all blockchains a wallet has interacted with
-- **ankr_getNFTMetadata**: Retrieves metadata for a specific NFT
-- **ankr_getTokenPrice**: Returns the current USD price of a token
-- **eth_estimateGas**: Estimates gas needed for a transaction
-- **eth_getLogs**: Returns logs matching filter criteria
-- **eth_getTransactionByHash**: Returns transaction details
-- **eth_getTransactionReceipt**: Returns the receipt of a transaction
-- **getAccountInfo**: Returns all info associated with a Pubkey
-- **getBlock**: Returns identity and transaction info for a confirmed block
-- **ankr_getAccountBalance**: Retrieves all token balances for a wallet
-- **ankr_getNFTsByOwner**: Retrieves all NFTs owned by an address across multiple chains
-- **ankr_getNFTHolders**: Lists all holders of a specific NFT collection
-- **ankr_getTokenTransfers**: Returns historical token transfer data
+- **eth_getTransactionByHash**: Use this to check transaction status.
+
+Returns transaction details
+- **eth_simulateV1**: Provide a payload detailing the simulation scope.
+
+Simulates multiple blocks/transactions
+- **ankr_getAccountBalance**: Supply the chain alias and wallet address.
+
+Retrieves all token balances for a wallet
+- **ankr_getBlocks**: Supply the chain alias and the block range object.
+
+Retrieves full info for a range of blocks
+- **ankr_getInteractions**: Supply the chain alias and the wallet address.
+
+Lists all blockchains a wallet has interacted with
+- **ankr_getNFTHolders**: Supply the chain alias and collection identifier.
+
+Lists all holders of a specific NFT collection
+- **ankr_getNFTMetadata**: Provide the chain alias and contract address.
+
+Retrieves metadata for a specific NFT
+- **ankr_getNFTsByOwner**: Provide the chain alias and wallet address.
+
+Retrieves all NFTs owned by an address across multiple chains
+- **ankr_getTokenPrice**: Provide the chain alias and token identifier.
+
+Returns the current USD price of a token
+- **eth_estimateGas**: Use this to prevent transaction failures due to insufficient gas.
+
+Estimates gas needed for a transaction
+- **eth_getCode**: Use this to verify contract deployment.
+
+Returns the code at a given address
+- **eth_getLogs**: Provide the required filter_criteria object.
+
+Returns logs matching filter criteria
+- **eth_getTransactionReceipt**: Use this to confirm execution results.
+
+Returns the receipt of a transaction
+- **eth_sendRawTransaction**: Ensure the transaction is correctly signed before calling this tool.
+
+Submits a signed transaction to the network
+- **getAccountInfo**: Supply the Pubkey for the target account.
+
+Returns all info associated with a Pubkey
+- **getBlock**: Specify the chain alias and block number.
+
+Returns identity and transaction info for a confirmed block
+- **getProgramAccounts**: Provide the chain alias and program ID.
+
+Returns all accounts owned by a program
+- **getTransaction**: Provide the chain alias and transaction signature.
+
+Returns details for a confirmed transaction
+- **ankr_getTokenTransfers**: Supply the chain alias and the target address or token.
+
+Returns historical token transfer data
 - **eth_blockNumber**: Returns the most recent block number
-- **eth_call**: Executes a call without creating a transaction
-- **eth_getBlockByHash**: Returns block information by hash
-- **eth_getBalance**: Returns the balance of an address
-- **eth_getBlockByNumber**: Returns block information by number
-- **eth_getCode**: Returns the code at a given address
-- **eth_getStorageAt**: Returns the value from a storage position
-- **eth_getTransactionCount**: Returns the number of transactions sent from an address (nonce)
-- **eth_sendRawTransaction**: Submits a signed transaction to the network
-- **eth_simulateV1**: Simulates multiple blocks/transactions
-- **getBalance**: Returns the lamport balance of an account
-- **getBlockHeight**: Returns the current block height
-- **getEpochInfo**: Returns information about the current epoch
-- **getLatestBlockhash**: Returns the latest blockhash for transaction building
-- **getProgramAccounts**: Returns all accounts owned by a program
-- **simulateTransaction**: Simulates a transaction to check for errors
-- **sendTransaction**: Submits a signed transaction
+- **eth_call**: Use this for pre-transaction validation.
+
+Executes a call without creating a transaction
+- **eth_getBlockByHash**: Use this to verify block existence.
+
+Returns block information by hash
+- **eth_getBalance**: Use this to check the available funds.
+
+Returns the balance of an address
+- **eth_getBlockByNumber**: Use this to check block history.
+
+Returns block information by number
+- **eth_getStorageAt**: Provide the contract address and storage slot.
+
+Returns the value from a storage position
+- **eth_getTransactionCount**: Use this value when constructing a new transaction.
+
+Returns the number of transactions sent from an address (nonce)
+- **getBalance**: Include both the chain alias and account Pubkey.
+
+Returns the lamport balance of an account
+- **getBlockHeight**: Only the chain alias is required.
+
+Returns the current block height
+- **getEpochInfo**: Specify the target chain alias.
+
+Returns information about the current epoch
+- **getLatestBlockhash**: Specify the target chain alias.
+
+Returns the latest blockhash for transaction building
+- **simulateTransaction**: Provide the chain alias and the transaction object.
+
+Simulates a transaction to check for errors
+- **sendTransaction**: Provide the chain alias and the signed transaction data.
+
+Submits a signed transaction
 
 
 ## 💬 Prompt Examples
@@ -152,4 +214,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

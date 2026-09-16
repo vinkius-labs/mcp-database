@@ -34,12 +34,16 @@ Connect **AviationStack** to your AI agent to unlock a world of aviation intelli
 
 
 ## Available Tools (11)
-- **list_aircraft_types**: Get aircraft types and specifications
+- **list_cities**: Get cities worldwide
+- **list_countries**: Get countries worldwide
 - **list_flights**: Use flight_date for historical data.
 
 Get real-time and historical flight data
-- **list_countries**: Get countries worldwide
-- **list_cities**: Get cities worldwide
+- **list_taxes**: Get aviation taxes information
+- **list_timetable**: Requires Professional plan or higher.
+
+Get airport timetables
+- **list_aircraft_types**: Get aircraft types and specifications
 - **list_airlines**: Get global airlines list
 - **list_airplanes**: Get specific aircraft details
 - **list_airports**: Get global airports list
@@ -47,10 +51,6 @@ Get real-time and historical flight data
 
 Get future flight schedules
 - **list_routes**: Get scheduled airline routes
-- **list_taxes**: Get aviation taxes information
-- **list_timetable**: Requires Professional plan or higher.
-
-Get airport timetables
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,10 +33,10 @@ Connect **AgentOps** to your AI agent for comprehensive telemetry and observabil
 
 
 ## Available Tools (4)
-- **get_project**: Get AgentOps project details
-- **get_span**: Get details for a specific span
 - **get_trace_metrics**: Get metrics for a specific trace
 - **get_trace**: Get details for a specific trace
+- **get_project**: Get AgentOps project details
+- **get_span**: Get details for a specific span
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
