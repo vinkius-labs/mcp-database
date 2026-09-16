@@ -14,9 +14,15 @@ This MCP server provides deep analytical insights into startup accelerator cohor
 
 
 ## Available Tools (3)
-- **analyze_selection_bias**: Analyzes selection and outreach bias
-- **calculate_diversity_metrics**: Calculates diversity, inclusion, and cohort composition metrics
-- **evaluate_performance_correlation**: Evaluates correlation between diversity and performance
+- **analyze_selection_bias**: Provide demographic breakdown of all applicants (JSON string) and selected founders (JSON string).
+
+Analyzes selection and outreach bias
+- **calculate_diversity_metrics**: Provide demographic counts for gender, race, and geography (JSON string).
+
+Calculates diversity, inclusion, and cohort composition metrics
+- **evaluate_performance_correlation**: Provide a list of diversity scores (number) and performance outcomes (number).
+
+Evaluates correlation between diversity and performance
 
 
 ## 💬 Prompt Examples

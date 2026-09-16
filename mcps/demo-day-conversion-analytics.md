@@ -14,9 +14,15 @@ This MCP server provides a specialized analytics engine to evaluate demo day eff
 
 
 ## Available Tools (3)
-- **get_conversion_velocity**: How quickly and effectively are we moving investors through the pipeline?
-- **get_funnel_metrics**: What were the conversion percentages at each stage of the demo day funnel?
-- **calculate_investor_quality**: How high is the caliber of the investors engaged at this event?
+- **get_conversion_velocity**: Pass total meetings, term sheets, and deals closed.
+
+How quickly and effectively are we moving investors through the pipeline?
+- **get_funnel_metrics**: Provide counts for all stages in one request.
+
+What were the conversion percentages at each stage of the demo day funnel?
+- **calculate_investor_quality**: Supply both engagement counts and thesis match scores.
+
+How high is the caliber of the investors engaged at this event?
 
 
 ## 💬 Prompt Examples

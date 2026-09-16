@@ -14,9 +14,15 @@ This MCP server provides deterministic aviation calculations for density altitud
 
 
 ## Available Tools (3)
-- **get_density_altitude**: Calculates the final density altitude and the associated takeoff performance penalty
-- **get_isa_deviation**: Determines how much the current temperature deviates from the standard model
-- **get_pressure_altitude**: Calculates the pressure altitude based on airport elevation and local altimeter settings
+- **get_pressure_altitude**: Ensure the altimeter setting is provided.
+
+Calculates the pressure altitude based on airport elevation and local altimeter settings
+- **get_density_altitude**: Provide pressure altitude, outside air temperature, and dewpoint.
+
+Calculates the final density altitude and the associated takeoff performance penalty
+- **get_isa_deviation**: Provide both pressure altitude and outside air temperature.
+
+Determines how much the current temperature deviates from the standard model
 
 
 ## 💬 Prompt Examples

@@ -14,11 +14,11 @@ This MCP server provides specialized tools for accelerator programs to monitor a
 
 
 ## Available Tools (3)
+- **get_exit_summary**: Provides high-level performance metrics for a specific accelerator cohort
+- **get_exit_type_breakdown**: 
 - **get_exit_distribution**: g., Acquisition, IPO, etc.)
 
 Provides the distribution of exit types for a specific accelerator cohort
-- **get_exit_summary**: Provides high-level performance metrics for a specific accelerator cohort
-- **get_exit_type_breakdown**: 
 
 
 ## 💬 Prompt Examples

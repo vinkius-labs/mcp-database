@@ -14,9 +14,9 @@ This MCP server provides specialized tools to identify friction points in user a
 
 
 ## Available Tools (3)
+- **identify_abandonment_patterns**: Correlates abandonment reasons with specific funnel stages to find systemic issues
 - **analyze_funnel_health**: Provides a high-level overview of the application health and the efficiency of the current funnel
 - **calculate_optimization_priorities**: Ranks stages based on the impact of fixing them, factoring in user effort
-- **identify_abandonment_patterns**: Correlates abandonment reasons with specific funnel stages to find systemic issues
 
 
 ## 💬 Prompt Examples

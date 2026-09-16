@@ -14,9 +14,9 @@ This MCP server provides deterministic tools for managing soil chemistry. Use `c
 
 
 ## Available Tools (3)
-- **calculate_amendment_requirement**: Determines the specific quantity of amendment needed to reach a target pH within safe limits
 - **estimate_amendment_cost**: Calculates the financial cost of the required amendment based on market pricing
 - **get_soil_compatibility**: Answers whether a specific amendment is chemically appropriate for the user's goal
+- **calculate_amendment_requirement**: Determines the specific quantity of amendment needed to reach a target pH within safe limits
 
 
 ## 💬 Prompt Examples

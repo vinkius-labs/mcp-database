@@ -14,8 +14,8 @@ This MCP server provides analytical tools to evaluate the financial impact of ma
 
 
 ## Available Tools (3)
-- **get_aggregate_pipeline_metrics**: 
 - **get_acquisition_efficiency_ranking**: 
+- **get_aggregate_pipeline_metrics**: 
 - **get_channel_performance**: 
 
 

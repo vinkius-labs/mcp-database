@@ -14,9 +14,9 @@ This MCP server provides tools to measure the effectiveness of feedback sessions
 
 
 ## Available Tools (3)
+- **find_optimal_feedback_cadence**: 
 - **analyze_improvement_velocity**: 
 - **evaluate_feedback_impact**: 
-- **find_optimal_feedback_cadence**: 
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides precise tools for beekeepers to estimate honey harvests
 
 
 ## Available Tools (4)
-- **suggest_super_timing**: Recommends when to add new supers to the hive based on the nectar flow environment
 - **calculate_honey_yield**: Determines the total weight of honey and the extractable amount based on equipment and capping status
+- **suggest_super_timing**: Recommends when to add new supers to the hive based on the nectar flow environment
 - **calculate_wax_byproduct**: Estimates the amount of beeswax generated from the harvested cappings
 - **estimate_storage_needs**: Calculates how many standard jars are required to store the expected harvest
 

@@ -14,9 +14,9 @@ This MCP server provides deterministic analysis of multi-stage agentic pipelines
 
 
 ## Available Tools (3)
+- **get_optimization_roadmap**: Ranks the stages in order of importance for engineering intervention
 - **analyze_pipeline_health**: Provides a high-level diagnostic overview of the entire workflow
 - **calculate_stage_impacts**: Breaks down the specific contribution of each stage to the total latency and cumulative error risk
-- **get_optimization_roadmap**: Ranks the stages in order of importance for engineering intervention
 
 
 ## 💬 Prompt Examples

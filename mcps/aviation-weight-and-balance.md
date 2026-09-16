@@ -15,8 +15,8 @@ This MCP server provides precise tools for aircraft weight and balance managemen
 
 ## Available Tools (3)
 - **predict_fuel_burn_impact**: Calculates how much the CG will shift after a specific amount of fuel is consumed
-- **validate_load_configuration**: Checks if a specific set of proposed passenger or baggage loads will cause the aircraft to exceed weight or CG limits
 - **calculate_current_status**: Calculates the immediate weight, moment, and CG position based on the current configuration of the aircraft
+- **validate_load_configuration**: Checks if a specific set of proposed passenger or baggage loads will cause the aircraft to exceed weight or CG limits
 
 
 ## 💬 Prompt Examples

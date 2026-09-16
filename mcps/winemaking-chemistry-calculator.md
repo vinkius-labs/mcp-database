@@ -14,9 +14,15 @@ This MCP server provides precise chemical calculations for winemakers to manage 
 
 
 ## Available Tools (3)
-- **calculate_additions**: Calculates the requirements for sulfur dioxide (SO2), yeast nutrients, and yeast rehydration
-- **calculate_adjustments**: Determines the exact mass of additives needed to reach target chemical levels
-- **calculate_must_composition**: Analyzes the current state of the must based on raw laboratory measurements
+- **calculate_additions**: Use the async function and provide all four parameters.
+
+Calculates the requirements for sulfur dioxide (SO2), yeast nutrients, and yeast rehydration
+- **calculate_adjustments**: Ensure all current and target values are provided.
+
+Determines the exact mass of additives needed to reach target chemical levels
+- **calculate_must_composition**: Provide all required measurements simultaneously.
+
+Analyzes the current state of the must based on raw laboratory measurements
 
 
 ## 💬 Prompt Examples

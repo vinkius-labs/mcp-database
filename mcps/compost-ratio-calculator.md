@@ -14,9 +14,11 @@ This MCP server provides deterministic tools for managing organic waste decompos
 
 
 ## Available Tools (3)
+- **simulate_environment**: Provide a valid mix analysis JSON string and target moisture percentage.
+
+Predict behavior under environmental conditions
 - **analyze_compost_mix**: 
 - **recommend_adjustments**: 
-- **simulate_environment**: 
 
 
 ## 💬 Prompt Examples

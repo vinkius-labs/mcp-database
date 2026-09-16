@@ -14,9 +14,15 @@ Connect your AI agent to the celestial sphere. This MCP server provides precise 
 
 
 ## Available Tools (3)
-- **get_constellation_profile**: Retrieves the fundamental characteristics and visibility classifications of a specific constellation
-- **get_constellation_transit_details**: Finds the specific time when a requested constellation will reach its highest point (transit) in the sky
-- **get_visible_constellations**: Identifies which constellations are currently above the horizon for a specific observer at a specific time
+- **get_constellation_profile**: Provide the IAU name of the target constellation.
+
+Retrieves the fundamental characteristics and visibility classifications of a specific constellation
+- **get_constellation_transit_details**: Provide the target constellation name and observation date.
+
+Finds the specific time when a requested constellation will reach its highest point (transit) in the sky
+- **get_visible_constellations**: Ensure all coordinates and dates are provided.
+
+Identifies which constellations are currently above the horizon for a specific observer at a specific time
 
 
 ## 💬 Prompt Examples

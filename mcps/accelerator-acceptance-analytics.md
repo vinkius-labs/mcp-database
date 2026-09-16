@@ -14,9 +14,15 @@ This MCP server provides a specialized analytics engine for accelerator program 
 
 
 ## Available Tools (3)
-- **analyze_competitive_positioning**: Determines how a specific applicant's tier affects their chance of success
-- **evaluate_diversity_alignment**: Assesses whether the current applicant pool and capacity allow for meeting specific cohort diversity targets
-- **get_acceptance_metrics**: Calculates the primary acceptance statistics and the impact of referral weighting
+- **analyze_competitive_positioning**: Provide the target tier name.
+
+Determines how a specific applicant's tier affects their chance of success
+- **evaluate_diversity_alignment**: Provide the full JSON string for diversity targets.
+
+Assesses whether the current applicant pool and capacity allow for meeting specific cohort diversity targets
+- **get_acceptance_metrics**: Provide all four required metrics.
+
+Calculates the primary acceptance statistics and the impact of referral weighting
 
 
 ## 💬 Prompt Examples

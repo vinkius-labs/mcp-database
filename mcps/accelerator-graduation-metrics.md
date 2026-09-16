@@ -14,9 +14,15 @@ This MCP server provides deep insights into accelerator program performance. It 
 
 
 ## Available Tools (3)
-- **analyze_attrition_drivers**: Analyze the primary reasons for company attrition in a specific cohort
-- **get_completion_time_distribution**: Get the distribution of completion times for a specific cohort
-- **get_graduation_metrics**: Get high-level success and attrition percentages for a specific cohort
+- **analyze_attrition_drivers**: Pass a boolean value for includeFitAnalysis.
+
+Analyze the primary reasons for company attrition in a specific cohort
+- **get_graduation_metrics**: Use this tool only for high-level metrics.
+
+Get high-level success and attrition percentages for a specific cohort
+- **get_completion_time_distribution**: Provide a valid cohort ID to execute the query.
+
+Get the distribution of completion times for a specific cohort
 
 
 ## 💬 Prompt Examples
