@@ -15,9 +15,9 @@ This MCP server provides mathematical modeling for kite pilots to optimize their
 
 ## Available Tools (4)
 - **calculate_optimal_stroke**: Determines the ideal width of the figure-8 pattern to balance power generation and pilot control
-- **evaluate_flight_smoothness**: Measures how fluidly the kite moves through the calculated path, identifying jitter or instability
 - **predict_power_profile**: Maps out the expected force peaks throughout a single completed figure-8 circuit
 - **validate_wind_window_clearance**: Checks if a planned flight path is safe and stays within the boundaries of the wind window
+- **evaluate_flight_smoothness**: Measures how fluidly the kite moves through the calculated path, identifying jitter or instability
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

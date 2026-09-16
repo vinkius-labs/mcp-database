@@ -14,9 +14,9 @@ This MCP server provides essential tools for kite pilots to manage line twist ph
 
 
 ## Available Tools (4)
-- **twist_type_differentiation**: Distinguishes between center line and steering line issues to guide pilot action
 - **flight_readiness_check**: Performs a final verification of whether the kite is safe to launch or continue flying
 - **safety_warning_generator**: Provides specific verbal warnings and actionable instructions based on the current kite state
+- **twist_type_differentiation**: Distinguishes between center line and steering line issues to guide pilot action
 - **untwist_analysis**: Calculates the core physical requirements to resolve line twists
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
