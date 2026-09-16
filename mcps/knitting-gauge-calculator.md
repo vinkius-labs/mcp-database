@@ -14,9 +14,9 @@ This MCP server provides technical precision for knitters and crocheters. It con
 
 
 ## Available Tools (3)
+- **generate_shaping_schedule**: Creates a precise chronological roadmap of every row where the stitch count changes
 - **calculate_base_dimensions**: Determines the fundamental stitch and row counts required to meet the target physical dimensions
 - **estimate_yarn_consumption**: Predicts the total length of yarn needed to complete the project
-- **generate_shaping_schedule**: Creates a precise chronological roadmap of every row where the stitch count changes
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
