@@ -14,12 +14,12 @@ This MCP server provides precise calculations for agricultural residue managemen
 
 
 ## Available Tools (4)
-- **get_species_properties**: Provide the species name.
-
-Retrieves the biological constants for a specific cover crop species
 - **calculate_erosion_protection**: Provide the remaining surface cover percentage.
 
 Estimates the reduction in soil erosion and the resulting USLE C-factor
+- **get_species_properties**: Provide the species name.
+
+Retrieves the biological constants for a specific cover crop species
 - **get_termination_residue_stats**: Provide the biomass, species, and termination method.
 
 Calculates the immediate state of the residue at the moment of cover crop termination
@@ -110,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
