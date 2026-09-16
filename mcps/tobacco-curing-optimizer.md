@@ -15,9 +15,9 @@ This MCP server provides specialized tools for tobacco producers to manage the b
 
 ## Available Tools (4)
 - **calculate_energy_requirements**: Estimates the total energy cost to run the barn for a specific schedule
-- **predict_quality_outcome**: Estimates the final market grade of the cured tobacco
 - **generate_curing_schedule**: Generates an optimal stage-by-stage tobacco curing schedule
 - **get_stage_constraints**: Retrieves the physiological safety bounds for a specific tobacco type
+- **predict_quality_outcome**: Estimates the final market grade of the cured tobacco
 
 
 ## 💬 Prompt Examples

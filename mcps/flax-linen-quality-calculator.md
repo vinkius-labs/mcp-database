@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for the linen production i
 
 
 ## Available Tools (4)
+- **get_fiber_characteristics**: Calculates the physical properties of the fiber (length, fineness, strength) from raw crop data
 - **calculate_processing_value**: Determines the commercial value of the flax based on its physical grade and yield
 - **estimate_yarn_quality**: Predicts the quality of the linen yarn that can be produced from the extracted fibers
 - **get_environmental_impact_adjustment**: Calculates a multiplier to account for weather conditions during the critical retting and drying phases
-- **get_fiber_characteristics**: Calculates the physical properties of the fiber (length, fineness, strength) from raw crop data
 
 
 ## 💬 Prompt Examples

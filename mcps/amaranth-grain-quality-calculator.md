@@ -14,9 +14,9 @@ This MCP server provides analytical tools to assess the industrial and nutrition
 
 
 ## Available Tools (4)
-- **evaluate_application_suitability**: Recommends the best industrial use for the specific batch of grain
 - **get_flour_yield_potential**: Determines the expected amount of flour that can be produced from a batch of grain
 - **get_popping_expansion_ratio**: Predicts how much the grain will expand when subjected to heat
+- **evaluate_application_suitability**: Recommends the best industrial use for the specific batch of grain
 - **get_protein_quality_score**: Evaluates the nutritional completeness of the grain based on amino acid balance
 
 

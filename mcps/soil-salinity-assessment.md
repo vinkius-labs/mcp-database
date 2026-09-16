@@ -14,10 +14,10 @@ This MCP server provides essential tools for agricultural soil analysis. It allo
 
 
 ## Available Tools (4)
-- **calculate_tds_and_osmotic_potential**: Derives TDS and Osmotic Potential from a standardized EC value
 - **convert_ec_method**: Standardizes EC measurements between different extraction techniques
-- **predict_yield_impact**: Predicts yield reduction for a specific crop due to salinity
 - **assess_salinity_classification**: Classifies the soil into a qualitative salinity tier
+- **calculate_tds_and_osmotic_potential**: Derives TDS and Osmotic Potential from a standardized EC value
+- **predict_yield_impact**: Predicts yield reduction for a specific crop due to salinity
 
 
 ## 💬 Prompt Examples

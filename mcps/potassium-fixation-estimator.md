@@ -14,9 +14,9 @@ This MCP server provides specialized tools for agricultural soil analysis. It he
 
 
 ## Available Tools (4)
+- **estimate_k_release**: Predicts how much potassium will be released from the non-exchangeable pool back into the soil
 - **calculate_fertilizer_adjustment**: Recommends the extra amount of potassium needed to counteract fixation and meet crop needs
 - **calculate_fixation_capacity**: Determines how much potassium the soil will likely "trap" based on its mineral composition and capacity
-- **estimate_k_release**: Predicts how much potassium will be released from the non-exchangeable pool back into the soil
 - **predict_available_k**: Calculates the net amount of potassium available to plants after fixation has occurred
 
 

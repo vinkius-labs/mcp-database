@@ -14,10 +14,10 @@ This MCP server provides specialized tools for lavender cultivation and processi
 
 
 ## Available Tools (4)
+- **get_harvest_recommendation**: Identifies the ideal time to harvest for maximum quality
 - **calculate_distillation_efficiency**: Estimates the operational requirements for the extraction process
 - **calculate_expected_yield**: Determines the total amount of essential oil produced per unit of land
 - **estimate_chemical_profile**: Predicts the concentration of key aromatic compounds
-- **get_harvest_recommendation**: Identifies the ideal time to harvest for maximum quality
 
 
 ## 💬 Prompt Examples

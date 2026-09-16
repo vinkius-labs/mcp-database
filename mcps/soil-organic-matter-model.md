@@ -15,8 +15,8 @@ This MCP server provides a predictive modeling engine to simulate the accumulati
 
 ## Available Tools (4)
 - **calculate_annual_som_change**: Determines the net change in SOM percentage for a single year
-- **evaluate_productivity_impact**: Translates SOM changes into a qualitative and quantitative assessment of soil productivity
 - **get_carbon_sequestration_rate**: Quantifies the efficiency of a management practice in capturing atmospheric carbon into the soil
+- **evaluate_productivity_impact**: Translates SOM changes into a qualitative and quantitative assessment of soil productivity
 - **predict_steady_state**: Estimates the long-term equilibrium SOM level under a constant management regime
 
 

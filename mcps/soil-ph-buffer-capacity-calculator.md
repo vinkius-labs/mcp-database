@@ -14,10 +14,10 @@ This MCP server provides specialized tools for soil science analysis. It allows 
 
 
 ## Available Tools (4)
-- **calculate_buffer_capacity**: Determines the soil's resistance to pH change
 - **calculate_lime_requirement**: Determines the tonnage of limestone required per hectare to reach a target pH
-- **estimate_ph_drift**: Predicts how much the soil pH will change over a specific period due to natural processes
 - **get_soil_classification**: Categorizes the soil based on its buffering potential
+- **calculate_buffer_capacity**: Determines the soil's resistance to pH change
+- **estimate_ph_drift**: Predicts how much the soil pH will change over a specific period due to natural processes
 
 
 ## 💬 Prompt Examples

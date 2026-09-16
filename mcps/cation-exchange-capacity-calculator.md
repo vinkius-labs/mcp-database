@@ -14,10 +14,18 @@ This MCP server provides essential tools for soil fertility analysis. Use `calcu
 
 
 ## Available Tools (4)
-- **calculate_soil_capacity**: Calculate the primary CEC and base saturation metrics
-- **evaluate_sodicity_remediation**: Determine the necessary gypsum application to mitigate sodicity
-- **get_mineralogy_factor**: Retrieve the specific CEC contribution factor for a given clay type
-- **analyze_nutrient_balance**: Assess the ratio of major cations to check for nutrient imbalances
+- **evaluate_sodicity_remediation**: Ensure the target ESP is less than or equal to the current ESP.
+
+Determine the necessary gypsum application to mitigate sodicity
+- **calculate_soil_capacity**: Provide all required cation and organic matter percentages.
+
+Calculate the primary CEC and base saturation metrics
+- **get_mineralogy_factor**: Use the exact name of the clay mineral.
+
+Retrieve the specific CEC contribution factor for a given clay type
+- **analyze_nutrient_balance**: Provide all three required cation measurements.
+
+Assess the ratio of major cations to check for nutrient imbalances
 
 
 ## 💬 Prompt Examples

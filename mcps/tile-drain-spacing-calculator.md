@@ -14,10 +14,10 @@ This MCP server provides specialized tools for agricultural drainage design. Use
 
 
 ## Available Tools (4)
-- **estimate_time_to_target_depth**: Predicts the time required for the water table to reach a specific desired depth
-- **get_steady_state_spacing**: Determines the optimal distance between drains required to maintain a specific water table level under constant inflow
 - **get_transient_drawdown_rate**: Calculates how quickly the water table will drop toward the drain level after a drainage event
 - **validate_design_parameters**: Checks if a set of proposed drainage design parameters is physically and mathematically consistent
+- **estimate_time_to_target_depth**: Predicts the time required for the water table to reach a specific desired depth
+- **get_steady_state_spacing**: Determines the optimal distance between drains required to maintain a specific water table level under constant inflow
 
 
 ## 💬 Prompt Examples

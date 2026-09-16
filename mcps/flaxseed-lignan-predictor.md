@@ -14,10 +14,10 @@ This MCP server provides predictive modeling for flaxseed biochemical compositio
 
 
 ## Available Tools (4)
-- **estimate_nutritional_value**: Evaluates the nutritional strength of the predicted flaxseed profile
-- **evaluate_market_suitability**: Determines if the predicted crop is optimized for high-value supplement markets
 - **get_variety_baseline**: Retrieves the hardcoded genetic potential for specific flaxseed varieties
 - **predict_lignan_profile**: Calculates the specific biochemical composition of a flaxseed sample based on environmental and genetic inputs
+- **estimate_nutritional_value**: Evaluates the nutritional strength of the predicted flaxseed profile
+- **evaluate_market_suitability**: Determines if the predicted crop is optimized for high-value supplement markets
 
 
 ## 💬 Prompt Examples

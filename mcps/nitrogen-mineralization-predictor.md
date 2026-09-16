@@ -14,10 +14,10 @@ This MCP server provides tools to model the biological conversion of organic nit
 
 
 ## Available Tools (4)
+- **analyze_availability_timing**: Identifies the peak periods of nitrogen availability to help plan planting
 - **calculate_daily_rate**: Determines the immediate nitrogen release rate for a specific day
 - **calculate_legume_credit**: Specifically calculates the N credit provided by legume crop residues
 - **predict_seasonal_release**: Forecasts the total nitrogen released over an entire growing season
-- **analyze_availability_timing**: Identifies the peak periods of nitrogen availability to help plan planting
 
 
 ## 💬 Prompt Examples

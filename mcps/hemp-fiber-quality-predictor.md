@@ -14,10 +14,10 @@ This MCP server provides specialized tools to analyze hemp fiber production. By 
 
 
 ## Available Tools (4)
-- **evaluate_application_suitability**: Determines the most appropriate industrial use for the predicted fiber based on its properties
 - **analyze_growth_maturity**: Evaluates whether the plant was harvested at an optimal stage for fiber production
 - **calculate_yield_potential**: Estimates the total amount of usable fiber that can be extracted from a given stem
 - **predict_fiber_properties**: Calculates the primary physical and chemical qualities of the hemp fiber based on plant growth and processing parameters
+- **evaluate_application_suitability**: Determines the most appropriate industrial use for the predicted fiber based on its properties
 
 
 ## 💬 Prompt Examples
