@@ -18,8 +18,8 @@ The final step is combining these inputs with the total built area via the `esti
 
 
 ## Available Tools (3)
-- **get_region_cost_index**: Retrieve the baseline construction cost index rate for a specified geographical region and reference month
 - **calculate_standard_multiplier**: Convert a construction standard into a quantitative multiplier factor
+- **get_region_cost_index**: Retrieve the baseline construction cost index rate for a specified geographical region and reference month
 - **estimate_total_cost_range**: Calculate the estimated total cost range for a construction project
 
 
@@ -105,4 +105,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

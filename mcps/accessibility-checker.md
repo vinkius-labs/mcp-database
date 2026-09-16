@@ -24,14 +24,14 @@ Verify building compliance against universal accessibility standards (USA/EU) fo
 
 
 ## Available Tools (4)
-- **check_ramp_compliance**: 33% maximum standard and checks for required transition landings.
-
-Determine if a ramp section meets maximum slope and landing requirements
 - **check_bathroom_spaciousness**: Confirm bathroom provides enough functional space for mobility aid maneuverability
 - **check_corridor_and_passage**: Returns compliance status and violation details.
 
 Verify corridor or passage meets minimum clear width for universal access
 - **check_doorway**: Verify doorway provides adequate clear opening width for mobility aid users
+- **check_ramp_compliance**: 33% maximum standard and checks for required transition landings.
+
+Determine if a ramp section meets maximum slope and landing requirements
 
 
 ## 💬 Prompt Examples
@@ -116,4 +116,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
