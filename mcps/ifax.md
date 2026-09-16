@@ -35,14 +35,14 @@ Connect your **iFax** account to any AI agent and manage fax communications thro
 
 
 ## Available Tools (6)
-- **resend_fax**: Resend a failed fax
-- **list_faxes**: List sent faxes
-- **download_fax**: Download a fax document
-- **cancel_fax**: Cancel a pending fax
 - **get_fax_status**: Check fax delivery status
+- **list_faxes**: List sent faxes
+- **resend_fax**: Resend a failed fax
 - **send_fax**: Pass faxData as a JSON string containing the file metadata and base64 content.
 
 Send a new fax
+- **cancel_fax**: Cancel a pending fax
+- **download_fax**: Download a fax document
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

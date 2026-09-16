@@ -38,19 +38,19 @@ Connect your **FusionSignage** account to any AI agent and manage your digital s
 - **assign_playlist**: Assign playlist to screen
 - **check_fusion_status**: Verify connectivity
 - **create_playlist**: Create a playlist
+- **create_schedule**: Create a schedule
+- **delete_media**: Delete media
 - **delete_playlist**: Delete a playlist
 - **get_media_item**: Get media details
 - **get_playlist**: Get playlist details
 - **get_screen_status**: Get screen status
-- **list_playlists**: List all playlists
-- **list_screens**: List all screens
-- **update_playlist**: Update a playlist
-- **create_schedule**: Create a schedule
-- **delete_media**: Delete media
 - **get_screen**: Get screen details
 - **list_groups**: List screen groups
 - **list_media**: List all media
+- **list_playlists**: List all playlists
 - **list_schedules**: List schedules
+- **list_screens**: List all screens
+- **update_playlist**: Update a playlist
 - **update_screen**: Update a screen
 
 
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,15 +36,15 @@ No more manual status checking or complex transfer management through fragmented
 
 
 ## Available Tools (10)
+- **complete_transfer**: Finalize a file transfer
 - **delete_transfer**: Delete a transfer
 - **get_configuration**: Get account configuration
 - **get_transfer_details**: Get details of a specific transfer
 - **get_user**: Get user profile
-- **list_sent_transfers**: List sent transfers
-- **list_contacts**: List contacts
-- **complete_transfer**: Finalize a file transfer
 - **initialize_transfer**: Initialize a new file transfer
 - **list_received_transfers**: List received transfers (inbox)
+- **list_sent_transfers**: List sent transfers
+- **list_contacts**: List contacts
 - **login**: Login to Filemail
 
 
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

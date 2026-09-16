@@ -36,18 +36,18 @@ No more manual data entry into the live chat dashboard. Your AI acts as your ded
 
 
 ## Available Tools (12)
-- **get_contact**: Get contact details
 - **get_contact_by_email**: Get contact by email
 - **get_conversation**: Get conversation details
 - **list_contacts**: List contacts
 - **list_conversations**: List conversations
+- **list_segments**: List segments
 - **list_visitors**: List visitors
 - **update_contact**: Update a contact
 - **upsert_contact**: Create or update contact
+- **get_contact**: Get contact details
+- **search_contacts**: Search contacts
 - **check_formilla_status**: Verify connectivity
 - **delete_contact**: Delete a contact
-- **list_segments**: List segments
-- **search_contacts**: Search contacts
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

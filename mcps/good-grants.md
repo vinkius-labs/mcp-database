@@ -38,11 +38,11 @@ Connect your **Good Grants** account to any AI agent and simplify how you coordi
 ## Available Tools (7)
 - **list_applications**: List Good Grants applications
 - **list_grant_categories**: List grant categories
-- **list_account_users**: List account users
+- **list_grant_funds**: List grant funds
 - **list_application_reviews**: List reviews
+- **list_account_users**: List account users
 - **create_new_application**: Register a new application
 - **get_application_details**: Get details for a specific application
-- **list_grant_funds**: List grant funds
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
