@@ -34,21 +34,21 @@ Connect to **Monster API** to leverage high-performance AI models without managi
 
 
 ## Available Tools (5)
-- **get_job_status**: Once status is COMPLETED, the response contains the output URL.
-
-Check the status of an asynchronous generation job
-- **generate_image_to_image**: Returns a process_id to poll for status.
-
-Modify an existing image based on a prompt
 - **generate_sdxl**: Returns a process_id to poll for status.
 
 Generate an image from text using SDXL
-- **generate_sunno_bark**: Returns a process_id to poll for status.
-
-Convert text into natural-sounding speech (TTS)
 - **generate_whisper**: Returns a process_id to poll for status.
 
 Transcribe audio to text using Whisper
+- **generate_image_to_image**: Returns a process_id to poll for status.
+
+Modify an existing image based on a prompt
+- **generate_sunno_bark**: Returns a process_id to poll for status.
+
+Convert text into natural-sounding speech (TTS)
+- **get_job_status**: Once status is COMPLETED, the response contains the output URL.
+
+Check the status of an asynchronous generation job
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

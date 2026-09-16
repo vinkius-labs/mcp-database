@@ -35,11 +35,11 @@ Connect **LunarCrush** to any AI agent to unlock deep social insights for the cr
 
 ## Available Tools (5)
 - **get_altrank**: Get AltRank for a specific coin
-- **get_galaxy_score**: Get Galaxy Score for a specific coin
-- **get_market_metrics**: Get market metrics for a coin
 - **list_assets**: Can be filtered by symbol, sorted, and limited.
 
 Retrieve a list of all supported assets or specific details
+- **get_galaxy_score**: Get Galaxy Score for a specific coin
+- **get_market_metrics**: Get market metrics for a coin
 - **get_social_metrics**: Get detailed social metrics for a coin
 
 
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
