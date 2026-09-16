@@ -36,33 +36,33 @@ Perfect for **frequent travelers**, **urban commuters**, **executive assistants*
 
 
 ## Available Tools (9)
-- **get_locations**: Returns location IDs, names, addresses, and coordinates. Use this to quickly reference saved locations for ride requests without typing full addresses.
-
-Get saved locations for the Lyft account
-- **get_cost_estimate**: Prices are in local currency (USD). Use this to compare costs across different Lyft products before booking.
-
-Get cost estimate for a Lyft ride between two locations
 - **get_eta_estimate**: Use this to compare how quickly different Lyft services can reach you. Lower minutes mean faster pickups.
 
 Get estimated arrival times for Lyft at a location
+- **get_ride_details**: Use this to track your active ride or review past ride details.
+
+Get details of a specific Lyft ride
+- **get_ride_types**: ) available at the specified latitude/longitude. Returns ride type IDs, display names, capacity, and descriptions. Use this to see which ride options are available before requesting price or time estimates.
+
+Get available Lyft ride types at a location
+- **get_cost_estimate**: Prices are in local currency (USD). Use this to compare costs across different Lyft products before booking.
+
+Get cost estimate for a Lyft ride between two locations
+- **get_locations**: Returns location IDs, names, addresses, and coordinates. Use this to quickly reference saved locations for ride requests without typing full addresses.
+
+Get saved locations for the Lyft account
+- **get_ride_history**: Returns ride date, status, origin/destination, ride type, driver, and cost. Use this to review past rides, calculate expenses, or find previous trip details.
+
+Get ride history for the authenticated Lyft account
+- **request_ride**: Requires ride type ID (from get_ride_types), origin coordinates, and destination coordinates. Optionally include pickup/dropoff addresses for clarity. Returns the ride ID and status. Use this to book a ride after confirming price and availability.
+
+Request a new Lyft ride
 - **set_location**: Requires location ID, latitude, and longitude. Optionally include a display name. The location ID can be home, work, or any custom string. Returns the saved location details. Use this to manage your favorite pickup/dropoff spots.
 
 Save or update a location for the Lyft account
 - **cancel_ride**: Cancellation policies vary based on ride status - cancellations after driver assignment may incur fees. Use this to cancel rides that were booked by mistake or are no longer needed.
 
 Cancel an existing Lyft ride request
-- **get_ride_details**: Use this to track your active ride or review past ride details.
-
-Get details of a specific Lyft ride
-- **get_ride_history**: Returns ride date, status, origin/destination, ride type, driver, and cost. Use this to review past rides, calculate expenses, or find previous trip details.
-
-Get ride history for the authenticated Lyft account
-- **get_ride_types**: ) available at the specified latitude/longitude. Returns ride type IDs, display names, capacity, and descriptions. Use this to see which ride options are available before requesting price or time estimates.
-
-Get available Lyft ride types at a location
-- **request_ride**: Requires ride type ID (from get_ride_types), origin coordinates, and destination coordinates. Optionally include pickup/dropoff addresses for clarity. Returns the ride ID and status. Use this to book a ride after confirming price and availability.
-
-Request a new Lyft ride
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

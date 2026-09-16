@@ -36,12 +36,12 @@ Connect your **Modal** account to any AI agent and take full control of your hig
 
 ## Available Tools (7)
 - **list_secrets**: List static secret dictionary configuration references
-- **list_volumes**: List Modal persisted disk network block volumes
 - **stop_app**: Force stop an actively running explicit Modal App execution
-- **get_deployment**: Get an explicitly tracked deployment detail mapped bound
-- **get_app**: Get static specifics of an exact Modal App ID
 - **list_apps**: List isolated active/historical Modal Apps contexts
+- **get_app**: Get static specifics of an exact Modal App ID
+- **list_volumes**: List Modal persisted disk network block volumes
 - **list_deployments**: List strictly managed Modal platform explicitly promoted deployments
+- **get_deployment**: Get an explicitly tracked deployment detail mapped bound
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,12 +37,12 @@ Connect your **n8n** instance to any AI agent and take full control of your node
 
 ## Available Tools (7)
 - **get_workflow_details**: Get details for a specific workflow
-- **list_instance_users**: List collaborators on the n8n instance
-- **list_workflows**: List n8n automation workflows
-- **list_stored_credentials**: List metadata for saved credentials
 - **list_workflow_executions**: List recent workflow executions
 - **get_execution_details**: Get trace logs for a specific execution
 - **list_workflow_tags**: List workflow organizational tags
+- **list_workflows**: List n8n automation workflows
+- **list_instance_users**: List collaborators on the n8n instance
+- **list_stored_credentials**: List metadata for saved credentials
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

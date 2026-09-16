@@ -35,7 +35,6 @@ Connect your **LiteLLM Proxy** instance to any AI agent and take full control of
 
 
 ## Available Tools (10)
-- **create_model**: Inject completely fresh routing endpoints (ex: new Bedrock Llama 4 endpoints)
 - **create_team**: Generate pristine organizational isolation tracking exact cost limits per division
 - **create_user**: Insert specific End-User identities bridging Vinkius with Proxy logs
 - **delete_key**: Delete an existing LLM proxy key entirely
@@ -45,6 +44,7 @@ Connect your **LiteLLM Proxy** instance to any AI agent and take full control of
 - **get_model_info**: Get array endpoints tracing exact Fallback paths like OpenAI -> Anthropic
 - **get_team_info**: Get internal logic bounds matching multiple routing users via Team UUID
 - **get_user_info**: Return precise End-User abstractions tracking total USD consumed natively
+- **create_model**: Inject completely fresh routing endpoints (ex: new Bedrock Llama 4 endpoints)
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

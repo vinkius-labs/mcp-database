@@ -35,16 +35,16 @@ Connect your **Loom** account to any AI agent and take full control of your asyn
 
 
 ## Available Tools (8)
+- **list_videos**: List all Loom videos
+- **get_video**: Get video details
 - **delete_video**: This action cannot be undone.
 
 Delete a video
-- **get_transcript**: Get video transcript
-- **get_video**: Get video details
-- **get_video_analytics**: Get video analytics
-- **list_folders**: List workspace folders
-- **list_videos**: List all Loom videos
-- **list_workspace_members**: List workspace members
 - **update_video**: Update video title
+- **get_transcript**: Get video transcript
+- **list_folders**: List workspace folders
+- **list_workspace_members**: List workspace members
+- **get_video_analytics**: Get video analytics
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
