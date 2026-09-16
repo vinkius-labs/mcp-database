@@ -14,8 +14,8 @@ The Mood Pattern Detector analyzes historical mood logs to uncover cyclical patt
 
 
 ## Available Tools (3)
-- **analyze_weekly_cycle**: Determine if specific days of the week are associated with better or worse moods
 - **evaluate_activity_impact**: Measure how a specific recorded variable influences mood levels
+- **analyze_weekly_cycle**: Determine if specific days of the week are associated with better or worse moods
 - **identify_mood_anomalies**: Flag specific dates where the mood was significantly different from the norm
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

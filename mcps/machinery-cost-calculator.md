@@ -15,8 +15,8 @@ This MCP server provides specialized tools for agricultural economic analysis. U
 
 ## Available Tools (3)
 - **calculate_area_impact**: Calculate the impact of machinery costs on a specific land area
-- **calculate_hourly_costs**: Calculate the hourly operational costs of machinery
 - **compare_ownership_models**: Compare owned machinery costs against outsourced contractor rates
+- **calculate_hourly_costs**: Calculate the hourly operational costs of machinery
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
