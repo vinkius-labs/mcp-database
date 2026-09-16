@@ -14,9 +14,9 @@ This MCP server provides a structured framework for evaluating innovation ideas.
 
 
 ## Available Tools (4)
-- **get_strategic_recommendation**: Provides a human-readable summary of the decision logic
 - **analyze_market_potential**: Evaluates if the market size justifies the level of competition and complexity
 - **assess_execution_risk**: Targets the gap between the idea's requirements and the team's ability to deliver
+- **get_strategic_recommendation**: Provides a human-readable summary of the decision logic
 - **score_idea_viability**: Provides the primary quantitative and qualitative assessment of an innovation idea
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

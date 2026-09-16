@@ -14,10 +14,10 @@ This MCP server provides decision-support tools for AI SaaS providers to measure
 
 
 ## Available Tools (4)
-- **calculate_latency_satisfaction**: Determines how much the current response speed is damaging user satisfaction
 - **calculate_optimization_roi**: Justifies technical investments by calculating the potential return on investment for reducing latency
-- **estimate_abandonment_cost**: Converts the user abandonment rate into a tangible monetary loss
 - **predict_user_abandonment**: Estimates the percentage of users likely to stop using the service due to current latency levels
+- **calculate_latency_satisfaction**: Determines how much the current response speed is damaging user satisfaction
+- **estimate_abandonment_cost**: Converts the user abandonment rate into a tangible monetary loss
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
