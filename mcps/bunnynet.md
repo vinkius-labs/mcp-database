@@ -35,34 +35,34 @@ No clunky network portals or messy CURL commands. Your AI agent becomes your cor
 
 
 ## Available Tools (10)
-- **add_pull_zone**: Returns the new Pull Zone ID and default b-cdn.net domain.
-
-Provision a radically fast new CDN reverse proxy domain
-- **delete_storage_zone**: Requires zone to be empty or forces recursive wipes freeing the namespace back into the registry.
-
-Vaporize an existing Bunny CDN Storage Zone entirely
 - **list_files**: Requires the specific Zone FTP/API Password. Returns literal byte lengths and cryptographic hash footprints.
 
 Enumerate explicitly uploaded binary assets nested strictly inside Storage
-- **list_storage_zones**: Locate physical Edge Storage origin folders managed natively on Bunny
-- **purge_pull_zone**: Spikes Origin ingress traffic rapidly pulling entirely fresh payload structures.
-
-Blast an immediate Cache Invalidation forcing origin asset re-fetching
 - **get_pull_zone**: Exposes enabled SSL configurations, Bandwidth limits, and advanced Edge Rules intercepting requests.
 
 Perform structural extraction of metadata for one specific Pull Zone
-- **get_storage_zone**: Returns FTP access credentials, read-only vs read-write keys, and origin PoPs.
+- **list_storage_zones**: Locate physical Edge Storage origin folders managed natively on Bunny
+- **add_pull_zone**: Returns the new Pull Zone ID and default b-cdn.net domain.
 
-Inspect deep internal credentials identifying a precise Storage Zone
+Provision a radically fast new CDN reverse proxy domain
 - **add_storage_zone**: Defaults to explicit NY regional primary datacenters.
 
 Bootstrap an entirely empty replication Volume inside Bunny.net
 - **delete_pull_zone**: Instantly invalidates assigned `b-cdn.net` aliases dropping incoming proxy connections out of the Anycast caching tree entirely.
 
-Destroy an active CDN acceleration mapping terminating globalThis traffic
+Destroy an active CDN acceleration mapping terminating global traffic
+- **delete_storage_zone**: Requires zone to be empty or forces recursive wipes freeing the namespace back into the registry.
+
+Vaporize an existing Bunny CDN Storage Zone entirely
+- **get_storage_zone**: Returns FTP access credentials, read-only vs read-write keys, and origin PoPs.
+
+Inspect deep internal credentials identifying a precise Storage Zone
 - **list_pull_zones**: Returns pull zone IDs, names, hostnames, and origin URL targets.
 
-Identify globalThis Bunny CDN accelerated delivery domains (Pull Zones)
+Identify global Bunny CDN accelerated delivery domains (Pull Zones)
+- **purge_pull_zone**: Spikes Origin ingress traffic rapidly pulling entirely fresh payload structures.
+
+Blast an immediate Cache Invalidation forcing origin asset re-fetching
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

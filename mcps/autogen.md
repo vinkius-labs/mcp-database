@@ -36,16 +36,16 @@ Your primary agent can now command and debug secondary swarms of specialized age
 
 
 ## Available Tools (10)
-- **list_agents**: List all configured AutoGen agents available
-- **create_agent**: Define a new customized AutoGen agent
 - **create_message**: Send a user message to initiate or continue an AutoGen session
 - **create_session**: Create a new blank AutoGen session
 - **delete_session**: Permanently delete an AutoGen session
 - **list_messages**: Retrieve the message history for a specific AutoGen session
-- **list_models**: List Large Language Models configured for use in AutoGen
 - **list_sessions**: List AutoGen Studio conversation sessions
 - **list_skills**: List Python skill functions available to AutoGen agents
 - **list_workflows**: List all predefined AutoGen multi-agent workflows
+- **list_agents**: List all configured AutoGen agents available
+- **create_agent**: Define a new customized AutoGen agent
+- **list_models**: List Large Language Models configured for use in AutoGen
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

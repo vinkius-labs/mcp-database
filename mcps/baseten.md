@@ -39,10 +39,10 @@ Scale unified AI infrastructure without bouncing between terminal windows. Your 
 - **predict**: Formulate the explicit tensor shapes or dictionaries strictly matching the deployed instance.
 
 Invoke a serverless model inference prediction
-- **list_models**: List Baseten managed models
-- **list_deployments**: List active inferences bounds matching a specific model
 - **get_deployment**: Get explicit details of a running deployment
 - **list_secrets**: List securely managed workspace secrets without showing values
+- **list_models**: List Baseten managed models
+- **list_deployments**: List active inferences bounds matching a specific model
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

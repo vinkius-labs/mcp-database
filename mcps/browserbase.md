@@ -33,18 +33,18 @@ Connect your AI agent to **Browserbase** — the serverless platform for running
 
 
 ## Available Tools (4)
-- **get_browser_session**: Useful for monitoring active sessions.
-
-Get details of a specific browser session by its ID
 - **create_browser_session**: The session provides a connectUrl (CDP WebSocket) that can be used with Playwright, Puppeteer, or Selenium to control the browser programmatically. Default timeout is 300 seconds.
 
 Create a new cloud browser session. Returns a CDP WebSocket URL for connecting automation frameworks like Playwright or Puppeteer
-- **list_browser_sessions**: Filter by status: RUNNING, COMPLETED, ERROR.
+- **get_browser_session**: Useful for monitoring active sessions.
 
-List all active browser sessions in your Browserbase account
+Get details of a specific browser session by its ID
 - **stop_browser_session**: Any unsaved state in the browser is lost.
 
 Stop a running browser session by its ID
+- **list_browser_sessions**: Filter by status: RUNNING, COMPLETED, ERROR.
+
+List all active browser sessions in your Browserbase account
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
