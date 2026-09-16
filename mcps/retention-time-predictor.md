@@ -14,10 +14,10 @@ This MCP server provides advanced chromatographic modeling using Quantitative St
 
 
 ## Available Tools (4)
-- **analyze_gradient_efficiency**: Evaluate how a change in mobile phase composition (gradient) impacts the elution profile
-- **calculate_selectivity**: Determine how well two different compounds can be separated by a specific chromatographic setup
 - **compare_column_performance**: Predict how switching between different column types will change the retention behavior for a set of compounds
 - **predict_retention_time**: Calculate the expected retention time for a specific compound under defined chromatographic conditions
+- **analyze_gradient_efficiency**: Evaluate how a change in mobile phase composition (gradient) impacts the elution profile
+- **calculate_selectivity**: Determine how well two different compounds can be separated by a specific chromatographic setup
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

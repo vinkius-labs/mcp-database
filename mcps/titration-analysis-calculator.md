@@ -14,10 +14,16 @@ This MCP server provides specialized tools for quantitative chemical analysis th
 
 
 ## Available Tools (4)
-- **get_back_titration**: 
-- **get_direct_titration**: 
 - **get_equivalence_point**: 
-- **get_indirect_titration**: 
+- **get_indirect_titration**: Use this when multiple reagents are involved in the analysis.
+
+Calculates indirect titration results
+- **get_back_titration**: Ensure all reagent volumes and concentrations are provided.
+
+Calculates back titration results
+- **get_direct_titration**: Provide titrant and analyte concentrations for accurate results.
+
+Calculates direct titration results
 
 
 ## 💬 Prompt Examples
@@ -102,4 +108,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

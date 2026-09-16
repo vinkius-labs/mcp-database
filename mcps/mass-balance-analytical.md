@@ -14,10 +14,10 @@ This MCP server provides essential analytical tools for verifying chemical proce
 
 
 ## Available Tools (4)
-- **calculate_overall_recovery**: Determines the total percentage of the target substance successfully recovered from the initial sample
 - **calculate_method_efficiency**: Evaluates how effective the entire analytical process was
-- **analyze_mass_distribution**: Breaks down where the initial mass ended up across different stages of the procedure
+- **calculate_overall_recovery**: Determines the total percentage of the target substance successfully recovered from the initial sample
 - **validate_procedure_compliance**: Checks if the current mass balance results meet pre-defined quality control thresholds
+- **analyze_mass_distribution**: Breaks down where the initial mass ended up across different stages of the procedure
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

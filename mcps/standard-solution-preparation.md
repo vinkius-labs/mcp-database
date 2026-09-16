@@ -14,10 +14,10 @@ This MCP server provides essential tools for analytical chemists to prepare prec
 
 
 ## Available Tools (4)
-- **adjust_for_hygroscopicity**: Modifies the required mass to compensate for moisture absorption in hygroscopic materials
 - **calculate_dilution_protocol**: Generates a multi-step dilution strategy when the required initial mass is too small for accurate weighing
 - **calculate_direct_mass**: Determines the mass of a solid standard required to prepare a single-step solution
 - **estimate_preparation_uncertainty**: Calculates the total uncertainty of the prepared solution based on equipment and material specifications
+- **adjust_for_hygroscopicity**: Modifies the required mass to compensate for moisture absorption in hygroscopic materials
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

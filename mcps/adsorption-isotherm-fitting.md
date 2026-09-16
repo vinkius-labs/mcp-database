@@ -14,9 +14,9 @@ This MCP server provides specialized mathematical tools to analyze adsorption pr
 
 
 ## Available Tools (4)
+- **fit_freundlich_isotherm**: Determines if the data follows a multilayer or heterogeneous surface adsorption pattern using the Freundlich model
 - **calculate_adsorption_efficiency**: Evaluates how effectively a specific adsorbent removes a substance from a solution at a given concentration
 - **compare_isotherm_models**: Evaluates which of the primary models (Langmuir or Freundlich) provides the best fit for a specific dataset
-- **fit_freundlich_isotherm**: Determines if the data follows a multilayer or heterogeneous surface adsorption pattern using the Freundlich model
 - **fit_langmuir_isotherm**: Determines if the data follows a single-layer adsorption pattern using the Langmuir model
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

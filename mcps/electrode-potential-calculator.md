@@ -14,10 +14,10 @@ This MCP server provides electrochemical calculation tools for ion-selective ele
 
 
 ## Available Tools (4)
+- **get_ionic_strength_correction**: Calculates the activity coefficient based on the total ionic strength of the solution
 - **calculate_detection_limit**: Determines the lowest detectable concentration of the target ion
 - **calculate_selectivity_impact**: Predicts how much an interfering ion will skew the potential reading of the target ion
 - **get_electrode_potential**: Calculates the theoretical potential of the electrode for a specific ion in a given solution
-- **get_ionic_strength_correction**: Calculates the activity coefficient based on the total ionic strength of the solution
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

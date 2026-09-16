@@ -14,10 +14,10 @@ This MCP server provides a specialized toolkit for automating chromatographic me
 
 
 ## Available Tools (4)
+- **suggest_mobile_phase**: Determines the optimal composition of the mobile phase to achieve separation
+- **select_column**: Recommends the most suitable stationary phase based on analyte properties and the chosen chromatography modality
 - **evaluate_method_feasibility**: Assesses whether a proposed method is practical for a specific detection requirement
 - **calculate_expected_resolution**: Predicts the separation quality between two specific analytes in a given method
-- **select_column**: Recommends the most suitable stationary phase based on analyte properties and the chosen chromatography modality
-- **suggest_mobile_phase**: Determines the optimal composition of the mobile phase to achieve separation
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

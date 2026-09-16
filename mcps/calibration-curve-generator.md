@@ -14,10 +14,10 @@ This MCP server provides analytical chemistry tools to establish mathematical re
 
 
 ## Available Tools (4)
-- **calculate_unknown_concentration**: Converts a specific instrument signal into its corresponding concentration using an existing model
 - **generate_calibration_model**: Creates the primary mathematical model from a set of concentration and response data
 - **get_detection_limit_statistics**: Provides detailed statistical context regarding the sensitivity and limits of the instrument
 - **validate_calibration_quality**: Evaluates if a calibration curve is fit for use based on regulatory or laboratory standards
+- **calculate_unknown_concentration**: Converts a specific instrument signal into its corresponding concentration using an existing model
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,10 +14,10 @@ This MCP server provides specialized kinetic calculation tools for evaluating he
 
 
 ## Available Tools (4)
-- **evaluate_mass_transfer_impact**: Determines if the observed reaction rate is being hindered by physical transport limitations
 - **get_activity_metrics**: Calculates the fundamental efficiency metrics (TOF and TON) of the catalyst
 - **get_deactivation_analysis**: Quantifies the loss of catalyst performance over the course of operation
 - **get_selectivity_profile**: Determines how effectively the catalyst produces the target molecule
+- **evaluate_mass_transfer_impact**: Determines if the observed reaction rate is being hindered by physical transport limitations
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
