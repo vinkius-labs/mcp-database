@@ -14,9 +14,9 @@ This MCP server provides specialized tools to analyze the resilience of AI agent
 
 
 ## Available Tools (3)
+- **calculate_resilience_metrics**: Computes the high-level performance ratios regarding reliability and recovery
 - **parse_execution_logs**: Extracts a structured sequence of tool call outcomes and error types from raw text logs
 - **calculate_error_distribution**: Provides a breakdown of how many times specific errors occurred
-- **calculate_resilience_metrics**: Computes the high-level performance ratios regarding reliability and recovery
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

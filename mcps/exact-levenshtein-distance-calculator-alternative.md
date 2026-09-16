@@ -14,9 +14,9 @@ This MCP server provides high-precision algorithms for measuring the difference 
 
 
 ## Available Tools (3)
-- **damerau_levenshtein_distance**: Computes the Damerau-Levenshtein distance between two strings
 - **jaro_winkler_similarity**: Computes the Jaro-Winkler similarity percentage between two strings
 - **levenshtein_distance**: Computes the exact Levenshtein edit distance between two strings
+- **damerau_levenshtein_distance**: Computes the Damerau-Levenshtein distance between two strings
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

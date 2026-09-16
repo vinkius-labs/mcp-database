@@ -14,9 +14,15 @@ This MCP server provides deterministic tools to validate the structural integrit
 
 
 ## Available Tools (3)
-- **calculate_size_metrics**: Quantify the data distribution between metadata and the core body of a document
-- **audit_document_integrity**: Provide a high-level summary of whether a document is fit for RAG ingestion
-- **extract_document_metadata**: Extract specific metadata fields from a raw document string
+- **audit_document_integrity**: Pass the full document content for evaluation.
+
+Provide a high-level summary of whether a document is fit for RAG ingestion
+- **calculate_size_metrics**: Supply both the document content and metadata JSON.
+
+Quantify the data distribution between metadata and the core body of a document
+- **extract_document_metadata**: Provide the full document content as the primary input.
+
+Extract specific metadata fields from a raw document string
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
