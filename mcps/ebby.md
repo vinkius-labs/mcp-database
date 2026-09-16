@@ -33,16 +33,16 @@ Integrate **Ebby**, the powerful automatic transcription and subtitling platform
 
 
 ## Available Tools (10)
+- **get_ebby_account_metadata**: Retrieve metadata and usage limits for your Ebby account
 - **get_transcription_text**: Retrieve the transcribed text content for a specific file
-- **search_transcriptions_by_name**: Search for transcriptions using a filename or title keyword
-- **quick_transcription_volume_audit**: Retrieve a high-level summary of transcription activity and processing rates
-- **list_transcription_speakers**: List all speakers identified in a specific transcription
+- **get_transcription_details**: Get detailed settings and status for a specific transcription
+- **list_successfully_processed_audio**: Identify transcriptions that have finished processing and are ready for export
 - **list_in_progress_transcriptions**: Identify transcriptions that are currently in the processing queue
 - **list_latest_transcriptions**: Identify the most recently created or updated transcriptions
 - **list_audio_transcriptions**: List all transcriptions created in your Ebby account
-- **get_ebby_account_metadata**: Retrieve metadata and usage limits for your Ebby account
-- **get_transcription_details**: Get detailed settings and status for a specific transcription
-- **list_successfully_processed_audio**: Identify transcriptions that have finished processing and are ready for export
+- **search_transcriptions_by_name**: Search for transcriptions using a filename or title keyword
+- **quick_transcription_volume_audit**: Retrieve a high-level summary of transcription activity and processing rates
+- **list_transcription_speakers**: List all speakers identified in a specific transcription
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

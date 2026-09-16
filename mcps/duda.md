@@ -33,16 +33,16 @@ Integrate **Duda**, the professional website builder for agencies and SaaS, dire
 
 
 ## Available Tools (10)
-- **list_site_collections**: List all dynamic data collections associated with a specific site
 - **quick_site_health_audit**: Retrieve a high-level summary of site activity and publishing rates
+- **list_published_websites**: Identify sites that are currently in a "Published" status
+- **search_sites_by_domain**: Search for a Duda site using a domain or name keyword
+- **list_site_collections**: List all dynamic data collections associated with a specific site
 - **get_client_account_profile**: Get full profile and permission data for a specific client account
 - **get_site_details**: Get detailed settings and information for a specific Duda site
 - **get_template_details**: Get detailed information for a specific Duda template
 - **list_client_accounts**: List all client accounts registered in your Duda organization
 - **list_duda_sites**: List all websites configured in your Duda account
-- **list_published_websites**: Identify sites that are currently in a "Published" status
 - **list_site_templates**: List all available Duda website templates
-- **search_sites_by_domain**: Search for a Duda site using a domain or name keyword
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
