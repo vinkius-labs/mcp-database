@@ -34,15 +34,15 @@ Connect your **RingCentral** account to any AI agent to streamline your telephon
 
 
 ## Available Tools (7)
-- **create_subscription**: Create a new webhook subscription
 - **renew_subscription**: Renew an existing subscription
-- **send_sms**: Send an SMS message
-- **list_message_store**: List messages from the message store
-- **get_presence**: Get presence status for the authenticated extension
-- **list_subscriptions**: List all active subscriptions
 - **list_call_logs**: Can be filtered by view type, date range, and call type.
 
 List RingCentral call logs for the authenticated extension
+- **create_subscription**: Create a new webhook subscription
+- **list_subscriptions**: List all active subscriptions
+- **list_message_store**: List messages from the message store
+- **get_presence**: Get presence status for the authenticated extension
+- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

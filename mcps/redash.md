@@ -37,24 +37,50 @@ Connect your **Redash** instance to any AI agent to interact with your data thro
 - **execute_query**: Parameters must be provided for parameterized queries.
 
 Initiates a new query execution or returns a cached result
-- **get_query_result**: Returns a query result by its result ID
-- **list_dashboards**: Returns a paginated array of dashboard objects
-- **update_data_source**: Configure a data source (e.g., SSH tunnel)
-- **list_queries**: List Redash queries
-- **test_data_source**: Test connection for a data source
-- **archive_dashboard**: Archive the specified dashboard
-- **archive_query**: Archive the specified query
-- **create_dashboard**: Create a new dashboard object
-- **create_query**: Create a new query object
-- **get_cached_query_result**: Get a cached result for a query ID (non-parameterized only)
-- **get_dashboard**: Returns an individual dashboard object
-- **get_data_source**: Get data source details
+- **create_dashboard**: Provide a unique name for the dashboard.
+
+Create a new dashboard object
 - **get_job**: SUCCESS includes query_result_id.
 
 Returns the status of a query task (job)
-- **get_query**: Get an individual query object
-- **update_dashboard**: Edit an existing dashboard object
-- **update_query**: Edit an existing query object
+- **list_dashboards**: Use this tool to list all available dashboards.
+
+Returns a paginated array of dashboard objects
+- **update_dashboard**: Supply the ID and the desired changes.
+
+Edit an existing dashboard object
+- **archive_dashboard**: Pass the dashboard slug.
+
+Archive the specified dashboard
+- **archive_query**: Pass the unique query ID.
+
+Archive the specified query
+- **create_query**: Provide a name and data source ID. The query string must be included in the request.
+
+Create a new query object
+- **get_cached_query_result**: Only use this for non-parameterized queries.
+
+Get a cached result for a query ID (non-parameterized only)
+- **get_dashboard**: Pass the dashboard slug.
+
+Returns an individual dashboard object
+- **get_data_source**: Get data source details
+- **get_query_result**: Pass the query result ID.
+
+Returns a query result by its result ID
+- **get_query**: Pass the required query ID.
+
+Get an individual query object
+- **list_queries**: List Redash queries
+- **test_data_source**: Provide a valid data source ID to execute the test.
+
+Test connection for a data source
+- **update_data_source**: Supply the ID and the necessary connection details.
+
+Configure a data source (e.g., SSH tunnel)
+- **update_query**: Supply the ID and the desired changes.
+
+Edit an existing query object
 
 
 ## 💬 Prompt Examples
@@ -139,4 +165,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
