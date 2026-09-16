@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Snapch
 
 
 ## Available Tools (9)
-- **list_ad_squads**: List ad squads for a campaign
+- **get_campaign_stats**: Get statistics for a campaign
 - **list_ad_accounts**: List Snapchat ad accounts
+- **list_ad_squads**: List ad squads for a campaign
+- **list_campaigns**: List campaigns for an ad account
+- **list_organizations**: List Snapchat organizations
 - **list_ads**: List ads for an ad squad
 - **list_media**: List media assets for an ad account
-- **list_organizations**: List Snapchat organizations
 - **get_ad_account_stats**: Get statistics for an ad account
 - **get_ad_account**: Get details for a specific ad account
-- **get_campaign_stats**: Get statistics for a campaign
-- **list_campaigns**: List campaigns for an ad account
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

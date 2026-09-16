@@ -37,14 +37,14 @@ Empower your AI agent to orchestrate your communication infrastructure with **Ro
 ## Available Tools (10)
 - **create_chatroom**: Create chatrooms
 - **get_token**: Get user IM token
-- **list_blocked_users**: List blocked users
-- **query_chatroom**: Get chatroom details
+- **list_blacklist**: List user blacklist
+- **refresh_user**: Update user information
 - **send_chatroom_msg**: Send chatroom message
 - **send_private_msg**: Send private message
-- **refresh_user**: Update user information
+- **list_blocked_users**: List blocked users
+- **query_chatroom**: Get chatroom details
 - **block_user**: Block user
 - **check_online**: Check user online status
-- **list_blacklist**: List user blacklist
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

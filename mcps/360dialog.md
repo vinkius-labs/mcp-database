@@ -38,21 +38,21 @@ Connect your **360dialog** WhatsApp Business API to any AI agent and manage your
 
 ## Available Tools (10)
 - **check_360dialog_status**: Verify API connectivity
-- **check_contacts**: Check WhatsApp contacts
-- **send_media_message**: Provide the media type and URL.
-
-Send a media message
-- **send_template_message**: Requires the template name and language code.
-
-Send a template message
-- **get_media**: Get media file details
-- **get_template**: Get template details
 - **list_templates**: List all message templates
 - **send_message**: Provide the recipient number in international format.
 
 Send a WhatsApp text message
+- **send_template_message**: Requires the template name and language code.
+
+Send a template message
 - **set_webhook**: Configure webhook URL
 - **upload_media**: Upload media for messaging
+- **check_contacts**: Check WhatsApp contacts
+- **send_media_message**: Provide the media type and URL.
+
+Send a media message
+- **get_media**: Get media file details
+- **get_template**: Get template details
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

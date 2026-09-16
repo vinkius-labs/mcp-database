@@ -35,17 +35,17 @@ Empower your AI agent to orchestrate your cloud storage infrastructure and asset
 
 
 ## Available Tools (10)
-- **copy_object**: Copy an object within the bucket
-- **delete_object**: Delete an object from COS
-- **download_object_text**: Download an object as text
-- **get_object_metadata**: Get object metadata (HEAD)
 - **head_bucket**: Check if the bucket exists and is accessible
 - **list_objects**: Use prefix to filter by path.
 
 List objects in the COS bucket
-- **get_bucket_acl**: Get bucket access permissions
 - **list_root_objects**: List top-level objects and folders
+- **copy_object**: Copy an object within the bucket
+- **get_object_metadata**: Get object metadata (HEAD)
 - **check_object_exists**: Check if an object exists
+- **delete_object**: Delete an object from COS
+- **download_object_text**: Download an object as text
+- **get_bucket_acl**: Get bucket access permissions
 - **upload_object**: Max 5GB per request.
 
 Upload text content to COS
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

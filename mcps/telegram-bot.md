@@ -34,10 +34,7 @@ Connect any **Telegram Bot** to your AI agent and automate messaging, broadcasti
 
 
 ## Available Tools (13)
-- **delete_message**: Delete a message from Telegram
-- **forward_message**: Forward a message in Telegram
-- **get_bot_info**: Get information about the Telegram bot
-- **get_chat_admins**: Get list of chat administrators
+- **get_chat_members_count**: Get the number of chat members
 - **get_chat_info**: Get information about a Telegram chat
 - **get_updates**: Useful for seeing what users have sent.
 
@@ -47,14 +44,17 @@ Get updates for the Telegram bot
 Get user profile photos
 - **send_audio**: Send an audio file to a Telegram chat
 - **send_document**: Send a document to a Telegram chat
-- **send_message**: Supports Markdown and HTML parse modes for formatting.
-
-Send a text message to a Telegram chat
 - **send_photo**: Optionally includes a caption.
 
 Send a photo to a Telegram chat
 - **send_video**: Send a video to a Telegram chat
-- **get_chat_members_count**: Get the number of chat members
+- **delete_message**: Delete a message from Telegram
+- **forward_message**: Forward a message in Telegram
+- **get_bot_info**: Get information about the Telegram bot
+- **get_chat_admins**: Get list of chat administrators
+- **send_message**: Supports Markdown and HTML parse modes for formatting.
+
+Send a text message to a Telegram chat
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

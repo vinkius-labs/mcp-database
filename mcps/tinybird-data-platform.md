@@ -34,16 +34,16 @@ Connect your AI agent to **Tinybird**, the real-time data platform for developer
 
 
 ## Available Tools (10)
-- **execute_sql_query**: Execute an arbitrary SQL query against the Tinybird workspace
-- **get_datasource_stats**: Retrieve ingestion and usage statistics for a Data Source
-- **list_pipes**: Retrieve a list of all Pipes in the current workspace
-- **list_workspaces**: Retrieve a list of available workspaces
-- **query_pipe_data**: Execute a Pipe and retrieve the results as JSON
 - **get_datasource_details**: Get comprehensive information for a specific Data Source
 - **get_pipe_details**: Get detailed information for a specific Pipe
-- **list_auth_tokens**: Retrieve a list of all authentication tokens in the workspace
-- **list_datasources**: Retrieve a list of all Data Sources in the current workspace
+- **get_datasource_stats**: Retrieve ingestion and usage statistics for a Data Source
 - **list_pipe_nodes**: List all SQL nodes within a specific Pipe
+- **list_pipes**: Retrieve a list of all Pipes in the current workspace
+- **list_workspaces**: Retrieve a list of available workspaces
+- **execute_sql_query**: Execute an arbitrary SQL query against the Tinybird workspace
+- **query_pipe_data**: Execute a Pipe and retrieve the results as JSON
+- **list_datasources**: Retrieve a list of all Data Sources in the current workspace
+- **list_auth_tokens**: Retrieve a list of all authentication tokens in the workspace
 
 
 ## 💬 Prompt Examples
@@ -117,4 +117,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,10 +37,10 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 ## Available Tools (10)
 - **get_full_details**: Get full enterprise details
 - **list_branches**: List company branches
-- **list_ip**: List intellectual property
 - **get_basic_info**: Get enterprise basic info
 - **get_contact_info**: Get enterprise contact info
 - **list_investments**: List outward investments
+- **list_ip**: List intellectual property
 - **list_risks**: List enterprise risk info
 - **list_shareholders**: List company shareholders
 - **list_staff**: List main staff/executives
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

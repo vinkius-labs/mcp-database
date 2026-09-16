@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 
 
 ## Available Tools (10)
-- **list_applications**: List Plivo applications
-- **list_pricing**: Get pricing for a country
-- **make_call**: Start an outbound call
 - **get_account**: Get Plivo account details
 - **get_call**: Get details for a specific call
 - **get_message**: Get details for a specific message
-- **list_calls**: List recent voice calls
+- **list_applications**: List Plivo applications
 - **list_messages**: List recent SMS messages
 - **list_phone_numbers**: List Plivo phone numbers
+- **list_pricing**: Get pricing for a country
+- **make_call**: Start an outbound call
 - **send_sms**: Send an SMS message
+- **list_calls**: List recent voice calls
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

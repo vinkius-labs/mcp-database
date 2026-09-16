@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your messaging workflows with the **Telegra
 
 
 ## Available Tools (12)
-- **get_chat_administrators**: Get chat admins
-- **get_updates**: Get recent Telegram updates
-- **leave_chat**: Leave a chat
-- **get_me**: Get Telegram bot details
-- **get_webhook_info**: Get webhook status
 - **delete_webhook**: Delete Telegram webhook
-- **get_chat**: Get chat details
 - **get_chat_member_count**: Get chat member count
+- **get_chat**: Get chat details
 - **get_file**: Get file info
+- **get_me**: Get Telegram bot details
+- **get_updates**: Get recent Telegram updates
+- **get_webhook_info**: Get webhook status
 - **send_message**: Send a message via Telegram
 - **send_photo**: Send a photo via Telegram
 - **set_webhook**: Set Telegram webhook
+- **get_chat_administrators**: Get chat admins
+- **leave_chat**: Leave a chat
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
