@@ -34,12 +34,9 @@ Connect your **CARTO** platform to any AI agent and take full control of your cl
 
 
 ## Available Tools (10)
-- **geocode_batch_addresses**: Designed for bulk processing of customer lists, store locators, and CRM datasets. Consumes LDS credits per address. Returns an array of geocoded results with match quality indicators.
+- **get_import_status**: Poll periodically until state becomes "complete" or "failure". On success, the response includes the table_name of the newly created dataset in your warehouse.
 
-Batch-geocode multiple addresses in a single request using the CARTO LDS batch geocoding API, efficiently converting large address lists into coordinates without making individual API calls per address
-- **calculate_isoline**: The range parameter is in seconds for time-based isolines. Returns a GeoJSON polygon representing the reachable area. Use for service area analysis, store catchment zones, and logistics planning.
-
-Generate travel-time or travel-distance isoline polygons from a center point using the CARTO LDS Isolines API, producing reachability contours showing areas accessible within a specified time or distance threshold
+Check the status of a previously initiated CARTO data import job, returning progress percentage, current state (uploading, importing, complete, failure), and any error details if the import encountered issues
 - **calculate_route**: Returns the route as GeoJSON with total distance (meters) and duration (seconds). Consumes LDS routing credits.
 
 Calculate the optimal driving route between two points using the CARTO LDS Routing API, returning distance, duration, and route geometry suitable for visualization on CARTO maps
@@ -52,9 +49,9 @@ Execute an arbitrary SQL query against your CARTO data warehouse connection usin
 - **geocode_address**: Returns latitude, longitude, and formatted address. Consumes LDS geocoding credits from your CARTO plan. Use sparingly for individual lookups; for bulk operations use the batch endpoint instead.
 
 Forward-geocode a single address string into geographic coordinates using the CARTO Location Data Services (LDS) geocoding endpoint, powered by TomTom or HERE depending on your CARTO plan configuration
-- **get_import_status**: Poll periodically until state becomes "complete" or "failure". On success, the response includes the table_name of the newly created dataset in your warehouse.
+- **geocode_batch_addresses**: Designed for bulk processing of customer lists, store locators, and CRM datasets. Consumes LDS credits per address. Returns an array of geocoded results with match quality indicators.
 
-Check the status of a previously initiated CARTO data import job, returning progress percentage, current state (uploading, importing, complete, failure), and any error details if the import encountered issues
+Batch-geocode multiple addresses in a single request using the CARTO LDS batch geocoding API, efficiently converting large address lists into coordinates without making individual API calls per address
 - **import_external_file**: "}`. Supports CSV, GeoJSON, Shapefile (zipped), KML, GPX, and Excel files. Returns an import_id for status tracking. The file is downloaded, parsed, and loaded into your connected data warehouse.
 
 Import an external data file (CSV, GeoJSON, Shapefile, KML) into your CARTO data warehouse by providing a publicly accessible URL, creating a new managed table that can be used for spatial analysis and visualization
@@ -64,6 +61,9 @@ List all visualization datasets (maps and tables) available in your CARTO organi
 - **poll_async_job_status**: Poll periodically (every 5-10 seconds) until status changes to "done" or "failed". The response includes created_at, updated_at, and the original query for audit purposes.
 
 Check the execution status of a previously submitted CARTO async SQL job, returning the current state (pending, running, done, failed) and any error messages if the job encountered issues
+- **calculate_isoline**: The range parameter is in seconds for time-based isolines. Returns a GeoJSON polygon representing the reachable area. Use for service area analysis, store catchment zones, and logistics planning.
+
+Generate travel-time or travel-distance isoline polygons from a center point using the CARTO LDS Isolines API, producing reachability contours showing areas accessible within a specified time or distance threshold
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

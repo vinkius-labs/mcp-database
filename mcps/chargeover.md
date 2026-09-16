@@ -37,12 +37,12 @@ No more manual entry into billing tables or digging through subscription lists. 
 
 
 ## Available Tools (7)
-- **list_billing_invoices**: List all invoices
-- **list_subscriptions**: List all subscriptions (packages)
-- **create_billing_customer**: Create a new customer
 - **create_billing_invoice**: Create a new invoice
+- **list_billing_invoices**: List all invoices
 - **create_subscription**: Create a new subscription
 - **list_billing_customers**: List all customers
+- **list_subscriptions**: List all subscriptions (packages)
+- **create_billing_customer**: Create a new customer
 - **list_billing_transactions**: List all transactions
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,12 +36,12 @@ Connect your **Clientjoy** CRM and billing account to any AI agent and simplify 
 
 ## Available Tools (7)
 - **get_customer_details**: Get details for a specific customer
-- **list_leads**: List Clientjoy leads
-- **list_sales_proposals**: List proposals
-- **list_customers**: List Clientjoy customers
 - **create_new_lead**: Register a new lead
+- **list_customers**: List Clientjoy customers
 - **list_billing_invoices**: List invoices
 - **list_service_items**: List items and services
+- **list_leads**: List Clientjoy leads
+- **list_sales_proposals**: List proposals
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

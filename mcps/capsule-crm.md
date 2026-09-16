@@ -35,17 +35,37 @@ Connect your **Capsule CRM** account to any AI agent and orchestrate your sales 
 
 
 ## Available Tools (11)
+- **get_account_info**: Call this tool only when basic user details are required.
+
+Retrieve core account/user information
+- **get_opportunity_details**: Pass the unique opportunity ID.
+
+Get details of a specific opportunity
+- **list_tasks**: Use this tool only when listing tasks is the primary goal.
+
+List all tasks and reminders
+- **create_person**: Provide first, last, and email names. All three fields are required.
+
+Add a new person to Capsule CRM
+- **create_task**: Provide a description and optionally set a due date. The description is mandatory.
+
+Create a new task
+- **get_contact_details**: Must provide a valid Party ID.
+
+Get details of a specific contact or organization
+- **get_project_details**: Pass the unique project ID.
+
+Get details of a specific project
+- **get_task_details**: Pass the unique task ID.
+
+Get details of a specific task
+- **list_opportunities**: Do not use this tool if you only need a single opportunity ID.
+
+List all sales opportunities
 - **list_contacts**: List all contacts and organizations (parties)
-- **list_projects**: List all projects
-- **get_account_info**: Retrieve core account/user information
-- **get_opportunity_details**: Get details of a specific opportunity
-- **get_project_details**: Get details of a specific project
-- **get_task_details**: Get details of a specific task
-- **list_opportunities**: List all sales opportunities
-- **create_person**: Add a new person to Capsule CRM
-- **create_task**: Create a new task
-- **get_contact_details**: Get details of a specific contact or organization
-- **list_tasks**: List all tasks and reminders
+- **list_projects**: Use this tool to gather a list of project names and IDs.
+
+List all projects
 
 
 ## 💬 Prompt Examples
@@ -130,4 +150,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

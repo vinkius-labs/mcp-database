@@ -36,10 +36,6 @@ Connect your **CHATFLY** account to any AI agent and take full control of your c
 
 
 ## Available Tools (8)
-- **list_uploaded_documents**: List all files uploaded to the knowledge base
-- **get_chatbot_details**: The ID must be provided to execute the query.
-
-Get detailed information for a specific chatbot
 - **get_conversation_history**: Provide the unique conversation ID.
 
 Retrieve the message history for a specific conversation
@@ -52,6 +48,10 @@ Send a message to a chatbot and receive a response
 - **trigger_bot_training**: You must provide the target chatbot’s ID.
 
 Trigger the training process for a chatbot
+- **list_uploaded_documents**: List all files uploaded to the knowledge base
+- **get_chatbot_details**: The ID must be provided to execute the query.
+
+Get detailed information for a specific chatbot
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

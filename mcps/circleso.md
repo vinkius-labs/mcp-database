@@ -38,12 +38,16 @@ Connect your **Circle.so** community to any AI agent and take full control of yo
 ## Available Tools (8)
 - **list_community_topics**: List discussion topics
 - **get_my_circle_profile**: Retrieve information about the authenticated admin user
+- **list_post_comments**: Provide the post ID to filter results.
+
+List comments for a specific post
 - **list_community_events**: List upcoming and past community events
-- **list_post_comments**: List comments for a specific post
 - **list_community_members**: List all members in the community
-- **list_community_posts**: List recent posts in the community
-- **list_community_spaces**: List all spaces (sub-communities) in the community
+- **list_community_posts**: Use space_id to narrow the search results.
+
+List recent posts in the community
 - **list_space_groups**: List groups that organize spaces
+- **list_community_spaces**: List all spaces (sub-communities) in the community
 
 
 ## 💬 Prompt Examples
@@ -128,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
