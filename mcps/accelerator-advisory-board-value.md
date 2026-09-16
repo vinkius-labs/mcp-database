@@ -14,9 +14,15 @@ This MCP server provides a decision-support engine to measure the strategic and 
 
 
 ## Available Tools (3)
-- **get_advisor_value**: Calculates the total economic contribution and individual ROI for a specific advisor
-- **simulate_engagement_scenario**: Predicts how changes in engagement levels or compensation will affect the overall board value and ROI
-- **analyze_board_composition**: Evaluates the collective performance of the entire board and identifies the optimal mix of advisors
+- **get_advisor_value**: Provide all required metrics for accurate calculation.
+
+Calculates the total economic contribution and individual ROI for a specific advisor
+- **analyze_board_composition**: Pass a JSON string containing all advisor metrics.
+
+Evaluates the collective performance of the entire board and identifies the optimal mix of advisors
+- **simulate_engagement_scenario**: Pass current advisor metrics, a multiplier, and an equity adjustment value.
+
+Predicts how changes in engagement levels or compensation will affect the overall board value and ROI
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
