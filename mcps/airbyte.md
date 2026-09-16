@@ -35,12 +35,12 @@ Connect your **Airbyte** data integration instance to your AI agent to unlock co
 
 ## Available Tools (7)
 - **list_destinations**: List all Airbyte destinations
-- **get_connection**: Get details of a specific Airbyte connection
 - **list_workspaces**: List workspaces
 - **get_source**: Get details of a specific Airbyte source
-- **list_connections**: List all Airbyte sync connections
-- **list_jobs**: List synchronization jobs for a connection
 - **list_sources**: List all Airbyte sources
+- **list_connections**: List all Airbyte sync connections
+- **get_connection**: Get details of a specific Airbyte connection
+- **list_jobs**: List synchronization jobs for a connection
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

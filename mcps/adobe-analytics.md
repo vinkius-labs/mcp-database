@@ -35,15 +35,15 @@ Connect your **Adobe Analytics** account to your AI agent to unlock deep custome
 
 
 ## Available Tools (5)
+- **get_dimensions**: g. Page, Device Type) for a specific report suite ID.
+
+List dimensions for a report suite
+- **list_report_suites**: List available report suites
 - **get_metrics**: List metrics for a report suite
 - **get_report**: 0 JSON report request body.
 
 Retrieve an analytics report
 - **list_segments**: List audience segments
-- **get_dimensions**: g. Page, Device Type) for a specific report suite ID.
-
-List dimensions for a report suite
-- **list_report_suites**: List available report suites
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

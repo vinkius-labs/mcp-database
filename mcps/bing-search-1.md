@@ -34,6 +34,9 @@ Connect your Microsoft **Bing Search** API key to any AI agent and empower it wi
 
 
 ## Available Tools (10)
+- **custom_search**: 0/custom/search` restricting queries strictly into pre-built whitelist domains.
+
+Perform search locked explicitly to a predefined Configuration ID
 - **spellcheck**: 0/spellcheck` correcting string tokens natively via semantic NLP boundaries.
 
 Execute explicit semantic NLP spell checking on short strings
@@ -46,13 +49,6 @@ Query explicitly syndicated News articles across global PR sources
 - **search_web**: 0/search` scraping up to 50 organic results mapped directly from the Microsoft Graph.
 
 Perform an explicit Web search using the Microsoft Bing Graph
-- **custom_search**: 0/custom/search` restricting queries strictly into pre-built whitelist domains.
-
-Perform search locked explicitly to a predefined Configuration ID
-- **search_entities**: 0/entities` bounding rich structured data resolving Famous Persons, Places, or Objects.
-
-Retrieve deeply structured Entity graphs (Knowledge Graph mappings)
-- **search_local**: Force explicit Local Business listing extraction over standard web nodes
 - **autosuggest**: 0/Suggestions` matching high-velocity partial queries directly against ML autosuggest logs.
 
 Fetch automated real-time query completion suggestions
@@ -62,6 +58,10 @@ Discover explicit macroscopic viral Trending News topics
 - **search_videos**: 0/videos/search` tracking streaming bounds capturing native motion array metadata.
 
 Retrieve explicitly indexed Video stream links and metadata
+- **search_local**: Force explicit Local Business listing extraction over standard web nodes
+- **search_entities**: 0/entities` bounding rich structured data resolving Famous Persons, Places, or Objects.
+
+Retrieve deeply structured Entity graphs (Knowledge Graph mappings)
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

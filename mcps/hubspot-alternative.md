@@ -1,4 +1,4 @@
-# HubSpot Alternative MCP Server
+# HubSpot MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/hubspot-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -39,23 +39,23 @@ Connect your **HubSpot** account to any AI agent and manage your entire CRM thro
 ## Available Tools (12)
 - **search_hubspot_contacts**: Find contacts
 - **list_hubspot_deals**: List sales deals
-- **remove_hubspot_contact**: Delete contact
 - **get_hubspot_company_info**: Get company details
-- **list_hubspot_companies**: List CRM companies
-- **list_hubspot_contacts**: List CRM contacts
-- **list_hubspot_users**: List record owners
-- **create_hubspot_contact**: Add new contact
-- **get_hubspot_contact_details**: Get contact info
-- **get_hubspot_deal_details**: Get deal info
-- **get_hubspot_object_schema**: List fields
 - **link_hubspot_crm_objects**: g. Contact to Company).
 
 Create association
+- **create_hubspot_contact**: Add new contact
+- **remove_hubspot_contact**: Delete contact
+- **get_hubspot_contact_details**: Get contact info
+- **get_hubspot_deal_details**: Get deal info
+- **list_hubspot_companies**: List CRM companies
+- **list_hubspot_contacts**: List CRM contacts
+- **list_hubspot_users**: List record owners
+- **get_hubspot_object_schema**: List fields
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **HubSpot Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **HubSpot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Show all deals in the pipeline and the contacts associated with the highest-value one."
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **HubSpot Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **HubSpot** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **HubSpot Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **HubSpot** tools.
 
 **Configuration:**
 ```json
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
