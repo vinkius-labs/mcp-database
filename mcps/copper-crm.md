@@ -36,21 +36,6 @@ Integrate **Copper**, the CRM designed for Google Workspace, directly into your 
 - **list_companies**: Resolves company identity properties such as company IDs, legal names, and primary contact links.
 
 List all companies in the CRM
-- **list_leads**: Resolves lead identity properties including names, email addresses, and pipeline status across the CRM system boundary.
-
-List all leads in Copper CRM
-- **list_tasks**: Resolves actionable item properties including task descriptions, due dates, and associated CRM records.
-
-List tasks and follow-ups
-- **create_lead**: Creates a new lead record with identity properties and prepares it for pipeline entry.
-
-Create a new lead in the CRM
-- **get_lead_details**: Resolves granular profile data including contact history, custom field values, and system-level metadata.
-
-Get detailed information for a specific lead
-- **get_person_details**: Resolves individual profile data including email addresses, phone numbers, and associated entity linkages.
-
-Get detailed profile for a specific person
 - **list_opportunities**: Resolves opportunity data including deal names, monetary values, closing dates, and current stage identifiers.
 
 List sales opportunities and deals
@@ -60,6 +45,21 @@ List contacts (people) in Copper
 - **list_projects**: Resolves project identity properties and metadata for collaborative tracking.
 
 List all projects in Copper
+- **list_tasks**: Resolves actionable item properties including task descriptions, due dates, and associated CRM records.
+
+List tasks and follow-ups
+- **get_lead_details**: Resolves granular profile data including contact history, custom field values, and system-level metadata.
+
+Get detailed information for a specific lead
+- **create_lead**: Creates a new lead record with identity properties and prepares it for pipeline entry.
+
+Create a new lead in the CRM
+- **get_person_details**: Resolves individual profile data including email addresses, phone numbers, and associated entity linkages.
+
+Get detailed profile for a specific person
+- **list_leads**: Resolves lead identity properties including names, email addresses, and pipeline status across the CRM system boundary.
+
+List all leads in Copper CRM
 - **log_activity**: Resolves and links activity details, types, and parent entity identifiers across the CRM interaction boundary.
 
 Log a new activity (call, email, meeting) for a record
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,11 +36,11 @@ Connect your **DataRobot** account to any AI agent and take full control of your
 
 ## Available Tools (6)
 - **list_datasets**: List datasets
-- **get_model**: Get model
-- **list_deployments**: List deployments
-- **list_projects**: List projects
 - **get_project**: Get project
 - **list_models**: List models
+- **list_projects**: List projects
+- **get_model**: Get model
+- **list_deployments**: List deployments
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

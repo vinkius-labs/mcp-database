@@ -33,18 +33,6 @@ Integrate **Courier**, the smart notification infrastructure, directly into your
 
 
 ## Available Tools (10)
-- **get_message_details**: Touches delivery logs, provider responses, and rendering metadata boundary.
-
-Get details for a specific message by ID
-- **list_messages**: Resolves message IDs, recipient identifiers, status (SENT, DELIVERED, OPENED, CLICKED), and timestamps.
-
-List sent messages and their current status
-- **send_notification**: Touches recipient profile, template engine, and multi-channel provider boundaries.
-
-Send a notification to a recipient
-- **get_message_history**: Resolves event types (SENT, DELIVERED, etc.) and detailed provider logs.
-
-Get the delivery history logs for a message
 - **get_user_profile**: Resolves contact details (email, phone) and channel-specific delivery preferences.
 
 Get the profile data for a specific user
@@ -57,9 +45,21 @@ List custom brands configured in Courier
 - **list_subscription_lists**: Resolves list IDs, names, and subscriber counts.
 
 List subscription lists for managing recipients
+- **list_messages**: Resolves message IDs, recipient identifiers, status (SENT, DELIVERED, OPENED, CLICKED), and timestamps.
+
+List sent messages and their current status
 - **list_templates**: Resolves template names, IDs, and supported channels.
 
 List available notification templates
+- **send_notification**: Touches recipient profile, template engine, and multi-channel provider boundaries.
+
+Send a notification to a recipient
+- **get_message_history**: Resolves event types (SENT, DELIVERED, etc.) and detailed provider logs.
+
+Get the delivery history logs for a message
+- **get_message_details**: Touches delivery logs, provider responses, and rendering metadata boundary.
+
+Get details for a specific message by ID
 - **list_users**: Resolves user IDs, roles, and account association details.
 
 List users registered in the Courier workspace
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

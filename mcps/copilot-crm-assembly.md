@@ -32,21 +32,15 @@ Integrate **Copilot** (now rebranding to **Assembly**), the leading client porta
 
 
 ## Available Tools (10)
+- **get_client_details**: Resolves granular profile data, including contact information, associated company linkages, and system-level metadata.
+
+Get detailed information about a specific client
+- **list_clients**: Resolves client identity properties including unique identifiers, names, emails, and account status across the portal system boundary.
+
+List all clients in your Copilot CRM
 - **list_files**: Resolves file metadata including filenames, storage paths, upload timestamps, and access permissions.
 
 List files uploaded to the Copilot portal
-- **list_forms**: Resolves form definitions, including titles, submission endpoints, and configuration metadata.
-
-List intake or feedback forms available
-- **list_invoices**: Resolves billing data including amounts, due dates, payment status, and client/company bill-to associations.
-
-List all invoices and their statuses
-- **update_client**: Modifies specific attributes like name or account status while preserving other entity properties.
-
-Update existing client details
-- **list_companies**: Resolves corporate entity properties such as company IDs, legal names, and primary contact associations.
-
-List all companies in your Copilot CRM
 - **list_custom_fields**: Resolves custom field definitions, including field keys, data types, and display labels used across various entities.
 
 Retrieve definitions for custom fields used in CRM
@@ -56,12 +50,18 @@ List messages sent through the client portal
 - **create_client**: Creates a new client record with identity properties (name, email) and optional company linkages.
 
 Create a new client in the portal
-- **get_client_details**: Resolves granular profile data, including contact information, associated company linkages, and system-level metadata.
+- **list_companies**: Resolves corporate entity properties such as company IDs, legal names, and primary contact associations.
 
-Get detailed information about a specific client
-- **list_clients**: Resolves client identity properties including unique identifiers, names, emails, and account status across the portal system boundary.
+List all companies in your Copilot CRM
+- **list_forms**: Resolves form definitions, including titles, submission endpoints, and configuration metadata.
 
-List all clients in your Copilot CRM
+List intake or feedback forms available
+- **list_invoices**: Resolves billing data including amounts, due dates, payment status, and client/company bill-to associations.
+
+List all invoices and their statuses
+- **update_client**: Modifies specific attributes like name or account status while preserving other entity properties.
+
+Update existing client details
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
