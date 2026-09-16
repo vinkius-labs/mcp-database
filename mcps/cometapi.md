@@ -37,11 +37,11 @@ No more manual toggling between dozens of provider dashboards or managing multip
 
 ## Available Tools (5)
 - **list_available_ai_models**: List all available AI models
+- **convert_text_to_speech**: Convert text to audio
+- **transcribe_audio_to_text**: Transcribe audio files to text
 - **create_ai_chat_completion**: ) and retrieves the generated text through the CometAPI unified gateway.
 
 Generate AI text response via OpenAI-compatible API
-- **convert_text_to_speech**: Convert text to audio
-- **transcribe_audio_to_text**: Transcribe audio files to text
 - **generate_ai_image**: Generate an image from a text prompt
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

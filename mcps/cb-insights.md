@@ -35,16 +35,16 @@ Connect your **CB Insights** enterprise account to any AI agent and take full co
 
 
 ## Available Tools (13)
-- **get_org_competitors**: Get competitors
 - **get_org_funding**: Get organization funding
-- **list_deals**: List recent deals
-- **list_deals_by_org**: List deals by organization
-- **list_industries**: List industries
-- **list_investors**: List investors
 - **chat_cbi**: CB Insights AI chat
 - **get_deal**: Get deal details
-- **check_cbi_status**: Verify connectivity
 - **get_investor**: Get investor details
+- **get_org_competitors**: Get competitors
+- **list_deals_by_org**: List deals by organization
+- **list_deals**: List recent deals
+- **list_industries**: List industries
+- **list_investors**: List investors
+- **check_cbi_status**: Verify connectivity
 - **get_investor_portfolio**: Get investor portfolio
 - **get_organization**: Get organization details
 - **list_organizations**: Search organizations
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

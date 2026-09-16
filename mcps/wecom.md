@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your enterprise operations with **WeCom** (
 
 
 ## Available Tools (10)
-- **get_attendance_data**: Get employee attendance/checkin data
-- **get_department**: Get department info
+- **get_app_details**: Get application agent details
+- **get_tag_users**: Get users with a specific tag
 - **get_user**: Get user details
+- **list_departments**: List all departments
 - **list_menu**: Get app custom menu
 - **list_tags**: List all organization tags
 - **list_users**: List users in a department
-- **get_app_details**: Get application agent details
-- **get_tag_users**: Get users with a specific tag
-- **list_departments**: List all departments
 - **send_message**: Send a text message to a user
+- **get_attendance_data**: Get employee attendance/checkin data
+- **get_department**: Get department info
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

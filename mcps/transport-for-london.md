@@ -36,19 +36,6 @@ Connect to **Transport for London (TfL)** and access real-time London transit da
 
 
 ## Available Tools (11)
-- **get_arrivals**: Returns predicted arrival times, destination, line number, vehicle ID and expected time to station. Use the stop point ID (e.g. "490009056W") from search_stop.
-
-Get live arrival predictions for a bus stop
-- **get_bike_point_detail**: Get detailed info for a specific bike docking station
-- **get_line_detail**: Supports tube, overground, DLR, Elizabeth line, tram and river bus lines.
-
-Get detailed information about a specific TfL line
-- **get_stop_details**: Useful for identifying the correct stop ID for arrival queries.
-
-Get details for a specific bus stop or station
-- **get_bike_points**: Returns bike availability, dock availability, station locations and status. Useful for finding nearby bikes for cycling journeys.
-
-Search for Santander Cycle (Boris Bike) docking stations
 - **get_journey**: Returns multiple route options with estimated duration, walking distance, fare cost, number of changes and step-by-step directions. Input locations can be station names, addresses or postcodes.
 
 Plan a journey between two points in London
@@ -61,12 +48,25 @@ Get real-time status for TfL tube lines
 - **get_road_disruptions**: Returns disruption details with severity, location, cause and estimated clearance times.
 
 Get current road disruptions in London
-- **get_road_status**: Shows whether roads have Good, Minor or Severe congestion.
-
-Get status of London major roads
 - **search_stop**: Returns matching stops with their IDs, locations, modes and routes. Use the returned IDs with get_arrivals or get_stop_details.
 
 Search for bus stops and stations by name
+- **get_arrivals**: Returns predicted arrival times, destination, line number, vehicle ID and expected time to station. Use the stop point ID (e.g. "490009056W") from search_stop.
+
+Get live arrival predictions for a bus stop
+- **get_line_detail**: Supports tube, overground, DLR, Elizabeth line, tram and river bus lines.
+
+Get detailed information about a specific TfL line
+- **get_bike_point_detail**: Get detailed info for a specific bike docking station
+- **get_bike_points**: Returns bike availability, dock availability, station locations and status. Useful for finding nearby bikes for cycling journeys.
+
+Search for Santander Cycle (Boris Bike) docking stations
+- **get_road_status**: Shows whether roads have Good, Minor or Severe congestion.
+
+Get status of London major roads
+- **get_stop_details**: Useful for identifying the correct stop ID for arrival queries.
+
+Get details for a specific bus stop or station
 
 
 ## 💬 Prompt Examples
@@ -154,4 +154,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

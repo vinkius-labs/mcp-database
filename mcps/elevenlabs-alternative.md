@@ -38,16 +38,16 @@ No more manual copy-pasting into the web editor or complex history searching. Yo
 ## Available Tools (12)
 - **get_voice_settings**: Get voice fine-tuning
 - **get_voice**: Get voice details
+- **get_history_item**: Get history item details
+- **get_download_link**: Get audio download URL
+- **get_subscription_info**: Get usage and plan info
+- **get_account_info**: Get user profile
 - **list_audio_history**: List generated audio logs
 - **list_models**: List AI audio models
 - **list_voices**: List all available voices
 - **text_to_speech**: Convert text to audio
-- **get_history_item**: Get history item details
-- **get_subscription_info**: Get usage and plan info
-- **get_account_info**: Get user profile
 - **delete_history_item**: Delete audio record
 - **delete_voice**: Delete a cloned voice
-- **get_download_link**: Get audio download URL
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
