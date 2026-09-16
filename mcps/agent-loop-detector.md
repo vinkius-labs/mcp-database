@@ -14,8 +14,8 @@ This MCP server provides a deterministic analysis engine to identify infinite co
 
 
 ## Available Tools (3)
-- **calculate_deadlock_risk**: Determines the mathematical probability and severity of a conversation becoming stuck
 - **analyze_conversation_cycles**: Identifies all repeating patterns and cycles within the provided conversation state graph
+- **calculate_deadlock_risk**: Determines the mathematical probability and severity of a conversation becoming stuck
 - **estimate_recovery_path**: Predicts how many more steps are required to break a cycle if an exit condition is reachable
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,9 +14,15 @@ XPath Extractor provides precise tools for navigating and querying XML and HTML 
 
 
 ## Available Tools (3)
-- **evaluate_xpath_expression**: Executes an XPath 1.0 query against a provided document string to retrieve specific data
-- **extract_node_attributes**: Specifically targets and retrieves the values of attributes within a set of nodes
-- **validate_document_structure**: Checks if a provided string adheres to structural rules and identifies syntax errors
+- **validate_document_structure**: Use this tool only for structural checks.
+
+Checks if a provided string adheres to structural rules and identifies syntax errors
+- **evaluate_xpath_expression**: Ensure the document is valid XML or HTML.
+
+Executes an XPath 1.0 query against a provided document string to retrieve specific data
+- **extract_node_attributes**: Provide a precise XPath selector for the target nodes.
+
+Specifically targets and retrieves the values of attributes within a set of nodes
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
