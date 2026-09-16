@@ -38,8 +38,12 @@ No more manual review mining. Your AI assistant acts as a dedicated guest relati
 ## Available Tools (6)
 - **list_detractors**: List all guests who are detractors (ratings 1-6)
 - **list_promoters**: List all guests who are promoters (ratings 9-10)
-- **list_recent_feedback**: List the 50 most recent feedback entries
-- **get_guest_details**: Retrieve detailed information for a specific guest ID
+- **list_recent_feedback**: This function executes asynchronously.
+
+List the 50 most recent feedback entries
+- **get_guest_details**: Provide a valid guest ID to execute the query.
+
+Retrieve detailed information for a specific guest ID
 - **list_guest_feedback**: List all guests and their feedback status/results
 - **send_survey**: Requires either an email or phone number.
 
@@ -131,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -43,6 +43,12 @@ No more manual bin inspections or delayed quality testing. Your AI acts as a ded
 
 
 ## Available Tools (12)
+- **get_current_readings**: Returns CO2 levels (ppm), moisture content (%), and temperature (C) from multiple sensor positions throughout the grain mass. Essential for real-time grain quality monitoring, early spoilage detection, and storage condition assessment. AI agents should use this when users ask "what are the current conditions in bin 2", "show me all sensor readings for silo 4", or need immediate grain quality data for storage management decisions.
+
+Get current CO2, moisture, and temperature readings from all sensors in a bin
+- **get_facility_overview**: Essential for executive reporting, facility-wide quality assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of my entire facility", "what is the overall grain quality status", or need facility-level summaries for management reporting.
+
+Get comprehensive overview of the entire grain storage facility
 - **get_bin_details**: Essential for understanding bin context before analyzing sensor data, planning aeration strategies, or generating quality reports. AI agents should reference this when users ask "tell me about bin 5", "what grain is stored in silo 3", or need detailed bin metadata for informed analysis.
 
 Get detailed information about a specific grain storage bin
@@ -52,12 +58,6 @@ List all grain storage bins monitored by Centaur Analytics
 - **get_co2_history**: CO2 is the earliest indicator of biological activity (mold, insects, grain respiration) that leads to spoilage. Returns time-series CO2 data in ppm with timestamps. Essential for spoilage trend analysis, early warning detection, and validating storage condition stability. AI agents should reference this when users ask "show me CO2 trends for bin 3 over the past 30 days", "has CO2 been rising in silo 5", or need historical CO2 data for grain quality assessment. Optional days parameter controls lookback period.
 
 Get historical CO2 readings to track spoilage trends over time
-- **get_current_readings**: Returns CO2 levels (ppm), moisture content (%), and temperature (C) from multiple sensor positions throughout the grain mass. Essential for real-time grain quality monitoring, early spoilage detection, and storage condition assessment. AI agents should use this when users ask "what are the current conditions in bin 2", "show me all sensor readings for silo 4", or need immediate grain quality data for storage management decisions.
-
-Get current CO2, moisture, and temperature readings from all sensors in a bin
-- **get_facility_overview**: Essential for executive reporting, facility-wide quality assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of my entire facility", "what is the overall grain quality status", or need facility-level summaries for management reporting.
-
-Get comprehensive overview of the entire grain storage facility
 - **get_moisture_history**: Moisture migration and condensation are key drivers of spoilage and quality loss. Returns time-series moisture data (%) with timestamps from multiple sensor positions. Essential for moisture migration analysis, condensation detection, drying effectiveness assessment, and storage safety monitoring. AI agents should use this when users ask "show me moisture trends for bin 1", "has moisture been stable in silo 2", or need historical moisture data for storage management.
 
 Get historical moisture content readings for grain storage analysis
@@ -163,4 +163,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

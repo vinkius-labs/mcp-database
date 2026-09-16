@@ -37,15 +37,15 @@ No more manual soil sensor deployment or complex data extraction. Your AI acts a
 
 
 ## Available Tools (5)
+- **get_latest_soil**: Essential for irrigation planning, crop monitoring, soil health assessment, and precision agriculture. AI agents should use this when users ask "what is the soil moisture at my farm", "check current soil temperature", or need immediate soil condition data for agricultural decision making.
+
+Get real-time soil moisture and temperature for a specific location
 - **get_grid_soil**: Returns gridded data points suitable for creating soil condition maps, GIS analysis, and spatial interpolation. Essential for precision agriculture mapping, variable rate application planning, and geospatial soil analysis. AI agents should use this when users ask "generate a soil moisture grid for mapping", "get gridded soil data for my field", or need structured spatial soil data for GIS integration.
 
 Get soil data on a structured grid for spatial analysis and mapping
 - **get_historical_soil**: Essential for analyzing soil condition trends, seasonal patterns, drought assessment, and long-term irrigation planning. AI agents should reference this when users ask "show me soil moisture trends over the past 30 days", "what was the soil temperature last week", or need historical soil data for agricultural analysis.
 
 Get historical soil moisture and temperature data for trend analysis
-- **get_latest_soil**: Essential for irrigation planning, crop monitoring, soil health assessment, and precision agriculture. AI agents should use this when users ask "what is the soil moisture at my farm", "check current soil temperature", or need immediate soil condition data for agricultural decision making.
-
-Get real-time soil moisture and temperature for a specific location
 - **get_soil_by_radius**: Returns an array of soil readings across the area, enabling spatial analysis of soil conditions. Essential for regional soil assessment, field variability analysis, and precision agriculture zone mapping. AI agents should use this when users ask "show me soil conditions within 10km of my location", "get soil data for my entire farm area", or need spatial soil moisture distribution analysis.
 
 Get soil data for multiple points within a radius of a location
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

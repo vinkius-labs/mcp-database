@@ -43,18 +43,27 @@ No more manual temperature cable readings or climbing silos for inspections. You
 
 
 ## Available Tools (12)
+- **get_hotspot_alerts**: Returns alert severity (critical, warning), affected silo, sensor zone location, temperature differential, detection timestamp, and recommended actions. Hot spots are early indicators of grain quality issues that require immediate attention. Essential for proactive grain management, spoilage prevention, and quality preservation. AI agents should use this when users ask "are there any hot spots detected", "show hotspot alerts for silo 3", or need early warning indicators of grain spoilage. Optional silo_id filters alerts for a specific silo.
+
+Get active hot spot detection alerts for all silos or a specific silo
+- **get_silo_details**: Essential for understanding silo context before analyzing temperature data, planning aeration strategies, or generating storage condition reports. AI agents should reference this when users ask "tell me about silo 3", "what grain is stored in silo 5 and how many sensors does it have", or need detailed silo metadata for informed analysis.
+
+Get detailed information about a specific grain silo
+- **get_silos**: Returns silo IDs, names, locations, grain types, current temperature status, and monitoring health. Essential for facility overview, silo inventory management, and selecting specific silos for detailed temperature analysis. AI agents should use this when users ask "show me all my monitored silos", "list temperature-monitored storage units", or need to identify available silos before querying temperature readings or alerts.
+
+List all grain silos monitored by Grain Watch
 - **get_alerts**: Returns alert type, severity (critical, warning, info), affected silo, timestamp, and recommended actions. Essential for comprehensive operational monitoring, issue detection, and management response. AI agents should use this when users ask "show me all active alerts", "what warnings have been triggered for silo 3", or need alert data for operational monitoring. Optional silo_id filters alerts for a specific silo.
 
 Get all active alerts for temperature, humidity, and sensor issues
+- **get_current_humidity**: Returns relative humidity (%) values from multiple sensor positions. High humidity combined with temperature indicates condensation risk and potential spoilage conditions. Essential for moisture migration detection, condensation risk assessment, and grain quality preservation. AI agents should reference this when users ask "what is the humidity level in silo 3", "show me humidity readings for silo 5", or need current humidity data for storage condition assessment.
+
+Get current humidity readings from sensors in a grain silo
 - **get_current_temperature**: Returns temperature values (Celsius) from multiple sensor positions throughout the grain mass including top, middle, bottom, and center zones. Essential for real-time grain condition monitoring, hot spot detection, and spoilage prevention. AI agents should use this when users ask "what is the current temperature in silo 2", "show me all temperature readings for silo 4", or need immediate grain temperature data for storage management decisions.
 
 Get current temperature readings from all sensors in a grain silo
 - **get_facility_overview**: Essential for executive reporting, facility-wide condition assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of all my silos", "what is the overall temperature status across the facility", or need facility-level summaries for management reporting.
 
 Get comprehensive overview of all monitored silos and their temperature status
-- **get_hotspot_alerts**: Returns alert severity (critical, warning), affected silo, sensor zone location, temperature differential, detection timestamp, and recommended actions. Hot spots are early indicators of grain quality issues that require immediate attention. Essential for proactive grain management, spoilage prevention, and quality preservation. AI agents should use this when users ask "are there any hot spots detected", "show hotspot alerts for silo 3", or need early warning indicators of grain spoilage. Optional silo_id filters alerts for a specific silo.
-
-Get active hot spot detection alerts for all silos or a specific silo
 - **get_humidity_history**: Humidity patterns over time help identify moisture migration, condensation events, and drying effectiveness. Returns time-series humidity data (%) with timestamps from multiple sensor positions. Essential for moisture migration analysis, condensation detection, and storage safety monitoring. AI agents should reference this when users ask "show me humidity trends for silo 1", "has humidity been stable in silo 2", or need historical humidity data for storage management.
 
 Get historical humidity readings to track moisture migration patterns
@@ -64,21 +73,12 @@ Get health status of all temperature and humidity sensors in a silo
 - **get_sensor_map**: Returns sensor IDs, physical locations (top/middle/bottom, center/perimeter), installation depths, and current operational status. Essential for understanding temperature distribution across the grain mass, identifying which sensor corresponds to which physical location, and troubleshooting sensor issues. AI agents should use this when users ask "show me the sensor layout for silo 4", "where are the sensors positioned in silo 6", or need sensor positioning data for temperature analysis interpretation.
 
 Get the layout and positions of all temperature sensors in a silo
-- **get_silo_details**: Essential for understanding silo context before analyzing temperature data, planning aeration strategies, or generating storage condition reports. AI agents should reference this when users ask "tell me about silo 3", "what grain is stored in silo 5 and how many sensors does it have", or need detailed silo metadata for informed analysis.
-
-Get detailed information about a specific grain silo
-- **get_silos**: Returns silo IDs, names, locations, grain types, current temperature status, and monitoring health. Essential for facility overview, silo inventory management, and selecting specific silos for detailed temperature analysis. AI agents should use this when users ask "show me all my monitored silos", "list temperature-monitored storage units", or need to identify available silos before querying temperature readings or alerts.
-
-List all grain silos monitored by Grain Watch
 - **get_spoilage_risk**: Returns risk level (low, moderate, high, critical), contributing factors, predicted days until spoilage if conditions persist, and recommended preventive actions. Essential for proactive grain management, early intervention planning, and quality preservation. AI agents should use this when users ask "what is the spoilage risk for silo 3", "is silo 5 at risk of spoilage", or need AI-driven risk assessments for storage management decisions.
 
 Get AI-powered spoilage risk assessment for a specific silo
 - **get_temperature_history**: Temperature trends over time are critical for identifying developing hot spots, spoilage heating, or effective cooling from aeration. Returns time-series temperature data (Celsius) with timestamps from multiple sensor zones. Essential for hot spot detection, spoilage heating identification, aeration effectiveness evaluation, and grain quality preservation. AI agents should use this when users ask "show me temperature trends for silo 3 over the past 30 days", "has silo 5 been heating up", or need historical temperature data for storage condition analysis. Optional days parameter controls lookback period.
 
 Get historical temperature readings to detect trends and hot spot development
-- **get_current_humidity**: Returns relative humidity (%) values from multiple sensor positions. High humidity combined with temperature indicates condensation risk and potential spoilage conditions. Essential for moisture migration detection, condensation risk assessment, and grain quality preservation. AI agents should reference this when users ask "what is the humidity level in silo 3", "show me humidity readings for silo 5", or need current humidity data for storage condition assessment.
-
-Get current humidity readings from sensors in a grain silo
 
 
 ## 💬 Prompt Examples
@@ -163,4 +163,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

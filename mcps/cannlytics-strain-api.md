@@ -32,14 +32,14 @@ Cannlytics provides an open API for transparent cannabis data, serving consumers
 
 ## Available Tools (5)
 - **get_strain**: Get detailed information for a specific cannabis strain
+- **search_strains**: Use this to discover available strains in the Cannlytics database.
+
+Search for cannabis strains by name or keyword
 - **get_effects**: Get reported effects for a specific strain
 - **get_flavors**: g., earthy, sweet, citrus) for the strain.
 
 Get flavor profile for a specific strain
 - **get_similar_strains**: Find strains similar to a specific strain
-- **search_strains**: Use this to discover available strains in the Cannlytics database.
-
-Search for cannabis strains by name or keyword
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
