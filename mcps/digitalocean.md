@@ -36,28 +36,28 @@ No more manual dashboard navigation or searching for IP addresses. Your AI acts 
 
 
 ## Available Tools (9)
-- **get_account_info**: Useful for verifying resource availability.
-
-Get DigitalOcean account details
 - **list_domains**: Essential for reviewing web configurations.
 
 List all managed DNS domains
-- **list_droplets**: Includes metadata such as status, IP addresses, and specs.
-
-List all active Droplets
-- **get_droplet_details**: Get details for a specific Droplet
 - **list_actions**: Useful for auditing and monitoring changes.
 
 List historical account actions
-- **list_databases**: Includes cluster status, engine versions, and endpoints.
-
-List managed database clusters
-- **list_images**: Useful for resource recovery and deployment.
-
-List snapshots and disk images
 - **list_kubernetes_clusters**: Includes information about cluster health, versions, and nodes.
 
 List all Kubernetes clusters
+- **list_databases**: Includes cluster status, engine versions, and endpoints.
+
+List managed database clusters
+- **get_account_info**: Useful for verifying resource availability.
+
+Get DigitalOcean account details
+- **get_droplet_details**: Get details for a specific Droplet
+- **list_droplets**: Includes metadata such as status, IP addresses, and specs.
+
+List all active Droplets
+- **list_images**: Useful for resource recovery and deployment.
+
+List snapshots and disk images
 - **list_volumes**: Includes size, region, and current attachment status.
 
 List block storage volumes
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

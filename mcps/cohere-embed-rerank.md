@@ -37,10 +37,10 @@ Connect your **Cohere** account to any AI agent and take full control of your en
 
 ## Available Tools (5)
 - **embed_texts**: Generate dense vector embeddings from text using Cohere models
+- **tokenize_text**: Tokenize text into token IDs for a specific model
 - **rerank_documents**: Rerank documents by semantic relevance to a query
 - **chat_completion**: Generate conversational text responses using Cohere chat models
 - **list_models**: List all available Cohere models on your plan
-- **tokenize_text**: Tokenize text into token IDs for a specific model
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

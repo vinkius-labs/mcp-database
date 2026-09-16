@@ -7,77 +7,48 @@
 
 **Category:** [talk-to-me](../categories/talk-to-me.md)
 
-Manage communities via Discord — list server channels and members, send and edit messages, and handle channel moderation directly from any AI agent.
+Manage Discord servers, post messages, organize channels, and moderate communities with full bot-level API access.
 
 ## Description
-Connect your **Discord** bot to any AI agent and take full control of your community management and real-time messaging through natural conversation.
+Connect your **Discord Bot** account to any AI agent and take full control of your community interactions and server operations through natural conversation.
 
 ### What you can do
 
-- **Server & Guild Auditing** — Perform structural extraction of metadata linked to a Discord Server, fetching member approximations and Snowflake IDs
-- **Channel Orchestration** — Identify explicitly assigned routing text/voice channels and manage parent-category mappings to organize your server logically
-- **Messaging & Chat** — Dispatch automated text payloads with Markdown support and edit pre-existing textual strings to update dynamic information in real-time
-- **Member Oversight** — Enumerate explicitly attached user accounts and iterate through authorized members matching your server namespace
-- **Content Moderation** — Forcibly purge chat payloads out of visible memory and irreversibly delete active channel mappings to manage server security
-- **Real-time Logs** — Pull chronological asynchronous logs from any channel, extracting string contents and nested attachment metadata
-- **Slowmode Control** — Inspect deep properties identifying precise rate-limit configurations and evaluate assigned delays natively
+- **Server & Guild Orchestration** — List and monitor the servers (guilds) your bot is in and retrieve detailed metadata about server configurations
+- **Channel Architecture** — Manage text, voice, and category channels programmatically to organize your community structure in real-time
+- **Messaging & Engagement** — Programmatically send and retrieve messages from channels and Direct Messages (DMs) to coordinate community discussions
+- **Member Lifecycle** — Access complete directories of server members and monitor user profiles to maintain high-fidelity community oversight
+- **Private Communication** — Programmatically create DM channels with specific users to coordinate private support or internal notifications
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Discord Bot Token (found in the Discord Developer Portal > Application > Bot)
-3. Start managing your Discord communities from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Bot Token** from the Discord Developer Portal
+3. Enable **Message Content Intent** and **Server Members Intent** in your Bot settings
+4. Start managing your communities from Claude, Cursor, or any MCP client
+
+No more manual toggling between servers or missed messages in busy channels. Your AI acts as your dedicated community moderator and server coordinator.
 
 ### Who is this for?
 
-- **Community Managers** — moderate channels and update server information without switching to the Discord client
-- **Developers** — test bot messaging logic and verify channel configurations directly from the IDE or chat
-- **Customer Support** — monitor channel messages and respond to inquiries using natural language
-- **Ops Teams** — audit server member lists and manage channel hierarchies in real-time
+- **Community Managers** — instantly respond to common queries and moderate server discussions using natural language commands
+- **Developers & Bot Operators** — automate server structural changes and monitor bot activity without leaving your terminal
+- **Support Teams** — coordinate customer assistance via Discord DMs and track user issues across multiple channels
 
 
-## Available Tools (15)
-- **create_message**: Capable of mapping Markdown `<@user_id>` tags natively forcing push notifications instantly.
+## Available Tools (10)
+- **list_guild_members**: List members in a server
+- **create_dm_channel**: Returns the DM channel ID.
 
-Dispatch an automated text Payload resolving towards a Channel
-- **create_thread**: If message_id is provided, creates a thread from that message.
-
-Create a new thread in a Discord channel
-- **get_guild**: Fetches explicit Snowflake IDs configuring precisely the total member approximations natively bypassing localized channel scopes.
-
-Perform structural extraction of metadata linked to a Discord Server
-- **get_guild_member**: Get details for a specific server member
-- **list_channel_messages**: Extracts string contents, nested attachments mapping binary sizes, and embed payloads.
-
-Read recent structural Chat payloads targeting a Channel
-- **list_guild_channels**: Returns crucial Snowflake Channel IDs prerequisite to performing all downstream messaging actions.
-
-Identify explicitly assigned routing text/voice Channels within a Server
-- **list_guild_members**: Restricted heavily by `GUILD_MEMBERS` Privileged Intent inside the developer portal securely.
-
-Enumerate explicitly attached user accounts active within the Server
-- **delete_message**: Drops the raw chat out of the Channel history permanently replacing it with visual space on all clients natively.
-
-Purge an existing Chat Payload out of the visible memory
-- **create_guild_channel**: Default `type=0` maps to standard Text Channels.
-
-Provision a radically fast new structural Channel sandbox
-- **list_guild_roles**: Use role IDs with member management.
-
-List all roles configured in a Discord server
-- **delete_channel**: Vaporizes all nested historical chat payloads, pinned messages, and file attachments natively dropping active connections entirely returning 404s.
-
-Irreversibly delete an entirely active Discord Channel mapping
-- **edit_message**: Ideal for updating dynamic progress bars inside a live Chat context.
-
-Mutate pre-existing textual strings tied to a Bot Message
-- **pin_message**: Channels have a maximum of 50 pins.
-
-Pin a message in a Discord channel
-- **add_reaction**: Use URL-encoded custom emojis (name:id) or standard Unicode emojis (e.g., 👍).
-
-Add an emoji reaction to a Discord message
-- **get_channel**: Inspect deep properties identifying a precise Discord Channel
+Create a DM channel with a user
+- **list_guilds**: List Discord servers (guilds)
+- **get_channel**: Get details for a specific channel
+- **get_guild**: Get details for a specific server
+- **get_user**: Get details for a specific user
+- **list_channels**: List channels in a server
+- **list_messages**: List recent messages in a channel
+- **get_bot_info**: Get current Discord bot information
+- **send_message**: Send a message to a channel
 
 
 ## 💬 Prompt Examples
@@ -85,38 +56,38 @@ Add an emoji reaction to a Discord message
 Here are some examples of how you can interact with the **Discord** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all channels in guild '123456789'"
+> "List all Discord servers the bot is currently in."
 
 **🤖 AI Agent:**
-> I found 5 channels in your server. Text channels include '#general' (ID: 101) and '#announcements' (ID: 102). Voice channels include 'General VC' (ID: 201). Which one would you like to interact with?
+> I've retrieved the list of servers. Your bot is active in 3 guilds: 'Vinkius Community' (ID: 123), 'Internal Testing', and 'Product Feedback'. Which one should we explore for channels?
 
 ---
 
 **👤 You:**
-> "Send a message to channel '101': 'Hello community! The bot is live.'"
+> "Show the last 10 messages from channel ID '456'."
 
 **🤖 AI Agent:**
-> Message dispatched! 'Hello community! The bot is live.' has been sent to channel 101. The message ID is 'msg_999'.
+> Scanning channel 456... I found 10 recent messages. Highlights include a feature request from @user1 and a question about deployment. Would you like the full text of any of these?
 
 ---
 
 **👤 You:**
-> "Get the last 5 messages from channel '101'"
+> "Send a welcome message to channel '456': 'Welcome to the server!'."
 
 **🤖 AI Agent:**
-> Retrieving messages from channel 101... I found 5 recent posts. Highlights include a welcome message from 'System' and a question about API keys from 'User_A'. Would you like the full text of these messages?
+> Message sent! I've posted your welcome note to the specified channel (ID: 456). The message ID is 'msg_789'. I'll monitor for any immediate reactions.
 
 
 ## ❓ FAQ
 
-**Q: Can my agent list all members of a Discord server?**
-Yes. Use the 'list_guild_members' tool. Note that this action is heavily restricted by the 'GUILD_MEMBERS' Privileged Intent, which must be enabled for your bot in the Discord Developer Portal.
+**Q: How do I find my Discord Bot Token?**
+Log in to the Discord Developer Portal, select your Application, navigate to the **Bot** tab, and click **Reset Token** or **Copy** to retrieve your secret key.
 
-**Q: How do I edit a message previously sent by the bot via chat?**
-Provide the 'channel_id', 'message_id', and the new 'content' to the 'edit_message' tool. Your agent will update the core content directly, substituting the payload rendered globally without deleting and reposting.
+**Q: Why can't my agent read messages?**
+You must enable the **Message Content Intent** in the Bot section of the Discord Developer Portal for the agent to retrieve text content.
 
-**Q: Can I delete an entire channel through natural conversation?**
-Yes. The 'delete_channel' mutation allows you to irreversibly delete an active Discord channel. The agent will destroy the routing bucket and vaporize all nested chat payloads and attachments.
+**Q: How do I get the ID of a server or channel?**
+Enable **Developer Mode** in your Discord client settings (Advanced), then right-click a server or channel name and select **Copy ID**.
 
 
 ## Installation & Usage
@@ -162,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
