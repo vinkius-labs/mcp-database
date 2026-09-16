@@ -29,6 +29,9 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 
 
 ## Available Tools (10)
+- **hs_update_company**: Only specified fields are updated. Use when the user wants to update company details, correct industry classification, or change the domain.
+
+Update properties of an existing HubSpot company by their record ID
 - **hs_create_company**: The name is required. Providing the website domain (e.g., "acme.com") helps HubSpot auto-enrich the company with public data. Industry should match HubSpot industry categories. Returns the created company with its new HubSpot ID.
 
 Create a new company record in HubSpot CRM with name, domain, industry, and phone
@@ -53,9 +56,6 @@ Search HubSpot CRM companies by name, domain, or industry to find organizations
 - **hs_search_contacts**: Returns first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead[REDACTED]), and assigned HubSpot owner. Use when the user wants to find a specific person, check contact details, verify lifecycle stage, or look up who is at a particular company.
 
 Search HubSpot CRM contacts by name, email, phone, or company to find people in your database
-- **hs_update_company**: Only specified fields are updated. Use when the user wants to update company details, correct industry classification, or change the domain.
-
-Update properties of an existing HubSpot company by their record ID
 - **hs_update_contact**: Only the fields you provide will be updated — other fields remain unchanged. Use when the user wants to correct contact info, update a phone number, change lifecycle stage, or reassign a contact.
 
 Update properties of an existing HubSpot contact by their record ID
@@ -158,4 +158,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

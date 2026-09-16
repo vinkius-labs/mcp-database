@@ -35,18 +35,18 @@ Connect your **Intercom** account to any AI agent and manage customer communicat
 
 
 ## Available Tools (12)
-- **create_conversation**: Start a new conversation
-- **list_admins**: List workspace admins
-- **list_conversations**: List recent conversations
 - **list_help_articles**: List help center articles
-- **create_contact**: Register a new contact
 - **get_contact_details**: Get details for a contact
+- **list_conversations**: List recent conversations
+- **list_admins**: List workspace admins
+- **search_contacts**: Search contacts with filters
+- **create_contact**: Register a new contact
+- **create_conversation**: Start a new conversation
 - **get_conversation_details**: Get conversation history
 - **list_data_attributes**: List custom attributes
-- **reply_to_conversation**: Reply to a conversation
-- **search_contacts**: Search contacts with filters
-- **list_contacts**: List Intercom contacts
 - **list_segments**: List workspace segments
+- **reply_to_conversation**: Reply to a conversation
+- **list_contacts**: List Intercom contacts
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,17 +36,17 @@ No more waiting for slow model responses. Your AI acts as a real-time intelligen
 
 
 ## Available Tools (10)
+- **get_model_details**: Get metadata for a specific model
+- **list_available_models**: List all available high-performance models
+- **summarize_text**: Summarize long text using Llama 3
+- **translate_text**: Translate text between languages
 - **fix_grammar**: Correct grammar and spelling errors
 - **create_chat_completion**: Supports models like llama-3.3-70b-versatile.
 
 Generate a response using Groq LLM
-- **summarize_text**: Summarize long text using Llama 3
-- **translate_text**: Translate text between languages
 - **explain_code**: Explain how a code snippet works
 - **extract_entities**: Extract named entities from text
 - **generate_code**: Generate code snippets from natural language
-- **get_model_details**: Get metadata for a specific model
-- **list_available_models**: List all available high-performance models
 - **analyze_sentiment**: Analyze sentiment of a text
 
 
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

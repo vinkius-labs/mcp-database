@@ -40,44 +40,32 @@ No more navigating the GA4 dashboard for every report. Your AI acts as a dedicat
 
 
 ## Available Tools (12)
-- **batch_run_reports**: Provide property_id and an array of report configurations. Each report can have different metrics, 
-dimensions, and date ranges. This is efficient for dashboard loading or comparative analysis.
-The reports parameter should be a JSON array of report objects with metrics, dimensions, and dateRanges.
-
-Run multiple reports in a single API call
 - **get_metadata**: This includes both standard and custom metrics/dimensions with their descriptions, types, and compatibility information.
 Use this to discover what data is available before building reports. The propertyId is required and can be found in your GA4 admin settings.
 
 Get available metrics and dimensions for a GA4 property
-- **run_report**: You must provide the property_id, metrics (e.g., 'activeUsers', 'screenPageViews', 'eventCount'), 
-and dimensions (e.g., 'city', 'pageTitle', 'sessionDefaultChannelGrouping').
-Date ranges use YYYY-MM-DD format. Optional filter expression can narrow results.
-Common metrics: activeUsers, screenPageViews, sessions, eventCount, engagementRate, averageSessionDuration.
-Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping, pageTitle, pagePath.
-
-Run a custom Google Analytics report
 - **check_compatibility**: Before running complex reports, use this to ensure compatibility between your chosen metrics and dimensions.
 This prevents errors and wasted API calls. Provide property_id and the metrics/dimensions you plan to use.
 Returns compatibility status and any conflicts that would prevent the report from running successfully.
 
 Check if metrics and dimensions can be combined in a report
-- **get_audience_export**: Audience exports allow you to extract user lists matching specific audience criteria.
-Use this to monitor the progress of audience extraction jobs.
-Provide property_id and the audience_export_id from list_audience_exports.
-
-Get status of a specific audience export
 - **list_accounts**: This is the top-level container for properties. Each account can contain multiple properties.
 Use this to discover what accounts are available before drilling down into properties.
 
 List all Google Analytics accounts accessible to the user
-- **get_property**: Use the property_id obtained from list_properties to inspect property configuration.
-
-Get detailed information about a specific GA4 property
 - **get_user_activity**: This shows all interactions a user has had with your property, including pageviews, events, and conversions.
 Use this for user-level analysis, journey mapping, or support investigations.
 The userId must match the one sent with your tracking events.
 
 Get activity history for a specific user
+- **get_audience_export**: Audience exports allow you to extract user lists matching specific audience criteria.
+Use this to monitor the progress of audience extraction jobs.
+Provide property_id and the audience_export_id from list_audience_exports.
+
+Get status of a specific audience export
+- **get_property**: Use the property_id obtained from list_properties to inspect property configuration.
+
+Get detailed information about a specific GA4 property
 - **list_audience_exports**: Audience exports are used to extract user lists matching specific audience criteria for activation in other platforms.
 Shows status (CREATING, ACTIVE, FAILED) and configuration of each export job.
 
@@ -92,12 +80,24 @@ Provide property_id and a funnelSpec object defining the steps and breakdown set
 The funnelSpec should be a JSON object with steps array containing stepName, filterExpression, and optional breakdown settings.
 
 Run a funnel analysis report
+- **batch_run_reports**: Provide property_id and an array of report configurations. Each report can have different metrics, 
+dimensions, and date ranges. This is efficient for dashboard loading or comparative analysis.
+The reports parameter should be a JSON array of report objects with metrics, dimensions, and dateRanges.
+
+Run multiple reports in a single API call
 - **run_realtime_report**: Unlike standard reports, this shows what's happening on your site/app right now.
 Provide property_id and the metrics/dimensions you want to monitor in realtime.
 Common realtime metrics: activeUsers, eventCount, screenPageViews.
 Common realtime dimensions: city, country, deviceCategory, streamId.
 
 Get realtime analytics data (last 30-60 minutes)
+- **run_report**: You must provide the property_id, metrics (e.g., 'activeUsers', 'screenPageViews', 'eventCount'), 
+and dimensions (e.g., 'city', 'pageTitle', 'sessionDefaultChannelGrouping').
+Date ranges use YYYY-MM-DD format. Optional filter expression can narrow results.
+Common metrics: activeUsers, screenPageViews, sessions, eventCount, engagementRate, averageSessionDuration.
+Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping, pageTitle, pagePath.
+
+Run a custom Google Analytics report
 
 
 ## 💬 Prompt Examples
@@ -194,4 +194,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

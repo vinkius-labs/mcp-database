@@ -40,14 +40,14 @@ No more manual status checking or complex navigation through support queues. You
 - **list_support_agents**: List support staff
 - **update_ticket_details**: Modify an existing ticket
 - **create_ticket**: Create a new ticket
-- **get_contact_details**: Get details for a contact
-- **get_ticket_details**: Get details for a ticket
-- **list_contacts**: List helpdesk contacts
-- **list_help_folders**: List knowledge base folders
 - **list_support_companies**: List organization records
+- **list_contacts**: List helpdesk contacts
 - **list_support_groups**: g. Support, Billing).
 
 List support agent groups
+- **get_contact_details**: Get details for a contact
+- **get_ticket_details**: Get details for a ticket
+- **list_help_folders**: List knowledge base folders
 - **list_tickets**: Supports filtering by status or priority.
 
 List helpdesk tickets
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

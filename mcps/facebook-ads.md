@@ -43,6 +43,15 @@ Get details for a specific ad set
 - **list_ads**: Do not use this tool to modify ad content.
 
 List ads in the Ad Account
+- **update_ad_set_status**: Ensure the provided ID and status are valid.
+
+Update the status of an ad set
+- **update_ad_status**: Supply the Ad ID and the new status to update the ad.
+
+Update the status of an ad
+- **update_campaign_status**: You must provide both the Campaign ID and the desired status.
+
+Update the status of a campaign
 - **get_ad_details**: Supply the Ad ID to target the correct ad.
 
 Get details for a specific ad
@@ -61,15 +70,6 @@ List ad sets in the Ad Account
 - **list_campaigns**: Use this tool to find campaign IDs for subsequent actions.
 
 List campaigns in the Ad Account
-- **update_ad_set_status**: Ensure the provided ID and status are valid.
-
-Update the status of an ad set
-- **update_ad_status**: Supply the Ad ID and the new status to update the ad.
-
-Update the status of an ad
-- **update_campaign_status**: You must provide both the Campaign ID and the desired status.
-
-Update the status of a campaign
 
 
 ## 💬 Prompt Examples
@@ -154,4 +154,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
