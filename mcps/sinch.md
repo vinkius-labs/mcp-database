@@ -33,22 +33,22 @@ Connect your AI to **Sinch**, the global cloud communications platform for SMS m
 
 
 ## Available Tools (10)
-- **get_delivery_report**: Retrieves a delivery report for a specific batch
-- **list_sms_groups**: Lists all contact groups
-- **update_sms_batch**: Updates parameters of an existing SMS batch
-- **delete_sms_group**: This action is irreversible.
-
-Permanently deletes a contact group
-- **create_sms_group**: Creates a new contact group
-- **get_batch_details**: Retrieves details for a specific SMS batch
-- **get_group_details**: Retrieves details for a specific contact group
-- **list_sms_batches**: Lists recent SMS batches
 - **cancel_sms_batch**: This action is irreversible for the remaining messages.
 
 Cancels a pending SMS batch
+- **create_sms_group**: Creates a new contact group
+- **get_batch_details**: Retrieves details for a specific SMS batch
+- **get_delivery_report**: Retrieves a delivery report for a specific batch
+- **list_sms_groups**: Lists all contact groups
+- **update_sms_batch**: Updates parameters of an existing SMS batch
+- **get_group_details**: Retrieves details for a specific contact group
+- **list_sms_batches**: Lists recent SMS batches
 - **send_sms**: You can provide multiple phone numbers in the "to" field. Ensure numbers are in international format (e.g., +1234567890).
 
 Sends a text message (SMS) to one or more recipients
+- **delete_sms_group**: This action is irreversible.
+
+Permanently deletes a contact group
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

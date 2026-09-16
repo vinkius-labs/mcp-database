@@ -28,24 +28,24 @@ Empower your AI with direct connectivity to **SafeGraph**, the foundational geos
 
 
 ## Available Tools (10)
+- **graphql_raw_query**: Provide the query string and optional variables.
+
+Executes a raw GraphQL query against the SafeGraph API
+- **lookup_building_geometry**: Retrieves the building footprint (polygon) for a specific Placekey
 - **lookup_parent_polygon**: Identifies the parent Placekey for a location (e.g., mall or airport)
+- **search_distance_radius**: Specify lat, lon, and radius in meters.
+
+Searches for places within a specific radius from a point
+- **search_wkt_polygon**: Finds all places within a specific geometric polygon (WKT)
+- **batch_lookup_placekeys**: Provide them as a JSON array.
+
+Performs multiple Placekey lookups in a single request
+- **lookup_place_patterns**: Retrieves historical foot traffic patterns for a specific Placekey
 - **lookup_placekey**: Retrieves detailed attributes for a specific location by its Placekey
 - **search_brand_places**: g., "Starbucks") in a specific city.
 
 Searches for locations of a specific brand in a city
 - **search_industry_naics**: Searches for places by NAICS industry code and region
-- **graphql_raw_query**: Provide the query string and optional variables.
-
-Executes a raw GraphQL query against the SafeGraph API
-- **lookup_building_geometry**: Retrieves the building footprint (polygon) for a specific Placekey
-- **batch_lookup_placekeys**: Provide them as a JSON array.
-
-Performs multiple Placekey lookups in a single request
-- **lookup_place_patterns**: Retrieves historical foot traffic patterns for a specific Placekey
-- **search_distance_radius**: Specify lat, lon, and radius in meters.
-
-Searches for places within a specific radius from a point
-- **search_wkt_polygon**: Finds all places within a specific geometric polygon (WKT)
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

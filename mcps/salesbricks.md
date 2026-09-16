@@ -29,24 +29,24 @@ Connect your conversational assistant natively to **Salesbricks**, the fastest w
 
 
 ## Available Tools (10)
-- **list_subscriptions**: Lists all active and historical subscriptions
-- **update_customer**: Updates an existing customer's name
 - **create_customer**: Specify company name and email.
 
 Creates a new customer in Salesbricks
 - **create_subscription**: Provide a JSON object with customerId and plan details.
 
 Creates a new subscription for a customer
-- **list_products**: Lists all available product plans
-- **record_usage**: Provide a JSON object with event details.
-
-Records a usage event for a customer
 - **delete_customer**: This action is irreversible.
 
 Deletes a customer from Salesbricks
-- **get_customer**: Retrieves details for a specific customer
 - **list_customers**: Lists all customers in the Salesbricks account
 - **list_invoices**: Lists all generated invoices
+- **record_usage**: Provide a JSON object with event details.
+
+Records a usage event for a customer
+- **update_customer**: Updates an existing customer's name
+- **get_customer**: Retrieves details for a specific customer
+- **list_products**: Lists all available product plans
+- **list_subscriptions**: Lists all active and historical subscriptions
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,19 +34,19 @@ Connect your **SimplyBook.me** account to any AI agent to automate your online b
 
 
 ## Available Tools (11)
-- **list_providers**: List service providers (staff)
-- **check_availability**: Check available time slots
-- **get_client**: Get details for a specific client
+- **cancel_booking**: Cancel an existing booking
 - **list_promotions**: List all active promotions and discounts
+- **check_availability**: Check available time slots
+- **get_booking_details**: Get details for a specific booking
 - **list_all_bookings**: List recent appointments
 - **list_categories**: List service categories
 - **list_clients**: me account.
 
 List registered clients
+- **list_providers**: List service providers (staff)
 - **list_services**: List all bookable services
-- **cancel_booking**: Cancel an existing booking
+- **get_client**: Get details for a specific client
 - **create_booking**: Create a new appointment
-- **get_booking_details**: Get details for a specific booking
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

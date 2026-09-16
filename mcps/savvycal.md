@@ -35,20 +35,20 @@ Replace manual link juggling by having your agent fetch the right booking URL or
 
 
 ## Available Tools (10)
-- **delete_link**: This action is irreversible.
-
-Permanently deletes a scheduling link
-- **get_link**: Retrieves details for a specific scheduling link
-- **list_events**: Lists all scheduled booking events
 - **cancel_event**: Specify the event ID and a cancellation reason.
 
 Cancels a scheduled appointment
-- **get_account**: Retrieves authenticated account information
 - **create_link**: Specify name, slug, and duration in minutes.
 
 Creates a new scheduling link
+- **delete_link**: This action is irreversible.
+
+Permanently deletes a scheduling link
+- **get_account**: Retrieves authenticated account information
 - **get_event**: Retrieves details for a specific scheduled event
+- **get_link**: Retrieves details for a specific scheduling link
 - **list_availability**: Retrieves available time slots for a link within a date range
+- **list_events**: Lists all scheduled booking events
 - **list_links**: Lists all scheduling links in the SavvyCal account
 - **update_link**: Updates an existing scheduling link
 
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

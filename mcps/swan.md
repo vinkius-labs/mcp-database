@@ -32,15 +32,15 @@ The **Swan MCP Server** embeds a complete European Banking-as-a-Service architec
 
 ## Available Tools (9)
 - **swan_get_accounts**: List all operational Swan Bank Accounts/IBANs
-- **swan_get_project_info**: Fetch overarching details about your connected Swan Project Node
-- **swan_get_transactions**: Retrieve the ledger history for a specific Account
-- **swan_list_cards**: List all physical and virtual cards
+- **swan_create_sepa_transfer**: Initiate a standard European SEPA Credit Transfer
+- **swan_add_virtual_card**: Provisions a robust Mastercard Virtual Debit
 - **swan_cancel_card**: Permanently cancel a specific corporate card
 - **swan_create_account**: Requires an existing AccountHolderId.
 
 Dynamically provision a European Account under your ledger
-- **swan_add_virtual_card**: Provisions a robust Mastercard Virtual Debit
-- **swan_create_sepa_transfer**: Initiate a standard European SEPA Credit Transfer
+- **swan_get_project_info**: Fetch overarching details about your connected Swan Project Node
+- **swan_get_transactions**: Retrieve the ledger history for a specific Account
+- **swan_list_cards**: List all physical and virtual cards
 - **swan_simulate_incoming_transfer**: Sandbox Only - Inject fake money
 
 
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

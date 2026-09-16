@@ -26,16 +26,16 @@ Grant your AI agent (like Claude or Cursor) aggressive observational dominance o
 
 
 ## Available Tools (7)
-- **get_workbook_details**: Retrieves details for a specific workbook
-- **list_workbooks**: Returns workbook names and IDs.
-
-Lists all workbooks in the Sigma organization
+- **list_organization_members**: Lists all users in the Sigma organization
+- **list_organization_teams**: Lists all teams in the Sigma organization
+- **list_datasets**: Lists all datasets available in the organization
 - **list_connections**: ) are available.
 
 Lists data source connections configured in Sigma
-- **list_datasets**: Lists all datasets available in the organization
-- **list_organization_members**: Lists all users in the Sigma organization
-- **list_organization_teams**: Lists all teams in the Sigma organization
+- **list_workbooks**: Returns workbook names and IDs.
+
+Lists all workbooks in the Sigma organization
+- **get_workbook_details**: Retrieves details for a specific workbook
 - **list_workbook_pages**: Lists all pages within a specific workbook
 
 
@@ -113,4 +113,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
