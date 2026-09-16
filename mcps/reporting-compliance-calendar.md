@@ -16,8 +16,8 @@ This MCP server provides a centralized system for managing regulatory obligation
 ## Available Tools (4)
 - **check_compliance_gap**: Compares current operational data or completed tasks against the required regulatory schedule to identify missing filings or upcoming risks
 - **get_regulatory_calendar**: Provides a comprehensive schedule of all reporting deadlines and associated tasks for a specific operational profile
-- **list_report_requirements**: Details the specific data points and documentation needed to satisfy a particular regulatory report
 - **search_regulatory_database**: Allows users to query the underlying regulatory rules to understand why certain requirements exist
+- **list_report_requirements**: Details the specific data points and documentation needed to satisfy a particular regulatory report
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
