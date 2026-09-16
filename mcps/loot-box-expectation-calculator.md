@@ -14,9 +14,9 @@ An analytical tool for gacha game players to quantify the probability of obtaini
 
 
 ## Available Tools (3)
+- **estimate_budget_requirement**: Estimate the cost required for a character
 - **get_pull_success_rate**: Calculate the probability of getting a target character within N pulls
 - **analyze_bad_luck_streak**: Analyze the probability of a consecutive loss streak
-- **estimate_budget_requirement**: Estimate the cost required for a character
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

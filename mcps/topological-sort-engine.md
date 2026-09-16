@@ -14,9 +14,9 @@ The Topological Sort Engine provides specialized tools for managing directed acy
 
 
 ## Available Tools (3)
-- **identify_cycles**: Isolate and list all nodes that are part of circular dependencies
 - **calculate_dfs_sort**: Generate a valid execution order using DFS-based approach
 - **calculate_kahn_sort**: Generate a valid linear execution order using Kahn's Algorithm
+- **identify_cycles**: Isolate and list all nodes that are part of circular dependencies
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
