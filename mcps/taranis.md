@@ -43,6 +43,9 @@ No more manual field scouting or delayed threat identification. Your AI acts as 
 
 
 ## Available Tools (12)
+- **get_clients**: Returns client names, IDs, and associated farm counts. Use this after get_organizations to navigate the hierarchy: Organizations → Clients → Farms → Fields.
+
+List clients within a specific Taranis organization
 - **get_disease_detections**: Returns disease locations, pathogen identification, severity levels, and recommended fungicide treatments.
 
 Get crop disease detections and severity assessments for a field
@@ -71,9 +74,6 @@ Get consolidated threat summary and severity assessment for a field
 - **get_scouting_recommendations**: Returns specific action items including verification locations, scouting patterns, and treatment suggestions.
 
 Get AI-powered scouting recommendations and action plans for a field
-- **get_clients**: Returns client names, IDs, and associated farm counts. Use this after get_organizations to navigate the hierarchy: Organizations → Clients → Farms → Fields.
-
-List clients within a specific Taranis organization
 - **get_detections**: Returns detection locations (GPS coordinates), threat types, severity levels, confidence scores, and recommended actions.
 
 Get all AI-detected crop threats (weeds, diseases, pests, nutrient deficiencies) in a field
@@ -161,4 +161,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
