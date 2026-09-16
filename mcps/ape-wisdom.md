@@ -34,16 +34,36 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 
 
 ## Available Tools (10)
-- **get_sentiment_leaders**: Get assets with the highest positive sentiment
-- **get_top_gainers**: Get assets with the highest mention growth in the last 24h
-- **list_trending_subreddit**: List trending assets from a specific subreddit
-- **list_wallstreetbets**: List trending assets specifically from r/wallstreetbets
-- **get_market_snapshot**: Get a quick summary of top trending stocks and crypto
-- **list_all_trending**: List trending stocks and crypto from all boards
-- **list_trending_4chan**: List trending assets from 4chan boards
-- **list_trending_crypto**: List trending cryptocurrencies from crypto-focused subreddits
-- **list_trending_stocks**: List trending stocks from stock-focused subreddits
-- **search_ticker**: Search for a specific ticker or coin in the trending lists
+- **get_sentiment_leaders**: Specify a filter if needed.
+
+Get assets with the highest positive sentiment
+- **get_top_gainers**: Specify a filter if needed.
+
+Get assets with the highest mention growth in the last 24h
+- **get_market_snapshot**: This tool provides an immediate overview of the market.
+
+Get a quick summary of top trending stocks and crypto
+- **list_all_trending**: Use this tool when you need a comprehensive list across all boards.
+
+List trending stocks and crypto from all boards
+- **list_trending_4chan**: This operation runs asynchronously and does not require parameters.
+
+List trending assets from 4chan boards
+- **list_trending_crypto**: Use this tool only for crypto-related queries.
+
+List trending cryptocurrencies from crypto-focused subreddits
+- **list_trending_stocks**: Use this tool only for stock-related queries.
+
+List trending stocks from stock-focused subreddits
+- **list_trending_subreddit**: Provide the subreddit name as the primary argument.
+
+List trending assets from a specific subreddit
+- **list_wallstreetbets**: This tool does not accept any parameters.
+
+List trending assets specifically from r/wallstreetbets
+- **search_ticker**: Provide the ticker symbol to narrow the search.
+
+Search for a specific ticker or coin in the trending lists
 
 
 ## 💬 Prompt Examples
@@ -128,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,10 +35,10 @@ Connect your **AccuLynx** account to your AI agent to streamline your roofing bu
 
 
 ## Available Tools (4)
+- **list_leads**: Retrieve a list of recent inquiries and prospective roofing projects in AccuLynx
 - **create_lead**: Requires first and last name.
 
 Add a prospective customer to the AccuLynx sales pipeline
-- **list_leads**: Retrieve a list of recent inquiries and prospective roofing projects in AccuLynx
 - **get_job_details**: Requires a valid Job ID.
 
 Retrieve technical milestones and metadata for a specific AccuLynx roofing job ID
@@ -113,4 +113,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

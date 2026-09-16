@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire digital signage network with **
 
 
 ## Available Tools (5)
+- **list_players**: List all digital signage players
 - **get_player**: Get detailed monitoring data for a specific player
 - **list_medias**: List all available media files
-- **list_players**: List all digital signage players
 - **list_templates**: List content and news templates
 - **list_users**: List platform users and groups
 
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

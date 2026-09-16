@@ -35,9 +35,9 @@ Connect your **Ad4Game** publisher account to your AI agent to streamline your g
 
 
 ## Available Tools (3)
-- **list_offers**: List all available ad offers
 - **get_offer_details**: Get details for a specific offer
 - **get_creatives**: Fetch creatives for an offer
+- **list_offers**: List all available ad offers
 
 
 ## 💬 Prompt Examples
@@ -106,4 +106,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
