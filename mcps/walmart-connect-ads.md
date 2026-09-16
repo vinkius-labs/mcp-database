@@ -31,9 +31,6 @@ Built for **Advertising Agencies**, **Growth Managers**, and **E-Commerce Advert
 
 
 ## Available Tools (8)
-- **ads_add_keywords**: Each keyword needs a text, match type (exact, phrase, or broad), and a bid amount in dollars. Send keywords as a JSON array string, e.g. [{"keyword":"laptop stand","matchType":"broad","bid":1.50}].
-
-Add new keywords to a Sponsored Search ad group
 - **ads_create_ad_group**: Create a new ad group within a Sponsored Search campaign
 - **ads_get_cpc_metrics**: Data lag is approximately 1-3 hours. Optionally filter by a single campaign ID.
 
@@ -51,6 +48,9 @@ List all Sponsored Search advertising campaigns for the authorized advertiser ac
 - **ads_update_daily_budget**: Budget is in dollars.
 
 Update the daily budget for a specific Sponsored Search campaign
+- **ads_add_keywords**: Each keyword needs a text, match type (exact, phrase, or broad), and a bid amount in dollars. Send keywords as a JSON array string, e.g. [{"keyword":"laptop stand","matchType":"broad","bid":1.50}].
+
+Add new keywords to a Sponsored Search ad group
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

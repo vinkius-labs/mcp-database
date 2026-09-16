@@ -37,18 +37,18 @@ List all services offered
 - **list_appointments**: Filter by date to see a specific day.
 
 List salon/spa/fitness appointments
-- **list_products**: Includes name, price, brand, and stock level.
-
-List retail products
+- **get_business_info**: Get business profile
 - **get_appointment**: Get appointment details
 - **search_clients**: Returns contact info, visit history, and preferences.
 
 Search clients/customers
-- **get_business_info**: Get business profile
+- **get_client**: Get client profile
 - **list_staff**: Includes name, role, specialties, and availability.
 
 List all staff/providers
-- **get_client**: Get client profile
+- **list_products**: Includes name, price, brand, and stock level.
+
+List retail products
 - **get_staff_schedule**: Shows booked and available time slots.
 
 Get staff member schedule
@@ -155,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

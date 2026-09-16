@@ -35,9 +35,15 @@ No more switching contexts and scrambling to find important threads on standard 
 
 
 ## Available Tools (10)
-- **list_channels**: Provide the workspace_id.
+- **create_comment**: Provide the thread_id and your message.
 
-Lists all channels within a specific Twist workspace
+Posts a reply to an existing thread
+- **send_direct_message**: Provide conversation_id and content.
+
+Sends a private message to a specific conversation
+- **create_thread**: Provide channel_id, title, and initial content.
+
+Creates a new asynchronous discussion thread in a channel
 - **list_direct_messages**: Provide the conversation_id.
 
 Lists messages from a specific 1-on-1 direct conversation
@@ -45,19 +51,13 @@ Lists messages from a specific 1-on-1 direct conversation
 
 Lists all conversation threads within a specific channel
 - **list_workspace_users**: Lists all members of a specific workspace
+- **list_workspaces**: Identify bounded Twist Workspaces actively driving Async Teams
+- **list_channels**: Provide the workspace_id.
+
+Lists all channels within a specific Twist workspace
 - **update_direct_message**: Provide the message_id.
 
 Modifies a previously sent direct message
-- **create_comment**: Provide the thread_id and your message.
-
-Posts a reply to an existing thread
-- **create_thread**: Provide channel_id, title, and initial content.
-
-Creates a new asynchronous discussion thread in a channel
-- **list_workspaces**: Identify bounded Twist Workspaces actively driving Async Teams
-- **send_direct_message**: Provide conversation_id and content.
-
-Sends a private message to a specific conversation
 - **update_thread**: Provide the thread_id.
 
 Updates the title or content of an existing thread
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
