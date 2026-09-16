@@ -35,16 +35,36 @@ Connect your **ByteNite** account to any AI agent and orchestrate your video enc
 
 
 ## Available Tools (10)
-- **create_encoding_job**: Start a new video encoding job
-- **get_account_info**: Retrieve core account/profile statistics
-- **get_app**: Get details of a specific app
-- **list_storage_buckets**: List all configured storage buckets
-- **get_encoding_job**: Get details and progress of a specific encoding job
-- **get_system_info**: Retrieve core system information and health
-- **get_template**: Get details of a specific encoding template
-- **list_apps**: List all available apps in the ByteNite ecosystem
-- **list_encoding_jobs**: List all video encoding jobs
-- **list_templates**: List all encoding templates
+- **create_encoding_job**: Ensure the template ID and input URL are provided.
+
+Start a new video encoding job
+- **get_system_info**: This tool does not require any parameters.
+
+Retrieve core system information and health
+- **get_account_info**: This tool does not require any parameters.
+
+Retrieve core account/profile statistics
+- **get_app**: Provide the required App ID.
+
+Get details of a specific app
+- **get_encoding_job**: Provide a valid Job ID.
+
+Get details and progress of a specific encoding job
+- **get_template**: Use the required Template ID.
+
+Get details of a specific encoding template
+- **list_apps**: This tool does not require any parameters.
+
+List all available apps in the ByteNite ecosystem
+- **list_storage_buckets**: This tool does not require any parameters.
+
+List all configured storage buckets
+- **list_encoding_jobs**: This tool does not require any parameters.
+
+List all video encoding jobs
+- **list_templates**: This tool does not require any parameters.
+
+List all encoding templates
 
 
 ## 💬 Prompt Examples
@@ -129,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

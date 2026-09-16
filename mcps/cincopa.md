@@ -36,14 +36,16 @@ Connect your **Cincopa** account to any AI agent and take full control of your v
 
 
 ## Available Tools (8)
-- **create_new_gallery**: Create a new media gallery using a template
+- **get_asset_metadata**: Get detailed metadata for a specific media asset
+- **create_new_gallery**: Provide both the name and template FID.
+
+Create a new media gallery using a template
 - **get_gallery_details**: Get detailed information for a specific gallery
-- **list_cincopa_templates**: List available gallery templates
+- **delete_media_asset**: Permanently delete a media asset from the account
 - **get_media_upload_url**: Retrieve a temporary URL for uploading new media files
 - **list_cincopa_assets**: List all media assets (videos, images, audio)
 - **list_cincopa_galleries**: List all media galleries in the account
-- **delete_media_asset**: Permanently delete a media asset from the account
-- **get_asset_metadata**: Get detailed metadata for a specific media asset
+- **list_cincopa_templates**: List available gallery templates
 
 
 ## 💬 Prompt Examples
@@ -128,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

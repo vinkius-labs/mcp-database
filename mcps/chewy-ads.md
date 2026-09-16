@@ -36,9 +36,15 @@ Connect your **Chewy Ads (PromoteIQ)** account to any AI agent and take full con
 
 
 ## Available Tools (8)
-- **get_chewy_account_balance**: Retrieve the current account balance and budget status
 - **list_chewy_campaigns**: List all ad campaigns in the account
+- **get_chewy_account_balance**: Retrieve the current account balance and budget status
+- **list_adgroup_ads**: Supply the ad group ID to execute the query.
+
+List specific ads within an ad group
 - **list_chewy_catalogs**: List product catalogs synced with the ad account
+- **list_adgroup_keywords**: Use the ad group ID as the required input.
+
+List keywords and their performance for an ad group
 - **get_campaign_details**: Provide the campaign ID as a required parameter.
 
 Get detailed information for a specific campaign
@@ -48,12 +54,6 @@ Retrieve a performance report for a specific period
 - **list_campaign_adgroups**: You must provide the campaign ID.
 
 List ad groups within a specific campaign
-- **list_adgroup_ads**: Supply the ad group ID to execute the query.
-
-List specific ads within an ad group
-- **list_adgroup_keywords**: Use the ad group ID as the required input.
-
-List keywords and their performance for an ad group
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
