@@ -36,15 +36,15 @@ No more manual toggling between complex ad tables or missing spend spikes. Your 
 
 
 ## Available Tools (7)
+- **list_campaigns**: List campaigns for an advertisable
 - **get_report**: Pass report criteria as a JSON string.
 
 Get performance report
 - **list_adgroups**: List ad groups for a campaign
-- **list_ads**: List all ads for an advertisable
-- **list_advertisables**: List all advertisable profiles
 - **list_segments**: List audience segments
 - **get_campaign**: Get campaign details
-- **list_campaigns**: List campaigns for an advertisable
+- **list_ads**: List all ads for an advertisable
+- **list_advertisables**: List all advertisable profiles
 
 
 ## 💬 Prompt Examples

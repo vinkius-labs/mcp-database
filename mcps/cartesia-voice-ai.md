@@ -36,25 +36,47 @@ Connect **Cartesia** to your AI agent to unlock high-performance voice synthesis
 
 ## Available Tools (20)
 - **get_usage_credits**: Get credit usage statistics
-- **create_pronunciation_dict**: Create a new pronunciation dictionary
-- **delete_pronunciation_dict**: Delete a pronunciation dictionary
-- **delete_voice**: Delete a voice
-- **get_agent**: Get details for a specific voice agent
-- **list_agent_calls**: List calls and transcripts for a specific agent
+- **infill_bytes**: Provide the audio clips, text, and voice ID.
+
+Generate audio to smoothly connect two existing segments
+- **stt_batch**: Transcribe audio file to text (Batch STT)
+- **tts_bytes**: Generate text-to-speech audio bytes
+- **clone_voice**: Clone a voice from a 5s audio clip
+- **create_pronunciation_dict**: Specify both the name and the language code.
+
+Create a new pronunciation dictionary
+- **delete_pronunciation_dict**: Provide the dictionary ID to confirm deletion.
+
+Delete a pronunciation dictionary
+- **delete_voice**: Use the voice ID to confirm deletion.
+
+Delete a voice
+- **generate_access_token**: Generate a short-lived access token for client-side requests
+- **get_agent**: Supply the agent ID to query the data.
+
+Get details for a specific voice agent
+- **get_voice**: Provide the voice ID to query the data.
+
+Get details for a specific voice
+- **list_agent_calls**: Provide the agent ID to filter results.
+
+List calls and transcripts for a specific agent
 - **list_agents**: List all voice agents
 - **list_pronunciation_dicts**: List pronunciation dictionaries
 - **list_voices**: List available voices
-- **clone_voice**: Clone a voice from a 5s audio clip
-- **generate_access_token**: Generate a short-lived access token for client-side requests
-- **get_voice**: Get details for a specific voice
-- **infill_bytes**: Generate audio to smoothly connect two existing segments
-- **localize_voice**: Adapt a voice to a new language/dialect
-- **update_voice**: Update voice metadata
-- **update_pronunciation_dict**: Update a pronunciation dictionary
-- **voice_changer_bytes**: Change voice of an audio clip while preserving intonation
-- **stt_batch**: Transcribe audio file to text (Batch STT)
-- **tts_bytes**: Generate text-to-speech audio bytes
+- **localize_voice**: Supply the original voice ID and target language.
+
+Adapt a voice to a new language/dialect
 - **tts_sse**: Generate text-to-speech via Server-Sent Events
+- **update_pronunciation_dict**: Supply the dictionary ID and the new name.
+
+Update a pronunciation dictionary
+- **update_voice**: Supply the voice ID and the fields to update.
+
+Update voice metadata
+- **voice_changer_bytes**: Provide the audio clip and target voice ID.
+
+Change voice of an audio clip while preserving intonation
 
 
 ## 💬 Prompt Examples

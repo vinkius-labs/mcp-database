@@ -34,11 +34,11 @@ Connect your **R2R (Rag to Riches)** deployment to an AI agent, bringing your RA
 
 ## Available Tools (6)
 - **list_collections**: Lists all document collections
-- **rag_query**: Executes a RAG (Retrieval-Augmented Generation) query
-- **get_document**: Retrieves details for a specific document
 - **get_health**: Checks the health status of the R2R server
 - **list_documents**: Lists all ingested documents in the R2R system
 - **search**: Performs a vector search across ingested documents
+- **rag_query**: Executes a RAG (Retrieval-Augmented Generation) query
+- **get_document**: Retrieves details for a specific document
 
 
 ## 💬 Prompt Examples

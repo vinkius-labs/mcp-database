@@ -33,10 +33,10 @@ Connect to **Maxar**, the world leader in high-resolution satellite imagery, and
 
 
 ## Available Tools (4)
-- **create_order**: Order specific data products
-- **get_mws_endpoints**: Get Maxar Web Services (MWS) endpoints
 - **list_order_pipelines**: List available ordering pipelines
 - **search_discovery**: Search for available satellite imagery
+- **create_order**: Order specific data products
+- **get_mws_endpoints**: Get Maxar Web Services (MWS) endpoints
 
 
 ## 💬 Prompt Examples
