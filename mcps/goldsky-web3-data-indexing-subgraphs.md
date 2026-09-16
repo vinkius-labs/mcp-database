@@ -34,13 +34,10 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 
 
 ## Available Tools (12)
-- **delete_pipeline**: Delete a pipeline (irreversible)
-- **get_pipeline_logs**: Retrieve execution logs for a pipeline
 - **get_pipeline_state**: Get internal state of a pipeline
-- **list_pipelines**: List all pipelines in the project
-- **restart_pipeline**: Restart a pipeline
-- **get_pipeline**: Get details of a specific pipeline
-- **get_pipeline_error_count**: Get error count in a time window for a pipeline
+- **restart_pipeline**: Use this only when the pipeline is known to be stalled.
+
+Restart a pipeline
 - **get_pipeline_status**: g., running, paused, failed) of a pipeline.
 
 Get current runtime status of a pipeline
@@ -48,6 +45,11 @@ Get current runtime status of a pipeline
 - **resume_pipeline**: Resume a paused pipeline
 - **validate_pipeline**: Validate a pipeline definition
 - **create_pipeline**: Create and deploy a new pipeline
+- **delete_pipeline**: Delete a pipeline (irreversible)
+- **get_pipeline_error_count**: Get error count in a time window for a pipeline
+- **get_pipeline_logs**: Retrieve execution logs for a pipeline
+- **get_pipeline**: Get details of a specific pipeline
+- **list_pipelines**: List all pipelines in the project
 
 
 ## 💬 Prompt Examples
@@ -132,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

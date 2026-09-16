@@ -35,31 +35,31 @@ Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This s
 
 ## Available Tools (26)
 - **get_account_balance_multi**: Get xDAI Balance for Multiple Addresses
-- **get_account_balance**: Get xDAI Balance for a Single Address
-- **get_account_tokennfttx**: Get a List of ERC721 Token Transfer Events by Address
-- **get_account_txlist**: Get a List of Normal Transactions By Address
-- **get_block_bytime**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
+- **proxy_gasprice**: eth_gasPrice Proxy
 - **get_logs**: Get Event Logs
 - **get_stats_ethsupply**: Get Total Supply of xDAI on Gnosis Chain
-- **get_tx_receiptstatus**: Check Transaction Receipt Status
 - **get_tx_status**: Check Contract Execution Status
-- **proxy_blocknumber**: eth_blockNumber Proxy
-- **proxy_call**: eth_call Proxy
-- **proxy_gasprice**: eth_gasPrice Proxy
-- **proxy_gettransactionbyhash**: eth_getTransactionByHash Proxy
-- **proxy_gettransactionreceipt**: eth_getTransactionReceipt Proxy
 - **get_account_minedblocks**: Get a List of Blocks Validated by Address
-- **get_account_tokentx**: Get a List of ERC20 Token Transfer Events by Address
 - **get_account_txlist_internal**: Get a List of Internal Transactions by Address
+- **get_stats_gnoprice**: Get Last Price of Gnosis (GNO) and xDAI
+- **proxy_estimategas**: eth_estimateGas Proxy
+- **get_account_balance**: Get xDAI Balance for a Single Address
+- **get_account_tokennfttx**: Get a List of ERC721 Token Transfer Events by Address
+- **get_account_tokentx**: Get a List of ERC20 Token Transfer Events by Address
+- **get_account_txlist**: Get a List of Normal Transactions By Address
+- **get_block_bytime**: Get Block Number by Timestamp
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_contract_abi**: Get Contract ABI for Verified Source Codes
 - **get_contract_sourcecode**: Get Contract Source Code for Verified Source Codes
-- **get_stats_gnoprice**: Get Last Price of Gnosis (GNO) and xDAI
-- **proxy_estimategas**: eth_estimateGas Proxy
+- **get_tx_receiptstatus**: Check Transaction Receipt Status
+- **proxy_blocknumber**: eth_blockNumber Proxy
+- **proxy_call**: eth_call Proxy
 - **proxy_getblockbynumber**: eth_getBlockByNumber Proxy
 - **proxy_getcode**: eth_getCode Proxy
 - **proxy_getstorageat**: eth_getStorageAt Proxy
+- **proxy_gettransactionbyhash**: eth_getTransactionByHash Proxy
+- **proxy_gettransactionreceipt**: eth_getTransactionReceipt Proxy
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

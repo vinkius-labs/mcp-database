@@ -37,19 +37,19 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 
 ## Available Tools (14)
 - **get_one_supply**: Total Supply of ONE
-- **get_source_code**: Get Contract Source Code
-- **get_tx_list_internal**: Get List of Internal Transactions
-- **get_tx_receipt_status**: Check Transaction Receipt Status
-- **proxy_request**: Execute standard JSON-RPC methods via proxy
-- **get_balance_multi**: Get ONE Balance for Multiple Addresses
-- **get_status**: Check Transaction Execution Status
 - **get_token_tx**: Get List of HRC20 Token Transfer Events
-- **get_tx_list**: Get List of Normal Transactions
 - **get_abi**: Get Contract ABI
-- **get_block_reward**: Get Block Rewards
+- **get_balance_multi**: Get ONE Balance for Multiple Addresses
 - **get_balance**: Get ONE Balance for a Single Address
+- **get_block_reward**: Get Block Rewards
 - **get_logs**: Get Event Logs
 - **get_one_price**: ONE Last Price
+- **get_source_code**: Get Contract Source Code
+- **get_status**: Check Transaction Execution Status
+- **get_tx_list_internal**: Get List of Internal Transactions
+- **get_tx_list**: Get List of Normal Transactions
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **proxy_request**: Execute standard JSON-RPC methods via proxy
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

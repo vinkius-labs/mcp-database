@@ -37,21 +37,15 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 - **delete_router**: Ensure the provided router_id is correct before proceeding.
 
 Delete an LLM Router
-- **delete_voice**: Specify the unique voice ID to be deleted.
-
-Delete a voice
-- **synthesize_speech_stream**: Synthesize speech via streaming
-- **update_voice**: Supply the voice ID and at least one update parameter.
-
-Update a voice
-- **chat_completions**: Generate chat completions via LLM Router
-- **design_voice**: Design a voice from a text prompt
 - **list_voices**: List voices in the workspace
-- **synthesize_speech_sync**: Synthesize speech synchronously
-- **transcribe_audio**: Transcribe audio to text (Sync)
+- **chat_completions**: Generate chat completions via LLM Router
 - **clone_voice**: Clone a voice from audio samples
 - **create_realtime_call**: Create a WebRTC realtime call
 - **create_router**: Create an LLM Router
+- **delete_voice**: Specify the unique voice ID to be deleted.
+
+Delete a voice
+- **design_voice**: Design a voice from a text prompt
 - **get_router**: Use the unique router_id to identify the target router.
 
 Get details for a specific LLM Router
@@ -64,6 +58,12 @@ Get details for a specific voice
 
 List TTS voices (Deprecated)
 - **publish_voice**: Publish a draft/preview voice
+- **synthesize_speech_stream**: Synthesize speech via streaming
+- **synthesize_speech_sync**: Synthesize speech synchronously
+- **transcribe_audio**: Transcribe audio to text (Sync)
+- **update_voice**: Supply the voice ID and at least one update parameter.
+
+Update a voice
 - **update_router**: Supply the router ID and the desired updates.
 
 Update an LLM Router
@@ -151,4 +151,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

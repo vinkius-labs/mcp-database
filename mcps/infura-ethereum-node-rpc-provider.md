@@ -36,26 +36,26 @@ Connect your **Infura** account to any AI agent to interact with the Ethereum bl
 
 ## Available Tools (20)
 - **eth_gasPrice**: Get current gas price
-- **eth_getBalance**: Get the balance of an account
-- **eth_getBlockByHash**: Get information about a block by hash
 - **eth_blockNumber**: Get the number of the most recent block
-- **eth_getTransactionReceipt**: Note: Receipt is not available for pending transactions.
-
-Get the receipt of a transaction by hash
-- **eth_getBlockTransactionCountByHash**: Get transaction count in a block by hash
-- **eth_getTransactionByHash**: Get transaction information by hash
-- **eth_newFilter**: Create a new filter for polling
 - **eth_call**: Execute a new message call immediately
 - **eth_chainId**: Get the chain ID
-- **eth_estimateGas**: Estimate gas needed for a transaction
-- **eth_feeHistory**: Get transaction fee history
-- **eth_getBlockByNumber**: Get information about a block by number
 - **eth_getBlockTransactionCountByNumber**: Get transaction count in a block by number
 - **eth_getCode**: Get code at a given address
 - **eth_getFilterChanges**: Get changes for a filter
+- **eth_getBlockTransactionCountByHash**: Get transaction count in a block by hash
 - **eth_getLogs**: Get logs matching a filter
-- **eth_getTransactionCount**: Get the number of transactions sent from an address (nonce)
 - **eth_sendRawTransaction**: Send a signed transaction
+- **eth_estimateGas**: Estimate gas needed for a transaction
+- **eth_feeHistory**: Get transaction fee history
+- **eth_getBalance**: Get the balance of an account
+- **eth_getBlockByHash**: Get information about a block by hash
+- **eth_getBlockByNumber**: Get information about a block by number
+- **eth_getTransactionByHash**: Get transaction information by hash
+- **eth_getTransactionCount**: Get the number of transactions sent from an address (nonce)
+- **eth_getTransactionReceipt**: Note: Receipt is not available for pending transactions.
+
+Get the receipt of a transaction by hash
+- **eth_newFilter**: Create a new filter for polling
 - **get_suggested_gas_fees**: Get suggested gas fees (EIP-1559)
 
 
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

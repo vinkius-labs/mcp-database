@@ -34,11 +34,10 @@ Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This
 
 
 ## Available Tools (19)
-- **answer_question**: Answer a question based on a source document
-- **generate_embeddings**: Generate embeddings for the provided inputs
 - **personalize_document**: Personalize a document for a specific audience
 - **upload_file**: Upload a file for use in other operations
 - **analyze_sentiment**: Analyze the sentiment of a document
+- **answer_question**: Answer a question based on a source document
 - **complete_model**: Generate a completion for a given prompt
 - **create_model**: Create a new fine-tuned model instance
 - **create_rag_collection**: Create a collection for RAG operations
@@ -47,6 +46,7 @@ Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This
 - **extract_entity**: Extract structured data from a document based on a schema
 - **extract_pdf**: Extract text and data from a PDF file
 - **fine_tune_model**: Train a model on provided samples
+- **generate_embeddings**: Generate embeddings for the provided inputs
 - **get_model**: Retrieve details about a specific model
 - **get_transcription**: Retrieve the result of a transcription job
 - **list_embeddings**: List available models for generating embeddings
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

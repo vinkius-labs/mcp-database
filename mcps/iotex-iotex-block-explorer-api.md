@@ -36,14 +36,14 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 
 
 ## Available Tools (8)
+- **get_account_actions**: Get Account Transactions
+- **get_token_holders**: Get Token Holders
 - **get_account**: Get Account Details
 - **get_action**: Get Action by Hash
 - **get_block_by_hash**: Get Block by Hash
 - **get_block_by_height**: Get Block by Height
 - **get_recent_actions**: Get Recent Actions
 - **get_token**: Get Token Details
-- **get_token_holders**: Get Token Holders
-- **get_account_actions**: Get Account Transactions
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
