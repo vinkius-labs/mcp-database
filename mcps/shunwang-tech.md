@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your edge computing infrastructure with **S
 
 
 ## Available Tools (10)
-- **get_node**: Get node details
-- **get_resource_usage**: Get resource usage summary
-- **list_nodes**: List all computing nodes
-- **list_tasks**: List computing tasks
-- **stop_task**: Stop a computing task
-- **create_task**: Create a new computing task
 - **get_gpu_specs**: Get GPU specifications
+- **get_resource_usage**: Get resource usage summary
 - **list_clusters**: List computing clusters
 - **list_images**: List available system images
+- **list_nodes**: List all computing nodes
+- **list_tasks**: List computing tasks
 - **send_node_command**: Send command to node
+- **stop_task**: Stop a computing task
+- **create_task**: Create a new computing task
+- **get_node**: Get node details
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

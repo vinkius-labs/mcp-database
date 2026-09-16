@@ -37,13 +37,13 @@ Equip your AI agent with the most comprehensive music intelligence available via
 
 
 ## Available Tools (9)
+- **get_track_snippet**: Get track snippet
+- **get_top_tracks**: Get top tracks chart
 - **search_tracks**: Search for music tracks
 - **get_artist_details**: Get artist metadata
 - **get_track_lyrics**: Get track lyrics
-- **get_track_snippet**: Get track snippet
 - **get_track_details**: Get track metadata
 - **match_track_lyrics**: Match lyrics by track and artist
-- **get_top_tracks**: Get top tracks chart
 - **search_artists**: Search for artists
 - **get_artist_albums**: Get artist albums
 
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

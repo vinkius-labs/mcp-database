@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your product intelligence and user behavior
 
 
 ## Available Tools (10)
-- **get_user_retention**: Get user retention data
-- **get_app_info**: Get application configuration info
+- **get_app_summary**: Get application performance summary
 - **get_channel_data**: Get acquisition channel data
 - **get_event_data**: Get custom event analytics
 - **get_session_stats**: Get session usage statistics
 - **list_events**: List tracked events
+- **get_user_retention**: Get user retention data
 - **get_active_users**: Get active user statistics
-- **get_app_summary**: Get application performance summary
 - **get_device_stats**: Get device hardware statistics
 - **get_new_users**: Get new user registrations
+- **get_app_info**: Get application configuration info
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
