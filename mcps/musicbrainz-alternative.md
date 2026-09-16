@@ -38,17 +38,31 @@ Connect to the **MusicBrainz** database to empower your AI agent with comprehens
 - **browse_entities**: g., all releases for an artist).
 
 Browse entities linked to another entity
-- **lookup_discid**: Lookup a CD by its discid
-- **submit_tags**: Submit tags via XML POST (Requires Auth)
-- **add_collection_items**: Add items to a collection (Requires Auth)
+- **lookup_discid**: Provide the discid as the primary parameter.
+
+Lookup a CD by its discid
+- **submit_ratings**: Requires authentication.
+
+Submit ratings via XML POST (Requires Auth)
+- **add_collection_items**: Requires authentication.
+
+Add items to a collection (Requires Auth)
+- **lookup_isrc**: Provide the ISRC as the primary parameter.
+
+Lookup recordings by ISRC
+- **lookup_iswc**: Provide the ISWC as the primary parameter.
+
+Lookup works by ISWC
 - **lookup_entity**: Lookup a specific MusicBrainz entity by its MBID
-- **lookup_isrc**: Lookup recordings by ISRC
-- **lookup_iswc**: Lookup works by ISWC
-- **remove_collection_item**: Remove an item from a collection (Requires Auth)
+- **remove_collection_item**: Requires authentication.
+
+Remove an item from a collection (Requires Auth)
 - **search_entities**: Use Lucene syntax (e.g., "we will rock you" AND arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3).
 
 Search for entities using Lucene query syntax
-- **submit_ratings**: Submit ratings via XML POST (Requires Auth)
+- **submit_tags**: Requires authentication.
+
+Submit tags via XML POST (Requires Auth)
 
 
 ## 💬 Prompt Examples

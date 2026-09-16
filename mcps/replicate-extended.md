@@ -34,26 +34,56 @@ Connect your **Replicate** account to any AI agent to run powerful machine learn
 
 
 ## Available Tools (20)
-- **create_model**: Create a new model on Replicate
-- **delete_model_version**: Delete a specific model version
+- **delete_model_version**: Provide the owner, model name, and version ID.
+
+Delete a specific model version
 - **get_account**: Get details about the authenticated user or organization
-- **get_model_version**: Get details of a specific model version, including its OpenAPI schema
-- **get_prediction**: Get the status and output of a prediction
 - **list_predictions**: List recent predictions
-- **get_model**: Get details of a specific model
-- **cancel_prediction**: Cancel a running prediction
-- **create_deployment**: Create a new private deployment with custom autoscaling
-- **create_deployment_prediction**: Create a prediction using a dedicated deployment
+- **search_models**: Provide the search query.
+
+Search for public models on Replicate
+- **cancel_prediction**: Provide the prediction ID.
+
+Cancel a running prediction
+- **create_deployment_prediction**: Provide the deployment owner, name, and input parameters.
+
+Create a prediction using a dedicated deployment
+- **create_deployment**: Specify the deployment name and model.
+
+Create a new private deployment with custom autoscaling
+- **create_model**: Provide the owner, name, and required details.
+
+Create a new model on Replicate
 - **create_prediction**: Create a new prediction to run a model
-- **create_training**: Create a training to fine-tune an existing model
-- **get_collection**: Get details of a specific model collection
-- **get_training**: Get the status of a training
+- **create_training**: Provide base model details and input data.
+
+Create a training to fine-tune an existing model
+- **get_collection**: Use the collection’s unique slug.
+
+Get details of a specific model collection
+- **get_model**: Provide both the owner and name.
+
+Get details of a specific model
+- **get_model_version**: Provide owner, name, and version ID.
+
+Get details of a specific model version, including its OpenAPI schema
+- **get_prediction**: Provide the prediction ID.
+
+Get the status and output of a prediction
+- **get_training**: Provide a valid training ID.
+
+Get the status of a training
 - **get_webhook_secret**: Get the default webhook secret key for verifying signatures
-- **list_collections**: List curated collections of models
+- **list_collections**: Do not use this tool to search for specific models.
+
+List curated collections of models
 - **list_hardware**: List available hardware SKUs and their descriptions
-- **list_model_versions**: List all versions of a model
-- **search_models**: Search for public models on Replicate
-- **update_model**: Update metadata for an existing model
+- **list_model_versions**: Provide the owner and model name.
+
+List all versions of a model
+- **update_model**: Specify the owner and model name.
+
+Update metadata for an existing model
 
 
 ## 💬 Prompt Examples

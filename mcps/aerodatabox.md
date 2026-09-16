@@ -35,27 +35,57 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 ## Available Tools (23)
 - **get_airport_delays**: Get current airport delays
 - **get_nearest_flight**: Get real-time status of the nearest flight by flight number
-- **get_airports_by_ip**: Find closest airports based on IP address
+- **get_airports_by_ip**: Provide the IP address as the primary input.
+
+Find closest airports based on IP address
+- **get_airport_runways**: Supply the required ICAO code.
+
+Get detailed physical and operational runway data for an airport
+- **convert_alert_subscription**: Pass the ID of the subscription to convert.
+
+Convert an old subscription to the credit-based system
+- **create_flight_alert**: Provide the subject ID and the webhook URL.
+
+Create a flight alert webhook subscription
+- **delete_alert_subscription**: Supply the ID of the subscription to delete.
+
+Delete a flight alert webhook subscription
+- **get_airline_fleet**: Supply the required ICAO code.
+
+Get active aircraft operated by a given airline
+- **get_airport_delays_historical**: Provide the ICAO code and date.
+
+Get historical airport delays for a specific date
+- **get_airport_delays_period**: Provide both start and end dates.
+
+Get historical airport delays for a period
+- **get_airport_routes_stats**: Supply the required ICAO code.
+
+Get statistical route frequencies for an airport
 - **get_alert_balance**: Check flight alert credit balance
+- **get_distance_time**: Supply both origin and destination codes.
+
+Calculate distance and estimated flight time between two airports
 - **get_fids_absolute**: Get airport departures and arrivals (absolute time range)
 - **get_fids_relative**: Get airport departures and arrivals (relative time range)
 - **get_flight_by_date**: Get flight status on a specific date
-- **get_flight_delays**: Get historical punctuality statistics for a specific flight number
-- **list_alert_subscriptions**: List all flight alert webhook subscriptions
-- **refill_alert_balance**: Refill flight alert credit balance
-- **get_global_delays**: Get current globalThis delays
-- **delete_alert_subscription**: Delete a flight alert webhook subscription
-- **get_airline_fleet**: Get active aircraft operated by a given airline
-- **get_airport_delays_historical**: Get historical airport delays for a specific date
-- **get_airport_delays_period**: Get historical airport delays for a period
-- **convert_alert_subscription**: Convert an old subscription to the credit-based system
-- **create_flight_alert**: Create a flight alert webhook subscription
-- **get_airport_routes_stats**: Get statistical route frequencies for an airport
-- **get_airport_runways**: Get detailed physical and operational runway data for an airport
-- **get_alert_subscription**: Get details of a specific flight alert subscription
-- **get_distance_time**: Calculate distance and estimated flight time between two airports
+- **get_flight_delays**: Use the flight number.
+
+Get historical punctuality statistics for a specific flight number
 - **get_flight_history**: Get flight history and schedule
-- **get_global_delays_historical**: Get historical globalThis delays
+- **get_global_delays_historical**: Supply the required date (YYYY-MM-DD).
+
+Get historical global delays
+- **get_global_delays**: Do not specify any parameters.
+
+Get current global delays
+- **get_alert_subscription**: Provide the required subscription ID.
+
+Get details of a specific flight alert subscription
+- **list_alert_subscriptions**: List all flight alert webhook subscriptions
+- **refill_alert_balance**: Specify the exact amount of credits to add.
+
+Refill flight alert credit balance
 
 
 ## 💬 Prompt Examples

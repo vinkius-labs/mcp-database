@@ -34,10 +34,10 @@ Connect your **Cirium** developer account to any AI agent to access the world's 
 
 
 ## Available Tools (9)
-- **get_fleet_status**: Get status for all flights in a carrier fleet
+- **get_airport_status**: Get a list of flights departing from or arriving at an airport
 - **get_airport_tracks**: Get tracks for all flights near a specific airport
 - **create_alert_rule**: Register a new alert rule for a flight
-- **get_airport_status**: Get a list of flights departing from or arriving at an airport
+- **get_fleet_status**: Get status for all flights in a carrier fleet
 - **get_flight_status**: Get status for a specific flight on a specific date
 - **get_flight_track**: Get the current position and track for a specific flight
 - **get_route_status**: Get status for all flights between two airports
