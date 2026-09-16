@@ -14,9 +14,9 @@ This MCP server provides tools to evaluate the health and economic impact of acc
 
 
 ## Available Tools (3)
-- **get_engagement_summary**: Provides a high-level overview of current engagement health and economic impact
 - **get_platform_impact_adjustment**: Calculates how different engagement mediums influence the overall score
 - **get_retention_analysis**: Analyzes the stability and trajectory of the alumni community
+- **get_engagement_summary**: Provides a high-level overview of current engagement health and economic impact
 
 
 ## 💬 Prompt Examples

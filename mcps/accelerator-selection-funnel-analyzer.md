@@ -14,6 +14,7 @@ This MCP server provides deep analytical insights into the accelerator recruitme
 
 
 ## Available Tools (4)
+- **get_candidate_health_report**: Provide a high-level overview of the quality and velocity of the current applicant pool
 - **analyze_funnel_conversions**: You can optionally include quality weighting.
 
 Calculate the percentage of candidates progressing through every stage of the recruitment process
@@ -21,7 +22,6 @@ Calculate the percentage of candidates progressing through every stage of the re
 - **identify_dropoff_patterns**: Optionally filter by a specific reason.
 
 Pinpoint exactly why and where candidates are leaving the funnel
-- **get_candidate_health_report**: Provide a high-level overview of the quality and velocity of the current applicant pool
 
 
 ## 💬 Prompt Examples

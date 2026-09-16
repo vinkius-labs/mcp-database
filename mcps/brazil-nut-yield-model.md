@@ -14,9 +14,9 @@ This MCP server provides specialized tools for modeling Brazil nut production in
 
 
 ## Available Tools (3)
-- **analyze_pollination_impact**: Analyzes how sensitive the yield is to changes in pollinator populations
 - **calculate_tree_productivity**: Calculates expected fruit production for a single tree based on DBH, exposure, and environmental factors
 - **estimate_hectare_yield**: Estimates the total expected kernel yield per hectare
+- **analyze_pollination_impact**: Analyzes how sensitive the yield is to changes in pollinator populations
 
 
 ## 💬 Prompt Examples

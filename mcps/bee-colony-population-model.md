@@ -15,8 +15,8 @@ This MCP server provides a simulation engine for honey bee colony dynamics based
 
 ## Available Tools (3)
 - **calculate_resource_and_foraging_impact**: 
-- **predict_colony_health_risks**: 
 - **simulate_population_trajectory**: 
+- **predict_colony_health_risks**: 
 
 
 ## 💬 Prompt Examples

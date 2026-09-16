@@ -14,9 +14,9 @@ This MCP server provides specialized tools for broiler producers to maintain opt
 
 
 ## Available Tools (3)
+- **calculate_ventilation_requirements**: Calculates the core airflow needs based on the biological and environmental state of the broiler house
 - **optimize_ventilation_strategy**: Provides a recommendation on whether to prioritize moisture control or temperature control
 - **simulate_fan_performance**: Determines if the existing or proposed fan setup can meet the calculated ventilation needs
-- **calculate_ventilation_requirements**: Calculates the core airflow needs based on the biological and environmental state of the broiler house
 
 
 ## 💬 Prompt Examples

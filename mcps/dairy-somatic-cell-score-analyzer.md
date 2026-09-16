@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for dairy producers to mon
 
 
 ## Available Tools (4)
-- **get_weighted_btscs**: Calculates the total somatic cell contribution of the whole herd to the bulk tank
-- **predict_outbreak_scenario**: Models how an infection might spread through the herd based on current infection levels
-- **evaluate_culling_status**: Determines if a cow has exceeded the threshold for economic viability
 - **calculate_economic_impact**: Estimates the total financial loss for a specific cow or a herd due to mastitis
+- **evaluate_culling_status**: Determines if a cow has exceeded the threshold for economic viability
+- **predict_outbreak_scenario**: Models how an infection might spread through the herd based on current infection levels
+- **get_weighted_btscs**: Calculates the total somatic cell contribution of the whole herd to the bulk tank
 
 
 ## 💬 Prompt Examples

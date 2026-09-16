@@ -14,9 +14,9 @@ This MCP server provides predictive analytics for cherry growers to estimate fru
 
 
 ## Available Tools (3)
-- **calculate_protective_timing**: Determines the optimal window to deploy protective covers to prevent damage
 - **estimate_economic_loss**: Converts predicted cracking into a monetary loss projection for the grower
 - **predict_cracking_risk**: Calculates the likelihood and extent of fruit cracking based on a specific weather event and fruit state
+- **calculate_protective_timing**: Determines the optimal window to deploy protective covers to prevent damage
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides tools to analyze pecan crop quality and economic value.
 
 
 ## Available Tools (3)
-- **determine_grade_and_price**: Assigns a USDA grade and an expected market price based on quality indicators
 - **get_kernel_metrics**: Calculates the primary physical yield metrics from raw nut data
+- **determine_grade_and_price**: Assigns a USDA grade and an expected market price based on quality indicators
 - **simulate_yield_impact**: Predicts how environmental water stress during the growth cycle will impact final kernel fill and yield
 
 

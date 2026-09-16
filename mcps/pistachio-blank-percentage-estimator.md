@@ -14,9 +14,13 @@ This MCP server provides specialized tools for pistachio orchard management. It 
 
 
 ## Available Tools (3)
-- **get_alternate_bearing_index**: Calculates production stability index
+- **get_alternate_bearing_index**: Ensure both yield values are provided.
+
+Calculates production stability index
 - **calculate_blank_percentage**: 
-- **get_management_recommendations**: Provides agricultural recommendations
+- **get_management_recommendations**: Provide all three required input parameters.
+
+Provides agricultural recommendations
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides precise viticulture intelligence. It allows AI agents t
 
 
 ## Available Tools (3)
-- **calculate_yield_metrics**: Calculate expected grape yield metrics per hectare
 - **predict_harvest_date**: Predict the estimated harvest date based on phenological stages
+- **calculate_yield_metrics**: Calculate expected grape yield metrics per hectare
 - **get_vineyard_health_summary**: Get a summary of vineyard health and productivity
 
 

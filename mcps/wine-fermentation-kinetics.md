@@ -14,8 +14,8 @@ This MCP server provides advanced biological and chemical modeling for wine ferm
 
 
 ## Available Tools (3)
-- **calculate_alcohol_yield**: Calculate the theoretical alcohol content based on sugar consumption
 - **predict_fermentation_progress**: Predict fermentation progress, completion date, and stuck risk
+- **calculate_alcohol_yield**: Calculate the theoretical alcohol content based on sugar consumption
 - **evaluate_nutrient_strategy**: Determine if and when nutrients should be added to prevent stuck fermentation
 
 

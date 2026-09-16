@@ -14,9 +14,9 @@ This MCP server provides analytical tools to evaluate the preparation maturity o
 
 
 ## Available Tools (3)
-- **analyze_improvement_velocity**: Analyzes the velocity of improvement across iterations
 - **calculate_readiness_score**: Calculates the holistic readiness score for the investor day preparation
 - **predict_optimal_prep_window**: Predicts the optimal window to cease practice
+- **analyze_improvement_velocity**: Analyzes the velocity of improvement across iterations
 
 
 ## 💬 Prompt Examples

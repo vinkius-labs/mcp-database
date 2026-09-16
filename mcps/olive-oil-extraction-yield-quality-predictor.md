@@ -14,9 +14,9 @@ This MCP server provides advanced modeling for olive oil production. It allows A
 
 
 ## Available Tools (3)
+- **optimize_malaxing_params**: 
 - **predict_quality_risk**: 
 - **predict_yield_and_loss**: 
-- **optimize_malaxing_params**: 
 
 
 ## 💬 Prompt Examples

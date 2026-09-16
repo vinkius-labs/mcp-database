@@ -15,8 +15,8 @@ This MCP server provides specialized tools for seed quality assessment. It calcu
 
 ## Available Tools (3)
 - **calculate_vigor_indices**: Calculates core mathematical vigor indices and relative growth metrics
-- **assess_certification_status**: Evaluates if a seed lot meets certification thresholds
 - **summarize_test_method_impact**: Compares how different stress tests influence observed vigor
+- **assess_certification_status**: Evaluates if a seed lot meets certification thresholds
 
 
 ## 💬 Prompt Examples

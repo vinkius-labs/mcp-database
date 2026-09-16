@@ -14,9 +14,15 @@ This MCP server provides precise biological and physical modeling for swine prod
 
 
 ## Available Tools (3)
-- **calculate_pit_airflow_needs**: Determines the specific air movement required at the floor level to prevent gas buildup
-- **calculate_supplemental_heating**: Calculates the energy required to maintain target temperatures against environmental losses
-- **calculate_ventilation_requirements**: Determines the necessary air movement and moisture removal for a specific group of pigs
+- **calculate_ventilation_requirements**: Provide all required physical parameters.
+
+Determines the necessary air movement and moisture removal for a specific group of pigs
+- **calculate_pit_airflow_needs**: Use the provided building dimensions in the calculation.
+
+Determines the specific air movement required at the floor level to prevent gas buildup
+- **calculate_supplemental_heating**: Ensure all thermal and environmental data is provided.
+
+Calculates the energy required to maintain target temperatures against environmental losses
 
 
 ## 💬 Prompt Examples

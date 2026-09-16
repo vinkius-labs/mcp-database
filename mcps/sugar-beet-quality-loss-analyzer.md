@@ -14,9 +14,9 @@ This MCP server provides specialized analytical tools for managing sugar beet st
 
 
 ## Available Tools (4)
+- **calculate_economic_impact**: Translates biological losses into monetary terms for the producer
 - **calculate_sucrose_degradation**: Determines the amount of sucrose lost and the amount of invert sugar produced over a specific period
 - **optimize_storage_parameters**: Recommends the best storage duration and required ventilation to minimize losses
-- **calculate_economic_impact**: Translates biological losses into monetary terms for the producer
 - **calculate_pile_integrity**: Estimates the physical degradation of the pile, including weight loss and rot progression
 
 

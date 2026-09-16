@@ -14,9 +14,9 @@ This MCP server provides specialized physiological analysis for avocado growers 
 
 
 ## Available Tools (3)
-- **calculate_maturity_status**: Determines if a fruit is physiologically mature based on its dry matter and variety
 - **determine_market_window**: Identifies the optimal harvest timing for different commercial paths
 - **predict_post_harvest_performance**: Estimates how the fruit will behave after being picked, focusing on shelf life and eating quality
+- **calculate_maturity_status**: Determines if a fruit is physiologically mature based on its dry matter and variety
 
 
 ## 💬 Prompt Examples

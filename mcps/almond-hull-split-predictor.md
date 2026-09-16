@@ -14,9 +14,9 @@ This MCP server provides physiological modeling to predict the timing and progre
 
 
 ## Available Tools (3)
-- **assess_pest_risk**: Evaluates the vulnerability of the crop to Navel Orangeworm based on predicted hull split timing
 - **calculate_harvest_window**: Identifies the optimal days to begin and end harvest to maximize quality and minimize loss
 - **predict_split_progression**: Determines the percentage of the almond crop that has undergone hull split on a specific date
+- **assess_pest_risk**: Evaluates the vulnerability of the crop to Navel Orangeworm based on predicted hull split timing
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides specialized tools to manage the biological transformati
 
 
 ## Available Tools (3)
-- **calculate_optimal_fermentation**: Determines the ideal duration and conditions to reach a target flavor profile
 - **estimate_water_usage**: Calculates the volume of water required for the fermentation process
+- **calculate_optimal_fermentation**: Determines the ideal duration and conditions to reach a target flavor profile
 - **predict_quality_and_risk**: Evaluates the likelihood of achieving high quality and the risk of producing defective coffee
 
 

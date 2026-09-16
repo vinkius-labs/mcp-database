@@ -14,8 +14,8 @@ This MCP server provides specialized tools for managing potato storage. It allow
 
 
 ## Available Tools (3)
-- **get_alternative_treatment_schedule**: Provides alternative management paths if CIPC application is restricted by residue limits or if extended storage is needed
 - **calculate_inhibitor_application**: Determines the required amount of CIPC to apply based on current storage parameters
+- **get_alternative_treatment_schedule**: Provides alternative management paths if CIPC application is restricted by residue limits or if extended storage is needed
 - **predict_dormancy_break**: Forecasts when the potato variety will naturally lose dormancy and begin sprouting
 
 

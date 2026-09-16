@@ -14,8 +14,8 @@ This MCP server provides precise analytical tools for tea plantation management.
 
 
 ## Available Tools (3)
-- **calculate_plucking_metrics**: Determines the ideal timing and expected quality of a harvest based on current leaf state
 - **evaluate_black_tea_potential**: Specifically analyzes the oxidation potential for black tea production
+- **calculate_plucking_metrics**: Determines the ideal timing and expected quality of a harvest based on current leaf state
 - **predict_grade_distribution**: Forecasts the percentage of leaves that will fall into specific commercial grades
 
 

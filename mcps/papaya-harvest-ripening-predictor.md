@@ -14,8 +14,8 @@ This MCP server provides predictive modeling for papaya cultivation. It uses Gro
 
 
 ## Available Tools (3)
-- **calculate_shelf_life**: Estimates the remaining marketable life of the fruit after harvest
 - **estimate_ripening_timeline**: Predicts how many days it will take for the fruit to reach full ripeness
+- **calculate_shelf_life**: Estimates the remaining marketable life of the fruit after harvest
 - **predict_harvest_window**: Determines the optimal date to harvest fruit based on intended market destination
 
 
