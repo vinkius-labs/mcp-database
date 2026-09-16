@@ -36,22 +36,22 @@ No more manual scrubbing through fragmented social logs. Your AI acts as your de
 
 
 ## Available Tools (12)
-- **delete_member**: Remove member (GDPR)
-- **get_token_status**: Check API token status
-- **list_members**: List community members
-- **list_tags**: List community tags
-- **update_member**: Update member profile
-- **create_member**: Create a new community member
 - **create_webhook**: Configure a new webhook
-- **get_member**: Get member details
+- **delete_webhook**: Delete a webhook
+- **get_token_status**: Check API token status
 - **ingest_activity**: g., Slack post, social interaction) into a members timeline.
 
 Report community activity
+- **list_members**: List community members
 - **list_segments**: g., Highly Engaged, At Risk).
 
 List community segments
+- **list_tags**: List community tags
 - **list_webhooks**: List configured webhooks
-- **delete_webhook**: Delete a webhook
+- **create_member**: Create a new community member
+- **delete_member**: Remove member (GDPR)
+- **update_member**: Update member profile
+- **get_member**: Get member details
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

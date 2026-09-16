@@ -28,14 +28,14 @@ Customer Support teams managing tickets, Marketing teams triggering proactive me
 ## Available Tools (10)
 - **delete_contact**: Delete a Blip contact
 - **get_contact**: Get a Blip contact by ID
-- **get_ticket**: Get a Blip desk ticket by ID
-- **list_threads**: List Blip conversation threads
-- **create_contact**: Create or update a Blip contact
 - **get_thread_messages**: Get messages from a Blip thread
+- **get_ticket**: Get a Blip desk ticket by ID
 - **list_contacts**: List Blip contacts
+- **list_threads**: List Blip conversation threads
 - **list_tickets**: List Blip desk tickets
 - **ping_bot**: Ping the Blip bot
 - **send_message**: Send a message to a Blip contact
+- **create_contact**: Create or update a Blip contact
 
 
 ## 💬 Prompt Examples
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

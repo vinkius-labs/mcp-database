@@ -36,23 +36,23 @@ Connect your **CM.com** account to any AI agent and control your omnichannel com
 
 
 ## Available Tools (11)
-- **send_sms**: Send an SMS
-- **send_voice_message**: Send voice notification
-- **send_whatsapp**: Send WhatsApp template
-- **verify_otp**: Verify OTP code
-- **list_numbers**: com account.
-
-List phone numbers
 - **send_email**: com email delivery infrastructure.
 
 Send an email
-- **send_otp_sms**: Send OTP via SMS
+- **send_rich_message**: Send a rich message
+- **send_sms**: Send an SMS
+- **send_voice_message**: Send voice notification
+- **send_voice_otp**: Send voice OTP
+- **send_whatsapp**: Send WhatsApp template
+- **verify_otp**: Verify OTP code
 - **get_balance**: com account.
 
 Check account balance
+- **list_numbers**: com account.
+
+List phone numbers
 - **send_bulk_sms**: Send bulk SMS
-- **send_rich_message**: Send a rich message
-- **send_voice_otp**: Send voice OTP
+- **send_otp_sms**: Send OTP via SMS
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
