@@ -37,17 +37,17 @@ No more manual logging of call results or digging through fragmented phone recor
 
 ## Available Tools (12)
 - **get_account_info**: Get account details
-- **get_call_stats**: Get call statistics
-- **get_contact**: Get contact details
-- **list_calls**: List recent calls
-- **create_webhook**: Create a new webhook
-- **get_call_recording**: Get call recording URL
-- **list_users**: List account users
 - **create_contact**: Create a new contact
-- **delete_contact**: Delete a contact
+- **get_contact**: Get contact details
+- **get_call_stats**: Get call statistics
+- **list_calls**: List recent calls
 - **list_contacts**: List all customer contacts
 - **list_webhooks**: List configured webhooks
 - **update_contact**: Update an existing contact
+- **create_webhook**: Create a new webhook
+- **list_users**: List account users
+- **delete_contact**: Delete a contact
+- **get_call_recording**: Get call recording URL
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

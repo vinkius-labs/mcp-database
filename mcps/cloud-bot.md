@@ -36,15 +36,15 @@ No more manual logging into individual bot portals to check job progress. Your A
 
 
 ## Available Tools (7)
-- **cancel_job**: Cancel a running job
-- **get_bot_details**: Get details for a specific bot
 - **get_job_status**: Check the status of a job
 - **list_bots**: List all available RPA bots
-- **list_cloudbot_files**: List files in Cloud BOT storage
 - **list_jobs**: List recent execution jobs
+- **cancel_job**: Cancel a running job
 - **execute_bot**: You can pass optional input parameters as a JSON string.
 
 Trigger a bot execution
+- **get_bot_details**: Get details for a specific bot
+- **list_cloudbot_files**: List files in Cloud BOT storage
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
