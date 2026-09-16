@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your collaborative workflow with **Shimo Do
 
 
 ## Available Tools (10)
-- **list_users**: List organization users
-- **list_folders**: List all Shimo folders
-- **create_file**: Create a new Shimo file
 - **export_file**: Export a Shimo file
 - **get_file**: Get file details
 - **get_folder_content**: Get folder contents
-- **list_audit_logs**: List audit logs
-- **list_files**: List all Shimo files
 - **get_org_info**: Get organization details
 - **import_file**: Import a document into Shimo
+- **list_users**: List organization users
+- **create_file**: Create a new Shimo file
+- **list_folders**: List all Shimo folders
+- **list_audit_logs**: List audit logs
+- **list_files**: List all Shimo files
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

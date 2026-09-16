@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 
 ## Available Tools (10)
 - **fuzzy_search**: Enterprise fuzzy search
+- **get_basic_info**: Get enterprise basic info
+- **list_investments**: List outward investments
+- **list_ip**: List intellectual property
+- **list_staff**: List main staff/executives
 - **get_account_status**: Get OpenAPI account status
 - **get_full_details**: Get full enterprise details
 - **list_branches**: List company branches
-- **list_investments**: List outward investments
 - **list_risks**: List enterprise risk info
-- **get_basic_info**: Get enterprise basic info
-- **list_ip**: List intellectual property
 - **list_shareholders**: List company shareholders
-- **list_staff**: List main staff/executives
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

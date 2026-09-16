@@ -35,25 +35,25 @@ Connect your **Nubank Mexico** account to any AI agent and take control of your 
 
 
 ## Available Tools (14)
-- **get_account_balance**: Check your current account balance
-- **get_account_info**: Get your Nubank Mexico account profile
+- **get_spending_analytics**: ), showing monthly trends, top merchants, and comparisons to previous periods. Use the period parameter for specific timeframes.
+
+Get spending analytics and insights
+- **get_investments**: View your Cajitas investment portfolio
 - **get_credit_card_statement**: Defaults to the current open statement if no month is specified.
 
 Get a credit card statement
-- **get_investments**: View your Cajitas investment portfolio
+- **get_transaction**: Get full details of a specific transaction
 - **list_bills**: List pending bills and service payments
+- **create_transfer**: Transfers are processed in real-time during banking hours.
+
+Send a SPEI transfer
+- **get_account_balance**: Check your current account balance
+- **get_account_info**: Get your Nubank Mexico account profile
 - **list_rewards**: List your Nubank reward points and benefits
 - **list_transactions**: Use limit and offset for pagination through large histories.
 
 List recent account transactions
-- **create_transfer**: Transfers are processed in real-time during banking hours.
-
-Send a SPEI transfer
 - **get_credit_card_info**: Get your Nubank credit card details
-- **get_spending_analytics**: ), showing monthly trends, top merchants, and comparisons to previous periods. Use the period parameter for specific timeframes.
-
-Get spending analytics and insights
-- **get_transaction**: Get full details of a specific transaction
 - **list_credit_card_transactions**: settled status.
 
 List recent credit card transactions
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
