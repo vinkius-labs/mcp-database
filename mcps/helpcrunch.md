@@ -36,24 +36,24 @@ No more manual toggling between chat windows or searching for customer emails. Y
 
 
 ## Available Tools (12)
-- **create_customer**: Requires email and name.
-
-Create a new customer profile
 - **list_active_webhooks**: List configured webhooks
-- **list_departments**: List all departments
-- **update_conversation_status**: g., open, pending, closed).
-
-Change chat status
-- **get_conversation_details**: Get details for a specific chat
-- **get_customer_details**: Get details for a specific customer
-- **list_conversations**: List all customer chats
-- **list_team_agents**: List all agents/team members
-- **list_customers**: List all customers
-- **list_messages_in_chat**: List messages from a specific chat
-- **search_customers**: Search for customers using filters
 - **send_chat_message**: Can be sent as an agent.
 
 Post a message to a chat
+- **create_customer**: Requires email and name.
+
+Create a new customer profile
+- **get_conversation_details**: Get details for a specific chat
+- **get_customer_details**: Get details for a specific customer
+- **list_team_agents**: List all agents/team members
+- **list_customers**: List all customers
+- **list_departments**: List all departments
+- **list_messages_in_chat**: List messages from a specific chat
+- **search_customers**: Search for customers using filters
+- **update_conversation_status**: g., open, pending, closed).
+
+Change chat status
+- **list_conversations**: List all customer chats
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

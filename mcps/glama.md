@@ -33,6 +33,9 @@ Empower your local Vinkius terminal intelligence with the **Glama.ai** infrastru
 
 
 ## Available Tools (8)
+- **glama_get_mcp_server_info**: Requires its namespace and slug.
+
+Extract detailed parameters and installation instructions for a specific Glama MCP server
 - **glama_get_gateway_model_details**: g. "anthropic/claude-3-5-sonnet") to fetch the specific configurations exposed by the Glama unified API proxy.
 
 Investigate granular attributes (prices, context window, parameters) of a specific proxied Gateway Model
@@ -44,13 +47,10 @@ Search and list MCP servers directly from the global Glama directory
 
 Fetch all Private Hosted MCP instances assigned to your specific Glama account
 - **glama_get_mcp_attributes**: List filtering attributes and semantic categorizations mapped within the Glama MCP Registry
-- **glama_get_mcp_server_info**: Requires its namespace and slug.
-
-Extract detailed parameters and installation instructions for a specific Glama MCP server
-- **glama_run_gateway_chat**: Bifurcate an isolated conversational prompt using a specific model through the Glama proxy network
 - **glama_send_telemetry**: Can be triggered after your AI uses a specific external server.
 
 Report semantic usage execution metrics back to the Glama Telemetry backend
+- **glama_run_gateway_chat**: Bifurcate an isolated conversational prompt using a specific model through the Glama proxy network
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

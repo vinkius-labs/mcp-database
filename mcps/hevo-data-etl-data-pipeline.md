@@ -36,10 +36,10 @@ Connect your **Hevo Data** account to any AI agent and take full control of your
 ## Available Tools (6)
 - **get_pipeline**: Get pipeline details
 - **get_usage**: Get account usage
-- **list_destinations**: List all destinations
-- **list_models**: List all models
 - **list_pipelines**: List all pipelines
 - **list_workflows**: List all workflows
+- **list_destinations**: List all destinations
+- **list_models**: List all models
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

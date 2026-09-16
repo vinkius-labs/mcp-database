@@ -33,18 +33,6 @@ Connect your **GPTBots** account to your AI agent and manage your enterprise AI 
 
 
 ## Available Tools (8)
-- **create_knowledge_document**: Pass the required document payload in the body.
-
-Upload or create a document in the Knowledge Base
-- **get_conversation**: Provide the conversation ID as the primary argument.
-
-Get details and history of a specific conversation
-- **list_conversations**: Specify the bot ID to filter the results.
-
-List chat conversations with a bot
-- **list_databases**: Do not use this tool if you are only querying a specific table.
-
-List tables in the platform database
 - **list_knowledge_documents**: Supply the Knowledge Base ID.
 
 List documents in a Knowledge Base
@@ -57,6 +45,18 @@ Send a message to a GPTBots Agent
 - **trigger_workflow**: Include the workflow ID and necessary parameters in the body.
 
 Trigger an automated workflow
+- **create_knowledge_document**: Pass the required document payload in the body.
+
+Upload or create a document in the Knowledge Base
+- **get_conversation**: Provide the conversation ID as the primary argument.
+
+Get details and history of a specific conversation
+- **list_conversations**: Specify the bot ID to filter the results.
+
+List chat conversations with a bot
+- **list_databases**: Do not use this tool if you are only querying a specific table.
+
+List tables in the platform database
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

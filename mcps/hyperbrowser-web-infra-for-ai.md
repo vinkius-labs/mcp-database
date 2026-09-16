@@ -38,9 +38,6 @@ Connect your **Hyperbrowser** account to any AI agent and take full control of y
 - **create_session**: Returns a connection URL and session details. Pass optional JSON config for proxy, stealth, browser version, etc.
 
 Create a new Hyperbrowser remote session
-- **run_script**: The browser will execute and return the evaluation result.
-
-Execute JS script inside a running Hyperbrowser session
 - **start_scrape**: Returns a job ID. Use get_scrape_job to poll for completion. Pass target URL and optional JSON config.
 
 Start a Hyperbrowser async scraping job
@@ -53,14 +50,17 @@ Get status/results of a Hyperbrowser scraping job
 - **get_session**: Returns duration, connection endpoints, and current health/status.
 
 Get status of a specific Hyperbrowser session
+- **stop_session**: Terminate an active Hyperbrowser session
 - **list_sessions**: Pass optional status (active, completed, failed) to filter.
 
 List active or past Hyperbrowser sessions
-- **page_content**: Get raw HTML content synchronously via Hyperbrowser
+- **run_script**: The browser will execute and return the evaluation result.
+
+Execute JS script inside a running Hyperbrowser session
 - **page_screenshot**: Returns image metadata or URL.
 
 Take a managed screenshot via Hyperbrowser
-- **stop_session**: Terminate an active Hyperbrowser session
+- **page_content**: Get raw HTML content synchronously via Hyperbrowser
 
 
 ## 💬 Prompt Examples
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

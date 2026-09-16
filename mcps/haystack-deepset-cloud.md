@@ -34,10 +34,10 @@ Connect your **deepset Cloud** account to any AI agent and manage your Haystack-
 
 
 ## Available Tools (7)
-- **list_workspaces**: List workspaces
 - **list_files**: List uploaded files
-- **list_pipelines**: List pipelines
 - **get_pipeline**: Get pipeline details
+- **list_pipelines**: List pipelines
+- **list_workspaces**: List workspaces
 - **run_pipeline**: Run a pipeline search
 - **get_file**: Get file metadata
 - **search_documents**: Search documents in index
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
