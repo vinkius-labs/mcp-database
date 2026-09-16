@@ -38,18 +38,21 @@ No API key required for public data — completely free.
 
 
 ## Available Tools (8)
+- **get_ohlc**: Each candle includes time, open, high, low, close, VWAP, volume and trade count. Supports intervals: 1 (1min), 5, 15, 30, 60 (1h), 240 (4h), 1440 (1d), 10080 (1w), 21600 (15d). Optionally provide since timestamp for incremental data.
+
+Get OHLCV candlestick data for a trading pair
 - **get_server_time**: Returns the Unix timestamp and RFC 1123 time. Useful for synchronizing with the exchange server and verifying API connectivity.
 
 Get Kraken server time
+- **get_trades**: Each trade includes price, volume, time (Unix timestamp), side (buy/sell), order type (market/limit) and misc info. Returns up to 1000 most recent trades. Optionally provide since timestamp for pagination.
+
+Get recent trades for a trading pair
 - **get_asset_info**: Returns asset name, alternate names, decimals, status and collateral support. Optionally filter by specific assets (comma-separated).
 
 Get information about Kraken assets
 - **get_asset_pairs**: Returns pair name, alt name, base/quote assets, lot volume decimals, pair decimals, order minimums and trading leverage. Optionally filter by a specific pair.
 
 Get information about Kraken trading pairs
-- **get_ohlc**: Each candle includes time, open, high, low, close, VWAP, volume and trade count. Supports intervals: 1 (1min), 5, 15, 30, 60 (1h), 240 (4h), 1440 (1d), 10080 (1w), 21600 (15d). Optionally provide since timestamp for incremental data.
-
-Get OHLCV candlestick data for a trading pair
 - **get_order_book**: Each level includes price and volume. The count parameter controls the number of levels returned (1-500, default 100). Useful for analyzing market depth and liquidity.
 
 Get the current order book for a trading pair
@@ -59,9 +62,6 @@ Get recent spread data for a trading pair
 - **get_ticker**: Returns best bid/ask prices, last trade price, 24h volume, VWAP, high/low prices and trade counts. Pair names can be standard (XBTUSD) or alt (BTCUSD). Multiple pairs comma-separated.
 
 Get current ticker information for trading pairs
-- **get_trades**: Each trade includes price, volume, time (Unix timestamp), side (buy/sell), order type (market/limit) and misc info. Returns up to 1000 most recent trades. Optionally provide since timestamp for pagination.
-
-Get recent trades for a trading pair
 
 
 ## 💬 Prompt Examples
@@ -149,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

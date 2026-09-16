@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your voice and natural language operations 
 
 
 ## Available Tools (8)
-- **summary_generation**: Generate text summary
-- **translate**: Translate text between languages
-- **ocr_general**: General OCR text recognition
-- **text_to_speech**: Convert text to speech audio
-- **keyword_extraction**: Extract keywords from text
 - **entity_recognition**: Named Entity Recognition (NER)
+- **keyword_extraction**: Extract keywords from text
+- **ocr_general**: General OCR text recognition
 - **speech_to_text**: Transcribe audio to text
 - **text_sentiment**: Analyze text sentiment
+- **text_to_speech**: Convert text to speech audio
+- **summary_generation**: Generate text summary
+- **translate**: Translate text between languages
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

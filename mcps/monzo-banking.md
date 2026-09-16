@@ -34,9 +34,9 @@ Equip your AI agent with real-time personal finance intelligence through the **M
 
 
 ## Available Tools (3)
-- **get_monzo_transactions**: Get recent transactions
 - **get_monzo_accounts**: List all Monzo accounts
 - **get_monzo_balance**: Get balance for a Monzo account
+- **get_monzo_transactions**: Get recent transactions
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,8 +35,8 @@ Equip your AI agent with real-time personal finance intelligence through the **N
 
 ## Available Tools (3)
 - **get_n26_accounts**: List all N26 accounts
-- **get_n26_spaces**: Get N26 spaces and sub-account balances
 - **get_n26_transactions**: Get recent N26 transactions
+- **get_n26_spaces**: Get N26 spaces and sub-account balances
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

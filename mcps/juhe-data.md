@@ -37,14 +37,14 @@ Empower your AI agent to access a vast array of essential data services with **J
 ## Available Tools (10)
 - **get_calendar_month**: Get holiday info for a month
 - **get_constellation_horoscope**: Get constellation horoscope
-- **get_driving_test_questions**: Get random driving test questions
 - **get_oil_price**: Get latest oil prices in China
 - **get_exchange_rate**: Get currency exchange rate
-- **get_latest_news**: Get latest news headlines
+- **get_driving_test_questions**: Get random driving test questions
 - **get_calendar_day**: Get calendar and holiday info for a day
 - **get_id_card_info**: Get ID card basic information
 - **get_ip_lookup**: Lookup IP address location
 - **get_weather**: Get weather information for a city
+- **get_latest_news**: Get latest news headlines
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

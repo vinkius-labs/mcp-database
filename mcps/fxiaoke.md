@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your sales operations with **Fxiaoke** (纷
 
 
 ## Available Tools (10)
-- **create_lead**: Create a new Fxiaoke lead
 - **create_opportunity**: Create a new Fxiaoke opportunity
+- **list_accounts**: List Fxiaoke accounts
 - **list_contacts**: List Fxiaoke contacts
 - **list_leads**: List Fxiaoke leads
+- **list_sales_tasks**: List Fxiaoke sales tasks
+- **create_lead**: Create a new Fxiaoke lead
+- **list_users**: List Fxiaoke users
 - **get_approval_details**: Get approval details
 - **list_approvals**: List approval instances
 - **list_opportunities**: List Fxiaoke opportunities
-- **list_sales_tasks**: List Fxiaoke sales tasks
-- **list_users**: List Fxiaoke users
-- **list_accounts**: List Fxiaoke accounts
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
