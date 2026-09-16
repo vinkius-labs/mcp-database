@@ -33,15 +33,15 @@ Empower your conversational AI with deep Business Intelligence access by integra
 
 
 ## Available Tools (7)
-- **list_charts**: Lists all charts (slices) in Superset
-- **get_dashboard_details**: Retrieves details for a specific dashboard
-- **list_dashboards**: Lists all available dashboards in Apache Superset
-- **list_databases**: Lists connected data source connections
-- **list_datasets**: Lists all datasets available for analysis
 - **execute_sql_query**: Provide a database ID and the SQL statement.
 
 Executes a SQL query via SQL Lab
 - **get_chart_details**: Retrieves details for a specific chart
+- **get_dashboard_details**: Retrieves details for a specific dashboard
+- **list_charts**: Lists all charts (slices) in Superset
+- **list_dashboards**: Lists all available dashboards in Apache Superset
+- **list_databases**: Lists connected data source connections
+- **list_datasets**: Lists all datasets available for analysis
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

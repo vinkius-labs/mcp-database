@@ -37,10 +37,10 @@ Integrate the powerful federated data analytics capabilities of **Starburst** di
 
 Lists all data catalogs available in Starburst Galaxy
 - **list_data_products**: Lists all published data products
-- **list_domains**: Lists data product domains
 - **list_queries**: Lists recent SQL queries executed in the cluster
-- **get_query_details**: Retrieves details for a specific SQL query
 - **list_roles**: Lists all security roles in the organization
+- **list_domains**: Lists data product domains
+- **get_query_details**: Retrieves details for a specific SQL query
 
 
 ## 💬 Prompt Examples
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

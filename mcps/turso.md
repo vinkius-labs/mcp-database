@@ -36,18 +36,18 @@ No more context-switching between the terminal and your workspace. Your AI agent
 
 
 ## Available Tools (10)
-- **list_edge_locations**: Lookup physical globalThis Fly.io datacenter mappings (Locations)
-- **list_database_tokens**: List active Database execution JWT Tokens
-- **list_organizations**: Identify Turso Edge SQLite root organizational tenants
 - **create_database**: Provide the organization slug, database name, and target group.
 
 Provision a massively distributed Serverless SQLite database
 - **create_database_token**: Mint a secure connection Token tied strictly to a specific DB
 - **delete_database**: This action is irreversible.
 
-Permanently deletes a globalThis libSQL database
+Permanently deletes a global libSQL database
 - **get_database_details**: Introspect exact architectural traits of one target libSQL instance
 - **list_database_groups**: Get Turso logical groups orchestrating DB locations
+- **list_edge_locations**: Lookup physical global Fly.io datacenter mappings (Locations)
+- **list_database_tokens**: List active Database execution JWT Tokens
+- **list_organizations**: Identify Turso Edge SQLite root organizational tenants
 - **list_databases**: Enumerate the complete libSQL Edge Database registry
 - **rotate_database_tokens**: Revoke all pre-existing Tokens for a database
 
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,11 +33,11 @@ Ingest the heartbeat of your **Squarespace** properties directly into your AI wo
 
 
 ## Available Tools (6)
-- **list_member_profiles**: Lists member or customer profiles
-- **list_products**: Lists all products in the store
 - **get_order_details**: Retrieves details for a specific order
-- **list_inventory**: Lists inventory levels for products
 - **list_transactions**: Lists financial transactions
+- **list_products**: Lists all products in the store
+- **list_member_profiles**: Lists member or customer profiles
+- **list_inventory**: Lists inventory levels for products
 - **list_orders**: Lists Squarespace commerce orders
 
 
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

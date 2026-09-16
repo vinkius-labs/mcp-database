@@ -36,22 +36,22 @@ Your AI agent becomes a robust telephony dispatch center.
 
 
 ## Available Tools (10)
-- **create_web_call**: Returns a web call configuration.
-
-Generate a new web-based voice call link
-- **list_assistants**: List all Voice AI assistants configured in Vapi
-- **list_calls**: List recent and active voice calls managed by Vapi
-- **create_assistant**: Provide configuration for transcriber, model, and voice as a JSON string.
-
-Create a new Voice AI assistant persona
 - **create_phone_call**: Provide the phone number ID and customer details.
 
 Start a new outbound phone call via Vapi
 - **get_call_details**: Retrieves details, transcripts, and metrics for a specific call
-- **list_agent_tools**: List all tools available to Vapi assistants
+- **list_assistants**: List all Voice AI assistants configured in Vapi
 - **list_phone_numbers**: List all phone numbers connected to Vapi
 - **list_squads**: List all multi-agent squads
+- **list_agent_tools**: List all tools available to Vapi assistants
 - **update_assistant**: Update an existing assistant configuration
+- **create_assistant**: Provide configuration for transcriber, model, and voice as a JSON string.
+
+Create a new Voice AI assistant persona
+- **create_web_call**: Returns a web call configuration.
+
+Generate a new web-based voice call link
+- **list_calls**: List recent and active voice calls managed by Vapi
 
 
 ## 💬 Prompt Examples
@@ -142,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

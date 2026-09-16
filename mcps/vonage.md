@@ -38,28 +38,28 @@ No more manual logging into communication dashboards to send a single text. Your
 
 
 ## Available Tools (10)
+- **cancel_verification_request**: Aborts an active verification request
 - **get_account_balance**: Retrieves the current Vonage account credit balance
 - **get_country_pricing**: Provide the ISO 3166-1 alpha-2 country code.
 
 Retrieves outbound SMS pricing for a specific country
-- **send_viber_message**: Provide your specific Viber Publisher ID.
-
-Sends a Viber service message via Vonage
-- **update_number_webhook**: Requires the number in E.164 format.
-
-Updates the inbound SMS callback URL for a virtual number
-- **start_verification**: Provide the target number and your brand name.
-
-Starts a 2FA identity verification by sending an OTP code
-- **cancel_verification_request**: Aborts an active verification request
-- **check_verification_code**: Checks the OTP code submitted by a user for an active verification request
 - **list_rented_numbers**: Lists all virtual phone numbers rented by the account
 - **send_sms**: Provide a sender name (alpha or number) and a target phone number in E.164 format.
 
 Sends an outbound SMS message via Vonage
+- **send_viber_message**: Provide your specific Viber Publisher ID.
+
+Sends a Viber service message via Vonage
 - **send_whatsapp_message**: Requires a verified WhatsApp Business Number as the sender.
 
 Sends a WhatsApp message via the Vonage Messages API
+- **check_verification_code**: Checks the OTP code submitted by a user for an active verification request
+- **start_verification**: Provide the target number and your brand name.
+
+Starts a 2FA identity verification by sending an OTP code
+- **update_number_webhook**: Requires the number in E.164 format.
+
+Updates the inbound SMS callback URL for a virtual number
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
