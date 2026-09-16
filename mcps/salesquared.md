@@ -36,17 +36,17 @@ No more manual texting or switching between telephony tools. Your AI acts as a d
 
 
 ## Available Tools (11)
+- **create_lead**: Create a new lead
+- **get_campaign**: Get details for a specific campaign
 - **get_lead**: Get lead details
 - **list_leads**: List all leads
+- **send_sms**: Send an SMS message
 - **send_voice_otp**: Send a Voice OTP
 - **validate_email**: Validate an email address
 - **create_audio_from_tts**: Create audio from text
 - **list_campaigns**: List campaigns
-- **create_lead**: Create a new lead
 - **conference_mute**: Mute or unmute a participant
 - **create_voice_survey**: Create a voice survey
-- **get_campaign**: Get details for a specific campaign
-- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

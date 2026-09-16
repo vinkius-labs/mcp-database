@@ -28,18 +28,18 @@ Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 
 
 ## Available Tools (12)
-- **get_candidate_details**: Get candidate info
-- **get_job_details**: Get job metadata
-- **list_crm_contacts**: List business contacts
-- **list_job_vacancies**: List open positions
-- **list_candidates**: List applicant profiles
-- **list_client_companies**: List hiring companies
+- **get_company_info**: Get company details
 - **assign_candidate_to_job**: Link candidate to vacancy
 - **create_candidate**: Add new applicant
 - **get_api_status**: Check connection
-- **get_company_info**: Get company details
+- **get_candidate_details**: Get candidate info
 - **get_contact_info**: Get contact metadata
+- **get_job_details**: Get job metadata
+- **list_candidates**: List applicant profiles
+- **list_client_companies**: List hiring companies
+- **list_crm_contacts**: List business contacts
 - **list_applicants_for_job**: List job pipeline
+- **list_job_vacancies**: List open positions
 
 
 ## 💬 Prompt Examples
@@ -118,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

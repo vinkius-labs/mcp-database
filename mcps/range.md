@@ -36,19 +36,29 @@ No more manual check-in reading or missed status updates. Your AI acts as a dedi
 
 
 ## Available Tools (11)
+- **get_objective**: Must provide the objective’s unique ID.
+
+Get details for a specific objective
+- **get_snippet**: Must provide the snippet ID.
+
+Get details of a specific check-in snippet
+- **get_team**: Must provide the team’s unique ID.
+
+Get details for a specific team
+- **get_update**: Must provide the update ID.
+
+Get details of a specific update (check-in)
+- **get_user**: Must provide the user’s unique ID.
+
+Get details for a specific team member
 - **list_objectives**: List team objectives
 - **list_teams**: List all teams
-- **get_user**: Get details for a specific team member
-- **list_goals**: List all team goals
 - **list_updates**: Can be filtered by target_id or for_user_id.
 
 List team check-ins (updates)
-- **list_users**: List all users in the organization
 - **create_update**: Post a new standup update
-- **get_objective**: Get details for a specific objective
-- **get_snippet**: Get details of a specific check-in snippet
-- **get_team**: Get details for a specific team
-- **get_update**: Get details of a specific update (check-in)
+- **list_goals**: List all team goals
+- **list_users**: List all users in the organization
 
 
 ## 💬 Prompt Examples
@@ -133,4 +143,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

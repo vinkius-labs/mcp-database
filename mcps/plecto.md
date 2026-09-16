@@ -28,17 +28,17 @@ Connect your **Plecto** account to any AI agent and simplify your KPI tracking, 
 
 
 ## Available Tools (11)
-- **get_registration**: Get details for a specific data registration
-- **list_account_employees**: List account employees
-- **list_data_sources**: List Plecto data sources
-- **list_formulas**: List all KPI formulas
-- **list_kpi_dashboards**: List Plecto dashboards
-- **list_widgets**: List all widgets on a dashboard
-- **list_data_registrations**: List Plecto registrations
 - **list_organizational_teams**: List teams
 - **get_dashboard**: Get details for a specific dashboard
-- **create_data_registration**: Add a new data entry
 - **get_employee**: Get details for a specific employee
+- **get_registration**: Get details for a specific data registration
+- **list_formulas**: List all KPI formulas
+- **list_widgets**: List all widgets on a dashboard
+- **create_data_registration**: Add a new data entry
+- **list_kpi_dashboards**: List Plecto dashboards
+- **list_data_sources**: List Plecto data sources
+- **list_account_employees**: List account employees
+- **list_data_registrations**: List Plecto registrations
 
 
 ## 💬 Prompt Examples
@@ -117,4 +117,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

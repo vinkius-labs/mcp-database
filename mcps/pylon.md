@@ -36,19 +36,27 @@ No more manual issue tracking or switching between support channels. Your AI act
 
 
 ## Available Tools (11)
-- **list_tags**: List all available issue tags
-- **reply_to_issue**: Send a reply to an issue
-- **update_issue**: Update a support issue
 - **create_issue**: Pass data as a JSON string.
 
 Create a new issue
-- **get_account**: Get details for a specific customer account
+- **get_issue_messages**: Use this tool when you need the full message history.
+
+Retrieve messages for an issue
 - **get_issue**: Get details for a specific support issue
-- **get_issue_messages**: Retrieve messages for an issue
 - **list_accounts**: List all customer accounts
-- **list_articles**: List knowledge base articles
-- **list_issues**: List all Pylon issues
 - **list_knowledge_bases**: List all knowledge bases
+- **list_tags**: List all available issue tags
+- **reply_to_issue**: Ensure the body_json contains all required reply details.
+
+Send a reply to an issue
+- **update_issue**: Update a support issue
+- **get_account**: Provide a valid Account ID.
+
+Get details for a specific customer account
+- **list_articles**: Provide the specific knowledge base ID (kb_id) for the search.
+
+List knowledge base articles
+- **list_issues**: List all Pylon issues
 
 
 ## 💬 Prompt Examples
@@ -130,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
