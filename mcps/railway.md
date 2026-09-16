@@ -33,18 +33,18 @@ Connect your **Railway** cloud infrastructure to an AI agent, streamlining opera
 
 
 ## Available Tools (10)
-- **get_project**: Retrieves details for a specific Railway project
-- **list_deployments**: Lists deployments for a specific project, environment, and service
-- **list_projects**: Lists all Railway projects accessible by the token
-- **list_variables**: Lists environment variables for a service
-- **restart_service**: Restarts a running service instance
-- **trigger_deploy**: Triggers a new deployment for a service
-- **whoami**: Retrieves the authenticated Railway user profile
 - **delete_project**: This action is irreversible.
 
 Deletes a Railway project
 - **create_project**: Creates a new Railway project
+- **get_project**: Retrieves details for a specific Railway project
 - **get_service_instances**: Retrieves runtime configuration for a service
+- **list_projects**: Lists all Railway projects accessible by the token
+- **list_variables**: Lists environment variables for a service
+- **list_deployments**: Lists deployments for a specific project, environment, and service
+- **restart_service**: Restarts a running service instance
+- **trigger_deploy**: Triggers a new deployment for a service
+- **whoami**: Retrieves the authenticated Railway user profile
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

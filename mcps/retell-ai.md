@@ -32,18 +32,18 @@ Connect your conversational assistant directly to **Retell AI**, a powerful plat
 
 
 ## Available Tools (10)
+- **list_agents**: Lists all configured AI voice agents
+- **update_agent**: Updates an existing AI voice agent
+- **create_agent**: Creates a new AI voice agent
+- **create_llm**: Configures a Retell-hosted LLM
 - **create_phone_call**: Provide a JSON payload with "from_number" and "to_number".
 
 Initiates an outbound phone call
-- **list_agents**: Lists all configured AI voice agents
-- **register_web_call**: Registers a new web-based call
-- **list_phone_numbers**: Lists all phone numbers associated with the account
-- **list_calls**: Lists all historical and active calls
-- **create_agent**: Creates a new AI voice agent
-- **create_llm**: Configures a Retell-hosted LLM
 - **get_call_details**: Retrieves details for a specific call
+- **list_calls**: Lists all historical and active calls
+- **list_phone_numbers**: Lists all phone numbers associated with the account
 - **list_voices**: Lists all available text-to-speech voices
-- **update_agent**: Updates an existing AI voice agent
+- **register_web_call**: Registers a new web-based call
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

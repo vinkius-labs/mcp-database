@@ -36,30 +36,21 @@ Essential for **IT security teams**, **AI governance officers**, **platform engi
 
 
 ## Available Tools (27)
-- **delete_agent**: This disconnects the agent from all MCP servers and removes policy assignments. Requires the agent ID. Confirm with the user before proceeding.
-
-Remove an AI agent from Runlayer
-- **get_agent**: Requires the agent ID from list_agents results. Use this to review agent configuration, audit access patterns, or troubleshoot connectivity.
-
-Get detailed information about a specific AI agent
 - **update_skill**: Only pass the fields you want to change. Requires the skill ID. Use this to refine skill definitions or update documentation.
 
 Update an existing skill configuration
 - **create_agent**: Requires agent name and type (claude_desktop, cursor, vs_code, custom). Optionally assign MCP servers, skills, and policies during registration. Returns the created agent details. Use this to onboard new AI agents to your enterprise control plane with proper security guardrails.
 
 Register a new AI agent in Runlayer
-- **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
-
-Create a new API key for your Runlayer organization
-- **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
-
-Register a new MCP server in Runlayer
 - **create_policy**: Requires policy name and rule definitions. Returns the created policy. Use this to enforce security standards, restrict access to sensitive MCP servers, or define audit requirements.
 
 Create a new security or access policy in Runlayer
 - **create_skill**: Requires skill name and description. Optionally define input/output schemas and initial MCP server assignments. Returns the created skill details. Use this to codify reusable agent capabilities for consistent use across your organization.
 
 Register a new skill (agent capability) in Runlayer
+- **delete_agent**: This disconnects the agent from all MCP servers and removes policy assignments. Requires the agent ID. Confirm with the user before proceeding.
+
+Remove an AI agent from Runlayer
 - **delete_mcp_server**: This action disconnects all associated agents and removes policy assignments. Requires the server UUID. Confirm with the user before proceeding.
 
 Remove an MCP server from Runlayer
@@ -69,6 +60,9 @@ Remove a security or access policy from Runlayer
 - **delete_skill**: Does not delete the underlying MCP server tools. Requires the skill ID. Confirm with the user before proceeding.
 
 Remove a skill from Runlayer
+- **get_agent**: Requires the agent ID from list_agents results. Use this to review agent configuration, audit access patterns, or troubleshoot connectivity.
+
+Get detailed information about a specific AI agent
 - **get_audit_logs**: Returns timestamps, actor identities, action types, affected resources, and outcomes. Use this for compliance reporting, security investigations, or operational troubleshooting.
 
 Get audit logs for your Runlayer organization
@@ -117,6 +111,12 @@ Update an existing MCP server configuration
 - **update_policy**: Only pass the fields you want to change. Requires the policy ID. Use this to refine security requirements, update access controls, or modify audit rules.
 
 Update an existing security or access policy
+- **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
+
+Create a new API key for your Runlayer organization
+- **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
+
+Register a new MCP server in Runlayer
 
 
 ## 💬 Prompt Examples
@@ -201,4 +201,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

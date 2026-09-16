@@ -35,23 +35,23 @@ Connect your **Reclaim.ai** intelligent scheduling assistant directly to your AI
 
 ## Available Tools (10)
 - **get_task**: Retrieves details for a specific Reclaim.ai task
-- **list_calendar_events**: Lists all events on the Reclaim.ai planner for a date range
-- **list_habits**: Lists all habits configured in Reclaim.ai
-- **update_task**: Provide a JSON object with the updates.
-
-Updates an existing Reclaim.ai task
-- **get_analytics**: Retrieves time analytics for a specific date range
-- **delete_task**: This action is irreversible.
-
-Deletes a task from Reclaim.ai
+- **list_scheduling_links**: Lists all Reclaim.ai scheduling links
 - **create_task**: Specify title, duration in minutes, due date, and priority (P1 to P4).
 
 Creates a new task to be auto-scheduled by Reclaim.ai
+- **delete_task**: This action is irreversible.
+
+Deletes a task from Reclaim.ai
+- **get_analytics**: Retrieves time analytics for a specific date range
 - **get_current_user**: Retrieves the authenticated user profile
-- **list_scheduling_links**: Lists all Reclaim.ai scheduling links
+- **list_calendar_events**: Lists all events on the Reclaim.ai planner for a date range
+- **list_habits**: Lists all habits configured in Reclaim.ai
 - **list_tasks**: You can filter by status (NEW, SCHEDULED, IN_PROGRESS, COMPLETE).
 
 Lists all tasks managed by Reclaim.ai
+- **update_task**: Provide a JSON object with the updates.
+
+Updates an existing Reclaim.ai task
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

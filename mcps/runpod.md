@@ -32,15 +32,15 @@ Connect your AI directly to **RunPod**, the leading cloud infrastructure provide
 
 
 ## Available Tools (7)
+- **stop_pod**: Stops a running GPU pod
 - **create_pod**: Specify name, GPU type, and Docker image.
 
 Creates a new GPU pod
+- **get_pod**: Retrieves details for a specific GPU pod
 - **list_endpoints**: Lists all serverless endpoints
 - **list_gpu_types**: Lists available GPU hardware types
 - **list_pods**: Lists all GPU pods in the account
 - **list_templates**: Lists saved pod templates
-- **get_pod**: Retrieves details for a specific GPU pod
-- **stop_pod**: Stops a running GPU pod
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

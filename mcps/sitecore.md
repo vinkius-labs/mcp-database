@@ -36,25 +36,25 @@ No more context-switching between your editor and the Sitecore backend. Your AI 
 
 
 ## Available Tools (9)
-- **get_item_layout**: Retrieves the layout or presentation details for an item
-- **get_workflow_state**: Retrieves the current workflow state of an item
-- **list_item_children**: Lists the immediate children of a specific item
-- **delete_content_item**: This action is irreversible.
-
-Permanently deletes a Sitecore item
-- **create_content_item**: Requires parent ID, item name, and template ID.
-
-Creates a new item in the Sitecore content tree
-- **get_item_details**: Retrieves details for a specific Sitecore item
-- **search_content**: Useful for broad discovery across the CMS.
-
-Searches for content items in Sitecore
-- **update_content_item**: Provide a JSON string of field name/value pairs.
-
-Updates the fields of an existing Sitecore item
 - **list_content_templates**: g., "Page", "Article") are available for creating new items.
 
 Lists available content templates
+- **search_content**: Useful for broad discovery across the CMS.
+
+Searches for content items in Sitecore
+- **create_content_item**: Requires parent ID, item name, and template ID.
+
+Creates a new item in the Sitecore content tree
+- **get_item_layout**: Retrieves the layout or presentation details for an item
+- **get_workflow_state**: Retrieves the current workflow state of an item
+- **list_item_children**: Lists the immediate children of a specific item
+- **update_content_item**: Provide a JSON string of field name/value pairs.
+
+Updates the fields of an existing Sitecore item
+- **delete_content_item**: This action is irreversible.
+
+Permanently deletes a Sitecore item
+- **get_item_details**: Retrieves details for a specific Sitecore item
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
