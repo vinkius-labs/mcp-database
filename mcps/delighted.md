@@ -36,31 +36,31 @@ Integrate **Delighted by Qualtrics**, the leading experience management platform
 - **add_person_to_survey**: Adds a new person to the system and schedules a survey invitation to be sent via the default channel.
 
 Add a new person to Delighted to trigger a survey
-- **get_person_feedback_history**: Resolves all previous survey responses, cumulative NPS contribution, and associated person attributes.
-
-Get all feedback and metadata for a specific person
-- **search_responses_by_comment**: Identifies survey responses where the text matches the provided search term.
-
-Search for survey responses containing specific keywords in comments
 - **get_nps_metrics_summary**: Returns real-time Net Promoter Score (NPS) along with a breakdown of promoters, passives, and detractors.
 
 Retrieve overall NPS metrics, including promoter and detractor counts
-- **get_response_details**: Resolves customer details, specific survey channel, and the full text of the feedback comment.
-
-Get full details for a specific survey response
-- **list_survey_responses**: Returns response metadata including score, comment, person identifier, and timestamp.
-
-List all customer survey responses in Delighted
-- **list_top_promoters**: Identifies "promoters" based on an NPS score of 9 or 10.
-
-Identify customers who provided a high NPS score (9-10)
-- **get_recent_customer_comments**: List the most recent survey responses that include a text comment
-- **list_feedback_contacts**: Returns a list of people who have interacted with Delighted, including their email addresses and survey history metadata.
-
-List people who have been sent surveys or provided feedback
 - **list_recent_detractors**: Identifies "detractors" based on an NPS score between 0 and 6.
 
 Identify customers who provided a low NPS score (0-6)
+- **get_person_feedback_history**: Resolves all previous survey responses, cumulative NPS contribution, and associated person attributes.
+
+Get all feedback and metadata for a specific person
+- **get_recent_customer_comments**: List the most recent survey responses that include a text comment
+- **get_response_details**: Resolves customer details, specific survey channel, and the full text of the feedback comment.
+
+Get full details for a specific survey response
+- **list_feedback_contacts**: Returns a list of people who have interacted with Delighted, including their email addresses and survey history metadata.
+
+List people who have been sent surveys or provided feedback
+- **list_top_promoters**: Identifies "promoters" based on an NPS score of 9 or 10.
+
+Identify customers who provided a high NPS score (9-10)
+- **list_survey_responses**: Returns response metadata including score, comment, person identifier, and timestamp.
+
+List all customer survey responses in Delighted
+- **search_responses_by_comment**: Identifies survey responses where the text matches the provided search term.
+
+Search for survey responses containing specific keywords in comments
 
 
 ## 💬 Prompt Examples
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

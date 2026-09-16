@@ -33,16 +33,16 @@ Integrate **Drift**, the leading conversational marketing and sales platform, di
 
 
 ## Available Tools (10)
-- **get_drift_platform_metadata**: Retrieve metadata for the current authenticated Drift account
 - **list_drift_conversations**: List all active and recent customer conversations in Drift
-- **quick_agent_availability_audit**: Retrieve a high-level summary of active agent availability statuses
 - **list_drift_contacts**: List all contacts synchronized or identified in your Drift account
 - **list_drift_playbooks**: List all configured conversational playbooks (bots)
+- **get_contact_profile**: Get full profile data and interaction history for a specific contact
+- **get_drift_platform_metadata**: Retrieve metadata for the current authenticated Drift account
+- **get_conversation_details**: Get detailed information and full transcript for a specific conversation
+- **quick_agent_availability_audit**: Retrieve a high-level summary of active agent availability statuses
 - **list_latest_customer_interactions**: Identify the most recently updated customer conversations
 - **list_drift_agents**: List all registered agents and users in your Drift organization
 - **search_contacts_by_email**: Search for a contact using their email address
-- **get_conversation_details**: Get detailed information and full transcript for a specific conversation
-- **get_contact_profile**: Get full profile data and interaction history for a specific contact
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
