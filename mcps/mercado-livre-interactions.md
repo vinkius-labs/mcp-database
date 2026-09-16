@@ -30,13 +30,13 @@ Connect **Mercado Livre Interactions** to any AI agent and manage your seller re
 
 
 ## Available Tools (5)
-- **get_messages**: Get message history for a sale
 - **get_questions**: Optional item_id to filter.
 
 List unanswered questions from buyers
 - **answer_question**: Reply to a buyer's question
 - **get_metrics**: Get detailed seller metrics
 - **get_reputation**: Get seller reputation level and metrics
+- **get_messages**: Get message history for a sale
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

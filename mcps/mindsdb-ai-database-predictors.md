@@ -41,10 +41,10 @@ Execute arbitrary SQL statements bounding MindsDB elements
 - **list_models**: Use when checking which algorithms are ready to query predictions.
 
 List trained AI tables (models) available in a project
+- **list_databases**: List external databases connected through MindsDB
 - **get_status**: Acts as a ping tracer returning valid core version/health specs.
 
 Get active cluster diagnostic and version statistics
-- **list_databases**: List external databases connected through MindsDB
 - **get_model**: Get an explicitly trained AI prediction engine
 - **list_views**: List virtual data views stored inside a target project
 
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

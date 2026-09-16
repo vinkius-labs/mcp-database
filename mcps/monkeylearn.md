@@ -40,12 +40,12 @@ Connect your **MonkeyLearn** account to any AI agent and run NLP text analysis t
 - **list_extractors**: List text extractors
 - **get_extractor_details**: Get extractor info
 - **list_nlp_workflows**: List account workflows
-- **get_api_status**: Get account status
-- **classify_text**: Classify text data
-- **run_workflow**: Run NLP workflow
-- **extract_text_entities**: Extract entities
 - **list_classifier_tags**: List model tags
+- **classify_text**: Classify text data
+- **extract_text_entities**: Extract entities
+- **get_api_status**: Get account status
 - **list_model_versions**: List model versions
+- **run_workflow**: Run NLP workflow
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
