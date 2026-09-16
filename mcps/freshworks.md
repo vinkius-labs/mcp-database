@@ -37,15 +37,15 @@ Connect your **Freshworks** account to any AI agent and take full control of you
 
 
 ## Available Tools (9)
-- **list_companies**: List all companies
-- **list_helpdesk_contacts**: List helpdesk contacts
-- **list_deals**: List all sales deals
-- **get_ticket**: Get ticket details
-- **list_accounts**: List all sales accounts
-- **list_agents**: List all support agents
-- **list_crm_contacts**: List CRM contacts
 - **list_groups**: List all agent groups
+- **list_agents**: List all support agents
 - **list_tickets**: List all helpdesk tickets
+- **get_ticket**: Get ticket details
+- **list_helpdesk_contacts**: List helpdesk contacts
+- **list_companies**: List all companies
+- **list_crm_contacts**: List CRM contacts
+- **list_deals**: List all sales deals
+- **list_accounts**: List all sales accounts
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

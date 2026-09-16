@@ -36,12 +36,12 @@ No more manual file uploading or complex latency tuning in the portal. Your AI a
 
 
 ## Available Tools (6)
+- **list_available_models**: List high-performance AI models
+- **transcribe_audio_url**: Transcribe an audio file via URL
 - **list_api_keys**: List active API keys
 - **get_project_usage**: Check API usage and limits
-- **list_available_models**: List high-performance AI models
 - **list_deepgram_projects**: List your Deepgram projects
 - **convert_text_to_speech**: Generate audio from text (TTS)
-- **transcribe_audio_url**: Transcribe an audio file via URL
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

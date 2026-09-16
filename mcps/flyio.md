@@ -37,9 +37,9 @@ Connect your **Fly.io** account to any AI agent and take full control of your ed
 
 
 ## Available Tools (10)
-- **create_machine**: Scales horizontal capacities dynamically without waiting on full platform deployments.
+- **delete_machine**: The Firecracker VM is dropped, compute billing ceases immediately, and any ephemeral disk state dissolves. Fails safely if persistent volumes are explicitly attached without the force flag.
 
-Provision a new highly available Edge Machine inside an App
+Terminate and destroy a Fly Machine forever (Scale Down)
 - **exec_machine**: Useful for `ls`, `ps aux`, `top`, or running internal database diagnostic migrations.
 
 Inject and run a shell/Bash command inside an active Fly Machine
@@ -55,18 +55,18 @@ List Fly.io App spaces belonging to an Organization
 - **list_machines**: Retrieves unique identifiers and explicit placement Regions (e.g., iad, ams, nrt).
 
 List individual MicroVM (Machine) endpoints inside a Fly App
+- **list_volumes**: Crucial identifier for managing stateful applications (PostgreSQL, SQLite, persistent cache) safely independent of compute instances.
+
+List persistent hardware NVMe Volumes attached to an App
 - **start_machine**: Utilized extensively when recovering paused batch processors or restarting crashed worker nodes dynamically across edge points of presence.
 
 Boot a previously stopped or suspended Fly Machine
 - **stop_machine**: Drastically reduces latency bills during idle cycles outside typical user ingress bands.
 
 Gracefully halt a running Fly.io internal Machine
-- **delete_machine**: The Firecracker VM is dropped, compute billing ceases immediately, and any ephemeral disk state dissolves. Fails safely if persistent volumes are explicitly attached without the force flag.
+- **create_machine**: Scales horizontal capacities dynamically without waiting on full platform deployments.
 
-Terminate and destroy a Fly Machine forever (Scale Down)
-- **list_volumes**: Crucial identifier for managing stateful applications (PostgreSQL, SQLite, persistent cache) safely independent of compute instances.
-
-List persistent hardware NVMe Volumes attached to an App
+Provision a new highly available Edge Machine inside an App
 
 
 ## 💬 Prompt Examples
@@ -151,4 +151,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

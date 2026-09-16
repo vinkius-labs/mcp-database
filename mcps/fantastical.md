@@ -37,28 +37,28 @@ Connect your **Fantastical** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **delete_event**: Delete a Fantastical event permanently
 - **list_proposals**: Returns proposal titles, suggested times, responses, and finalized slots.
 
 List all Proposals in Fantastical
+- **delete_event**: Delete a Fantastical event permanently
 - **update_event**: Changes sync to the underlying calendar provider.
 
 Update an existing Fantastical event
-- **get_opening**: Get details of a specific Fantastical Opening
-- **list_calendars**: Fantastical unifies calendars from multiple providers into one view.
-
-List all calendars connected to Fantastical
-- **list_openings**: List all Openings (scheduling pages) in Fantastical
-- **create_event**: Fantastical excels at parsing natural language — "Lunch with Bob tomorrow at noon".
-
-Create a new event in Fantastical using natural language parsing
-- **create_reminder**: They sync with Apple Reminders or Todoist depending on your setup.
-
-Create a new reminder in Fantastical
 - **get_event**: Retrieve full details of a Fantastical event by ID
 - **list_events**: Requires start and end dates.
 
 List all calendar events in Fantastical within a date range
+- **create_event**: Fantastical excels at parsing natural language — "Lunch with Bob tomorrow at noon".
+
+Create a new event in Fantastical using natural language parsing
+- **list_calendars**: Fantastical unifies calendars from multiple providers into one view.
+
+List all calendars connected to Fantastical
+- **list_openings**: List all Openings (scheduling pages) in Fantastical
+- **get_opening**: Get details of a specific Fantastical Opening
+- **create_reminder**: They sync with Apple Reminders or Todoist depending on your setup.
+
+Create a new reminder in Fantastical
 
 
 ## 💬 Prompt Examples
@@ -143,4 +143,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

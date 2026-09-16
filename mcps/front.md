@@ -36,20 +36,20 @@ No more manual toggling between different communication channels. Your AI acts a
 
 
 ## Available Tools (12)
+- **update_conversation_status**: Modify conversation
+- **reply_to_conversation**: Send a message
 - **get_conversation_details**: Get conversation info
 - **get_message_content**: Read message details
 - **list_active_channels**: ).
 
 List communication channels
+- **list_conversations**: List team conversations
 - **list_conversation_messages**: Get message history
-- **list_shared_inboxes**: List team inboxes
-- **list_team_contacts**: List your contacts
-- **reply_to_conversation**: Send a message
 - **search_conversations_by_query**: Find conversations
-- **update_conversation_status**: Modify conversation
+- **list_shared_inboxes**: List team inboxes
 - **get_api_status**: Check connection
 - **get_contact_info**: Get contact details
-- **list_conversations**: List team conversations
+- **list_team_contacts**: List your contacts
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

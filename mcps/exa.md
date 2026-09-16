@@ -35,15 +35,6 @@ Connect **Exa (formerly Metaphor)** to any AI agent and simplify how you discove
 
 
 ## Available Tools (10)
-- **find_similar_with_contents**: Find similar pages with content
-- **search**: Returns titles, URLs, and relevance scores for matching pages.
-
-Search the web with AI
-- **answer**: Get an AI answer
-- **find_similar**: Great for competitive analysis and research.
-
-Find similar pages
-- **get_contents**: Extract page contents
 - **search_domain**: Useful for site-specific research or documentation lookups.
 
 Search within a domain
@@ -54,7 +45,16 @@ Neural semantic search
 - **search_recent**: Ideal for news and trending topics.
 
 Search recent content
+- **search**: Returns titles, URLs, and relevance scores for matching pages.
+
+Search the web with AI
 - **search_with_contents**: Search and extract page content
+- **find_similar_with_contents**: Find similar pages with content
+- **answer**: Get an AI answer
+- **find_similar**: Great for competitive analysis and research.
+
+Find similar pages
+- **get_contents**: Extract page contents
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

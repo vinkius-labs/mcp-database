@@ -37,16 +37,16 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 
 
 ## Available Tools (10)
-- **list_managed_files**: Inspect deep internal arrays mitigating specific Picture constraints
-- **patch_cms_node**: Mutate globalThis Web CRM boundaries substituting Draft values safely
-- **get_taxonomy_term**: Perform structural extraction of properties driving active Term mappings
-- **list_content_nodes**: Identify bounded routing spaces inside the Headless Drupal models
 - **list_drupal_users**: Identify precise active arrays spanning rented Admin identities
-- **list_term_vocabularies**: Enumerate explicitly attached structured rules exporting Taxonomies
-- **get_file_metadata**: Retrieve the exact structural matching verifying File storage
-- **get_single_node**: Retrieve explicit Cloud logging tracing explicit Node UUIDs
+- **get_taxonomy_term**: Perform structural extraction of properties driving active Term mappings
 - **wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Document entities
 - **create_cms_node**: Provision a highly-available JSON Payload writing Rows into Drupal entities
+- **get_file_metadata**: Retrieve the exact structural matching verifying File storage
+- **get_single_node**: Retrieve explicit Cloud logging tracing explicit Node UUIDs
+- **list_managed_files**: Inspect deep internal arrays mitigating specific Picture constraints
+- **list_content_nodes**: Identify bounded routing spaces inside the Headless Drupal models
+- **list_term_vocabularies**: Enumerate explicitly attached structured rules exporting Taxonomies
+- **patch_cms_node**: Mutate global Web CRM boundaries substituting Draft values safely
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
