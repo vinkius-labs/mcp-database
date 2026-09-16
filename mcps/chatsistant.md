@@ -34,13 +34,13 @@ Connect your **Chatsistant** account to any AI agent and manage your AI chatbot 
 
 
 ## Available Tools (8)
-- **list_bots**: List Chatsistant bots
-- **add_data_source**: Add a new data source to a bot
-- **get_bot**: Get details for a specific bot
 - **get_conversation**: Get details for a specific conversation
+- **list_bots**: List Chatsistant bots
 - **list_conversations**: Optionally filter by bot ID.
 
 List bot conversations
+- **add_data_source**: Add a new data source to a bot
+- **get_bot**: Get details for a specific bot
 - **list_data_sources**: List bot data sources
 - **list_webhooks**: List configured webhooks
 - **query_bot**: Query a bot knowledge base
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -38,10 +38,10 @@ No more manual toggling between chatbot portals or digging through individual le
 ## Available Tools (6)
 - **get_chatbot_details**: Get details of a specific chatbot
 - **get_conversation_history**: Get full history for a conversation
-- **list_chatbots**: List all chatbots in your BotGenuity account
-- **chat_with_bot**: Send a message to a chatbot and get a response
-- **list_captured_leads**: List leads captured by a chatbot
 - **list_chatbot_conversations**: List conversations for a chatbot
+- **chat_with_bot**: Send a message to a chatbot and get a response
+- **list_chatbots**: List all chatbots in your BotGenuity account
+- **list_captured_leads**: List leads captured by a chatbot
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
