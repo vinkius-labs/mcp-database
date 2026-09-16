@@ -35,8 +35,8 @@ Equip your AI agent with advanced precision agriculture intelligence through the
 
 ## Available Tools (3)
 - **get_crop_health_data**: Get crop health indicators
-- **get_field_analytics**: Get analytics for a specific field
 - **get_agri_fields**: List all registered agricultural fields
+- **get_field_analytics**: Get analytics for a specific field
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

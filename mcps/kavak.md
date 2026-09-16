@@ -36,19 +36,22 @@ Connect to the **Kavak** platform from any AI agent and navigate Mexico's larges
 
 
 ## Available Tools (14)
+- **get_financing_options**: Calculate financing plans for a vehicle
+- **get_vehicle_history**: Check the ownership and accident history of a car
+- **get_vehicle_inspection**: View the 240-point mechanical inspection report
+- **get_market_pricing**: Get market pricing intelligence for a car model
+- **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
+
+Search available used cars in the Kavak inventory
+- **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
+
+Reserve a vehicle for purchase
 - **estimate_trade_in**: The estimate factors in make, model, year, mileage, condition, and current Mexican market prices.
 
 Get a trade-in value estimate for your current car
 - **list_locations**: Each location includes its address, operating hours, available services (test drives, inspections, deliveries), and contact details.
 
 Find Kavak showroom locations
-- **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
-
-Reserve a vehicle for purchase
-- **get_financing_options**: Calculate financing plans for a vehicle
-- **get_vehicle_history**: Check the ownership and accident history of a car
-- **get_vehicle_inspection**: View the 240-point mechanical inspection report
-- **get_market_pricing**: Get market pricing intelligence for a car model
 - **get_reservation**: Check the status of a vehicle reservation
 - **get_vehicle**: Get full details of a specific car
 - **list_makes**: List all available car manufacturers
@@ -57,9 +60,6 @@ Reserve a vehicle for purchase
 - **schedule_test_drive**: Kavak also offers home test drives in select cities where the vehicle is delivered to the buyer's address.
 
 Schedule a test drive for a vehicle
-- **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
-
-Search available used cars in the Kavak inventory
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

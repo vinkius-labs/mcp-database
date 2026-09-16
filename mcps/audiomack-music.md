@@ -36,12 +36,12 @@ This integration uses Audiomack's REST API with secure OAuth 1.0a signing for al
 
 
 ## Available Tools (6)
-- **get_artist_music**: List all songs or albums for a specific artist
-- **search_music**: Search for songs, albums, or artists on Audiomack
-- **get_authenticated_account**: Retrieve information about the authenticated Audiomack account
 - **get_album_details**: Get detailed information for a specific album
 - **get_artist_details**: Get comprehensive information for a specific artist
 - **get_trending_music**: Retrieve the currently trending music on Audiomack
+- **get_artist_music**: List all songs or albums for a specific artist
+- **search_music**: Search for songs, albums, or artists on Audiomack
+- **get_authenticated_account**: Retrieve information about the authenticated Audiomack account
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
