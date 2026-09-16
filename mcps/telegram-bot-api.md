@@ -33,36 +33,36 @@ Transform your local conversational window into a powerful global messaging dire
 
 
 ## Available Tools (14)
-- **get_chat_member_count**: Retrieves the total number of members in a specific chat
 - **delete_chat_message**: Bots can delete their own messages or those of users in groups they manage.
 
 Permanently deletes a message from a chat
-- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
-- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
+- **edit_message_text**: Requires the chat_id and the original message_id.
+
+Edits the text of a previously sent message
 - **forward_message**: The original sender information is preserved.
 
 Forward a message from one chat to another
 - **get_chat_member**: Get information about a specific member in a chat
-- **pin_chat_message**: Bot must have pin_messages permission.
-
-Pin a message in a chat
-- **unpin_chat_message**: Unpin a message from a chat
-- **edit_message_text**: Requires the chat_id and the original message_id.
-
-Edits the text of a previously sent message
-- **list_chat_administrators**: Lists the administrators of a specific group or channel
 - **list_bot_updates**: You can provide an offset_id to skip older records.
 
 Retrieves new messages and updates from users (Long Polling)
-- **send_document_by_url**: Provide a chat_id and the direct download link.
+- **pin_chat_message**: Bot must have pin_messages permission.
 
-Sends a file or document to a chat using a public URL
+Pin a message in a chat
 - **send_text_message**: Requires a valid chat_id.
 
 Sends a text message to a specific chat or user
 - **send_photo_by_url**: Provide a chat_id and an absolute HTTPS URL to the image.
 
 Sends an image to a chat using a public URL
+- **unpin_chat_message**: Unpin a message from a chat
+- **get_chat_member_count**: Retrieves the total number of members in a specific chat
+- **list_chat_administrators**: Lists the administrators of a specific group or channel
+- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
+- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
+- **send_document_by_url**: Provide a chat_id and the direct download link.
+
+Sends a file or document to a chat using a public URL
 
 
 ## 💬 Prompt Examples
@@ -157,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

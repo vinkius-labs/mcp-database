@@ -34,6 +34,8 @@ Connect your **Temporal Cloud** (or self-hosted) cluster to any AI agent and bri
 
 
 ## Available Tools (7)
+- **get_workflow_details**: Retrieves details for a specific workflow execution
+- **list_schedules**: Lists all workflow schedules
 - **list_search_attributes**: Lists custom search attributes available in the namespace
 - **list_workflows**: Returns workflow IDs, run IDs, and statuses.
 
@@ -43,8 +45,6 @@ Lists all workflow executions in the configured namespace
 Search workflows using Temporal Visibility Query syntax
 - **get_workflow_history**: Retrieves the event history for a workflow execution
 - **get_namespace_details**: Retrieves information about the current namespace
-- **get_workflow_details**: Retrieves details for a specific workflow execution
-- **list_schedules**: Lists all workflow schedules
 
 
 ## 💬 Prompt Examples
@@ -140,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

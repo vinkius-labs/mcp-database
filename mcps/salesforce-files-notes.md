@@ -28,15 +28,15 @@ Connect **Salesforce Files & Notes** to any AI agent.
 ## Available Tools (7)
 - **sf_file_details**: Get all versions of a specific file (ContentDocument)
 - **sf_linked_files**: Get files linked to a specific record
-- **sf_search_notes**: Returns title, body preview, creator, and dates.
-
-Search Notes in Salesforce by title
-- **sf_create_note**: Create a new Note attached to a record
 - **sf_get_attachments**: Get attachments on a specific record
 - **sf_recent_files**: List the most recently modified files in Salesforce
 - **sf_search_files**: Returns file type, size, owner, and modification date.
 
 Search files (ContentVersion) in Salesforce by title
+- **sf_create_note**: Create a new Note attached to a record
+- **sf_search_notes**: Returns title, body preview, creator, and dates.
+
+Search Notes in Salesforce by title
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
