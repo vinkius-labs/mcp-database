@@ -35,13 +35,13 @@ Connect your AI agents to **Coze** (扣子), the advanced bot orchestration plat
 
 
 ## Available Tools (11)
+- **list_bots**: List published bots in a specific Coze Space
+- **publish_bot**: Publish a Coze Bot draft
 - **create_chat**: Send a message to a Coze bot and get a response
 - **delete_document**: Delete documents from a dataset by ID
 - **get_conversation_history**: Retrieve the message list from a conversation
-- **list_bots**: List published bots in a specific Coze Space
 - **list_datasets**: List knowledge base datasets in a Coze Space
 - **list_workspaces**: List available Coze workspaces/spaces
-- **publish_bot**: Publish a Coze Bot draft
 - **submit_tool_outputs**: Submit outputs for tools/plugins required by the bot
 - **upload_document**: Upload a raw text document to a Knowledge Base
 - **upload_file_url**: Upload an external file URL to Coze storage
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

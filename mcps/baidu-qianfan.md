@@ -36,13 +36,13 @@ Connect your AI agents to **Baidu Qianfan** (百度千帆), the enterprise-grade
 
 
 ## Available Tools (6)
-- **get_embeddings**: Generate vector embeddings for text
-- **list_models**: List available model services
-- **text_to_image**: Generate an image from a text prompt
-- **list_train_jobs**: List model training jobs
 - **chat_completions**: Requires model endpoint name.
 
 Send a message to a Baidu Qianfan model
+- **get_embeddings**: Generate vector embeddings for text
+- **list_models**: List available model services
+- **list_train_jobs**: List model training jobs
+- **text_to_image**: Generate an image from a text prompt
 - **list_datasets**: List uploaded datasets
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,15 +35,15 @@ Say goodbye to massive dashboard fatigue crossing international barriers; comman
 
 ## Available Tools (10)
 - **follow_streamer**: Automatically follow a streamer using OAuth token
-- **get_gift_list**: Get the list of active virtual gifts available in a room
-- **get_live_rooms**: Get a list of currently live streams in a category
 - **get_room_detail**: Retrieve comprehensive data on a specific room
 - **get_stream_categories**: Retrieve a list of all game and IRL categories
+- **get_gift_list**: Get the list of active virtual gifts available in a room
+- **get_live_rooms**: Get a list of currently live streams in a category
 - **get_top_donators**: Get the weekly/monthly leaderboard of top tippers
-- **get_danmu_config**: Get WebSocket parameters to connect to live chat (Danmu)
 - **get_user_stats**: Lookup an ordinary user profile
-- **search_streamers**: Search for streamers by name or alias
 - **send_message**: Send a message into a streams Danmu chat
+- **get_danmu_config**: Get WebSocket parameters to connect to live chat (Danmu)
+- **search_streamers**: Search for streamers by name or alias
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

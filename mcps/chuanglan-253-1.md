@@ -39,27 +39,18 @@ Your AI agent becomes your SMS operations center, handling verification flows, d
 
 
 ## Available Tools (10)
-- **get_sms_balance**: Use this to monitor available messaging capacity before sending campaigns.
-
-Check SMS account balance on Chuanglan 253
-- **query_template_list**: Templates are pre-approved message formats that can be used for sending. Each template has an ID, name, content, and approval status.
-
-List all SMS templates in your Chuanglan account
-- **send_sms**: The phone number must include the country code (e.g., 86 for China, 55 for Brazil). For Chinese domestic SMS, the message content must start with a signature in brackets like [YourBrand]. Returns submission status and message ID.
-
-Send an SMS message via Chuanglan 253 platform
 - **get_account_info**: ).
 
 Get Chuanglan 253 account information and settings
-- **create_template**: The template must be approved before it can be used. Template content should include variable placeholders like {1}, {2} for dynamic content. Approval typically takes a few minutes to hours.
+- **get_sms_balance**: Use this to monitor available messaging capacity before sending campaigns.
 
-Create a new SMS template in Chuanglan 253
+Check SMS account balance on Chuanglan 253
 - **query_batch_sms_status**: This is useful for checking the status of bulk SMS campaigns where multiple messages were sent with the same tracking identifier.
 
 Query delivery status for a batch of SMS messages
-- **query_sms_status**: Returns whether the message was delivered, is pending, or failed, along with timestamps.
+- **query_template_list**: Templates are pre-approved message formats that can be used for sending. Each template has an ID, name, content, and approval status.
 
-Query delivery status of a specific SMS message
+List all SMS templates in your Chuanglan account
 - **send_international_sms**: The phone number must include the country code without 00 prefix (e.g., 5511999999999 for Brazil). This endpoint uses the international gateway and requires proper permissions.
 
 Send an international SMS message via Chuanglan 253
@@ -69,6 +60,15 @@ Send a verification code SMS (1-click login style)
 - **send_voice_verification**: This is an alternative to SMS verification, useful when SMS delivery fails or for enhanced security. The code will be spoken in the call.
 
 Send a voice verification call with a code
+- **create_template**: The template must be approved before it can be used. Template content should include variable placeholders like {1}, {2} for dynamic content. Approval typically takes a few minutes to hours.
+
+Create a new SMS template in Chuanglan 253
+- **query_sms_status**: Returns whether the message was delivered, is pending, or failed, along with timestamps.
+
+Query delivery status of a specific SMS message
+- **send_sms**: The phone number must include the country code (e.g., 86 for China, 55 for Brazil). For Chinese domestic SMS, the message content must start with a signature in brackets like [YourBrand]. Returns submission status and message ID.
+
+Send an SMS message via Chuanglan 253 platform
 
 
 ## 💬 Prompt Examples
@@ -153,4 +153,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

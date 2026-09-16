@@ -37,9 +37,6 @@ Connect your AI workflows to **FastGPT**, the powerful open-source platform for 
 
 
 ## Available Tools (12)
-- **chat_completions**: Supports chatId for context tracking, streaming, and detailed intermediate steps.
-
-Send a message to a FastGPT application
 - **create_dataset**: Create a new dataset (knowledge base)
 - **get_app_detail**: Get details for a specific AI application
 - **list_apps**: List AI applications
@@ -47,6 +44,9 @@ Send a message to a FastGPT application
 - **push_dataset_data**: Add or update data in a dataset
 - **search_dataset_data**: Perform semantic search on a dataset
 - **update_dataset_data**: Update existing data in a dataset
+- **chat_completions**: Supports chatId for context tracking, streaming, and detailed intermediate steps.
+
+Send a message to a FastGPT application
 - **get_dataset_detail**: Get details for a specific dataset
 - **list_datasets**: Can filter by parentId or search keyword.
 
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
