@@ -14,12 +14,12 @@ This MCP server provides expert tools to evaluate aluminum toxicity in acidic so
 
 
 ## Available Tools (4)
-- **check_crop_vulnerability**: It needs only the cropId and returns that crop's tolerance rating, independent of any soil measurement.
-
-Look up how tolerant a given crop is to aluminum toxicity
 - **calculate_lime_requirement**: The lime dose depends on how far soilPh is from targetPh and the soil's buffering (cec), so supply all four inputs including the cropId.
 
 Calculate how much lime to apply to raise acidic soil to a safe target pH
+- **check_crop_vulnerability**: It needs only the cropId and returns that crop's tolerance rating, independent of any soil measurement.
+
+Look up how tolerant a given crop is to aluminum toxicity
 - **predict_root_impact**: Root inhibition rises with aluminum activity and falls with pH, so supply soilPh, alActivity, and the cropId.
 
 Predict how much aluminum will stunt a crop's root growth in acidic soil
@@ -108,4 +108,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
