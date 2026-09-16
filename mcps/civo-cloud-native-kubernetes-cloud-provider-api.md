@@ -34,38 +34,76 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 
 
 ## Available Tools (33)
-- **create_domain**: Create a DNS domain
-- **attach_volume**: Attach a volume to an instance
+- **attach_volume**: Provide both the volume ID and the instance ID.
+
+Attach a volume to an instance
 - **create_webhook**: Create a webhook
-- **create_domain_record**: Create a DNS record
-- **create_firewall_rule**: Create a firewall rule
-- **create_firewall**: Create a firewall
-- **create_network**: Create a private network
-- **detach_volume**: Detach a volume
+- **create_cluster**: Create a new Kubernetes cluster
+- **start_instance**: Provide the instance ID as the only required parameter.
+
+Start an instance
+- **detach_volume**: Provide the volume ID as the only argument.
+
+Detach a volume
+- **list_ssh_keys**: List SSH keys
+- **reboot_instance**: Provide the instance ID as the only required parameter.
+
+Hard reboot an instance
+- **create_domain_record**: Specify the domain, record type, and associated value.
+
+Create a DNS record
+- **create_domain**: Use this tool to register a new domain name.
+
+Create a DNS domain
+- **create_firewall_rule**: Specify the firewall ID and the required protocol.
+
+Create a firewall rule
+- **create_firewall**: Specify the network ID and the firewall name.
+
+Create a firewall
+- **create_instance**: Create a new compute instance
+- **create_network**: Specify the network label and the desired CIDR block.
+
+Create a private network
+- **create_team**: Provide both the account ID and the desired team name.
+
+Create a team
+- **create_volume**: Specify the volume name and the required size in GB.
+
+Create a volume
+- **get_charges**: Get hourly usage report for chargeable resources
 - **get_quota**: Get account quota and usage
 - **list_clusters**: List Kubernetes clusters
-- **list_disk_images**: List disk images
+- **list_disk_images**: Optionally filter by image type.
+
+List disk images
 - **list_domains**: List DNS domains
+- **list_firewall_rules**: Must provide a valid firewall ID.
+
+List rules for a firewall
+- **list_networks**: Specify the region if networks are not global.
+
+List private networks
 - **list_regions**: List available regions
 - **list_sizes**: List available instance sizes
-- **reboot_instance**: Hard reboot an instance
-- **resize_instance**: Upgrade or resize an instance
-- **retag_instance**: Retag an instance
-- **stop_instance**: Stop an instance
-- **test_webhook**: Test a webhook
-- **update_team_member_status**: Update team member status
-- **create_cluster**: Create a new Kubernetes cluster
-- **create_instance**: Create a new compute instance
-- **create_team**: Create a team
-- **create_volume**: Create a volume
-- **get_charges**: Get hourly usage report for chargeable resources
-- **list_firewall_rules**: List rules for a firewall
-- **list_networks**: List private networks
-- **list_ssh_keys**: List SSH keys
 - **recycle_cluster_node**: Recycle a node in a Kubernetes cluster
-- **soft_reboot_instance**: Soft reboot an instance
-- **start_instance**: Start an instance
-- **upload_ssh_key**: Upload an SSH key
+- **resize_instance**: Specify the instance ID and the desired new size.
+
+Upgrade or resize an instance
+- **retag_instance**: Retag an instance
+- **soft_reboot_instance**: Provide the instance ID as the only required parameter.
+
+Soft reboot an instance
+- **stop_instance**: Provide the instance ID as the only required parameter.
+
+Stop an instance
+- **test_webhook**: Provide the ID of the webhook to be tested.
+
+Test a webhook
+- **update_team_member_status**: Update team member status
+- **upload_ssh_key**: Provide the key name and the public key content.
+
+Upload an SSH key
 - **add_team_member**: Add a member to a team
 
 
@@ -151,4 +189,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

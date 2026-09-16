@@ -33,10 +33,10 @@ Connect to **Blur**, the leading NFT marketplace for pro traders, and manage you
 
 
 ## Available Tools (5)
-- **create_bid**: Create a bid on Blur
 - **get_collection**: Get metadata and stats for a specific collection
 - **get_collection_floor**: Get current floor prices across marketplaces for a collection
 - **create_ask**: Create a listing (ask) on Blur
+- **create_bid**: Create a bid on Blur
 - **get_asset**: Get metadata and current listings for a specific NFT
 
 
@@ -122,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

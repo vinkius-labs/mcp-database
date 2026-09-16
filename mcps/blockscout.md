@@ -35,20 +35,20 @@ Connect any **Blockscout** explorer instance to your AI agent for deep on-chain 
 
 
 ## Available Tools (14)
-- **get_account_transactions**: Get transactions by address (Etherscan API)
-- **get_contract_source_code**: Get contract source code (Etherscan API)
-- **get_logs**: Get event logs (Etherscan API)
+- **get_account_balance**: Get native balance for an address (Etherscan API)
+- **get_block**: Get block details
+- **get_contract_abi**: Get contract ABI (Etherscan API)
 - **get_token**: Get token info
+- **get_account_internal_transactions**: Get internal transactions by address (Etherscan API)
+- **get_account_transactions**: Get transactions by address (Etherscan API)
+- **get_address**: Retrieve address details
+- **get_contract_source_code**: Get contract source code (Etherscan API)
+- **get_indexing_status**: Get indexing status
+- **get_logs**: Get event logs (Etherscan API)
 - **get_total_supply**: Get total supply of native coin (Etherscan API)
 - **get_transaction**: Get transaction details
-- **list_token_balances**: List token balances for an address
-- **get_account_internal_transactions**: Get internal transactions by address (Etherscan API)
-- **get_address**: Retrieve address details
-- **get_block**: Get block details
 - **json_rpc**: Execute a standard Ethereum JSON-RPC 2.0 method
-- **get_contract_abi**: Get contract ABI (Etherscan API)
-- **get_indexing_status**: Get indexing status
-- **get_account_balance**: Get native balance for an address (Etherscan API)
+- **list_token_balances**: List token balances for an address
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
