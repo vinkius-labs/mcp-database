@@ -15,8 +15,8 @@ The Vedic Nakshatra Calculator provides precise astronomical computations to ide
 
 ## Available Tools (3)
 - **calculate_lunar_position**: Provides the raw astronomical longitude used for astrological computations
-- **get_nakshatra_details**: Identifies the specific Nakshatra and all its associated attributes for a given moment in time
 - **list_all_constellations**: Provides a complete inventory of all 27 Nakshatras and their primary identifiers
+- **get_nakshatra_details**: Identifies the specific Nakshatra and all its associated attributes for a given moment in time
 
 
 ## 💬 Prompt Examples

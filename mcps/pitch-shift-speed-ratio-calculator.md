@@ -17,12 +17,12 @@ The Pitch Shift Speed Ratio Calculator is a specialized utility for audio produc
 - **get_speed_rate**: Use when you know how many semitones to shift.
 
 Determines the necessary playback speed multiplier for a target pitch change
-- **transform_bpm**: Use when you have original BPM and a ratio.
-
-Calculates the new tempo (BPM) for a musical loop after speed adjustment
 - **reverse_semitone_lookup**: Use when you know the desired ratio.
 
 Determines the number of semitones needed to reach a specific target speed ratio
+- **transform_bpm**: Use when you have original BPM and a ratio.
+
+Calculates the new tempo (BPM) for a musical loop after speed adjustment
 - **transform_duration**: Use when you have original length and a ratio.
 
 Calculates the new duration of an audio clip after speed adjustment

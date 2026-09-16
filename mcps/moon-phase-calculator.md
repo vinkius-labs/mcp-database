@@ -14,9 +14,15 @@ This MCP server provides deterministic lunar phase calculations. Use `get_lunar_
 
 
 ## Available Tools (3)
-- **get_lunar_phase**: Calculates the current lunar state for a specific date
-- **get_phase_sequence**: Provides the ordered list of possible moon phase names
-- **get_illumination_thresholds**: Identifies the logical boundaries used to categorize a moon's phase based on its illumination
+- **get_illumination_thresholds**: Call this function to get the current thresholds.
+
+Identifies the logical boundaries used to categorize a moon's phase based on its illumination
+- **get_lunar_phase**: Must provide a valid targetDate in YYYY-MM-DD format.
+
+Calculates the current lunar state for a specific date
+- **get_phase_sequence**: Do not use this tool to calculate a specific date’s phase.
+
+Provides the ordered list of possible moon phase names
 
 
 ## 💬 Prompt Examples

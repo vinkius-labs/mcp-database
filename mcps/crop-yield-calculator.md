@@ -14,8 +14,8 @@ The Crop Yield Calculator MCP server provides a specialized engine for agricultu
 
 
 ## Available Tools (3)
-- **calculate_yield_metrics**: Calculates crop productivity metrics
 - **compare_with_benchmark**: Compares calculated yield with regional averages
+- **calculate_yield_metrics**: Calculates crop productivity metrics
 - **get_crop_standard_weight**: Retrieves the standard bag weight for a crop
 
 
