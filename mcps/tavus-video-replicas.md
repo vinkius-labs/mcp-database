@@ -34,13 +34,13 @@ Connect your AI agent to **Tavus**, the leading platform for automated personali
 
 
 ## Available Tools (7)
-- **get_replica_details**: Get comprehensive details for a specific replica
-- **delete_replica**: Permanently delete a specific replica
 - **delete_video**: Permanently delete a specific generated video
 - **generate_replica_video**: Generate a new AI video using a specific replica
+- **get_replica_details**: Get comprehensive details for a specific replica
 - **get_video_details**: Get detailed information for a specific generated video
 - **list_replicas**: Retrieve a list of all your AI video replicas
 - **list_generated_videos**: Retrieve a list of all generated videos
+- **delete_replica**: Permanently delete a specific replica
 
 
 ## 💬 Prompt Examples
@@ -114,4 +114,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

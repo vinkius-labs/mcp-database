@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your customer relationship within the WeCom
 
 
 ## Available Tools (10)
+- **get_group_chat**: Get group chat details
 - **get_org_summary**: Get organization activity summary
-- **list_staff**: List organization staff
-- **list_group_chats**: List WeCom group chats
-- **get_customer_details**: Get customer details
+- **get_staff_stats**: Get staff behavior statistics
 - **list_chat_records**: List chat histories
 - **list_customers**: List WeCom customers
-- **create_lead**: Create a new lead
-- **get_group_chat**: Get group chat details
-- **get_staff_stats**: Get staff behavior statistics
 - **list_leads**: List sales leads
+- **list_group_chats**: List WeCom group chats
+- **create_lead**: Create a new lead
+- **list_staff**: List organization staff
+- **get_customer_details**: Get customer details
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
