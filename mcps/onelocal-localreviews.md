@@ -36,16 +36,16 @@ No more manual following up for reviews or missing critical negative feedback. Y
 
 
 ## Available Tools (10)
+- **check_onelocal_status**: Verify OneLocal API connectivity
+- **get_campaign**: Get campaign details
 - **get_location**: Get location details
 - **get_reputation**: Get reputation overview
 - **get_review**: Get review details
 - **list_campaigns**: List all campaigns
-- **list_locations**: List all locations
-- **list_reviews**: List all reviews
-- **check_onelocal_status**: Verify OneLocal API connectivity
-- **get_campaign**: Get campaign details
 - **list_referrals**: List all referrals
 - **request_review**: Request a review
+- **list_locations**: List all locations
+- **list_reviews**: List all reviews
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -40,14 +40,14 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 - **list_users**: List users
 - **get_user**: Get user details
 - **list_bookings**: List bookings
-- **list_meeting_types**: List meeting types
 - **get_me**: Get my profile
-- **cancel_booking**: Cancel a booking
 - **create_booking**: Create a booking
 - **get_availability**: Get user availability
 - **get_booking**: Get booking details
 - **get_meeting_type**: Get meeting type
 - **list_availability**: List availability
+- **list_meeting_types**: List meeting types
+- **cancel_booking**: Cancel a booking
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

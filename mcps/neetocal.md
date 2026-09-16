@@ -36,18 +36,18 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 
 
 ## Available Tools (12)
-- **get_booking**: Get booking details
-- **get_slots**: Get available slots
-- **list_availabilities**: List availabilities
-- **list_calendars**: List calendars
-- **reschedule_booking**: Reschedule a booking
-- **cancel_booking**: Cancel a booking
 - **check_neetocal_status**: Verify connectivity
+- **get_slots**: Get available slots
+- **cancel_booking**: Cancel a booking
 - **create_booking**: Create a booking
 - **get_availability**: Get availability
+- **get_booking**: Get booking details
+- **list_availabilities**: List availabilities
+- **list_calendars**: List calendars
+- **list_scheduling_links**: List scheduling links
+- **reschedule_booking**: Reschedule a booking
 - **get_scheduling_link**: Get scheduling link
 - **list_bookings**: List bookings
-- **list_scheduling_links**: List scheduling links
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
