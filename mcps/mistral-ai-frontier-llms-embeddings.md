@@ -36,10 +36,10 @@ Connect your **Mistral AI** account to any AI agent and take full control of sta
 
 
 ## Available Tools (7)
-- **get_model**: Get static specifics for a specified Mistral AI model ID
 - **chat_completion**: Perform Mistral AI conversational chat completion inference
 - **generate_embeddings**: Calculate numerical text embeddings using models explicitly
 - **list_models**: List valid Mistral AI models locally enabled/available
+- **get_model**: Get static specifics for a specified Mistral AI model ID
 - **fim_completion**: g. codestral) completing logic missing between a prompt prefix and a suffix.
 
 Generate Fill-in-the-Middle (FIM) logical code completion
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

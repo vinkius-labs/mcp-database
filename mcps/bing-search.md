@@ -37,6 +37,9 @@ Connect your **Bing Search API** account to any AI agent and integrate comprehen
 ## Available Tools (8)
 - **get_trending_news**: Retrieve currently trending news topics
 - **get_trending_images**: Retrieve currently trending images
+- **search_web**: Provide the search query; optionally specify the desired number of results.
+
+Search the web using Bing
 - **search_images**: Provide the search query; optionally specify the desired number of results.
 
 Search for images using Bing
@@ -52,9 +55,6 @@ Get search autocomplete suggestions
 - **search_videos**: Provide the search query.
 
 Search for videos using Bing
-- **search_web**: Provide the search query; optionally specify the desired number of results.
-
-Search the web using Bing
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

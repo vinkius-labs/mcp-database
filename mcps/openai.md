@@ -25,9 +25,6 @@ Connect the **OpenAI** API to any AI agent and unlock the full power of GPT mode
 
 
 ## Available Tools (10)
-- **generate_image**: Returns the image URL.
-
-Generate an image with DALL-E 3
 - **chat_completion**: Specify model (gpt-4o, gpt-4o-mini, etc.) and messages array as JSON.
 
 Generate a chat completion using OpenAI models
@@ -43,6 +40,9 @@ Create a fine-tuning job
 - **list_fine_tunes**: List fine-tuning jobs
 - **moderate_content**: Check content for policy violations
 - **list_assistants**: List OpenAI Assistants
+- **generate_image**: Returns the image URL.
+
+Generate an image with DALL-E 3
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

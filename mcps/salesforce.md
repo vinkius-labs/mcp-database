@@ -24,34 +24,34 @@ Connect your **Salesforce** CRM to any AI agent and manage your entire sales pip
 
 
 ## Available Tools (12)
-- **list_opportunities**: List sales opportunities
-- **list_reports**: List available Salesforce reports
-- **run_report**: Use list_reports first to find the report ID.
-
-Execute a Salesforce report and get results
 - **update_record**: Provide the SObject type, ID, and JSON fields to update.
 
 Update an existing Salesforce record
 - **delete_record**: This action is irreversible.
 
 Delete a Salesforce record
-- **create_record**: Provide JSON fields as a string.
-
-Create a new Salesforce record
-- **get_record**: Specify the SObject type (Account, Contact, Opportunity, Case, Lead) and the record ID.
-
-Get a specific Salesforce record by type and ID
-- **list_accounts**: List Salesforce accounts
-- **list_contacts**: List Salesforce contacts
 - **describe_object**: Useful for understanding data structure.
 
 Get metadata about a Salesforce object
-- **soql_query**: Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10
+- **list_contacts**: List Salesforce contacts
+- **create_record**: Provide JSON fields as a string.
 
-Execute a SOQL query against Salesforce
+Create a new Salesforce record
 - **global_search**: Returns matches across Accounts, Contacts, Leads, and other objects simultaneously.
 
 Search across all Salesforce objects
+- **soql_query**: Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10
+
+Execute a SOQL query against Salesforce
+- **list_reports**: List available Salesforce reports
+- **run_report**: Use list_reports first to find the report ID.
+
+Execute a Salesforce report and get results
+- **list_accounts**: List Salesforce accounts
+- **list_opportunities**: List sales opportunities
+- **get_record**: Specify the SObject type (Account, Contact, Opportunity, Case, Lead) and the record ID.
+
+Get a specific Salesforce record by type and ID
 
 
 ## 💬 Prompt Examples
@@ -159,4 +159,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

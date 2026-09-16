@@ -7,73 +7,44 @@
 
 **Category:** [talk-to-me](../categories/talk-to-me.md)
 
-Automate Slack messaging — send messages, search conversations, list channels and users directly from any AI agent.
+Manage channels, users, and send messages on Slack with AI agents.
 
 ## Description
-Transform your team communication into an AI-powered workflow with **Slack**, the world's leading workplace messaging platform. Your agent becomes a direct participant in your Slack workspace — sending messages, searching across channels, and reacting to conversations without you ever switching tabs.
+Connect your **Slack** workspace to any AI agent to automate your team communication and collaboration. Slack provides a premier platform for business messaging, and this integration allows you to retrieve channel info, send messages, and search through conversational history through natural conversation.
 
 ### What you can do
 
-- **Send Messages** — Post messages to any channel or DM, including threaded replies, using Slack's rich mrkdwn formatting.
-- **Search Conversations** — Find messages across your entire workspace by keyword, sender, or channel using powerful search modifiers.
-- **Browse Channels** — List all available channels with their topics, purposes, and member counts to understand your workspace structure.
-- **Read Channel History** — Retrieve recent messages from any channel to catch up on conversations or audit activity.
-- **Manage Users** — List workspace members with their roles, emails, statuses, and timezones.
-- **React to Messages** — Add emoji reactions to specific messages for quick acknowledgments.
+- **Communication Orchestration** — Post instant messages to channels or direct conversations and manage team threads programmatically.
+- **Channel & User Management** — List all available channels and retrieve detailed member profile metadata directly from the AI interface.
+- **Search & Discovery Intelligence** — Search through messages and retrieve channel histories to stay informed on team discussions via natural language.
+- **Presence & Status Tracking** — Access user presence metadata and monitor team availability to ensure optimal collaboration.
+- **Operational Monitoring** — Test authentication and monitor workspace health to ensure reliable connectivity between Slack and your AI workflows.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Slack Bot Token (from api.slack.com/apps → OAuth & Permissions)
-3. Start managing your Slack workspace from Claude, Cursor, or any MCP-compatible client
+2. Enter your Slack Bot User OAuth Token (xoxb-...) from your app settings
+3. Start managing your team communications from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Team Leads** — broadcast updates, search for past decisions, and monitor channel activity without leaving your AI workflow.
-- **Developers** — get notified, post deployment updates, and search for error reports across your engineering channels.
-- **Operations Managers** — audit communication patterns, find specific discussions, and coordinate across multiple channels effortlessly.
+- **Project Managers** — quickly post updates and retrieve team discussion points without switching between channels.
+- **Support Teams** — automate the retrieval of user details and monitor support channels via natural conversation.
+- **Operations Managers** — streamline the delivery of notifications and coordinate team communications directly within the chat.
 
 
-## Available Tools (13)
-- **reactions_add**: Requires the channel ID and the exact message timestamp (ts). Use channels_history to find message timestamps.
-
-Add a reaction emoji to a Slack message
-- **channel_info**: Requires the channel ID (use channels_list to discover IDs).
-
-Get detailed information about a specific Slack channel
-- **channels_list**: Returns public and private channels the bot has access to. Channel IDs are needed for sending messages or reading history.
-
-List Slack channels in the workspace
-- **user_info**: Returns full profile: real name, display name, email, timezone, admin status, and custom status. Requires a user ID (starts with U).
-
-Get detailed profile information for a specific Slack user
-- **channels_history**: Requires the channel ID (use channels_list to find it). Returns messages in reverse chronological order.
-
-Get recent messages from a Slack channel
-- **message_delete**: This action is irreversible. The bot can only delete messages it has sent, or any message in channels where it has admin permissions.
-
-Delete a Slack message permanently
-- **messages_search**: Searches message content, usernames, and channels. Results are sorted by most recent first.
-
-Search for messages across the Slack workspace
-- **messages_send**: Requires the channel ID. Use channels_list to find available channels. Optionally specify thread_ts to reply in a thread.
-
-Send a message to a Slack channel or DM
-- **message_update**: Requires the channel ID and exact message timestamp. The bot can only edit messages it has sent.
-
-Edit an existing Slack message
-- **pin_message**: Pinned messages appear in the channel details panel for easy reference. Requires the channel ID and message timestamp.
-
-Pin an important message to a channel
-- **set_channel_topic**: The topic appears at the top of the channel for all members to see. Requires the channel ID and new topic text.
-
-Set or update the topic of a Slack channel
-- **thread_replies**: Requires the channel ID and the parent message timestamp (thread_ts). Returns all replies in the thread sorted chronologically.
-
-Get replies from a message thread
-- **users_list**: Returns user IDs, names, emails, and status. User IDs are needed for sending DMs or identifying message authors.
-
-List users in the Slack workspace
+## Available Tools (11)
+- **list_pins**: List all pinned messages in a channel
+- **list_reactions**: Get reactions on a specific message
+- **get_channel_details**: Get metadata for a channel
+- **get_user_presence**: Check if a user is online
+- **get_user_profile**: Get details for a user
+- **list_channels**: List public channels
+- **list_users**: List workspace members
+- **send_message**: Send a message to a channel
+- **search_messages**: Search for messages
+- **check_connection**: Verify API access
+- **get_channel_history**: List recent messages
 
 
 ## 💬 Prompt Examples
@@ -81,41 +52,32 @@ List users in the Slack workspace
 Here are some examples of how you can interact with the **Slack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all channels in my Slack workspace."
+> "Post an update to the #general channel: 'The new feature is live!'."
 
 **🤖 AI Agent:**
-> I found 12 channels in your workspace. The most active ones are #general (45 members), #engineering (28 members), and #product (19 members). Would you like to read recent messages from any of them?
+> Message posted successfully! I've sent the update to the #general channel in your Slack workspace.
 
 ---
 
 **👤 You:**
-> "Post a message in #engineering: 'Deploy v2.4.1 is live on production 🚀'"
+> "Show me the activity summary for all channels with message volumes and active participants this week."
 
 **🤖 AI Agent:**
-> Message posted successfully to #engineering: 'Deploy v2.4.1 is live on production 🚀'. Would you like me to also react with a ✅ emoji?
+> Activity across 24 channels this week. Most active: #engineering (456 messages, 18 participants), #general (345, 42 participants), #product (234, 12 participants), #support (189, 8 participants), #sales (156, 14 participants). Quietest: #announcements (3 messages), #random (23). Total messages: 2,340. Active users: 67 of 85 (78.8%). Peak hours: 10-11 AM and 2-3 PM. Threads: 234 created, avg 4.2 replies. Reactions: 1,890 total, most used: 👍 (456), 🎉 (234), ❤️ (189). Files shared: 89.
 
 ---
 
 **👤 You:**
-> "Search for messages about 'API outage' from last week."
+> "Post a message to the #engineering channel announcing the deployment freeze for next week."
 
 **🤖 AI Agent:**
-> I found 8 messages mentioning 'API outage'. The first report came from @alex in #incidents at 2:34 PM on Monday. The root cause was identified as a database connection pool exhaustion. Would you like to see the full thread?
+> Message posted to #engineering. Content: "🚨 *Deployment Freeze Notice* 🚨\n\nTeam, we have a deployment freeze from Monday May 19 through Friday May 23 for the quarterly release preparation. All PRs must be merged by Friday EOD. Emergency hotfixes only during the freeze window. Please coordinate with @release-team for any exceptions.\n\n📋 Freeze checklist: https://wiki.internal/release-prep\n🗓 Release date: May 26". Message ID: msg_1716234567. Reactions received within 5 minutes: 12 (👍 8, 👀 4). Thread reply from @sarah: "Got it, finishing my PR today."
 
 
 ## ❓ FAQ
 
-**Q: How do I get started with Slack MCP?**
-Subscribe, then create a Slack App at **api.slack.com/apps → Create New App**. Go to **OAuth & Permissions**, add the required bot scopes (channels:read, chat:write, search:read, users:read), install the app to your workspace, and paste the **Bot User OAuth Token** (starts with xoxb-) here. No code, no webhooks — just connect and go.
-
-**Q: Can my AI agent send messages and reply in threads?**
-Yes. Your agent can post to any channel the bot has been invited to — including threaded replies. Just say 'post in #engineering that the deploy is complete' or 'reply in the thread about the bug fix'. It supports Slack's full mrkdwn formatting including bold, links, code blocks, and mentions.
-
-**Q: How can I find a specific conversation from last week?**
-Tell your agent to search for it — 'find messages about the Q3 budget review' or 'search for messages from @sarah about the client proposal'. The agent uses Slack's search API with support for modifiers like from:user, in:channel, and date ranges. No more scrolling through channels — your agent retrieves the exact messages you need.
-
-**Q: Can I manage multiple channels and monitor team activity?**
-Absolutely. List all channels to get an overview of your workspace structure, read history from specific channels to audit conversations, and check team member profiles, statuses, and timezones. Perfect for distributed teams, engineering organizations, and operations managers who need a bird's-eye view of communication across dozens of channels.
+**Q: How do I find my Slack Bot User OAuth Token?**
+Log in to [**Slack API**](https://api.slack.com/apps), select your app, and navigate to **OAuth & Permissions**. You will find the token starting with `xoxb-` under the **OAuth Tokens for Your Workspace** section.
 
 
 ## Installation & Usage
@@ -161,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

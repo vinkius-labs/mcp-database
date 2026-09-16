@@ -46,12 +46,24 @@ All requests are signed with OAuth 1.0a at runtime. Your credentials are encrypt
 
 
 ## Available Tools (13)
-- **list_ad_accounts**: Returns account IDs, names, statuses, and approval states. The account ID returned here is required by all other tools.
-
-List all X (Twitter) Ads accounts accessible by the authenticated user
 - **get_ad_account**: Use this to verify an account is active before querying campaigns.
 
 Get detailed metadata for a specific X Ads account
+- **list_ad_accounts**: Returns account IDs, names, statuses, and approval states. The account ID returned here is required by all other tools.
+
+List all X (Twitter) Ads accounts accessible by the authenticated user
+- **list_funding_instruments**: Useful for verifying billing is set up before launching campaigns.
+
+List payment methods and billing sources attached to an X Ads account
+- **list_line_items**: Line items define the targeting and bidding strategy within a campaign.
+
+List all line items across campaigns in an X Ads account
+- **list_tailored_audiences**: Useful for understanding retargeting strategy.
+
+List custom audiences (tailored audiences) for retargeting and CRM matching
+- **list_targeting_criteria**: Requires both the account ID and line item ID.
+
+List all targeting criteria applied to a specific line item
 - **list_ads**: Each ad references the line item it belongs to and the creative (tweet) it promotes.
 
 List all individual ads within an X Ads account
@@ -67,24 +79,12 @@ Get full details for a specific line item by its ID
 - **list_campaigns**: Each campaign includes its name, status, funding instrument, daily budget, and total budget. Use list_ad_accounts first to get the account ID.
 
 List all campaigns within an X Ads account
-- **list_funding_instruments**: Useful for verifying billing is set up before launching campaigns.
-
-List payment methods and billing sources attached to an X Ads account
-- **list_line_items**: Line items define the targeting and bidding strategy within a campaign.
-
-List all line items across campaigns in an X Ads account
 - **list_media_creatives**: Use this to audit which creative assets are currently active.
 
 List all media creative assets (images and videos) used in an X Ads account
 - **list_promoted_tweets**: Use this to verify which tweets are actively being promoted.
 
 List all promoted tweets currently running or paused in an X Ads account
-- **list_tailored_audiences**: Useful for understanding retargeting strategy.
-
-List custom audiences (tailored audiences) for retargeting and CRM matching
-- **list_targeting_criteria**: Requires both the account ID and line item ID.
-
-List all targeting criteria applied to a specific line item
 
 
 ## 💬 Prompt Examples
@@ -189,4 +189,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

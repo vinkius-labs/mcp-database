@@ -33,37 +33,6 @@ Connect your **Gmail** enterprise or personal account to any AI agent and bring 
 
 
 ## Available Tools (30)
-- **create_label**: Labels act as tags — one message can have multiple labels. Use list_mailbox_labels to see existing labels before creating duplicates.
-
-Create a custom label
-- **get_label_details**: Get details about a specific label
-- **get_thread_details**: Returns the complete email chain with headers, bodies, and metadata for each message.
-
-Read all messages in a thread
-- **list_mailbox_labels**: System labels include INBOX, SENT, TRASH, SPAM, STARRED, UNREAD, IMPORTANT, etc. Use label IDs when modifying message labels.
-
-List all labels in the mailbox
-- **modify_message_labels**: Use label IDs (e.g. "UNREAD", "STARRED", "INBOX", or custom label IDs from list_mailbox_labels). Removing "UNREAD" marks as read.
-
-Add or remove labels from a message
-- **trash_gmail_message**: Messages in trash are auto-deleted after 30 days. Use untrash_gmail_message to recover.
-
-Move a message to the trash
-- **delete_label**: System labels (INBOX, SENT, etc.) cannot be deleted. This is not reversible.
-
-Delete a label permanently
-- **get_draft**: Use this to review a draft before sending.
-
-Read a specific draft
-- **list_drafts**: Returns draft IDs and attached message snippets. Use get_draft for full content or send_draft to dispatch.
-
-List email drafts
-- **get_attachment**: Returns base64-encoded data and size. First use get_message_content to find attachment IDs in the message payload parts.
-
-Download an email attachment
-- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
-
-List inbox filter rules
 - **verify_api_connection**: Check Gmail API connectivity
 - **get_vacation_settings**: Check vacation auto-responder status
 - **delete_draft**: This is not reversible.
@@ -72,49 +41,80 @@ Delete a draft permanently
 - **batch_delete_messages**: This is NOT reversible — messages cannot be recovered. Use trash instead for safe deletion.
 
 Permanently delete multiple messages
-- **batch_modify_messages**: Useful for bulk operations like "mark all as read" (remove UNREAD) or "archive all" (remove INBOX). Provide message IDs as a JSON array string.
-
-Bulk-modify labels on multiple messages
-- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
-
-Create an email draft
-- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
-
-Create an inbox filter rule
-- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
-
-Search emails by sender address
-- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
-
-Get mailbox identity and stats
 - **get_message_content**: Use after list_gmail_messages to read specific emails.
 
 Read the full content of an email
-- **list_gmail_messages**: Use the "q" parameter for Gmail search syntax (e.g. "from:boss@company.com is:unread", "has:attachment", "newer_than:2d"). Returns message IDs and thread IDs — use get_message_content to read full details.
+- **delete_label**: System labels (INBOX, SENT, etc.) cannot be deleted. This is not reversible.
 
-List messages from the inbox
-- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
+Delete a label permanently
+- **create_label**: Labels act as tags — one message can have multiple labels. Use list_mailbox_labels to see existing labels before creating duplicates.
 
-List conversation threads
-- **list_mailbox_history**: Get the starting history ID from get_gmail_profile. Useful for incremental sync and change detection.
+Create a custom label
+- **list_drafts**: Returns draft IDs and attached message snippets. Use get_draft for full content or send_draft to dispatch.
 
-Track mailbox changes since a point in time
+List email drafts
+- **get_draft**: Use this to review a draft before sending.
+
+Read a specific draft
 - **list_unread_emails**: Equivalent to searching with "is:unread".
 
 List the latest unread messages
-- **send_draft**: The draft is removed after sending.
+- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
 
-Send an existing draft
+Create an email draft
+- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
+
+Search emails by sender address
+- **list_gmail_messages**: Use the "q" parameter for Gmail search syntax (e.g. "from:boss@company.com is:unread", "has:attachment", "newer_than:2d"). Returns message IDs and thread IDs — use get_message_content to read full details.
+
+List messages from the inbox
 - **send_email**: Supports plain text and HTML body, CC, BCC, and reply threading via inReplyTo/references headers. The email is sent immediately.
 
 Compose and send an email
+- **modify_message_labels**: Use label IDs (e.g. "UNREAD", "STARRED", "INBOX", or custom label IDs from list_mailbox_labels). Removing "UNREAD" marks as read.
+
+Add or remove labels from a message
+- **trash_gmail_message**: Messages in trash are auto-deleted after 30 days. Use untrash_gmail_message to recover.
+
+Move a message to the trash
 - **untrash_gmail_message**: Recover a message from the trash
+- **batch_modify_messages**: Useful for bulk operations like "mark all as read" (remove UNREAD) or "archive all" (remove INBOX). Provide message IDs as a JSON array string.
+
+Bulk-modify labels on multiple messages
+- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
+
+List conversation threads
+- **get_thread_details**: Returns the complete email chain with headers, bodies, and metadata for each message.
+
+Read all messages in a thread
+- **list_mailbox_labels**: System labels include INBOX, SENT, TRASH, SPAM, STARRED, UNREAD, IMPORTANT, etc. Use label IDs when modifying message labels.
+
+List all labels in the mailbox
+- **get_label_details**: Get details about a specific label
 - **update_draft**: The draft ID is required — get it from list_drafts.
 
 Edit an existing draft
+- **send_draft**: The draft is removed after sending.
+
+Send an existing draft
+- **get_attachment**: Returns base64-encoded data and size. First use get_message_content to find attachment IDs in the message payload parts.
+
+Download an email attachment
 - **update_vacation_settings**: Optionally restrict to contacts only or domain members. Dates are Unix timestamps in milliseconds.
 
 Toggle vacation auto-responder
+- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
+
+List inbox filter rules
+- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
+
+Create an inbox filter rule
+- **list_mailbox_history**: Get the starting history ID from get_gmail_profile. Useful for incremental sync and change detection.
+
+Track mailbox changes since a point in time
+- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
+
+Get mailbox identity and stats
 
 
 ## 💬 Prompt Examples
@@ -199,4 +199,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
