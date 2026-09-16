@@ -31,17 +31,19 @@ Connect your LLMs directly to **Netease Yunxin** (网易云信), the prominent I
 
 
 ## Available Tools (11)
+- **destroy_chatroom**: Destroy a massive chatroom
+- **send_custom_message**: Send a Custom Payload Message
+- **send_text_message**: Send a P2P Text Message
 - **update_im_user**: Update an IM User profile
 - **create_chatroom**: Create a massive chatroom
 - **create_im_user**: Create an IM User
-- **mute_chatroom_member**: Mute a chatroom member
-- **send_custom_message**: Send a Custom Payload Message
-- **unblock_im_user**: Unblock an IM user
-- **get_chatroom_members**: Get Chatroom active members
 - **block_im_user**: Block an IM User network
-- **destroy_chatroom**: Destroy a massive chatroom
-- **recall_message**: Recall a sent message
-- **send_text_message**: Send a P2P Text Message
+- **recall_message**: Use this tool only for deleting messages.
+
+Recall a sent message
+- **get_chatroom_members**: Get Chatroom active members
+- **mute_chatroom_member**: Mute a chatroom member
+- **unblock_im_user**: Unblock an IM user
 
 
 ## 💬 Prompt Examples
@@ -112,4 +114,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

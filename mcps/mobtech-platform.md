@@ -34,9 +34,9 @@ Connect your AI agents to **MobTech**, China's leading mobile development SDK pr
 
 ## Available Tools (4)
 - **check_phone_status**: Check if a phone number limit has been reached
+- **get_share_analytics**: Get analytics for social sharing via ShareSDK
 - **get_social_auth_status**: Check the OAuth binding status for a user
 - **verify_sms_code**: Verify an SMS activation code sent to a user
-- **get_share_analytics**: Get analytics for social sharing via ShareSDK
 
 
 ## 💬 Prompt Examples
@@ -110,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

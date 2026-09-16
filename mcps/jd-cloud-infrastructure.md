@@ -34,17 +34,17 @@ Connect your AI agents directly to **JD Cloud** (京东云), the enterprise clou
 
 
 ## Available Tools (11)
-- **list_cloud_disks**: List all cloud disk volumes in your region
 - **describe_cloud_disk**: Get detailed information about a specific cloud disk
-- **list_elastic_ips**: List all Elastic IP addresses in your region
-- **list_oss_buckets**: List all Object Storage Service buckets
+- **describe_vm_instance**: Get detailed information about a specific VM instance
+- **list_cloud_disks**: List all cloud disk volumes in your region
 - **list_vm_instances**: List all virtual machine instances in your JD Cloud region
+- **reboot_vm_instance**: Reboot a VM instance
 - **start_vm_instance**: Start a stopped VM instance
 - **stop_vm_instance**: Stop a running VM instance
+- **list_elastic_ips**: List all Elastic IP addresses in your region
+- **list_oss_buckets**: List all Object Storage Service buckets
 - **describe_metric_data**: Query monitoring metric data for a cloud resource
-- **describe_vm_instance**: Get detailed information about a specific VM instance
 - **list_rds_instances**: List all RDS database instances in your region
-- **reboot_vm_instance**: Reboot a VM instance
 
 
 ## 💬 Prompt Examples
@@ -115,4 +115,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
