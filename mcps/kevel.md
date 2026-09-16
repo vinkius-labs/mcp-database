@@ -37,10 +37,10 @@ Connect your **Kevel** (formerly Adzerk) account to any AI agent to streamline y
 - **list_sites**: List all sites
 - **list_campaigns**: List all campaigns
 - **list_channels**: List all channels
-- **list_ads**: List all ads
 - **list_ad_types**: g., banner, native).
 
 List available ad types
+- **list_ads**: List all ads
 - **list_advertisers**: List all advertisers in Kevel
 - **list_creatives**: ) uploaded to the account.
 
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

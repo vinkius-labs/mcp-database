@@ -29,20 +29,20 @@ Connect your AI agent to **kvCORE**, the primary platform for real estate profes
 
 
 ## Available Tools (10)
-- **list_lead_activity**: List recent activity for a lead
-- **update_lead_info**: g., status, phone). Provide data as a JSON string.
-
-Update an existing lead
 - **create_lead_note**: Add a note to a lead profile
-- **get_agent_profile**: Get current agent information
 - **search_kvcore_leads**: Returns lead IDs and basic contact info.
 
 Search for leads in kvCORE
-- **list_agent_tasks**: List pending tasks for the agent
+- **get_agent_profile**: Get current agent information
 - **get_lead_details**: Get details for a specific lead
+- **list_property_listings**: List active property listings
 - **get_listing_details**: Get metadata for a specific listing
 - **list_marketing_campaigns**: List all marketing campaigns
-- **list_property_listings**: List active property listings
+- **list_agent_tasks**: List pending tasks for the agent
+- **update_lead_info**: g., status, phone). Provide data as a JSON string.
+
+Update an existing lead
+- **list_lead_activity**: List recent activity for a lead
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

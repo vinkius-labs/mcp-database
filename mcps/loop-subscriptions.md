@@ -31,15 +31,15 @@ Empower your AI agents to handle **Loop Subscriptions** directly. This server al
 
 Cancel a subscription
 - **get_customer**: Get customer details
-- **get_subscription**: Get detailed info for a single subscription
+- **list_customers**: List all customers with active or past subscriptions
 - **list_orders**: List subscription orders
+- **resume_subscription**: Resume a paused subscription
+- **get_subscription**: Get detailed info for a single subscription
+- **list_subscriptions**: List all Loop Subscriptions
 - **pause_subscription**: You can optionally provide a resume date.
 
 Pause an active subscription
 - **skip_next_order**: Skip the next scheduled order
-- **list_customers**: List all customers with active or past subscriptions
-- **list_subscriptions**: List all Loop Subscriptions
-- **resume_subscription**: Resume a paused subscription
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

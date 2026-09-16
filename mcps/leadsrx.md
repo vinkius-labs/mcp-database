@@ -35,17 +35,17 @@ Connect your **LeadsRx** account to your AI agent and gain deep insights into yo
 
 ## Available Tools (10)
 - **list_conversions**: List all LeadsRx conversions
-- **list_touchpoints**: List marketing touchpoints
-- **get_touchpoint_details**: Get specific touchpoint details
+- **add_conversion**: Add a new conversion event
 - **list_advertisers**: List connected advertisers
+- **get_conversion_details**: Get specific conversion info
+- **list_agencies**: List associated marketing agencies
+- **get_campaign_results**: Get attribution results for a campaign
+- **get_touchpoint_details**: Get specific touchpoint details
 - **list_campaigns**: List marketing campaigns
 - **list_channels**: g., Social, Search, Email) defined in your account.
 
 List marketing channels
-- **add_conversion**: Add a new conversion event
-- **get_conversion_details**: Get specific conversion info
-- **list_agencies**: List associated marketing agencies
-- **get_campaign_results**: Get attribution results for a campaign
+- **list_touchpoints**: List marketing touchpoints
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
