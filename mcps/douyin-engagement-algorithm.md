@@ -14,10 +14,10 @@ This MCP server provides deterministic tools to quantify video performance in th
 
 
 ## Available Tools (4)
-- **estimate_view_multiplier**: Forecast the potential reach of a video based on its current performance
 - **calculate_engagement_score**: Determine the raw engagement quality of a video relative to its reach
-- **calculate_posting_adjustment**: Adjust the expected engagement based on the time elapsed since the video was posted
 - **predict_viral_potential**: Categorize a video's growth trajectory into a standardized index
+- **estimate_view_multiplier**: Forecast the potential reach of a video based on its current performance
+- **calculate_posting_adjustment**: Adjust the expected engagement based on the time elapsed since the video was posted
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
