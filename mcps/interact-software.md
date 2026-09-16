@@ -14,16 +14,36 @@ Empower your AI agents to interact with your corporate intranet using Interact S
 
 
 ## Available Tools (10)
-- **list_content**: Lists intranet content items
-- **list_departments**: Lists all organization departments
-- **list_events**: Lists upcoming intranet events
-- **get_analytics**: Retrieves intranet usage analytics
-- **get_person**: Retrieves details for a specific person
-- **list_groups**: Lists all collaboration groups
-- **search**: Searches for content, people, and groups
-- **list_locations**: Lists all organization locations
-- **list_news**: Lists latest news articles
-- **list_people**: Lists all people/users in the intranet
+- **list_content**: This action does not require any parameters.
+
+Lists intranet content items
+- **list_events**: This action does not require any parameters.
+
+Lists upcoming intranet events
+- **get_analytics**: This action does not require any parameters.
+
+Retrieves intranet usage analytics
+- **list_groups**: This action does not require any parameters.
+
+Lists all collaboration groups
+- **get_person**: Provide the unique identifier of the person.
+
+Retrieves details for a specific person
+- **list_departments**: This action does not require any parameters.
+
+Lists all organization departments
+- **list_locations**: This action does not require any parameters.
+
+Lists all organization locations
+- **list_news**: This action does not require any parameters.
+
+Lists latest news articles
+- **search**: Always include a search query string.
+
+Searches for content, people, and groups
+- **list_people**: This action does not require any parameters.
+
+Lists all people/users in the intranet
 
 
 ## 💬 Prompt Examples
@@ -108,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

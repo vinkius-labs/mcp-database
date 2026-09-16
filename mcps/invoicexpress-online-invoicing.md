@@ -38,25 +38,25 @@ Connect your **InvoiceXpress** account to any AI agent and take full control of 
 - **create_item**: Precisas sempre de um ID de taxa legal (consulta a ferramenta list_taxes previamente).
 
 Criar um novo artigo ou serviço para ser faturado
-- **get_invoice**: Obter todos os detalhes e o link PDF de uma fatura
 - **list_clients**: Listar todos os clientes registados no InvoiceXpress
 - **list_credit_notes**: Listar todas as notas de crédito (devolução / acerto)
 - **list_estimates**: Listar todos os orçamentos emitidos de forma paginada
 - **list_receipts**: Listar todos os recibos de pagamento de clientes
 - **list_sequences**: Listar as séries de faturas ativas, ex: FT 2026/
-- **update_client**: Só os parâmetros enviados serão substituídos, os restantes mantêm-se inalterados.
-
-Atualizar os dados demográficos de um cliente existente
 - **list_items**: Listar todos os artigos e serviços configurados no InvoiceXpress
 - **find_client**: Pesquisar um cliente pelo nome empresarial
 - **get_client**: Obter detalhes completos de um cliente pelo seu ID
 - **create_client**: Se não for fornecido um NIF, usa o valor Consumer (ou similar requerido pelo portal).
 
 Registar um novo cliente no InvoiceXpress com dados fiscais completos
-- **get_item**: Obter detalhes de um artigo ou serviço pelo seu ID
-- **list_invoices**: Listar todas as faturas emitidas
 - **list_guides**: Listar guias de transporte
 - **list_taxes**: Listar as taxas de IVA e isenções ativas na conta
+- **list_invoices**: Listar todas as faturas emitidas
+- **update_client**: Só os parâmetros enviados serão substituídos, os restantes mantêm-se inalterados.
+
+Atualizar os dados demográficos de um cliente existente
+- **get_item**: Obter detalhes de um artigo ou serviço pelo seu ID
+- **get_invoice**: Obter todos os detalhes e o link PDF de uma fatura
 
 
 ## 💬 Prompt Examples
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

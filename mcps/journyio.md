@@ -17,12 +17,12 @@ Empower your AI agents with journy.io's SaaS growth platform. This MCP server al
 - **list_users**: Returns user IDs, names, and health scores. Use this to identify key individuals for growth analysis or success management.
 
 Lists all users tracked in journy.io
+- **list_goals**: Use this to track progress toward business objectives like user activation or retention.
+
+Lists all growth goals configured in journy.io
 - **get_account**: Use this to understand the status and lifecycle of a specific business customer.
 
 Retrieves details for a specific account
-- **get_me**: Use for system authentication verification.
-
-Gets details about your own authenticated API identity
 - **get_user**: Includes custom properties, event history summary, and account associations. Use this for deep intelligence on a specific user before an interaction.
 
 Retrieves details for a specific user
@@ -35,15 +35,15 @@ Lists all defined properties for users and accounts
 - **list_segments**: g., "Churn Risk", "Power Users"). Useful for identifying cohorts for targeted growth actions.
 
 Lists all defined audience segments
+- **get_me**: Use for system authentication verification.
+
+Gets details about your own authenticated API identity
 - **list_accounts**: Includes account health metrics and identifiers. Use this to provide a business-level overview of the customer base.
 
 Lists all accounts (companies) tracked in journy.io
 - **list_campaigns**: Use to analyze which campaigns are successfully driving high-value users.
 
 Lists all tracked marketing campaigns
-- **list_goals**: Use this to track progress toward business objectives like user activation or retention.
-
-Lists all growth goals configured in journy.io
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
