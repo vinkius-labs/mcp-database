@@ -14,10 +14,10 @@ This MCP server provides computational chemistry tools to model electronic struc
 
 
 ## Available Tools (4)
-- **validate_electron_distribution**: 
 - **analyze_diatomic_molecule**: 
 - **analyze_polyatomic_molecule**: 
 - **get_orbital_energy_gap**: 
+- **validate_electron_distribution**: 
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

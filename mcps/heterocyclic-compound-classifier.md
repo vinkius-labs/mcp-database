@@ -14,12 +14,12 @@ This MCP server provides specialized chemical informatics tools for analyzing he
 
 
 ## Available Tools (4)
+- **generate_systematic_name**: Generates the formal IUPAC name for a heterocyclic compound
 - **analyze_single_ring**: g., "C-N-C-C-C").
 
 Analyzes an individual ring structure
 - **assess_aromaticity**: Assesses the aromaticity of a ring structure
 - **classify_fused_system**: Classifies a system of fused rings
-- **generate_systematic_name**: Generates the formal IUPAC name for a heterocyclic compound
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

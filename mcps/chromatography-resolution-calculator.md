@@ -14,9 +14,9 @@ This MCP server provides analytical chemists with essential tools to evaluate ch
 
 
 ## Available Tools (4)
+- **calculate_resolution**: Calculate the resolution factor between two peaks
 - **analyze_van_deemter_impact**: Analyze the impact of Van Deemter parameters on peak broadening
 - **calculate_column_efficiency**: Calculate column efficiency (N and HETP)
-- **calculate_resolution**: Calculate the resolution factor between two peaks
 - **predict_resolution_change**: Predict how changing column parameters affects resolution
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

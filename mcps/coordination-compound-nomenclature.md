@@ -14,10 +14,10 @@ This MCP server provides specialized tools for inorganic chemistry. Use `generat
 
 
 ## Available Tools (4)
-- **analyze_isomers**: Identifies possible structural or stereoisomers for a given complex
+- **identify_geometry**: Predicts the three-dimensional shape of the complex
 - **derive_chemical_formula**: Converts the component parts into a standard chemical formula
 - **generate_systematic_name**: Provides the full IUPAC name for a given coordination complex
-- **identify_geometry**: Predicts the three-dimensional shape of the complex
+- **analyze_isomers**: Identifies possible structural or stereoisomers for a given complex
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

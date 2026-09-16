@@ -14,10 +14,10 @@ This MCP server provides specialized tools for chemical kinetic analysis. It all
 
 
 ## Available Tools (4)
-- **detect_catalytic_loops**: Identifies if the reaction involves a catalytic cycle by looking for species that are consumed and regenerated
 - **analyze_mechanism_pathway**: Reconstructs the most probable sequence of elementary steps based on experimental evidence
 - **estimate_intermediate_concentrations**: Predicts the steady-state concentrations of transient intermediates during the reaction
 - **evaluate_product_distribution**: Predicts the ratio of different products formed when multiple pathways are possible
+- **detect_catalytic_loops**: Identifies if the reaction involves a catalytic cycle by looking for species that are consumed and regenerated
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

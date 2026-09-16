@@ -14,10 +14,18 @@ This MCP server provides precise chemical energy calculations. Use `calculate_to
 
 
 ## Available Tools (4)
-- **calculate_reaction_enthalpy**: Determines the enthalpy of a chemical reaction by comparing the energy used to break reactant bonds against the energy released by forming product bonds
-- **get_bond_dissociation_energy**: Provides the energy required to break a specific single bond, allowing the user to distinguish between average values and specific molecular bond strengths
-- **calculate_total_bond_energy**: Calculates the total energy required to break all bonds in a given set of molecules or a list of specific bonds
-- **compare_bond_strengths**: Compares two or more bond types to identify which is stronger or weaker
+- **compare_bond_strengths**: Pass a comma-separated list of bond types.
+
+Compares two or more bond types to identify which is stronger or weaker
+- **get_bond_dissociation_energy**: Specify the bond type and molecule name if required.
+
+Provides the energy required to break a specific single bond, allowing the user to distinguish between average values and specific molecular bond strengths
+- **calculate_reaction_enthalpy**: Supply lists for both reactants and products.
+
+Determines the enthalpy of a chemical reaction by comparing the energy used to break reactant bonds against the energy released by forming product bonds
+- **calculate_total_bond_energy**: Provide a list of bonds to break.
+
+Calculates the total energy required to break all bonds in a given set of molecules or a list of specific bonds
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

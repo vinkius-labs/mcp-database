@@ -14,8 +14,8 @@ This MCP server provides specialized chemical tools for analyzing solubility equ
 
 
 ## Available Tools (4)
-- **predict_precipitation**: Predicts whether a precipitate will form given a set of ion concentrations
 - **calculate_molar_solubility**: Calculates the maximum molar solubility of a salt given its Ksp and the presence of common ions
+- **predict_precipitation**: Predicts whether a precipitate will form given a set of ion concentrations
 - **calculate_ksp**: Determines the solubility product constant when ion concentrations are provided
 - **calculate_solubility_with_complexation**: Calculates the increased molar solubility of a salt when a complex-forming ligand is present
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

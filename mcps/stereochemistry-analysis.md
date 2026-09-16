@@ -14,10 +14,18 @@ This MCP server provides precise tools for analyzing the spatial arrangement of 
 
 
 ## Available Tools (4)
-- **analyze_double_bond_geometry**: Determines the geometric configuration (E/Z) for all double bonds in a molecule
-- **analyze_stereocenters**: Determines the absolute configuration (R/S) for every chiral center within a given molecular structure
-- **detect_meso_compounds**: Identifies if a specific molecular structure is a meso compound
-- **identify_stereoisomers**: Classifies the relationship between different stereoisomers of a molecule
+- **identify_stereoisomers**: Ensure both structures are fully defined for comparison.
+
+Classifies the relationship between different stereoisomers of a molecule
+- **analyze_double_bond_geometry**: Specify bond indices if only certain bonds need analysis.
+
+Determines the geometric configuration (E/Z) for all double bonds in a molecule
+- **analyze_stereocenters**: Provide a complete structure for accurate analysis.
+
+Determines the absolute configuration (R/S) for every chiral center within a given molecular structure
+- **detect_meso_compounds**: Submit the structure to check for internal symmetry.
+
+Identifies if a specific molecular structure is a meso compound
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

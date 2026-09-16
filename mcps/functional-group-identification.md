@@ -14,10 +14,10 @@ This MCP server provides organic chemists with a suite of diagnostic tools to an
 
 
 ## Available Tools (4)
-- **predict_reactivity**: Determines the chemical behavior and reactivity level of the identified functional groups
+- **analyze_group_interactions**: Analyzes how multiple functional groups within the same molecule influence each other's properties
 - **get_characteristic_reactions**: Lists common chemical reactions that the molecule is likely to undergo based on its functional groups
 - **identify_groups**: Identifies all present functional groups within a given molecular description
-- **analyze_group_interactions**: Analyzes how multiple functional groups within the same molecule influence each other's properties
+- **predict_reactivity**: Determines the chemical behavior and reactivity level of the identified functional groups
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

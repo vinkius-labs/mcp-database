@@ -14,10 +14,10 @@ This MCP server provides a specialized simulation engine for organic chemistry. 
 
 
 ## Available Tools (4)
-- **analyze_transition_states**: Describes the highest energy configurations encountered during the reaction
 - **calculate_products**: Predicts the final chemical species produced by the reaction
 - **get_intermediates**: Identifies all transient molecular species formed during the reaction pathway
 - **predict_mechanism**: Determines the most probable reaction pathway given the chemical environment
+- **analyze_transition_states**: Describes the highest energy configurations encountered during the reaction
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
