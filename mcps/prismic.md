@@ -34,21 +34,21 @@ Connect your **Prismic** headless CMS to any AI agent and integrate content quer
 
 ## Available Tools (10)
 - **get_query_form_schema**: Retrieves the schema for a specific query form (e.g., "everything")
-- **list_custom_types**: Lists all Custom Types defined in the Prismic repository
-- **list_documents_by_type**: Lists all Prismic documents of a specific Custom Type
-- **list_global_tags**: Lists all tags used across the Prismic repository
 - **list_i18n_languages**: Lists the languages (locales) configured in the repository
-- **get_document_by_id**: g., from a search result or relationship field) and need to retrieve its full content.
-
-Fetches a specific Prismic document by its unique ID
-- **get_repo_metadata**: Retrieves metadata about the Prismic repository, including master refs, types, and languages
 - **list_documents_by_tag**: Lists all Prismic documents that have a specific tag
-- **query_prismic_documents**: This is the most powerful tool for finding content. It supports pagination and locale filtering internally.
-
-Queries the Prismic API for documents using raw Predicates
+- **list_documents_by_type**: Lists all Prismic documents of a specific Custom Type
 - **search_filtered_locale**: g., "en-us" or "fr-fr").
 
 Performs a filtered search for documents within a specific locale
+- **get_repo_metadata**: Retrieves metadata about the Prismic repository, including master refs, types, and languages
+- **get_document_by_id**: g., from a search result or relationship field) and need to retrieve its full content.
+
+Fetches a specific Prismic document by its unique ID
+- **list_global_tags**: Lists all tags used across the Prismic repository
+- **list_custom_types**: Lists all Custom Types defined in the Prismic repository
+- **query_prismic_documents**: This is the most powerful tool for finding content. It supports pagination and locale filtering internally.
+
+Queries the Prismic API for documents using raw Predicates
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

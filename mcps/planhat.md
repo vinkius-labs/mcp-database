@@ -35,16 +35,20 @@ Connect your **Planhat** workspace to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_planhat_end_users**: List all end users
-- **list_planhat_licenses**: List all licenses
-- **get_planhat_me**: Get current user info
+- **get_planhat_me**: This operation is asynchronous.
+
+Get current user info
 - **list_planhat_companies**: List all companies in Planhat
-- **list_planhat_projects**: List all projects
-- **get_planhat_company**: Get details for a specific company
 - **list_planhat_assets**: List all assets
-- **list_planhat_conversations**: List all conversations
 - **list_planhat_notes**: List all notes
 - **list_planhat_tasks**: List all tasks
+- **get_planhat_company**: Provide a valid company ID to retrieve information.
+
+Get details for a specific company
+- **list_planhat_conversations**: List all conversations
+- **list_planhat_end_users**: List all end users
+- **list_planhat_licenses**: List all licenses
+- **list_planhat_projects**: List all projects
 
 
 ## 💬 Prompt Examples
@@ -129,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
