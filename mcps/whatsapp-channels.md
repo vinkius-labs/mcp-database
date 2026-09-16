@@ -41,18 +41,21 @@ Post to WhatsApp Channels from any AI agent through **WAHA**, a free open-source
 
 
 ## Available Tools (8)
-- **get_channel_messages**: Page back in history with before_timestamp set to the oldest timestamp of the previous page; page forward with after_timestamp set to the newest one seen. The channel must be one your number follows — otherwise use get_channel_preview.
+- **create_channel**: The WAHA session must use the NOWEB, WPP or GOWS engine — the default WEBJS engine cannot create channels (posting to an existing channel still works on WEBJS). Keep the name short and unique. Optionally attach a profile picture from any public image URL.
 
-Read posts from a channel you are subscribed to, newest first
+Create a new WhatsApp Channel owned by the logged-in number
 - **get_channel_preview**: Pass the invite code from a whatsapp.com/channel/<CODE> link or the @newsletter id. Only the preview window is visible; use get_channel_messages for full history of channels you follow.
 
 Preview the latest posts of any public channel without subscribing to it
-- **get_channel**: Accepts either a full channel id ("120363...@newsletter") or the invite code — the last path segment of a https://whatsapp.com/channel/<CODE> link. Use it to check subscriber reach before or after posting.
-
-Get one channel profile by newsletter id or invite code, including subscriber count
 - **list_channels**: Use it first to find the @newsletter channel id needed for posting; filter with role=OWNER or role=ADMIN — subscribers cannot post.
 
 List WhatsApp Channels linked to the logged-in number (owned, administered or subscribed)
+- **get_channel_messages**: Page back in history with before_timestamp set to the oldest timestamp of the previous page; page forward with after_timestamp set to the newest one seen. The channel must be one your number follows — otherwise use get_channel_preview.
+
+Read posts from a channel you are subscribed to, newest first
+- **get_channel**: Accepts either a full channel id ("120363...@newsletter") or the invite code — the last path segment of a https://whatsapp.com/channel/<CODE> link. Use it to check subscriber reach before or after posting.
+
+Get one channel profile by newsletter id or invite code, including subscriber count
 - **post_channel_media**: file_url must be publicly downloadable — WAHA downloads it server-side before posting. For image/video the optional caption appears under the media; voice posts ignore captions. Requires role OWNER or ADMIN; channel_id ends with "@newsletter".
 
 Publish an image, video or voice post to a WhatsApp Channel from a public file URL
@@ -62,9 +65,6 @@ Publish a text post to a WhatsApp Channel you own or administer
 - **search_channels**: Paginate with start_cursor using the endCursor from the previous response (recommended limit 50). Useful to monitor competitors or find a channel before subscribing.
 
 Discover public WhatsApp Channels by keyword (like the in-app explore search)
-- **create_channel**: The WAHA session must use the NOWEB, WPP or GOWS engine — the default WEBJS engine cannot create channels (posting to an existing channel still works on WEBJS). Keep the name short and unique. Optionally attach a profile picture from any public image URL.
-
-Create a new WhatsApp Channel owned by the logged-in number
 
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
