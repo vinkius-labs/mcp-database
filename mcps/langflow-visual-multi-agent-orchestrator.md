@@ -34,34 +34,62 @@ Connect your **Langflow** instance to any AI agent and take full control of your
 
 
 ## Available Tools (24)
-- **create_project**: Create a new project
-- **delete_file_v2**: Delete a file (v2)
-- **delete_flow**: Delete a flow
-- **delete_project**: Delete a project
-- **get_file_v2**: Download a file (v2)
-- **get_flow**: Get a specific flow by ID
-- **get_logs**: Retrieve recent logs
-- **get_monitor_messages**: Retrieve chat history
-- **get_monitor_traces**: Retrieve execution traces and span trees
-- **get_project**: Get project details
-- **list_files_v1**: List files for a specific flow (v1)
-- **list_files_v2**: List user files (v2)
-- **list_flows**: List all flows
-- **list_projects**: List all projects
-- **list_users**: List all users (requires superuser)
-- **trigger_webhook**: Trigger a Langflow webhook
-- **update_flow**: Update an existing flow
-- **whoami**: Get current authenticated user info
-- **update_project**: Update project info
-- **create_flow**: Create a new flow
+- **create_project**: Pass the required project configuration JSON in the project_data parameter.
+
+Create a new project
+- **delete_file_v2**: Pass the File ID of the file to be deleted.
+
+Delete a file (v2)
+- **update_project**: Provide both the Project ID and the updated project information.
+
+Update project info
+- **create_flow**: Provide the complete flow configuration JSON in the flow_data parameter.
+
+Create a new flow
 - **create_response**: Uses flow_id as the model.
 
 OpenAI compatible responses endpoint
-- **get_monitor_transactions**: Retrieve component interaction logs
+- **get_monitor_transactions**: Use this to track system component interactions.
+
+Retrieve component interaction logs
+- **delete_flow**: Specify the Flow ID of the flow you intend to delete.
+
+Delete a flow
+- **delete_project**: Specify the Project ID of the project to be deleted.
+
+Delete a project
+- **get_file_v2**: Provide the File ID in the file_id parameter.
+
+Download a file (v2)
+- **get_flow**: Pass the required Flow ID in the id parameter.
+
+Get a specific flow by ID
+- **get_logs**: Retrieve recent logs
+- **get_monitor_messages**: Retrieve chat history
+- **get_monitor_traces**: Retrieve execution traces and span trees
+- **get_project**: Use the Project ID to identify the desired project.
+
+Get project details
+- **list_files_v1**: Provide the Flow ID in the flow_id parameter.
+
+List files for a specific flow (v1)
+- **list_files_v2**: List user files (v2)
+- **list_flows**: List all flows
+- **list_projects**: List all projects
+- **list_users**: Requires superuser privileges to execute.
+
+List all users (requires superuser)
 - **run_flow**: Supports chat or text inputs.
 
 Execute a Langflow flow
 - **run_workflow**: Run a workflow (v2 API)
+- **trigger_webhook**: Trigger a Langflow webhook
+- **update_flow**: Supply both the Flow ID and the updated flow configuration JSON.
+
+Update an existing flow
+- **whoami**: This tool requires no parameters.
+
+Get current authenticated user info
 
 
 ## 💬 Prompt Examples

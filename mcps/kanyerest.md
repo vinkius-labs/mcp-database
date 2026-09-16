@@ -32,8 +32,8 @@ Bring the wisdom and unique perspective of **Kanye West** to your AI conversatio
 
 
 ## Available Tools (2)
-- **get_random_quote_json**: Get a random Kanye West quote (JSON endpoint)
 - **get_random_quote_text**: Get a random Kanye West quote (Text endpoint)
+- **get_random_quote_json**: Get a random Kanye West quote (JSON endpoint)
 
 
 ## 💬 Prompt Examples

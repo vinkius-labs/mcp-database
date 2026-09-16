@@ -34,11 +34,11 @@ Connect **DeepAI** to your AI agent to unlock powerful image generation and mani
 
 
 ## Available Tools (5)
-- **generate_image**: Create an image from a text description
 - **super_resolution**: Upscales and sharpens images without losing quality
 - **edit_image**: Modifies images based on text prompts
 - **colorize_image**: Adds color to black and white or historic images
 - **remove_background**: Removes the background from an image using AI
+- **generate_image**: Create an image from a text description
 
 
 ## 💬 Prompt Examples

@@ -33,15 +33,15 @@ Connect **LMNT** to your AI agent to generate high-quality, lifelike speech with
 
 
 ## Available Tools (7)
-- **get_account**: Retrieve account usage and plan information
-- **get_voice**: Retrieve a specific voice by ID
-- **update_voice**: Update an existing voice
-- **delete_voice**: Delete a voice by ID
-- **create_voice**: Create a new voice (Instant Cloning)
 - **generate_speech**: Returns a base64 encoded audio stream.
 
 Generates speech from text and returns base64 audio
 - **list_voices**: List available voices
+- **create_voice**: Create a new voice (Instant Cloning)
+- **delete_voice**: Delete a voice by ID
+- **get_account**: Retrieve account usage and plan information
+- **get_voice**: Retrieve a specific voice by ID
+- **update_voice**: Update an existing voice
 
 
 ## 💬 Prompt Examples

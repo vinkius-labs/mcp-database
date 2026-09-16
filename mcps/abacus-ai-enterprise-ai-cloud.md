@@ -37,11 +37,11 @@ Connect your **Abacus AI** enterprise account to any AI agent to orchestrate com
 - **describe_dataset**: Returns metadata about a specific dataset
 - **list_projects**: List all projects in your organization
 - **create_deployment**: Deploys a trained model to a real-time endpoint
+- **train_model**: Starts a training job for a model
+- **create_dataset**: Create a new dataset
 - **create_project**: Create a new project
 - **describe_model**: Returns the status and details of a model
 - **get_prediction**: Retrieves a prediction from a deployed model
-- **train_model**: Starts a training job for a model
-- **create_dataset**: Create a new dataset
 
 
 ## 💬 Prompt Examples

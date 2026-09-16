@@ -34,27 +34,39 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 
 
 ## Available Tools (19)
-- **delete_router**: Delete an LLM Router
-- **delete_voice**: Delete a voice
-- **get_router**: Get details for a specific LLM Router
-- **get_voice**: Get details for a specific voice
+- **delete_router**: Ensure the provided router_id is correct before proceeding.
+
+Delete an LLM Router
+- **delete_voice**: Specify the unique voice ID to be deleted.
+
+Delete a voice
+- **synthesize_speech_stream**: Synthesize speech via streaming
+- **update_voice**: Supply the voice ID and at least one update parameter.
+
+Update a voice
+- **chat_completions**: Generate chat completions via LLM Router
+- **design_voice**: Design a voice from a text prompt
+- **list_voices**: List voices in the workspace
+- **synthesize_speech_sync**: Synthesize speech synchronously
+- **transcribe_audio**: Transcribe audio to text (Sync)
+- **clone_voice**: Clone a voice from audio samples
+- **create_realtime_call**: Create a WebRTC realtime call
+- **create_router**: Create an LLM Router
+- **get_router**: Use the unique router_id to identify the target router.
+
+Get details for a specific LLM Router
+- **get_voice**: Provide a valid voiceId to execute the query.
+
+Get details for a specific voice
 - **list_models**: List available LLM models
 - **list_routers**: List all LLM Routers
 - **list_tts_voices**: Use list_voices instead for newer Voice API.
 
 List TTS voices (Deprecated)
 - **publish_voice**: Publish a draft/preview voice
-- **synthesize_speech_stream**: Synthesize speech via streaming
-- **update_router**: Update an LLM Router
-- **update_voice**: Update a voice
-- **clone_voice**: Clone a voice from audio samples
-- **create_realtime_call**: Create a WebRTC realtime call
-- **create_router**: Create an LLM Router
-- **chat_completions**: Generate chat completions via LLM Router
-- **design_voice**: Design a voice from a text prompt
-- **list_voices**: List voices in the workspace
-- **synthesize_speech_sync**: Synthesize speech synchronously
-- **transcribe_audio**: Transcribe audio to text (Sync)
+- **update_router**: Supply the router ID and the desired updates.
+
+Update an LLM Router
 
 
 ## 💬 Prompt Examples
