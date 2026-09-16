@@ -14,10 +14,10 @@ This MCP server provides a suite of tools for chemical analysis. Use `analyze_th
 
 
 ## Available Tools (4)
-- **analyze_thermodynamics**: Determines if a reaction is energetically favorable by calculating the change in Gibbs Free Energy and the resulting equilibrium state
-- **evaluate_kinetics**: Assesses the speed of a reaction by evaluating the energy barrier required to reach the transition state
 - **assess_reaction_feasibility**: Provides a holistic verdict by combining thermodynamic favorability with kinetic accessibility
 - **simulate_condition_shift**: Predicts how changes in temperature will impact the thermodynamic stability and equilibrium of the reaction
+- **analyze_thermodynamics**: Determines if a reaction is energetically favorable by calculating the change in Gibbs Free Energy and the resulting equilibrium state
+- **evaluate_kinetics**: Assesses the speed of a reaction by evaluating the energy barrier required to reach the transition state
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

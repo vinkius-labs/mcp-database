@@ -14,10 +14,10 @@ This MCP server provides specialized tools for organometallic chemistry. It allo
 
 
 ## Available Tools (4)
-- **map_catalyst_stability**: Predicts the structural stability of the catalyst against common degradation routes
+- **analyze_cycle_kinetics**: Determines the sequence of steps and identifies the bottleneck in the catalytic process
 - **calculate_catalytic_efficiency**: Quantifies the productivity of the catalyst under specific conditions
 - **evaluate_deactivation_impact**: Assesses how much the catalyst's productivity is reduced by competing degradation pathways
-- **analyze_cycle_kinetics**: Determines the sequence of steps and identifies the bottleneck in the catalytic process
+- **map_catalyst_stability**: Predicts the structural stability of the catalyst against common degradation routes
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

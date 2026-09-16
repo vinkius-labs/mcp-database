@@ -14,10 +14,10 @@ This MCP server provides specialized electrochemical analysis tools for the Hitt
 
 
 ## Available Tools (4)
-- **calculate_transference_numbers**: Calculates the transference numbers for both cations and anions based on concentration changes
-- **get_electrode_impact**: Calculates the theoretical concentration shift caused specifically by the electrode reaction
 - **summarize_hittorf_experiment**: Provides a complete high-level report of the experiment's findings
+- **get_electrode_impact**: Calculates the theoretical concentration shift caused specifically by the electrode reaction
 - **verify_mass_balance**: Validates whether the observed concentration changes respect the law of conservation of mass
+- **calculate_transference_numbers**: Calculates the transference numbers for both cations and anions based on concentration changes
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

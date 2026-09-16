@@ -14,10 +14,10 @@ This MCP server provides specialized tools for electrochemical analysis of elect
 
 
 ## Available Tools (4)
-- **apply_association_correction**: Adjusts the theoretical transport numbers to account for the presence of ion pairs in concentrated solutions
 - **calculate_conductivity_transport_numbers**: Calculates transport numbers using the molar conductivities of the individual ions
 - **calculate_hittorf_results**: Estimates the transport numbers using data derived from the Hittorf method
 - **calculate_mobility_transport_numbers**: Calculates the transport numbers for a cation and anion based on their individual ionic mobilities
+- **apply_association_correction**: Adjusts the theoretical transport numbers to account for the presence of ion pairs in concentrated solutions
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

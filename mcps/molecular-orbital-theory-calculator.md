@@ -14,10 +14,10 @@ This MCP server provides computational tools to model electronic structures usin
 
 
 ## Available Tools (4)
-- **analyze_magnetism**: Identify if a molecule will be attracted to or repelled by a magnetic field
-- **calculate_bond_order**: Determine the number of net bonds between the atoms in the molecule
 - **evaluate_stability**: Assess the chemical stability of the molecule based on its electronic configuration
 - **get_mo_diagram**: Visualize and retrieve the energy levels of the molecular orbitals
+- **analyze_magnetism**: Identify if a molecule will be attracted to or repelled by a magnetic field
+- **calculate_bond_order**: Determine the number of net bonds between the atoms in the molecule
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
