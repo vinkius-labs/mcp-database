@@ -36,16 +36,16 @@ Connect your **Omni BI** (omni.co) account to your AI agent and gain deep insigh
 
 
 ## Available Tools (10)
-- **get_dashboard_details**: Get specific dashboard info
-- **get_model_details**: Get data model metadata
-- **list_bi_workspaces**: List organization workspaces
-- **list_dashboards**: List BI dashboards
 - **list_data_connections**: List database connections
-- **list_data_models**: List Omni data models
-- **export_query_results**: Export data to file
+- **list_bi_workspaces**: List organization workspaces
+- **get_dashboard_details**: Get specific dashboard info
 - **get_field_details**: Get specific field info
-- **list_resource_folders**: List dashboard folders
 - **run_omni_query**: Run programmatic query
+- **export_query_results**: Export data to file
+- **get_model_details**: Get data model metadata
+- **list_dashboards**: List BI dashboards
+- **list_resource_folders**: List dashboard folders
+- **list_data_models**: List Omni data models
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

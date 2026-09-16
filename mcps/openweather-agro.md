@@ -44,15 +44,12 @@ No more manual weather checking or complex satellite data processing. Your AI ac
 
 
 ## Available Tools (12)
-- **get_crop_health_index**: CHI provides a single metric for overall crop health, making it easier to track field conditions over time and compare across fields. Essential for quick field health assessment, prioritizing scouting missions, and communicating crop status to stakeholders. AI agents should use this when users ask "what is the overall crop health score for my field", "get a quick health assessment", or need a simplified crop condition metric. Date format: YYYY-MM-DD.
+- **get_current_weather**: Essential for daily farming decisions, spray application timing, harvest planning, and frost protection. AI agents should use this when users ask "what is the weather like at my farm right now", "should I spray pesticides today", or need current weather data for agricultural operations.
 
-Get Crop Health Index (CHI) for comprehensive crop condition assessment
+Get current weather conditions for agricultural decision making
 - **get_evi**: EVI is more sensitive than NDVI in high-biomass regions and less affected by atmospheric conditions and soil background. Essential for monitoring dense canopies, tropical crops, and areas with high vegetation cover. AI agents should reference this when users ask "what is the EVI for my dense crop area", "monitor high-biomass vegetation", or need enhanced vegetation index for areas where NDVI saturates. Date format: YYYY-MM-DD.
 
 Get EVI (Enhanced Vegetation Index) for high-biomass crop monitoring
-- **get_evapotranspiration**: ET combines soil evaporation and plant transpiration, providing the most accurate measure of crop water use. Essential for precision irrigation scheduling, water resource management, and drought assessment. AI agents should reference this when users ask "what is the evapotranspiration rate for my field", "calculate irrigation needs", or need crop water use data for irrigation planning. Date format: YYYY-MM-DD.
-
-Get evapotranspiration rates for irrigation scheduling and water management
 - **get_frost_risk**: Returns risk levels (low, moderate, high, critical), predicted frost timing, and recommended protection measures. Essential for frost-sensitive crops (fruits, vegetables, vineyards), irrigation-based frost protection, and crop insurance documentation. AI agents should reference this when users ask "is there frost risk for my orchard tonight", "assess frost danger for my crops", or need frost warning data for crop protection planning.
 
 Get frost risk assessment for crop protection planning
@@ -77,9 +74,12 @@ Get multi-day weather forecast for agricultural planning
 - **get_weather_history**: Essential for comparing current conditions with historical patterns, analyzing crop performance under past weather conditions, and validating crop models. AI agents should use this when users ask "what was the weather like on this date last year", "show me historical weather for my field", or need past weather data for agricultural analysis. Date format: Unix timestamp (seconds since 1970).
 
 Get historical weather data for crop analysis and trend assessment
-- **get_current_weather**: Essential for daily farming decisions, spray application timing, harvest planning, and frost protection. AI agents should use this when users ask "what is the weather like at my farm right now", "should I spray pesticides today", or need current weather data for agricultural operations.
+- **get_crop_health_index**: CHI provides a single metric for overall crop health, making it easier to track field conditions over time and compare across fields. Essential for quick field health assessment, prioritizing scouting missions, and communicating crop status to stakeholders. AI agents should use this when users ask "what is the overall crop health score for my field", "get a quick health assessment", or need a simplified crop condition metric. Date format: YYYY-MM-DD.
 
-Get current weather conditions for agricultural decision making
+Get Crop Health Index (CHI) for comprehensive crop condition assessment
+- **get_evapotranspiration**: ET combines soil evaporation and plant transpiration, providing the most accurate measure of crop water use. Essential for precision irrigation scheduling, water resource management, and drought assessment. AI agents should reference this when users ask "what is the evapotranspiration rate for my field", "calculate irrigation needs", or need crop water use data for irrigation planning. Date format: YYYY-MM-DD.
+
+Get evapotranspiration rates for irrigation scheduling and water management
 
 
 ## 💬 Prompt Examples
@@ -164,4 +164,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

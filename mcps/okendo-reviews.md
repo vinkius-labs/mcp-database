@@ -36,16 +36,16 @@ Connect your **Okendo** account to your AI agent and gain deep insights into you
 
 
 ## Available Tools (10)
-- **get_aggregate_ratings**: Get store aggregate ratings
+- **list_customer_questions**: List customer Q&A questions
+- **list_question_answers**: List answers for a question
 - **get_okendo_product_details**: Get product review info
+- **get_store_settings**: Get Okendo store settings
+- **list_review_media**: List customer-uploaded media
+- **list_okendo_products**: List products tracked in Okendo
+- **list_reviews**: List customer reviews
+- **get_aggregate_ratings**: Get store aggregate ratings
 - **get_question_details**: Get specific question details
 - **get_review_details**: Get specific review details
-- **get_store_settings**: Get Okendo store settings
-- **list_okendo_products**: List products tracked in Okendo
-- **list_review_media**: List customer-uploaded media
-- **list_customer_questions**: List customer Q&A questions
-- **list_reviews**: List customer reviews
-- **list_question_answers**: List answers for a question
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

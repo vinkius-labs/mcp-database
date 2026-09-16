@@ -41,13 +41,13 @@ Connect your **Nyckel** machine learning account to your AI agent and leverage p
 - **list_ml_functions**: ) in your account.
 
 List all ML functions
-- **annotate_ml_sample**: Assign label to a sample
 - **list_ml_labels**: List available labels
 - **semantic_search**: Perform semantic search
+- **annotate_ml_sample**: Assign label to a sample
+- **list_ml_samples**: List training samples
 - **delete_ml_function**: Delete an ML function
 - **get_ml_function**: Get specific function info
 - **invoke_ml_function**: Classify data using a function
-- **list_ml_samples**: List training samples
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -43,12 +43,12 @@ No more navigating complex regulatory portals or manually reconciling spreadshee
 - **list_b2b_transactions**: Each B2B transaction record contains the transfer ID, direction (incoming/outgoing), counterparty company, transfer status (draft, committed, received, rejected), creation date, expected fulfillment date, line items with quantities, and attached manifests or bills of lading. Essential for supply chain orchestration, logistics planning, and regulatory transfer documentation. AI agents use this to track shipment status, verify received quantities, and prepare compliance reports.
 
 List all B2B transfer transactions (incoming and outgoing)
-- **list_b2c_transactions**: Each transaction includes the sale ID, customer information (if recorded), sale date, line items with products and quantities, total amount, tax breakdown, dispensary location, and inventory deduction confirmations. Critical for daily sales reporting, tax calculation verification, inventory reconciliation, and regulatory sales limit enforcement. AI agents should query this to analyze sales patterns, verify compliance with purchase limits, and prepare end-of-day reports.
-
-List all retail B2C sales transactions
 - **list_companies**: Use this to understand which organizations are part of your regulatory network, including license holders, cultivators, processors, distributors, and retailers. Each company record contains legal identification data, registration status, and associated license information. Essential for multi-company operations and B2B transaction verification.
 
 List all companies registered in the OpenTHC compliance engine
+- **list_contacts**: Each contact includes company affiliation, contact type (B2B partner, regulatory agency, logistics provider), communication details, and relationship status. Use this to identify verified trading partners before creating B2B transfer orders or compliance documentation.
+
+List all business contacts in the OpenTHC network
 - **list_inventory**: Each inventory item displays the lot number, item type, quantity with unit of measurement, storage location, creation date, chain of custody history, and compliance status. Fundamental for stock reconciliation, audit preparation, transfer order creation, and regulatory reporting. AI agents should query this before fulfilling orders or conducting inventory audits.
 
 List all inventory items with quantities and locations
@@ -70,12 +70,12 @@ List all cannabis products in your inventory catalog
 - **list_sections**: Each section entry includes the section ID, name, purpose classification (vegetation room, flowering room, drying room, processing area, retail floor, warehouse), environmental parameters, and capacity limits. Essential for spatial inventory tracking, cultivation workflow organization, facility compliance inspections, and operational planning. AI agents use this to assign plants to specific rooms during cultivation activities, locate inventory within the facility, and generate room-level production reports.
 
 List all facility sections and cultivation areas
+- **list_b2c_transactions**: Each transaction includes the sale ID, customer information (if recorded), sale date, line items with products and quantities, total amount, tax breakdown, dispensary location, and inventory deduction confirmations. Critical for daily sales reporting, tax calculation verification, inventory reconciliation, and regulatory sales limit enforcement. AI agents should query this to analyze sales patterns, verify compliance with purchase limits, and prepare end-of-day reports.
+
+List all retail B2C sales transactions
 - **list_varieties**: Each variety record contains the variety ID, strain name (e.g., Blue Dream, OG Kush, Sour Diesel), genetics type (Type I - THC dominant, Type II - Mixed THC/CBD, Type III - CBD dominant), breeder information, and associated cultivation characteristics. Fundamental for cultivation planning, product labeling, genetic tracking, and regulatory strain registration. AI agents reference this when creating new plant records, generating product labels, or analyzing strain performance metrics.
 
 List all cannabis varieties (strains) in the system
-- **list_contacts**: Each contact includes company affiliation, contact type (B2B partner, regulatory agency, logistics provider), communication details, and relationship status. Use this to identify verified trading partners before creating B2B transfer orders or compliance documentation.
-
-List all business contacts in the OpenTHC network
 
 
 ## 💬 Prompt Examples
@@ -160,4 +160,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
