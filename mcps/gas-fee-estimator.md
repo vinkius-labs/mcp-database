@@ -14,12 +14,12 @@ The Gas Fee Estimator provides precise calculations for Ethereum Virtual Machine
 
 
 ## Available Tools (4)
-- **calculate_gas_cost**: Calculate the total cost of a transaction in native tokens
-- **recommend_priority_fee**: Suggest a priority fee based on recent network activity
-- **compare_chain_costs**: Compare transaction costs across different blockchains
 - **convert_gas_to_fiat**: g., USD).
 
 Convert a native token cost into its fiat currency value
+- **compare_chain_costs**: Compare transaction costs across different blockchains
+- **calculate_gas_cost**: Calculate the total cost of a transaction in native tokens
+- **recommend_priority_fee**: Suggest a priority fee based on recent network activity
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
