@@ -34,13 +34,13 @@ Connect your conversational assistant directly to **Rocket.Chat**, the open-sour
 
 ## Available Tools (10)
 - **chat_update_message**: Updates the text of an existing message
-- **list_users**: Lists all users in the workspace directory
-- **get_channel_info**: Retrieves details for a specific channel
-- **get_user_info**: Retrieves detailed information for a specific user
+- **chat_send_message**: Sends a message to a specific room by ID
 - **list_direct_messages**: Lists all active direct message rooms
 - **list_private_groups**: Lists all private groups (channels) the user is a member of
 - **list_public_channels**: Lists all public channels in the workspace
-- **chat_send_message**: Sends a message to a specific room by ID
+- **list_users**: Lists all users in the workspace directory
+- **get_channel_info**: Retrieves details for a specific channel
+- **get_user_info**: Retrieves detailed information for a specific user
 - **chat_delete_message**: You must provide both room ID and message ID.
 
 Deletes a message from a room
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

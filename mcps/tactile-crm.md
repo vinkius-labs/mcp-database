@@ -33,12 +33,12 @@ Extend the reach of your **Tactile CRM** databases directly into your AI convers
 
 
 ## Available Tools (9)
+- **list_activities**: Lists recent CRM activities (tasks, calls, emails)
+- **list_pipelines**: Lists available sales pipelines
 - **get_contact_details**: Retrieves details for a specific individual contact
 - **list_contacts**: Lists all individual contacts (people) in the CRM
 - **list_opportunities**: Lists all sales opportunities (deals) in the pipeline
-- **list_activities**: Lists recent CRM activities (tasks, calls, emails)
 - **list_notes**: Lists general CRM notes
-- **list_pipelines**: Lists available sales pipelines
 - **get_company_details**: Retrieves details for a specific company
 - **get_opportunity_details**: Retrieves details for a specific sales opportunity
 - **list_companies**: Lists all companies (organizations) in the Tactile CRM
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

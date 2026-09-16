@@ -36,12 +36,12 @@ Turn scattered business cards into a searchable relationship graph controlled by
 
 ## Available Tools (8)
 - **get_biz_card**: Retrieves details for a specific business card
+- **get_person**: Retrieves details for a specific contact person
 - **list_biz_cards**: Lists all scanned business cards
+- **search_biz_cards**: Searches for business cards by name
+- **list_departments**: Lists all departments in the organization
 - **list_persons**: Lists all contact persons across cards
 - **list_tags**: Lists all tags used for organizing business cards
-- **search_biz_cards**: Searches for business cards by name
-- **get_person**: Retrieves details for a specific contact person
-- **list_departments**: Lists all departments in the organization
 - **list_users**: Lists all Sansan users in the organization
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

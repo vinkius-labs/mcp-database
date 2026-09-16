@@ -33,12 +33,12 @@ Connect **Substack** to your AI agent and manage your newsletter publication con
 
 
 ## Available Tools (6)
-- **get_leaderboard**: Get leaderboard
-- **list_posts**: List recent posts
-- **list_subscribers**: List subscribers
 - **get_post**: Get post
 - **get_post_stats**: Get post stats
 - **get_publication_info**: Get publication info
+- **list_posts**: List recent posts
+- **get_leaderboard**: Get leaderboard
+- **list_subscribers**: List subscribers
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

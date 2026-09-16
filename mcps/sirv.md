@@ -33,21 +33,21 @@ Connect your AI to **Sirv**, the image CDN and digital asset management platform
 
 
 ## Available Tools (9)
-- **get_billing_info**: Retrieves billing details
 - **delete_file**: This action is irreversible.
 
 Permanently deletes a file
-- **list_account_users**: Lists all users in the Sirv account
-- **list_custom_domains**: Lists custom domains configured for the account
-- **search_files**: Returns file metadata and URLs.
-
-Searches for files in Sirv
 - **get_account_stats**: Retrieves Sirv account storage and traffic statistics
-- **get_detailed_usage**: Retrieves detailed usage metrics
 - **get_file_details**: Retrieves details for a specific file
+- **get_detailed_usage**: Retrieves detailed usage metrics
+- **list_custom_domains**: Lists custom domains configured for the account
 - **read_directory**: Requires the absolute path starting with "/".
 
 Lists contents of a specific directory
+- **get_billing_info**: Retrieves billing details
+- **list_account_users**: Lists all users in the Sirv account
+- **search_files**: Returns file metadata and URLs.
+
+Searches for files in Sirv
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

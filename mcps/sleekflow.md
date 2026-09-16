@@ -38,9 +38,9 @@ Stop switching between WhatsApp Web, Facebook Business, and your internal tools.
 ## Available Tools (7)
 - **get_contact_details**: Retrieves details for a specific contact
 - **list_channels**: Lists all connected communication channels
-- **list_contact_labels**: Lists all labels used for contact categorization
 - **list_contacts**: Lists all contacts in SleekFlow
 - **send_message**: Sends a message in a conversation
+- **list_contact_labels**: Lists all labels used for contact categorization
 - **list_automation_flows**: Lists available automation flows
 - **list_conversations**: Lists all conversations across channels
 
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
