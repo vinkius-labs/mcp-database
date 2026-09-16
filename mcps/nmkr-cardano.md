@@ -36,13 +36,13 @@ Connect your **NMKR Studio** account to your AI agent and manage your Cardano NF
 
 
 ## Available Tools (10)
-- **get_nft_details**: Get specific NFT metadata
 - **get_project_counts**: Get project asset metrics
+- **get_project_discounts**: List active project discounts
 - **list_payout_wallets**: List all registered payout wallets
 - **validate_nft_metadata**: Validate NFT metadata
-- **list_project_nfts**: List NFTs in a project
 - **get_mint_coupon_balance**: Check minting coupon balance
-- **get_project_discounts**: List active project discounts
+- **get_nft_details**: Get specific NFT metadata
+- **list_project_nfts**: List NFTs in a project
 - **list_split_addresses**: List revenue split addresses
 - **list_subcustomers**: List sub-customers for an account
 - **list_vesting_addresses**: List vesting/staking addresses
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

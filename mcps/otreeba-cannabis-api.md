@@ -32,11 +32,11 @@ Otreeba provides an open, transparent database of cannabis products and lab test
 
 ## Available Tools (6)
 - **get_brand**: Get details for a specific cannabis brand
-- **get_oil_lab_data**: Get lab test results for cannabis oil/extracts
-- **list_brands**: List all cannabis brands available in Otreeba
 - **search_strains**: Use this to discover available strains in the Otreeba database.
 
 Search for cannabis strains by name or keyword
+- **list_brands**: List all cannabis brands available in Otreeba
+- **get_oil_lab_data**: Get lab test results for cannabis oil/extracts
 - **get_flower_lab_data**: ) and terpene data for a specific strain.
 
 Get lab test results for cannabis flower
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

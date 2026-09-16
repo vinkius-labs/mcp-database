@@ -37,15 +37,19 @@ No more manual data entry or ordering through the web interface. Your AI assista
 
 
 ## Available Tools (10)
+- **get_order**: Use the unique order ID to query the record.
+
+Get details for a specific order
+- **list_templates**: List message templates
+- **list_address_book**: List recipients in your address book
+- **list_cards**: Filter results using the category ID if necessary.
+
+List all available cards/stationery
 - **list_categories**: List all card categories
 - **list_fonts**: List all available handwriting fonts
-- **get_credit_balance**: Check current account credit balance
-- **get_order**: Get details for a specific order
-- **list_address_book**: List recipients in your address book
-- **list_cards**: List all available cards/stationery
 - **list_gifts**: List available gifts that can be included with cards
 - **list_orders**: List history of card orders
-- **list_templates**: List message templates
+- **get_credit_balance**: Check current account credit balance
 - **send_card**: Requires card_id, font_id, message, and recipient details.
 
 Send a single handwritten card
@@ -136,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

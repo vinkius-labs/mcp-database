@@ -50,9 +50,6 @@ Get next train arrival predictions at a specific Metro Rail station
 - **get_rail_routes**: Essential for line identification, rail network understanding, service area analysis, and identifying line IDs for use in rail journey planning. AI agents should reference this when users ask "list all Metro Rail lines", "what lines does Metro operate", or need line metadata for rail network context.
 
 List all Metro Rail lines and routes
-- **get_bus_locations**: Returns vehicle IDs, route IDs, latitude/longitude coordinates, heading direction, seconds since last report, predictability indicators, and trip/run identifiers. Can query all buses system-wide or filter by specific route ID for targeted route-level tracking. Essential for real-time bus fleet monitoring, passenger arrival estimation, route-level service awareness, and transit operations management. AI agents should reference this when users ask "show me all buses on route 720", "where are the active buses right now", or need real-time bus position data for fleet visualization or arrival prediction.
-
-Get real-time bus locations system-wide or for a specific route
 - **get_bus_routes**: Returns route IDs, route names, types (local, rapid, express, Metro Rail link), direction listings, and route metadata. Covers hundreds of routes serving the entire LA Metro service area including downtown LA, Hollywood, Santa Monica, San Fernando Valley, South Bay, East LA, and beyond. Essential for route discovery, service area analysis, transit network understanding, and identifying route IDs for use in stop and schedule queries. AI agents should reference this when users ask "list all Metrobus routes", "what routes serve downtown LA", or need to identify route IDs for subsequent Metrobus queries.
 
 List all Metrobus routes in the LA Metro system
@@ -80,6 +77,9 @@ Get current service alerts and disruptions across the LA Metro system
 - **get_stop_predictions**: Returns predicted arrival times in minutes and seconds, route IDs, run IDs, direction information, departure indicators, and prediction confidence levels. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should reference this when users ask "when is the next bus at stop 5678", "show predictions for this stop", or need real-time arrival data for a specific bus stop. Stop IDs can be found using get_bus_stops.
 
 Get next bus arrival predictions for a specific bus stop
+- **get_bus_locations**: Returns vehicle IDs, route IDs, latitude/longitude coordinates, heading direction, seconds since last report, predictability indicators, and trip/run identifiers. Can query all buses system-wide or filter by specific route ID for targeted route-level tracking. Essential for real-time bus fleet monitoring, passenger arrival estimation, route-level service awareness, and transit operations management. AI agents should reference this when users ask "show me all buses on route 720", "where are the active buses right now", or need real-time bus position data for fleet visualization or arrival prediction.
+
+Get real-time bus locations system-wide or for a specific route
 
 
 ## 💬 Prompt Examples
@@ -164,4 +164,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
