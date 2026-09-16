@@ -14,9 +14,9 @@ The Non-linear Ingredient Adjuster is a specialized culinary engine designed to 
 
 
 ## Available Tools (3)
-- **validate_recipe_input**: Validate a recipe ingredient list
-- **get_scaling_multipliers**: Preview scaling multipliers
 - **scale_ingredients**: Scale ingredients non-linearly
+- **get_scaling_multipliers**: Preview scaling multipliers
+- **validate_recipe_input**: Validate a recipe ingredient list
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

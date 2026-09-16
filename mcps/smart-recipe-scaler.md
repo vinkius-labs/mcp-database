@@ -14,15 +14,15 @@ The Smart Recipe Scaler is a precision utility designed for cooks and bakers who
 
 
 ## Available Tools (3)
+- **reformat_to_kitchen_standard**: Returns formatted string.
+
+Converts a scaled metric value back into the most human-readable, practical kitchen unit
 - **execute_scaling**: Returns scaled amount.
 
 Performs the mathematical scaling of a normalized metric value
 - **parse_measurement**: Returns amount, category (volume/mass), and unitName.
 
 Parses a raw ingredient string into a standardized numerical value and identifies its unit category
-- **reformat_to_kitchen_standard**: Returns formatted string.
-
-Converts a scaled metric value back into the most human-readable, practical kitchen unit
 
 
 ## 💬 Prompt Examples
@@ -107,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
