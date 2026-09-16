@@ -32,14 +32,16 @@ Connect your **Google Contacts** directory to any AI agent and take full control
 
 
 ## Available Tools (9)
+- **get_contact_group**: Provide the exact resource name of the group.
+
+Retrieves a specific contact group by resource name
 - **create_contact_group**: 
 - **get_contact**: Gets the full details of a specific contact
 - **list_contact_groups**: Lists the user's contact groups (or labels)
-- **create_contact**: Creates a new contact (connection)
-- **list_contacts**: Lists the user's connections (contacts)
 - **search_contacts**: Searches the user's contacts by a query string
+- **create_contact**: Creates a new contact (connection)
 - **delete_contact**: Deletes a contact
-- **get_contact_group**: 
+- **list_contacts**: Lists the user's connections (contacts)
 - **update_contact**: Must provide an etag obtained from get_contact.
 
 Updates an existing contact
@@ -130,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

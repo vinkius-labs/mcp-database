@@ -39,36 +39,36 @@ Connect your **FullStory** account to any AI agent to automate your digital expe
 - **list_exports**: Resolves the status of bulk data offloads, processing states, and download URIs for warehouse ingestion.
 
 List raw data export jobs available for download
-- **create_event**: Automatically mapped for server-side metrics injection that bypassed the frontal JavaScript client.
-
-Dispatch a custom backend event into FullStory
 - **delete_user**: Permanently removes privacy-sensitive telemetry, custom property links, and session aggregations inside FullStory.
 
 Erase a user profile and their associated session history
+- **get_account_info**: Validates live integration capability and fetches workspace scope definitions.
+
+Verify authentication and retrieve basic platform stats
+- **get_session_events**: Exposes click trails, navigation mutations, error logs, and precise structural DOM changes.
+
+Fetch the chronological telemetry events for a session
 - **get_session**: Resolves page transitions, total active time, event markers, and active direct access tracking links.
 
 Retrieve deep metadata for a specific session recording
 - **get_user**: Retrieves raw session metadata, total session durations, custom variables, and cross-device interaction boundaries.
 
 Get full tracking profile and behavior history for a specific user
-- **list_users**: Resolves user identities, custom parameters, session counts, and aggregate behavioral profiles across the analytics boundary.
-
-Query the FullStory subscriber and visitor directory for analytics
-- **get_account_info**: Validates live integration capability and fetches workspace scope definitions.
-
-Verify authentication and retrieve basic platform stats
-- **create_update_user**: Used to synchronize custom tenant data into the FullStory analytics boundary for enhanced session context.
-
-Upsert a user identity into FullStory tracking
-- **get_session_events**: Exposes click trails, navigation mutations, error logs, and precise structural DOM changes.
-
-Fetch the chronological telemetry events for a session
 - **list_segments**: Resolves saved audience definitions, population counts across the last 30 days, and logical filter structures.
 
 List dynamic audience segments built in FullStory
 - **list_sessions**: Resolves a subset of sessions matching provided JSON query criteria, exposing playback links, browser signatures, and metric overlays.
 
 List or search session recordings based on telemetry
+- **list_users**: Resolves user identities, custom parameters, session counts, and aggregate behavioral profiles across the analytics boundary.
+
+Query the FullStory subscriber and visitor directory for analytics
+- **create_event**: Automatically mapped for server-side metrics injection that bypassed the frontal JavaScript client.
+
+Dispatch a custom backend event into FullStory
+- **create_update_user**: Used to synchronize custom tenant data into the FullStory analytics boundary for enhanced session context.
+
+Upsert a user identity into FullStory tracking
 
 
 ## 💬 Prompt Examples
@@ -156,4 +156,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -39,31 +39,31 @@ No more manual dashboard navigation to check post statuses or member counts. You
 - **create_post**: Requires a title and supports optional HTML content. The post is created as a "draft" by default but can be set to "published" immediately.
 
 Create a new Ghost post or draft
-- **get_site_settings**: Essential for verifying site identity.
-
-Get Ghost site settings and configuration
-- **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
-
-List membership tiers and plans
-- **list_pages**: g., About, Contact) defined on the Ghost site. Pages are similar to posts but used for non-blog content.
-
-List all static site pages
-- **list_posts**: Includes basic metadata and post IDs for detailed retrieval.
-
-List all Ghost blog posts
 - **get_post_details**: Essential for reviewing the full content of an article.
 
 Get details for a specific post
-- **list_members**: Includes emails, status, and join dates.
-
-List all site members
 - **list_newsletters**: Newsletters are used to send content updates to members.
 
 List all configured newsletters
 - **list_offers**: List active membership offers
+- **list_posts**: Includes basic metadata and post IDs for detailed retrieval.
+
+List all Ghost blog posts
+- **list_pages**: g., About, Contact) defined on the Ghost site. Pages are similar to posts but used for non-blog content.
+
+List all static site pages
+- **get_site_settings**: Essential for verifying site identity.
+
+Get Ghost site settings and configuration
+- **list_members**: Includes emails, status, and join dates.
+
+List all site members
 - **list_tags**: Useful for organizing and filtering posts.
 
 List all content tags
+- **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
+
+List membership tiers and plans
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,16 +33,16 @@ Connect **GoHighLevel** to your AI agent and manage your all-in-one marketing an
 
 
 ## Available Tools (10)
-- **list_contacts**: List all CRM contacts
 - **create_contact**: Create a new contact
 - **get_contact**: Get contact details
-- **list_calendars**: List booking calendars
-- **list_pipelines**: List sales pipelines
-- **send_message**: Send an SMS/email to a contact
-- **list_forms**: List lead capture forms
 - **list_opportunities**: List pipeline opportunities
-- **list_campaigns**: List drip campaigns
+- **list_pipelines**: List sales pipelines
+- **list_forms**: List lead capture forms
+- **list_contacts**: List all CRM contacts
+- **list_calendars**: List booking calendars
 - **list_conversations**: List recent conversations
+- **send_message**: Send an SMS/email to a contact
+- **list_campaigns**: List drip campaigns
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

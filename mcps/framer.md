@@ -33,16 +33,16 @@ Connect **Framer** to your AI agent and manage your website CMS content and publ
 
 
 ## Available Tools (8)
+- **list_projects**: List all Framer projects
 - **create_collection_item**: Create a new CMS item
 - **get_site_info**: Get site configuration
-- **list_collection_items**: List items in a CMS collection
-- **list_collections**: List CMS collections
-- **list_projects**: List all Framer projects
 - **get_project**: Get project details
-- **list_pages**: List all site pages
+- **list_collections**: List CMS collections
+- **list_collection_items**: List items in a CMS collection
 - **publish_site**: This makes changes visible to visitors.
 
 Publish the website
+- **list_pages**: List all site pages
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

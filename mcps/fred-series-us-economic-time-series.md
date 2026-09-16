@@ -27,18 +27,18 @@ Quantitative analysts, economists, financial advisors, portfolio managers, data 
 
 
 ## Available Tools (5)
-- **get_observations**: Supports date filtering, unit transformations (percent change, log, etc.), and frequency aggregation. This is the primary tool for retrieving economic data.
-
-Get actual data values for a FRED time series
 - **get_series**: Use well-known IDs like GDP, UNRATE, CPIAUCSL, FEDFUNDS, DGS10, SP500, M2SL.
 
 Get metadata for a specific FRED series
-- **get_series_updates**: Useful for monitoring new data releases. Filter by macro (large/popular series) or regional.
-
-Get recently updated FRED series
 - **get_vintage_dates**: Essential for ALFRED-style vintage analysis and understanding data revisions.
 
 Get historical revision dates for a series
+- **get_observations**: Supports date filtering, unit transformations (percent change, log, etc.), and frequency aggregation. This is the primary tool for retrieving economic data.
+
+Get actual data values for a FRED time series
+- **get_series_updates**: Useful for monitoring new data releases. Filter by macro (large/popular series) or regional.
+
+Get recently updated FRED series
 - **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series. Examples: "GDP", "unemployment rate", "inflation CPI".
 
 Search 816,000+ economic time series by keyword
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

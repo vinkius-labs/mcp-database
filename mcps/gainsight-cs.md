@@ -36,18 +36,18 @@ Connect your **Gainsight Customer Success** (NXT) instance to any AI agent to au
 
 
 ## Available Tools (12)
+- **log_timeline_activity**: Log new activity
+- **get_person_details**: Get person metadata
 - **get_company_health**: Get company metadata
 - **get_cta_metadata**: Get CTA details
 - **list_cockpit_tasks**: List cockpit tasks
 - **list_crm_people**: List Gainsight people
 - **list_customer_companies**: List Gainsight companies
 - **verify_api_connection**: Verify connection
-- **get_my_identity**: Get current user profile
-- **get_person_details**: Get person metadata
-- **get_task_metadata**: Get task details
 - **list_calls_to_action**: List cockpit CTAs
-- **log_timeline_activity**: Log new activity
+- **get_my_identity**: Get current user profile
 - **list_timeline_events**: List timeline activities
+- **get_task_metadata**: Get task details
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
