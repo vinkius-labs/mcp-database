@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your visual intelligence and facial recogni
 
 
 ## Available Tools (8)
+- **list_persons_in_group**: List persons in group
+- **live_face_check**: Detect live face
 - **analyze_face**: Analyze facial attributes
 - **search_face_in_groups**: Search face in library
 - **compare_faces**: Compare two faces
 - **register_person**: Create a new person
 - **detect_face**: Detect faces in image
 - **list_face_groups**: List person groups
-- **list_persons_in_group**: List persons in group
-- **live_face_check**: Detect live face
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

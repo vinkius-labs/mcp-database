@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your serverless infrastructure and backend 
 
 
 ## Available Tools (8)
-- **list_cloud_functions**: List cloud functions
-- **list_collections**: List database collections
-- **get_environment_info**: Get TCB environment details
 - **get_function_metadata**: Get function details
+- **get_environment_info**: Get TCB environment details
 - **invoke_cloud_function**: Trigger cloud function
 - **list_auth_users**: List authenticated users
+- **list_cloud_functions**: List cloud functions
+- **list_collections**: List database collections
 - **list_tcb_buckets**: List storage buckets
 - **query_cloud_db**: Query cloud database
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
