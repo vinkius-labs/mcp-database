@@ -32,16 +32,22 @@ Connect your **Hullo** account to any AI agent and manage member communications 
 
 
 ## Available Tools (6)
-- **get_member**: Get member details
-- **send_message**: Pass message data as a JSON string.
-
-Send a message to a member
 - **create_member**: Pass member data as a JSON string.
 
 Create a new member
-- **get_conversation**: Get conversation details
-- **list_conversations**: List all conversations
+- **get_conversation**: Use the specific Conversation ID.
+
+Get conversation details
+- **get_member**: Provide a valid Member ID.
+
+Get member details
+- **list_conversations**: Do not use this tool if you know the specific conversation ID.
+
+List all conversations
 - **list_members**: List all members
+- **send_message**: Pass message data as a JSON string.
+
+Send a message to a member
 
 
 ## 💬 Prompt Examples
@@ -126,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

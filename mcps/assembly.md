@@ -29,11 +29,11 @@ Connect your Assembly account via your API Key to manage your professional servi
 - **get_workspace**: Get a specific workspace
 - **list_companies**: List all Assembly companies
 - **list_notes**: List Assembly notes
+- **list_users**: List all Assembly users
 - **list_workspaces**: List all Assembly workspaces
 - **get_company**: Get details for a specific company
 - **get_note**: Get a specific note
 - **list_clients**: List all Assembly clients
-- **list_users**: List all Assembly users
 
 
 ## 💬 Prompt Examples
@@ -118,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,18 +14,42 @@ The crm4 solution MCP server enables your AI agent to manage leads, campaigns, a
 
 
 ## Available Tools (12)
-- **delete_contact**: Permanently remove a contact
-- **get_contact**: Retrieve details for a specific contact
-- **list_calls**: Retrieve call center activity logs
-- **list_contact_lists**: List all contact distribution lists
-- **list_contacts**: List all contacts/leads
-- **search_contacts**: Search for contacts using filters
-- **update_contact**: Update an existing contact
-- **create_contact**: Create a new contact in the CRM
-- **add_contact_to_list**: Add a contact to a specific distribution list
-- **list_campaigns**: List all marketing/calling campaigns
-- **send_sms**: Send an SMS message to a contact
-- **send_whatsapp**: Send a WhatsApp message (requires approved template)
+- **add_contact_to_list**: Provide both the list ID and the contact ID.
+
+Add a contact to a specific distribution list
+- **delete_contact**: the deletion.
+
+Permanently remove a contact
+- **get_contact**: Provide the required contact ID.
+
+Retrieve details for a specific contact
+- **list_calls**: No arguments are required.
+
+Retrieve call center activity logs
+- **list_campaigns**: No arguments are required.
+
+List all marketing/calling campaigns
+- **list_contacts**: Do not use this tool if you need specific filtering.
+
+List all contacts/leads
+- **list_contact_lists**: No arguments are required.
+
+List all contact distribution lists
+- **search_contacts**: Pass filters as a JSON object in queryParams.
+
+Search for contacts using filters
+- **send_sms**: The message content must be provided in the message parameter.
+
+Send an SMS message to a contact
+- **send_whatsapp**: The body must contain message details, including the template ID.
+
+Send a WhatsApp message (requires approved template)
+- **update_contact**: You must provide both the contact ID and the updated data.
+
+Update an existing contact
+- **create_contact**: Ensure the body contains all necessary details.
+
+Create a new contact in the CRM
 
 
 ## 💬 Prompt Examples
@@ -110,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

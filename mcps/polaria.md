@@ -29,14 +29,14 @@ Ideal for customer success teams, support agents, and community managers who wan
 
 
 ## Available Tools (8)
-- **get_conversation**: Get details of a specific conversation
-- **add_chat_message**: Add a message to a conversation
-- **list_faqs**: List FAQs in Polaria
 - **create_contact**: Create a new contact in Polaria
 - **get_contact**: Get details of a specific contact
+- **get_conversation**: Get details of a specific conversation
 - **list_contacts**: List contacts in Polaria
 - **list_conversations**: List conversations in Polaria
 - **list_widgets**: List Polaria widgets
+- **add_chat_message**: Add a message to a conversation
+- **list_faqs**: List FAQs in Polaria
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

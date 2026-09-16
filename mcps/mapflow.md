@@ -34,13 +34,12 @@ Connect your **Mapflow** account to any AI agent and manage geospatial AI proces
 
 
 ## Available Tools (7)
-- **create_project**: Pass data as a JSON string.
-
-Create a new project
-- **list_projects**: List all MapFlow projects
 - **create_processing**: Pass data as a JSON string.
 
 Start a new imagery analysis
+- **create_project**: Pass data as a JSON string.
+
+Create a new project
 - **get_processing_result**: Use the unique processing ID.
 
 Get processing result data
@@ -53,6 +52,7 @@ List available geospatial AI models
 - **list_processings**: Do not use this tool to start a new job.
 
 List all geospatial processings
+- **list_projects**: List all MapFlow projects
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

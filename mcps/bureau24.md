@@ -35,20 +35,20 @@ Connect your **Bureau24 (bureau24.fr)** virtual secretary account to any AI agen
 
 
 ## Available Tools (10)
+- **get_call**: Get details of a specific call
 - **get_me**: fr account and subscription.
 
 Get account information
+- **get_message**: Get details of a specific message
 - **get_secretary_status**: Get your current secretary status
+- **list_calls**: List recent calls received by bureau24.fr
 - **list_contacts**: List your address book contacts
 - **list_instructions**: List secretary handling instructions
+- **list_messages**: List messages from your virtual secretary
 - **update_secretary_status**: g., Available, In a Meeting, On Vacation) and provides a note for the secretary.
 
 Update your availability status
-- **get_message**: Get details of a specific message
 - **create_contact**: Add a new contact to your address book
-- **get_call**: Get details of a specific call
-- **list_calls**: List recent calls received by bureau24.fr
-- **list_messages**: List messages from your virtual secretary
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

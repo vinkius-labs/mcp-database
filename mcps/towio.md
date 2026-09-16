@@ -34,12 +34,12 @@ Connect your **Towio** craft and construction account to any AI agent and simpli
 
 
 ## Available Tools (6)
-- **list_projects**: List towio projects
-- **list_employees**: List company employees
-- **list_tasks**: List all tasks in towio
 - **get_api_version**: Check towio API version and connectivity
-- **create_task**: Create a new task
 - **list_delivery_documents**: List delivery documents
+- **list_tasks**: List all tasks in towio
+- **list_employees**: List company employees
+- **list_projects**: List towio projects
+- **create_task**: Create a new task
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
