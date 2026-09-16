@@ -37,17 +37,37 @@ No more manual exporting of company lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
-- **get_enrichment_status**: Check the status of a background enrichment request
-- **enrich_company**: Enrich a company with firmographics, funding, and social signals
-- **enrich_person**: Enrich a person with professional history and social signals
+- **get_enrichment_status**: Use the ID returned by a 201 enrichment response.
+
+Check the status of a background enrichment request
+- **search_startups**: Pass filters as a JSON string.
+
+Search for startups using filters like industry, location, and headcount
+- **search_investors**: Pass filters as a JSON string.
+
+Search for investment firms and angels
+- **enrich_company**: Provide a valid company domain.
+
+Enrich a company with firmographics, funding, and social signals
+- **enrich_person**: Use a valid LinkedIn URL.
+
+Enrich a person with professional history and social signals
+- **get_company_stats**: Supply the company’s unique identifier.
+
+Get growth and headcount statistics for a company
+- **get_investor_portfolio**: Supply the investor’s unique identifier.
+
+Get the list of portfolio companies for an investor
 - **get_api_profile**: Get information about the current API user
-- **list_company_news**: List recent news and press releases for a company
-- **search_investors**: Search for investment firms and angels
-- **search_startups**: Search for startups using filters like industry, location, and headcount
-- **get_company_stats**: Get growth and headcount statistics for a company
-- **get_investor_portfolio**: Get the list of portfolio companies for an investor
-- **list_funding_rounds**: List funding rounds for a specific company
-- **list_traction_signals**: List social and web traction signals for a company
+- **list_company_news**: Supply the company’s unique identifier.
+
+List recent news and press releases for a company
+- **list_funding_rounds**: Supply the company’s unique identifier.
+
+List funding rounds for a specific company
+- **list_traction_signals**: Supply the company’s unique identifier.
+
+List social and web traction signals for a company
 
 
 ## 💬 Prompt Examples
@@ -135,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,20 +37,26 @@ No more manual navigating through complex ticketing tabs. Your AI assistant acts
 
 
 ## Available Tools (10)
-- **list_contacts**: List all contacts (users) in the help desk
-- **add_staff_update**: Add a staff response/update to a ticket
 - **list_categories**: List all ticket categories
-- **list_tickets**: Use query parameters for filtering/pagination.
+- **add_staff_update**: Must provide both the ticket ID and the update text.
 
-List all support tickets in HappyFox
+Add a staff response/update to a ticket
 - **create_ticket**: Requires subject, text, category ID, and contact details.
 
 Create a new support ticket
-- **get_ticket**: Get detailed information about a specific ticket
+- **get_ticket**: Provide the ticket ID as the only parameter.
+
+Get detailed information about a specific ticket
 - **list_priorities**: List all available ticket priorities
 - **list_staff**: List all staff members
 - **list_statuses**: List all available ticket statuses
-- **search_tickets**: Search for tickets using a text query
+- **list_tickets**: Use query parameters for filtering/pagination.
+
+List all support tickets in HappyFox
+- **list_contacts**: List all contacts (users) in the help desk
+- **search_tickets**: Pass the search term in the query parameter.
+
+Search for tickets using a text query
 
 
 ## 💬 Prompt Examples
@@ -138,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

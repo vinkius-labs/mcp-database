@@ -37,20 +37,20 @@ Connect your **GatherUp** account to any AI agent to automate your review manage
 
 
 ## Available Tools (12)
-- **get_account_info**: Get user identity
 - **get_review_metrics**: Get location stats
-- **list_online_reviews**: List external reviews
 - **verify_api_connection**: Check connection
-- **add_new_customer**: Sync a customer
+- **get_account_info**: Get user identity
+- **list_customer_contacts**: List customers
 - **list_business_locations**: List business units
 - **list_internal_feedback**: List direct feedback
+- **list_online_reviews**: List external reviews
 - **reply_to_feedback**: Reply to internal feedback
-- **list_customer_contacts**: List customers
 - **reply_to_online_review**: g. Google or Facebook).
 
 Reply to external review
 - **search_all_reviews**: Search all feedback
 - **send_review_invite**: Request a review
+- **add_new_customer**: Sync a customer
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

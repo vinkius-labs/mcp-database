@@ -34,17 +34,39 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 
 
 ## Available Tools (11)
-- **get_now_pages**: Get a list of pages currently being viewed
-- **get_trends_overview**: Get historical aggregate data overview
-- **get_now_campaigns**: Get active campaigns currently driving traffic
-- **get_now_overview**: Get a top-level overview of concurrent active visitors
-- **get_trends_devices**: Get historical device breakdown data
-- **get_trends_sources**: Get historical traffic sources data
-- **get_now_sources**: Get active traffic sources (referrers)
-- **get_now_visitors**: Get a list of individual visitors currently online
-- **get_trends_browsers**: Get historical browser breakdown data
-- **get_trends_campaigns**: Get historical campaign performance data
-- **get_trends_pages**: Get historical aggregate data for pages
+- **get_trends_overview**: Provide a date string, or the query will use the default date.
+
+Get historical aggregate data overview
+- **get_trends_devices**: Specify the date for the data, or the query will use the default date.
+
+Get historical device breakdown data
+- **get_trends_sources**: Specify the date for the data, or the query will use the default date.
+
+Get historical traffic sources data
+- **get_trends_pages**: Specify the date for the data, or the query will use the default date.
+
+Get historical aggregate data for pages
+- **get_now_campaigns**: This tool does not accept parameters.
+
+Get active campaigns currently driving traffic
+- **get_now_overview**: This tool does not accept parameters.
+
+Get a top-level overview of concurrent active visitors
+- **get_now_pages**: This tool does not accept parameters.
+
+Get a list of pages currently being viewed
+- **get_now_sources**: This tool does not accept parameters.
+
+Get active traffic sources (referrers)
+- **get_now_visitors**: This tool does not accept parameters.
+
+Get a list of individual visitors currently online
+- **get_trends_browsers**: Specify the date for the data, or the query will use the default date.
+
+Get historical browser breakdown data
+- **get_trends_campaigns**: Specify the date for the data, or the query will use the default date.
+
+Get historical campaign performance data
 
 
 ## 💬 Prompt Examples
@@ -133,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

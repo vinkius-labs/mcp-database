@@ -35,18 +35,34 @@ Connect your **Groove** helpdesk account to any AI agent and take full control o
 
 
 ## Available Tools (12)
-- **create_ticket**: Create a new helpdesk ticket
+- **create_ticket**: The body parameter must be a JSON string containing body, from, and to fields.
+
+Create a new helpdesk ticket
 - **get_agent**: Get details for a specific agent by email
-- **get_customer**: Get details for a specific customer by email
-- **get_mailbox**: Get details for a specific mailbox by ID
-- **get_ticket**: Get details for a specific ticket by its number
-- **list_mailboxes**: List all mailboxes in the account
-- **create_message**: Add a reply or internal note to a ticket
+- **get_customer**: Must provide a valid email address to proceed.
+
+Get details for a specific customer by email
+- **create_message**: Ensure the body parameter is a JSON string containing body, author, and recipient.
+
+Add a reply or internal note to a ticket
+- **update_ticket_state**: Specify both the ticket number and the desired new state.
+
+Change the status of a ticket
+- **get_ticket**: Must provide a valid ticket number.
+
+Get details for a specific ticket by its number
 - **list_agents**: List all agents in the Groove account
+- **list_messages**: Only requires the ticket number.
+
+List all messages and comments in a ticket
+- **list_tickets**: Filter results by specifying a state (e.g., opened, closed).
+
+List all helpdesk tickets
+- **get_mailbox**: Provide the unique mailbox ID.
+
+Get details for a specific mailbox by ID
 - **list_customers**: List all customers in the Groove account
-- **update_ticket_state**: Change the status of a ticket
-- **list_messages**: List all messages and comments in a ticket
-- **list_tickets**: List all helpdesk tickets
+- **list_mailboxes**: List all mailboxes in the account
 
 
 ## 💬 Prompt Examples
@@ -131,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

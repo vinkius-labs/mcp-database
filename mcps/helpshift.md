@@ -38,24 +38,28 @@ No more manual exporting of issue logs. Your AI assistant acts as a dedicated Su
 
 ## Available Tools (11)
 - **list_faq_sections**: List FAQ categories/sections
-- **update_issue_status**: Update the status of an issue (e.g., Resolved, Rejected)
-- **bulk_user_action**: Pass the actions array as a JSON string in "body_json".
-
-Perform bulk profile operations (v2)
 - **get_issue_details**: Get detailed information about a specific issue
-- **add_issue_message**: Pass the message details as a JSON string in "body_json".
-
-Add a message to an existing issue
 - **create_issue**: Pass the payload as a JSON string in "body_json" (requires app_id, title, body).
 
 Create a new support issue
 - **get_issue_audit_logs**: Retrieve the action history for a specific issue
-- **get_bulk_task_status**: Check the status of a bulk profile operation
+- **add_issue_message**: Pass the message details as a JSON string in "body_json".
+
+Add a message to an existing issue
+- **bulk_user_action**: Pass the actions array as a JSON string in "body_json".
+
+Perform bulk profile operations (v2)
+- **get_bulk_task_status**: Requires the task ID.
+
+Check the status of a bulk profile operation
+- **list_registered_apps**: List all applications registered in your Helpshift dashboard
 - **list_faqs**: List all published FAQ articles
 - **list_issues**: Useful for monitoring support volume and identifying urgent cases.
 
 List support issues/tickets in Helpshift
-- **list_registered_apps**: List all applications registered in your Helpshift dashboard
+- **update_issue_status**: Provide the issue ID and the desired new status.
+
+Update the status of an issue (e.g., Resolved, Rejected)
 
 
 ## 💬 Prompt Examples
@@ -143,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
