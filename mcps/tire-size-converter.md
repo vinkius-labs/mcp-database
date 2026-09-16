@@ -14,10 +14,10 @@ An essential tool for automotive enthusiasts and professionals to precisely calc
 
 
 ## Available Tools (3)
+- **calculate_speedometer_deviation**: Calculates speedometer error when changing tire sizes
 - **calculate_tire_dimensions**: Returns width, sidewall height, diameter, circumference, and revs per mile.
 
 Calculates physical dimensions of a tire
-- **calculate_speedometer_deviation**: Calculates speedometer error when changing tire sizes
 - **evaluate_clearance_compatibility**: Checks for potential tire rubbing/interference
 
 
@@ -103,4 +103,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,15 +14,15 @@ This MCP server provides a deep analytical engine for evaluating astrological co
 
 
 ## Available Tools (3)
-- **analyze_elemental_synergy**: Returns affinity score and interaction type.
-
-Evaluates relationship between two elements
-- **lookup_sign_properties**: g., "Aries"). Returns element and modality.
-
-Retrieves elemental and modal attributes for a zodiac sign
 - **generate_compatibility_report**: Returns multi-dimensional scores and summary.
 
 Generates a full astrological compatibility report
+- **lookup_sign_properties**: g., "Aries"). Returns element and modality.
+
+Retrieves elemental and modal attributes for a zodiac sign
+- **analyze_elemental_synergy**: Returns affinity score and interaction type.
+
+Evaluates relationship between two elements
 
 
 ## 💬 Prompt Examples
@@ -107,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

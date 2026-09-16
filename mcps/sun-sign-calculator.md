@@ -14,8 +14,8 @@ The Sun Sign Calculator provides highly accurate astrological data by calculatin
 
 
 ## Available Tools (2)
-- **get_sign_details**: Get elemental and modal properties of a zodiac sign
 - **calculate_cusp**: Calculate the zodiac sign cusp for a given date
+- **get_sign_details**: Get elemental and modal properties of a zodiac sign
 
 
 ## 💬 Prompt Examples
@@ -100,4 +100,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
