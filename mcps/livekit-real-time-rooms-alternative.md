@@ -1,4 +1,4 @@
-# LiveKit Real-Time Rooms Alternative MCP Server
+# LiveKit Real-Time Rooms MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/livekit-real-time-rooms-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -37,19 +37,13 @@ Connect your AI agents to **LiveKit**, the open-source framework and cloud platf
 
 
 ## Available Tools (10)
-- **create_ttvoice_room**: Participants can join it via access tokens.
-
-Create a new LiveKit room with specified settings
-- **get_ttvoice_participant**: Get detailed information about a specific participant
-- **list_ttvoice_participants**: List all participants currently in a room
 - **list_ttvoice_rooms**: List all active rooms on the LiveKit server
 - **mute_ttvoice_track**: Mute or unmute a participant's published track
 - **update_ttvoice_room_metadata**: Use JSON strings for structured data.
 
 Update the metadata of a room
-- **delete_ttvoice_room**: Requires roomCreate permission.
-
-Delete a room, disconnecting all participants
+- **get_ttvoice_participant**: Get detailed information about a specific participant
+- **list_ttvoice_participants**: List all participants currently in a room
 - **remove_ttvoice_participant**: On LiveKit Cloud, their token is also revoked.
 
 Remove a participant from a room
@@ -57,11 +51,17 @@ Remove a participant from a room
 
 Send a data message to all participants in a room
 - **update_ttvoice_participant_metadata**: Update a participant's metadata
+- **create_ttvoice_room**: Participants can join it via access tokens.
+
+Create a new LiveKit room with specified settings
+- **delete_ttvoice_room**: Requires roomCreate permission.
+
+Delete a room, disconnecting all participants
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **LiveKit Real-Time Rooms Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **LiveKit Real-Time Rooms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "List all active rooms on my LiveKit server."
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **LiveKit Real-Time Rooms Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **LiveKit Real-Time Rooms** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `livekit-real-time-rooms-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **LiveKit Real-Time Rooms Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **LiveKit Real-Time Rooms** tools.
 
 **Configuration:**
 ```json
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
