@@ -33,21 +33,39 @@ Connect your **PipeRun CRM** account to any AI agent to streamline your sales op
 
 
 ## Available Tools (11)
-- **get_activity**: Get details for a specific activity
-- **get_activity_type**: Get details for a specific activity type
-- **get_file**: Get details for a specific file
-- **upload_file**: Requires base64 encoded file content.
+- **delete_activity**: Requires the unique ID of the activity to be deleted.
 
-Upload a file to a deal, person, or company
-- **delete_activity**: Delete an activity
-- **delete_file**: Delete a file from PipeRun
-- **create_activity**: Create a new activity
-- **list_activities**: List activities (tasks and appointments)
-- **list_activity_types**: List all activity types
+Delete an activity
+- **create_activity**: Provide at least an activity type ID and a title.
+
+Create a new activity
+- **delete_file**: Specify the file ID to be deleted.
+
+Delete a file from PipeRun
+- **get_activity**: Pass the activity ID to fetch the data.
+
+Get details for a specific activity
+- **get_activity_type**: Pass the required activity type ID.
+
+Get details for a specific activity type
+- **get_file**: Provide the file ID as the required parameter.
+
+Get details for a specific file
+- **list_activities**: Use the ’with’ parameter to specify required relationships.
+
+List activities (tasks and appointments)
+- **list_activity_types**: Use the ’cursor’ parameter for pagination.
+
+List all activity types
 - **list_files**: Supports pagination and filtering.
 
 List files attached to deals, persons, or companies
-- **update_activity**: Update an existing activity
+- **update_activity**: Must provide the activity ID and at least one field to update.
+
+Update an existing activity
+- **upload_file**: Requires base64 encoded file content.
+
+Upload a file to a deal, person, or company
 
 
 ## 💬 Prompt Examples
@@ -132,4 +150,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

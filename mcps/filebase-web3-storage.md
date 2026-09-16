@@ -33,35 +33,67 @@ Connect your **Filebase** account to any AI agent and take full control of your 
 
 
 ## Available Tools (29)
-- **platform_delete_gateway**: Delete a dedicated gateway
-- **platform_delete_name**: Delete an IPNS name
+- **platform_delete_name**: Supply the exact label of the name you intend to delete.
+
+Delete an IPNS name
 - **platform_get_bucket_usage**: Get storage usage for a specific bucket
+- **platform_update_name**: Use the current label and the new CID in the request.
+
+Update an IPNS name to point to a new CID
+- **rpc_cat**: The CID must be a valid IPFS Content Identifier.
+
+Fetch contents of a file by CID
+- **rpc_pin_add**: The CID must be a valid IPFS Content Identifier.
+
+Pin a CID to persistent storage
+- **psa_add_pin**: Provide both the CID and a name.
+
+Add a pin using the Pinning Service API
+- **platform_create_gateway**: Provide a unique name for the gateway.
+
+Create a new dedicated gateway
+- **platform_create_name**: Ensure the label is unique before calling.
+
+Create a new IPNS name
+- **platform_delete_gateway**: Delete a dedicated gateway
 - **platform_get_gateway**: Get details of a specific dedicated gateway
 - **platform_get_gateway_usage**: Get bandwidth usage for a dedicated gateway
-- **platform_get_name**: Get details of a specific IPNS name
-- **platform_update_name**: Update an IPNS name to point to a new CID
-- **psa_add_pin**: Add a pin using the Pinning Service API
-- **psa_list_pins**: List pins using the Pinning Service API
-- **psa_remove_pin**: Remove a pin by request ID
-- **psa_replace_pin**: Replace an existing pin
-- **rpc_block_get**: Retrieve a raw block by CID
-- **rpc_cat**: Fetch contents of a file by CID
-- **rpc_key_list**: List all keys in the keychain
-- **rpc_name_publish**: Publish a CID to IPNS
-- **rpc_pin_add**: Pin a CID to persistent storage
-- **rpc_pin_ls**: List all pinned objects via RPC
-- **rpc_pin_rm**: Unpin a CID via RPC
-- **rpc_version**: Get the version of the IPFS daemon
-- **platform_create_gateway**: Create a new dedicated gateway
-- **platform_create_name**: Create a new IPNS name
+- **platform_get_name**: Provide the exact label you wish to query.
+
+Get details of a specific IPNS name
 - **platform_get_usage**: Get total storage and bandwidth usage
 - **platform_list_gateways**: List all dedicated gateways
 - **platform_list_names**: List all IPNS names
-- **platform_update_gateway**: Update a dedicated gateway
+- **platform_update_gateway**: Must specify the gateway name.
+
+Update a dedicated gateway
 - **psa_get_pin**: Get pin status by request ID
+- **psa_list_pins**: Filter by CID, name, or status.
+
+List pins using the Pinning Service API
+- **psa_remove_pin**: Remove a pin by request ID
+- **psa_replace_pin**: Must provide both the request ID and the new CID.
+
+Replace an existing pin
 - **rpc_add**: Add a text file to IPFS
-- **rpc_key_gen**: Create a new keypair
-- **rpc_name_resolve**: Resolve an IPNS name to an IPFS path
+- **rpc_block_get**: The CID must be a valid IPFS Content Identifier.
+
+Retrieve a raw block by CID
+- **rpc_key_gen**: Specify both the name and the key type.
+
+Create a new keypair
+- **rpc_key_list**: List all keys in the keychain
+- **rpc_name_publish**: The CID must be a valid IPFS Content Identifier.
+
+Publish a CID to IPNS
+- **rpc_name_resolve**: The name must be a valid IPNS name.
+
+Resolve an IPNS name to an IPFS path
+- **rpc_pin_ls**: List all pinned objects via RPC
+- **rpc_pin_rm**: The CID must be a valid IPFS Content Identifier.
+
+Unpin a CID via RPC
+- **rpc_version**: Get the version of the IPFS daemon
 
 
 ## 💬 Prompt Examples
@@ -146,4 +178,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
