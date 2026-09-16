@@ -36,14 +36,22 @@ Connect your **Chatwoot** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **list_chatwoot_contacts**: List all customer contacts
+- **get_contact_details**: Use this tool when specific contact data is needed.
+
+Get detailed information for a specific customer contact
+- **get_conversation_details**: Use this tool when specific conversation data is required.
+
+Get detailed information for a specific conversation
 - **list_support_agents**: List all support agents in the account
-- **send_chat_message**: Send a message to a customer in a specific conversation
-- **get_chat_history**: Retrieve the message history for a specific conversation
-- **get_contact_details**: Get detailed information for a specific customer contact
-- **get_conversation_details**: Get detailed information for a specific conversation
-- **list_chatwoot_inboxes**: List all configured inboxes (Web, WhatsApp, etc)
+- **list_chatwoot_contacts**: List all customer contacts
 - **list_woot_conversations**: List all conversations in the account
+- **list_chatwoot_inboxes**: List all configured inboxes (Web, WhatsApp, etc)
+- **get_chat_history**: Provide the conversation ID to fetch the message log.
+
+Retrieve the message history for a specific conversation
+- **send_chat_message**: Always provide the conversation ID.
+
+Send a message to a customer in a specific conversation
 
 
 ## 💬 Prompt Examples
@@ -128,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,14 +36,26 @@ Connect your **ChartMogul** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
-- **get_arr_metrics**: Retrieve Annualized Run Rate metrics
-- **get_mrr_metrics**: Retrieve Monthly Recurring Revenue metrics
-- **get_mogul_customer_details**: Get detailed information for a specific customer
-- **get_subscription_metrics**: Retrieve all high-level subscription metrics (MRR, ARR, etc)
+- **get_subscription_metrics**: ) for a given date range. Specify both start and end dates.
+
+Retrieve all high-level subscription metrics (MRR, ARR, etc)
+- **ping_mogul_api**: Execute this to check API status.
+
+Verify connectivity and authentication with the ChartMogul API
+- **get_customer_count_metrics**: Provide the start and end dates for the period.
+
+Retrieve total customer count metrics over time
+- **get_mogul_customer_details**: Provide the customer’s unique UUID.
+
+Get detailed information for a specific customer
+- **get_mrr_metrics**: Use this for MRR analysis.
+
+Retrieve Monthly Recurring Revenue metrics
 - **list_mogul_customers**: List all customers in ChartMogul
 - **list_mogul_data_sources**: List all data sources configured in the account
-- **ping_mogul_api**: Verify connectivity and authentication with the ChartMogul API
-- **get_customer_count_metrics**: Retrieve total customer count metrics over time
+- **get_arr_metrics**: Use this for ARR analysis.
+
+Retrieve Annualized Run Rate metrics
 
 
 ## 💬 Prompt Examples
@@ -128,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

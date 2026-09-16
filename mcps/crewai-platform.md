@@ -36,9 +36,9 @@ Connect your **CrewAI Platform** (AMP) account to any AI agent and take full con
 
 
 ## Available Tools (3)
-- **kickoff_crew**: Provision a highly-available JSON Payload generating hard execution bindings
 - **get_inputs**: Identify bounded inputs required to kickoff a crew
 - **get_status**: Retrieve explicit execution state tracing limits
+- **kickoff_crew**: Provision a highly-available JSON Payload generating hard execution bindings
 
 
 ## 💬 Prompt Examples
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

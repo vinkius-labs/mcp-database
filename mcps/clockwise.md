@@ -36,16 +36,16 @@ Connect your **Clockwise** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_autopilot_status**: Extracts explicitly attached internal structural states pulling logic engine mappings
-- **get_calendar_events**: Identify bounded logical arrays managing top-level calendar blocks
-- **get_current_user**: Retrieve the root identity mappings bounding specific organization accounts
 - **get_meeting_analytics**: Identify precise active arrays spanning meeting metadata histories
+- **update_preferences**: Provision a highly-available override payload updating Clockwise configurations
+- **get_autopilot_status**: Extracts explicitly attached internal structural states pulling logic engine mappings
 - **get_focus_time**: Perform structural extraction of properties driving active Deep Work limits
 - **get_preferences**: Retrieve the exact structural matching verifying explicit user settings
 - **get_team_availability**: Identify explicit Cloud calculations tracking absolute team free times
 - **toggle_autopilot**: Irreversibly mutate explicit boundaries toggling intelligent meeting moving
-- **update_preferences**: Provision a highly-available override payload updating Clockwise configurations
 - **get_time_insights**: Extracts structural arrays resolving AI-nested focus analytics
+- **get_current_user**: Retrieve the root identity mappings bounding specific organization accounts
+- **get_calendar_events**: Identify bounded logical arrays managing top-level calendar blocks
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

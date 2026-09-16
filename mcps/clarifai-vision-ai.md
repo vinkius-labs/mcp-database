@@ -35,13 +35,13 @@ Connect your **Clarifai** account to any AI agent and take full control of your 
 
 
 ## Available Tools (6)
-- **list_datasets**: Identify precise physical bounds mapping data structures resolving visual nodes
 - **list_apps**: Identify bounded Clarifai apps managing global compute limits
 - **list_models**: Perform structural extraction of computer vision parameters driving AI features
 - **predict_model**: /models/{model_id}/outputs` parsing exactly what the AI limit evaluated bounding image classifications.
 
 Dispatch an automated validation inference routing explicit network predictions
 - **list_workflows**: Retrieve the exact structural matching verifying chained AI limits
+- **list_datasets**: Identify precise physical bounds mapping data structures resolving visual nodes
 - **list_concepts**: Extracts explicitly attached semantic bounds tagging datasets matching limits
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

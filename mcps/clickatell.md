@@ -36,15 +36,14 @@ No more manual message tracking or toggling between different messaging portals.
 
 
 ## Available Tools (12)
-- **get_account_balance**: Check credit balance
-- **get_account_info**: Get profile details
-- **list_message_history**: List past messages
-- **delete_whatsapp_template**: Remove template
 - **get_message_status**: Check delivery status
+- **get_account_info**: Get profile details
+- **get_account_balance**: Check credit balance
 - **get_whatsapp_media**: Get media details
 - **list_active_channels**: ) in the account.
 
 List communication channels
+- **list_message_history**: List past messages
 - **list_source_numbers**: List sending numbers
 - **list_whatsapp_templates**: List WhatsApp templates
 - **send_bulk_messages**: Send multiple messages
@@ -52,6 +51,7 @@ List communication channels
 - **send_whatsapp**: Note: Templates required for business initiation.
 
 Send WhatsApp message
+- **delete_whatsapp_template**: Remove template
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

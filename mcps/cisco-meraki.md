@@ -36,14 +36,28 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 
 
 ## Available Tools (8)
-- **list_network_devices**: List all physical devices (APs, Switches, Firewalls) in a network
 - **list_meraki_organizations**: List all organizations the API key has access to
-- **list_organization_admins**: List all administrators for an organization
-- **list_organization_networks**: List all networks within an organization
-- **get_device_details**: Get detailed information for a specific device by serial
-- **get_network_summary**: Get summary details for a specific network
-- **list_network_clients**: List all connected clients in a network
-- **list_organization_inventory**: List all devices in the organization inventory
+- **list_organization_inventory**: Provide the organization ID as input.
+
+List all devices in the organization inventory
+- **get_network_summary**: Provide the network ID as input.
+
+Get summary details for a specific network
+- **list_organization_admins**: Provide the organization ID as input.
+
+List all administrators for an organization
+- **get_device_details**: Provide the serial number as input.
+
+Get detailed information for a specific device by serial
+- **list_network_clients**: Provide the network ID as input.
+
+List all connected clients in a network
+- **list_network_devices**: Provide the network ID as input.
+
+List all physical devices (APs, Switches, Firewalls) in a network
+- **list_organization_networks**: Provide the organization ID as input.
+
+List all networks within an organization
 
 
 ## 💬 Prompt Examples
@@ -128,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
