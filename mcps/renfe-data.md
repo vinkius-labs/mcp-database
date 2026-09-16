@@ -34,19 +34,19 @@ Connect to the **Renfe Data** portal to monitor the Spanish railway network in r
 
 
 ## Available Tools (11)
-- **ckan_datastore_search**: Search for data within a resource
-- **ckan_package_list**: List all dataset names in Renfe Data
 - **ckan_package_show**: Get metadata for a specific dataset
+- **get_static_datasets**: List URLs for static datasets (Schedules & Stations)
+- **rt_alerts_cercanias**: Updates every 20 seconds.
+
+Get real-time service alerts for Cercanías
 - **rt_trip_updates_cercanias**: Updates every 20 seconds.
 
 Get real-time trip updates for Cercanías
 - **rt_vehicle_positions_cercanias**: Updates every 20 seconds.
 
 Get real-time vehicle positions for Cercanías
-- **get_static_datasets**: List URLs for static datasets (Schedules & Stations)
-- **rt_alerts_cercanias**: Updates every 20 seconds.
-
-Get real-time service alerts for Cercanías
+- **ckan_datastore_search**: Search for data within a resource
+- **ckan_package_list**: List all dataset names in Renfe Data
 - **rt_vehicle_positions_ld**: Updates every 15 minutes.
 
 Get real-time vehicle positions for AV / LD / MD
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
