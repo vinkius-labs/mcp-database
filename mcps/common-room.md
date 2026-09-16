@@ -32,16 +32,32 @@ Connect your AI assistant to **Common Room**, the intelligent community growth p
 
 
 ## Available Tools (10)
-- **get_organization_details**: Retrieve details of a specific organization
+- **add_contact_to_segment**: Ensure the payload includes both contact and segment IDs.
+
+Manually add a contact to a specific segment
 - **list_segments**: Retrieve a list of all segments in Common Room
-- **search_contacts**: Search for contacts/members in your Common Room
-- **add_contact_to_segment**: Manually add a contact to a specific segment
-- **get_contact_by_email**: Retrieve detailed information about a member by their email
-- **get_contact_tags**: Get tags associated with a specific member
-- **get_segment_status**: Retrieve status and member count for a specific segment
+- **search_contacts**: Provide specific search criteria in the payload.
+
+Search for contacts/members in your Common Room
+- **get_organization_details**: Pass the organization ID in the payload.
+
+Retrieve details of a specific organization
+- **get_contact_tags**: The payload must include the contact ID.
+
+Get tags associated with a specific member
+- **get_contact_by_email**: The payload must contain the target email.
+
+Retrieve detailed information about a member by their email
+- **get_segment_status**: Include the segment identifier in the payload.
+
+Retrieve status and member count for a specific segment
 - **list_activity_types**: Retrieve a list of supported activity types in Common Room
-- **list_segment_members**: List contacts that belong to a specific segment
-- **search_organizations**: Search for organizations in Common Room
+- **list_segment_members**: Provide the segment ID in the payload.
+
+List contacts that belong to a specific segment
+- **search_organizations**: Specify search criteria in the payload.
+
+Search for organizations in Common Room
 
 
 ## 💬 Prompt Examples
@@ -132,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -31,22 +31,22 @@ The **Column MCP Server** effectively bypasses standard FinTech wrappers and tie
 
 
 ## Available Tools (12)
+- **column_simulate_ach**: Trigger Sandbox inbound money movement
+- **column_create_check**: Very useful for legacy vendor systems.
+
+Generate and mail a paper check
+- **column_list_webhooks**: View all registered listening streams
 - **column_create_bank_account**: Establish a DDA (Demand Deposit Account)
+- **column_create_entity**: In production, this goes through compliance screening.
+
+Register a business or person KYC target inside Column
+- **column_create_wire_transfer**: Fire an immediate Wire transfer
 - **column_get_balance**: Audit settled funds inside a Bank Account
 - **column_get_bank_account**: Fetch specific DDA details (Routing info)
 - **column_get_statement**: Retrieve the generated bank statement artifacts
 - **column_list_entities**: View all active KYC profiles under the charter
 - **column_list_transfers**: Sweep historical ACH payment operations
-- **column_list_webhooks**: View all registered listening streams
 - **column_create_ach_transfer**: Fire an ACH to an external routing/account number
-- **column_create_check**: Very useful for legacy vendor systems.
-
-Generate and mail a paper check
-- **column_create_entity**: In production, this goes through compliance screening.
-
-Register a business or person KYC target inside Column
-- **column_create_wire_transfer**: Fire an immediate Wire transfer
-- **column_simulate_ach**: Trigger Sandbox inbound money movement
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,17 +37,17 @@ Connect your **Contentsquare** account to any AI agent and take full control of 
 
 ## Available Tools (10)
 - **list_projects**: Identify bounded UX tracking domains inside the Headless Contentsquare platform
-- **list_mappings**: Discover explicit routing trees structuring specific URL paths
 - **list_segments**: Provision highly-available JSON arrays holding demographic limits
-- **get_export_job**: Validate Data Science object extraction execution state queues
-- **list_export_jobs**: Perform structural log extraction matching asynchronous Raw export payloads
 - **list_zonings**: Inspect deep internal interaction arrays mitigating specific Click tracking constraints
+- **get_export_job**: Validate Data Science object extraction execution state queues
+- **get_metrics**: Retrieve explicit UX logging tracing explicit bounce / engagement metrics
+- **list_mappings**: Discover explicit routing trees structuring specific URL paths
 - **create_export_job**: Dispatch an automated validation check routing Raw Data Pipeline chunks
+- **list_export_jobs**: Perform structural log extraction matching asynchronous Raw export payloads
+- **get_page_metrics**: Execute static generation targeting exactly formatted URL statistical bodies
 - **enrich_session**: g. Sales, Contact logs) binding native JSON payloads executing directly towards session arrays.
 
-Mutate globalThis Web CRM boundaries appending headless Offline attributes to live sessions
-- **get_metrics**: Retrieve explicit UX logging tracing explicit bounce / engagement metrics
-- **get_page_metrics**: Execute static generation targeting exactly formatted URL statistical bodies
+Mutate global Web CRM boundaries appending headless Offline attributes to live sessions
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,21 +33,12 @@ Integrate **CustomerGauge**, the leading B2B Experience Management platform, dir
 
 
 ## Available Tools (10)
+- **get_portfolio_nps_summary**: Resolves global experience metrics. Touches the executive reporting boundary.
+
+Get an overall NPS summary across your entire account portfolio
 - **get_contact_profile**: Resolves interaction history and individual sentiment trends. Interacts with the customer lifecycle boundary.
 
 Get detailed profile and survey history for a contact
-- **get_portfolio_nps_summary**: Resolves globalThis experience metrics. Touches the executive reporting boundary.
-
-Get an overall NPS summary across your entire account portfolio
-- **list_survey_responses**: Resolves response IDs, scores (NPS), and timestamp data. Interacts with the survey response repository.
-
-List all customer survey responses in CustomerGauge
-- **list_revenue_impact_data**: Resolves monetary values and account associations for ROI calculation. Touches the financial data integration boundary.
-
-List revenue data associated with accounts for experience impact analysis
-- **list_b2b_accounts**: Resolves account IDs, names, and organizational mappings. Touches the account management and segmentation boundary.
-
-List all business accounts managed in CustomerGauge
 - **get_account_nps**: Resolves quantitative satisfaction scores. Interacts with the sentiment aggregation engine.
 
 Get the Net Promoter Score (NPS) for a specific account
@@ -57,9 +48,18 @@ Get NPS metrics for a specific business unit
 - **get_response_details**: Resolves verbatim comments, respondent metadata, and driver scores. Touches the granular feedback analytics boundary.
 
 Get full details for a specific survey response
+- **list_b2b_accounts**: Resolves account IDs, names, and organizational mappings. Touches the account management and segmentation boundary.
+
+List all business accounts managed in CustomerGauge
 - **list_account_contacts**: Resolves contact identifiers and associated account links. Touches the CRM and relationship boundary.
 
 List contacts associated with your business accounts
+- **list_survey_responses**: Resolves response IDs, scores (NPS), and timestamp data. Interacts with the survey response repository.
+
+List all customer survey responses in CustomerGauge
+- **list_revenue_impact_data**: Resolves monetary values and account associations for ROI calculation. Touches the financial data integration boundary.
+
+List revenue data associated with accounts for experience impact analysis
 - **search_responses_by_keyword**: Resolves feedback entries matching the query keyword. Touches the indexed text search boundary.
 
 Search through survey comments and feedback by keyword
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
