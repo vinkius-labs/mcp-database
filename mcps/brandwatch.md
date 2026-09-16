@@ -34,14 +34,28 @@ Connect your **Brandwatch Consumer Research** account to any AI agent and orches
 
 
 ## Available Tools (8)
+- **create_tag**: Supply the project ID and the desired tag name.
+
+Create a new tag for categorizing mentions
+- **list_queries**: Supply the project ID to scope the query list.
+
+List configured queries in a project
+- **get_project**: Provide the project ID to ensure accurate data retrieval.
+
+Get details of a specific project
+- **list_dashboards**: Pass the project ID to fetch the available dashboards.
+
+List dashboards in a project
 - **get_mentions**: Retrieve mentions for a specific query
-- **get_volume_aggregates**: Get mention volume aggregates for a query
-- **list_dashboards**: List dashboards in a project
-- **list_projects**: List all active projects
-- **create_tag**: Create a new tag for categorizing mentions
-- **get_project**: Get details of a specific project
-- **list_queries**: List configured queries in a project
-- **list_tags**: List tags available in a project
+- **get_volume_aggregates**: Provide project, query, and date ranges to execute the calculation.
+
+Get mention volume aggregates for a query
+- **list_projects**: Use this tool to find the ID of a project before querying its details.
+
+List all active projects
+- **list_tags**: Specify the project ID to retrieve the tag list.
+
+List tags available in a project
 
 
 ## 💬 Prompt Examples
@@ -126,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

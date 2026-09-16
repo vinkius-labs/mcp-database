@@ -35,14 +35,24 @@ Connect your **Browserless.io** account to any AI agent and orchestrate your hea
 
 
 ## Available Tools (8)
-- **generate_pdf**: Generate a PDF of a URL
-- **get_account_config**: Retrieve account configuration
-- **get_page_content**: Retrieve the rendered HTML content of a URL
+- **get_page_content**: Use this when you need the raw page source.
+
+Retrieve the rendered HTML content of a URL
 - **list_active_sessions**: List currently active browser sessions
-- **run_scrape**: Run a custom scraping script
-- **check_system_health**: Check the health of the Browserless service
+- **check_system_health**: This function does not require any input.
+
+Check the health of the Browserless service
+- **generate_pdf**: Provide the URL as the primary argument.
+
+Generate a PDF of a URL
+- **get_account_config**: Retrieve account configuration
 - **get_usage_stats**: Retrieve account usage statistics
-- **take_screenshot**: Take a screenshot of a URL using headless Chrome
+- **run_scrape**: Define all desired elements and selectors in the elements array.
+
+Run a custom scraping script
+- **take_screenshot**: Ensure the URL is fully qualified and accessible.
+
+Take a screenshot of a URL using headless Chrome
 
 
 ## 💬 Prompt Examples
@@ -127,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

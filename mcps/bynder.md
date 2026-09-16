@@ -36,15 +36,27 @@ No manual searches inside cluttered visual portals. Your AI agent digs up the ex
 
 ## Available Tools (10)
 - **get_account_usage**: Retrieve account storage and traffic usage
-- **list_smart_filters**: List configured smart filters
-- **list_users**: List all portal users
-- **patch_asset_metadata**: Update metadata for an asset
-- **list_collections**: List all media collections
-- **list_assets**: List digital assets from the DAM
-- **get_collection**: Get details of a specific collection
-- **get_asset**: Get details of a specific asset
-- **get_download_link**: Get a direct download URL for an asset
 - **list_tags**: List all asset tags
+- **list_smart_filters**: Execute the function to retrieve the list of available filters.
+
+List configured smart filters
+- **list_assets**: Use a keyword to filter results, but always specify the asset type.
+
+List digital assets from the DAM
+- **get_asset**: Provide the unique asset ID to fetch the data.
+
+Get details of a specific asset
+- **get_collection**: You must provide the unique collection ID.
+
+Get details of a specific collection
+- **get_download_link**: Pass the asset ID to obtain the secure link.
+
+Get a direct download URL for an asset
+- **list_collections**: List all media collections
+- **list_users**: List all portal users
+- **patch_asset_metadata**: Provide the asset ID and the fields to update.
+
+Update metadata for an asset
 
 
 ## 💬 Prompt Examples
@@ -129,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

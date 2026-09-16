@@ -37,16 +37,22 @@ Connect your **Chorus.ai (ZoomInfo)** account to any AI agent and take full cont
 
 
 ## Available Tools (8)
-- **get_meeting_details**: Get detailed information for a specific meeting
-- **get_meeting_transcript**: Retrieve the full text transcript for a meeting
-- **list_chorus_users**: List all users and team members in the account
+- **get_meeting_details**: Provide a valid engagement ID.
+
+Get detailed information for a specific meeting
 - **list_meeting_playlists**: List all shared meeting playlists
-- **list_tracked_competitors**: List competitors being tracked in conversations
 - **get_my_chorus_profile**: Retrieve information about the currently authenticated session
+- **get_meeting_moments**: Use the specific engagement ID.
+
+Retrieve AI-identified key moments for a meeting
+- **get_meeting_transcript**: Provide the engagement ID.
+
+Retrieve the full text transcript for a meeting
+- **list_tracked_competitors**: List competitors being tracked in conversations
 - **list_chorus_meetings**: ai.
 
 List recent meetings and calls
-- **get_meeting_moments**: Retrieve AI-identified key moments for a meeting
+- **list_chorus_users**: List all users and team members in the account
 
 
 ## 💬 Prompt Examples
@@ -131,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,17 +35,35 @@ Connect your **Canny** account to any AI agent and orchestrate your product feed
 
 
 ## Available Tools (11)
+- **add_comment**: Specify the post ID, author ID, and comment text.
+
+Add a comment to a feedback post
 - **get_account_info**: Retrieve core account information
-- **get_post_details**: Get details of a specific feedback post
-- **list_comments**: List comments for a specific feedback post
-- **list_feedback_boards**: List all feedback boards
+- **list_votes**: Supply the post ID.
+
+List votes for a specific post
+- **create_feedback_post**: ). Must specify the board ID and author ID.
+
+Create a new feedback post (idea, bug, etc)
+- **vote_on_post**: You must provide both the post ID and the voter ID.
+
+Add a vote to a feedback post
+- **get_board_details**: Use the board ID as the parameter.
+
+Get details of a specific board
+- **get_post_details**: Provide the post ID in the request.
+
+Get details of a specific feedback post
+- **list_feedback_boards**: Use this tool to find the board ID before submitting feedback.
+
+List all feedback boards
+- **list_comments**: Provide the post ID.
+
+List comments for a specific feedback post
+- **list_feedback_posts**: Provide a board ID to execute the query.
+
+List feedback items (posts) from a specific board
 - **list_users**: List users who have interacted with your boards
-- **list_votes**: List votes for a specific post
-- **vote_on_post**: Add a vote to a feedback post
-- **add_comment**: Add a comment to a feedback post
-- **create_feedback_post**: Create a new feedback post (idea, bug, etc)
-- **get_board_details**: Get details of a specific board
-- **list_feedback_posts**: List feedback items (posts) from a specific board
 
 
 ## 💬 Prompt Examples
@@ -130,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
