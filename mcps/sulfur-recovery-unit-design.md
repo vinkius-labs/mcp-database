@@ -14,10 +14,10 @@ This MCP server provides specialized chemical engineering tools for designing Cl
 
 
 ## Available Tools (4)
-- **calculate_thermal_stage_requirements**: Determines the combustion parameters needed for the initial thermal reaction
-- **estimate_tail_gas_treatment**: Determines the type and scale of treatment required to meet environmental limits
 - **optimize_catalytic_stages**: Calculates the necessary number and configuration of catalytic reactors to reach a target recovery
 - **validate_unit_efficiency**: Performs a final audit of the entire design against the initial design targets
+- **calculate_thermal_stage_requirements**: Determines the combustion parameters needed for the initial thermal reaction
+- **estimate_tail_gas_treatment**: Determines the type and scale of treatment required to meet environmental limits
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

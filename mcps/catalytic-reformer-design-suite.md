@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for designing and optimizing 
 
 
 ## Available Tools (4)
-- **calculate_yield_and_products**: Predicts the chemical output of the reforming process
 - **design_reformer_configuration**: Determines the physical and operational setup of the reforming unit
 - **estimate_regeneration_cycle**: Predicts how long the catalyst can remain active before needing regeneration
 - **optimize_operating_conditions**: Suggests adjustments to temperature or pressure to hit a target RON or maximize a specific byproduct
+- **calculate_yield_and_products**: Predicts the chemical output of the reforming process
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

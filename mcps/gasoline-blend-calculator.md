@@ -14,10 +14,10 @@ This MCP server provides professional-grade tools for determining the chemical a
 
 
 ## Available Tools (4)
+- **check_specification_compliance**: Determines if a calculated blend meets specific target requirements
+- **validate_blend_inputs**: Performs a preliminary check on the integrity of raw component data before expensive calculations
 - **calculate_blend_properties**: Calculates the primary performance and volatility characteristics of a complete gasoline blend
 - **get_component_contribution**: Evaluates the influence of a specific component on the final blend's volatility and octane
-- **validate_blend_inputs**: Performs a preliminary check on the integrity of raw component data before expensive calculations
-- **check_specification_compliance**: Determines if a calculated blend meets specific target requirements
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
