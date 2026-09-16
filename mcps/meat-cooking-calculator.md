@@ -15,8 +15,8 @@ This MCP server provides deterministic culinary calculations to ensure perfect r
 
 ## Available Tools (3)
 - **calculate_cooking_parameters**: Calculates specific temperature targets, cooking duration, and resting requirements
-- **get_temperature_guidelines**: Retrieves standard internal temperature ranges for a meat type and doneness
 - **validate_cooking_safety**: Checks if a planned cooking temperature meets food safety requirements
+- **get_temperature_guidelines**: Retrieves standard internal temperature ranges for a meat type and doneness
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

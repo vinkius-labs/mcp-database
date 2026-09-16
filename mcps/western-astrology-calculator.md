@@ -14,21 +14,21 @@ This MCP server provides deterministic astrological calculations for the tropica
 
 
 ## Available Tools (5)
-- **get_house_cusps**: Supply the birth date, time, and location coordinates.
-
-Calculates the starting points (cusps) of the twelve houses
 - **get_ascendant**: All four parameters are required.
 
 Calculates the Rising Sign (Ascendant) for a specific birth moment and location
-- **get_moon_sign**: Use the user’s birth date.
+- **get_house_cusps**: Supply the birth date, time, and location coordinates.
 
-Provides an approximation of the Moon's zodiac placement
+Calculates the starting points (cusps) of the twelve houses
 - **get_planetary_positions**: Only the birth date is required.
 
 Estimates the zodiac positions of major planets
 - **get_sun_sign**: Provide only the sign name.
 
 Determines the primary zodiac sign based on the user's birth date
+- **get_moon_sign**: Use the user’s birth date.
+
+Provides an approximation of the Moon's zodiac placement
 
 
 ## 💬 Prompt Examples
@@ -113,4 +113,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

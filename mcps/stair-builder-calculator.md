@@ -15,8 +15,8 @@ This MCP server provides precise stair design calculations based on strict build
 
 ## Available Tools (3)
 - **check_clearance_and_headroom**: Validates vertical headroom clearance
-- **calculate_stair_geometry**: Calculates primary stair dimensions and structural requirements
 - **validate_landing_requirements**: Determines if the staircase layout complies with landing requirements
+- **calculate_stair_geometry**: Calculates primary stair dimensions and structural requirements
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
