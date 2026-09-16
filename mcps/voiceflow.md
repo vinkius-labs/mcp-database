@@ -34,18 +34,18 @@ Connect your **Voiceflow** account to any AI agent and simplify how you build, t
 
 
 ## Available Tools (12)
+- **get_project**: Get project details
+- **get_state**: Get user conversation state
 - **interact**: Send message to Voiceflow agent
 - **list_kb_docs**: List KB documents
-- **list_transcripts**: List conversation transcripts
-- **query_kb**: Ask the Knowledge Base
-- **get_state**: Get user conversation state
-- **delete_state**: Reset user session
-- **get_feedback**: Get user feedback
-- **get_project**: Get project details
-- **get_transcript**: Get transcript details
 - **list_kb_tags**: List KB document tags
 - **list_projects**: List Voiceflow projects
+- **list_transcripts**: List conversation transcripts
+- **query_kb**: Ask the Knowledge Base
 - **save_state**: Update user state/variables
+- **delete_state**: Reset user session
+- **get_feedback**: Get user feedback
+- **get_transcript**: Get transcript details
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -22,8 +22,8 @@ By strictly scoping access, your AI can safely operate as a highly scalable back
 
 
 ## Available Tools (3)
-- **delete_message**: Delete a message from the SQS queue
 - **receive_messages**: Receive messages from the SQS queue
+- **delete_message**: Delete a message from the SQS queue
 - **send_message**: Send a message to the SQS queue
 
 
@@ -109,4 +109,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

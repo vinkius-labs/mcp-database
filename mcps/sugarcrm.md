@@ -14,18 +14,30 @@ The SugarCRM MCP server links your AI agent to your enterprise sales ecosystem. 
 
 
 ## Available Tools (12)
-- **create_account**: Create a new account
-- **get_account**: Retrieve details for a specific account
-- **get_contact**: Retrieve details for a specific contact
-- **get_lead**: Retrieve details for a specific lead
-- **get_me**: Check API connectivity and get current user info
-- **get_opportunity**: Retrieve details for a specific opportunity
+- **create_account**: Pass all required account details in the body.
+
+Create a new account
+- **get_account**: Provide the account ID.
+
+Retrieve details for a specific account
+- **get_contact**: Provide the contact ID.
+
+Retrieve details for a specific contact
+- **get_lead**: Provide the lead ID.
+
+Retrieve details for a specific lead
 - **list_accounts**: List all accounts (companies)
 - **list_contacts**: List all contacts
+- **list_tasks**: List all tasks
+- **get_me**: Check API connectivity and get current user info
+- **get_opportunity**: Provide the opportunity ID.
+
+Retrieve details for a specific opportunity
 - **list_leads**: List all leads
 - **list_opportunities**: List all sales opportunities
-- **search_global**: Perform a globalThis search across all modules
-- **list_tasks**: List all tasks
+- **search_global**: Use a specific search term.
+
+Perform a global search across all modules
 
 
 ## 💬 Prompt Examples
@@ -110,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
