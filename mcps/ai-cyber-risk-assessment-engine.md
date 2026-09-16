@@ -16,8 +16,8 @@ This MCP server provides a specialized risk engine to quantify the cybersecurity
 ## Available Tools (4)
 - **analyze_attack_vectors**: Identifies which specific AI-specific vulnerabilities are contributing most to the risk
 - **calculate_risk_score**: Provides a high-level assessment of the current cyber risk level
-- **estimate_loss_exposure**: Translates technical risk into potential financial impact
 - **recommend_security_investment**: Determines the necessary funding to mitigate identified risks
+- **estimate_loss_exposure**: Translates technical risk into potential financial impact
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
