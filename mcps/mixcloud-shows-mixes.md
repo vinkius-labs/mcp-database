@@ -26,15 +26,6 @@ Music supervisors, DJs, radio producers, playlist curators, event promoters and 
 
 
 ## Available Tools (6)
-- **browse_category**: Use for genre-based discovery: "what's new in drum and bass?".
-
-Browse Mixcloud genre categories (38: ambient, bass, beats, dnb...) and their trending cloudcasts
-- **get_cloudcast**: Keys come from search/list tools (format /user/slug/).
-
-Get full cloudcast detail: tracklist sections, description, tags, stats
-- **search_cloudcasts**: Pagination via limit/offset. Note: no total count is returned — page until empty.
-
-Search DJ mixes, radio shows and podcasts (cloudcasts) by keyword on Mixcloud
 - **search_uploaders**: Search radio stations by name to explore their show archives.
 
 Search Mixcloud users: DJs, radio stations, labels and podcast creators
@@ -44,6 +35,15 @@ Get a Mixcloud uploader profile: bio, follower count and stats
 - **list_user_cloudcasts**: Each entry: key (for get_cloudcast), name, play counts, tags, audio length. Great for exploring a radio station's full show archive.
 
 List all cloudcasts (shows/mixes) published by a Mixcloud user
+- **get_cloudcast**: Keys come from search/list tools (format /user/slug/).
+
+Get full cloudcast detail: tracklist sections, description, tags, stats
+- **browse_category**: Use for genre-based discovery: "what's new in drum and bass?".
+
+Browse Mixcloud genre categories (38: ambient, bass, beats, dnb...) and their trending cloudcasts
+- **search_cloudcasts**: Pagination via limit/offset. Note: no total count is returned — page until empty.
+
+Search DJ mixes, radio shows and podcasts (cloudcasts) by keyword on Mixcloud
 
 
 ## 💬 Prompt Examples
@@ -142,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
