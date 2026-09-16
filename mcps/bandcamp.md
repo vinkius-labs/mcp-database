@@ -37,21 +37,12 @@ Connect to **Bandcamp** and discover independent music through natural conversat
 
 
 ## Available Tools (8)
-- **get_featured**: Returns stories, albums, and curated picks.
-
-Get featured editorial content from the Bandcamp front page
-- **get_page_data**: g. "https://artist.bandcamp.com/album/name"), extracts structured data including tracks, artist info, pricing, and embedded metadata. Works with album, track, and artist pages.
-
-Extract album or artist data from a Bandcamp URL
-- **get_tags**: Use these tags with discover_music, get_best_selling, and get_new_releases.
-
-Get available genre tags on Bandcamp
-- **get_best_selling**: Returns titles, artists, artwork, and Bandcamp URLs.
-
-Get best selling releases on Bandcamp by genre
 - **discover_music**: g. "electronic", "ambient", "hip-hop-rap", "rock", "jazz", "metal"). Returns albums with artist, title, art, and links. Use get_tags to see available genre tags.
 
 Discover music on Bandcamp by genre
+- **get_best_selling**: Returns titles, artists, artwork, and Bandcamp URLs.
+
+Get best selling releases on Bandcamp by genre
 - **get_new_releases**: Returns titles, artists, artwork, release dates and Bandcamp URLs.
 
 Get newest releases on Bandcamp by genre
@@ -61,6 +52,15 @@ Get recommended releases on Bandcamp by genre
 - **search**: Returns names, types, URLs and artwork. Results include artists, albums, tracks, labels and fan profiles.
 
 Search Bandcamp for artists, albums, tracks, labels and fans
+- **get_featured**: Returns stories, albums, and curated picks.
+
+Get featured editorial content from the Bandcamp front page
+- **get_page_data**: g. "https://artist.bandcamp.com/album/name"), extracts structured data including tracks, artist info, pricing, and embedded metadata. Works with album, track, and artist pages.
+
+Extract album or artist data from a Bandcamp URL
+- **get_tags**: Use these tags with discover_music, get_best_selling, and get_new_releases.
+
+Get available genre tags on Bandcamp
 
 
 ## 💬 Prompt Examples
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

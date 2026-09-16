@@ -34,18 +34,6 @@ Connect to **CarAPI** and explore the comprehensive vehicle database through nat
 
 
 ## Available Tools (8)
-- **get_makes**: Optionally filter by year to get makes available in a specific year. Returns make names and IDs.
-
-Get list of all car makes
-- **get_models**: Optionally filter by year. Returns model names and IDs.
-
-Get models for a specific car make
-- **get_engines**: ).
-
-Get list of all engine types
-- **get_bodies**: ).
-
-Get list of all body types
 - **get_drives**: Get list of all drive types
 - **get_transmissions**: ).
 
@@ -56,6 +44,18 @@ Search vehicles by year, make, model and more
 - **get_years**: Returns year values for filtering vehicle searches.
 
 Get list of all available years in the database
+- **get_bodies**: ).
+
+Get list of all body types
+- **get_makes**: Optionally filter by year to get makes available in a specific year. Returns make names and IDs.
+
+Get list of all car makes
+- **get_models**: Optionally filter by year. Returns model names and IDs.
+
+Get models for a specific car make
+- **get_engines**: ).
+
+Get list of all engine types
 
 
 ## 💬 Prompt Examples
@@ -140,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

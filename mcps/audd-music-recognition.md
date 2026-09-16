@@ -35,20 +35,20 @@ Equip your AI agent with the power of **AudD**, the leading music recognition an
 
 
 ## Available Tools (8)
-- **list_monitored_streams**: List all monitored audio streams
-- **recognize_music**: Returns artist, title, album, and streaming links (Apple Music, Spotify, etc.).
-
-Recognize a song from an audio URL
-- **search_lyrics**: Returns matched lyrics and song metadata.
-
-Search for song lyrics by text fragment
-- **set_stream_callback_url**: Set the webhook URL for stream monitoring results
-- **add_monitored_stream**: Add an audio stream to monitor for music
 - **get_lyrics**: Get full lyrics for a specific track
 - **recognize_at_time**: Useful for long files.
 
 Recognize music starting at a specific offset
+- **recognize_music**: Returns artist, title, album, and streaming links (Apple Music, Spotify, etc.).
+
+Recognize a song from an audio URL
 - **search_music**: Search for a song by text query
+- **set_stream_callback_url**: Set the webhook URL for stream monitoring results
+- **list_monitored_streams**: List all monitored audio streams
+- **search_lyrics**: Returns matched lyrics and song metadata.
+
+Search for song lyrics by text fragment
+- **add_monitored_stream**: Add an audio stream to monitor for music
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
