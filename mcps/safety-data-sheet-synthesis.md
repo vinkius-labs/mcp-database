@@ -17,9 +17,9 @@ This MCP server automates the generation of critical Safety Data Sheet (SDS) sec
 - **analyze_composition**: Total concentration must be 100%.
 
 Determines the hazard profile of a chemical mixture based on its constituents
+- **recommend_exposure_controls**: Suggests engineering controls and Personal Protective Equipment (PPE)
 - **classify_hazards**: Assigns GHS hazard categories based on physical and health data
 - **generate_precautionary_statements**: Selects the appropriate safety phrases based on identified hazards
-- **recommend_exposure_controls**: Suggests engineering controls and Personal Protective Equipment (PPE)
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
