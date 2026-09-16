@@ -7,16 +7,16 @@
 
 **Category:** [llm-ops](../categories/llm-ops.md)
 
-Validates if LLM outputs can be serialized into JSON, XML, CSV, or Protocol Buffers without data loss.
+Verify if LLM-generated data structures can be safely converted to specific formats without data loss.
 
 ## Description
-The Output Serializability Checker is a diagnostic utility for LLM pipelines. It ensures that generated data structures maintain structural integrity when converted to standard formats. Using `check_serializability`, you can detect unsupported types like circular references or functions. You can also use `evaluate_format_compatibility` to find the best target format based on data complexity, or `validate_encoding_integrity` to prevent character encoding issues during transmission.
+The Output Serializability Checker bridges the gap between LLM outputs and structured data requirements. It allows AI agents to validate whether complex data structures can be successfully converted into JSON, XML, CSV, or Protocol Buffers. By using tools like `check_serializability`, agents can detect unsupported types, circular references, and potential data loss before integration. The tool provides a data fidelity score to quantify the integrity of the transformation, ensuring that high-precision data remains intact during the serialization process.
 
 
 ## Available Tools (3)
-- **check_serializability**: Performs a complete diagnostic check on a specific piece of data against a chosen target format
-- **evaluate_format_compatibility**: Determines which of the supported formats is most suitable for a given data structure based on its complexity
-- **validate_encoding_integrity**: Specifically checks if the data contains characters or encoding patterns that might break during serialization
+- **analyze_fidelity_loss**: Provides a detailed breakdown of why data fidelity was reduced during a serialization attempt
+- **check_serializability**: Evaluates if a specific dataset can be safely converted to a designated target format
+- **suggest_optimal_format**: Recommends the best target format for a given data structure based on its complexity and requirements
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Output Serializability Checker is a diagnostic utility for LLM pipelines. It
 Here are some examples of how you can interact with the **Output Serializability Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if this JSON object is serializable to XML."
+> "Can this JSON object be converted to CSV without losing its nested structure?"
 
 **🤖 AI Agent:**
-> {"isSerializable": true, "serializationErrors": [], "dataFidelityScore": 0.95, "recommendedFormat": "XML"}
+> No, the data contains nested objects which will result in structure flattening when converted to CSV, significantly reducing the data fidelity score.
 
 ---
 
 **👤 You:**
-> "Which format is best for this complex nested data?"
+> "Check if this data is serializable as Protocol Buffers."
 
 **🤖 AI Agent:**
-> {"bestFormat": "JSON", "complexityScore": 0.8, "reasoning": "The high nesting depth makes JSON the most suitable format for preserving hierarchy."}
+> The data is serializable. The `check_serializability` tool confirms it conforms to the required structure.
 
 ---
 
 **👤 You:**
-> "Is this data safe for transmission?"
+> "What is the best format for a very large, flat dataset where speed is the priority?"
 
 **🤖 AI Agent:**
-> {"isEncodingSafe": true, "problematicCharacters": [], "suggestedFixes": []}
+> For a large, flat dataset where compactness and speed are priorities, PROTOCOL_BUFFERS is the recommended format.
 
 
 ## ❓ FAQ
 
-**Q: What does the fidelity score mean?**
-The `dataFidelityScore` measures how much information is preserved. A score of 1.0 means the target format perfectly represents the original data structure.
+**Q: How does the tool measure data loss?**
+The tool calculates a data fidelity score by comparing the original data's depth and type precision against the serialized version. You can use `analyze_fidelity_loss` to get a detailed breakdown of type, precision, or structure loss.
 
-**Q: How do I know if my data is safe for XML?**
-You can use the `validate_encoding_integrity` tool to scan for problematic characters that might break XML serialization.
+**Q: What formats are supported?**
+The checker supports JSON, XML, CSV, and PROTOCOL_BUFFERS.
 
-**Q: Can I check for circular references?**
-Yes, the `check_serializability` tool will detect circular references and mark the data as non-serializable.
+**Q: Can I find the best format for my data?**
+Yes, you can use `suggest_optimal_format` to receive a recommendation based on your specific priorities like compactness, readability, or strict typing.
 
 
 ## Installation & Usage
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -15,8 +15,8 @@ The Data Extraction Schema Evolver solves the problem of schema drift in unstruc
 
 ## Available Tools (3)
 - **analyze_schema_drift**: Identifies discrepancies between a provided JSON schema and a collection of new data examples
-- **propose_schema_evolution**: Generates a modified JSON schema based on drift analysis results
 - **validate_evolution_safety**: Checks if the proposed schema changes are safe and do not destroy existing functionality
+- **propose_schema_evolution**: Generates a modified JSON schema based on drift analysis results
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
