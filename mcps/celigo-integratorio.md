@@ -36,16 +36,22 @@ Connect your **Celigo integrator.io** account to any AI agent and take full cont
 
 
 ## Available Tools (8)
-- **list_integration_imports**: List configured imports
 - **list_integration_connections**: List all active connections
 - **list_integration_errors**: List recent integration errors
+- **list_integration_flows**: Filter results using the integration ID if necessary.
+
+List all integration flows
+- **get_flow_details**: Supply the unique flow ID to fetch the details.
+
+Get details for a specific flow
+- **list_integration_exports**: List configured exports
+- **list_integration_imports**: List configured imports
 - **list_integrations**: io.
 
 List all integrations
-- **run_integration_flow**: Trigger a specific integration flow to run
-- **list_integration_flows**: List all integration flows
-- **get_flow_details**: Get details for a specific flow
-- **list_integration_exports**: List configured exports
+- **run_integration_flow**: Provide the unique flow ID to execute the flow.
+
+Trigger a specific integration flow to run
 
 
 ## 💬 Prompt Examples
@@ -130,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

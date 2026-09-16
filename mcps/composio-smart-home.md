@@ -43,13 +43,13 @@ Your AI becomes a universal smart home controller, translating commands into act
 - **execute_multiple_composio_tools**: Provide tool_slug with either arguments (JSON) or text (natural language) per item.
 
 Execute multiple Composio smart home tools in a single sequential request
-- **search_composio_tools**: Search for smart home tools by app slug or category keyword
 - **execute_composio_tool**: Execute a Composio smart home tool with structured JSON arguments
 - **execute_composio_tool_with_text**: Execute a Composio smart home tool using a natural language instruction
 - **get_composio_tool_schema**: Retrieve the full JSON schema and accepted parameters for a specific Composio tool
 - **list_app_tools**: List all available tools for a specific smart home app integration
 - **list_connected_accounts**: List all connected smart home accounts and integrations in Composio
 - **list_composio_tools**: List all available smart home tools and integrations in Composio
+- **search_composio_tools**: Search for smart home tools by app slug or category keyword
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

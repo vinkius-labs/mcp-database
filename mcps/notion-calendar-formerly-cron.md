@@ -37,15 +37,15 @@ Connect your **Notion Calendar** (formerly Cron) account to any AI agent and tak
 
 ## Available Tools (10)
 - **list_calendars**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
-- **get_availability**: Dispatch an automated validation check routing explicit Availability
-- **get_free_busy**: Enumerate explicitly attached structured rules exporting active Graph overlaps
 - **get_scheduling_links**: Identify precise active arrays spanning native Gateway limits
-- **get_event**: Perform structural extraction of properties driving active Event targets
-- **create_event**: Provision a highly-available Event Payload generating hard Schedule binds
-- **delete_event**: Irreversibly vaporize explicit validations extracting rich Schedule drops
+- **get_free_busy**: Enumerate explicitly attached structured rules exporting active Graph overlaps
 - **get_profile**: Inspect deep internal arrays mitigating specific Math Logic limits
 - **list_events**: Identify bounded CRM records inside the Headless Cron Engine
+- **get_event**: Perform structural extraction of properties driving active Event targets
+- **create_event**: Provision a highly-available Event Payload generating hard Schedule binds
 - **update_event**: Dissect precise variables checking active state matching payload targets
+- **delete_event**: Irreversibly vaporize explicit validations extracting rich Schedule drops
+- **get_availability**: Dispatch an automated validation check routing explicit Availability
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

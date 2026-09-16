@@ -28,16 +28,16 @@ Connect your **Chargebee** site to any AI agent and take full control of your bi
 
 
 ## Available Tools (10)
-- **get_subscription**: Get details for a specific subscription
 - **list_addons**: List available product addons
-- **list_customers**: List Chargebee customers
+- **list_invoices**: Can be filtered by status or customer.
+
+List Chargebee invoices
 - **cancel_subscription**: Cancel an existing subscription
 - **create_customer**: Create a new customer profile
 - **create_subscription**: Create a new subscription for a customer
 - **get_customer**: Get details for a specific customer
-- **list_invoices**: Can be filtered by status or customer.
-
-List Chargebee invoices
+- **get_subscription**: Get details for a specific subscription
+- **list_customers**: List Chargebee customers
 - **list_plans**: List available product plans
 - **list_subscriptions**: Supports filtering via optional parameters.
 
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
