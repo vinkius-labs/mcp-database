@@ -34,8 +34,8 @@ Connect **Namsor** to your AI agent to unlock advanced name analysis and data en
 
 
 ## Available Tools (5)
-- **format_phone**: Format and validate a phone number
 - **get_gender**: Classify a name as male or female
+- **format_phone**: Format and validate a phone number
 - **get_us_race_ethnicity**: Classify a name according to US Census race/ethnicity categories
 - **parse_name**: Split a full name into its components
 - **get_origin**: Identify the likely country of origin for a name
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

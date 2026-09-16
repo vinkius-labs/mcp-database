@@ -36,93 +36,251 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 
 
 ## Available Tools (89)
-- **get_network**: Retrieve network details
+- **list_setup_keys**: Use this tool to view existing one-off or reusable keys.
+
+List all setup keys
+- **approve_user**: Provide the user ID of the account to activate.
+
+Approve a pending user
+- **change_user_password**: Supply the user ID and the new password payload.
+
+Change user password (embedded IdP only)
+- **create_group**: Supply the necessary group details in the body payload.
+
+Create a group
+- **create_msp_tenant**: Pass the required details in the body payload.
+
+Create a new MSP tenant
+- **create_nameserver**: Supply the required details in the body payload.
+
+Create a nameserver group
+- **create_network_resource**: Supply the network ID and the resource details.
+
+Create a resource (host, subnet, or domain) in a network
+- **create_network_router**: Provide the necessary router details in the body.
+
+Create a router in a network
+- **create_policy**: The policy details must be provided in the body.
+
+Create a policy with rules (action, protocol, ports, sources, destinations)
+- **create_posture_check**: Provide a valid JSON payload in the body.
+
+Create a posture check (version, OS, geo-location, network range, or process)
+- **create_route**: Supply the necessary route details in the body payload.
+
+Create a route (Deprecated)
+- **create_setup_key**: Specify the key type and payload in the body. Use this for provisioning.
+
+Create a setup key (one-off or reusable)
+- **create_temporary_access_peer**: Supply a valid peer_id and the necessary access payload.
+
+Create a temporary access peer
+- **create_user_invite**: Supply the necessary invite details in the body payload.
+
+Create a user invite link
+- **create_user_token**: Supply the user ID and payload.
+
+Create a new personal access token
+- **create_user**: Provide a valid user payload in the body.
+
+Create a service user or invite a regular user
+- **delete_account**: Provide the account ID to execute the deletion.
+
+Delete a NetBird account and all resources
+- **delete_group**: Supply the group ID to execute the deletion.
+
+Delete a group
+- **delete_nameserver**: Ensure the Nameserver Group ID is correct.
+
+Delete nameserver group
+- **delete_network_resource**: Supply the network ID and the resource ID to confirm deletion.
+
+Delete network resource
+- **delete_network_router**: Ensure the router ID and network ID are correct.
+
+Delete network router
+- **delete_policy**: Use the policy ID to target the policy for deletion.
+
+Delete a policy
+- **delete_route**: Ensure the provided Route ID is correct.
+
+Delete a route (Deprecated)
+- **delete_user_token**: Supply the user ID and token ID.
+
+Delete a token
+- **get_current_user**: This retrieves details for the authenticated user.
+
+Retrieve current user info
+- **get_dns_settings**: Retrieve global DNS settings
+- **get_group**: Use a valid group_id to fetch the group information.
+
+Retrieve group details
+- **get_nameserver**: Use the Nameserver Group ID.
+
+Retrieve nameserver group details
+- **get_network_resource**: Supply both the network and resource IDs.
+
+Retrieve network resource details
+- **get_network_router**: Must provide both the network and router identifiers.
+
+Retrieve network router details
+- **get_network**: Use the network ID for identification.
+
+Retrieve network details
+- **get_peer**: Provide the peer ID.
+
+Retrieve peer details
+- **get_policy**: Use the policy ID to target the correct policy.
+
+Retrieve policy details
+- **get_posture_check**: Use a valid Posture Check ID.
+
+Retrieve posture check details
+- **get_public_user_invite**: The token must be provided.
+
+Get public invite info (unauthenticated)
+- **get_route**: Provide a valid Route ID.
+
+Retrieve route details (Deprecated)
+- **get_setup_key**: Pass the specific Setup Key ID to retrieve information.
+
+Retrieve setup key details
+- **get_user_token**: Provide both the user ID and token ID.
+
+Retrieve a specific token
+- **invite_msp_tenant**: Requires the tenant ID and invite details.
+
+Invite an existing account as a tenant
+- **list_accounts**: Do not use this tool to list individual users.
+
+List all NetBird accounts
 - **list_all_network_routers**: List all routers across all networks
-- **list_setup_keys**: List all setup keys
-- **list_users**: List all users
-- **list_user_tokens**: List all tokens for a user
-- **create_group**: Create a group
-- **create_msp_tenant**: Create a new MSP tenant
-- **create_network_resource**: Create a resource (host, subnet, or domain) in a network
-- **create_posture_check**: Create a posture check (version, OS, geo-location, network range, or process)
-- **create_route**: Create a route (Deprecated)
-- **create_setup_key**: Create a setup key (one-off or reusable)
-- **create_user**: Create a service user or invite a regular user
-- **create_user_invite**: Create a user invite link
-- **create_user_token**: Create a new personal access token
-- **delete_account**: Delete a NetBird account and all resources
-- **delete_group**: Delete a group
-- **delete_policy**: Delete a policy
-- **delete_route**: Delete a route (Deprecated)
-- **delete_user_token**: Delete a token
-- **get_network_resource**: Retrieve network resource details
-- **get_network_router**: Retrieve network router details
-- **get_peer**: Retrieve peer details
-- **get_policy**: Retrieve policy details
-- **get_public_user_invite**: Get public invite info (unauthenticated)
-- **get_setup_key**: Retrieve setup key details
-- **get_user_token**: Retrieve a specific token
-- **list_accessible_peers**: List peers accessible by this peer
-- **list_accounts**: List all NetBird accounts
-- **regenerate_user_invite**: Regenerate an invite token
-- **reject_user**: Reject a pending user
-- **resend_user_invite**: Resend user invitation
-- **update_group**: Update group name, peers, or resources
-- **update_msp_tenant_subscription**: Create/update tenant subscription
-- **update_nameserver**: Update nameserver group
-- **update_network**: Update network name/description
-- **update_peer**: Update peer name, SSH status, or IP
-- **verify_msp_tenant_dns**: Verify tenant domain DNS challenge
-- **accept_user_invite**: Accept invite and set password (unauthenticated)
-- **approve_user**: Approve a pending user
-- **change_user_password**: Change user password (embedded IdP only)
-- **create_nameserver**: Create a nameserver group
-- **create_network**: Create a network
-- **create_network_router**: Create a router in a network
-- **create_policy**: Create a policy with rules (action, protocol, ports, sources, destinations)
-- **create_temporary_access_peer**: Create a temporary access peer
-- **delete_network**: Delete a network
-- **delete_network_resource**: Delete network resource
-- **delete_network_router**: Delete network router
-- **delete_peer**: Delete a peer
-- **delete_posture_check**: Delete a posture check
-- **get_nameserver**: Retrieve nameserver group details
-- **get_posture_check**: Retrieve posture check details
-- **invite_msp_tenant**: Invite an existing account as a tenant
 - **list_audit_events**: List all audit events (activity, initiator, target)
-- **list_cities**: List city names for a country
+- **list_cities**: Provide the country’s ISO 3166-1 alpha-2 code.
+
+List city names for a country
 - **list_countries**: List all ISO 3166-1 alpha-2 country codes
-- **list_groups**: List all groups
-- **list_network_routers**: List routers in a network
-- **list_networks**: List all networks
-- **list_network_traffic_events**: List network traffic events (Cloud-only, experimental)
-- **list_peers**: List all network peers
-- **list_posture_checks**: List all posture checks
-- **list_routes**: List all routes (Deprecated)
-- **list_user_invites**: List pending user invites
-- **respond_msp_tenant_invite**: Accept or decline an MSP invitation
-- **unlink_msp_tenant**: Unlink a tenant to a new owner
-- **update_account**: Update account settings (e.g., peer login expiration, network range)
-- **update_dns_settings**: Update DNS settings (e.g., disabled management groups)
-- **update_msp_tenant**: Update tenant name or access groups
-- **update_network_resource**: Update network resource
-- **update_network_router**: Update network router
-- **update_policy**: Update policy
-- **update_posture_check**: Update posture check
-- **update_route**: Update route (Deprecated)
-- **update_setup_key**: Update key (revoke or change auto-groups)
-- **update_user**: Update user role, auto-groups, or block status
-- **delete_nameserver**: Delete nameserver group
-- **delete_setup_key**: Delete a setup key
-- **delete_user_invite**: Delete a user invite
-- **delete_user**: Remove a user
-- **get_current_user**: Retrieve current user info
-- **get_dns_settings**: Retrieve globalThis DNS settings
-- **get_group**: Retrieve group details
-- **get_route**: Retrieve route details (Deprecated)
-- **list_msp_tenants**: List all MSP tenants
+- **list_groups**: Use this tool to list available network groups.
+
+List all groups
 - **list_nameservers**: List all nameserver groups
-- **list_network_resources**: List resources in a network
+- **list_network_resources**: Provide the network ID to scope the search.
+
+List resources in a network
+- **list_network_routers**: Requires a valid network ID.
+
+List routers in a network
+- **list_networks**: Do not provide any parameters.
+
+List all networks
+- **list_peers**: Use this tool to list connected devices and nodes.
+
+List all network peers
+- **list_posture_checks**: List all posture checks
+- **list_routes**: Note that this tool is deprecated.
+
+List all routes (Deprecated)
+- **list_user_tokens**: Requires the user ID.
+
+List all tokens for a user
+- **list_users**: Use this tool to retrieve a list of all registered users.
+
+List all users
+- **regenerate_user_invite**: Use the invite ID.
+
+Regenerate an invite token
+- **reject_user**: Provide the user ID of the account to reject.
+
+Reject a pending user
+- **resend_user_invite**: Use the user ID to target the correct recipient.
+
+Resend user invitation
+- **respond_msp_tenant_invite**: Requires the tenant ID and response payload.
+
+Accept or decline an MSP invitation
+- **update_account**: Pass the account ID and the settings payload.
+
+Update account settings (e.g., peer login expiration, network range)
+- **update_group**: Provide the group ID and the necessary JSON payload.
+
+Update group name, peers, or resources
+- **update_msp_tenant_subscription**: Provide the tenant ID and subscription payload.
+
+Create/update tenant subscription
+- **update_msp_tenant**: Provide the tenant ID and update details in the body.
+
+Update tenant name or access groups
+- **update_network_resource**: Provide the network ID, resource ID, and update payload.
+
+Update network resource
+- **update_network**: Specify the network ID and the update payload.
+
+Update network name/description
+- **update_peer**: Provide a valid peer_id in the request body.
+
+Update peer name, SSH status, or IP
+- **update_policy**: Provide the policy ID and the new configuration body.
+
+Update policy
+- **update_posture_check**: Supply the Posture Check ID and update payload.
+
+Update posture check
+- **update_route**: Supply both the Route ID and the update payload.
+
+Update route (Deprecated)
+- **update_setup_key**: Provide the Setup Key ID and the new payload.
+
+Update key (revoke or change auto-groups)
+- **update_user**: Supply the user ID and the update payload.
+
+Update user role, auto-groups, or block status
+- **accept_user_invite**: Supply the token and required payload.
+
+Accept invite and set password (unauthenticated)
+- **list_accessible_peers**: Use a valid peer_id to query the list.
+
+List peers accessible by this peer
+- **update_nameserver**: Supply the Nameserver Group ID and update payload.
+
+Update nameserver group
+- **verify_msp_tenant_dns**: Requires the tenant ID.
+
+Verify tenant domain DNS challenge
+- **create_network**: Pass the required details in the JSON payload.
+
+Create a network
+- **delete_network**: Provide the network ID to confirm deletion.
+
+Delete a network
+- **delete_peer**: Ensure the peer_id is correct to prevent accidental deletion.
+
+Delete a peer
+- **delete_posture_check**: Ensure the Posture Check ID is correct.
+
+Delete a posture check
+- **list_network_traffic_events**: Note that this feature is experimental and cloud-only.
+
+List network traffic events (Cloud-only, experimental)
+- **list_user_invites**: List pending user invites
+- **unlink_msp_tenant**: Requires the tenant ID.
+
+Unlink a tenant to a new owner
+- **update_dns_settings**: Pass a JSON payload in the body.
+
+Update DNS settings (e.g., disabled management groups)
+- **update_network_router**: Use the router ID and network ID for targeting.
+
+Update network router
+- **delete_setup_key**: Specify the Setup Key ID to permanently remove the key.
+
+Delete a setup key
+- **delete_user_invite**: Provide the unique invite ID.
+
+Delete a user invite
+- **delete_user**: Specify the user ID to ensure the correct account is deleted.
+
+Remove a user
+- **list_msp_tenants**: List all MSP tenants
 - **list_policies**: List all policies
 - **list_proxy_events**: List reverse proxy access logs
 
@@ -209,4 +367,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
