@@ -14,10 +14,18 @@ This MCP server provides specialized tools to measure the regulatory burden of o
 
 
 ## Available Tools (4)
-- **calculate_financial_burden**: Measures the financial weight of compliance relative to the scale of the business
-- **estimate_timeline_impact**: Quantifies the delay in operational readiness caused by regulatory processes
-- **get_regulatory_summary**: Provides a holistic view of the regulatory landscape for a specific configuration
-- **calculate_complexity_score**: Determines the core difficulty level of the regulatory environment
+- **calculate_financial_burden**: Provide both compliance costs and annual revenue.
+
+Measures the financial weight of compliance relative to the scale of the business
+- **estimate_timeline_impact**: Provide the estimated compliance timeline and standard market entry time.
+
+Quantifies the delay in operational readiness caused by regulatory processes
+- **calculate_complexity_score**: Provide all required inputs to ensure an accurate score.
+
+Determines the core difficulty level of the regulatory environment
+- **get_regulatory_summary**: Specify countries, regulations, and industry type.
+
+Provides a holistic view of the regulatory landscape for a specific configuration
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

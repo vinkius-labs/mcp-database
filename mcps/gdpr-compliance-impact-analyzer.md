@@ -14,9 +14,9 @@ This MCP server provides tools to quantify the financial impact of GDPR complian
 
 
 ## Available Tools (4)
+- **calculate_risk_exposure**: Estimates the potential financial liability resulting from data breaches
 - **analyze_consent_efficiency**: Evaluates the impact of consent collection on compliance overhead
 - **calculate_compliance_roi**: Evaluates the financial efficiency of compliance investments
-- **calculate_risk_exposure**: Estimates the potential financial liability resulting from data breaches
 - **calculate_total_compliance_cost**: Determines the total expenditure required to maintain GDPR compliance
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
