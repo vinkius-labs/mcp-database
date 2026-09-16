@@ -14,9 +14,9 @@ This MCP server provides specialized tools to ensure the integrity of Server-Sen
 
 
 ## Available Tools (3)
+- **reconstruct_message_payload**: Extract and merge all text fragments into a single unified message string
 - **check_stream_continuity**: Check if a sequence of SSE events arrived without any missing packets
 - **enumerate_missing_identifiers**: Identify exactly which specific event IDs were lost during transmission
-- **reconstruct_message_payload**: Extract and merge all text fragments into a single unified message string
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
