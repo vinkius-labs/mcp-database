@@ -14,10 +14,10 @@ This MCP server provides advanced thermodynamic analysis for chemical mixtures. 
 
 
 ## Available Tools (4)
+- **validate_mixture_miscibility**: Checks if a mixture is expected to be homogeneous or heterogeneous
 - **analyze_pressure_sensitivity**: Determines how the azeotropic point shifts when pressure is changed
 - **get_azeotrope_properties**: Calculates the exact physical characteristics of a confirmed azeotrope
 - **predict_azeotrope_existence**: Determines if a mixture of specific components will form an azeotrope under given conditions
-- **validate_mixture_miscibility**: Checks if a mixture is expected to be homogeneous or heterogeneous
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

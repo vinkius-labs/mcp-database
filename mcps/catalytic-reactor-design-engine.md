@@ -14,10 +14,10 @@ This MCP server provides a suite of chemical engineering tools to design and ana
 
 
 ## Available Tools (4)
-- **estimate_reactor_volume**: Calculates the physical volume required for the reactor vessel based on catalyst mass and density
 - **calculate_catalyst_requirement**: Determines the total mass of catalyst needed to achieve a specific conversion target
 - **evaluate_mass_transfer_limitations**: Determines if the reaction is limited by how fast reactants move to the catalyst (external) or into the catalyst (internal)
 - **generate_temperature_profile**: Predicts how temperature changes throughout the reactor length
+- **estimate_reactor_volume**: Calculates the physical volume required for the reactor vessel based on catalyst mass and density
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

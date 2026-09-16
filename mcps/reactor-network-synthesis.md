@@ -14,9 +14,9 @@ This MCP server provides a specialized optimization engine for chemical engineer
 
 
 ## Available Tools (4)
-- **compare_configurations**: Ranks multiple different reactor arrangements against each other based on user-defined priorities
 - **analyze_reaction_dynamics**: Evaluates how specific reaction types will behave under different reactor environments
 - **calculate_economic_impact**: Quantifies the financial viability of a proposed reactor arrangement
+- **compare_configurations**: Ranks multiple different reactor arrangements against each other based on user-defined priorities
 - **find_optimal_network**: Identifies the best reactor configuration to meet specific selectivity and conversion goals
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
