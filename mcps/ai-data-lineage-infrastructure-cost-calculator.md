@@ -14,10 +14,18 @@ This MCP server provides a suite of tools to model the economic impact of implem
 
 
 ## Available Tools (4)
-- **calculate_compliance_value**: What is the monetary value of our lineage in terms of regulatory risk mitigation?
-- **calculate_debugging_efficiency**: How much time/money will we save in engineering hours by using this lineage?
-- **calculate_tracking_overhead**: How much will it cost to maintain our data lineage?
-- **get_lineage_roi_summary**: What is the total Return on Investment (ROI) for our lineage infrastructure?
+- **calculate_debugging_efficiency**: Provide lineageDepth, averageIncidentCount, and engineerHourlyRate.
+
+How much time/money will we save in engineering hours by using this lineage?
+- **calculate_tracking_overhead**: Provide sourceCount, lineageDepth, and storageRequirementGb.
+
+How much will it cost to maintain our data lineage?
+- **get_lineage_roi_summary**: Pass the results from the three calculation tools.
+
+What is the total Return on Investment (ROI) for our lineage infrastructure?
+- **calculate_compliance_value**: Provide lineageDepth and dataSensitivity.
+
+What is the monetary value of our lineage in terms of regulatory risk mitigation?
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
