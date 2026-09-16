@@ -14,9 +14,15 @@ Plan your next barbecue with precision. This MCP server provides a deterministic
 
 
 ## Available Tools (3)
-- **get_thermal_targets**: Get target internal temperatures for specific meat types
-- **calculate_cooking_schedule**: Calculate cooking schedule and fuel requirements
-- **calculate_meat_requirements**: Calculate raw meat requirements based on guests, appetite, and style
+- **calculate_meat_requirements**: Provide the total number of guests and desired meat types.
+
+Calculate raw meat requirements based on guests, appetite, and style
+- **get_thermal_targets**: Provide a list of meat types.
+
+Get target internal temperatures for specific meat types
+- **calculate_cooking_schedule**: Pass the JSON string containing the calculated meat requirements.
+
+Calculate cooking schedule and fuel requirements
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,9 +14,9 @@ This MCP server provides professional-grade dough calculations using baker's per
 
 
 ## Available Tools (3)
-- **calculate_recipe_ingredients**: Calculates the exact mass of every ingredient needed for a batch of dough
 - **determine_yeast_dosage**: Determines the correct yeast percentage based on fermentation environment
 - **generate_fermentation_schedule**: Provides a step-by-step timeline for the baker
+- **calculate_recipe_ingredients**: Calculates the exact mass of every ingredient needed for a batch of dough
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

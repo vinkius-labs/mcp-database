@@ -14,9 +14,15 @@ This MCP server provides deterministic tools for ceramic artists and manufacture
 
 
 ## Available Tools (3)
-- **calculate_clay_dimensions**: Determines the necessary wet dimensions required to reach a specific target size after all shrinkage has occurred
-- **calculate_glaze_requirements**: Calculates the mass of glaze needed and the ideal density for the specified application method
-- **get_firing_parameters**: Provides the recommended temperature ranges for both the bisque and glaze firing stages based on the clay type
+- **calculate_glaze_requirements**: Provide the total surface area to calculate the requirements.
+
+Calculates the mass of glaze needed and the ideal density for the specified application method
+- **calculate_clay_dimensions**: Use the specific clay type and shrinkage percentages.
+
+Determines the necessary wet dimensions required to reach a specific target size after all shrinkage has occurred
+- **get_firing_parameters**: Specify the clay type for accurate results.
+
+Provides the recommended temperature ranges for both the bisque and glaze firing stages based on the clay type
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

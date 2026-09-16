@@ -14,9 +14,9 @@ A deterministic tool for perfumers to calculate the exact quantities of carrier 
 
 
 ## Available Tools (3)
+- **calculate_single_dilution**: Determines the amount of carrier needed to dilute a single fragrance oil to a target concentration
 - **get_standard_concentration**: Provides the midpoint concentration values for the industry-standard perfume categories
 - **calculate_blend_dilution**: Calculates dilution requirements when mixing multiple different fragrance oils into a single base
-- **calculate_single_dilution**: Determines the amount of carrier needed to dilute a single fragrance oil to a target concentration
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

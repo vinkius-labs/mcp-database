@@ -14,8 +14,8 @@ This MCP server provides precise brewing calculations for beer production. Use `
 
 
 ## Available Tools (3)
-- **calculate_color**: Calculate final SRM color and its description
 - **calculate_bitterness**: Calculate total bitterness (IBU) and contribution per hop addition
+- **calculate_color**: Calculate final SRM color and its description
 - **simulate_boil_process**: Predict final volume and volume lost during boil
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

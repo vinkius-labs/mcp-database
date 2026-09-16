@@ -14,8 +14,8 @@ This MCP server provides precise tools for knitters and crocheters to swap yarns
 
 
 ## Available Tools (3)
-- **analyze_fiber_compatibility**: Analyze fiber compatibility
 - **get_gauge_impact_summary**: Summarize gauge impact
+- **analyze_fiber_compatibility**: Analyze fiber compatibility
 - **get_substitution_requirements**: Calculate substitute yarn requirements
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
