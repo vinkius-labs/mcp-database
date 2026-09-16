@@ -14,9 +14,9 @@ This MCP server provides a measurement engine to quantify user onboarding succes
 
 
 ## Available Tools (4)
-- **analyze_funnel_dropoffs**: Identifies which specific steps in the onboarding process cause the most user attrition
 - **calculate_retention_correlation**: Determines if successful onboarding is actually driving long-term user retention
 - **compare_segment_performance**: Compares onboarding effectiveness across different user tiers or categories
+- **analyze_funnel_dropoffs**: Identifies which specific steps in the onboarding process cause the most user attrition
 - **get_onboarding_score**: Calculates a single health score representing how effectively users are being onboarded
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

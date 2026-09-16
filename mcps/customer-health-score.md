@@ -15,10 +15,10 @@ This MCP server provides a comprehensive suite of tools to monitor and predict c
 
 ## Available Tools (5)
 - **analyze_usage_and_adoption**: Evaluate how deeply a customer is integrated into the product
-- **assess_financial_health**: Determine the stability of the customer relationship based on payment history
 - **compare_to_segment_benchmarks**: Compare a customer's metrics against their peer group
 - **evaluate_sentiment_and_support**: Assess customer satisfaction and friction
 - **get_customer_health_score**: Retrieve the current comprehensive health profile for a specific customer
+- **assess_financial_health**: Determine the stability of the customer relationship based on payment history
 
 
 ## 💬 Prompt Examples
@@ -103,4 +103,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
