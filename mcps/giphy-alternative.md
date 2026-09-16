@@ -37,17 +37,17 @@ No more manual searching through web interfaces to find the perfect GIF. Your AI
 
 ## Available Tools (10)
 - **get_random_gif**: Get a random GIF
-- **search_stickers**: Search for animated stickers
-- **get_trending_stickers**: List trending stickers
-- **translate_text_to_gif**: Translate text to a single GIF
-- **translate_text_to_sticker**: Translate text to a sticker
-- **get_gif_details**: Get a specific GIF by ID
-- **get_random_sticker**: Get a random sticker
-- **get_trending_gifs**: List trending GIFs
-- **search_channels**: Search for Giphy channels
 - **search_gifs**: Supports limit, rating, and language.
 
 Search for GIFs
+- **search_stickers**: Search for animated stickers
+- **translate_text_to_gif**: Translate text to a single GIF
+- **translate_text_to_sticker**: Translate text to a sticker
+- **get_trending_stickers**: List trending stickers
+- **get_gif_details**: Get a specific GIF by ID
+- **get_random_sticker**: Get a random sticker
+- **search_channels**: Search for Giphy channels
+- **get_trending_gifs**: List trending GIFs
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

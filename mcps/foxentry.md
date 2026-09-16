@@ -35,18 +35,18 @@ Connect your **Foxentry** data intelligence account to any AI agent and simplify
 
 
 ## Available Tools (12)
-- **geocode_address**: Geocode address
-- **lookup_business**: Lookup business
+- **check_foxentry_status**: Verify connectivity
+- **format_phone**: Format phone
 - **suggest_address**: Suggest address
-- **suggest_email**: Suggest email
-- **validate_name**: Validate name
+- **validate_email**: Validate email
 - **validate_phone**: Validate phone
 - **validate_address**: Validate address
 - **suggest_name**: Suggest name
-- **check_foxentry_status**: Verify connectivity
-- **format_phone**: Format phone
+- **geocode_address**: Geocode address
 - **get_business_details**: Get business details
-- **validate_email**: Validate email
+- **lookup_business**: Lookup business
+- **suggest_email**: Suggest email
+- **validate_name**: Validate name
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,14 +37,14 @@ No more context-switching between tools to check if a customer was replied to. Y
 
 ## Available Tools (12)
 - **get_api_status**: Check connection
-- **get_inbox_details**: Get mailbox info
-- **search_team_members**: Find members
-- **test_hiver_auth**: Verify credentials
-- **update_thread_status**: Modify conversation
-- **create_shared_draft**: Draft team reply
 - **get_conversation_details**: Read email thread
 - **list_inbox_conversations**: List shared threads
+- **search_team_members**: Find members
+- **test_hiver_auth**: Verify credentials
+- **get_inbox_details**: Get mailbox info
 - **list_inbox_members**: List team members
+- **update_thread_status**: Modify conversation
+- **create_shared_draft**: Draft team reply
 - **list_inbox_tags**: Get mailbox tags
 - **list_shared_inboxes**: List Hiver inboxes
 - **search_tags_by_name**: Find tags
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
