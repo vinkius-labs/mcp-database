@@ -35,8 +35,8 @@ Empower your AI agent to orchestrate your entire aviation research and flight au
 
 
 ## Available Tools (5)
-- **get_airport_details**: Get metadata and location details for a specific airport by code (ICAO or IATA)
 - **check_api_status**: Check if the AeroAPI service is operational
+- **get_airport_details**: Get metadata and location details for a specific airport by code (ICAO or IATA)
 - **get_flight_details**: Get comprehensive details for a specific flight by identifier (ident or fa_flight_id)
 - **list_airport_flights**: List scheduled, enroute, or arrived flights for a specific airport
 - **search_flights**: Search for flights based on a query (e.g., origin, destination, ident)
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

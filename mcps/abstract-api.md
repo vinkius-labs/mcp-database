@@ -39,8 +39,8 @@ Empower your AI agent to orchestrate your entire data enrichment and verificatio
 - **get_timezone**: Get current time and timezone details for a location
 - **validate_email**: Verify if an email address is valid and deliverable
 - **get_exchange_rate**: Get current exchange rates between two currencies
-- **get_holidays**: List public holidays for a country and year
 - **validate_vat**: Validate a VAT number and retrieve company details
+- **get_holidays**: List public holidays for a country and year
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

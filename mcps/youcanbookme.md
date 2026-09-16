@@ -39,22 +39,22 @@ No more manual filtering through booking dashboards to find an attendee's email.
 
 
 ## Available Tools (10)
-- **get_account**: Retrieves details about the YouCanBook.me account and plan
+- **list_team_members**: Lists all team members assigned to a specific booking page
+- **list_profiles**: Lists all booking pages (profiles) in the YouCanBook.me account
+- **get_profile**: Retrieves detailed configuration for a specific booking page
 - **cancel_booking**: This action removes the calendar event and is irreversible.
 
 Permanently cancels a booking and notifies the attendee
-- **get_profile**: Retrieves detailed configuration for a specific booking page
-- **list_profiles**: Lists all booking pages (profiles) in the YouCanBook.me account
-- **get_booking**: Retrieves full details for a specific YouCanBook.me booking
-- **list_bookings**: Status options: tentative, upcoming, finished, cancelled.
-
-Queries bookings for a specific profile with optional status filtering
-- **confirm_intent**: Finalizes a booking intent, creating the official appointment
 - **create_intent**: Provide the profile subdomain (e.g. "mycompany"). Returns an intent ID.
 
 Creates a booking intent to initiate the programmatic scheduling process
 - **get_availability**: Retrieves bookable time slots for an active booking intent
-- **list_team_members**: Lists all team members assigned to a specific booking page
+- **confirm_intent**: Finalizes a booking intent, creating the official appointment
+- **get_account**: Retrieves details about the YouCanBook.me account and plan
+- **get_booking**: Retrieves full details for a specific YouCanBook.me booking
+- **list_bookings**: Status options: tentative, upcoming, finished, cancelled.
+
+Queries bookings for a specific profile with optional status filtering
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

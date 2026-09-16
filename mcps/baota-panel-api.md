@@ -41,13 +41,13 @@ Empower your AI agent to orchestrate your server infrastructure with **Baota Pan
 List installed software
 - **get_system_total**: Get system load info
 - **get_task_count**: Get pending task count
+- **list_ftp**: List FTP accounts
+- **list_sites**: List websites
 - **list_cron_tasks**: List cron jobs
 - **list_logs**: List panel logs
 - **get_disk_info**: Get disk usage
 - **get_network_info**: Get network status
-- **list_sites**: List websites
 - **list_databases**: List databases
-- **list_ftp**: List FTP accounts
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

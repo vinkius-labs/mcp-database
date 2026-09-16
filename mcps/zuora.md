@@ -39,15 +39,15 @@ No more manual navigation through complex billing dashboards to verify a charge.
 
 
 ## Available Tools (10)
+- **create_account**: Create a new billing account
 - **create_order**: Create a Zuora unified Order
 - **get_invoices**: Get invoices for an account
-- **preview_subscription**: Preview subscription charges
-- **create_account**: Create a new billing account
 - **get_account**: Get account details
-- **get_order**: Get order details
 - **get_subscription**: Get subscription details
 - **list_products**: List product catalog
+- **preview_subscription**: Preview subscription charges
 - **update_account**: Update account details
+- **get_order**: Get order details
 - **list_subscriptions**: List account subscriptions
 
 
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
