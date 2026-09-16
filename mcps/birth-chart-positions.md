@@ -14,8 +14,8 @@ This MCP server provides an astronomical calculation engine to translate a speci
 
 
 ## Available Tools (3)
-- **find_bodies_in_sign**: Find all planets currently in a specific zodiac sign
 - **calculate_sky_map**: Calculate planetary positions for a specific time and location
+- **find_bodies_in_sign**: Find all planets currently in a specific zodiac sign
 - **interpret_longitude**: Interpret ecliptic longitude into zodiac sign and degrees
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
