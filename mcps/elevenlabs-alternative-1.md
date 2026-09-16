@@ -36,41 +36,69 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 
 ## Available Tools (34)
 - **isolate_audio**: Remove background noise from audio
-- **create_project**: Create a Studio project
+- **create_project**: Provide a name; default voice IDs are optional.
+
+Create a Studio project
 - **create_single_use_token**: Create a single-use token
-- **delete_history_item**: Delete a history item
-- **design_voice**: Design a new voice from a prompt
-- **edit_voice**: Edit a custom voice
-- **find_similar_voices**: Find similar voices in the library
-- **get_character_stats**: Get character usage statistics
-- **get_dub_status**: Get status of a dubbing project
-- **get_history_audio**: Download audio for a history item
-- **get_history_item**: Get details of a history item
-- **get_user**: Get user info and subscription details
-- **get_voice**: Get details for a specific voice
+- **get_history_item**: Provide a valid history item ID.
+
+Get details of a history item
+- **get_voice**: Provide a valid voice ID to retrieve information.
+
+Get details for a specific voice
 - **list_agents**: List Conversational AI agents
-- **list_history**: Get generated items history
 - **list_dictionaries**: List pronunciation dictionaries
-- **list_dubs**: List dubbing projects
-- **stream_convert_speech**: Stream Voice Changer (Speech to Speech)
 - **stream_isolate_audio**: Stream audio isolation
-- **add_dictionary_from_file**: Add pronunciation dictionary from a PLS file
-- **add_dictionary_from_rules**: Add pronunciation dictionary from rules
-- **convert_speech**: Voice Changer (Speech to Speech)
+- **add_dictionary_from_file**: The file_base64 parameter is required for the operation.
+
+Add pronunciation dictionary from a PLS file
+- **add_dictionary_from_rules**: Provide the rules array if the dictionary name is omitted.
+
+Add pronunciation dictionary from rules
+- **create_agent**: Supply a name and the required conversation configuration.
+
+Create a Conversational AI agent
 - **create_designed_voice**: Save a designed voice
 - **create_dub**: Create a dubbing project
-- **delete_voice**: Delete a custom voice
+- **create_speech**: Convert text to speech
+- **delete_history_item**: Ensure the history item ID is correct.
+
+Delete a history item
+- **convert_speech**: Voice Changer (Speech to Speech)
+- **delete_voice**: Ensure the voice ID is correct before proceeding with deletion.
+
+Delete a custom voice
+- **design_voice**: Design a new voice from a prompt
+- **edit_voice**: You must provide both a voice ID and a name.
+
+Edit a custom voice
+- **find_similar_voices**: Find similar voices in the library
 - **generate_sound**: Generate sound effects from text
-- **get_snapshot**: Get a project snapshot
-- **list_agent_branches**: List branches for a Conversational AI agent
+- **get_character_stats**: Get character usage statistics
+- **get_dub_status**: Use the specific dubbing ID for the query.
+
+Get status of a dubbing project
+- **get_history_audio**: Use the specific history item ID.
+
+Download audio for a history item
+- **get_snapshot**: Supply the project ID and snapshot ID.
+
+Get a project snapshot
+- **get_user**: Get user info and subscription details
+- **list_agent_branches**: Supply the agent’s unique ID.
+
+List branches for a Conversational AI agent
+- **list_dubs**: List dubbing projects
+- **list_history**: Get generated items history
 - **list_models**: ).
 
 List available models
+- **list_projects**: Provide project details to list them.
+
+List Studio projects
 - **list_voices**: List available voices
+- **stream_convert_speech**: Stream Voice Changer (Speech to Speech)
 - **stream_speech**: Stream text to speech
-- **create_agent**: Create a Conversational AI agent
-- **list_projects**: List Studio projects
-- **create_speech**: Convert text to speech
 
 
 ## 💬 Prompt Examples

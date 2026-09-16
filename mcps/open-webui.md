@@ -35,21 +35,21 @@ Connect your **Open WebUI** instance to any AI agent and take full control of yo
 
 ## Available Tools (12)
 - **ollama_generate**: Ollama API Generate Completion
-- **ollama_tags**: List Ollama models
-- **process_web_url**: Process a web URL into a collection
 - **create_new_chat**: Must generate UUIDs for message IDs.
 
 Create a new chat (Backend-Controlled Flow)
-- **get_file_status**: Check file processing status
-- **list_models**: Retrieve all models
-- **ollama_embed**: Ollama API Embeddings
-- **add_file_to_collection**: Add a file to a knowledge collection
-- **chat_completed**: Run outlet filters for completed chat
-- **chat_completions**: OpenAI-compatible chat completion
 - **send_message**: Anthropic-compatible message generation
 - **upload_file**: Content is extracted and stored in the vector DB. Provide file content as base64.
 
 Upload a file for RAG
+- **add_file_to_collection**: Add a file to a knowledge collection
+- **chat_completed**: Run outlet filters for completed chat
+- **chat_completions**: OpenAI-compatible chat completion
+- **get_file_status**: Check file processing status
+- **list_models**: Retrieve all models
+- **ollama_embed**: Ollama API Embeddings
+- **ollama_tags**: List Ollama models
+- **process_web_url**: Process a web URL into a collection
 
 
 ## 💬 Prompt Examples
