@@ -36,83 +36,201 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 
 
 ## Available Tools (77)
-- **list_tlds**: List TLDs
-- **activate_zone_dns**: Activate DNS for a zone
-- **check_domain_availability**: Check domain availability
-- **check_zone_record_distribution**: Check zone record distribution
-- **create_contact**: Create a contact
-- **create_domain**: Create a domain in an account
-- **create_ds_record**: Create a DS record for a domain
-- **create_template**: Create a template
-- **create_webhook**: Create a webhook
-- **delegate_to_vanity**: Delegate to vanity name servers
+- **activate_zone_dns**: Supply the account and zone names.
+
+Activate DNS for a zone
+- **check_domain_availability**: Provide the account ID and the domain name to check.
+
+Check domain availability
 - **delete_domain**: Delete a domain
-- **delete_template**: Delete a template
-- **delete_webhook**: Delete a webhook
-- **disable_auto_renewal**: Disable auto-renewal
-- **enable_auto_renewal**: Enable auto-renewal
-- **get_certificate_private_key**: Get private key for a certificate
-- **get_contact**: Retrieve a contact
-- **get_dnssec**: Get DNSSEC status for a domain
-- **get_domain_delegation**: List name servers for a domain
-- **get_email_forward**: Retrieve an email forward
-- **get_service**: Retrieve a service
-- **get_tld**: Retrieve a TLD
-- **get_tld_extended_attributes**: Retrieve extended attributes for a TLD
+- **get_certificate_private_key**: Provide the certificate ID.
+
+Get private key for a certificate
+- **get_contact**: Provide the Account ID and Contact ID.
+
+Retrieve a contact
+- **get_email_forward**: Use the account ID, domain, and the unique email forward ID.
+
+Retrieve an email forward
 - **get_whoami**: Get details about the current authenticated entity
-- **get_zone_record**: Retrieve a zone record
-- **issue_letsencrypt_certificate**: Issue a Let's Encrypt certificate
-- **list_accounts**: List accounts the authenticated entity has access to
-- **list_templates**: List templates in an account
-- **list_zone_records**: List records in a zone
-- **reject_push**: Reject a domain push
-- **renew_domain**: Renew a domain
-- **restore_domain**: Restore a domain
-- **transfer_domain**: Transfer a domain
-- **update_contact**: Update a contact
-- **initiate_push**: Initiate a domain push
-- **list_billing_charges**: List billing charges for an account
-- **list_certificates**: List certificates for a domain
-- **list_contacts**: List contacts in an account
-- **list_email_forwards**: List email forwards for a domain
-- **list_services**: List services
-- **list_webhooks**: List webhooks in an account
-- **list_zones**: List zones in an account
-- **order_letsencrypt_certificate**: Order a Let's Encrypt certificate
-- **accept_push**: Accept a domain push
-- **authorize_transfer_out**: Authorize domain transfer out
-- **batch_change_zone_records**: Batch change zone records
-- **change_domain_delegation**: Change name servers for a domain
-- **check_zone_distribution**: Check zone distribution
-- **create_email_forward**: Create an email forward for a domain
-- **create_zone_record**: Create a record in a zone
-- **deactivate_zone_dns**: Deactivate DNS for a zone
-- **dedelegate_from_vanity**: Dedelegate from vanity name servers
-- **delete_contact**: Delete a contact
-- **delete_ds_record**: Delete a DS record
-- **delete_email_forward**: Delete an email forward
-- **delete_zone_record**: Delete a zone record
+- **list_templates**: Provide the account ID.
+
+List templates in an account
+- **list_zone_records**: Provide the account and zone name.
+
+List records in a zone
+- **reject_push**: Supply the account ID and the specific push ID.
+
+Reject a domain push
+- **create_domain**: Create a domain in an account
+- **create_webhook**: Provide the account ID and the webhook payload.
+
+Create a webhook
+- **list_contacts**: Provide the Account ID.
+
+List contacts in an account
+- **check_zone_distribution**: Specify the account and zone name.
+
+Check zone distribution
+- **check_zone_record_distribution**: Supply the account, zone name, and record ID.
+
+Check zone record distribution
+- **create_contact**: Provide the Account ID and the contact payload.
+
+Create a contact
+- **create_ds_record**: Create a DS record for a domain
+- **create_template**: Provide the account ID and the template payload.
+
+Create a template
+- **delegate_to_vanity**: Provide the account, domain, and the vanity payload.
+
+Delegate to vanity name servers
+- **delete_contact**: Provide both the account ID and the contact ID.
+
+Delete a contact
+- **delete_email_forward**: Specify the account ID, domain, and the email forward ID.
+
+Delete an email forward
+- **delete_template**: Delete a template
+- **delete_webhook**: Provide the account ID and the webhook ID.
+
+Delete a webhook
+- **delete_zone_record**: Supply the account, zone name, and record ID.
+
+Delete a zone record
+- **disable_auto_renewal**: Specify the account and domain name.
+
+Disable auto-renewal
 - **disable_dnssec**: Disable DNSSEC for a domain
-- **disable_whois_privacy**: Disable WHOIS privacy
-- **download_certificate**: Download a certificate
+- **download_certificate**: Provide the certificate ID.
+
+Download a certificate
+- **enable_auto_renewal**: Specify the account and domain name.
+
+Enable auto-renewal
 - **enable_dnssec**: Enable DNSSEC for a domain
-- **enable_whois_privacy**: Enable WHOIS privacy
-- **get_certificate**: Retrieve a certificate
+- **enable_whois_privacy**: Specify the account and domain name.
+
+Enable WHOIS privacy
+- **get_certificate**: Provide the certificate ID and domain.
+
+Retrieve a certificate
+- **get_dnssec**: Get DNSSEC status for a domain
+- **get_domain_delegation**: Use the domain name or ID.
+
+List name servers for a domain
+- **get_domain_prices**: Supply the account ID and the domain name.
+
+Retrieve domain prices
 - **get_domain**: Retrieve a domain
-- **get_domain_prices**: Retrieve domain prices
 - **get_ds_record**: Retrieve a DS record
+- **get_service**: Pass the service ID.
+
+Retrieve a service
+- **get_tld_extended_attributes**: Pass the TLD name.
+
+Retrieve extended attributes for a TLD
+- **get_tld**: Supply the TLD name.
+
+Retrieve a TLD
+- **get_zone_record**: Supply the account, zone name, and record ID.
+
+Retrieve a zone record
+- **get_zone**: Provide both account and zone names.
+
+Retrieve a zone
+- **initiate_push**: Provide the account ID, domain, and the required push payload.
+
+Initiate a domain push
+- **issue_letsencrypt_certificate**: Provide the certificate ID to initiate the process.
+
+Issue a Let's Encrypt certificate
+- **list_accounts**: List accounts the authenticated entity has access to
+- **list_billing_charges**: List billing charges for an account
+- **list_certificates**: Specify the domain name or ID.
+
+List certificates for a domain
+- **list_email_forwards**: Provide the account ID and domain name.
+
+List email forwards for a domain
+- **list_services**: List services
+- **list_tlds**: List TLDs
+- **list_webhooks**: Specify the account ID.
+
+List webhooks in an account
+- **list_zones**: Only the account ID is required.
+
+List zones in an account
+- **order_letsencrypt_certificate**: Include the required domain and order payload.
+
+Order a Let's Encrypt certificate
+- **register_domain**: Provide the account ID, domain name, and the registration payload.
+
+Register a domain
+- **renew_domain**: The renewal payload must specify the desired period.
+
+Renew a domain
+- **restore_domain**: Provide the necessary restore payload.
+
+Restore a domain
+- **transfer_domain**: Supply the account ID, domain name, and the transfer payload.
+
+Transfer a domain
+- **update_contact**: Provide the Account ID, Contact ID, and new contact payload.
+
+Update a contact
+- **update_template**: Provide the account, template ID, and new body content.
+
+Update a template
+- **update_zone_record**: Supply the account, zone name, record ID, and new payload.
+
+Update a zone record
+- **accept_push**: Supply the account ID, push ID, and the acceptance payload.
+
+Accept a domain push
+- **authorize_transfer_out**: No additional parameters are required.
+
+Authorize domain transfer out
+- **batch_change_zone_records**: Provide the account, zone name, and batch payload.
+
+Batch change zone records
+- **change_domain_delegation**: Supply the account, domain, and the new delegation payload.
+
+Change name servers for a domain
+- **create_email_forward**: Supply the account ID, domain, and the forward payload.
+
+Create an email forward for a domain
+- **create_zone_record**: Supply the account, zone name, and the record payload.
+
+Create a record in a zone
+- **deactivate_zone_dns**: Supply the account and zone names.
+
+Deactivate DNS for a zone
+- **dedelegate_from_vanity**: Specify the account and domain name.
+
+Dedelegate from vanity name servers
+- **delete_ds_record**: Delete a DS record
+- **disable_whois_privacy**: Specify the account and domain name.
+
+Disable WHOIS privacy
 - **get_template**: Retrieve a template
-- **get_webhook**: Retrieve a webhook
-- **get_zone**: Retrieve a zone
-- **get_zone_file**: Download a zone file
-- **issue_letsencrypt_renewal**: Issue a Let's Encrypt certificate renewal
+- **get_webhook**: Supply both the account ID and the webhook ID.
+
+Retrieve a webhook
+- **get_zone_file**: Supply the account and zone names.
+
+Download a zone file
+- **issue_letsencrypt_renewal**: Provide the renewal ID.
+
+Issue a Let's Encrypt certificate renewal
 - **list_domains**: List domains in an account
 - **list_ds_records**: List DS records for a domain
-- **list_pending_pushes**: List pending domain pushes
-- **order_letsencrypt_renewal**: Order a Let's Encrypt certificate renewal
-- **register_domain**: Register a domain
-- **update_template**: Update a template
-- **update_zone_record**: Update a zone record
+- **list_pending_pushes**: Specify the Account ID to filter results.
+
+List pending domain pushes
+- **order_letsencrypt_renewal**: Provide the certificate ID and renewal payload.
+
+Order a Let's Encrypt certificate renewal
 
 
 ## 💬 Prompt Examples
@@ -197,4 +315,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

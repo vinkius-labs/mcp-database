@@ -32,13 +32,13 @@ Manage your **Equinix Metal** infrastructure access and account settings directl
 
 
 ## Available Tools (9)
-- **create_email**: Create an Email
 - **create_project_api_key**: Create a Project API Key
-- **create_user_api_key**: Create a User API Key
+- **delete_user_api_key**: Delete a User API Key
 - **decline_invitation**: Decline an Invitation
+- **create_email**: Create an Email
+- **create_user_api_key**: Create a User API Key
 - **delete_api_key**: Delete an API Key
 - **delete_email**: Delete an Email
-- **delete_user_api_key**: Delete a User API Key
 - **get_invitation**: View an Invitation
 - **update_email**: g., setting it as default).
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

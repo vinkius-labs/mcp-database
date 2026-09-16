@@ -34,18 +34,18 @@ Connect your **Filestack** account to any AI agent to handle complex file workfl
 
 
 ## Available Tools (8)
-- **get_sfw_status**: Detect unsafe content (Safe for Work)
-- **get_ocr**: Extract printed or handwritten text (OCR)
-- **start_video_transcode**: Returns a UUID that must be used to poll for status.
-
-Start asynchronous video/audio transcoding
 - **upload_from_url**: Upload a file to Filestack from a public URL
+- **get_metadata**: Get metadata for a Filestack file
+- **get_ocr**: Extract printed or handwritten text (OCR)
+- **get_sfw_status**: Detect unsafe content (Safe for Work)
 - **generate_transform_url**: g., resize=width:400). Does not execute the request, just returns the URL.
 
 Generate a Filestack transformation URL
-- **get_image_tags**: Detect objects and features in an image
-- **get_metadata**: Get metadata for a Filestack file
 - **get_video_status**: Poll status of a video transcoding job
+- **start_video_transcode**: Returns a UUID that must be used to poll for status.
+
+Start asynchronous video/audio transcoding
+- **get_image_tags**: Detect objects and features in an image
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
