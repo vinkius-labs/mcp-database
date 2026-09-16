@@ -33,12 +33,12 @@ Connect your **R2R (Rag to Riches)** deployment to an AI agent, bringing your RA
 
 
 ## Available Tools (6)
-- **list_collections**: Lists all document collections
-- **get_health**: Checks the health status of the R2R server
-- **list_documents**: Lists all ingested documents in the R2R system
 - **search**: Performs a vector search across ingested documents
 - **rag_query**: Executes a RAG (Retrieval-Augmented Generation) query
+- **list_documents**: Lists all ingested documents in the R2R system
 - **get_document**: Retrieves details for a specific document
+- **get_health**: Checks the health status of the R2R server
+- **list_collections**: Lists all document collections
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

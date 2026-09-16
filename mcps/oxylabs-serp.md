@@ -35,15 +35,15 @@ Bring the **Oxylabs SERP Scraper API** directly into your AI workflows. Perform 
 
 ## Available Tools (10)
 - **google_travel_search**: Enumerate explicitly attached structured rules exporting active Billing
-- **youtube_search**: Identify precise active arrays spanning native Hold parsing
-- **baidu_search**: Inspect deep internal arrays mitigating specific Plan Math
+- **bing_search**: Dispatch an automated validation check routing explicit Gateway history
 - **google_images_search**: Perform structural extraction of properties driving active Account logic
 - **google_news_search**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **google_scholar_search**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **google_search**: Identify bounded CRM records inside the Headless Oxylabs SERP Platform
-- **google_shopping_search**: Retrieve explicit Cloud logging tracing explicit Vault limits
 - **yandex_search**: Identify precise active arrays spanning native Gateway auth
-- **bing_search**: Dispatch an automated validation check routing explicit Gateway history
+- **google_shopping_search**: Retrieve explicit Cloud logging tracing explicit Vault limits
+- **youtube_search**: Identify precise active arrays spanning native Hold parsing
+- **baidu_search**: Inspect deep internal arrays mitigating specific Plan Math
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
