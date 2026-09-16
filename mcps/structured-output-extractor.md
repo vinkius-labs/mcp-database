@@ -14,9 +14,9 @@ When Large Language Models fail to follow strict JSON or Pydantic schemas due to
 
 
 ## Available Tools (3)
-- **validate_schema_integrity**: Checks if the provided schema definition is logically sound and follows naming conventions
 - **extract_structured_data**: Performs the primary rescue extraction of fields from a block of text using a provided schema
 - **get_extraction_summary**: Provides a high-level overview of a specific extraction attempt's success and reliability
+- **validate_schema_integrity**: Checks if the provided schema definition is logically sound and follows naming conventions
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

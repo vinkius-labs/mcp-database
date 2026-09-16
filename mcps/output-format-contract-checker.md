@@ -14,9 +14,15 @@ The Output Format Contract Checker ensures data integrity in LLM-driven pipeline
 
 
 ## Available Tools (3)
-- **check_coercion_possibility**: Checks if a value can be coerced to a target type
-- **get_violation_summary**: Aggregates violations into a summary
-- **validate_contract**: Validates output data against an expected schema
+- **get_violation_summary**: Pass a list of violation objects to summarize.
+
+Aggregates violations into a summary
+- **validate_contract**: Provide the actual data and the schema blueprint.
+
+Validates output data against an expected schema
+- **check_coercion_possibility**: Provide the value and the expected type name.
+
+Checks if a value can be coerced to a target type
 
 
 ## 💬 Prompt Examples
@@ -101,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
