@@ -14,9 +14,9 @@ This MCP server provides precise modeling of hop stability using Arrhenius kinet
 
 
 ## Available Tools (3)
-- **calculate_cumulative_loss**: Predicts the total alpha acid reduction over a sequence of varying storage conditions
 - **predict_current_degradation**: Calculates the immediate impact of specific storage conditions on alpha acid levels
 - **recommend_storage_optimization**: Suggests the best physical packaging and environmental settings to minimize degradation
+- **calculate_cumulative_loss**: Predicts the total alpha acid reduction over a sequence of varying storage conditions
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
