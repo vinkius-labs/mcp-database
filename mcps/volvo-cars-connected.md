@@ -35,15 +35,15 @@ Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integrat
 
 ## Available Tools (10)
 - **get_engine_status**: Check the current state of the engine
+- **get_vehicle_statistics**: Retrieve usage statistics and trip meter data
+- **get_tires_status**: Check the pressure status of all tires
+- **get_windows_status**: Check if windows are open or closed
+- **list_vehicles**: Retrieve a list of all vehicles associated with the Volvo ID
 - **get_battery_status**: Retrieve the current battery level and charging status
 - **get_doors_status**: Check if doors are locked or unlocked
 - **get_fuel_status**: Retrieve the current fuel level and range
 - **get_odometer**: Retrieve the current odometer reading
-- **get_vehicle_statistics**: Retrieve usage statistics and trip meter data
-- **get_tires_status**: Check the pressure status of all tires
 - **get_vehicle_details**: Get comprehensive metadata for a specific vehicle
-- **get_windows_status**: Check if windows are open or closed
-- **list_vehicles**: Retrieve a list of all vehicles associated with the Volvo ID
 
 
 ## 💬 Prompt Examples
@@ -117,4 +117,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

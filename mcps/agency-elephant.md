@@ -36,14 +36,14 @@ No more manual toggling between CRM tabs or missing critical follow-ups. Your AI
 
 
 ## Available Tools (8)
-- **create_lead**: Create a new lead
+- **add_lead_to_group**: Add a lead to a group
+- **list_leads**: List all leads
+- **trigger_drip_campaign**: Start a drip campaign for a lead
 - **get_lead_details**: Get lead details
 - **list_campaigns**: List all campaigns
 - **list_lead_groups**: List all lead groups
-- **list_leads**: List all leads
 - **list_workspace_users**: List all team members
-- **add_lead_to_group**: Add a lead to a group
-- **trigger_drip_campaign**: Start a drip campaign for a lead
+- **create_lead**: Create a new lead
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

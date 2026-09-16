@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your mobile game monetization with **TopOn 
 
 
 ## Available Tools (8)
-- **list_topon_apps**: List TopOn applications
-- **get_topon_waterfall**: Get TopOn placement waterfall
-- **get_mintegral_reporting**: Get Mintegral performance reporting
 - **get_monetization_summary**: Get overall monetization summary
 - **get_topon_reporting**: Get TopOn performance reporting
+- **get_topon_waterfall**: Get TopOn placement waterfall
+- **list_topon_apps**: List TopOn applications
+- **get_mintegral_reporting**: Get Mintegral performance reporting
 - **get_mintegral_app_stats**: Get Mintegral app statistics
 - **list_mintegral_offers**: List Mintegral offers
 - **list_topon_placements**: List TopOn ad placements
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

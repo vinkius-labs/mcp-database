@@ -37,9 +37,9 @@ Empower your AI agent to orchestrate your entire music research and discography 
 ## Available Tools (5)
 - **check_api_status**: Check if the TIDAL Developer service is operational
 - **get_artist_albums**: Get all albums for a specific artist by ID
-- **get_album_tracks**: Get all tracks belonging to a specific album by ID
 - **search_tidal_albums**: Search for albums on TIDAL by name or artist
 - **search_tidal_artists**: Search for artists on TIDAL
+- **get_album_tracks**: Get all tracks belonging to a specific album by ID
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
