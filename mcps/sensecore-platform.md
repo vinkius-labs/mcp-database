@@ -36,11 +36,11 @@ Connect your AI agents to the **SenseCore Platform**, the industrial-grade AI in
 
 
 ## Available Tools (11)
-- **create_assistant**: Define a new AI assistant
 - **create_run**: Execute an assistant on a thread
 - **create_thread**: Initialize a new conversation thread
-- **get_assistant_details**: Get complete configuration for an assistant
 - **get_run_status**: Check the status of an active assistant run
+- **create_assistant**: Define a new AI assistant
+- **get_assistant_details**: Get complete configuration for an assistant
 - **list_assistants**: List all configured assistants
 - **list_messages**: Retrieve the message history of a thread
 - **list_models**: List all available SenseNova models
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

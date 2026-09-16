@@ -32,18 +32,6 @@ Connect your **Poe** (Quora's AI platform) account to any AI agent and manage yo
 
 
 ## Available Tools (10)
-- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
-
-List publicly available bots on Poe that your bot can query
-- **list_messages**: Useful for monitoring what users are asking, debugging bot responses, and analyzing conversation patterns. Returns message content, timestamps, and user identifiers.
-
-List recent messages for a specific Poe bot
-- **query_bot**: This allows chaining bot responses - your bot can query GPT-4, Claude, or any other bot on Poe and use the response as input. The cost is covered by the user's free message limit or subscription.
-
-Query another bot on Poe from your bot
-- **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
-
-Create a new API bot on Poe
 - **delete_bot**: This action cannot be undone. All conversation history and settings for the bot will be lost.
 
 Delete a Poe API bot
@@ -62,6 +50,18 @@ Send a message to a Poe bot (simulate user interaction)
 - **update_bot**: Changes take effect immediately for new conversations.
 
 Update an existing Poe bot's configuration
+- **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
+
+Create a new API bot on Poe
+- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
+
+List publicly available bots on Poe that your bot can query
+- **list_messages**: Useful for monitoring what users are asking, debugging bot responses, and analyzing conversation patterns. Returns message content, timestamps, and user identifiers.
+
+List recent messages for a specific Poe bot
+- **query_bot**: This allows chaining bot responses - your bot can query GPT-4, Claude, or any other bot on Poe and use the response as input. The cost is covered by the user's free message limit or subscription.
+
+Query another bot on Poe from your bot
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
