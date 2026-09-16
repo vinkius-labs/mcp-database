@@ -35,13 +35,13 @@ Connect your **Webflow** account to any AI agent and simplify how you manage you
 
 ## Available Tools (8)
 - **list_cms_collections**: List CMS collections for a site
+- **list_collection_items**: List items in a CMS collection
+- **list_sites**: List all Webflow sites
+- **list_site_users**: List registered site users
+- **list_site_assets**: List uploaded site assets
 - **list_ecommerce_orders**: List e-commerce orders
 - **create_collection_item**: Create a new CMS item
 - **get_site_details**: Get details for a specific site
-- **list_site_assets**: List uploaded site assets
-- **list_site_users**: List registered site users
-- **list_collection_items**: List items in a CMS collection
-- **list_sites**: List all Webflow sites
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
