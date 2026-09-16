@@ -35,14 +35,14 @@ Connect your **Ada** account to your AI agent to unlock advanced customer servic
 
 
 ## Available Tools (4)
-- **get_end_user**: Requires the End User ID.
-
-Retrieve profile information and custom metavariables for a specific Ada end user
-- **list_articles**: Retrieve the catalog of help articles used by the Ada AI agent to answer customer queries
 - **create_article**: Needs title and text content.
 
 Add a new text article to the Ada knowledge base to immediately improve AI bot responses
 - **list_conversations**: Retrieve active and past customer support conversations handled by the Ada bot
+- **get_end_user**: Requires the End User ID.
+
+Retrieve profile information and custom metavariables for a specific Ada end user
+- **list_articles**: Retrieve the catalog of help articles used by the Ada AI agent to answer customer queries
 
 
 ## 💬 Prompt Examples
@@ -111,4 +111,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

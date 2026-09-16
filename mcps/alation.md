@@ -38,13 +38,13 @@ Connect your **Alation** instance to your AI agent to unlock enterprise-grade da
 - **get_object_metadata**: Get object details
 - **get_query_results**: Get cached query results
 - **list_saved_queries**: List saved SQL queries
-- **list_tables**: List tables in schema
 - **list_data_sources**: List catalog data sources
-- **get_lineage**: Trace data lineage
-- **list_columns**: List columns in table
 - **list_schemas**: List schemas in data source
 - **search_catalog**: Search for data assets
+- **list_tables**: List tables in schema
+- **list_columns**: List columns in table
 - **list_custom_fields**: List governance fields
+- **get_lineage**: Trace data lineage
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

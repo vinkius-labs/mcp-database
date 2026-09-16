@@ -35,16 +35,16 @@ Connect your **Algolia** application to your AI agent to unlock professional sea
 
 
 ## Available Tools (10)
-- **get_click_through_rate**: Get search CTR
-- **list_no_result_searches**: List failed searches
 - **list_top_searches**: List most popular terms
-- **get_average_click_position**: Get average click rank
+- **list_no_click_searches**: List ignored searches
+- **get_click_through_rate**: Get search CTR
 - **get_conversion_rate**: Get search conversion rate
+- **get_average_click_position**: Get average click rank
+- **list_no_result_searches**: List failed searches
 - **get_unique_users_count**: Count search users
 - **list_recent_searches**: List latest queries
-- **list_ab_tests**: List AB testing status
 - **list_top_filters**: List popular filters
-- **list_no_click_searches**: List ignored searches
+- **list_ab_tests**: List AB testing status
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

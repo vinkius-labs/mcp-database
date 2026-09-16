@@ -36,13 +36,13 @@ Connect your **Amazon Ads** account to your AI agent to unlock professional camp
 
 ## Available Tools (8)
 - **list_profiles**: List advertiser profiles
-- **list_sp_ad_groups**: List SP ad groups
+- **request_sp_report**: Request performance report
+- **get_report_status**: Check report status
 - **list_sp_campaigns**: List Sponsored Products campaigns
+- **list_sp_ad_groups**: List SP ad groups
 - **list_sp_keywords**: List SP keywords
 - **list_sb_campaigns**: List Sponsored Brands campaigns
 - **list_sb_keywords**: List SB keywords
-- **request_sp_report**: Request performance report
-- **get_report_status**: Check report status
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

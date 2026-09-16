@@ -30,17 +30,17 @@ The **Apple Search Ads MCP Server** empowers your AI agent to directly manage yo
 
 ## Available Tools (10)
 - **get_account_check**: Verify Apple Search Ads account connection
+- **get_me**: Requires no parameters.
+
+Retrieve information about the authenticated user and organization
 - **list_keywords**: List all keywords in a campaign
-- **get_search_term_report**: Get performance report for search terms
-- **list_ad_groups**: List ad groups within a campaign
 - **list_campaigns**: List all search ads campaigns
 - **get_ad_group_report**: Get performance report for ad groups
 - **get_campaign_report**: Get performance report at the campaign level
 - **get_campaign**: Get details for a specific campaign
+- **get_search_term_report**: Get performance report for search terms
+- **list_ad_groups**: List ad groups within a campaign
 - **get_keyword_report**: Get performance report for keywords
-- **get_me**: Requires no parameters.
-
-Retrieve information about the authenticated user and organization
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

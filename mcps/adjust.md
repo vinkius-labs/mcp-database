@@ -35,11 +35,11 @@ Connect your **Adjust** account to your AI agent to unlock professional mobile m
 
 
 ## Available Tools (3)
-- **get_app_settings**: Get app configuration
 - **get_kpi_report**: Filterable by date.
 
 Get aggregated KPI metrics
 - **inspect_device**: Inspect device attribution
+- **get_app_settings**: Get app configuration
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
