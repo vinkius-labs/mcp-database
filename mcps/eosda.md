@@ -47,6 +47,12 @@ No more manual satellite data analysis or complex GIS workflows. Your AI acts as
 - **create_field**: Accepts field boundary as GeoJSON polygon or coordinates, field name, crop type, and planting date. Returns the created field with ID, calculated area, and monitoring activation status. Essential for onboarding new fields into the monitoring system, expanding farm coverage, and setting up new crop seasons. AI agents should use this when users ask "add a new field for monitoring", "register this field boundary", or need to set up satellite monitoring for a new agricultural area.
 
 Register a new agricultural field for satellite monitoring
+- **get_soil_moisture**: Returns soil moisture levels at different depths (surface, root zone, deep soil), moisture anomalies, and irrigation recommendations. Essential for irrigation scheduling, drought monitoring, water stress detection, and water resource optimization. AI agents should reference this when users ask "what is the soil moisture level in my field", "do I need to irrigate", or need soil moisture data for irrigation planning.
+
+Get soil moisture data for agricultural fields
+- **get_vegetation_index**: Supports 17+ indices including NDVI (vegetation health), EVI (enhanced vegetation index), GNDVI (green NDVI), NDRE (red edge), MSAVI (soil adjusted), RECI (red edge chlorophyll), NDSI, NDWI (water), SAVI, ARVI, GCI (chlorophyll), SIPI, NBR (burn ratio), MSI (moisture), ISTACK, FIDET, and CCCI. Returns index values, statistics (mean, min, max, std), satellite source (Sentinel-2, Landsat), and cloud cover percentage. Essential for crop health assessment, stress detection, and growth monitoring. AI agents should use this when users ask "what is the NDVI for my corn field this month", "calculate vegetation health for field X", or need vegetation index analysis.
+
+Calculate vegetation indices (NDVI, EVI, NDRE, etc.) for a specific field and date range
 - **get_evi_timeseries**: EVI is more sensitive in high-biomass regions and less affected by atmospheric conditions than NDVI. Returns EVI values per satellite overpass date for trend analysis. Essential for monitoring dense canopies, tropical crops, and areas with high atmospheric interference. AI agents should reference this when users ask "show me EVI trends for this field", "how is the canopy developing", or need enhanced vegetation index analysis for high-biomass crops.
 
 Get EVI time series data for enhanced vegetation monitoring over a growing season
@@ -65,12 +71,6 @@ Generate visual vegetation index maps with customizable colormaps for field visu
 - **get_satellite_imagery**: ) for a specific field and date range. Supports Sentinel-2, Landsat 8/9, MODIS, NAIP, and CBERS-4 sources. Returns image metadata, acquisition dates, cloud cover percentages, band availability, and download URLs. Essential for visual crop assessment, custom band analysis, change detection, and downloading raw imagery for further processing. AI agents should reference this when users ask "show me satellite images of my field from last week", "get Sentinel-2 imagery for field X", or need raw satellite imagery download links.
 
 Retrieve raw satellite imagery for a specific field and date range
-- **get_soil_moisture**: Returns soil moisture levels at different depths (surface, root zone, deep soil), moisture anomalies, and irrigation recommendations. Essential for irrigation scheduling, drought monitoring, water stress detection, and water resource optimization. AI agents should reference this when users ask "what is the soil moisture level in my field", "do I need to irrigate", or need soil moisture data for irrigation planning.
-
-Get soil moisture data for agricultural fields
-- **get_vegetation_index**: Supports 17+ indices including NDVI (vegetation health), EVI (enhanced vegetation index), GNDVI (green NDVI), NDRE (red edge), MSAVI (soil adjusted), RECI (red edge chlorophyll), NDSI, NDWI (water), SAVI, ARVI, GCI (chlorophyll), SIPI, NBR (burn ratio), MSI (moisture), ISTACK, FIDET, and CCCI. Returns index values, statistics (mean, min, max, std), satellite source (Sentinel-2, Landsat), and cloud cover percentage. Essential for crop health assessment, stress detection, and growth monitoring. AI agents should use this when users ask "what is the NDVI for my corn field this month", "calculate vegetation health for field X", or need vegetation index analysis.
-
-Calculate vegetation indices (NDVI, EVI, NDRE, etc.) for a specific field and date range
 - **get_weather_data**: Includes 1800+ weather parameters: temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, dew point, pressure, and growing degree days. Historical data available since 1979. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
 
 Get historical and current weather data for agricultural fields
@@ -164,4 +164,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

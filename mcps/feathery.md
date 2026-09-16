@@ -36,17 +36,27 @@ Connect your **Feathery.io** account to any AI agent and take full control of yo
 
 
 ## Available Tools (11)
-- **get_account_info**: Get Feathery account details
-- **get_form_details**: Get details for a specific form
 - **get_me**: Get current API token identity info
-- **list_connector_logs**: List recent API connector error logs for a specific form
+- **list_workflows**: List all automated workflows
+- **get_account_info**: Get Feathery account details
+- **get_form_details**: Use the Form ID to specify the target form.
+
+Get details for a specific form
+- **get_form_session**: Both User ID and Form ID are required.
+
+Retrieve the current state/session of a specific form for a user
+- **get_user_data**: Provide the User ID to retrieve data.
+
+Get all field values submitted by a specific user across forms
+- **get_workflow_details**: Provide the Workflow ID to fetch the required information.
+
+Get details for a specific workflow
+- **list_connector_logs**: You must provide the Form ID.
+
+List recent API connector error logs for a specific form
 - **list_environments**: List available Feathery environments
 - **list_forms**: List all forms in your Feathery account
 - **list_users**: List all users in your Feathery environment
-- **list_workflows**: List all automated workflows
-- **get_form_session**: Retrieve the current state/session of a specific form for a user
-- **get_user_data**: Get all field values submitted by a specific user across forms
-- **get_workflow_details**: Get details for a specific workflow
 
 
 ## 💬 Prompt Examples
@@ -131,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
