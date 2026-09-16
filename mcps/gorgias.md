@@ -41,34 +41,34 @@ Create a new customer profile
 - **create_message**: Include the ticket ID and the JSON body with message content.
 
 Add a message (reply or internal note) to a ticket
-- **get_customer**: Provide the customer ID to retrieve the profile information.
-
-Get details for a specific customer
-- **get_ticket**: Provide the ticket ID to fetch the required information.
-
-Get details of a specific ticket
 - **create_ticket**: Ensure the body contains all necessary message and customer details.
 
 Create a new ticket
+- **get_customer**: Provide the customer ID to retrieve the profile information.
+
+Get details for a specific customer
 - **get_user**: Pass the user ID to fetch the required details.
 
 Get details for a specific agent/user
 - **list_customers**: Optionally filter results using a specific email address.
 
 List or search customers
-- **list_messages**: Pass the ticket ID to list the conversation history.
-
-List messages within a ticket
 - **list_tickets**: Use the status parameter to filter results by open or closed tickets.
 
 List support tickets
-- **list_users**: List agents/users in the workspace
 - **update_customer**: Provide the customer ID and the JSON body containing updated fields.
 
 Update a customer profile
 - **update_ticket**: Supply both the ticket ID and the JSON body containing updates.
 
 Update an existing ticket
+- **get_ticket**: Provide the ticket ID to fetch the required information.
+
+Get details of a specific ticket
+- **list_messages**: Pass the ticket ID to list the conversation history.
+
+List messages within a ticket
+- **list_users**: List agents/users in the workspace
 
 
 ## 💬 Prompt Examples

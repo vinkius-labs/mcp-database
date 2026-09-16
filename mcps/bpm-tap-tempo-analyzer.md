@@ -14,9 +14,9 @@ The BPM Tap Tempo Analyzer is a specialized engine for processing raw rhythmic t
 
 
 ## Available Tools (3)
+- **generate_musical_suggestions**: Translates a raw BPM into musically useful rhythmic alternatives
 - **audit_tap_integrity**: Quantifies the quality and reliability of the tap sequence
 - **compute_tap_metrics**: Processes raw tap data to determine the primary tempo and consistency metrics
-- **generate_musical_suggestions**: Translates a raw BPM into musically useful rhythmic alternatives
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
