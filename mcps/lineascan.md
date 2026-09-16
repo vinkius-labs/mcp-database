@@ -33,31 +33,47 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 
 
 ## Available Tools (25)
-- **eth_get_transaction_receipt**: Returns the receipt of a transaction by hash
-- **eth_price**: Get the current price of ETH in USD and BTC
-- **eth_supply**: Get the total supply of ETH on Linea
+- **eth_get_transaction_receipt**: Supply the transaction hash in the txhash parameter.
+
+Returns the receipt of a transaction by hash
+- **get_abi**: Get the Contract ABI for a verified smart contract
+- **balance_multi**: Get ETH balances for multiple addresses
+- **check_verify_status**: Check the status of a verification request
+- **eth_block_number**: This tool does not require any parameters.
+
+Returns the number of the most recent block
+- **eth_call**: Specify the target address and method data.
+
+Executes a new message call immediately without creating a transaction
+- **eth_estimate_gas**: Provide the target address and method data.
+
+Generates an estimate of how much gas is needed for a transaction
+- **eth_get_block_by_number**: Provide the block number in the tag parameter.
+
+Returns information about a block by number
+- **eth_get_transaction_by_hash**: Supply the transaction hash in the txhash parameter.
+
+Returns information about a transaction by hash
+- **eth_price**: This tool does not require any parameters.
+
+Get the current price of ETH in USD and BTC
+- **eth_supply**: This tool requires no parameters.
+
+Get the total supply of ETH on Linea
 - **get_balance**: Get ETH balance for a single address
 - **get_block_countdown**: Get estimated time remaining until a block is mined
-- **get_source_code**: Get the Source Code for a verified smart contract
-- **get_tx_receipt_status**: Check the receipt status of a transaction
-- **tx_list**: Get a list of Normal transactions for an address
-- **balance_multi**: Get ETH balances for multiple addresses
-- **eth_estimate_gas**: Generates an estimate of how much gas is needed for a transaction
-- **eth_get_block_by_number**: Returns information about a block by number
-- **eth_get_transaction_by_hash**: Returns information about a transaction by hash
-- **get_abi**: Get the Contract ABI for a verified smart contract
 - **get_block_no_by_time**: Get block number by timestamp
 - **get_block_reward**: Get block and uncle rewards by block number
 - **get_logs**: Get event logs with filtering options
 - **get_mined_blocks**: Get a list of blocks mined by an address
+- **get_source_code**: Get the Source Code for a verified smart contract
 - **get_status**: Check the execution status of a transaction
+- **get_tx_receipt_status**: Check the receipt status of a transaction
 - **token_nft_tx**: Get a list of ERC-721 Token Transfer Events for an address
 - **token_tx**: Get a list of ERC-20 Token Transfer Events for an address
 - **tx_list_internal**: Get a list of Internal transactions for an address
+- **tx_list**: Get a list of Normal transactions for an address
 - **verify_source_code**: Submit a contract for verification
-- **check_verify_status**: Check the status of a verification request
-- **eth_block_number**: Returns the number of the most recent block
-- **eth_call**: Executes a new message call immediately without creating a transaction
 
 
 ## 💬 Prompt Examples
@@ -142,4 +158,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

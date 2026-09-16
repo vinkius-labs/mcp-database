@@ -37,21 +37,18 @@ Connect your **Langflow** instance to any AI agent and take full control of your
 - **create_project**: Pass the required project configuration JSON in the project_data parameter.
 
 Create a new project
-- **delete_file_v2**: Pass the File ID of the file to be deleted.
-
-Delete a file (v2)
-- **update_project**: Provide both the Project ID and the updated project information.
-
-Update project info
-- **create_flow**: Provide the complete flow configuration JSON in the flow_data parameter.
-
-Create a new flow
 - **create_response**: Uses flow_id as the model.
 
 OpenAI compatible responses endpoint
 - **get_monitor_transactions**: Use this to track system component interactions.
 
 Retrieve component interaction logs
+- **create_flow**: Provide the complete flow configuration JSON in the flow_data parameter.
+
+Create a new flow
+- **delete_file_v2**: Pass the File ID of the file to be deleted.
+
+Delete a file (v2)
 - **delete_flow**: Specify the Flow ID of the flow you intend to delete.
 
 Delete a flow
@@ -84,6 +81,9 @@ List all users (requires superuser)
 Execute a Langflow flow
 - **run_workflow**: Run a workflow (v2 API)
 - **trigger_webhook**: Trigger a Langflow webhook
+- **update_project**: Provide both the Project ID and the updated project information.
+
+Update project info
 - **update_flow**: Supply both the Flow ID and the updated flow configuration JSON.
 
 Update an existing flow
@@ -174,4 +174,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,23 +34,47 @@ Integrate **Edgio (formerly Limelight Networks and Uplynk)** into your AI workfl
 
 
 ## Available Tools (17)
-- **create_event**: Creates a new live event
-- **get_dash_manifest**: Get DASH manifest for video playback
-- **delete_asset**: Permanently removes an asset from the system
-- **get_asset**: Retrieves detailed metadata for a specific asset
-- **get_channel**: Retrieves configuration and status for a channel
-- **get_hls_manifest**: Get HLS manifest for video playback
+- **create_event**: Pass the required live event configuration data.
+
+Creates a new live event
+- **get_dash_manifest**: Supply the asset or channel ID.
+
+Get DASH manifest for video playback
+- **list_channels**: Lists all configured linear channels
+- **upload_slice**: Provide the slice data payload.
+
+Upload video segments for encoding and storage
+- **get_asset**: Provide the required asset ID.
+
+Retrieves detailed metadata for a specific asset
+- **stop_event**: Supply the event ID.
+
+Signals the end of a live event
+- **delete_asset**: Supply the unique asset ID.
+
+Permanently removes an asset from the system
+- **get_channel**: Supply the channel ID.
+
+Retrieves configuration and status for a channel
+- **get_hls_manifest**: Supply the asset or channel ID.
+
+Get HLS manifest for video playback
 - **get_playback_report**: Retrieves playback statistics (views, duration, etc.)
 - **initialize_preplay_session**: Initialize a playback session for SSAI and security
 - **list_assets**: Returns a list of all assets in your account
-- **list_channels**: Lists all configured linear channels
 - **list_events**: Lists all scheduled and active live events
-- **list_logs**: Lists available log files for download
-- **start_event**: Signals the start of a live event
-- **stop_event**: Signals the end of a live event
-- **update_asset**: Updates metadata (title, tags, etc.) for an asset
-- **update_channel**: Updates channel settings or schedule
-- **upload_slice**: Upload video segments for encoding and storage
+- **list_logs**: Execute the provided asynchronous function.
+
+Lists available log files for download
+- **start_event**: Supply the event ID.
+
+Signals the start of a live event
+- **update_asset**: Must provide both the asset ID and the fields to modify.
+
+Updates metadata (title, tags, etc.) for an asset
+- **update_channel**: Provide the channel ID and the settings object.
+
+Updates channel settings or schedule
 
 
 ## 💬 Prompt Examples
@@ -135,4 +159,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

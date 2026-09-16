@@ -34,12 +34,12 @@ Connect your **Last.fm** account to any AI agent and take control of your music 
 
 
 ## Available Tools (5)
-- **update_now_playing**: fm that a user has started listening to a track. Requires session key.
-
-Update Now Playing status on Last.fm
 - **scrobble_track**: Requires session key. Track must be > 30s and played for at least half its duration or 4 mins.
 
 Scrobble a track to Last.fm
+- **update_now_playing**: fm that a user has started listening to a track. Requires session key.
+
+Update Now Playing status on Last.fm
 - **get_tag_info**: fm.
 
 Get metadata for a tag
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

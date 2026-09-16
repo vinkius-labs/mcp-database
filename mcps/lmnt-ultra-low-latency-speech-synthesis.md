@@ -33,15 +33,15 @@ Connect **LMNT** to your AI agent to generate high-quality, lifelike speech with
 
 
 ## Available Tools (7)
+- **list_voices**: List available voices
 - **generate_speech**: Returns a base64 encoded audio stream.
 
 Generates speech from text and returns base64 audio
-- **list_voices**: List available voices
+- **update_voice**: Update an existing voice
 - **create_voice**: Create a new voice (Instant Cloning)
 - **delete_voice**: Delete a voice by ID
 - **get_account**: Retrieve account usage and plan information
 - **get_voice**: Retrieve a specific voice by ID
-- **update_voice**: Update an existing voice
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

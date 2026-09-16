@@ -33,15 +33,15 @@ Connect your AI agent to the **Kava Network** through this comprehensive explore
 
 
 ## Available Tools (10)
+- **get_validator**: Get details for a specific validator
+- **get_account_token**: Get token balances for an account
 - **get_account_info**: Get basic information for a Kava account
 - **get_account_reward_slash**: Get rewards and slashes for an account
-- **get_account_token**: Get token balances for an account
-- **list_events**: Get a list of events with filtering options
-- **get_validator**: Get details for a specific validator
-- **list_extrinsics**: Get a list of extrinsics
 - **get_block**: Get block details by height or hash
-- **get_extrinsic**: Get extrinsic details by hash or index
 - **list_blocks**: Get a list of blocks
+- **list_events**: Get a list of events with filtering options
+- **get_extrinsic**: Get extrinsic details by hash or index
+- **list_extrinsics**: Get a list of extrinsics
 - **list_validators**: Get a list of validators
 
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

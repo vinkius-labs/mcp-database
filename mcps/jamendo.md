@@ -36,42 +36,33 @@ No more manual searching for royalty-free or independent music. Your AI acts as 
 
 
 ## Available Tools (25)
-- **set_user_like**: Ensure you have the necessary OAuth2 access token.
-
-Like a track. Requires OAuth2 access token
-- **get_user_albums**: Specify the user ID and relation type for accurate results.
-
-Retrieve albums a user has interacted with
 - **get_artist_locations**: Specify country or city codes to narrow the search.
 
 Filter artists by geographical location
-- **get_album_reviews**: Provide either the review ID or album ID.
-
-Browse and filter community album reviews
-- **get_radio_stream**: Provide either the radio ID or name.
-
-Get stream URL and now playing info for a radio
-- **get_track_reviews**: Provide either the review ID or track ID.
-
-Browse and filter community track reviews
-- **get_users**: Provide an ID or name to retrieve user details.
-
-Lookup user profile information
 - **search_albums**: Use name, artist, or type to narrow down results.
 
 Search and filter albums
 - **autocomplete_search**: Use this tool when the user input is incomplete.
 
 Prefix-based search for tracks, albums, artists, and tags
+- **search_playlists**: Provide an ID or user ID to find specific playlists.
+
+Search and filter public or user playlists
+- **get_album_reviews**: Provide either the review ID or album ID.
+
+Browse and filter community album reviews
+- **search_artists**: Provide an ID or name to narrow down search results.
+
+Search and filter artists
 - **get_feeds**: Use this when fetching general site content.
 
 Editorial content and news from the Jamendo homepage
 - **get_playlist_tracks**: Use the playlist ID to fetch all associated tracks.
 
 Retrieve tracks within a playlist
-- **search_playlists**: Provide an ID or user ID to find specific playlists.
+- **get_radio_stream**: Provide either the radio ID or name.
 
-Search and filter public or user playlists
+Get stream URL and now playing info for a radio
 - **list_radios**: Specify the type (www or pro) if you know it.
 
 List Jamendo radio stations
@@ -84,19 +75,31 @@ Become a fan of an artist. Requires OAuth2 access token
 - **set_user_favorite**: Ensure you have the necessary OAuth2 access token.
 
 Add a track to user favorites. Requires OAuth2 access token
+- **set_user_like**: Ensure you have the necessary OAuth2 access token.
+
+Like a track. Requires OAuth2 access token
 - **set_user_playlist**: Ensure you have the necessary OAuth2 access token.
 
 Create or update a user playlist. Requires OAuth2 access token
 - **get_similar_tracks**: Use this tool only when a specific track ID is provided.
 
 Find tracks similar to a given track ID
+- **get_track_reviews**: Provide either the review ID or track ID.
+
+Browse and filter community track reviews
 - **search_tracks**: Search and filter the Jamendo track catalog
+- **get_user_albums**: Specify the user ID and relation type for accurate results.
+
+Retrieve albums a user has interacted with
 - **get_user_artists**: Use this tool only when you have a user ID.
 
 Retrieve artists a user has interacted with
 - **get_user_tracks**: Specify the user ID and relation type for accurate results.
 
 Retrieve tracks a user has interacted with
+- **get_users**: Provide an ID or name to retrieve user details.
+
+Lookup user profile information
 - **get_album_tracks**: Provide the album ID to ensure results are accurate.
 
 Retrieve tracks belonging to specific albums
@@ -106,9 +109,6 @@ Retrieve albums for specific artists
 - **get_artist_tracks**: Use the artist ID to fetch relevant tracks.
 
 Retrieve tracks for specific artists
-- **search_artists**: Provide an ID or name to narrow down search results.
-
-Search and filter artists
 
 
 ## 💬 Prompt Examples
@@ -193,4 +193,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
