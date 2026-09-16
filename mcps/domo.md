@@ -33,13 +33,13 @@ Connect your **Domo** instance to any AI agent to streamline user administration
 
 ## Available Tools (6)
 - **add_user_to_group**: Add a user to a Domo group
+- **remove_user_from_group**: Remove a user from a Domo group
 - **create_group**: Create a new Domo group
 - **delete_user**: Delete a Domo user
-- **remove_user_from_group**: Remove a user from a Domo group
+- **update_user**: Update an existing Domo user
 - **create_user**: Optionally sends an invite email.
 
 Create a new Domo user
-- **update_user**: Update an existing Domo user
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

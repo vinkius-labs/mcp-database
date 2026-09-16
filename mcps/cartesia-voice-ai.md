@@ -35,13 +35,6 @@ Connect **Cartesia** to your AI agent to unlock high-performance voice synthesis
 
 
 ## Available Tools (20)
-- **get_usage_credits**: Get credit usage statistics
-- **infill_bytes**: Provide the audio clips, text, and voice ID.
-
-Generate audio to smoothly connect two existing segments
-- **stt_batch**: Transcribe audio file to text (Batch STT)
-- **tts_bytes**: Generate text-to-speech audio bytes
-- **clone_voice**: Clone a voice from a 5s audio clip
 - **create_pronunciation_dict**: Specify both the name and the language code.
 
 Create a new pronunciation dictionary
@@ -55,9 +48,13 @@ Delete a voice
 - **get_agent**: Supply the agent ID to query the data.
 
 Get details for a specific voice agent
+- **get_usage_credits**: Get credit usage statistics
 - **get_voice**: Provide the voice ID to query the data.
 
 Get details for a specific voice
+- **infill_bytes**: Provide the audio clips, text, and voice ID.
+
+Generate audio to smoothly connect two existing segments
 - **list_agent_calls**: Provide the agent ID to filter results.
 
 List calls and transcripts for a specific agent
@@ -71,6 +68,9 @@ Adapt a voice to a new language/dialect
 - **update_pronunciation_dict**: Supply the dictionary ID and the new name.
 
 Update a pronunciation dictionary
+- **stt_batch**: Transcribe audio file to text (Batch STT)
+- **tts_bytes**: Generate text-to-speech audio bytes
+- **clone_voice**: Clone a voice from a 5s audio clip
 - **update_voice**: Supply the voice ID and the fields to update.
 
 Update voice metadata
@@ -161,4 +161,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

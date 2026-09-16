@@ -36,11 +36,11 @@ Connect to your **Cilium** agent to monitor and manage your Kubernetes networkin
 - **get_endpoint**: g., cilium-local:123, container-id:abc).
 
 Get endpoint by endpoint ID
-- **get_cluster_nodes**: Get nodes information stored in the cilium-agent
-- **get_healthz**: Get health of Cilium daemon
 - **get_config**: Get configuration of Cilium daemon
-- **create_endpoint**: Create endpoint
+- **get_healthz**: Get health of Cilium daemon
+- **get_cluster_nodes**: Get nodes information stored in the cilium-agent
 - **patch_config**: Modify daemon configuration
+- **create_endpoint**: Create endpoint
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
