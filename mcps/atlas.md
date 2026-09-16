@@ -29,14 +29,20 @@ The **Atlas MCP Server** provides a seamless natural language interface to your 
 
 
 ## Available Tools (8)
-- **create_ticket**: Create a new support ticket
+- **list_articles**: List help center articles
 - **list_customers**: List all customers in Atlas
 - **get_account_check**: Verify Atlas account connection
-- **get_customer**: Get details for a specific customer
-- **get_ticket**: Get details for a specific ticket
-- **list_articles**: List help center articles
-- **list_tickets**: List all support tickets in Atlas
 - **list_users**: List team users (agents)
+- **create_ticket**: Must include a subject and customer ID.
+
+Create a new support ticket
+- **get_customer**: Use the unique Customer ID.
+
+Get details for a specific customer
+- **get_ticket**: Provide a valid Ticket ID for the query.
+
+Get details for a specific ticket
+- **list_tickets**: List all support tickets in Atlas
 
 
 ## 💬 Prompt Examples
@@ -121,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

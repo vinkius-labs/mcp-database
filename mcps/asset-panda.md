@@ -42,11 +42,11 @@ Create a new object (asset) in a group
 - **get_object**: Supply both the Group ID and Object ID.
 
 Get details for a specific object (asset)
+- **list_locations**: List all locations (alias for list_groups)
 - **get_account_check**: Verify Asset Panda account connection
 - **get_group**: Provide the required Group ID.
 
 Get metadata for a specific asset group
-- **list_locations**: List all locations (alias for list_groups)
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,14 +35,14 @@ Connect your **Agendor** account to your AI agent to unlock professional sales o
 
 
 ## Available Tools (6)
+- **list_tasks**: Retrieve the chronological queue of upcoming activities and follow-ups scheduled for the team
 - **list_people**: Retrieve a comprehensive directory of person profiles registered in your Agendor CRM
-- **create_organization**: Instantiate a new organization record securely within Agendor
 - **create_person**: Can optionally link the person to a company.
 
 Instantiate a new person profile natively within the Agendor CRM
-- **list_organizations**: Retrieve a directory of institutional organizations, companies, and business entities in the CRM
-- **list_tasks**: Retrieve the chronological queue of upcoming activities and follow-ups scheduled for the team
 - **list_deals**: Retrieve highly active sales opportunities and negotiation pipelines tracked in Agendor
+- **list_organizations**: Retrieve a directory of institutional organizations, companies, and business entities in the CRM
+- **create_organization**: Instantiate a new organization record securely within Agendor
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -29,13 +29,15 @@ The **Assembled MCP Server** provides your AI agent with direct access to your w
 
 
 ## Available Tools (7)
-- **list_agent_states**: List real-time agent states
-- **list_forecasts**: List contact volume forecasts
 - **get_account_check**: Verify Assembled account connection
+- **list_agent_states**: List real-time agent states
 - **list_queues**: List all support queues
+- **list_schedules**: Must provide both start and end times.
+
+List agent schedules for a time range
 - **list_teams**: List all teams
+- **list_forecasts**: List contact volume forecasts
 - **list_users**: List all users in Assembled
-- **list_schedules**: List agent schedules for a time range
 
 
 ## 💬 Prompt Examples
@@ -120,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

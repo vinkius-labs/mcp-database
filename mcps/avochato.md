@@ -36,18 +36,18 @@ No more manual logging of text interactions or missing critical client messages.
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new contact
-- **create_webhook**: Create a new webhook
 - **get_contact**: Get contact details
+- **send_message**: Send an SMS/MMS
+- **create_webhook**: Create a new webhook
+- **update_ticket**: Update ticket status
+- **delete_webhook**: Delete a webhook
+- **create_contact**: Create a new contact
+- **get_account_info**: Get account identity
 - **list_contacts**: List SMS contacts
 - **list_messages**: List SMS/MMS messages
-- **send_message**: Send an SMS/MMS
-- **delete_webhook**: Delete a webhook
-- **get_account_info**: Get account identity
 - **list_tickets**: List conversation tickets
 - **list_webhooks**: List active webhooks
 - **update_contact**: Update contact info
-- **update_ticket**: Update ticket status
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
