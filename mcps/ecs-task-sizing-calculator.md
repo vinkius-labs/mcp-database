@@ -15,8 +15,12 @@ This MCP server provides deterministic calculations for AWS ECS resource plannin
 
 ## Available Tools (3)
 - **calculate_task_resources**: 
-- **evaluate_service_configuration**: Evaluate service discovery and scaling
-- **plan_ec2_capacity**: Calculate tasks per EC2 instance
+- **plan_ec2_capacity**: Provide both task and instance memory values.
+
+Calculate tasks per EC2 instance
+- **evaluate_service_configuration**: Pass the service discovery flag and target utilization percentage.
+
+Evaluate service discovery and scaling
 
 
 ## 💬 Prompt Examples
@@ -101,4 +105,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

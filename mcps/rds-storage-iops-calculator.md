@@ -14,9 +14,9 @@ This MCP server provides deterministic calculations for AWS RDS storage configur
 
 
 ## Available Tools (3)
+- **get_storage_metrics**: Calculates the baseline IOPS and throughput for a specific storage configuration
 - **check_autoscaling_status**: Determines if the current storage configuration is approaching the threshold for AWS storage autoscaling
 - **analyze_replica_lag_risk**: Evaluates the risk of replica lag caused by IOPS saturation
-- **get_storage_metrics**: Calculates the baseline IOPS and throughput for a specific storage configuration
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

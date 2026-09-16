@@ -14,9 +14,9 @@ This MCP server provides precise calculations for AWS DynamoDB provisioning. Use
 
 
 ## Available Tools (3)
-- **analyze_partition_health**: Evaluates if the workload will cause partition exhaustion or if the data distribution is healthy
 - **calculate_provisioned_capacity**: Calculates the exact RCU and WCU required based on workload volume and item characteristics
 - **check_item_and_burst_limits**: Checks for oversized items and calculates available burst capacity for a given timeframe
+- **analyze_partition_health**: Evaluates if the workload will cause partition exhaustion or if the data distribution is healthy
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

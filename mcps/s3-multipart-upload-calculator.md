@@ -14,9 +14,9 @@ This MCP server provides precise tools for optimizing AWS S3 multipart uploads. 
 
 
 ## Available Tools (3)
+- **calculate_upload_plan**: Provides the fundamental breakdown of how a specific file will be partitioned and how long the process will take
 - **get_lifecycle_and_integrity_policy**: Generates the necessary configuration for data integrity and automated cleanup of failed uploads
 - **recommend_optimal_configuration**: Suggests the best part size and threshold settings based on the provided bandwidth and file size
-- **calculate_upload_plan**: Provides the fundamental breakdown of how a specific file will be partitioned and how long the process will take
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,10 +14,10 @@ This MCP server provides deterministic calculations for AWS CloudFormation servi
 
 
 ## Available Tools (4)
-- **check_template_compliance**: Determines if a provided template configuration stays within standard AWS service quotas
 - **assess_deployment_health**: Provides recommendations on nested depth and change set management to ensure deployment stability
 - **calculate_stack_capacities**: Calculates specific limits for parameters, outputs, and policies based on standard stack constraints
 - **evaluate_stack_set_limits**: Calculates limits for multi-account deployments using Stack Sets
+- **check_template_compliance**: Determines if a provided template configuration stays within standard AWS service quotas
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

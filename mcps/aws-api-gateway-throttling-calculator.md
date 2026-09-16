@@ -14,10 +14,10 @@ This MCP server provides deterministic calculations for AWS API Gateway constrai
 
 
 ## Available Tools (4)
-- **get_operational_constraints**: Returns the fixed technical limits for the selected API type
-- **calculate_quota_usage**: Evaluates if a user's planned request volume will exceed defined time-based quotas
 - **calculate_throttling_limits**: Determines the RPS and burst capacity for a specific API stage
 - **simulate_canary_traffic**: Calculates the distribution of traffic between a production environment and a canary environment
+- **get_operational_constraints**: Returns the fixed technical limits for the selected API type
+- **calculate_quota_usage**: Evaluates if a user's planned request volume will exceed defined time-based quotas
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

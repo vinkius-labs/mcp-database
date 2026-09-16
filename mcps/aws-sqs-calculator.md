@@ -14,9 +14,9 @@ This MCP server provides deterministic calculations for AWS SQS configurations. 
 
 
 ## Available Tools (3)
-- **calculate_payload_strategy**: Determines if a message requires the S3 pointer pattern and calculates chunking
 - **calculate_queue_capacity**: Analyzes throughput limits and in-flight message risks
 - **calculate_retention_and_dlq**: Validates message lifespan and identifies the threshold for dead-lettering
+- **calculate_payload_strategy**: Determines if a message requires the S3 pointer pattern and calculates chunking
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

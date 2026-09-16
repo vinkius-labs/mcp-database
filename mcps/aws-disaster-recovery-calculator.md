@@ -14,9 +14,9 @@ This MCP server provides precise calculations for disaster recovery planning on 
 
 
 ## Available Tools (3)
-- **calculate_dr_metrics**: Calculates the RPO, RTO, cost ratio, and testing frequency for a selected disaster recovery strategy
-- **validate_strategy_compatibility**: Checks if the provided technical parameters are logically compatible with the chosen DR strategy
 - **compare_rto_rpo_to_sla**: Compares calculated metrics against a provided Service Level Agreement (SLA)
+- **validate_strategy_compatibility**: Checks if the provided technical parameters are logically compatible with the chosen DR strategy
+- **calculate_dr_metrics**: Calculates the RPO, RTO, cost ratio, and testing frequency for a selected disaster recovery strategy
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

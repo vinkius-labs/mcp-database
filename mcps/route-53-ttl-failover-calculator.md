@@ -14,9 +14,9 @@ Optimize your AWS DNS configuration with precise calculations for Route 53. This
 
 
 ## Available Tools (3)
-- **calculate_routing_distribution**: Determines the traffic split for weighted routing configurations
 - **calculate_ttl_and_failover**: Calculates optimal TTL and expected failover time for Route 53
 - **get_routing_metadata**: Provides structural context for geolocation and latency-based routing strategies
+- **calculate_routing_distribution**: Determines the traffic split for weighted routing configurations
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

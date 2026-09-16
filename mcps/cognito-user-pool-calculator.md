@@ -14,10 +14,10 @@ Plan your AWS Cognito architecture with precision. This MCP server provides dete
 
 
 ## Available Tools (4)
-- **estimate_security_profile**: Estimate the data footprint and security configuration of the authentication flow
-- **estimate_sms_throughput**: Estimate daily messaging limits for the configured user base
 - **calculate_pool_capacity**: Calculate how many resources will fit within a single Cognito user pool
 - **calculate_resource_usage**: Check if custom attributes and Lambda triggers stay within Cognito limits
+- **estimate_security_profile**: Estimate the data footprint and security configuration of the authentication flow
+- **estimate_sms_throughput**: Estimate daily messaging limits for the configured user base
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

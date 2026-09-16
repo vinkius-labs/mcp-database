@@ -16,8 +16,8 @@ This MCP server provides a precise scoring engine to evaluate AWS workloads agai
 ## Available Tools (4)
 - **calculate_pillar_metrics**: Evaluates the health and risk density of an individual architectural pillar
 - **evaluate_workload_alignment**: Calculates how well the workload adheres to specific architectural patterns and lenses
-- **generate_improvement_plan**: Produces a prioritized roadmap for remediating architectural weaknesses
 - **track_risk_trend**: Analyzes changes in risk profile over multiple assessment periods
+- **generate_improvement_plan**: Produces a prioritized roadmap for remediating architectural weaknesses
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
