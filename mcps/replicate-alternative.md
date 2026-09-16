@@ -36,24 +36,6 @@ No more navigating the Replicate website to find models or check prediction stat
 
 
 ## Available Tools (12)
-- **create_prediction**: Requires the model slug in "owner/name" format and an input object matching the model's schema. Optionally specify a version ID and webhook URL. Returns the prediction object with its ID, status (starting, processing, succeeded, failed, canceled) and output. Use get_prediction to check status and retrieve results.
-
-Run a model prediction on Replicate
-- **search_models**: Returns models with their name, owner, description, run count and hardware. Useful for finding specific types of models (e.g. "text-to-image", "llm", "music-generation").
-
-Search for models on Replicate by query
-- **get_prediction**: Returns the prediction ID, status (starting, processing, succeeded, failed, canceled), input, output URLs, creation time and logs. Use the prediction ID returned from create_prediction.
-
-Get the status and result of a prediction
-- **list_collections**: Collections group related models by category (e.g. "text-to-image", "large-language-models", "audio-to-audio", "image-to-video"). Each collection includes its slug, name, description and featured models.
-
-List model collections on Replicate
-- **list_hardware**: Each hardware option includes its SKU name, pricing and specifications. Useful for choosing the right GPU for your prediction workload.
-
-List available GPU hardware on Replicate
-- **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
-
-Cancel a running prediction
 - **get_account**: Returns account type, username and usage info. Use this to verify your API token is working correctly.
 
 Get the authenticated Replicate account info
@@ -72,6 +54,24 @@ List available ML models on Replicate
 - **list_predictions**: Each prediction includes its ID, model, status, creation time and output URLs. Useful for tracking prediction history and monitoring model usage.
 
 List recent predictions on Replicate
+- **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
+
+Cancel a running prediction
+- **create_prediction**: Requires the model slug in "owner/name" format and an input object matching the model's schema. Optionally specify a version ID and webhook URL. Returns the prediction object with its ID, status (starting, processing, succeeded, failed, canceled) and output. Use get_prediction to check status and retrieve results.
+
+Run a model prediction on Replicate
+- **search_models**: Returns models with their name, owner, description, run count and hardware. Useful for finding specific types of models (e.g. "text-to-image", "llm", "music-generation").
+
+Search for models on Replicate by query
+- **get_prediction**: Returns the prediction ID, status (starting, processing, succeeded, failed, canceled), input, output URLs, creation time and logs. Use the prediction ID returned from create_prediction.
+
+Get the status and result of a prediction
+- **list_collections**: Collections group related models by category (e.g. "text-to-image", "large-language-models", "audio-to-audio", "image-to-video"). Each collection includes its slug, name, description and featured models.
+
+List model collections on Replicate
+- **list_hardware**: Each hardware option includes its SKU name, pricing and specifications. Useful for choosing the right GPU for your prediction workload.
+
+List available GPU hardware on Replicate
 
 
 ## 💬 Prompt Examples
@@ -159,4 +159,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

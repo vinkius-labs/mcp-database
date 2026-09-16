@@ -36,13 +36,13 @@ No more manual toggling between chat interfaces or complex API configuration. Yo
 
 
 ## Available Tools (6)
-- **get_balance**: Get account credit balance and usage
 - **fill_in_middle**: Ideal for code completion tasks.
 
 Complete code between a prefix and suffix (Beta)
 - **chat_prefix_completion**: Useful for structured output generation.
 
 Guide model response with a prefix (Beta)
+- **get_balance**: Get account credit balance and usage
 - **chat_completion**: Generate an AI response using DeepSeek V3
 - **deep_reasoning**: Includes internal chain-of-thought reasoning.
 
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
