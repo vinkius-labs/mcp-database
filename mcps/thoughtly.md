@@ -35,19 +35,19 @@ Your text agent becomes the ultimate dispatcher, effortlessly ordering your voic
 
 
 ## Available Tools (11)
-- **delete_contact**: Delete a Thoughtly contact
-- **list_contacts**: List Thoughtly contacts
-- **list_interviews**: List Thoughtly Voice Agents (Interviews)
-- **get_interview**: Get details for a specific Thoughtly Voice Agent
 - **create_contact**: Optionally includes first name, last name, email.
 
 Create a new Thoughtly contact
-- **get_call_history**: Get details and transcript for a specific call
+- **delete_contact**: Delete a Thoughtly contact
 - **get_contact**: Get specific Thoughtly contact details
+- **get_interview**: Get details for a specific Thoughtly Voice Agent
 - **list_calls**: List past phone calls (Call logs)
+- **list_contacts**: List Thoughtly contacts
+- **list_interviews**: List Thoughtly Voice Agents (Interviews)
 - **trigger_call**: Trigger an AI outbound phone call
-- **get_user**: Get Thoughtly user details
 - **update_contact**: Update an existing Thoughtly contact
+- **get_user**: Get Thoughtly user details
+- **get_call_history**: Get details and transcript for a specific call
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

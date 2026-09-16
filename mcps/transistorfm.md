@@ -35,18 +35,18 @@ Connect your **Transistor.fm** podcasting account to any AI agent and simplify h
 
 
 ## Available Tools (11)
-- **list_episodes**: List episodes for a show
 - **list_subscribers**: List private podcast subscribers
-- **publish_episode**: Publish an episode
-- **delete_episode**: Delete an episode
 - **add_subscriber**: Add a subscriber to a private podcast
 - **create_episode**: Create a new episode
+- **delete_episode**: Delete an episode
+- **get_episode**: Get details for an episode
 - **get_account_details**: fm account.
 
 Get account details
-- **get_episode**: Get details for an episode
 - **get_show**: Get details for a specific show
+- **list_episodes**: List episodes for a show
 - **list_shows**: List all podcast shows
+- **publish_episode**: Publish an episode
 - **update_episode**: Update an existing episode
 
 
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

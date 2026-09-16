@@ -31,16 +31,16 @@ Essential for data analysts, operations teams, and administrative staff who requ
 
 ## Available Tools (13)
 - **create_workbook**: Create a workbook
-- **get_workbook**: Get workbook details
-- **get_worksheet**: Get worksheet details
-- **list_shared_users**: List shared users
-- **list_workbooks**: List workbooks
-- **list_worksheets**: List worksheets
-- **search_workbooks**: Search workbooks
 - **delete_worksheet**: Delete a worksheet
 - **get_cells**: g. A1:D10).
 
 Get cell contents
+- **get_workbook**: Get workbook details
+- **list_shared_users**: List shared users
+- **list_workbooks**: List workbooks
+- **list_worksheets**: List worksheets
+- **search_workbooks**: Search workbooks
+- **get_worksheet**: Get worksheet details
 - **add_row**: Add a data row
 - **create_worksheet**: Create a worksheet
 - **list_rows**: List data rows
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

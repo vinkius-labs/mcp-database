@@ -36,6 +36,7 @@ Connect your **Winston AI** account to any AI agent and simplify how you verify 
 ## Available Tools (11)
 - **detect_ai_url**: Detect AI content on a website URL
 - **fact_checker_file**: Verify facts in a document (via URL)
+- **check_plagiarism_file**: Check a document file (via URL) for plagiarism
 - **check_plagiarism_text**: Check text for plagiarism
 - **check_plagiarism_url**: Check a website URL for plagiarism
 - **detect_ai_image**: Detect if an image is AI-generated (via URL)
@@ -45,7 +46,6 @@ Detect AI content in a string of text
 - **detect_ai_file**: Detect AI content in a document file (via URL)
 - **fact_checker**: Verify facts in a text
 - **fact_checker_url**: Verify facts on a webpage URL
-- **check_plagiarism_file**: Check a document file (via URL) for plagiarism
 - **text_compare**: Compare two texts for similarity
 
 
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
