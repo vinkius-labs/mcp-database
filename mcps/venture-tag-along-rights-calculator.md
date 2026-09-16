@@ -15,9 +15,9 @@ This MCP server provides specialized tools for venture capital and private equit
 
 ## Available Tools (4)
 - **calculate_protection_value**: Determines the specific dollar amount of value gained by protected shareholders through the exercise of tag-along rights
-- **simulate_exit_scenario**: Provides a comprehensive overview of a potential exit event by combining protection, liquidity, and leverage metrics
-- **evaluate_liquidity_impact**: Analyzes how much the tag-along right improves the exit timing and ease of liquidation for the protected shareholder
 - **determine_negotiation_leverage**: Assesses the strategic position of the protected shareholder based on the trigger conditions
+- **evaluate_liquidity_impact**: Analyzes how much the tag-along right improves the exit timing and ease of liquidation for the protected shareholder
+- **simulate_exit_scenario**: Provides a comprehensive overview of a potential exit event by combining protection, liquidity, and leverage metrics
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -15,9 +15,9 @@ This MCP server provides venture capital firms with an analytical engine to eval
 
 ## Available Tools (4)
 - **get_channel_efficiency**: Evaluates the basic financial efficiency of each sourcing channel
+- **rank_channel_prioritization**: Provides strategic recommendations on which channels to fund or scale
 - **analyze_deal_flow_quality**: Calculates a weighted quality score for each channel
 - **calculate_channel_attribution**: Distributes credit for closed deals across multiple channels
-- **rank_channel_prioritization**: Provides strategic recommendations on which channels to fund or scale
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

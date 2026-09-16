@@ -15,9 +15,9 @@ This MCP server provides specialized tools for analyzing drag-along rights in sh
 
 ## Available Tools (4)
 - **analyze_veto_risk**: 
+- **simulate_exit_scenarios**: 
 - **calculate_drag_impact**: 
 - **evaluate_minority_value**: 
-- **simulate_exit_scenarios**: 
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

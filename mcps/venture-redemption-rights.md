@@ -14,10 +14,10 @@ This MCP server provides specialized tools for modeling the economic impact of v
 
 
 ## Available Tools (4)
+- **evaluate_trigger_probability**: Estimates the likelihood that a redemption event will occur based on the time remaining and the company's operational state
 - **get_redemption_value**: Determines the total economic value an investor stands to receive if the redemption is successfully triggered
 - **calculate_downside_protection**: Measures the degree of protection the redemption right provides against total loss of investment
 - **check_legal_solvency**: Evaluates whether a redemption can be legally executed under USA and European solvency standards
-- **evaluate_trigger_probability**: Estimates the likelihood that a redemption event will occur based on the time remaining and the company's operational state
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

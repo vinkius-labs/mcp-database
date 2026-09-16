@@ -15,9 +15,9 @@ This MCP server provides an analytical engine for startups to select the most ef
 
 ## Available Tools (4)
 - **calculate_value_score**: Quantifies the strategic benefit of a firm
+- **generate_counsel_recommendation**: Compares all evaluated firms to provide a ranked recommendation
 - **get_firm_comparison_matrix**: Provides a side-by-side view of all candidate firms across all metrics
 - **evaluate_firm_costs**: Calculates the projected financial outlay for a specific firm based on its rate structure and the startup's profile
-- **generate_counsel_recommendation**: Compares all evaluated firms to provide a ranked recommendation
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

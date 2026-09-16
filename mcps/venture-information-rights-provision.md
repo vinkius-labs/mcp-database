@@ -14,9 +14,9 @@ This MCP server provides tools to calculate the economic and strategic value of 
 
 
 ## Available Tools (4)
+- **calculate_governance_premium**: Calculates the additional value provided by rights that allow for oversight and control of major corporate events
 - **calculate_monitoring_value**: Determines the monetary value of access to periodic and real-time company data
 - **calculate_negotiation_priority**: Evaluates the investor's relative standing in the information hierarchy
-- **calculate_governance_premium**: Calculates the additional value provided by rights that allow for oversight and control of major corporate events
 - **evaluate_total_information_rights**: Provides a comprehensive assessment of the entire information rights package
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

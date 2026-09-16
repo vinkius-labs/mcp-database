@@ -14,10 +14,10 @@ This MCP server provides specialized tools for venture capital professionals to 
 
 
 ## Available Tools (4)
+- **calculate_reimbursement_summary**: Calculates the core reimbursement figures based on actual expenses and the negotiated cap
 - **compare_to_market_practice**: Evaluates whether the requested expenses align with industry standards for specific deal profiles
 - **determine_negotiation_range**: Provides a strategic window for negotiators to use during discussions
 - **analyze_expense_composition**: Breaks down the ratio of different expense types to identify outliers
-- **calculate_reimbursement_summary**: Calculates the core reimbursement figures based on actual expenses and the negotiated cap
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -16,8 +16,8 @@ This MCP server provides advanced analytical tools for venture capital professio
 ## Available Tools (4)
 - **analyze_protection_value**: Calculates the quantitative economic value of a set of protective provisions
 - **assess_veto_strength**: Determines the level of control an investor has over corporate actions
-- **calculate_operational_friction**: Estimates the impact of approval requirements on the company's ability to execute decisions
 - **evaluate_negotiation_leverage**: Provides a strategic ranking of provisions to prioritize during term sheet discussions
+- **calculate_operational_friction**: Estimates the impact of approval requirements on the company's ability to execute decisions
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
