@@ -36,17 +36,17 @@ Connect your **Daktela** omnichannel contact center to any AI agent and simplify
 
 ## Available Tools (12)
 - **create_ticket**: Create a new ticket
+- **create_contact**: Create a new CRM contact
+- **get_ticket**: Get details of a specific ticket
+- **list_accounts**: List CRM accounts
 - **list_activities**: List recent activities in Daktela
 - **list_call_history**: List call history
 - **list_contacts**: List CRM contacts
 - **list_email_history**: List email history
-- **list_queues**: List contact center queues
 - **list_tickets**: List support tickets
 - **list_users**: List Daktela users
-- **list_accounts**: List CRM accounts
-- **create_contact**: Create a new CRM contact
 - **get_me**: Get current user information
-- **get_ticket**: Get details of a specific ticket
+- **list_queues**: List contact center queues
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

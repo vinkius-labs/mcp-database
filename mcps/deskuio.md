@@ -36,14 +36,18 @@ No more manual ticket searching or complex dashboard navigation. Your AI acts as
 
 
 ## Available Tools (9)
+- **create_ticket**: Create a new ticket
 - **get_ticket**: Get ticket details
-- **get_customer**: Get customer details
-- **list_conversations**: List conversation history for a ticket
+- **list_agents**: List support agents
 - **list_customers**: List support customers
 - **update_ticket**: Update a ticket
+- **get_customer**: Must provide a valid customer ID.
+
+Get customer details
+- **list_conversations**: Requires a valid ticket ID.
+
+List conversation history for a ticket
 - **create_conversation**: Reply to a ticket
-- **create_ticket**: Create a new ticket
-- **list_agents**: List support agents
 - **list_tickets**: io account.
 
 List support tickets
@@ -131,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

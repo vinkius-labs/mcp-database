@@ -33,26 +33,26 @@ Empower your AI agent with access to your **Funil de Vendas** CRM to automate yo
 
 
 ## Available Tools (12)
-- **create_new_deal_lead**: Used for form integration.
-
-Add a new lead/opportunity via Data Entry
-- **list_crm_activities**: List CRM activities and tasks
+- **list_crm_custom_fields**: List defined custom fields
+- **list_loss_motives**: List motives for losing deals
 - **list_crm_opportunities**: Can be filtered by funnel code, date, or text search.
 
 List CRM opportunities (deals)
-- **list_loss_motives**: List motives for losing deals
-- **list_sales_funnels**: List configured sales methodologies (funnels)
-- **list_crm_products**: List registered products/services
+- **list_sales_vendors**: List CRM users (vendors)
 - **update_crm_activity**: Modify an existing activity
+- **list_sales_funnels**: List configured sales methodologies (funnels)
 - **check_crm_api_health**: Verify CRM API connectivity
 - **create_crm_activity**: Requires opportunity ID and subject.
 
 Add a new activity/follow-up
-- **list_crm_custom_fields**: List defined custom fields
+- **create_new_deal_lead**: Used for form integration.
+
+Add a new lead/opportunity via Data Entry
+- **list_crm_activities**: List CRM activities and tasks
 - **list_lead_origins**: g., Google, Referral, Facebook).
 
 List lead source origins
-- **list_sales_vendors**: List CRM users (vendors)
+- **list_crm_products**: List registered products/services
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
