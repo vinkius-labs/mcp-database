@@ -33,36 +33,36 @@ Integrate **crowd.dev** (now part of the Linux Foundation as the **LFX Community
 
 
 ## Available Tools (10)
-- **create_community_member**: Touches identity management and profile initialization boundaries.
-
-Register a new member in the community
-- **list_community_tasks**: Resolves task descriptions, priority levels, and assigned community manager references.
-
-List open tasks related to community management
-- **list_member_notes**: Resolves note content, author ID, and associated community member links.
-
-List internal CRM notes for community members
-- **search_members_by_keyword**: Resolves member profiles matching the specified name or email criteria.
-
-Search for community members by name or email
-- **get_organization_details**: Touches firmographic details and aggregate contribution metrics boundary.
-
-Get details for a specific organization
-- **list_members**: dev community platform. Resolves member names, social profiles (GitHub, LinkedIn, Twitter), and contribution activity levels.
-
-List all community members in crowd.dev
 - **list_recent_activities**: Resolves activity types (e.g., star, PR, message), associated platforms, and member references.
 
 List recent community activities (stars, messages, etc.)
+- **get_organization_details**: Touches firmographic details and aggregate contribution metrics boundary.
+
+Get details for a specific organization
+- **create_community_member**: Touches identity management and profile initialization boundaries.
+
+Register a new member in the community
 - **get_community_health_summary**: Resolves new member growth, activity volume trends, and platform distribution stats.
 
 Get a high-level summary of community activities and growth
 - **get_member_details**: Touches engagement scoring, social identity resolution, and community role boundaries.
 
 Get full profile and activity history for a specific member
+- **list_members**: dev community platform. Resolves member names, social profiles (GitHub, LinkedIn, Twitter), and contribution activity levels.
+
+List all community members in crowd.dev
+- **list_member_notes**: Resolves note content, author ID, and associated community member links.
+
+List internal CRM notes for community members
 - **list_organizations**: Resolves company names, domains, and the number of employees active in the community.
 
 List companies and organizations in your community
+- **list_community_tasks**: Resolves task descriptions, priority levels, and assigned community manager references.
+
+List open tasks related to community management
+- **search_members_by_keyword**: Resolves member profiles matching the specified name or email criteria.
+
+Search for community members by name or email
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

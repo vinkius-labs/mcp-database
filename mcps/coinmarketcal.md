@@ -32,15 +32,33 @@ Connect your AI to **CoinMarketCal**, the leading economic calendar for the cryp
 
 
 ## Available Tools (9)
-- **search_events_by_date**: Find events within a specific date range
-- **list_popular_events**: Retrieve the most popular cryptocurrency events
-- **list_trending_events**: Retrieve the most trending cryptocurrency events
-- **search_events_by_coin**: Find events related to specific cryptocurrencies
-- **list_categories**: Retrieve the list of event categories (e.g., Roadmap, Release)
-- **list_events**: Retrieve a list of cryptocurrency events from the calendar
-- **get_coin_id**: Find the CoinMarketCal ID for a coin by its name or symbol
-- **get_event_details**: Retrieve detailed information about a specific event by its ID
-- **list_coins**: Retrieve the list of coins supported by CoinMarketCal
+- **get_coin_id**: Pass the search criteria in the payload.
+
+Find the CoinMarketCal ID for a coin by its name or symbol
+- **get_event_details**: Include the event ID in the payload.
+
+Retrieve detailed information about a specific event by its ID
+- **list_categories**: Pass required parameters in the payload.
+
+Retrieve the list of event categories (e.g., Roadmap, Release)
+- **list_coins**: Pass required parameters in the payload.
+
+Retrieve the list of coins supported by CoinMarketCal
+- **list_events**: Provide necessary filtering parameters in the payload.
+
+Retrieve a list of cryptocurrency events from the calendar
+- **list_popular_events**: Pass required parameters in the payload.
+
+Retrieve the most popular cryptocurrency events
+- **list_trending_events**: Pass required parameters in the payload.
+
+Retrieve the most trending cryptocurrency events
+- **search_events_by_coin**: Specify the coin identifier in the payload.
+
+Find events related to specific cryptocurrencies
+- **search_events_by_date**: Provide start and end dates in the payload.
+
+Find events within a specific date range
 
 
 ## 💬 Prompt Examples
@@ -133,4 +151,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

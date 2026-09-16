@@ -33,15 +33,27 @@ Integrate **Copperx**, the API-first crypto payment processor, directly into you
 
 
 ## Available Tools (10)
-- **create_customer**: Creates a new customer record with identity properties (email, name) for future payment associations.
+- **get_payment_details**: Resolves granular transaction data, including blockchain tx hashes, fee breakdowns, and customer linkages.
 
-Register a new customer in Copperx
+Get details for a specific payment intent
 - **list_invoices**: Resolves billing document properties including invoice numbers, totals, and payment status links.
 
 List all invoices generated
 - **list_payment_links**: Resolves link metadata including checkout URLs, pricing data, and usage statistics.
 
 List all payment links created
+- **create_customer**: Creates a new customer record with identity properties (email, name) for future payment associations.
+
+Register a new customer in Copperx
+- **create_payment_link**: Resolves product identity and pricing configuration to generate a unique payment URL.
+
+Create a new payment link for customers to pay
+- **get_wallet_balance**: Resolves real-time wallet balances across various supported cryptocurrencies and networks.
+
+Check current crypto wallet balances in Copperx
+- **list_customers**: Resolves customer identity properties such as unique identifiers, email addresses, and registered names.
+
+List all customers registered in Copperx
 - **list_payments**: Resolves payment identity properties including transaction IDs, amounts, currencies, and processing status across the crypto-payment boundary.
 
 List all payment intents in Copperx
@@ -51,18 +63,6 @@ List all payouts processed
 - **list_subscriptions**: Resolves subscription properties including plan IDs, billing cycles, and current subscription state.
 
 List all active and past subscriptions
-- **create_payment_link**: Resolves product identity and pricing configuration to generate a unique payment URL.
-
-Create a new payment link for customers to pay
-- **get_payment_details**: Resolves granular transaction data, including blockchain tx hashes, fee breakdowns, and customer linkages.
-
-Get details for a specific payment intent
-- **get_wallet_balance**: Resolves real-time wallet balances across various supported cryptocurrencies and networks.
-
-Check current crypto wallet balances in Copperx
-- **list_customers**: Resolves customer identity properties such as unique identifiers, email addresses, and registered names.
-
-List all customers registered in Copperx
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

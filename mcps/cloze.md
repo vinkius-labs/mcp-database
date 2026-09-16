@@ -14,6 +14,8 @@ Cloze is a smart CRM that automatically tracks your interactions and provides AI
 
 
 ## Available Tools (9)
+- **create_project**: Create a new project, deal, or property in Cloze
+- **list_projects**: Retrieve a list of projects, properties, or deals from Cloze
 - **create_person**: Provide at least name or email.
 
 Create a new person in Cloze
@@ -23,9 +25,7 @@ Create a new person in Cloze
 - **update_person**: Email is used as the match key.
 
 Update an existing person in Cloze (matching by email)
-- **create_project**: Create a new project, deal, or property in Cloze
 - **list_companies**: Retrieve a list of companies from Cloze
-- **list_projects**: Retrieve a list of projects, properties, or deals from Cloze
 - **search_people_by_tag**: Find contacts that have a specific tag
 
 
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

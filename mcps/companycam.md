@@ -32,16 +32,36 @@ Connect your AI assistant to **CompanyCam**, the photo-first documentation platf
 
 
 ## Available Tools (10)
-- **create_project**: Create a new project in CompanyCam
-- **get_photo_details**: Retrieve details of a specific photo
-- **list_all_photos**: Retrieve a list of photos across all projects in the company
-- **list_project_documents**: Retrieve a list of documents attached to a project
-- **get_current_user**: Retrieve details of the authenticated user
-- **list_project_photos**: Retrieve all photos associated with a specific project
-- **get_project**: Retrieve detailed information about a specific project
-- **list_projects**: Retrieve a list of projects from CompanyCam
-- **list_users**: Retrieve a list of all users in your company
-- **search_projects**: Quickly find a project by name
+- **get_photo_details**: Include the photo ID in the payload.
+
+Retrieve details of a specific photo
+- **list_users**: Optionally filter results by department or status.
+
+Retrieve a list of all users in your company
+- **search_projects**: The search term must be provided in the payload.
+
+Quickly find a project by name
+- **create_project**: Supply all required project details in the payload.
+
+Create a new project in CompanyCam
+- **get_current_user**: No payload is required.
+
+Retrieve details of the authenticated user
+- **list_project_photos**: Specify the project ID in the payload.
+
+Retrieve all photos associated with a specific project
+- **list_projects**: Provide necessary filters in the payload.
+
+Retrieve a list of projects from CompanyCam
+- **get_project**: Include the project identifier in the payload.
+
+Retrieve detailed information about a specific project
+- **list_all_photos**: Pass required filtering parameters in the payload.
+
+Retrieve a list of photos across all projects in the company
+- **list_project_documents**: Provide the project ID in the payload.
+
+Retrieve a list of documents attached to a project
 
 
 ## 💬 Prompt Examples
@@ -139,4 +159,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

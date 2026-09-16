@@ -32,16 +32,36 @@ Connect your AI assistant to **CometChat**, the communication platform providing
 
 
 ## Available Tools (10)
-- **deactivate_user**: Deactivate a user instead of deleting them
-- **send_message**: Send a text message to a user or group
-- **create_user**: Create a new user in CometChat
-- **create_group**: Create a new group in CometChat
-- **delete_user**: Permanently delete a user from CometChat
-- **get_group_details**: Retrieve details of a specific group
-- **get_user**: Retrieve detailed information about a specific user
-- **list_users**: Retrieve a list of users from CometChat
-- **list_groups**: Retrieve a list of groups from CometChat
-- **list_messages**: Retrieve chat history messages
+- **create_group**: The payload must define the group name and initial members.
+
+Create a new group in CometChat
+- **create_user**: The payload must contain all required user details.
+
+Create a new user in CometChat
+- **deactivate_user**: Pass the user ID in the payload to prevent permanent deletion.
+
+Deactivate a user instead of deleting them
+- **delete_user**: the deletion.
+
+Permanently delete a user from CometChat
+- **get_group_details**: Provide the group ID in the payload.
+
+Retrieve details of a specific group
+- **get_user**: Ensure the payload contains the user identifier.
+
+Retrieve detailed information about a specific user
+- **list_groups**: Specify any required filtering criteria in the payload.
+
+Retrieve a list of groups from CometChat
+- **list_messages**: Include the group ID and time range in the payload.
+
+Retrieve chat history messages
+- **list_users**: Provide necessary filtering parameters in the payload.
+
+Retrieve a list of users from CometChat
+- **send_message**: The payload must specify the recipient and message content.
+
+Send a text message to a user or group
 
 
 ## 💬 Prompt Examples
@@ -136,4 +156,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

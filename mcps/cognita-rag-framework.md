@@ -36,11 +36,11 @@ Connect your **Cognita** (TrueFoundry) instance to any AI agent and take full co
 
 
 ## Available Tools (7)
+- **rag_query**: Identify precise active arrays spanning rented Transformation vectors
 - **list_collections**: Identify bounded routing spaces inside the Headless Cognita RAG limit
 - **get_collection**: Retrieve explicit Cloud logging tracing explicit Payload IDs
 - **list_data_sources**: Perform structural extraction of properties driving active Buckets
 - **ingest_data**: Provision a highly-available JSON Payload generating new Resource directories
-- **rag_query**: Identify precise active arrays spanning rented Transformation vectors
 - **search_chunks**: Enumerate explicitly attached structured rules exporting active Presets
 - **list_models**: Inspect deep internal arrays mitigating specific Picture constraints
 
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
