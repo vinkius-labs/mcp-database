@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your mobile game monetization with **TopOn 
 
 
 ## Available Tools (8)
-- **get_topon_waterfall**: Get TopOn placement waterfall
-- **list_mintegral_offers**: List Mintegral offers
-- **get_mintegral_app_stats**: Get Mintegral app statistics
 - **list_topon_apps**: List TopOn applications
-- **list_topon_placements**: List TopOn ad placements
+- **get_topon_waterfall**: Get TopOn placement waterfall
 - **get_mintegral_reporting**: Get Mintegral performance reporting
 - **get_monetization_summary**: Get overall monetization summary
 - **get_topon_reporting**: Get TopOn performance reporting
+- **get_mintegral_app_stats**: Get Mintegral app statistics
+- **list_mintegral_offers**: List Mintegral offers
+- **list_topon_placements**: List TopOn ad placements
 
 
 ## 💬 Prompt Examples

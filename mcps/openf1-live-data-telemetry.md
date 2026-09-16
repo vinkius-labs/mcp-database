@@ -35,19 +35,19 @@ Transform your AI agent into a professional Formula 1 data analyst with **OpenF1
 ## Available Tools (15)
 - **get_lap_times**: Get lap and sector times
 - **list_overtakes**: List all overtakes during a race
-- **get_driver_standings**: Get current driver championship standings
-- **get_race_control_messages**: Get FIA race control messages
-- **get_team_standings**: Get current team championship standings
-- **list_tyre_stints**: List tyre strategy and stints
 - **get_weather_data**: Get track and air weather data
-- **get_car_telemetry**: Get technical telemetry for a car
 - **get_driver_intervals**: Get intervals and gaps between drivers
 - **get_session_results**: Get final classification for a session
 - **list_pit_stops**: List pit stop durations
 - **list_drivers**: List F1 drivers for a session
 - **get_starting_grid**: Get the initial race starting grid
 - **get_team_radio**: Get team radio recording links
+- **get_race_control_messages**: Get FIA race control messages
 - **list_sessions**: List F1 sessions for a year
+- **get_driver_standings**: Get current driver championship standings
+- **get_team_standings**: Get current team championship standings
+- **list_tyre_stints**: List tyre strategy and stints
+- **get_car_telemetry**: Get technical telemetry for a car
 
 
 ## 💬 Prompt Examples

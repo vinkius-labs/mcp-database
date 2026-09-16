@@ -34,10 +34,10 @@ Connect your AI agent to the **Federal Aviation Administration (FAA)** data serv
 
 ## Available Tools (5)
 - **search_notams**: Search Notice to Air Missions (NOTAMs)
-- **get_metar**: Get METAR (Meteorological Aerodrome Reports)
-- **list_uas_facilities**: Get UAS Facility Maps (LAANC)
 - **get_taf**: Get TAF (Terminal Aerodrome Forecasts)
+- **get_metar**: Get METAR (Meteorological Aerodrome Reports)
 - **list_tfrs**: List Active Temporary Flight Restrictions (TFRs)
+- **list_uas_facilities**: Get UAS Facility Maps (LAANC)
 
 
 ## 💬 Prompt Examples
