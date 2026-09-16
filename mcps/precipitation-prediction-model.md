@@ -14,9 +14,9 @@ This MCP server provides chemical analysis tools to predict when solids will for
 
 
 ## Available Tools (4)
+- **analyze_precipitation_risk**: Determine if any solids will precipitate given ion concentrations and Ksp values
 - **calculate_threshold_concentration**: Find the minimum concentration a specific target ion must reach to trigger precipitation
 - **identify_competing_precipitates**: Identify which precipitate will form first when adding a specific ion
-- **analyze_precipitation_risk**: Determine if any solids will precipitate given ion concentrations and Ksp values
 - **validate_solution_stability**: Verify if a solution is safe from precipitation within a defined margin of error
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

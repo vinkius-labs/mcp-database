@@ -14,12 +14,12 @@ This MCP server provides specialized tools to ensure Safety Data Sheets (SDS) me
 
 
 ## Available Tools (4)
+- **recommend_improvements**: Provides actionable advice to correct identified compliance gaps and improve hazard communication
 - **analyze_sds_completeness**: g., USA or EU).
 
 Determines if all mandatory sections required by a specific jurisdiction are present in the provided SDS
 - **evaluate_hazard_classification**: Validates if the hazard classifications in the SDS align with the chemical properties described
 - **generate_compliance_checklist**: Produces a granular, itemized checklist of regulatory requirements that have been met or failed
-- **recommend_improvements**: Provides actionable advice to correct identified compliance gaps and improve hazard communication
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

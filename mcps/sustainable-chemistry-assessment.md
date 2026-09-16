@@ -14,11 +14,11 @@ This MCP server provides a suite of tools to evaluate the sustainability of chem
 
 
 ## Available Tools (4)
+- **identify_optimization_targets**: Pinpoints specific areas within a process where interventions would improve sustainability
 - **analyze_process_sustainability**: Calculates the comprehensive sustainability profile of a specific chemical process
 - **compare_against_benchmarks**: g., pharmaceutical_synthesis).
 
 Evaluates how a current process performs compared to established industry standards
-- **identify_optimization_targets**: Pinpoints specific areas within a process where interventions would improve sustainability
 - **validate_principle_compliance**: Checks if a proposed change in process parameters will improve green chemistry compliance
 
 
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

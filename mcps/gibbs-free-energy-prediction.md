@@ -15,9 +15,9 @@ This MCP server provides tools to analyze chemical reaction spontaneity. It uses
 
 ## Available Tools (4)
 - **calculate_equilibrium_temperature**: 
+- **predict_phase_impact**: 
 - **calculate_gibbs_energy**: 
 - **find_spontaneity_range**: 
-- **predict_phase_impact**: 
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

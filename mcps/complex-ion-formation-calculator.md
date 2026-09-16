@@ -14,10 +14,10 @@ This MCP server provides a specialized chemical equilibrium engine for coordinat
 
 
 ## Available Tools (4)
-- **validate_complex_stability**: Evaluate the stability of a specific complex relative to its components
+- **analyze_solubility_impact**: Determine how ligand presence affects metal salt solubility
 - **calculate_stepwise_constants**: Determine cumulative (overall) formation constants from stepwise constants
 - **predict_species_concentrations**: Calculate molar concentrations of metal, ligand, and complex species at equilibrium
-- **analyze_solubility_impact**: Determine how ligand presence affects metal salt solubility
+- **validate_complex_stability**: Evaluate the stability of a specific complex relative to its components
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

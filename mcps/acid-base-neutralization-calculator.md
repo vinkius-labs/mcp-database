@@ -14,10 +14,10 @@ This MCP server provides precise stoichiometric calculations for aqueous acid-ba
 
 
 ## Available Tools (4)
+- **get_species_properties**: Retrieves the constant properties (Ka, Kb, strength) for specific chemical identities
 - **calculate_equivalence_point**: Determines the exact volume of one reagent needed to neutralize the other
 - **calculate_excess_reagent**: Identifies which reagent remains after the reaction and its resulting concentration
 - **calculate_ph_at_equivalence**: Predicts the pH of the resulting solution once the equivalence point is reached
-- **get_species_properties**: Retrieves the constant properties (Ka, Kb, strength) for specific chemical identities
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
