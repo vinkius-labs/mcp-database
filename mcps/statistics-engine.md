@@ -21,13 +21,13 @@ Stop trusting LLMs to do math on arrays. Equip your agent with a real, determini
 
 
 ## Available Tools (5)
-- **calculate_standard_deviation**: Calculates the population standard deviation of a dataset
 - **calculate_mean**: Calculates the mathematical mean (average) of a dataset
-- **calculate_percentile**: Calculates the k-th percentile of a dataset
-- **calculate_median**: Calculates the median (middle value) of a dataset
 - **calculate_mode**: It returns an array of numbers.
 
 Calculates the mode (most frequent value) of a dataset
+- **calculate_percentile**: Calculates the k-th percentile of a dataset
+- **calculate_standard_deviation**: Calculates the population standard deviation of a dataset
+- **calculate_median**: Calculates the median (middle value) of a dataset
 
 
 ## 💬 Prompt Examples
@@ -112,4 +112,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

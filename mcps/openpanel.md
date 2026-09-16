@@ -35,8 +35,8 @@ Connect your **OpenPanel** account to any AI agent and manage your product analy
 ## Available Tools (4)
 - **identify_user**: Identify a user in OpenPanel
 - **increment_property**: Increment a numeric property on a user profile
-- **decrement_property**: Decrement a numeric property on a user profile
 - **track_event**: Track an event in OpenPanel
+- **decrement_property**: Decrement a numeric property on a user profile
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
