@@ -33,16 +33,16 @@ Connect your **ReadMe** documentation hub directly to your AI agent. Enabling th
 
 
 ## Available Tools (10)
-- **get_category**: Retrieves details for a specific documentation category
 - **list_categories**: Lists all documentation categories on ReadMe
-- **get_doc**: Retrieves the full content of a documentation page
+- **get_category**: Retrieves details for a specific documentation category
 - **list_custom_pages**: Lists all custom standalone pages
-- **get_project**: Retrieves details about the ReadMe project
-- **list_changelogs**: Lists all changelog posts
+- **get_doc**: Retrieves the full content of a documentation page
 - **get_category_docs**: Lists all documentation pages under a specific category
 - **get_changelog**: Retrieves the full content of a specific changelog post
-- **get_custom_page**: Retrieves the full content of a custom page
 - **search_docs**: Performs a full-text search across all documentation pages
+- **list_changelogs**: Lists all changelog posts
+- **get_custom_page**: Retrieves the full content of a custom page
+- **get_project**: Retrieves details about the ReadMe project
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

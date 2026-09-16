@@ -34,20 +34,32 @@ Connect your **Plausible Analytics** account to any AI agent and take full contr
 
 
 ## Available Tools (10)
-- **get_top_countries**: Get visitors by country
-- **get_top_sources**: Get top traffic sources
+- **get_top_countries**: Use this tool to understand geographical traffic distribution.
+
+Get visitors by country
+- **get_aggregate_stats**: , for a period (e.g., "30d", "7d", "day").
+
+Get aggregate site statistics
+- **get_top_sources**: Use this tool to analyze where traffic originates.
+
+Get top traffic sources
 - **get_custom_breakdown**: g., "visit:source", "event:page").
 
 Get breakdown by custom property
 - **get_realtime_visitors**: Get current active visitors
-- **get_aggregate_stats**: , for a period (e.g., "30d", "7d", "day").
-
-Get aggregate site statistics
 - **get_timeseries_stats**: Get site stats over time
-- **get_top_browsers**: Get visitors by browser
-- **get_top_devices**: Get visitors by device type
-- **get_top_os**: Get visitors by operating system
-- **get_top_pages**: Get most visited pages
+- **get_top_browsers**: Use this tool to understand browser usage statistics.
+
+Get visitors by browser
+- **get_top_devices**: Use this tool to analyze device usage patterns.
+
+Get visitors by device type
+- **get_top_os**: Use this tool to analyze OS-specific traffic data.
+
+Get visitors by operating system
+- **get_top_pages**: Use this tool to identify high-traffic content.
+
+Get most visited pages
 
 
 ## 💬 Prompt Examples
@@ -132,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

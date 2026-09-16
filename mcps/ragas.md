@@ -33,8 +33,6 @@ Integrate **Ragas** with your AI agent to bring professional grade RAG (Retrieva
 
 
 ## Available Tools (7)
-- **list_datasets**: Lists available evaluation datasets
-- **get_dataset**: Retrieves details for a specific evaluation dataset
 - **list_experiments**: Lists experiments associated with a specific dataset
 - **get_experiment**: Retrieves detailed information for a specific experiment
 - **run_evaluation**: g., faithfulness, answer_relevancy).
@@ -42,6 +40,8 @@ Integrate **Ragas** with your AI agent to bring professional grade RAG (Retrieva
 Triggers a new evaluation run for a dataset
 - **list_metrics**: Lists all available evaluation metrics
 - **get_results**: Retrieves the results of a completed experiment
+- **list_datasets**: Lists available evaluation datasets
+- **get_dataset**: Retrieves details for a specific evaluation dataset
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
