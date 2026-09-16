@@ -4,6 +4,7 @@ Explore the open database of **analysis** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Loop Detector](../mcps/agent-loop-detector.md) | Identifies infinite conversation cycles and deadlocks in agentic workflows. |
 | [Chord Progression Analyzer](../mcps/chord-progression-analyzer.md) | Analyze chord sequences to identify Roman numeral functions, harmonic patterns, and emotional context. |
 | [Elemental Damage Matrix Calculator](../mcps/elemental-damage-matrix-calculator.md) | Calculate elemental effectiveness, combat cycles, and balance metrics. |
 | [Incident Investigation Analysis](../mcps/incident-investigation-analysis.md) | Analyze incident data using root cause methodologies like 5-Why and Fishbone. |

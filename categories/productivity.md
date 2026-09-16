@@ -972,6 +972,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-alternative.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Syntax Validator](../mcps/vcard-syntax-validator.md) | Deterministic parser and validator for vCard (VCF) strings. |
+| [Venture Investor Update Cadence](../mcps/venture-investor-update-cadence.md) | Calculates the optimal frequency for investor updates to balance engagement and time cost. |
 | [Venue](../mcps/venue.md) | Manage event venues with booking calendars, client contracts, and catering coordination for wedding and conference spaces. |
 | [Verbit](../mcps/verbit.md) | Automate professional transcription and captioning via Verbit — upload media, track job progress, and retrieve transcripts in multiple formats directly from your AI agent. |
 | [Vesting Schedule Calculator](../mcps/vesting-schedule-calculator.md) | Generate precise monthly equity vesting timelines, identify cliff milestones, and project liquidity values. |

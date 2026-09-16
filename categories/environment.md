@@ -16,6 +16,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | [Surf Break Classifier](../mcps/surf-break-classifier.md) | Classifies surf break types and predicts wave quality based on bathymetry and swell conditions. |
 | [Surf Break Conservation Impact](../mcps/surf-break-conservation-impact.md) | Assess environmental impacts on surf breaks from coastal development. |
 | [Tide Curve Predictor](../mcps/tide-curve-predictor.md) | Deterministic sinusoidal tide prediction and surf window calculator. |
+| [Water Temperature & Comfort](../mcps/water-temperature-comfort.md) | Get wetsuit thickness recommendations and hypothermia risk assessments based on water and air conditions. |
 | [Wave Riding Angle](../mcps/wave-riding-angle.md) | Calculate optimal approach angles, section speeds, and air time potential for surfing. |
 | [Wax Application Pattern Optimizer](../mcps/wax-application-pattern-optimizer.md) | Determine the ideal wax type, layer count, and re-application timing based on water and air temperatures. |
 | [Wetland Restoration Hydrology](../mcps/wetland-restoration-hydrology.md) | Simulate water budgets, seasonal fluctuations, and vegetation suitability for wetland design. |

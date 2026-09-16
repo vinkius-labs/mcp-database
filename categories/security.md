@@ -44,6 +44,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [MAC Address Validator and Vendor Extractor](../mcps/mac-address-validator-and-vendor-extractor.md) | Validate MAC address formats and identify hardware vendors via OUI. |
 | [MEV Sandwich Detection Strategy](../mcps/mev-sandwich-detection-strategy.md) | Identify and avoid sandwich attacks in DEX transactions. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
+| [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
 | [Oracle Manipulation Detection Strategy](../mcps/oracle-manipulation-detection-strategy.md) | Detect and avoid token price manipulation by analyzing oracle deviations and DEX spot prices. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
