@@ -44,12 +44,21 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 
 
 ## Available Tools (12)
+- **get_airline_flights**: g., "UA" for United, "DL" for Delta, "BA" for British Airways). Returns flight numbers, aircraft registrations and types, origin-destination pairs, scheduled and actual times, and current status for all flights in the airline fleet. Essential for airline operations monitoring, fleet utilization analysis, competitor intelligence, and passenger rebooking during disruptions. AI agents use this when users ask "show me all United flights right now", "what is Delta flying", or need to track an entire airline operational picture in real-time.
+
+List all active flights operated by a specific airline
 - **get_account_usage**: The Netrows API operates on a credit-based system where each API call consumes 1 credit. Essential for monitoring API consumption, budget management, rate limit awareness, and planning integration usage patterns. AI agents should query this when users ask "how many credits do I have left", "what is my API usage this month", or need to monitor their API consumption before running large batch queries.
 
 Check your API account usage and remaining credits
 - **get_aircraft_info**: g., "N12345" for US-registered, "G-EUUU" for UK). Returns aircraft type (manufacturer and model), registration country, owner/operator information, registration status, year built, engine type (jet, turboprop, piston), number of engines, aircraft age, and category (airline, business jet, private, cargo). Critical for aviation enthusiasts, fleet tracking, aircraft utilization analysis, and private aviation monitoring. AI agents should reference this when users ask "tell me about aircraft N12345", "who owns this tail number", or need aircraft specifications to contextualize flight data.
 
 Get registration details and specifications for a specific aircraft
+- **get_airline_info**: Returns airline name, IATA/ICAO codes, callsign, country of registration, fleet size, destination count, hub airports, and operational status. Essential for airline industry research, competitor analysis, travel planning context, and aviation market intelligence. AI agents should reference this when users ask "tell me about United Airlines", "what is the ICAO code for Delta", or need airline metadata to contextualize flight and fleet data.
+
+Get information and details for a specific airline
+- **get_airport_flights**: Returns a comprehensive list of inbound and outbound flights with airline/operator, flight number, aircraft type, origin/destination airports, scheduled and actual times, and current flight status (en-route, landed, scheduled, delayed, cancelled, diverted). Essential for airport operations management, passenger pickup coordination, ground handling planning, and flight activity monitoring. AI agents should reference this when users ask "what flights are at X airport", "show me all activity at Y", or need to monitor airport traffic patterns.
+
+List all arriving and departing flights at a specific airport
 - **get_airport_info**: g., "JFK" or "KJFK" for New York JFK, "LAX" or "KLAX" for Los Angeles International). Returns airport name, location (city, state, country), IATA/ICAO/FAA codes, geographic coordinates (latitude, longitude, elevation), timezone, and operational status. Essential for airport identification, travel planning, flight briefing preparation, and geographic reference. AI agents should use this when users ask "tell me about airport X", "what is the ICAO code for Y", or need airport metadata to contextualize flight queries.
 
 Get static information and details for a specific airport
@@ -71,15 +80,6 @@ Search for active and recent flights by flight number, callsign, or route
 - **track_flight**: Returns timestamped position data that can be used to visualize flight progress on maps, estimate arrival times, and monitor flight trajectory. Essential for live flight tracking applications, passenger monitoring, operations dashboards, and aviation enthusiast displays. AI agents use this when users ask "track this flight live", "where is this aircraft right now", or need continuous position updates for an airborne flight.
 
 Track real-time position and status of a specific flight
-- **get_airline_flights**: g., "UA" for United, "DL" for Delta, "BA" for British Airways). Returns flight numbers, aircraft registrations and types, origin-destination pairs, scheduled and actual times, and current status for all flights in the airline fleet. Essential for airline operations monitoring, fleet utilization analysis, competitor intelligence, and passenger rebooking during disruptions. AI agents use this when users ask "show me all United flights right now", "what is Delta flying", or need to track an entire airline operational picture in real-time.
-
-List all active flights operated by a specific airline
-- **get_airport_flights**: Returns a comprehensive list of inbound and outbound flights with airline/operator, flight number, aircraft type, origin/destination airports, scheduled and actual times, and current flight status (en-route, landed, scheduled, delayed, cancelled, diverted). Essential for airport operations management, passenger pickup coordination, ground handling planning, and flight activity monitoring. AI agents should reference this when users ask "what flights are at X airport", "show me all activity at Y", or need to monitor airport traffic patterns.
-
-List all arriving and departing flights at a specific airport
-- **get_airline_info**: Returns airline name, IATA/ICAO codes, callsign, country of registration, fleet size, destination count, hub airports, and operational status. Essential for airline industry research, competitor analysis, travel planning context, and aviation market intelligence. AI agents should reference this when users ask "tell me about United Airlines", "what is the ICAO code for Delta", or need airline metadata to contextualize flight and fleet data.
-
-Get information and details for a specific airline
 
 
 ## 💬 Prompt Examples

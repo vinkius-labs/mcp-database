@@ -32,15 +32,15 @@ Relay is a no-code workflow automation platform used by teams to connect apps, a
 
 
 ## Available Tools (5)
+- **get_run_status**: Get the current status of a workflow run
+- **get_workflow**: Get details of a specific workflow
+- **list_runs**: List recent workflow runs
 - **list_workflows**: Use this to discover available automations before running them.
 
 List all workflows in your Relay account
-- **get_workflow**: Get details of a specific workflow
-- **list_runs**: List recent workflow runs
 - **run_workflow**: Provide a JSON object of input variables required by the workflow.
 
 Trigger a workflow execution with optional inputs
-- **get_run_status**: Get the current status of a workflow run
 
 
 ## 💬 Prompt Examples

@@ -37,24 +37,24 @@ Connect to **NHTSA** (National Highway Traffic Safety Administration) and access
 - **get_makes_for_year**: Useful for discovering which brands were active in a particular year.
 
 Get all manufacturers for a specific model year
-- **get_recalls_by_vehicle**: Returns recall details including campaign number, component affected, summary, remedy, manufacturer, dates and affected vehicle count. At least one parameter (make, model, year) is recommended.
+- **get_car_seat_stations_by_location**: Returns station name, address, phone, hours and distance. Useful for finding nearby car seat safety checks.
 
-Search safety recalls by make, model and year
-- **get_safety_rating_by_vehicle_id**: Returns overall rating and detailed breakdown by crash type.
+Find car seat inspection stations by coordinates
+- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
 
-Get safety rating for a specific vehicle by NHTSA ID
+Get NHTSA safety ratings for vehicles
+- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
+
+Get vehicle types for a specific manufacturer
+- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
+
+Decode a Vehicle Identification Number (VIN)
 - **get_car_seat_stations_by_zip**: Returns station name, address, phone, hours and appointment requirements. Useful for parents needing car seat safety checks.
 
 Find car seat inspection stations by ZIP code
 - **get_complaint_by_odi**: Returns failure description, consequences, remedy, component, mileage and dates.
 
 Get complaint details by ODI number
-- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
-
-Decode a Vehicle Identification Number (VIN)
-- **get_car_seat_stations_by_location**: Returns station name, address, phone, hours and distance. Useful for finding nearby car seat safety checks.
-
-Find car seat inspection stations by coordinates
 - **get_complaints_by_vehicle**: Returns complaints filed by vehicle owners including component, failure description, consequences, mileage at failure and date. At least one parameter recommended.
 
 Search consumer complaints by make, model and year
@@ -67,12 +67,12 @@ Get models for a manufacturer in a specific year
 - **get_recalls_by_campaign**: Returns component, summary, consequence, remedy, manufacturer notes, dates and affected vehicle count.
 
 Get recall details by campaign number
-- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
+- **get_recalls_by_vehicle**: Returns recall details including campaign number, component affected, summary, remedy, manufacturer, dates and affected vehicle count. At least one parameter (make, model, year) is recommended.
 
-Get NHTSA safety ratings for vehicles
-- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
+Search safety recalls by make, model and year
+- **get_safety_rating_by_vehicle_id**: Returns overall rating and detailed breakdown by crash type.
 
-Get vehicle types for a specific manufacturer
+Get safety rating for a specific vehicle by NHTSA ID
 
 
 ## 💬 Prompt Examples

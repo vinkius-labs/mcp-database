@@ -34,16 +34,32 @@ Connect your **Basis Technologies (formerly Centro)** account to any AI agent an
 
 
 ## Available Tools (10)
-- **get_ad**: Get specific ad details
+- **get_ad**: Provide the ad ID as a required parameter.
+
+Get specific ad details
 - **list_tactics**: List all Basis DSP tactics (line items)
-- **get_campaign**: Get specific Basis campaign details
-- **get_tactic**: Get specific Basis tactic details
-- **get_tactic_performance**: Get performance metrics for a tactic
-- **list_brands**: List all brands
-- **list_ads**: List all ad creatives
-- **get_campaign_performance**: Get performance metrics for a campaign
+- **get_campaign**: Provide the campaign ID as a required parameter.
+
+Get specific Basis campaign details
+- **get_tactic**: Provide the tactic ID as a required parameter.
+
+Get specific Basis tactic details
+- **get_tactic_performance**: Provide the tactic ID as a required parameter.
+
+Get performance metrics for a tactic
+- **get_campaign_performance**: Provide the campaign ID as a required parameter.
+
+Get performance metrics for a campaign
+- **list_ads**: No filters are supported for this list.
+
+List all ad creatives
+- **list_brands**: No filters are supported for this list.
+
+List all brands
 - **list_campaigns**: List all Basis DSP campaigns
-- **list_clients**: List all clients/advertisers
+- **list_clients**: No filters are supported for this list.
+
+List all clients/advertisers
 
 
 ## 💬 Prompt Examples

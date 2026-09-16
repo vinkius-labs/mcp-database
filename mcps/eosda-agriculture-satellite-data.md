@@ -35,12 +35,6 @@ Empower your AI agent with cutting-edge remote sensing capabilities via the **EO
 
 
 ## Available Tools (6)
-- **get_available_datasets**: Use these dataset IDs for search_dataset and create_vegetation_task.
-
-Get list of available satellite datasets
-- **get_available_indices**: Use these index types with create_vegetation_task.
-
-Get list of available vegetation indices
 - **create_vegetation_task**: ) for a specific area of interest. Returns a task ID that can be used with get_task_result to retrieve results. Use get_available_indices to see all available index types.
 
 Create a vegetation index calculation task (NDVI, EVI, etc.)
@@ -53,6 +47,12 @@ Search satellite imagery for a specific dataset
 - **search_multi_dataset**: g. Sentinel-2 and Landsat 8 together). Returns scenes from all requested datasets within the date range and area of interest.
 
 Search satellite imagery across multiple datasets
+- **get_available_datasets**: Use these dataset IDs for search_dataset and create_vegetation_task.
+
+Get list of available satellite datasets
+- **get_available_indices**: Use these index types with create_vegetation_task.
+
+Get list of available vegetation indices
 
 
 ## 💬 Prompt Examples
