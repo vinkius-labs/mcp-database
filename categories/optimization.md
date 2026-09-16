@@ -52,6 +52,10 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Traction Pad Positioning Optimizer](../mcps/traction-pad-positioning-optimizer.md) | Calculates precise surfboard traction pad placement, arch geometry, and kick angles. |
 | [Underground Production Scheduler](../mcps/underground-production-scheduler.md) | Optimize mining sequences, development schedules, and resource allocation for underground mines. |
 | [Wave Period Matching](../mcps/wave-period-matching.md) | Synchronize kiteboarding tricks with wave energy and wind gusts. |
+| [Wine Mannoprotein Extraction Model](../mcps/wine-mannoprotein-extraction-model.md) | Predict mannoprotein release and optimize wine stability and mouthfeel. |
+| [Wine Micro-oxygenation Kinetics](../mcps/wine-micro-oxygenation-kinetics.md) | Models oxygen consumption and phenolic evolution during micro-oxygenation. |
+| [Wine MLF Optimization Engine](../mcps/wine-mlf-optimization-engine.md) | Optimize Malolactic Fermentation timing, dosage, and nutrient needs. |
+| [Wine Yeast Rehydration Model](../mcps/wine-yeast-rehydration-model.md) | Optimizes yeast rehydration protocols to maximize cell viability. |
 | [Woodworking Cut List Optimizer](../mcps/woodworking-cut-list-optimizer.md) | Minimize lumber waste with deterministic 1D bin packing for cutting plans. |
 
 

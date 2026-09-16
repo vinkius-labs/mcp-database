@@ -155,6 +155,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Wettability & Contact Angle Analyzer](../mcps/wettability-contact-angle-analyzer.md) | Calculate surface energy, work of adhesion, and spreading coefficients using contact angle data. |
 | [Wine Aging Kinetics Predictor](../mcps/wine-aging-kinetics-predictor.md) | Predict wine color, astringency, and aroma evolution using chemical kinetics. |
 | [Wine Aroma Evolution Modeler](../mcps/wine-aroma-evolution-modeler.md) | Predicts chemical transformations of aroma compounds during fermentation and aging. |
+| [Wine CO2 Solubility & Pressure Calculator](../mcps/wine-co2-solubility-pressure-calculator.md) | Calculate CO2 solubility, degassing, and bottling pressure in wine using Henry's law. |
 | [Wine Sensory Threshold Calculator](../mcps/wine-sensory-threshold-calculator.md) | Predict sensory detection and impact of chemical compounds in wine using matrix-correction factors. |
 | [Zeta Potential Calculator](../mcps/zeta-potential-calculator.md) | Calculate zeta potential, surface charge, and colloidal stability from electrophoretic mobility. |
 

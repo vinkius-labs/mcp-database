@@ -824,46 +824,61 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Venture Anti-Dilution Protection Analysis](../mcps/venture-anti-dilution-protection-analysis.md) | Analyze the impact of anti-dilution protection mechanisms during down-rounds. |
 | [Venture Associate Carry Spread](../mcps/venture-associate-carry-spread.md) | Financial modeling for VC carry allocations and junior team retention. |
 | [Venture Brand Value Model](../mcps/venture-brand-value-model.md) | Quantify investor brand premium, deal flow quality, and brand equity. |
+| [Venture Cap Table Modeling](../mcps/venture-cap-table-modeling.md) | Simulate equity ownership, dilution, and exit proceeds across funding rounds. |
 | [Venture Capital Asset Allocation Optimizer](../mcps/venture-capital-asset-allocation-optimizer.md) | Optimize Venture Capital allocations by balancing returns, liquidity, and risk. |
 | [Venture Carry Calculator](../mcps/venture-carry-calculator.md) | Calculate carried interest distributions, waterfall tiers, and clawback liabilities. |
 | [Venture Closing Conditions Checklist](../mcps/venture-closing-conditions-checklist.md) | Analyze M&A deal timelines, critical paths, and closing probabilities. |
+| [Venture Co-Investment Analyzer](../mcps/venture-co-investment-analyzer.md) | Analyze co-investment economics, LP profitability, and allocation strategies. |
+| [Venture Competitive Analysis Scoring](../mcps/venture-competitive-analysis-scoring.md) | Quantify competitive landscapes, market attractiveness, and investment risk. |
 | [Venture Counsel Selection](../mcps/venture-counsel-selection.md) | Evaluate and select the best legal counsel by balancing cost against strategic value. |
 | [Venture Deal Flow Velocity](../mcps/venture-deal-flow-velocity.md) | Analyze VC deal flow efficiency, identify pipeline bottlenecks, and forecast investment capacity. |
 | [Venture Deal Origination ROI Engine](../mcps/venture-deal-origination-roi-engine.md) | Analyze deal sourcing efficiency using ROI, quality scores, and attribution modeling. |
 | [Venture Deal Pricing Analysis](../mcps/venture-deal-pricing-analysis.md) | Evaluate startup investment fairness using market benchmarks and competitive dynamics. |
 | [Venture Deal Sourcing Efficiency](../mcps/venture-deal-sourcing-efficiency.md) | Analyze and optimize venture capital deal sourcing ROI and channel performance. |
+| [Venture Deal-on-Terms Analyzer](../mcps/venture-deal-on-terms-analyzer.md) | Analyze venture deployment efficiency using DOT ratio and pricing discipline metrics. |
 | [Venture Dividend Rights Analysis](../mcps/venture-dividend-rights-analysis.md) | Calculates economic impact of dividend rights on preferred and common shareholders. |
 | [Venture Down-Round Protection](../mcps/venture-down-round-protection.md) | Model the economic impact of anti-dilution provisions during venture down-rounds. |
 | [Venture Drag-Along Rights Analyzer](../mcps/venture-drag-along-rights-analyzer.md) | Calculates the impact of drag-along provisions on shareholder value and exit scenarios. |
+| [Venture Exit Timing Analysis](../mcps/venture-exit-timing-analysis.md) | Determine the optimal moment to exit a venture by balancing growth momentum against market cycles and fund obligations. |
 | [Venture Expense Reimbursement Negotiator](../mcps/venture-expense-reimbursement-negotiator.md) | Calculate equitable expense reimbursement limits for venture capital transactions. |
 | [Venture Financing Decision Support](../mcps/venture-financing-decision-support.md) | Compare the economic and legal impact of priced rounds versus convertible instruments. |
 | [Venture Follow-on Reserve Sizing](../mcps/venture-follow-on-reserve-sizing.md) | Calculate optimal capital reserves for venture capital follow-on investments. |
+| [Venture Founder Dilution Modeling](../mcps/venture-founder-dilution-modeling.md) | Model founder ownership, dilution, and exit proceeds through successive funding rounds. |
 | [Venture Founder Vesting Negotiation](../mcps/venture-founder-vesting-negotiation.md) | Models optimal founder vesting terms by balancing equity retention and investor protection. |
 | [Venture Founders Insurance Calculator](../mcps/venture-founders-insurance-calculator.md) | Quantify insurance protection gaps for venture-backed founders. |
 | [Venture Fund Deployment Timeline](../mcps/venture-fund-deployment-timeline.md) | Calculate fund deployment schedules, quarterly targets, and deal capacity. |
 | [Venture Fund DPI Calculator](../mcps/venture-fund-dpi-calculator.md) | Calculate DPI, TVPI, and RVPI ratios for venture capital funds. |
 | [Venture Fund Duration Optimizer](../mcps/venture-fund-duration-optimizer.md) | Calculate optimal fund life, extension needs, and liquidation timelines. |
 | [Venture Fund IRR Calculator](../mcps/venture-fund-irr-calculator.md) | Calculate precise Gross and Net IRR for venture funds using XIRR methodology. |
+| [Venture Fund Markup Analysis](../mcps/venture-fund-markup-analysis.md) | Analyze venture capital fund performance through markup velocity and valuation quality. |
 | [Venture Fund Size Calculator](../mcps/venture-fund-size-calculator.md) | Model optimal venture fund sizing, deployment, and fee structures. |
 | [Venture Fund TVPI Calculator](../mcps/venture-fund-tvpi-calculator.md) | Calculate and analyze Total Value to Paid-In (TVPI) ratios and fund performance. |
 | [Venture Information Rights Provision](../mcps/venture-information-rights-provision.md) | Quantitatively value information rights, monitoring value, and governance premiums for venture investors. |
+| [Venture Information Rights Valuation](../mcps/venture-information-rights-valuation.md) | Quantify the economic and strategic value of information access rights for venture investors. |
 | [Venture Legal Fee Coverage](../mcps/venture-legal-fee-coverage.md) | Calculates equitable legal fee allocation between investors and companies during venture financing rounds. |
 | [Venture Liquidation Waterfall Engine](../mcps/venture-liquidation-waterfall-engine.md) | Calculate exit proceeds, liquidation preferences, and investor conversion decisions. |
 | [Venture Management Fee Structure](../mcps/venture-management-fee-structure.md) | Calculate management fee economics, investable capital, and fee drag for VC funds. |
+| [Venture Market Size Validator](../mcps/venture-market-size-validator.md) | Validates market size claims using top-down and bottom-up methodologies. |
 | [Venture MFN Clause Analyzer](../mcps/venture-mfn-clause-analyzer.md) | Quantify the economic value and strategic leverage of Most Favored Nation (MFN) clauses. |
 | [Venture No-Shop Provision Analyzer](../mcps/venture-no-shop-provision-analyzer.md) | Analyze the economic impact of exclusivity periods and break-up fees in M&A. |
 | [Venture Operating Budget Calculator](../mcps/venture-operating-budget-calculator.md) | Calculate annual operating costs and efficiency metrics for venture capital firms. |
+| [Venture Option Pool Sizing](../mcps/venture-option-pool-sizing.md) | Calculate necessary option pool sizes, dilution impact, and hiring runway. |
 | [Venture Partner Compensation Model](../mcps/venture-partner-compensation-model.md) | Simulate and analyze carried interest distribution, vesting, and economic splits for VC firms. |
 | [Venture Pay-to-Play Provision Analyzer](../mcps/venture-pay-to-play-provision-analyzer.md) | Analyze the financial impact and strategic alignment of pay-to-play provisions in venture capital. |
 | [Venture Platform Services Value Engine](../mcps/venture-platform-services-value-engine.md) | Quantify the economic impact and ROI of platform services across your venture portfolio. |
 | [Venture Portfolio Construction](../mcps/venture-portfolio-construction.md) | Model optimal venture capital portfolios using power law distributions. |
+| [Venture Portfolio Rebalancing](../mcps/venture-portfolio-rebalancing.md) | Optimize portfolio rebalancing, tax efficiency, and risk management. |
 | [Venture Portfolio Reporting Automation](../mcps/venture-portfolio-reporting-automation.md) | Calculate ROI for transitioning from manual venture capital reporting to automated systems. |
 | [Venture Pre-Money Valuation Analysis](../mcps/venture-pre-money-valuation-analysis.md) | Analyze startup valuation fairness using comparable transactions and market dynamics. |
 | [Venture Preemptive Rights Calculator](../mcps/venture-preemptive-rights-calculator.md) | Calculates the monetary and strategic value of shareholder preemptive rights to prevent dilution. |
 | [Venture Protective Provisions Analyzer](../mcps/venture-protective-provisions-analyzer.md) | Quantifies the economic and governance value of protective provisions in venture capital term sheets. |
 | [Venture Redemption Rights](../mcps/venture-redemption-rights.md) | Calculates the financial economics, solvency risks, and probabilities of venture capital redemption rights. |
+| [Venture Reference ROI Engine](../mcps/venture-reference-roi-engine.md) | Quantify the economic impact and ROI of venture capital reference checks. |
+| [Venture Risk-Adjusted Return Engine](../mcps/venture-risk-adjusted-return-engine.md) | Calculate risk-adjusted returns, Sharpe ratios, and expected values for venture investments. |
 | [Venture ROFR Economics Engine](../mcps/venture-rofr-economics-engine.md) | Quantify the financial impact and liquidity trade-offs of Right of First Refusal (ROFR) provisions. |
 | [Venture SAFE Conversion Modeler](../mcps/venture-safe-conversion-modeler.md) | Simulate SAFE equity conversion, valuation caps, and pro-rata impacts. |
+| [Venture Scout Program Economics](../mcps/venture-scout-program-economics.md) | Analyze the ROI, sustainability, and distribution of venture capital scout programs. |
+| [Venture Secondary Sale Economics](../mcps/venture-secondary-sale-economics.md) | Calculate secondary sale proceeds, realized returns, and liquidity availability for private equity holdings. |
 | [Venture Series A Pricing Analysis](../mcps/venture-series-a-pricing-analysis.md) | Calculate Series A valuation ranges, investment terms, and growth impact using revenue multiple methodologies. |
 | [Venture Standstill Provision Analyzer](../mcps/venture-standstill-provision-analyzer.md) | Calculates the economic and strategic impact of standstill provisions in VC and M&A. |
 | [Venture Studio Operating Cost Modeler](../mcps/venture-studio-operating-cost-modeler.md) | Calculate startup unit costs, fee structures, and break-even points for venture studios. |

@@ -4,7 +4,7 @@ Explore the open database of **llm-ops** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Output Serializability Checker](../mcps/output-serializability-checker.md) | Validates if LLM outputs can be serialized into JSON, XML, CSV, or Protocol Buffers without data loss. |
+| [Output Serializability Checker](../mcps/output-serializability-checker.md) | Verify if LLM-generated data structures can be safely converted to specific formats without data loss. |
 
 
 ---

@@ -24,6 +24,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Spill Response Equipment Planner](../mcps/spill-response-equipment-planner.md) | Determines necessary spill response equipment, quantities, and strategic deployment locations. |
 | [Storage Unit Picker](../mcps/storage-unit-picker.md) | Calculate the required storage unit size based on your items' volume and stacking efficiency. |
 | [Table Seating Optimizer](../mcps/table-seating-optimizer.md) | Calculate venue capacity, table layouts, and space requirements for events. |
+| [Tank Cleaning & Sanitation Scheduler](../mcps/tank-cleaning-sanitation-scheduler.md) | Automated scheduling for dairy and food-processing tank sanitation and harvest turnover. |
 | [Tank Farm Optimization](../mcps/tank-farm-optimization.md) | Optimize refinery tank farm operations including tank allocation, blending schedules, and inventory buffers. |
 | [Tanker Fleet Optimization](../mcps/tanker-fleet-optimization.md) | Optimize tanker fleet sizing, vessel mix, and charter strategies for oil transportation. |
 | [Tanker Loading Rate Optimizer](../mcps/tanker-loading-rate-optimizer.md) | Optimizes tanker loading rates by balancing vessel capacity, shore infrastructure, and safety constraints. |

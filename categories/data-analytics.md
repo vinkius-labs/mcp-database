@@ -352,6 +352,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Zengain](../mcps/zengain.md) | Identify high-intent website visitors by company and reach out to warm leads before they fill out a form or contact you. |
 | [Zenserp](../mcps/zenserp.md) | Scrape live search engine results (SERP) from Google, Bing, Yandex, and DuckDuckGo using Zenserp's high-speed API. |
 | [Zerion (DeFi Portfolio)](../mcps/zerion-defi-portfolio.md) | Track DeFi portfolios, NFT holdings, and transaction history across 500+ protocols and multiple chains via Zerion. |
+| [Zoho Campaign](../mcps/aconex.md) | AI email marketing: manage campaigns, contacts, and mailing lists via agents. |
 | [Zoho CRM Analytics](../mcps/zoho-crm-analytics.md) | Access custom views, organization info, module metadata, fields, and pipeline analysis in Zoho CRM. |
 | [Zyte](../mcps/zyte.md) | Extract structured web data, perform browser automation, and fetch search engine results directly through the Zyte API. |
 

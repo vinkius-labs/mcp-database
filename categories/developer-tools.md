@@ -79,7 +79,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Bubble.io (No-code Application Platform API)](../mcps/bubbleio-no-code-application-platform-api.md) | Manage your Bubble.io application data and trigger backend workflows directly from any AI agent. |
 | [Buenbit](../mcps/buenbit.md) | Automate Crypto Exchange operations via Buenbit — track balances, extract asset tickers, and execute real-time trading directly from conversational AI. |
 | [BugBug](../mcps/bugbug.md) | Test your web application automatically with no-code browser tests that catch regressions before your users do. |
-| [BugHerd](../mcps/bugherd.md) | Manage BugHerd projects, tasks, and comments through AI Agents. |
+| [BugHerd](../mcps/bugherd.md) | Manage visual feedback and bug reports via BugHerd — track projects, tasks, and users directly from any AI agent. |
 | [BugHerd](../mcps/bugherd-alternative.md) | Manage BugHerd projects, tasks, and comments through AI Agents. |
 | [Builder.io (Visual CMS)](../mcps/builderio-visual-cms.md) | Manage Builder.io content, assets, and models via AI — fetch entries, update data, and query GraphQL APIs directly. |
 | [Bunny.net](../mcps/bunnynet.md) | Manage Bunny.net edge infrastructure — control your CDN Pull Zones, purge caching rules, and map Storage natively from an AI agent. |

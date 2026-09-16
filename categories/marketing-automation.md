@@ -108,7 +108,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [FunnelCockpit](../mcps/funnelcockpit.md) | Build high-converting sales funnels, landing pages, and email sequences with an all-in-one German marketing platform. |
 | [Gainsight PX](../mcps/gainsight-px.md) | Manage product experience, track user behavior, and oversee engagements via AI agents with Gainsight PX. |
 | [Galxe](../mcps/galxe.md) | Automate Web3 community management via Galxe — check quest eligibility, track leaderboards, and manage credentials directly from any AI agent. |
-| [Gameball](../mcps/gameball-alternative.md) | Automate loyalty programs and gamification via Gameball — manage customer profiles, track points, and handle order rewards directly from any AI agent. |
+| [Gameball](../mcps/gameball-alternative.md) | Turn customers into loyal fans with gamified rewards, referral programs, and engagement challenges that drive repeat purchases. |
 | [GAN.ai](../mcps/ganai.md) | Generate personalized videos at scale, track generation status, and oversee campaigns via AI agents with GAN.ai. |
 | [GenerateBanners](../mcps/generatebanners.md) | Create professional ad banners and social media graphics automatically with templates that match your brand guidelines. |
 | [Genius Referrals](../mcps/genius-referrals.md) | Manage referral programs, track advocates, and oversee rewards via AI agents with Genius Referrals. |
@@ -193,7 +193,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Ontraport](../mcps/ontraport.md) | Manage marketing and sales via Ontraport — list contacts, track campaigns, and monitor transactions directly from any AI agent. |
 | [OpenPanel](../mcps/openpanel.md) | Track events, identify users, and manage profile properties directly from your AI agent using OpenPanel analytics. |
 | [Orbit](../mcps/orbit.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
-| [Orbit Alternative](../mcps/orbit-alternative.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
+| [Orbit](../mcps/orbit-alternative.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
 | [Ortto (formerly Autopilot)](../mcps/ortto-formerly-autopilot.md) | Manage your CDP, customer data, and marketing automations via Ortto — orchestrate journeys natively via AI. |
 | [Papermark (Docsend Alternative)](../mcps/papermark-docsend-alternative.md) | Securely share documents, track engagement, and manage links with Papermark — the open-source DocSend alternative for your AI agent. |
 | [PartnerStack](../mcps/partnerstack.md) | Manage affiliate and partner programs via PartnerStack — list partners, track leads, and monitor rewards directly from any AI agent. |

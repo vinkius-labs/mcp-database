@@ -11,6 +11,7 @@ Explore the open database of **biochemistry** Model Context Protocol (MCP) serve
 | [Protein Concentration Calculator](../mcps/protein-concentration-calculator.md) | Calculate protein concentration and yield using UV280, colorimetric assays, or standard curves. |
 | [Protein Molecular Weight Calculator](../mcps/protein-molecular-weight-calculator.md) | Calculate protein mass, extinction coefficient, and isoelectric point from sequences or compositions. |
 | [Protein Purification Yield Calculator](../mcps/protein-purification-yield-calculator.md) | Quantify protein purity and recovery efficiency across purification steps. |
+| [Wine Pyruvic Acid & Color Stability Modeler](../mcps/wine-pyruvic-acid-color-stability-modeler.md) | Models pyruvic acid accumulation and vitisin formation for wine color stability. |
 
 
 ---

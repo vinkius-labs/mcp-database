@@ -10,7 +10,7 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Chuanglan 253](../mcps/chuanglan-253-1.md) | Ultra-high volume SMS & 1-click login API — send verification codes, notifications, and bulk messages globally via Chuanglan 253. |
 | [Chuanglan 253 / 创蓝](../mcps/chuanglan-253.md) | Leading cloud communication and KYC platform in China — send ultra-high volume SMS and verify user identities via AI. |
 | [ClickSend](../mcps/clicksend.md) | Manage SMS and multi-channel messaging via ClickSend — send messages, track history, and monitor inbound SMS directly from any AI agent. |
-| [Discord](../mcps/discord.md) | Manage communities via Discord — list server channels and members, send and edit messages, and handle channel moderation directly from any AI agent. |
+| [Discord](../mcps/discord.md) | Manage Discord servers, post messages, organize channels, and moderate communities with full bot-level API access. |
 | [Discord](../mcps/discord-alternative.md) | Manage Discord servers, post messages, organize channels, and moderate communities with full bot-level API access. |
 | [Discord Bot](../mcps/discord-bot.md) | Control and manage your Discord bots — audit guilds, channels, and messages via AI. |
 | [Discord Webhook Notifier](../mcps/discord-webhook-notifier.md) | This MCP does exactly one thing: it sends messages to your Discord channels. That's its only function, and nothing else. Zero friction, incredible for giving your AI agents a voice. |
@@ -25,7 +25,7 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Rocket.Chat](../mcps/rocketchat.md) | Connect your AI assistant to Rocket.Chat to seamlessly send messages, explore channels, manage directories, and orchestrate chat operations directly. |
 | [RongCloud](../mcps/rongcloud.md) | Leading IM and RTC platform in China — manage users, messages, and chatrooms via AI. |
 | [SendGrid Email Sender](../mcps/sendgrid-email-sender.md) | This MCP does exactly one thing: it sends transactional emails using Twilio SendGrid. That's its only function, and nothing else. Incredible for giving your AI agents the ability to dispatch email reports. |
-| [Slack](../mcps/slack.md) | Automate Slack messaging — send messages, search conversations, list channels and users directly from any AI agent. |
+| [Slack](../mcps/slack.md) | Manage channels, users, and send messages on Slack with AI agents. |
 | [Slack Bot](../mcps/slack-bot.md) | Control and manage your Slack workspace — audit channels, messages, and users via AI. |
 | [Slack Webhook Notifier](../mcps/slack-webhook-notifier.md) | This MCP does exactly one thing: it sends messages to your Slack channels. That's its only function, and nothing else. Zero bloat, incredible for giving your AI agents a voice. |
 | [Telegram Bot](../mcps/telegram-bot.md) | Control Telegram bots programmatically — send messages, photos, documents, and manage chats via AI. |

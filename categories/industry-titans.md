@@ -205,7 +205,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Hootsuite (Social Media Management)](../mcps/hootsuite-social-media-management.md) | Manage social media via Hootsuite — schedule posts, manage social profiles, and monitor outbound messages. |
 | [Huawei Push Kit / 华为推送服务](../mcps/huawei-push-kit.md) | Huawei's essential device push platform — send notifications to HMS devices via AI. |
 | [HubSpot](../mcps/hubspot.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
-| [HubSpot Alternative](../mcps/hubspot-alternative.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
+| [HubSpot](../mcps/hubspot-alternative.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
 | [HubSpot Analytics](../mcps/hubspot-analytics.md) | View web analytics, track events, list reports, and get email campaign statistics through natural conversation. |
 | [HubSpot CMS Hub](../mcps/hubspot-cms-hub.md) | Manage blog posts, site pages, landing pages, authors, tags, and domains through natural conversation. |
 | [HubSpot CRM](../mcps/hubspot-crm.md) | Search, create, and manage HubSpot contacts, companies, notes, tasks, and associations through natural conversation. |
@@ -490,7 +490,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Tencent Map LBS API](../mcps/tencent-map-lbs-api.md) | China's leading LBS platform — essential for WeChat Miniapps, providing precise mapping, routing, and POI data. |
 | [Tencent START](../mcps/tencent-start.md) | Orchestrate Tencent START Cloud Gaming (GS) — manage server sessions, monitor workers, and scale capacity directly from any AI agent. |
 | [Tencent TMT / 腾讯机器翻译](../mcps/tencent-tmt.md) | Tencent's professional machine translation — translate text and detect languages with high precision via AI. |
-| [Tencent TMT / 腾讯机器翻译](../mcps/aconex.md) | Tencent's professional machine translation — translate text and detect languages with high precision via AI. |
 | [Tencent TRTC](../mcps/tencent-trtc.md) | Bring Tencent's Dominant Real-Time Communications Engine to your AI workflow. Manage rooms, cloud recordings, and call metrics. |
 | [Tencent Youtu / 腾讯优图](../mcps/tencent-youtu.md) | China's leading computer vision platform — perform facial recognition, analysis, and liveness checks via AI. |
 | [Tencent Yuanqi](../mcps/tencent-yuanqi.md) | Orchestrate Tencent Yuanqi AI Agents — manage assistants, trigger conversations, and handle RAG documents directly from any AI agent. |

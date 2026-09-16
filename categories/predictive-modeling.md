@@ -4,6 +4,7 @@ Explore the open database of **predictive-modeling** Model Context Protocol (MCP
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Wine Citric Acid Metabolism Predictor](../mcps/wine-citric-acid-metabolism-predictor.md) | Predicts diacetyl formation and sensory profiles during Malolactic Fermentation. |
 | [Wine Fermentation Thermal Kinetics](../mcps/wine-fermentation-thermal-kinetics.md) | Predictive modeling for wine fermentation kinetics, heat generation, and thermal stress. |
 
 

@@ -41,6 +41,7 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Daktela](../mcps/daktela.md) | Handle customer interactions across phone, email, chat, and social media from one omnichannel contact center platform. |
 | [Dexatel](../mcps/dexatel.md) | Equip your AI agent to send SMS messages, track communications, and manage contacts via the Dexatel API. |
 | [Dixa](../mcps/dixa-alternative.md) | Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization. |
+| [DoubleTick](../mcps/doubletick.md) | Equip your AI agent to manage WhatsApp conversations, track contacts, and monitor message delivery via the DoubleTick API. |
 | [Dripcel](../mcps/dripcel.md) | Equip your AI agent to manage WhatsApp instances, track contacts, and monitor messaging automation via the Dripcel API. |
 | [Easemob / 环信](../mcps/easemob.md) | Pioneer massive scale IM Chat SDK and API — manage users, groups, and real-time messaging via AI. |
 | [Elastic Email](../mcps/elastic-email.md) | Equip your AI agent to manage email campaigns, track contacts, and monitor delivery logs via the Elastic Email API. |

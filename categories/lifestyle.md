@@ -18,7 +18,6 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
-| [Hydration Calculator](../mcps/hydration-calculator.md) | Personalized daily water intake recommendations based on weight, activity, and environment. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Matcha Ceremony Parameter Calculator](../mcps/matcha-ceremony-parameter-calculator.md) | Calculate precise matcha recipes, water temperatures, and caffeine estimates. |

@@ -172,7 +172,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Cal.com](../mcps/calcom-alternative-1.md) | Automate scheduling via Cal.com — manage bookings, event types, and availability directly from any AI agent. |
 | [Calendarific](../mcps/calendarific.md) | Access global holiday data via Calendarific — track public, religious, and local holidays across 230+ countries directly from any AI agent. |
 | [Calendly](../mcps/calendly.md) | Automate scheduling workflows via Calendly — manage event types, scheduled events, invitees, and availability directly from any AI agent. |
-| [Calendly Webhooks, Scheduling Links & Global Invitees](../mcps/calendly-alternative.md) | Webhooks, Scheduling Links & Global Invitees — advanced Calendly for webhooks, direct booking links and cross-event search. |
+| [Calendly](../mcps/calendly-alternative.md) | Automate scheduling workflows via Calendly — manage event types, scheduled events, invitees, and availability directly from any AI agent. |
 | [Calenso](../mcps/calenso.md) | Manage appointments, customers, and bookings online via AI. |
 | [Calligraphy Guide Calculator](../mcps/calligraphy-guide-calculator.md) | Generate precise, deterministic calligraphy guide sheets with exact spacing and slant lines. |
 | [Capacities](../mcps/capacities.md) | Empower your AI agents to build knowledge graphs, append daily notes, and save weblinks directly into your Capacities spaces. |
@@ -272,7 +272,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Crossword Clue Formatter](../mcps/crossword-clue-formatter.md) | Generate deterministic metadata, symmetry checks, and statistics for crossword grids. |
 | [CUFinder](../mcps/cufinder.md) | Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting. |
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
-| [Custify](../mcps/custify.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Custify](../mcps/custify-alternative.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Custom Farming Rate Calculator](../mcps/custom-farming-rate-calculator.md) | Calculate precise operational costs and fair custom service rates for agricultural tasks. |
 | [Customer Discovery Prover](../mcps/customer-discovery-prover.md) | An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals. |
@@ -339,7 +338,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DottedSign](../mcps/dottedsign-alternative.md) | Automate e-signature workflows via DottedSign — create signing tasks, manage templates, and track document status directly from any AI agent. |
 | [DottedSign](../mcps/dottedsign.md) | E-signature and document management with DottedSign. |
 | [Double the Donation](../mcps/double-the-donation.md) | Maximize nonprofit revenue by identifying donors whose employers offer matching gift programs and automating match requests. |
-| [DoubleTick](../mcps/doubletick.md) | Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses. |
 | [DoubleTick](../mcps/doubletick-alternative.md) | Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses. |
 | [Dovetail](../mcps/dovetail.md) | Analyze qualitative research data with AI-powered tagging, theme discovery, and insight synthesis for product and UX teams. |
 | [Dribbble](../mcps/dribbble.md) | Manage your Dribbble portfolio—upload shots, organize projects, and update your profile directly from your AI agent. |
@@ -420,7 +418,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Fatigue Accumulation Tracker](../mcps/fatigue-accumulation-tracker.md) | Monitor sleep debt, estimate cognitive impact, and calculate recovery timelines. |
 | [FatSecret](../mcps/fatsecret.md) | Access millions of food items with calorie tracking, macro data, and serving sizes from the FatSecret platform used by 30M+ users worldwide. |
 | [Favqs](../mcps/favqs.md) | Discover and manage quotes — fetch the Quote of the Day, search by author or tag, and curate your favorites directly via AI. |
-| [Feedly](../mcps/feedly.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
 | [Feedly](../mcps/feedly-alternative.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
 | [Fellow](../mcps/fellow-alternative.md) | Run better meetings with collaborative agendas, action item tracking, and AI-generated summaries that keep teams accountable. |
 | [Feynman Radical Simplification Prover](../mcps/feynman-radical-simplification-prover.md) | Stop your AI from hiding behind jargon — force it to explain simply, build from scratch, and justify every piece of complexity. |
@@ -972,6 +969,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-alternative.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Syntax Validator](../mcps/vcard-syntax-validator.md) | Deterministic parser and validator for vCard (VCF) strings. |
+| [Venture Due Diligence Optimizer](../mcps/venture-due-diligence-optimizer.md) | Optimizes time allocation across due diligence workstreams based on deal stage and risk. |
 | [Venture Investor Update Cadence](../mcps/venture-investor-update-cadence.md) | Calculates the optimal frequency for investor updates to balance engagement and time cost. |
 | [Venue](../mcps/venue.md) | Manage event venues with booking calendars, client contracts, and catering coordination for wedding and conference spaces. |
 | [Verbit](../mcps/verbit.md) | Automate professional transcription and captioning via Verbit — upload media, track job progress, and retrieve transcripts in multiple formats directly from your AI agent. |
@@ -992,6 +990,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |
 | [WHOOP](../mcps/whoop.md) | Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent. |
 | [Wiki.js](../mcps/wikijs.md) | Manage your Wiki.js instance—create, search, and update documentation pages directly from your AI agent. |
+| [Wine Saignée Calculator](../mcps/wine-saignee-calculator.md) | Calculate juice removal volumes and color impact for rosé production. |
 | [Wolai](../mcps/wolai.md) | All-in-one information organization and collaboration platform — manage pages, databases, and blocks via AI. |
 | [WordPress Media Uploader](../mcps/wordpress-media-uploader.md) | This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly. |
 | [WordPress Post Drafter](../mcps/wordpress-post-drafter.md) | This MCP does exactly one thing: it takes content generated by the AI and saves it directly to your WordPress as a Draft. Incredible for turning Claude into an automated SEO content engine. |

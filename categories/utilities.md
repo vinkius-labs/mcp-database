@@ -128,6 +128,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 | [Western Astrology Calculator](../mcps/western-astrology-calculator.md) | Calculate sun signs, moon signs, ascendants, and planetary positions. |
 | [Wind Chill Calculator](../mcps/wind-chill-calculator.md) | Calculate perceived wind chill temperatures and frostbite risk levels. |
+| [Wine ABV & Fermentation Calculator](../mcps/wine-abv-fermentation-calculator.md) | Calculate alcohol by volume, residual sugar, and fermentation progress. |
 | [WSL Heat Scoring Calculator](../mcps/wsl-heat-scoring-calculator.md) | Calculate professional World Surf League heat scores and win probabilities. |
 
 

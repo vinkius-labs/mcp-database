@@ -4,7 +4,7 @@ Explore the open database of **lead-generation** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Mailshake](../mcps/mailshake.md) | Run cold email outreach campaigns with personalization, automated follow-ups, and reply detection that fills your sales pipeline. |
+| [Mailshake](../mcps/mailshake.md) | Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API. |
 | [Pipedrive Leads](../mcps/pipedrive-leads.md) | Manage your Pipedrive lead inbox — create, update, and organize leads with labels and sources before they become deals. |
 
 

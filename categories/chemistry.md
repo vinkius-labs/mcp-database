@@ -28,10 +28,18 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
 | [Sustainable Chemistry Assessment](../mcps/sustainable-chemistry-assessment.md) | Quantify environmental impact and green chemistry compliance of chemical processes. |
+| [Wine Acetaldehyde Kinetics](../mcps/wine-acetaldehyde-kinetics.md) | Models acetaldehyde formation and binding during fermentation to predict sensory risks. |
+| [Wine Barrel Oxygen Transmission](../mcps/wine-barrel-oxygen-transmission.md) | Calculate oxygen ingress through barrel wood and predict phenolic evolution. |
 | [Wine Copper Casse Predictor](../mcps/wine-copper-casse-predictor.md) | Predict copper casse formation risk and stability in wine. |
+| [Wine Deacidification Calculator](../mcps/wine-deacidification-calculator.md) | Precision tools for calculating deacidification dosage and stability risks in wine. |
+| [Wine KHT Precipitation Kinetics](../mcps/wine-kht-precipitation-kinetics.md) | Models KHT precipitation rates and stabilization requirements during wine cold stabilization. |
 | [Wine KHT Solubility Predictor](../mcps/wine-kht-solubility-predictor.md) | Predicts Potassium Bitartrate (KHT) precipitation risks and stabilization needs in wine. |
 | [Wine Microbial Stability Assessment](../mcps/wine-microbial-stability-assessment.md) | Predictive analysis of wine spoilage risk using hurdle technology. |
+| [Wine Oxidative Polymerization Model](../mcps/wine-oxidative-polymerization-model.md) | Predictive chemical modeling of phenolic polymerization and wine oxidation. |
+| [Wine Protein Solubility Model](../mcps/wine-protein-solubility-model.md) | Predicts protein stability, haze risk, and bentonite requirements in wine. |
 | [Wine Protein Stability Analyzer](../mcps/wine-protein-stability-analyzer.md) | Quantify protein instability and calculate precise bentonite dosing for wine stabilization. |
+| [Wine Sparkling Pressure Calculator](../mcps/wine-sparkling-pressure-calculator.md) | Calculate CO2 pressure, required sugar, and nitrogen dilution for sparkling wine production. |
+| [Wine Tannin Addition Calculator](../mcps/wine-tannin-addition-calculator.md) | Calculate precise tannin additions for wine structure and mouthfeel. |
 | [Wine Tartrate Stability Model](../mcps/wine-tartrate-stability-model.md) | Predicts potassium bitartrate instability and recommends stabilization treatments for wine. |
 
 

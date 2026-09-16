@@ -39,6 +39,7 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Cloutly](../mcps/cloutly.md) | All-in-one review management platform that helps businesses collect, manage, and respond to reviews from multiple sources. |
 | [Cody AI](../mcps/cody-ai.md) | Enable your AI agent to manage knowledge-base bots, import documents, and query trained AI assistants via the Cody AI API. |
 | [ConnectWise](../mcps/connectwise.md) | Equip your AI to seamlessly manage ConnectWise PSA tickets, clients, and technical documentation via text. |
+| [Custify](../mcps/custify.md) | Equip your AI agent to manage customer success, monitor health scores, and track churn probability directly via the Custify API. |
 | [CustomerGauge](../mcps/customergauge.md) | Equip your AI agent to manage B2B experience, monitor NPS scores, and track revenue impact directly via the CustomerGauge API. |
 | [Dashly](../mcps/dashly.md) | Convert more website visitors with targeted pop-ups, live chat triggers, and automated lead nurturing sequences. |
 | [Deep Talk](../mcps/deep-talk.md) | Equip your AI agent to analyze conversation datasets, extract topics, and monitor sentiment via the Deep Talk API. |
