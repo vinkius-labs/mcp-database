@@ -14,11 +14,11 @@ Calculates precise water and sugar weights needed to achieve specific syrup cons
 
 
 ## Available Tools (3)
-- **get_standard_temperatures**: Get standardized boiling temperatures for a syrup consistency
 - **calculate_sugar_for_syrup**: Accepts Simple, Medium, Thick, or Candy as syrup types.
 
 Calculate the required sugar weight for a given water weight and syrup type
 - **estimate_final_syrup_yield**: Estimate the final yield weight of cooked syrup after evaporation losses
+- **get_standard_temperatures**: Get standardized boiling temperatures for a syrup consistency
 
 
 ## 💬 Prompt Examples
@@ -103,4 +103,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
