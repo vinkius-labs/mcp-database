@@ -37,12 +37,12 @@ No more manual searching through dashboards. Your AI acts as a Web3 data scienti
 
 ## Available Tools (8)
 - **get_dapp_metrics**: Get historical activity metrics for a specific dapp
-- **list_chains**: List all blockchains supported by DappRadar
 - **list_nft_collections**: List ranked NFT collections
+- **get_nft_collection_metrics**: Get historical metrics for a specific NFT collection
 - **get_chain_stats**: Get aggregate metrics for a specific blockchain ecosystem
+- **list_chains**: List all blockchains supported by DappRadar
 - **get_dapp**: Get detailed information for a specific dapp
 - **get_nft_collection**: Get metadata and stats for a specific NFT collection
-- **get_nft_collection_metrics**: Get historical metrics for a specific NFT collection
 - **list_dapps**: Supports pagination and filtering by chain or category.
 
 List all dapps tracked by DappRadar
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

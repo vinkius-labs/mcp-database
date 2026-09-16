@@ -34,30 +34,18 @@ Connect **Eden AI** to your AI agent and unlock the power of over 100 leading AI
 
 
 ## Available Tools (13)
-- **check_credits**: Do not specify any parameters.
-
-Check current Eden AI credit balance
-- **universal_ai_async**: g., Speech-to-Text). Use this when the task requires significant processing time.
-
-Start an asynchronous expert model job (e.g., Speech-to-Text)
 - **create_embedding**: Provide the model name and the text input.
 
 Convert text into numerical vectors
-- **universal_ai_sync**: Model format: feature/subfeature/provider[/model]
+- **check_credits**: Do not specify any parameters.
 
-Execute synchronous expert models (OCR, Translation, Image Gen)
-- **chat_completions**: Use @edenai for smart routing or specify provider/model.
-
-Create a chat completion using Eden AI LLM routing
-- **create_custom_token**: Set the expiration time if the token should not be permanent.
-
-Create a custom API token with specific constraints
-- **create_stateful_response**: Supply the model, messages, and optionally a previous response ID.
-
-Create a stateful chat response that stores history server-side
+Check current Eden AI credit balance
 - **delete_files**: Pass an array of file IDs.
 
 Delete files from Eden AI storage
+- **chat_completions**: Use @edenai for smart routing or specify provider/model.
+
+Create a chat completion using Eden AI LLM routing
 - **get_async_job**: Pass the required job ID.
 
 Get the status and results of an asynchronous Universal AI job
@@ -70,9 +58,21 @@ List all files uploaded to Eden AI
 - **monitor_consumption**: Provide start date, end date, and optional step granularity.
 
 Monitor API consumption and costs
+- **universal_ai_async**: g., Speech-to-Text). Use this when the task requires significant processing time.
+
+Start an asynchronous expert model job (e.g., Speech-to-Text)
+- **universal_ai_sync**: Model format: feature/subfeature/provider[/model]
+
+Execute synchronous expert models (OCR, Translation, Image Gen)
 - **upload_file**: Supply both file name and file data.
 
 Upload a file to Eden AI persistent storage
+- **create_custom_token**: Set the expiration time if the token should not be permanent.
+
+Create a custom API token with specific constraints
+- **create_stateful_response**: Supply the model, messages, and optionally a previous response ID.
+
+Create a stateful chat response that stores history server-side
 
 
 ## 💬 Prompt Examples
@@ -157,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
