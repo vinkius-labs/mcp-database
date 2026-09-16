@@ -14,9 +14,9 @@ This MCP server provides analytical tools to evaluate how text is partitioned in
 
 
 ## Available Tools (3)
-- **analyze_chunk_boundaries**: Evaluates a sequence of text chunks to determine their structural and semantic quality
 - **get_chunking_summary**: Provides high-level statistical insights into the quality of an entire chunking strategy
 - **validate_overlap_integrity**: Checks if the character overlap is consistent or if there are gaps between chunks
+- **analyze_chunk_boundaries**: Evaluates a sequence of text chunks to determine their structural and semantic quality
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

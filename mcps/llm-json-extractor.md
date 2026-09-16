@@ -14,8 +14,8 @@ This MCP server provides specialized tools to extract structured JSON payloads f
 
 
 ## Available Tools (3)
-- **extract_first_json_payload**: Attempts to find and isolate the first valid JSON object or array within a raw string
 - **verify_json_integrity**: Validates if a specific substring is a syntactically correct JSON structure
+- **extract_first_json_payload**: Attempts to find and isolate the first valid JSON object or array within a raw string
 - **get_extraction_metadata**: Calculates the location and length properties of a detected JSON payload
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

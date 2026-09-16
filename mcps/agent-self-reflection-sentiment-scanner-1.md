@@ -14,9 +14,9 @@ This MCP server provides tools to analyze the 'sentiment' of agentic workflows b
 
 
 ## Available Tools (3)
+- **calculate_rate**: Computes the statistical frequency of self-corrections relative to the number of loops performed
 - **get_summary**: Aggregates all scanning and calculation data into a single high-level report
 - **scan_logs**: Analyzes raw log files to identify and count specific markers
-- **calculate_rate**: Computes the statistical frequency of self-corrections relative to the number of loops performed
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
