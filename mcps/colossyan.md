@@ -42,9 +42,9 @@ Create an instant avatar from an image or video link
 - **delete_video**: Supply the video ID to target for deletion.
 
 Delete a generated video
+- **generate_video**: Generate a video manually using a full JSON descriptor
 - **generate_draft**: Generate a draft from structured textual data (Knowledge to Draft)
 - **generate_from_template**: Generate a video using a saved template
-- **generate_video**: Generate a video manually using a full JSON descriptor
 - **get_video**: Retrieve details of a finished video
 - **list_actors**: List available avatars/actors for the workspace
 - **list_voices**: List available voices for the workspace
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

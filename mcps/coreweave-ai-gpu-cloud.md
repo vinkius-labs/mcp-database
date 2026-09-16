@@ -34,32 +34,32 @@ Connect your **CoreWeave** account to any AI agent to manage specialized GPU clo
 
 
 ## Available Tools (24)
-- **update_deployment**: Update an Inference Deployment
-- **delete_vpc**: Delete a VPC
 - **query_logs**: Query Loki logs
 - **update_capacity_claim**: Update an Inference Capacity Claim
 - **update_cluster**: Requires an updateMask in the payload.
 
 Update a CKS cluster
 - **create_cluster**: Create a new CKS cluster
-- **create_capacity_claim**: Create a new Inference Capacity Claim
-- **create_deployment**: Create a new Inference Deployment
-- **create_gateway**: Create a new Inference Gateway
 - **create_vpc**: Create a new VPC
 - **delete_capacity_claim**: Delete an Inference Capacity Claim
 - **delete_cluster**: Delete a CKS cluster
-- **delete_deployment**: Delete an Inference Deployment
 - **delete_gateway**: Delete an Inference Gateway
+- **delete_vpc**: Delete a VPC
 - **get_cluster**: Get details for a specific CKS cluster
-- **get_vpc**: Get details for a specific VPC
 - **list_capacity_claims**: List all Inference Capacity Claims
 - **list_clusters**: List all CoreWeave Kubernetes Service (CKS) clusters
 - **list_deployments**: List all Inference Deployments
 - **list_gateways**: List all Inference Gateways
 - **list_vpcs**: List all Virtual Private Clouds (VPCs)
 - **query_metrics**: Query Prometheus metrics
+- **update_deployment**: Update an Inference Deployment
 - **update_gateway**: Update an Inference Gateway
 - **update_vpc**: Update a VPC
+- **create_capacity_claim**: Create a new Inference Capacity Claim
+- **create_deployment**: Create a new Inference Deployment
+- **create_gateway**: Create a new Inference Gateway
+- **delete_deployment**: Delete an Inference Deployment
+- **get_vpc**: Get details for a specific VPC
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

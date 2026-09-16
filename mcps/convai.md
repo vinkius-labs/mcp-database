@@ -34,12 +34,6 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 
 
 ## Available Tools (25)
-- **get_prompt**: Supply both the session and character IDs.
-
-Fetch prompt data for debugging or advanced configuration
-- **edit_narrative_section**: Pass a JSON payload containing the section ID and updated data.
-
-Edit a narrative section
 - **generate_backstory**: Provide a high-level description and the desired character name.
 
 Generate a character description
@@ -52,39 +46,36 @@ Get details for a specific Convai character
 - **get_response**: Use a session ID of "-1" for starting a new conversation.
 
 Get a response from a character
-- **list_chat_sessions**: Use the character ID to filter results.
-
-List chat sessions for a character
 - **list_knowledge_bank**: Supply the required listing details in the payload.
 
 List Knowledge Bank status
-- **create_character**: Provide all necessary details, including name and voice type.
-
-Create a new Convai character
 - **create_narrative_trigger**: Pass a JSON payload defining the trigger’s conditions and actions.
 
 Create a narrative trigger
+- **create_character**: Provide all necessary details, including name and voice type.
+
+Create a new Convai character
 - **delete_character**: Supply the character ID.
 
 Delete a Convai character
-- **connect_live**: Specify the character ID and desired connection type.
-
-Connect to Live API via WebRTC
-- **create_narrative_section**: Pass a JSON payload detailing the section’s content and properties.
-
-Create a narrative section
 - **delete_knowledge_bank**: Include the necessary deletion details in the payload.
 
 Delete a Knowledge Bank file
-- **evaluate_conversation**: Include the conversation history in the prompt.
+- **edit_narrative_section**: Pass a JSON payload containing the section ID and updated data.
 
-Evaluate a conversation transcript based on custom attributes
+Edit a narrative section
 - **get_chat_session_details**: Provide both the character ID and session ID.
 
 Get details of a specific chat session
+- **get_prompt**: Supply both the session and character IDs.
+
+Fetch prompt data for debugging or advanced configuration
 - **list_characters**: Use this function to retrieve the full list of characters.
 
 Returns all characters associated with the account
+- **list_chat_sessions**: Use the character ID to filter results.
+
+List chat sessions for a character
 - **list_languages**: Returns supported languages
 - **list_narrative_sections**: Pass a JSON payload to specify filtering or listing criteria.
 
@@ -92,19 +83,28 @@ List narrative sections
 - **list_narrative_triggers**: Pass a JSON payload to specify filtering or listing criteria.
 
 List narrative triggers
-- **list_voices**: Returns available voices categorized by provider
 - **toggle_narrative**: Pass a JSON payload containing the required state change.
 
 Toggle narrative driven mode for a character
 - **update_character**: Must provide the character ID to target the update.
 
 Update an existing Convai character
-- **update_knowledge_bank**: Pass the full update details in the payload.
-
-Update a Knowledge Bank file
 - **upload_knowledge_bank**: Provide both the file name and content.
 
 Upload a file to the Knowledge Bank
+- **connect_live**: Specify the character ID and desired connection type.
+
+Connect to Live API via WebRTC
+- **create_narrative_section**: Pass a JSON payload detailing the section’s content and properties.
+
+Create a narrative section
+- **evaluate_conversation**: Include the conversation history in the prompt.
+
+Evaluate a conversation transcript based on custom attributes
+- **list_voices**: Returns available voices categorized by provider
+- **update_knowledge_bank**: Pass the full update details in the payload.
+
+Update a Knowledge Bank file
 
 
 ## 💬 Prompt Examples
@@ -189,4 +189,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

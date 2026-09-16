@@ -36,31 +36,31 @@ Connect to the **Conflux Network** and interact with both Core Space and eSpace 
 
 ## Available Tools (25)
 - **cfx_get_balance**: Get CFX balance of an address on Core Space
-- **cfx_get_best_block_hash**: Get hash of the block with the highest weight
-- **cfx_get_block_by_epoch_number**: Get Core Space block details by epoch number
-- **cfx_get_block_by_hash**: Get Core Space block details by hash
-- **cfx_get_blocks_by_epoch**: Get all block hashes in a specific Core Space epoch
 - **cfx_client_version**: Get Conflux Core client version
-- **cfx_get_next_nonce**: Get next available nonce for a Core Space account
 - **cfx_send_raw_transaction**: Send a pre-signed raw transaction to Core Space
-- **eth_get_block_by_number**: Get eSpace block details by number
-- **cfx_call**: Execute a read-only contract call locally on Core Space
-- **cfx_estimate_gas_and_collateral**: Estimate gas and storage collateral for a Core Space transaction
 - **cfx_get_account**: Get summary of a Core Space account state
-- **cfx_get_logs**: Get Core Space logs matching a filter
+- **cfx_get_block_by_hash**: Get Core Space block details by hash
 - **cfx_get_sponsor_info**: Get sponsorship details for a Core Space contract
-- **cfx_get_status**: Get current state of the Conflux Core node
 - **cfx_get_transaction_by_hash**: Get Core Space transaction details by hash
+- **eth_get_transaction_count**: Get transaction count (nonce) for an eSpace address
+- **eth_get_transaction_receipt**: Get eSpace transaction receipt
 - **cfx_get_transaction_receipt**: Get Core Space transaction receipt
 - **cfx_send_transaction**: Requires the node to manage the sender account.
 
 Send an unsigned transaction to the Core Space network
 - **eth_call**: Execute a read-only contract call locally on eSpace
-- **eth_estimate_gas**: Estimate gas for an eSpace transaction
+- **cfx_get_best_block_hash**: Get hash of the block with the highest weight
+- **cfx_get_block_by_epoch_number**: Get Core Space block details by epoch number
+- **cfx_get_blocks_by_epoch**: Get all block hashes in a specific Core Space epoch
+- **cfx_call**: Execute a read-only contract call locally on Core Space
+- **cfx_estimate_gas_and_collateral**: Estimate gas and storage collateral for a Core Space transaction
+- **cfx_get_logs**: Get Core Space logs matching a filter
+- **cfx_get_next_nonce**: Get next available nonce for a Core Space account
+- **cfx_get_status**: Get current state of the Conflux Core node
 - **eth_get_balance**: Get balance of an address on eSpace
+- **eth_get_block_by_number**: Get eSpace block details by number
+- **eth_estimate_gas**: Estimate gas for an eSpace transaction
 - **eth_get_logs**: Get eSpace logs matching a filter
-- **eth_get_transaction_count**: Get transaction count (nonce) for an eSpace address
-- **eth_get_transaction_receipt**: Get eSpace transaction receipt
 - **eth_send_raw_transaction**: Send a pre-signed raw transaction to eSpace
 
 
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

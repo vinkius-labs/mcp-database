@@ -35,17 +35,17 @@ Connect to the **CoinLore** API to empower your AI agent with comprehensive cryp
 
 
 ## Available Tools (11)
-- **get_coin_info**: Get static metadata for a specific coin
-- **list_assets**: Get a lightweight list of all coins
 - **get_exchange**: Get exchange details and top 100 trading pairs
-- **get_movers**: Get top 20 winners and losers
-- **list_exchanges**: Get all exchanges listed on CoinLore
 - **get_social_stats**: Get social media metrics for a coin
 - **list_tickers**: Retrieve tick data for multiple coins
 - **get_coin_markets**: Get top 50 exchanges and markets for a coin
-- **get_global_stats**: Get overall cryptocurrency market statistics
-- **get_ohlcv**: Get 365 days of daily OHLCV history
 - **get_ticker**: Retrieve detailed tick data for specific coins
+- **list_assets**: Get a lightweight list of all coins
+- **get_coin_info**: Get static metadata for a specific coin
+- **list_exchanges**: Get all exchanges listed on CoinLore
+- **get_global_stats**: Get overall cryptocurrency market statistics
+- **get_movers**: Get top 20 winners and losers
+- **get_ohlcv**: Get 365 days of daily OHLCV history
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

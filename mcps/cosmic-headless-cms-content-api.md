@@ -34,29 +34,69 @@ Connect your **Cosmic** headless CMS to any AI agent to manage your content infr
 
 
 ## Available Tools (21)
-- **create_media**: Create/Upload Media
-- **create_revision**: Add a Revision for an Object
-- **delete_object_type**: Delete an Object Type
-- **get_agent_conversation_history**: Get history for a specific Agent conversation
-- **get_object**: Get a single Object by ID
-- **get_object_type**: Get a single Object Type by slug
-- **list_object_types**: List Object Types in a Cosmic Bucket
-- **send_agent_message**: Send a message to an AI Agent
-- **update_media**: Update Media metadata
-- **batch_objects**: Perform batch operations on Objects (Max 25)
-- **create_object**: Create a new Object
-- **create_object_type**: Create a new Object Type
-- **delete_media**: Delete Media
-- **delete_object**: Delete an Object
-- **get_revision**: Get a single Revision for an Object
-- **list_agent_conversations**: List conversations for an AI Agent
-- **list_media**: List Media in a Cosmic Bucket
+- **delete_object_type**: Specify both the slug and the bucket slug.
+
+Delete an Object Type
+- **create_object**: Specify the object type and the target bucket slug.
+
+Create a new Object
+- **delete_media**: Provide both the media ID and the bucket slug.
+
+Delete Media
+- **list_agent_conversations**: Supply the agent ID.
+
+List conversations for an AI Agent
+- **list_revisions**: Supply the object ID and bucket slug.
+
+Get Revisions for an Object
+- **batch_objects**: Limit operations to a maximum of 25.
+
+Perform batch operations on Objects (Max 25)
+- **create_media**: Specify the target bucket slug for the media payload.
+
+Create/Upload Media
+- **create_object_type**: Specify the bucket slug where the type belongs.
+
+Create a new Object Type
+- **create_revision**: Supply the object ID, bucket slug, and the revision body.
+
+Add a Revision for an Object
+- **delete_object**: Provide both the object ID and the bucket slug.
+
+Delete an Object
+- **get_agent_conversation_history**: Pass the agent ID and conversation ID.
+
+Get history for a specific Agent conversation
+- **get_object**: Provide the bucket slug if the object is not in the default bucket.
+
+Get a single Object by ID
+- **get_object_type**: Provide the slug and the bucket slug.
+
+Get a single Object Type by slug
+- **get_revision**: Provide the object ID, revision ID, and bucket slug.
+
+Get a single Revision for an Object
+- **list_media**: Use the query parameter to filter results.
+
+List Media in a Cosmic Bucket
+- **list_object_types**: Specify the bucket slug.
+
+List Object Types in a Cosmic Bucket
 - **list_objects**: Use the query parameter (URL encoded JSON) to filter results.
 
 List Objects in a Cosmic Bucket
-- **list_revisions**: Get Revisions for an Object
-- **update_object**: Update an existing Object
-- **update_object_type**: Update an Object Type
+- **send_agent_message**: Provide the agent ID and the message content.
+
+Send a message to an AI Agent
+- **update_media**: Provide the media ID and the bucket slug.
+
+Update Media metadata
+- **update_object**: Supply the object ID and the bucket slug for accurate targeting.
+
+Update an existing Object
+- **update_object_type**: Provide the slug and ensure the object type exists.
+
+Update an Object Type
 
 
 ## 💬 Prompt Examples
@@ -141,4 +181,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

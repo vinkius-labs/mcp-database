@@ -33,14 +33,14 @@ Connect your **Cloud DNS** account to any AI agent to manage global Anycast DNS 
 
 
 ## Available Tools (7)
+- **create_record**: Create a new DNS record
+- **create_zone**: Create a new DNS zone
 - **delete_record**: Delete a DNS record
 - **delete_zone**: Delete a DNS zone
 - **list_records**: ) within a specific zone.
 
 List all records for a specific zone
 - **list_zones**: List all DNS zones
-- **create_record**: Create a new DNS record
-- **create_zone**: Create a new DNS zone
 - **update_record**: Update an existing DNS record
 
 
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
