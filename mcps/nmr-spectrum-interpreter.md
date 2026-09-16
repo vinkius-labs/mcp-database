@@ -14,10 +14,10 @@ This MCP server provides specialized tools for interpreting Nuclear Magnetic Res
 
 
 ## Available Tools (4)
-- **calculate_neighboring_protons**: Determine the number of neighboring protons for a specific signal based on its observed splitting
-- **identify_molecular_symmetry**: Evaluate if a proposed set of proton environments is consistent with molecular symmetry
 - **analyze_proton_environments**: Identify the specific chemical environments of protons based on provided spectral data
 - **suggest_molecular_structure**: Propose potential molecular frameworks that satisfy all provided NMR constraints
+- **calculate_neighboring_protons**: Determine the number of neighboring protons for a specific signal based on its observed splitting
+- **identify_molecular_symmetry**: Evaluate if a proposed set of proton environments is consistent with molecular symmetry
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

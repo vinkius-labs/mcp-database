@@ -14,10 +14,10 @@ This MCP server provides organic chemists with precise decision support for chem
 
 
 ## Available Tools (4)
+- **get_reaction_conditions**: Determines the physical environment required for a selected reagent to work
 - **check_functional_group_compatibility**: Validates whether a proposed reagent will interfere with other groups present in a molecule
 - **evaluate_selectivity_profile**: Provides detailed guidance on the spatial or positional outcomes of a reaction
 - **find_optimal_reagents**: Identifies the best reagents for a specific transformation based on the starting material and product structure
-- **get_reaction_conditions**: Determines the physical environment required for a selected reagent to work
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

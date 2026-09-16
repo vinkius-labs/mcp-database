@@ -14,10 +14,10 @@ This MCP server provides organic chemists with a precise interface to query a co
 
 
 ## Available Tools (4)
-- **find_reaction_by_name**: Retrieves the core definition and fundamental details of a specific named reaction
-- **analyze_substrate_compatibility**: Determines if a specific molecule is likely to be a successful substrate for a given reaction
 - **get_reaction_variations**: Identifies specific modifications or modern improvements to a standard named reaction
+- **analyze_substrate_compatibility**: Determines if a specific molecule is likely to be a successful substrate for a given reaction
 - **search_reaction_by_transformation**: Finds reactions that achieve a specific structural change between reactants and products
+- **find_reaction_by_name**: Retrieves the core definition and fundamental details of a specific named reaction
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

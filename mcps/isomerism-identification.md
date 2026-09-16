@@ -14,10 +14,10 @@ This MCP server provides specialized tools for chemical analysis of molecular is
 
 
 ## Available Tools (4)
-- **analyze_isomerism_types**: Identifies which fundamental categories of isomerism are possible for a given structure
 - **get_conformational_analysis**: Identifies the presence of conformers and the nature of rotation within a molecule
 - **identify_stereoisomers**: Determines the existence and count of stereoisomers for a specific structure
 - **list_structural_isomers**: Finds all possible structural isomers for a given molecular formula
+- **analyze_isomerism_types**: Identifies which fundamental categories of isomerism are possible for a given structure
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

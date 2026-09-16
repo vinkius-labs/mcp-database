@@ -15,9 +15,9 @@ This MCP server provides specialized tools for organometallic chemistry analysis
 
 ## Available Tools (4)
 - **analyze_electron_configuration**: Determines the metal's oxidation state and the total valence electron count
-- **identify_coordination_geometry**: Suggests the most likely molecular geometry based on the coordination number
 - **calculate_hapticity_impact**: Calculates how changing the coordination mode (hapticity) of a specific ligand affects the overall electron count
 - **evaluate_stability_profile**: Predicts the chemical stability of the complex based on electronic and structural factors
+- **identify_coordination_geometry**: Suggests the most likely molecular geometry based on the coordination number
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for organic chemists to predict and a
 
 
 ## Available Tools (4)
-- **analyze_conjugation**: Determines the effective conjugation length of a provided structural description
-- **calculate_solvent_shift**: Calculates the expected shift in lambda max caused by a change in solvent environment
 - **identify_chromophore**: Identifies the dominant chromophore(s) within a given molecular structure
+- **calculate_solvent_shift**: Calculates the expected shift in lambda max caused by a change in solvent environment
 - **predict_lambda_max**: Predicts the wavelength of maximum absorption for a specific organic structure
+- **analyze_conjugation**: Determines the effective conjugation length of a provided structural description
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

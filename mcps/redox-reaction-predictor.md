@@ -14,10 +14,10 @@ This MCP server provides advanced electrochemical analysis tools. Use `predict_s
 
 
 ## Available Tools (4)
-- **calculate_non_standard_potential**: Calculates the adjusted cell potential when concentrations or pressures are not at standard state
-- **identify_oxidizing_agents**: Determines which species in a given set are capable of acting as oxidants (reducing agents for others)
 - **get_electrochemical_series_info**: Retrieves the standard reduction potential and properties for a specific species
+- **identify_oxidizing_agents**: Determines which species in a given set are capable of acting as oxidants (reducing agents for others)
 - **predict_spontaneous_reactions**: Identifies which pairs of species from a provided list will undergo a spontaneous redox reaction
+- **calculate_non_standard_potential**: Calculates the adjusted cell potential when concentrations or pressures are not at standard state
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

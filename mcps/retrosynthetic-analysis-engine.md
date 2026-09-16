@@ -15,9 +15,9 @@ This MCP server provides a complete suite of tools for chemical retrosynthesis. 
 
 ## Available Tools (4)
 - **generate_route_tree**: Constructs a complete hierarchical map of the synthetic pathways from the target down to available precursors
+- **map_synthetic_equivalents**: Suggests real-world chemical reagents that can perform the function of the theoretical synthons
 - **analyze_disconnections**: Identifies the most logical points to break the target molecule to simplify its structure
 - **identify_synthons**: Converts the identified strategic bond breaks into theoretical chemical fragments
-- **map_synthetic_equivalents**: Suggests real-world chemical reagents that can perform the function of the theoretical synthons
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

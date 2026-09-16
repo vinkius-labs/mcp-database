@@ -14,10 +14,10 @@ This MCP server provides computational tools to predict the thermodynamic stabil
 
 
 ## Available Tools (4)
-- **analyze_chelate_impact**: Quantifies how much the stability of a complex is increased specifically due to the chelate effect
 - **evaluate_complex_formation**: Determines if a complex is likely to form under given environmental conditions
-- **get_ligand_preferences**: Identifies which ligands in a provided set are most compatible with a specific metal ion
 - **predict_stability_constant**: Calculates the predicted thermodynamic stability (Log K) for a specific metal-ligand combination
+- **analyze_chelate_impact**: Quantifies how much the stability of a complex is increased specifically due to the chelate effect
+- **get_ligand_preferences**: Identifies which ligands in a provided set are most compatible with a specific metal ion
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

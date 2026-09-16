@@ -14,9 +14,9 @@ This MCP server provides specialized tools to predict the physical and thermal p
 
 
 ## Available Tools (4)
+- **generate_property_summary**: Provide a holistic overview of a polymer's expected physical behavior
 - **analyze_tacticity**: Determine the stereochemical configuration of the polymer chain
 - **calculate_glass_transition**: Predict the temperature at which the polymer transitions from a glassy to a rubbery state
-- **generate_property_summary**: Provide a holistic overview of a polymer's expected physical behavior
 - **predict_crystallinity**: Estimate the percentage of the polymer that will form crystalline domains
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

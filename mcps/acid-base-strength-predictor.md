@@ -14,9 +14,9 @@ This MCP server provides specialized chemical informatics tools to predict the a
 
 
 ## Available Tools (4)
-- **get_structural_influence**: Identifies specific functional groups contributing to the acid-base properties
 - **analyze_conjugate_stability**: Evaluates the electronic stability of the molecule's conjugate species
 - **classify_strength**: Categorizes a molecule into a standard acid-base strength class
+- **get_structural_influence**: Identifies specific functional groups contributing to the acid-base properties
 - **predict_pka**: Determines the predicted pKa value of a given molecular structure
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
