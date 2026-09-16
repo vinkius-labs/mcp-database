@@ -14,10 +14,10 @@ This MCP server provides specialized chemical engineering tools for designing Me
 
 
 ## Available Tools (4)
-- **calculate_reactor_design_tool**: Determines the physical specifications and operating conditions of the reaction vessel
 - **estimate_catalyst_needs_tool**: Calculates the specific quantity and properties of the catalyst required for a given production scale
 - **optimize_methanol_recovery_tool**: Analyzes the recovery system to minimize waste and maximize feedstock recycling
 - **simulate_reactive_distillation_tool**: Evaluates the efficiency of the simultaneous reaction and separation process
+- **calculate_reactor_design_tool**: Determines the physical specifications and operating conditions of the reaction vessel
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
