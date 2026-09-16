@@ -36,20 +36,20 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 
 
 ## Available Tools (15)
-- **get_recording**: Get recording details
-- **list_feedback_responses**: List feedback responses
 - **list_funnels**: List funnels
 - **list_recordings**: List recordings
 - **list_sites**: List tracked sites
-- **list_survey_responses**: List survey responses
-- **check_hotjar_status**: Verify connectivity
-- **get_feedback_widget**: Get feedback widget details
 - **get_heatmap**: Get heatmap details
-- **get_survey**: Get survey details
+- **get_recording**: Get recording details
 - **get_survey_stats**: Get survey statistics
+- **get_survey**: Get survey details
+- **list_feedback_responses**: List feedback responses
 - **list_feedback**: List feedback widgets
 - **list_heatmaps**: List heatmaps
+- **list_survey_responses**: List survey responses
 - **list_surveys**: List surveys
+- **check_hotjar_status**: Verify connectivity
+- **get_feedback_widget**: Get feedback widget details
 - **lookup_user**: Lookup user
 
 
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
