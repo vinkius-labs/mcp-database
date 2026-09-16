@@ -34,13 +34,13 @@ Connect your **WordPress** site to any AI agent and simplify how you publish con
 
 
 ## Available Tools (7)
-- **list_blog_posts**: List WordPress blog posts
-- **list_site_users**: List site users
-- **list_static_pages**: List static site pages
-- **delete_post**: Delete a blog post
-- **list_blog_categories**: List blog categories
-- **create_new_post**: Create a new blog post
 - **get_post_details**: Get details for a specific post
+- **list_static_pages**: List static site pages
+- **list_blog_posts**: List WordPress blog posts
+- **create_new_post**: Create a new blog post
+- **list_blog_categories**: List blog categories
+- **list_site_users**: List site users
+- **delete_post**: Delete a blog post
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

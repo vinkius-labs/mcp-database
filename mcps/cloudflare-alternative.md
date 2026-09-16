@@ -40,21 +40,18 @@ Stop clicking through the Cloudflare dashboard to check a DNS record or audit fi
 
 
 ## Available Tools (15)
-- **create_dns_record**: Requires the record type (A, AAAA, CNAME, MX, TXT, etc.), name (hostname) and content (IP address, target hostname, etc.). Optionally set TTL and whether to proxy through Cloudflare CDN (proxied=true enables the orange cloud).
-
-Create a new DNS record in a Cloudflare zone
 - **get_zone_analytics**: Use to audit CDN performance, identify traffic spikes and review threat mitigation.
 
 Get analytics data for a Cloudflare zone
+- **create_dns_record**: Requires the record type (A, AAAA, CNAME, MX, TXT, etc.), name (hostname) and content (IP address, target hostname, etc.). Optionally set TTL and whether to proxy through Cloudflare CDN (proxied=true enables the orange cloud).
+
+Create a new DNS record in a Cloudflare zone
+- **delete_dns_record**: Provide the zone ID and DNS record ID. This action cannot be undone — the record will be immediately removed from Cloudflare nameservers.
+
+Delete a DNS record from a Cloudflare zone
 - **list_dns_records**: ) configured for a specific zone. Each record has a type, name, content, TTL and proxied status (whether traffic goes through Cloudflare CDN). Optionally filter by record type (e.g. "A" for IPv4 addresses only).
 
 List DNS records for a Cloudflare zone
-- **list_firewall_rules**: Each rule defines a filter expression (e.g. "ip.src in {1.2.3.4}") and an action (block, challenge, allow, log, js_challenge). Use to audit your web application firewall configuration.
-
-List firewall rules for a Cloudflare zone
-- **get_zone**: Provide the zone ID.
-
-Get details for a specific Cloudflare zone
 - **list_cloudflare_ips**: Useful for configuring allow-lists, firewall rules and origin server access control to only permit traffic from Cloudflare proxies.
 
 List Cloudflare IP address ranges
@@ -64,27 +61,30 @@ List Cloudflare KV namespaces
 - **list_load_balancers**: Cloudflare Load Balancing distributes traffic across multiple origin servers or regions based on health checks, geolocation and steering policies. Each load balancer has a name, target pools, fallback pool and health status.
 
 List load balancers for a Cloudflare zone
-- **list_workers**: Workers are serverless JavaScript/Wasm functions that run at Cloudflare edge locations. Each worker has a name, last deployment timestamp, resource usage and optional bindings (KV, R2, D1). Provide the account ID (found in Cloudflare dashboard URL).
+- **list_pages_projects**: Cloudflare Pages is a full-stack hosting platform that connects to Git repositories and deploys static/SSG sites. Each project has a name, Git source, production branch and deployment count.
 
-List Cloudflare Workers scripts
-- **list_zones**: Each zone represents a domain that uses Cloudflare DNS and CDN services, with status (active, pending), plan type and verification status. Use the zone ID for subsequent DNS, firewall and analytics queries.
-
-List all Cloudflare zones (domains)
+List Cloudflare Pages projects
 - **put_kv_value**: Workers use this for edge-cached data, feature flags and configuration. Provide the namespace ID, key name and the value to store. The value can be any text (JSON, plain text, etc.).
 
 Write a value to a Cloudflare KV namespace
 - **update_dns_record**: Provide the zone ID and record ID, then any fields to change: name, content, TTL or proxied status. Only the fields you provide will be updated.
 
 Update an existing DNS record
-- **delete_dns_record**: Provide the zone ID and DNS record ID. This action cannot be undone — the record will be immediately removed from Cloudflare nameservers.
+- **list_workers**: Workers are serverless JavaScript/Wasm functions that run at Cloudflare edge locations. Each worker has a name, last deployment timestamp, resource usage and optional bindings (KV, R2, D1). Provide the account ID (found in Cloudflare dashboard URL).
 
-Delete a DNS record from a Cloudflare zone
+List Cloudflare Workers scripts
+- **list_zones**: Each zone represents a domain that uses Cloudflare DNS and CDN services, with status (active, pending), plan type and verification status. Use the zone ID for subsequent DNS, firewall and analytics queries.
+
+List all Cloudflare zones (domains)
+- **list_firewall_rules**: Each rule defines a filter expression (e.g. "ip.src in {1.2.3.4}") and an action (block, challenge, allow, log, js_challenge). Use to audit your web application firewall configuration.
+
+List firewall rules for a Cloudflare zone
 - **get_kv_value**: Useful for reading Worker configuration, feature flags, cached API responses or session data. Provide the namespace ID and the key name.
 
 Get a value from a Cloudflare KV namespace
-- **list_pages_projects**: Cloudflare Pages is a full-stack hosting platform that connects to Git repositories and deploys static/SSG sites. Each project has a name, Git source, production branch and deployment count.
+- **get_zone**: Provide the zone ID.
 
-List Cloudflare Pages projects
+Get details for a specific Cloudflare zone
 
 
 ## 💬 Prompt Examples
@@ -169,4 +169,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

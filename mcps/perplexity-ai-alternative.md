@@ -35,12 +35,6 @@ No more switching between search engines and chat tools. Your AI acts as a web-g
 
 
 ## Available Tools (8)
-- **get_usage**: Useful for monitoring API consumption and staying within usage limits.
-
-Get API usage statistics
-- **sonar**: This is the core search-enhanced model. Requires messages array in JSON format. Optionally set max_tokens and temperature. Returns the assistant's response with web citations.
-
-Send a message to the Sonar model for web-grounded responses
 - **chat**: Requires the model ID (e.g. "sonar", "sonar-pro", "sonar-reasoning") and messages array in JSON format. Each message must have a "role" ("user", "assistant" or "system") and "content" (text). Optionally set max_tokens, temperature (0-1), top_p (0-1), search domain filter, and whether to return images or related questions. Returns the assistant's response with citations.
 
 Send a chat message to a Perplexity model
@@ -53,12 +47,18 @@ Send a message to the Sonar Reasoning model for step-by-step reasoning
 - **chat_with_reasoning_pro**: Requires messages array in JSON format. Optionally set max_tokens, temperature and reasoning_effort (low, medium, high). Returns the assistant's response with detailed reasoning chain and citations.
 
 Send a message to the Sonar Reasoning Pro model for deep reasoning
+- **get_usage**: Useful for monitoring API consumption and staying within usage limits.
+
+Get API usage statistics
 - **list_models**: Each model returns its ID (e.g. "sonar", "sonar-pro", "sonar-reasoning", "sonar-reasoning-pro"), display name and capabilities. Use this to discover which models are available and their IDs for use with the chat and sonar tools.
 
 List all available Perplexity models
 - **search**: Returns search results with snippets, citations and source URLs. Requires the search query. Optionally set max_results and domain filter to limit results to specific websites.
 
 Search the web using Perplexity Search API
+- **sonar**: This is the core search-enhanced model. Requires messages array in JSON format. Optionally set max_tokens and temperature. Returns the assistant's response with web citations.
+
+Send a message to the Sonar model for web-grounded responses
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

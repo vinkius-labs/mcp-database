@@ -36,27 +36,12 @@ No more switching to the OpenAI dashboard to check fine-tune status or manage ba
 
 
 ## Available Tools (13)
-- **delete_file**: Provide the file ID from list_files. WARNING: this action is irreversible and will break any fine-tunes or assistants using this file.
-
-Delete an uploaded file from OpenAI
-- **get_fine_tune**: Provide the fine-tune job ID.
-
-Get details for a specific fine-tuning job
-- **list_files**: Files are used for fine-tuning, Assistants API and batch processing. Each file shows its ID, filename, purpose (fine-tune, assistants, batch), size and status. Optionally filter by purpose.
-
-List files uploaded to OpenAI
-- **list_fine_tunes**: Each job shows its ID, status (validating_files, queued, running, succeeded, failed, cancelled), base model, training file, created date and estimated finish time. Use this to monitor your fine-tuning pipeline.
-
-List fine-tuning jobs
-- **cancel_batch**: Partially completed requests may still be processed. Provide the batch ID.
-
-Cancel a running batch job
-- **cancel_fine_tune**: The job status will change to "cancelled". Provide the fine-tune job ID. This is useful if you uploaded the wrong training file or want to stop a long-running job.
-
-Cancel a running fine-tuning job
 - **create_batch**: Requires the input file ID (containing JSONL requests) and the endpoint (e.g. "/v1/chat/completions"). Optionally set the completion window ("24h" default). Returns the batch with its ID for tracking.
 
 Create a new batch processing job
+- **delete_file**: Provide the file ID from list_files. WARNING: this action is irreversible and will break any fine-tunes or assistants using this file.
+
+Delete an uploaded file from OpenAI
 - **get_assistant**: Provide the assistant ID.
 
 Get details for a specific OpenAI Assistant
@@ -75,6 +60,21 @@ List batch processing jobs
 - **list_models**: 5, DALL-E, Whisper, Embedding and fine-tuned models. Each model returns its ID, owned_by (organization), creation date and permissions. Use this to discover which models are available for your account and their capabilities.
 
 List all available OpenAI models
+- **get_fine_tune**: Provide the fine-tune job ID.
+
+Get details for a specific fine-tuning job
+- **list_files**: Files are used for fine-tuning, Assistants API and batch processing. Each file shows its ID, filename, purpose (fine-tune, assistants, batch), size and status. Optionally filter by purpose.
+
+List files uploaded to OpenAI
+- **list_fine_tunes**: Each job shows its ID, status (validating_files, queued, running, succeeded, failed, cancelled), base model, training file, created date and estimated finish time. Use this to monitor your fine-tuning pipeline.
+
+List fine-tuning jobs
+- **cancel_batch**: Partially completed requests may still be processed. Provide the batch ID.
+
+Cancel a running batch job
+- **cancel_fine_tune**: The job status will change to "cancelled". Provide the fine-tune job ID. This is useful if you uploaded the wrong training file or want to stop a long-running job.
+
+Cancel a running fine-tuning job
 
 
 ## 💬 Prompt Examples
@@ -162,4 +162,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

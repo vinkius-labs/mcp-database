@@ -35,15 +35,17 @@ Empower your AI agent to orchestrate your entire workspace communication on **Sl
 
 
 ## Available Tools (10)
-- **get_channel_info**: Get details for a specific channel
-- **get_presence**: Check if a user is active or away
 - **get_user_info**: Get details for a specific user
-- **join_channel**: Join a public channel
+- **join_channel**: Provide the channel ID as the required argument.
+
+Join a public channel
 - **list_channels**: List Slack channels
 - **list_users**: List all users in the workspace
 - **send_message**: Send a message to a Slack channel
 - **delete_message**: Delete a message from Slack
+- **get_channel_info**: Get details for a specific channel
 - **get_history**: Get message history for a channel
+- **get_presence**: Check if a user is active or away
 - **leave_channel**: Leave a Slack channel
 
 
@@ -129,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
