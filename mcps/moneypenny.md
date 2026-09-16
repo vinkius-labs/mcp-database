@@ -34,21 +34,21 @@ Connect your **Moneypenny** account to any AI agent and review your business com
 
 ## Available Tools (10)
 - **get_activity_summary**: Get a summary of all calls and chats for today
-- **list_call_messages**: Format dates as MM/DD/YYYY.
-
-List telephone answering messages by date range
+- **get_this_month_calls**: Get all call messages from the current month
 - **get_recent_chats**: Returns all new chat conversations.
 
 Get the most recent live chat conversations
-- **get_today_calls**: Get all call messages from today
-- **get_this_week_chats**: Get all live chat conversations from the past 7 days
 - **get_today_chats**: Get all live chat conversations from today
-- **check_moneypenny_status**: Verify Moneypenny API connectivity
-- **get_this_month_calls**: Get all call messages from the current month
-- **get_this_week_calls**: Get all call messages from the past 7 days
+- **get_this_week_chats**: Get all live chat conversations from the past 7 days
+- **list_call_messages**: Format dates as MM/DD/YYYY.
+
+List telephone answering messages by date range
 - **list_chat_logs**: Optionally filter by start and end time (ISO 8601).
 
 List live chat conversation logs by date range
+- **check_moneypenny_status**: Verify Moneypenny API connectivity
+- **get_today_calls**: Get all call messages from today
+- **get_this_week_calls**: Get all call messages from the past 7 days
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

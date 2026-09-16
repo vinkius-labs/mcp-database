@@ -33,15 +33,25 @@ Connect your **Kylas** account to any AI agent and manage your sales CRM through
 
 
 ## Available Tools (7)
-- **list_tasks**: List CRM tasks
-- **list_deals**: List all CRM deals
-- **create_contact**: Create a new contact
+- **create_contact**: Provide all required contact details in the body JSON.
+
+Create a new contact
 - **create_lead**: Pass data as a JSON string.
 
 Create a new lead
-- **get_lead**: Get specific lead details
-- **list_contacts**: List all CRM contacts
+- **get_lead**: Pass the lead ID as the required argument.
+
+Get specific lead details
+- **list_contacts**: Use this tool to retrieve a list of contacts.
+
+List all CRM contacts
 - **list_leads**: List all Kylas leads
+- **list_tasks**: Use this tool to retrieve a list of scheduled tasks.
+
+List CRM tasks
+- **list_deals**: Do not use this tool if you only need a summary.
+
+List all CRM deals
 
 
 ## 💬 Prompt Examples
@@ -126,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

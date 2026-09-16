@@ -28,18 +28,18 @@ Manage your repair shop, orders, and inventory with Orderry and AI agents.
 
 
 ## Available Tools (12)
-- **create_client**: Add a new individual client
+- **list_warehouses**: List facility warehouses
 - **create_order**: Create a new work order
+- **create_client**: Add a new individual client
 - **get_me**: Get account profile information
+- **get_order_details**: Get details of a specific order
 - **list_employees**: List staff members
 - **list_leads**: List sales leads
 - **list_orders**: List Orderry work orders
 - **list_organizations**: List business clients (organizations)
+- **list_clients**: List individual clients (people)
 - **list_inventory_stock**: List products in stock
 - **create_lead**: Record a new sales lead
-- **get_order_details**: Get details of a specific order
-- **list_clients**: List individual clients (people)
-- **list_warehouses**: List facility warehouses
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
