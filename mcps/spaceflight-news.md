@@ -34,12 +34,12 @@ Connect your AI agent to the **Spaceflight News API (SNAPI)** to stay updated wi
 
 
 ## Available Tools (7)
-- **get_report**: Get a specific spaceflight report
 - **get_article**: Get a specific spaceflight news article
-- **get_blog**: Get a specific spaceflight blog post
-- **list_blogs**: List spaceflight blogs
-- **list_articles**: List spaceflight news articles
 - **get_info**: Get Spaceflight News API info
+- **list_articles**: List spaceflight news articles
+- **list_blogs**: List spaceflight blogs
+- **get_blog**: Get a specific spaceflight blog post
+- **get_report**: Get a specific spaceflight report
 - **list_reports**: g., ISS Daily Reports).
 
 List spaceflight reports
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

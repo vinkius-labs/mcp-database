@@ -34,15 +34,15 @@ Connect to the **Shiden Network** (the multi-chain smart contract layer on Kusam
 
 
 ## Available Tools (10)
-- **get_token_price**: Retrieve the current price of the SDN token
 - **get_block**: Retrieve details for a specific block
 - **get_metadata**: Retrieve metadata about the Shiden Network
-- **get_extrinsic**: Retrieve details for a specific extrinsic
 - **list_blocks**: Retrieve a list of blocks
 - **get_account_info**: Retrieve balance and metadata for a specific account
 - **get_evm_contract**: Retrieve information about a deployed smart contract
 - **list_evm_transactions**: Retrieve transactions related to a specific contract
+- **get_extrinsic**: Retrieve details for a specific extrinsic
 - **list_extrinsics**: Retrieve a list of extrinsics
+- **get_token_price**: Retrieve the current price of the SDN token
 - **list_transfers**: Retrieve a list of transfers for a specific account
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

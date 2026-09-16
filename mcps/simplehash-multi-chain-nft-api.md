@@ -36,11 +36,11 @@ Connect to **SimpleHash**, the most comprehensive NFT API, and empower your AI a
 ## Available Tools (7)
 - **get_collection_details**: Retrieve information about a specific NFT collection
 - **get_collections_by_wallet**: Retrieve all collections that a specific wallet owns NFTs from
+- **get_nft_transfers_by_contract**: Retrieve the transfer history for a specific contract
 - **get_nft_details**: Retrieve detailed metadata and ownership information for a specific NFT
+- **get_nft_transfers_by_wallet**: Retrieve the transfer history for a specific wallet
 - **get_nfts_by_contract**: Retrieve all NFTs within a specific contract
 - **get_nfts_by_wallet**: Retrieve all NFTs owned by a specific wallet address across multiple chains
-- **get_nft_transfers_by_contract**: Retrieve the transfer history for a specific contract
-- **get_nft_transfers_by_wallet**: Retrieve the transfer history for a specific wallet
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

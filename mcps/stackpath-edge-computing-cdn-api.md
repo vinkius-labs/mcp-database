@@ -33,11 +33,11 @@ Connect your **StackPath** account to any AI agent to orchestrate edge infrastru
 
 
 ## Available Tools (6)
-- **create_cdn_site**: Create a new CDN site
 - **list_cdn_sites**: List CDN sites in a stack
-- **list_stacks**: List all StackPath stacks
+- **create_cdn_site**: Create a new CDN site
 - **list_workloads**: List edge workloads in a stack
 - **create_workload**: Create a new edge workload
+- **list_stacks**: List all StackPath stacks
 - **purge_content**: Purge CDN content
 
 
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

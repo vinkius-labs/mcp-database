@@ -34,17 +34,17 @@ Connect your **SoundCloud** account to any AI agent to discover music, manage yo
 
 
 ## Available Tools (9)
-- **search_tracks**: Search for tracks on SoundCloud
 - **upload_track**: asset_data should be the raw file content or a placeholder for this MCP implementation.
 
 Upload a new track to SoundCloud
-- **get_track_stream**: Get stream URLs for a track
-- **like_playlist**: Like a playlist
 - **like_track**: Like a track
 - **get_me**: Get current SoundCloud user details
-- **resolve_url**: Resolve a SoundCloud URL
 - **follow_user**: Follow a user
 - **create_playlist**: Create a new playlist
+- **get_track_stream**: Get stream URLs for a track
+- **like_playlist**: Like a playlist
+- **resolve_url**: Resolve a SoundCloud URL
+- **search_tracks**: Search for tracks on SoundCloud
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
