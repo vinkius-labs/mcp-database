@@ -36,6 +36,7 @@ No more manual time logging or complex navigation through fragmented project lis
 
 
 ## Available Tools (11)
+- **get_project_details**: Get details for a project
 - **list_tasks**: Optionally filter by project ID.
 
 List tasks
@@ -44,7 +45,6 @@ List tasks
 - **create_customer**: Create a new customer
 - **create_project**: Create a new project
 - **create_task**: Create a new task
-- **get_project_details**: Get details for a project
 - **list_customers**: List all customers
 - **list_forms**: List HSE/QA forms
 - **list_projects**: List all projects
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

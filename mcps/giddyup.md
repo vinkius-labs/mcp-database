@@ -36,19 +36,19 @@ No more manual toggling between project spreadsheets. Your AI acts as your dedic
 
 
 ## Available Tools (13)
+- **list_leads**: List leads
+- **update_job**: Update a job
+- **update_lead**: Update a lead
+- **create_job**: Create a job
 - **create_lead**: Create a lead
 - **get_customer**: Get customer details
 - **get_job**: Get job details
+- **get_lead**: Get lead details
 - **list_customers**: List customers
+- **list_users**: List technicians
+- **check_giddyup_status**: Verify connectivity
 - **list_invoices**: List invoices
 - **list_jobs**: List jobs
-- **list_leads**: List leads
-- **list_users**: List technicians
-- **update_job**: Update a job
-- **update_lead**: Update a lead
-- **check_giddyup_status**: Verify connectivity
-- **create_job**: Create a job
-- **get_lead**: Get lead details
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
