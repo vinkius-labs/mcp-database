@@ -37,18 +37,18 @@ Connect your **ElevenLabs** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **list_pronunciation_dictionaries**: List pronunciation dictionaries
-- **get_voice**: Get voice details
-- **list_voices**: List all available voices
 - **text_to_speech**: Returns audio metadata. Supports 29+ languages.
 
 Convert text to speech audio
 - **list_models**: List AI speech models
 - **list_history**: List generation history
 - **get_history_item**: Get history item details
-- **get_user_info**: Get user profile info
 - **get_subscription**: Get subscription details
 - **list_projects**: List dubbing/voice projects
+- **list_pronunciation_dictionaries**: List pronunciation dictionaries
+- **get_voice**: Get voice details
+- **list_voices**: List all available voices
+- **get_user_info**: Get user profile info
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

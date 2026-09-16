@@ -24,23 +24,23 @@ Connect your **Hugging Face** account to any AI agent and interact with the Hub 
 
 
 ## Available Tools (15)
+- **get_account**: Get account info
+- **list_collections**: List curated collections
+- **list_models**: Search models on Hugging Face Hub
+- **run_text_classification**: Classify text
+- **run_inference**: Run model inference
+- **run_summarization**: Summarize text
+- **run_text_generation**: Generate text with a model
 - **list_spaces**: Search Spaces
 - **check_hf_status**: Verify API connectivity
 - **get_dataset**: Get dataset details
 - **list_models_by_author**: List models by author
 - **get_model**: Get model details
 - **get_space**: Get Space details
-- **get_account**: Get account info
-- **list_collections**: List curated collections
 - **list_datasets**: Search datasets
 - **list_models_by_task**: ) sorted by downloads.
 
 List models by task
-- **list_models**: Search models on Hugging Face Hub
-- **run_text_classification**: Classify text
-- **run_inference**: Run model inference
-- **run_summarization**: Summarize text
-- **run_text_generation**: Generate text with a model
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

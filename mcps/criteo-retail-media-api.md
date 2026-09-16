@@ -33,15 +33,6 @@ Integrate the **Criteo Retail Media API** directly into your AI workflow. Manage
 
 
 ## Available Tools (10)
-- **list_account_products**: Use the account ID to scope the search.
-
-List products associated with a specific retail account
-- **list_retailers**: This tool does not require any parameters.
-
-List retail partners available in your account
-- **get_retail_campaign_details**: Provide the campaign ID to execute the query.
-
-Get detailed settings for a specific retail campaign
 - **get_retail_media_report**: Pass a detailed report configuration object.
 
 Request a performance report for retail media
@@ -60,9 +51,18 @@ List keywords targeted by a specific line item
 - **list_line_items**: This tool does not require any parameters.
 
 List all line items (ad groups) for retail campaigns
+- **list_account_products**: Use the account ID to scope the search.
+
+List products associated with a specific retail account
 - **search_retail_campaigns_by_name**: Pass the search keyword in the query parameter.
 
 Search for retail campaigns by name keyword
+- **get_retail_campaign_details**: Provide the campaign ID to execute the query.
+
+Get detailed settings for a specific retail campaign
+- **list_retailers**: This tool does not require any parameters.
+
+List retail partners available in your account
 
 
 ## 💬 Prompt Examples
@@ -147,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

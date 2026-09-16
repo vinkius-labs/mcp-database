@@ -39,12 +39,24 @@ No more manual navigation through complex automation dashboards to check if a wo
 
 
 ## Available Tools (9)
-- **list_apps**: No critical usage rules apply.
+- **get_zap_history**: Shows last executions with success/failure.
 
-List connected apps (Slack, Gmail, Salesforce etc)
+Get Zap execution history. Returns run status success/failure
+- **get_zap**: Requires a valid Zap ID.
+
+Get Zap details by ID. Returns trigger, actions, state
 - **list_zaps**: Use limit to control page size.
 
 List Zaps (workflows). Returns Zap IDs, titles, state ON/OFF
+- **search_apps**: Provide a search term to find relevant applications.
+
+Search Zapier app directory by name
+- **search_templates**: Use a search term to find relevant Zap workflows.
+
+Search Zap templates by query (e.g. Slack to Trello)
+- **list_apps**: No critical usage rules apply.
+
+List connected apps (Slack, Gmail, Salesforce etc)
 - **get_app**: Use either the ID or the slug in the request.
 
 Get app details by ID or slug
@@ -52,18 +64,6 @@ Get app details by ID or slug
 - **get_template**: Pass the unique template ID to fetch the details.
 
 Get Zap template details by ID
-- **get_zap_history**: Shows last executions with success/failure.
-
-Get Zap execution history. Returns run status success/failure
-- **get_zap**: Requires a valid Zap ID.
-
-Get Zap details by ID. Returns trigger, actions, state
-- **search_apps**: Provide a search term to find relevant applications.
-
-Search Zapier app directory by name
-- **search_templates**: Use a search term to find relevant Zap workflows.
-
-Search Zap templates by query (e.g. Slack to Trello)
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

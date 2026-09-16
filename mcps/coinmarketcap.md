@@ -32,14 +32,28 @@ Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-t
 
 
 ## Available Tools (8)
-- **get_id_map**: Retrieve a mapping of symbols/names to unique CMC IDs
-- **list_exchanges**: Retrieve a ranked list of all cryptocurrency exchanges
-- **price_conversion**: Convert an amount of one currency to another using latest market prices
+- **get_id_map**: Pass a payload with the symbols you need to resolve.
+
+Retrieve a mapping of symbols/names to unique CMC IDs
 - **get_global_metrics**: Retrieve aggregate market data for the entire cryptocurrency market
-- **get_key_info**: Check your API keys usage, remaining credits, and rate limits
-- **get_metadata**: Retrieve static metadata for one or more cryptocurrencies (logo, description, etc.)
-- **get_quotes**: Retrieve the latest market quotes for one or more cryptocurrencies
-- **list_listings**: Retrieve a paginated list of all active cryptocurrencies with latest market data
+- **get_key_info**: Pass a payload to specify the required credentials.
+
+Check your API keys usage, remaining credits, and rate limits
+- **get_metadata**: Pass a payload containing the symbols or IDs.
+
+Retrieve static metadata for one or more cryptocurrencies (logo, description, etc.)
+- **get_quotes**: Provide a payload listing the desired symbols.
+
+Retrieve the latest market quotes for one or more cryptocurrencies
+- **list_exchanges**: Pass a payload to filter or limit the results.
+
+Retrieve a ranked list of all cryptocurrency exchanges
+- **list_listings**: Use this tool to browse the available market data.
+
+Retrieve a paginated list of all active cryptocurrencies with latest market data
+- **price_conversion**: The payload must specify the amount and target currencies.
+
+Convert an amount of one currency to another using latest market prices
 
 
 ## 💬 Prompt Examples
@@ -129,4 +143,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

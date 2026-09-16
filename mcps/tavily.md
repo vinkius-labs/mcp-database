@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire web research workflow with **Ta
 
 ## Available Tools (6)
 - **extract_content**: Extract clean content from specific URLs
-- **get_answer**: Get a direct AI answer for a search query
 - **get_search_context**: Get search context for a query (optimized for LLMs)
 - **search_images**: Search for images optimized for AI
 - **search_news**: Search for real-time news results
 - **search_web**: Search the web for AI-optimized results
+- **get_answer**: Get a direct AI answer for a search query
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
