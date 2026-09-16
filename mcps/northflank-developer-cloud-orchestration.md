@@ -40,19 +40,16 @@ Connect your **Northflank** account to any AI agent and take full control of you
 - **list_secrets**: env`, `DATABASE_URL`) that subsequently map down into running services or jobs across the Northflank VPC isolation boundaries.
 
 List Secret Group dictionaries injecting into the environments
-- **get_service**: Useful for assessing horizontal scaling needs and verifying external domain SSL associations.
-
-Retrieve the exact structural anatomy of a single Service
-- **get_project**: Correlates globalThis resource restrictions backing subsequent application microservice pipelines.
-
-Examine deeper regional metadata for a Northflank Project
-- **list_jobs**: Enumerate isolated Batch and Cron Jobs within a Project
-- **create_project**: Directly assigns the fundamental cloud region routing ingress requests, acting as a crucial first step in any IaC bootstrapping sequence.
-
-Provision a brand new isolated Northflank Project space
 - **delete_project**: Eliminates the Northflank project boundary entirely, severing traffic routing, killing active cron-jobs, and dropping ephemeral node.js/python backend service processes executing memory.
 
 Permanently tear down a Project and all cascading microservices
+- **get_project**: Correlates global resource restrictions backing subsequent application microservice pipelines.
+
+Examine deeper regional metadata for a Northflank Project
+- **get_service**: Useful for assessing horizontal scaling needs and verifying external domain SSL associations.
+
+Retrieve the exact structural anatomy of a single Service
+- **list_jobs**: Enumerate isolated Batch and Cron Jobs within a Project
 - **list_projects**: Fetches mandatory Project IDs.
 
 List Northflank top-level organizational Projects
@@ -62,6 +59,9 @@ List explicit application/microservice instances inside a Project
 - **restart_service**: Recycles transient RAM accumulation restoring standard execution timings.
 
 Gracefully cycle container replicas for a specific Service
+- **create_project**: Directly assigns the fundamental cloud region routing ingress requests, acting as a crucial first step in any IaC bootstrapping sequence.
+
+Provision a brand new isolated Northflank Project space
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

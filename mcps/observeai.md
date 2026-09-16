@@ -38,19 +38,19 @@ Connect your **Observe.AI** account to your AI agent and gain deep visibility in
 - **list_qa_evaluations**: List QA evaluations
 - **get_interaction_transcript**: Get interaction transcript
 - **list_evaluation_forms**: List QA evaluation forms
-- **list_interactions**: AI.
+- **list_coaching_sessions**: List agent coaching sessions
+- **list_workspace_users**: AI workspace.
 
-List contact center interactions
+List workspace agents and users
 - **list_interaction_moments**: g. Greeting, Closing) across interactions.
 
 List identified key moments
 - **list_interaction_summaries**: List AI-generated summaries
-- **list_workspace_users**: AI workspace.
-
-List workspace agents and users
 - **get_evaluation_details**: Get specific evaluation info
 - **get_interaction_details**: Get specific interaction info
-- **list_coaching_sessions**: List agent coaching sessions
+- **list_interactions**: AI.
+
+List contact center interactions
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

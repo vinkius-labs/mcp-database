@@ -33,12 +33,12 @@ Bring **DigitalOcean Paperspace Cloud Insights** directly into your AI workflows
 
 
 ## Available Tools (6)
-- **list_notebooks**: Inspect deep internal arrays mitigating specific AI workload limits
-- **get_machine_details**: Perform structural extraction of properties driving active Instance logic
-- **get_user_details**: Identify precise active arrays spanning native Identity Auth
-- **list_deployments**: Retrieve explicit Cloud logging tracing explicit Deploy targets
 - **list_machines**: Identify bounded Compute resources inside the Headless Paperspace limits
+- **get_machine_details**: Perform structural extraction of properties driving active Instance logic
+- **list_deployments**: Retrieve explicit Cloud logging tracing explicit Deploy targets
+- **list_notebooks**: Inspect deep internal arrays mitigating specific AI workload limits
 - **list_projects**: Enumerate explicitly attached structured rules exporting active Team limits
+- **get_user_details**: Identify precise active arrays spanning native Identity Auth
 
 
 ## 💬 Prompt Examples
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
