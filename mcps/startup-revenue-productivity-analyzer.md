@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for startups to evaluate w
 
 
 ## Available Tools (4)
-- **analyze_contractor_reliance**: Evaluates risk and operational profile of contractor usage
 - **get_departmental_efficiency**: Analyzes revenue support by functional departments
 - **get_efficiency_benchmarks**: Retrieves industry-standard revenue-per-FTE thresholds
 - **get_workforce_productivity**: Calculates core productivity metrics for a startup
+- **analyze_contractor_reliance**: Evaluates risk and operational profile of contractor usage
 
 
 ## 💬 Prompt Examples

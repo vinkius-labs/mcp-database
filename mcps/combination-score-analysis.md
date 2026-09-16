@@ -14,10 +14,10 @@ This MCP server provides advanced tools for analyzing two-wave scoring scenarios
 
 
 ## Available Tools (4)
-- **analyze_combination_potential**: Determines the best possible score outcome by combining two waves while accounting for heat and discarding rules
 - **calculate_backup_requirements**: Calculates the necessary score needed in the second wave to reach a target if the current combination is insufficient
 - **predict_winning_outcome**: Provides a high-level prediction of the final result based on the current trajectory of both waves
 - **validate_score_validity**: Checks if a specific wave score survives the discarding rules based on the provided context
+- **analyze_combination_potential**: Determines the best possible score outcome by combining two waves while accounting for heat and discarding rules
 
 
 ## 💬 Prompt Examples
