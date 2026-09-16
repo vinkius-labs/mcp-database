@@ -14,9 +14,6 @@ This MCP server provides a specialized suite of analytical tools to measure prod
 
 
 ## Available Tools (4)
-- **analyze_retention_correlation**: Pass engagementMetrics as a JSON string and the matching retentionRates array in the same order.
-
-Test whether higher engagement actually correlates with better retention
 - **calculate_engagement_score**: Supply average session duration, actions per session, and the feature adoption rate (0 to 1).
 
 Roll session depth and feature adoption into one engagement score
@@ -26,6 +23,9 @@ Break the user base into activity tiers to reveal power-user density
 - **get_stickiness_metrics**: Supply the daily and monthly active user counts; the ratio nears 1 when users return every day.
 
 Compute the DAU/MAU stickiness ratio — how often monthly users return daily
+- **analyze_retention_correlation**: Pass engagementMetrics as a JSON string and the matching retentionRates array in the same order.
+
+Test whether higher engagement actually correlates with better retention
 
 
 ## 💬 Prompt Examples
@@ -110,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

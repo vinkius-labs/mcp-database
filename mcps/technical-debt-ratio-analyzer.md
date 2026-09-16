@@ -15,8 +15,8 @@ This MCP server provides a specialized analytical engine to monitor technical de
 
 ## Available Tools (4)
 - **calculate_debt_metrics**: Calculates primary technical debt indicators and provides strategic recommendations
-- **compare_feature_vs_debt_ratio**: Compares new work against debt accumulation to determine project health
 - **get_debt_thresholds**: Retrieves configuration constants used to categorize debt levels
+- **compare_feature_vs_debt_ratio**: Compares new work against debt accumulation to determine project health
 - **analyze_velocity_trend**: Evaluates how much the team capacity is being eroded by accumulated debt
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

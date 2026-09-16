@@ -14,8 +14,8 @@ This MCP server provides product managers with a specialized analytics engine to
 
 
 ## Available Tools (4)
-- **calculate_adoption_metrics**: Provides a snapshot of current adoption progress and predicts the trajectory of the feature
 - **predict_usage_segmentation**: Categorizes the current user base into usage tiers to identify power users versus casual users
+- **calculate_adoption_metrics**: Provides a snapshot of current adoption progress and predicts the trajectory of the feature
 - **simulate_growth_scenarios**: Allows product managers to model how changing product variables affects future adoption
 - **evaluate_retention_impact**: Determines if a specific feature is a driver of user loyalty
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

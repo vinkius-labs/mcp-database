@@ -14,10 +14,10 @@ This MCP server provides advanced analytics for agile teams to monitor and predi
 
 
 ## Available Tools (4)
-- **analyze_scope_impact**: Evaluates how unplanned work (scope creep) is affecting the team's ability to meet commitments
 - **calculate_normalized_velocity**: Adjusts historical velocity to account for changes in team size
 - **forecast_future_capacity**: Predicts how much work the team can realistically take on in upcoming sprints
 - **get_velocity_summary**: Provides a high-level overview of historical performance and current efficiency trends
+- **analyze_scope_impact**: Evaluates how unplanned work (scope creep) is affecting the team's ability to meet commitments
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

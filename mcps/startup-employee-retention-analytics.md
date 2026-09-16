@@ -14,9 +14,9 @@ This MCP server provides specialized analytics for startup workforce management.
 
 
 ## Available Tools (4)
-- **calculate_retention_metrics**: Provides the core health indicators of the workforce for a given period
 - **estimate_equity_risk**: Predicts potential upcoming turnover based on the proximity of employees to their vesting milestones
 - **get_workforce_stability_report**: Synthesizes metrics, tenure, and market factors into a high-level stability assessment
+- **calculate_retention_metrics**: Provides the core health indicators of the workforce for a given period
 - **analyze_tenure_distribution**: Evaluates where in the employee lifecycle churn is most concentrated
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

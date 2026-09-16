@@ -14,8 +14,8 @@ This MCP server provides specialized diagnostic tools to measure product onboard
 
 
 ## Available Tools (4)
-- **analyze_funnel_dropoff**: Identifies exactly which step in the onboarding process is causing the most friction
 - **calculate_activation_metrics**: Provides a high-level overview of the current activation health
+- **analyze_funnel_dropoff**: Identifies exactly which step in the onboarding process is causing the most friction
 - **identify_activation_drivers**: Determines if specific traffic sources or segments are the primary contributors to successful activations
 - **segment_performance_comparison**: Compares how different user groups or acquisition channels affect activation success
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
