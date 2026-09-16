@@ -14,10 +14,10 @@ This MCP server provides advanced predictive modeling for shrimp aquaculture. It
 
 
 ## Available Tools (4)
-- **analyze_pond_efficiency**: Compares current growth and feed performance against theoretical species optima
 - **calculate_feed_requirements**: Determines the amount of feed needed to sustain growth
 - **estimate_survival_and_risk**: Evaluates the likelihood of shrimp survival and potential disease impact
 - **get_growth_projection**: Predicts the growth trajectory, expected harvest date, and final biomass
+- **analyze_pond_efficiency**: Compares current growth and feed performance against theoretical species optima
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

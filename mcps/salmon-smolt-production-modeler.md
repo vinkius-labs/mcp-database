@@ -14,10 +14,10 @@ This MCP server provides a predictive modeling engine for optimizing Atlantic sa
 
 
 ## Available Tools (4)
-- **simulate_photoperiod_impact**: Forecasts how altering light cycles will shift the timing of smoltification
 - **calculate_optimal_transfer_window**: Determines the best time to move salmon from freshwater to seawater to maximize survival
 - **evaluate_feeding_efficiency**: Analyzes how different feeding regimes impact the accumulation of thermal units and growth
 - **predict_smoltification_milestones**: Predicts when a batch of salmon will reach specific developmental milestones
+- **simulate_photoperiod_impact**: Forecasts how altering light cycles will shift the timing of smoltification
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
