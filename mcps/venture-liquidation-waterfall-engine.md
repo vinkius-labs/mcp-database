@@ -14,8 +14,8 @@ This MCP server provides a specialized engine for modeling exit events in ventur
 
 
 ## Available Tools (4)
-- **validate_cap_table**: Ensure the provided equity structure is mathematically sound before running heavy waterfall simulations
 - **calculate_waterfall**: Perform the core calculation of an exit event to determine the final payout for every stakeholder
+- **validate_cap_table**: Ensure the provided equity structure is mathematically sound before running heavy waterfall simulations
 - **get_investor_summary**: Extract high-level metrics for a specific investor class to assist in negotiation modeling
 - **simulate_exit_scenarios**: Compare different exit values against the current cap table to see at what break-even points investors should convert to common stock
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

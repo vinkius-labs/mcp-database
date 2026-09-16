@@ -14,12 +14,12 @@ This MCP server provides specialized financial modeling tools for venture capita
 
 
 ## Available Tools (4)
+- **project_deployment_schedule**: Determines how the reserves should be distributed over time across the portfolio
 - **validate_reserve_adequacy**: Compares the calculated reserves against the expected follow-on needs
 - **allocate_by_performance_tier**: g., high, medium, low).
 
 Reallocates the total reserve based on the projected performance of portfolio companies
 - **calculate_reserve_summary**: Provides a high-level overview of the fund's allocation between initial investments and reserves
-- **project_deployment_schedule**: Determines how the reserves should be distributed over time across the portfolio
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

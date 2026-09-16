@@ -15,9 +15,9 @@ This MCP server provides specialized tools for venture capital fund management. 
 
 ## Available Tools (4)
 - **assess_vintage_impact**: Adjusts duration expectations based on the economic environment of the fund's starting year
+- **project_liquidation_timeline**: Generates a year-by-year forecast of expected capital returns
 - **calculate_recommended_fund_life**: Determines the ideal total duration for a new fund based on investment profile and exit expectations
 - **evaluate_extension_necessity**: Analyzes whether a fund will require legal extensions to meet its DPI targets
-- **project_liquidation_timeline**: Generates a year-by-year forecast of expected capital returns
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

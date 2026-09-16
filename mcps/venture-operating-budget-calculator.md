@@ -14,10 +14,10 @@ This MCP server provides essential financial modeling tools for venture capital 
 
 
 ## Available Tools (4)
+- **get_geographic_cost_adjustments**: Provides the recommended baseline multipliers for costs based on the firm's location
 - **get_operating_budget**: Calculates the total annual operating cost and the firm's cost-to-fund ratio
 - **get_strategy_profile**: Returns the operational characteristics associated with a specific investment style
 - **get_efficiency_benchmark**: Compares a firm's operating efficiency against regional and strategic standards
-- **get_geographic_cost_adjustments**: Provides the recommended baseline multipliers for costs based on the firm's location
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

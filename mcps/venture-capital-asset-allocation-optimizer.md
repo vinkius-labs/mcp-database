@@ -14,10 +14,10 @@ This MCP server provides advanced portfolio optimization tools for Venture Capit
 
 
 ## Available Tools (4)
+- **evaluate_vintage_diversification**: Analyzes how spreading capital across different years affects the overall risk profile of the VC allocation
 - **get_optimal_allocation**: Calculates the recommended percentage and dollar amount to allocate to Venture Capital based on portfolio constraints
 - **simulate_liquidity_stress**: Tests if the recommended VC allocation leaves enough liquid capital to meet the user's specified needs during market volatility
 - **compare_scenarios**: Allows a user to compare two different allocation strategies
-- **evaluate_vintage_diversification**: Analyzes how spreading capital across different years affects the overall risk profile of the VC allocation
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

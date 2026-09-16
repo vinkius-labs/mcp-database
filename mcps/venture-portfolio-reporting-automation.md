@@ -14,10 +14,10 @@ This MCP server provides a specialized financial modeling engine to justify auto
 
 
 ## Available Tools (4)
-- **calculate_time_savings**: Determines how many hours are recovered through automation
-- **assess_lp_complexity**: Adjusts the perceived value of automation based on the rigor of Limited Partner requirements
 - **calculate_cost_savings**: Converts time savings and error reduction into a monetary value
 - **calculate_implementation_roi**: Provides the final financial justification for the automation project
+- **calculate_time_savings**: Determines how many hours are recovered through automation
+- **assess_lp_complexity**: Adjusts the perceived value of automation based on the rigor of Limited Partner requirements
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

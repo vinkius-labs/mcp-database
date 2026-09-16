@@ -14,10 +14,10 @@ This MCP server provides a specialized economic modeling engine for venture capi
 
 
 ## Available Tools (4)
+- **analyze_transfer_restriction**: Quantifies the impact of the ROFR on the seller's ability to exit
 - **calculate_co_sale_impact**: Evaluates how co-sale rights affect the economic distribution of a transfer
 - **evaluate_liquidity_tradeoff**: Synthesizes the economic value and the transfer friction to provide a single liquidity profile
 - **get_rofr_valuation**: Determines the monetary value of the ROFR option based on a pending sale
-- **analyze_transfer_restriction**: Quantifies the impact of the ROFR on the seller's ability to exit
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -16,8 +16,8 @@ This MCP server provides tools to model venture capital fund deployment. It calc
 ## Available Tools (4)
 - **get_deal_capacity_analysis**: 
 - **get_deployment_targets**: 
-- **get_investment_deadline**: 
 - **get_pacing_schedule**: 
+- **get_investment_deadline**: 
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

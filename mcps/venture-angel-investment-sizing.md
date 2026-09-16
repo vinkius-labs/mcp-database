@@ -15,9 +15,9 @@ This MCP server provides critical decision-support tools for angel investors to 
 
 ## Available Tools (4)
 - **analyze_capital_efficiency**: Measures the relationship between initial deployment and total potential exposure to assess concentration
-- **calculate_portfolio_structure**: Determines the high-level breakdown of how capital is split between initial checks and follow-on reserves
-- **generate_check_size_distribution**: Provides a detailed breakdown of how many checks can be written at various tiers within a user-defined range
 - **evaluate_followon_capacity**: Analyzes whether the current reserve allocation is sufficient to maintain ownership in winners
+- **generate_check_size_distribution**: Provides a detailed breakdown of how many checks can be written at various tiers within a user-defined range
+- **calculate_portfolio_structure**: Determines the high-level breakdown of how capital is split between initial checks and follow-on reserves
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

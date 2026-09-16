@@ -14,8 +14,8 @@ This MCP server provides advanced modeling tools for venture capital fund constr
 
 
 ## Available Tools (4)
-- **calculate_portfolio_strategy**: Determines the foundational allocation strategy, including the number of companies to back and the initial check size
 - **optimize_investment_count**: Finds the ideal number of investments needed to reach a specific target fund return multiple
+- **calculate_portfolio_strategy**: Determines the foundational allocation strategy, including the number of companies to back and the initial check size
 - **analyze_concentration_risk**: Evaluates if the proposed strategy adheres to specific risk-management constraints regarding single-company exposure
 - **estimate_expected_returns**: Predicts the total fund value based on the power law distribution and return expectations
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

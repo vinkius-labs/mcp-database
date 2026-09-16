@@ -14,10 +14,10 @@ This MCP server provides specialized financial modeling tools for venture capita
 
 
 ## Available Tools (4)
-- **simulate_promotion_impact**: Predicts how an individual's carry will change when they move from a junior role to a senior role
 - **calculate_associate_carry**: Determines the individual dollar value of carry for a single associate based on fund assumptions
 - **check_recruitment_competitiveness**: Assesses if the current carry structure is sufficient to attract top-tier talent
 - **evaluate_retention_incentive**: Measures the financial risk of losing a junior team member by calculating the value of unvested carry
+- **simulate_promotion_impact**: Predicts how an individual's carry will change when they move from a junior role to a senior role
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

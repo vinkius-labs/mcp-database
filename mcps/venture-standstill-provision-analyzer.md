@@ -16,8 +16,8 @@ This MCP server provides specialized analysis for venture capital and M&A profes
 ## Available Tools (4)
 - **analyze_sunset_effect**: Calculates the remaining duration and remaining impact of the provision considering sunset clauses
 - **assess_competitive_impact**: Evaluates how the standstill limits a party's ability to compete in the market
-- **calculate_restriction_value**: Determines the monetary opportunity cost associated with the standstill
 - **evaluate_negotiation_leverage**: Measures the strategic advantage gained or lost due to the standstill
+- **calculate_restriction_value**: Determines the monetary opportunity cost associated with the standstill
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

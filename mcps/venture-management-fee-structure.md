@@ -16,8 +16,8 @@ This MCP server provides specialized financial modeling tools for venture capita
 ## Available Tools (4)
 - **calculate_investable_capital_with_recycling**: Determines the actual amount of capital available for deployment when exit proceeds are recycled
 - **analyze_step_down_impact**: Evaluates how different fee reduction schedules affect the total lifetime fees
-- **calculate_fee_economics**: Calculates the total fee impact and capital availability for a fund
 - **estimate_fee_drag_on_returns**: Quantifies the mathematical drag that management fees exert on the investment performance
+- **calculate_fee_economics**: Calculates the total fee impact and capital availability for a fund
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

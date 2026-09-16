@@ -14,9 +14,9 @@ This MCP server provides financial modeling tools to evaluate no-shop provisions
 
 
 ## Available Tools (4)
+- **calculate_exclusivity_impact**: Calculate exclusivity impact
 - **simulate_bid_scenarios**: Simulate bid scenarios
 - **analyze_breakup_fee**: Analyze breakup fee
-- **calculate_exclusivity_impact**: Calculate exclusivity impact
 - **get_no_shop_summary**: Get no-shop summary
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

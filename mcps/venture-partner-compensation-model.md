@@ -14,10 +14,10 @@ This MCP server provides a specialized economic engine for venture capital firms
 
 
 ## Available Tools (4)
-- **simulate_vesting_impact**: Determines the currently "earned" vs "unearned" carry for a specific partner based on their tenure and the firm's vesting schedule
-- **analyze_economics_split**: Analyzes how the carry is divided between different seniority tiers within the firm
 - **calculate_carry_distribution**: Calculates the raw dollar value of carry assigned to each partner based on the total fund size and allocation rules
 - **evaluate_retention_sensitivity**: Forecasts how a change in specific variables (like seniority or pool size) impacts a specific partner's economic position
+- **simulate_vesting_impact**: Determines the currently "earned" vs "unearned" carry for a specific partner based on their tenure and the firm's vesting schedule
+- **analyze_economics_split**: Analyzes how the carry is divided between different seniority tiers within the firm
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

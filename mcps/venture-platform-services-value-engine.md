@@ -14,10 +14,10 @@ This MCP server provides a decision-support engine for venture capital firms to 
 
 
 ## Available Tools (4)
-- **rank_service_priority**: Rank platform services by priority
 - **calculate_service_impact**: Calculate the economic value and ROI of a specific platform service
-- **evaluate_portfolio_alignment**: Evaluate how well current services align with the portfolio stage
 - **get_platform_efficiency_summary**: Get aggregate health and efficiency of the platform organization
+- **rank_service_priority**: Rank platform services by priority
+- **evaluate_portfolio_alignment**: Evaluate how well current services align with the portfolio stage
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

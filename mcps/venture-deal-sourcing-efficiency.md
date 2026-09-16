@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for venture capital firms 
 
 
 ## Available Tools (4)
-- **compare_channel_efficiency**: Ranks and compares different channels to identify the most and least effective sourcing methods
 - **get_aggregate_sourcing_efficiency**: Provides a high-level overview of the entire sourcing operation across all channels
 - **get_channel_performance**: Calculates the core efficiency metrics (Cost Per Deal and Conversion Rate) for a specific sourcing channel
 - **get_channel_roi**: Determines the Return on Investment for a specific channel, incorporating qualitative value
+- **compare_channel_efficiency**: Ranks and compares different channels to identify the most and least effective sourcing methods
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
