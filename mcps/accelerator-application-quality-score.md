@@ -14,8 +14,8 @@ This MCP server provides a diagnostic engine for evaluating startup accelerator 
 
 
 ## Available Tools (3)
-- **compare_applications**: Evaluates the relative quality of multiple applications to assist in ranking or shortlisting
 - **calculate_application_score**: Provides a comprehensive quantitative and qualitative assessment of a single accelerator application
+- **compare_applications**: Evaluates the relative quality of multiple applications to assist in ranking or shortlisting
 - **get_dimension_benchmarks**: Retrieves the threshold values used to define "weak" versus "strong" performance for each dimension
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

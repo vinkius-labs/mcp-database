@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for accelerator progra
 
 
 ## Available Tools (3)
-- **compute_effectiveness_ratio**: Evaluates how efficiently the coaching hours are being utilized relative to the needs and experience of the founders
-- **calculate_topic_priority**: Ranks the requested coaching topics to ensure critical subjects are addressed first
 - **get_founder_hour_allocation**: Determines how many hours each founder should receive based on the total pool and company structure
+- **calculate_topic_priority**: Ranks the requested coaching topics to ensure critical subjects are addressed first
+- **compute_effectiveness_ratio**: Evaluates how efficiently the coaching hours are being utilized relative to the needs and experience of the founders
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
