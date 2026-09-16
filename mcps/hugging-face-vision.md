@@ -13,7 +13,6 @@ Connect Hugging Face Vision to any AI agent via MCP.
 
 ## Available Tools (5)
 - **image_to_text**: Generate a caption for an image
-- **image_classification**: Classify the content of an image
 - **object_detection**: Returns bounding boxes and labels.
 
 Detect objects in an image
@@ -21,6 +20,7 @@ Detect objects in an image
 
 Generate an image from a text prompt
 - **image_segmentation**: Perform semantic segmentation on an image
+- **image_classification**: Classify the content of an image
 
 
 

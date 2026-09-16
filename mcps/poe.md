@@ -32,15 +32,27 @@ Connect your **Poe** (Quora's AI platform) account to any AI agent and manage yo
 
 
 ## Available Tools (10)
+- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
+
+List publicly available bots on Poe that your bot can query
+- **list_messages**: Useful for monitoring what users are asking, debugging bot responses, and analyzing conversation patterns. Returns message content, timestamps, and user identifiers.
+
+List recent messages for a specific Poe bot
+- **query_bot**: This allows chaining bot responses - your bot can query GPT-4, Claude, or any other bot on Poe and use the response as input. The cost is covered by the user's free message limit or subscription.
+
+Query another bot on Poe from your bot
+- **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
+
+Create a new API bot on Poe
 - **delete_bot**: This action cannot be undone. All conversation history and settings for the bot will be lost.
 
 Delete a Poe API bot
-- **get_bot**: Use the bot ID obtained from list_bots.
-
-Get details of a specific Poe bot
 - **get_bot_stats**: Essential for monitoring bot health, understanding user engagement, and identifying performance bottlenecks.
 
 Get usage statistics for a Poe bot
+- **get_bot**: Use the bot ID obtained from list_bots.
+
+Get details of a specific Poe bot
 - **list_bots**: Returns bot names, handles, models, and status. Essential first step to identify which bot to work with before querying, updating, or checking stats.
 
 List all API bots under your Poe account
@@ -50,18 +62,6 @@ Send a message to a Poe bot (simulate user interaction)
 - **update_bot**: Changes take effect immediately for new conversations.
 
 Update an existing Poe bot's configuration
-- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
-
-List publicly available bots on Poe that your bot can query
-- **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
-
-Create a new API bot on Poe
-- **list_messages**: Useful for monitoring what users are asking, debugging bot responses, and analyzing conversation patterns. Returns message content, timestamps, and user identifiers.
-
-List recent messages for a specific Poe bot
-- **query_bot**: This allows chaining bot responses - your bot can query GPT-4, Claude, or any other bot on Poe and use the response as input. The cost is covered by the user's free message limit or subscription.
-
-Query another bot on Poe from your bot
 
 
 ## 💬 Prompt Examples

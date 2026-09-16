@@ -37,23 +37,23 @@ Connect your AI workflows to **FastGPT**, the powerful open-source platform for 
 
 
 ## Available Tools (12)
-- **get_dataset_detail**: Get details for a specific dataset
-- **list_dataset_data**: List data items in a dataset
-- **list_datasets**: Can filter by parentId or search keyword.
-
-List knowledge base datasets
-- **search_dataset_data**: Perform semantic search on a dataset
-- **update_dataset_data**: Update existing data in a dataset
-- **get_app_detail**: Get details for a specific AI application
-- **list_apps**: List AI applications
-- **push_dataset_data**: Add or update data in a dataset
 - **chat_completions**: Supports chatId for context tracking, streaming, and detailed intermediate steps.
 
 Send a message to a FastGPT application
+- **create_dataset**: Create a new dataset (knowledge base)
+- **get_app_detail**: Get details for a specific AI application
+- **list_apps**: List AI applications
+- **list_dataset_data**: List data items in a dataset
+- **push_dataset_data**: Add or update data in a dataset
+- **search_dataset_data**: Perform semantic search on a dataset
+- **update_dataset_data**: Update existing data in a dataset
+- **get_dataset_detail**: Get details for a specific dataset
+- **list_datasets**: Can filter by parentId or search keyword.
+
+List knowledge base datasets
 - **get_embeddings**: Useful for semantic search outside of FastGPT.
 
 Generate text embeddings
-- **create_dataset**: Create a new dataset (knowledge base)
 - **delete_dataset_data**: Delete specific data from a dataset
 
 

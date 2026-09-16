@@ -36,14 +36,14 @@ Connect your AI agents to **Baidu Qianfan** (百度千帆), the enterprise-grade
 
 
 ## Available Tools (6)
-- **list_train_jobs**: List model training jobs
 - **get_embeddings**: Generate vector embeddings for text
+- **list_models**: List available model services
+- **text_to_image**: Generate an image from a text prompt
+- **list_train_jobs**: List model training jobs
 - **chat_completions**: Requires model endpoint name.
 
 Send a message to a Baidu Qianfan model
 - **list_datasets**: List uploaded datasets
-- **list_models**: List available model services
-- **text_to_image**: Generate an image from a text prompt
 
 
 ## 💬 Prompt Examples
