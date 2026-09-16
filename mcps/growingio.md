@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your product analytics and user behavioral 
 
 
 ## Available Tools (10)
+- **get_event**: Get event details
 - **get_funnel**: Get conversion funnel details
-- **get_project_info**: Get project metadata
 - **get_segment_users**: Get users in a segment
-- **list_ads**: List advertising campaigns
+- **list_events**: List project events
 - **list_log_sources**: ).
 
 List data log sources
 - **list_segments**: List user segments
-- **list_events**: List project events
-- **get_event**: Get event details
 - **get_metrics**: Query project metrics
 - **list_variables**: List tracked variables
+- **get_project_info**: Get project metadata
+- **list_ads**: List advertising campaigns
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

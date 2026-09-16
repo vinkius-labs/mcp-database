@@ -35,8 +35,6 @@ Empower your AI agent to orchestrate your international financial infrastructure
 
 
 ## Available Tools (10)
-- **refund_order**: Refund a payment
-- **create_payment**: Create a new payment
 - **get_account_info**: Get merchant account info
 - **get_balance**: Get account balance
 - **get_bank_list**: Get supported banks
@@ -45,6 +43,8 @@ Empower your AI agent to orchestrate your international financial infrastructure
 - **list_transactions**: List transactions
 - **list_withdrawals**: List fund withdrawals
 - **query_order**: Query order status
+- **refund_order**: Refund a payment
+- **create_payment**: Create a new payment
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

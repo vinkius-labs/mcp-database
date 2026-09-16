@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire writing ecosystem on **Medium**
 
 
 ## Available Tools (5)
+- **create_publication_post**: Create a new post under a publication
 - **get_me**: Get authenticated user info from Medium
 - **list_contributors**: List publication contributors
 - **list_publications**: List user publications
 - **create_post**: Create a new post on Medium
-- **create_publication_post**: Create a new post under a publication
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

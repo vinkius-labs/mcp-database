@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire aviation research and logistics
 
 
 ## Available Tools (6)
-- **get_city_details**: Get details for a specific city by IATA city code
-- **search_airlines**: Search for airlines by IATA code
-- **search_aircraft**: Search for aircraft by IATA code
 - **check_api_status**: Check if the IATA API is operational
 - **list_iata_countries**: List all countries supported by IATA
+- **search_aircraft**: Search for aircraft by IATA code
+- **search_airlines**: Search for airlines by IATA code
 - **search_airports**: Search for airports by IATA code
+- **get_city_details**: Get details for a specific city by IATA city code
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
