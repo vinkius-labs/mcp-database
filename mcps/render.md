@@ -37,13 +37,13 @@ Connect your AI assistant directly to your **Render** cloud infrastructure via t
 
 Creates a new Render service from a GitHub repository
 - **get_deploy**: Retrieves details for a specific deployment
-- **list_services**: Lists all services (web apps, databases, cron jobs) in the Render account
 - **trigger_deploy**: Triggers a manual deployment for a service
 - **list_deploys**: Lists recent deployments for a service
 - **delete_service**: This action is irreversible.
 
 Permanently deletes a Render service
 - **get_service**: Retrieves details for a specific Render service
+- **list_services**: Lists all services (web apps, databases, cron jobs) in the Render account
 - **resume_service**: Resumes a previously suspended service
 - **suspend_service**: Suspends a service to stop execution and billing
 - **update_service_branch**: Updates the tracked GitHub branch for a service
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

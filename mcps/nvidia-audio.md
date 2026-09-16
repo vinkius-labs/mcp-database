@@ -38,13 +38,10 @@ Connect **NVIDIA Audio** to any AI agent and unlock professional-grade audio pro
 - **text_to_speech**: Optional voice parameter for different voices.
 
 Convert text to natural-sounding speech
-- **audio_translation**: Provide target language.
-
-Translate spoken audio to another language
-- **summarize_audio**: Summarize an audio transcript
 - **classify_audio**: ) with confidence scores.
 
 Classify the type of sound in an audio file
+- **summarize_audio**: Summarize an audio transcript
 - **clone_voice**: Clone a voice from a reference audio and generate speech
 - **cancel_noise**: Remove background noise from audio
 - **speaker_diarization**: Identify different speakers in an audio file
@@ -52,6 +49,9 @@ Classify the type of sound in an audio file
 - **speech_to_text**: Supports multiple languages. Provide a public audio URL (MP3, WAV, etc).
 
 Transcribe speech from audio to text (Whisper-style)
+- **audio_translation**: Provide target language.
+
+Translate spoken audio to another language
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

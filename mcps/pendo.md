@@ -37,16 +37,16 @@ No more manual exporting of usage reports or context switching for user profiles
 
 ## Available Tools (11)
 - **get_pendo_guide_details**: Get details for a specific guide
-- **get_pendo_visitor_details**: Get details for a specific visitor
-- **list_pendo_guides**: List all in-app guides
-- **list_reports**: List all analytics reports
-- **update_account_metadata**: Update custom account metadata
-- **get_pendo_account_details**: Get details for a specific account
-- **list_pendo_pages**: List tagged pages
-- **list_segments**: List all user segments
 - **run_pendo_aggregation**: Perform complex analytics and grouping
-- **update_visitor_metadata**: Update custom visitor metadata
+- **list_pendo_pages**: List tagged pages
+- **list_reports**: List all analytics reports
+- **list_segments**: List all user segments
+- **get_pendo_account_details**: Get details for a specific account
+- **get_pendo_visitor_details**: Get details for a specific visitor
 - **list_pendo_features**: List tagged features
+- **list_pendo_guides**: List all in-app guides
+- **update_account_metadata**: Update custom account metadata
+- **update_visitor_metadata**: Update custom visitor metadata
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
