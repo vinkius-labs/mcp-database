@@ -32,16 +32,16 @@ Connect **Missive** to your AI agent and manage your team's communication effici
 - **create_post**: Can also trigger actions like closing, assigning, or labeling.
 
 Create a post (comment or action) in a conversation
-- **get_me**: Get current Missive user details
-- **list_contacts**: List Missive contacts
-- **list_labels**: List Missive labels
-- **list_messages**: List messages in a conversation
-- **send_draft**: Send a prepared draft
 - **create_draft**: Create an email draft
 - **get_conversation**: Get details for a specific conversation
+- **get_me**: Get current Missive user details
+- **list_contacts**: List Missive contacts
 - **list_conversations**: A mailbox filter is required (e.g., "inbox", "all", "assigned", "closed").
 
 List conversations from a specific mailbox
+- **list_messages**: List messages in a conversation
+- **send_draft**: Send a prepared draft
+- **list_labels**: List Missive labels
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

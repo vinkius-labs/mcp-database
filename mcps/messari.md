@@ -29,9 +29,6 @@ Connect your **Messari** account to any AI agent and access deep insights into t
 
 ## Available Tools (10)
 - **get_crypto_news**: Get crypto news feed
-- **list_crypto_exchanges**: List supported exchanges
-- **list_crypto_markets**: List all crypto markets
-- **list_governance_events**: List governance events
 - **get_asset_metrics**: Get metrics for a crypto asset
 - **get_asset_details**: g. btc, eth).
 
@@ -39,6 +36,9 @@ Get details for a crypto asset
 - **get_asset_market_data**: Get market data for an asset
 - **get_asset_profile**: Get asset profile
 - **list_assets**: List crypto assets
+- **list_crypto_markets**: List all crypto markets
+- **list_crypto_exchanges**: List supported exchanges
+- **list_governance_events**: List governance events
 - **search_assets**: Search for crypto assets
 
 
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
