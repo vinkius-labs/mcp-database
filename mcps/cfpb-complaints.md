@@ -36,33 +36,33 @@ Connect to **CFPB Consumer Complaint Database** and explore 13.8M+ consumer comp
 
 
 ## Available Tools (9)
-- **get_company_complaints**: Returns complaint details including products, issues, states, dates and company responses.
-
-Get complaints against a specific company
 - **get_complaint**: Returns full complaint details including product, company, issue, narrative (if available), dates and company response.
 
 Get a specific complaint by ID
-- **get_complaints_by_issue**: Common issues: "Incorrect information", "Problem with a purchase", "Attempts to collect debt not owed".
+- **get_complaints_by_product**: Common products: "Mortgage", "Debt collection", "Credit card", "Student loan", "Credit reporting".
 
-Get complaints for a specific issue type
-- **get_complaints_by_state**: Returns complaint details including products, companies, issues and dates.
-
-Get complaints from a specific US state
+Get complaints for a specific product type
 - **get_complaints_stats**: Useful for getting a quick count without retrieving full complaint details.
 
 Get complaint count statistics
 - **get_complaints_with_narrative**: Supports filtering by product, company and state.
 
 Get complaints that include consumer narratives (detailed descriptions)
-- **get_complaints_by_product**: Common products: "Mortgage", "Debt collection", "Credit card", "Student loan", "Credit reporting".
-
-Get complaints for a specific product type
-- **get_recent_complaints**: Useful for tracking recent complaint trends.
-
-Get the most recent consumer complaints
 - **search_complaints**: 8M+ complaints against financial companies. Supports filtering by product, company, state, issue, date range and narrative availability. Returns complaint details including product type, company name, issue, state, date received and company response.
 
 Search consumer complaints in the CFPB database
+- **get_company_complaints**: Returns complaint details including products, issues, states, dates and company responses.
+
+Get complaints against a specific company
+- **get_complaints_by_state**: Returns complaint details including products, companies, issues and dates.
+
+Get complaints from a specific US state
+- **get_recent_complaints**: Useful for tracking recent complaint trends.
+
+Get the most recent consumer complaints
+- **get_complaints_by_issue**: Common issues: "Incorrect information", "Problem with a purchase", "Attempts to collect debt not owed".
+
+Get complaints for a specific issue type
 
 
 ## 💬 Prompt Examples
@@ -150,4 +150,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

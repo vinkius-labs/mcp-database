@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your visual collaboration with **BoardMix**
 
 
 ## Available Tools (10)
+- **create_file**: Create a new whiteboard
 - **get_comments**: Get whiteboard comments
 - **get_file**: Get whiteboard file details
+- **get_file_versions**: Get file version history
 - **get_org_info**: Get organization details
 - **list_files**: List all BoardMix files
+- **list_nodes**: List whiteboard nodes
 - **list_team_projects**: List team projects
 - **list_teams**: List available teams
-- **create_file**: Create a new whiteboard
-- **get_file_versions**: Get file version history
-- **list_nodes**: List whiteboard nodes
 - **list_templates**: List whiteboard templates
 
 
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
