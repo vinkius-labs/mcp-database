@@ -36,12 +36,12 @@ This integration uses Bitstamp's latest V2 API with high-security HMAC-SHA256 si
 
 ## Available Tools (7)
 - **get_order_book**: Get the current order book for a currency pair
-- **get_ticker**: Get current market ticker for a currency pair
 - **list_trading_pairs**: List all available trading pairs and their info
+- **get_user_transactions**: Get personal transaction history
+- **get_open_orders**: Get all currently open orders
+- **get_ticker**: Get current market ticker for a currency pair
 - **cancel_order**: Cancel an open order
 - **get_balance**: Get account balances for all currencies
-- **get_open_orders**: Get all currently open orders
-- **get_user_transactions**: Get personal transaction history
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

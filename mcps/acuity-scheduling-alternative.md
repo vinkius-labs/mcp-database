@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acu
 
 
 ## Available Tools (10)
+- **cancel_appointment**: Cancel an appointment
+- **reschedule_appointment**: Reschedule an appointment
+- **create_appointment**: Create a new appointment
 - **get_appointment**: Get details for a specific appointment
-- **list_appointments**: List Acuity appointments
+- **get_me**: Get Acuity account details
 - **list_appointment_types**: List available appointment types
+- **list_appointments**: List Acuity appointments
 - **list_calendars**: List all calendars
 - **list_categories**: List appointment categories
-- **get_me**: Get Acuity account details
-- **cancel_appointment**: Cancel an appointment
-- **create_appointment**: Create a new appointment
 - **get_availability**: Check available times
-- **reschedule_appointment**: Reschedule an appointment
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,9 +37,9 @@ Connect to **Bybit** and access real-time cryptocurrency market data through nat
 
 
 ## Available Tools (10)
-- **get_instruments**: Categories: "spot", "linear", "inverse", "option". Filter by symbol or base coin.
+- **get_funding_history**: Funding rates are paid every 8 hours between long and short positions. Positive rate means longs pay shorts. Categories: "linear", "inverse". Limit: 1-200 records.
 
-Get trading instruments (pairs/contracts) info
+Get funding rate history for perpetual contracts
 - **get_index_price_kline**: Index price is the composite price from multiple exchanges. Categories: "linear", "inverse".
 
 Get index price candlestick data
@@ -49,24 +49,24 @@ Get candlestick (kline) data for technical analysis
 - **get_mark_price_kline**: Mark price is used for liquidation calculations. Intervals same as kline. Categories: "linear", "inverse".
 
 Get mark price candlestick data for derivatives
-- **get_open_interest**: Open interest shows total number of open positions. Intervals: 5min, 15min, 30min, 1h, 4h, 1d. Categories: "linear", "inverse".
-
-Get open interest history for a derivatives contract
 - **get_orderbook**: Returns price levels and quantities. Limit: 1-200 (spot), 1-500 (linear/inverse/option). Useful for analyzing market depth and liquidity.
 
 Get the current orderbook (bids and asks) for a symbol
-- **get_tickers**: Categories: "spot" (spot trading), "linear" (USDT/USDC perpetual & futures), "inverse" (inverse perpetual & futures), "option" (options). Filter by specific symbol (e.g. "BTCUSDT") or base coin (e.g. "BTC").
-
-Get real-time market tickers (prices) for any category
-- **get_recent_trades**: Returns trade price, size, side (Buy/Sell), timestamp and trade ID. Useful for seeing current market activity and order flow. Limit: 1-1000 trades.
-
-Get recent executed trades for a symbol
-- **get_funding_history**: Funding rates are paid every 8 hours between long and short positions. Positive rate means longs pay shorts. Categories: "linear", "inverse". Limit: 1-200 records.
-
-Get funding rate history for perpetual contracts
 - **get_server_time**: Useful for synchronizing requests and verifying API connectivity.
 
 Get the current Bybit server time
+- **get_tickers**: Categories: "spot" (spot trading), "linear" (USDT/USDC perpetual & futures), "inverse" (inverse perpetual & futures), "option" (options). Filter by specific symbol (e.g. "BTCUSDT") or base coin (e.g. "BTC").
+
+Get real-time market tickers (prices) for any category
+- **get_instruments**: Categories: "spot", "linear", "inverse", "option". Filter by symbol or base coin.
+
+Get trading instruments (pairs/contracts) info
+- **get_open_interest**: Open interest shows total number of open positions. Intervals: 5min, 15min, 30min, 1h, 4h, 1d. Categories: "linear", "inverse".
+
+Get open interest history for a derivatives contract
+- **get_recent_trades**: Returns trade price, size, side (Buy/Sell), timestamp and trade ID. Useful for seeing current market activity and order flow. Limit: 1-1000 trades.
+
+Get recent executed trades for a symbol
 
 
 ## 💬 Prompt Examples
@@ -154,4 +154,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,26 +35,26 @@ Empower your AI agent to orchestrate your cloud storage and asset management wit
 
 
 ## Available Tools (10)
-- **delete_object**: Delete an object from OSS
+- **copy_object**: Uses x-oss-copy-source header.
+
+Copy an object within the bucket
 - **get_bucket_acl**: Get bucket access control list
+- **get_bucket_info**: Get bucket configuration
 - **get_bucket_location**: g., oss-cn-hangzhou) where your bucket is located.
 
 Get bucket region
 - **get_bucket_statistics**: Get bucket storage statistics
 - **get_object_metadata**: Get object metadata (HEAD)
-- **copy_object**: Uses x-oss-copy-source header.
-
-Copy an object within the bucket
-- **download_object_text**: Best for text/JSON files.
-
-Download an object as text
-- **get_bucket_info**: Get bucket configuration
 - **list_objects**: Use prefix to filter by path, marker for pagination.
 
 List objects in the bucket
 - **upload_object**: Max 5GB per request.
 
 Upload text content to OSS
+- **delete_object**: Delete an object from OSS
+- **download_object_text**: Best for text/JSON files.
+
+Download an object as text
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
