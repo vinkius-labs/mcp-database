@@ -14,10 +14,10 @@ This MCP server provides deterministic calculations for AWS CloudFront cache per
 
 
 ## Available Tools (4)
-- **analyze_path_patterns**: Answers how cache behavior differs across different URL paths
-- **get_ttl_optimization_advice**: Answers what adjustments should be made to the TTL to improve cache performance
 - **calculate_cache_metrics**: Answers how efficient the current cache configuration is in terms of hit ratio, origin load, and data transfer
+- **analyze_path_patterns**: Answers how cache behavior differs across different URL paths
 - **calculate_stale_windows**: Answers what supplementary caching headers should be used to improve availability and latency during revalidation
+- **get_ttl_optimization_advice**: Answers what adjustments should be made to the TTL to improve cache performance
 
 
 ## 💬 Prompt Examples

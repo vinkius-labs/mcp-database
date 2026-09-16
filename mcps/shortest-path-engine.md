@@ -14,13 +14,13 @@ The Shortest Path Engine provides specialized computational tools for navigating
 
 
 ## Available Tools (3)
+- **dijkstra**: Do NOT use for negative weights.
+
+Find the shortest path using Dijkstra algorithm
 - **astar**: Do NOT use for simple unweighted graphs.
 
 Find the shortest path using A* search
 - **bellman_ford**: Scan graph using Bellman-Ford algorithm
-- **dijkstra**: Do NOT use for negative weights.
-
-Find the shortest path using Dijkstra algorithm
 
 
 ## 💬 Prompt Examples

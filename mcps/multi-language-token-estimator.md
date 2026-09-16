@@ -15,8 +15,8 @@ This MCP server provides deterministic linguistic analysis for mixed-language te
 
 ## Available Tools (3)
 - **estimate_text_composition**: Analyzes a text string to provide a granular breakdown of character counts, token estimates, and linguistic dominance
-- **get_language_ratios**: Retrieves the current deterministic token-to-character ratios used by the system
 - **validate_unicode_range**: Verifies if a specific character belongs to one of the supported linguistic ranges
+- **get_language_ratios**: Retrieves the current deterministic token-to-character ratios used by the system
 
 
 ## 💬 Prompt Examples

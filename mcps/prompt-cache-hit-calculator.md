@@ -14,8 +14,8 @@ This MCP server provides deterministic analysis of prompt prefix caching strateg
 
 
 ## Available Tools (3)
-- **analyze_cache_performance**: Provides a high-level overview of how well the cache is performing regarding hits, efficiency, and cost savings
 - **evaluate_cache_optimization**: Identifies the ideal cache capacity and the degree of prefix overlap to guide infrastructure scaling
+- **analyze_cache_performance**: Provides a high-level overview of how well the cache is performing regarding hits, efficiency, and cost savings
 - **inspect_cache_dynamics**: Investigates the frequency of cache turnover and the specific overlap between individual requests
 
 

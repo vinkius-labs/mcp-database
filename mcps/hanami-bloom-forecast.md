@@ -15,8 +15,12 @@ This MCP server provides a deterministic forecasting engine for Japanese cherry 
 
 ## Available Tools (3)
 - **calculate_bloom_forecast**: 
-- **get_thermal_accumulation_summary**: Provides heat accumulation breakdown
-- **validate_bloom_parameters**: Validates biological constants
+- **get_thermal_accumulation_summary**: Ensure temperatures are provided for the full period.
+
+Provides heat accumulation breakdown
+- **validate_bloom_parameters**: Pass both parameters as required.
+
+Validates biological constants
 
 
 ## 💬 Prompt Examples

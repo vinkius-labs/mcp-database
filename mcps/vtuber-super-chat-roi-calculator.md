@@ -14,9 +14,9 @@ This MCP server provides deterministic financial and engagement analytics for VT
 
 
 ## Available Tools (3)
-- **calculate_audience_concentration**: Determines the "whale" ratio to understand how dependent the revenue is on high-value contributors
 - **calculate_engagement_score**: Quantifies the "heat" of the stream by measuring how frequently viewers are spending relative to the peak audience size
 - **calculate_stream_metrics**: Provides a high-level breakdown of the financial performance and conversion efficiency of a single stream
+- **calculate_audience_concentration**: Determines the "whale" ratio to understand how dependent the revenue is on high-value contributors
 
 
 ## 💬 Prompt Examples

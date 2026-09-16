@@ -14,9 +14,9 @@ This MCP server provides precise agricultural scheduling tools to help gardeners
 
 
 ## Available Tools (3)
-- **calculate_planting_schedule**: Generates a full chronological timeline for a single plant to meet a specific harvest goal
 - **get_succession_intervals**: Determines the timing for multiple plantings to achieve a continuous supply of produce
 - **verify_frost_safety**: Validates if a specific planting window is safe based on frost tolerance
+- **calculate_planting_schedule**: Generates a full chronological timeline for a single plant to meet a specific harvest goal
 
 
 ## 💬 Prompt Examples

@@ -14,12 +14,12 @@ This MCP server provides a mathematical framework for evaluating autonomous agen
 
 
 ## Available Tools (4)
-- **adjust_weights_for_correlation**: 
 - **calculate_agent_scores**: 0
 
 Calculates normalized composite scores and volatility for a set of agents
 - **identify_pareto_frontier**: 
 - **rank_agents**: 
+- **adjust_weights_for_correlation**: 
 
 
 ## 💬 Prompt Examples

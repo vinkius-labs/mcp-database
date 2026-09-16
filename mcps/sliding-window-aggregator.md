@@ -15,8 +15,12 @@ This MCP server provides a deterministic engine for processing timestamped metri
 
 ## Available Tools (3)
 - **process_metrics**: 
-- **analyze_trends**: Calculates trend direction
-- **check_alerts**: Checks for threshold violations
+- **analyze_trends**: Provide a complete JSON array of {timestampMs, value} for accurate results.
+
+Calculates trend direction
+- **check_alerts**: Ensure windowHistory is a valid JSON array.
+
+Checks for threshold violations
 
 
 ## 💬 Prompt Examples

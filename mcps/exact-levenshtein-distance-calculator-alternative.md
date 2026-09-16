@@ -1,4 +1,4 @@
-# Exact Levenshtein Distance Calculator Alternative MCP Server
+# Exact Levenshtein Distance Calculator MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/exact-levenshtein-distance-calculator-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -21,7 +21,7 @@ This MCP server provides high-precision algorithms for measuring the difference 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Exact Levenshtein Distance Calculator Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Exact Levenshtein Distance Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "What is the Levenshtein distance between 'kitten' and 'sitting'?"
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Exact Levenshtein Distance Calculator Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Exact Levenshtein Distance Calculator** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `exact-levenshtein-distance-calculator-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Exact Levenshtein Distance Calculator Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Exact Levenshtein Distance Calculator** tools.
 
 **Configuration:**
 ```json

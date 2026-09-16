@@ -17,8 +17,8 @@ The Alt-Text Accessibility Checker ensures web images meet accessibility require
 - **check_length**: Check if alt-text length is within recommended bounds
 - **identify_duplicates**: Detect duplicate alt-text on a page
 - **analyze_redundancy**: Identify redundant phrases in alt-text
-- **determine_image_role**: Classify image as informative or decorative
 - **evaluate_descriptiveness**: Calculate descriptiveness score
+- **determine_image_role**: Classify image as informative or decorative
 
 
 ## 💬 Prompt Examples

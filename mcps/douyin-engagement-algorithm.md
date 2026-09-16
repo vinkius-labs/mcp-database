@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to quantify video performance in th
 
 
 ## Available Tools (4)
+- **estimate_view_multiplier**: Forecast the potential reach of a video based on its current performance
 - **calculate_engagement_score**: Determine the raw engagement quality of a video relative to its reach
 - **calculate_posting_adjustment**: Adjust the expected engagement based on the time elapsed since the video was posted
-- **estimate_view_multiplier**: Forecast the potential reach of a video based on its current performance
 - **predict_viral_potential**: Categorize a video's growth trajectory into a standardized index
 
 
