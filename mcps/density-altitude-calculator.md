@@ -14,12 +14,12 @@ This MCP server provides deterministic aviation calculations for density altitud
 
 
 ## Available Tools (3)
-- **get_pressure_altitude**: Ensure the altimeter setting is provided.
-
-Calculates the pressure altitude based on airport elevation and local altimeter settings
 - **get_density_altitude**: Provide pressure altitude, outside air temperature, and dewpoint.
 
 Calculates the final density altitude and the associated takeoff performance penalty
+- **get_pressure_altitude**: Ensure the altimeter setting is provided.
+
+Calculates the pressure altitude based on airport elevation and local altimeter settings
 - **get_isa_deviation**: Provide both pressure altitude and outside air temperature.
 
 Determines how much the current temperature deviates from the standard model
@@ -107,4 +107,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

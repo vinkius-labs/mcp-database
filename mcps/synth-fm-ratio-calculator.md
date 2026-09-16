@@ -14,9 +14,9 @@ This MCP server provides a deterministic Frequency Modulation (FM) synthesis eng
 
 
 ## Available Tools (3)
-- **analyze_fm_ratio**: Determines the mathematical relationship between the carrier and modulator to classify the resulting sound type
 - **calculate_sideband_spectrum**: Generates a detailed list of the frequencies and relative amplitudes of the sidebands produced by the modulation
 - **identify_audible_frequencies**: Filters a spectrum to identify only those sidebands that possess sufficient amplitude to be perceived
+- **analyze_fm_ratio**: Determines the mathematical relationship between the carrier and modulator to classify the resulting sound type
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

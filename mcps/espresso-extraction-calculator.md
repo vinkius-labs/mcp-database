@@ -14,9 +14,9 @@ A precision tool for baristas to optimize espresso profiles. Use `analyze_extrac
 
 
 ## Available Tools (3)
+- **analyze_extraction**: 
 - **calculate_dose_adjustment**: 
 - **validate_extraction_parameters**: 
-- **analyze_extraction**: 
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
