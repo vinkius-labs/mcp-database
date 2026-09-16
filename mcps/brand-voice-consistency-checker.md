@@ -14,9 +14,9 @@ The Brand Voice Consistency Checker is an automated validator that ensures your 
 
 
 ## Available Tools (3)
+- **check_vocabulary**: Checks for banned words and tracks preferred brand terminology
 - **check_syntax**: Evaluates sentence structure and punctuation against brand rules
 - **calculate_alignment**: Measures qualitative attributes like tone and readability
-- **check_vocabulary**: Checks for banned words and tracks preferred brand terminology
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

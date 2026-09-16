@@ -14,8 +14,8 @@ The Beauty Device Comparison Engine connects AI agents to a specialized database
 
 
 ## Available Tools (4)
-- **get_efficacy_projections**: Get efficacy projections for a specific device
 - **compare_devices**: Compare multiple beauty devices
+- **get_efficacy_projections**: Get efficacy projections for a specific device
 - **filter_devices**: Filter beauty devices by skin type and concern
 - **get_treatment_implications**: Get treatment implications for a specific device
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
