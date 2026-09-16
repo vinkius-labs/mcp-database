@@ -26,21 +26,21 @@ Music supervisors, DJs, radio producers, playlist curators, event promoters and 
 
 
 ## Available Tools (6)
+- **browse_category**: Use for genre-based discovery: "what's new in drum and bass?".
+
+Browse Mixcloud genre categories (38: ambient, bass, beats, dnb...) and their trending cloudcasts
 - **get_cloudcast**: Keys come from search/list tools (format /user/slug/).
 
 Get full cloudcast detail: tracklist sections, description, tags, stats
-- **get_user**: username is the URL slug (e.g. Radio_RapTz from search_uploaders).
-
-Get a Mixcloud uploader profile: bio, follower count and stats
 - **search_cloudcasts**: Pagination via limit/offset. Note: no total count is returned — page until empty.
 
 Search DJ mixes, radio shows and podcasts (cloudcasts) by keyword on Mixcloud
 - **search_uploaders**: Search radio stations by name to explore their show archives.
 
 Search Mixcloud users: DJs, radio stations, labels and podcast creators
-- **browse_category**: Use for genre-based discovery: "what's new in drum and bass?".
+- **get_user**: username is the URL slug (e.g. Radio_RapTz from search_uploaders).
 
-Browse Mixcloud genre categories (38: ambient, bass, beats, dnb...) and their trending cloudcasts
+Get a Mixcloud uploader profile: bio, follower count and stats
 - **list_user_cloudcasts**: Each entry: key (for get_cloudcast), name, play counts, tags, audio length. Great for exploring a radio station's full show archive.
 
 List all cloudcasts (shows/mixes) published by a Mixcloud user

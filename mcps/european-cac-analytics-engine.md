@@ -14,8 +14,8 @@ This MCP server provides specialized analytics for European market expansion. It
 
 
 ## Available Tools (4)
-- **get_cac_by_country**: Calculates the specific acquisition cost for a single country or a set of countries
 - **analyze_barrier_impact**: Quantifies how much language and cultural barriers are inflating costs in specific markets
+- **get_cac_by_country**: Calculates the specific acquisition cost for a single country or a set of countries
 - **get_market_efficiency_summary**: Provides a high-level overview of which European regions are most cost-effective
 - **optimize_marketing_budget**: Recommends how to redistribute a total budget to achieve the highest number of customer acquisitions
 

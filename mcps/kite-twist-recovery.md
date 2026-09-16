@@ -14,9 +14,9 @@ This MCP server provides essential tools for kite pilots to manage line twist ph
 
 
 ## Available Tools (4)
+- **twist_type_differentiation**: Distinguishes between center line and steering line issues to guide pilot action
 - **flight_readiness_check**: Performs a final verification of whether the kite is safe to launch or continue flying
 - **safety_warning_generator**: Provides specific verbal warnings and actionable instructions based on the current kite state
-- **twist_type_differentiation**: Distinguishes between center line and steering line issues to guide pilot action
 - **untwist_analysis**: Calculates the core physical requirements to resolve line twists
 
 

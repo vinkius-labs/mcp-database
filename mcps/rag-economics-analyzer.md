@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools to model the economic impa
 
 
 ## Available Tools (4)
-- **analyze_latency_impact**: Calculates the additional cost required to meet a specific latency target
 - **calculate_query_economics**: Calculates the total cost and cost breakdown for a single user query
 - **get_optimization_priorities**: Identifies the primary and secondary drivers for cost optimization
 - **optimize_chunking_strategy**: Finds the ideal chunk size to balance retrieval accuracy against LLM token costs
+- **analyze_latency_impact**: Calculates the additional cost required to meet a specific latency target
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a specialized analytical engine to monitor technical de
 
 
 ## Available Tools (4)
-- **get_debt_thresholds**: Retrieves configuration constants used to categorize debt levels
-- **analyze_velocity_trend**: Evaluates how much the team capacity is being eroded by accumulated debt
 - **calculate_debt_metrics**: Calculates primary technical debt indicators and provides strategic recommendations
 - **compare_feature_vs_debt_ratio**: Compares new work against debt accumulation to determine project health
+- **get_debt_thresholds**: Retrieves configuration constants used to categorize debt levels
+- **analyze_velocity_trend**: Evaluates how much the team capacity is being eroded by accumulated debt
 
 
 ## 💬 Prompt Examples

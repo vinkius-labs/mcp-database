@@ -14,10 +14,10 @@ This MCP server provides a specialized toolkit for analyzing the financial and s
 
 
 ## Available Tools (4)
-- **compare_ecosystems**: Evaluates the relative dominance and value gap between two different ecosystems
 - **calculate_ecosystem_valuation**: Determines the total economic value and core health metrics of a specific AI ecosystem
-- **get_growth_potential**: Predicts how much value an ecosystem could gain if it increases its engagement metrics
 - **analyze_integration_density**: Assesses how "useful" the ecosystem is to the broader market by checking the depth of its integrations
+- **compare_ecosystems**: Evaluates the relative dominance and value gap between two different ecosystems
+- **get_growth_potential**: Predicts how much value an ecosystem could gain if it increases its engagement metrics
 
 
 ## 💬 Prompt Examples

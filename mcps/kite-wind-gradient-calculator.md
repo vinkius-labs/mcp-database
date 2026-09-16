@@ -16,8 +16,8 @@ This MCP server provides tools to model the vertical wind profile using the loga
 ## Available Tools (4)
 - **analyze_thermal_impact**: Analyzes how temperature gradients affect atmospheric stability and wind profile
 - **calculate_power_scaling**: Calculates the power increase ratio and percentage when flying at a target wind speed
-- **find_optimal_flying_height**: Finds the ideal height to achieve a target power ratio within gear constraints
 - **get_wind_at_height**: Calculates the wind speed at a specific altitude using the logarithmic wind profile
+- **find_optimal_flying_height**: Finds the ideal height to achieve a target power ratio within gear constraints
 
 
 ## 💬 Prompt Examples

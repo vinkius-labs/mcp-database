@@ -14,9 +14,9 @@ This MCP server provides advanced analytical tools to assess how infrastructure 
 
 
 ## Available Tools (4)
-- **analyze_efficiency_thresholds**: Determines if the current scalability is healthy or if the system is approaching diminishing returns
 - **calculate_scalability_metrics**: Provides a complete scalability profile including the coefficient, economies indicator, and elasticity
 - **get_cost_leverage_impact**: Isolates the impact of fixed cost leverage on the overall scalability
+- **analyze_efficiency_thresholds**: Determines if the current scalability is healthy or if the system is approaching diminishing returns
 - **project_future_scalability**: Predicts how the scalability coefficient will change if capacity is increased further
 
 

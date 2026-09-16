@@ -15,8 +15,8 @@ This MCP server provides strategic analysis of customer attrition across Europea
 
 ## Available Tools (4)
 - **analyze_churn_drivers**: Identifies the primary reasons why customers are leaving a specific country
-- **evaluate_competitive_threat**: Measures the impact of competitors on churn within a specific market
 - **prioritize_retention_investment**: Determines which countries should receive the highest priority for retention budget allocation
+- **evaluate_competitive_threat**: Measures the impact of competitors on churn within a specific market
 - **query_country_churn**: Calculates the specific churn rate for a selected country
 
 

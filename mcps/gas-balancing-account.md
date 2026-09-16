@@ -15,9 +15,9 @@ This MCP server provides specialized accounting tools for joint gas operations. 
 
 ## Available Tools (4)
 - **get_make_up_schedule**: Determines how a party should take gas in upcoming periods to rectify a deficit
+- **calculate_period_imbalance**: Calculates imbalance, make-up requirements, and financial implications for a period
 - **query_imbalance_status**: Retrieves the current state of a party's gas balance
 - **simulate_imbalance_scenario**: Forecasts the impact of different production scenarios on the cumulative balance
-- **calculate_period_imbalance**: Calculates imbalance, make-up requirements, and financial implications for a period
 
 
 ## 💬 Prompt Examples

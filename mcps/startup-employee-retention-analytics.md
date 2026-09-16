@@ -14,10 +14,10 @@ This MCP server provides specialized analytics for startup workforce management.
 
 
 ## Available Tools (4)
-- **analyze_tenure_distribution**: Evaluates where in the employee lifecycle churn is most concentrated
 - **calculate_retention_metrics**: Provides the core health indicators of the workforce for a given period
 - **estimate_equity_risk**: Predicts potential upcoming turnover based on the proximity of employees to their vesting milestones
 - **get_workforce_stability_report**: Synthesizes metrics, tenure, and market factors into a high-level stability assessment
+- **analyze_tenure_distribution**: Evaluates where in the employee lifecycle churn is most concentrated
 
 
 ## 💬 Prompt Examples

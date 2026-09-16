@@ -14,10 +14,18 @@ This MCP server provides a specialized suite of analytical tools to measure prod
 
 
 ## Available Tools (4)
-- **analyze_retention_correlation**: Determines if higher engagement is effectively driving user retention
-- **calculate_engagement_score**: Generates a single score representing the depth of user interaction
-- **generate_power_user_distribution**: Provides a breakdown of user activity levels to identify the power user density
-- **get_stickiness_metrics**: Calculates the product's daily stickiness ratio
+- **analyze_retention_correlation**: Pass engagementMetrics as a JSON string and the matching retentionRates array in the same order.
+
+Test whether higher engagement actually correlates with better retention
+- **calculate_engagement_score**: Supply average session duration, actions per session, and the feature adoption rate (0 to 1).
+
+Roll session depth and feature adoption into one engagement score
+- **generate_power_user_distribution**: Pass userActivityDays as a JSON string of per-user active-day arrays.
+
+Break the user base into activity tiers to reveal power-user density
+- **get_stickiness_metrics**: Supply the daily and monthly active user counts; the ratio nears 1 when users return every day.
+
+Compute the DAU/MAU stickiness ratio — how often monthly users return daily
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides critical aeronautical safety calculations for kite oper
 
 
 ## Available Tools (4)
-- **calculate_safety_window**: Determines the remaining time an operator has to react before the situation becomes unrecoverable
 - **evaluate_recovery_options**: Suggests the best physical actions to take to prevent damage or injury based on the current descent state
 - **get_environmental_risk**: Assesses the danger posed by the environment (wind and terrain) to the falling kite
 - **get_impact_dynamics**: Calculates the physics of the descent to determine how fast and when the kite will hit the ground
+- **calculate_safety_window**: Determines the remaining time an operator has to react before the situation becomes unrecoverable
 
 
 ## 💬 Prompt Examples

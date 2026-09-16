@@ -14,9 +14,9 @@ This MCP server provides a measurement engine to quantify user onboarding succes
 
 
 ## Available Tools (4)
-- **compare_segment_performance**: Compares onboarding effectiveness across different user tiers or categories
 - **analyze_funnel_dropoffs**: Identifies which specific steps in the onboarding process cause the most user attrition
 - **calculate_retention_correlation**: Determines if successful onboarding is actually driving long-term user retention
+- **compare_segment_performance**: Compares onboarding effectiveness across different user tiers or categories
 - **get_onboarding_score**: Calculates a single health score representing how effectively users are being onboarded
 
 

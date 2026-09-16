@@ -14,10 +14,18 @@ This MCP server provides a structural framework to analyze infrastructure market
 
 
 ## Available Tools (4)
-- **analyze_market_concentration**: Determines the concentration level and primary market structure type based on participant count and HHI
-- **calculate_competitive_intensity**: Provides a detailed view of how aggressive the competition is within the specific market context
-- **evaluate_entry_barriers**: Measures the difficulty for new players to enter the market
-- **generate_market_summary**: Synthesizes all previous metrics into a comprehensive strategic overview of the market
+- **analyze_market_concentration**: Ensure both parameters are provided to determine concentration.
+
+Determines the concentration level and primary market structure type based on participant count and HHI
+- **calculate_competitive_intensity**: Provide values for all three parameters to ensure a comprehensive analysis.
+
+Provides a detailed view of how aggressive the competition is within the specific market context
+- **evaluate_entry_barriers**: Provide both the entry and regulatory scores.
+
+Measures the difficulty for new players to enter the market
+- **generate_market_summary**: Pass all required JSON models as arguments.
+
+Synthesizes all previous metrics into a comprehensive strategic overview of the market
 
 
 ## 💬 Prompt Examples

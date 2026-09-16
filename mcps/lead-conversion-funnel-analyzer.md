@@ -14,10 +14,10 @@ This MCP server provides tools to analyze the complete user journey from visitor
 
 
 ## Available Tools (4)
-- **analyze_funnel_performance**: Calculates the conversion efficiency of the entire funnel and identifies specific stage-by-stage performance
 - **evaluate_ab_test**: Compares two or more variations of a funnel to determine which performs better
 - **identify_critical_leaks**: Specifically targets the highest volume loss points in the funnel
 - **segment_by_source**: Evaluates how different traffic origins impact the conversion health
+- **analyze_funnel_performance**: Calculates the conversion efficiency of the entire funnel and identifies specific stage-by-stage performance
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides deep insights into marketplace efficiency. Use `get_liq
 
 
 ## Available Tools (4)
-- **get_fill_rate_metrics**: Analyzes how effectively supply is being converted into completed transactions
-- **get_geographic_liquidity**: Breaks down liquidity performance by geographic region to identify local imbalances
 - **get_category_efficiency**: Evaluates how liquidity is distributed across different product categories
+- **get_geographic_liquidity**: Breaks down liquidity performance by geographic region to identify local imbalances
 - **get_liquidity_summary**: Provides a high-level overview of the core liquidity health of the marketplace
+- **get_fill_rate_metrics**: Analyzes how effectively supply is being converted into completed transactions
 
 
 ## 💬 Prompt Examples

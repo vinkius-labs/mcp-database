@@ -14,10 +14,10 @@ This MCP server provides a suite of analytical tools to evaluate the performance
 
 
 ## Available Tools (4)
-- **get_productivity_metrics**: Evaluates the core output volume of a research team
+- **get_impact_metrics**: Measures the scientific influence and technological reach of the team
 - **get_talent_roi**: Calculates the return on investment for human capital
 - **get_efficiency_metrics**: Analyzes the economic performance of the R&D budget
-- **get_impact_metrics**: Measures the scientific influence and technological reach of the team
+- **get_productivity_metrics**: Evaluates the core output volume of a research team
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a diagnostic engine to quantify Product-Market Fit (PMF
 
 
 ## Available Tools (4)
+- **get_market_readiness_guidance**: Translates the PMF score and readiness level into actionable business directions
 - **calculate_sentiment_metrics**: Analyzes raw survey responses to determine the qualitative health of the product
 - **analyze_cohort_variance**: Adjusts the PMF score to account for potential bias between early adopters and the broader market
 - **calculate_pmf_composite_score**: Generates the final 0-100 PMF score by combining qualitative sentiment and quantitative business metrics
-- **get_market_readiness_guidance**: Translates the PMF score and readiness level into actionable business directions
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides deep insights into customer segment profitability. It a
 
 
 ## Available Tools (4)
-- **get_channel_impact**: Analyze how the current mix of acquisition channels influences the total CAC for a segment
 - **analyze_segment_economics**: Analyze the individual profitability and efficiency of a specific customer segment
 - **compare_segment_ratios**: Compare different segments in terms of acquisition efficiency
+- **get_channel_impact**: Analyze how the current mix of acquisition channels influences the total CAC for a segment
 - **prioritize_segments**: Identify which segments to target to maximize business value
 
 

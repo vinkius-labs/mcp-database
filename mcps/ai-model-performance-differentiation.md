@@ -14,12 +14,12 @@ This MCP server provides a suite of analytical tools to calculate the competitiv
 
 
 ## Available Tools (4)
-- **analyze_differentiation**: Calculates the primary differentiation score for a specific model
-- **calculate_efficiency_ratio**: Determines the economic value of the model
-- **evaluate_latency_impact**: Measures how much the model's speed affects its usability and competitive standing
 - **map_competitive_positioning**: , based on accuracy and cost.
 
 Identifies where the model sits in the market landscape
+- **analyze_differentiation**: Calculates the primary differentiation score for a specific model
+- **calculate_efficiency_ratio**: Determines the economic value of the model
+- **evaluate_latency_impact**: Measures how much the model's speed affects its usability and competitive standing
 
 
 ## 💬 Prompt Examples
