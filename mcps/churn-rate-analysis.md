@@ -14,9 +14,9 @@ This MCP server provides a suite of analytical tools to monitor customer retenti
 
 
 ## Available Tools (4)
+- **get_revenue_churn_impact**: Analyzes the financial impact of customer losses
 - **get_customer_churn_metrics**: Calculates the basic percentage of customers lost during a period
 - **get_net_churn_status**: Determines if the customer base is growing or shrinking by factoring in new acquisitions
-- **get_revenue_churn_impact**: Analyzes the financial impact of customer losses
 - **get_churn_composition**: Breaks down the reasons for customer loss to distinguish between intentional and unintentional departures
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
