@@ -14,8 +14,8 @@ This MCP server provides precise tools for aircraft weight and balance managemen
 
 
 ## Available Tools (3)
-- **predict_fuel_burn_impact**: Calculates how much the CG will shift after a specific amount of fuel is consumed
 - **calculate_current_status**: Calculates the immediate weight, moment, and CG position based on the current configuration of the aircraft
+- **predict_fuel_burn_impact**: Calculates how much the CG will shift after a specific amount of fuel is consumed
 - **validate_load_configuration**: Checks if a specific set of proposed passenger or baggage loads will cause the aircraft to exceed weight or CG limits
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
