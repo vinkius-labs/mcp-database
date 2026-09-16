@@ -39,15 +39,15 @@ Connect your **Frontify** account to any AI agent and take full control of your 
 
 ## Available Tools (10)
 - **execute_graphql_payload**: Identify bounded routing spaces inside the Headless Frontify DAM utilizing native GraphQL strings
-- **patch_asset_metadata**: Mutate globalThis Web CRM boundaries substituting Attributes safely
 - **get_account_limits**: Inspect deep internal arrays mitigating specific Picture constraints
-- **get_project_assets**: Retrieve explicit Cloud logging tracing explicit Asset Limits
-- **list_brand_guidelines**: Identify precise active arrays spanning rented Documentation trees
-- **list_native_brands**: Perform structural extraction of properties driving active Global namespaces
-- **wipe_media_asset**: Irreversibly vaporize explicit App nodes dropping live Database bytes
-- **invite_workspace_user**: Dispatch an automated validation check routing explicit Workspace roles
-- **list_platform_users**: Retrieve the exact structural matching verifying Identity schemas
 - **list_workspace_projects**: Enumerate explicitly attached structured rules exporting active Workspaces
+- **get_project_assets**: Retrieve explicit Cloud logging tracing explicit Asset Limits
+- **list_native_brands**: Perform structural extraction of properties driving active Global namespaces
+- **list_brand_guidelines**: Identify precise active arrays spanning rented Documentation trees
+- **list_platform_users**: Retrieve the exact structural matching verifying Identity schemas
+- **invite_workspace_user**: Dispatch an automated validation check routing explicit Workspace roles
+- **patch_asset_metadata**: Mutate global Web CRM boundaries substituting Attributes safely
+- **wipe_media_asset**: Irreversibly vaporize explicit App nodes dropping live Database bytes
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -25,6 +25,9 @@ Traders, fund managers, economic journalists, central bank watchers, and macro s
 
 
 ## Available Tools (4)
+- **list_releases**: Each release contains multiple series.
+
+List all FRED economic data releases
 - **get_release**: Use release IDs like 10 (Employment Situation), 53 (GDP), 46 (CPI).
 
 Get details for a specific FRED release
@@ -34,9 +37,6 @@ Get release dates for economic data
 - **get_release_series**: For example, release 10 (Employment Situation) contains UNRATE, PAYEMS, and hundreds more.
 
 Get all series within a FRED release
-- **list_releases**: Each release contains multiple series.
-
-List all FRED economic data releases
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,17 +37,17 @@ Connect your **Fintoc** account to any AI agent and automate your open banking a
 
 ## Available Tools (12)
 - **get_payment_intent**: Get payment intent details
-- **get_subscription**: Get subscription details
-- **create_payment_intent**: Create a payment intent
-- **get_account**: Get account details
 - **get_link**: Get link details
 - **list_accounts**: List accounts for a link
+- **create_payment_intent**: Create a payment intent
+- **get_account**: Get account details
+- **get_movement**: Get movement details
+- **get_subscription**: Get subscription details
+- **list_institutions**: List supported institutions
 - **list_links**: List all links
 - **list_movements**: List movements for an account
 - **list_payment_intents**: List payment intents
 - **list_subscriptions**: List subscriptions
-- **get_movement**: Get movement details
-- **list_institutions**: List supported institutions
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
