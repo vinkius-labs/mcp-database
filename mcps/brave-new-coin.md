@@ -28,14 +28,30 @@ Connect your AI agent to the **Brave New Coin (BNC)** API and orchestrate your c
 
 
 ## Available Tools (8)
-- **get_gwa**: Get Global Weighted Average details
-- **get_ohlcv**: Get historical Open High Low Close Volume data
-- **get_ticker**: Get the latest Global Weighted Average price/ticker
-- **get_asset**: Get details of a specific asset
-- **get_market**: Get details of a specific market
-- **get_vwap**: Get Volume Weighted Average Price
-- **list_assets**: List all supported crypto assets
-- **list_markets**: List exchanges/markets where an asset is traded
+- **get_asset**: Provide the required Asset ID.
+
+Get details of a specific asset
+- **get_market**: Use the Market ID to specify the market.
+
+Get details of a specific market
+- **get_vwap**: Supply the Asset ID for the calculation.
+
+Get Volume Weighted Average Price
+- **list_assets**: to filter by status.
+
+List all supported crypto assets
+- **list_markets**: Pass the Asset ID to filter results.
+
+List exchanges/markets where an asset is traded
+- **get_gwa**: Pass the Asset ID to specify the asset.
+
+Get Global Weighted Average details
+- **get_ticker**: Pass a coin symbol or ID (e.g. BTC).
+
+Get the latest Global Weighted Average price/ticker
+- **get_ohlcv**: Specify either a market or index ID.
+
+Get historical Open High Low Close Volume data
 
 
 ## 💬 Prompt Examples
@@ -120,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

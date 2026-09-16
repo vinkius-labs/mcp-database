@@ -29,16 +29,28 @@ Connect your **BotPenguin** account to any AI agent and orchestrate your custome
 
 
 ## Available Tools (8)
-- **get_contact**: Get details of a specific contact
 - **list_contacts**: Optional search text.
 
 List all BotPenguin contacts/leads
 - **list_tags**: List all contact tags
-- **get_chat_history**: Retrieve message history of a chat
-- **list_agents**: List all human agents/operators
-- **list_chats**: List active chat sessions
-- **send_message**: Send a message in a specific chat
-- **send_otp**: Send an OTP SMS to verify a phone number
+- **get_chat_history**: Use the chat ID to fetch the message records.
+
+Retrieve message history of a chat
+- **list_agents**: Requires no parameters.
+
+List all human agents/operators
+- **send_message**: You must provide both a chat ID and message content.
+
+Send a message in a specific chat
+- **get_contact**: Provide a valid contact ID to retrieve information.
+
+Get details of a specific contact
+- **send_otp**: Ensure the phone number includes the country code.
+
+Send an OTP SMS to verify a phone number
+- **list_chats**: Do not use this tool if no chats are expected.
+
+List active chat sessions
 
 
 ## 💬 Prompt Examples
@@ -123,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

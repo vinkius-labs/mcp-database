@@ -35,11 +35,13 @@ Connect your **Bookingmood** rental management account to any AI agent and orche
 
 
 ## Available Tools (10)
-- **create_booking**: Create a new booking
-- **delete_booking**: Delete/cancel a booking permanently
+- **delete_booking**: Use only when the booking must be deleted and cannot be modified.
+
+Delete/cancel a booking permanently
 - **list_calendar_events**: List raw calendar events (blocks)
 - **list_contacts**: List guest contacts
 - **search_availability**: Search for available products across dates
+- **create_booking**: Create a new booking
 - **get_product**: Get details of a specific rental product
 - **list_bookings**: List all current bookings
 - **list_products**: List all rental products
@@ -129,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

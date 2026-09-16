@@ -27,14 +27,28 @@ Connect your **Bot9** account to any AI agent and orchestrate your customer supp
 
 
 ## Available Tools (8)
-- **create_bot**: Create a new AI chatbot
-- **add_data_source**: Add a URL to train the bot
-- **get_conversation_history**: Retrieve message history of a conversation
+- **list_data_sources**: Must provide a bot ID.
+
+List knowledge base sources for a bot
+- **add_data_source**: Use the provided bot ID.
+
+Add a URL to train the bot
+- **create_bot**: Supply a unique name for the bot.
+
+Create a new AI chatbot
+- **get_bot**: Provide a valid bot ID.
+
+Get details of a specific bot
+- **get_conversation_history**: Requires both bot and conversation IDs.
+
+Retrieve message history of a conversation
 - **list_bots**: List all AI bots
-- **list_conversations**: List active conversations for a bot
-- **list_data_sources**: List knowledge base sources for a bot
-- **send_message**: Send a message to a bot and get a response
-- **get_bot**: Get details of a specific bot
+- **list_conversations**: Must provide a bot ID.
+
+List active conversations for a bot
+- **send_message**: Ensure the bot ID is valid.
+
+Send a message to a bot and get a response
 
 
 ## 💬 Prompt Examples
@@ -119,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

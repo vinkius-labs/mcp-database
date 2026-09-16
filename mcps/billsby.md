@@ -33,16 +33,34 @@ Connect your **Billsby** account to any AI agent and orchestrate your subscripti
 
 
 ## Available Tools (10)
-- **get_customer**: Get specific customer details
-- **list_invoices**: List recent invoices
-- **list_products**: List all products
-- **create_customer**: Create a new customer
-- **get_customer_subscriptions**: List subscriptions for a specific customer
-- **get_subscription**: Get specific subscription details
-- **list_addons**: List available add-ons
-- **list_customers**: List all customers
-- **list_plans**: List all subscription plans
+- **create_customer**: Provide all three required fields: first name, last name, and email.
+
+Create a new customer
+- **list_customers**: This tool retrieves a comprehensive list of all registered users.
+
+List all customers
+- **list_products**: Do not use this tool if you need specific product details.
+
+List all products
 - **list_subscriptions**: List all subscriptions
+- **get_customer_subscriptions**: Use the customer ID to filter the results.
+
+List subscriptions for a specific customer
+- **get_customer**: The ID must be provided to execute the query.
+
+Get specific customer details
+- **get_subscription**: The ID must be provided to execute the query.
+
+Get specific subscription details
+- **list_addons**: This tool fetches all supplementary services offered.
+
+List available add-ons
+- **list_invoices**: Do not use this tool if you need specific invoice details.
+
+List recent invoices
+- **list_plans**: Use this tool only when listing plans is the primary goal.
+
+List all subscription plans
 
 
 ## 💬 Prompt Examples
@@ -127,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
