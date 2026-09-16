@@ -34,7 +34,9 @@ Protect your advertising spend with the **Anura MCP Server**. This integration a
 
 
 ## Available Tools (1)
-- **get_system_status**: Check Anura system status
+- **get_system_status**: Do not use this tool if you already have the status information.
+
+Check Anura system status
 
 
 ## 💬 Prompt Examples

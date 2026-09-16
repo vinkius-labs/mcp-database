@@ -43,28 +43,31 @@ No more manual field scouting or delayed threat identification. Your AI acts as 
 
 
 ## Available Tools (12)
+- **get_disease_detections**: Returns disease locations, pathogen identification, severity levels, and recommended fungicide treatments.
+
+Get crop disease detections and severity assessments for a field
+- **get_farms**: Returns farm names, IDs, locations, and field counts. Use this after get_clients to navigate to specific farms before querying fields.
+
+List farms belonging to a specific client
 - **get_field_details**: Get detailed information about a specific agricultural field
 - **get_fields**: Returns field names, IDs, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and monitoring status. Essential for farm management overview and selecting target fields for threat detection.
 
 List all agricultural fields monitored by Taranis for a farm
+- **get_nutrient_detections**: Returns deficiency locations, severity estimates, and variable rate fertilization recommendations.
+
+Get nutrient deficiency detections and fertilization recommendations for a field
 - **get_organizations**: Returns organization names, IDs, contact information, and field counts. Essential for multi-account management, selecting target organizations for field analysis, and understanding the scope of monitored agricultural operations.
 
 List all organizations available to the user in Taranis platform
-- **get_farms**: Returns farm names, IDs, locations, and field counts. Use this after get_clients to navigate to specific farms before querying fields.
+- **get_weed_detections**: Returns weed locations, estimated coverage area, species classification, and herbicide resistance indicators.
 
-List farms belonging to a specific client
+Get specific weed species detections and infestation maps for a field
 - **get_map_layers**: Returns layer metadata and download URLs. Essential for crop vigor assessment, variable rate application planning, and growth stage monitoring.
 
 Get map layers (NDVI, imagery, multispectral) for a specific field
 - **get_threats**: Returns threat categories, overall severity ratings, affected area percentages, and priority rankings.
 
 Get consolidated threat summary and severity assessment for a field
-- **get_weed_detections**: Returns weed locations, estimated coverage area, species classification, and herbicide resistance indicators.
-
-Get specific weed species detections and infestation maps for a field
-- **get_nutrient_detections**: Returns deficiency locations, severity estimates, and variable rate fertilization recommendations.
-
-Get nutrient deficiency detections and fertilization recommendations for a field
 - **get_scouting_recommendations**: Returns specific action items including verification locations, scouting patterns, and treatment suggestions.
 
 Get AI-powered scouting recommendations and action plans for a field
@@ -74,9 +77,6 @@ List clients within a specific Taranis organization
 - **get_detections**: Returns detection locations (GPS coordinates), threat types, severity levels, confidence scores, and recommended actions.
 
 Get all AI-detected crop threats (weeds, diseases, pests, nutrient deficiencies) in a field
-- **get_disease_detections**: Returns disease locations, pathogen identification, severity levels, and recommended fungicide treatments.
-
-Get crop disease detections and severity assessments for a field
 
 
 ## 💬 Prompt Examples

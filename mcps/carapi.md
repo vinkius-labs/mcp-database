@@ -40,9 +40,6 @@ Get list of all car makes
 - **get_models**: Optionally filter by year. Returns model names and IDs.
 
 Get models for a specific car make
-- **get_transmissions**: ).
-
-Get list of all transmission types
 - **get_engines**: ).
 
 Get list of all engine types
@@ -50,6 +47,9 @@ Get list of all engine types
 
 Get list of all body types
 - **get_drives**: Get list of all drive types
+- **get_transmissions**: ).
+
+Get list of all transmission types
 - **get_vehicles**: Supports filtering by year, make, model, body type, engine type, drive type and transmission. Returns vehicle details including year, make, model, trim, body style, engine specs, transmission, drive type, fuel type and MSRP.
 
 Search vehicles by year, make, model and more

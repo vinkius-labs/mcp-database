@@ -46,9 +46,6 @@ Extract album or artist data from a Bandcamp URL
 - **get_tags**: Use these tags with discover_music, get_best_selling, and get_new_releases.
 
 Get available genre tags on Bandcamp
-- **search**: Returns names, types, URLs and artwork. Results include artists, albums, tracks, labels and fan profiles.
-
-Search Bandcamp for artists, albums, tracks, labels and fans
 - **get_best_selling**: Returns titles, artists, artwork, and Bandcamp URLs.
 
 Get best selling releases on Bandcamp by genre
@@ -61,6 +58,9 @@ Get newest releases on Bandcamp by genre
 - **get_recommended**: Returns titles, artists, artwork, and Bandcamp URLs.
 
 Get recommended releases on Bandcamp by genre
+- **search**: Returns names, types, URLs and artwork. Results include artists, albums, tracks, labels and fan profiles.
+
+Search Bandcamp for artists, albums, tracks, labels and fans
 
 
 ## 💬 Prompt Examples

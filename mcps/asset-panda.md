@@ -30,13 +30,23 @@ The **Asset Panda MCP Server** provides a flexible natural language interface to
 
 ## Available Tools (8)
 - **list_groups**: List all asset groups (entities) in Asset Panda
-- **list_locations**: List all locations (alias for list_groups)
-- **update_object**: Update an existing object (asset)
-- **list_objects**: List all objects (assets) within a specific group
-- **create_object**: Create a new object (asset) in a group
+- **update_object**: Supply the Group ID, Object ID, and updated data.
+
+Update an existing object (asset)
+- **list_objects**: You must provide the Group ID.
+
+List all objects (assets) within a specific group
+- **create_object**: Supply the Group ID and field data.
+
+Create a new object (asset) in a group
+- **get_object**: Supply both the Group ID and Object ID.
+
+Get details for a specific object (asset)
 - **get_account_check**: Verify Asset Panda account connection
-- **get_group**: Get metadata for a specific asset group
-- **get_object**: Get details for a specific object (asset)
+- **get_group**: Provide the required Group ID.
+
+Get metadata for a specific asset group
+- **list_locations**: List all locations (alias for list_groups)
 
 
 ## 💬 Prompt Examples

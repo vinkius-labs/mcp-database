@@ -39,12 +39,12 @@ Unlock the power of spoken word with **3Scribe**, your automated partner for hig
 - **create_job**: You must provide a valid public URL. Returns a Job ID useful for tracking progress.
 
 Initiate a new audio or video transcription job in 3Scribe via a public media URL
-- **delete_job**: This is an irreversible destructive action. Requires the Job ID.
-
-Permanently delete a transcription task and its associated data from the 3Scribe account
 - **get_job**: You must provide the Job ID.
 
 Check the status and retrieve the generated text of a specific 3Scribe transcription job
+- **delete_job**: This is an irreversible destructive action. Requires the Job ID.
+
+Permanently delete a transcription task and its associated data from the 3Scribe account
 
 
 ## 💬 Prompt Examples

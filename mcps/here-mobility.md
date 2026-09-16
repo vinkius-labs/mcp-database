@@ -35,30 +35,30 @@ Essential for **urban commuters**, **travelers**, **tourists**, **accessibility 
 
 
 ## Available Tools (8)
-- **discover_trips**: Returns trip details including departure/arrival times, duration, number of transfers, and transport modes. Use origin and destination in lat,lng format. Optionally specify departure or arrival time in ISO 8601 format. Best for planning multimodal journeys.
-
-Discover public transit trips between origin and destination using HERE Transit API
-- **get_route_details**: Requires the trip ID from a discover_trips result plus original origin/destination and departure time. Use this to review full route before traveling.
-
-Get detailed route information for a specific transit trip
 - **get_stations**: Returns station IDs, names, coordinates, and available transport lines. Use this to find stations before planning trips.
 
 Find transit stations near a GPS coordinate
-- **search_multimodal_trips**: Modes can include: transit (bus/train/subway/tram/ferry), walk, bicycle, scooter, taxi. Returns multimodal route options with time breakdown per mode. Use this when user wants to combine walking or cycling with public transit for optimal journey.
+- **get_stations_by_name**: g., "Central Station", "Times Square"). Returns matching stations with IDs, names, coordinates, and available transport lines. Use this when you know the station name but not exact coordinates.
 
-Search trips combining multiple transport modes (transit, walk, bike, scooter)
+Find transit stations by name
+- **discover_trips**: Returns trip details including departure/arrival times, duration, number of transfers, and transport modes. Use origin and destination in lat,lng format. Optionally specify departure or arrival time in ISO 8601 format. Best for planning multimodal journeys.
+
+Discover public transit trips between origin and destination using HERE Transit API
 - **get_nearby_stations**: More precise than get_stations with customizable radius. Returns station IDs, names, distances, coordinates, and available lines. Use this for comprehensive station discovery in an area.
 
 Find all transit stations within a specific radius of coordinates
+- **get_route_details**: Requires the trip ID from a discover_trips result plus original origin/destination and departure time. Use this to review full route before traveling.
+
+Get detailed route information for a specific transit trip
 - **get_schedule**: Useful for checking when the next bus, train, or subway arrives. Requires station ID from get_stations result. Optionally filter by direction (e.g., "northbound", "downtown").
 
 Get departure/arrival schedule for a specific transit station
 - **get_station_details**: Requires station ID from station search results. Use this to review station facilities before planning trips.
 
 Get detailed information about a specific transit station
-- **get_stations_by_name**: g., "Central Station", "Times Square"). Returns matching stations with IDs, names, coordinates, and available transport lines. Use this when you know the station name but not exact coordinates.
+- **search_multimodal_trips**: Modes can include: transit (bus/train/subway/tram/ferry), walk, bicycle, scooter, taxi. Returns multimodal route options with time breakdown per mode. Use this when user wants to combine walking or cycling with public transit for optimal journey.
 
-Find transit stations by name
+Search trips combining multiple transport modes (transit, walk, bike, scooter)
 
 
 ## 💬 Prompt Examples
