@@ -14,10 +14,18 @@ This MCP server provides deterministic tools to evaluate AWS Step Functions stat
 
 
 ## Available Tools (4)
-- **calculate_activity_timeout_range**: Determines the valid window for activity task timeouts
-- **calculate_workflow_capacities**: Calculates the available or allowed capacities for data payloads, duration, and state naming based on the workflow mode
-- **check_definition_compliance**: Validates if the provided state machine definition and structure exceed hard AWS service limits
-- **evaluate_performance_recommendations**: Compares the current configuration against AWS best practices and soft limits to prevent performance degradation
+- **calculate_activity_timeout_range**: Specify the task type (e.g., activity).
+
+Determines the valid window for activity task timeouts
+- **calculate_workflow_capacities**: Specify the workflow mode (standard or express).
+
+Calculates the available or allowed capacities for data payloads, duration, and state naming based on the workflow mode
+- **check_definition_compliance**: Provide the definition size, state count, and history event count.
+
+Validates if the provided state machine definition and structure exceed hard AWS service limits
+- **evaluate_performance_recommendations**: Provide state count, nested depth, and workflow mode.
+
+Compares the current configuration against AWS best practices and soft limits to prevent performance degradation
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

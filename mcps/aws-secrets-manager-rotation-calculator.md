@@ -14,10 +14,10 @@ This MCP server provides a deterministic way to validate AWS Secrets Manager con
 
 
 ## Available Tools (4)
-- **calculate_rotation_parameters**: Determines if the rotation schedule and Lambda configuration meet operational safety and frequency requirements
 - **estimate_resource_usage**: Provides recommendations and estimates for versions, policies, and replication based on the scale of the secrets deployment
 - **get_lifecycle_and_sharing_guidelines**: Returns standard guidance for recovery windows and cross-account sharing limits
 - **validate_secret_constraints**: Checks if the provided secret configuration violates hard AWS limits for size and name length
+- **calculate_rotation_parameters**: Determines if the rotation schedule and Lambda configuration meet operational safety and frequency requirements
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

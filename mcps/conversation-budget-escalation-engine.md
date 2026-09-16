@@ -14,9 +14,9 @@ This MCP server provides a mathematical framework for managing AI conversation l
 
 
 ## Available Tools (4)
-- **analyze_budget_status**: Provides a real-time snapshot of the conversation health and remaining resources
 - **calculate_handoff_metrics**: Quantifies the necessity and timing of a handoff
 - **check_escalation_eligibility**: Determines if the conversation must be immediately escalated
+- **analyze_budget_status**: Provides a real-time snapshot of the conversation health and remaining resources
 - **handle_conversation_reset**: Adjusts the turn budget and state when a user rephrases or resets the context
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

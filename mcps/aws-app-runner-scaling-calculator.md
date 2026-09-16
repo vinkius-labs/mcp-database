@@ -14,9 +14,9 @@ This MCP server provides precise tools for planning AWS App Runner deployments. 
 
 
 ## Available Tools (3)
-- **calculate_resource_configuration**: Determines if a specific vCPU and Memory request is valid within AWS App Runner tier constraints
 - **calculate_scaling_plan**: Calculates the required number of instances and identifies if the workload is pushing beyond recommended concurrency limits
 - **generate_service_defaults**: Provides a complete set of operational parameters based on provided capacity requirements
+- **calculate_resource_configuration**: Determines if a specific vCPU and Memory request is valid within AWS App Runner tier constraints
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,9 +14,9 @@ This MCP server provides deterministic calculations for AWS Config deployments. 
 
 
 ## Available Tools (4)
-- **get_rule_limits**: Determines if the requested number of Config rules is within standard or increased limits
 - **get_compliance_summary**: Provides an overview of conformance packs, remediation actions, and snapshots based on the scale of the deployment
 - **get_infrastructure_plan**: Calculates the required service components (Recorders, Channels, Aggregators) based on the account and regional footprint
+- **get_rule_limits**: Determines if the requested number of Config rules is within standard or increased limits
 - **get_resource_coverage**: Evaluates if the resource count per account is within the recommended operational threshold
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

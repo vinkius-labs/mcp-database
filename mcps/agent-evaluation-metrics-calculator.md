@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine to evaluate AI agent performance
 
 
 ## Available Tools (3)
-- **calculate_efficiency_metrics**: Analyzes the operational cost and speed of the agent
 - **calculate_composite_and_health**: Generates a single performance score and determines if the agent is underperforming relative to a baseline
+- **calculate_efficiency_metrics**: Analyzes the operational cost and speed of the agent
 - **calculate_core_metrics**: Calculates the foundational performance indicators (accuracy, precision, recall, and F1 score) based on task outcomes
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
