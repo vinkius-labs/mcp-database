@@ -34,33 +34,59 @@ Connect your **Freshsales** CRM to any AI agent to streamline your sales operati
 
 
 ## Available Tools (21)
+- **list_owners**: Fetch all users/owners
 - **convert_lead**: last_name and company_name are mandatory.
 
 Convert a lead to a contact
-- **create_account**: Create a new sales account
-- **create_appointment**: Create an appointment
-- **create_contact**: Create a new contact
-- **create_deal**: Create a new deal
-- **create_note**: Create a note for a record
-- **create_task**: Create a task
-- **get_contact**: View a specific contact
+- **create_account**: Both the account name and website are required.
+
+Create a new sales account
+- **create_appointment**: Provide a title and specify the targetable type and ID.
+
+Create an appointment
+- **create_contact**: You must provide a first name, last name, and email address.
+
+Create a new contact
+- **create_deal**: You must specify a name and a deal amount.
+
+Create a new deal
+- **create_note**: Specify the targetable type and ID.
+
+Create a note for a record
+- **create_task**: Provide a title and specify the targetable type and ID.
+
+Create a task
+- **get_account**: Provide the account ID.
+
+View a specific sales account
+- **get_contact**: Provide the contact ID as the required parameter.
+
+View a specific contact
+- **get_deal**: Provide the deal ID.
+
+View a specific deal
+- **get_lead**: View a specific lead
 - **list_deal_stages**: Fetch deal stages
-- **search_lookup**: Lookup search for specific fields
-- **update_contact**: Update an existing contact
 - **list_industry_types**: Fetch industry types
+- **list_lead_sources**: Fetch lead sources
 - **list_leads**: Use filters API to get view_id if unknown.
 
 List all leads in a specific view
-- **list_owners**: Fetch all users/owners
+- **search_global**: Provide both the query and desired entity types.
+
+Global search across entities
+- **search_lookup**: Use the async function for execution.
+
+Lookup search for specific fields
+- **update_contact**: Provide the contact ID; otherwise, the update will fail.
+
+Update an existing contact
+- **update_lead**: Provide the lead ID; otherwise, the update will fail.
+
+Update an existing lead
 - **create_lead**: Provide at least a first name or email.
 
 Create a new lead in Freshsales
-- **get_account**: View a specific sales account
-- **get_deal**: View a specific deal
-- **get_lead**: View a specific lead
-- **list_lead_sources**: Fetch lead sources
-- **search_global**: Global search across entities
-- **update_lead**: Update an existing lead
 
 
 ## 💬 Prompt Examples
@@ -145,4 +171,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

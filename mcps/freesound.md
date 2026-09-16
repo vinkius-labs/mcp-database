@@ -37,6 +37,11 @@ Connect your **Freesound** account to any AI agent and access the world's larges
 - **get_user_sounds**: Provide the target user’s Freesound username.
 
 Get sounds uploaded by a specific user
+- **get_pending_uploads**: Check status of sounds in moderation
+- **search_sounds**: Supports Solr-style filters.
+
+Search for sounds on Freesound
+- **upload_sound**: Upload an audio file to Freesound
 - **describe_sound**: You must specify the sound ID.
 
 Add metadata to an uploaded sound
@@ -47,15 +52,10 @@ Download the original high-quality sound file
 - **get_pack**: You must provide the unique Pack ID.
 
 Get information about a sound pack
-- **get_pending_uploads**: Check status of sounds in moderation
 - **get_sound**: Get details for a specific sound
 - **get_user**: Only use this tool to retrieve public profile information.
 
 Get information about a Freesound user
-- **search_sounds**: Supports Solr-style filters.
-
-Search for sounds on Freesound
-- **upload_sound**: Upload an audio file to Freesound
 
 
 ## 💬 Prompt Examples
@@ -140,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

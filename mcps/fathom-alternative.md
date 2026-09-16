@@ -36,28 +36,64 @@ No more digging through dashboards to find simple traffic stats. Your AI acts as
 
 
 ## Available Tools (20)
-- **delete_site**: Permanently delete a site
-- **get_account**: Retrieve information about the Fathom account owner
-- **create_event**: Create a new event for a site
-- **create_site**: Create a new Fathom site
-- **delete_event**: Permanently delete an event
-- **get_current_visitors**: Returns the total current visitors on a site
-- **get_site**: Retrieve a single site by its ID
-- **update_event**: Update an existing event
-- **create_milestone**: Create a new milestone for a site
-- **delete_milestone**: Permanently delete a milestone
-- **get_aggregations**: Generate flexible reports by grouping and filtering data
-- **get_event**: Retrieve a single event by its ID
-- **get_milestone**: Retrieve a single milestone by its ID
-- **list_events**: List all events for a site
-- **list_milestones**: List all milestones for a site
+- **create_event**: Provide the site_id and the desired event name.
+
+Create a new event for a site
+- **create_milestone**: Ensure the date is before the current date.
+
+Create a new milestone for a site
+- **create_site**: Supply the name and share_password if private sharing is required.
+
+Create a new Fathom site
+- **get_current_visitors**: Include detailed breakdown by setting the detailed parameter.
+
+Returns the total current visitors on a site
+- **delete_milestone**: Specify both the site and the milestone ID.
+
+Permanently delete a milestone
+- **delete_site**: this irreversible action.
+
+Permanently delete a site
+- **get_event**: Requires both site_id and event_id.
+
+Retrieve a single event by its ID
+- **get_milestone**: Provide both site and milestone IDs.
+
+Retrieve a single milestone by its ID
+- **get_site**: Provide the site_id to execute the query.
+
+Retrieve a single site by its ID
+- **list_events**: Specify site_id and use limit/starting_after for pagination.
+
+List all events for a site
 - **list_sites**: Supports cursor pagination.
 
 List all sites owned by the API key
-- **update_milestone**: Update an existing milestone
-- **update_site**: Update an existing Fathom site
-- **wipe_event**: Wipe all completion data for an event
-- **wipe_site**: Wipe all pageviews and event completions from a site
+- **update_event**: Supply the site_id, event_id, and the new name.
+
+Update an existing event
+- **update_milestone**: Supply the site ID, milestone ID, and new details.
+
+Update an existing milestone
+- **wipe_site**: Use this function to reset site data.
+
+Wipe all pageviews and event completions from a site
+- **get_account**: Retrieve information about the Fathom account owner
+- **list_milestones**: Provide site_id and use limit/starting_after for pagination.
+
+List all milestones for a site
+- **update_site**: Must provide the site_id and at least one field to update.
+
+Update an existing Fathom site
+- **wipe_event**: Specify the site_id and event_id to wipe data.
+
+Wipe all completion data for an event
+- **get_aggregations**: Specify required IDs and date ranges.
+
+Generate flexible reports by grouping and filtering data
+- **delete_event**: Requires both site_id and event_id for execution.
+
+Permanently delete an event
 
 
 ## 💬 Prompt Examples
@@ -142,4 +178,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

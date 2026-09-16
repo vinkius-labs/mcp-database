@@ -36,14 +36,14 @@ Connect your **FlightAware AeroAPI** account to any AI agent to access global av
 ## Available Tools (8)
 - **get_airport_flights**: Get flights for a specific airport
 - **get_flight_track**: Get the track (position history) for a specific flight
-- **get_aircraft**: Get information about a specific aircraft
-- **get_airport_weather**: Get current weather and forecasts for an airport
-- **get_flight_route**: Get the planned route for a specific flight
 - **get_flights**: g., flight number or registration).
 
 Get flights for a specific identifier
 - **get_operator_flights**: Get current and scheduled flights for an operator
 - **get_operator**: Get details about a specific operator (airline)
+- **get_aircraft**: Get information about a specific aircraft
+- **get_airport_weather**: Get current weather and forecasts for an airport
+- **get_flight_route**: Get the planned route for a specific flight
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

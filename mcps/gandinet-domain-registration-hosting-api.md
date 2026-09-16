@@ -36,18 +36,18 @@ Connect your **Gandi.net** account to any AI agent to automate domain management
 ## Available Tools (14)
 - **list_domains**: List domains associated with your Gandi account
 - **check_domain**: Check if a domain is available for registration
-- **create_mailbox**: Create a new mailbox for a domain
-- **get_domain**: Get detailed information about a specific domain
-- **get_organization**: Get details for a specific organization
-- **list_hosting_instances**: List all Simple Hosting instances
-- **list_organizations**: List organizations you belong to
-- **update_dns_record**: Update an existing DNS record
 - **get_hosting_instance**: Get details for a specific Simple Hosting instance
+- **get_organization**: Get details for a specific organization
 - **create_dns_record**: Create a new DNS record for a domain
-- **delete_dns_record**: Delete a DNS record
 - **list_aliases**: List aliases for a specific mailbox
 - **list_dns_records**: List all DNS records for a domain
+- **create_mailbox**: Create a new mailbox for a domain
+- **delete_dns_record**: Delete a DNS record
+- **get_domain**: Get detailed information about a specific domain
+- **list_hosting_instances**: List all Simple Hosting instances
 - **list_mailboxes**: List all mailboxes for a given domain
+- **list_organizations**: List organizations you belong to
+- **update_dns_record**: Update an existing DNS record
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

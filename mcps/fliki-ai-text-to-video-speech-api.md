@@ -37,8 +37,8 @@ No more manual video editing for simple social media clips or voiceovers. Your A
 - **generate_video**: Provide the script content and optional voice, aspect ratio, and background music.
 
 Generate a video based on a provided script or text
-- **get_video**: Get the status and download link for a generated video
 - **list_voices**: List available AI voices
+- **get_video**: Get the status and download link for a generated video
 
 
 ## 💬 Prompt Examples
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

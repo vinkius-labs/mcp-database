@@ -36,44 +36,44 @@ No more switching between apps to moderate your channel or check your social gro
 
 
 ## Available Tools (22)
-- **ban_channel_user**: Requires authentication.
-
-Ban a user from a channel
-- **block_user**: Requires authentication.
-
-Block a user
-- **get_current_fname_owner**: Get current owner of an fname
-- **get_primary_address**: Get a user primary wallet address
 - **list_channel_followers**: List followers of a Farcaster channel
-- **list_creator_rewards**: Get weekly top creator rewards
 - **list_developer_rewards**: Get weekly top developer rewards
-- **list_moderated_casts**: List moderation actions in a channel
 - **list_user_following_channels**: List channels a user follows
 - **moderate_cast**: Requires authentication and moderator privileges.
 
 Hide or unhide a cast in a channel
-- **pin_cast**: Requires authentication.
-
-Pin a cast to a channel
-- **unfollow_channel**: Requires authentication.
-
-Unfollow a Farcaster channel
-- **get_signed_key_request**: Get signed key request status
-- **list_account_verifications**: List account verifications for a user
-- **list_all_channels**: List all Farcaster channels
 - **list_blocked_users**: Get blocked users
-- **list_fname_transfers**: Can be filtered by name, fid, or timestamp.
+- **get_current_fname_by_fid**: Get current fname of an FID
+- **block_user**: Requires authentication.
 
-Get fname transfer history
-- **register_or_transfer_fname**: Requires EIP-712 signature from the FID custody address.
-
-Register or transfer an fname
+Block a user
 - **create_signed_key_request**: Create a signed key request
 - **follow_channel**: Requires authentication.
 
 Follow a Farcaster channel
 - **get_channel**: Get a single Farcaster channel
-- **get_current_fname_by_fid**: Get current fname of an FID
+- **get_current_fname_owner**: Get current owner of an fname
+- **get_primary_address**: Get a user primary wallet address
+- **get_signed_key_request**: Get signed key request status
+- **list_account_verifications**: List account verifications for a user
+- **list_all_channels**: List all Farcaster channels
+- **list_creator_rewards**: Get weekly top creator rewards
+- **list_fname_transfers**: Can be filtered by name, fid, or timestamp.
+
+Get fname transfer history
+- **list_moderated_casts**: List moderation actions in a channel
+- **pin_cast**: Requires authentication.
+
+Pin a cast to a channel
+- **register_or_transfer_fname**: Requires EIP-712 signature from the FID custody address.
+
+Register or transfer an fname
+- **unfollow_channel**: Requires authentication.
+
+Unfollow a Farcaster channel
+- **ban_channel_user**: Requires authentication.
+
+Ban a user from a channel
 
 
 ## 💬 Prompt Examples
@@ -158,4 +158,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

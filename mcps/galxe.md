@@ -36,9 +36,9 @@ Connect your **Galxe** account to any AI agent to streamline your Web3 growth an
 ## Available Tools (6)
 - **get_quest**: Get Galxe quest details
 - **get_space_leaderboard**: Get loyalty points leaderboard for a Galxe space
-- **get_starboard_leaderboard**: Get Starboard leaderboard for Twitter influence
 - **check_credential_eligibility**: Check user eligibility for a specific credential
 - **check_quest_eligibility**: Check user eligibility for a Galxe quest
+- **get_starboard_leaderboard**: Get Starboard leaderboard for Twitter influence
 - **mutate_credential_items**: Modify eligible users for an API credential
 
 
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

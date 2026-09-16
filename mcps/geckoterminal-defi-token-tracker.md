@@ -34,23 +34,23 @@ Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance 
 
 
 ## Available Tools (17)
-- **get_pool**: Get specific pool details
-- **get_new_pools_all**: Get new pools across all networks
-- **get_new_pools_network**: Get new pools on a specific network
-- **get_token_info**: Get token metadata info
-- **list_trades**: Get recent trades for a pool
-- **get_multiple_pools**: Get details for multiple pools
-- **get_network**: Get details for a specific network
-- **get_ohlcv**: Get historical price data (OHLCV) for a pool
 - **get_token**: Get specific token details
 - **get_trending_pools_all**: Get trending pools across all networks
-- **get_trending_pools_network**: Get trending pools on a specific network
-- **list_dexes**: List DEXes on a specific network
 - **list_networks**: List all supported blockchain networks
+- **list_top_pools_network**: Get top pools on a network
+- **get_multiple_pools**: Get details for multiple pools
+- **get_multiple_tokens**: Get details for multiple tokens
+- **get_network**: Get details for a specific network
+- **get_ohlcv**: Get historical price data (OHLCV) for a pool
+- **get_pool**: Get specific pool details
+- **get_token_info**: Get token metadata info
+- **list_dexes**: List DEXes on a specific network
 - **list_top_pools_dex**: Get top pools for a specific DEX
 - **list_top_pools_for_token**: Get top pools for a specific token
-- **list_top_pools_network**: Get top pools on a network
-- **get_multiple_tokens**: Get details for multiple tokens
+- **list_trades**: Get recent trades for a pool
+- **get_new_pools_all**: Get new pools across all networks
+- **get_new_pools_network**: Get new pools on a specific network
+- **get_trending_pools_network**: Get trending pools on a specific network
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

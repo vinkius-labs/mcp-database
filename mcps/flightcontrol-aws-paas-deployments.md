@@ -34,30 +34,76 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 
 
 ## Available Tools (24)
-- **create_deployment**: Trigger a new deployment based on repository filters
-- **create_domain_group**: Create Domain Certificate Group
-- **create_environment_variables**: Create Environment Variables
-- **create_job_execution**: Trigger a one-off job in a scheduler service
-- **edit_environment**: Edit an existing environment
-- **edit_preview_environment**: Edit preview environment settings for a project
-- **get_aws_account_details**: Get AWS Account Details
-- **get_cloudfront_invalidation_status**: Get Invalidation Status
-- **get_deployment_status**: Get Deployment Status
-- **get_domain_details**: Get Single Domain Details
-- **get_domains_from_group**: Get Domains from Group
-- **update_service_scaling**: Manually scale service instances
-- **get_job_execution_status**: Get Job Execution Status
-- **create_aws_account_connection**: Create AWS Account Connection
-- **create_cloudfront_invalidation**: Create CloudFront Cache Invalidation
-- **create_environment**: Create a new environment in a project
-- **create_project**: Automate the creation of a new project
-- **create_service_variables**: Create Service Variables
-- **get_service**: Retrieve details for a specific service
-- **get_service_scaling**: Get Service Scaling Information
+- **create_deployment**: Provide the repository URL and the target branch or commit hash.
+
+Trigger a new deployment based on repository filters
+- **create_cloudfront_invalidation**: Provide the service ID and the paths to invalidate.
+
+Create CloudFront Cache Invalidation
+- **swap_blue_green**: Provide the service ID to trigger the deployment switch.
+
+Trigger a swap between Blue and Green environments
+- **create_domain_group**: Specify the service ID if the group is tied to a specific service.
+
+Create Domain Certificate Group
+- **create_environment**: Specify the required AWS region and source configuration.
+
+Create a new environment in a project
+- **create_environment_variables**: Pass the environment ID and the variable sources.
+
+Create Environment Variables
+- **create_job_execution**: Provide the service ID and the start command.
+
+Trigger a one-off job in a scheduler service
+- **create_project**: Provide all necessary configuration details, especially the AWS account ID.
+
+Automate the creation of a new project
+- **create_service_variables**: Specify the service ID and the variable sources.
+
+Create Service Variables
+- **edit_environment**: Use this when updating source configuration or environment name.
+
+Edit an existing environment
+- **edit_preview_environment**: Specify the project ID and the new source configuration.
+
+Edit preview environment settings for a project
+- **get_aws_account_details**: Pass the AWS Account ID.
+
+Get AWS Account Details
+- **get_cloudfront_invalidation_status**: Pass the specific invalidation ID.
+
+Get Invalidation Status
+- **get_deployment_status**: Provide the unique deployment ID.
+
+Get Deployment Status
+- **get_domain_details**: Use this when the domain ID is known.
+
+Get Single Domain Details
+- **get_domains_from_group**: Use this tool only when the group ID is known.
+
+Get Domains from Group
+- **get_job_execution_status**: Pass the unique execution ID.
+
+Get Job Execution Status
+- **get_service_scaling**: Provide the service ID.
+
+Get Service Scaling Information
+- **get_service**: Provide the unique service ID.
+
+Retrieve details for a specific service
 - **list_projects**: List all projects owned by the team
-- **list_services**: Retrieve a paginated list of services
-- **swap_blue_green**: Trigger a swap between Blue and Green environments
-- **trigger_deploy_hook**: Trigger deployments via a secret URL
+- **list_services**: Filter results using project, environment, or service type.
+
+Retrieve a paginated list of services
+- **trigger_deploy_hook**: Provide the environment ID and the commit hash.
+
+Trigger deployments via a secret URL
+- **update_service_scaling**: Specify the service ID and the desired operation.
+
+Manually scale service instances
+- **create_aws_account_connection**: Provide the account name and the given ID.
+
+Create AWS Account Connection
 
 
 ## 💬 Prompt Examples
@@ -142,4 +188,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
