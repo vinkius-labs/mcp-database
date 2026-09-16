@@ -14,11 +14,11 @@ The Multi-Agent Communication Protocol Validator is an analytical engine designe
 
 
 ## Available Tools (4)
-- **validate_envelope_structure**: Verifies if all messages in a log adhere to the mandatory four-part envelope
 - **analyze_overhead_ratio**: Input format: "MetadataSize|PayloadSize".
 
 Assesses the efficiency of the protocol by comparing payload size to metadata size
 - **calculate_message_hops**: Determines the total number of communication transitions that have occurred
+- **validate_envelope_structure**: Verifies if all messages in a log adhere to the mandatory four-part envelope
 - **identify_circular_routes**: Detects if any messages are trapped in repetitive paths between agents
 
 
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
