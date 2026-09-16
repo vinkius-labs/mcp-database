@@ -14,9 +14,9 @@ The Harvest Loss Calculator MCP server provides precision tools for estimating g
 
 
 ## Available Tools (3)
-- **assess_harvest_efficiency**: Evaluates whether current actual losses are within acceptable industry limits
 - **calculate_harvest_impact**: Calculates the total physical and financial losses resulting from cumulative harvesting inefficiencies
 - **retrieve_crop_benchmark**: Provides the industry standard for acceptable loss for a specific crop type
+- **assess_harvest_efficiency**: Evaluates whether current actual losses are within acceptable industry limits
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -14,8 +14,8 @@ The Crop Yield Calculator MCP server provides a specialized engine for agricultu
 
 
 ## Available Tools (3)
-- **compare_with_benchmark**: Compares calculated yield with regional averages
 - **calculate_yield_metrics**: Calculates crop productivity metrics
+- **compare_with_benchmark**: Compares calculated yield with regional averages
 - **get_crop_standard_weight**: Retrieves the standard bag weight for a crop
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

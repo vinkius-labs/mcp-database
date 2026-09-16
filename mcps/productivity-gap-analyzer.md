@@ -14,10 +14,10 @@ The Productivity Gap Analyzer connects AI agents to critical agricultural perfor
 
 
 ## Available Tools (3)
+- **yield_gap_tool**: Calculate the yield gap for a specific region and cultivar
 - **bottleneck_analysis_tool**: ) are below the 80% optimal threshold.
 
 Analyze production bottlenecks based on environmental/management scores
-- **yield_gap_tool**: Calculate the yield gap for a specific region and cultivar
 - **financial_uplift_tool**: Project the financial revenue increase from closing a yield gap
 
 
@@ -103,4 +103,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
