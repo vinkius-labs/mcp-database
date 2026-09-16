@@ -37,22 +37,30 @@ No more manual exporting of ticket data. Your AI assistant acts as a dedicated S
 
 
 ## Available Tools (12)
+- **create_convo_note**: Use this for team collaboration.
+
+Add a private note to a conversation
 - **get_conversation**: Get detailed information about a specific conversation
+- **update_convo_status**: You must provide both the conversation ID and the desired status.
+
+Change the status of a conversation (e.g., active, closed)
+- **get_customer**: Provide the unique customer ID.
+
+Get detailed profile information for a specific customer
+- **list_customers**: List all customers registered in the help desk
 - **list_conversations**: Useful for monitoring incoming customer queries.
 
 List support conversations/tickets
 - **list_mailboxes**: List all configured support mailboxes
-- **list_tags**: List all available tags for categorizing conversations
-- **create_convo_note**: Use this for team collaboration.
+- **list_customer_ratings**: Call this tool when the user asks about feedback or ratings.
 
-Add a private note to a conversation
-- **search_conversations**: Search for conversations using a query
-- **list_customer_ratings**: List recent customer satisfaction ratings
+List recent customer satisfaction ratings
+- **list_tags**: List all available tags for categorizing conversations
 - **list_staff_users**: List all support agents/users in the tenant
-- **update_convo_status**: Change the status of a conversation (e.g., active, closed)
-- **get_customer**: Get detailed profile information for a specific customer
-- **list_customers**: List all customers registered in the help desk
 - **list_workflows**: List automated support workflows
+- **search_conversations**: Use this tool when the user specifies keywords or customer details.
+
+Search for conversations using a query
 
 
 ## 💬 Prompt Examples
@@ -140,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

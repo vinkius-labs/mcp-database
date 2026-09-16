@@ -34,16 +34,16 @@ Connect your **Hotjar** account to any AI agent and take full control of your be
 
 
 ## Available Tools (10)
-- **list_recordings**: List session recordings
-- **list_feedback**: List incoming feedback
-- **list_funnels**: List conversion funnels
-- **list_sites**: List all tracked sites
-- **get_site**: Get current site details
 - **get_heatmap**: Get heatmap details
-- **get_survey**: Get survey details
-- **list_heatmaps**: List all heatmaps
-- **list_survey_responses**: List survey responses
 - **list_surveys**: List all surveys
+- **get_survey**: Get survey details
+- **list_survey_responses**: List survey responses
+- **list_feedback**: List incoming feedback
+- **list_sites**: List all tracked sites
+- **list_funnels**: List conversion funnels
+- **get_site**: Get current site details
+- **list_heatmaps**: List all heatmaps
+- **list_recordings**: List session recordings
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

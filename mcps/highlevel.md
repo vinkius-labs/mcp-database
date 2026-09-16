@@ -37,21 +37,39 @@ No more jumping between complex dashboard views. Your AI assistant acts as a ded
 
 
 ## Available Tools (11)
-- **create_appointment**: Book a new appointment on a calendar
-- **create_contact**: Pass payload as JSON string in "body_json" (requires firstName, email, or phone).
+- **create_appointment**: Supply the required JSON payload in the body_json parameter.
 
-Add a new contact/lead to HighLevel
-- **create_contact_task**: Assign a new task to a specific contact
-- **list_contact_tasks**: List all tasks assigned to a specific contact
-- **list_location_tags**: List all custom tags for a location
-- **get_calendar_free_slots**: Check availability for a specific calendar
-- **get_contact_details**: Get detailed information for a specific contact
-- **list_calendars**: List all calendars available for a location
-- **list_pipelines**: List sales pipelines for a specific location
+Book a new appointment on a calendar
+- **create_contact_task**: Provide the contact ID and the required JSON payload.
+
+Assign a new task to a specific contact
+- **list_calendars**: Pass the location ID to retrieve the list.
+
+List all calendars available for a location
+- **list_location_tags**: Use the location ID to scope the tags.
+
+List all custom tags for a location
+- **search_opportunities**: Use the pipeline ID to scope the search.
+
+Search for opportunities within a pipeline
+- **list_contact_tasks**: Pass the contact ID to filter the tasks.
+
+List all tasks assigned to a specific contact
 - **search_contacts**: Pass search criteria as a JSON string in "search_json".
 
 Search for contacts in HighLevel
-- **search_opportunities**: Search for opportunities within a pipeline
+- **create_contact**: Pass payload as JSON string in "body_json" (requires firstName, email, or phone).
+
+Add a new contact/lead to HighLevel
+- **get_calendar_free_slots**: Provide the calendar ID and the desired start/end timestamps.
+
+Check availability for a specific calendar
+- **get_contact_details**: Provide the unique contact ID as input.
+
+Get detailed information for a specific contact
+- **list_pipelines**: Supply the location ID to filter results.
+
+List sales pipelines for a specific location
 
 
 ## 💬 Prompt Examples
@@ -139,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
