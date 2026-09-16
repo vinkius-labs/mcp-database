@@ -34,17 +34,17 @@ Connect your **Privy** application to any AI agent to streamline user onboarding
 
 
 ## Available Tools (12)
+- **create_user**: Create a new user object with linked accounts
+- **get_user_by_email**: Get a user by email address
+- **get_user**: Get a user by ID
+- **get_wallet**: Get wallet details
+- **update_wallet**: Update a wallet
+- **wallet_rpc**: Perform a wallet RPC action
 - **search_users**: Search for users
 - **batch_create_wallets**: Batch create wallets
 - **delete_user**: Delete a user
 - **get_transaction_by_external_id**: Get a transaction by external ID
 - **get_transaction**: Get a transaction
-- **get_user**: Get a user by ID
-- **get_user_by_email**: Get a user by email address
-- **update_wallet**: Update a wallet
-- **create_user**: Create a new user object with linked accounts
-- **get_wallet**: Get wallet details
-- **wallet_rpc**: Perform a wallet RPC action
 - **create_wallet**: Create a new wallet
 
 
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

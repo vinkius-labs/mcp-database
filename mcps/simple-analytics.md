@@ -36,14 +36,14 @@ Connect **Simple Analytics** to your AI agent for privacy-first insights. Simple
 - **add_website**: Requires Business or Enterprise plan.
 
 Add a new website to Simple Analytics
-- **get_stats**: ) for a specific domain.
-
-Get aggregated statistics for a website
-- **list_websites**: List all websites associated with the user
 - **export_datapoints**: Requires User-Id credential to be set.
 
 Export raw, non-sampled data points
+- **list_websites**: List all websites associated with the user
 - **send_server_event**: Submit a server-side event or pageview
+- **get_stats**: ) for a specific domain.
+
+Get aggregated statistics for a website
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
