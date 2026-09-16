@@ -36,20 +36,20 @@ No more manual data entry from invoices or forms. Your AI acts as a dedicated do
 
 
 ## Available Tools (12)
+- **get_parsed_document_result**: Retrieve the result of a parsed document
+- **extract_data_from_text_async**: Start text data extraction (Async)
 - **extract_data_from_file_async**: Use this for large files or webhook workflows.
 
 Start file data extraction (Async)
 - **get_template_details**: Get template metadata
+- **create_mailbox**: Create a new mailbox
 - **list_mailboxes**: List all Parsio mailboxes
+- **list_parsed_data_history**: List historical parsed data for a mailbox
 - **list_mailbox_templates**: List parsing templates for a mailbox
 - **list_mailbox_webhooks**: List webhooks for a mailbox
-- **list_parsed_data_history**: List historical parsed data for a mailbox
-- **extract_data_from_file_sync**: Extract data from a file immediately (Sync)
-- **extract_data_from_text_async**: Start text data extraction (Async)
-- **get_mailbox**: Get details for a specific mailbox
-- **create_mailbox**: Create a new mailbox
 - **extract_data_from_text_sync**: Extract data from text or HTML (Sync)
-- **get_parsed_document_result**: Retrieve the result of a parsed document
+- **extract_data_from_file_sync**: Extract data from a file immediately (Sync)
+- **get_mailbox**: Get details for a specific mailbox
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -29,18 +29,18 @@ Ideal for sales teams, marketers, and developers looking to clean and enrich B2B
 
 
 ## Available Tools (12)
-- **clean_company**: Clean a company name
-- **clean_name**: Clean a name
-- **enrich_person**: Enrich a person
-- **get_balance**: Check credit balance
+- **verify_email**: Verify an email
 - **autocomplete**: Autocomplete field values
 - **bulk_enrich_people**: Bulk enrich people
+- **clean_company**: Clean a company name
 - **clean_location**: Clean a location
+- **clean_name**: Clean a name
 - **enrich_company**: Enrich a company
+- **enrich_person**: Enrich a person
+- **get_balance**: Check credit balance
 - **identify_person**: Identify a person
 - **search_companies**: Search companies
 - **search_people**: Search people
-- **verify_email**: Verify an email
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,20 +36,20 @@ No more manual dashboard navigation for simple replies. Your AI acts as a dedica
 
 
 ## Available Tools (12)
-- **get_contact_details**: Get details for a specific contact
-- **list_contacts**: List customers contacts
-- **list_locations**: List business locations
+- **get_organization_info**: Get current organization details
 - **list_reviews**: List business reviews
 - **list_webhooks**: List configured webhooks
 - **send_message**: Requires location ID and message body.
 
 Send a message to a contact
-- **send_review_invitation**: Send a review invitation
-- **get_organization_info**: Get current organization details
 - **get_current_user**: Get authenticated user profile
+- **get_contact_details**: Get details for a specific contact
+- **send_review_invitation**: Send a review invitation
+- **list_contacts**: List customers contacts
+- **list_conversations**: List conversations for a location
+- **list_locations**: List business locations
 - **create_contact**: Create a new customer contact
 - **get_location_details**: Get details for a specific location
-- **list_conversations**: List conversations for a location
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,17 +37,17 @@ No more manual CRM entry or pipeline searching. Your AI acts as a dedicated sale
 
 ## Available Tools (12)
 - **get_contact**: Get contact details
-- **create_activity**: Log a new activity
 - **list_activities**: List CRM activities
-- **list_contacts**: List all CRM contacts
-- **list_deals**: List sales deals
-- **list_webhooks**: List configured webhooks
-- **create_contact**: Create a new contact
-- **create_deal**: Create a new deal
 - **get_account_info**: Get current profile
 - **get_deal**: Get deal details
+- **list_contacts**: List all CRM contacts
+- **list_deals**: List sales deals
 - **list_team_users**: List all team members
+- **list_webhooks**: List configured webhooks
 - **update_contact**: Update contact info
+- **create_activity**: Log a new activity
+- **create_deal**: Create a new deal
+- **create_contact**: Create a new contact
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,18 +36,18 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **revoke_api_key**: Disable an API key
-- **list_api_keys**: List account keys
-- **list_pin_groups**: List pin collections
-- **update_pin_metadata**: Modify pin name/tags
-- **remove_ipfs_pin**: Unpin file/hash
-- **get_pinning_stats**: Check data usage
 - **remove_pin_group**: Delete collection
-- **create_pin_group**: Add new collection
+- **get_pinning_stats**: Check data usage
 - **get_group_details**: Get group info
+- **list_api_keys**: List account keys
 - **list_ipfs_pins**: List pinned files
 - **pin_json_to_ipfs**: Pin NFT metadata/JSON
+- **revoke_api_key**: Disable an API key
+- **remove_ipfs_pin**: Unpin file/hash
+- **create_pin_group**: Add new collection
+- **list_pin_groups**: List pin collections
 - **verify_pinata_auth**: Check connection
+- **update_pin_metadata**: Modify pin name/tags
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

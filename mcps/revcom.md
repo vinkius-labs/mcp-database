@@ -36,12 +36,11 @@ No more manual order checking or searching for captions. Your AI acts as a dedic
 
 
 ## Available Tools (11)
-- **create_order**: Create a new transcription or captioning order
+- **cancel_order**: Cancel a pending order
+- **get_attachment_content**: Get the content of a finished transcript or caption file
 - **get_attachment_metadata**: Must provide the attachment ID.
 
 Get metadata of a specific attachment
-- **cancel_order**: Cancel a pending order
-- **get_attachment_content**: Get the content of a finished transcript or caption file
 - **get_invoice**: Must provide the invoice ID.
 
 Get details of a specific invoice
@@ -57,6 +56,7 @@ Get current user profile
 - **list_orders**: com orders.
 
 List all transcription and captioning orders
+- **create_order**: Create a new transcription or captioning order
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
