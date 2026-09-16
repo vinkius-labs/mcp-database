@@ -33,28 +33,28 @@ Connect your **AddSearch** account to your AI agent and turn your site's search 
 
 
 ## Available Tools (10)
+- **index_document**: Requires Secret Key.
+
+Add or update an indexed document
+- **list_documents**: Requires Secret Key.
+
+List all indexed documents
+- **search_pagination**: Retrieve a specific page of search results
 - **stats_queries**: Requires Secret Key.
 
 Retrieve search query analytics
 - **stats_clicks**: Requires Secret Key.
 
 Retrieve click-through analytics
-- **autosuggest**: Get autocomplete suggestions
-- **search_keyword**: Search indexed content by keyword
-- **search_sorted**: Search indexed content with custom sort
-- **list_documents**: Requires Secret Key.
-
-List all indexed documents
-- **search_pagination**: Retrieve a specific page of search results
 - **search_filtered**: g., "category=shoes", "brand=nike").
 
 Search indexed content by custom field
+- **search_keyword**: Search indexed content by keyword
+- **search_sorted**: Search indexed content with custom sort
+- **autosuggest**: Get autocomplete suggestions
 - **delete_document**: Requires Secret Key.
 
 Permanently delete a document
-- **index_document**: Requires Secret Key.
-
-Add or update an indexed document
 
 
 ## 💬 Prompt Examples
@@ -151,4 +151,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

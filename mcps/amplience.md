@@ -33,20 +33,20 @@ Link your **Amplience** headless CMS to any intelligent AI agent to completely r
 
 
 ## Available Tools (10)
-- **delete_content_item**: Requires version validation before deletion.
-
-Permanently delete a content item from the repository database
-- **get_delivery_content**: Retrieve the exact structural matching verifying Delivery CDN blocks
-- **list_folders**: List all folders organizing content in a given repository
-- **get_content_item**: Retrieve a specific content item configuration and its schema revision lock
+- **publish_content_item**: Publish a specific content item version to the live delivery CDN
 - **create_content_item**: Create a new structured content item adhering to a schema inside a folder
 - **list_content_items**: Retrieve paginated content items from a specific repository
 - **list_hubs**: Essential for retrieving the active workspace.
 
 List all accessible Amplience Hubs (environments)
-- **publish_content_item**: Publish a specific content item version to the live delivery CDN
 - **update_content_item**: Update an existing content item data structure matching its current schema
 - **list_repositories**: List all content repositories within a specific Hub
+- **delete_content_item**: Requires version validation before deletion.
+
+Permanently delete a content item from the repository database
+- **get_content_item**: Retrieve a specific content item configuration and its schema revision lock
+- **get_delivery_content**: Retrieve the exact structural matching verifying Delivery CDN blocks
+- **list_folders**: List all folders organizing content in a given repository
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

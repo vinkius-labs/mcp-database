@@ -34,18 +34,18 @@ The **Appbot MCP Server** provides deep insights into your app's user feedback. 
 
 
 ## Available Tools (10)
+- **list_languages**: List all languages supported by Appbot for sentiment analysis
+- **get_reviews_by_custom_topic**: Retrieve reviews associated with a specific custom topic
+- **get_account_info**: Retrieve Appbot account details and connection status
 - **get_review_details**: Get complete details for a single specific review
 - **list_apps**: List all apps tracked by your team in Appbot
-- **list_languages**: List all languages supported by Appbot for sentiment analysis
-- **list_versions**: List app versions detected in the app reviews
-- **get_account_info**: Retrieve Appbot account details and connection status
 - **list_countries**: List countries available for filtering reviews
 - **list_custom_topics**: List user-defined custom topics set up in the Appbot dashboard
 - **list_reviews**: Use sentiment, starRating, or keyword filters to narrow down the results. Useful for sentiment analysis and bug reporting.
 
 List reviews for a specific app with optional filtering
 - **list_topics**: List standard topics identified in app reviews by Appbot AI
-- **get_reviews_by_custom_topic**: Retrieve reviews associated with a specific custom topic
+- **list_versions**: List app versions detected in the app reviews
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

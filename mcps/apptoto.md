@@ -36,12 +36,14 @@ No more manual status checking of reminder logs or digging through fragmented co
 
 
 ## Available Tools (6)
-- **list_address_books**: List all address books
 - **list_appointments**: List all appointments
-- **list_contacts**: List contacts in an address book
 - **list_messages**: List recent messages
 - **get_appointment**: Get appointment details
-- **list_calendars**: List connected calendars
+- **list_address_books**: List all address books
+- **list_calendars**: Do not call this tool if no calendars are expected.
+
+List connected calendars
+- **list_contacts**: List contacts in an address book
 
 
 ## 💬 Prompt Examples
@@ -126,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

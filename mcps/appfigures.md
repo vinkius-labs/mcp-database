@@ -31,15 +31,17 @@ The **Appfigures MCP Server** provides your AI agent with direct access to your 
 ## Available Tools (11)
 - **get_ranks**: Get daily category and keyword rankings
 - **get_revenue_report**: Get revenue and proceeds data
-- **get_subscriptions_report**: Get subscription metrics (active, churn, etc.)
-- **search_products**: Search for any mobile app across all supported stores
 - **get_external_accounts**: List linked store accounts
+- **get_account_check**: Verify Appfigures account connection
+- **list_reviews**: List app reviews for your products
+- **search_products**: Use a specific query string to narrow results.
+
+Search for any mobile app across all supported stores
+- **get_sales_report**: Get sales data (downloads, updates, returns)
+- **get_subscriptions_report**: Get subscription metrics (active, churn, etc.)
 - **get_user_info**: Retrieve authenticated user information
 - **list_featured**: Track when apps are featured on app stores
 - **list_my_products**: List all mobile apps in your Appfigures account
-- **list_reviews**: List app reviews for your products
-- **get_account_check**: Verify Appfigures account connection
-- **get_sales_report**: Get sales data (downloads, updates, returns)
 
 
 ## 💬 Prompt Examples
@@ -124,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
