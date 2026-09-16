@@ -14,8 +14,8 @@ The Crop Rotation Planner connects AI agents to advanced agricultural intelligen
 
 
 ## Available Tools (4)
-- **analyze_crop_compatibility**: Determines if two specific crops can be grown in succession based on biological constraints
 - **evaluate_soil_health_impact**: Predicts how a specific crop will affect the soil quality for future seasons
+- **analyze_crop_compatibility**: Determines if two specific crops can be grown in succession based on biological constraints
 - **calculate_rotation_yield**: Estimates the expected yield of a crop given its predecessor in a rotation
 - **generate_rotation_plan**: Creates a multi-year sequence of crops that maximizes economic return while maintaining soil health and compatibility
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
