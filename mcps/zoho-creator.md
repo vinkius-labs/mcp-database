@@ -36,16 +36,16 @@ Connect your **Zoho Creator** account to any AI agent to automate your business 
 
 ## Available Tools (12)
 - **delete_record**: Remove record
-- **get_report_records**: Fetch records from report
-- **list_app_forms**: List application forms
-- **list_applications**: List Zoho Creator apps
-- **get_api_status**: Get connection status
-- **list_workspaces**: List creator workspaces
-- **add_record**: Create new record
-- **get_app_metadata**: Get app structural info
 - **get_form_fields**: Get field definitions
 - **get_record_details**: Get record by ID
+- **get_report_records**: Fetch records from report
+- **list_app_forms**: List application forms
 - **list_app_reports**: List application reports
+- **list_workspaces**: List creator workspaces
+- **get_api_status**: Get connection status
+- **get_app_metadata**: Get app structural info
+- **list_applications**: List Zoho Creator apps
+- **add_record**: Create new record
 - **update_record**: Modify existing record
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,12 +34,10 @@ Connect your **Snapchat Ads** account to any AI agent to automate your server-si
 
 
 ## Available Tools (12)
-- **track_page_view_event**: Track a website page view
 - **check_capi_health**: Verify CAPI status
-- **get_capi_integration_guidelines**: Get best practices for hashing
-- **list_supported_conversion_events**: List valid event types
 - **track_add_to_cart_event**: Track an item added to cart
 - **track_app_open_event**: Track a mobile app opening
+- **track_page_view_event**: Track a website page view
 - **track_purchase_event**: Requires pixel_id and user identifiers.
 
 Track a successful purchase
@@ -48,6 +46,8 @@ Track a successful purchase
 - **track_sign_up_event**: Track a new user registration
 - **track_start_checkout_event**: Track the start of checkout
 - **track_view_content_event**: Track a product detail view
+- **get_capi_integration_guidelines**: Get best practices for hashing
+- **list_supported_conversion_events**: List valid event types
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

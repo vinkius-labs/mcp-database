@@ -37,11 +37,10 @@ No more manual checking of execution logs or switching tabs to enable/disable fl
 
 ## Available Tools (32)
 - **delete_project_member**: Remove a member from a project
-- **get_flow**: Get a specific flow by ID
+- **add_piece**: Add a custom piece to the platform
 - **apply_flow_operation**: g., MOVE_ACTION, CHANGE_STATUS).
 
 Apply an operation to a flow
-- **add_piece**: Add a custom piece to the platform
 - **configure_git_repo**: Configure Git sync for a project
 - **create_flow**: Create a new flow
 - **create_folder**: Create a new folder
@@ -54,6 +53,7 @@ Delete a flow by ID
 - **delete_folder**: Delete a folder
 - **delete_global_connection**: Delete a global connection
 - **get_flow_run**: Get detailed execution data for a flow run
+- **get_flow**: Get a specific flow by ID
 - **get_mcp_server**: Get MCP server configuration for AI assistants
 - **invite_user**: Invite a user to the platform or project
 - **list_app_connections**: List app connections
@@ -62,12 +62,6 @@ Delete a flow by ID
 - **list_folders**: Specify the project ID to target the correct scope.
 
 List folders
-- **list_global_connections**: List global connections
-- **list_project_members**: List members of a project
-- **list_projects**: Filter by external ID or display name.
-
-List projects
-- **list_records**: List records in a table
 - **list_tables**: List internal data tables
 - **list_users**: List users
 - **rotate_mcp_token**: Rotate MCP token for a project
@@ -78,6 +72,12 @@ List projects
 
 Create or update an app connection
 - **upsert_global_connection**: Create or update a global connection
+- **list_global_connections**: List global connections
+- **list_project_members**: List members of a project
+- **list_projects**: Filter by external ID or display name.
+
+List projects
+- **list_records**: List records in a table
 
 
 ## 💬 Prompt Examples
@@ -162,4 +162,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

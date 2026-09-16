@@ -34,15 +34,19 @@ Connect your **Zoho Bookings** account to any AI agent to streamline your appoin
 
 
 ## Available Tools (7)
+- **list_appointments**: List all booked appointments
+- **list_workspaces**: List all workspaces
 - **list_services**: List all services offered
+- **get_staff_slots**: Requires staff_id, service_id, and date.
+
+Get available slots for a staff member
+- **list_staff**: List all staff members
 - **book_appointment**: Pass booking data as a JSON string.
 
 Book a new appointment
-- **cancel_appointment**: Cancel an existing appointment
-- **get_staff_slots**: Get available slots for a staff member
-- **list_appointments**: List all booked appointments
-- **list_staff**: List all staff members
-- **list_workspaces**: List all workspaces
+- **cancel_appointment**: Provide a valid appointment ID to proceed.
+
+Cancel an existing appointment
 
 
 ## 💬 Prompt Examples
@@ -124,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
