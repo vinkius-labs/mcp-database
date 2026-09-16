@@ -33,15 +33,15 @@ Equip your AI agent with deep intelligence for the **Roblox Social & Economy** e
 
 
 ## Available Tools (9)
-- **get_user_followers**: List followers of a Roblox user
-- **get_users_online_status**: Check if multiple users are online or in-game
 - **get_group_details**: Get details for a Roblox group
 - **get_group_roles**: List all ranks and roles within a group
-- **get_user_badges**: List badges earned by a Roblox user
-- **search_roblox_user**: Find Roblox users by username
+- **get_user_profile**: Get full profile for a Roblox user by ID
+- **get_user_followers**: List followers of a Roblox user
 - **get_user_followings**: List users followed by a Roblox user
 - **get_user_friends**: List friends for a Roblox user
-- **get_user_profile**: Get full profile for a Roblox user by ID
+- **get_users_online_status**: Check if multiple users are online or in-game
+- **get_user_badges**: List badges earned by a Roblox user
+- **search_roblox_user**: Find Roblox users by username
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

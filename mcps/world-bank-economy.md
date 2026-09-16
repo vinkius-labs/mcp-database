@@ -28,8 +28,8 @@ Economists, financial analysts, and market researchers building global macro mod
 
 ## Available Tools (4)
 - **get_inflation**: Get inflation rate (consumer prices, annual %)
-- **get_economy_indicator**: Get any World Bank economy indicator by its code
 - **get_gdp**: Get Gross Domestic Product (GDP) in current US$
+- **get_economy_indicator**: Get any World Bank economy indicator by its code
 - **get_gdp_growth**: Get annual GDP growth percentage
 
 
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

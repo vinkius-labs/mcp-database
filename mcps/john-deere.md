@@ -37,8 +37,12 @@ John Deere is the world's leading manufacturer of agricultural machinery and pre
 
 
 ## Available Tools (7)
-- **get_machine_locations**: Get machine GPS locations
 - **list_fields**: List fields/plots
+- **get_machine_locations**: Get machine GPS locations
+- **list_organizations**: Each org has machines, fields, and clients.
+
+List farms and organizations
+- **list_machines**: List fleet machines
 - **get_field_operations**: Includes date, product, rate, yield, and operator.
 
 Get field operations
@@ -46,10 +50,6 @@ Get field operations
 
 List machine alerts
 - **list_clients**: List farm clients
-- **list_organizations**: Each org has machines, fields, and clients.
-
-List farms and organizations
-- **list_machines**: List fleet machines
 
 
 ## 💬 Prompt Examples
@@ -149,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
