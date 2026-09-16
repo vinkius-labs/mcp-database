@@ -14,10 +14,10 @@ This MCP server provides critical tools for assessing environmental risk exposur
 
 
 ## Available Tools (4)
-- **analyze_compliance_trend**: Evaluates whether environmental compliance costs are increasing, decreasing, or stable
-- **calculate_risk_score**: Determines the overall environmental risk level for a specific infrastructure asset
 - **estimate_liability_exposure**: Calculates the total financial risk associated with current environmental obligations and potential accidents
+- **calculate_risk_score**: Determines the overall environmental risk level for a specific infrastructure asset
 - **forecast_regulatory_impact**: Predicts how upcoming changes in environmental laws will impact current compliance and risk
+- **analyze_compliance_trend**: Evaluates whether environmental compliance costs are increasing, decreasing, or stable
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
