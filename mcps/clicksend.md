@@ -36,16 +36,30 @@ Connect your **ClickSend** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **get_physical_mail_history**: Retrieve a history of physical letters sent via ClickSend Post
-- **list_clicksend_contact_lists**: List all contact lists stored in ClickSend
-- **get_voice_call_history**: Retrieve a history of automated voice calls sent
-- **list_sms_marketing_campaigns**: List all scheduled and sent SMS marketing campaigns
-- **get_clicksend_account_info**: Retrieve core account details and balance
-- **get_sms_outbound_history**: Retrieve a history of sent SMS messages
-- **list_received_sms**: List all inbound (received) SMS messages
+- **get_clicksend_account_info**: Use this tool to check account status and remaining credits.
+
+Retrieve core account details and balance
 - **send_clicksend_sms**: Numbers should be in E.164 format.
 
 Send one or more SMS messages
+- **list_clicksend_contact_lists**: Use this tool to view available recipient groups.
+
+List all contact lists stored in ClickSend
+- **get_sms_outbound_history**: Use this tool to review past outbound communications.
+
+Retrieve a history of sent SMS messages
+- **list_received_sms**: Use this tool to review received communications.
+
+List all inbound (received) SMS messages
+- **get_physical_mail_history**: Use this tool to view post mailing records.
+
+Retrieve a history of physical letters sent via ClickSend Post
+- **list_sms_marketing_campaigns**: Use this tool to view campaign status.
+
+List all scheduled and sent SMS marketing campaigns
+- **get_voice_call_history**: Use this tool to review past voice call activity.
+
+Retrieve a history of automated voice calls sent
 
 
 ## 💬 Prompt Examples
@@ -130,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

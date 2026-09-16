@@ -39,11 +39,15 @@ Connect your **ChurnZero** account to any AI agent and take full control of your
 - **list_churnzero_alerts**: List active customer success alerts
 - **list_churnzero_contacts**: List all customer contacts
 - **list_customer_messages**: List messages and communications sent to customers
-- **track_account_event**: Track a customer event or activity
-- **get_account_success_details**: Get detailed information for a specific account
+- **get_account_success_details**: Provide the required external ID.
+
+Get detailed information for a specific account
 - **list_churnzero_accounts**: List all customer accounts
 - **list_customer_journeys**: List active customer success journeys
 - **list_success_playbooks**: List active customer success playbooks
+- **track_account_event**: Include the necessary event data payload.
+
+Track a customer event or activity
 
 
 ## 💬 Prompt Examples
@@ -128,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

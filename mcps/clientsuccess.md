@@ -35,14 +35,14 @@ Connect your **ClientSuccess** customer success platform to any AI agent and sim
 
 
 ## Available Tools (6)
-- **get_client_details**: Get details for a specific client
-- **list_contracts**: List client contracts
-- **list_segments**: List client segments
-- **create_client**: Create a new client
 - **list_clients**: List ClientSuccess clients
+- **create_client**: Create a new client
+- **get_client_details**: Get details for a specific client
 - **list_contacts**: Optionally filter by client ID.
 
 List client contacts
+- **list_contracts**: List client contracts
+- **list_segments**: List client segments
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

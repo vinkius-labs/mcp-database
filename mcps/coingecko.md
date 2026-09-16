@@ -32,14 +32,30 @@ Connect your AI to **CoinGecko**, the crypto market data platform tracking price
 
 
 ## Available Tools (8)
-- **get_coin_details**: Retrieve detailed information about a specific cryptocurrency
-- **get_global_data**: Retrieve globalThis cryptocurrency market data
-- **get_price**: Retrieve the current price of one or more cryptocurrencies
-- **get_trending**: Retrieve trending coins from the last 24 hours
-- **list_categories**: Retrieve a list of all cryptocurrency categories
-- **list_exchanges**: Retrieve a list of cryptocurrency exchanges
-- **list_markets**: Retrieve a list of coins with detailed market data
-- **search_crypto**: Search for coins, exchanges, and categories by keyword
+- **list_categories**: to this tool.
+
+Retrieve a list of all cryptocurrency categories
+- **list_exchanges**: Specify filtering criteria within the payload.
+
+Retrieve a list of cryptocurrency exchanges
+- **search_crypto**: Pass the search term and type in the payload.
+
+Search for coins, exchanges, and categories by keyword
+- **get_global_data**: Use the payload to specify the required data scope.
+
+Retrieve global cryptocurrency market data
+- **get_price**: Provide the required coin IDs in the payload.
+
+Retrieve the current price of one or more cryptocurrencies
+- **get_trending**: Include necessary time range or filters in the payload.
+
+Retrieve trending coins from the last 24 hours
+- **list_markets**: Pass the necessary parameters in the payload.
+
+Retrieve a list of coins with detailed market data
+- **get_coin_details**: Ensure the coin ID is included in the payload.
+
+Retrieve detailed information about a specific cryptocurrency
 
 
 ## 💬 Prompt Examples
@@ -133,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
