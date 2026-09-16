@@ -38,9 +38,6 @@ Transform your video archives into searchable, actionable data. Your AI can now 
 ## Available Tools (18)
 - **embed_async**: Create embeddings asynchronously
 - **update_index**: Update an index name
-- **index_asset**: Index an uploaded asset
-- **list_indexes**: List all indexes
-- **analyze_async**: Analyze and segment videos asynchronously
 - **analyze_sync**: Analyze and segment videos synchronously
 - **confirm_multipart_upload**: Confirm a multipart upload
 - **create_asset**: Upload content to create an asset
@@ -54,8 +51,11 @@ Create an entity
 - **embed_sync**: Create embeddings synchronously
 - **get_index**: Retrieve an index by ID
 - **get_indexed_asset**: Retrieve an indexed asset
+- **list_indexes**: List all indexes
 - **report_multipart_progress**: Report progress for a multipart upload
 - **search**: Search for moments in videos
+- **index_asset**: Index an uploaded asset
+- **analyze_async**: Analyze and segment videos asynchronously
 
 
 ## 💬 Prompt Examples
@@ -140,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

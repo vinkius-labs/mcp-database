@@ -34,20 +34,20 @@ Connect to **The Graph** to index and retrieve real-time blockchain data across 
 
 
 ## Available Tools (8)
-- **get_evm_transfers**: Get EVM token transfers
-- **get_svm_transfers**: Get SVM (Solana) token transfers
-- **get_svm_holders**: Get SVM (Solana) token holders
-- **get_svm_swaps**: ) for Solana.
-
-Get SVM (Solana) DEX swaps
-- **query_subgraph**: Requires THE_GRAPH_API_KEY.
-
-Query a subgraph using GraphQL
 - **get_evm_historical_balances**: Get EVM historical balances
 - **get_evm_holders**: Get EVM token holders
 - **get_evm_swaps**: ) for EVM chains.
 
 Get EVM DEX swaps
+- **get_evm_transfers**: Get EVM token transfers
+- **query_subgraph**: Requires THE_GRAPH_API_KEY.
+
+Query a subgraph using GraphQL
+- **get_svm_holders**: Get SVM (Solana) token holders
+- **get_svm_swaps**: ) for Solana.
+
+Get SVM (Solana) DEX swaps
+- **get_svm_transfers**: Get SVM (Solana) token transfers
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

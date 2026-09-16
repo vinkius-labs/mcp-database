@@ -1,89 +1,117 @@
-# Tencent TMT / 腾讯机器翻译 MCP Server
+# Zoho Campaign MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/aconex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
 
-**Category:** [industry-titans](../categories/industry-titans.md)
+**Category:** [data-analytics](../categories/data-analytics.md)
 
-Tencent's professional machine translation — translate text and detect languages with high precision via AI.
+AI email marketing: manage campaigns, contacts, and mailing lists via agents.
 
 ## Description
-Empower your AI agent to orchestrate your global content and multilingual communication with **Tencent TMT** (机器翻译), the premier NLP platform by Tencent Cloud. By connecting TMT to your agent, you transform complex translation tasks, language identification, and technical localization into a natural conversation. Your agent can instantly translate text between dozens of languages, automatically identify source languages, and provide enterprise-grade localized results without you ever needing to navigate the Tencent Cloud Console. Whether you are translating technical documentation or coordinating global customer support, your agent acts as a real-time linguistic coordinator, providing accurate and reliable results from a single, authorized source.
-
 ### What you can do
 
-- **Precision Translation** — Translate text between major world languages including Chinese, English, Portuguese, Spanish, and French.
-- **Language Identification** — Automatically detect the source language of any text snippet with high confidence.
-- **Specialized Workflows** — Use dedicated tools for frequent language pairs (EN-ZH, ZH-EN) for faster processing.
-- **Global Localization** — Bridge linguistic gaps by localizing your content for the Chinese and global markets.
-- **Operational Monitoring** — Verify API connectivity and monitor service status to ensure consistent uptime.
+Supercharge your email marketing with AI agents controlling Zoho Campaign. Automate your entire workflow:
+
+- **Create and manage email campaigns** with custom subjects, senders, and mailing lists
+- **Review campaign analytics** including opens, clicks, bounces, and unsubscribes
+- **Build and segment mailing lists** for targeted audience reach
+- **Import and export contacts** with bulk add/remove operations
+- **Track contact engagement** and subscription status across all lists
+- **Monitor blocked contacts** to maintain list hygiene and deliverability
 
 ### How it works
 
-1. Subscribe to this server
-2. Enter your Tencent Cloud SecretId, SecretKey, and Region
-3. Start managing your linguistic operations through Claude, Cursor, or any MCP-compatible client
+1. **Connect your Zoho Campaign account** via OAuth token from Zoho API Console
+2. **Ask your AI agent** to create campaigns, manage lists, or analyze performance
+3. **No coding needed** — natural language commands execute complex API operations
+4. **Real-time insights** delivered in formatted responses for quick decision-making
 
 ### Who is this for?
 
-- **Content & Localization Teams** — automate the translation of help articles and marketing copy through natural language queries.
-- **Global Business Operations** — translate cross-border communications and market reports directly from your AI-powered workspace.
-- **Developers** — integrate professional-grade machine translation into your AI-driven daily routines.
-- **Tencent Cloud Power Users** — integrate your existing TMT workflows into your AI-driven daily routines.
+Ideal for **marketing teams**, **email marketers**, **growth hackers**, and **agencies** using Zoho Campaign. Let AI agents handle list segmentation, campaign creation, performance analysis, and contact management. Perfect for teams running 10+ campaigns monthly who want to streamline operations, reduce manual tasks, and gain faster insights from campaign data.
 
 
-## Available Tools (10)
-- **translate_text**: Translate text between languages
-- **translate_zh_to_en**: Translate Chinese to English
-- **translate_to_portuguese**: Translate text to Portuguese
-- **check_tmt_status**: Check TMT API status
-- **detect_language**: Detect language of text
-- **translate_en_to_zh**: Translate English to Chinese
-- **translate_to_chinese**: Translate text to Chinese
-- **translate_to_english**: Translate text to English
-- **translate_to_french**: Translate text to French
-- **translate_to_spanish**: Translate text to Spanish
+## Available Tools (13)
+- **get_campaign_details**: Use this to review full campaign configuration before sending or editing.
+
+Get details of a specific Zoho Campaign email
+- **add_contacts_to_list**: Each contact requires at minimum an email address. Optionally include first name, last name, phone, company, and custom fields. Contacts must be provided as a JSON array of objects. Returns count of successfully added contacts.
+
+Add contacts to a Zoho Campaign mailing list
+- **create_campaign**: Requires campaign name, subject line, sender name, sender email, and reply-to email. Optionally set campaign type, template ID, and scheduling. Returns created campaign details including the new campaign key.
+
+Create a new email campaign in Zoho Campaign
+- **create_list**: Requires list name. Optionally set description and welcome message for new subscribers. Returns the created list details including the new list key needed for adding contacts.
+
+Create a new mailing list in Zoho Campaign
+- **get_blocked_contacts**: Returns email, reason, and date blocked. Use this to maintain list hygiene and avoid sending to invalid addresses.
+
+List blocked/bounced contacts in Zoho Campaign
+- **get_campaign_report**: Includes metrics: total sent, delivered, bounced, opened, clicked, unsubscribed, spam complaints, and forwarded. Also provides engagement breakdown by contact. Use this to analyze campaign ROI and engagement rates.
+
+Get analytics report for a Zoho Campaign
+- **get_campaigns**: Returns campaign name, subject line, status, sent date, and basic metrics (sent count, opened, clicked). Use this to review campaign portfolio and performance overview.
+
+List all email campaigns in Zoho Campaign
+- **get_contact**: Use this to review individual subscriber details before sending targeted campaigns or troubleshooting delivery issues.
+
+Get details of a specific Zoho Campaign contact
+- **get_list_contacts**: Returns contact email, name, subscription status, added date, and custom fields. Use this to review subscriber base, segment audiences, or verify contacts before sending campaigns.
+
+List contacts in a Zoho Campaign mailing list
+- **get_lists**: Returns list name, description, contact count, creation date, and status. Mailing lists are used to organize contacts for targeted email campaigns. Use this to review available lists before creating campaigns or adding contacts.
+
+List all mailing lists in Zoho Campaign
+- **get_recent_campaigns**: Useful for quick review of latest activity. Type can filter by: all, sent, draft, scheduled. Returns basic campaign info including name, subject, status, and date.
+
+Get recently created or sent campaigns
+- **remove_contacts_from_list**: Requires list key and comma-separated email addresses. Use this to manage unsubscribes, clean up lists, or segment contacts. Returns count of successfully removed contacts.
+
+Remove contacts from a Zoho Campaign mailing list
+- **update_contact**: Only pass the fields you want to modify. The contact is identified by email address. Returns updated contact data.
+
+Update an existing Zoho Campaign contact
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Tencent TMT / 腾讯机器翻译** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Zoho Campaign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Translate this to Portuguese using Tencent TMT: 'The system will be updated tonight at 10 PM'."
+> "Show me all campaigns sent in the last 30 days with their open rates"
 
 **🤖 AI Agent:**
-> I've translated your sentence to Portuguese using Tencent TMT. The result is: 'O sistema será atualizado hoje à noite, às 22h'. Would you like me to translate any other notifications?
+> I'll pull your recent campaigns and compile the open rate metrics for you.
 
 ---
 
 **👤 You:**
-> "Check what language this is: '系统升级中，请稍候'。"
+> "Create a new campaign called 'Spring Sale 2026' for our newsletter list with subject 'Exclusive Spring Discounts Inside'"
 
 **🤖 AI Agent:**
-> I've detected the language using Tencent TMT. The text is in **Chinese (zh)**. It means 'System upgrading, please wait'. Should I translate this into English for you?
+> I'll create the Spring Sale campaign configured for your newsletter mailing list.
 
 ---
 
 **👤 You:**
-> "Translate 'I am very happy to help you' from English to Simplified Chinese."
+> "Add these 50 contacts from my CRM export to the 'Prospects Q2' list"
 
 **🤖 AI Agent:**
-> I've translated the phrase for you. In Simplified Chinese, it is: '我很高兴能帮助你' (Wǒ hěn gāoxìng néng bāngzhù nǐ). Should I check the status of the TMT service to ensure it is ready for more requests?
+> I'll import the contacts into your Prospects Q2 mailing list right away.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Tencent Cloud SecretId and SecretKey?**
-Log in to the [Tencent Cloud Console](https://console.cloud.tencent.com/), navigate to [Access Management] -> [API Key Management] to find or generate your unique SecretId and SecretKey.
+**Q: Can I send campaigns to any list size with this MCP server?**
+Yes, this MCP server works with all list sizes. However, sending limits depend on your Zoho Campaign plan. Check your plan's contact limits and sending quota in the Zoho Campaign dashboard.
 
-**Q: Which language pairs are supported?**
-TMT supports a wide range of pairs including ZH (Chinese), EN (English), PT (Portuguese), ES (Spanish), FR (French), JA (Japanese), and more. Use `auto` for the source to let TMT decide.
+**Q: Does this support automation workflows or drip campaigns?**
+This MCP server manages campaigns, lists, and contacts programmatically. For autoresponders and drip sequences, use Zoho Campaign's built-in automation features. The AI agent can help analyze performance of automated campaigns.
 
-**Q: Does this server handle signature calculation?**
-Yes! The server automatically calculates the required TC3-HMAC-SHA256 signature for every request using your provided SecretKey, ensuring secure authorized communication with Tencent Cloud TMT.
+**Q: Can I import contacts from external sources via this MCP?**
+Yes! The MCP provides tools to add contacts to mailing lists in bulk using JSON arrays. You can format data from CSV, CRM exports, or any source and add them to your Zoho Campaign lists via AI agent commands.
 
 
 ## Installation & Usage
@@ -100,7 +128,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Tencent TMT / 腾讯机器翻译** under Connectors.
+5. Click the **+** button in any chat and enable **Zoho Campaign** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -108,7 +136,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `aconex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Tencent TMT / 腾讯机器翻译** tools.
+4. Click **Save** — Cursor will connect and list all **Zoho Campaign** tools.
 
 **Configuration:**
 ```json
@@ -129,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

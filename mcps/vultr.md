@@ -34,25 +34,43 @@ Connect your **Vultr** account to any AI agent to manage your cloud infrastructu
 
 
 ## Available Tools (19)
-- **get_bare_metal_ipv6**: Get IPv6 info for a bare metal instance
-- **halt_bare_metal**: Halt a bare metal instance
-- **reboot_bare_metal**: Reboot a bare metal instance
-- **set_bare_metal_ipv6_reverse**: Set Reverse DNS for IPv6 on a bare metal instance
+- **get_bare_metal_ipv6**: Pass the instance ID to query the details.
+
+Get IPv6 info for a bare metal instance
+- **halt_bare_metal**: Use the instance ID to power down the machine.
+
+Halt a bare metal instance
 - **get_account**: Get Vultr account info
-- **get_bare_metal_ipv4**: Get IPv4 info for a bare metal instance
-- **list_applications**: List Vultr applications
 - **list_api_keys**: List API keys
-- **reinstall_bare_metal**: Reinstall a bare metal instance
-- **start_bare_metal**: Start a bare metal instance
-- **delete_bare_metal**: Delete a bare metal instance
-- **list_backups**: List backups
-- **create_api_key**: Create a new API key
-- **create_bare_metal**: Create a bare metal instance
 - **get_account_bgp**: Get Account BGP Info
-- **get_backup**: Get a specific backup
+- **create_api_key**: Create a new API key
+- **list_applications**: List Vultr applications
+- **list_backups**: List backups
 - **list_bare_metals**: List bare metal instances
-- **set_bare_metal_ipv4_reverse**: Set Reverse DNS for IPv4 on a bare metal instance
+- **create_bare_metal**: Create a bare metal instance
+- **delete_bare_metal**: Supply the instance ID to permanently remove the resource.
+
+Delete a bare metal instance
+- **get_backup**: Get a specific backup
+- **get_bare_metal_ipv4**: Pass the instance ID to query the details.
+
+Get IPv4 info for a bare metal instance
+- **reboot_bare_metal**: Provide the instance ID to execute the reboot.
+
+Reboot a bare metal instance
+- **reinstall_bare_metal**: Pass the instance ID to initiate the OS reinstall.
+
+Reinstall a bare metal instance
+- **set_bare_metal_ipv4_reverse**: Provide the instance ID and the target IP address.
+
+Set Reverse DNS for IPv4 on a bare metal instance
+- **set_bare_metal_ipv6_reverse**: Provide the instance ID and the target IP address.
+
+Set Reverse DNS for IPv6 on a bare metal instance
 - **setup_bgp**: Setup BGP for the account
+- **start_bare_metal**: Specify the instance ID as the required parameter.
+
+Start a bare metal instance
 
 
 ## 💬 Prompt Examples
@@ -137,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

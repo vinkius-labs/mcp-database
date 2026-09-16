@@ -34,21 +34,29 @@ Connect your **Tatum** account to any AI agent to streamline blockchain infrastr
 
 
 ## Available Tools (11)
-- **cancel_subscription**: Cancel a webhook subscription
+- **cancel_subscription**: Provide the unique subscription ID to proceed.
+
+Cancel a webhook subscription
 - **create_subscription**: ).
 
 Create a webhook subscription
 - **create_virtual_account**: Create a virtual account (off-chain ledger)
 - **estimate_evm_gas**: Estimate EVM gas limit and price
+- **get_exchange_rate**: Specify the asset symbol and base pair.
+
+Get exchange rate for a crypto or fiat asset
 - **get_recommended_fee**: Get recommended fee for a blockchain
-- **get_transaction_history**: Get transaction history for an address
-- **get_wallet_portfolio**: Get wallet portfolio balances
-- **list_subscriptions**: List active webhook subscriptions
+- **get_transaction_history**: Specify a time range using blockFrom and blockTo.
+
+Get transaction history for an address
 - **get_virtual_account_balance**: Get virtual account balance
+- **get_wallet_portfolio**: Get wallet portfolio balances
+- **list_subscriptions**: Use this tool to list all subscriptions for a given address.
+
+List active webhook subscriptions
 - **estimate_transaction_fee**: ).
 
 Estimate transaction fee
-- **get_exchange_rate**: Get exchange rate for a crypto or fiat asset
 
 
 ## 💬 Prompt Examples
@@ -133,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

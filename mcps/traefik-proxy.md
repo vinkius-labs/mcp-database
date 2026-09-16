@@ -36,25 +36,25 @@ Connect your **Traefik Proxy** instance to any AI agent and gain real-time visib
 
 ## Available Tools (18)
 - **list_entrypoints**: List all entrypoints
-- **get_http_router**: Get details for a specific HTTP router
+- **get_http_middleware**: Get details for a specific HTTP middleware
 - **get_http_service**: Get details for a specific HTTP service
+- **get_tcp_middleware**: Get details for a specific TCP middleware
+- **get_http_router**: Get details for a specific HTTP router
 - **get_tcp_router**: Get details for a specific TCP router
+- **get_overview**: ).
+
+Get Traefik overview
+- **list_udp_services**: List all UDP services
+- **list_udp_routers**: List all UDP routers
 - **get_tcp_service**: Get details for a specific TCP service
+- **list_http_middlewares**: List all HTTP middlewares
 - **list_http_routers**: List all HTTP routers
 - **list_http_services**: List all HTTP services
 - **list_tcp_middlewares**: List all TCP middlewares
 - **list_tcp_services**: List all TCP services
-- **list_udp_routers**: List all UDP routers
-- **get_overview**: ).
-
-Get Traefik overview
 - **get_rawdata**: Get Traefik raw runtime configuration
-- **list_udp_services**: List all UDP services
-- **get_entrypoint**: Get details for a specific entrypoint
-- **get_http_middleware**: Get details for a specific HTTP middleware
-- **get_tcp_middleware**: Get details for a specific TCP middleware
-- **list_http_middlewares**: List all HTTP middlewares
 - **list_tcp_routers**: List all TCP routers
+- **get_entrypoint**: Get details for a specific entrypoint
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
