@@ -14,10 +14,10 @@ This MCP server provides decision support for corn silage production. It allows 
 
 
 ## Available Tools (4)
-- **get_hybrid_nutritional_profile**: Retrieve detailed nutritional expectations for a specific hybrid
 - **calculate_forage_volume**: Estimate the total amount of dry matter produced for a given area
 - **evaluate_maturity_fit**: Determine if a specific hybrid is biologically viable for the given growing season
 - **get_hybrid_recommendations**: Find the best corn hybrids for a specific farm scenario based on GDU, soil, and livestock
+- **get_hybrid_nutritional_profile**: Retrieve detailed nutritional expectations for a specific hybrid
 
 
 ## 💬 Prompt Examples

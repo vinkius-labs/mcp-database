@@ -14,9 +14,9 @@ This MCP server provides specialized tools for predicting the processing yield a
 
 
 ## Available Tools (4)
+- **get_processing_margin**: Provides a financial or efficiency buffer based on the predicted loss during splitting
 - **classify_grade**: Assigns a commercial grade to the batch based on predicted yield and quality
 - **estimate_cooking_performance**: Predicts the time required for cooking and the water absorption properties
-- **get_processing_margin**: Provides a financial or efficiency buffer based on the predicted loss during splitting
 - **predict_splitting_yield**: Calculates the expected volume of usable dhal and the expected percentage of broken seeds
 
 

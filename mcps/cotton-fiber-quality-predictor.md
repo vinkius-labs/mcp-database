@@ -14,10 +14,10 @@ This MCP server provides advanced predictive modeling for cotton fiber quality. 
 
 
 ## Available Tools (4)
-- **analyze_stress_impact**: Isolates and quantifies the specific impact of water stress and heat on the predicted fiber metrics
-- **estimate_market_value**: Calculates the economic premium or discount based on the predicted fiber quality compared to standard HVI grades
 - **get_regional_coefficients**: Retrieves the specific regression multipliers and baseline constants for a given region
 - **predict_fiber_quality**: Predicts the core physical quality parameters of the cotton fiber based on specific growing conditions
+- **estimate_market_value**: Calculates the economic premium or discount based on the predicted fiber quality compared to standard HVI grades
+- **analyze_stress_impact**: Isolates and quantifies the specific impact of water stress and heat on the predicted fiber metrics
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized decision support for corn producers. It cal
 
 
 ## Available Tools (4)
+- **calculate_available_gdu**: Calculates the total heat units available in a specific location and time window
 - **estimate_drying_costs**: Provides a financial estimate of the costs incurred if the hybrid is harvested before reaching optimal moisture
 - **evaluate_hybrid_fit**: Compares a hybrid's requirements against the available environmental heat to determine viability
 - **get_required_gdu**: Determines how much heat accumulation is necessary for a specific hybrid to reach physiological maturity
-- **calculate_available_gdu**: Calculates the total heat units available in a specific location and time window
 
 
 ## 💬 Prompt Examples

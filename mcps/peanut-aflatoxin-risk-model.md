@@ -15,9 +15,9 @@ This MCP server provides specialized tools for managing aflatoxin risks in peanu
 
 ## Available Tools (4)
 - **estimate_economic_impact**: Calculates the projected financial loss based on the contamination risk
-- **predict_contamination_risk**: Calculates the estimated toxin concentration and the likelihood of regulatory non-compliance
 - **recommend_mitigation_strategy**: Provides actionable advice on when to harvest and how to sort the crop
 - **validate_regulatory_compliance**: Checks if the predicted levels meet the specific requirements of US or European markets
+- **predict_contamination_risk**: Calculates the estimated toxin concentration and the likelihood of regulatory non-compliance
 
 
 ## 💬 Prompt Examples

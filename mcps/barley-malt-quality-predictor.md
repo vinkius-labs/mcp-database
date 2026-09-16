@@ -14,10 +14,10 @@ This MCP server connects AI agents to advanced malting models to predict key mal
 
 
 ## Available Tools (4)
-- **compare_varieties**: Compares the predicted quality of a specific grain batch against the theoretical maximums of different barley varieties
-- **evaluate_brewing_suitability**: Determines the overall brewing quality score and the likelihood of the malt being accepted by a brewer
 - **analyze_kernel_uniformity**: Analyzes the kernel size distribution to determine if the batch is suitable for consistent malting
+- **evaluate_brewing_suitability**: Determines the overall brewing quality score and the likelihood of the malt being accepted by a brewer
 - **predict_malt_properties**: Predicts the primary chemical and physical malt properties based on raw barley characteristics
+- **compare_varieties**: Compares the predicted quality of a specific grain batch against the theoretical maximums of different barley varieties
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for canola seed analysis. It allows A
 
 
 ## Available Tools (4)
-- **estimate_refining_impact**: Predicts the amount of oil lost during processing and the resulting oil quality
 - **calculate_meal_quality**: Estimates the nutritional and industrial value of the byproduct (meal)
 - **evaluate_crush_margin**: Provides a financial assessment of the processing profitability
 - **predict_oil_grade**: Determines the commercial grade of the canola seed based on chemical and physical purity
+- **estimate_refining_impact**: Predicts the amount of oil lost during processing and the resulting oil quality
 
 
 ## 💬 Prompt Examples

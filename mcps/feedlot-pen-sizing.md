@@ -14,10 +14,10 @@ This MCP server provides precision engineering tools for livestock management. I
 
 
 ## Available Tools (4)
-- **calculate_infrastructure_needs**: Calculates the necessary lengths for feeding and watering equipment
 - **calculate_pen_dimensions**: Determines the physical footprint and number of pens required for a specific herd
 - **estimate_performance_impact**: Predicts how the chosen pen density will affect animal weight gain and health
 - **validate_site_suitability**: Checks if a proposed pen design meets minimum regulatory and welfare standards for a specific region
+- **calculate_infrastructure_needs**: Calculates the necessary lengths for feeding and watering equipment
 
 
 ## 💬 Prompt Examples

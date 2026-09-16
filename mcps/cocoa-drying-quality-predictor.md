@@ -14,10 +14,18 @@ This MCP server provides tools to predict the final quality of cocoa beans by an
 
 
 ## Available Tools (4)
-- **assess_drying_impact**: Evaluates drying impact
-- **calculate_cut_test_score**: Predicts physical score
-- **determine_final_grade**: Determines final grade
-- **predict_bean_chemistry**: Predicts bean chemistry
+- **determine_final_grade**: Pass all three values in the correct order.
+
+Determines final grade
+- **predict_bean_chemistry**: Ensure all inputs are numerical values.
+
+Predicts bean chemistry
+- **assess_drying_impact**: Provide both temperature and duration values.
+
+Evaluates drying impact
+- **calculate_cut_test_score**: Use numerical values for all parameters.
+
+Predicts physical score
 
 
 ## 💬 Prompt Examples

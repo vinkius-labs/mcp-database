@@ -14,10 +14,10 @@ This MCP server provides specialized tools for livestock management and infrastr
 
 
 ## Available Tools (4)
-- **assess_freezing_risk**: Evaluates if the system design is vulnerable to freezing in cold environments
-- **calculate_hydraulic_capacity**: Calculates the necessary flow rate and tank replenishment speed
 - **get_space_requirements**: Determines how much physical access space is needed for a specific group of animals
 - **get_system_summary**: Provides a consolidated overview of all calculated requirements for a livestock setup
+- **assess_freezing_risk**: Evaluates if the system design is vulnerable to freezing in cold environments
+- **calculate_hydraulic_capacity**: Calculates the necessary flow rate and tank replenishment speed
 
 
 ## 💬 Prompt Examples

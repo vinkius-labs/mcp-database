@@ -14,10 +14,10 @@ This MCP server provides tools to simulate the canning process for dry beans. It
 
 
 ## Available Tools (4)
-- **calculate_hydration_profile**: Analyzes how the specific variety and hydration coefficient will influence the swelling and weight of the beans
-- **check_coat_integrity**: Assesses the risk of seed coat failure during the high-pressure canning process
 - **evaluate_canner_acceptance**: Determines if a specific batch of beans meets commercial standards and the resulting financial impact
 - **simulate_canning_process**: Predicts the physical state of the beans after the canning simulation is complete
+- **calculate_hydration_profile**: Analyzes how the specific variety and hydration coefficient will influence the swelling and weight of the beans
+- **check_coat_integrity**: Assesses the risk of seed coat failure during the high-pressure canning process
 
 
 ## 💬 Prompt Examples

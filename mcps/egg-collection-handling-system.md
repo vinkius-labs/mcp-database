@@ -15,9 +15,9 @@ This MCP server provides the mathematical models required to design industrial e
 
 ## Available Tools (4)
 - **determine_labor_needs**: Calculates the staff required to manage collection and processing
-- **estimate_collection_requirements**: Determines the necessary speed for collection belts and the required cold storage volume
 - **evaluate_processing_capacity**: Validates if the packing line can handle the produced volume and calculates losses
 - **calculate_daily_volume**: Determines the expected number of eggs produced in a single day
+- **estimate_collection_requirements**: Determines the necessary speed for collection belts and the required cold storage volume
 
 
 ## 💬 Prompt Examples

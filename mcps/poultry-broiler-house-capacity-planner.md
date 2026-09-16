@@ -14,9 +14,9 @@ This MCP server provides technical decision support for broiler poultry operatio
 
 
 ## Available Tools (4)
-- **calculate_environmental_systems**: Determines the necessary capacity for ventilation and heating systems
 - **calculate_equipment_needs**: Determines the quantity of essential feeding and watering infrastructure required
 - **calculate_stocking_capacity**: Determines the maximum number of birds that can be placed in a house based on physical constraints and welfare standards
+- **calculate_environmental_systems**: Determines the necessary capacity for ventilation and heating systems
 - **estimate_annual_production**: Predicts the yearly output of the house in terms of bird numbers and total meat weight
 
 

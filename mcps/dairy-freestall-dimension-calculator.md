@@ -14,10 +14,10 @@ This MCP server provides engineering tools for dairy producers to design optimal
 
 
 ## Available Tools (4)
-- **assess_injury_risk**: Evaluates the physical risk to the cow based on the designed dimensions
-- **calculate_stall_dimensions**: Determines the specific physical dimensions required for a single stall based on cow characteristics and design type
 - **estimate_stall_metrics**: Predicts the efficiency and usage of the stall layout
 - **validate_layout_compliance**: Checks if a proposed stall configuration meets the minimum Midwest Plan Service standards
+- **assess_injury_risk**: Evaluates the physical risk to the cow based on the designed dimensions
+- **calculate_stall_dimensions**: Determines the specific physical dimensions required for a single stall based on cow characteristics and design type
 
 
 ## 💬 Prompt Examples

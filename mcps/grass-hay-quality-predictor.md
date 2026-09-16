@@ -14,10 +14,10 @@ This MCP server provides tools to estimate the nutritional profile and dairy per
 
 
 ## Available Tools (4)
-- **compare_quality_scenarios**: Compare two different harvest scenarios to see the impact on quality
-- **estimate_milk_yield**: Determine how much milk can be produced from a specific quantity of hay
 - **evaluate_harvest_risk**: Assess the risk level of a planned harvest
 - **predict_hay_nutrients**: Calculate the baseline nutritional profile based on biological and environmental factors
+- **compare_quality_scenarios**: Compare two different harvest scenarios to see the impact on quality
+- **estimate_milk_yield**: Determine how much milk can be produced from a specific quantity of hay
 
 
 ## 💬 Prompt Examples

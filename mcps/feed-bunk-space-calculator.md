@@ -14,10 +14,10 @@ This MCP server provides precise calculations for livestock management. It deter
 
 
 ## Available Tools (4)
-- **calculate_bunk_requirements**: Determines the physical length of the feed bunk required for a specific group of animals
 - **check_occupancy_safety**: Evaluates if a specific existing bunk length is sufficient for a group
-- **estimate_feed_delivery_rate**: Calculates the total amount of feed that must be supplied to the bunk per feeding event
 - **generate_management_schedule**: Provides a structured feeding timeline based on desired frequency
+- **calculate_bunk_requirements**: Determines the physical length of the feed bunk required for a specific group of animals
+- **estimate_feed_delivery_rate**: Calculates the total amount of feed that must be supplied to the bunk per feeding event
 
 
 ## 💬 Prompt Examples

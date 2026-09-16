@@ -14,8 +14,8 @@ This MCP server provides technical tools for dairy farm management. It allows AI
 
 
 ## Available Tools (4)
-- **calculate_cooling_load**: Determines the total heat energy that must be removed from the milk
 - **calculate_operating_costs**: Translates energy usage into financial expenditure
+- **calculate_cooling_load**: Determines the total heat energy that must be removed from the milk
 - **estimate_energy_consumption**: Calculates the total electrical energy required to perform the cooling
 - **size_refrigeration_system**: Estimates the necessary capacity of the refrigeration unit
 

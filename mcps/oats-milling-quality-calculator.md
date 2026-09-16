@@ -14,9 +14,9 @@ This MCP server provides specialized tools for analyzing oat grain quality. Use 
 
 
 ## Available Tools (4)
-- **calculate_nutritional_profile**: Computes the fiber content and a cumulative nutritional quality score
 - **estimate_product_suitability**: Evaluates which oat products are most appropriate for the current batch
 - **calculate_milling_yield**: Determines how much usable groat can be extracted from a batch of whole oats
+- **calculate_nutritional_profile**: Computes the fiber content and a cumulative nutritional quality score
 - **get_milling_summary**: Provides a high-level overview of the milling potential and nutritional value
 
 

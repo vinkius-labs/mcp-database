@@ -14,10 +14,10 @@ This MCP server provides specialized calculation tools for managing calf housing
 
 
 ## Available Tools (4)
+- **get_ventilation_recommendations**: Provides actionable advice to correct ventilation gaps
 - **assess_respiratory_risk**: Evaluates the likelihood of disease based on environmental stressors
 - **calculate_ventilation_needs**: Determines the required airflow and physical ventilation parameters for a specific housing setup
 - **evaluate_thermal_comfort**: Determines if the current ventilation settings will cause thermal stress to the calves
-- **get_ventilation_recommendations**: Provides actionable advice to correct ventilation gaps
 
 
 ## 💬 Prompt Examples

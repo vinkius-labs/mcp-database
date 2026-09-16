@@ -14,10 +14,10 @@ This MCP server provides specialized engineering tools for designing cattle work
 
 
 ## Available Tools (4)
-- **analyze_bottlenecks**: Identifies where cattle movement will slow down within the proposed design
-- **calculate_facility_dimensions**: Provides the primary physical layout dimensions for the facility based on herd and operational requirements
 - **estimate_pen_capacity**: Determines the optimal number of holding pens and their individual sizes to support the workflow
 - **simulate_throughput_variance**: Predicts how changes in cattle temperament will impact the ability to meet the original duration goal
+- **analyze_bottlenecks**: Identifies where cattle movement will slow down within the proposed design
+- **calculate_facility_dimensions**: Provides the primary physical layout dimensions for the facility based on herd and operational requirements
 
 
 ## 💬 Prompt Examples

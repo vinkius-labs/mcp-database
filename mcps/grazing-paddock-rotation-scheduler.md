@@ -14,10 +14,10 @@ This MCP server provides tools to design precise rotational grazing schedules. I
 
 
 ## Available Tools (4)
+- **simulate_seasonal_adjustment**: Adjusts the grazing schedule to account for changes in pasture growth rates due to seasonal shifts
 - **evaluate_stocking_intensity**: Assesses the grazing pressure applied to the pasture
 - **calculate_grazing_parameters**: Determines the optimal grazing duration and the resulting rest period
 - **get_paddock_dimensions**: Calculates the size of each individual paddock based on the total available area
-- **simulate_seasonal_adjustment**: Adjusts the grazing schedule to account for changes in pasture growth rates due to seasonal shifts
 
 
 ## 💬 Prompt Examples
