@@ -35,6 +35,9 @@ Connect to **Coinbase** and access real-time cryptocurrency market data through 
 
 
 ## Available Tools (8)
+- **get_time**: Useful for synchronizing requests and verifying API connectivity.
+
+Get the current Coinbase API server time
 - **get_payment_methods**: Returns bank accounts, debit cards and other payment options with their IDs, types, limits and verification status.
 
 Get available payment methods
@@ -56,9 +59,6 @@ Get the current sell price for a cryptocurrency pair
 - **get_spot_price**: This is the mid-market price without buy/sell spread. Optional date parameter for historical prices (YYYY-MM-DD UTC).
 
 Get the current spot (market) price for a cryptocurrency pair
-- **get_time**: Useful for synchronizing requests and verifying API connectivity.
-
-Get the current Coinbase API server time
 
 
 ## 💬 Prompt Examples
@@ -143,4 +143,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

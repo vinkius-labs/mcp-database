@@ -36,18 +36,15 @@ No more navigating the Sanity Studio to find documents or run GROQ queries. Your
 
 
 ## Available Tools (11)
-- **list_image_assets**: Each asset includes its _id, original filename, dimensions and metadata. Optionally set a limit. Useful for managing media library content.
+- **get_document**: g. "drafts.abc123" or "abc123"). Returns the full document with all fields. Useful for inspecting individual content items.
 
-List image assets in Sanity
+Get a specific Sanity document by ID
+- **list_datasets**: Datasets are isolated content collections within a project (e.g. "production", "staging", "development").
+
+List all datasets in the Sanity project
 - **list_users**: Useful for auditing project access and team management.
 
 List project members in Sanity
-- **update_document**: Requires the document ID and a JSON object with the fields to set. For example: {"title": "Updated Title", "status": "published"}. Only provided fields will be modified.
-
-Update fields on a Sanity document
-- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
-
-Search documents in Sanity
 - **create_dataset**: Provide the dataset name (e.g. "staging", "development"). The dataset will be empty and ready for content. Dataset names must be lowercase alphanumeric.
 
 Create a new Sanity dataset
@@ -57,18 +54,21 @@ Create a new Sanity document
 - **delete_document**: Provide the document ID. WARNING: this action is irreversible.
 
 Delete a Sanity document
-- **get_document**: g. "drafts.abc123" or "abc123"). Returns the full document with all fields. Useful for inspecting individual content items.
-
-Get a specific Sanity document by ID
-- **list_datasets**: Datasets are isolated content collections within a project (e.g. "production", "staging", "development").
-
-List all datasets in the Sanity project
 - **list_documents**: g. "post", "product", "author") from the configured dataset. Each document returns its _id, content fields and metadata. Use this to browse content collections.
 
 List documents of a specific type in Sanity
 - **query_documents**: Requires a GROQ query string. Optionally provide params as JSON for parameterized queries. Returns query results as an array. Example query: "*[_type == 'post' && publishedAt > $date]{title, slug}"
 
 Run a GROQ query against Sanity
+- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
+
+Search documents in Sanity
+- **update_document**: Requires the document ID and a JSON object with the fields to set. For example: {"title": "Updated Title", "status": "published"}. Only provided fields will be modified.
+
+Update fields on a Sanity document
+- **list_image_assets**: Each asset includes its _id, original filename, dimensions and metadata. Optionally set a limit. Useful for managing media library content.
+
+List image assets in Sanity
 
 
 ## 💬 Prompt Examples
@@ -156,4 +156,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

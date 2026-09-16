@@ -36,11 +36,9 @@ No more manual keyword-based searching or messy scraping scripts. Your AI acts a
 
 
 ## Available Tools (11)
-- **advanced_custom_search**: Complex search query
 - **find_similar_pages**: Note: this endpoint is deprecated by Exa AI.
 
 Find matching pages for a URL (deprecated — use search instead)
-- **extract_page_content**: Retrieve web page text
 - **get_query_highlights**: Extract relevant snippets
 - **keyword_search**: Search by exact keywords
 - **perform_live_crawl**: Fresh web extraction
@@ -49,6 +47,8 @@ Find matching pages for a URL (deprecated — use search instead)
 - **search_by_crawl_date**: Search by discovery date
 - **search_specific_domains**: Search within sites
 - **semantic_search**: Perform AI-native search
+- **advanced_custom_search**: Complex search query
+- **extract_page_content**: Retrieve web page text
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

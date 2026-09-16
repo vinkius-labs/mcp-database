@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Reddit
 
 
 ## Available Tools (10)
-- **list_ad_groups**: List Reddit Ads ad groups
-- **list_creative_assets**: List creative assets for an account
-- **get_campaign**: Get details for a specific campaign
-- **get_ad_account**: Get details for a specific ad account
 - **get_ad_group**: Get details for a specific ad group
-- **get_ad**: Get details for a specific ad
 - **get_report**: Get an advertising report
 - **list_ad_accounts**: List Reddit Ads accounts
+- **list_ad_groups**: List Reddit Ads ad groups
 - **list_ads**: List Reddit Ads
 - **list_campaigns**: List Reddit Ads campaigns
+- **list_creative_assets**: List creative assets for an account
+- **get_ad_account**: Get details for a specific ad account
+- **get_campaign**: Get details for a specific campaign
+- **get_ad**: Get details for a specific ad
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

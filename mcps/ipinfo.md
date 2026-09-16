@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire IP intelligence and network aud
 
 
 ## Available Tools (6)
-- **get_ip_historical**: Get historical data for an IP (Requires appropriate plan)
-- **get_ip_range**: Get details for an IP range or CIDR
-- **get_own_ip_details**: Get details for the current server IP
 - **get_asn_details**: Get details for an Autonomous System Number (ASN)
 - **get_ip_details**: Get full geographic and network details for an IP address
+- **get_ip_range**: Get details for an IP range or CIDR
+- **get_own_ip_details**: Get details for the current server IP
 - **get_privacy_details**: Check if an IP is using a VPN, proxy, or Tor
+- **get_ip_historical**: Get historical data for an IP (Requires appropriate plan)
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

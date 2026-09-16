@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire mobile communication strategy o
 
 
 ## Available Tools (8)
-- **get_page_settings**: Get settings for the Facebook Page
 - **get_messages**: Get message history for a specific conversation
+- **get_page_info**: Get basic information about the connected Facebook Page
+- **get_page_settings**: Get settings for the Facebook Page
 - **get_persona_info**: Get details for a specific persona
 - **list_conversations**: List recent Messenger conversations for the page
-- **list_personas**: List all personas for the page
-- **get_page_info**: Get basic information about the connected Facebook Page
-- **list_message_creative**: List message creatives for the page
 - **send_message**: Send a text message reply to a recipient
+- **list_personas**: List all personas for the page
+- **list_message_creative**: List message creatives for the page
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

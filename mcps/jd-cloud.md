@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your cloud infrastructure and supply chain 
 
 
 ## Available Tools (8)
+- **get_vm_detail**: Get VM metadata
 - **get_account_profile**: Get IAM user info
 - **get_billing_summary**: Get billing overview
-- **get_vm_detail**: Get VM metadata
+- **list_cloud_disks**: List block storage disks
 - **list_oss_buckets**: List storage buckets
 - **list_vm_instances**: List virtual machines
-- **list_vpc_networks**: List VPC networks
 - **list_cicd_pipelines**: List DevOps pipelines
-- **list_cloud_disks**: List block storage disks
+- **list_vpc_networks**: List VPC networks
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
