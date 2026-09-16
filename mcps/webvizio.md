@@ -34,16 +34,18 @@ Connect your **WebVizio** account to any AI agent and streamline your visual col
 
 
 ## Available Tools (10)
-- **create_webvizio_project**: Create a new project
 - **list_webvizio_comments**: List comments on a task
+- **add_webvizio_comment**: Add a comment to a task
+- **create_webvizio_project**: Create a new project
+- **get_webvizio_project_details**: Get project details
 - **list_webvizio_projects**: List all website feedback projects
 - **list_webvizio_tasks**: List tasks in a project
-- **add_webvizio_comment**: Add a comment to a task
+- **list_webvizio_webhooks**: List configured webhooks
+- **update_webvizio_task**: Use this tool only when the task ID is known.
+
+Update a task status or details
 - **create_webvizio_task**: Create a new feedback task
 - **get_webvizio_task_details**: Get task details
-- **get_webvizio_project_details**: Get project details
-- **list_webvizio_webhooks**: List configured webhooks
-- **update_webvizio_task**: Update a task status or details
 
 
 ## 💬 Prompt Examples
@@ -128,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

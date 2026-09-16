@@ -35,23 +35,23 @@ Connect your **AskHandle** account to any AI agent to manage your conversational
 
 ## Available Tools (18)
 - **create_room**: Create a new chat room
+- **create_message**: Send a new message and get an AI response
 - **create_webhook**: Create a new webhook subscription
 - **delete_lead**: Delete a lead record
 - **delete_room**: Delete a specific room
-- **delete_webhook**: Remove a webhook subscription
-- **get_message**: Retrieve a specific message
-- **list_webhooks**: List all active webhooks
-- **update_room**: Update a specific room
-- **get_webhook**: Retrieve a specific webhook
-- **list_messages**: List all messages
-- **list_rooms**: List all chat rooms
-- **create_lead**: Manually create a new lead
-- **create_message**: Send a new message and get an AI response
 - **get_lead**: Retrieve a specific lead
 - **get_room**: Retrieve details of a specific room
+- **get_webhook**: Retrieve a specific webhook
 - **list_leads**: List all leads
+- **list_rooms**: List all chat rooms
 - **update_lead**: Update lead information
 - **update_webhook**: Update a webhook (e.g., change target URL)
+- **delete_webhook**: Remove a webhook subscription
+- **get_message**: Retrieve a specific message
+- **list_messages**: List all messages
+- **list_webhooks**: List all active webhooks
+- **update_room**: Update a specific room
+- **create_lead**: Manually create a new lead
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

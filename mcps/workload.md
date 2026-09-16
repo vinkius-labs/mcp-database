@@ -38,9 +38,6 @@ No more manual checking of individual automation logs or missing workflow failur
 ## Available Tools (13)
 - **list_executions_by_workflow**: List executions by workflow
 - **create_workflow**: Create a workflow
-- **check_workload_status**: Verify connectivity
-- **disable_workflow**: Disable a workflow
-- **enable_workflow**: Enable a workflow
 - **get_connection**: Get connection details
 - **get_execution**: Get execution details
 - **get_workflow**: Get workflow details
@@ -49,6 +46,9 @@ No more manual checking of individual automation logs or missing workflow failur
 - **list_logs**: List workflow logs
 - **list_workflows**: List workflows
 - **retry_execution**: Retry an execution
+- **check_workload_status**: Verify connectivity
+- **disable_workflow**: Disable a workflow
+- **enable_workflow**: Enable a workflow
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

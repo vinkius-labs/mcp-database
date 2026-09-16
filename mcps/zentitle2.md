@@ -34,9 +34,8 @@ Connect your **Zentitle2** licensing account to any AI agent and simplify how yo
 
 
 ## Available Tools (11)
-- **list_customers**: List Zentitle2 customers
-- **list_products**: List licensed products
 - **create_activation_code**: Generate a new activation code
+- **list_customers**: List Zentitle2 customers
 - **create_customer**: Create a new customer in Zentitle2
 - **create_entitlement**: Provision a new entitlement
 - **get_activation_code_details**: Get details of an activation code
@@ -45,6 +44,7 @@ Connect your **Zentitle2** licensing account to any AI agent and simplify how yo
 - **get_me**: Get management account information
 - **list_activation_codes**: List activation codes
 - **list_entitlements**: List licensing entitlements
+- **list_products**: List licensed products
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
