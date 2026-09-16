@@ -1,4 +1,4 @@
-# Orbit Alternative MCP Server
+# Orbit MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/orbit-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -34,21 +34,33 @@ Connect your **Orbit** workspace to any AI agent and take full control of your c
 
 
 ## Available Tools (10)
-- **create_orbit_activity**: Create a new activity for a member
-- **get_orbit_member_activities**: Get activities for a specific member
-- **create_orbit_member_note**: Add a note to a member profile
+- **create_orbit_activity**: Provide all necessary details, including the unique key.
+
+Create a new activity for a member
+- **create_orbit_member_note**: Specify both the member ID and the note content.
+
+Add a note to a member profile
 - **get_orbit_me**: Get authenticated user info
-- **get_orbit_member**: Get details for a specific member
-- **get_orbit_organization**: Get details for a specific organization
+- **get_orbit_member_activities**: Provide the member’s ID.
+
+Get activities for a specific member
+- **get_orbit_member**: Use this tool when you know the member’s ID or slug.
+
+Get details for a specific member
+- **get_orbit_organization**: Supply the organization ID or slug.
+
+Get details for a specific organization
 - **list_orbit_activities**: List all workspace activities
-- **list_orbit_member_notes**: List notes for a specific member
 - **list_orbit_members**: List community members
+- **list_orbit_member_notes**: You must provide the member’s ID.
+
+List notes for a specific member
 - **list_orbit_organizations**: List organizations in the workspace
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Orbit Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Orbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "List the last 5 members who joined our community."
@@ -99,7 +111,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Orbit Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Orbit** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -107,7 +119,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `orbit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Orbit Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Orbit** tools.
 
 **Configuration:**
 ```json
@@ -128,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

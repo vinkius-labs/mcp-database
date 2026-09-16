@@ -36,16 +36,16 @@ No more manual checking of individual banner performance or missing campaign exp
 
 
 ## Available Tools (10)
-- **check_adbutler_status**: Verify AdButler API connectivity
 - **list_publishers**: List all publishers
-- **list_placements**: List all placements
 - **get_advertiser**: Get advertiser details
 - **get_campaign**: Get campaign details
 - **get_stats**: Get ad serving statistics
 - **list_advertisers**: List all advertisers
 - **list_banners**: List ad items in a campaign
 - **list_campaigns**: List all campaigns
+- **list_placements**: List all placements
 - **list_zones**: List all ad zones
+- **check_adbutler_status**: Verify AdButler API connectivity
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

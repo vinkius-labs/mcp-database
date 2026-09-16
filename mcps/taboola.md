@@ -35,16 +35,16 @@ No more jumping between tabs to check CTR or adjust daily caps. Your AI acts as 
 
 
 ## Available Tools (10)
-- **create_campaign**: Create a new Taboola campaign
 - **list_campaign_items**: List items (ads) in a campaign
 - **list_campaigns**: List campaigns for an account
+- **create_campaign**: Create a new Taboola campaign
+- **get_campaign**: Get details for a specific campaign
+- **get_top_campaign_content_report**: Get top campaign content report
+- **update_campaign**: Update an existing Taboola campaign
 - **list_allowed_accounts**: List allowed Taboola accounts
 - **get_campaign_summary_report**: Get campaign summary report
 - **create_campaign_item**: Create a new campaign item (ad)
 - **get_current_user**: Get current Taboola user details
-- **get_campaign**: Get details for a specific campaign
-- **get_top_campaign_content_report**: Get top campaign content report
-- **update_campaign**: Update an existing Taboola campaign
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
