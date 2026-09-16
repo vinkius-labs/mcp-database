@@ -14,9 +14,9 @@ The Keyword Extractor is an analytical engine designed to identify the most rele
 
 
 ## Available Tools (3)
-- **verify_language_capability**: Confirms whether the requested language is available
 - **calculate_term_density**: Analyzes a specific word's importance within a given text block
 - **rank_keywords**: Provides a prioritized list of keywords found within a text
+- **verify_language_capability**: Confirms whether the requested language is available
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

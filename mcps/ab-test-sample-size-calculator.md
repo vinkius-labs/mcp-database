@@ -15,8 +15,8 @@ This MCP server provides essential statistical tools for running reliable A/B te
 
 ## Available Tools (3)
 - **estimate_test_duration**: Estimate the duration of an A/B test
-- **assess_peeking_risk**: Assess the risk of stopping an A/B test early
 - **calculate_required_sample_size**: Determine the required sample size for an A/B test
+- **assess_peeking_risk**: Assess the risk of stopping an A/B test early
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
