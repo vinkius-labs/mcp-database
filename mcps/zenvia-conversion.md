@@ -35,16 +35,18 @@ Connect your **Zenvia Conversion** (formerly Sirena) account to any AI agent to 
 
 ## Available Tools (10)
 - **list_agents**: List agents in the account
-- **list_labels**: List labels
-- **send_template**: Send a message template (HSM) to a prospect
-- **get_account**: Get account information
-- **create_lead**: You can include contact details and an initial message (comment).
+- **get_prospect**: Must provide the prospect ID.
 
-Create a new lead in Zenvia Conversion
-- **get_prospect**: Get detailed information about a specific prospect
+Get detailed information about a specific prospect
 - **list_groups**: List agent groups
 - **list_interactions**: List interactions for a prospect
 - **list_prospects**: List all prospects in Zenvia Conversion
+- **send_template**: Send a message template (HSM) to a prospect
+- **list_labels**: List labels
+- **create_lead**: You can include contact details and an initial message (comment).
+
+Create a new lead in Zenvia Conversion
+- **get_account**: Get account information
 - **send_message**: Send a message to a prospect
 
 
@@ -119,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

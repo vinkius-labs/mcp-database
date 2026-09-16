@@ -19,12 +19,12 @@ LLMs hallucinate dates. They forget leap years, daylight saving time rules, and 
 
 
 ## Available Tools (2)
-- **add_business_days**: It automatically skips weekends. If you provide a countryCode (e.g. "US", "BR", "JP"), it will also query the Nager.Date API to skip national public holidays for that country.
-
-Calculates a future date by adding a specific number of business days (skipping weekends and optional public holidays)
 - **convert_timezone**: Uses IANA timezone strings (e.g. "America/Sao_Paulo", "Asia/Tokyo").
 
 Converts an exact date and time from one timezone to another
+- **add_business_days**: It automatically skips weekends. If you provide a countryCode (e.g. "US", "BR", "JP"), it will also query the Nager.Date API to skip national public holidays for that country.
+
+Calculates a future date by adding a specific number of business days (skipping weekends and optional public holidays)
 
 
 ## 💬 Prompt Examples
@@ -105,4 +105,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

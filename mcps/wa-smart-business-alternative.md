@@ -36,19 +36,19 @@ No more manual toggling between WhatsApp tabs or missing critical customer repli
 
 
 ## Available Tools (13)
+- **list_agents**: List agents
+- **check_wasmart_status**: Verify connectivity
 - **create_customer**: Create a customer
 - **get_agent**: Get agent details
-- **list_agents**: List agents
-- **list_templates**: List templates
-- **send_message**: Send a message
-- **check_wasmart_status**: Verify connectivity
 - **list_campaigns**: List campaigns
-- **list_messages**: List messages
 - **search_customers**: Search customers
 - **send_media**: Send media
-- **list_customers**: List customers
-- **get_customer**: Get customer details
+- **send_message**: Send a message
 - **send_template**: Send a template
+- **list_customers**: List customers
+- **list_messages**: List messages
+- **get_customer**: Get customer details
+- **list_templates**: List templates
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
