@@ -42,18 +42,30 @@ Your AI acts as a gateway to the entire Z.AI multimodal AI platform — generate
 
 
 ## Available Tools (12)
-- **agent_chat**: AI agents including: general_translation (multilingual translation with 40+ languages, auto-detection, glossary support), slides_glm_agent (one-click slide/poster generation from natural language), and vidu_template_agent (special effects video generation). Pass the full agent request body as JSON including agent_id and messages.
+- **audio_transcription**: AI's ASR model. Supports .wav and .mp3 files up to 25MB and 30 seconds. Can provide hotwords for domain-specific vocabulary and context prompts for long-form transcription. Supports streaming output.
 
-Run Z.AI agents for translation, slide generation, or poster creation
+Transcribe audio files to text using the GLM-ASR-2512 model
 - **chat_completion**: 2, GLM-4.7, or other available models. Supports multimodal inputs (text, images, audio, video, files), configurable parameters (temperature, max_tokens, tools), and both streaming and non-streaming modes. Pass the full request body as JSON including model, messages, and optional parameters.
 
 Generate AI chat completions using Z.AI GLM models
-- **get_conversation_history**: Only supports slides_glm_agent. Use the conversation_id from a prior agent_chat response.
-
-Retrieve the conversation history for a Z.AI slide agent session
 - **generate_image**: Returns image URLs (temporary, expire after 30 days). Specify model, prompt, and optional size/quality. GLM-Image recommended sizes: 1280x1280, 1568x1056, 1056x1568, 1472x1088, 1088x1472, 1728x960, 960x1728.
 
 Generate high-quality images from text prompts using GLM-Image models
+- **generate_video**: Supports text-to-video, image-to-video, and first/last frame-to-video. Returns a task ID — use get_async_result to check status and retrieve the video URL. Specify model, prompt, and optional quality/size/fps/duration.
+
+Generate videos from text prompts or images using CogVideoX or Vidu models
+- **get_async_result**: Returns task_status (PROCESSING, SUCCESS, FAIL) and the generated image or video URLs when complete. Use this after generate_image_async or generate_video returns a task ID.
+
+Retrieve the result of an asynchronous image or video generation task
+- **web_search**: Supports filtering by domain whitelist and time range (oneDay, oneWeek, oneMonth, oneYear, noLimit). Returns up to 50 results per search.
+
+Search the web using Z.AI's LLM-optimized search engine
+- **agent_chat**: AI agents including: general_translation (multilingual translation with 40+ languages, auto-detection, glossary support), slides_glm_agent (one-click slide/poster generation from natural language), and vidu_template_agent (special effects video generation). Pass the full agent request body as JSON including agent_id and messages.
+
+Run Z.AI agents for translation, slide generation, or poster creation
+- **get_conversation_history**: Only supports slides_glm_agent. Use the conversation_id from a prior agent_chat response.
+
+Retrieve the conversation history for a Z.AI slide agent session
 - **layout_parsing**: Returns recognized text in Markdown format, detailed layout information (bounding boxes for text, images, formulas, tables), and optional visualization results. Supports PDF, JPG, PNG formats. PDF up to 50MB/30 pages, images up to 10MB.
 
 Parse document layouts and extract text using the GLM-OCR model
@@ -63,21 +75,9 @@ Count tokens for given messages using Z.AI models
 - **web_reader**: Supports markdown and text output formats, cache control, image retention, and optional summaries for images and links.
 
 Read and parse the content of a web page URL
-- **web_search**: Supports filtering by domain whitelist and time range (oneDay, oneWeek, oneMonth, oneYear, noLimit). Returns up to 50 results per search.
-
-Search the web using Z.AI's LLM-optimized search engine
-- **audio_transcription**: AI's ASR model. Supports .wav and .mp3 files up to 25MB and 30 seconds. Can provide hotwords for domain-specific vocabulary and context prompts for long-form transcription. Supports streaming output.
-
-Transcribe audio files to text using the GLM-ASR-2512 model
 - **generate_image_async**: Use get_async_result with the task ID to check status and retrieve the generated image. Only supports glm-image model. Use this for long-running generation tasks.
 
 Generate images asynchronously — returns a task ID for later retrieval
-- **generate_video**: Supports text-to-video, image-to-video, and first/last frame-to-video. Returns a task ID — use get_async_result to check status and retrieve the video URL. Specify model, prompt, and optional quality/size/fps/duration.
-
-Generate videos from text prompts or images using CogVideoX or Vidu models
-- **get_async_result**: Returns task_status (PROCESSING, SUCCESS, FAIL) and the generated image or video URLs when complete. Use this after generate_image_async or generate_video returns a task ID.
-
-Retrieve the result of an asynchronous image or video generation task
 
 
 ## 💬 Prompt Examples
@@ -168,4 +168,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

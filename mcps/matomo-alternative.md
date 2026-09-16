@@ -40,19 +40,19 @@ No more digging through complex dashboards to find your conversion rates or top-
 - **get_image_graph**: get for a specific site and period.
 
 Generate static PNG graph data
+- **get_processed_report**: getProcessedReport to return full data set including metadata and processed metrics.
+
+Get a processed human-readable report
 - **get_report_metadata**: getReportMetadata to list available API functions and their metadata.
 
 Get metadata for all available API reports
+- **track_action**: Requires idsite.
+
+Track a page view, event, or ecommerce action in Matomo
 - **get_visits_summary**: get to retrieve metrics like nb_visits, nb_actions, bounce_count.
 
 Get visits summary metrics
 - **get_wp_processed_report**: Get processed report via WordPress REST API
-- **track_action**: Requires idsite.
-
-Track a page view, event, or ecommerce action in Matomo
-- **get_processed_report**: getProcessedReport to return full data set including metadata and processed metrics.
-
-Get a processed human-readable report
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

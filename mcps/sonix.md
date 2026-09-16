@@ -37,31 +37,19 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 
 
 ## Available Tools (30)
-- **create_batch_summarization**: Supply the folder ID and the summarization prompt.
-
-Create a batch summarization for a folder
 - **create_summarization**: Provide the media ID and optionally a custom prompt.
 
 Create a summarization for a media file
-- **create_video_burn_in**: Supply the media ID and required styling parameters.
-
-Create a video burn-in (subtitles on video)
 - **get_transcript_vtt**: Specify the media ID and desired formatting options.
 
 Get VTT transcript file
 - **list_users**: List all users in the account
-- **split_transcript**: Provide the media ID and desired subtitle formatting parameters.
-
-Automatically split transcript into subtitles
 - **submit_media**: Provide the file URL and name. Do not submit media without a file URL.
 
 Submit new media for transcription
 - **create_media_export**: Provide the media ID and optionally remove strikethrough text.
 
 Create a media export
-- **create_translation**: Provide the media ID and target language code.
-
-Create a translation for a media file
 - **get_video_burn_in**: Provide the unique export ID to check the status.
 
 Get video burn-in status
@@ -75,9 +63,18 @@ Update a folder
 - **create_folder**: Specify the name and optional parent folder ID.
 
 Create a new folder
+- **create_batch_summarization**: Supply the folder ID and the summarization prompt.
+
+Create a batch summarization for a folder
 - **create_share**: Requires the media ID and the recipient’s email address.
 
 Share a media file with a user
+- **create_translation**: Provide the media ID and target language code.
+
+Create a translation for a media file
+- **create_video_burn_in**: Supply the media ID and required styling parameters.
+
+Create a video burn-in (subtitles on video)
 - **delete_media**: the deletion.
 
 Delete a media file
@@ -110,6 +107,9 @@ Get plain text transcript
 Get translation status
 - **list_media**: List media files
 - **list_shares**: List shares for a media file
+- **split_transcript**: Provide the media ID and desired subtitle formatting parameters.
+
+Automatically split transcript into subtitles
 - **update_media**: Specify the media ID and at least one attribute to update.
 
 Update media attributes
@@ -203,4 +203,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

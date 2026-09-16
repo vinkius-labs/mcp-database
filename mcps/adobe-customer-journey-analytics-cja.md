@@ -35,12 +35,12 @@ Connect your **Adobe Customer Journey Analytics (CJA)** account to your AI agent
 
 
 ## Available Tools (6)
-- **get_data_view_metrics**: List metrics for a data view
-- **get_report**: Retrieve an omnichannel report
 - **list_connections**: List AEP connections
 - **list_data_views**: List CJA data views
-- **list_filters**: List journey filters
 - **get_data_view_dimensions**: List dimensions for a data view
+- **get_data_view_metrics**: List metrics for a data view
+- **get_report**: Retrieve an omnichannel report
+- **list_filters**: List journey filters
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
