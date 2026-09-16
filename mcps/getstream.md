@@ -34,31 +34,65 @@ Connect **GetStream** to your AI agent to orchestrate complex social architectur
 
 
 ## Available Tools (23)
-- **batch_delete_collections**: Batch delete collections
-- **batch_get_collections**: Batch retrieve collections
-- **batch_post_collections**: Batch create/update collections
-- **delete_collection_object**: Delete an individual collection object
-- **delete_file**: Delete a file by URL
-- **get_activities**: Retrieve specific activities by ID or foreign ID
-- **partial_update_activity**: Partially update activity data
-- **process_image**: Process or resize an image
-- **unfollow_feed**: Unfollow a target feed
-- **update_collection_object**: Update an individual collection object
-- **upload_file**: Upload a file
-- **upload_image**: Upload an image
 - **add_activity_to_feed**: Add an activity to a feed
-- **add_to_collection**: Add objects to a collection
-- **batch_follow**: Batch follow multiple feeds
-- **follow_feed**: Follow a target feed
-- **get_collection_object**: Retrieve an individual collection object
+- **batch_get_collections**: Batch retrieve collections
+- **batch_post_collections**: Pass the entire payload in the data parameter.
+
+Batch create/update collections
+- **follow_feed**: Use the target format (e.g., user:456) for the target parameter.
+
+Follow a target feed
+- **get_collection_object**: Both parameters are required.
+
+Retrieve an individual collection object
+- **get_open_graph**: Provide the URL to be scraped in the url parameter.
+
+Scrape Open Graph data from a URL
+- **partial_update_activity**: Partially update activity data
+- **remove_activity_from_feed**: Remove an activity from a feed
+- **unfollow_feed**: Use the target format (e.g., user:456) for the target parameter.
+
+Unfollow a target feed
+- **update_activities**: Provide an array of activity objects to update.
+
+Update activity metadata
+- **update_collection_object**: Specify the collection name, object ID, and new data.
+
+Update an individual collection object
+- **upload_file**: The file data must be provided in the file_data parameter.
+
+Upload a file
+- **upload_image**: The image data must be provided in the image_data parameter.
+
+Upload an image
+- **batch_delete_collections**: Provide a payload containing the collections to be deleted.
+
+Batch delete collections
+- **delete_collection_object**: Provide the collection name and the object ID to delete.
+
+Delete an individual collection object
+- **delete_file**: The URL must point to the file to be deleted.
+
+Delete a file by URL
+- **get_activities**: Retrieve specific activities by ID or foreign ID
+- **process_image**: Provide the image URL and required dimensions (w, h).
+
+Process or resize an image
+- **add_to_collection**: The data must be a valid object.
+
+Add objects to a collection
+- **batch_follow**: Ensure the follows array contains complete follow objects.
+
+Batch follow multiple feeds
 - **get_feed**: Supports pagination.
 
 Retrieve activities in a feed
-- **get_open_graph**: Scrape Open Graph data from a URL
-- **list_feed_followers**: List feeds following this feed
-- **list_feed_follows**: List feeds this feed follows
-- **remove_activity_from_feed**: Remove an activity from a feed
-- **update_activities**: Update activity metadata
+- **list_feed_followers**: Provide both the feed slug and user ID.
+
+List feeds following this feed
+- **list_feed_follows**: Provide both the feed slug and user ID.
+
+List feeds this feed follows
 
 
 ## 💬 Prompt Examples
@@ -143,4 +177,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

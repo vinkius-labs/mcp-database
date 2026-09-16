@@ -34,28 +34,28 @@ Connect your **Liveblocks** account to any AI agent to orchestrate multiplayer e
 
 
 ## Available Tools (18)
+- **list_active_users**: List users currently in the room
+- **patch_storage**: Apply JSON Patch operations to Storage
+- **update_ydoc**: Send a binary Yjs update
 - **authorize_user**: Obtain an access token for a client to enter a room
 - **create_room**: Create a new room
+- **delete_room**: Delete a room
 - **get_room**: Retrieve room details
 - **get_storage**: Get the room's Storage tree
+- **get_thread**: Get a specific thread
 - **identify_user**: Permissions are managed on the backend.
 
 Obtain an ID token for a client
-- **list_active_users**: List users currently in the room
 - **list_rooms**: Can be filtered by metadata or access.
 
 List rooms with filtering and pagination
-- **patch_storage**: Apply JSON Patch operations to Storage
 - **resolve_thread**: Resolve a thread
-- **update_ydoc**: Send a binary Yjs update
 - **broadcast_event**: Broadcast a JSON event to a room
-- **get_thread**: Get a specific thread
-- **create_thread**: Create a thread and the first comment
-- **delete_room**: Delete a room
 - **get_ydoc**: Get a JSON representation of the Yjs document
 - **initialize_storage**: Initialize or reinitialize Storage
 - **list_threads**: List threads in a room
 - **update_room**: Update room properties
+- **create_thread**: Create a thread and the first comment
 
 
 ## 💬 Prompt Examples
@@ -140,4 +140,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

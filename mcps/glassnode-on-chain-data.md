@@ -34,18 +34,18 @@ Connect your **Glassnode** account to any AI agent to analyze crypto markets wit
 
 
 ## Available Tools (6)
-- **get_bulk_metric**: Use a="*" for all assets.
-
-Get bulk metric data for multiple assets
 - **get_metric**: Path should be the metric name like "addresses/active_count" or "market/price_usd_close".
 
 Get time-series data for a specific metric
+- **get_bulk_metric**: Use a="*" for all assets.
+
+Get bulk metric data for multiple assets
 - **get_pit_metric**: Get Point-in-Time (PIT) metric data
-- **get_metric_details**: Get details, allowed parameters, and description for a specific metric
 - **list_assets**: List all supported assets on Glassnode
 - **list_metrics**: Can be filtered by asset, interval, etc.
 
 List all available metric paths on Glassnode
+- **get_metric_details**: Get details, allowed parameters, and description for a specific metric
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

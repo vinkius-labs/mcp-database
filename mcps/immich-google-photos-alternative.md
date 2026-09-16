@@ -33,34 +33,74 @@ Connect your self-hosted **Immich** instance to any AI agent and take full contr
 
 
 ## Available Tools (26)
-- **create_album**: Create a new album
-- **get_asset**: Get details for a specific Immich asset
-- **get_tag**: Get details for a specific tag
-- **get_user**: Get details for a specific user
-- **list_albums**: List all albums in Immich
-- **list_persons**: List all recognized persons in Immich
-- **list_tags**: List all tags in Immich
+- **get_person**: Provide the person’s UUID as the required input.
+
+Get details for a specific person
+- **get_user**: Pass the user UUID to identify the target user.
+
+Get details for a specific user
+- **list_assets**: List all assets (photos/videos) in Immich
+- **list_persons**: Use this to find a person’s unique identifier.
+
+List all recognized persons in Immich
+- **list_tags**: Use this to find a tag’s unique identifier.
+
+List all tags in Immich
+- **get_server_info**: Get Immich server version and status information
 - **update_asset**: g., isFavorite).
 
 Update an existing Immich asset
-- **update_tag**: Update an existing tag
+- **update_person**: Supply the person’s UUID and the data payload.
+
+Update an existing person (e.g., change name)
+- **update_tag**: Supply the tag’s UUID and the data payload.
+
+Update an existing tag
 - **upload_asset**: Upload a new photo or video to Immich
-- **create_tag**: Create a new tag
-- **create_user**: Create a new user
-- **delete_album**: Delete an album
-- **delete_person**: Delete a person record
-- **delete_tag**: Delete a tag
-- **delete_user**: Delete a user
-- **get_album**: Get details for a specific album
-- **list_users**: List all users in Immich
-- **create_person**: Create a new person record
+- **get_tag**: Pass the tag’s UUID to fetch the information.
+
+Get details for a specific tag
+- **create_album**: Supply a JSON payload containing the album details.
+
+Create a new album
+- **list_albums**: Do not specify any parameters.
+
+List all albums in Immich
+- **create_user**: Supply a JSON payload with the required user details.
+
+Create a new user
+- **delete_album**: Use the album UUID to identify the target album.
+
+Delete an album
+- **delete_person**: Use the person’s UUID to identify the record.
+
+Delete a person record
+- **delete_tag**: Provide the UUID of the tag to be deleted.
+
+Delete a tag
+- **delete_user**: Provide the UUID of the user to be deleted.
+
+Delete a user
+- **get_album**: Provide the album UUID as the required ID.
+
+Get details for a specific album
+- **get_asset**: Get details for a specific Immich asset
+- **create_tag**: Supply a JSON payload containing the tag details.
+
+Create a new tag
+- **list_users**: No authentication is required for this query.
+
+List all users in Immich
+- **create_person**: Supply a JSON payload with the person’s details.
+
+Create a new person record
 - **delete_asset**: Delete an Immich asset
-- **get_person**: Get details for a specific person
-- **get_server_info**: Get Immich server version and status information
-- **list_assets**: List all assets (photos/videos) in Immich
-- **update_album**: Update an existing album
-- **update_person**: Update an existing person (e.g., change name)
-- **update_user**: Update an existing user
+- **update_album**: Supply both the album ID and the data payload.
+
+Update an existing album
+- **update_user**: Provide the user ID and the data payload.
+
+Update an existing user
 
 
 ## 💬 Prompt Examples
@@ -145,4 +185,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
