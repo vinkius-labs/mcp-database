@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your computer vision operations with **Face
 
 
 ## Available Tools (10)
-- **search_face**: Search for a face in a FaceSet
-- **detect_body**: Detect human bodies in an image
-- **add_face_to_faceset**: Add faces to a FaceSet
-- **compare_faces**: Compare two faces for similarity
 - **create_faceset**: Create a new FaceSet
+- **detect_body**: Detect human bodies in an image
 - **detect_face**: Detect faces in an image
 - **gesture_detect**: Detect hand gestures
 - **get_faceset_detail**: Get details of a FaceSet
 - **remove_face_from_faceset**: Remove faces from a FaceSet
+- **search_face**: Search for a face in a FaceSet
 - **skeleton_detect**: Detect human skeletons
+- **add_face_to_faceset**: Add faces to a FaceSet
+- **compare_faces**: Compare two faces for similarity
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

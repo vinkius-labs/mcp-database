@@ -35,17 +35,17 @@ Equip your AI agent with institutional-grade cryptocurrency market intelligence 
 
 
 ## Available Tools (9)
+- **list_assets**: List all assets
+- **get_latest_orderbooks**: Get latest orderbooks
+- **get_specific_rate**: Get specific exchange rate
+- **get_latest_trades**: Get latest trades
 - **get_latest_quotes**: Get latest quotes
 - **get_ohlcv**: Get OHLCV data
-- **get_specific_rate**: Get specific exchange rate
 - **list_exchanges**: List all exchanges
 - **list_symbols**: Can be optionally filtered.
 
 List all symbols
-- **get_latest_orderbooks**: Get latest orderbooks
-- **get_latest_trades**: Get latest trades
 - **get_exchange_rates**: Get exchange rates
-- **list_assets**: List all assets
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

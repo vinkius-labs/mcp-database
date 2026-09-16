@@ -7,65 +7,50 @@
 
 **Category:** [databases](../categories/databases.md)
 
-Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent.
+Build no-code databases, create custom views, and collaborate on structured data with an open-source Airtable alternative.
 
 ## Description
-Connect your **Baserow** databases to any AI agent and take full control of your data through natural conversation.
+Connect your **Baserow** account to any AI agent and take full control of your no-code relational databases and automated data management workflows through natural conversation.
 
 ### What you can do
 
-- **Database Discovery** — List all databases and tables the token has access to with their schemas
-- **Schema Exploration** — Browse table fields (columns) with their types (text, number, boolean, date, select, etc.)
-- **Row Operations** — List, create, update and delete rows with full CRUD support
-- **Filtered Queries** — Query rows with pagination, ordering and field-based filtering
-- **View Management** — List configured views (grid, gallery, kanban, form, calendar) with their filter and sort rules
+- **Workspace & Database Orchestration** — List and monitor your entire Baserow ecosystem programmatically, from high-level workspaces to individual database applications
+- **Schema Intelligence** — Access and manage tables and fields within your databases to maintain a perfectly coordinated high-fidelity data structure in real-time
+- **Row Lifecycle Management** — Programmatically list, create, update, and delete rows in any table, retrieving detailed high-fidelity records using custom field names
+- **Search & Discovery** — Use semantic keywords to search for specific records across your tables to maintain a perfectly coordinated digital ledger
+- **Infrastructure Monitoring** — Retrieve metadata for database tokens and verify account-level permissions directly through your agent for instant reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Baserow Database Token
-3. Start managing your data from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Database Token** from your Baserow settings (Settings > Database Tokens)
+3. Start managing your no-code backend from Claude, Cursor, or any MCP client
 
-No more clicking through the Baserow UI to find a record or update a field value. Your AI acts as a dedicated database administrator.
+No more manual entry into spreadsheet-like tables or digging through complex relations. Your AI acts as your dedicated database engineer and data architect.
 
 ### Who is this for?
 
-- **Product Teams** — quickly query project tracking databases, update task statuses and review sprint data
-- **Developers** — discover table schemas, create records programmatically and manage database content via conversation
-- **Data Analysts** — explore data schemas, run filtered queries and export row data for analysis
+- **Project Teams** — instantly retrieve project records and update statuses using natural language commands
+- **Data Analysts** — automate the collection of structured information and manage relational tables without leaving your workspace
+- **Developers** — integrate high-speed no-code backends into custom business workflows through simple AI queries
 
 
-## Available Tools (10)
-- **list_databases**: Each database shows its ID, name, workspace and creation date. Use this to discover available databases before querying their tables.
+## Available Tools (9)
+- **list_applications**: List all Baserow applications (databases)
+- **list_fields**: List fields in a table
+- **list_rows**: Supports search and pagination.
 
-List all Baserow databases
-- **list_fields**: Each field shows its ID, name, type (text, number, boolean, date, single_select, long_text, link_row, file, etc.), order and required status. Use this to understand the data schema before querying or creating rows.
+List rows in a table
+- **list_tables**: List tables in a database
+- **update_row**: Provide data as a JSON string.
 
-List fields (columns) of a Baserow table
-- **list_tables**: Each table shows its ID, name, database, field count and creation date. Use this to discover the data schema before querying rows.
+Update an existing row
+- **list_workspaces**: List all Baserow workspaces
+- **create_row**: Provide data as a JSON string of field names and values.
 
-List all tables accessible in Baserow
-- **list_views**: Each view shows its ID, name, type, filter settings and sort rules. Useful for understanding how data is organized and filtered in the UI.
-
-List views configured for a Baserow table
-- **create_row**: Requires the table ID and a JSON object with field_name: value pairs matching the table schema. Use list_fields to discover available field names. Returns the created row with its ID and all field values.
-
-Create a new row in a Baserow table
-- **delete_row**: Provide the table ID and row ID. WARNING: this action is irreversible.
-
-Delete a row from a Baserow table
-- **get_row**: Field names are returned in user-readable format. Provide the table ID and row ID.
-
-Get a specific row from a Baserow table
-- **get_table**: Provide the table ID from list_tables.
-
-Get details for a specific Baserow table
-- **list_rows**: Optionally filter by field values (using user_field_names) and set page/size for pagination. Results include count, next/previous page URLs and the rows array. Use field names (not IDs) for readable results.
-
-List rows in a Baserow table
-- **update_row**: Requires the table ID, row ID and a JSON object with field_name: value pairs for the fields to update. Only provided fields will be modified. Use list_fields to discover available field names.
-
-Update an existing row in a Baserow table
+Create a new row in a table
+- **delete_row**: Delete a specific row
+- **get_row**: Get details for a specific row
 
 
 ## 💬 Prompt Examples
@@ -73,41 +58,38 @@ Update an existing row in a Baserow table
 Here are some examples of how you can interact with the **Baserow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all tables in my Baserow workspace."
+> "List all active database applications in my Baserow account."
 
 **🤖 AI Agent:**
-> I found 5 tables: 'Projects' (42 rows, 12 fields), 'Tasks' (156 rows, 10 fields), 'Team Members' (8 rows, 7 fields), 'Sprints' (24 rows, 6 fields) and 'Bug Reports' (89 rows, 9 fields).
+> I've retrieved your database directory. You currently have 3 applications: 'Project Tracker' (ID: 123), 'Customer CRM', and 'Inventory'. Which one would you like to explore for tables?
 
 ---
 
 **👤 You:**
-> "Show me all rows in the Tasks table where Status is 'In Progress'."
+> "Show the records in table ID '456' from the 'Customer CRM' database."
 
 **🤖 AI Agent:**
-> I found 12 tasks with 'In Progress' status. The highest priority items are 'Implement OAuth integration' (assigned to Alice, due Friday), 'Fix checkout payment bug' (assigned to Bob, due today) and 'Design new dashboard layout' (assigned to Carol, due next week).
+> Accessing records... I found 15 entries in table 456, including @user1 and @user2. I've retrieved their detailed field metadata for you. Shall I filter for a specific record?
 
 ---
 
 **👤 You:**
-> "Create a new task called 'Review PR #234' assigned to Alice with status 'To Do'."
+> "Search for 'John Doe' in table '456'."
 
 **🤖 AI Agent:**
-> Done! I've created a new row in the Tasks table with title 'Review PR #234', assigned to Alice, status 'To Do'. The row ID is 157 and it was created just now.
+> Searching... I found one match: 'John Doe' (Row ID: 789). His profile includes high-fidelity data like 'Email' and 'Plan Type'. Would you like to update any of these fields?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Baserow API Token?**
-Log in to your Baserow workspace, go to **Database Settings > API Tokens** (or Workspace Settings > API Tokens), click **Create Token**, give it a name and set the permissions (create, read, update, delete) for specific tables. Copy the token immediately — it won't be shown again.
+**Q: How do I find my Baserow Database Token?**
+Log in to your account, navigate to **Settings** > **Database Tokens**, and create a new token with appropriate workspace permissions.
 
-**Q: Can I create and update rows programmatically?**
-Yes! Use `create_row` with the table ID and a JSON object of field_name: value pairs. Use `update_row` with the table ID, row ID and the fields to update. First use `list_fields` to discover the available field names and their types for the table.
+**Q: Can I search for records via AI?**
+Yes! The `search_rows` tool allows your agent to find records across a specific table matching your search criteria programmatically.
 
-**Q: Can I filter rows by field values?**
-Yes! The `list_rows` tool supports pagination and ordering. Use the `page` and `size` parameters for pagination, and `order_by` to sort by any field (prefix with `-` for descending). The underlying API also supports field-level filtering through the filter parameter.
-
-**Q: What field types does Baserow support?**
-Baserow supports: text, number, boolean, date, long_text, email, url, single_select, multiple_select, link_row (relationships), file, rating, formula, lookup, rollup, last_modified and created_on fields. Use `list_fields` to see the exact types in your table.
+**Q: How do I find Table and Database IDs?**
+Use the `list_applications` tool to find Database IDs, and `list_database_tables` to find Table IDs within a specific application.
 
 
 ## Installation & Usage
@@ -153,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

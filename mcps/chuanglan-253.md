@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your cloud communication and identity verif
 
 
 ## Available Tools (9)
-- **send_intl_sms**: Send international SMS
-- **send_sms**: Send a standard SMS
-- **verify_phone**: Verify phone owner (3-element)
 - **get_balance**: Check account balance
 - **pull_sms_reports**: Pull delivery reports
 - **query_sms_status**: Query SMS delivery status
+- **send_intl_sms**: Send international SMS
 - **send_variable_sms**: Send variable SMS
 - **verify_identity**: Verify identity (2-element)
+- **verify_phone**: Verify phone owner (3-element)
 - **flash_check**: One-click login check
+- **send_sms**: Send a standard SMS
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

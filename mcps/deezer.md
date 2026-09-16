@@ -29,6 +29,16 @@ Connect **Deezer** music catalog to any AI agent and search millions of tracks, 
 
 
 ## Available Tools (14)
+- **get_artist_radio**: Get artist radio tracks
+- **get_genre_playlists**: Get playlists for a genre
+- **get_genre**: Get genre information
+- **get_playlist**: Get detailed playlist information
+- **search_albums**: Returns albums with release date, track count, and cover art info.
+
+Search for albums on Deezer
+- **search_playlists**: Returns playlist info including creator, track count, and fan count.
+
+Search for playlists on Deezer
 - **get_track**: Get detailed track information
 - **search_artists**: Returns artist info including fan count, album count, and profile links.
 
@@ -38,20 +48,10 @@ Search for artists on Deezer
 
 Search for tracks on Deezer
 - **get_album_tracks**: Get tracks from an album
-- **get_artist_radio**: Get artist radio tracks
 - **get_artist_top_tracks**: Get top tracks for an artist
 - **get_chart**: Optionally filter by country using ISO 3166-1 country code.
 
 Get Deezer charts
-- **get_genre_playlists**: Get playlists for a genre
-- **get_genre**: Get genre information
-- **get_playlist**: Get detailed playlist information
-- **search_playlists**: Returns playlist info including creator, track count, and fan count.
-
-Search for playlists on Deezer
-- **search_albums**: Returns albums with release date, track count, and cover art info.
-
-Search for albums on Deezer
 - **get_album**: Get detailed album information
 
 
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
