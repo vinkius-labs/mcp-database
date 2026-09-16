@@ -14,8 +14,8 @@ The Vedic Nakshatra Calculator provides precise astronomical computations to ide
 
 
 ## Available Tools (3)
-- **calculate_lunar_position**: Provides the raw astronomical longitude used for astrological computations
 - **list_all_constellations**: Provides a complete inventory of all 27 Nakshatras and their primary identifiers
+- **calculate_lunar_position**: Provides the raw astronomical longitude used for astrological computations
 - **get_nakshatra_details**: Identifies the specific Nakshatra and all its associated attributes for a given moment in time
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

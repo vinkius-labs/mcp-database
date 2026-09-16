@@ -14,12 +14,12 @@ This MCP server provides specialized tools for agricultural soil management. It 
 
 
 ## Available Tools (4)
-- **estimate_liming_cost**: Calculates the financial investment required for the lime application
-- **get_soil_classification**: Categorizes the soil type to provide context for the lime requirement
+- **recommend_application_timing**: Provides guidance on when to apply lime based on soil characteristics and lime fineness
 - **calculate_lime_rate**: Provide current pH, target pH, buffering method (SMP or BaseSaturation), soil properties (clay, organic matter, CEC), and lime quality (CCE and fineness factor).
 
 Determines the total amount of lime needed to reach the target pH based on soil properties
-- **recommend_application_timing**: Provides guidance on when to apply lime based on soil characteristics and lime fineness
+- **estimate_liming_cost**: Calculates the financial investment required for the lime application
+- **get_soil_classification**: Categorizes the soil type to provide context for the lime requirement
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
