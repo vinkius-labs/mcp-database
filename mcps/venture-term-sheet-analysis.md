@@ -15,9 +15,9 @@ This MCP server provides advanced modeling for venture capital financing. It all
 
 ## Available Tools (4)
 - **analyze_protective_provisions**: Determines if specific exit scenarios violate standard investor rights or protective clauses
-- **calculate_ownership_structure**: Determines the ownership percentages of all parties following the investment
 - **evaluate_valuation_impact**: Compares the economic reality of different valuation offers
 - **simulate_exit_waterfall**: Calculates the cash distribution to each stakeholder during a liquidity event
+- **calculate_ownership_structure**: Determines the ownership percentages of all parties following the investment
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

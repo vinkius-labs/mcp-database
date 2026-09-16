@@ -14,10 +14,10 @@ This MCP server provides a suite of financial modeling tools for venture capital
 
 
 ## Available Tools (4)
-- **compare_to_direct_investment**: Determines the efficiency of the syndicate by comparing it to a hypothetical direct investment scenario
 - **evaluate_deal_flow_impact**: Models how the quality of the syndicate's deal flow affects the potential gross returns
 - **analyze_syndicate_economics**: Calculates the core financial breakdown of a syndicate investment
 - **calculate_lp_participation_summary**: Summarizes the individual LP experience within a specific syndicate size
+- **compare_to_direct_investment**: Determines the efficiency of the syndicate by comparing it to a hypothetical direct investment scenario
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -15,9 +15,9 @@ This MCP server provides specialized tools to model the impact of anti-dilution 
 
 ## Available Tools (4)
 - **analyze_shareholder_dilution**: Evaluates how the anti-dilution adjustment affects the ownership percentages of non-protected shareholders
-- **calculate_full_ratchet_impact**: Calculates the specific impact of a full ratchet anti-dilution adjustment
 - **calculate_weighted_average_impact**: Calculates the impact of a broad-based weighted average anti-dilution adjustment
 - **compare_protection_mechanisms**: Directly compares the severity of Full Ratchet versus Weighted Average for a specific scenario
+- **calculate_full_ratchet_impact**: Calculates the specific impact of a full ratchet anti-dilution adjustment
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
