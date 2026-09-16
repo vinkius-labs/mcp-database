@@ -34,14 +34,14 @@ Connect to the **OpenSky Network** to integrate comprehensive aviation intellige
 
 
 ## Available Tools (6)
-- **get_flights_by_aircraft**: Retrieve historical flights for a specific aircraft
-- **get_flights_all**: Retrieve all historical flights in a time interval
 - **get_flights_by_arrival**: Retrieve historical flights arriving at an airport
 - **get_flights_by_departure**: Retrieve historical flights departing from an airport
 - **get_states**: Can be filtered by time, specific aircraft (icao24), or a geographic bounding box.
 
 Retrieve real-time aircraft state vectors
 - **get_tracks**: Retrieve the trajectory of a specific flight
+- **get_flights_by_aircraft**: Retrieve historical flights for a specific aircraft
+- **get_flights_all**: Retrieve all historical flights in a time interval
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

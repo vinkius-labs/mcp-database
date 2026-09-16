@@ -34,33 +34,52 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 
 
 ## Available Tools (21)
-- **get_chart_artists**: Provide a valid two-letter country code.
-
-Get the list of top artists of a given country
-- **get_artist**: Provide the artist’s unique ID.
-
-Get artist metadata
 - **get_track_lyrics**: Provide at least one ID type.
 
 Get the lyrics for a track
 - **get_track_subtitle**: Specify the desired subtitle format.
 
 Get the synchronized lyrics (subtitles) for a track
-- **get_album_tracks**: Specify the album_id and optionally use f_has_lyrics.
+- **post_work_validity**: Provide both the identifier and the validity end date.
 
-Get the list of tracks for an album
+Submit the validity end date for a work
+- **get_album**: Must provide a valid album_id.
+
+Get album metadata
+- **get_music_genres**: Get the list of music genres
+- **match_subtitle**: Provide at least one query parameter.
+
+Match a track and get its subtitles
+- **get_chart_artists**: Provide a valid two-letter country code.
+
+Get the list of top artists of a given country
 - **get_chart_tracks**: Specify the chart type if required.
 
 Get the list of top tracks of a given country
+- **get_album_tracks**: Specify the album_id and optionally use f_has_lyrics.
+
+Get the list of tracks for an album
 - **get_artist_albums**: Optionally sort or group the results.
 
 Get the list of albums for an artist
+- **get_artist**: Provide the artist’s unique ID.
+
+Get artist metadata
 - **get_lyrics_translation**: Provide at least one ID type.
 
 Get the translation of a track lyrics
+- **get_subtitle_translation**: Provide at least one ID type.
+
+Get the translation of a track synchronized lyrics
+- **get_track_richsync**: Provide at least one ID type.
+
+Get the rich synchronized lyrics (word-by-word)
 - **get_track_snippet**: Provide at least one ID type.
 
 Get a snippet (short excerpt) of the lyrics
+- **get_track**: Provide at least one ID type.
+
+Get a track metadata by ID
 - **match_lyrics**: Provide at least one query parameter.
 
 Match a track and get its lyrics in one call
@@ -70,31 +89,12 @@ Match a track and get its metadata
 - **post_work**: Provide both collection and owners data.
 
 Submit or update publishing data for a musical work
-- **post_work_validity**: Provide both the identifier and the validity end date.
-
-Submit the validity end date for a work
 - **search_artists**: Provide at least one search query parameter.
 
 Search for an artist
 - **search_tracks**: Use multiple parameters for precise filtering.
 
 Search for a track in the Musixmatch catalogue
-- **get_album**: Must provide a valid album_id.
-
-Get album metadata
-- **get_music_genres**: Get the list of music genres
-- **get_subtitle_translation**: Provide at least one ID type.
-
-Get the translation of a track synchronized lyrics
-- **get_track**: Provide at least one ID type.
-
-Get a track metadata by ID
-- **get_track_richsync**: Provide at least one ID type.
-
-Get the rich synchronized lyrics (word-by-word)
-- **match_subtitle**: Provide at least one query parameter.
-
-Match a track and get its subtitles
 
 
 ## 💬 Prompt Examples
@@ -179,4 +179,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

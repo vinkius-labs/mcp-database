@@ -35,8 +35,8 @@ Connect your **Nimble CRM** account to any AI agent to streamline your social sa
 ## Available Tools (4)
 - **delete_contacts**: Delete Nimble contacts
 - **get_contact**: Get details for specific Nimble contacts
-- **get_myself**: Get current Nimble user details
 - **list_contacts**: List Nimble contacts
+- **get_myself**: Get current Nimble user details
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

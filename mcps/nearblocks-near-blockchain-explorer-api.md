@@ -33,17 +33,17 @@ Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This 
 
 
 ## Available Tools (11)
+- **get_network_stats**: Get general network statistics
+- **get_token_list**: Get a list of tokens on the network
+- **get_latest_blocks**: Get a list of the most recent blocks
+- **get_token_details**: Get details of a specific token contract
+- **get_recent_transactions**: Get a list of the most recent transactions
+- **get_transaction_details**: Get details of a specific transaction
+- **get_account_details**: Get basic information about a specific Near account
 - **get_account_inventory**: Get NFTs owned by a Near account
 - **get_account_tokens**: Get tokens owned by a Near account
 - **get_account_transactions**: Get a list of transactions for a Near account
 - **get_block_details**: Get details of a specific block
-- **get_network_stats**: Get general network statistics
-- **get_token_list**: Get a list of tokens on the network
-- **get_latest_blocks**: Get a list of the most recent blocks
-- **get_recent_transactions**: Get a list of the most recent transactions
-- **get_token_details**: Get details of a specific token contract
-- **get_transaction_details**: Get details of a specific transaction
-- **get_account_details**: Get basic information about a specific Near account
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
