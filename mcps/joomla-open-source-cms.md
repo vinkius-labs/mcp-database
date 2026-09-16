@@ -35,20 +35,20 @@ Connect your **Joomla** site to any AI agent and take full control of your conte
 
 
 ## Available Tools (10)
-- **list_platform_users**: List Joomla users
+- **delete_cms_article**: Delete a Joomla article
+- **patch_cms_article**: Update an existing Joomla article
+- **list_global_categories**: List Joomla categories
 - **create_cms_article**: Requires title, alias, category ID, and HTML introtext.
 
 Create a new Joomla article
-- **list_active_banners**: List Joomla banners
-- **list_global_categories**: List Joomla categories
-- **list_site_menus**: List Joomla site menus
-- **patch_cms_article**: Update an existing Joomla article
-- **delete_cms_article**: Delete a Joomla article
 - **get_article_details**: Get details for a specific Joomla article
 - **list_site_articles**: You can optional pass query parameters like filter[state]=1.
 
 List Joomla articles
+- **list_active_banners**: List Joomla banners
+- **list_site_menus**: List Joomla site menus
 - **list_system_tags**: List Joomla tags
+- **list_platform_users**: List Joomla users
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

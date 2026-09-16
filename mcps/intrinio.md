@@ -17,15 +17,15 @@ Empower your AI agents with Intrinio's comprehensive financial data. This MCP se
 - **list_indices**: g., S&P 500, Dow Jones) tracked by Intrinio. Use this to identify index identifiers before querying index performance data.
 
 Lists stock market indices
+- **get_financials**: Returns line items and values. Essential for fundamental financial analysis and performance vetting.
+
+Retrieves financial statements for a company
 - **get_earnings_releases**: Essential for tracking reporting seasons and anticipating market volatility for specific tickers.
 
 Lists upcoming and past earnings releases
 - **get_company**: g., "AAPL") or ID. Returns headquarters address, employee counts, and business descriptions. Useful for providing a profile overview of a company.
 
 Retrieves details for a specific company
-- **get_financials**: Returns line items and values. Essential for fundamental financial analysis and performance vetting.
-
-Retrieves financial statements for a company
 - **get_ipo_calendar**: Useful for identifying new market entrants and investment opportunities.
 
 Retrieves the IPO calendar
@@ -38,12 +38,12 @@ Retrieves historical stock prices for a security
 - **list_companies**: Returns company names, tickers, and internal IDs. Use this to discover tickers before querying specific stock prices or financial statements.
 
 Lists all companies covered by Intrinio
-- **search_companies**: Use this when the user provided a partial company name and you need to locate the correct ticker or ID.
-
-Searches for companies by name or ticker
 - **list_news**: Useful for monitoring market-moving events and recent announcements from public companies.
 
 Lists latest financial news
+- **search_companies**: Use this when the user provided a partial company name and you need to locate the correct ticker or ID.
+
+Searches for companies by name or ticker
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

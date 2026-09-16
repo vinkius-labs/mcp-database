@@ -14,16 +14,34 @@ Empower your AI agents to manage your customer relationships with Insightly. Thi
 
 
 ## Available Tools (10)
-- **list_leads**: Lists all marketing leads
-- **list_opportunities**: Lists all sales opportunities
-- **list_organisations**: Lists all registered organisations
-- **list_projects**: Lists all active and past projects
-- **list_teams**: Lists all defined teams
+- **list_organisations**: No arguments are required for this query.
+
+Lists all registered organisations
+- **list_teams**: No arguments are required for this query.
+
+Lists all defined teams
+- **list_tasks**: No arguments are required for this query.
+
+Lists all tasks across projects
+- **list_users**: No arguments are required for this query.
+
+Lists all users in the system
 - **list_contacts**: Lists all contacts in Insightly
-- **list_events**: Lists all calendar events
-- **get_contact**: Retrieves details for a specific contact
-- **list_tasks**: Lists all tasks across projects
-- **list_users**: Lists all users in the system
+- **list_events**: No arguments are required for this query.
+
+Lists all calendar events
+- **list_leads**: No arguments are required for this query.
+
+Lists all marketing leads
+- **list_opportunities**: No arguments are required for this query.
+
+Lists all sales opportunities
+- **list_projects**: No arguments are required for this query.
+
+Lists all active and past projects
+- **get_contact**: Provide the contact ID as the required argument.
+
+Retrieves details for a specific contact
 
 
 ## 💬 Prompt Examples
@@ -108,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

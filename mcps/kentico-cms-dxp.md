@@ -35,19 +35,19 @@ Connect your **Kentico Xperience** project to any AI agent and take full control
 
 
 ## Available Tools (10)
-- **create_system_object**: Create a new Kentico system object
 - **get_single_object**: Get a specific Kentico system object by ID
-- **get_site_document**: Get a document from the Kentico Xperience CMS
-- **list_custom_table_rows**: List rows from a Kentico custom table
-- **update_site_document**: Update an existing document in the Kentico CMS
-- **delete_system_object**: Delete a Kentico system object
-- **get_user**: Get details for a specific Kentico user
 - **list_system_objects**: g., roles provisions, page templates) from Kentico REST.
 
 List Kentico system objects by type
+- **delete_system_object**: Delete a Kentico system object
+- **create_system_object**: Create a new Kentico system object
+- **get_site_document**: Get a document from the Kentico Xperience CMS
+- **get_user**: Get details for a specific Kentico user
+- **list_custom_table_rows**: List rows from a Kentico custom table
 - **list_users**: user in Kentico.
 
-List globalThis Kentico users
+List global Kentico users
+- **update_site_document**: Update an existing document in the Kentico CMS
 - **update_system_object**: Update an existing Kentico system object
 
 
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

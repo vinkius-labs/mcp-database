@@ -38,13 +38,13 @@ No more manual following up on overdue payments or missing billing updates. Your
 ## Available Tools (10)
 - **check_invoiced_status**: Verify Invoiced API connectivity
 - **create_customer**: Create a customer
+- **list_credit_notes**: List all credit notes
+- **list_estimates**: List all estimates
+- **list_invoices**: List all invoices
 - **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
 
 Create an invoice
-- **list_credit_notes**: List all credit notes
 - **list_customers**: List all customers
-- **list_estimates**: List all estimates
-- **list_invoices**: List all invoices
 - **get_customer**: Get customer details
 - **get_invoice**: Get invoice details
 - **list_payments**: List all payments
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

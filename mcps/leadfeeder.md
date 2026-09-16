@@ -32,15 +32,15 @@ Connect your **Leadfeeder** tracking system to an AI agent to analyze high-quali
 
 
 ## Available Tools (9)
+- **get_tracking_script**: Get the tracking script for the account
 - **list_account_visits**: Get aggregate visits data across the entire account
+- **list_accounts**: Retrieve a list of accounts from Leadfeeder
+- **list_custom_feeds**: Retrieve the custom feeds active within a specific account
+- **list_lead_visits**: Get the website visits directly associated with a specific lead
 - **get_account**: Get details for a specific Leadfeeder account
 - **get_custom_feed**: Get details for a specific custom feed filter
 - **get_lead**: Get details for a specific lead
-- **get_tracking_script**: Get the tracking script for the account
-- **list_accounts**: Retrieve a list of accounts from Leadfeeder
-- **list_custom_feeds**: Retrieve the custom feeds active within a specific account
 - **list_leads**: Retrieve a list of discovered leads within an account
-- **list_lead_visits**: Get the website visits directly associated with a specific lead
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

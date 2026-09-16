@@ -34,12 +34,12 @@ Connect your **Integrate.io** account to any AI agent and take full control of y
 
 
 ## Available Tools (6)
-- **list_connections**: List all database and API connections in the Integrate.io account
 - **get_account**: Get Integrate.io account status and limits
 - **get_pipeline**: Get details for a specific Integrate.io pipeline by ID
-- **list_jobs**: List all active and past jobs in Integrate.io
-- **list_pipelines**: List all pipelines in the Integrate.io account
 - **list_transformations**: List all data transformations established in the account
+- **list_pipelines**: List all pipelines in the Integrate.io account
+- **list_jobs**: List all active and past jobs in Integrate.io
+- **list_connections**: List all database and API connections in the Integrate.io account
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

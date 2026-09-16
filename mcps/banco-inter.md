@@ -31,12 +31,12 @@ The **Banco Inter MCP Server** transforms your AI agent into a secure, fully aut
 
 
 ## Available Tools (8)
-- **inter_create_boleto**: Gerar um Boleto de Cobrança Bancário (Banco Inter)
-- **inter_list_boletos**: Listar pesquisa filtrada de Boletos em lote (Banco Inter)
 - **inter_list_pix_billings**: Consultar cobranças Pix (Cob) recebidas ou geradas num intervalo (Banco Inter)
+- **inter_list_boletos**: Listar pesquisa filtrada de Boletos em lote (Banco Inter)
 - **inter_create_pix_billing**: Obrigatório incluir cpfCnpj e valor.
 
 Emitir cobrança imediata via Pix (Banco Inter)
+- **inter_create_boleto**: Gerar um Boleto de Cobrança Bancário (Banco Inter)
 - **inter_get_balance**: Consultar o Saldo final do dia na Conta Digital (Banco Inter Empresas)
 - **inter_get_boleto**: Consultar dados detalhados e status de um Boleto específico (Banco Inter)
 - **inter_get_statement**: Consultar o Resumo (Statement / Extrato) completo de movimentações da conta (Banco Inter Empresas)
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,17 +36,17 @@ Connect your **Landbot** account to any AI agent and manage chatbots through nat
 
 ## Available Tools (12)
 - **list_team_agents**: List support agents
-- **trigger_bot_flow**: Start bot flow
-- **list_landbot_customers**: List chatbot users
-- **list_message_hooks**: Get event configs
-- **send_whatsapp_template**: Send WA template
-- **update_customer_field**: Set user property
-- **get_account_info**: Check API status
 - **get_customer_details**: Get user profile
-- **handoff_to_agent**: Assign to human
 - **list_active_bots**: List available bots
 - **send_proactive_image**: Send chat image
 - **send_proactive_text**: Send chat message
+- **handoff_to_agent**: Assign to human
+- **send_whatsapp_template**: Send WA template
+- **update_customer_field**: Set user property
+- **trigger_bot_flow**: Start bot flow
+- **get_account_info**: Check API status
+- **list_landbot_customers**: List chatbot users
+- **list_message_hooks**: Get event configs
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
