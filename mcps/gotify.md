@@ -33,32 +33,60 @@ Connect your **Gotify** instance to any AI agent to streamline your notification
 
 
 ## Available Tools (22)
-- **change_password**: Change current user password
-- **delete_all_messages**: Delete all messages for the authenticated client
-- **delete_client**: Delete a client
-- **delete_message**: Delete a specific message
-- **get_applications**: List all applications
+- **change_password**: Must provide a new password.
+
+Change current user password
+- **create_client**: Supply the required client name.
+
+Create a new client
+- **create_user**: Provide the username and password; admin status is optional.
+
+Create a new user (Admin only)
+- **delete_all_messages**: Do not use this tool if you only intend to delete specific messages.
+
+Delete all messages for the authenticated client
+- **delete_application**: Provide the unique Application ID.
+
+Delete an application
 - **get_clients**: List all clients
 - **get_current_user**: Get current user details
-- **get_health**: Get server health status
-- **update_client**: Update a client
-- **update_plugin_config**: Update plugin configuration
-- **create_application**: Create a new application
-- **create_client**: Create a new client
-- **create_user**: Create a new user (Admin only)
-- **get_plugin_display**: Get plugin display info
-- **get_plugins**: List all plugins
-- **update_application**: Update an application
-- **delete_application**: Delete an application
-- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
+- **get_plugin_config**: Requires a plugin ID.
 
-Retrieve messages
-- **get_plugin_config**: Get plugin configuration
-- **get_users**: List all users (Admin only)
+Get plugin configuration
+- **get_plugin_display**: Requires a plugin ID.
+
+Get plugin display info
 - **get_version**: Get server version info
 - **send_message**: Requires GOTIFY_APP_TOKEN.
 
 Send a message via Gotify
+- **update_application**: Specify the Application ID and the fields to modify.
+
+Update an application
+- **update_client**: Specify the Client ID and the fields to modify.
+
+Update a client
+- **update_plugin_config**: Must provide both an ID and the new configuration.
+
+Update plugin configuration
+- **create_application**: Supply both the required name and description.
+
+Create a new application
+- **delete_client**: Provide the unique Client ID.
+
+Delete a client
+- **delete_message**: Provide the required Message ID.
+
+Delete a specific message
+- **get_applications**: List all applications
+- **get_health**: Get server health status
+- **get_plugins**: List all plugins
+- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
+
+Retrieve messages
+- **get_users**: Requires admin privileges.
+
+List all users (Admin only)
 
 
 ## 💬 Prompt Examples
@@ -143,4 +171,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

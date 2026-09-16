@@ -34,24 +34,26 @@ Connect your **GoatCounter** account to any AI agent to monitor your web traffic
 
 
 ## Available Tools (14)
-- **get_me**: Get current user and API key info
-- **list_sites**: List all sites accessible by the user
-- **get_stats_hits**: Overview of pageviews per path
-- **get_stats_hits_path**: Referral statistics for a specific path
-- **create_site**: Create a new site
-- **get_stats_page_detail**: g., browser versions).
-
-Detailed stats for a specific item in a category
-- **get_stats_total**: Total pageview counts for a date range
 - **count_hits**: Send pageviews or events to GoatCounter
 - **download_export**: Download a completed export file
-- **get_export**: Get export status and metadata
 - **get_site**: Detailed information about a site
-- **get_stats_page**: Stats for specific categories (browsers, systems, etc)
+- **get_me**: Get current user and API key info
 - **start_export**: Returns an export ID to check status.
 
 Start a new data export in the background
+- **get_stats_hits_path**: Referral statistics for a specific path
+- **get_stats_page**: Stats for specific categories (browsers, systems, etc)
+- **get_stats_total**: Total pageview counts for a date range
 - **update_site**: Update site settings
+- **list_sites**: List all sites accessible by the user
+- **get_stats_page_detail**: g., browser versions).
+
+Detailed stats for a specific item in a category
+- **create_site**: Create a new site
+- **get_stats_hits**: Use start and end dates to define the reporting period.
+
+Overview of pageviews per path
+- **get_export**: Get export status and metadata
 
 
 ## 💬 Prompt Examples
@@ -136,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
