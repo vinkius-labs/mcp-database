@@ -14,9 +14,9 @@ This MCP server provides specialized tools to determine the exact amount of conc
 
 
 ## Available Tools (5)
+- **calculate_footing_volume**: Calculates concrete requirements for rectangular or trapezoidal foundation footings
 - **calculate_column_volume**: Calculates concrete requirements for vertical supports (round or square)
 - **calculate_curved_path_volume**: Calculates concrete requirements for arched or circular paths/drives
-- **calculate_footing_volume**: Calculates concrete requirements for rectangular or trapezoidal foundation footings
 - **calculate_slab_volume**: Calculates concrete requirements for flat floor or foundation slabs
 - **calculate_stair_volume**: Calculates concrete requirements for a flight of steps
 
@@ -103,4 +103,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
