@@ -28,16 +28,16 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 
 
 ## Available Tools (10)
-- **list_devices**: List devices within a network
+- **get_device**: Get details for a specific device
 - **list_organizations**: List all organizations
 - **list_wireless_ssids**: List SSIDs for a wireless network
-- **get_device**: Get details for a specific device
 - **get_device_statuses**: Get statuses for all devices in an organization
 - **get_organization**: Get details for a specific organization
 - **get_appliance_settings**: Get appliance settings for a network
 - **list_clients**: ) for a specific network.
 
 List clients on a network
+- **list_devices**: List devices within a network
 - **list_networks**: List networks within an organization
 - **search_organizations**: Search organizations by name
 
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

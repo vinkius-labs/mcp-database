@@ -35,10 +35,10 @@ Connect your **Matillion Data Productivity Cloud** account to any AI agent and t
 
 
 ## Available Tools (6)
-- **get_pipeline**: Get specific pipeline details
 - **list_executions**: List recent pipeline executions
-- **list_projects**: List all projects
+- **get_pipeline**: Get specific pipeline details
 - **list_agents**: List all Matillion runtime agents
+- **list_projects**: List all projects
 - **list_environments**: List all environment configurations
 - **list_pipelines**: List all Matillion ETL pipelines
 
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
