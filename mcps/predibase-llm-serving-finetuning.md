@@ -36,13 +36,13 @@ Connect your **Predibase** account to any AI agent to manage high-performance LL
 ## Available Tools (7)
 - **classify**: Batch classification for one or more inputs
 - **get_health**: Check health status of the inference endpoint
-- **get_metrics**: Use this tool only for monitoring purposes.
-
-Get Prometheus metrics for the deployment
 - **chat_completion**: Create a chat completion (OpenAI compatible)
 - **completion**: Create a completion (OpenAI compatible)
 - **generate_text**: Generate text using a deployed LLM
 - **get_info**: Get inference endpoint metadata
+- **get_metrics**: Use this tool only for monitoring purposes.
+
+Get Prometheus metrics for the deployment
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
