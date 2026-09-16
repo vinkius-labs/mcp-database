@@ -30,17 +30,17 @@ Connect your **Forj** (formerly Mobilize) account to any AI agent to automate yo
 
 ## Available Tools (12)
 - **get_group**: Get group details
-- **list_groups**: List community groups
-- **list_webhooks**: List active webhooks
 - **search_users**: Search community members
 - **find_user**: Find user by email
 - **get_account_details**: Get community account info
 - **get_user_activity**: Get member activity log
 - **list_group_members**: List members in a group
+- **list_groups**: List community groups
+- **list_invitations**: List sent invitations
 - **list_pending_requests**: List group join requests
+- **list_webhooks**: List active webhooks
 - **add_user_to_group**: Add member to group
 - **create_group**: Create a new group
-- **list_invitations**: List sent invitations
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

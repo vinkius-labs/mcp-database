@@ -32,16 +32,34 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 
 
 ## Available Tools (12)
-- **apply_for_loan**: Apply for a loan on behalf of a customer
-- **get_repayments**: Get the repayment schedule and status for a loan
-- **create_customer**: Register a new customer for lending
-- **disburse_funds**: Trigger fund disbursement for an approved loan
+- **apply_for_loan**: The customer ID and requested amount are mandatory.
+
+Apply for a loan on behalf of a customer
+- **create_customer**: Ensure all required personal details are provided.
+
+Register a new customer for lending
+- **disburse_funds**: Provide the loan ID to trigger the transaction.
+
+Trigger fund disbursement for an approved loan
 - **get_balance**: Get current wallet balance in Fig Finance
-- **get_customer**: Get details for a specific customer
-- **get_loan_offers**: Get available loan offers for a customer
-- **get_loan_status**: Get the current status of a loan
-- **get_me**: Get details for the authorized application account
-- **list_customers**: List all customers in your Fig Finance account
+- **get_customer**: Provide the customer ID as a required parameter.
+
+Get details for a specific customer
+- **get_loan_offers**: Use the customer ID to ensure accurate results.
+
+Get available loan offers for a customer
+- **get_loan_status**: Supply the unique loan ID to query the status.
+
+Get the current status of a loan
+- **get_me**: This tool requires no parameters.
+
+Get details for the authorized application account
+- **get_repayments**: Pass the loan ID to fetch the required data.
+
+Get the repayment schedule and status for a loan
+- **list_customers**: Do not use this tool if you only need details for one customer.
+
+List all customers in your Fig Finance account
 - **list_loans**: List all loans in the account
 - **list_transactions**: List all financial transactions
 
@@ -128,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

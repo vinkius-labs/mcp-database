@@ -35,14 +35,16 @@ Connect your **Flux Markets** (Onyx) account to any AI agent to monitor energy m
 
 ## Available Tools (9)
 - **get_cot_data**: Get Commitment of Traders (COT) data
+- **get_swap_settlements**: Get daily swap settlement prices
 - **list_products**: List all energy products
-- **get_account_info**: Get account and API usage details
-- **get_historical_tickers**: Get historical energy prices
+- **list_symbols**: List energy symbols
 - **get_live_tickers**: Get real-time energy prices
 - **get_market_snapshot**: Get current market snapshot
 - **get_officials**: Get benchmark reports (The Officials)
-- **get_swap_settlements**: Get daily swap settlement prices
-- **list_symbols**: List energy symbols
+- **get_account_info**: Use this tool only to retrieve current account status.
+
+Get account and API usage details
+- **get_historical_tickers**: Get historical energy prices
 
 
 ## 💬 Prompt Examples
@@ -130,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
