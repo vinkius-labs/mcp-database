@@ -36,23 +36,23 @@ Empower your AI agent to orchestrate your enterprise-grade visual intelligence a
 
 ## Available Tools (12)
 - **add_face_to_repo**: Register a face in a repository
-- **compare_faces**: Verify if two faces match (1:1)
-- **detect_face**: Detect faces in an image
 - **moderate_image**: Content moderation for images
+- **compare_faces**: Verify if two faces match (1:1)
+- **create_face_repo**: Create a new facial repository
+- **detect_face**: Detect faces in an image
+- **ocr_id_card**: Extract text from an ID card image
+- **list_repos**: List all facial repositories
+- **remove_face_from_repo**: Remove a face from a repository
+- **search_face_in_repo**: Returns top matches with confidence.
+
+Search for a face in a repository (1:N)
+- **detect_silent_liveness**: Detects photos, screens, and 3D masks.
+
+Silent liveness detection (anti-spoofing)
 - **detect_active_liveness**: Returns per-action pass/fail.
 
 Active liveness detection with action verification
 - **delete_face_repo**: Delete a facial repository
-- **search_face_in_repo**: Returns top matches with confidence.
-
-Search for a face in a repository (1:N)
-- **ocr_id_card**: Extract text from an ID card image
-- **create_face_repo**: Create a new facial repository
-- **list_repos**: List all facial repositories
-- **remove_face_from_repo**: Remove a face from a repository
-- **detect_silent_liveness**: Detects photos, screens, and 3D masks.
-
-Silent liveness detection (anti-spoofing)
 
 
 ## 💬 Prompt Examples
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

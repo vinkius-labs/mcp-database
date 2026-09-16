@@ -38,10 +38,10 @@ Empower your AI agent to orchestrate your sales cycle with **Xiaoshouyi** (Neocr
 - **create_lead**: Create a new lead
 - **create_opportunity**: Create a new opportunity
 - **get_lead**: Get lead details
-- **list_contacts**: List CRM contacts
-- **list_opportunities**: List sales opportunities
 - **list_accounts**: List CRM accounts
+- **list_contacts**: List CRM contacts
 - **list_leads**: List CRM leads
+- **list_opportunities**: List sales opportunities
 - **list_tasks**: List CRM tasks
 - **list_users**: List organization users
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

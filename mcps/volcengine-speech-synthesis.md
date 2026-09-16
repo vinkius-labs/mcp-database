@@ -34,6 +34,9 @@ Connect **Volcengine Speech Synthesis** (ByteDance's TTS platform) to any AI age
 
 
 ## Available Tools (5)
+- **get_audio_formats**: Use MP3 for web delivery, WAV for editing, OGG Opus for efficient streaming, or PCM for raw processing.
+
+List supported audio output formats
 - **list_voices**: Essential for choosing the right voice before synthesis. Includes the famous TikTok voice styles.
 
 List all available TTS voice models
@@ -46,9 +49,6 @@ Convert SSML (Speech Synthesis Markup Language) to speech
 - **synthesize_speech**: Supports multiple languages (Chinese, English, Japanese), various voice styles (female, male, child, trendy, news), and adjustable speed/volume. Returns audio data or URL. Ideal for narration, accessibility, multi-language content, and the iconic TikTok voice effects.
 
 Convert text to speech using Volcengine TTS
-- **get_audio_formats**: Use MP3 for web delivery, WAV for editing, OGG Opus for efficient streaming, or PCM for raw processing.
-
-List supported audio output formats
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -33,9 +33,9 @@ Integrate your AI with **UPYUN** (又拍云), one of the most prominent Cloud an
 
 ## Available Tools (5)
 - **create_text_file**: Create and upload a text file directly to UPYUN
-- **delete_file**: Delete a file from UPYUN
 - **get_file_info**: Get metadata about an UPYUN file
 - **get_service_usage**: Get UPYUN bucket service usage
+- **delete_file**: Delete a file from UPYUN
 - **list_directory**: g., "/" or "/images/") to list its contents.
 
 List files and folders in an UPYUN directory
@@ -112,4 +112,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

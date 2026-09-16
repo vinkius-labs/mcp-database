@@ -32,20 +32,22 @@ Empower your Agent with **Volcengine RTC**, the exact same Real-Time Communicati
 
 
 ## Available Tools (10)
-- **get_active_rooms**: List all active RTC rooms in Volcengine
+- **get_quality_metrics**: Get deep dive metrics of an RTC room
 - **get_room_users**: Get list of users in a Volcengine room
 - **kick_user**: Kick a user from a Volcengine RTC room
-- **start_cloud_record**: Start Volcengine Cloud Recording
-- **start_transcode**: Start Cloud MCU stream transcoding
-- **stop_cloud_record**: Stop Volcengine Cloud Recording
-- **stop_transcode**: Stop MCU stream transcoding
-- **get_quality_metrics**: Get deep dive metrics of an RTC room
 - **mute_stream**: StreamType should be "audio" or "video".
 
 Mute a specific stream output (audio or video)
+- **stop_transcode**: Use this tool only when the task must be stopped immediately.
+
+Stop MCU stream transcoding
 - **unmute_stream**: StreamType should be "audio" or "video".
 
 Unmute a previously muted stream output
+- **get_active_rooms**: List all active RTC rooms in Volcengine
+- **start_cloud_record**: Start Volcengine Cloud Recording
+- **start_transcode**: Start Cloud MCU stream transcoding
+- **stop_cloud_record**: Stop Volcengine Cloud Recording
 
 
 ## 💬 Prompt Examples
@@ -116,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
