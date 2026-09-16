@@ -34,14 +34,14 @@ Connect **Google Ads** to your AI agent and manage the world's largest advertisi
 
 
 ## Available Tools (8)
-- **list_conversion_actions**: List conversion tracking actions
-- **list_keywords**: List keywords in a campaign
 - **list_campaigns**: List all Google Ads campaigns
-- **get_account_budget**: Get account budget info
-- **get_campaign**: Get campaign performance details
-- **get_performance_report**: Get daily performance report
 - **list_ad_groups**: List ad groups in a campaign
+- **get_campaign**: Get campaign performance details
 - **list_ads**: List ads in an ad group
+- **list_keywords**: List keywords in a campaign
+- **get_account_budget**: Get account budget info
+- **get_performance_report**: Get daily performance report
+- **list_conversion_actions**: List conversion tracking actions
 
 
 ## 💬 Prompt Examples

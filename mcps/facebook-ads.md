@@ -34,18 +34,42 @@ Connect your **Facebook Ads** (Meta Marketing) account to any AI agent and take 
 
 
 ## Available Tools (12)
-- **get_ad_account_info**: Get basic info for the Facebook Ad Account
-- **get_ad_details**: Get details for a specific ad
-- **update_ad_status**: Update the status of an ad
-- **update_campaign_status**: Update the status of a campaign
-- **get_campaign_details**: Get details for a specific campaign
-- **get_ad_set_details**: Get details for a specific ad set
-- **get_insights**: Get performance insights for the Ad Account
-- **get_me**: Get current token identity info
-- **list_ad_sets**: List ad sets in the Ad Account
-- **list_campaigns**: List campaigns in the Ad Account
-- **update_ad_set_status**: Update the status of an ad set
-- **list_ads**: List ads in the Ad Account
+- **get_ad_account_info**: Do not use this tool if you need specific campaign data.
+
+Get basic info for the Facebook Ad Account
+- **get_ad_set_details**: Provide the Ad Set ID to retrieve the information.
+
+Get details for a specific ad set
+- **list_ads**: Do not use this tool to modify ad content.
+
+List ads in the Ad Account
+- **get_ad_details**: Supply the Ad ID to target the correct ad.
+
+Get details for a specific ad
+- **get_campaign_details**: Provide the required Campaign ID to ensure accurate retrieval.
+
+Get details for a specific campaign
+- **get_insights**: Specify the required date range for the data.
+
+Get performance insights for the Ad Account
+- **get_me**: Use this tool to verify the authenticated user’s context.
+
+Get current token identity info
+- **list_ad_sets**: Use this tool to identify ad set IDs.
+
+List ad sets in the Ad Account
+- **list_campaigns**: Use this tool to find campaign IDs for subsequent actions.
+
+List campaigns in the Ad Account
+- **update_ad_set_status**: Ensure the provided ID and status are valid.
+
+Update the status of an ad set
+- **update_ad_status**: Supply the Ad ID and the new status to update the ad.
+
+Update the status of an ad
+- **update_campaign_status**: You must provide both the Campaign ID and the desired status.
+
+Update the status of a campaign
 
 
 ## 💬 Prompt Examples

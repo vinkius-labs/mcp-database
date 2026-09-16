@@ -37,12 +37,24 @@ Connect your **Bing Search API** account to any AI agent and integrate comprehen
 ## Available Tools (8)
 - **get_trending_news**: Retrieve currently trending news topics
 - **get_trending_images**: Retrieve currently trending images
-- **search_images**: Search for images using Bing
-- **search_videos**: Search for videos using Bing
-- **search_local**: Search for local businesses or places
-- **search_news**: Search for news articles using Bing
-- **search_suggestions**: Get search autocomplete suggestions
-- **search_web**: Search the web using Bing
+- **search_images**: Provide the search query; optionally specify the desired number of results.
+
+Search for images using Bing
+- **search_local**: Provide the search query.
+
+Search for local businesses or places
+- **search_news**: Provide the search query.
+
+Search for news articles using Bing
+- **search_suggestions**: Provide the partial search query.
+
+Get search autocomplete suggestions
+- **search_videos**: Provide the search query.
+
+Search for videos using Bing
+- **search_web**: Provide the search query; optionally specify the desired number of results.
+
+Search the web using Bing
 
 
 ## 💬 Prompt Examples

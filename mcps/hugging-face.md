@@ -25,21 +25,21 @@ Connect your **Hugging Face** account to any AI agent and interact with the Hub 
 
 ## Available Tools (15)
 - **list_spaces**: Search Spaces
-- **run_inference**: Run model inference
-- **list_models**: Search models on Hugging Face Hub
-- **run_summarization**: Summarize text
 - **check_hf_status**: Verify API connectivity
-- **get_account**: Get account info
+- **get_dataset**: Get dataset details
+- **list_models_by_author**: List models by author
 - **get_model**: Get model details
 - **get_space**: Get Space details
+- **get_account**: Get account info
+- **list_collections**: List curated collections
+- **list_datasets**: Search datasets
 - **list_models_by_task**: ) sorted by downloads.
 
 List models by task
-- **get_dataset**: Get dataset details
-- **list_collections**: List curated collections
-- **list_datasets**: Search datasets
-- **list_models_by_author**: List models by author
+- **list_models**: Search models on Hugging Face Hub
 - **run_text_classification**: Classify text
+- **run_inference**: Run model inference
+- **run_summarization**: Summarize text
 - **run_text_generation**: Generate text with a model
 
 

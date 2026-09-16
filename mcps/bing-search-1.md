@@ -37,22 +37,12 @@ Connect your Microsoft **Bing Search** API key to any AI agent and empower it wi
 - **spellcheck**: 0/spellcheck` correcting string tokens natively via semantic NLP boundaries.
 
 Execute explicit semantic NLP spell checking on short strings
-- **autosuggest**: 0/Suggestions` matching high-velocity partial queries directly against ML autosuggest logs.
-
-Fetch automated real-time query completion suggestions
-- **trending_news**: 0/news/trendingtopics` surfing fully decoupled virality indexes completely ignoring keywords.
-
-Discover explicit macroscopic viral Trending News topics
-- **search_videos**: 0/videos/search` tracking streaming bounds capturing native motion array metadata.
-
-Retrieve explicitly indexed Video stream links and metadata
 - **search_images**: 0/images/search` filtering explicit image thumbnails parsing pixel dimensions natively.
 
 Search for explicit Image results matching a keyword string
-- **search_local**: Force explicit Local Business listing extraction over standard web nodes
-- **search_news**: 0/news/search` resolving syndicated globalThis PR articles grouped by timestamp clusters.
+- **search_news**: 0/news/search` resolving syndicated global PR articles grouped by timestamp clusters.
 
-Query explicitly syndicated News articles across globalThis PR sources
+Query explicitly syndicated News articles across global PR sources
 - **search_web**: 0/search` scraping up to 50 organic results mapped directly from the Microsoft Graph.
 
 Perform an explicit Web search using the Microsoft Bing Graph
@@ -62,6 +52,16 @@ Perform search locked explicitly to a predefined Configuration ID
 - **search_entities**: 0/entities` bounding rich structured data resolving Famous Persons, Places, or Objects.
 
 Retrieve deeply structured Entity graphs (Knowledge Graph mappings)
+- **search_local**: Force explicit Local Business listing extraction over standard web nodes
+- **autosuggest**: 0/Suggestions` matching high-velocity partial queries directly against ML autosuggest logs.
+
+Fetch automated real-time query completion suggestions
+- **trending_news**: 0/news/trendingtopics` surfing fully decoupled virality indexes completely ignoring keywords.
+
+Discover explicit macroscopic viral Trending News topics
+- **search_videos**: 0/videos/search` tracking streaming bounds capturing native motion array metadata.
+
+Retrieve explicitly indexed Video stream links and metadata
 
 
 ## 💬 Prompt Examples
