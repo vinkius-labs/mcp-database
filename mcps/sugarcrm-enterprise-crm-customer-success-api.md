@@ -34,17 +34,17 @@ Connect your **SugarCRM** instance to any AI agent to streamline your customer s
 
 
 ## Available Tools (10)
+- **bulk_request**: Execute multiple API calls in a single request
 - **count_records**: Count records matching a filter in a module
+- **delete_record**: Delete a specific SugarCRM record
+- **link_record**: Create a relationship to an existing record
+- **list_related_records**: List related records for a specific link
+- **unlink_record**: Remove a relationship between records
 - **create_record**: Create a new record in a SugarCRM module
 - **get_record**: Retrieve a specific SugarCRM record by ID
 - **list_records**: g., Accounts, Contacts). Supports complex filtering via JSON.
 
 List filtered records for a specific SugarCRM module
-- **list_related_records**: List related records for a specific link
-- **bulk_request**: Execute multiple API calls in a single request
-- **delete_record**: Delete a specific SugarCRM record
-- **link_record**: Create a relationship to an existing record
-- **unlink_record**: Remove a relationship between records
 - **update_record**: Update an existing SugarCRM record
 
 
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

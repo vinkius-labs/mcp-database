@@ -33,12 +33,12 @@ Connect **Token Terminal** to your AI agent to unlock deep financial insights in
 
 
 ## Available Tools (4)
-- **get_project**: Get detailed metadata for a specific project
-- **list_projects**: List all projects tracked by Token Terminal
-- **get_market_metrics**: Get aggregated market data metrics
 - **get_project_metrics**: g., revenue, tvl, active_users) for a project.
 
 Get historical time series metrics for a project
+- **get_project**: Get detailed metadata for a specific project
+- **list_projects**: List all projects tracked by Token Terminal
+- **get_market_metrics**: Get aggregated market data metrics
 
 
 ## 💬 Prompt Examples
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

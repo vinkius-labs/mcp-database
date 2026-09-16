@@ -33,7 +33,6 @@ Connect the **TheySaidSo** API to your AI agent to enrich your conversations wit
 
 
 ## Available Tools (4)
-- **list_qod_categories**: List all available categories for the Quote of the Day
 - **get_quote_of_the_day**: The same quote is returned for the full calendar day.
 
 Retrieve the curated quote of the day
@@ -41,6 +40,7 @@ Retrieve the curated quote of the day
 
 Retrieve one or more random quotes from the database
 - **search_quotes**: Search for quotes based on specific criteria
+- **list_qod_categories**: List all available categories for the Quote of the Day
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

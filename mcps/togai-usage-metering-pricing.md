@@ -34,29 +34,41 @@ Connect **Togai** to any AI agent to orchestrate complex usage-based pricing mod
 
 
 ## Available Tools (19)
-- **grant_credit**: Grant credits to an account
-- **list_accounts**: List all accounts
-- **list_rate_cards**: List rate cards for a price plan
-- **update_account**: Update an existing account
+- **list_customers**: List all customers
 - **create_account**: Create a new account
 - **create_customer**: Create a new customer
 - **create_usage_meter**: Requires type, aggregation, and computations.
 
 Create a usage meter
-- **get_customer**: Get details for a specific customer
-- **check_entitlement**: Check entitlement for a specific feature
+- **get_customer**: Must provide a valid customer ID.
+
+Get details for a specific customer
 - **create_price_plan**: Create a price plan (V2)
-- **get_account**: Get details for a specific account
+- **get_account**: Must provide a valid account ID.
+
+Get details for a specific account
 - **get_entitlements**: Get entitlements for an account
 - **get_metrics**: Get aggregated metrics
 - **get_wallet_balance**: Get wallet balance for an account
+- **grant_credit**: Grant credits to an account
 - **ingest_batch_events**: Ingest a batch of usage events
 - **ingest_event**: Requires an event object with schemaName, timestamp, accountId, id, attributes, and dimensions.
 
 Ingest a single usage event
-- **list_customers**: List all customers
-- **list_invoices**: List invoices with optional filters
-- **update_customer**: Update an existing customer
+- **list_accounts**: List all accounts
+- **list_rate_cards**: List rate cards for a price plan
+- **update_account**: Must provide both the account ID and update payload.
+
+Update an existing account
+- **update_customer**: Must provide both the customer ID and update payload.
+
+Update an existing customer
+- **check_entitlement**: Must provide both the account ID and feature ID.
+
+Check entitlement for a specific feature
+- **list_invoices**: Provide at least one filter.
+
+List invoices with optional filters
 
 
 ## 💬 Prompt Examples
@@ -141,4 +153,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
