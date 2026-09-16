@@ -37,13 +37,13 @@ No more manual call logs or complex agent configuration. Your AI acts as a dedic
 
 ## Available Tools (11)
 - **get_phone_number**: Get details for a specific phone number
-- **list_voice_agents**: List all AI voice agents
-- **start_web_call**: Initialize a browser-based call
 - **create_voice_agent**: Create a new AI voice agent
 - **start_phone_call**: Initiate an outbound phone call
+- **start_web_call**: Initialize a browser-based call
 - **get_agent_config**: Get details for a voice agent
 - **get_call_details**: Get details and transcript for a call
 - **get_llm_details**: Get metadata for a response engine
+- **list_voice_agents**: List all AI voice agents
 - **list_recent_calls**: List call logs and history
 - **list_retell_llms**: List internal response engines
 - **list_retell_numbers**: List registered phone numbers
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

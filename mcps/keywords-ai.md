@@ -24,9 +24,6 @@ Connect your **Keywords AI** account to any AI agent and monitor LLM performance
 
 ## Available Tools (11)
 - **check_keywordsai_status**: Verify API connectivity
-- **list_users**: List team users
-- **get_analytics**: Get analytics dashboard
-- **get_credits**: Get credit balance
 - **get_request**: Get request details
 - **get_usage_stats**: Get usage statistics
 - **get_user**: Get user details
@@ -34,6 +31,9 @@ Connect your **Keywords AI** account to any AI agent and monitor LLM performance
 - **list_models**: List available models
 - **list_requests_by_model**: List requests by model
 - **list_requests**: List API request logs
+- **list_users**: List team users
+- **get_analytics**: Get analytics dashboard
+- **get_credits**: Get credit balance
 
 
 ## 💬 Prompt Examples
@@ -118,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
