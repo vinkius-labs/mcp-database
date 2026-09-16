@@ -35,27 +35,49 @@ No more manual navigation through complex CMS hierarchies. Your AI acts as a con
 
 
 ## Available Tools (17)
-- **create_group**: Create a new group
-- **create_user**: Create a new user
-- **get_user**: Get details for a specific user
-- **list_groups**: List groups in Plone
-- **search_content**: Search for content in Plone
-- **update_user**: Update a user
+- **get_group**: Provide the group’s unique ID.
+
+Get details for a specific group
 - **update_content**: Supports partial updates.
 
 Update existing content in Plone
-- **delete_content**: Delete content from Plone
-- **delete_group**: Delete a group
-- **delete_user**: Delete a user
+- **update_group**: Specify the group’s unique ID.
+
+Update a group
+- **create_content**: Create new content in Plone
+- **create_group**: Must provide a unique group name.
+
+Create a new group
+- **create_user**: Must provide a unique username.
+
+Create a new user
+- **delete_group**: Specify the group ID to delete.
+
+Delete a group
+- **delete_user**: Specify the user ID to delete.
+
+Delete a user
 - **get_content**: Get a specific content object by path
-- **get_group**: Get details for a specific group
-- **get_workflow**: Get workflow status and history for content
+- **get_user**: Provide the unique user ID.
+
+Get details for a specific user
+- **get_workflow**: Provide the content path.
+
+Get workflow status and history for content
+- **list_groups**: Filter results using a text string.
+
+List groups in Plone
 - **list_users**: Requires Manager role.
 
 List users in Plone
-- **transition_workflow**: Trigger a workflow transition on content
-- **update_group**: Update a group
-- **create_content**: Create new content in Plone
+- **search_content**: Search for content in Plone
+- **transition_workflow**: Specify the content path and transition ID.
+
+Trigger a workflow transition on content
+- **update_user**: Must specify the user’s unique ID.
+
+Update a user
+- **delete_content**: Delete content from Plone
 
 
 ## 💬 Prompt Examples
@@ -140,4 +162,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

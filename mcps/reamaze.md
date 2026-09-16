@@ -33,42 +33,96 @@ Connect your **Reamaze** account to any AI agent to streamline your customer sup
 
 
 ## Available Tools (34)
-- **create_contact_note**: Attach a note to a contact
-- **create_conversation**: Create a new conversation on behalf of a customer
-- **delete_contact_note**: Delete a contact note
 - **get_report**: Retrieve a specific report
-- **list_contact_notes**: Retrieve notes for a specific contact
-- **list_conversations**: List conversations for the Brand
-- **list_messages**: Retrieve individual messages for all conversations
-- **update_contact_note**: Update a contact note
-- **create_article**: Create a new Help Article
-- **create_contact**: Create a new contact
-- **create_identity**: Attach an identity to a contact
-- **create_incident**: Create a new incident
-- **create_message**: Create a new message under a specific conversation
-- **create_response_template**: Create a new Response Template
-- **create_staff**: Create a new staff user
-- **get_article**: Retrieve a specific Help Article
-- **get_channel**: Retrieve a specific channel
-- **get_conversation**: Retrieve a specific conversation
-- **get_incident**: Retrieve a specific incident
-- **list_contacts**: List contacts for the Account
-- **list_identities**: Retrieve identities for a contact
-- **list_response_templates**: Retrieve Response Templates for the Brand
-- **list_satisfaction_ratings**: Retrieve satisfaction survey ratings
-- **list_staff**: Retrieve staff users for the Account
-- **list_systems**: Retrieve systems for the Brand
-- **update_article**: Update a specific Help Article
-- **list_incidents**: Retrieve incidents for the Brand
-- **get_response_template**: Retrieve a specific Response Template
 - **list_articles**: Can be scoped to a topic slug, filtered by status, or searched.
 
 List Help Articles for the Brand
+- **list_identities**: Pass the contact’s email address.
+
+Retrieve identities for a contact
+- **list_staff**: Retrieve staff users for the Account
+- **create_contact_note**: You must specify the contact’s identifier and the note content.
+
+Attach a note to a contact
+- **create_contact**: Provide at least a name or email address.
+
+Create a new contact
+- **create_conversation**: Supply required customer details and initial message.
+
+Create a new conversation on behalf of a customer
+- **create_incident**: Pass the complete incident payload containing all necessary details.
+
+Create a new incident
+- **create_message**: Provide the conversation slug and message body.
+
+Create a new message under a specific conversation
+- **create_article**: Ensure the article payload includes a title and body.
+
+Create a new Help Article
+- **create_response_template**: Supply the required template payload.
+
+Create a new Response Template
+- **create_staff**: Pass the complete staff payload containing all required user details.
+
+Create a new staff user
+- **delete_contact_note**: Provide both the note ID and the contact identifier.
+
+Delete a contact note
+- **get_article**: Provide the exact article slug as input.
+
+Retrieve a specific Help Article
+- **get_channel**: Provide the unique slug of the channel.
+
+Retrieve a specific channel
+- **get_conversation**: Pass the unique conversation slug.
+
+Retrieve a specific conversation
+- **get_incident**: Pass the unique identifier of the incident you wish to retrieve.
+
+Retrieve a specific incident
+- **get_response_template**: Use the unique template ID.
+
+Retrieve a specific Response Template
 - **list_channels**: List channels for the Brand
-- **update_contact**: Update a specific contact
-- **update_conversation**: Update a conversation
-- **update_incident**: Update a specific incident
-- **update_response_template**: Update a specific response template
+- **list_contact_notes**: Use the contact email or phone number as the identifier.
+
+Retrieve notes for a specific contact
+- **list_contacts**: Use the ’q’ parameter to filter results.
+
+List contacts for the Account
+- **list_conversations**: Filter results using tags, categories, or origin.
+
+List conversations for the Brand
+- **list_incidents**: Retrieve incidents for the Brand
+- **list_messages**: Set ’include’ to "original_body" to get HTML content.
+
+Retrieve individual messages for all conversations
+- **list_satisfaction_ratings**: Retrieve satisfaction survey ratings
+- **list_systems**: The function executes asynchronously.
+
+Retrieve systems for the Brand
+- **create_identity**: Provide the contact’s email address.
+
+Attach an identity to a contact
+- **list_response_templates**: Retrieve Response Templates for the Brand
+- **update_article**: You must provide both the article slug and the updated payload.
+
+Update a specific Help Article
+- **update_contact_note**: Use the identifier to locate the correct contact.
+
+Update a contact note
+- **update_contact**: Specify the contact identifier and the fields to modify.
+
+Update a specific contact
+- **update_conversation**: Specify the conversation slug and the payload to modify.
+
+Update a conversation
+- **update_incident**: Specify the incident identifier and the payload containing changes.
+
+Update a specific incident
+- **update_response_template**: Provide the template slug and the full payload to modify the content.
+
+Update a specific response template
 
 
 ## 💬 Prompt Examples
@@ -153,4 +207,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
