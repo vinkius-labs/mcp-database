@@ -14,8 +14,8 @@ This MCP server provides a suite of tools to analyze and reduce redundancy in mu
 
 
 ## Available Tools (3)
-- **execute_deduplication**: Applies a specific strategy to reduce the set of outputs to a unique set
 - **calculate_similarity_matrix**: Generates a complete map of semantic relationships between all provided agent outputs
+- **execute_deduplication**: Applies a specific strategy to reduce the set of outputs to a unique set
 - **identify_duplicate_clusters**: Groups redundant outputs into distinct semantic clusters based on a user-defined threshold
 
 
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
