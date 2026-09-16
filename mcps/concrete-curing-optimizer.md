@@ -14,10 +14,10 @@ This MCP server provides expert decision support for concrete construction. It c
 
 
 ## Available Tools (4)
-- **get_mix_hydration_profile**: Retrieves the characteristic strength gain properties for a specific concrete mix
 - **calculate_curing_strategy**: Determines the optimal curing method and the total duration required to reach target strength
-- **estimate_evaporation_risk**: Assesses the severity of moisture loss due to environmental factors
+- **get_mix_hydration_profile**: Retrieves the characteristic strength gain properties for a specific concrete mix
 - **validate_formwork_efficiency**: Adjusts the required water volume based on how well the formwork retains moisture
+- **estimate_evaporation_risk**: Assesses the severity of moisture loss due to environmental factors
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

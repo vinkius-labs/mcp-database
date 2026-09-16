@@ -16,8 +16,8 @@ This MCP server provides precision tools for rebar fabrication. It accounts for 
 ## Available Tools (4)
 - **calculate_total_cut_length**: Calculates the final length of the bar to be cut from the raw stock
 - **get_bend_allowance**: Determines the centerline arc length for a specific bend
-- **get_bend_deduction**: Calculates the amount of length to subtract from the total segments to account for material stretch
 - **get_hook_length**: Calculates the additional steel required to create a specific end hook
+- **get_bend_deduction**: Calculates the amount of length to subtract from the total segments to account for material stretch
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
