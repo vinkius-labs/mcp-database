@@ -34,21 +34,6 @@ Connect to **NHTSA** (National Highway Traffic Safety Administration) and access
 
 
 ## Available Tools (13)
-- **get_makes_for_year**: Useful for discovering which brands were active in a particular year.
-
-Get all manufacturers for a specific model year
-- **get_car_seat_stations_by_location**: Returns station name, address, phone, hours and distance. Useful for finding nearby car seat safety checks.
-
-Find car seat inspection stations by coordinates
-- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
-
-Get NHTSA safety ratings for vehicles
-- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
-
-Get vehicle types for a specific manufacturer
-- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
-
-Decode a Vehicle Identification Number (VIN)
 - **get_car_seat_stations_by_zip**: Returns station name, address, phone, hours and appointment requirements. Useful for parents needing car seat safety checks.
 
 Find car seat inspection stations by ZIP code
@@ -73,6 +58,21 @@ Search safety recalls by make, model and year
 - **get_safety_rating_by_vehicle_id**: Returns overall rating and detailed breakdown by crash type.
 
 Get safety rating for a specific vehicle by NHTSA ID
+- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
+
+Decode a Vehicle Identification Number (VIN)
+- **get_makes_for_year**: Useful for discovering which brands were active in a particular year.
+
+Get all manufacturers for a specific model year
+- **get_car_seat_stations_by_location**: Returns station name, address, phone, hours and distance. Useful for finding nearby car seat safety checks.
+
+Find car seat inspection stations by coordinates
+- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
+
+Get NHTSA safety ratings for vehicles
+- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
+
+Get vehicle types for a specific manufacturer
 
 
 ## 💬 Prompt Examples
@@ -160,4 +160,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

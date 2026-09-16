@@ -39,10 +39,10 @@ Empower your AI agent to orchestrate your entire public holiday and global event
 - **list_available_countries**: Date.
 
 List all countries supported by Nager.Date
-- **get_country_details**: Get additional details for a specific country
-- **get_next_holidays**: Get the next public holidays for a specific country
 - **is_holiday_today**: Check if today is a public holiday in a country
 - **get_public_holidays**: Get all public holidays for a country and year
+- **get_country_details**: Get additional details for a specific country
+- **get_next_holidays**: Get the next public holidays for a specific country
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

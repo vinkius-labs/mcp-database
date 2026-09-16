@@ -34,7 +34,6 @@ Connect your AI agent to **Podbean**, the comprehensive podcast hosting and mone
 
 
 ## Available Tools (8)
-- **update_episode**: Update an existing podcast episode
 - **delete_episode**: Permanently delete a podcast episode
 - **get_episode_details**: Get comprehensive metadata for a specific podcast episode
 - **get_episode_analytics**: Retrieve download analytics for a specific episode
@@ -42,6 +41,7 @@ Connect your AI agent to **Podbean**, the comprehensive podcast hosting and mone
 - **list_episodes**: Retrieve a list of episodes for the account
 - **list_podcasts**: Retrieve all podcasts associated with the authenticated account
 - **publish_episode**: Publish a new podcast episode
+- **update_episode**: Update an existing podcast episode
 
 
 ## 💬 Prompt Examples
@@ -115,4 +115,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
