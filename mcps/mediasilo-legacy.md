@@ -34,17 +34,17 @@ Connect your **MediaSilo (Legacy)** account to any AI agent and manage video pro
 
 
 ## Available Tools (11)
-- **get_asset**: Get details for a specific MediaSilo asset
-- **get_project**: Get details for a specific MediaSilo project
 - **get_quicklink**: Get details for a specific MediaSilo QuickLink
-- **get_user**: Get details for a specific MediaSilo user
 - **list_quicklinks**: List all QuickLinks in the MediaSilo account
 - **list_users**: List all users in the MediaSilo account
-- **get_current_user**: Get current authenticated MediaSilo user
 - **list_assets**: List all assets in the MediaSilo account
 - **list_folder_assets**: List assets within a specific MediaSilo folder
-- **list_projects**: List projects in the MediaSilo account
+- **get_asset**: Get details for a specific MediaSilo asset
+- **get_project**: Get details for a specific MediaSilo project
+- **get_user**: Get details for a specific MediaSilo user
+- **get_current_user**: Get current authenticated MediaSilo user
 - **list_project_users**: List users assigned to a specific MediaSilo project
+- **list_projects**: List projects in the MediaSilo account
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

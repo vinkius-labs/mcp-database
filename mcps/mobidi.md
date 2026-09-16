@@ -22,18 +22,18 @@ Connect your **MOBIDI** platform to any AI agent and manage business intelligenc
 
 
 ## Available Tools (12)
-- **execute_report**: Execute a report
-- **get_record_by_id**: Get record by ID
-- **get_record_count**: Count records
-- **get_report**: Get report details
-- **list_entity_types**: List entity types
 - **update_record**: Update a record
-- **check_mobidi_status**: Verify API connectivity
+- **get_record_by_id**: Get record by ID
 - **create_record**: Create a record
 - **delete_record**: Delete a record
+- **execute_report**: Execute a report
+- **get_record_count**: Count records
+- **get_report**: Get report details
 - **get_services**: List system services
+- **list_entity_types**: List entity types
 - **list_records**: Query records
 - **list_reports**: List reports
+- **check_mobidi_status**: Verify API connectivity
 
 
 ## 💬 Prompt Examples
@@ -118,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

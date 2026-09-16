@@ -14,18 +14,34 @@ The Mela MCP server connects your AI agent directly to your workspace. Send chan
 
 
 ## Available Tools (12)
-- **list_teams**: List teams in the workspace
-- **log_work_hours**: Record man-hours for an activity
-- **get_activity**: Retrieve details for a specific activity
-- **create_activity**: Create a new job site or activity
+- **get_accounting_data**: Use the activity ID to specify the required data.
+
+Retrieve cost and accounting data for an activity
+- **get_activity**: Provide the activity ID to execute the query.
+
+Retrieve details for a specific activity
 - **get_me**: Retrieve information about the current user
-- **list_activities**: List all job sites/activities
-- **get_accounting_data**: Retrieve cost and accounting data for an activity
-- **list_checklists**: Retrieve all checklists associated with an activity
+- **list_teams**: List teams in the workspace
+- **log_work_hours**: Include the activity ID and detailed work hour information in the body.
+
+Record man-hours for an activity
 - **list_users**: List all workspace members
-- **log_materials**: Track material consumption on-site
-- **post_message**: Send a text update or note to an activity feed
-- **update_activity_status**: Change the status of an activity
+- **create_activity**: Pass the full configuration details in the body parameter.
+
+Create a new job site or activity
+- **list_activities**: List all job sites/activities
+- **list_checklists**: Supply the activity ID to list relevant checklists.
+
+Retrieve all checklists associated with an activity
+- **log_materials**: Provide the activity ID and material details in the body.
+
+Track material consumption on-site
+- **post_message**: You must specify both the activity ID and the message content.
+
+Send a text update or note to an activity feed
+- **update_activity_status**: Supply both the activity ID and the desired new status.
+
+Change the status of an activity
 
 
 ## 💬 Prompt Examples
@@ -110,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

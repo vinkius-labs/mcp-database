@@ -23,17 +23,17 @@ Connect your **MeasureSquare** account to any AI agent and manage flooring estim
 
 
 ## Available Tools (11)
+- **get_client**: Get client details
+- **get_project_rooms**: Get project rooms
+- **get_project**: Get project details
+- **list_clients**: List clients
 - **list_projects**: List all projects
 - **list_templates**: List estimation templates
-- **list_clients**: List clients
-- **get_project**: Get project details
-- **check_measuresquare_status**: Verify API connectivity
-- **get_client**: Get client details
 - **get_estimation**: Get project estimation
-- **get_pdf_link**: Get project PDF
 - **get_project_labor**: Get project labor
 - **get_project_materials**: Get project materials
-- **get_project_rooms**: Get project rooms
+- **check_measuresquare_status**: Verify API connectivity
+- **get_pdf_link**: Get project PDF
 
 
 ## 💬 Prompt Examples
@@ -118,4 +118,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
