@@ -27,15 +27,15 @@ Connect your **Marchex** account to any AI agent and take full control of your c
 
 
 ## Available Tools (10)
+- **get_account_details**: Get details for a specific account
 - **get_call_details**: Get details for a specific call
 - **get_campaign_details**: Get details for a specific campaign
-- **list_campaigns**: List all campaigns
 - **get_number_details**: Get details for a specific number
-- **search_calls**: Search for phone calls
 - **list_accounts**: List all accounts
+- **list_campaigns**: List all campaigns
 - **list_numbers**: List all tracking numbers
 - **list_users**: List all users
-- **get_account_details**: Get details for a specific account
+- **search_calls**: Search for phone calls
 - **get_call_analytics**: Get call analytics
 
 
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

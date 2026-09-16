@@ -34,36 +34,36 @@ Connect your **Knack** application to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
+- **list_account_applications**: Use this to verify access or discover application IDs.
 
-Get the schema of a specific Knack object
-- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
-
-List all objects in the Knack application
+List all applications in the account
 - **list_object_fields**: This is crucial for understanding the data types and identifying the field keys (field_1, field_2, etc.) needed for creating or updating records.
 
 List all fields for a specific Knack object
-- **create_record**: You must provide the data as a JSON string where keys are the field keys (e.g., field_1). Ensure you have checked the object schema first to know which fields are required.
-
-Create a new record in a Knack object
 - **delete_record**: Use with caution as this action cannot be undone.
 
 Delete a record from a Knack object
 - **get_record**: Requires both the object_key and the record_id. Use this for detailed auditing of a specific entry.
 
 Get a specific record by ID
-- **list_account_applications**: Use this to verify access or discover application IDs.
+- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
 
-List all applications in the account
+List all objects in the Knack application
+- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
+
+Get the schema of a specific Knack object
 - **list_records**: You must provide the object_key. Use this to browse the actual data stored in your database.
 
 List records for a specific Knack object
-- **search_records**: The filters must be provided as a JSON string following the Knack Filter format (e.g., "[{\"field\":\"field_1\", \"operator\":\"is\", \"value\":\"test\"}]").
+- **create_record**: You must provide the data as a JSON string where keys are the field keys (e.g., field_1). Ensure you have checked the object schema first to know which fields are required.
 
-Search for records using filters
+Create a new record in a Knack object
 - **update_record**: Provide only the fields you wish to change in the JSON string data. This is a partial update.
 
 Update an existing record in a Knack object
+- **search_records**: The filters must be provided as a JSON string following the Knack Filter format (e.g., "[{\"field\":\"field_1\", \"operator\":\"is\", \"value\":\"test\"}]").
+
+Search for records using filters
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

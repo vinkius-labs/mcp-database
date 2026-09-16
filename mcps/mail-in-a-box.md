@@ -34,19 +34,19 @@ Connect your **Mail-in-a-Box** instance to any AI agent to automate your private
 
 
 ## Available Tools (9)
-- **delete_mail_user**: Remove a mail user
-- **list_mail_aliases**: List all mail aliases and forwarders
-- **list_mail_domains**: List all mail domains hosted on the server
-- **create_mail_user**: Requires a full email address and a password.
-
-Add a new mail user (mailbox)
-- **delete_mail_alias**: Remove a mail alias
-- **update_user_password**: Change the password for a mail user
 - **create_or_update_alias**: forwards_to should be a comma-separated list of emails.
 
 Add or update a mail alias
-- **get_system_status**: Check the status of the Mail-in-a-Box system
 - **list_mail_users**: List all mail users on the server
+- **list_mail_domains**: List all mail domains hosted on the server
+- **update_user_password**: Change the password for a mail user
+- **get_system_status**: Check the status of the Mail-in-a-Box system
+- **create_mail_user**: Requires a full email address and a password.
+
+Add a new mail user (mailbox)
+- **list_mail_aliases**: List all mail aliases and forwarders
+- **delete_mail_alias**: Remove a mail alias
+- **delete_mail_user**: Remove a mail user
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

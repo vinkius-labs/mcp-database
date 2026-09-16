@@ -35,17 +35,17 @@ Connect your **LendAPI** account to any AI agent to automate your loan originati
 
 ## Available Tools (8)
 - **list_loan_applications**: List all loan applications
-- **list_borrowers**: List all borrower profiles
 - **create_loan_application**: Requires a JSON body with application details.
 
 Create a new loan application
-- **create_new_borrower**: Requires a JSON body with profile details.
-
-Create a new borrower profile
 - **get_borrower_details**: Get details for a specific borrower
 - **get_lendapi_picklists**: Retrieve valid picklist values for metadata fields
 - **submit_loan_application**: Submit a loan application for decisioning
 - **get_application_details**: Get details for a specific loan application
+- **list_borrowers**: List all borrower profiles
+- **create_new_borrower**: Requires a JSON body with profile details.
+
+Create a new borrower profile
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

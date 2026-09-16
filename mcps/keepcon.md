@@ -34,23 +34,23 @@ Empower your AI agents to moderate user-generated content using **Keepcon**. Thi
 
 
 ## Available Tools (9)
+- **export_results**: Retrieve batch moderation results
+- **acknowledge_results**: Acknowledge receipt of results
 - **submit_feedback**: g., false positives) to improve the semantic engine.
 
 Submit moderation feedback
-- **search_profiles**: Search profiles with filters
-- **moderate_content**: Returns the decision (approve/reject) and tags.
-
-Moderates content in real-time
-- **acknowledge_results**: Acknowledge receipt of results
-- **export_results**: Retrieve batch moderation results
-- **get_profile**: Get a specific user profile by Keepcon ID
 - **get_profile_by_social_id**: g., twitter, facebook) and the network-specific user ID.
 
 Get a user profile by social network ID
+- **get_profile**: Get a specific user profile by Keepcon ID
 - **import_batch**: Returns an import ID.
 
 Submit content for batch moderation
+- **moderate_content**: Returns the decision (approve/reject) and tags.
+
+Moderates content in real-time
 - **list_profiles**: List user profiles
+- **search_profiles**: Search profiles with filters
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

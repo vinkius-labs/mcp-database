@@ -34,7 +34,6 @@ Connect your AI agent to **Knoema**, the most comprehensive source of global dec
 
 
 ## Available Tools (10)
-- **get_latest_dataset_data**: Get the most recent data points for a dataset
 - **search_datasets**: Returns dataset IDs and metadata. Use this to find the correct data source for your statistics.
 
 Search for datasets in Knoema
@@ -48,18 +47,19 @@ Search for specific data series across all datasets
 - **get_dataset_metadata**: Critical for understanding what variables are available.
 
 Get metadata for a specific dataset
-- **list_dataset_regions**: ) supported by a specific dataset.
-
-List regions available in a dataset
-- **list_data_units**: g., Percentage, USD, Kilograms).
-
-List measurement units
 - **list_data_topics**: g., Agriculture, Economy, Demographics).
 
 List all available data topics in Knoema
+- **list_data_units**: g., Percentage, USD, Kilograms).
+
+List measurement units
 - **get_data_series**: Requires dataset ID and a list of mnemonics.
 
 Get specific data series
+- **list_dataset_regions**: ) supported by a specific dataset.
+
+List regions available in a dataset
+- **get_latest_dataset_data**: Get the most recent data points for a dataset
 
 
 ## 💬 Prompt Examples
@@ -144,4 +144,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,18 +34,18 @@ Connect your **LeafLink** account to any AI agent to automate your cannabis whol
 
 
 ## Available Tools (9)
-- **get_order_details**: Get details for a specific order
-- **list_wholesale_brands**: List all brands in your account
-- **update_order_status**: g., accept, fulfill, cancel, reject).
-
-Transition an order through its lifecycle
 - **create_new_product**: Requires a JSON body with product details.
 
 Add a new product to your wholesale catalog
-- **get_product_details**: Get details for a specific product
-- **list_received_orders**: List all wholesale orders received
 - **list_wholesale_customers**: List all buyers and customers
+- **get_product_details**: Get details for a specific product
+- **get_order_details**: Get details for a specific order
+- **update_order_status**: g., accept, fulfill, cancel, reject).
+
+Transition an order through its lifecycle
 - **list_wholesale_products**: List all products available in your inventory
+- **list_wholesale_brands**: List all brands in your account
+- **list_received_orders**: List all wholesale orders received
 - **update_product_inventory**: Update inventory level for a specific product
 
 
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

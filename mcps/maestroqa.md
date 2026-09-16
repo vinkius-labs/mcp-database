@@ -37,14 +37,14 @@ Connect your **MaestroQA** account to any AI agent to automate your customer ser
 - **list_qa_tickets**: Use optional params for filtering.
 
 List tickets and their QA statuses
-- **get_ticket_qa_details**: Get QA details for a specific ticket
 - **get_export_download_links**: Retrieve links for a requested export
 - **list_qa_agents**: List all agents tracked in MaestroQA
-- **list_qa_rubrics**: List all available evaluation rubrics
+- **get_ticket_qa_details**: Get QA details for a specific ticket
 - **push_csat_scores**: Sync external CSAT scores into MaestroQA
 - **request_qa_data_export**: Requires start_date and end_date.
 
 Initialize a raw QA data export (Async)
+- **list_qa_rubrics**: List all available evaluation rubrics
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
