@@ -12,16 +12,16 @@ Connect Hugging Face Audio to any AI agent via MCP.
 
 
 ## Available Tools (4)
-- **enhance_audio**: Enhance audio quality (remove noise)
-- **transcribe_audio**: Supports multiple languages.
-
-Transcribe speech from an audio file to text
-- **text_to_speech**: Returns the audio as Base64.
-
-Generate speech audio from text
 - **classify_audio**: ) in an audio file from a URL.
 
 Classify the sounds in an audio file
+- **enhance_audio**: Enhance audio quality (remove noise)
+- **text_to_speech**: Returns the audio as Base64.
+
+Generate speech audio from text
+- **transcribe_audio**: Supports multiple languages.
+
+Transcribe speech from an audio file to text
 
 
 
@@ -71,4 +71,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

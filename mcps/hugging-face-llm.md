@@ -15,21 +15,21 @@ Connect Hugging Face LLM to any AI agent via MCP.
 - **text_generation**: Useful for creative writing, code completion, or chatting with an LLM.
 
 Generate text completions using open-source LLMs (Mistral, Zephyr, etc)
+- **sentiment_analysis**: Analyze the sentiment of a text (Positive/Negative)
+- **summarize_text**: Good for articles, reports, or long messages.
+
+Summarize a long text into a concise version
+- **fill_mask**: Fill in the blanks in a text using a masked language model
+- **classify_text**: No training required.
+
+Classify text into custom categories using Zero-Shot Classification
 - **extract_entities**: Extract named entities (People, Organizations, Locations) from text
 - **answer_question**: Provide a context (text) and a question, and it extracts the answer.
 
 Answer a question based on a given context
-- **sentiment_analysis**: Analyze the sentiment of a text (Positive/Negative)
-- **classify_text**: No training required.
-
-Classify text into custom categories using Zero-Shot Classification
-- **summarize_text**: Good for articles, reports, or long messages.
-
-Summarize a long text into a concise version
 - **translate_text**: The specific languages depend on the chosen model.
 
 Translate text from one language to another
-- **fill_mask**: Fill in the blanks in a text using a masked language model
 
 
 
@@ -79,4 +79,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

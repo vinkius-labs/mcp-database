@@ -12,16 +12,32 @@ Connect Lancerkit to any AI agent via MCP.
 
 
 ## Available Tools (10)
-- **get_invoice**: Retrieve data, payments, and billings for a specific invoice string ID
-- **get_project**: Get a single project details by ID
-- **get_status**: Examine account and integration connection status overall
-- **get_time_logs**: Check the recorded time logs for hours spent
+- **get_client**: Use a valid client ID.
+
+Retrieve specific metadata of one single client
+- **get_invoice**: Use the exact invoice string ID.
+
+Retrieve data, payments, and billings for a specific invoice string ID
+- **get_project**: Ensure the provided ID is valid.
+
+Get a single project details by ID
+- **get_time_logs**: This function does not require parameters.
+
+Check the recorded time logs for hours spent
 - **list_clients**: List all clients associated with the workspace
-- **list_invoices**: Fetch globalThis invoice pipeline statistics
-- **list_services**: Fetch all specific billable service items configured online
-- **get_client**: Retrieve specific metadata of one single client
+- **list_invoices**: This function does not require parameters.
+
+Fetch global invoice pipeline statistics
+- **get_status**: This function does not require parameters.
+
+Examine account and integration connection status overall
 - **list_projects**: List all standard projects
-- **list_tasks**: Check current working tasks
+- **list_services**: Execute this function asynchronously.
+
+Fetch all specific billable service items configured online
+- **list_tasks**: This function does not require parameters.
+
+Check current working tasks
 
 
 ## 💬 Prompt Examples
@@ -106,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -37,28 +37,28 @@ Procore is the leading cloud-based construction management software, connecting 
 
 
 ## Available Tools (8)
-- **list_punch_items**: Includes description, location, assignee, due date, and status.
-
-List punch list items
-- **list_daily_logs**: Includes weather, workforce count, equipment, notes, and delays.
-
-List daily construction logs
-- **list_drawings**: Includes discipline, set, revision, and approval status.
-
-List project drawings
-- **list_projects**: List all construction projects
 - **get_project**: Includes budget, schedule, team, and project settings.
 
 Get project details
-- **list_observations**: Includes type, priority, assignee, photos, and status.
-
-List field observations
 - **list_rfis**: Includes subject, status, assignee, due date, and response history.
 
 List RFIs for a project
 - **list_submittals**: Includes title, spec section, status, and approver.
 
 List submittals
+- **list_observations**: Includes type, priority, assignee, photos, and status.
+
+List field observations
+- **list_daily_logs**: Includes weather, workforce count, equipment, notes, and delays.
+
+List daily construction logs
+- **list_projects**: List all construction projects
+- **list_punch_items**: Includes description, location, assignee, due date, and status.
+
+List punch list items
+- **list_drawings**: Includes discipline, set, revision, and approval status.
+
+List project drawings
 
 
 ## 💬 Prompt Examples
@@ -155,4 +155,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

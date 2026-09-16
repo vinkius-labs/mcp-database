@@ -12,15 +12,15 @@ Connect Hugging Face Vision to any AI agent via MCP.
 
 
 ## Available Tools (5)
+- **image_segmentation**: Perform semantic segmentation on an image
+- **text_to_image**: Returns the image as Base64.
+
+Generate an image from a text prompt
+- **image_classification**: Classify the content of an image
 - **image_to_text**: Generate a caption for an image
 - **object_detection**: Returns bounding boxes and labels.
 
 Detect objects in an image
-- **text_to_image**: Returns the image as Base64.
-
-Generate an image from a text prompt
-- **image_segmentation**: Perform semantic segmentation on an image
-- **image_classification**: Classify the content of an image
 
 
 
@@ -70,4 +70,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
