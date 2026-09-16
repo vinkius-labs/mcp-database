@@ -28,15 +28,15 @@ Connect your **Memberstack** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **list_coupons**: List all discount coupons
 - **list_members**: List all members
+- **get_member_plans**: Get plans for a specific member
+- **get_plan**: Get details for a specific plan
+- **list_coupons**: List all discount coupons
 - **get_application_info**: Get application details
 - **get_member**: Get details for a specific member
 - **list_plans**: List all membership plans
 - **list_promotions**: List active promotions
 - **search_members**: Search members by email
-- **get_member_plans**: Get plans for a specific member
-- **get_plan**: Get details for a specific plan
 - **list_custom_fields**: List member custom fields
 
 
@@ -122,4 +122,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,18 +35,18 @@ Connect your **Levo.ai** account to any AI agent and take full control of your A
 
 
 ## Available Tools (10)
-- **list_sensitive_data**: List categorized API endpoints exposing sensitive or regulated data flows
-- **export_openapi_spec**: Export a live auto-generated OpenAPI payload specification for an application
-- **get_endpoint_details**: Get deep detailed schema structure for a specific discovered API endpoint
-- **get_observation**: Get details of a specific runtime anomalous observation
 - **get_vulnerability**: Get detailed diagnostic exploitation evidence for a specific API vulnerability
-- **list_applications**: List all API applications (services) tracked by Levo.ai
 - **list_vulnerabilities**: List active API security vulnerabilities discovered across all applications
+- **get_observation**: Get details of a specific runtime anomalous observation
+- **list_observations**: List runtime API behavior observations detected by Levo sensors
+- **list_sensitive_data**: List categorized API endpoints exposing sensitive or regulated data flows
 - **list_catalog_endpoints**: Identifies REST, GraphQL, gRPC, and SOAP endpoints — including undocumented shadow and zombie APIs mapped dynamically.
 
 List all discovered API endpoints in the Levo.ai catalog
+- **get_endpoint_details**: Get deep detailed schema structure for a specific discovered API endpoint
 - **list_environments**: List deployment boundaries environments monitored by Levo active sensors
-- **list_observations**: List runtime API behavior observations detected by Levo sensors
+- **export_openapi_spec**: Export a live auto-generated OpenAPI payload specification for an application
+- **list_applications**: List all API applications (services) tracked by Levo.ai
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
