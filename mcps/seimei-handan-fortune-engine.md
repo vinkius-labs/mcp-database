@@ -14,9 +14,13 @@ This MCP server provides deterministic Japanese name fortune-telling (Seimei Han
 
 
 ## Available Tools (3)
-- **generate_full_report**: Generate a full fortune report
+- **evaluate_fortune**: Provide a numerical score as input.
+
+Evaluate if a score is auspicious
+- **generate_full_report**: Ensure all four stroke counts are provided.
+
+Generate a full fortune report
 - **calculate_five_grids**: 
-- **evaluate_fortune**: Evaluate if a score is auspicious
 
 
 ## 💬 Prompt Examples
@@ -101,4 +105,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
