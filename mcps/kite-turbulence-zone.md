@@ -14,10 +14,10 @@ This MCP server provides specialized calculation engines to model the spatial im
 
 
 ## Available Tools (4)
+- **get_safe_flight_path**: Suggests an optimal distance to maintain based on environmental factors
 - **analyze_swarm_turbulence**: Calculates the cumulative turbulence impact for a group of kites in a specific area
 - **calculate_single_kite_impact**: Determines the turbulence characteristics produced by a single kite
 - **check_proximity_risk**: Evaluates if a specific kite is currently within a dangerous turbulence zone
-- **get_safe_flight_path**: Suggests an optimal distance to maintain based on environmental factors
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

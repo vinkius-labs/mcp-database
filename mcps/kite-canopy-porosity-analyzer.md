@@ -16,8 +16,8 @@ This MCP server provides specialized tools for paragliding and kite performance 
 ## Available Tools (4)
 - **analyze_canopy_health**: Provides a comprehensive assessment of the current state of a kite canopy based on its usage history
 - **calculate_performance_impact**: Determines how much the current porosity will specifically degrade the flight glide ratio
-- **get_material_specifications**: Retrieves the baseline performance and degradation constants for a specific fabric type
 - **validate_retirement_safety**: Evaluates if a canopy meets the safety standards for flight based on current porosity levels
+- **get_material_specifications**: Retrieves the baseline performance and degradation constants for a specific fabric type
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
