@@ -7,37 +7,60 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Manage BugHerd projects, tasks, and comments through AI Agents.
+Manage visual feedback and bug reports via BugHerd — track projects, tasks, and users directly from any AI agent.
 
 ## Description
-### O que você pode fazer
-- Create and list your BugHerd projects.
-- Manage tasks seamlessly inside projects.
-- Retrieve, add, and monitor comments on specific bug tasks.
-- View all members within your BugHerd workspace.
+Connect your **BugHerd** account to any AI agent and orchestrate your visual feedback, website bug tracking, and QA workflows through natural conversation.
 
-### Como funciona
-1. Install the BugHerd MCP Server on your Vinkius Edge.
-2. Add your personal BugHerd API key in the credentials page.
-3. Empower your AI agent to fetch bugs, add comments, and triage tickets naturally via chat.
+### What you can do
 
-### Para quem é?
-Ideal for development and QA teams looking to interact with BugHerd tickets directly via Cursor, Claude, or any MCP-enabled agent. Turn your AI into a full-fledged QA assistant.
+- **Project Oversight** — List all your active projects and retrieve detailed metadata, including development URLs.
+- **Task & Bug Management** — List all tasks in a project, retrieve detailed descriptions, and update statuses or priorities.
+- **Feedback Processing** — Access the dedicated feedback queue to triage new reports from your clients or team.
+- **User Coordination** — Access your directory of organization users and manage their involvement in projects.
+- **Task Creation** — Create new tasks or feedback reports directly from your workspace with descriptions and priority levels.
+- **Organizational Insights** — Retrieve core organization information and settings straight from your workspace.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your BugHerd API Key
+3. Start managing your visual feedback from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Web Developers & QA** — quickly check task statuses or retrieve feedback details without manual portal logins.
+- **Project Managers** — triage new bugs and update priorities straight from their workflow tools.
+- **Designers** — monitor visual feedback and client requests using natural language.
 
 
 ## Available Tools (10)
-- **create_task**: Create a new task in a BugHerd project
-- **get_project**: Get a specific project in BugHerd
-- **get_task**: Get a specific task in BugHerd
-- **add_comment**: Add a comment to a BugHerd task
-- **list_tasks**: List tasks for a project in BugHerd
-- **list_users**: List users in the BugHerd account
-- **create_project**: Create a new project in BugHerd
-- **list_comments**: List comments on a BugHerd task
-- **list_projects**: List projects in BugHerd
-- **update_task**: Can update description, status, priority, or assigned_to_id.
+- **create_task**: Supply the Project ID and a description. Priority is optional.
 
-Update a task in BugHerd
+Create a new task or feedback in a project
+- **list_tasks**: You must provide the Project ID.
+
+List all tasks in a project
+- **create_project**: Supply both the Project name and the Development URL.
+
+Create a new BugHerd project
+- **list_projects**: List all BugHerd projects
+- **get_organization_info**: No parameters are needed.
+
+Retrieve core organization settings
+- **get_project**: Provide the required Project ID.
+
+Get details of a specific project
+- **get_task**: Supply both the Project ID and the Task ID.
+
+Get details of a specific task
+- **list_feedback**: Provide the Project ID.
+
+List tasks specifically in the Feedback queue
+- **list_users**: List all users in the organization
+- **update_task**: Supply the Project ID and Task ID. Only update one field at a time.
+
+Update an existing task status or details
 
 
 ## 💬 Prompt Examples
@@ -45,38 +68,38 @@ Update a task in BugHerd
 Here are some examples of how you can interact with the **BugHerd** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active projects in BugHerd."
+> "List all my active projects in BugHerd."
 
 **🤖 AI Agent:**
-> Here are your active BugHerd projects...
+> I've retrieved your projects. You have 3 active projects: 'Vinkius Redesign' (ID: proj_1), 'Client Portal' (ID: proj_2), and 'Marketing Blog' (ID: proj_3).
 
 ---
 
 **👤 You:**
-> "Create a new bug task in project 123 saying 'Login button is broken'."
+> "Show the new feedback for the 'Vinkius Redesign' project."
 
 **🤖 AI Agent:**
-> I've successfully created the new bug task for the broken login button.
+> Retrieving feedback... There are 5 items in the queue, including 'Header alignment issue on mobile' and 'Button color doesn't match spec'. Which one would you like to address?
 
 ---
 
 **👤 You:**
-> "Read the comments on task 456 in project 123."
+> "Update task task_123 in project proj_456 to status 'Doing'."
 
 **🤖 AI Agent:**
-> Fetching comments for task 456...
+> Task task_123 has been successfully updated to 'Doing' in the 'Vinkius Redesign' project.
 
 
 ## ❓ FAQ
 
-**Q: Can the AI Agent resolve or close a task automatically?**
-Yes, using the `update_task` tool, the agent can change the task status to 'closed' or 'done' within BugHerd.
+**Q: Can I update the status of a bug using the agent?**
+Yes! Use the `update_task` tool with the Project ID and Task ID. You can change the `status` (e.g., 'To Do', 'Doing', 'Done') or `priority` directly from your workspace.
 
-**Q: Are attachments or screenshots supported?**
-Currently, the MCP Server manages text-based tasks, comments, and project structures. Adding direct screenshot files via AI is not supported in this version.
+**Q: How do I see the feedback queue for a specific project?**
+Simply ask the agent to `list_feedback` and provide the Project ID. It will retrieve all the tasks currently in the Feedback column, allowing you to triage them using natural language.
 
-**Q: Can I read comments from any ticket?**
-Yes! The agent can fetch and read all comments attached to a specific task using the `list_comments` tool, provided you supply the Project ID and Task ID.
+**Q: Does the integration allow creating a new project?**
+Yes. Use the `create_project` action and provide the project name and optionally a development URL. The project will be created in your BugHerd organization instantly.
 
 
 ## Installation & Usage
@@ -122,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,16 +35,36 @@ Connect your **BoardEffect (Diligent)** account to any AI agent and orchestrate 
 
 
 ## Available Tools (10)
-- **get_meeting**: Get specific meeting details
-- **get_member**: Get specific member details
-- **list_polls**: List board polls
-- **list_surveys**: List board surveys
-- **list_meetings**: List all board meetings
-- **get_account_info**: Get current user account information
-- **list_archives**: List archived board records
-- **list_documents**: List documents in a specific workroom
-- **list_members**: List all board members
-- **list_workrooms**: List all workrooms
+- **get_member**: Supply the unique member ID to fetch the required information.
+
+Get specific member details
+- **list_meetings**: Use this tool to retrieve a list of available meetings.
+
+List all board meetings
+- **list_workrooms**: Use this tool to see a list of active workroom spaces.
+
+List all workrooms
+- **get_account_info**: Execute this tool to view personal account information.
+
+Get current user account information
+- **get_meeting**: Provide the required meeting ID to execute the query.
+
+Get specific meeting details
+- **list_archives**: Execute this tool to retrieve a list of historical records.
+
+List archived board records
+- **list_documents**: Supply the workroom ID to list contained documents.
+
+List documents in a specific workroom
+- **list_members**: Use this tool to retrieve a comprehensive list of members.
+
+List all board members
+- **list_polls**: Use this tool to see a list of available polls.
+
+List board polls
+- **list_surveys**: Use this tool to see a list of available surveys.
+
+List board surveys
 
 
 ## 💬 Prompt Examples
@@ -129,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

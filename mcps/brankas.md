@@ -26,14 +26,30 @@ Connect your **Brankas** Open Finance account to any AI agent and orchestrate yo
 
 
 ## Available Tools (8)
-- **get_transfer_status**: Get status of a Disburse transfer
-- **intra_bank_transfer**: Initiate an intra-bank disbursement (payout)
-- **get_balance**: Retrieve linked bank account balances
-- **get_identities**: Retrieve linked identity data
-- **get_statement**: Retrieve linked bank statement data
-- **get_transaction**: Get status of a Direct payment transaction
-- **create_checkout**: Create a new Direct payment checkout session
-- **inter_bank_transfer**: Initiate an inter-bank disbursement (payout)
+- **get_identities**: Use this tool only when the user explicitly requests identity information.
+
+Retrieve linked identity data
+- **get_statement**: Ensure the account is linked before calling this tool.
+
+Retrieve linked bank statement data
+- **create_checkout**: Provide both the amount and currency.
+
+Create a new Direct payment checkout session
+- **get_transaction**: Must provide a transaction ID.
+
+Get status of a Direct payment transaction
+- **get_transfer_status**: Must provide a transfer ID.
+
+Get status of a Disburse transfer
+- **get_balance**: Verify the account is linked before execution.
+
+Retrieve linked bank account balances
+- **inter_bank_transfer**: Specify the amount, currency, and all beneficiary details.
+
+Initiate an inter-bank disbursement (payout)
+- **intra_bank_transfer**: Specify the amount, currency, and all beneficiary details.
+
+Initiate an intra-bank disbursement (payout)
 
 
 ## 💬 Prompt Examples
@@ -118,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

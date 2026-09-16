@@ -35,16 +35,28 @@ Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrat
 
 
 ## Available Tools (10)
-- **delete_run**: Delete a task run record
+- **take_screenshot**: Always provide the URL to be captured.
+
+Take a quick screenshot of a URL
+- **create_task**: You must provide a name for the task.
+
+Create a new browser automation task
+- **delete_run**: Specify the ID of the run to delete.
+
+Delete a task run record
+- **get_run**: Use the unique run ID.
+
+Get status and results of a task run
+- **get_task**: Provide the required task ID.
+
+Get details of a specific task
 - **get_account_usage**: Retrieve account usage statistics
-- **get_task**: Get details of a specific task
 - **list_projects**: List all projects in the account
 - **list_runs**: List all task runs
+- **run_task**: Supply the task ID to run the task.
+
+Trigger a run for a specific task
 - **list_tasks**: List all browser automation tasks
-- **create_task**: Create a new browser automation task
-- **get_run**: Get status and results of a task run
-- **run_task**: Trigger a run for a specific task
-- **take_screenshot**: Take a quick screenshot of a URL
 
 
 ## 💬 Prompt Examples
@@ -129,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
