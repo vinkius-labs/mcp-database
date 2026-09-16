@@ -33,9 +33,9 @@ Connect to the **EMT Madrid Open Data** platform to bring Madrid's mobility netw
 
 
 ## Available Tools (4)
-- **login**: Login to EMT MobilityLabs to get an accessToken
-- **get_bus_arrivals**: Get real-time bus arrival times for a stop
 - **list_bicimad_stations**: Get status of all BiciMAD stations
+- **get_bus_arrivals**: Get real-time bus arrival times for a stop
+- **login**: Login to EMT MobilityLabs to get an accessToken
 - **plan_bus_route**: Calculate routes between points using the EMT network
 
 
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
