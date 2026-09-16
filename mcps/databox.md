@@ -39,6 +39,9 @@ No more manual metric logging or digging through complex SQL transformations in 
 - **create_data_source**: Use service "custom" for push-based data sources.
 
 Create a new data source connection in a Databox account
+- **create_dataset**: Requires a title, data source ID to link to, and primary key columns. Use this before pushing data.
+
+Create a new dataset (data table) for storing metrics in Databox
 - **delete_dataset**: This cannot be undone. Use with extreme caution.
 
 Permanently delete a Databox dataset and all its ingested data
@@ -49,19 +52,16 @@ List all Databox accounts accessible with your API key
 - **list_data_sources**: Each data source represents an integration like Google Analytics, HubSpot, or a custom push source.
 
 List data sources (integrations) for a specific Databox account
-- **validate_authentication**: Use this to verify credentials before performing other operations.
-
-Validate your Databox API key and check authentication status
-- **create_dataset**: Requires a title, data source ID to link to, and primary key columns. Use this before pushing data.
-
-Create a new dataset (data table) for storing metrics in Databox
-- **list_dataset_metrics**: List metrics discovered in a Databox dataset after data ingestion
 - **list_datasets**: Datasets are containers for your raw metrics — create one before pushing data.
 
 List all datasets (data tables) in your Databox account
+- **list_dataset_metrics**: List metrics discovered in a Databox dataset after data ingestion
 - **push_metrics_data**: Each record should be a JSON object matching the dataset schema. Data becomes available in dashboards after ingestion.
 
 Ingest data records into a Databox dataset for visualization
+- **validate_authentication**: Use this to verify credentials before performing other operations.
+
+Validate your Databox API key and check authentication status
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

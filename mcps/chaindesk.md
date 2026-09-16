@@ -43,14 +43,14 @@ Create a new AI agent
 - **list_conversations**: Can be filtered by agentId.
 
 List chat conversations
+- **get_messages**: Get messages from a conversation
+- **list_datastores**: List all datastores
 - **query_agent**: Send a message to an agent
+- **update_agent**: Update an existing agent
+- **upsert_datasource**: Add or update a data source
 - **delete_agent**: Delete an agent
 - **get_agent**: Get details of a specific agent
 - **get_datastore**: Get details of a datastore
-- **get_messages**: Get messages from a conversation
-- **list_datastores**: List all datastores
-- **update_agent**: Update an existing agent
-- **upsert_datasource**: Add or update a data source
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

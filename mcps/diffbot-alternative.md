@@ -37,18 +37,18 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 
 ## Available Tools (11)
 - **enhance_company_profile**: Enrich company data
-- **extract_video_metadata**: Identify embedded videos
-- **list_active_crawls**: Check crawl status
-- **analyze_page_type**: Auto-detect page type
 - **enhance_person_profile**: Enrich person data
 - **extract_article_data**: Extract news/blog post
 - **extract_forum_thread**: Extract forum/comments
 - **extract_images**: Identify primary images
 - **extract_product_data**: Extract e-commerce info
+- **extract_video_metadata**: Identify embedded videos
+- **list_active_crawls**: Check crawl status
 - **search_knowledge_graph**: g. type:Organization industries:"AI").
 
 Query world entities
 - **verify_api_credentials**: Verify your Diffbot API credentials
+- **analyze_page_type**: Auto-detect page type
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
