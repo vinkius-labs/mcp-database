@@ -39,13 +39,14 @@ No more manual logging into the Zendesk dashboard to check a ticket's status. Yo
 
 
 ## Available Tools (15)
-- **list_macros**: Lists all available support macros (canned responses)
-- **list_tickets**: Lists all support tickets in the Zendesk account
-- **get_current_user**: Get the currently authenticated Zendesk user
+- **get_ticket_comments**: List all comments and replies on a Zendesk ticket
 - **get_ticket**: Retrieves comprehensive details for a specific support ticket
-- **get_user**: Retrieves details for a specific Zendesk user
 - **list_groups**: Lists all support agent groups
 - **list_organizations**: Lists all organizations defined in Zendesk
+- **list_satisfaction_ratings**: Use to monitor support quality.
+
+List customer satisfaction (CSAT) ratings
+- **list_tickets**: Lists all support tickets in the Zendesk account
 - **list_users**: Lists all users (customers and agents) in the Zendesk account
 - **list_views**: g. "Unassigned tickets") and their IDs.
 
@@ -53,17 +54,16 @@ Lists shared and personal ticket views
 - **search_tickets**: Syntax: "type:ticket status:open tags:escalation".
 
 Searches for tickets using the Zendesk search syntax
-- **list_satisfaction_ratings**: Use to monitor support quality.
-
-List customer satisfaction (CSAT) ratings
+- **update_ticket**: Update an existing Zendesk ticket
 - **add_ticket_comment**: The comment will be emailed to the requester.
 
 Add a public comment to an existing Zendesk ticket
+- **get_user**: Retrieves details for a specific Zendesk user
+- **list_macros**: Lists all available support macros (canned responses)
+- **get_current_user**: Get the currently authenticated Zendesk user
 - **create_ticket**: Returns the created ticket.
 
 Create a new support ticket in Zendesk
-- **get_ticket_comments**: List all comments and replies on a Zendesk ticket
-- **update_ticket**: Update an existing Zendesk ticket
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

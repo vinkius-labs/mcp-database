@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire web intelligence and informatio
 
 
 ## Available Tools (6)
-- **rerank_documents**: Rerank a list of documents based on a query
-- **get_embeddings**: Get vector embeddings for a list of strings
-- **check_fact**: Check the factuality of a statement
 - **read_url**: Read a URL and return cleaned content for LLMs
+- **rerank_documents**: Rerank a list of documents based on a query
 - **search_web**: Search the web using Jina Search (optimized for AI)
 - **tokenize_text**: Tokenize text for LLM processing
+- **check_fact**: Check the factuality of a statement
+- **get_embeddings**: Get vector embeddings for a list of strings
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

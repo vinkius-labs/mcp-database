@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire community ecosystem on **Discor
 
 
 ## Available Tools (10)
-- **list_channels**: List channels in a guild
-- **list_messages**: List recent messages in a channel
-- **get_me**: Get authenticated Discord bot info
-- **list_guild_members**: List members of a guild
-- **list_guilds**: List guilds the bot is in
-- **send_message**: Send a message to a channel
 - **delete_message**: Delete a message from a channel
 - **get_channel**: Get details for a specific channel
 - **get_guild_roles**: Get roles for a guild
+- **send_message**: Send a message to a channel
 - **get_guild**: Get details for a specific guild
+- **list_channels**: List channels in a guild
+- **list_guilds**: List guilds the bot is in
+- **list_messages**: List recent messages in a channel
+- **get_me**: Get authenticated Discord bot info
+- **list_guild_members**: List members of a guild
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,4 +1,4 @@
-# Calendly Webhooks, Scheduling Links & Global Invitees MCP Server
+# Calendly MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/calendly-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -7,115 +7,106 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Webhooks, Scheduling Links & Global Invitees — advanced Calendly for webhooks, direct booking links and cross-event search.
+Automate scheduling workflows via Calendly — manage event types, scheduled events, invitees, and availability directly from any AI agent.
 
 ## Description
-Connect your **Calendly** account to any AI agent and take full control of your scheduling operations through natural conversation.
+Connect your **Calendly** account to any AI agent and take full control of your scheduling workflow through natural conversation.
 
 ### What you can do
 
-- **Event Types** — List all meeting templates with their duration, type, description and scheduling URLs
-- **Scheduled Events** — View upcoming and past meetings with invitee info, status and cancellation details
-- **Invitee Management** — Browse attendees across all events with their names, emails and custom question responses
-- **Availability** — Check user availability within a date range to find open slots before booking
-- **Scheduling Links** — Create direct booking links for specific event types (no redirect needed)
-- **Webhook Management** — List and create webhook subscriptions for event notifications (booking created, canceled, no-show)
-- **Organization Memberships** — View team memberships and multi-user account structure
+- **Event Types** — List, create, and manage your event types with custom durations, locations, and availability rules
+- **Scheduled Events** — Browse upcoming and past events, view attendee details, and check event status
+- **Invitees** — List invitees for any event, view their responses, UTM parameters, and tracking data
+- **Availability** — Check your real-time availability and manage scheduling windows
+- **Users & Organization** — View your profile, organization membership, and team structure
+- **Cancellations & No-Shows** — Track cancellations with reasons and mark invitees as no-shows for accurate reporting
 
 ### How it works
 
 1. Subscribe to this server
 2. Enter your Calendly Personal Access Token
-3. Start managing your calendar from Claude, Cursor, or any MCP-compatible client
+3. Start managing your schedule from Claude, Cursor, or any MCP-compatible client
 
-No more switching to the Calendly app to check who booked what or review upcoming meetings. Your AI acts as a dedicated scheduling assistant.
+No more switching between your calendar app and your workspace. Your AI agent becomes your scheduling command center.
 
 ### Who is this for?
 
-- **Sales Teams** — quickly check upcoming meetings, review invitee details and track booking conversion rates
-- **Developers** — create scheduling links programmatically, monitor webhook events and audit event type configurations
-- **Managers** — review team availability, track meeting volume and manage webhook integrations via conversation
+- **Sales teams** — review upcoming demos, check invitee details, and prepare for calls without leaving your CRM workflow
+- **Recruiters** — manage interview schedules and track candidate attendance across multiple event types
+- **Customer success managers** — monitor onboarding calls, follow up on no-shows, and analyze meeting patterns
+- **Founders & executives** — get a quick summary of your week's meetings and availability gaps
 
 
-## Available Tools (12)
-- **list_event_types**: Each event type includes its name, description, duration, type (one-on-one, group, collective, round_robin), scheduling URL, and active status. Optionally filter by a specific user URI. Use this to see what meeting options are available for booking.
+## Available Tools (10)
+- **list_availability**: Use the user_uri to identify the account.
 
-List event types in Calendly
-- **get_event_type**: Provide the event type URI (found in list_event_types).
+List availability schedules for a user
+- **cancel_event**: Provide the event UUID and an optional reason.
 
-Get details for a specific Calendly event type
-- **get_invitee**: Provide the invitee UUID from list_invitees.
+Cancel scheduled event. Sends cancellation email to invitee
+- **get_user**: This URI is required for subsequent calls to the Calendly API.
 
-Get details for a specific invitee
-- **create_scheduling_link**: Requires the event type URI and the owner type ("EventType" or "User"). Returns a booking URL that invitees can use to schedule a meeting directly via the API.
+Get Calendly user profile. Returns user URI needed for other calls
+- **list_scheduled_events**: Specify status (active or canceled) to filter results.
 
-Create a scheduling link for direct booking
-- **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
+List scheduled events for a user. Filter by active/canceled
+- **get_scheduled_event**: Ensure the UUID is correct.
 
-Create a new webhook subscription in Calendly
-- **get_me**: Returns user ID, name, email, slug, organization URI, and scheduling URL. Use this to verify your token is working correctly and to get your user URI for filtering other queries.
+Get scheduled event details by UUID
+- **list_invitees**: Pass the event’s unique UUID.
 
-Get the authenticated Calendly user
-- **get_scheduled_event**: Provide the event UUID from list_scheduled_events.
+List invitees for a scheduled event
+- **list_org_members**: Pass the organization’s URI.
 
-Get details for a specific scheduled event
-- **list_invitees**: Each invitee includes their name, email, event URI, scheduled start time, and responses to custom questions. Optionally filter by a specific event URI and set a count limit.
+List organization members
+- **get_available_times**: Provide all three required parameters.
 
-List invitees (attendees) across all Calendly events
-- **list_memberships**: Each membership shows the user, organization, URI, and role. Useful for multi-team accounts and seeing which organizations you are part of.
+Get available time slots for event type in date range
+- **list_event_types**: Requires a valid user_uri.
 
-List your memberships in Calendly organizations
-- **list_scheduled_events**: Each event includes the event type, start time (UTC), invitee URI, status (active, canceled), and participants. Optionally filter by user URI, status (active or canceled), and count. Useful for reviewing your upcoming calendar.
+List event types (meeting templates) for a user
+- **get_event_type**: Provide a valid UUID.
 
-List scheduled events (meetings) in Calendly
-- **get_user_availability**: Requires the user URI, start time and end time (both ISO 8601 UTC format). Returns the user's scheduling rules, busy times, and date overrides. Useful for checking when someone is free before booking.
-
-Get availability for a Calendly user
-- **list_webhooks**: Each webhook shows its URL, scope (user or organization), subscribed events (invitee.created, invitee.canceled, etc.), and creation date. Use this to audit your event integrations.
-
-List webhook subscriptions in Calendly
+Get event type details by UUID
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Calendly Webhooks, Scheduling Links & Global Invitees** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Calendly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me all my upcoming meetings this week."
+> "What meetings do I have scheduled for tomorrow?"
 
 **🤖 AI Agent:**
-> I found 5 active scheduled events: 'Product Demo' with john@company.com (tomorrow at 14:00 UTC), '1:1 with Sarah' (Wednesday at 10:00 UTC), 'Team Standup' (Thursday at 09:00 UTC), 'Client Onboarding' (Thursday at 15:30 UTC) and 'Design Review' (Friday at 11:00 UTC).
+> You have 3 meetings tomorrow. 09:00 — Product Demo with Sarah Chen (30 min). 11:00 — Sales Discovery with James Park (45 min). 14:30 — Onboarding Call with Maria Lopez (60 min). Would you like me to pull the invitee details for any of them?
 
 ---
 
 **👤 You:**
-> "What event types do I have available for booking?"
+> "How many no-shows did we have this week?"
 
 **🤖 AI Agent:**
-> You have 4 active event types: '30 Minute Meeting' (one-on-one, 30 min), 'Product Demo' (one-on-one, 60 min), 'Team Sync' (group, 45 min, up to 6 people) and 'Office Hours' (collective, 30 min). Would you like the scheduling URL for any of these?
+> 4 no-shows this week across 28 scheduled events (14.3% rate). Highest concentration on Monday — 2 missed Discovery Calls. The invitees were notified but did not join. I can mark them as no-shows and pull their contact details for follow-up.
 
 ---
 
 **👤 You:**
-> "Create a direct scheduling link for my 30 Minute Meeting event type."
+> "Am I free on Friday afternoon for a 30-minute call?"
 
 **🤖 AI Agent:**
-> Done! I've created a scheduling link for your '30 Minute Meeting' event type. The URL is https://calendly.com/schedule/abc123xyz. Anyone with this link can book a 30-minute slot directly without going through the Calendly website.
+> Checking your availability… You have a free slot from 15:00 to 16:30 on Friday. Your 30-Minute Meeting event type is active and has availability in that window. Would you like me to share your scheduling link, or should I create a one-off event?
 
 
 ## ❓ FAQ
 
-**Q: How do I create a Calendly Personal Access Token?**
-Log in to the [**Calendly Dashboard**](https://calendly.com), go to **Integrations & Settings > API & Webhooks**, and generate a Personal Access Token. Copy the token immediately — it won't be shown again.
+**Q: Can my AI agent prepare me for my next call in 10 seconds?**
+Yes. Ask your agent to list your upcoming events — it returns the invitee name, email, event type, and scheduled time. Combine it with a CRM lookup and you have a complete pre-call brief without opening a single tab. Sales reps who adopted this workflow report saving 5–10 minutes per meeting in context-switching time.
 
-**Q: Can I see who booked a meeting?**
-Yes! Use `list_invitees` to see all attendees across your events, or `list_scheduled_events` to see upcoming meetings with their invitee URIs. Then use `get_invitee` with the invitee UUID to get their full name, email, timezone and answers to custom questions.
+**Q: How can I track no-shows and cancellations across my team?**
+Ask your agent to list recent events filtered by status. It surfaces cancellations with their reasons and identifies no-show patterns. Perfect for weekly pipeline reviews — instead of manually exporting Calendly analytics, ask your agent to aggregate the data and highlight trends. Your AI does the number-crunching while you focus on coaching.
 
-**Q: Can I check availability before booking?**
-Yes! Use `get_user_availability` with the user's URI, start time and end time (ISO 8601 UTC). It returns the user's scheduling rules, busy times and date overrides so you can identify open slots before creating a booking.
-
-**Q: Can I set up webhooks for new bookings?**
-Yes! Use `create_webhook` with your callback URL, events like 'invitee.created' and 'invitee.canceled', and the scope (your user or organization URI). Optionally provide a signing key for verification. You can audit existing webhooks with `list_webhooks`.
+**Q: I manage multiple event types for different use cases — can my agent help me audit them?**
+Absolutely. List all your event types and your agent shows you each one with its duration, scheduling URL, active/inactive status, and configuration. Spot duplicates, identify unused event types, and clean up your scheduling page — all through a single conversation. No clicking through dozens of Calendly settings pages.
 
 
 ## Installation & Usage
@@ -132,7 +123,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Calendly Webhooks, Scheduling Links & Global Invitees** under Connectors.
+5. Click the **+** button in any chat and enable **Calendly** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -140,7 +131,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `calendly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Calendly Webhooks, Scheduling Links & Global Invitees** tools.
+4. Click **Save** — Cursor will connect and list all **Calendly** tools.
 
 **Configuration:**
 ```json
@@ -161,4 +152,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

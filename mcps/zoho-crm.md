@@ -39,17 +39,17 @@ No more manual filtering through complex CRM views to find a lead's phone number
 
 
 ## Available Tools (10)
-- **get_contact**: Get contact details
-- **get_deal**: Get deal details
+- **list_calls**: List all calls
 - **list_contacts**: List all contacts
+- **list_products**: List all products
 - **list_tasks**: List all tasks
+- **get_contact**: Get contact details
 - **list_deals**: List all deals
 - **get_lead**: Get lead details
 - **list_leads**: Useful for lead management and tracking.
 
 List all CRM leads
-- **list_products**: List all products
-- **list_calls**: List all calls
+- **get_deal**: Get deal details
 - **list_accounts**: List all accounts
 
 
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
