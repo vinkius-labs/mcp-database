@@ -33,16 +33,16 @@ Integrate **Documo**, the next-generation digital fax and document workflow plat
 
 
 ## Available Tools (10)
+- **list_documo_users**: List all users registered in your Documo organization
+- **list_assigned_fax_numbers**: List all fax numbers assigned to your Documo account
+- **list_latest_fax_transmissions**: Identify the most recently sent or received faxes
 - **get_documo_account_metadata**: Retrieve metadata and usage limits for your Documo account
 - **get_fax_details**: Get detailed information and status for a specific fax
-- **list_documo_users**: List all users registered in your Documo organization
-- **list_failed_fax_deliveries**: Identify faxes that failed to transmit correctly (mock logic)
-- **search_faxes_by_recipient**: Search for faxes matching a recipient number or identifier
-- **list_assigned_fax_numbers**: List all fax numbers assigned to your Documo account
-- **list_digital_faxes**: List all digital faxes in your Documo/mFax account
 - **quick_fax_volume_audit**: Retrieve a high-level summary of fax transmissions and success rates
-- **list_latest_fax_transmissions**: Identify the most recently sent or received faxes
+- **list_failed_fax_deliveries**: Identify faxes that failed to transmit correctly (mock logic)
+- **list_digital_faxes**: List all digital faxes in your Documo/mFax account
 - **list_received_digital_faxes**: Identify faxes that have been received by your organization
+- **search_faxes_by_recipient**: Search for faxes matching a recipient number or identifier
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

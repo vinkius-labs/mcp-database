@@ -34,15 +34,15 @@ Integrate **Dutchie POS** (formerly Greenbits/LeafLogix), the leading retail pla
 
 ## Available Tools (10)
 - **get_order_details**: Get detailed information for a specific order
-- **get_product_details**: Get detailed settings and information for a specific product
-- **list_low_stock_inventory**: Identify inventory items that are below a certain quantity threshold (mock logic)
-- **list_retail_orders**: List all recent retail orders in Dutchie POS
 - **list_retail_products**: List all products in your Dutchie POS catalog
 - **quick_pos_sales_audit**: Retrieve a high-level summary of recent sales activity
-- **search_catalog_products**: Search for products using a name keyword or SKU
-- **get_dutchie_pos_metadata**: Retrieve metadata and limits for your Dutchie POS account
 - **list_pos_customers**: List all customers registered in your POS organization
+- **get_dutchie_pos_metadata**: Retrieve metadata and limits for your Dutchie POS account
+- **get_product_details**: Get detailed settings and information for a specific product
 - **list_current_inventory**: List all inventory lots and their quantities
+- **list_low_stock_inventory**: Identify inventory items that are below a certain quantity threshold (mock logic)
+- **list_retail_orders**: List all recent retail orders in Dutchie POS
+- **search_catalog_products**: Search for products using a name keyword or SKU
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

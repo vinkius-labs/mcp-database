@@ -34,15 +34,15 @@ Integrate **Dripcel**, the powerful WhatsApp automation platform, directly into 
 
 ## Available Tools (10)
 - **list_instance_contacts**: List all contacts registered or identified within a specific WhatsApp instance
+- **quick_instance_health_audit**: Retrieve a high-level summary of all instances and their connection states
+- **search_instance_contacts**: Search for contacts within an instance using a keyword or phone number
+- **get_whatsapp_connection_status**: Identify if a specific WhatsApp instance is currently connected and authenticated
+- **get_instance_details**: Get detailed settings and information for a specific WhatsApp instance
+- **list_whatsapp_instances**: List all WhatsApp instances configured in your Dripcel account
 - **list_whatsapp_messages**: List recent messages sent or received by a specific instance
 - **list_whatsapp_templates**: List all message templates configured for a specific instance
 - **send_whatsapp_message**: Send a text message via a specific WhatsApp instance
 - **get_dripcel_account_metadata**: Retrieve metadata and limits for your Dripcel account
-- **get_whatsapp_connection_status**: Identify if a specific WhatsApp instance is currently connected and authenticated
-- **get_instance_details**: Get detailed settings and information for a specific WhatsApp instance
-- **list_whatsapp_instances**: List all WhatsApp instances configured in your Dripcel account
-- **quick_instance_health_audit**: Retrieve a high-level summary of all instances and their connection states
-- **search_instance_contacts**: Search for contacts within an instance using a keyword or phone number
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
