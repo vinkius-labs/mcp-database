@@ -14,10 +14,10 @@ This MCP server provides a way to visualize formal language theory. Use `regex_t
 
 
 ## Available Tools (2)
-- **nfa_to_dfa**: Converts an NFA to a DFA
 - **regex_to_nfa**: g., "abc") and get the NFA structure with states and transitions.
 
 Converts a regex pattern to an NFA
+- **nfa_to_dfa**: Converts an NFA to a DFA
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
