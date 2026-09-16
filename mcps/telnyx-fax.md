@@ -34,15 +34,15 @@ Connect your **Telnyx** account to any AI agent and send, receive, and manage fa
 
 
 ## Available Tools (10)
-- **list_fax_numbers**: List fax-enabled numbers
-- **list_media**: List media files
-- **get_fax**: Get fax details
+- **cancel_fax**: Cancel a fax
 - **check_telnyx_status**: Verify Telnyx API connectivity
 - **get_fax_application**: Get fax application details
-- **cancel_fax**: Cancel a fax
+- **get_fax**: Get fax details
 - **get_fax_number**: Get phone number details
 - **list_fax_applications**: List fax applications
 - **list_faxes**: List all faxes
+- **list_media**: List media files
+- **list_fax_numbers**: List fax-enabled numbers
 - **send_fax**: Requires connection ID (from), recipient number, and media URL.
 
 Send a fax
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

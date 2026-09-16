@@ -36,12 +36,12 @@ Connect your **TrueReview** reputation management account to any AI agent and si
 
 ## Available Tools (7)
 - **get_contact**: Get details for a specific contact
+- **get_report_summary**: Get a summary report of reviews
+- **list_contacts**: List all contacts for the location
 - **list_locations**: List all business locations
 - **send_review_request**: Send a review request to a customer
 - **list_campaigns**: List all review campaigns
 - **create_contact**: Create a new customer contact
-- **get_report_summary**: Get a summary report of reviews
-- **list_contacts**: List all contacts for the location
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,19 +34,19 @@ Connect your **SnapCall** account to any AI agent to automate your real-time cus
 
 
 ## Available Tools (11)
-- **archive_call_stream**: Archive or delete a call record
+- **create_video_clip_request**: Request a video clip from customer
 - **create_webhook**: g., call.started, clip.created).
 
 Create a new webhook
 - **delete_webhook**: Remove a webhook
+- **get_account_info**: Get SnapCall account details
 - **get_ai_insights_for_call**: Get AI insights for a specific call
-- **list_ai_skills_data**: List AI call insights
+- **get_call_details**: Get details for a call stream
 - **list_call_streams**: List recent call streams
 - **list_webhooks**: List registered webhooks
 - **create_call**: Create an instant video/voice call
-- **create_video_clip_request**: Request a video clip from customer
-- **get_account_info**: Get SnapCall account details
-- **get_call_details**: Get details for a call stream
+- **archive_call_stream**: Archive or delete a call record
+- **list_ai_skills_data**: List AI call insights
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

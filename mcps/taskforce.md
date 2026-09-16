@@ -33,13 +33,13 @@ Connect your AI agent to **TaskForce** to natively manage your CRM workflow, cus
 
 ## Available Tools (9)
 - **list_taskforce_cases**: List all cases
+- **create_taskforce_case**: Create a new case
+- **get_taskforce_customer**: Get customer details
+- **get_taskforce_lead**: Get lead details
 - **list_taskforce_customers**: List all customers
 - **list_taskforce_invoices**: List all invoices
-- **create_taskforce_lead**: Create a new lead
-- **get_taskforce_customer**: Get customer details
 - **list_taskforce_quotes**: List all quotes
-- **create_taskforce_case**: Create a new case
-- **get_taskforce_lead**: Get lead details
+- **create_taskforce_lead**: Create a new lead
 - **list_taskforce_leads**: List all leads
 
 
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
