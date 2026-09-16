@@ -28,15 +28,15 @@ Connect your **Mattermark** account to any AI agent and access deep insights int
 
 ## Available Tools (10)
 - **search_companies**: Search for companies
+- **list_investors**: List venture capital investors
 - **get_company_details**: Get details for a specific company
+- **get_investor_details**: Get details for an investor
+- **search_funding_rounds**: Search for funding rounds
 - **get_company_employees**: Get employee data for a company
 - **get_company_funding_rounds**: Get funding history for a company
-- **get_funding_round_details**: Get details for a funding round
-- **list_investors**: List venture capital investors
 - **get_company_news**: Get news for a specific company
-- **get_investor_details**: Get details for an investor
+- **get_funding_round_details**: Get details for a funding round
 - **list_similar_companies**: Find similar companies
-- **search_funding_rounds**: Search for funding rounds
 
 
 ## 💬 Prompt Examples
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

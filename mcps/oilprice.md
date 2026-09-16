@@ -45,26 +45,12 @@ Your AI becomes an energy analyst, helping you track commodity prices, understan
 
 
 ## Available Tools (10)
-- **get_wti_price**: Prices update every 5 minutes.
-
-USE WHEN:
-- User asks specifically about WTI oil price
-- User needs the US crude oil benchmark
-- User wants to check American oil prices
-- User asks "what is WTI price"
-
-EXAMPLES:
-- "What is WTI price?" → call with no params
-- "Current WTI crude oil price" → call with no params
-- "West Texas Intermediate price" → call with no params
-
-Get current WTI (West Texas Intermediate) crude oil price
 - **get_brent_price**: Prices update every 5 minutes.
 
 USE WHEN:
 - User asks specifically about Brent oil price
 - User needs the international crude oil benchmark
-- User wants to check European/globalThis oil prices
+- User wants to check European/global oil prices
 - User asks "what is Brent price"
 
 EXAMPLES:
@@ -73,6 +59,25 @@ EXAMPLES:
 - "Brent oil benchmark" → call with no params
 
 Get current Brent crude oil price
+- **list_commodities**: USE WHEN:
+- User wants to explore what commodities are available
+- User needs to find commodity codes for querying prices
+- User is exploring the API capabilities for the first time
+- User asks what energy commodities are supported
+
+AVAILABLE COMMODITY TYPES:
+- Crude Oil: WTI_USD, BRENT_CRUDE_USD
+- Refined Products: DIESEL_USD, GASOLINE_USD, HEATING_OIL_USD, JET_FUEL_USD
+- Natural Gas: NATURAL_GAS_USD
+- Coal: COAL_USD
+- And 40+ more energy commodities
+
+EXAMPLES:
+- "What commodities are available?" → call with no params
+- "Show me all commodity codes" → call with no params
+- "List all energy products" → call with no params
+
+List all available energy commodities in OilPriceAPI
 - **get_diesel_price**: Important for tracking transportation fuel costs and refined product margins.
 
 USE WHEN:
@@ -181,25 +186,20 @@ EXAMPLES:
 - "Brent crude last 7 days" → call with commodity_code="BRENT_CRUDE_USD"
 
 Get daily price data for the last 7 days
-- **list_commodities**: USE WHEN:
-- User wants to explore what commodities are available
-- User needs to find commodity codes for querying prices
-- User is exploring the API capabilities for the first time
-- User asks what energy commodities are supported
+- **get_wti_price**: Prices update every 5 minutes.
 
-AVAILABLE COMMODITY TYPES:
-- Crude Oil: WTI_USD, BRENT_CRUDE_USD
-- Refined Products: DIESEL_USD, GASOLINE_USD, HEATING_OIL_USD, JET_FUEL_USD
-- Natural Gas: NATURAL_GAS_USD
-- Coal: COAL_USD
-- And 40+ more energy commodities
+USE WHEN:
+- User asks specifically about WTI oil price
+- User needs the US crude oil benchmark
+- User wants to check American oil prices
+- User asks "what is WTI price"
 
 EXAMPLES:
-- "What commodities are available?" → call with no params
-- "Show me all commodity codes" → call with no params
-- "List all energy products" → call with no params
+- "What is WTI price?" → call with no params
+- "Current WTI crude oil price" → call with no params
+- "West Texas Intermediate price" → call with no params
 
-List all available energy commodities in OilPriceAPI
+Get current WTI (West Texas Intermediate) crude oil price
 
 
 ## 💬 Prompt Examples
@@ -287,4 +287,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

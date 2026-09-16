@@ -35,15 +35,15 @@ Connect your **Nicereply** account to your AI agent and gain deep insights into 
 
 
 ## Available Tools (10)
-- **get_response**: Get specific response details
-- **get_survey_stats**: Get survey statistics
-- **list_customers**: List Nicereply customers
-- **list_responses**: List feedback responses
-- **list_surveys**: List all surveys
 - **get_customer**: Get specific customer details
 - **get_me**: Get current user details
 - **get_rating_values**: List possible rating values
+- **get_response**: Get specific response details
+- **get_survey_stats**: Get survey statistics
 - **get_survey**: Get specific survey details
+- **list_customers**: List Nicereply customers
+- **list_responses**: List feedback responses
+- **list_surveys**: List all surveys
 - **list_users**: List workspace users (agents)
 
 
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

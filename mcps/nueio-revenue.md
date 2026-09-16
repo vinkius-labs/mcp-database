@@ -39,13 +39,13 @@ Connect your **Nue.io** account to your AI agent and streamline your quote-to-re
 - **list_active_integrations**: g., Stripe, Salesforce) connected to Nue.
 
 List connected third-party integrations
-- **list_metadata_source_objects**: List objects for metadata mapping
-- **list_product_categories**: List catalog categories
-- **list_product_price_tags**: List price tags for a product
-- **list_revenue_workflows**: List automated revenue workflows
-- **get_current_user**: Get current user metadata
 - **get_organization_info**: Get organization metadata
 - **list_product_bundles**: List configured product bundles
+- **list_product_price_tags**: List price tags for a product
+- **list_metadata_source_objects**: List objects for metadata mapping
+- **list_revenue_workflows**: List automated revenue workflows
+- **get_current_user**: Get current user metadata
+- **list_product_categories**: List catalog categories
 - **list_catalog_products**: List all published products
 
 
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -40,12 +40,12 @@ Connect your **MyTime** partner account to your AI agent and take control of you
 - **list_appointments**: List scheduled appointments
 - **list_products**: List retail products
 - **list_reviews**: List customer reviews
-- **list_services**: List available services
-- **get_business_info**: Get high-level business info
-- **get_appointment**: Get specific appointment details
-- **list_customers**: List business customers
-- **list_locations**: List business locations
 - **list_staff**: List staff members
+- **list_locations**: List business locations
+- **get_appointment**: Get specific appointment details
+- **get_business_info**: Get high-level business info
+- **list_customers**: List business customers
+- **list_services**: List available services
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

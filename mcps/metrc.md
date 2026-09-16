@@ -29,6 +29,7 @@ Connect your **Metrc** account to any AI agent and take full control of your can
 
 ## Available Tools (10)
 - **list_tracked_plants**: List tracked plants for a facility
+- **list_active_sales**: List active sales receipts
 - **list_active_strains**: List active strains for a facility
 - **list_incoming_transfers**: List incoming inventory transfers
 - **get_unit_of_measures**: g. Grams, Ounces).
@@ -39,7 +40,6 @@ List all units of measure
 - **list_active_harvests**: List active harvests for a facility
 - **list_active_items**: List active items for a facility
 - **list_active_packages**: List active packages for a facility
-- **list_active_sales**: List active sales receipts
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
