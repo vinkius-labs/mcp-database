@@ -35,18 +35,20 @@ Connect your **Amazon S3** environment to your AI agent to unlock professional c
 
 
 ## Available Tools (10)
-- **delete_bucket**: Delete an S3 bucket
+- **list_buckets**: List S3 buckets
+- **create_bucket**: Create an S3 bucket
+- **delete_bucket**: Ensure the bucket contains no objects before calling this tool.
+
+Delete an S3 bucket
 - **list_objects**: Can be filtered by prefix.
 
 List objects in bucket
-- **get_bucket_acl**: Get bucket ACL
-- **get_bucket_policy**: Get bucket policy
+- **get_object_metadata**: Get object metadata
 - **get_object_data**: Get object content
 - **put_object**: Upload an object
-- **list_buckets**: List S3 buckets
-- **create_bucket**: Create an S3 bucket
 - **delete_object**: Delete an object
-- **get_object_metadata**: Get object metadata
+- **get_bucket_policy**: Get bucket policy
+- **get_bucket_acl**: Get bucket ACL
 
 
 ## 💬 Prompt Examples
@@ -131,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

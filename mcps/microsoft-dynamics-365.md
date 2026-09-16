@@ -39,32 +39,32 @@ The entire Microsoft ecosystem — from Teams to Power BI to LinkedIn Sales Navi
 
 
 ## Available Tools (10)
+- **get_record**: Example: get_record("accounts", "00000000-0000-0000-0000-000000000001").
+
+Get a specific Dynamics 365 record
 - **update_record**: Only specify the fields you want to change.
 
 Update an existing Dynamics 365 record
+- **query_dataverse**: Common entity sets: accounts, contacts, opportunities, incidents (cases), leads, salesorders, invoices. Use OData filter syntax.
+
+Query any Dataverse entity set
 - **count_records**: Useful for dashboards without fetching full records.
 
 Count records in a Dynamics 365 entity set
 - **create_record**: Provide field values as JSON. For lookups, use the @odata.bind format.
 
 Create a new record in Dynamics 365
-- **list_cases**: List support cases (incidents)
-- **list_contacts**: List Dynamics 365 contacts
-- **list_opportunities**: Filter by stage, close date, or estimated value.
-
-List sales opportunities
-- **query_dataverse**: Common entity sets: accounts, contacts, opportunities, incidents (cases), leads, salesorders, invoices. Use OData filter syntax.
-
-Query any Dataverse entity set
 - **delete_record**: This action is irreversible.
 
 Delete a Dynamics 365 record
 - **list_accounts**: Use filter to narrow results.
 
 List Dynamics 365 accounts
-- **get_record**: Example: get_record("accounts", "00000000-0000-0000-0000-000000000001").
+- **list_opportunities**: Filter by stage, close date, or estimated value.
 
-Get a specific Dynamics 365 record
+List sales opportunities
+- **list_cases**: List support cases (incidents)
+- **list_contacts**: List Dynamics 365 contacts
 
 
 ## 💬 Prompt Examples
@@ -152,4 +152,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

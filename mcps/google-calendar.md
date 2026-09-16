@@ -31,21 +31,47 @@ Connect your **Google Calendar** network to any AI agent and optimize scheduling
 
 
 ## Available Tools (15)
-- **list_calendars**: List all calendars in the user account
-- **list_event_instances**: List instances of a recurring event
-- **move_event**: Move an event to a different calendar
-- **patch_event**: Partially update an event (e.g., change just the status or attendees)
-- **quick_add_event**: Create an event from a simple text string
-- **search_events**: Search for events based on a text query
+- **check_free_busy**: Provide the Free/Busy query object as a JSON string.
+
+Check availability for a specific time range
 - **get_settings**: Get user calendar settings
-- **list_acl**: List access control rules for a calendar
-- **list_events**: List upcoming events from a specific calendar
-- **update_event**: Modify an existing event
-- **check_free_busy**: Check availability for a specific time range
-- **create_event**: Schedule a new event
-- **delete_event**: Cancel/Delete an event
-- **get_calendar_metadata**: Get metadata for a specific calendar
-- **get_event**: Get details of a specific event
+- **move_event**: Provide both the source and target calendar IDs.
+
+Move an event to a different calendar
+- **update_event**: Specify the calendar ID, event ID, and the updated event data.
+
+Modify an existing event
+- **list_events**: Specify the calendar ID and time range.
+
+List upcoming events from a specific calendar
+- **create_event**: Supply the target calendar ID and the event details.
+
+Schedule a new event
+- **delete_event**: Provide the calendar ID and the event ID.
+
+Cancel/Delete an event
+- **get_calendar_metadata**: Provide the calendar ID.
+
+Get metadata for a specific calendar
+- **get_event**: Provide both the calendar ID and event ID.
+
+Get details of a specific event
+- **list_acl**: Provide the calendar ID.
+
+List access control rules for a calendar
+- **list_calendars**: List all calendars in the user account
+- **list_event_instances**: Supply the calendar ID and the recurring event ID.
+
+List instances of a recurring event
+- **patch_event**: Supply the calendar ID, event ID, and the JSON payload.
+
+Partially update an event (e.g., change just the status or attendees)
+- **quick_add_event**: Supply the target calendar ID and the event text.
+
+Create an event from a simple text string
+- **search_events**: Specify the calendar ID and the search term.
+
+Search for events based on a text query
 
 
 ## 💬 Prompt Examples
@@ -130,4 +156,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

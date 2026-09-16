@@ -36,13 +36,13 @@ Stop switching into the GCP Console for quick data validations. Check database c
 
 
 ## Available Tools (7)
-- **get_table**: Get explicit metadata and schema details of a pure BigQuery Table
 - **list_tables**: List explicit Tables natively contained within a Dataset
-- **get_job**: Get complete details of a specific BigQuery Job run
-- **list_jobs**: List recent explicit BigQuery runtime Jobs securely
 - **execute_query**: Run an explicit BigQuery Standard SQL command
 - **get_dataset**: Get exact details of a specific BigQuery dataset
+- **get_job**: Get complete details of a specific BigQuery Job run
 - **list_datasets**: List all explicit Datasets in the active GCP project
+- **get_table**: Get explicit metadata and schema details of a pure BigQuery Table
+- **list_jobs**: List recent explicit BigQuery runtime Jobs securely
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

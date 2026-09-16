@@ -34,6 +34,11 @@ The **Anthropic MCP Server** enables seamless integration with Claude, the leadi
 
 
 ## Available Tools (8)
+- **create_message**: Returns the generated AI text response.
+
+Send a message to Claude
+- **list_batches**: List all Message Batches
+- **list_models**: List available Anthropic models
 - **get_batch**: Get status of a specific Message Batch
 - **get_batch_results**: Retrieve results of a completed Message Batch
 - **cancel_batch**: Cancel a pending Message Batch
@@ -41,11 +46,6 @@ The **Anthropic MCP Server** enables seamless integration with Claude, the leadi
 - **create_batch**: Saves 50% on token costs.
 
 Create a Message Batch for asynchronous processing
-- **create_message**: Returns the generated AI text response.
-
-Send a message to Claude
-- **list_batches**: List all Message Batches
-- **list_models**: List available Anthropic models
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
