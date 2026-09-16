@@ -34,13 +34,19 @@ Connect your **Voyage AI** account to any AI agent to leverage state-of-the-art 
 
 
 ## Available Tools (13)
-- **cancel_batch**: Provide the specific batch ID to terminate the process.
-
-Cancel a batch job
 - **list_files**: Do not query files that are marked as private.
 
 List all files
+- **cancel_batch**: Provide the specific batch ID to terminate the process.
+
+Cancel a batch job
 - **create_batch**: Create a batch inference job
+- **upload_file**: Purpose must be "batch".
+
+Upload a file for batch inference
+- **get_file_content**: Provide the file ID to access the stored data.
+
+Download file content
 - **create_contextualized_embeddings**: Create contextualized chunk embeddings
 - **create_embeddings**: Create text embeddings
 - **create_multimodal_embeddings**: Create multimodal embeddings
@@ -48,9 +54,6 @@ List all files
 
 Delete a file
 - **get_batch**: Retrieve batch status
-- **get_file_content**: Provide the file ID to access the stored data.
-
-Download file content
 - **get_file**: Specify the file ID to fetch its details.
 
 Retrieve file metadata
@@ -58,9 +61,6 @@ Retrieve file metadata
 
 List all batches
 - **rerank**: Rerank documents against a query
-- **upload_file**: Purpose must be "batch".
-
-Upload a file for batch inference
 
 
 ## 💬 Prompt Examples
@@ -145,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

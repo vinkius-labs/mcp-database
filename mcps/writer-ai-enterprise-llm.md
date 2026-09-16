@@ -33,28 +33,12 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 
 
 ## Available Tools (24)
-- **download_file**: Use the file ID to retrieve the content.
-
-Download the binary content of a file
 - **analyze_vision**: Provide the model, prompt, and variable mappings.
 
 Analyze images or documents using a prompt
-- **retry_application_job**: Pass the job ID of the job that needs reprocessing.
-
-Retry a failed application job
 - **create_graph**: Provide a unique name and optional description.
 
 Create a new Knowledge Graph
-- **add_file_to_graph**: Specify both the graph and file IDs.
-
-Add an uploaded file to a Knowledge Graph
-- **ask_question**: Provide the question and relevant graph IDs.
-
-Ask a question against one or more Knowledge Graphs (RAG)
-- **chat_completion**: Generate a chat completion using Writer models
-- **delete_file**: Supply the unique file ID.
-
-Permanently delete a file
 - **generate_application_content_async**: Provide the application ID and necessary input variables.
 
 Asynchronous generation using a no-code application (returns job_id)
@@ -76,6 +60,9 @@ List jobs for a specific application
 - **list_applications**: Use this tool to find available application IDs.
 
 List deployed no-code agents (applications)
+- **add_file_to_graph**: Specify both the graph and file IDs.
+
+Add an uploaded file to a Knowledge Graph
 - **list_files**: Specify sorting or pagination parameters.
 
 Retrieve a paginated list of uploaded files
@@ -87,9 +74,22 @@ Convert PDF to text or markdown (Deprecated)
 - **remove_file_from_graph**: Provide the graph and file IDs.
 
 Remove a file from a Knowledge Graph
+- **retry_application_job**: Pass the job ID of the job that needs reprocessing.
+
+Retry a failed application job
 - **text_completion**: Use this tool only for direct text generation.
 
 Generate text completions for a single prompt
+- **delete_file**: Supply the unique file ID.
+
+Permanently delete a file
+- **download_file**: Use the file ID to retrieve the content.
+
+Download the binary content of a file
+- **ask_question**: Provide the question and relevant graph IDs.
+
+Ask a question against one or more Knowledge Graphs (RAG)
+- **chat_completion**: Generate a chat completion using Writer models
 - **translate_text**: Specify the source and target language codes.
 
 Translate text between supported languages
@@ -183,4 +183,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

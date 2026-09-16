@@ -36,17 +36,17 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 
 
 ## Available Tools (11)
-- **get_account_info**: Get basic information for a specific account
-- **get_event**: Get detailed information for a specific event
+- **get_extrinsic**: Get detailed information for a specific extrinsic
+- **list_tokens**: Get a list of tokens on the network
 - **list_account_tokens**: List tokens held by an account
 - **list_account_transfers**: Get a list of transfers associated with an account
-- **list_events**: Get a list of events
-- **get_extrinsic**: Get detailed information for a specific extrinsic
-- **get_token**: Get detailed information for a specific token
-- **list_extrinsics**: Get a list of recent extrinsics (transactions)
-- **list_tokens**: Get a list of tokens on the network
 - **get_block**: Get detailed information for a specific block
+- **get_account_info**: Get basic information for a specific account
 - **list_blocks**: Get a list of recent blocks
+- **get_event**: Get detailed information for a specific event
+- **list_events**: Get a list of events
+- **list_extrinsics**: Get a list of recent extrinsics (transactions)
+- **get_token**: Get detailed information for a specific token
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,33 +34,77 @@ Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain.
 
 
 ## Available Tools (25)
-- **get_contract_entrypoints**: List available contract entrypoints
-- **get_contract_storage**: Get current or historical contract storage
-- **get_delegator_rewards**: Get delegator rewards per cycle
-- **get_operations_by_hash**: Get operations by transaction hash
+- **get_operations_by_hash**: Use the operation hash as the required parameter.
+
+Get operations by transaction hash
+- **list_bigmaps**: Use the limit and offset parameters for pagination.
+
+List all big maps
+- **list_token_transfers**: 2 or FA2). Pagination is required for large datasets.
+
+List token transfers (FA1.2 / FA2)
+- **get_account_report**: Supply the account address to generate the report.
+
+Generate a JSON report of account activity
+- **get_account**: Provide the account address as the required parameter.
+
+Get detailed information for a specific account
+- **get_baker_rewards**: The address is mandatory.
+
+Get baker rewards per cycle
+- **get_block**: Provide only one identifier.
+
+Get block details by level or hash
+- **get_contract_code**: Provide the desired format (0, 1, or 2).
+
+Get contract Michelson or Micheline code
+- **get_contract_entrypoints**: Provide the contract address.
+
+List available contract entrypoints
+- **get_contract_storage**: Specify the contract address.
+
+Get current or historical contract storage
+- **get_delegator_rewards**: The address is mandatory.
+
+Get delegator rewards per cycle
+- **get_head**: Get the current state of the indexer and blockchain head
 - **get_statistics**: Get network-wide statistics (TPS, volume, etc.)
 - **list_accounts**: Supports filtering by balance, activity, and type.
 
 List accounts with filters
-- **list_bigmaps**: List all big maps
-- **list_blocks**: List blocks with filters
-- **list_contracts**: List smart contracts with filters
-- **list_delegations**: List delegation operations
-- **list_staking**: List staking-related operations
-- **list_token_balances**: Get token balances for specific accounts
-- **list_token_definitions**: Get token metadata and definitions
-- **list_token_transfers**: List token transfers (FA1.2 / FA2)
-- **get_account**: Get detailed information for a specific account
-- **get_account_balance_history**: Get historical balance changes for an account
-- **get_account_report**: Generate a JSON report of account activity
-- **get_baker_rewards**: Get baker rewards per cycle
-- **get_block**: Get block details by level or hash
-- **get_contract_code**: Get contract Michelson or Micheline code
-- **get_head**: Get the current state of the indexer and blockchain head
-- **list_bigmap_keys**: List keys in a specific big map
-- **list_bigmap_updates**: Get update history for a big map
-- **list_originations**: List contract origination operations
-- **list_transactions**: List transactions with advanced filtering
+- **list_bigmap_keys**: Provide the big map ID, as this is a required parameter.
+
+List keys in a specific big map
+- **list_bigmap_updates**: You must provide the big map ID.
+
+Get update history for a big map
+- **list_blocks**: Specify at least one filter (level, proposer, or timestamp).
+
+List blocks with filters
+- **list_contracts**: Use filters to narrow the search results.
+
+List smart contracts with filters
+- **list_delegations**: Use the limit and offset parameters for pagination.
+
+List delegation operations
+- **list_originations**: Use the limit and offset parameters for pagination.
+
+List contract origination operations
+- **list_staking**: Use pagination to handle large result sets.
+
+List staking-related operations
+- **list_token_balances**: You must provide at least one account address or token ID.
+
+Get token balances for specific accounts
+- **list_token_definitions**: Use pagination for large lists.
+
+Get token metadata and definitions
+- **list_transactions**: Specify filters for sender, target, or amount.
+
+List transactions with advanced filtering
+- **get_account_balance_history**: Provide the account address as the required parameter.
+
+Get historical balance changes for an account
 
 
 ## 💬 Prompt Examples
@@ -145,4 +189,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
