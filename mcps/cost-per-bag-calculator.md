@@ -14,10 +14,10 @@ The Cost-per-Bag Calculator is an agricultural economics engine designed to help
 
 
 ## Available Tools (4)
+- **calculate_unit_cost**: Calculate the cost per single bag of production
 - **analyze_cost_distribution**: Analyze the distribution of costs
 - **compare_regional_benchmark**: Compare user costs and yields against regional industry averages
 - **calculate_total_area_cost**: Calculate the total cost per hectare
-- **calculate_unit_cost**: Calculate the cost per single bag of production
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
