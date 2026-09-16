@@ -44,12 +44,6 @@ Your AI acts as a gateway to Cursor's team analytics — pull usage insights, tr
 
 
 ## Available Tools (12)
-- **get_agent_edits**: Supports date range filters and optional user filtering by comma-separated emails or IDs. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
-
-Get AI-suggested code edit metrics for your team
-- **get_ask_mode_adoption**: Ask mode lets users ask questions about their codebase — useful for tracking this workflow. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
-
-Get ask mode adoption metrics for your team
 - **get_client_versions**: Useful for tracking upgrade adoption and identifying outdated installations. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
 
 Get the distribution of Cursor client versions across your team
@@ -65,21 +59,27 @@ Get the team leaderboard ranked by AI usage metrics
 - **get_mcp_adoption**: Useful for understanding which MCP servers and tools your team integrates most. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
 
 Get MCP tool adoption metrics for your team
-- **get_model_usage**: Useful for understanding which AI models your team prefers. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
-
-Get AI model usage breakdown for your team
 - **get_plans_adoption**: Plan mode lets Cursor plan before coding — useful for tracking adoption of this workflow. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
 
 Get plan mode adoption metrics for your team
-- **get_skills_adoption**: Useful for understanding which Cursor skills your team leverages most. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
-
-Get skills adoption metrics for your team
 - **get_tab_usage**: Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
 
 Get tab autocomplete usage metrics for your team
 - **get_top_file_extensions**: Useful for understanding which languages your team codes in most. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
 
 Get the top 5 file extensions per day by suggestion volume
+- **get_agent_edits**: Supports date range filters and optional user filtering by comma-separated emails or IDs. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
+
+Get AI-suggested code edit metrics for your team
+- **get_ask_mode_adoption**: Ask mode lets users ask questions about their codebase — useful for tracking this workflow. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
+
+Get ask mode adoption metrics for your team
+- **get_model_usage**: Useful for understanding which AI models your team prefers. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
+
+Get AI model usage breakdown for your team
+- **get_skills_adoption**: Useful for understanding which Cursor skills your team leverages most. Supports date range filters and optional user filtering. Date shortcuts: 7d, 30d, today, yesterday, now, ISO 8601, YYYY-MM-DD, or Unix timestamps.
+
+Get skills adoption metrics for your team
 
 
 ## 💬 Prompt Examples
@@ -170,4 +170,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

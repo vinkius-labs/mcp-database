@@ -14,8 +14,8 @@ This MCP server provides a specialized engine to evaluate the rhythmic flow and 
 
 
 ## Available Tools (4)
-- **check_repetition**: Detects repetitive linguistic patterns
 - **evaluate_scannability**: Evaluates visual scannability of text
+- **check_repetition**: Detects repetitive linguistic patterns
 - **analyze_rhythm**: Analyzes the rhythmic cadence of prose
 - **calculate_structure**: Quantifies structural complexity and punctuation
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
