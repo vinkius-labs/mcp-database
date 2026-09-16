@@ -34,20 +34,20 @@ Connect your **OneSoil** account to any AI agent to streamline precision farming
 
 ## Available Tools (9)
 - **get_field**: Retrieve details for a specific field
-- **list_images**: List available satellite images for a field
-- **get_ndvi**: Get historical NDVI values for a field
-- **list_fields**: List all fields in your account
 - **get_weather_forecast**: Provide latitude and longitude.
 
 Get a 7-day weather forecast for field coordinates
 - **get_weather_history**: Provide latitude and longitude.
 
 Get historical weather data for field coordinates
+- **delete_field**: Remove a field
 - **create_field**: Create a new field boundary
 - **get_current_weather**: Provide latitude and longitude.
 
 Get current weather for field coordinates
-- **delete_field**: Remove a field
+- **list_images**: List available satellite images for a field
+- **get_ndvi**: Get historical NDVI values for a field
+- **list_fields**: List all fields in your account
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

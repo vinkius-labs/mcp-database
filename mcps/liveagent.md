@@ -34,27 +34,25 @@ Connect your **LiveAgent** helpdesk to any AI agent and manage your customer sup
 
 
 ## Available Tools (16)
-- **get_conversation**: Retrieve conversation details (v1)
-- **get_agent**: Retrieve agent info and auth token (v1)
-- **get_settings**: Retrieve account settings (v3)
-- **list_customer_groups**: List customer groups (v1)
-- **list_phone_numbers**: Uses cursor-based pagination.
-
-Retrieve phone numbers (v3)
-- **list_ticket_history**: Uses cursor-based pagination.
-
-Retrieve ticket history (v3)
+- **add_customer_fields**: Add custom field values to a customer (v1)
+- **add_conversation_message**: Add a new message or note to a conversation (v1)
 - **list_calls**: Uses cursor-based pagination.
 
 Retrieve call records (v3)
-- **add_customer_fields**: Add custom field values to a customer (v1)
 - **list_companies**: List all companies (v1)
-- **add_conversation_message**: Add a new message or note to a conversation (v1)
-- **delete_conversation**: Delete a conversation (v1)
-- **get_company**: Retrieve company info (v1)
 - **list_conversations**: Supports optional filtering parameters.
 
 List all conversations/tickets (v1)
+- **delete_conversation**: Delete a conversation (v1)
+- **get_company**: Retrieve company info (v1)
+- **get_conversation**: Retrieve conversation details (v1)
+- **list_phone_numbers**: Uses cursor-based pagination.
+
+Retrieve phone numbers (v3)
+- **get_settings**: Retrieve account settings (v3)
+- **list_ticket_history**: Uses cursor-based pagination.
+
+Retrieve ticket history (v3)
 - **list_tickets**: Supports simple or advanced JSON filters (e.g. {"status":"N"} or [["date_created","DP","TW"]]).
 
 Retrieve a list of tickets (v3)
@@ -62,6 +60,8 @@ Retrieve a list of tickets (v3)
 
 Retrieve time reports (v3)
 - **update_conversation_status**: Change conversation status (v1)
+- **get_agent**: Retrieve agent info and auth token (v1)
+- **list_customer_groups**: List customer groups (v1)
 
 
 ## 💬 Prompt Examples
@@ -146,4 +146,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

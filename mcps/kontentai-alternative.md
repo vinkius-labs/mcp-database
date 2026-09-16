@@ -33,30 +33,58 @@ Connect your **Kontent.ai** project to any AI agent to streamline your headless 
 
 
 ## Available Tools (22)
-- **manage_delete_item**: Delete a content item via Management API
-- **manage_create_taxonomy**: Create a taxonomy via Management API
-- **manage_create_type**: Create a content type via Management API
-- **manage_delete_asset**: Delete an asset via Management API
-- **manage_update_variant**: Update a language variant of a content item
+- **manage_list_types**: List content types via Management API
+- **delivery_get_item**: Get a single content item via Delivery API
 - **delivery_list_items**: ai project. Supports filtering and depth.
 
 List content items via Delivery API
 - **delivery_list_taxonomies**: List taxonomies via Delivery API
 - **delivery_list_types**: List content types via Delivery API
-- **delivery_get_item**: Get a single content item via Delivery API
-- **manage_create_asset**: Create an asset via Management API
-- **manage_create_item**: Create a content item via Management API
-- **manage_delete_taxonomy**: Delete a taxonomy via Management API
-- **manage_delete_type**: Delete a content type via Management API
-- **manage_get_variant**: Get a language variant of a content item
 - **manage_list_assets**: List assets via Management API
+- **manage_create_asset**: Pass the asset details in the JSON body.
+
+Create an asset via Management API
+- **manage_create_item**: Provide a valid JSON payload in the body.
+
+Create a content item via Management API
+- **manage_create_type**: Provide the type details in the JSON body.
+
+Create a content type via Management API
+- **manage_delete_asset**: Specify the internal ID of the asset to be removed.
+
+Delete an asset via Management API
+- **manage_delete_item**: You must provide the internal ID of the item to delete.
+
+Delete a content item via Management API
+- **manage_delete_taxonomy**: Pass the internal taxonomy ID.
+
+Delete a taxonomy via Management API
+- **manage_delete_type**: Provide the type ID as the sole argument.
+
+Delete a content type via Management API
+- **manage_get_variant**: Supply both the item ID and the language ID.
+
+Get a language variant of a content item
 - **manage_list_items**: List content items via Management API
 - **manage_list_taxonomies**: List taxonomies via Management API
-- **manage_list_types**: List content types via Management API
-- **manage_update_asset**: Update an asset via Management API
-- **manage_update_item**: Update a content item via Management API
-- **manage_update_taxonomy**: Update a taxonomy via Management API
-- **manage_update_type**: Update a content type via Management API
+- **manage_update_asset**: Provide the asset ID and the update payload.
+
+Update an asset via Management API
+- **manage_update_item**: Specify the item ID and the update payload.
+
+Update a content item via Management API
+- **manage_update_taxonomy**: Supply the taxonomy ID and the update payload.
+
+Update a taxonomy via Management API
+- **manage_update_type**: Supply the type ID and the update payload.
+
+Update a content type via Management API
+- **manage_update_variant**: Supply the item ID, language ID, and the variant payload.
+
+Update a language variant of a content item
+- **manage_create_taxonomy**: Pass the full payload as a JSON string.
+
+Create a taxonomy via Management API
 
 
 ## 💬 Prompt Examples
@@ -141,4 +169,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

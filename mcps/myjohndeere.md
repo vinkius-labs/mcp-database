@@ -37,11 +37,11 @@ Connect your **MyJohnDeere** account to any AI agent to monitor and manage your 
 - **list_assets**: List assets (equipment) for an organization
 - **list_boundaries**: List boundaries for a specific field
 - **list_fields**: List fields for an organization
-- **list_files**: List files (data) for an organization
-- **list_machine_measurements**: List measurements for a specific machine
 - **list_organizations**: g., farms, dealerships) available to the authenticated user.
 
 List MyJohnDeere organizations
+- **list_files**: List files (data) for an organization
+- **list_machine_measurements**: List measurements for a specific machine
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

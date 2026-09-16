@@ -34,11 +34,11 @@ Connect your **Mono** account to any AI agent to access real-time financial data
 
 
 ## Available Tools (5)
-- **get_account**: Get Mono account details
 - **get_statement**: Get bank statement for a Mono account
-- **get_transactions**: Get transactions for a Mono account
 - **initiate_payment**: Initiate a direct bank transfer
+- **get_account**: Get Mono account details
 - **get_identity**: Get identity information for a Mono account
+- **get_transactions**: Get transactions for a Mono account
 
 
 ## 💬 Prompt Examples
@@ -123,4 +123,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
