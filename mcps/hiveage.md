@@ -37,22 +37,32 @@ No more manual navigating through complex billing tabs. Your AI assistant acts a
 
 
 ## Available Tools (12)
-- **list_billing_items**: List saved items and services used for invoicing
-- **get_api_profile**: Retrieve information about the authenticated account
-- **get_estimate_details**: Get detailed information about a specific estimate
-- **list_customers**: List all connections (customers/vendors) in your network
-- **list_estimates**: List all estimates (quotations) in Hiveage
-- **list_invoice_payments**: List all payments recorded for a specific invoice
 - **record_payment**: Pass details as a JSON string in "body_json" (requires amount, date, and payment_method).
 
 Record a manual payment against an invoice
-- **get_customer_details**: Get detailed profile information for a network connection
-- **get_invoice_details**: Get detailed information about a specific invoice
-- **send_invoice_email**: Deliver an invoice to the customer via email
+- **get_customer_details**: Provide the unique hash key of the connection.
+
+Get detailed profile information for a network connection
+- **get_estimate_details**: Provide the unique hash key of the estimate.
+
+Get detailed information about a specific estimate
+- **get_invoice_details**: Provide the unique hash key of the invoice.
+
+Get detailed information about a specific invoice
+- **get_api_profile**: Retrieve information about the authenticated account
+- **list_estimates**: List all estimates (quotations) in Hiveage
+- **list_customers**: List all connections (customers/vendors) in your network
+- **list_invoice_payments**: Provide the unique hash key of the invoice.
+
+List all payments recorded for a specific invoice
+- **list_tax_profiles**: List all configured tax profiles
+- **list_billing_items**: List saved items and services used for invoicing
+- **send_invoice_email**: Provide the unique hash key of the invoice.
+
+Deliver an invoice to the customer via email
 - **list_invoices**: Use this to monitor billing and find hash keys for specific invoice actions.
 
 List all invoices in your Hiveage account
-- **list_tax_profiles**: List all configured tax profiles
 
 
 ## 💬 Prompt Examples
@@ -140,4 +150,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

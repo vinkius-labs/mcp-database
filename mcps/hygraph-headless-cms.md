@@ -35,18 +35,18 @@ Connect your **Hygraph** project to any AI agent and take full control of your f
 
 
 ## Available Tools (10)
-- **create_cms_document**: Dispatch an automated validation check routing Dynamic Model creation
-- **publish_cms_document**: Perform structural extraction of properties driving an explicit Live shift
+- **wipe_cms_document**: Irreversibly vaporize explicit Content arrays returning clean states
+- **list_project_locales**: Identify precise active arrays spanning Translation spaces
+- **get_model_fields**: Inspect deep internal arrays mitigating specific Content configurations
+- **list_media_assets**: Enumerate explicitly attached structured rules defining Media limits
 - **execute_graphql_mutation**: Provision a highly-available JSON Payload resolving direct Schema writes
 - **execute_graphql_query**: Identify bounded routing spaces inside the Headless Hygraph limits using pure GraphQL
-- **list_media_assets**: Enumerate explicitly attached structured rules defining Media limits
-- **list_project_locales**: Identify precise active arrays spanning Translation spaces
-- **update_cms_document**: Mutate globalThis Web CRM boundaries substituting Draft values safely
-- **wipe_cms_document**: Irreversibly vaporize explicit Content arrays returning clean states
-- **get_model_fields**: Inspect deep internal arrays mitigating specific Content configurations
+- **update_cms_document**: Mutate global Web CRM boundaries substituting Draft values safely
+- **create_cms_document**: Dispatch an automated validation check routing Dynamic Model creation
 - **list_schema_introspection**: types` executing an introspection determining automatically which Models the Project hosts.
 
 Retrieve explicit Cloud logging tracing Model names
+- **publish_cms_document**: Perform structural extraction of properties driving an explicit Live shift
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
