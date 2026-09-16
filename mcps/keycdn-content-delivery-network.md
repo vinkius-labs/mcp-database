@@ -35,21 +35,21 @@ Connect your **KeyCDN** account to any AI agent and take full control of your gl
 
 
 ## Available Tools (10)
-- **add_pull_zone**: Create a new KeyCDN pull zone
+- **purge_zone_cache_all**: Purge the entire cache for a KeyCDN zone
 - **add_zone_alias**: g. assets.company.com) to an existing KeyCDN zone. DNS CNAME records should be updated accordingly.
 
 Add a custom domain alias to a KeyCDN zone
+- **add_pull_zone**: Create a new KeyCDN pull zone
+- **delete_zone_alias**: Delete a custom domain alias from a KeyCDN zone
 - **delete_zone**: Instantly revokes wildcard subdomains and drops proxy connections natively.
 
 Delete a specific KeyCDN zone
-- **delete_zone_alias**: Delete a custom domain alias from a KeyCDN zone
 - **get_zone**: Get details for a specific KeyCDN zone
 - **list_zone_aliases**: List custom domain aliases for all zones
+- **list_traffic_reports**: List traffic bandwidth consumption reports
 - **purge_specific_url**: g., `/app.css`), avoiding a full zone cache purge.
 
 Purge a specific cached URL in a KeyCDN zone
-- **list_traffic_reports**: List traffic bandwidth consumption reports
-- **purge_zone_cache_all**: Purge the entire cache for a KeyCDN zone
 - **list_zones**: Returns immutable `.kxcdn.com` endpoints and zone configurations.
 
 List all KeyCDN zones
@@ -137,4 +137,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

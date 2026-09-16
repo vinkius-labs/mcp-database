@@ -31,9 +31,15 @@ Unleash the full potential of your **LeadConnector** (GoHighLevel) CRM straight 
 
 
 ## Available Tools (3)
-- **list_contacts**: List contacts in LeadConnector
-- **list_opportunities**: List opportunities across pipelines
-- **list_appointments**: List calendar appointments
+- **list_contacts**: Provide a location_id to scope the search results.
+
+List contacts in LeadConnector
+- **list_opportunities**: Specify a location_id to filter results.
+
+List opportunities across pipelines
+- **list_appointments**: Must provide a location_id.
+
+List calendar appointments
 
 
 ## 💬 Prompt Examples
@@ -118,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

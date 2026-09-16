@@ -35,19 +35,19 @@ Connect your **Lambda Labs** account to any AI agent and take full control of yo
 
 
 ## Available Tools (7)
-- **list_ssh_keys**: Enumerate globally managed SSH public keys in Lambda
-- **list_filesystems**: Map persistent shared NAS volumes living in the Lambda ecosystem
-- **get_instance**: Get exact details and SSH connection string for a specific instance
 - **launch_instance**: g., powerful H100 or A100 boxes). Injects explicit SSH keys into the runtime so it is securely accessible over port 22 immediately upon boot.
 
 Provision a new Lambda GPU virtual machine
+- **list_ssh_keys**: Enumerate globally managed SSH public keys in Lambda
 - **list_instances**: List running GPU instances on Lambda Cloud
-- **list_instance_types**: Exposes exact catalog configurations of available GPU node types, identifying exactly which regions currently hold physical availability.
-
-Discover available Lambda GPU instance specifications and pricing
+- **get_instance**: Get exact details and SSH connection string for a specific instance
 - **terminate_instances**: Any ephemeral drives attached will be vaporized immediately without backup. Extremely destructive; stops billing instantly.
 
 Permanently terminate and destroy Lambda GPU instances
+- **list_instance_types**: Exposes exact catalog configurations of available GPU node types, identifying exactly which regions currently hold physical availability.
+
+Discover available Lambda GPU instance specifications and pricing
+- **list_filesystems**: Map persistent shared NAS volumes living in the Lambda ecosystem
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
