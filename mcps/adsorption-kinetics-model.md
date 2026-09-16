@@ -15,8 +15,8 @@ This MCP server provides specialized tools for modeling the rate of adsorption o
 
 ## Available Tools (4)
 - **analyze_diffusion_mechanism**: Evaluates whether the rate-limiting step is intraparticle diffusion
-- **analyze_pseudo_models**: Determines if the adsorption process follows Pseudo-First-Order or Pseudo-Second-Order kinetics
 - **calculate_adsorption_efficiency**: Determines how much of the total capacity has been reached at a specific time
+- **analyze_pseudo_models**: Determines if the adsorption process follows Pseudo-First-Order or Pseudo-Second-Order kinetics
 - **compare_kinetic_fits**: Provides a comprehensive comparison of all calculated kinetic parameters
 
 
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

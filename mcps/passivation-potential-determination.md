@@ -14,10 +14,10 @@ This MCP server provides specialized tools for electrochemical analysis of activ
 
 
 ## Available Tools (4)
-- **analyze_passivation_peaks**: Identifies the primary passivation point from a set of potential and current data
 - **calculate_flade_potential**: Determines the potential at which passivity is lost
-- **detect_pitting_breakdown**: Identifies the potential at which the passive film fails
 - **evaluate_passive_stability**: Measures the current density during the stable passive state
+- **analyze_passivation_peaks**: Identifies the primary passivation point from a set of potential and current data
+- **detect_pitting_breakdown**: Identifies the potential at which the passive film fails
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

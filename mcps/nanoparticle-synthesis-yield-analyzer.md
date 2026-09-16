@@ -14,10 +14,10 @@ This MCP server provides specialized chemical analysis tools for nanoparticle sy
 
 
 ## Available Tools (4)
-- **get_stoichiometry_analysis**: Identifies the limiting reactant and theoretical mass limit
-- **get_mass_balance_report**: Analyzes mass distribution during the reaction
 - **get_particle_count**: Calculates the number of individual particles produced
+- **get_stoichiometry_analysis**: Identifies the limiting reactant and theoretical mass limit
 - **get_yield_metrics**: Calculates yield and efficiency of nanoparticle synthesis
+- **get_mass_balance_report**: Analyzes mass distribution during the reaction
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
