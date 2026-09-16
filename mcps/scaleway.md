@@ -33,8 +33,8 @@ Connect your **Scaleway** account to any AI agent to manage your cloud infrastru
 
 
 ## Available Tools (3)
-- **list_instances**: List Scaleway instances (servers) in a specific zone
 - **create_instance**: Create a new Scaleway instance (server)
+- **list_instances**: List Scaleway instances (servers) in a specific zone
 - **perform_instance_action**: Perform an action on a Scaleway instance (e.g., poweron, poweroff)
 
 
@@ -120,4 +120,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

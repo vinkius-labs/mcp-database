@@ -37,16 +37,16 @@ Connect your **Scale AI** account to any AI agent to orchestrate large-scale dat
 - **cancel_task**: Optionally clears the unique_id to reuse it.
 
 Cancel a pending task
-- **create_batch**: Create a new batch
 - **create_image_annotation_task**: Create an Image Annotation task
 - **create_named_entity_recognition_task**: Create a Named Entity Recognition task
-- **create_project**: Create a new Scale project
 - **create_segment_annotation_task**: Create a Semantic Segmentation task
 - **create_text_collection_task**: Create a Text Collection task
 - **create_video_playback_annotation_task**: Create a Video Annotation task
 - **finalize_batch**: Finalize a batch
 - **get_task**: Retrieve a specific task
 - **update_project_params**: Update project parameters
+- **create_batch**: Create a new batch
+- **create_project**: Create a new Scale project
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

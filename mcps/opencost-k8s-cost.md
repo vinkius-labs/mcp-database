@@ -37,11 +37,11 @@ Connect your **OpenCost** instance to any AI agent to gain real-time visibility 
 - **set_log_level**: Change OpenCost log level at runtime
 - **get_assets**: Retrieve backing cost data broken down by individual assets
 - **get_cloud_cost**: Retrieve cloud cost data directly from cloud provider billing reports
+- **get_custom_cost_total**: Get summary of third-party costs over a window
 - **get_allocation**: Query costs and resources allocated to Kubernetes workloads
 - **get_custom_cost_timeseries**: g., Datadog, MongoDB Atlas).
 
 Get samples of third-party service costs over time steps
-- **get_custom_cost_total**: Get summary of third-party costs over a window
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

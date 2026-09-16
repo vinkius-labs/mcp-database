@@ -34,6 +34,9 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 
 
 ## Available Tools (29)
+- **add_projects_to_folder**: Provide the workspace, folder ID, and list of project IDs.
+
+Add projects to a folder (Enterprise)
 - **list_workspace_projects**: Provide the workspace ID or slug.
 
 List information about a workspace and its projects
@@ -41,15 +44,12 @@ List information about a workspace and its projects
 - **start_training**: Provide the workspace, project, and version ID.
 
 Start training a model on a dataset version
-- **cancel_training**: Provide the workspace, project, and version ID.
-
-Cancel an active training job
-- **add_projects_to_folder**: Provide the workspace, folder ID, and list of project IDs.
-
-Add projects to a folder (Enterprise)
 - **auto_label**: Specify the workspace, project, and batch ID.
 
 Start an auto-labeling job using foundation models
+- **cancel_training**: Provide the workspace, project, and version ID.
+
+Cancel an active training job
 - **create_annotation_job**: Provide the workspace, project, and batch ID.
 
 Assign a batch of images to a labeler and reviewer
@@ -199,4 +199,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

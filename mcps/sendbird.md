@@ -36,24 +36,24 @@ No more navigating complex dashboards to moderate a user or check channel status
 
 
 ## Available Tools (18)
-- **create_group_channel**: Create a group channel
-- **create_open_channel**: Create an open channel
-- **delete_open_channel**: Delete an open channel
-- **leave_group_channel**: Leave a group channel
-- **list_users**: List Sendbird users
-- **send_bot_message**: Send a message via bot
-- **update_open_channel**: Update an open channel
-- **join_group_channel**: Join a group channel
-- **ban_user**: Ban a user from a channel
 - **block_user**: Block a user
 - **create_bot**: Create a bot
+- **create_group_channel**: Create a group channel
+- **create_open_channel**: Create an open channel
 - **create_user**: Create a new Sendbird user
 - **freeze_channel**: Freeze a channel
 - **get_open_channel**: Get an open channel by URL
 - **invite_group_channel**: Invite users to a group channel
+- **leave_group_channel**: Leave a group channel
 - **list_open_channels**: List open channels
+- **list_users**: List Sendbird users
 - **mute_user**: Mute a user in a channel
+- **send_bot_message**: Send a message via bot
 - **send_message**: Send a message to a channel
+- **update_open_channel**: Update an open channel
+- **join_group_channel**: Join a group channel
+- **ban_user**: Ban a user from a channel
+- **delete_open_channel**: Delete an open channel
 
 
 ## 💬 Prompt Examples
@@ -138,4 +138,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

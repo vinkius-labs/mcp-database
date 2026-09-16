@@ -35,37 +35,85 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 
 
 ## Available Tools (31)
-- **presence_here_now**: Get current channel occupancy (Here Now)
-- **presence_where_now**: Get channels a user is in (Where Now)
-- **publish_message**: Publish a message to a channel
+- **admin_list_keysets**: No parameters are needed.
+
+List all keysets (Admin API)
+- **delete_file**: You must provide the channel, file ID, and file name.
+
+Delete a file from a channel
 - **delete_message_history**: Delete message history for channels
-- **generate_file_upload_url**: Generate a file upload URL
-- **get_file_url**: Get a file URL
-- **get_memberships**: Get memberships for a user (App Context)
-- **get_message_count**: Get message count for channels
-- **get_message_history**: Get message history for channels
-- **get_user**: Get a specific user (App Context)
-- **list_files**: List files in a channel
-- **pam_revoke_token**: Revoke a PAM v3 token
-- **presence_get_state**: Get presence state for a user in a channel
-- **presence_heartbeat**: Send presence heartbeat
-- **push_manage**: Manage or list push notification channels for a device (APNS v2)
-- **push_remove_all**: Remove all push notification channels for a device (APNS v2)
-- **remove_user**: Remove a user (App Context)
-- **set_memberships**: Set or update memberships for a user (App Context)
-- **admin_get_metrics**: Get usage metrics (Admin API)
-- **admin_list_apps**: List all PubNub apps (Admin API)
-- **admin_list_keysets**: List all keysets (Admin API)
+- **generate_file_upload_url**: Specify both the target channel and the desired file name.
+
+Generate a file upload URL
 - **get_all_channels**: Get all channels (App Context)
-- **admin_create_app**: Create a new PubNub app (Admin API)
-- **delete_file**: Delete a file from a channel
 - **get_all_users**: Get all users (App Context)
-- **get_channel**: Get a specific channel (App Context)
+- **get_channel**: Provide the channel name as the required argument.
+
+Get a specific channel (App Context)
+- **get_file_url**: Provide the channel, file ID, and file name.
+
+Get a file URL
+- **get_memberships**: Pass the user’s UUID to fetch the data.
+
+Get memberships for a user (App Context)
+- **get_message_history**: Get message history for channels
+- **list_files**: Only the channel name is required.
+
+List files in a channel
+- **get_message_count**: Get message count for channels
 - **pam_grant_token**: Grant a PAM v3 token
-- **presence_leave**: Leave a channel (Presence)
-- **presence_set_state**: Set presence state for a user in a channel
-- **set_channel**: Set or update a channel (App Context)
-- **set_user**: Set or update a user (App Context)
+- **presence_get_state**: Specify both the channel and the user UUID.
+
+Get presence state for a user in a channel
+- **presence_heartbeat**: Use this when a user remains connected to a channel.
+
+Send presence heartbeat
+- **presence_here_now**: Provide the channel name to check occupancy.
+
+Get current channel occupancy (Here Now)
+- **presence_leave**: Specify the channel name when calling this function.
+
+Leave a channel (Presence)
+- **presence_set_state**: Provide the channel, user UUID, and desired state object.
+
+Set presence state for a user in a channel
+- **presence_where_now**: Pass the user’s UUID to query their location.
+
+Get channels a user is in (Where Now)
+- **publish_message**: Publish a message to a channel
+- **push_manage**: Provide a valid device token.
+
+Manage or list push notification channels for a device (APNS v2)
+- **remove_user**: Provide the UUID of the user to be deleted.
+
+Remove a user (App Context)
+- **set_channel**: Supply the channel name and the metadata object.
+
+Set or update a channel (App Context)
+- **set_memberships**: Provide the user UUID and the new membership data.
+
+Set or update memberships for a user (App Context)
+- **set_user**: Must provide both the user UUID and the data object.
+
+Set or update a user (App Context)
+- **pam_revoke_token**: Pass the token string that needs to be invalidated.
+
+Revoke a PAM v3 token
+- **admin_get_metrics**: No parameters are needed.
+
+Get usage metrics (Admin API)
+- **admin_create_app**: Pass the required app creation payload.
+
+Create a new PubNub app (Admin API)
+- **admin_list_apps**: No parameters are needed.
+
+List all PubNub apps (Admin API)
+- **get_user**: Must provide a valid user UUID.
+
+Get a specific user (App Context)
+- **push_remove_all**: Pass the device token to execute the removal.
+
+Remove all push notification channels for a device (APNS v2)
 
 
 ## 💬 Prompt Examples
@@ -150,4 +198,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
