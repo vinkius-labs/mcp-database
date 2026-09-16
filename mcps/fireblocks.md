@@ -34,46 +34,90 @@ Connect your **Fireblocks** workspace to any AI agent to orchestrate institution
 
 
 ## Available Tools (40)
-- **create_vault_account_asset_address**: Generate a new deposit address
-- **get_vault_account_asset**: Get balance for a specific asset in a vault
+- **add_contract**: Supply the required request body payload.
+
+Add a new contract to the whitelist
+- **cancel_transaction**: Must use the transaction ID.
+
+Cancel a pending transaction
+- **create_external_wallet**: Supply the required request body payload.
+
+Create a new external wallet container
+- **create_internal_wallet**: Supply the required request body payload.
+
+Create a new internal wallet container
+- **create_transaction**: ). Supply the required request body payload.
+
+Create a new transaction (Transfer, Mint, Burn, etc.)
+- **create_vault_account_asset_address**: Provide the vault and asset IDs.
+
+Generate a new deposit address
+- **create_vault_account_asset**: Include the vault and asset IDs.
+
+Create a new wallet for an asset in a vault
+- **create_vault_account**: Create a new vault account
+- **create_webhook**: Pass the necessary payload details in the request body.
+
+Create a new webhook subscription
+- **drop_transaction**: Requires the transaction ID.
+
+Drop an ETH/EVM transaction
+- **estimate_fee**: Supply the required request body payload.
+
+Estimate fees for a potential transaction
+- **estimate_network_fee**: Get current network fee estimates for an asset
+- **get_contract_asset**: Provide both the contract and asset IDs.
+
+Get details for a contract asset
+- **get_screening_transaction**: Use the transaction ID as the primary input.
+
+Get compliance screening results for a transaction
+- **get_gas_station**: Retrieve gas station settings
+- **get_transaction**: Use the unique transaction ID.
+
+Get details of a specific transaction
+- **get_vault_account_asset**: Provide both the vault and asset IDs.
+
+Get balance for a specific asset in a vault
+- **get_vault_account**: Provide the required Vault Account ID.
+
+Retrieve details for a specific vault account
+- **list_assets**: List all supported assets
 - **list_blockchains**: List all supported blockchains
 - **list_contracts**: List whitelisted contracts
+- **list_external_wallets**: List all external wallets
 - **list_internal_wallets**: List all internal wallets
 - **list_staking_chains**: List supported staking chains
-- **list_vault_accounts**: List vault accounts with pagination
-- **list_webhook_notifications**: List notifications sent to a webhook
-- **resend_webhooks**: Resend failed webhooks
-- **update_vault_account**: Rename a vault account
-- **validate_travel_rule**: Validate a transaction against Travel Rule requirements
-- **create_internal_wallet**: Create a new internal wallet container
-- **create_transaction**: Create a new transaction (Transfer, Mint, Burn, etc.)
-- **create_vault_account**: Create a new vault account
-- **create_vault_account_asset**: Create a new wallet for an asset in a vault
-- **get_contract_asset**: Get details for a contract asset
-- **get_vault_account**: Retrieve details for a specific vault account
-- **list_external_wallets**: List all external wallets
-- **list_owned_nfts**: List all owned NFT tokens
-- **list_vault_account_asset_addresses**: List deposit addresses for an asset
-- **refresh_nfts**: Refresh NFT data for a vault account
-- **register_asset**: Register a custom asset (e.g., ERC-20)
-- **stake_position**: Initiate a staking position
-- **update_gas_station**: Update auto-fueling thresholds
-- **create_webhook**: Create a new webhook subscription
-- **drop_transaction**: Drop an ETH/EVM transaction
-- **estimate_fee**: Estimate fees for a potential transaction
-- **estimate_network_fee**: Get current network fee estimates for an asset
-- **get_gas_station**: Retrieve gas station settings
-- **get_public_key_info**: Get the public key for a specific derivation path
-- **get_screening_transaction**: Get compliance screening results for a transaction
-- **get_transaction**: Get details of a specific transaction
-- **list_assets**: List all supported assets
-- **add_asset_to_wallet**: Add an asset/address to a wallet
-- **add_contract**: Add a new contract to the whitelist
-- **cancel_transaction**: Cancel a pending transaction
-- **create_external_wallet**: Create a new external wallet container
-- **list_staking_positions**: List active staking positions
 - **list_transactions**: Retrieve transaction history with filters
 - **list_vasps**: List Virtual Asset Service Providers (VASPs)
+- **list_vault_account_asset_addresses**: Supply both the vault and asset IDs.
+
+List deposit addresses for an asset
+- **refresh_nfts**: Refresh NFT data for a vault account
+- **register_asset**: Provide the necessary asset details in the request body.
+
+Register a custom asset (e.g., ERC-20)
+- **resend_webhooks**: Do not use this tool for general webhook testing.
+
+Resend failed webhooks
+- **stake_position**: Ensure the request body contains all necessary staking parameters.
+
+Initiate a staking position
+- **update_gas_station**: Update auto-fueling thresholds
+- **update_vault_account**: Supply both the Vault Account ID and the new name payload.
+
+Rename a vault account
+- **validate_travel_rule**: Validate a transaction against Travel Rule requirements
+- **add_asset_to_wallet**: Specify the wallet type, ID, and asset ID.
+
+Add an asset/address to a wallet
+- **list_owned_nfts**: List all owned NFT tokens
+- **list_staking_positions**: List active staking positions
+- **list_vault_accounts**: List vault accounts with pagination
+- **list_webhook_notifications**: Provide the required webhook ID.
+
+List notifications sent to a webhook
+- **get_public_key_info**: Get the public key for a specific derivation path
 
 
 ## 💬 Prompt Examples
@@ -158,4 +202,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,52 +34,36 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 
 
 ## Available Tools (28)
-- **create_playlist**: You must provide a title and genre for the playlist.
-
-Create a new playlist (Requires Auth)
-- **get_artist_playlists**: Supply the artist slug to identify the source.
-
-Get artist playlists
-- **search_autosuggest**: Provide a search query to get suggestions.
-
-Get search autosuggestions
-- **add_track_to_playlist**: You must specify both the playlist ID and the music ID.
-
-Add a track to a playlist (Requires Auth)
 - **get_artist**: Supply the artist’s slug.
 
 Get artist profile info
-- **get_artist_favorites**: Provide the artist slug to target the correct data.
-
-Get artist favorites
 - **get_playlist_by_id**: Provide the ID to fetch the details.
 
 Get playlist info by ID
 - **repost_music**: Supply the unique identifier of the content to be reposted.
 
 Repost a track or album (Requires Auth)
-- **unfollow_artist**: Supply the artist’s slug.
+- **add_track_to_playlist**: You must specify both the playlist ID and the music ID.
 
-Unfollow an artist (Requires Auth)
-- **get_artist_followers**: Provide the artist slug, as this is a required parameter.
+Add a track to a playlist (Requires Auth)
+- **create_playlist**: You must provide a title and genre for the playlist.
 
-Get followers of an artist
-- **get_recent_music**: Get most recent music
-- **delete_playlist**: Supply the unique playlist ID to confirm deletion.
-
-Delete a playlist (Requires Auth)
-- **favorite_music**: Use this tool only when the user explicitly requests favoriting content.
-
-Favorite a track or album (Requires Auth)
-- **flag_music_unplayable**: Supply both the artist and music slugs.
-
-Flag a track or album as unplayable
+Create a new playlist (Requires Auth)
 - **follow_artist**: Supply the artist’s slug.
 
 Follow an artist (Requires Auth)
+- **get_artist_favorites**: Provide the artist slug to target the correct data.
+
+Get artist favorites
+- **get_artist_followers**: Provide the artist slug, as this is a required parameter.
+
+Get followers of an artist
 - **get_artist_following**: Use the artist slug to specify the source artist.
 
 Get users an artist is following
+- **get_artist_playlists**: Supply the artist slug to identify the source.
+
+Get artist playlists
 - **get_artist_uploads**: Always provide the artist slug to filter results.
 
 Get artist uploads
@@ -96,18 +80,34 @@ Get playlist info by slug
 - **remove_track_from_playlist**: Specify both the playlist ID and the music ID.
 
 Remove a track from a playlist (Requires Auth)
+- **search_autosuggest**: Provide a search query to get suggestions.
+
+Get search autosuggestions
 - **search**: Provide a search query to begin the search.
 
 Search for music, artists, or albums
 - **unfavorite_music**: Provide the unique identifier of the content to remove.
 
 Remove a track or album from favorites (Requires Auth)
+- **unfollow_artist**: Supply the artist’s slug.
+
+Unfollow an artist (Requires Auth)
 - **unrepost_music**: Provide the unique identifier of the content to un-repost.
 
 Remove a reposted track or album (Requires Auth)
 - **update_playlist**: You must provide the playlist ID to modify the details.
 
 Edit an existing playlist (Requires Auth)
+- **get_recent_music**: Get most recent music
+- **delete_playlist**: Supply the unique playlist ID to confirm deletion.
+
+Delete a playlist (Requires Auth)
+- **favorite_music**: Use this tool only when the user explicitly requests favoriting content.
+
+Favorite a track or album (Requires Auth)
+- **flag_music_unplayable**: Supply both the artist and music slugs.
+
+Flag a track or album as unplayable
 
 
 ## 💬 Prompt Examples
@@ -192,4 +192,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,16 +34,16 @@ Connect your **Fusebill** enterprise account to any AI agent to streamline your 
 
 ## Available Tools (7)
 - **activate_customer**: Activate a Fusebill customer
+- **get_subscription**: Get details for a specific Fusebill subscription
+- **cancel_customer**: Cancel a Fusebill customer
 - **create_customer**: Create a new Fusebill customer
 - **get_customer**: Get details for a specific Fusebill customer
-- **get_subscription**: Get details for a specific Fusebill subscription
 - **list_customers**: Supports pagination, filtering, and sorting.
 
 List Fusebill customers
 - **list_subscriptions**: Supports pagination, filtering, and sorting.
 
 List Fusebill subscriptions
-- **cancel_customer**: Cancel a Fusebill customer
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

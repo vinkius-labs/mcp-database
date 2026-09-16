@@ -34,13 +34,13 @@ Connect your **Stability AI** account to any AI agent and unlock professional-gr
 
 ## Available Tools (7)
 - **get_user_account**: Check user account details
-- **text_to_image**: Returns base64 encoded image artifacts.
-
-Generates an image from a text prompt
 - **get_user_balance**: Check user balance
 - **image_to_image**: Modifies an existing image based on a text prompt
 - **list_engines**: List available engines for generation
 - **masking**: Replaces parts of an image defined by a mask
+- **text_to_image**: Returns base64 encoded image artifacts.
+
+Generates an image from a text prompt
 - **upscale_image**: Increases the resolution of an image
 
 
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
