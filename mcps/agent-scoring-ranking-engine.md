@@ -14,11 +14,11 @@ This MCP server provides a mathematical framework for evaluating autonomous agen
 
 
 ## Available Tools (4)
+- **rank_agents**: 
 - **calculate_agent_scores**: 0
 
 Calculates normalized composite scores and volatility for a set of agents
 - **identify_pareto_frontier**: 
-- **rank_agents**: 
 - **adjust_weights_for_correlation**: 
 
 
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

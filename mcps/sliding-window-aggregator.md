@@ -14,13 +14,13 @@ This MCP server provides a deterministic engine for processing timestamped metri
 
 
 ## Available Tools (3)
-- **process_metrics**: 
 - **analyze_trends**: Provide a complete JSON array of {timestampMs, value} for accurate results.
 
 Calculates trend direction
 - **check_alerts**: Ensure windowHistory is a valid JSON array.
 
 Checks for threshold violations
+- **process_metrics**: 
 
 
 ## 💬 Prompt Examples
@@ -105,4 +105,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
