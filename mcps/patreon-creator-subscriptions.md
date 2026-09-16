@@ -34,20 +34,20 @@ Connect your **Patreon** creator account to any AI agent to streamline your memb
 
 
 ## Available Tools (10)
-- **list_campaign_posts**: List all posts for a campaign
-- **list_webhooks**: List webhooks created by your client
-- **delete_webhook**: Delete a webhook
-- **get_campaign**: Get details for a specific campaign
-- **get_member**: Get details for a specific member
 - **list_campaigns**: List campaigns owned by the user
 - **create_webhook**: g., members:create, posts:publish).
 
 Create a new webhook
+- **delete_webhook**: Delete a webhook
+- **get_campaign**: Get details for a specific campaign
 - **get_identity**: Can include memberships and campaign data.
 
 Get the authenticated user profile
 - **list_campaign_members**: List members for a specific campaign
+- **list_campaign_posts**: List all posts for a campaign
 - **update_webhook**: Update an existing webhook
+- **list_webhooks**: List webhooks created by your client
+- **get_member**: Get details for a specific member
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

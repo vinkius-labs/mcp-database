@@ -33,14 +33,14 @@ Connect your AI agent to the **Pocket Network** decentralized infrastructure to 
 
 
 ## Available Tools (7)
-- **get_app**: Get Pocket Network app details
 - **get_block**: Get Pocket Network block details
 - **get_node**: Get Pocket Network node details
 - **get_account**: Get Pocket Network account details
-- **get_session**: Get Pocket Network session details
+- **get_app**: Get Pocket Network app details
 - **relay_request**: Requires payload, meta, and proof objects.
 
 Send a relay request to an external blockchain
+- **get_session**: Get Pocket Network session details
 - **submit_transaction**: g., staking, sending POKT) to the network.
 
 Submit a transaction to the Pocket Network
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -34,6 +34,14 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 
 ## Available Tools (17)
+- **list_species**: Can be scoped to a specific project or global.
+
+List species, optionally filtered by project
+- **search_plots**: Search DarwinCore plots
+- **survey_tiles**: g., quadrat or drone imagery) to identify multiple species.
+
+Identify multiple species in a single high-resolution image (Beta)
+- **list_projects**: List Pl@ntNet projects (taxonomic referentials)
 - **align_species_name**: Align a species name within a project
 - **estimate_survey_cost**: Estimate cost for a multi-species survey
 - **get_daily_quota**: Check daily API usage
@@ -45,18 +53,10 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 Identify a plant species from images
 - **identify_variety**: Identify cultivated plant varieties from images
-- **list_languages**: Get the list of supported language codes
-- **list_species**: Can be scoped to a specific project or global.
-
-List species, optionally filtered by project
-- **list_varieties**: List identifiable cultivated plant varieties
-- **search_plots**: Search DarwinCore plots
 - **list_diseases**: List identifiable plant diseases
+- **list_languages**: Get the list of supported language codes
+- **list_varieties**: List identifiable cultivated plant varieties
 - **search_observations**: Search DarwinCore plant observations
-- **survey_tiles**: g., quadrat or drone imagery) to identify multiple species.
-
-Identify multiple species in a single high-resolution image (Beta)
-- **list_projects**: List Pl@ntNet projects (taxonomic referentials)
 
 
 ## 💬 Prompt Examples
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
