@@ -40,21 +40,16 @@ No more switching between search engines and reading through pages of results. Y
 
 
 ## Available Tools (14)
-- **follow_up**: Provide the conversation history as a JSON array of messages and the follow-up question.
-This maintains context from previous turns in the conversation.
-Use this for multi-turn research sessions where each question builds on previous answers.
-
-Ask a follow-up question in an ongoing conversation with Perplexity AI
-- **chat_with_citations**: Each claim or fact in the response is linked to its original source.
-This is essential for research, fact-checking, and academic work where sources matter.
-The response includes a citations array with URLs of all referenced sources.
-
-Ask Perplexity AI and get answers with source citations
 - **chat_completion**: The Sonar model searches the web, synthesizes information, and provides a concise answer.
 This is the basic query tool for factual questions, summaries, and general knowledge.
 Use this for quick lookups where you need accurate, up-to-date information.
 
 Ask Perplexity AI a question and get a grounded, cited answer
+- **chat_with_citations**: Each claim or fact in the response is linked to its original source.
+This is essential for research, fact-checking, and academic work where sources matter.
+The response includes a citations array with URLs of all referenced sources.
+
+Ask Perplexity AI and get answers with source citations
 - **chat_with_domain_filter**: Provide domains as a comma-separated list (e.g., "arxiv.org,nih.gov,github.com").
 Only sources from the specified domains will be used in generating the answer.
 Use this for domain-specific research, academic papers, or trusted sources only.
@@ -86,6 +81,11 @@ Use this for complex topics, literature reviews, competitive analysis, or thorou
 Maximum tokens default to 4096 for comprehensive responses.
 
 Perform deep research with exhaustive web search and comprehensive report
+- **follow_up**: Provide the conversation history as a JSON array of messages and the follow-up question.
+This maintains context from previous turns in the conversation.
+Use this for multi-turn research sessions where each question builds on previous answers.
+
+Ask a follow-up question in an ongoing conversation with Perplexity AI
 - **list_models**: Use this to discover what models are available
 before choosing which one to use for your queries.
 
@@ -235,4 +235,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

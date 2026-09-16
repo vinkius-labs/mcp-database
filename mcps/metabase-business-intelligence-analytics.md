@@ -35,15 +35,15 @@ Connect your **Metabase** instance to any AI agent and take full control of your
 
 
 ## Available Tools (7)
-- **search_content**: Search globalThis reporting entities across Metabase
 - **list_cards**: Returns heavy lists.
 
 List raw questions (cards) parsed inside Metabase
+- **list_databases**: List physical Database integrations parsed by Metabase
+- **get_card**: Fetch explicit mapping logic behind a specific BI Card
+- **search_content**: Search global reporting entities across Metabase
 - **list_dashboards**: List dashboards mapped in the Metabase BI platform
 - **get_dashboard**: Get comprehensive Metabase Dashboard layout matrices
-- **get_card**: Fetch explicit mapping logic behind a specific BI Card
 - **list_collections**: List structural BI Collections (folders)
-- **list_databases**: List physical Database integrations parsed by Metabase
 
 
 ## 💬 Prompt Examples
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

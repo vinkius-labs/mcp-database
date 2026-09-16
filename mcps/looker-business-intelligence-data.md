@@ -35,13 +35,13 @@ Connect your **Looker** instance to any AI agent and take full control of your e
 
 
 ## Available Tools (7)
-- **get_dashboard**: Get complete details and queries mapping a Looker Dashboard ID
-- **list_folders**: List root Folders analyzing explicit environment structures
-- **run_inline_query**: Execute queries building models specifically fetching literal dimensions dynamically natively
 - **get_look**: Get full mapped details tracing a strict Looker target Look object
-- **list_dashboards**: List Looker dashboards
 - **list_looks**: List saved specific dataset mappings tracked as Looks
+- **list_folders**: List root Folders analyzing explicit environment structures
 - **search_content**: Search content metadata explicit mapping targets natively across instance
+- **get_dashboard**: Get complete details and queries mapping a Looker Dashboard ID
+- **list_dashboards**: List Looker dashboards
+- **run_inline_query**: Execute queries building models specifically fetching literal dimensions dynamically natively
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

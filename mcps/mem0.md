@@ -33,12 +33,12 @@ Connect your AI agent to **Mem0** — the industry-standard memory layer that en
 
 
 ## Available Tools (4)
-- **add_memory**: The system automatically extracts structured facts from the provided content and stores them as searchable, persistent memories associated with the given user ID.
-
-Store a new memory for a user. The AI extracts key facts and preferences from the content and stores them as persistent memories
 - **delete_memory**: Use with caution — this action cannot be undone.
 
 Delete a specific memory by its ID
+- **add_memory**: The system automatically extracts structured facts from the provided content and stores them as searchable, persistent memories associated with the given user ID.
+
+Store a new memory for a user. The AI extracts key facts and preferences from the content and stores them as persistent memories
 - **get_memories**: Useful for reviewing what the agent knows about a user or for building a user profile.
 
 List all stored memories for a specific user
@@ -142,4 +142,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

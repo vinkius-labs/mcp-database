@@ -32,20 +32,20 @@ Connect your **Nylas** account to your AI agent and seamlessly interact with com
 
 
 ## Available Tools (10)
-- **send_message**: Dispatch an outbound email utilizing the native mail provider
-- **list_drafts**: Dump unsent email threads parked in the Drafts bound location
-- **create_contact**: Insert a brand new address book contact record
+- **list_contacts**: List natively synced address book contacts from the user account
+- **list_calendars**: Returns internal calendar UUIDs required to execute event queries.
+
+List all user calendars connected via Nylas
+- **list_events**: List scheduled events mapped inside a specific Calendar UUID
 - **create_event**: g. Google Calendar).
 
 Create a new synchronized calendar event
 - **delete_event**: Delete a specific calendar event from the provider
-- **list_calendars**: Returns internal calendar UUIDs required to execute event queries.
-
-List all user calendars connected via Nylas
-- **list_contacts**: List natively synced address book contacts from the user account
-- **list_events**: List scheduled events mapped inside a specific Calendar UUID
-- **list_folders**: Enumerate the organizational email directories tracking labels/files
 - **list_messages**: Retrieve the unified inbox/messages stream for the authenticated grant
+- **send_message**: Dispatch an outbound email utilizing the native mail provider
+- **create_contact**: Insert a brand new address book contact record
+- **list_folders**: Enumerate the organizational email directories tracking labels/files
+- **list_drafts**: Dump unsent email threads parked in the Drafts bound location
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
