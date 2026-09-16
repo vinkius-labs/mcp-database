@@ -15,8 +15,8 @@ This MCP server provides a specialized analytics engine for SaaS products to mea
 
 ## Available Tools (4)
 - **calculate_discovery_metrics**: Provides the fundamental health score of an AI feature's launch
-- **evaluate_channel_performance**: Determines which marketing or UI paths are most successful at driving engagement
 - **analyze_discovery_velocity**: Measures the speed of adoption and identifies delays in feature awareness
+- **evaluate_channel_performance**: Determines which marketing or UI paths are most successful at driving engagement
 - **generate_acceleration_strategy**: Provides actionable advice to improve discovery based on current performance gaps
 
 

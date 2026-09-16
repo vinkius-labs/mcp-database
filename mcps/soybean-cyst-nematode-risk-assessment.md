@@ -14,10 +14,10 @@ This MCP server provides specialized tools for managing Soybean Cyst Nematode (S
 
 
 ## Available Tools (4)
+- **suggest_rotation_strategy**: Provides a long-term crop rotation plan based on current risk levels
 - **calculate_population_growth**: Predicts the total nematode population at the end of the growing season
 - **estimate_yield_impact**: Calculates the expected percentage of soybean yield lost to the nematode population
 - **recommend_management_action**: Determines if a management intervention is economically justified
-- **suggest_rotation_strategy**: Provides a long-term crop rotation plan based on current risk levels
 
 
 ## 💬 Prompt Examples

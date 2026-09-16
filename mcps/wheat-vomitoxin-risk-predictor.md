@@ -14,9 +14,9 @@ This MCP server provides specialized tools to manage Fusarium head blight risk i
 
 
 ## Available Tools (4)
-- **estimate_economic_impact**: Calculates the projected financial loss due to DON contamination
 - **recommend_fungicide_window**: Determines the most effective timeframe for applying fungicide to minimize risk
 - **evaluate_risk_factors**: Identifies which specific variable is contributing most to the current risk profile
+- **estimate_economic_impact**: Calculates the projected financial loss due to DON contamination
 - **calculate_don_probability**: Predicts the likelihood of wheat grain exceeding specific toxin thresholds
 
 

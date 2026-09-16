@@ -14,10 +14,10 @@ This MCP server provides advanced soil health analysis by predicting how machine
 
 
 ## Available Tools (4)
-- **analyze_compaction_risk**: Provides a comprehensive assessment of how a specific machinery setup will impact a specific soil type
 - **calculate_critical_thresholds**: Identifies the environmental limits for a specific soil type to avoid compaction
-- **get_stress_profile**: Maps how much pressure is applied to the soil at various depths to understand deep-layer compaction
 - **recommend_mitigation**: Suggests operational changes to minimize damage based on current soil conditions
+- **analyze_compaction_risk**: Provides a comprehensive assessment of how a specific machinery setup will impact a specific soil type
+- **get_stress_profile**: Maps how much pressure is applied to the soil at various depths to understand deep-layer compaction
 
 
 ## 💬 Prompt Examples

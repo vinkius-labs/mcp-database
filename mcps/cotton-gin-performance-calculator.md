@@ -14,10 +14,18 @@ This MCP server provides precise analytical tools for cotton ginning operations.
 
 
 ## Available Tools (4)
-- **estimate_gin_revenue**: Calculate the total economic value generated from a processed module
-- **get_processing_efficiency**: Determine the throughput rate of the ginning operation
-- **validate_input_quality**: Check if the current module inputs are within acceptable operational limits
-- **calculate_yield_metrics**: Determine fundamental weight breakdowns of lint and seed from a specific module
+- **calculate_yield_metrics**: Provide module weight and turnout percentage.
+
+Determine fundamental weight breakdowns of lint and seed from a specific module
+- **get_processing_efficiency**: Supply the total lint weight and processing duration.
+
+Determine the throughput rate of the ginning operation
+- **validate_input_quality**: Supply moisture and foreign matter percentages.
+
+Check if the current module inputs are within acceptable operational limits
+- **estimate_gin_revenue**: Provide weights and associated market prices.
+
+Calculate the total economic value generated from a processed module
 
 
 ## 💬 Prompt Examples

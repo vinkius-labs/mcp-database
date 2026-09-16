@@ -14,10 +14,10 @@ This MCP server provides analytical tools to measure how AI features influence S
 
 
 ## Available Tools (4)
-- **calculate_conversion_lift**: Determines the percentage increase in conversion rates attributable to the AI feature
 - **calculate_attributed_impact**: Adjusts the calculated lift based on how many users actually saw or used the feature
 - **calculate_time_impact**: Quantifies how much the AI feature accelerates the user's journey from trial start to paid subscription
 - **generate_impact_summary**: Provides a high-level overview of the feature's success for executive reporting
+- **calculate_conversion_lift**: Determines the percentage increase in conversion rates attributable to the AI feature
 
 
 ## 💬 Prompt Examples

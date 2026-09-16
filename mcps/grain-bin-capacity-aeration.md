@@ -14,10 +14,10 @@ This MCP server provides specialized agricultural calculations for grain storage
 
 
 ## Available Tools (4)
-- **calculate_aeration_requirements**: Estimates the air movement needs and the resistance (static pressure) for fan selection
 - **calculate_bin_capacity**: Determines the total volume and mass capacity of a specific bin
 - **estimate_grain_height**: Calculates the expected height of a grain pile for a specific quantity of grain
 - **adjust_for_pack_factor**: Calculates the specific adjustment coefficient for a grain's volume based on its physical properties
+- **calculate_aeration_requirements**: Estimates the air movement needs and the resistance (static pressure) for fan selection
 
 
 ## 💬 Prompt Examples

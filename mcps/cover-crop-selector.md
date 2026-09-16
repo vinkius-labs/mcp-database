@@ -14,10 +14,10 @@ This MCP server provides decision-support tools for selecting the best cover cro
 
 
 ## Available Tools (4)
-- **calculate_selection_score**: Rank specific species or mixes based on unique decision criteria
-- **check_rotation_compatibility**: Verify if a selected cover crop setup will interfere with a planned cash crop
 - **estimate_impact_metrics**: Quantify the physical and economic outcomes of a specific species or mix
+- **check_rotation_compatibility**: Verify if a selected cover crop setup will interfere with a planned cash crop
 - **species_search**: Discover available cover crop species compatible with specific environmental conditions
+- **calculate_selection_score**: Rank specific species or mixes based on unique decision criteria
 
 
 ## 💬 Prompt Examples

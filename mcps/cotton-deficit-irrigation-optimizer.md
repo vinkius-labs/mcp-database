@@ -14,9 +14,9 @@ This MCP server provides specialized tools for managing deficit irrigation in co
 
 
 ## Available Tools (4)
-- **predict_yield_and_quality**: 
 - **calculate_wue**: 
 - **optimize_profit**: 
+- **predict_yield_and_quality**: 
 - **calculate_irrigation_schedule**: 
 
 

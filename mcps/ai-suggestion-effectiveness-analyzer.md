@@ -14,10 +14,10 @@ This MCP server provides tools to evaluate the effectiveness of AI-driven sugges
 
 
 ## Available Tools (4)
-- **get_contextual_efficiency_rating**: Evaluates the efficiency of suggestion timing relative to user action
-- **get_quality_score_report**: Calculates the overall quality score and status of AI suggestions
 - **get_suggestion_acceptance_metrics**: Calculates raw performance metrics for AI suggestions
 - **get_type_performance_breakdown**: 
+- **get_contextual_efficiency_rating**: Evaluates the efficiency of suggestion timing relative to user action
+- **get_quality_score_report**: Calculates the overall quality score and status of AI suggestions
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides deep analytical insights into AI content production wor
 
 
 ## Available Tools (4)
+- **evaluate_utilization_and_quality**: Measures the practical value of the AI output by comparing generation to final usage and quality metrics
 - **get_user_content_summary**: Provides a high-level overview of how much content a specific user is generating
 - **measure_generation_velocity**: Analyzes the speed of content production, factoring in the efficiency of the AI
 - **calculate_monthly_throughput**: Determines the average volume of content produced per user within a monthly window
-- **evaluate_utilization_and_quality**: Measures the practical value of the AI output by comparing generation to final usage and quality metrics
 
 
 ## 💬 Prompt Examples

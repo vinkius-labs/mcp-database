@@ -14,10 +14,10 @@ This MCP server provides deep insights into how users interact with AI capabilit
 
 
 ## Available Tools (4)
-- **analyze_engagement_trend**: Track the trajectory of a user's interest in AI features over time
 - **calculate_user_engagement_score**: Determine the current engagement level of a specific user
 - **get_feature_adoption_metrics**: Evaluate how well specific AI features are being discovered and adopted
 - **predict_user_churn_risk**: Identify users at risk of abandoning AI features
+- **analyze_engagement_trend**: Track the trajectory of a user's interest in AI features over time
 
 
 ## 💬 Prompt Examples

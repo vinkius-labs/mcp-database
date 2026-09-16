@@ -14,10 +14,10 @@ This MCP server provides decision-support tools for wheat growers to manage nitr
 
 
 ## Available Tools (4)
+- **predict_grain_protein**: Predicts wheat grain protein content based on nitrogen availability and environmental factors
 - **calculate_n_requirement**: Calculates the nitrogen application required to reach a specific protein target
 - **estimate_protein_probability**: Estimates the probability of achieving a target protein level
 - **optimize_economic_n**: Finds the most profitable nitrogen application rate
-- **predict_grain_protein**: Predicts wheat grain protein content based on nitrogen availability and environmental factors
 
 
 ## 💬 Prompt Examples

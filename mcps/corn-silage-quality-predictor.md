@@ -14,10 +14,10 @@ This MCP server provides precise predictions for corn silage quality based on ph
 
 
 ## Available Tools (4)
+- **find_optimal_harvest_window**: Identifies the date range where moisture is within the ideal target for silage (60-70%)
 - **get_development_milestones**: Predicts the specific dates for key physiological stages based on planting and heat accumulation
 - **get_maturity_profiles**: Provides a list of available hybrid maturity classifications
 - **predict_silage_quality**: Calculates the nutritional and yield metrics for a specific harvest date
-- **find_optimal_harvest_window**: Identifies the date range where moisture is within the ideal target for silage (60-70%)
 
 
 ## 💬 Prompt Examples

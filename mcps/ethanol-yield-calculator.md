@@ -14,10 +14,10 @@ This MCP server provides specialized tools for modeling ethanol production from 
 
 
 ## Available Tools (4)
-- **estimate_ghg_intensity**: Estimates the carbon footprint of the ethanol relative to gasoline
 - **get_grain_yield_metrics**: Calculates the primary ethanol and co-product output for a specific grain input
 - **get_plant_utilization_report**: Provides a scaled view of production based on facility capacity
 - **calculate_energy_balance**: Evaluates the net energy benefit of the ethanol production process
+- **estimate_ghg_intensity**: Estimates the carbon footprint of the ethanol relative to gasoline
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server provides specialized analytics for measuring how AI features int
 
 ## Available Tools (4)
 - **get_funnel_efficiency**: Identifies where users are dropping off in the journey from discovery to adoption
-- **calculate_adoption_velocity**: Determines how quickly users are moving through the adoption funnel
 - **get_adoption_summary**: Provides a high-level overview of how well an AI feature is being adopted relative to the user base
 - **measure_feature_stickiness**: Evaluates the long-term engagement and retention qualities of the AI feature
+- **calculate_adoption_velocity**: Determines how quickly users are moving through the adoption funnel
 
 
 ## 💬 Prompt Examples

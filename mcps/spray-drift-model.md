@@ -14,8 +14,8 @@ This MCP server provides precise pesticide movement simulations. It uses the agd
 
 
 ## Available Tools (4)
-- **calculate_drift_dynamics**: Determine the physical behavior and movement of droplets based on spray and environmental parameters
 - **estimate_canopy_impact**: Adjust drift predictions based on the presence and density of a target crop
+- **calculate_drift_dynamics**: Determine the physical behavior and movement of droplets based on spray and environmental parameters
 - **evaluate_drift_risk**: Categorize the level of danger posed by the current application parameters
 - **determine_buffer_zone**: Calculate the minimum safe distance required to protect non-target areas
 

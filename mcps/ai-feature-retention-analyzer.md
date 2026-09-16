@@ -14,10 +14,10 @@ This MCP server provides analytical tools to measure how AI-driven features infl
 
 
 ## Available Tools (4)
+- **get_segmented_impact_summary**: Provides a summary of AI feature impact across different user segments
 - **analyze_usage_correlation**: Measures the statistical link between AI feature usage frequency and user retention
 - **calculate_retention_lift**: Calculates the percentage increase in retention attributed to the AI feature
 - **estimate_feature_roi**: Estimates the ROI of an AI feature based on cost and prevented churn value
-- **get_segmented_impact_summary**: Provides a summary of AI feature impact across different user segments
 
 
 ## 💬 Prompt Examples

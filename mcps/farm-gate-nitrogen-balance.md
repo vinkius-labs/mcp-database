@@ -14,10 +14,10 @@ This MCP server provides tools to track nitrogen (N) flow across an entire farm 
 
 
 ## Available Tools (4)
-- **get_environmental_risk_indicators**: Evaluates the risk of nitrogen loss to the environment
-- **get_nitrogen_balance**: Calculates the total nitrogen surplus or deficit for the entire farm
 - **get_nitrogen_flow_summary**: Identifies loss hotspots and provides a summary of the nitrogen distribution
+- **get_nitrogen_balance**: Calculates the total nitrogen surplus or deficit for the entire farm
 - **get_efficiency_metrics**: Calculates the Nitrogen Use Efficiency (NUE) of the farm
+- **get_environmental_risk_indicators**: Evaluates the risk of nitrogen loss to the environment
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides deep visibility into how AI model resources are consume
 
 
 ## Available Tools (4)
+- **identify_optimization_targets**: To find features where costs are high but user engagement is low, or where model selection appears inefficient
 - **get_feature_cost_breakdown**: To determine the exact monetary expenditure for each individual product feature
 - **get_routing_efficiency_score**: To evaluate how effectively the system is selecting models for specific feature tasks
-- **identify_optimization_targets**: To find features where costs are high but user engagement is low, or where model selection appears inefficient
 - **analyze_usage_concentration**: To identify which features are the primary drivers of AI model consumption
 
 

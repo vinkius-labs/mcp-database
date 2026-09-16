@@ -14,8 +14,8 @@ This MCP server provides analytical tools to estimate the financial and risk-mit
 
 
 ## Available Tools (4)
-- **calculate_safety_roi**: Provide a high-level decision-making metric comparing safety costs against compliance and risk reduction value
 - **calculate_total_safety_cost**: Determine the total direct expenditure required to deploy a specific set of safety guardrails
+- **calculate_safety_roi**: Provide a high-level decision-making metric comparing safety costs against compliance and risk reduction value
 - **estimate_risk_reduction**: Quantify the benefit of implementing guardrails by calculating how much potential damage is avoided
 - **evaluate_compliance_impact**: Assess how well the chosen guardrails align with specific regulatory or organizational mandates
 

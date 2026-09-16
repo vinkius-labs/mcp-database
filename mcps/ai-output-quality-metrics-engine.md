@@ -14,8 +14,8 @@ This MCP server provides a standardized framework for measuring the excellence o
 
 
 ## Available Tools (4)
-- **get_quality_trend**: Analyzes how quality metrics have evolved over a specific period
 - **get_quality_score**: Calculates the primary quality metric for a specific AI model or version
+- **get_quality_trend**: Analyzes how quality metrics have evolved over a specific period
 - **get_satisfaction_correlation**: Determines if user feedback (explicit) aligns with usage behavior (implicit)
 - **get_use_case_benchmarks**: Retrieves standard quality thresholds for different types of AI tasks
 

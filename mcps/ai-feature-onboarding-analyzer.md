@@ -14,10 +14,10 @@ This MCP server provides tools to measure the health of AI feature onboarding. I
 
 
 ## Available Tools (4)
-- **analyze_funnel_metrics_tool**: Calculate core health indicators of the AI onboarding process
 - **calculate_optimization_priority_tool**: Recommend specific areas for product intervention based on complexity and friction
 - **evaluate_ttv_efficiency_tool**: Assess whether the time taken to reach value is acceptable given complexity
 - **identify_dropoff_bottlenecks_tool**: Pinpoint exactly where users are leaving the onboarding process
+- **analyze_funnel_metrics_tool**: Calculate core health indicators of the AI onboarding process
 
 
 ## 💬 Prompt Examples
