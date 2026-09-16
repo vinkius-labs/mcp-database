@@ -14,9 +14,9 @@ This MCP server provides deterministic analysis of prompt prefix caching strateg
 
 
 ## Available Tools (3)
-- **evaluate_cache_optimization**: Identifies the ideal cache capacity and the degree of prefix overlap to guide infrastructure scaling
 - **analyze_cache_performance**: Provides a high-level overview of how well the cache is performing regarding hits, efficiency, and cost savings
 - **inspect_cache_dynamics**: Investigates the frequency of cache turnover and the specific overlap between individual requests
+- **evaluate_cache_optimization**: Identifies the ideal cache capacity and the degree of prefix overlap to guide infrastructure scaling
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
