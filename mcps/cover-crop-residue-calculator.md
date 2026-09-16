@@ -14,10 +14,18 @@ This MCP server provides precise calculations for agricultural residue managemen
 
 
 ## Available Tools (4)
-- **predict_residue_persistence**: Predicts how much residue remains on the soil surface after a period of time due to decomposition
-- **calculate_erosion_protection**: Estimates the reduction in soil erosion and the resulting USLE C-factor
-- **get_species_properties**: Retrieves the biological constants for a specific cover crop species
-- **get_termination_residue_stats**: Calculates the immediate state of the residue at the moment of cover crop termination
+- **get_species_properties**: Provide the species name.
+
+Retrieves the biological constants for a specific cover crop species
+- **calculate_erosion_protection**: Provide the remaining surface cover percentage.
+
+Estimates the reduction in soil erosion and the resulting USLE C-factor
+- **get_termination_residue_stats**: Provide the biomass, species, and termination method.
+
+Calculates the immediate state of the residue at the moment of cover crop termination
+- **predict_residue_persistence**: Provide the initial residue weight, C:N ratio, and days to planting.
+
+Predicts how much residue remains on the soil surface after a period of time due to decomposition
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides essential tools for managing grazing operations by bala
 
 
 ## Available Tools (4)
+- **calculate_stocking_capacity**: Determines the maximum number of animal units that can be sustained on a given area of land
 - **estimate_grazing_duration**: Calculates how many days a specific number of animals can graze a pasture before the available forage is depleted
 - **generate_rotational_schedule**: Provides a structured timeline for moving animals between paddocks to ensure adequate plant rest
 - **validate_land_health**: Evaluates if the current stocking rate is within safe limits based on forage production and utilization
-- **calculate_stocking_capacity**: Determines the maximum number of animal units that can be sustained on a given area of land
 
 
 ## 💬 Prompt Examples

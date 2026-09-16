@@ -14,10 +14,10 @@ This MCP server provides precise calculations for agricultural nutrient manageme
 
 
 ## Available Tools (4)
+- **predict_nitrogen_mineralization**: Forecasts the release of nitrogen in future years to assist in long-term nutrient management
 - **assess_phosphorus_risk**: Evaluates the environmental risk of phosphorus accumulation in the soil
 - **calculate_nutrient_availability**: Determines the total amount of plant-available N, P2O5, and K2O for the current application
 - **evaluate_leaching_potential**: Estimates the risk of nitrogen leaching into groundwater
-- **predict_nitrogen_mineralization**: Forecasts the release of nitrogen in future years to assist in long-term nutrient management
 
 
 ## 💬 Prompt Examples

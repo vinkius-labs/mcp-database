@@ -14,9 +14,9 @@ This MCP server provides precision agricultural financial tools to determine pro
 
 
 ## Available Tools (4)
+- **get_sensitivity_analysis**: Assess how different market or weather scenarios affect financial outcomes
 - **get_break_even_metrics**: Calculate break-even yield and price for crop production
 - **get_cost_structure_breakdown**: Provide a detailed view of cost distribution between fixed and variable categories
-- **get_sensitivity_analysis**: Assess how different market or weather scenarios affect financial outcomes
 - **validate_input_parameters**: Ensure agricultural data is within realistic, positive ranges
 
 

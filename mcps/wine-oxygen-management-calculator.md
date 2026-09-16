@@ -14,10 +14,10 @@ This MCP server provides precision tools for winemakers to manage dissolved oxyg
 
 
 ## Available Tools (4)
-- **analyze_saturation_risk**: Analyze the risk of dissolved oxygen saturation
-- **evaluate_closure_suitability**: Evaluate if a specific bottle closure is suitable for the intended shelf life
 - **calculate_cumulative_oxygen_pickup**: Calculate cumulative oxygen pickup throughout all planned processing steps
 - **recommend_inert_gas_usage**: Calculate required inert gas volume to purge a tank
+- **analyze_saturation_risk**: Analyze the risk of dissolved oxygen saturation
+- **evaluate_closure_suitability**: Evaluate if a specific bottle closure is suitable for the intended shelf life
 
 
 ## 💬 Prompt Examples

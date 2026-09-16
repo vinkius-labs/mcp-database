@@ -14,10 +14,10 @@ This MCP server provides an optimization engine for animal nutrition. It uses th
 
 
 ## Available Tools (4)
-- **get_species_requirements**: Retrieves the standard nutritional target ranges for a specific animal species
 - **get_available_ingredients**: Lists all ingredients available for formulation, including their nutritional content and cost
-- **validate_ration_safety**: Checks if a previously formulated ration complies with safety thresholds for specific nutrients
 - **formulate_ration**: Executes the linear programming optimization to create the cheapest possible feed mix
+- **get_species_requirements**: Retrieves the standard nutritional target ranges for a specific animal species
+- **validate_ration_safety**: Checks if a previously formulated ration complies with safety thresholds for specific nutrients
 
 
 ## 💬 Prompt Examples

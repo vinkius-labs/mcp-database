@@ -15,8 +15,8 @@ This MCP server provides specialized tools to model nutrient transport from agri
 
 ## Available Tools (4)
 - **calculate_nutrient_loss**: Calculates the mass of specific nutrient losses based on current field conditions and weather
-- **compare_management_strategies**: Compares two different application or timing scenarios to determine which results in lower nutrient loss
 - **get_incorporation_risk_factor**: Determines the multiplier applied to nutrient loss based on how long nutrients sit on the soil surface
+- **compare_management_strategies**: Compares two different application or timing scenarios to determine which results in lower nutrient loss
 - **predict_edge_of_field_loading**: Predicts the total nutrient mass reaching the field boundary for a specific scenario
 
 

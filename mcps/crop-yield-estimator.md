@@ -14,10 +14,10 @@ This MCP server provides a specialized engine for calculating expected crop yiel
 
 
 ## Available Tools (4)
+- **query_crop_metadata**: Retrieves the standard coefficients and variance data for a specific crop
 - **apply_soil_corrections**: Adjusts a biological yield estimate based on the physiological constraints of the specific soil type and crop
 - **calculate_biological_yield**: Determines the theoretical yield based solely on planting and survival metrics
 - **get_production_confidence**: Provides a statistical range for the estimated yield to account for environmental uncertainty
-- **query_crop_metadata**: Retrieves the standard coefficients and variance data for a specific crop
 
 
 ## 💬 Prompt Examples

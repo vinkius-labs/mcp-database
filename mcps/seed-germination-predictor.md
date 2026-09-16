@@ -14,10 +14,10 @@ This MCP server provides advanced predictive modeling for agricultural success. 
 
 
 ## Available Tools (4)
-- **calculate_thermal_accumulation**: Determines the amount of thermal time (Growing Degree Days) accumulated over a specific period
 - **evaluate_planting_window**: Identifies the ideal period for planting to maximize germination efficiency
 - **predict_germination_success**: Calculates the expected germination percentage and the expected days until emergence based on current planting conditions
 - **simulate_stress_impact**: Quantifies how much germination success is lost due to extreme temperature fluctuations
+- **calculate_thermal_accumulation**: Determines the amount of thermal time (Growing Degree Days) accumulated over a specific period
 
 
 ## 💬 Prompt Examples

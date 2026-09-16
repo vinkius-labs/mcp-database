@@ -15,9 +15,9 @@ This MCP server provides specialized tools for winemakers to model malolactic fe
 
 ## Available Tools (4)
 - **compare_strain_performance**: Compares how different Oenococcus oeni strains would perform under identical wine conditions
+- **assess_mlf_risk**: Determines if the current wine conditions are likely to result in a stalled or failed fermentation
 - **get_optimal_conditions**: Suggests the ideal environment to maximize fermentation speed for a specific strain
 - **predict_mlf_progression**: Calculates the expected timeline and acid reduction for a specific wine profile
-- **assess_mlf_risk**: Determines if the current wine conditions are likely to result in a stalled or failed fermentation
 
 
 ## 💬 Prompt Examples

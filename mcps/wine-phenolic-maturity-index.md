@@ -14,10 +14,10 @@ This MCP server provides enologists with precise analytical tools to synchronize
 
 
 ## Available Tools (4)
-- **predict_wine_profile**: Predicts the sensory characteristics of the resulting wine based on the phenolic/sugar balance
 - **calculate_maturity_indices**: Performs the core calculation of maturity scores and extractability metrics from raw grape data
-- **evaluate_harvest_urgency**: Determines how much time the grower has before the grape profile degrades or reaches peak ripeness
 - **get_maturity_thresholds**: Retrieves the standard benchmark values for specific grape varieties to compare against current analysis
+- **evaluate_harvest_urgency**: Determines how much time the grower has before the grape profile degrades or reaches peak ripeness
+- **predict_wine_profile**: Predicts the sensory characteristics of the resulting wine based on the phenolic/sugar balance
 
 
 ## 💬 Prompt Examples

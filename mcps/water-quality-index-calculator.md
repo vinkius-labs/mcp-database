@@ -14,10 +14,10 @@ This MCP server provides specialized tools to evaluate water quality for agricul
 
 
 ## Available Tools (4)
-- **get_soil_structure_risk**: Analyzes the risk of soil degradation caused by the sodium-to-calcium/magnesium ratio
+- **get_water_quality_summary**: Provides a unified high-level report comparing irrigation and livestock needs for a single water sample
 - **get_irrigation_suitability**: Determines if water is safe for irrigation based on chemical composition and specific crop sensitivity
 - **get_livestock_safety_index**: Evaluates the safety of water for animal consumption using livestock-specific thresholds
-- **get_water_quality_summary**: Provides a unified high-level report comparing irrigation and livestock needs for a single water sample
+- **get_soil_structure_risk**: Analyzes the risk of soil degradation caused by the sodium-to-calcium/magnesium ratio
 
 
 ## 💬 Prompt Examples

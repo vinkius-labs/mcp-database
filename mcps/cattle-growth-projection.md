@@ -14,10 +14,10 @@ This MCP server provides predictive modeling for cattle growth using National Re
 
 
 ## Available Tools (4)
-- **analyze_environmental_impact**: Evaluates how much growth potential is lost due to specific environmental conditions
 - **calculate_daily_gain**: Determines how much weight an animal is expected to gain per day
 - **estimate_days_to_target**: Calculates how long it will take for the animal to reach a specific weight
 - **project_feed_requirements**: Estimates the total amount of feed needed to achieve the target weight
+- **analyze_environmental_impact**: Evaluates how much growth potential is lost due to specific environmental conditions
 
 
 ## 💬 Prompt Examples

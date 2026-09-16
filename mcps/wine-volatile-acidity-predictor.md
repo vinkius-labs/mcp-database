@@ -14,10 +14,10 @@ This MCP server provides critical tools for monitoring and predicting volatile a
 
 
 ## Available Tools (4)
+- **predict_va_increase**: Estimates the total increase in volatile acidity expected by the end of the fermentation process
 - **analyze_stuck_fermentation_risk**: Evaluates the specific risk of VA accumulation if fermentation becomes stuck
 - **check_legal_compliance**: Determines if the predicted volatile acidity meets the regulatory standards for the target region
 - **get_corrective_actions**: Suggests immediate interventions to mitigate VA formation based on current trends or risks
-- **predict_va_increase**: Estimates the total increase in volatile acidity expected by the end of the fermentation process
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides essential tools for agricultural planning. Use `calcula
 
 
 ## Available Tools (4)
-- **calculate_field_productivity**: Calculate the actual rate at which a machine covers land
-- **compare_machinery_economics**: Compare the costs of owning a machine versus hiring a contractor
 - **evaluate_completion_feasibility**: Estimate if a task can be completed within a specific timeframe given weather risks
 - **get_operational_window**: Identify the effective working capacity per day
+- **calculate_field_productivity**: Calculate the actual rate at which a machine covers land
+- **compare_machinery_economics**: Compare the costs of owning a machine versus hiring a contractor
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides professional-grade agricultural nutrient calculations. 
 
 
 ## Available Tools (4)
-- **calculate_nutrient_gap**: Determines the exact amount of N, P2O5, and K2O that needs to be added to the soil to meet crop requirements
 - **convert_nutrient_forms**: Translates between elemental nutrients and their oxide representations
 - **get_crop_extraction_data**: Retrieves the theoretical nutrient removal values for a specific crop and yield
 - **recommend_fertilizer_blend**: Suggests the most cost-effective combination of available fertilizers to satisfy the calculated nutrient gap
+- **calculate_nutrient_gap**: Determines the exact amount of N, P2O5, and K2O that needs to be added to the soil to meet crop requirements
 
 
 ## 💬 Prompt Examples

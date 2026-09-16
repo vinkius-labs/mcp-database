@@ -15,8 +15,8 @@ This MCP server provides precision tools for agricultural spraying operations. I
 
 ## Available Tools (4)
 - **calculate_dosage**: Determines the exact amount of a specific pesticide product needed to meet a target application rate
-- **calculate_equipment_settings**: Calculates the required tractor speed or nozzle flow to achieve a specific spray volume
 - **calculate_tank_mix_volume**: Determines the total volume of product and water needed for a specific tank size
+- **calculate_equipment_settings**: Calculates the required tractor speed or nozzle flow to achieve a specific spray volume
 - **check_tank_mix_compatibility**: Evaluates if a list of pesticide products can be safely mixed in a single tank
 
 

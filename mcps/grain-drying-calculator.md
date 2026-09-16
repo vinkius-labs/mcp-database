@@ -14,10 +14,10 @@ This MCP server provides precise thermodynamic calculations for agricultural gra
 
 
 ## Available Tools (4)
+- **verify_drying_feasibility**: Checks if the specified air conditions are capable of reaching the target moisture
 - **calculate_energy_requirements**: Estimates the total energy cost in kWh for the drying process
 - **calculate_mass_and_shrinkage**: Calculates the reduction in grain mass and the resulting shrinkage percentage
 - **estimate_drying_time**: Calculates how long it will take to reach the target moisture level
-- **verify_drying_feasibility**: Checks if the specified air conditions are capable of reaching the target moisture
 
 
 ## 💬 Prompt Examples

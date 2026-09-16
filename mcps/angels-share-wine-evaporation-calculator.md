@@ -14,9 +14,9 @@ This MCP server provides precise calculations for the 'Angel's Share'--the volum
 
 
 ## Available Tools (4)
-- **calculate_cumulative_loss**: Predicts the total percentage of wine lost over a specific duration of aging
 - **calculate_monthly_evaporation_rate**: Determines the expected percentage of volume lost per month under current cellar conditions
 - **calculate_topping_requirement**: Determines the specific volume of wine needed to refill a barrel to its original level
+- **calculate_cumulative_loss**: Predicts the total percentage of wine lost over a specific duration of aging
 - **compare_barrel_profiles**: Compares how different wood types would perform under the exact same cellar conditions
 
 

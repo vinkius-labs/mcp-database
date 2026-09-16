@@ -14,8 +14,8 @@ This MCP server provides specialized tools for designing irrigation storage pond
 
 
 ## Available Tools (4)
-- **calculate_minimum_storage**: Determines the required volume of the pond to meet irrigation needs
 - **analyze_drawdown_and_reliability**: Evaluates how quickly the pond empties and how likely it is to meet demand
+- **calculate_minimum_storage**: Determines the required volume of the pond to meet irrigation needs
 - **design_pond_dimensions**: Calculates the physical footprint and depth of the pond
 - **estimate_losses**: Quantifies water lost to the environment
 

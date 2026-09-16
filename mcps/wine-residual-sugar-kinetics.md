@@ -15,9 +15,9 @@ This MCP server provides advanced kinetic modeling for wine fermentation. It all
 
 ## Available Tools (4)
 - **diagnose_stuck_fermentation**: Diagnoses the primary root cause of a stuck or slow fermentation
+- **evaluate_fermentation_health**: Evaluates if the fermentation is healthy, slow, or stuck
 - **predict_fermentation_trajectory**: Predicts fermentation completion time and final residual sugar levels
 - **recommend_intervention**: Recommends a corrective action based on a diagnosed root cause
-- **evaluate_fermentation_health**: Evaluates if the fermentation is healthy, slow, or stuck
 
 
 ## 💬 Prompt Examples

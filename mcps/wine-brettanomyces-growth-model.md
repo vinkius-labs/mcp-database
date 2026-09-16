@@ -15,9 +15,9 @@ This MCP server provides a predictive engine for winemakers to simulate the grow
 
 ## Available Tools (4)
 - **calculate_intervention_window**: Identifies the optimal time to intervene before spoilage becomes irreversible
+- **simulate_population_growth**: Predicts how the Brettanomyces population will expand over a specific timeframe
 - **check_sensory_threshold**: Determines if and when the produced phenols will become detectable by human senses
 - **predict_phenol_production**: Estimates the concentration of 4-EP and 4-EG produced as a byproduct of yeast activity
-- **simulate_population_growth**: Predicts how the Brettanomyces population will expand over a specific timeframe
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP provides specialized modeling for farmers and agronomists transitioning
 
 
 ## Available Tools (4)
-- **recommend_transition_strategy**: Provide actionable advice on equipment and management to optimize the transition
 - **analyze_yield_trajectory**: Predict how crop yields will change over the duration of the no-till transition
-- **assess_compaction_risk**: Identify the likelihood of surface compaction issues during the transition
+- **recommend_transition_strategy**: Provide actionable advice on equipment and management to optimize the transition
 - **evaluate_soil_health_timeline**: Estimate how long it takes for soil structural properties to improve
+- **assess_compaction_risk**: Identify the likelihood of surface compaction issues during the transition
 
 
 ## 💬 Prompt Examples
