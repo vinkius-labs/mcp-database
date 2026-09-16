@@ -33,16 +33,36 @@ Integrate the **Criteo Marketing API** directly into your AI workflow. Manage yo
 
 
 ## Available Tools (10)
-- **get_ad_set_details**: Get detailed configuration for an ad set
-- **list_marketing_budgets**: List active budgets and their spend
-- **get_marketing_statistics**: Retrieve performance statistics for campaigns or ad sets
-- **get_campaign_details**: Get detailed settings for a specific campaign
-- **list_ad_creatives**: List all ad creatives (banners, videos, etc.)
-- **list_ad_sets**: List all ad sets (groups) within campaigns
-- **list_advertisers**: List advertisers managed in your account
-- **list_audiences**: List target audiences for your campaigns
-- **list_marketing_campaigns**: List all marketing campaigns in Criteo
-- **list_audience_segments**: List available audience segments
+- **get_ad_set_details**: Pass the ad set ID to fetch its specific settings.
+
+Get detailed configuration for an ad set
+- **list_marketing_budgets**: Use this tool to check the financial status of campaigns.
+
+List active budgets and their spend
+- **get_marketing_statistics**: Pass a report configuration object defining required dimensions and metrics.
+
+Retrieve performance statistics for campaigns or ad sets
+- **get_campaign_details**: Provide the campaign ID to ensure accurate data retrieval.
+
+Get detailed settings for a specific campaign
+- **list_ad_sets**: Use this tool to retrieve a list of available ad set identifiers.
+
+List all ad sets (groups) within campaigns
+- **list_advertisers**: Use this tool to retrieve a list of managed advertiser identifiers.
+
+List advertisers managed in your account
+- **list_audiences**: Use this tool to retrieve a list of available audience identifiers.
+
+List target audiences for your campaigns
+- **list_marketing_campaigns**: Use this tool to retrieve a list of campaign identifiers.
+
+List all marketing campaigns in Criteo
+- **list_ad_creatives**: Use this tool to list available creative identifiers.
+
+List all ad creatives (banners, videos, etc.)
+- **list_audience_segments**: Use this tool to retrieve a list of available segment identifiers.
+
+List available audience segments
 
 
 ## 💬 Prompt Examples

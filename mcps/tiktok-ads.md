@@ -34,13 +34,13 @@ Connect **TikTok Ads** to your AI agent and manage your TikTok advertising campa
 
 ## Available Tools (8)
 - **enable_campaign**: Enable a campaign
-- **get_adgroup_reporting**: Get ad group performance
-- **get_ad_reporting**: Get ad performance
 - **list_campaigns**: List all TikTok ad campaigns
-- **get_campaign_reporting**: Get campaign performance
 - **list_adgroups**: List all TikTok ad groups
 - **list_ads**: List all TikTok ads
 - **pause_campaign**: Pause a campaign
+- **get_campaign_reporting**: Get campaign performance
+- **get_adgroup_reporting**: Get ad group performance
+- **get_ad_reporting**: Get ad performance
 
 
 ## 💬 Prompt Examples

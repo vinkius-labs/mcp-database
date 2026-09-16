@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your computer vision operations with **Face
 
 
 ## Available Tools (10)
-- **get_faceset_detail**: Get details of a FaceSet
 - **search_face**: Search for a face in a FaceSet
-- **create_faceset**: Create a new FaceSet
-- **detect_face**: Detect faces in an image
-- **skeleton_detect**: Detect human skeletons
 - **detect_body**: Detect human bodies in an image
-- **gesture_detect**: Detect hand gestures
-- **remove_face_from_faceset**: Remove faces from a FaceSet
 - **add_face_to_faceset**: Add faces to a FaceSet
 - **compare_faces**: Compare two faces for similarity
+- **create_faceset**: Create a new FaceSet
+- **detect_face**: Detect faces in an image
+- **gesture_detect**: Detect hand gestures
+- **get_faceset_detail**: Get details of a FaceSet
+- **remove_face_from_faceset**: Remove faces from a FaceSet
+- **skeleton_detect**: Detect human skeletons
 
 
 ## 💬 Prompt Examples

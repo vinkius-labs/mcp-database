@@ -38,9 +38,9 @@ Connect your **DataRobot** account to any AI agent and take full control of your
 - **list_datasets**: List datasets
 - **get_model**: Get model
 - **list_deployments**: List deployments
+- **list_projects**: List projects
 - **get_project**: Get project
 - **list_models**: List models
-- **list_projects**: List projects
 
 
 ## 💬 Prompt Examples

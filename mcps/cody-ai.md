@@ -32,16 +32,36 @@ Connect your AI to **Cody AI**, the business AI assistant that can be trained on
 
 
 ## Available Tools (10)
-- **create_conversation**: Create a new conversation session with a specific bot
-- **list_bots**: Retrieve all bots configured in your Cody AI account
-- **list_conversations**: Retrieve a list of recent conversations
-- **list_folders**: Retrieve a list of folders in your knowledge base
-- **list_messages**: Retrieve the message history for a specific conversation
-- **list_documents**: Retrieve a list of documents in your knowledge base
-- **send_message**: Send a prompt to the AI in a specific conversation
-- **get_bot_details**: Retrieve detailed information about a specific bot
-- **get_document_status**: Check the syncing status of a document to see if the AI has finished learning it
-- **import_webpage**: Import content from a URL into a specific folder in your knowledge base
+- **list_bots**: Provide necessary parameters in the payload.
+
+Retrieve all bots configured in your Cody AI account
+- **list_folders**: Provide necessary parameters in the payload.
+
+Retrieve a list of folders in your knowledge base
+- **get_bot_details**: Provide necessary parameters in the payload.
+
+Retrieve detailed information about a specific bot
+- **import_webpage**: Provide necessary parameters in the payload.
+
+Import content from a URL into a specific folder in your knowledge base
+- **create_conversation**: Provide necessary parameters in the payload.
+
+Create a new conversation session with a specific bot
+- **get_document_status**: Provide necessary parameters in the payload.
+
+Check the syncing status of a document to see if the AI has finished learning it
+- **list_conversations**: Provide necessary parameters in the payload.
+
+Retrieve a list of recent conversations
+- **list_documents**: Provide necessary parameters in the payload.
+
+Retrieve a list of documents in your knowledge base
+- **list_messages**: Provide necessary parameters in the payload.
+
+Retrieve the message history for a specific conversation
+- **send_message**: Provide necessary parameters in the payload.
+
+Send a prompt to the AI in a specific conversation
 
 
 ## 💬 Prompt Examples
