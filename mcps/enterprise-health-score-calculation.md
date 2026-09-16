@@ -14,10 +14,18 @@ This MCP server provides a specialized engine for calculating multi-dimensional 
 
 
 ## Available Tools (4)
-- **analyze_usage_risk**: Identifies specific risks stemming solely from product usage and engagement patterns
-- **get_customer_health_score**: Calculates the current absolute health score and trend for a specific customer
-- **get_financial_and_support_stability**: Assesses the operational health of the customer based on payment behavior and support interactions
-- **get_relationship_and_sentiment_health**: Evaluates the qualitative aspects of the customer relationship, including NPS and stakeholder strength
+- **get_financial_and_support_stability**: Pass the customer ID to check stability.
+
+Assesses the operational health of the customer based on payment behavior and support interactions
+- **get_relationship_and_sentiment_health**: Provide the customer ID to assess relationship health.
+
+Evaluates the qualitative aspects of the customer relationship, including NPS and stakeholder strength
+- **analyze_usage_risk**: Pass the customer ID to analyze usage patterns.
+
+Identifies specific risks stemming solely from product usage and engagement patterns
+- **get_customer_health_score**: Use this tool only when assessing overall customer health.
+
+Calculates the current absolute health score and trend for a specific customer
 
 
 ## 💬 Prompt Examples
@@ -102,4 +110,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
