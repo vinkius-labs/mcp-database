@@ -34,59 +34,151 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 
 
 ## Available Tools (53)
-- **create_link**: Creates a link
-- **create_report**: Creates a report
-- **create_revenue_report**: Revenue report
-- **create_team**: Creates a team
-- **create_user**: Creates a user (Admin only)
-- **create_website**: Creates a website
-- **delete_user**: Deletes a user (Admin only)
-- **delete_website**: Deletes a website
+- **create_pixel**: Supply a unique name for the pixel.
+
+Creates a pixel
+- **create_website**: Provide both the name and domain to ensure successful creation.
+
+Creates a website
 - **get_me_teams**: Get all teams for the current user
+- **get_session**: Provide the website ID and session ID.
+
+Individual session details
+- **get_team_users**: Provide the required team ID.
+
+Get team members
+- **get_user_websites**: Provide the required user ID.
+
+Gets all websites belonging to a user (Admin only)
+- **get_website_active**: Pass the website ID to scope the query.
+
+Active users in the last 5 minutes
+- **get_website**: Use the website ID to target the correct resource.
+
+Gets a website by ID
+- **add_team_user**: Specify the team ID and the user’s unique ID.
+
+Add user to team
+- **admin_list_teams**: Use this tool only when acting as an administrator.
+
+Returns all teams (Admin only)
+- **admin_list_users**: Use this tool only when acting as an administrator.
+
+Returns all users (Admin only)
+- **admin_list_websites**: Use this tool only when acting as an administrator.
+
+Returns all websites (Admin only)
+- **create_funnel_report**: Supply the required website ID.
+
+Conversion funnel report
+- **create_link**: Provide both a name and a URL to successfully create the link.
+
+Creates a link
+- **create_report**: Include all necessary parameters for the report.
+
+Creates a report
+- **create_retention_report**: Supply the required website ID.
+
+User retention report
+- **create_revenue_report**: Supply the required website ID.
+
+Revenue report
+- **create_team**: Ensure the name is unique.
+
+Creates a team
+- **create_user**: Supply the required username, password, and role.
+
+Creates a user (Admin only)
+- **delete_user**: Supply the required user ID.
+
+Deletes a user (Admin only)
+- **delete_website**: deletion.
+
+Deletes a website
 - **get_me**: Get information about the current session
-- **get_session**: Individual session details
-- **get_team_users**: Get team members
-- **get_team_websites**: Get team websites
-- **get_user_teams**: Gets all teams belonging to a user (Admin only)
-- **get_user_websites**: Gets all websites belonging to a user (Admin only)
-- **get_website_active**: Active users in the last 5 minutes
-- **get_website_daterange**: Available data date range
-- **get_website_event_data**: Event data grouped by event
-- **get_website_event_data_events**: Event data names and counts
-- **get_website_event_data_fields**: Property and value counts
-- **get_website_events**: Website event details
-- **get_website_metrics_expanded**: Expanded metrics including bounces and total time
-- **get_website**: Gets a website by ID
-- **get_website_stats**: Summarized website statistics (pageviews, visitors, etc.)
-- **join_team**: Join a team via access code
-- **list_links**: Returns all user links
-- **admin_list_teams**: Returns all teams (Admin only)
-- **get_realtime_stats**: Realtime stats within the last 30 minutes
-- **list_websites**: Returns all user websites
-- **add_team_user**: Add user to team
-- **admin_list_users**: Returns all users (Admin only)
-- **create_funnel_report**: Conversion funnel report
-- **create_pixel**: Creates a pixel
-- **create_retention_report**: User retention report
 - **get_me_websites**: Get all websites for the current user
-- **get_session_activity**: Activity for a session
-- **get_user**: Gets a user by ID (Admin only)
-- **get_website_events_stats**: Aggregated event statistics
-- **get_website_metrics**: Metrics for a given time range (type: path, browser, os, etc.)
-- **get_website_pageviews**: Pageviews and sessions series data
-- **get_website_sessions**: Website session details
-- **get_website_sessions_stats**: Summarized session statistics
+- **get_session_activity**: Provide the website ID and session ID. Filters are optional.
+
+Activity for a session
+- **get_team_websites**: Provide a valid team ID to execute the query.
+
+Get team websites
+- **get_user_teams**: Pass the target user ID as a string.
+
+Gets all teams belonging to a user (Admin only)
+- **get_website_daterange**: Provide the website ID.
+
+Available data date range
+- **get_website_event_data_events**: Specify the website ID and time range. Filters are optional.
+
+Event data names and counts
+- **get_website_event_data_fields**: Specify the website ID and time range. Filters are optional.
+
+Property and value counts
+- **get_website_event_data**: Specify the website ID and time range. Filters are optional.
+
+Event data grouped by event
+- **get_website_events_stats**: Specify the website ID and time range. Filters are optional.
+
+Aggregated event statistics
+- **get_website_events**: Specify the website ID and time range. Filters are optional.
+
+Website event details
+- **get_website_metrics_expanded**: Provide the website ID and metric type. Filters are optional.
+
+Expanded metrics including bounces and total time
+- **get_website_metrics**: Specify the website ID and the desired metric type.
+
+Metrics for a given time range (type: path, browser, os, etc.)
+- **get_website_pageviews**: Specify the website ID and time range. Use a time unit for aggregation.
+
+Pageviews and sessions series data
+- **get_website_sessions_stats**: Specify the website ID and time range. Filters are optional.
+
+Summarized session statistics
+- **get_website_sessions**: Specify the website ID and time range. Filters are optional.
+
+Website session details
+- **get_website_stats**: Provide the website ID and time range for accurate data.
+
+Summarized website statistics (pageviews, visitors, etc.)
+- **join_team**: Ensure the provided code is correct and active.
+
+Join a team via access code
+- **list_links**: Returns all user links
 - **list_pixels**: Returns all user pixels
-- **list_reports**: Get all reports by website ID
+- **list_reports**: Supply the required website ID.
+
+Get all reports by website ID
 - **list_teams**: Returns all teams
-- **login**: Login to self-hosted Umami to get a token
-- **reset_website**: Removes all data related to the website
-- **send_event**: Send an event to Umami
-- **update_user**: Updates a user (Admin only)
-- **update_website**: Updates a website
-- **verify_token**: Verify if the current token is still valid
-- **admin_list_websites**: Returns all websites (Admin only)
-- **create_attribution_report**: Marketing attribution report
+- **list_websites**: Returns all user websites
+- **login**: Use valid credentials for both username and password.
+
+Login to self-hosted Umami to get a token
+- **reset_website**: Use this function to completely wipe the website’s data.
+
+Removes all data related to the website
+- **send_event**: Provide the required website ID and page URL.
+
+Send an event to Umami
+- **update_user**: Supply the required user ID and the fields to update.
+
+Updates a user (Admin only)
+- **update_website**: Supply the website ID and at least one field to update.
+
+Updates a website
+- **verify_token**: Do not use this tool if you are unsure of the token’s status.
+
+Verify if the current token is still valid
+- **get_realtime_stats**: Provide a valid website ID for the query.
+
+Realtime stats within the last 30 minutes
+- **get_user**: Pass the required user ID.
+
+Gets a user by ID (Admin only)
+- **create_attribution_report**: Supply the required website ID.
+
+Marketing attribution report
 
 
 ## 💬 Prompt Examples
@@ -171,4 +263,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

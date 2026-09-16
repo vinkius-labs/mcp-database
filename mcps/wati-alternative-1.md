@@ -34,8 +34,8 @@ Connect your **Wati** account to any AI agent to streamline your WhatsApp Busine
 
 ## Available Tools (4)
 - **assign_operator**: Assign a specific operator to a chat
-- **get_chatbots**: Retrieve a list of existing chatbots
 - **get_contacts**: Retrieve a list of contacts from Wati
+- **get_chatbots**: Retrieve a list of existing chatbots
 - **send_template_message**: Send a pre-approved WhatsApp template message
 
 
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,52 +36,108 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 
 
 ## Available Tools (46)
-- **assign_ip**: Assign a new IP address
-- **backup_storage**: Create a storage backup
-- **create_api_token**: Create a new API token
-- **create_load_balancer**: Create a managed load balancer
-- **create_router**: Create a router
-- **create_storage**: Create a new storage
-- **delete_server**: Delete a server
+- **create_load_balancer**: Supply the required configuration details in the body.
+
+Create a managed load balancer
 - **get_account**: Get UpCloud account information
-- **get_kubernetes_kubeconfig**: Get Kubernetes cluster credentials (kubeconfig)
 - **list_api_tokens**: List API tokens
 - **list_databases**: List managed database services
-- **list_load_balancers**: List managed load balancer services
-- **list_object_storages**: List Managed Object Storage services
-- **list_routers**: List routers
 - **list_storages**: List all accessible storages
 - **list_zones**: List available zones
-- **restore_storage**: Restore storage from backup
-- **update_ip**: Modify PTR record or floating IP attachment
-- **update_network**: Modify network details
-- **update_server**: Modify server configuration
-- **update_storage**: Modify or resize storage
-- **create_network**: Create a new SDN private network
+- **restore_storage**: Provide the UUID of the storage.
+
+Restore storage from backup
 - **export_audit_logs**: Export account audit logs
-- **list_firewall_rules**: List firewall rules for a server
-- **clone_storage**: Clone a storage
-- **create_database**: Create a managed database instance
-- **get_billing_summary**: Get monthly billing summary
-- **list_audit_logs**: List account audit logs
-- **create_firewall_rule**: Create a firewall rule for a server
-- **create_kubernetes_cluster**: Create a Managed Kubernetes cluster
-- **create_object_storage**: Create a Managed Object Storage service
-- **create_server**: Create a new server
-- **get_host**: Get host details
-- **get_server**: Get detailed server information
-- **import_storage**: Import data to storage
-- **list_database_types**: List available database types and plans
-- **list_hosts**: List available hosts
-- **list_ips**: List all IP addresses
-- **list_networks**: List all SDN private networks
-- **list_servers**: List all servers
-- **stop_server**: Stop a server
-- **list_kubernetes_clusters**: List Managed Kubernetes (UKS) clusters
+- **create_firewall_rule**: Provide the server UUID and rule configuration payload.
+
+Create a firewall rule for a server
+- **list_object_storages**: List Managed Object Storage services
 - **list_prices**: List resource prices
-- **release_ip**: Release an IP address
-- **restart_server**: Restart a server
-- **start_server**: Start a server
+- **release_ip**: Provide the IP address to be released.
+
+Release an IP address
+- **start_server**: Provide the unique server UUID.
+
+Start a server
+- **assign_ip**: Provide the required assignment payload.
+
+Assign a new IP address
+- **list_audit_logs**: List account audit logs
+- **backup_storage**: Provide the target storage UUID.
+
+Create a storage backup
+- **get_billing_summary**: Get monthly billing summary
+- **clone_storage**: Provide the target storage UUID.
+
+Clone a storage
+- **create_database**: Supply the required configuration details in the body.
+
+Create a managed database instance
+- **create_kubernetes_cluster**: Supply the required configuration details in the body.
+
+Create a Managed Kubernetes cluster
+- **create_network**: The body must define the network parameters.
+
+Create a new SDN private network
+- **create_object_storage**: Supply the required configuration details in the body.
+
+Create a Managed Object Storage service
+- **create_router**: Provide a complete JSON payload in the body.
+
+Create a router
+- **create_server**: Ensure the body contains all required parameters.
+
+Create a new server
+- **create_storage**: The body must contain all necessary details.
+
+Create a new storage
+- **create_api_token**: Provide the required token configuration payload.
+
+Create a new API token
+- **list_database_types**: List available database types and plans
+- **delete_server**: Ensure the server UUID is correct before proceeding.
+
+Delete a server
+- **list_firewall_rules**: Provide the server UUID.
+
+List firewall rules for a server
+- **list_hosts**: List available hosts
+- **import_storage**: Provide the target storage UUID.
+
+Import data to storage
+- **list_ips**: List all IP addresses
+- **get_server**: Use the server’s unique UUID.
+
+Get detailed server information
+- **get_host**: Provide a valid host ID for the query.
+
+Get host details
+- **get_kubernetes_kubeconfig**: Use the cluster UUID.
+
+Get Kubernetes cluster credentials (kubeconfig)
+- **list_kubernetes_clusters**: List Managed Kubernetes (UKS) clusters
+- **list_load_balancers**: List managed load balancer services
+- **list_networks**: List all SDN private networks
+- **restart_server**: Provide the unique server UUID.
+
+Restart a server
+- **list_routers**: List routers
+- **list_servers**: List all servers
+- **stop_server**: Provide the unique server UUID.
+
+Stop a server
+- **update_ip**: Specify the IP address and update payload.
+
+Modify PTR record or floating IP attachment
+- **update_network**: Provide the network UUID and update payload.
+
+Modify network details
+- **update_server**: Supply both the server UUID and the update payload.
+
+Modify server configuration
+- **update_storage**: The UUID must identify the target storage.
+
+Modify or resize storage
 
 
 ## 💬 Prompt Examples
@@ -166,4 +222,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
