@@ -14,10 +14,10 @@ This MCP server provides precision chemical diagnostics for wine stability. It c
 
 
 ## Available Tools (4)
-- **assess_fault_risks**: Determines the likelihood of specific chemical faults occurring
 - **get_metal_impact_factor**: Quantifies how much the presence of metals is currently accelerating potential oxidation
 - **get_redox_potential**: Calculates the current electrochemical redox potential (Eh) of the wine
 - **predict_aging_trajectory**: Forecasts whether the wine is heading toward a reductive or oxidative state over time
+- **assess_fault_risks**: Determines the likelihood of specific chemical faults occurring
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
