@@ -38,8 +38,6 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 ## Available Tools (11)
 - **list_campaigns**: List all campaigns
 - **logout_session**: Logout supervisor session
-- **get_agent_state**: Get specific agent state
-- **get_statistics**: Get real-time statistics
 - **list_active_interactions**: List active interactions
 - **list_agent_states**: List all agent states
 - **list_users**: List all users
@@ -49,6 +47,8 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 - **update_agent_state**: g., READY, NOT_READY, LOGOUT).
 
 Force update agent state
+- **get_agent_state**: Get specific agent state
+- **get_statistics**: Get real-time statistics
 
 
 ## 💬 Prompt Examples
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

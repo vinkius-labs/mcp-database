@@ -36,18 +36,18 @@ Connect your **Gainsight PX** (Aptrinsic) account to any AI agent to automate yo
 
 
 ## Available Tools (12)
-- **get_user_details**: Get user metadata
-- **identify_px_user**: Sync user profile
 - **get_account_details**: Get account metadata
 - **get_my_identity**: Get account profile
-- **identify_px_account**: Sync account profile
 - **list_px_accounts**: Query PX accounts
 - **list_px_users**: Query PX users
-- **track_server_event**: Log custom event
 - **verify_api_connection**: Check connection
 - **list_px_engagements**: List guides/surveys
 - **list_product_features**: List tracked features
 - **list_px_products**: List PX products
+- **get_user_details**: Get user metadata
+- **identify_px_account**: Sync account profile
+- **identify_px_user**: Sync user profile
+- **track_server_event**: Log custom event
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -36,20 +36,20 @@ No more manual status checking or digging through CRM lists on the go. Your AI a
 
 
 ## Available Tools (12)
-- **add_internal_note**: Add a note to a lead profile
 - **create_followup_task**: Create a new task
-- **list_person_notes**: List notes for a specific person
+- **list_followup_tasks**: List CRM tasks
+- **list_real_estate_deals**: List transactions and deals
 - **log_lead_activity**: Log a new activity event
+- **list_leads**: List lead profiles (people)
 - **create_new_lead**: Requires essential details like email or name.
 
 Add a new lead to the CRM
+- **add_internal_note**: Add a note to a lead profile
 - **get_lead_details**: Get details for a specific lead
 - **list_calendar_appointments**: List showings and appointments
-- **list_configured_webhooks**: List active webhooks
-- **list_followup_tasks**: List CRM tasks
-- **list_leads**: List lead profiles (people)
-- **list_real_estate_deals**: List transactions and deals
 - **list_recent_events**: List website and activity events
+- **list_person_notes**: List notes for a specific person
+- **list_configured_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

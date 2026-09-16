@@ -5,47 +5,64 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [content-management](../categories/content-management.md)
 
-Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards.
+Manage your news aggregation via Feedly — list collections, read streams, and search for feeds directly through your AI agent.
 
 ## Description
-Connect your **Feedly** account to any AI agent and take full control of your news aggregation and content curation workflows through natural conversation.
+Connect your **Feedly** account to any AI agent and take full control of your news consumption and RSS aggregation through natural conversation.
 
 ### What you can do
 
-- **Feed Orchestration** — List and manage your subscribed news sources programmatically, including adding or removing RSS/Atom feeds
-- **Stream Intelligence** — Retrieve the latest entries (articles) from specific feeds or categories and monitor unread counts in real-time
-- **Content Extraction** — Programmatically fetch complete article text and metadata to perform deep analysis and summaries via your agent
-- **Organization Control** — Manage your Feedly categories and personal tags to maintain a structured and high-fidelity reading environment
-- **Reading Workflow** — Mark articles as read and manage your reading list programmatically to streamline your news consumption
+- **Collection Orchestration** — List all your curated collections and feeds to organize your information flow natively
+- **Stream Intelligence** — Retrieve the latest articles from specific feeds or entire categories with full metadata flawlessly
+- **Read State Management** — Mark articles as read or save them for later directly from the cloud without manual UI interaction
+- **Content Discovery** — Search for new RSS feeds and trending topics across the entire Feedly index flawlessly
+- **Board & Tag Organization** — List and query articles from your personal boards and tagged content natively
+- **User Insights** — Access your Feedly profile and subscription metadata through the agent synchronously
 
 ### How it works
 
 1. Subscribe to this server
-2. Retrieve your **Developer Access Token** from Feedly (Settings > Integrations > Developer Token)
-3. Start managing your news curation from Claude, Cursor, or any MCP client
-
-No more manual scrolling through endless articles. Your AI acts as your dedicated news analyst and content curator.
+2. Enter your Feedly Developer Access Token
+3. Start managing your news feed from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Market Researchers** — instantly track industry news and retrieve full article contents for deep analysis using natural language
-- **Content Strategists** — monitor trending topics across specific feeds and manage curation tags without leaving your workspace
-- **Busy Professionals** — automate the process of marking articles as read and summarizing daily highlights through simple AI queries
+- **Researchers & Analysts** — quickly pull the latest industry news and trending topics into your AI-powered research flow
+- **Content Creators** — monitor multiple sources and save inspiration to Feedly boards directly from your chat
+- **Knowledge Workers** — stay updated on curated feeds without leaving your primary productivity workspace
 
 
-## Available Tools (10)
-- **get_article_details**: Get full content of an article
-- **get_user_profile**: Get your Feedly profile
-- **list_categories**: List your Feedly categories
-- **list_subscriptions**: List all subscribed feeds
-- **mark_articles_as_read**: Mark one or more articles as read
-- **get_feed_metadata**: Get metadata for a specific feed
-- **get_stream_contents**: Retrieve articles from a stream
-- **list_tags**: List your personal tags
-- **subscribe_to_feed**: Follow a new news source
-- **unsubscribe_from_feed**: Stop following a news source
+## Available Tools (12)
+- **list_tags**: List all your Feedly tags
+- **search_feeds**: Use keywords or a URL for the search query.
+
+Search for new RSS feeds in the Feedly index
+- **get_board_contents**: Provide the board ID to fetch the content.
+
+Retrieve articles from a specific board
+- **get_subscriptions**: List all individual feed subscriptions
+- **get_tag_contents**: Use this tool only when the tag ID is known.
+
+Retrieve articles associated with a specific tag
+- **search_topics**: Provide a topic search query.
+
+Search for trending topics or specific interests
+- **get_entry**: Pass the entry ID to retrieve the details.
+
+Get details for a specific article entry
+- **get_profile**: Get current Feedly user profile
+- **get_stream_contents**: Provide a valid stream_id, as the stream is mandatory.
+
+Retrieve articles for a specific stream (feed, category, or global)
+- **list_boards**: List all your Feedly boards (saved for later)
+- **list_collections**: Do not specify any filters when calling this tool.
+
+List all your Feedly collections (categories) and feeds
+- **mark_as_read**: Pass a comma-separated list of entry IDs.
+
+Mark specific articles as read
 
 
 ## 💬 Prompt Examples
@@ -53,38 +70,38 @@ No more manual scrolling through endless articles. Your AI acts as your dedicate
 Here are some examples of how you can interact with the **Feedly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my categories in Feedly."
+> "List my Feedly collections."
 
 **🤖 AI Agent:**
-> I've retrieved your categories. You have 4 organized streams: 'Tech' (ID: user/.../category/Tech), 'AI & ML', 'Market News', and 'Design'. Which one should we check for new articles?
+> I've retrieved your collections. You have 'Tech News', 'Design Inspiration', and 'Marketing' categories. Which collection's latest articles would you like to see?
 
 ---
 
 **👤 You:**
-> "Show me the last 3 unread articles in the 'AI & ML' category."
+> "Show me the latest 5 articles from the 'Tech News' category."
 
 **🤖 AI Agent:**
-> Fetching unread articles from AI & ML... I've found 3 new entries, including 'New LLM Benchmarks' and 'The state of RAG'. Would you like the full text summaries for these?
+> Fetching stream contents... Here are the latest updates including 'AI Breakthroughs in 2024' and 'New Smartphone Launch'. Would you like me to summarize any of these for you?
 
 ---
 
 **👤 You:**
-> "Subscribe to this feed: 'https://example.com/rss' and add it to 'Tech'."
+> "Search for feeds about 'Edge Computing'."
 
 **🤖 AI Agent:**
-> Done! I've successfully added the new feed to your Feedly account under the 'Tech' category. You'll now see articles from this source in your Tech stream.
+> Searching the Feedly index... I found several relevant feeds including 'The Edge Blog' and 'Computing Weekly'. Would you like the stream IDs to add them to your collections?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Feedly Developer Token?**
-Log in to Feedly, go to your account settings, navigate to Integrations, and select 'Developer Token' to request your access key.
+**Q: How do I obtain a Feedly Developer Token?**
+Log in to your Feedly account and navigate to the **Settings > Developer** page to generate a personal access token for prototyping and individual use.
 
-**Q: Can the agent mark articles as read automatically?**
-Yes! Use the `mark_articles_as_read` tool and provide an array of article IDs to clear them from your unread list programmatically.
+**Q: Can I mark articles as read using this agent?**
+Yes! Use the `mark_as_read` tool with the entry IDs of the articles you wish to clear from your unread stream.
 
-**Q: How many articles can I retrieve at once?**
-The `get_stream_contents` tool allows you to specify a count (default 20, max 1000) for retrieving articles from a stream.
+**Q: Is it possible to search for new feeds through the agent?**
+Absolutely. The `search_feeds` tool allows you to search the Feedly global index for specific topics or site URLs to add to your collections.
 
 
 ## Installation & Usage
@@ -130,4 +147,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

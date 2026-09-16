@@ -36,18 +36,18 @@ Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI ag
 
 
 ## Available Tools (12)
-- **get_agent_details**: Get agent metadata
-- **get_call_details**: Get call metadata
 - **get_export_status**: Check export job
-- **get_team_details**: Get team metadata
-- **list_agent_teams**: List agent teams
 - **list_my_numbers**: List owned phone numbers
 - **get_call_recording**: Get recording link
-- **list_account_metrics**: Get call center metrics
-- **list_agents**: List call center agents
+- **get_team_details**: Get team metadata
+- **get_agent_details**: Get agent metadata
 - **list_buyable_numbers**: Search for phone numbers
 - **list_calls**: List recent phone calls
 - **list_export_jobs**: List data exports
+- **list_account_metrics**: Get call center metrics
+- **list_agent_teams**: List agent teams
+- **list_agents**: List call center agents
+- **get_call_details**: Get call metadata
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

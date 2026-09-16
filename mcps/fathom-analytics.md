@@ -35,17 +35,35 @@ Connect your **Fathom Analytics** account to any AI agent and take full control 
 
 
 ## Available Tools (12)
-- **get_visitors**: Get visitor aggregations for a site
 - **get_account_info**: Get Fathom Analytics account information
-- **get_current_visitors**: Get the number of current visitors on a site
-- **get_pageviews**: Get pageview aggregations for a site
-- **get_referrers**: Get top referrers for a site
-- **get_top_pages**: Get top pages for a site
-- **get_device_stats**: Get device type aggregations for a site
-- **get_event**: Get details for a specific event
+- **get_top_pages**: Requires the site ID.
+
+Get top pages for a site
+- **get_current_visitors**: Requires the site ID.
+
+Get the number of current visitors on a site
+- **get_device_stats**: Pass the site ID to filter results.
+
+Get device type aggregations for a site
+- **get_event**: Both site and event IDs are required.
+
+Get details for a specific event
 - **get_me**: Get current API token user profile
-- **get_site**: Get details for a specific site
-- **list_events**: List custom events for a specific site
+- **get_pageviews**: Specify both start and end dates.
+
+Get pageview aggregations for a site
+- **get_referrers**: Requires the site ID.
+
+Get top referrers for a site
+- **get_site**: Use the site ID as the primary identifier.
+
+Get details for a specific site
+- **get_visitors**: Specify both start and end dates.
+
+Get visitor aggregations for a site
+- **list_events**: Provide the site ID to filter results.
+
+List custom events for a specific site
 - **list_sites**: List all sites in your Fathom Analytics account
 
 
@@ -131,4 +149,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
