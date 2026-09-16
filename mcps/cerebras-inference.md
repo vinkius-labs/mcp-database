@@ -34,21 +34,49 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 
 
 ## Available Tools (15)
-- **create_completion**: Generate text continuations from a single prompt string
-- **delete_file**: Delete a file
-- **get_batch**: Retrieve status of a batch job
-- **get_metrics**: Retrieve Prometheus-formatted operational metrics
-- **get_model**: Fetches details for a specific model
-- **list_batches**: List all batch jobs
-- **list_files**: List uploaded files
-- **list_public_models**: Retrieve model details without an API key
-- **cancel_batch**: Cancel a batch job
-- **create_batch**: Create a batch job for asynchronous processing
+- **get_metrics**: Provide a valid organization ID.
+
+Retrieve Prometheus-formatted operational metrics
+- **get_model**: Provide the model ID as the required parameter.
+
+Fetches details for a specific model
+- **create_batch**: Supply the full job configuration payload in the body.
+
+Create a batch job for asynchronous processing
 - **create_chat_completion**: Generate conversational responses using a structured message format
-- **get_file**: Retrieve metadata for a specific file
-- **get_file_content**: Download raw content of a file
-- **list_models**: Lists all currently available models
-- **upload_file**: Upload a JSONL file for Batch processing
+- **get_file**: Use the file ID to fetch details.
+
+Retrieve metadata for a specific file
+- **get_file_content**: Use the file ID to retrieve the content.
+
+Download raw content of a file
+- **list_models**: Do not specify any parameters.
+
+Lists all currently available models
+- **upload_file**: Provide the file upload payload in the body.
+
+Upload a JSONL file for Batch processing
+- **cancel_batch**: Provide the batch ID of the job you wish to stop.
+
+Cancel a batch job
+- **create_completion**: Use this tool only when immediate text generation is required.
+
+Generate text continuations from a single prompt string
+- **delete_file**: Ensure the file ID is valid before calling.
+
+Delete a file
+- **get_batch**: Use the unique batch ID to check the job status.
+
+Retrieve status of a batch job
+- **list_batches**: Do not specify any parameters.
+
+List all batch jobs
+- **list_files**: Do not specify any parameters.
+
+List uploaded files
+- **list_public_models**: Specify the desired response format.
+
+Retrieve model details without an API key
 
 
 ## 💬 Prompt Examples

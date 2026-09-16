@@ -38,17 +38,33 @@ Stop wrestling with complex reporting dashboards. Your AI agent acts as your ded
 
 ## Available Tools (12)
 - **get_account_summary**: Get an overview of the account performance
-- **list_ad_groups**: List ad groups within a campaign
-- **list_ads**: List ads within an ad group
-- **list_budgets**: List account budgets
-- **get_ad_performance**: Get performance metrics for ads in an ad group
-- **get_campaign_details**: Get detailed settings for a campaign
-- **get_campaign_report**: Fetch performance metrics for campaigns
-- **get_keyword_performance**: Get performance metrics for keywords in an ad group
-- **list_accessible_customers**: List accessible Google Ads customer accounts
-- **list_campaigns**: List all Google Ads campaigns
-- **search_keywords**: Search for keywords and their performance
+- **get_ad_performance**: Must provide an adGroupId.
+
+Get performance metrics for ads in an ad group
+- **get_campaign_details**: Provide a valid campaignId.
+
+Get detailed settings for a campaign
+- **get_campaign_report**: Specify a dateRange (e.g., LAST_7_DAYS).
+
+Fetch performance metrics for campaigns
 - **get_change_status**: Check recent changes in the account
+- **get_keyword_performance**: Must provide an adGroupId.
+
+Get performance metrics for keywords in an ad group
+- **list_accessible_customers**: List accessible Google Ads customer accounts
+- **list_ad_groups**: Must provide a campaignId.
+
+List ad groups within a campaign
+- **list_ads**: Must provide an adGroupId.
+
+List ads within an ad group
+- **list_budgets**: List account budgets
+- **list_campaigns**: Do not specify any parameters.
+
+List all Google Ads campaigns
+- **search_keywords**: Provide the keyword text to search for.
+
+Search for keywords and their performance
 
 
 ## 💬 Prompt Examples

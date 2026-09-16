@@ -35,18 +35,18 @@ Connect **Exa (formerly Metaphor)** to any AI agent and simplify how you discove
 
 
 ## Available Tools (10)
-- **find_similar**: Great for competitive analysis and research.
-
-Find similar pages
-- **search_domain**: Useful for site-specific research or documentation lookups.
-
-Search within a domain
-- **answer**: Get an AI answer
 - **find_similar_with_contents**: Find similar pages with content
-- **get_contents**: Extract page contents
 - **search**: Returns titles, URLs, and relevance scores for matching pages.
 
 Search the web with AI
+- **answer**: Get an AI answer
+- **find_similar**: Great for competitive analysis and research.
+
+Find similar pages
+- **get_contents**: Extract page contents
+- **search_domain**: Useful for site-specific research or documentation lookups.
+
+Search within a domain
 - **search_keyword**: Traditional keyword search
 - **search_neural**: Ideal for conceptual queries and research topics.
 

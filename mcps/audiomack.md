@@ -34,34 +34,80 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 
 
 ## Available Tools (28)
-- **create_playlist**: Create a new playlist (Requires Auth)
-- **delete_playlist**: Delete a playlist (Requires Auth)
-- **favorite_music**: Favorite a track or album (Requires Auth)
-- **follow_artist**: Follow an artist (Requires Auth)
-- **get_artist_following**: Get users an artist is following
-- **get_artist_playlists**: Get artist playlists
-- **get_artist_uploads**: Get artist uploads
-- **get_music_by_id**: Get song or album info by ID
-- **get_playlist_by_slug**: Get playlist info by slug
-- **play_music**: Play a track (Requires Auth)
-- **remove_track_from_playlist**: Remove a track from a playlist (Requires Auth)
-- **search_autosuggest**: Get search autosuggestions
-- **unfavorite_music**: Remove a track or album from favorites (Requires Auth)
-- **unrepost_music**: Remove a reposted track or album (Requires Auth)
-- **update_playlist**: Edit an existing playlist (Requires Auth)
-- **add_track_to_playlist**: Add a track to a playlist (Requires Auth)
-- **flag_music_unplayable**: Flag a track or album as unplayable
-- **get_artist**: Get artist profile info
-- **get_artist_favorites**: Get artist favorites
-- **get_charts**: Get Audiomack charts
-- **get_music_by_slug**: Get song or album info by slug
-- **get_playlist_by_id**: Get playlist info by ID
-- **get_trending_music**: Get trending music
-- **repost_music**: Repost a track or album (Requires Auth)
-- **search**: Search for music, artists, or albums
-- **unfollow_artist**: Unfollow an artist (Requires Auth)
-- **get_artist_followers**: Get followers of an artist
+- **create_playlist**: You must provide a title and genre for the playlist.
+
+Create a new playlist (Requires Auth)
+- **get_artist_playlists**: Supply the artist slug to identify the source.
+
+Get artist playlists
+- **search_autosuggest**: Provide a search query to get suggestions.
+
+Get search autosuggestions
+- **add_track_to_playlist**: You must specify both the playlist ID and the music ID.
+
+Add a track to a playlist (Requires Auth)
+- **get_artist**: Supply the artist’s slug.
+
+Get artist profile info
+- **get_artist_favorites**: Provide the artist slug to target the correct data.
+
+Get artist favorites
+- **get_playlist_by_id**: Provide the ID to fetch the details.
+
+Get playlist info by ID
+- **repost_music**: Supply the unique identifier of the content to be reposted.
+
+Repost a track or album (Requires Auth)
+- **unfollow_artist**: Supply the artist’s slug.
+
+Unfollow an artist (Requires Auth)
+- **get_artist_followers**: Provide the artist slug, as this is a required parameter.
+
+Get followers of an artist
 - **get_recent_music**: Get most recent music
+- **delete_playlist**: Supply the unique playlist ID to confirm deletion.
+
+Delete a playlist (Requires Auth)
+- **favorite_music**: Use this tool only when the user explicitly requests favoriting content.
+
+Favorite a track or album (Requires Auth)
+- **flag_music_unplayable**: Supply both the artist and music slugs.
+
+Flag a track or album as unplayable
+- **follow_artist**: Supply the artist’s slug.
+
+Follow an artist (Requires Auth)
+- **get_artist_following**: Use the artist slug to specify the source artist.
+
+Get users an artist is following
+- **get_artist_uploads**: Always provide the artist slug to filter results.
+
+Get artist uploads
+- **get_charts**: Specify the page number to navigate results.
+
+Get Audiomack charts
+- **get_music_by_id**: Get song or album info by ID
+- **get_music_by_slug**: Get song or album info by slug
+- **get_playlist_by_slug**: Provide either the artist or playlist slug.
+
+Get playlist info by slug
+- **get_trending_music**: Get trending music
+- **play_music**: Play a track (Requires Auth)
+- **remove_track_from_playlist**: Specify both the playlist ID and the music ID.
+
+Remove a track from a playlist (Requires Auth)
+- **search**: Provide a search query to begin the search.
+
+Search for music, artists, or albums
+- **unfavorite_music**: Provide the unique identifier of the content to remove.
+
+Remove a track or album from favorites (Requires Auth)
+- **unrepost_music**: Provide the unique identifier of the content to un-repost.
+
+Remove a reposted track or album (Requires Auth)
+- **update_playlist**: You must provide the playlist ID to modify the details.
+
+Edit an existing playlist (Requires Auth)
 
 
 ## 💬 Prompt Examples

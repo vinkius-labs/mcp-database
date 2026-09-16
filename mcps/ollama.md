@@ -42,35 +42,35 @@ Your AI acts as a gateway to Ollama's model library — generate text, have conv
 - **openai_embeddings**: Compatible with the OpenAI embeddings API. Supports input as string or array of strings, optional encoding_format and dimensions.
 
 Generate embeddings via the OpenAI-compatible endpoint
-- **openai_list_models**: Returns model IDs, creation timestamps, and ownership info. Useful when using OpenAI SDKs that require this endpoint.
-
-List models via the OpenAI-compatible endpoint
-- **openai_responses**: Compatible with the OpenAI Responses API. Uses stream=false for a single complete response.
-
-Generate responses via the OpenAI Responses API endpoint
 - **chat**: Supports multimodal inputs (images as base64), tool calling, structured outputs (JSON schema), thinking mode, and model options. Pass the full messages array as JSON. Uses stream=false for a single complete response.
 
 Generate a chat message in a conversation
+- **generate_embeddings**: Supports single text or array of texts, optional truncation for long inputs, and configurable output dimensions. Use for semantic search, retrieval, and RAG applications.
+
+Generate vector embeddings from text using a model
 - **generate**: Supports images (base64), structured outputs (JSON schema), system prompts, thinking mode, and model options (temperature, top_p, seed, etc.). Uses stream=false for a single complete response.
 
 Generate a text completion from a model
+- **list_models**: List all available models
+- **list_running_models**: Includes model name, size, VRAM usage, digest, context length, and expiry time (when the model will be unloaded).
+
+List models currently loaded in memory
 - **openai_chat_completions**: Supports messages, tools, temperature, max_tokens, seed, response_format, vision (image_url), and reasoning_effort. Uses stream=false for a single complete response.
 
 Generate chat completions via the OpenAI-compatible endpoint
 - **openai_completions**: Supports prompt, temperature, max_tokens, seed, stop sequences, and suffix (for fill-in-the-middle). Uses stream=false for a single complete response.
 
 Generate text completions via the OpenAI-compatible endpoint
-- **show_model_details**: Get detailed information about a specific model
-- **list_running_models**: Includes model name, size, VRAM usage, digest, context length, and expiry time (when the model will be unloaded).
+- **openai_list_models**: Returns model IDs, creation timestamps, and ownership info. Useful when using OpenAI SDKs that require this endpoint.
 
-List models currently loaded in memory
-- **list_models**: List all available models
+List models via the OpenAI-compatible endpoint
+- **openai_responses**: Compatible with the OpenAI Responses API. Uses stream=false for a single complete response.
+
+Generate responses via the OpenAI Responses API endpoint
+- **show_model_details**: Get detailed information about a specific model
 - **get_version**: Useful for diagnostics and compatibility checks.
 
 Get the Ollama server version
-- **generate_embeddings**: Supports single text or array of texts, optional truncation for long inputs, and configurable output dimensions. Use for semantic search, retrieval, and RAG applications.
-
-Generate vector embeddings from text using a model
 
 
 ## 💬 Prompt Examples

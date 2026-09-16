@@ -37,11 +37,11 @@ Connect your **Stability AI** account to any AI agent and unlock professional-gr
 - **text_to_image**: Returns base64 encoded image artifacts.
 
 Generates an image from a text prompt
-- **upscale_image**: Increases the resolution of an image
-- **list_engines**: List available engines for generation
-- **masking**: Replaces parts of an image defined by a mask
 - **get_user_balance**: Check user balance
 - **image_to_image**: Modifies an existing image based on a text prompt
+- **list_engines**: List available engines for generation
+- **masking**: Replaces parts of an image defined by a mask
+- **upscale_image**: Increases the resolution of an image
 
 
 ## 💬 Prompt Examples

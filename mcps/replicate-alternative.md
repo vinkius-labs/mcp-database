@@ -39,18 +39,6 @@ No more navigating the Replicate website to find models or check prediction stat
 - **create_prediction**: Requires the model slug in "owner/name" format and an input object matching the model's schema. Optionally specify a version ID and webhook URL. Returns the prediction object with its ID, status (starting, processing, succeeded, failed, canceled) and output. Use get_prediction to check status and retrieve results.
 
 Run a model prediction on Replicate
-- **get_account**: Returns account type, username and usage info. Use this to verify your API token is working correctly.
-
-Get the authenticated Replicate account info
-- **get_collection**: Provide the collection slug (e.g. "text-to-image", "large-language-models").
-
-Get details for a specific model collection
-- **get_model**: Provide the model slug in "owner/name" format (e.g. "stability-ai/sdxl" or "meta/meta-llama-3-70b-instruct").
-
-Get details for a specific Replicate model
-- **get_model_versions**: Each version includes its ID (64-char hash), creation date, input/output schema and cog version. Use this to find the correct version ID when creating predictions for models that require a specific version.
-
-Get all versions of a Replicate model
 - **search_models**: Returns models with their name, owner, description, run count and hardware. Useful for finding specific types of models (e.g. "text-to-image", "llm", "music-generation").
 
 Search for models on Replicate by query
@@ -63,15 +51,27 @@ List model collections on Replicate
 - **list_hardware**: Each hardware option includes its SKU name, pricing and specifications. Useful for choosing the right GPU for your prediction workload.
 
 List available GPU hardware on Replicate
+- **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
+
+Cancel a running prediction
+- **get_account**: Returns account type, username and usage info. Use this to verify your API token is working correctly.
+
+Get the authenticated Replicate account info
+- **get_collection**: Provide the collection slug (e.g. "text-to-image", "large-language-models").
+
+Get details for a specific model collection
+- **get_model**: Provide the model slug in "owner/name" format (e.g. "stability-ai/sdxl" or "meta/meta-llama-3-70b-instruct").
+
+Get details for a specific Replicate model
+- **get_model_versions**: Each version includes its ID (64-char hash), creation date, input/output schema and cog version. Use this to find the correct version ID when creating predictions for models that require a specific version.
+
+Get all versions of a Replicate model
 - **list_models**: Each model includes its name, owner, description, run count, hardware requirements and cover image URL. Use this to discover available models for running predictions.
 
 List available ML models on Replicate
 - **list_predictions**: Each prediction includes its ID, model, status, creation time and output URLs. Useful for tracking prediction history and monitoring model usage.
 
 List recent predictions on Replicate
-- **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
-
-Cancel a running prediction
 
 
 ## 💬 Prompt Examples

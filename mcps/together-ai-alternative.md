@@ -35,35 +35,79 @@ Connect **Together AI** to your AI agent to leverage the world's fastest inferen
 
 
 ## Available Tools (27)
-- **cancel_batch**: Cancel a running batch job
-- **create_batch**: Create a new asynchronous batch job
 - **create_chat_completion**: 3-70B-Instruct-Turbo.
 
 Generate a model response for a given chat conversation
-- **create_embeddings**: Turn text into vector embeddings
-- **create_image_generation**: Generate images from text prompts
-- **create_text_completion**: Generate text completions for a given prompt
-- **delete_endpoint**: Delete a dedicated endpoint
-- **get_fine_tune**: Get details of a specific fine-tuning job
+- **create_embeddings**: Provide the input text and specify the desired model name.
+
+Turn text into vector embeddings
+- **create_image_generation**: Specify a prompt and model name; width and height are required.
+
+Generate images from text prompts
+- **delete_endpoint**: Ensure the endpoint is not currently in use before calling this function.
+
+Delete a dedicated endpoint
 - **list_batches**: List all batch jobs
-- **list_fine_tunes**: List all fine-tuning jobs
-- **create_audio_speech**: Text-to-Speech (TTS) generation
-- **create_audio_transcription**: Transcriptions (STT) from audio file
-- **create_endpoint**: Create a dedicated endpoint for predictable performance
-- **create_fine_tune**: Create a fine-tuning job
-- **delete_file**: Delete an uploaded file
-- **delete_fine_tune**: Delete a fine-tuning job
-- **create_rerank**: Reorder documents by relevance to a query
-- **get_batch**: Get details of a specific batch job
-- **get_endpoint**: Get details of a specific dedicated endpoint
-- **get_file**: Retrieve metadata for a specific file
+- **delete_fine_tune**: Ensure the job is not currently running before calling this tool.
+
+Delete a fine-tuning job
+- **get_batch**: Pass the required Batch Job ID.
+
+Get details of a specific batch job
+- **update_endpoint**: Use this tool to change scaling or status settings.
+
+Update a dedicated endpoint (Start/Stop/Scale)
+- **create_audio_speech**: Provide the text and model name; use a specific voice name for consistency.
+
+Text-to-Speech (TTS) generation
+- **create_audio_transcription**: Specify the audio file and the desired language code.
+
+Transcriptions (STT) from audio file
+- **cancel_batch**: Use the Batch Job ID to target the job.
+
+Cancel a running batch job
+- **create_batch**: Provide the target endpoint and the ID of the input file.
+
+Create a new asynchronous batch job
+- **create_endpoint**: Specify the model and required hardware configuration.
+
+Create a dedicated endpoint for predictable performance
+- **create_fine_tune**: Provide the base model and training data file ID; set learning rate and batch size.
+
+Create a fine-tuning job
+- **delete_file**: Provide the file ID to remove the resource.
+
+Delete an uploaded file
+- **get_endpoint**: Use the endpoint ID to fetch the details.
+
+Get details of a specific dedicated endpoint
+- **get_file**: Use the file ID to fetch the details.
+
+Retrieve metadata for a specific file
+- **get_fine_tune**: Provide the required job ID.
+
+Get details of a specific fine-tuning job
 - **list_endpoints**: List all dedicated endpoints
 - **list_files**: List all uploaded files
-- **list_fine_tune_checkpoints**: List checkpoints for a fine-tuning job
+- **list_fine_tune_checkpoints**: Specify the job ID to retrieve the list.
+
+List checkpoints for a fine-tuning job
+- **list_fine_tunes**: Use this tool to view the status and details of existing jobs.
+
+List all fine-tuning jobs
 - **list_models**: List all available models on Together AI
-- **create_video_generation**: Create videos from text or image prompts
-- **update_endpoint**: Update a dedicated endpoint (Start/Stop/Scale)
-- **upload_file**: Upload a file for fine-tuning, evals, or batch inference
+- **create_rerank**: Supply the search query and the documents to be ranked.
+
+Reorder documents by relevance to a query
+- **create_text_completion**: Use this tool when you need generative text output.
+
+Generate text completions for a given prompt
+- **upload_file**: Specify the purpose (fine-tune, eval, or batch-api) when uploading.
+
+Upload a file for fine-tuning, evals, or batch inference
+- **create_video_generation**: Provide a prompt and model name.
+
+Create videos from text or image prompts
 
 
 ## 💬 Prompt Examples
