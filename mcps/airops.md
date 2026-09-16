@@ -36,17 +36,17 @@ Connect your **AirOps** account to your AI agent to unlock professional AI workf
 
 ## Available Tools (10)
 - **list_apps**: List AI applications
+- **cancel_execution**: Stop a running task
+- **chat_with_agent**: Interact with AI agent
+- **search_memory_store**: Search vector database
+- **add_memory_document**: Enrich AI knowledge
+- **upload_file**: Upload file for AI
 - **get_app_details**: Get app metadata
 - **execute_workflow_sync**: Best for quick tasks.
 
 Run workflow synchronously
 - **execute_workflow_async**: Run workflow asynchronously
 - **get_execution_status**: Check execution progress
-- **cancel_execution**: Stop a running task
-- **chat_with_agent**: Interact with AI agent
-- **search_memory_store**: Search vector database
-- **add_memory_document**: Enrich AI knowledge
-- **upload_file**: Upload file for AI
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

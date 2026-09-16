@@ -36,15 +36,36 @@ Essential for **MCP server developers**, **DevOps engineers**, **platform teams*
 
 
 ## Available Tools (18)
-- **add_variable**: Use this to set API keys, database URLs, feature flags, or any configuration needed by your MCP server. Requires project ID, environment ID, variable key, and value. Variable values are stored securely.
-
-Add a new environment variable to an Alpic environment
-- **get_tunnel_ticket**: Returns the tunnel URL and ticket token. Use this during development to test your MCP server before deploying to a production environment.
-
-Get a tunnel ticket for local development and testing of an MCP server
 - **get_project_analytics**: Requires the project ID. Use this to monitor MCP server health, identify performance trends, and troubleshoot issues.
 
 Get analytics and usage data for a specific Alpic project
+- **get_deployment**: Requires the deployment ID. Use this to check if a deployment succeeded, review deployment history, or debug failed deployments.
+
+Get detailed status and metadata for a specific Alpic deployment
+- **get_project**: Requires the project ID from list_projects results. Use this to review project settings before making updates or triggering deployments.
+
+Get detailed information about a specific Alpic MCP server project
+- **get_server_info**: Use this to verify which MCP tools are exposed and confirm the server is running correctly.
+
+Get server information and status for a specific Alpic project
+- **get_tunnel_ticket**: Returns the tunnel URL and ticket token. Use this during development to test your MCP server before deploying to a production environment.
+
+Get a tunnel ticket for local development and testing of an MCP server
+- **list_environments**: Each environment has its own URL, variables, and deployment status. Returns environment IDs, names, URLs, and current deployment state. Use this to identify which environment to deploy to or manage variables for.
+
+List all environments (dev, staging, prod) for a specific Alpic project
+- **list_projects**: Returns project IDs, names, descriptions, associated teams, deployment status, and environment counts. Use this to overview your entire MCP infrastructure before managing specific projects or triggering deployments.
+
+List all MCP server projects in your Alpic account
+- **list_teams**: Each team contains projects and environments for deploying MCP servers. Returns team IDs, names, and member counts. Use this first to identify which team to manage projects under.
+
+List all teams associated with your Alpic account
+- **list_variables**: Variable values are masked for security. Returns variable keys and metadata. Use this to audit environment configuration before deploying or adding new variables.
+
+List all environment variables configured for an Alpic environment
+- **publish_to_registry**: Requires project ID and optionally a server description and category. Use this to make your MCP server publicly available.
+
+Publish an MCP server to the official MCP registry via Alpic
 - **create_environment**: Requires environment name and project ID. Optionally set initial variables and configuration. Each environment gets a unique URL for MCP client connections. Returns the created environment details.
 
 Create a new deployment environment (dev, staging, prod) for an Alpic project
@@ -63,33 +84,12 @@ Trigger a new deployment for a specific Alpic environment
 - **get_deployment_logs**: Useful for debugging failed deployments, understanding build output, or verifying successful startup of the MCP server. Requires project ID and environment ID.
 
 Get deployment logs for a specific Alpic environment
-- **get_deployment**: Requires the deployment ID. Use this to check if a deployment succeeded, review deployment history, or debug failed deployments.
-
-Get detailed status and metadata for a specific Alpic deployment
-- **get_project**: Requires the project ID from list_projects results. Use this to review project settings before making updates or triggering deployments.
-
-Get detailed information about a specific Alpic MCP server project
-- **get_server_info**: Use this to verify which MCP tools are exposed and confirm the server is running correctly.
-
-Get server information and status for a specific Alpic project
-- **list_environments**: Each environment has its own URL, variables, and deployment status. Returns environment IDs, names, URLs, and current deployment state. Use this to identify which environment to deploy to or manage variables for.
-
-List all environments (dev, staging, prod) for a specific Alpic project
-- **list_projects**: Returns project IDs, names, descriptions, associated teams, deployment status, and environment counts. Use this to overview your entire MCP infrastructure before managing specific projects or triggering deployments.
-
-List all MCP server projects in your Alpic account
-- **list_teams**: Each team contains projects and environments for deploying MCP servers. Returns team IDs, names, and member counts. Use this first to identify which team to manage projects under.
-
-List all teams associated with your Alpic account
-- **list_variables**: Variable values are masked for security. Returns variable keys and metadata. Use this to audit environment configuration before deploying or adding new variables.
-
-List all environment variables configured for an Alpic environment
-- **publish_to_registry**: Requires project ID and optionally a server description and category. Use this to make your MCP server publicly available.
-
-Publish an MCP server to the official MCP registry via Alpic
 - **update_project**: Only pass the fields you want to change. Requires the project ID from list_projects results. Use this to rename projects, update descriptions, or point to a new repository branch.
 
 Update an existing Alpic MCP server project configuration
+- **add_variable**: Use this to set API keys, database URLs, feature flags, or any configuration needed by your MCP server. Requires project ID, environment ID, variable key, and value. Variable values are stored securely.
+
+Add a new environment variable to an Alpic environment
 
 
 ## 💬 Prompt Examples
@@ -174,4 +174,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

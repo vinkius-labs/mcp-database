@@ -35,18 +35,18 @@ Connect your **Amazon Marketing Cloud (AMC)** instance to your AI agent to unloc
 
 
 ## Available Tools (10)
-- **list_workflows**: List AMC workflows
 - **delete_workflow**: Delete an AMC workflow
 - **list_executions**: List workflow executions
 - **update_workflow**: Update an AMC workflow
+- **delete_execution**: Cancel an execution
 - **create_execution**: Execute an AMC query
-- **get_execution_download_urls**: Get execution download URLs
+- **create_workflow**: Create an AMC workflow
+- **get_workflow_details**: Get workflow details
+- **list_workflows**: List AMC workflows
 - **get_execution_status**: g. PENDING, COMPLETED).
 
 Check execution status
-- **delete_execution**: Cancel an execution
-- **create_workflow**: Create an AMC workflow
-- **get_workflow_details**: Get workflow details
+- **get_execution_download_urls**: Get execution download URLs
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

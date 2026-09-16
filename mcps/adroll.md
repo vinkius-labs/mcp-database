@@ -41,10 +41,10 @@ No more manual toggling between complex ad tables or missing spend spikes. Your 
 
 Get performance report
 - **list_adgroups**: List ad groups for a campaign
-- **list_segments**: List audience segments
-- **get_campaign**: Get campaign details
 - **list_ads**: List all ads for an advertisable
 - **list_advertisables**: List all advertisable profiles
+- **list_segments**: List audience segments
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -35,10 +35,6 @@ Unlock the full potential of WhatsApp automation with **2Chat**, the programmabl
 
 
 ## Available Tools (5)
-- **check_number**: Helps prevent failed delivery errors.
-
-Verify if a phone number is registered on WhatsApp
-- **create_group**: Create a new WhatsApp group with specified participants
 - **list_groups**: List all WhatsApp groups that a connected number belongs to
 - **list_numbers**: Use this to identify which "from_number" to use in subsequent sending actions.
 
@@ -46,6 +42,10 @@ List all WhatsApp phone numbers connected to your 2Chat account
 - **send_message**: Can send text or public URL media to direct numbers or a specific group UUID.
 
 Send a WhatsApp text or media message using a connected number
+- **check_number**: Helps prevent failed delivery errors.
+
+Verify if a phone number is registered on WhatsApp
+- **create_group**: Create a new WhatsApp group with specified participants
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

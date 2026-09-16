@@ -35,28 +35,28 @@ Connect your **Appointlet** scheduling workspace to any AI agent to streamline b
 
 
 ## Available Tools (10)
-- **list_meeting_types**: List all meeting types configured for an Appointlet scheduling page
 - **list_scheduling_pages**: Each page has a unique booking URL.
 
 List all scheduling pages in the Appointlet organization
-- **get_booking**: Get full details of a specific Appointlet booking
+- **get_meeting_type**: Get detailed configuration for a specific Appointlet meeting type
 - **list_bookings**: Useful for reporting and CRM sync.
 
 List all bookings for an Appointlet scheduling page
-- **cancel_booking**: The attendee receives a cancellation notification email. The time slot becomes available for new bookings.
-
-Cancel an existing Appointlet booking
-- **get_organization**: The organization is the top-level account entity.
-
-Get the Appointlet organization profile
-- **list_intake_fields**: Returns field names, types, and required status.
-
-List all custom intake form fields for an Appointlet meeting type
 - **list_members**: Members receive meetings via round-robin or pooled availability.
 
 List all team members assigned to an Appointlet scheduling page
-- **get_meeting_type**: Get detailed configuration for a specific Appointlet meeting type
+- **get_organization**: The organization is the top-level account entity.
+
+Get the Appointlet organization profile
 - **get_scheduling_page**: Retrieve detailed information for a specific Appointlet scheduling page
+- **list_meeting_types**: List all meeting types configured for an Appointlet scheduling page
+- **get_booking**: Get full details of a specific Appointlet booking
+- **cancel_booking**: The attendee receives a cancellation notification email. The time slot becomes available for new bookings.
+
+Cancel an existing Appointlet booking
+- **list_intake_fields**: Returns field names, types, and required status.
+
+List all custom intake form fields for an Appointlet meeting type
 
 
 ## 💬 Prompt Examples
@@ -141,4 +141,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

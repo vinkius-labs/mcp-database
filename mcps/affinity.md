@@ -35,8 +35,8 @@ Connect your **Affinity** account to your AI agent to unlock professional relati
 
 
 ## Available Tools (5)
-- **list_organizations**: Retrieve companies and institutions mapped within your Affinity CRM
 - **list_smart_lists**: Retrieve the catalog of custom smart lists (pipelines) securely configured in your account
+- **list_organizations**: Retrieve companies and institutions mapped within your Affinity CRM
 - **list_list_entries**: Retrieve the people or organizations associated with a specific Affinity smart list ID
 - **list_interactions**: Retrieve recent chronological logs of synced emails, meetings, and calls across your team
 - **list_persons**: Retrieve a paginated list of people your team has interacted with in your Affinity network
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

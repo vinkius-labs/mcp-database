@@ -35,22 +35,22 @@ Transform your **1msg.io** instance into a conversational powerhouse for your AI
 
 
 ## Available Tools (6)
-- **send_message**: Requires a recipient phone number and the message body. Do not use for media or templates.
-
-Send a simple WhatsApp text message
 - **send_template**: Requires the template name.
 
 Send a pre-approved WhatsApp template message
 - **send_file**: Optionally supports a caption or filename.
 
 Send a media file (image, PDF, video) to a WhatsApp number
+- **list_templates**: List all available and pre-approved WhatsApp templates
+- **send_message**: Requires a recipient phone number and the message body. Do not use for media or templates.
+
+Send a simple WhatsApp text message
 - **get_status**: g. connected, disconnected). Use this to debug communication failures.
 
 Check the current connection status of the 1msg.io WhatsApp channel
 - **list_messages**: Use this to check previous communications or audit chat history.
 
 Retrieve recent incoming and outgoing WhatsApp message history
-- **list_templates**: List all available and pre-approved WhatsApp templates
 
 
 ## 💬 Prompt Examples
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

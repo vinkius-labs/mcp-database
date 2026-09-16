@@ -36,10 +36,10 @@ Empower your AI agent to act as a real-time supervisor for your **8x8 Contact Ce
 
 ## Available Tools (3)
 - **get_realtime_metrics**: Get live contact center metrics
+- **list_queue_metrics**: List historical queue performance
 - **list_agent_interactions**: Filter by date to audit historical call resolution metadata.
 
 List historical agent interactions
-- **list_queue_metrics**: List historical queue performance
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

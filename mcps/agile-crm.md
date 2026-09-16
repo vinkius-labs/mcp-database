@@ -36,18 +36,18 @@ No more manual status checking across different CRM modules or digging through c
 
 
 ## Available Tools (12)
-- **list_contacts**: List all contacts in Agile CRM
 - **list_deals**: List all deals (opportunities)
+- **list_tasks**: List all tasks
+- **create_deal**: Create a new deal
 - **list_events**: List all calendar events
+- **list_contact_notes**: List notes for a specific contact
+- **update_contact**: Update an existing contact
+- **list_contacts**: List all contacts in Agile CRM
+- **create_contact**: Create a new contact
+- **retrieve_task**: Get details of a specific task
+- **delete_contact**: Delete a contact
 - **retrieve_contact**: Get details of a specific contact
 - **retrieve_deal**: Get details of a specific deal
-- **update_contact**: Update an existing contact
-- **delete_contact**: Delete a contact
-- **list_tasks**: List all tasks
-- **create_contact**: Create a new contact
-- **create_deal**: Create a new deal
-- **list_contact_notes**: List notes for a specific contact
-- **retrieve_task**: Get details of a specific task
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

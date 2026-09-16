@@ -29,10 +29,6 @@ The **AppLovin MCP Server** provides your AI agent with a powerful interface to 
 
 
 ## Available Tools (7)
-- **get_account_check**: Verify AppLovin account connection
-- **get_max_cohort_report**: Specify both the start and end dates for the analysis.
-
-Get cohort analysis reports for MAX
 - **get_app_discovery_report**: Specify both the start and end dates for the analysis.
 
 Get performance data for UA campaigns (AppDiscovery)
@@ -43,6 +39,10 @@ Get aggregated performance data for MAX mediation
 
 Get revenue data aggregated per user or per impression
 - **list_apps**: List apps tracked in your AppLovin account
+- **get_account_check**: Verify AppLovin account connection
+- **get_max_cohort_report**: Specify both the start and end dates for the analysis.
+
+Get cohort analysis reports for MAX
 - **list_campaigns**: List UA campaigns from the management API
 
 
@@ -128,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

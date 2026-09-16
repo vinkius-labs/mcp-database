@@ -35,35 +35,35 @@ Give your AI the ability to reach out, follow up, and monitor replies autonomous
 
 
 ## Available Tools (11)
-- **delete_inbox**: Warning: this deletes all emails in it.
-
-Delete a specific inbox by ID
-- **get_thread**: Requires a thread_id.
-
-Read all messages inside a specific conversation thread
 - **list_threads**: Returns a list of thread objects including subject lines and recent message previews. The agent needs an inbox_id first.
 
 List conversation threads inside an inbox
-- **reply_to_message**: The thread will be preserved.
+- **get_thread**: Requires a thread_id.
 
-Reply to an existing email message/thread
-- **update_message**: Update an existing message metadata (like marking it as read)
-- **get_inbox**: Get details of a specific inbox by ID
-- **list_inboxes**: An inbox is required to send or receive emails. Returns an array of inboxes with their IDs, email addresses, and names.
-
-List all inboxes assigned to the AgentMail API Key
-- **create_inbox**: You can optionally link it to a custom domain.
-
-Create a new email inbox for an agent
-- **forward_message**: You can optionally add text to the forwarded message.
-
-Forward an existing email message
+Read all messages inside a specific conversation thread
 - **get_attachment**: Attachments might be encoded in base64. Ensure you parse or read it correctly.
 
 Download or read a specific attachment from a message
+- **update_message**: Update an existing message metadata (like marking it as read)
+- **get_inbox**: Get details of a specific inbox by ID
+- **create_inbox**: You can optionally link it to a custom domain.
+
+Create a new email inbox for an agent
+- **delete_inbox**: Warning: this deletes all emails in it.
+
+Delete a specific inbox by ID
 - **send_message**: Requires the sender inbox_id, which you can get from list_inboxes.
 
 Send a brand new email message
+- **reply_to_message**: The thread will be preserved.
+
+Reply to an existing email message/thread
+- **forward_message**: You can optionally add text to the forwarded message.
+
+Forward an existing email message
+- **list_inboxes**: An inbox is required to send or receive emails. Returns an array of inboxes with their IDs, email addresses, and names.
+
+List all inboxes assigned to the AgentMail API Key
 
 
 ## 💬 Prompt Examples
@@ -148,4 +148,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
