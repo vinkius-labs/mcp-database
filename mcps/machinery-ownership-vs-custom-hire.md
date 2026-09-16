@@ -14,9 +14,9 @@ This MCP server provides decision-support tools for agricultural economic analys
 
 
 ## Available Tools (3)
+- **get_ownership_cost_analysis**: Calculates the complete cost profile of owning a piece of machinery
 - **calculate_break_even_point**: Determines the exact amount of usage required to make ownership more cost-effective than hiring
 - **compare_ownership_vs_hire**: Provides a direct comparison between the two strategies for a specific annual workload
-- **get_ownership_cost_analysis**: Calculates the complete cost profile of owning a piece of machinery
 
 
 ## 💬 Prompt Examples

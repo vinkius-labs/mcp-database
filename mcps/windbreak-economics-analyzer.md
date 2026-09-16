@@ -14,9 +14,15 @@ This MCP server provides a specialized economic engine to determine the financia
 
 
 ## Available Tools (3)
-- **evaluate_investment_viability**: Analyzes the long-term financial return and time to recoup costs
-- **calculate_annual_benefits**: Determines the total yearly economic gain provided by the windbreak
-- **get_establishment_cost**: Calculates the total upfront investment needed for the windbreak
+- **calculate_annual_benefits**: Input all required benefit values to calculate the annual return.
+
+Determines the total yearly economic gain provided by the windbreak
+- **evaluate_investment_viability**: Provide the establishment cost, opportunity cost, and annual benefit.
+
+Analyzes the long-term financial return and time to recoup costs
+- **get_establishment_cost**: Use this tool when determining initial setup costs.
+
+Calculates the total upfront investment needed for the windbreak
 
 
 ## 💬 Prompt Examples

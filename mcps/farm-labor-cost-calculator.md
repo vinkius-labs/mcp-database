@@ -15,9 +15,9 @@ This MCP server provides agricultural employers with precise tools to model the 
 
 ## Available Tools (4)
 - **calculate_hourly_burden**: Determines the total cost of one hour of labor including all tax and benefit multipliers
-- **calculate_overtime_costs**: Calculates the additional cost incurred when a worker exceeds the standard workweek
 - **calculate_seasonal_budget**: Provides the final, comprehensive estimate for the entire labor season
 - **get_base_wage_validation**: Verifies if a proposed wage meets legal minimums for a specific program
+- **calculate_overtime_costs**: Calculates the additional cost incurred when a worker exceeds the standard workweek
 
 
 ## 💬 Prompt Examples

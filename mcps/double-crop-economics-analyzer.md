@@ -15,9 +15,9 @@ This MCP server provides specialized tools for agricultural decision-making. It 
 
 ## Available Tools (4)
 - **analyze_double_crop_profitability**: Calculates the total economic return of the double-crop sequence and compares it to a baseline single-crop scenario
-- **calculate_break_even_yield**: Determines the minimum yield required for the second crop to make the entire double-cropping operation worth the effort
 - **check_feasibility_constraints**: Evaluates whether the proposed sequence is physically and operationally possible
 - **estimate_sequence_risk**: Quantifies the total economic risk of the double-crop sequence based on the variability of both crops
+- **calculate_break_even_yield**: Determines the minimum yield required for the second crop to make the entire double-cropping operation worth the effort
 
 
 ## 💬 Prompt Examples

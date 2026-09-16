@@ -14,9 +14,9 @@ This MCP server provides specialized financial modeling for precision agricultur
 
 
 ## Available Tools (3)
+- **run_sensitivity_analysis**: Tests how different levels of adoption success affect the final ROI
 - **get_investment_comparison**: Compares two different technology adoption strategies
 - **get_roi_summary**: Provides a high-level financial overview of a specific technology adoption scenario
-- **run_sensitivity_analysis**: Tests how different levels of adoption success affect the final ROI
 
 
 ## 💬 Prompt Examples

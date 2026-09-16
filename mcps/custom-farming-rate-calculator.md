@@ -15,8 +15,8 @@ This MCP server provides a specialized calculation engine for determining compet
 
 ## Available Tools (3)
 - **get_equipment_efficiency_multiplier**: Adjusts the capacity calculations based on the specific type of machinery being used
-- **get_market_rate_range**: Provides a recommended price range for the service based on current market trends
 - **get_operational_cost**: Determines the total direct cost required to perform a specific farming task
+- **get_market_rate_range**: Provides a recommended price range for the service based on current market trends
 
 
 ## 💬 Prompt Examples

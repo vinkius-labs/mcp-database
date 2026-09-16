@@ -14,9 +14,9 @@ This MCP server provides specialized calculation engines for determining the val
 
 
 ## Available Tools (3)
+- **simulate_herd_valuation**: Provides a high-level view of the total herd value by accounting for culling and replacement patterns
 - **get_accumulated_depreciation**: Determines the total value lost from the moment of acquisition up to a specific point in time
 - **get_annual_depreciation**: Calculates the specific amount of value lost for a single animal or cohort in a specific year
-- **simulate_herd_valuation**: Provides a high-level view of the total herd value by accounting for culling and replacement patterns
 
 
 ## 💬 Prompt Examples

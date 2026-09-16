@@ -14,10 +14,10 @@ This MCP server provides advanced mathematical modeling for dairy herd managemen
 
 
 ## Available Tools (4)
-- **get_cumulative_yield**: Calculates the total volume of milk produced from calving up to a specific day
 - **get_daily_production**: Determines the specific milk volume produced on a given day
 - **get_lactation_projections**: Predicts long-term production metrics including 305-day yield and the persistency of the cow
 - **predict_economic_schedule**: Estimates the optimal dry-off date and the resulting economic implications for the calving interval
+- **get_cumulative_yield**: Calculates the total volume of milk produced from calving up to a specific day
 
 
 ## 💬 Prompt Examples

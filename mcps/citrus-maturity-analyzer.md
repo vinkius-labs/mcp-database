@@ -14,9 +14,9 @@ This MCP server provides specialized tools for citrus producers to monitor fruit
 
 
 ## Available Tools (3)
-- **calculate_maturity_indices**: Determines the current maturity status of a specific citrus sample
 - **get_variety_standards**: Retrieves the hardcoded biological minimums for different citrus types
 - **predict_harvest_window**: Forecasts when the fruit will meet specific market requirements
+- **calculate_maturity_indices**: Determines the current maturity status of a specific citrus sample
 
 
 ## 💬 Prompt Examples

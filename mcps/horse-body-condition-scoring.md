@@ -15,9 +15,9 @@ This MCP server provides professional tools for assessing equine health using th
 
 ## Available Tools (4)
 - **get_bcs_analysis**: Calculates the overall body condition score and identifies fat deposition patterns
-- **get_weight_plan_recommendation**: Provides a nutritional management plan based on the current BCS
 - **list_breed_profiles**: Retrieves the expected fat distribution characteristics and ideal BCS ranges for different horse breeds
 - **validate_measurement_inputs**: Verifies that all anatomical measurements provided are within valid Henneke ranges
+- **get_weight_plan_recommendation**: Provides a nutritional management plan based on the current BCS
 
 
 ## 💬 Prompt Examples

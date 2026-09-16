@@ -14,8 +14,8 @@ This MCP server provides a comprehensive suite of tools to evaluate the economic
 
 
 ## Available Tools (4)
-- **calculate_economic_viability**: Provides a complete economic picture, including the break-even point for the cover crop
 - **calculate_long_term_soil_value**: Estimates the annualized economic benefit derived from environmental improvements to the soil
+- **calculate_economic_viability**: Provides a complete economic picture, including the break-even point for the cover crop
 - **evaluate_yield_impact**: Determines the financial impact of the cover crop on the primary cash crop's revenue
 - **get_annual_implementation_cost**: Calculates the total upfront investment required to plant and kill a cover crop
 

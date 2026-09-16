@@ -14,9 +14,9 @@ This MCP server provides specialized modeling for goat milk production. It uses 
 
 
 ## Available Tools (4)
-- **estimate_cheese_potential**: Calculates the amount of cheese that can be produced from the milk
-- **calculate_milk_economic_value**: Determines the monetary value of the milk produced
 - **get_milk_quality_metrics**: Estimates the health and quality indicators of the milk
+- **calculate_milk_economic_value**: Determines the monetary value of the milk produced
+- **estimate_cheese_potential**: Calculates the amount of cheese that can be produced from the milk
 - **get_milk_yield_stats**: Determines the expected daily milk volume and its core nutritional components
 
 

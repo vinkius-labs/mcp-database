@@ -14,9 +14,9 @@ This MCP server provides specialized tools for agricultural decision-making. It 
 
 
 ## Available Tools (3)
+- **estimate_yield_benefits**: Predicts the annual financial gain resulting from improved drainage and soil conditions
 - **analyze_installation_costs**: Calculates the total capital required to install the drainage system per unit of land
 - **calculate_investment_metrics**: Determines the long-term financial viability and recovery timeframe of the project
-- **estimate_yield_benefits**: Predicts the annual financial gain resulting from improved drainage and soil conditions
 
 
 ## 💬 Prompt Examples

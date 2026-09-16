@@ -14,8 +14,8 @@ This MCP server provides a suite of financial modeling tools for agricultural pr
 
 
 ## Available Tools (4)
-- **calculate_crop_opportunity_cost**: Estimates the potential revenue lost by enrolling land in a conservation program instead of growing crops
 - **calculate_conservation_payments**: Calculates the various payment streams (annual, total, and present value) for a specific conservation contract
+- **calculate_crop_opportunity_cost**: Estimates the potential revenue lost by enrolling land in a conservation program instead of growing crops
 - **compare_program_economics**: Provides a direct comparison between the financial benefit of a conservation program versus traditional crop production
 - **get_program_rates**: Retrieves the current standard payment rates and cost-share percentages for specific conservation programs and practices
 

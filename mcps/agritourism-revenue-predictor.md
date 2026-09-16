@@ -14,10 +14,18 @@ This MCP server provides specialized modeling for agritourism businesses like pu
 
 
 ## Available Tools (4)
-- **calculate_revenue_projections**: Forecasts total gross income
-- **evaluate_break_even**: Determines operational threshold for profitability
-- **predict_visitor_demand**: Predicts total expected visitors
-- **simulate_weather_scenario**: Adjusts projections for weather disruptions
+- **calculate_revenue_projections**: Ensure all inputs reflect the same time period.
+
+Forecasts total gross income
+- **evaluate_break_even**: Provide accurate total operating costs for the period.
+
+Determines operational threshold for profitability
+- **predict_visitor_demand**: Use this tool when estimating visitor numbers.
+
+Predicts total expected visitors
+- **simulate_weather_scenario**: Provide the initial visitor demand and severity index.
+
+Adjusts projections for weather disruptions
 
 
 ## 💬 Prompt Examples

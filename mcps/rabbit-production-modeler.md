@@ -15,9 +15,9 @@ This MCP server provides biological modeling for rabbit production. It allows AI
 
 ## Available Tools (4)
 - **annual_meat_yield_estimation**: Calculates the total meat production per doe per year
+- **mortality_prediction**: Estimates the survival probability of a litter
 - **doe_reproductive_capacity**: Predicts the annual reproductive output of a female rabbit
 - **kit_growth_analysis**: Calculates the growth trajectory and efficiency of individual kits
-- **mortality_prediction**: Estimates the survival probability of a litter
 
 
 ## 💬 Prompt Examples

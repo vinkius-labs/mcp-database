@@ -14,10 +14,10 @@ This MCP server provides specialized calculation engines for USDA disaster assis
 
 
 ## Available Tools (4)
-- **get_trigger_probability**: Analyzes historical yield and price data to estimate the likelihood of a program trigger occurring in the next cycle
 - **calculate_arc_plc_eligibility**: Determines if a producer qualifies for ARC or PLC and calculates the estimated payment for a specific crop
 - **estimate_elap_lfp_loss**: Calculates potential payments for livestock and forage-related disaster scenarios
 - **generate_program_selection**: Provides a recommendation on which program (ARC vs PLC) would likely yield the highest payment based on current market conditions
+- **get_trigger_probability**: Analyzes historical yield and price data to estimate the likelihood of a program trigger occurring in the next cycle
 
 
 ## 💬 Prompt Examples

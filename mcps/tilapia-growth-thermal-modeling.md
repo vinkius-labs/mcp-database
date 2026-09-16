@@ -14,8 +14,8 @@ This MCP server provides advanced predictive modeling for tilapia aquaculture. I
 
 
 ## Available Tools (4)
-- **evaluate_efficiency_metrics**: Analyzes the nutritional and economic efficiency of the feeding program
 - **estimate_survival_probability**: Predicts the likelihood of the fish population surviving the growth cycle
+- **evaluate_efficiency_metrics**: Analyzes the nutritional and economic efficiency of the feeding program
 - **identify_thermal_optimum**: Finds the most efficient temperature range for a specific feeding and density setup
 - **predict_growth_trajectory**: Calculates the projected weight gain and time required to reach a target weight
 

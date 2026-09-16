@@ -14,10 +14,18 @@ This MCP server provides a comprehensive financial planning suite for agricultur
 
 
 ## Available Tools (4)
-- **assess_risk_exposure**: Evaluates how much the net farm income might fluctuate based on potential changes in revenue or costs
-- **analyze_profitability**: Provides a deep dive into the efficiency and margins of the farm
-- **calculate_farm_totals**: Aggregates all enterprise data and additional costs to provide the high-level farm financial summary
-- **generate_cash_flow**: Projects the movement of money over a specific timeframe based on the timing of budget items
+- **assess_risk_exposure**: Supply total revenue, total costs, and volatility metrics.
+
+Evaluates how much the net farm income might fluctuate based on potential changes in revenue or costs
+- **analyze_profitability**: Supply the enterprise budgets and total farm-wide costs.
+
+Provides a deep dive into the efficiency and margins of the farm
+- **calculate_farm_totals**: Provide the required enterprise, overhead, and fixed cost data.
+
+Aggregates all enterprise data and additional costs to provide the high-level farm financial summary
+- **generate_cash_flow**: Provide schedules for enterprise, overhead, and fixed costs.
+
+Projects the movement of money over a specific timeframe based on the timing of budget items
 
 
 ## 💬 Prompt Examples

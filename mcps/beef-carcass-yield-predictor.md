@@ -14,10 +14,18 @@ This MCP server provides precise physiological and economic predictions for beef
 
 
 ## Available Tools (4)
-- **calculate_market_value**: Provides an estimated economic value for the carcass including premiums or discounts
-- **determine_yield_grade**: Predicts the USDA Yield Grade (1-5) based on meatiness and fatness
-- **estimate_quality_grade**: Predicts the likelihood of the carcass falling into Prime, Choice, or Select categories
-- **predict_carcass_metrics**: Calculates the primary physical outcomes of the slaughter process (weight and dressing percentage)
+- **determine_yield_grade**: Ensure all required fat measurements are provided.
+
+Predicts the USDA Yield Grade (1-5) based on meatiness and fatness
+- **estimate_quality_grade**: Use breed type to refine the prediction.
+
+Predicts the likelihood of the carcass falling into Prime, Choice, or Select categories
+- **predict_carcass_metrics**: Provide both live weight and breed type.
+
+Calculates the primary physical outcomes of the slaughter process (weight and dressing percentage)
+- **calculate_market_value**: All grade predictions must be available.
+
+Provides an estimated economic value for the carcass including premiums or discounts
 
 
 ## 💬 Prompt Examples
