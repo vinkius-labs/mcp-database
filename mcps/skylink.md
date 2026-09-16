@@ -30,28 +30,28 @@ Specifically built for real estate brokerages, property managers, and high-volum
 
 
 ## Available Tools (22)
+- **create_contact**: Create a contact
+- **check_skylink_status**: Verify connectivity
+- **create_deal**: Create a deal
 - **create_lead**: Create a lead
 - **get_account**: Get account info
-- **create_contact**: Create a contact
-- **create_deal**: Create a deal
-- **get_call**: Get call details
-- **get_lead_timeline**: Get lead timeline
-- **get_agent_performance**: Get agent performance
-- **get_lead**: Get lead details
-- **list_contacts**: List all contacts
-- **list_deals**: List all deals
-- **list_leads**: List all leads
-- **list_tasks**: List tasks
-- **check_skylink_status**: Verify connectivity
-- **create_task**: Create a task
 - **get_call_analytics**: Get call analytics
+- **get_call**: Get call details
 - **get_contact**: Get contact details
 - **get_deal**: Get deal details
+- **get_lead_timeline**: Get lead timeline
+- **get_lead**: Get lead details
+- **get_agent_performance**: Get agent performance
 - **list_activities**: List activities
 - **list_calls**: List all calls
+- **list_contacts**: List all contacts
+- **list_deals**: List all deals
 - **list_leads_by_status**: Filter leads by status
+- **list_leads**: List all leads
+- **list_tasks**: List tasks
 - **update_deal**: Update a deal
 - **update_lead**: Update a lead
+- **create_task**: Create a task
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

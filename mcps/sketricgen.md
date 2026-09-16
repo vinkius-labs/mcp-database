@@ -31,8 +31,14 @@ Designed for AI engineers, prompt designers, and automation teams seeking an adv
 
 ## Available Tools (18)
 - **get_contact**: Get contact details
+- **list_contacts**: List contacts
+- **list_conversations**: List conversations
 - **list_knowledge_bases**: List knowledge bases
+- **list_templates**: List templates
 - **list_traces**: List execution traces
+- **list_workflows**: List workflows
+- **run_workflow_with_contact**: Run workflow for contact
+- **run_workflow**: Run AI workflow
 - **check_sketricgen_status**: Verify connectivity
 - **delete_conversation**: Delete conversation
 - **get_trace**: Get trace details
@@ -42,12 +48,6 @@ Designed for AI engineers, prompt designers, and automation teams seeking an adv
 - **get_trace_credits**: Get trace credit usage
 - **get_workflow**: Get workflow details
 - **list_agents**: List AI agents
-- **list_contacts**: List contacts
-- **list_conversations**: List conversations
-- **list_templates**: List templates
-- **list_workflows**: List workflows
-- **run_workflow_with_contact**: Run workflow for contact
-- **run_workflow**: Run AI workflow
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

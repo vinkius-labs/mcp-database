@@ -28,17 +28,17 @@ Connect your **SuperSaaS** account to any AI agent and simplify your online appo
 
 
 ## Available Tools (11)
-- **create_appointment**: Create a new booking
-- **get_appointment_details**: Get details for a specific booking
 - **get_schedule**: Get details for a specific schedule
-- **get_user**: Get details for a specific user
+- **list_account_users**: List registered users
 - **get_account_balance**: Check account credit balance
 - **list_appointments**: List appointments for a schedule
-- **list_account_users**: List registered users
-- **list_schedules**: List SuperSaaS schedules
 - **update_appointment**: Update an existing appointment
 - **list_changes**: List recent changes to a schedule
 - **delete_appointment**: Delete an appointment
+- **get_user**: Get details for a specific user
+- **create_appointment**: Create a new booking
+- **get_appointment_details**: Get details for a specific booking
+- **list_schedules**: List SuperSaaS schedules
 
 
 ## 💬 Prompt Examples
@@ -117,4 +117,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

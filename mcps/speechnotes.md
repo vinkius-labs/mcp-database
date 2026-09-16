@@ -35,17 +35,17 @@ Connect your **Speechnotes** account to any AI agent to automate your profession
 
 ## Available Tools (12)
 - **list_configured_webhooks**: Get delivery endpoints
-- **remove_transcription_job**: Delete job record
-- **get_remaining_credits**: Check account balance
 - **get_transcription_export**: Export result format
 - **list_transcription_models**: Get engine models
-- **generate_webhook_signature**: Sign payload
 - **get_transcription_status**: Check job progress
 - **get_usage_statistics**: Check usage logs
-- **list_transcription_history**: List past jobs
-- **list_supported_languages**: Get language codes
 - **test_speechnotes_auth**: Check connection
 - **transcribe_audio_url**: Transcribe remote file
+- **remove_transcription_job**: Delete job record
+- **get_remaining_credits**: Check account balance
+- **generate_webhook_signature**: Sign payload
+- **list_transcription_history**: List past jobs
+- **list_supported_languages**: Get language codes
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

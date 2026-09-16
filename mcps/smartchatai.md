@@ -38,16 +38,16 @@ Connect your **SmartChatAI** account to any AI agent to automate your intelligen
 - **add_pdf_to_knowledge_base**: Train bot using a PDF
 - **add_website_to_knowledge_base**: Train bot using a URL
 - **check_api_health**: Verify SmartChatAI API status
-- **get_authenticated_user_profile**: Get account profile
-- **list_configured_webhooks**: List active webhooks
-- **scrape_domain_links**: Discover and index domain links
-- **get_bot_chat_history**: Retrieve conversation transcripts
-- **add_text_to_knowledge_base**: Train bot using raw text
 - **create_new_ai_bot**: Requires a name and optional initial prompt.
 
 Provision a new AI agent
 - **get_chatbot_details**: Get configuration for a specific bot
+- **get_authenticated_user_profile**: Get account profile
+- **list_configured_webhooks**: List active webhooks
+- **scrape_domain_links**: Discover and index domain links
 - **message_ai_chatbot**: Send a message and get AI reply
+- **get_bot_chat_history**: Retrieve conversation transcripts
+- **add_text_to_knowledge_base**: Train bot using raw text
 
 
 ## 💬 Prompt Examples
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
