@@ -35,20 +35,20 @@ Empower your AI agent with access to the **Zoho Sign** platform to automate your
 ## Available Tools (12)
 - **create_request_from_template**: Create a sign request from a template
 - **get_document_metadata**: Get metadata for a specific document
-- **get_sign_request_details**: Get details for a signature request
 - **list_sign_templates**: List reusable document templates
-- **submit_sign_request**: Submit a request for signature
-- **get_completion_certificate**: Retrieve the audit completion certificate
-- **get_zohosign_account_info**: Get account profile and settings
+- **list_supported_document_types**: g., PDF, DOCX).
+
+List supported file extensions
+- **get_sign_request_details**: Get details for a signature request
 - **list_available_field_types**: g., Signature, Text, Date) that can be added to documents.
 
 List supported sign fields
 - **list_sign_requests**: List all digital signature requests
-- **list_supported_document_types**: g., PDF, DOCX).
-
-List supported file extensions
 - **remind_sign_recipients**: Send reminder to signers
 - **revoke_sign_request**: Revoke an active signature request
+- **submit_sign_request**: Submit a request for signature
+- **get_zohosign_account_info**: Get account profile and settings
+- **get_completion_certificate**: Retrieve the audit completion certificate
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

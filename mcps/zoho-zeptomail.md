@@ -34,15 +34,15 @@ Connect your **Zoho ZeptoMail** account to any AI agent to automate your transac
 
 
 ## Available Tools (7)
-- **get_log_details**: Get details for a specific email log
-- **list_domains**: List all verified domains
 - **list_logs**: List email logs
+- **list_domains**: List all verified domains
 - **list_suppression_list**: List suppressed email addresses
 - **list_templates**: List all email templates
 - **send_email**: Requires from_address, to_address, subject, and htmlbody or textbody.
 
 Send a single transactional email
 - **send_template_email**: Send an email using a template
+- **get_log_details**: Get details for a specific email log
 
 
 ## 💬 Prompt Examples
@@ -124,4 +124,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

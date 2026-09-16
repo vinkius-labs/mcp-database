@@ -34,18 +34,18 @@ Integrate your **Zoho WorkDrive** cloud storage into your AI workflows to stream
 
 
 ## Available Tools (12)
-- **list_recent_files**: List recently accessed files
 - **create_share_link**: Create a new share link
-- **list_file_permissions**: List file permissions
-- **list_files**: List files and folders
-- **list_teams**: List all teams
 - **get_file_metadata**: Get file or folder metadata
+- **get_my_profile**: Get current user profile
+- **list_files**: List files and folders
+- **list_file_permissions**: List file permissions
+- **list_recent_files**: List recently accessed files
+- **list_share_links**: List external share links
+- **list_team_folders**: List team folders (workspaces)
+- **list_teams**: List all teams
 - **rename_file**: Rename a file or folder
 - **create_folder**: Create a new folder
 - **delete_file**: Delete a file or folder
-- **get_my_profile**: Get current user profile
-- **list_share_links**: List external share links
-- **list_team_folders**: List team folders (workspaces)
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

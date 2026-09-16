@@ -14,18 +14,42 @@ The Zoho Billing MCP server integrates your financial operations with your AI ag
 
 
 ## Available Tools (12)
-- **get_events**: List recent audit events/triggers
-- **list_customers**: List all customers
-- **list_invoices**: List all invoices
-- **list_payments**: List all payments received
-- **list_plans**: List all pricing plans
-- **list_projects**: List all billable projects
-- **retrieve_customer**: Get details of a specific customer
-- **list_products**: List all products
-- **list_subscriptions**: List all subscriptions
-- **list_credit_notes**: List all credit notes
-- **list_estimates**: List all estimates (quotes)
-- **list_expenses**: List all recorded expenses
+- **list_expenses**: Use this tool to review operational costs and receipts.
+
+List all recorded expenses
+- **list_payments**: Use this tool to verify payment history and amounts received.
+
+List all payments received
+- **list_projects**: Use this tool to view project status and associated revenue.
+
+List all billable projects
+- **list_credit_notes**: Use this tool to review adjustments and refunds applied to accounts.
+
+List all credit notes
+- **get_events**: Execute this tool to check the system’s activity log.
+
+List recent audit events/triggers
+- **list_customers**: Use this tool to retrieve a list of all accounts.
+
+List all customers
+- **list_estimates**: Use this tool to review pending client proposals.
+
+List all estimates (quotes)
+- **list_invoices**: Use this tool to retrieve billing statements for specific periods.
+
+List all invoices
+- **list_plans**: Use this tool to view the current subscription tiers.
+
+List all pricing plans
+- **list_products**: Use this tool to retrieve a comprehensive list of services offered.
+
+List all products
+- **list_subscriptions**: Use this tool to view billing history and status.
+
+List all subscriptions
+- **retrieve_customer**: Provide the required customer ID to fetch the account information.
+
+Get details of a specific customer
 
 
 ## 💬 Prompt Examples
@@ -110,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

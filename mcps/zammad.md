@@ -33,47 +33,103 @@ Connect your **Zammad** helpdesk to any AI agent to streamline your customer sup
 
 
 ## Available Tools (41)
-- **create_user**: Create a new Zammad user
-- **data_privacy_delete_user**: Delete a user via Data Privacy task (Recommended over direct delete)
-- **delete_ticket**: Delete a Zammad ticket
-- **delete_user**: Delete a Zammad user
-- **get_group**: Get details for a specific Zammad group
-- **get_links**: Get links for a specific object
-- **get_organization**: Get details for a specific Zammad organization
-- **get_ticket_article**: Get details for a specific ticket article
-- **get_ticket**: Get details for a specific Zammad ticket
+- **get_group**: Provide the required Group ID.
+
+Get details for a specific Zammad group
+- **get_links**: Supply the object type and its unique ID.
+
+Get links for a specific object
+- **list_ticket_states**: List ticket states
+- **search_organizations**: The query must contain organization-identifying keywords.
+
+Search for organizations in Zammad
+- **update_ticket**: You must specify the ticket ID.
+
+Update an existing Zammad ticket
+- **list_organizations**: List all Zammad organizations
+- **summarize_ticket**: Provide the target ticket ID.
+
+Trigger async generation of a ticket summary
+- **add_tag**: Provide both the object type and the object ID.
+
+Add a tag to an object
+- **create_ticket_article**: Always specify the target Ticket ID.
+
+Create a new article on a ticket
+- **create_ticket**: Must provide a title and either a group or customer.
+
+Create a new Zammad ticket
+- **create_user**: Supply all required user details.
+
+Create a new Zammad user
+- **data_privacy_delete_user**: Use this method instead of direct deletion. Provide the User ID.
+
+Delete a user via Data Privacy task (Recommended over direct delete)
+- **delete_ticket**: Provide the unique Ticket ID for deletion.
+
+Delete a Zammad ticket
+- **delete_user**: Specify the target User ID.
+
+Delete a Zammad user
+- **get_me**: Get current Zammad user details
+- **get_organization**: Provide the required Organization ID.
+
+Get details for a specific Zammad organization
+- **get_shared_draft**: Pass the specific ticket ID.
+
+Get shared draft for a ticket
+- **get_ticket_article**: Use the unique Article ID.
+
+Get details for a specific ticket article
+- **get_ticket**: Provide a valid Ticket ID.
+
+Get details for a specific Zammad ticket
+- **get_user**: Provide the required User ID.
+
+Get details for a specific Zammad user
 - **list_all_tags**: List all tags in the system (Admin)
 - **list_calendars**: List calendars
 - **list_checklist_items**: List checklist items
 - **list_checklist_templates**: List checklist templates
 - **list_checklists**: List checklists
 - **list_groups**: List all Zammad groups
-- **list_roles**: List all Zammad roles
-- **list_slas**: List SLAs
-- **list_ticket_articles**: List articles for a specific ticket
-- **list_ticket_states**: List ticket states
-- **list_time_accountings**: List time accountings for a ticket
-- **search_groups**: Search for groups in Zammad
-- **search_organizations**: Search for organizations in Zammad
-- **update_ticket**: Update an existing Zammad ticket
-- **add_tag**: Add a tag to an object
-- **create_ticket**: Create a new Zammad ticket
-- **get_me**: Get current Zammad user details
-- **get_shared_draft**: Get shared draft for a ticket
-- **get_user**: Get details for a specific Zammad user
 - **list_mentions**: List mentions
-- **list_organizations**: List all Zammad organizations
-- **list_tags_for_object**: List tags for a specific object (e.g., Ticket)
+- **list_roles**: Do not specify any filters when calling this tool.
+
+List all Zammad roles
+- **list_slas**: List SLAs
+- **list_tags_for_object**: Provide both the object type and its ID.
+
+List tags for a specific object (e.g., Ticket)
+- **list_ticket_articles**: Supply the required Ticket ID.
+
+List articles for a specific ticket
 - **list_ticket_priorities**: List ticket priorities
-- **list_tickets**: List Zammad tickets
-- **remove_tag**: Remove a tag from an object
-- **search_tickets**: Search for tickets in Zammad
-- **search_users**: Search for users in Zammad
-- **summarize_ticket**: Trigger async generation of a ticket summary
-- **update_user**: Update an existing Zammad user
-- **search_roles**: Search for roles in Zammad
-- **create_ticket_article**: Create a new article on a ticket
+- **list_tickets**: Use filters to narrow the search results.
+
+List Zammad tickets
 - **list_users**: List all Zammad users
+- **remove_tag**: You must provide the object type and object ID.
+
+Remove a tag from an object
+- **search_groups**: The query must contain group-identifying keywords.
+
+Search for groups in Zammad
+- **search_tickets**: The query must contain ticket-identifying keywords.
+
+Search for tickets in Zammad
+- **search_users**: The query must contain user-identifying keywords.
+
+Search for users in Zammad
+- **update_user**: Include the target User ID.
+
+Update an existing Zammad user
+- **list_time_accountings**: You must provide the ticket ID.
+
+List time accountings for a ticket
+- **search_roles**: The query must contain role-identifying keywords.
+
+Search for roles in Zammad
 
 
 ## 💬 Prompt Examples
@@ -158,4 +214,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
