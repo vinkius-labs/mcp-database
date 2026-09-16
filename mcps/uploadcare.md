@@ -37,24 +37,24 @@ Your AI agent becomes the control center for your media distribution platform.
 
 
 ## Available Tools (10)
-- **batch_store_files**: Marks multiple temporary files as permanently stored
-- **copy_file**: g. S3).
-
-Copies an existing file to local or remote storage
-- **get_file_details**: Retrieves technical metadata for a specific Uploadcare file
-- **get_group_details**: Retrieves information about a specific file group
-- **get_project_info**: Retrieves project-level metadata and usage statistics
-- **list_file_groups**: Lists immutable file collections (groups) in the project
-- **list_files**: Supports pagination via limit.
-
-Lists files stored in your Uploadcare project
 - **batch_delete_files**: This action is irreversible.
 
 Permanently removes multiple files in a single operation
+- **copy_file**: g. S3).
+
+Copies an existing file to local or remote storage
 - **delete_file**: This action is irreversible.
 
 Permanently removes a file and its variants from Uploadcare
+- **get_file_details**: Retrieves technical metadata for a specific Uploadcare file
+- **get_group_details**: Retrieves information about a specific file group
+- **get_project_info**: Retrieves project-level metadata and usage statistics
+- **list_files**: Supports pagination via limit.
+
+Lists files stored in your Uploadcare project
+- **list_file_groups**: Lists immutable file collections (groups) in the project
 - **store_file**: Marks a temporary file as permanently stored
+- **batch_store_files**: Marks multiple temporary files as permanently stored
 
 
 ## 💬 Prompt Examples
@@ -139,4 +139,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

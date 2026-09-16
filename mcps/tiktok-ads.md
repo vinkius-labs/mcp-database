@@ -33,14 +33,14 @@ Connect **TikTok Ads** to your AI agent and manage your TikTok advertising campa
 
 
 ## Available Tools (8)
-- **enable_campaign**: Enable a campaign
 - **list_campaigns**: List all TikTok ad campaigns
 - **list_adgroups**: List all TikTok ad groups
 - **list_ads**: List all TikTok ads
-- **pause_campaign**: Pause a campaign
 - **get_campaign_reporting**: Get campaign performance
 - **get_adgroup_reporting**: Get ad group performance
 - **get_ad_reporting**: Get ad performance
+- **pause_campaign**: Pause a campaign
+- **enable_campaign**: Enable a campaign
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

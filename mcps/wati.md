@@ -34,19 +34,19 @@ Connect your **Wati** WhatsApp Business account to any AI agent and simplify how
 
 
 ## Available Tools (13)
-- **get_contact**: Get contact details
+- **check_wati_status**: Verify connectivity
 - **get_template**: Get template details
+- **list_templates**: List message templates
 - **list_contacts**: List contacts
 - **list_messages**: List messages
 - **list_tags**: List tags
-- **list_templates**: List message templates
-- **update_contact**: Update contact attributes
 - **send_media_message**: Send media message
+- **update_contact**: Update contact attributes
 - **add_contact**: Add a contact
-- **check_wati_status**: Verify connectivity
-- **list_broadcasts**: List broadcasts
 - **send_session_message**: Send a session message
 - **send_template_message**: Send a template message
+- **get_contact**: Get contact details
+- **list_broadcasts**: List broadcasts
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
