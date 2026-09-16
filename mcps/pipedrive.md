@@ -37,13 +37,13 @@ No more manual logging into the CRM to check deal status. Your AI acts as a dedi
 
 ## Available Tools (12)
 - **get_api_status**: Check connection
+- **list_crm_organizations**: List client companies
 - **get_organization_details**: Get company info
 - **get_person_details**: Get contact info
 - **list_user_activities**: List tasks and meetings
-- **list_crm_organizations**: List client companies
 - **list_crm_persons**: List individual contacts
-- **list_pipeline_stages**: List workflow stages
 - **list_sales_pipelines**: List sales workflows
+- **list_pipeline_stages**: List workflow stages
 - **search_deals_by_name**: Find deals
 - **create_new_deal**: Add new deal
 - **get_deal_details**: Get deal info
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

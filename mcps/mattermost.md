@@ -35,18 +35,18 @@ Connect your **Mattermost** workspace to any AI agent and manage team collaborat
 
 
 ## Available Tools (12)
-- **post_message**: Send chat message
-- **list_team_channels**: List team channels
-- **test_server_ping**: Check API health
-- **list_server_users**: List all users
-- **list_system_roles**: List access roles
 - **list_teams**: List your teams
-- **list_incoming_webhooks**: Get event configs
-- **create_new_channel**: Create a channel
+- **post_message**: Send chat message
 - **get_my_profile**: Get user info
-- **get_server_config**: Check server settings
 - **get_team_details**: Get team info
 - **list_channel_posts**: Get channel history
+- **list_server_users**: List all users
+- **list_incoming_webhooks**: Get event configs
+- **create_new_channel**: Create a channel
+- **get_server_config**: Check server settings
+- **test_server_ping**: Check API health
+- **list_team_channels**: List team channels
+- **list_system_roles**: List access roles
 
 
 ## 💬 Prompt Examples
@@ -131,4 +131,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

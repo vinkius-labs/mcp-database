@@ -36,9 +36,9 @@ Connect your **Miro** account to any AI agent and simplify your visual collabora
 ## Available Tools (8)
 - **delete_board**: Delete a Miro board
 - **get_board_details**: Get details for a specific board
-- **list_boards**: List Miro boards
 - **list_organizations**: List linked organizations
 - **create_board**: Create a new Miro board
+- **list_boards**: List Miro boards
 - **create_sticky_note**: Add a sticky note to a board
 - **list_board_items**: List all items on a board
 - **list_board_members**: List board collaborators
@@ -126,4 +126,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
