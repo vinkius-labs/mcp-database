@@ -36,16 +36,16 @@ No more wrestling with multiple messaging tabs to reach your customers. Your AI 
 
 
 ## Available Tools (10)
-- **get_contact**: Get contact details by ID
 - **list_contacts**: List all contacts
-- **send_whatsapp_message**: Send a WhatsApp message
 - **add_tag_to_contact**: Add a tag to a contact
-- **list_webhooks**: List all webhooks
 - **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
+- **get_contact**: Get contact details by ID
 - **list_tags**: List all tags
-- **send_sms_message**: Send an SMS message
+- **list_webhooks**: List all webhooks
 - **update_contact**: Update an existing contact
+- **send_sms_message**: Send an SMS message
+- **send_whatsapp_message**: Send a WhatsApp message
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
