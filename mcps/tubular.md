@@ -39,17 +39,17 @@ Connect your **Tubular Labs** video intelligence account to any AI agent and sim
 - **get_audience_ratings**: Get reach and engagement ratings
 - **get_creator_summary**: Get summary for a specific creator
 - **get_creator_trends**: Get trends for a specific creator
+- **check_api_health**: Check API health status
 - **list_sponsored_campaigns**: List sponsored video campaigns
 - **list_sponsors**: List sponsors and brand partners
 - **get_api_rate_limits**: Get current API rate limits
-- **get_video_trends**: List trending videos
 - **search_creators**: g., name or keywords).
 
 Search for creators
-- **check_api_health**: Check API health status
 - **get_video_demographics**: ) for a specific video.
 
 Get audience demographics for a video
+- **get_video_trends**: List trending videos
 - **get_video_insights**: Get insights for a specific video
 
 
@@ -135,4 +135,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

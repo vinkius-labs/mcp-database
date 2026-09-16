@@ -35,11 +35,11 @@ Connect your **Toket** account to any AI agent and simplify how you deploy NFT c
 
 
 ## Available Tools (8)
+- **easy_mint**: Quickly mint an NFT
+- **get_mint_status**: Get status of a minting transaction
 - **create_collection**: Provide name, symbol, and owner wallet.
 
 Create a new NFT collection
-- **easy_mint**: Quickly mint an NFT
-- **get_mint_status**: Get status of a minting transaction
 - **get_collection**: Get details of a specific collection
 - **get_gas_tank_status**: Check Gas Tank balance
 - **list_collections**: List all NFT collections
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

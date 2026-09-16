@@ -14,18 +14,36 @@ The Umbrellar MCP server provides a direct conversational link to your cloud inf
 
 
 ## Available Tools (12)
-- **check_product_eligibility**: Check if a product is eligible for warranty coverage
-- **create_claim**: Submit a new warranty claim
-- **get_policy**: Get details for a specific warranty policy
-- **list_policies**: List all warranty policies
-- **register_product**: Register a product for OEM or manufacturer warranty
-- **update_claim**: Update an existing warranty claim
-- **validate_policy**: Validate if a policy exists by matching ID and order name
-- **get_claim**: Get details for a specific warranty claim
-- **get_warranty**: Get details for a specific warranty plan
+- **check_product_eligibility**: Provide both the product and variant IDs.
+
+Check if a product is eligible for warranty coverage
+- **create_claim**: Include all necessary details in the body payload.
+
+Submit a new warranty claim
+- **update_claim**: The body must contain the claim ID and updated details.
+
+Update an existing warranty claim
+- **validate_policy**: Both identifiers must be provided to validate the policy.
+
+Validate if a policy exists by matching ID and order name
+- **get_claim**: Use the claim ID to retrieve the record.
+
+Get details for a specific warranty claim
 - **list_claims**: List all warranty claims
+- **list_policies**: Use this tool to retrieve a list of available policies.
+
+List all warranty policies
 - **list_warranties**: List all available warranty plans
 - **sync_products**: Sync products between Shopify and Umbrellar
+- **get_policy**: Provide the policy ID to fetch the correct record.
+
+Get details for a specific warranty policy
+- **get_warranty**: Supply the plan ID to get the required details.
+
+Get details for a specific warranty plan
+- **register_product**: Provide registration details in the body payload.
+
+Register a product for OEM or manufacturer warranty
 
 
 ## 💬 Prompt Examples
@@ -110,4 +128,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

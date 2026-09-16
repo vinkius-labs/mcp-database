@@ -14,18 +14,42 @@ The Simian MCP server enables your AI agent to manage your creative workflows. R
 
 
 ## Available Tools (12)
-- **create_reel**: Create a new reel
-- **get_account_info**: Retrieve account details and usage statistics
-- **get_media**: Get metadata for a specific media file
-- **list_projects**: List all active review and approval projects
-- **update_media**: Update metadata for a media file
-- **list_reels**: List all created reels (presentations)
-- **add_project_comment**: Add a new comment or approval status to a file
-- **delete_media**: Permanently remove a file from the library
-- **get_project_comments**: Retrieve comments and annotations for a project file
-- **get_reel**: Get details of a specific reel
-- **list_media**: List all media files in the library
-- **share_reel**: Send a reel to recipients via email or short link
+- **list_reels**: Use this tool to view a catalog of existing reel assets.
+
+List all created reels (presentations)
+- **add_project_comment**: Provide the project ID and the comment details.
+
+Add a new comment or approval status to a file
+- **create_reel**: Supply the required reel details in the body parameter.
+
+Create a new reel
+- **delete_media**: Specify the media ID to confirm deletion.
+
+Permanently remove a file from the library
+- **get_project_comments**: Specify the project ID to fetch the comments.
+
+Retrieve comments and annotations for a project file
+- **get_account_info**: Call this tool when checking account status or usage limits.
+
+Retrieve account details and usage statistics
+- **get_media**: Provide the media ID to fetch the required details.
+
+Get metadata for a specific media file
+- **get_reel**: Provide the reel ID to retrieve the necessary information.
+
+Get details of a specific reel
+- **list_media**: Use this tool when you need a comprehensive list of available media assets.
+
+List all media files in the library
+- **list_projects**: Use this tool to see available project workflows.
+
+List all active review and approval projects
+- **update_media**: Supply both the media ID and the updated metadata body.
+
+Update metadata for a media file
+- **share_reel**: Provide the reel ID and sharing details.
+
+Send a reel to recipients via email or short link
 
 
 ## 💬 Prompt Examples
@@ -110,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

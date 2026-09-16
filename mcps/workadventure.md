@@ -33,16 +33,16 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 
 
 ## Available Tools (10)
-- **create_member**: Add a new member to the world
 - **get_map_details**: Get details of a specific map
 - **get_member_details**: Get details of a specific member
+- **list_rooms**: List active rooms
+- **create_member**: Add a new member to the world
 - **get_room_variables**: Get variables for a room
-- **list_members**: List world members in WorkAdventure
-- **update_room_variable**: Update a room variable
 - **get_world_info**: Get virtual world information
 - **list_maps**: List world maps
-- **list_rooms**: List active rooms
+- **list_members**: List world members in WorkAdventure
 - **delete_member**: Remove a member from the world
+- **update_room_variable**: Update a room variable
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

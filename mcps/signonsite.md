@@ -39,19 +39,19 @@ No more manual sign-on sheets or chasing safety certificates. Your AI acts as a 
 - **get_worker_details**: Get details for a specific worker
 - **list_sites**: List all construction sites
 - **list_workers**: List all site workers
+- **query_worker_credentials**: Check worker licenses and inductions
+- **query_form_submissions**: Query completed safety forms
+- **sign_off_worker**: Record a manual sign-off for a worker
+- **sign_on_worker**: Record a manual sign-on for a worker
+- **list_companies**: List all associated companies
 - **query_site_attendance**: Supports filtering by site and date.
 
 Query worker attendance records
-- **query_worker_credentials**: Check worker licenses and inductions
 - **query_permits**: g., Hot Works, Confined Space) for your projects.
 
 Query safety permits
-- **sign_off_worker**: Record a manual sign-off for a worker
-- **sign_on_worker**: Record a manual sign-on for a worker
 - **enrol_worker**: Enrol a new worker
 - **get_site_details**: Get details for a specific site
-- **list_companies**: List all associated companies
-- **query_form_submissions**: Query completed safety forms
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
