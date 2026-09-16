@@ -14,9 +14,9 @@ This MCP server provides precise mechanical calculations for manual transmission
 
 
 ## Available Tools (3)
-- **get_gear_rpm**: Determines the exact engine revolutions per 1 minute for a single specific gear at a desired speed
-- **get_all_gears_at_speed**: Provides a comprehensive overview of the engine's RPM across every available gear in the transmission at a single target speed
 - **calculate_speed_from_rpm**: Predicts what the vehicle's speed will be if the driver maintains a specific engine RPM in a chosen gear
+- **get_all_gears_at_speed**: Provides a comprehensive overview of the engine's RPM across every available gear in the transmission at a single target speed
+- **get_gear_rpm**: Determines the exact engine revolutions per 1 minute for a single specific gear at a desired speed
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

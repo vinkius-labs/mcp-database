@@ -14,9 +14,9 @@ The Round Robin Generator MCP allows AI agents to calculate every unique subset 
 
 
 ## Available Tools (3)
+- **generate_all_combinations**: Identify every unique subset of legs for a specified group size
 - **project_payouts**: Estimate the monetary return for each parlay in the set based on their odds
 - **calculate_per_parlay_wager**: Determine the specific amount of money to stake on each individual combination
-- **generate_all_combinations**: Identify every unique subset of legs for a specified group size
 
 
 ## 💬 Prompt Examples
@@ -101,4 +101,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
