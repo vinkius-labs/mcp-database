@@ -33,16 +33,34 @@ Connect your **Autodesk Construction Cloud (ACC)** environment to any AI agent a
 
 
 ## Available Tools (10)
-- **list_projects**: List projects in a specific hub
-- **get_asset_details**: Get details for a specific asset
-- **list_assets**: List construction assets in a project
 - **list_hubs**: List all accessible Autodesk hubs
-- **list_folder_contents**: List files and subfolders within a folder
-- **list_issues**: List issues in a specific project
-- **create_issue**: Create a new issue in a project
-- **get_issue_details**: Get complete details for a specific issue
-- **get_project_details**: Get details for a specific project
-- **list_top_folders**: List the top-level folders in a project
+- **list_projects**: Provide the Hub ID to ensure accurate results.
+
+List projects in a specific hub
+- **get_asset_details**: Pass the Project ID and Asset ID.
+
+Get details for a specific asset
+- **create_issue**: You must provide the Project ID and a title.
+
+Create a new issue in a project
+- **get_issue_details**: Provide the Project ID and Issue ID.
+
+Get complete details for a specific issue
+- **get_project_details**: Supply both the Hub ID and Project ID.
+
+Get details for a specific project
+- **list_assets**: Supply the Project ID.
+
+List construction assets in a project
+- **list_folder_contents**: Use the Project ID and Folder ID.
+
+List files and subfolders within a folder
+- **list_issues**: Only the Project ID is required.
+
+List issues in a specific project
+- **list_top_folders**: Specify the Hub ID and Project ID.
+
+List the top-level folders in a project
 
 
 ## 💬 Prompt Examples
@@ -127,4 +145,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

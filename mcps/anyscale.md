@@ -38,16 +38,16 @@ Scale up your AI operations without opening terminal panes to check Ray cluster 
 - **text_completion**: Use for foundational instruct generation.
 
 Generate text completion using Anyscale generic completion API
-- **get_service**: Retrieve details about a specific Anyscale service
-- **list_jobs**: List Anyscale batch or training jobs
-- **list_services**: List Anyscale deployed services
+- **list_models**: g., meta-llama/Llama-2-70b-chat-hf).
+
+List available AI models on Anyscale Endpoints
 - **chat_completion**: Pass an array of messages with roles (user, assistant, system).
 
 Generate conversational responses via Anyscale LLMs
 - **generate_embeddings**: Generate semantic vector embeddings for text
-- **list_models**: g., meta-llama/Llama-2-70b-chat-hf).
-
-List available AI models on Anyscale Endpoints
+- **list_services**: List Anyscale deployed services
+- **get_service**: Retrieve details about a specific Anyscale service
+- **list_jobs**: List Anyscale batch or training jobs
 
 
 ## 💬 Prompt Examples
@@ -132,4 +132,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
