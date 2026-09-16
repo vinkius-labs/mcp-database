@@ -14,10 +14,10 @@ This MCP server provides precise analytical metrics to optimize LinkedIn content
 
 
 ## Available Tools (4)
-- **estimate_mobile_viewport_impact**: Estimates how much of a post is visible on mobile without scrolling
 - **check_f_pattern_compliance**: Checks how well a post follows the F-pattern reading behavior
-- **get_reading_time**: Calculates estimated reading time for a LinkedIn post
 - **analyze_structural_rhythm**: Analyzes the structural rhythm and scannability of a post
+- **estimate_mobile_viewport_impact**: Estimates how much of a post is visible on mobile without scrolling
+- **get_reading_time**: Calculates estimated reading time for a LinkedIn post
 
 
 ## 💬 Prompt Examples
@@ -102,4 +102,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

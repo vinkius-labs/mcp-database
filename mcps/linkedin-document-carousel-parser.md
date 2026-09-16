@@ -15,11 +15,11 @@ This MCP server provides a specialized toolkit for auditing LinkedIn document ca
 
 ## Available Tools (4)
 - **analyze_density**: Identifies slides that exceed word or character limits
+- **detect_hooks**: Quantifies engagement-driving language at the end of slides
 - **evaluate_rhythm**: Assesses the consistency of content length across slides
 - **extract_slides**: Returns an array of slides.
 
 Extracts individual slides from a raw text stream
-- **detect_hooks**: Quantifies engagement-driving language at the end of slides
 
 
 ## 💬 Prompt Examples
@@ -104,4 +104,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
