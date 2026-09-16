@@ -33,16 +33,16 @@ Integrate **Elemeno**, the headless CMS designed for developers, directly into y
 
 
 ## Available Tools (10)
-- **list_content_collections**: List all content collections configured in your Elemeno account
+- **get_elemeno_account_metadata**: Retrieve metadata and limits for your Elemeno account
 - **get_collection_details**: Get detailed settings and field schema for a specific collection
 - **get_collection_item_details**: Get full content and metadata for a specific item in a collection
-- **get_elemeno_account_metadata**: Retrieve metadata and limits for your Elemeno account
+- **quick_content_volume_audit**: Retrieve a high-level summary of collection and singleton activity
 - **get_singleton_content**: Get the full content data for a specific singleton
+- **list_content_collections**: List all content collections configured in your Elemeno account
 - **list_collection_items**: List all content items within a specific collection
 - **list_published_content**: Identify items that are currently in a "Published" status
-- **quick_content_volume_audit**: Retrieve a high-level summary of collection and singleton activity
+- **list_content_singletons**: List all singleton content blocks (unique global pages/settings)
 - **search_collection_content**: Search for items within a collection using a title or slug keyword
-- **list_content_singletons**: List all singleton content blocks (unique globalThis pages/settings)
 
 
 ## 💬 Prompt Examples
@@ -127,4 +127,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

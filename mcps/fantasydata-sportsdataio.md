@@ -34,18 +34,42 @@ Connect your **FantasyData (SportsDataIO)** account to any AI agent and take ful
 
 
 ## Available Tools (12)
-- **get_nfl_player_details**: Get details for a specific NFL player
-- **get_mlb_player_details**: Get details for a specific MLB player
-- **get_nba_player_details**: Get details for a specific NBA player
-- **get_nfl_schedule**: Get the NFL schedule for a specific season
-- **get_nfl_scores**: Get NFL scores for a specific date
-- **list_nba_players**: List all active NBA players
-- **get_mlb_schedule**: Get the MLB schedule for a specific season
-- **get_mlb_scores**: Get MLB scores for a specific date
-- **get_nba_schedule**: Get the NBA schedule for a specific season
-- **get_nba_scores**: Get NBA scores for a specific date
-- **list_mlb_players**: List all active MLB players
-- **list_nfl_players**: List all active NFL players
+- **get_mlb_player_details**: Provide a valid player ID.
+
+Get details for a specific MLB player
+- **get_nfl_scores**: Provide the date in YYYY-MM-DD format.
+
+Get NFL scores for a specific date
+- **list_nba_players**: Do not specify a player ID.
+
+List all active NBA players
+- **get_mlb_schedule**: Use a valid season identifier (e.g. 2024).
+
+Get the MLB schedule for a specific season
+- **list_mlb_players**: Do not specify a player ID.
+
+List all active MLB players
+- **get_mlb_scores**: Provide the date in YYYY-MM-DD format.
+
+Get MLB scores for a specific date
+- **get_nba_player_details**: Provide a valid player ID.
+
+Get details for a specific NBA player
+- **get_nba_schedule**: Use a valid season identifier (e.g. 2024).
+
+Get the NBA schedule for a specific season
+- **get_nba_scores**: Provide the date in YYYY-MM-DD format.
+
+Get NBA scores for a specific date
+- **get_nfl_player_details**: Provide a valid player ID.
+
+Get details for a specific NFL player
+- **get_nfl_schedule**: Use a valid season identifier (e.g. 2024REG).
+
+Get the NFL schedule for a specific season
+- **list_nfl_players**: Do not specify a player ID.
+
+List all active NFL players
 
 
 ## 💬 Prompt Examples
@@ -130,4 +154,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
