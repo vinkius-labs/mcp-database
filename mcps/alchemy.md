@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire web3 research and blockchain au
 
 
 ## Available Tools (6)
-- **get_owned_nfts**: Get all NFTs owned by a specific address
 - **get_wallet_balance**: Get the balance of an Ethereum address in wei
-- **check_api_status**: Check if the Alchemy service is operational
-- **get_latest_block_number**: Get the number of the most recent block
+- **get_owned_nfts**: Get all NFTs owned by a specific address
 - **get_token_balances**: Get all ERC-20 token balances for a specific address
 - **get_transaction_receipt**: Get the receipt of a transaction by hash
+- **check_api_status**: Check if the Alchemy service is operational
+- **get_latest_block_number**: Get the number of the most recent block
 
 
 ## 💬 Prompt Examples
@@ -125,4 +125,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

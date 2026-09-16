@@ -34,20 +34,20 @@ Connect your **Zoho Projects** account to any AI agent to streamline your projec
 
 
 ## Available Tools (9)
-- **update_task**: Update an existing task
-- **create_project**: Requires a portal ID and a project name.
+- **create_task**: Requires portal ID, project ID, and task name.
 
-Create a new project in a portal
+Create a new task in a project
 - **list_milestones**: List all milestones in a project
 - **list_portals**: Use this to identify the portal ID for subsequent project and task calls.
 
 List all Zoho Projects portals
-- **list_projects**: List all projects in a portal
 - **list_project_users**: List all users associated with a project
-- **list_tasks**: List all tasks in a project
-- **create_task**: Requires portal ID, project ID, and task name.
+- **update_task**: Update an existing task
+- **create_project**: Requires a portal ID and a project name.
 
-Create a new task in a project
+Create a new project in a portal
+- **list_projects**: List all projects in a portal
+- **list_tasks**: List all tasks in a project
 - **list_task_lists**: List all task lists in a project
 
 
@@ -133,4 +133,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

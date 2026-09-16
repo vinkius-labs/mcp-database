@@ -34,18 +34,6 @@ Perfect for **customer support teams**, **IT helpdesks**, and **SaaS companies**
 
 
 ## Available Tools (13)
-- **get_contact**: Use this to review customer details before interacting with their tickets.
-
-Get details of a specific Zoho Desk contact
-- **get_ticket**: Use this to review full ticket history before responding.
-
-Get details of a specific Zoho Desk ticket
-- **list_departments**: Departments are used to categorize tickets and assign agents. Each department has a unique ID needed for ticket creation and agent listing. Use this first to get department IDs.
-
-List all departments in Zoho Desk
-- **search_tickets**: Searches subject, description, and custom fields. Use this to find tickets related to a specific topic, customer name, or product. Returns matching tickets with basic info.
-
-Search tickets in Zoho Desk by keyword
 - **add_note**: Notes are only visible to agents and not visible to customers. Use this for internal collaboration, escalation notes, or context that should not be shared with the customer. Requires a valid ticket ID.
 
 Add an internal note to a Zoho Desk ticket
@@ -58,21 +46,33 @@ Create a new contact in Zoho Desk
 - **create_ticket**: Requires at minimum a subject, contact ID, and department ID. Optionally set priority (Low, Medium, High, Urgent), status, classification, and custom fields. Returns the created ticket data including the new ticket ID.
 
 Create a new support ticket in Zoho Desk
-- **list_accounts**: Returns account name, industry, website, and associated contacts. Useful for B2B support to understand which company a contact belongs to.
+- **get_contact**: Use this to review customer details before interacting with their tickets.
 
-List accounts (organizations) in Zoho Desk
-- **list_agents**: Returns agent name, email, role, and availability status. Use this to find available agents for ticket assignment or escalation. Requires a valid department ID.
-
-List agents in a Zoho Desk department
-- **list_contacts**: Returns contact name, email, phone, and account association. Useful for customer lookup before creating tickets or reviewing customer history.
-
-List contacts (customers) in Zoho Desk
+Get details of a specific Zoho Desk contact
 - **list_tickets**: Useful for agents to review open, pending, or resolved tickets across all departments. Returns ticket ID, subject, status, priority, and assignee.
 
 List all support tickets in Zoho Desk
+- **search_tickets**: Searches subject, description, and custom fields. Use this to find tickets related to a specific topic, customer name, or product. Returns matching tickets with basic info.
+
+Search tickets in Zoho Desk by keyword
 - **update_ticket**: Commonly used to change ticket status from Open to Closed or to reassign to another agent. Only pass the fields you want to update.
 
 Update an existing Zoho Desk ticket
+- **get_ticket**: Use this to review full ticket history before responding.
+
+Get details of a specific Zoho Desk ticket
+- **list_departments**: Departments are used to categorize tickets and assign agents. Each department has a unique ID needed for ticket creation and agent listing. Use this first to get department IDs.
+
+List all departments in Zoho Desk
+- **list_agents**: Returns agent name, email, role, and availability status. Use this to find available agents for ticket assignment or escalation. Requires a valid department ID.
+
+List agents in a Zoho Desk department
+- **list_accounts**: Returns account name, industry, website, and associated contacts. Useful for B2B support to understand which company a contact belongs to.
+
+List accounts (organizations) in Zoho Desk
+- **list_contacts**: Returns contact name, email, phone, and account association. Useful for customer lookup before creating tickets or reviewing customer history.
+
+List contacts (customers) in Zoho Desk
 
 
 ## 💬 Prompt Examples
@@ -157,4 +157,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

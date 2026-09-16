@@ -33,16 +33,16 @@ Connect your **Wise** Business account to your AI agent and manage international
 
 
 ## Available Tools (10)
+- **list_recipients**: List payment recipients
 - **create_quote**: Create a transfer quote
-- **list_transfers**: List all transfers
-- **get_transfer**: Get transfer details
+- **list_statements**: List account statements
 - **get_currencies**: List supported currencies
 - **list_profiles**: List Wise business profiles
 - **get_exchange_rate**: Get live exchange rate
-- **list_recipients**: List payment recipients
-- **list_statements**: List account statements
 - **list_balances**: List multi-currency balances
 - **get_balance**: Get specific balance details
+- **list_transfers**: List all transfers
+- **get_transfer**: Get transfer details
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

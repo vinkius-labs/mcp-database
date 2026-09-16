@@ -39,13 +39,13 @@ No more manual digging through complex iPaaS dashboards to check if a recipe ran
 
 
 ## Available Tools (7)
+- **list_workato_folders**: Lists all organizational folders in the account
+- **list_recipe_jobs**: Lists recent execution jobs for a specific recipe
+- **list_automation_recipes**: Lists all automation recipes in the Workato account
 - **get_api_collections**: Lists all API collections exposed by Workato
 - **get_recipe_details**: Retrieves details for a specific Workato recipe
 - **list_app_connections**: Lists all application connections configured in Workato
 - **list_managed_connectors**: Lists all managed connectors available in the tenant
-- **list_workato_folders**: Lists all organizational folders in the account
-- **list_recipe_jobs**: Lists recent execution jobs for a specific recipe
-- **list_automation_recipes**: Lists all automation recipes in the Workato account
 
 
 ## 💬 Prompt Examples
@@ -130,4 +130,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

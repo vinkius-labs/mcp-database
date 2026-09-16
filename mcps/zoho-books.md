@@ -34,17 +34,17 @@ Connect your **Zoho Books** account to any AI agent to streamline your cloud acc
 
 
 ## Available Tools (7)
-- **get_invoice_details**: Get details for a specific invoice
-- **list_estimates**: List all estimates (quotes) for an organization
-- **list_organizations**: Use this to identify the organization ID for other calls.
-
-List all Zoho Books organizations
-- **list_invoices**: List all invoices for an organization
+- **list_books_contacts**: List all contacts (customers/vendors)
 - **create_new_invoice**: Requires a JSON body with invoice details.
 
 Create a new invoice
-- **list_books_contacts**: List all contacts (customers/vendors)
+- **get_invoice_details**: Get details for a specific invoice
+- **list_invoices**: List all invoices for an organization
 - **list_inventory_items**: List all items (products/services)
+- **list_organizations**: Use this to identify the organization ID for other calls.
+
+List all Zoho Books organizations
+- **list_estimates**: List all estimates (quotes) for an organization
 
 
 ## 💬 Prompt Examples
@@ -129,4 +129,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

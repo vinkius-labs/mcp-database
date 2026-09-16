@@ -35,6 +35,7 @@ Connect your **Zoho Inventory** account to any AI agent to automate your supply 
 
 
 ## Available Tools (8)
+- **list_sales_orders**: List all sales orders
 - **list_items**: Includes basic metadata and item IDs.
 
 List all inventory items
@@ -42,17 +43,16 @@ List all inventory items
 - **create_item**: Requires the item name and sales rate. Optional description can be provided.
 
 Create a new inventory item
-- **get_item_details**: Get details for a specific inventory item
-- **list_contacts**: Essential for identifying IDs for orders and invoices.
-
-List customers and vendors
 - **list_invoices**: Useful for tracking billing and payment status.
 
 List all inventory invoices
 - **list_organizations**: This is necessary to obtain the organization ID required for other inventory tools.
 
 List associated Zoho organizations
-- **list_sales_orders**: List all sales orders
+- **get_item_details**: Get details for a specific inventory item
+- **list_contacts**: Essential for identifying IDs for orders and invoices.
+
+List customers and vendors
 
 
 ## 💬 Prompt Examples
@@ -134,4 +134,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
