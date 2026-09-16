@@ -31,47 +31,119 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 
 
 ## Available Tools (41)
-- **create_sip_dispatch_rule**: Map incoming calls to specific rooms based on phone numbers or pins
-- **create_sip_inbound_trunk**: Define how incoming SIP calls are handled
-- **remove_participant**: Kick a participant from a room
-- **search_phone_numbers**: Search for available numbers by country/area code
-- **stop_egress**: Stop an active egress
-- **start_track_egress**: Export a single track without transcoding
-- **create_sip_outbound_trunk**: Define a trunk for dialing out
-- **create_sip_participant**: Dial a SIP number and bring them into a LiveKit room
-- **delete_dispatch**: Remove a dispatch rule
-- **delete_ingress**: Remove an ingress point
-- **delete_room**: Forcibly disconnect all participants and delete the room
-- **delete_sip_dispatch_rule**: Remove a SIP dispatch rule
-- **delete_sip_trunk**: Remove a SIP trunk configuration
-- **list_dispatch**: List dispatches for a room
-- **list_egress**: List active egress jobs
-- **list_ingress**: List provisioned ingresses
-- **list_participants**: List participants in a room
+- **create_sip_dispatch_rule**: Specify the rule name and required configurations.
+
+Map incoming calls to specific rooms based on phone numbers or pins
+- **remove_participant**: Supply both the room name and the participant’s identity.
+
+Kick a participant from a room
+- **search_phone_numbers**: Provide both codes for accurate results.
+
+Search for available numbers by country/area code
+- **start_track_egress**: Provide the room name and the specific track ID.
+
+Export a single track without transcoding
+- **create_room**: Create a room with specific settings
+- **create_sip_inbound_trunk**: Provide a unique name for the trunk.
+
+Define how incoming SIP calls are handled
+- **create_sip_participant**: Provide all necessary identifiers.
+
+Dial a SIP number and bring them into a LiveKit room
+- **delete_dispatch**: Provide both the dispatch ID and the room name.
+
+Remove a dispatch rule
+- **delete_ingress**: Provide the ingress ID to delete the resource.
+
+Remove an ingress point
+- **delete_sip_dispatch_rule**: Provide the specific SIP Dispatch Rule ID to delete the resource.
+
+Remove a SIP dispatch rule
+- **delete_sip_trunk**: Use the specific SIP Trunk ID for deletion.
+
+Remove a SIP trunk configuration
+- **get_participant**: Supply both the room name and the participant’s identity.
+
+Get info for a specific participant
+- **list_egress**: Filter results using room name or egress ID.
+
+List active egress jobs
+- **list_ingress**: Filter results using room name or ingress ID.
+
+List provisioned ingresses
+- **list_participants**: Provide the room name to execute the query.
+
+List participants in a room
 - **list_phone_numbers**: List numbers owned by the project
+- **list_rooms**: List active/open rooms
 - **list_sip_inbound_trunk**: List configured SIP inbound trunks
 - **list_sip_outbound_trunk**: List configured SIP outbound trunks
-- **mute_published_track**: Mute/unmute a participant's track
-- **purchase_phone_number**: Buy a number and optionally assign a SIP dispatch rule
-- **start_participant_egress**: Record a specific participant's audio and video
-- **transfer_sip_participant**: Transfer an active SIP call to another number or URI
-- **update_layout**: Change the web layout of an active RoomComposite egress
-- **create_dispatch**: Explicitly trigger a named agent to join a specific room
-- **create_ingress**: Provision an ingress point (RTMP, WHIP, or URL pull)
-- **create_room**: Create a room with specific settings
-- **get_participant**: Get info for a specific participant
-- **list_rooms**: List active/open rooms
-- **release_phone_numbers**: Release a number back to the inventory
-- **send_data**: Send data packets to participants
-- **start_room_composite_egress**: Record an entire room using a web layout
-- **start_track_composite_egress**: Record one audio and one video track together
-- **start_web_egress**: Record any web page
-- **update_ingress**: Update room or participant settings for a reusable ingress
-- **update_participant**: Update metadata or permissions for a participant
-- **update_phone_number**: Change the dispatch rule for a number
-- **update_room_metadata**: Update room-wide metadata
-- **update_stream**: Add/remove RTMP/SRT output URLs from an active stream
-- **update_subscriptions**: Subscribe/unsubscribe a participant from specific tracks
+- **mute_published_track**: Provide the room name, participant identity, and track SID.
+
+Mute/unmute a participant's track
+- **purchase_phone_number**: Specify the phone number to be purchased.
+
+Buy a number and optionally assign a SIP dispatch rule
+- **release_phone_numbers**: Provide the phone number you wish to release.
+
+Release a number back to the inventory
+- **send_data**: Specify the room name and the data payload.
+
+Send data packets to participants
+- **start_room_composite_egress**: Provide the room name and the desired layout name.
+
+Record an entire room using a web layout
+- **start_track_composite_egress**: Provide both audio and video track IDs.
+
+Record one audio and one video track together
+- **start_web_egress**: Provide the URL to be recorded.
+
+Record any web page
+- **stop_egress**: Provide the egress ID to terminate the job.
+
+Stop an active egress
+- **transfer_sip_participant**: Ensure the participant and room names are correct.
+
+Transfer an active SIP call to another number or URI
+- **update_ingress**: Use the ingress ID to identify the resource.
+
+Update room or participant settings for a reusable ingress
+- **update_layout**: Use the egress ID to target the correct job.
+
+Change the web layout of an active RoomComposite egress
+- **update_participant**: Specify the room name and participant identity.
+
+Update metadata or permissions for a participant
+- **update_phone_number**: Provide the number and the new rule ID.
+
+Change the dispatch rule for a number
+- **update_room_metadata**: Provide the room name and the new metadata string.
+
+Update room-wide metadata
+- **update_stream**: Use the egress ID to identify the stream.
+
+Add/remove RTMP/SRT output URLs from an active stream
+- **create_dispatch**: Specify the agent name and room name.
+
+Explicitly trigger a named agent to join a specific room
+- **create_sip_outbound_trunk**: Provide a unique name for the trunk.
+
+Define a trunk for dialing out
+- **delete_room**: Specify the room name as the only required argument.
+
+Forcibly disconnect all participants and delete the room
+- **start_participant_egress**: Provide the room name and participant identity.
+
+Record a specific participant's audio and video
+- **create_ingress**: Specify the input type and name.
+
+Provision an ingress point (RTMP, WHIP, or URL pull)
+- **list_dispatch**: Provide the room name to retrieve the list.
+
+List dispatches for a room
+- **update_subscriptions**: Provide the room name and participant identity.
+
+Subscribe/unsubscribe a participant from specific tracks
 
 
 ## 💬 Prompt Examples
@@ -156,4 +228,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

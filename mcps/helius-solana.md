@@ -34,24 +34,24 @@ Connect your **Helius** account to any AI agent to interact with the Solana bloc
 
 
 ## Available Tools (14)
+- **get_asset_proof**: Get Merkle proof for compressed NFTs
+- **get_transaction_history**: Get enhanced transaction history for an address
+- **get_wallet_balances**: Get token and NFT balances with USD values
+- **get_wallet_history**: Get complete transaction history for a wallet
 - **get_wallet_identity**: sol domains.
 
 Resolve address to known entities
 - **get_wallet_transfers**: Get incoming and outgoing token transfers
-- **get_asset_proof**: Get Merkle proof for compressed NFTs
+- **parse_transactions**: Parse raw transactions into human-readable data
 - **get_priority_fee_estimate**: Recommended to provide the serialized transaction.
 
 Get precise priority fee estimates
 - **get_assets_by_owner**: List all assets owned by a wallet
 - **get_asset_batch**: Get multiple assets in one call
-- **parse_transactions**: Parse raw transactions into human-readable data
-- **search_assets**: Search for assets with advanced filtering
 - **get_asset**: Get detailed data for a specific Solana asset
 - **get_token_accounts**: Get all token accounts for a mint or owner
-- **get_transaction_history**: Get enhanced transaction history for an address
-- **get_wallet_balances**: Get token and NFT balances with USD values
 - **get_wallet_funded_by**: Identify the original funding source of a wallet
-- **get_wallet_history**: Get complete transaction history for a wallet
+- **search_assets**: Search for assets with advanced filtering
 
 
 ## 💬 Prompt Examples
@@ -136,4 +136,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

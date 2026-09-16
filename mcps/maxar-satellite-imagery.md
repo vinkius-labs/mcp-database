@@ -33,8 +33,8 @@ Connect to **Maxar**, the world leader in high-resolution satellite imagery, and
 
 
 ## Available Tools (4)
-- **list_order_pipelines**: List available ordering pipelines
 - **search_discovery**: Search for available satellite imagery
+- **list_order_pipelines**: List available ordering pipelines
 - **create_order**: Order specific data products
 - **get_mws_endpoints**: Get Maxar Web Services (MWS) endpoints
 
@@ -121,4 +121,4 @@ Vinkius is an independent platform and is not affiliated with, endorsed by, spon
 
 ---
 
-*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
