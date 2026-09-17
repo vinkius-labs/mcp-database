@@ -14,10 +14,10 @@ This MCP server provides precise thermal modeling for fermentation processes. It
 
 
 ## Available Tools (4)
+- **analyze_thermal_stability**: Evaluates if a specific cooling system is capable of handling the fermentation load
 - **calculate_metabolic_load**: Determines the rate of heat energy produced by yeast metabolism
 - **predict_temperature_trajectory**: Estimates how quickly the fermentation temperature will rise if the cooling system is turned off
 - **size_cooling_system**: Determines the necessary capacity of a cooling unit to maintain thermal stability
-- **analyze_thermal_stability**: Evaluates if a specific cooling system is capable of handling the fermentation load
 
 
 ## 💬 Prompt Examples

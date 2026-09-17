@@ -14,10 +14,10 @@ This MCP server provides advanced kinetic modeling for the micro-oxygenation (MO
 
 
 ## Available Tools (4)
-- **assess_sensory_evolution**: 
 - **get_dissolved_oxygen_profile**: 
 - **optimize_mox_parameters**: 
 - **predict_phenolic_polymerization**: 
+- **assess_sensory_evolution**: 
 
 
 ## 💬 Prompt Examples

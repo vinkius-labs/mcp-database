@@ -18,12 +18,12 @@ This MCP server provides a predictive engine for modeling the chemical transform
 
 
 ## Available Tools (4)
-- **assess_sensory_impact_tool**: Predicts the evolution of mouthfeel, specifically the change in astringency
 - **calculate_color_evolution_tool**: g., from ruby to brick or brown) based on the mass of polymeric pigments and time elapsed.
 
 Predicts how the visual appearance (hue) of the wine will change over a specific duration
 - **evaluate_browning_risk_tool**: Provides a high-level risk assessment of whether the wine is undergoing excessive, undesirable oxidation
 - **predict_pigment_formation_tool**: Calculates the expected increase in polymeric pigments based on current chemical concentrations and oxygen exposure
+- **assess_sensory_impact_tool**: Predicts the evolution of mouthfeel, specifically the change in astringency
 
 
 ## 💬 Prompt Examples

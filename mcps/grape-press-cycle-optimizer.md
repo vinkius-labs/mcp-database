@@ -14,10 +14,10 @@ This MCP server provides advanced winemaking optimization tools. Use `calculate_
 
 
 ## Available Tools (4)
-- **compare_press_methods**: Provides a comparison of how different equipment types would handle the same grape and target
+- **predict_fraction_quality**: Estimates the quality profile of specific juice portions based on the timing of extraction
 - **simulate_contact_impact**: Evaluates how varying the duration of the press affects the final phenolic profile
 - **calculate_optimal_cycle**: Determines the complete pressing schedule to achieve specific yield and quality targets
-- **predict_fraction_quality**: Estimates the quality profile of specific juice portions based on the timing of extraction
+- **compare_press_methods**: Provides a comparison of how different equipment types would handle the same grape and target
 
 
 ## 💬 Prompt Examples

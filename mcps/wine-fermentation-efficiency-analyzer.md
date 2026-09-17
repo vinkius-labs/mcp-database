@@ -14,8 +14,8 @@ This MCP server provides specialized analytical tools for fermentation science. 
 
 
 ## Available Tools (4)
-- **analyze_fermentation_yield**: Calculates the core performance metrics of a fermentation batch
 - **calculate_theoretical_limits**: Determines the upper bound of what a specific sugar concentration can produce
+- **analyze_fermentation_yield**: Calculates the core performance metrics of a fermentation batch
 - **identify_fermentation_anomalies**: Diagnoses the cause of efficiency drops or incomplete fermentations
 - **validate_carbon_balance**: Verifies if the provided measurements are scientifically consistent
 

@@ -14,10 +14,10 @@ This MCP server provides precise calculations for the destemming and crushing st
 
 
 ## Available Tools (4)
-- **get_current_throughput**: Determine the actual mass of grapes being processed per hour
-- **optimize_machine_settings**: Recommend ideal roller spacing and drum speed to meet a target damage rate
 - **analyze_stem_removal**: Evaluate how effectively the machine is separating stems from the fruit
 - **calculate_berry_damage**: Predict the percentage of berry breakage based on machine settings
+- **get_current_throughput**: Determine the actual mass of grapes being processed per hour
+- **optimize_machine_settings**: Recommend ideal roller spacing and drum speed to meet a target damage rate
 
 
 ## 💬 Prompt Examples

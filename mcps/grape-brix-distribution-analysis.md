@@ -14,10 +14,10 @@ This MCP server provides vineyard managers with critical statistical tools to ev
 
 
 ## Available Tools (4)
-- **analyze_load_statistics**: Provides the core statistical profile of a specific grape load's sugar content
 - **detect_outlying_samples**: Identifies specific samples that deviate significantly from the group average
-- **evaluate_ripeness_uniformity**: Determines if a load is suitable for single-batch processing or shows signs of uneven ripening
 - **suggest_handling_strategy**: Recommends specific logistical decisions (Segregation vs. Blending) to optimize juice quality
+- **evaluate_ripeness_uniformity**: Determines if a load is suitable for single-batch processing or shows signs of uneven ripening
+- **analyze_load_statistics**: Provides the core statistical profile of a specific grape load's sugar content
 
 
 ## 💬 Prompt Examples
