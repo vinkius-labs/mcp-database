@@ -14,10 +14,10 @@ This MCP server provides analytical tools for fitness athletes to evaluate 'As M
 
 
 ## Available Tools (4)
-- **analyze_workout_performance**: Provides a comprehensive breakdown of a single completed AMRAP session
 - **compare_workout_history**: Tracks improvement over time by comparing multiple completed sessions
 - **get_round_breakdown**: Answers how much time was spent on each specific round to identify fatigue points
 - **project_future_performance**: Estimates potential scores based on current capacity and historical trends
+- **analyze_workout_performance**: Provides a comprehensive breakdown of a single completed AMRAP session
 
 
 ## 💬 Prompt Examples

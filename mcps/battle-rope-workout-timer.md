@@ -15,9 +15,9 @@ This MCP server provides specialized tools for designing high-intensity interval
 
 ## Available Tools (4)
 - **calculate_pattern_intensity**: 
+- **estimate_metabolic_load**: 
 - **generate_workout_plan**: 
 - **validate_equipment_suitability**: 
-- **estimate_metabolic_load**: 
 
 
 ## 💬 Prompt Examples

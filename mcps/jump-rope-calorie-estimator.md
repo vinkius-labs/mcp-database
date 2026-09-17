@@ -14,10 +14,10 @@ This MCP server provides precise metabolic calculations for jump rope training. 
 
 
 ## Available Tools (4)
+- **get_jump_style_metadata**: Informs the user of the technical characteristics and MET values associated with specific jump styles
 - **calculate_burn_metrics**: Provides a comprehensive breakdown of the caloric and physical effort of a jump rope session
 - **convert_to_running_equivalent**: Translates the energy spent jumping into a distance-based metric for running
 - **evaluate_intensity_zone**: Determines the physiological category of the workout
-- **get_jump_style_metadata**: Informs the user of the technical characteristics and MET values associated with specific jump styles
 
 
 ## 💬 Prompt Examples

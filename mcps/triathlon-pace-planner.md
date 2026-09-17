@@ -14,8 +14,8 @@ Triathlon Pace Planner connects AI agents to specialized triathlon modeling. It 
 
 
 ## Available Tools (4)
-- **generate_pacing_strategy**: Provides a detailed breakdown of how the athlete should manage their effort throughout the race
 - **calculate_nutrition_plan**: Determines the timing and volume of nutritional intake required to sustain performance
+- **generate_pacing_strategy**: Provides a detailed breakdown of how the athlete should manage their effort throughout the race
 - **get_race_duration_estimate**: Calculates the expected time for each individual leg and the total estimated race time
 - **get_race_profile_metrics**: Provides physiological metrics and intensity targets for the athlete to monitor
 

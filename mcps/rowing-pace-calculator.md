@@ -14,10 +14,10 @@ This MCP server provides essential calculations for rowing ergometer training. I
 
 
 ## Available Tools (4)
-- **estimate_stroke_rate**: Estimates the stroke rate (SPM) needed to achieve a specific power output at a specific pace
 - **get_pace_from_time**: Calculates the 500m pace when the total distance and total time are known
 - **get_power_from_pace**: Calculates the physical power output (Watts) required to maintain a specific pace
 - **get_time_from_pace**: Calculates the total time required to complete a specific distance at a target pace
+- **estimate_stroke_rate**: Estimates the stroke rate (SPM) needed to achieve a specific power output at a specific pace
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides physiological research-based tools to design optimal Hi
 
 
 ## Available Tools (4)
-- **calculate_interval_structure**: Generates a complete HIIT session plan based on user parameters
 - **compare_modalities**: Evaluates how different exercises impact the chosen HIIT structure
 - **get_recommended_recovery**: Determines the optimal time to wait before the next high-intensity session
 - **validate_session_feasibility**: Checks if a proposed interval structure is safe and possible for a specific user
+- **calculate_interval_structure**: Generates a complete HIIT session plan based on user parameters
 
 
 ## 💬 Prompt Examples

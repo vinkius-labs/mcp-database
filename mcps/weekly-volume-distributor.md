@@ -15,9 +15,9 @@ This MCP server provides advanced tools for training program design. It allows A
 
 ## Available Tools (4)
 - **analyze_muscle_overlap**: Identifies secondary muscle group stimulation resulting from primary muscle group training
+- **validate_split_feasibility**: Checks if the requested weekly volume can be realistically distributed within the constraints of the chosen split
 - **calculate_volume_distribution**: Generates a complete weekly training schedule by distributing total weekly sets across the specified training days and split type
 - **get_fatigue_risk_score**: Evaluates the likelihood of overtraining based on the density of volume and the frequency of sessions
-- **validate_split_feasibility**: Checks if the requested weekly volume can be realistically distributed within the constraints of the chosen split
 
 
 ## 💬 Prompt Examples

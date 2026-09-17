@@ -14,11 +14,11 @@ This MCP server provides a specialized engine for creating CrossFit-style Workou
 
 
 ## Available Tools (4)
+- **get_scaling_options**: Provides modifications for a specific movement to match a user's capability
 - **generate_wod**: Ensure the user provides available time, equipment, skill level, and the target metabolic pathway.
 
 Generates a complete CrossFit workout based on time, equipment, skill, and energy system
 - **get_energy_system_guidelines**: Returns intensity and duration guidelines for a specific energy system
-- **get_scaling_options**: Provides modifications for a specific movement to match a user's capability
 - **validate_equipment_suitability**: Checks if a movement can be performed with the available equipment
 
 

@@ -34,34 +34,34 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 
 
 ## Available Tools (15)
-- **get_metrics**: Provide a valid organization ID.
-
-Retrieve Prometheus-formatted operational metrics
-- **create_chat_completion**: Generate conversational responses using a structured message format
 - **create_completion**: Use this tool only when immediate text generation is required.
 
 Generate text continuations from a single prompt string
-- **create_batch**: Supply the full job configuration payload in the body.
-
-Create a batch job for asynchronous processing
 - **delete_file**: Ensure the file ID is valid before calling.
 
 Delete a file
 - **get_batch**: Use the unique batch ID to check the job status.
 
 Retrieve status of a batch job
-- **get_file_content**: Use the file ID to retrieve the content.
-
-Download raw content of a file
 - **get_file**: Use the file ID to fetch details.
 
 Retrieve metadata for a specific file
+- **get_metrics**: Provide a valid organization ID.
+
+Retrieve Prometheus-formatted operational metrics
 - **get_model**: Provide the model ID as the required parameter.
 
 Fetches details for a specific model
 - **list_batches**: Do not specify any parameters.
 
 List all batch jobs
+- **create_chat_completion**: Generate conversational responses using a structured message format
+- **create_batch**: Supply the full job configuration payload in the body.
+
+Create a batch job for asynchronous processing
+- **get_file_content**: Use the file ID to retrieve the content.
+
+Download raw content of a file
 - **list_files**: Do not specify any parameters.
 
 List uploaded files

@@ -14,8 +14,8 @@ This MCP server provides specialized tools for metabolic conditioning (MetCon) p
 
 
 ## Available Tools (4)
-- **classify_workout_intensity**: Evaluates the metabolic demand of a workout configuration
 - **get_scaling_options**: Provides alternative versions of the workout to match an athlete's specific capabilities
+- **classify_workout_intensity**: Evaluates the metabolic demand of a workout configuration
 - **get_workout_duration**: Predicts how long a specific workout will take to complete
 - **recommend_time_cap**: Suggests a maximum time limit to keep the workout within its intended metabolic stimulus
 
