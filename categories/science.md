@@ -73,6 +73,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Mass Balance Calculator](../mcps/mass-balance-calculator.md) | Perform rigorous mass balance calculations for chemical processes. |
 | [Mass Spectrum Interpreter](../mcps/mass-spectrum-interpreter.md) | High-precision analytical tool for interpreting mass spectrometry data and identifying molecular structures. |
 | [Maxwell-Boltzmann Distribution](../mcps/maxwell-boltzmann-distribution.md) | Calculate gas particle speed distributions and statistical characteristics. |
+| [Mechanical Tension Estimator](../mcps/mechanical-tension-estimator.md) | Calculate muscle hypertrophy stimulus and mechanical tension scores from workout data. |
 | [Melting Temperature Calculator](../mcps/melting-temperature-calculator.md) | Calculate DNA melting temperatures, GC content, and amplicon properties for PCR optimization. |
 | [Membrane Filtration Design](../mcps/membrane-filtration-design.md) | Calculate membrane area, flux, and concentration polarization for filtration systems. |
 | [Metal Complex Stability Predictor](../mcps/metal-complex-stability-predictor.md) | Predict thermodynamic stability of metal-ligand complexes using HSAB theory and chelate effect analysis. |

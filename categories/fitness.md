@@ -5,6 +5,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Balanced Rep Calibrator](../mcps/balanced-rep-calibrator.md) | Distribute total repetitions across sets uniformly to avoid small final sets. |
+| [Cluster Set Designer](../mcps/cluster-set-designer.md) | Design optimized cluster set training protocols for strength and hypertrophy. |
 | [Core Strength Surf Requirements](../mcps/core-strength-surf-requirements.md) | Biomechanical calculator for surfing core strength, endurance, and training load. |
 | [Drop Set Percentage Calculator](../mcps/drop-set-percentage-calculator.md) | Calculate exact weight reductions for consecutive drop sets. |
 | [Kiteboarding Session Estimator](../mcps/kiteboarding-session-estimator.md) | Predict physiological session limits, rest intervals, and hydration needs for kiteboarders. |
@@ -12,12 +13,15 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate 1RM using multiple models and generate structured warm-up routines. |
 | [Paddle Power Calculator](../mcps/paddle-power-calculator.md) | Calculate mechanical power, energy expenditure, and efficiency for paddlers. |
 | [Paddle Speed Calculator](../mcps/paddle-speed-calculator.md) | Predict paddling speed, catch rates, and wave count potential for surfboards. |
-| [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Automate 12-week strength training schedules with safety-capped linear progression. |
+| [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Generates structured strength and hypertrophy training progressions using periodization principles. |
 | [Pyramid Scheme Builder](../mcps/pyramid-scheme-builder.md) | Generate and compare training repetition sequences using pyramidal progression. |
+| [RPE to Weight Converter](../mcps/rpe-to-weight-converter.md) | Convert RPE to training weight and vice versa using standardized intensity tables. |
 | [Splitboard Touring Efficiency](../mcps/splitboard-touring-efficiency.md) | Calculate touring time, calories burned, and optimal pacing for splitboard backcountry trips. |
 | [Sport-Specific Fitness Testing](../mcps/sport-specific-fitness-testing.md) | Generate standardized physical testing protocols, athletic benchmarks, and composite fitness scores for various sports. |
+| [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Precision tools for calculating swimming pace, lap splits, stroke rates, and interval training plans. |
 | [Switch Riding Difficulty](../mcps/switch-riding-difficulty.md) | Calculate switch riding proficiency and practice requirements. |
 | [Target Rep Divider](../mcps/target-rep-divider.md) | Split total repetition targets into equal sets and identify remaining reps. |
+| [Weak Point Analysis](../mcps/weak-point-analysis.md) | Biomechanical analysis to identify and fix sticking points in compound lifts. |
 
 
 ---

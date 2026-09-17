@@ -13,6 +13,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Depth of Field Calculator](../mcps/depth-of-field-calculator.md) | Deterministic photographic engine for depth of field, hyperfocal distance, and sensor equivalence. |
+| [DOTS Score Calculator](../mcps/dots-score-calculator.md) | Calculate modern DOTS scores and strength levels for powerlifting. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Embedding Similarity Calculator](../mcps/embedding-similarity-calculator.md) | Calculate mathematical distances and similarity scores between multidimensional numerical vectors. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
@@ -33,6 +34,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Minimum Spanning Tree Calculator](../mcps/minimum-spanning-tree-calculator.md) | Calculate Minimum and Maximum Spanning Trees using Kruskal's and Prim's algorithms. |
 | [Musical Tempo Delay Calculator](../mcps/musical-tempo-delay-calculator.md) | Calculate precise millisecond delays for musical note durations at constant or ramping tempos. |
 | [Network Flow Calculator](../mcps/network-flow-calculator.md) | Solve maximum flow, minimum cut, and bipartite matching problems using Edmonds-Karp. |
+| [One-Rep Max Estimator](../mcps/one-rep-max-estimator.md) | Predict your maximum strength using multiple physiological models. |
 | [Pattern Grading Calculator](../mcps/pattern-grading-calculator.md) | Scale sewing patterns between sizes using ASTM standards (Women, Men, Children). |
 | [Powerlifting Coefficient Calculator](../mcps/powerlifting-coefficient-calculator.md) | Calculate and compare strength scores using Wilks, DOTS, and IPF GL coefficients. |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
@@ -51,6 +53,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Wave Shoaling Calculator](../mcps/wave-shoaling-calculator.md) | Calculates wave height changes and shoaling coefficients as waves approach shallow water. |
 | [Waveform Generator](../mcps/waveform-generator.md) | Generate high-fidelity digital audio waveforms and noise profiles. |
 | [Weaving Warp & Weft Calculator](../mcps/weaving-warp-weft-calculator.md) | Calculate precise warp and weft yarn requirements for loom weaving. |
+| [Wilks Score Calculator](../mcps/wilks-score-calculator.md) | Calculate relative strength using Wilks coefficients. |
 | [Woodturning Speed Calculator](../mcps/woodturning-speed-calculator.md) | Deterministic RPM and surface speed calculations for safe woodturning. |
 | [XP Curve Calculator](../mcps/xp-curve-calculator.md) | Deterministic RPG experience progression engine. |
 | [Yarn Substitution Calculator](../mcps/yarn-substitution-calculator.md) | Calculate exact yarn requirements and fiber compatibility for knitting and crochet substitutions. |

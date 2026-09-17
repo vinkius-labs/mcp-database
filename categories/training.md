@@ -7,6 +7,7 @@ Explore the open database of **training** Model Context Protocol (MCP) servers.
 | [Competition Peak Planner](../mcps/competition-peak-planner.md) | Generate personalized training taper protocols, nutritional strategies, and peak performance windows. |
 | [Drill Progression Design](../mcps/drill-progression-design.md) | Generates progressive surfing drill sequences based on skill, learning style, and wave conditions. |
 | [Focus Attention Training](../mcps/focus-attention-training.md) | Mental training system for surfers to optimize performance through directed attention. |
+| [Intra-Set Rest-Pause Planner](../mcps/intra-set-rest-pause-planner.md) | Design high-intensity rest-pause protocols to maximize effective repetitions. |
 | [Paddle Fitness Calculator](../mcps/paddle-fitness-calculator.md) | Calculate paddling distance, rest periods, and conditioning plans based on wave dynamics. |
 | [Rest Interval Optimizer](../mcps/rest-interval-optimizer.md) | Calculate optimal rest periods between sets based on training goals and intensity. |
 | [Running Mileage 10% Rule](../mcps/running-mileage-10-rule.md) | Generate safe running progression plans using the 10% growth rule. |

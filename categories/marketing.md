@@ -74,7 +74,9 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Wine Email Campaign Optimizer](../mcps/wine-email-campaign-optimizer.md) | Optimize wine email engagement through data-driven send times, A/B test priorities, and segment targeting. |
 | [Wine Influencer Collaboration Value](../mcps/wine-influencer-collaboration-value.md) | Calculate influencer engagement impact, collaboration costs, and ROI for wine brand partnerships. |
 | [Wine Label Design Testing](../mcps/wine-label-design-testing.md) | Design valid A/B testing protocols for wine labels using statistical experimental design. |
+| [Wine PR Sentiment Intelligence](../mcps/wine-pr-sentiment-intelligence.md) | Quantify media impact, brand health, and reputation risks for wine brands. |
 | [Wine Social Media ROI Calculator](../mcps/wine-social-media-roi-calculator.md) | Analyze social media marketing efficiency and ROI for wineries. |
+| [Wine Trade Show ROI Calculator](../mcps/wine-trade-show-roi-calculator.md) | Calculate financial and strategic ROI for wine industry trade shows. |
 | [Xiaohongshu (RED) Title Optimizer](../mcps/xiaohongshu-red-title-optimizer.md) | Transform base headlines into viral Xiaohongshu titles using weighted character counts and keyword density rules. |
 
 

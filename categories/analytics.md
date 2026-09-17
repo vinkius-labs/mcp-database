@@ -31,6 +31,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [AI SaaS Token Economics Engine](../mcps/ai-saas-token-economics-engine.md) | Analyze token consumption, feature efficiency, and tier-based costs for AI SaaS platforms. |
 | [AI Synthetic Data Economics](../mcps/ai-synthetic-data-economics.md) | Calculate the economic value, cost savings, and scalability of synthetic datasets. |
 | [AI Water Consumption Analytics](../mcps/ai-water-consumption-analytics.md) | Calculate water usage, sustainability risk, and cooling ROI for AI data centers. |
+| [AMRAP Score Calculator](../mcps/amrap-score-calculator.md) | Analyze AMRAP performance, pacing, and future score projections. |
 | [Antibody Titer Calculator](../mcps/antibody-titer-calculator.md) | Precision tool for calculating antibody titers, EC50, and concentrations from assay data. |
 | [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
@@ -49,6 +50,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
+| [Gym Session Efficiency Scorer](../mcps/gym-session-efficiency-scorer.md) | Analyzes workout data to score efficiency, density, and wasted time. |
 | [Heat Remaining Time Management](../mcps/heat-remaining-time-management.md) | Strategic analysis of competition heat status, wave urgency, and performance risk. |
 | [Image Generation Economics](../mcps/image-generation-economics.md) | Calculate image generation costs, storage scaling, and quality-cost trade-offs. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
@@ -68,12 +70,14 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Personal Record Tracker](../mcps/personal-record-tracker.md) | Predictive analytics for athletes to track PRs and forecast performance peaks. |
 | [Pipeline Flow Assurance](../mcps/pipeline-flow-assurance.md) | Analyze fluid transport risks, hydrate formation, and wax deposition in subsea and terrestrial pipelines. |
 | [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
 | [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
 | [Prompt Reuse Analyzer](../mcps/prompt-reuse-analyzer.md) | Analyze prompt template reuse, efficiency, and standardization opportunities. |
+| [Pump Quality Scorer](../mcps/pump-quality-scorer.md) | Analyzes training sessions to score muscle pump effectiveness. |
 | [RAG Economics Analyzer](../mcps/rag-economics-analyzer.md) | Calculate and optimize the total cost of ownership for RAG infrastructures. |
 | [Reconciliation Analysis](../mcps/reconciliation-analysis.md) | Analyze mine production discrepancies by comparing resource models, mine output, and mill feed. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
@@ -92,8 +96,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
-| [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
+| [Training Volume Calculator](../mcps/training-volume-calculator.md) | Quantify training workload, muscle distribution, and intensity metrics. |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Waste Minimization Analysis](../mcps/waste-minimization-analysis.md) | Analyze waste generation, reduction opportunities, and recycling potential using the waste hierarchy. |

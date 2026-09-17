@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,923 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,979 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,8 +10,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1019 servers)
-- [finance](categories/finance.md) (931 servers)
+- [productivity](categories/productivity.md) (1048 servers)
+- [finance](categories/finance.md) (932 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -19,22 +19,22 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [marketing-automation](categories/marketing-automation.md) (241 servers)
 - [agriculture](categories/agriculture.md) (225 servers)
 - [ecommerce](categories/ecommerce.md) (208 servers)
-- [science](categories/science.md) (157 servers)
+- [science](categories/science.md) (158 servers)
 - [construction](categories/construction.md) (150 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [communication-messaging](categories/communication-messaging.md) (130 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
-- [utilities](categories/utilities.md) (126 servers)
+- [utilities](categories/utilities.md) (127 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
 - [customer-support](categories/customer-support.md) (108 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
+- [analytics](categories/analytics.md) (105 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
-- [analytics](categories/analytics.md) (101 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [health](categories/health.md) (89 servers)
+- [health](categories/health.md) (99 servers)
 - [infrastructure](categories/infrastructure.md) (88 servers)
+- [marketing](categories/marketing.md) (74 servers)
 - [security](categories/security.md) (74 servers)
-- [marketing](categories/marketing.md) (72 servers)
 - [human-resources](categories/human-resources.md) (69 servers)
 - [business-intelligence](categories/business-intelligence.md) (62 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
@@ -46,7 +46,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [growth-engine](categories/growth-engine.md) (56 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [optimization](categories/optimization.md) (54 servers)
-- [mathematics](categories/mathematics.md) (50 servers)
+- [mathematics](categories/mathematics.md) (53 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [supply-chain](categories/supply-chain.md) (45 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
@@ -77,6 +77,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [compliance](categories/compliance.md) (21 servers)
 - [devops](categories/devops.md) (19 servers)
 - [environment](categories/environment.md) (18 servers)
+- [fitness](categories/fitness.md) (18 servers)
 - [audio-music](categories/audio-music.md) (17 servers)
 - [content-management](categories/content-management.md) (17 servers)
 - [data-analysis](categories/data-analysis.md) (17 servers)
@@ -86,7 +87,6 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [architecture](categories/architecture.md) (15 servers)
 - [business](categories/business.md) (15 servers)
 - [product-management](categories/product-management.md) (15 servers)
-- [fitness](categories/fitness.md) (14 servers)
 - [inventory-management](categories/inventory-management.md) (14 servers)
 - [design](categories/design.md) (12 servers)
 - [event-management](categories/event-management.md) (12 servers)
@@ -105,12 +105,12 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [data-science](categories/data-science.md) (9 servers)
 - [risk-management](categories/risk-management.md) (9 servers)
 - [scheduling](categories/scheduling.md) (9 servers)
+- [training](categories/training.md) (9 servers)
 - [web-development](categories/web-development.md) (9 servers)
 - [analysis](categories/analysis.md) (8 servers)
 - [biochemistry](categories/biochemistry.md) (8 servers)
 - [development](categories/development.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
-- [training](categories/training.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
 - [risk-assessment](categories/risk-assessment.md) (7 servers)
 - [ai-agents](categories/ai-agents.md) (6 servers)

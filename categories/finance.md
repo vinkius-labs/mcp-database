@@ -924,6 +924,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Wine Medal Value Calculator](../mcps/wine-medal-value-calculator.md) | Quantifies the economic impact of wine competition awards on sales, pricing, and ROI. |
 | [Wine Price & Quality Correlation](../mcps/wine-price-quality-correlation.md) | Analyze wine value using hedonic pricing models. |
 | [Wine Retail Price Sensitivity Analyzer](../mcps/wine-retail-price-sensitivity-analyzer.md) | Analyze how price changes impact sales volume and revenue for wine products. |
+| [Wine Sommelier ROI Analyzer](../mcps/wine-sommelier-roi-analyzer.md) | Calculate the financial impact and ROI of professional sommelier training programs. |
 | [Wine Sustainability Certification Value](../mcps/wine-sustainability-certification-value.md) | Calculate the financial impact and payback period of wine sustainability certifications. |
 | [Wine Tasting Fee Optimizer](../mcps/wine-tasting-fee-optimizer.md) | Optimize tasting room profitability by balancing fees and wine sales. |
 | [Wine Vintage Rating Impact](../mcps/wine-vintage-rating-impact.md) | Analyze how vintage quality affects wine price, demand, and inventory value. |

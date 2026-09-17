@@ -10,6 +10,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Advanced Timezone Engine](../mcps/advanced-timezone-engine.md) | Precise IANA timezone operations including historical DST transitions, ambiguity detection, and global time synchronization. |
 | [Agent Context Window Manager](../mcps/agent-context-window-manager.md) | Deterministic token tracking and context optimization for long-running AI conversations. |
 | [Aquarium Water Chemistry Calculator](../mcps/aquarium-water-chemistry-calculator.md) | Calculate precise chemical dosages for freshwater aquariums. |
+| [attempt-selector](../mcps/attempt-selector.md) | Strategic competition attempt selection for powerlifters. |
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |
 | [AWS Location Service Geofencing Calculator](../mcps/aws-location-service-geofencing-calculator.md) | Estimate AWS Location Service capacity, resource usage, and operational performance. |
 | [Barbecue Meat Calculator](../mcps/barbecue-meat-calculator.md) | Deterministic planning for BBQ meat procurement, cooking times, and fuel needs. |
