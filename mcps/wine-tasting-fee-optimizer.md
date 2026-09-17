@@ -14,9 +14,9 @@ This MCP server provides strategic decision support for wineries to maximize rev
 
 
 ## Available Tools (4)
+- **calculate_group_pricing_impact**: Adjusts the individual optimization to account for group dynamics and higher operational overhead
 - **get_optimal_fee_structure**: Determines the single most profitable tasting fee and the corresponding purchase threshold for a waiver
 - **simulate_weekday_vs_weekend_sensitivity**: Compares how different fee structures perform during low-demand weekdays versus high-demand weekends
-- **calculate_group_pricing_impact**: Adjusts the individual optimization to account for group dynamics and higher operational overhead
 - **get_revenue_projections**: Forecasts total revenue for a given period based on a specific fee configuration
 
 

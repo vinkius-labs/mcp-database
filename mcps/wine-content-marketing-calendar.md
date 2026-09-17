@@ -14,10 +14,10 @@ This MCP server enables wine estates and distributors to build cohesive marketin
 
 
 ## Available Tools (4)
+- **generate_editorial_calendar**: Aggregates all inputs into a cohesive, unified marketing calendar
 - **get_seasonal_template**: Provides a baseline set of recurring seasonal events and wine appreciation days to seed the calendar
 - **plan_release_content**: Generates a high-intensity content schedule centered around a specific wine release
 - **calculate_harvest_strategy**: Determines the optimal content frequency and theme distribution during the harvest window
-- **generate_editorial_calendar**: Aggregates all inputs into a cohesive, unified marketing calendar
 
 
 ## 💬 Prompt Examples

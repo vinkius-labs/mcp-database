@@ -14,9 +14,9 @@ This MCP server provides specialized tools for wine packaging experts to design 
 
 
 ## Available Tools (4)
+- **calculate_experiment_requirements**: Determines the foundational parameters needed to launch a valid A/B test
 - **evaluate_label_performance**: Compares the performance of two label variants against the target metric
 - **segment_test_results**: Breaks down the experimental results into specific consumer groups
-- **calculate_experiment_requirements**: Determines the foundational parameters needed to launch a valid A/B test
 - **simulate_shelf_impact**: Adjusts predicted performance based on environmental and consumer context
 
 

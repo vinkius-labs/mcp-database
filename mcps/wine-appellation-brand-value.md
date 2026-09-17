@@ -14,10 +14,10 @@ This MCP server provides tools to calculate the economic impact of wine appellat
 
 
 ## Available Tools (4)
+- **get_appellation_metrics**: Retrieves the core baseline data for a specific appellation
 - **analyze_appellation_hierarchy**: Explores the relationship between a sub-appellation and its parent
 - **calculate_appellation_value_contribution**: Quantifies the specific economic value added by the appellation
 - **calculate_brand_strength**: Determines the market power of an appellation
-- **get_appellation_metrics**: Retrieves the core baseline data for a specific appellation
 
 
 ## 💬 Prompt Examples

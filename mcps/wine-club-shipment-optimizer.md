@@ -14,12 +14,12 @@ This MCP server connects AI agents to wine club logistics. It enables precise sh
 
 
 ## Available Tools (4)
-- **optimize_shipment_plan**: Generates the optimal wine selection for all members based on constraints
+- **get_member_profiles**: Retrieves detailed preference profiles and historical satisfaction data for all club members
 - **validate_shipment_feasibility**: Checks if a proposed shipment plan is physically and financially possible
+- **optimize_shipment_plan**: Generates the optimal wine selection for all members based on constraints
 - **get_available_inventory**: You can choose to include exclusive wines.
 
 Provides a real-time snapshot of current wine stock, including quality and exclusivity status
-- **get_member_profiles**: Retrieves detailed preference profiles and historical satisfaction data for all club members
 
 
 ## 💬 Prompt Examples

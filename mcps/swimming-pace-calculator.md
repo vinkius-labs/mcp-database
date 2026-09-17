@@ -5,18 +5,19 @@
 
 ## Overview
 
-**Category:** [analytics](../categories/analytics.md)
+**Category:** [fitness](../categories/fitness.md)
 
-Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS).
+Precision tools for calculating swimming pace, lap splits, stroke rates, and interval training plans.
 
 ## Description
-An analytical tool to derive swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). Use `derive_css_from_base` to convert performance times into CSS pace, `calculate_training_zones` for target paces, `estimate_race_durations` for race projections, and `calculate_swolf_efficiency` for SWOLF scores.
-
-### Available Tools
-
-`your_tool_name`
+This MCP server provides a suite of precision tools for swimmers to convert distances, times, and paces into actionable training metrics. Use `calculate_pace_metrics` to find your base pace per 100 units, `calculate_lap_splits` to generate a schedule of individual lap times, `estimate_stroke_rate` to analyze movement efficiency, and `generate_interval_plan` to structure repetitive training sets with rest periods. It supports both meters (m) and yards (yd) for standardized training across different pool environments.
 
 
+## Available Tools (4)
+- **calculate_lap_splits**: Generate a schedule of individual lap times
+- **calculate_pace_metrics**: Calculate base swimming pace per 100 units
+- **estimate_stroke_rate**: Estimate strokes per minute
+- **generate_interval_plan**: Create a structured swimming interval plan
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ An analytical tool to derive swimming training intensities, race predictions, an
 Here are some examples of how you can interact with the **Swimming Pace Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I swam 400m in 6 minutes and 40 seconds. What is my CSS pace?"
+> "What is my pace per 100m if I swim 400m in 320 seconds?"
 
 **🤖 AI Agent:**
-> Your CSS pace is 1:40 per 100m.
+> Your pace is 80 seconds per 100m (1:20/100m).
 
 ---
 
 **👤 You:**
-> "What are my training zones for a CSS of 100 seconds?"
+> "Calculate lap splits for 100m in a 25m pool with a pace of 90 seconds per 100m."
 
 **🤖 AI Agent:**
-> Your Aerobic pace is 2:00, Threshold is 1:40, and VO2max is 1:30.
+> For a 100m distance in a 25m pool, you will complete 4 laps. Each lap split is 22.5 seconds.
 
 ---
 
 **👤 You:**
-> "Calculate my SWOLF score for a 50s length with 20 strokes."
+> "Create an interval plan for 10 repetitions of 50m at 45 seconds per 100m with 15 seconds rest."
 
 **🤖 AI Agent:**
-> Your SWOLF score is 70.
+> The total workout time is 300 seconds. Each 50m interval takes 22.5 seconds, and there are 135 seconds of total rest.
 
 
 ## ❓ FAQ
 
-**Q: What is CSS?**
-Critical Swim Speed (CSS) is the estimated physiological threshold where a swimmer can maintain a steady pace without rapid fatigue. Tools available: `your_tool_name`.
+**Q: Does this support both meters and yards?**
+Yes, all tools support both meters (m) and yards (yd) to ensure accuracy in any pool.
 
-**Q: How do I use `derive_css_from_base`?**
-Provide your time in seconds and the distance (100m or 400m) to calculate your standardized CSS pace per 100m.
+**Q: How can I plan my interval training?**
+You can use the `generate_interval_plan` tool by providing the repetition distance, target pace, rest time, and number of repetitions.
 
-**Q: Can I predict my race times?**
-Yes, use `estimate_race_durations` with your calculated CSS pace to see projected times for 200m, 400m, 800m, and 1500m.
+**Q: Can I calculate my lap splits?**
+Yes, the `calculate_lap_splits` tool generates a complete schedule of times for each length of the pool based on your target pace.
 
 
 ## Installation & Usage

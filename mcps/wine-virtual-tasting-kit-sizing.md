@@ -14,9 +14,9 @@ This MCP server provides specialized tools for event planners and wine distribut
 
 
 ## Available Tools (4)
-- **calculate_wine_volume**: Determines the total amount of wine required for the entire group based on the chosen format
 - **estimate_packaging_needs**: Calculates the total cost and quantity of packaging materials required to secure the wine
 - **generate_kit_pricing**: Consolidates all variables to provide the final per-person price for the virtual kit
+- **calculate_wine_volume**: Determines the total amount of wine required for the entire group based on the chosen format
 - **calculate_shipping_logistics**: Estimates the cost of transporting the kits to the event destination
 
 

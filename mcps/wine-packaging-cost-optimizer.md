@@ -14,10 +14,10 @@ This MCP server helps wine producers find the ideal balance between cost efficie
 
 
 ## Available Tools (4)
-- **recommend_alternative_materials**: Suggests specific materials that balance cost, quality, and sustainability
-- **analyze_perceived_quality_impact**: Predicts how changes in packaging materials will affect the consumer's perception of the brand
 - **calculate_shipping_optimization**: Evaluates the financial impact of weight reduction on total landed cost
 - **get_cost_reduction_opportunities**: Identifies specific areas where packaging costs can be lowered based on current spend
+- **recommend_alternative_materials**: Suggests specific materials that balance cost, quality, and sustainability
+- **analyze_perceived_quality_impact**: Predicts how changes in packaging materials will affect the consumer's perception of the brand
 
 
 ## 💬 Prompt Examples

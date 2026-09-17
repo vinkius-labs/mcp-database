@@ -14,10 +14,10 @@ This MCP server provides tools to minimize logistics expenses for wine distribut
 
 
 ## Available Tools (4)
-- **evaluate_shipping_option**: 
-- **get_carrier_rates**: 
 - **calculate_package_specs**: 
+- **evaluate_shipping_option**: 
 - **optimize_shipping_plan**: 
+- **get_carrier_rates**: 
 
 
 ## 💬 Prompt Examples

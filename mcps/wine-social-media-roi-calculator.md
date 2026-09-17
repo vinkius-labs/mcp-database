@@ -14,10 +14,10 @@ This MCP server provides specialized tools for wineries to evaluate their social
 
 
 ## Available Tools (4)
-- **calculate_conversion_metrics**: What is the direct cost of acquiring customers via social media?
-- **calculate_marketing_roi**: What is the total financial return of my social media investment, including brand value?
 - **get_attribution_summary**: Which platforms are acting as "assistants" versus "closers" in the sales funnel?
 - **analyze_platform_efficiency**: How efficiently is each platform converting spend into engagement and traffic?
+- **calculate_conversion_metrics**: What is the direct cost of acquiring customers via social media?
+- **calculate_marketing_roi**: What is the total financial return of my social media investment, including brand value?
 
 
 ## 💬 Prompt Examples

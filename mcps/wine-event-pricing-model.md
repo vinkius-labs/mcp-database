@@ -14,9 +14,9 @@ This MCP server provides a specialized pricing engine for wineries to manage eve
 
 
 ## Available Tools (4)
-- **project_profitability**: Estimates total profit based on expected attendance and revenue streams
 - **calculate_break_even**: Finds the minimum attendance required to avoid financial loss
 - **calculate_ticket_price**: Determines the optimal ticket price based on costs, desired margins, and demand sensitivity
+- **project_profitability**: Estimates total profit based on expected attendance and revenue streams
 - **validate_capacity_constraints**: Checks if the projected event scale is feasible within the winery's physical limits
 
 

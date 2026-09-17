@@ -14,10 +14,10 @@ This MCP server provides specialized economic modeling tools for the wine indust
 
 
 ## Available Tools (4)
-- **calculate_sales_lift**: Determines the expected increase in sales volume resulting from a new score
-- **get_market_segment_metrics**: Provides the necessary influence and reach constants for a specific wine category
 - **calculate_price_potential**: Estimates how much the price of a wine can be raised following a high score
+- **calculate_sales_lift**: Determines the expected increase in sales volume resulting from a new score
 - **calculate_submission_roi**: Evaluates if the cost of submitting the wine for review is justified by the projected gains
+- **get_market_segment_metrics**: Provides the necessary influence and reach constants for a specific wine category
 
 
 ## 💬 Prompt Examples

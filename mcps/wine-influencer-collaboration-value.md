@@ -14,10 +14,10 @@ This MCP server provides a specialized toolkit for wine brands to quantify the v
 
 
 ## Available Tools (4)
-- **analyze_audience_alignment**: Assess how well the influencer's followers match the brand's target demographics
 - **calculate_collaboration_cost**: Aggregate all financial outlays required for the partnership
 - **estimate_engagement_impact**: Determine the expected scale of visibility and interaction for a single content piece
 - **evaluate_roi**: Determine the financial efficiency of the collaboration
+- **analyze_audience_alignment**: Assess how well the influencer's followers match the brand's target demographics
 
 
 ## 💬 Prompt Examples

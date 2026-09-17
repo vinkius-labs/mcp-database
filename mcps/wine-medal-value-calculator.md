@@ -14,10 +14,10 @@ This MCP server provides economic modeling tools for wine producers to quantify 
 
 
 ## Available Tools (4)
+- **calculate_entry_roi**: Evaluates if the cost of entering the competition was justified by the projected financial gains
 - **calculate_price_premium**: Determines how much extra a producer can charge per unit due to the medal
 - **calculate_sales_lift**: Predicts the increase in sales volume resulting from a medal win
 - **analyze_retail_impact**: Adjusts the projected value of a medal based on how widely the wine is distributed
-- **calculate_entry_roi**: Evaluates if the cost of entering the competition was justified by the projected financial gains
 
 
 ## 💬 Prompt Examples

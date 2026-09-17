@@ -14,10 +14,10 @@ This MCP server provides an intelligence layer for wine marketing professionals 
 
 
 ## Available Tools (4)
-- **analyze_list_health**: Evaluates the quality of the email list to prevent deliverability issues
-- **recommend_segment_targeting**: Suggests which customer segments should receive specific campaign types to increase conversions
 - **get_optimal_send_times**: Determines the best time of day and day of the week to send emails to specific audience segments
 - **prioritize_ab_tests**: Identifies which email elements should be tested next to maximize campaign impact
+- **recommend_segment_targeting**: Suggests which customer segments should receive specific campaign types to increase conversions
+- **analyze_list_health**: Evaluates the quality of the email list to prevent deliverability issues
 
 
 ## 💬 Prompt Examples

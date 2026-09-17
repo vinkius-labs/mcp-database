@@ -14,9 +14,9 @@ This MCP server provides strategic analysis tools for restaurant managers to opt
 
 
 ## Available Tools (4)
-- **calculate_menu_health**: Provides a high-level overview of a menu's performance based on sales and profitability data
 - **get_menu_benchmarks**: Retrieves standardized visibility and performance thresholds for different menu types
 - **analyze_wine_position**: Evaluates the strategic effectiveness of a specific wine's placement on a menu
+- **calculate_menu_health**: Provides a high-level overview of a menu's performance based on sales and profitability data
 - **recommend_placement_optimization**: Suggests specific structural changes to the menu to improve the performance of "Puzzle" or "Dog" items
 
 

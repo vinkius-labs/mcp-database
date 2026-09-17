@@ -14,18 +14,18 @@ This MCP server provides tools to calculate Growing Degree Units (GDU), a critic
 
 
 ## Available Tools (4)
-- **predict_growth_stage**: Provide the total GDU, crop type, and stage thresholds.
-
-Identifies which growth stage (V-stage or R-stage) the crop is likely in based on cumulative heat
-- **predict_maturity_and_harvest**: Provide planting date, required GDU, daily forecast, base temp, and upper threshold.
-
-Estimates the date when the crop will reach maturity and the subsequent harvest window
 - **calculate_daily_gdu**: Ensure all required temperature parameters are provided.
 
 Calculates the GDU value for a single day based on different mathematical methods
 - **get_cumulative_gdu**: Provide the base, upper threshold, and date range.
 
 Calculates the total heat accumulated from the planting date up to a specific target date
+- **predict_growth_stage**: Provide the total GDU, crop type, and stage thresholds.
+
+Identifies which growth stage (V-stage or R-stage) the crop is likely in based on cumulative heat
+- **predict_maturity_and_harvest**: Provide planting date, required GDU, daily forecast, base temp, and upper threshold.
+
+Estimates the date when the crop will reach maturity and the subsequent harvest window
 
 
 ## 💬 Prompt Examples

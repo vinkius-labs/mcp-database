@@ -14,12 +14,12 @@ This MCP server provides deep market intelligence for the wine industry. It allo
 
 
 ## Available Tools (4)
-- **analyze_market_composition**: Provides a snapshot of all varieties within a region to identify leaders and laggards
 - **cross_reference_style_trends**: g., "Crisp Whites") is trending in a region.
 
 Evaluates how specific style trends are impacting variety popularity in a region
 - **forecast_market_trends**: Predicts future market share and identifies the status of varieties
 - **get_variety_performance**: Retrieves the historical sales and growth metrics for a specific variety
+- **analyze_market_composition**: Provides a snapshot of all varieties within a region to identify leaders and laggards
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides advanced modeling tools to optimize wine club membershi
 
 
 ## Available Tools (4)
-- **calculate_ltv_per_tier**: Determines the expected lifetime value for a single member within a specific tier
 - **evaluate_benefit_levels**: Determines if adding a new benefit will increase overall LTV by reducing churn
 - **optimize_pricing_structure**: Recommends the ideal subscription fee for a tier to maximize profit without triggering excessive churn
 - **simulate_tier_migration**: Predicts how members will move between tiers based on current incentives
+- **calculate_ltv_per_tier**: Determines the expected lifetime value for a single member within a specific tier
 
 
 ## 💬 Prompt Examples
