@@ -7,6 +7,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | [Balanced Rep Calibrator](../mcps/balanced-rep-calibrator.md) | Distribute total repetitions across sets uniformly to avoid small final sets. |
 | [Cluster Set Designer](../mcps/cluster-set-designer.md) | Design optimized cluster set training protocols for strength and hypertrophy. |
 | [Core Strength Surf Requirements](../mcps/core-strength-surf-requirements.md) | Biomechanical calculator for surfing core strength, endurance, and training load. |
+| [Cycling Power to Speed Estimator](../mcps/cycling-power-to-speed-estimator.md) | Converts cycling power output into estimated speed and performance metrics. |
 | [Drop Set Percentage Calculator](../mcps/drop-set-percentage-calculator.md) | Calculate exact weight reductions for consecutive drop sets. |
 | [Kiteboarding Session Estimator](../mcps/kiteboarding-session-estimator.md) | Predict physiological session limits, rest intervals, and hydration needs for kiteboarders. |
 | [Learning Curve Projection](../mcps/learning-curve-projection.md) | Predictive modeling for surfing skill progression. |

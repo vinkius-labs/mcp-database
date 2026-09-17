@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,979 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,999 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,7 +10,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1048 servers)
+- [productivity](categories/productivity.md) (1054 servers)
 - [finance](categories/finance.md) (932 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
@@ -23,15 +23,15 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [construction](categories/construction.md) (150 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [communication-messaging](categories/communication-messaging.md) (130 servers)
+- [utilities](categories/utilities.md) (129 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
-- [utilities](categories/utilities.md) (127 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
+- [health](categories/health.md) (109 servers)
 - [customer-support](categories/customer-support.md) (108 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [analytics](categories/analytics.md) (105 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [health](categories/health.md) (99 servers)
 - [infrastructure](categories/infrastructure.md) (88 servers)
 - [marketing](categories/marketing.md) (74 servers)
 - [security](categories/security.md) (74 servers)
@@ -76,8 +76,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [superpower](categories/superpower.md) (23 servers)
 - [compliance](categories/compliance.md) (21 servers)
 - [devops](categories/devops.md) (19 servers)
+- [fitness](categories/fitness.md) (19 servers)
 - [environment](categories/environment.md) (18 servers)
-- [fitness](categories/fitness.md) (18 servers)
 - [audio-music](categories/audio-music.md) (17 servers)
 - [content-management](categories/content-management.md) (17 servers)
 - [data-analysis](categories/data-analysis.md) (17 servers)
@@ -288,6 +288,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [parsing](categories/parsing.md) (1 servers)
 - [petroleum-engineering](categories/petroleum-engineering.md) (1 servers)
 - [physics-simulation](categories/physics-simulation.md) (1 servers)
+- [planning](categories/planning.md) (1 servers)
 - [predictive-analytics](categories/predictive-analytics.md) (1 servers)
 - [predictive-maintenance](categories/predictive-maintenance.md) (1 servers)
 - [process-control](categories/process-control.md) (1 servers)

@@ -275,6 +275,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Crop Yield Calculator](../mcps/crop-yield-calculator.md) | Calculate crop productivity in kg/ha and bags/ha using field metrics. |
 | [Crop Yield Estimator](../mcps/crop-yield-estimator.md) | Estimates agricultural production by synthesizing planting metrics and soil constraints. |
 | [Crossfade Time Subtractor](../mcps/crossfade-time-subtractor.md) | Calculate precise video durations and required raw footage lengths when using overlapping transitions. |
+| [CrossFit WOD Generator](../mcps/crossfit-wod-generator.md) | Generate structured CrossFit workouts based on time, equipment, and metabolic targets. |
 | [Crossword Clue Formatter](../mcps/crossword-clue-formatter.md) | Generate deterministic metadata, symmetry checks, and statistics for crossword grids. |
 | [CUFinder](../mcps/cufinder.md) | Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting. |
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
@@ -665,6 +666,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Meme Generator](../mcps/meme-generator.md) | Universal meme engine — generate custom memes using popular templates via AI. |
 | [MemeGen API](../mcps/memegen-api.md) | Generate meme images — audit templates and fonts via AI. |
 | [Merriam-Webster](../mcps/merriam-webster.md) | Official Merriam-Webster dictionary and thesaurus — access definitions and synonyms via AI. |
+| [MetCon Duration Estimator](../mcps/metcon-duration-estimator.md) | Predict workout duration, time caps, and scaling options for metabolic conditioning. |
 | [Mighty Networks](../mcps/mighty-networks.md) | Build thriving online communities with courses, events, and member networking features all under your own brand. |
 | [Mingdao Cloud](../mcps/mingdao-cloud.md) | Enterprise zero-code application and workflow platform — manage worksheets, records, and automations via AI. |
 | [Miniflux (RSS Reader)](../mcps/miniflux-rss-reader.md) | Manage your RSS feeds and read articles via Miniflux — discover feeds, list entries, and organize categories directly from your AI agent. |
@@ -774,6 +776,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Prompt Compression Efficiency Calculator](../mcps/prompt-compression-efficiency-calculator.md) | Evaluate the performance, cost-effectiveness, and quality impact of prompt compression techniques. |
 | [PSPDFKit (Nutrient)](../mcps/pspdfkit-nutrient.md) | Professional PDF and document processing — generate, convert, OCR, and edit documents via the Nutrient API. |
 | [PunkAPI](../mcps/punkapi.md) | Explore BrewDog's beer catalog — search by name, style, ABV, IBU, hops, food pairing and get random beer suggestions. |
+| [Push-up Volume Planner](../mcps/push-up-volume-planner.md) | A specialized engine for planning structured push-up progression and volume management. |
 | [Pyramid Set Generator](../mcps/pyramid-set-generator.md) | Calculates weight, repetitions, and training metrics for pyramid training progressions. |
 | [Python Excellence Prover](../mcps/python-excellence-prover.md) | AI agents generate Python with no type hints, bare except blocks, mutable defaults, print() in production, and os.path everywhere. This tool forces excellence: Pydantic for boundaries, structured logging, pathlib, async I/O, and proper architecture. Zero tolerance for un-Pythonic code. |
 | [QA Arbiter](../mcps/qa-arbiter.md) | A test fails. Is the assertion wrong or is the code broken? Most agents guess, retry blindly, and deadlock the pipeline. QA Arbiter resolves this in one call — structured fault diagnosis with two boolean pivots that yield a deterministic verdict: TEST_ERROR, ENGINE_DEFECT, or BOTH_WRONG. |
@@ -820,6 +823,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [RSS / Atom Reader](../mcps/rss-atom-reader.md) | Connect your AI assistant to any RSS or Atom feed worldwide to fetch news, updates, and articles instantly within your chat interface. |
 | [RSS Feed Parser](../mcps/rss-feed-parser.md) | Turn any RSS 2.0 or Atom feed into clean, structured JSON. Extract titles, links, dates, authors, and full content from blogs, news sites, and podcasts — ready for your agent to process. |
 | [Running Race Predictor](../mcps/running-race-predictor.md) | Predict race performance and generate segmented pacing strategies using the Riegel model. |
+| [Running Splits Calculator](../mcps/running-splits-calculator.md) | Decompose target times and distances into precise pacing segments and strategies. |
 | [Sally](../mcps/sally.md) | Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat. |
 | [Sansan](../mcps/sansan.md) | Digitize and manage business cards via AI — browse contacts, verify details, and explore your company's network effortlessly. |
 | [Sapling (Kallidus)](../mcps/sapling-kallidus.md) | Manage employee onboarding, data, and tasks via Sapling API. |
@@ -892,6 +896,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Superblocks](../mcps/superblocks.md) | Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent. |
 | [Superdocu](../mcps/superdocu.md) | Automate document collection and client onboarding with Superdocu and AI agents. |
 | [SuperSaaS](../mcps/supersaas.md) | Automate online scheduling and bookings via SuperSaaS — manage schedules, appointments, and users directly from any AI agent. |
+| [Superset Timer Generator](../mcps/superset-timer-generator.md) | Calculates precise work and rest intervals for superset training based on physiological goals. |
 | [Surf Goal Framework](../mcps/surf-goal-framework.md) | Transform surfing aspirations into actionable SMART goal roadmaps. |
 | [Surf Performance Journaling System](../mcps/surf-performance-journaling-system.md) | A structured system to design surf performance journals, balancing qualitative feel with quantitative metrics. |
 | [Surf Session Efficiency Metrics](../mcps/surf-session-efficiency-metrics.md) | Analyze surfing session performance and efficiency. |
@@ -899,6 +904,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SurveySparrow](../mcps/surveysparrow.md) | Collect feedback with conversational surveys that feel like chat and boost completion rates across employee and customer programs. |
 | [Sushi Rice & Ingredient Calculator](../mcps/sushi-rice-ingredient-calculator.md) | Calculate exact quantities of uncooked rice, seasoning, nori, and protein for sushi production. |
 | [Systran (Machine Translation API)](../mcps/systran-machine-translation-api.md) | Professional machine translation and linguistic analysis via Systran — translate text, detect languages, and perform dictionary lookups. |
+| [Tabata Interval Calculator](../mcps/tabata-interval-calculator.md) | Calculate precise timing, metabolic effort, and energy expenditure for Tabata HIIT sessions. |
 | [Tactile CRM](../mcps/tactile-crm.md) | Connect your AI to Tactile CRM. Query companies, read contact details, and evaluate your sales opportunities and pipelines natively from the terminal. |
 | [Tactiq](../mcps/tactiq.md) | Manage meeting transcripts via Tactiq u2014 access summaries, action items, speaker analytics, and search across all recordings from your AI agent. |
 | [Tailwind Excellence Prover](../mcps/tailwind-excellence-prover.md) | AI agents build bloated styling layers containing arbitrary values, div-only layouts, inaccessible contrast, and legacy configurations. This prover enforces strict design token structures (@theme), utility-first compliance, semantic HTML, mobile-first layouts, and interactive focus states. |

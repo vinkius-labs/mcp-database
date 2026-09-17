@@ -99,8 +99,10 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
 | [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert between Arabic numbers and Roman numerals with strict notation rules. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
+| [Rowing Pace Calculator](../mcps/rowing-pace-calculator.md) | Calculate rowing ergometer pace, power, and stroke rate. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Running Pace & Split Calculator](../mcps/running-pace-split-calculator.md) | Generate precise running pace schedules and cumulative time markers. |
+| [Running Pace Calculator](../mcps/running-pace-calculator.md) | High-precision running pace, split times, and performance predictions. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
