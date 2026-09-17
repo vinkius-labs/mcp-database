@@ -34,17 +34,17 @@ Connect your **Slack** workspace to any AI agent to automate your team communica
 
 
 ## Available Tools (11)
-- **list_pins**: List all pinned messages in a channel
-- **list_reactions**: Get reactions on a specific message
 - **get_channel_details**: Get metadata for a channel
+- **list_reactions**: Get reactions on a specific message
 - **get_user_presence**: Check if a user is online
-- **get_user_profile**: Get details for a user
 - **list_channels**: List public channels
 - **list_users**: List workspace members
 - **send_message**: Send a message to a channel
 - **search_messages**: Search for messages
 - **check_connection**: Verify API access
 - **get_channel_history**: List recent messages
+- **get_user_profile**: Get details for a user
+- **list_pins**: List all pinned messages in a channel
 
 
 ## 💬 Prompt Examples

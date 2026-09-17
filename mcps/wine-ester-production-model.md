@@ -14,9 +14,9 @@ This MCP server provides tools to model the kinetics of ester synthesis and hydr
 
 
 ## Available Tools (4)
-- **evaluate_nitrogen_impact**: Assess how nitrogen availability limits or enhances ester production for a specific strain
 - **analyze_temperature_sensitivity**: Determine how changes in temperature shift the balance between ester synthesis and hydrolysis
 - **compare_juice_precursors**: Identify if the juice composition provides sufficient raw materials for the desired ester profiles
+- **evaluate_nitrogen_impact**: Assess how nitrogen availability limits or enhances ester production for a specific strain
 - **predict_ester_concentrations**: Estimate specific concentrations of target esters based on fermentation conditions
 
 

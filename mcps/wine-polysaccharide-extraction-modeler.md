@@ -14,10 +14,10 @@ This MCP server provides advanced modeling for winemaking processes. It allows A
 
 
 ## Available Tools (4)
-- **get_extraction_profile**: Calculates the total concentration of polysaccharides (PRAGs) based on processing inputs
-- **simulate_processing_impact**: Compares two different processing methods to determine the change in polysaccharide yield
 - **assess_stability**: Evaluates the colloidal stability of the wine against protein precipitation
+- **get_extraction_profile**: Calculates the total concentration of polysaccharides (PRAGs) based on processing inputs
 - **predict_sensory_profile**: Predicts the perceived mouthfeel properties of the wine
+- **simulate_processing_impact**: Compares two different processing methods to determine the change in polysaccharide yield
 
 
 ## 💬 Prompt Examples

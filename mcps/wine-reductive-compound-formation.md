@@ -14,10 +14,10 @@ This MCP server provides predictive modeling for assessing the risk of reductive
 
 
 ## Available Tools (4)
-- **get_sulfur_prediction**: Predicts the concentration of specific reductive compounds based on current wine conditions
-- **assess_sensory_risk**: Determines if the predicted sulfur concentrations will exceed human detection limits
 - **calculate_remediation_window**: Provides actionable timing for corrective cellar operations
 - **get_autolysis_impact**: Estimates the contribution of yeast cell breakdown to the total sulfur precursor pool
+- **get_sulfur_prediction**: Predicts the concentration of specific reductive compounds based on current wine conditions
+- **assess_sensory_risk**: Determines if the predicted sulfur concentrations will exceed human detection limits
 
 
 ## 💬 Prompt Examples

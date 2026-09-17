@@ -14,8 +14,8 @@ This MCP server provides biochemical modeling for wine fermentation. It allows A
 
 
 ## Available Tools (4)
-- **evaluate_fermentation_environment**: Assesses how the current fermentation conditions will impact the overall metabolic pathway
 - **calculate_color_stability_index**: Predicts the long-term color stability of the wine based on pigment formation and environmental degradation
+- **evaluate_fermentation_environment**: Assesses how the current fermentation conditions will impact the overall metabolic pathway
 - **get_pyruvic_acid_accumulation**: Predicts the total amount of pyruvic acid that will accumulate during the fermentation process
 - **predict_vitisin_potential**: Calculates the potential for creating color-stabilizing vitisin complexes
 

@@ -14,15 +14,15 @@ This MCP server provides deterministic tools to validate the structural integrit
 
 
 ## Available Tools (3)
-- **audit_document_integrity**: Pass the full document content for evaluation.
-
-Provide a high-level summary of whether a document is fit for RAG ingestion
 - **calculate_size_metrics**: Supply both the document content and metadata JSON.
 
 Quantify the data distribution between metadata and the core body of a document
 - **extract_document_metadata**: Provide the full document content as the primary input.
 
 Extract specific metadata fields from a raw document string
+- **audit_document_integrity**: Pass the full document content for evaluation.
+
+Provide a high-level summary of whether a document is fit for RAG ingestion
 
 
 ## 💬 Prompt Examples

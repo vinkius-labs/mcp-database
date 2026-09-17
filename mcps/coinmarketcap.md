@@ -32,16 +32,10 @@ Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-t
 
 
 ## Available Tools (8)
+- **get_global_metrics**: Retrieve aggregate market data for the entire cryptocurrency market
 - **get_id_map**: Pass a payload with the symbols you need to resolve.
 
 Retrieve a mapping of symbols/names to unique CMC IDs
-- **get_global_metrics**: Retrieve aggregate market data for the entire cryptocurrency market
-- **get_key_info**: Pass a payload to specify the required credentials.
-
-Check your API keys usage, remaining credits, and rate limits
-- **get_metadata**: Pass a payload containing the symbols or IDs.
-
-Retrieve static metadata for one or more cryptocurrencies (logo, description, etc.)
 - **get_quotes**: Provide a payload listing the desired symbols.
 
 Retrieve the latest market quotes for one or more cryptocurrencies
@@ -51,6 +45,12 @@ Retrieve a ranked list of all cryptocurrency exchanges
 - **list_listings**: Use this tool to browse the available market data.
 
 Retrieve a paginated list of all active cryptocurrencies with latest market data
+- **get_key_info**: Pass a payload to specify the required credentials.
+
+Check your API keys usage, remaining credits, and rate limits
+- **get_metadata**: Pass a payload containing the symbols or IDs.
+
+Retrieve static metadata for one or more cryptocurrencies (logo, description, etc.)
 - **price_conversion**: The payload must specify the amount and target currencies.
 
 Convert an amount of one currency to another using latest market prices

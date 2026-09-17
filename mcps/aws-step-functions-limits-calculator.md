@@ -14,12 +14,12 @@ This MCP server provides deterministic tools to evaluate AWS Step Functions stat
 
 
 ## Available Tools (4)
-- **calculate_activity_timeout_range**: Specify the task type (e.g., activity).
-
-Determines the valid window for activity task timeouts
 - **calculate_workflow_capacities**: Specify the workflow mode (standard or express).
 
 Calculates the available or allowed capacities for data payloads, duration, and state naming based on the workflow mode
+- **calculate_activity_timeout_range**: Specify the task type (e.g., activity).
+
+Determines the valid window for activity task timeouts
 - **check_definition_compliance**: Provide the definition size, state count, and history event count.
 
 Validates if the provided state machine definition and structure exceed hard AWS service limits

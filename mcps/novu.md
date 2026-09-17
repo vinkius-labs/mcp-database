@@ -36,51 +36,30 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 
 
 ## Available Tools (39)
-- **bulk_update_subscriber_preferences**: Provide the subscriber ID and array of preferences.
-
-Bulk update subscriber preferences
 - **delete_subscriber**: Specify the unique subscriber ID to delete.
 
 Delete a subscriber
-- **delete_topic**: Use the unique topic key for deletion.
+- **bulk_update_subscriber_preferences**: Provide the subscriber ID and array of preferences.
 
-Delete a topic
-- **delete_topic_subscriptions**: Provide the topic key and the array of subscriber IDs.
-
-Delete subscriptions from a topic
-- **list_integrations**: Do not require any parameters.
-
-List all integrations
+Bulk update subscriber preferences
 - **create_environment_variable**: Supply both a unique name and its corresponding value.
 
 Create an environment variable
-- **create_subscriber**: Provide a unique subscriber ID and at least an email address.
-
-Create a new subscriber
-- **create_topic**: Supply both a unique key and a descriptive name for the topic.
-
-Create a new topic
-- **delete_subscriber_credentials**: Specify both the subscriber ID and the provider ID.
-
-Delete subscriber credentials
-- **list_active_integrations**: Do not require any parameters.
-
-List active integrations
-- **cancel_trigger**: Provide the specific transaction ID to be canceled.
-
-Cancel active or pending workflows (e.g., digests, delays)
-- **check_topic_subscriber**: Supply the topic key and the external subscriber ID.
-
-Check if a subscriber is subscribed to a topic
 - **create_integration**: Provide all required credentials and set the environment ID.
 
 Create a new integration
 - **create_layout**: Provide the required name and content. Variables are optional.
 
 Create a new layout
+- **create_subscriber**: Provide a unique subscriber ID and at least an email address.
+
+Create a new subscriber
 - **create_topic_subscriptions**: Provide the topic key and an array of subscriber IDs.
 
 Create subscriptions for a topic
+- **create_topic**: Supply both a unique key and a descriptive name for the topic.
+
+Create a new topic
 - **create_workflow**: Define the workflow name, description, and array of steps.
 
 Create a new workflow
@@ -93,6 +72,15 @@ Delete a message
 - **delete_messages_by_transaction**: Use the transaction ID to identify messages.
 
 Delete messages by transaction ID
+- **delete_subscriber_credentials**: Specify both the subscriber ID and the provider ID.
+
+Delete subscriber credentials
+- **delete_topic_subscriptions**: Provide the topic key and the array of subscriber IDs.
+
+Delete subscriptions from a topic
+- **delete_topic**: Use the unique topic key for deletion.
+
+Delete a topic
 - **get_environment_variable_usage**: Supply the variable key.
 
 Retrieve usage of an environment variable
@@ -102,15 +90,15 @@ Retrieve subscriber preferences
 - **get_subscriber**: Only provide the subscriber ID.
 
 Retrieve a subscriber by ID
-- **get_topic_subscription**: Provide the topic key and the specific subscription identifier.
+- **list_active_integrations**: Do not require any parameters.
 
-Retrieve a topic subscription
-- **get_topic**: Supply the required topic key.
-
-Retrieve a topic by key
+List active integrations
 - **list_environment_variables**: Do not require any parameters.
 
 List all environment variables
+- **list_integrations**: Do not require any parameters.
+
+List all integrations
 - **list_messages**: Filter results using channel, subscriber, or transaction IDs.
 
 List messages
@@ -151,6 +139,18 @@ Update a topic
 - **upsert_subscriber_credentials**: Provide the subscriber ID, provider ID, and credentials object.
 
 Upsert subscriber credentials
+- **cancel_trigger**: Provide the specific transaction ID to be canceled.
+
+Cancel active or pending workflows (e.g., digests, delays)
+- **check_topic_subscriber**: Supply the topic key and the external subscriber ID.
+
+Check if a subscriber is subscribed to a topic
+- **get_topic_subscription**: Provide the topic key and the specific subscription identifier.
+
+Retrieve a topic subscription
+- **get_topic**: Supply the required topic key.
+
+Retrieve a topic by key
 
 
 ## 💬 Prompt Examples

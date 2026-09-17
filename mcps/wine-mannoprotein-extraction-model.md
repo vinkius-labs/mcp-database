@@ -14,10 +14,10 @@ This MCP server provides specialized tools for winemakers to predict and optimiz
 
 
 ## Available Tools (4)
-- **evaluate_sensory_impact**: Estimates the qualitative improvements in wine texture and mouthfeel
-- **predict_mannoprotein_release**: Calculates the predicted concentration of mannoproteins released from the lees based on environmental conditions
 - **assess_tartrate_stability**: Predicts the wine's resistance to potassium bitartrate precipitation
 - **optimize_extraction_window**: Recommends the ideal timing and duration for lees contact to maximize quality
+- **predict_mannoprotein_release**: Calculates the predicted concentration of mannoproteins released from the lees based on environmental conditions
+- **evaluate_sensory_impact**: Estimates the qualitative improvements in wine texture and mouthfeel
 
 
 ## 💬 Prompt Examples

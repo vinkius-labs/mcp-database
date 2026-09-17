@@ -33,24 +33,6 @@ Integrate the **Criteo Retail Media API** directly into your AI workflow. Manage
 
 
 ## Available Tools (10)
-- **get_retail_media_report**: Pass a detailed report configuration object.
-
-Request a performance report for retail media
-- **list_advertiser_accounts**: This tool does not require any parameters.
-
-List advertiser accounts managed in retail media
-- **list_retail_budgets**: This tool does not require any parameters.
-
-List active budgets for retail media campaigns
-- **list_retail_campaigns**: This tool does not require any parameters.
-
-List all retail media campaigns in Criteo
-- **list_line_item_keywords**: Supply the line item ID as the required parameter.
-
-List keywords targeted by a specific line item
-- **list_line_items**: This tool does not require any parameters.
-
-List all line items (ad groups) for retail campaigns
 - **list_account_products**: Use the account ID to scope the search.
 
 List products associated with a specific retail account
@@ -60,6 +42,24 @@ Search for retail campaigns by name keyword
 - **get_retail_campaign_details**: Provide the campaign ID to execute the query.
 
 Get detailed settings for a specific retail campaign
+- **get_retail_media_report**: Pass a detailed report configuration object.
+
+Request a performance report for retail media
+- **list_advertiser_accounts**: This tool does not require any parameters.
+
+List advertiser accounts managed in retail media
+- **list_line_item_keywords**: Supply the line item ID as the required parameter.
+
+List keywords targeted by a specific line item
+- **list_line_items**: This tool does not require any parameters.
+
+List all line items (ad groups) for retail campaigns
+- **list_retail_budgets**: This tool does not require any parameters.
+
+List active budgets for retail media campaigns
+- **list_retail_campaigns**: This tool does not require any parameters.
+
+List all retail media campaigns in Criteo
 - **list_retailers**: This tool does not require any parameters.
 
 List retail partners available in your account

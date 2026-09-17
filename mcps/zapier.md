@@ -42,24 +42,24 @@ No more manual navigation through complex automation dashboards to check if a wo
 - **get_zap_history**: Shows last executions with success/failure.
 
 Get Zap execution history. Returns run status success/failure
-- **get_zap**: Requires a valid Zap ID.
-
-Get Zap details by ID. Returns trigger, actions, state
 - **list_zaps**: Use limit to control page size.
 
 List Zaps (workflows). Returns Zap IDs, titles, state ON/OFF
-- **search_apps**: Provide a search term to find relevant applications.
-
-Search Zapier app directory by name
 - **search_templates**: Use a search term to find relevant Zap workflows.
 
 Search Zap templates by query (e.g. Slack to Trello)
-- **list_apps**: No critical usage rules apply.
-
-List connected apps (Slack, Gmail, Salesforce etc)
 - **get_app**: Use either the ID or the slug in the request.
 
 Get app details by ID or slug
+- **get_zap**: Requires a valid Zap ID.
+
+Get Zap details by ID. Returns trigger, actions, state
+- **search_apps**: Provide a search term to find relevant applications.
+
+Search Zapier app directory by name
+- **list_apps**: No critical usage rules apply.
+
+List connected apps (Slack, Gmail, Salesforce etc)
 - **get_profile**: Get authenticated user profile and plan
 - **get_template**: Pass the unique template ID to fetch the details.
 

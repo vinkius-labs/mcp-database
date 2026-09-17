@@ -30,13 +30,13 @@ The **AskNicely MCP Server** provides a powerful natural language interface to y
 
 ## Available Tools (5)
 - **get_statistics**: Get aggregate NPS statistics and summary
+- **list_contacts**: Specify start and limit for pagination.
+
+List contacts in your AskNicely account
 - **list_responses**: Use the start and limit parameters for pagination.
 
 List NPS survey responses from AskNicely
 - **get_account_check**: Verify AskNicely account connection
-- **list_contacts**: Specify start and limit for pagination.
-
-List contacts in your AskNicely account
 - **trigger_survey**: Provide both the contact name and email.
 
 Add a contact and trigger a survey immediately

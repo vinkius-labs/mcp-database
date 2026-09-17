@@ -37,15 +37,15 @@ Connect your **Statamic** site to any AI agent and take full control of your fla
 ## Available Tools (14)
 - **get_term**: Get a single taxonomy term
 - **list_forms**: List all forms
+- **get_global**: Get variables for a global set
 - **get_asset**: Get a single asset
 - **get_collection_tree**: Get entry tree for structured collections
 - **get_entry**: Get a single Statamic entry
 - **get_form**: Get a single form
-- **get_global**: Get variables for a global set
 - **get_nav_tree**: Get navigation structure tree
 - **list_assets**: List assets in a container
-- **list_entries**: List entries in a Statamic collection
 - **list_globals**: List all global sets
+- **list_entries**: List entries in a Statamic collection
 - **list_terms**: List terms in a Statamic taxonomy
 - **list_users**: List users
 - **get_user**: Get a single user

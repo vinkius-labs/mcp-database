@@ -14,7 +14,6 @@ The AskHandle MCP server enables your AI agent to manage chat rooms, messages, l
 
 
 ## Available Tools (12)
-- **list_leads**: List all leads captured
 - **retrieve_room**: Provide the required room ID.
 
 Get details of a specific chat room
@@ -27,23 +26,24 @@ Create a new chat room
 - **create_webhook**: Always include necessary webhook details in the body.
 
 Create a new webhook subscription
+- **delete_webhook**: Provide the required webhook ID.
+
+Delete a webhook subscription
 - **get_me**: Check API connectivity and get account context
+- **list_leads**: List all leads captured
 - **list_messages**: Optionally filter results using a room ID.
 
 List messages, optionally filtered by room
 - **list_rooms**: Do not specify a room ID when listing all rooms.
 
 List all chat rooms
-- **send_message**: Both room ID and message content are required.
-
-Send a message to a chat room
-- **delete_webhook**: Provide the required webhook ID.
-
-Delete a webhook subscription
 - **list_webhooks**: List all configured webhooks
 - **retrieve_lead**: Provide the required lead ID.
 
 Get details of a specific lead
+- **send_message**: Both room ID and message content are required.
+
+Send a message to a chat room
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for winemakers and enologists to mode
 
 
 ## Available Tools (4)
-- **calculate_so2_binding_capacity**: Evaluates how much additional SO2 is required to neutralize existing acetaldehyde
-- **simulate_oxidation_impact**: Models how oxygen exposure will influence the transition of acetaldehyde into other compounds
 - **analyze_acetaldehyde_risk**: Determines if the current wine conditions pose a sensory risk due to acetaldehyde levels
+- **calculate_so2_binding_capacity**: Evaluates how much additional SO2 is required to neutralize existing acetaldehyde
 - **predict_metabolic_production**: Estimates the total amount of acetaldehyde the yeast will produce based on environmental factors
+- **simulate_oxidation_impact**: Models how oxygen exposure will influence the transition of acetaldehyde into other compounds
 
 
 ## 💬 Prompt Examples
