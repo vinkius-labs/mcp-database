@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,913 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **8,923 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,7 +11,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (1019 servers)
-- [finance](categories/finance.md) (928 servers)
+- [finance](categories/finance.md) (931 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -34,9 +34,9 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [health](categories/health.md) (89 servers)
 - [infrastructure](categories/infrastructure.md) (88 servers)
 - [security](categories/security.md) (74 servers)
+- [marketing](categories/marketing.md) (72 servers)
 - [human-resources](categories/human-resources.md) (69 servers)
-- [marketing](categories/marketing.md) (67 servers)
-- [business-intelligence](categories/business-intelligence.md) (61 servers)
+- [business-intelligence](categories/business-intelligence.md) (62 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
 - [artificial-intelligence](categories/artificial-intelligence.md) (59 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (59 servers)
@@ -48,7 +48,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [optimization](categories/optimization.md) (54 servers)
 - [mathematics](categories/mathematics.md) (50 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
-- [supply-chain](categories/supply-chain.md) (44 servers)
+- [supply-chain](categories/supply-chain.md) (45 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
 - [chemistry](categories/chemistry.md) (40 servers)
 - [document-management](categories/document-management.md) (40 servers)

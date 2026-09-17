@@ -45,6 +45,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Wine DTC Shipping & Logistics](../mcps/wine-dtc-shipping-logistics.md) | Calculate DTC wine shipping costs, packaging expenses, and carrier comparisons. |
 | [Wine Harvest Logistics Planner](../mcps/wine-harvest-logistics-planner.md) | Optimizes vineyard harvest schedules, truck logistics, and winery capacity utilization. |
 | [Wine Packaging Carbon & Logistics Calculator](../mcps/wine-packaging-carbon-logistics-calculator.md) | Calculate carbon footprint and shipping logistics for wine packaging. |
+| [Wine Packaging Cost Optimizer](../mcps/wine-packaging-cost-optimizer.md) | Optimize wine packaging costs while maintaining brand perception and sustainability. |
 | [Wine Shipment Temperature Monitoring](../mcps/wine-shipment-temperature-monitoring.md) | Calculate thermal risk, monitoring frequency, and data logger requirements for wine shipments. |
 | [Wine Shipping Cost Optimizer](../mcps/wine-shipping-cost-optimizer.md) | Find the most cost-effective shipping methods for wine orders. |
 | [Wine Traceability & Lot Tracking](../mcps/wine-traceability-lot-tracking.md) | Track wine production from grape harvest to bottling with full lineage and recall capabilities. |

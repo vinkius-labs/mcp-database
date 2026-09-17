@@ -35,11 +35,11 @@ Connect your **Amazon S3** environment to your AI agent to unlock professional c
 
 
 ## Available Tools (10)
-- **list_buckets**: List S3 buckets
-- **create_bucket**: Create an S3 bucket
 - **delete_bucket**: Ensure the bucket contains no objects before calling this tool.
 
 Delete an S3 bucket
+- **list_buckets**: List S3 buckets
+- **create_bucket**: Create an S3 bucket
 - **list_objects**: Can be filtered by prefix.
 
 List objects in bucket

@@ -65,6 +65,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [TeamUp](../mcps/teamup.md) | Manage events, customers, coaches, memberships, and payments for your TeamUp-powered fitness studio through natural conversation. |
 | [Vendor Scorecard Calculator](../mcps/vendor-scorecard-calculator.md) | Calculate and monitor supplier performance using weighted metrics. |
 | [Viral Coefficient Calculator](../mcps/viral-coefficient-calculator.md) | Calculate viral growth, expansion multipliers, and time to scale. |
+| [Wine Menu Placement Optimizer](../mcps/wine-menu-placement-optimizer.md) | Analyze wine menu positioning to optimize sales using menu engineering. |
 
 
 ---

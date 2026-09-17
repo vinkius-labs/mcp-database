@@ -70,6 +70,11 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Webinar Registration Copy Analyzer](../mcps/webinar-registration-copy-analyzer.md) | Audit webinar registration pages for conversion optimization potential. |
 | [WhatsApp Channels](../mcps/whatsapp-channels.md) | Post text and media to WhatsApp Channels from any AI agent — create channels, publish posts, search public channels and read their feed. |
 | [Wine Club Tier Optimizer](../mcps/wine-club-tier-optimizer.md) | Optimize wine club tier structures and pricing to maximize lifetime value. |
+| [Wine Content Marketing Calendar](../mcps/wine-content-marketing-calendar.md) | Generate strategic content marketing calendars for wine estates by synchronizing harvest cycles and vintage releases. |
+| [Wine Email Campaign Optimizer](../mcps/wine-email-campaign-optimizer.md) | Optimize wine email engagement through data-driven send times, A/B test priorities, and segment targeting. |
+| [Wine Influencer Collaboration Value](../mcps/wine-influencer-collaboration-value.md) | Calculate influencer engagement impact, collaboration costs, and ROI for wine brand partnerships. |
+| [Wine Label Design Testing](../mcps/wine-label-design-testing.md) | Design valid A/B testing protocols for wine labels using statistical experimental design. |
+| [Wine Social Media ROI Calculator](../mcps/wine-social-media-roi-calculator.md) | Analyze social media marketing efficiency and ROI for wineries. |
 | [Xiaohongshu (RED) Title Optimizer](../mcps/xiaohongshu-red-title-optimizer.md) | Transform base headlines into viral Xiaohongshu titles using weighted character counts and keyword density rules. |
 
 
