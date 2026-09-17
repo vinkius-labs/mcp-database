@@ -5,6 +5,8 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
+| [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
+| [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
 | [Downwind Run Planner](../mcps/downwind-run-planner.md) | Plan logistics for downwind runs, including distance, drift, and shuttle needs. |
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
 | [Event Seating Planner](../mcps/event-seating-planner.md) | Deterministic venue capacity and seating layout calculator. |
@@ -29,6 +31,9 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Tanker Fleet Optimization](../mcps/tanker-fleet-optimization.md) | Optimize tanker fleet sizing, vessel mix, and charter strategies for oil transportation. |
 | [Tanker Loading Rate Optimizer](../mcps/tanker-loading-rate-optimizer.md) | Optimizes tanker loading rates by balancing vessel capacity, shore infrastructure, and safety constraints. |
 | [Truck-Shovel Fleet Optimizer](../mcps/truck-shovel-fleet-optimizer.md) | Optimizes truck-to-shovel ratios, fleet size, and production capacity. |
+| [Wine Club Shipment Optimizer](../mcps/wine-club-shipment-optimizer.md) | Optimizes wine club shipments by matching member preferences with available inventory and price targets. |
+| [Wine Lab Analysis Scheduler](../mcps/wine-lab-analysis-scheduler.md) | Optimize laboratory workflows by scheduling critical wine analyses and identifying instrument bottlenecks. |
+| [Wine Virtual Tasting Kit Sizing](../mcps/wine-virtual-tasting-kit-sizing.md) | Calculate logistics, volume, and per-person pricing for virtual wine tasting kits. |
 
 
 ---

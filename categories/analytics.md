@@ -101,7 +101,9 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Wave-Selection-Priority](../mcps/wave-selection-priority.md) | Determine surfer priority, optimal takeoff zones, and wave-sharing potential. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
 | [Wellbore Cleaning Efficiency](../mcps/wellbore-cleaning-efficiency.md) | Evaluates hole cleaning effectiveness and cuttings transport efficiency. |
+| [Wine Balance Index Calculator](../mcps/wine-balance-index-calculator.md) | Analyzes wine structural equilibrium using sweetness, acidity, alcohol, and tannin interactions. |
 | [Wine Redox Stability Diagnostic](../mcps/wine-redox-stability-diagnostic.md) | Analyzes redox potential and chemical fault risks in wine. |
+| [Wine Reductive Aging Prediction](../mcps/wine-reductive-aging-prediction.md) | Predict reductive sulfur compound development in bottled wine. |
 | [Zero-shot vs Few-shot Ratio Calculator](../mcps/zero-shot-vs-few-shot-ratio-calculator-alternative.md) | Quantify prompt composition by measuring the density of few-shot examples against instructions. |
 
 

@@ -913,10 +913,19 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |
 | [Williams Fractals Strategy](../mcps/williams-fractals-strategy.md) | Identify price reversals and breakout signals using deterministic Williams Fractals. |
 | [Windbreak Economics Analyzer](../mcps/windbreak-economics-analyzer.md) | Financial evaluation for windbreak installations and crop protection. |
+| [Wine Appellation Brand Value](../mcps/wine-appellation-brand-value.md) | Quantify the economic value and brand strength of wine appellations using hedonic regression. |
 | [Wine Banking Cost Calculator](../mcps/wine-banking-cost-calculator.md) | Calculate barrel aging costs, evaporation losses, and break-even premiums for wine banking. |
+| [Wine Brand Equity Calculator](../mcps/wine-brand-equity-calculator.md) | Quantify wine brand value through market data and quality metrics. |
 | [Wine Compliance & Tax Calculator](../mcps/wine-compliance-tax-calculator.md) | Calculate federal and state wine excise taxes and manage compliance schedules. |
+| [Wine Distribution Margin Calculator](../mcps/wine-distribution-margin-calculator.md) | Models multi-tier wine pricing, cascading margins, and regulatory compliance. |
+| [Wine Event Pricing Model](../mcps/wine-event-pricing-model.md) | Calculate optimal ticket prices, break-even points, and profit projections for winery events. |
 | [Wine Grape Pricing Model](../mcps/wine-grape-pricing-model.md) | Calculate optimal grape purchase prices using wine production economics. |
+| [Wine Price & Quality Correlation](../mcps/wine-price-quality-correlation.md) | Analyze wine value using hedonic pricing models. |
+| [Wine Retail Price Sensitivity Analyzer](../mcps/wine-retail-price-sensitivity-analyzer.md) | Analyze how price changes impact sales volume and revenue for wine products. |
+| [Wine Tasting Fee Optimizer](../mcps/wine-tasting-fee-optimizer.md) | Optimize tasting room profitability by balancing fees and wine sales. |
+| [Wine Vintage Rating Impact](../mcps/wine-vintage-rating-impact.md) | Analyze how vintage quality affects wine price, demand, and inventory value. |
 | [Wine Warehouse Logistics & Cost Modeler](../mcps/wine-warehouse-logistics-cost-modeler.md) | Calculate wine storage footprints, monthly costs, and warehouse economic models. |
+| [Wine Wholesale Price Optimizer](../mcps/wine-wholesale-price-optimizer.md) | Optimizes wholesale pricing for wine products to maximize profit margins. |
 | [Workers' Compensation Premium Calculator](../mcps/workers-compensation-premium-calculator.md) | Estimate workers' comp premiums, deposits, and audit adjustments based on payroll, EMR, and region. |
 | [Working Capital Calculator](../mcps/working-capital-calculator.md) | Calculate your Cash Conversion Cycle and Working Capital Need instantly. |
 | [Working Capital Optimization AI](../mcps/working-capital-optimization-ai.md) | Calculate the financial impact of AI-driven improvements on working capital and cash flow. |

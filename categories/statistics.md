@@ -14,6 +14,7 @@ Explore the open database of **statistics** Model Context Protocol (MCP) servers
 | [Sampling Plan Designer](../mcps/sampling-plan-designer.md) | Generates statistically rigorous sampling plans for quality control. |
 | [Test Duration Calculator](../mcps/test-duration-calculator.md) | Calculate required A/B test duration, sample sizes, and experiment risk levels. |
 | [Wind Statistics Analysis](../mcps/wind-statistics-analysis.md) | Analyze wind speed distributions and seasonality for session planning. |
+| [Wine Quality Score Analysis](../mcps/wine-quality-score-analysis.md) | Statistical analysis of sensory evaluation scores for wine quality. |
 
 
 ---

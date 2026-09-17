@@ -13,6 +13,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Asparagus Spear Growth Model](../mcps/asparagus-spear-growth-model.md) | Predicts asparagus spear development, harvest timing, and crop quality using thermal time models. |
 | [Baleage Wrapping Calculator](../mcps/baleage-wrapping-calculator.md) | Calculate plastic film requirements and predict fermentation quality for baleage storage. |
 | [Barley Malt Quality Predictor](../mcps/barley-malt-quality-predictor.md) | Predict malt quality parameters and brewing suitability from barley characteristics. |
+| [Barrel Filling Logistics](../mcps/barrel-filling-logistics.md) | Plan wine distribution, barrel selection, and cellar filling schedules. |
 | [Bee Colony Population Model](../mcps/bee-colony-population-model.md) | Simulate honey bee population dynamics and health risks using the HoPoBIM framework. |
 | [Beef Carcass Yield Predictor](../mcps/beef-carcass-yield-predictor.md) | Predict beef carcass weight, dressing percentage, and USDA grades from live animal measurements. |
 | [Buckwheat Milling Yield Predictor](../mcps/buckwheat-milling-yield-predictor.md) | Predicts buckwheat milling yield, nutritional quality, and market value. |
@@ -55,6 +56,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Ethanol Yield Calculator](../mcps/ethanol-yield-calculator.md) | Calculate ethanol production, co-product yields, and energy/GHG metrics from grain feedstocks. |
 | [Feed Bunk Space Calculator](../mcps/feed-bunk-space-calculator.md) | Calculates feed bunk space requirements and feeding schedules for livestock. |
 | [Feedlot Pen Sizing](../mcps/feedlot-pen-sizing.md) | Calculate precise feedlot pen dimensions, infrastructure needs, and performance impacts. |
+| [Fermentation Monitoring Frequency](../mcps/fermentation-monitoring-frequency.md) | Determines optimal monitoring intervals for Brix, temperature, and density during fermentation. |
 | [Fertilizer Calculator](../mcps/fertilizer-calculator.md) | Calculate precise NPK requirements and optimized fertilizer blends. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
 | [Filter Strip Sizing Calculator](../mcps/filter-strip-sizing-calculator.md) | Sizes vegetative filter strips for nutrient and sediment removal. |
@@ -135,6 +137,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Punch-Down & Pump-Over Scheduler](../mcps/punch-down-pump-over-scheduler.md) | Automated scheduling for fermentation cap management and labor optimization. |
 | [Quinoa Saponin Removal Calculator](../mcps/quinoa-saponin-removal-calculator.md) | Calculate processing requirements, economic impact, and quality for quinoa saponin removal. |
 | [Rabbit Production Modeler](../mcps/rabbit-production-modeler.md) | Simulates rabbit growth, mortality, and reproductive efficiency. |
+| [Racking Scheduling Tool](../mcps/racking-scheduling-tool.md) | Optimizes wine racking timing, transfer volumes, and cellar space utilization. |
 | [Residue Management Calculator](../mcps/residue-management-calculator.md) | Calculate soil residue cover, seasonal decay, and erosion protection effectiveness. |
 | [Rice Drying Cost & Optimization](../mcps/rice-drying-cost-optimization.md) | Calculate drying costs, energy use, and optimize temperature for rice quality. |
 | [Riparian Buffer Designer](../mcps/riparian-buffer-designer.md) | Design science-based riparian buffer systems for water quality and habitat protection. |
@@ -169,12 +172,14 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Swine Gestation Housing Calculator](../mcps/swine-gestation-housing-calculator.md) | Calculate stall, pen, and ESF requirements for swine gestation housing. |
 | [Swine Growth Performance Model](../mcps/swine-growth-performance-model.md) | Predict swine growth metrics, production costs, and optimal market weight using NRC equations. |
 | [Swine Ventilation & Heating Engine](../mcps/swine-ventilation-heating-engine.md) | Calculates ventilation rates and supplemental heating needs for swine facilities. |
+| [Tartrate Recovery Crystallization Engine](../mcps/tartrate-recovery-crystallization-engine.md) | Economic and material feasibility analysis for tartrate extraction from winery waste. |
 | [Tea Leaf Quality Index](../mcps/tea-leaf-quality-index.md) | Calculate optimal plucking intervals and expected cup quality scores for tea harvests. |
 | [Teff Grain Quality Grader](../mcps/teff-grain-quality-grader.md) | Grades teff grain quality, predicts injera suitability, and estimates market value. |
 | [Terrace Design Calculator](../mcps/terrace-design-calculator.md) | Design erosion control terrace systems using NRCS standards. |
 | [Tile Drain Spacing Calculator](../mcps/tile-drain-spacing-calculator.md) | Calculate optimal tile drain spacing and water table drawdown dynamics. |
 | [TMR Mixer Capacity & Efficiency](../mcps/tmr-mixer-capacity-efficiency.md) | Calculate TMR mixer batch specs, mixing performance, and herd expansion readiness. |
 | [Tobacco Curing Optimizer](../mcps/tobacco-curing-optimizer.md) | Generates optimal temperature and humidity schedules for tobacco curing. |
+| [Topping Wine Requirement Calculator](../mcps/topping-wine-requirement-calculator.md) | Calculate wine replenishment needs for barrel aging based on evaporation and environment. |
 | [Turfgrass Nitrogen Scheduler](../mcps/turfgrass-nitrogen-scheduler.md) | Develop precise nitrogen fertilization schedules based on grass species, soil, and GDD. |
 | [Ventilation Fan Sizing](../mcps/ventilation-fan-sizing.md) | Calculates ventilation fan requirements and inlet needs for livestock buildings. |
 | [Vineyard Yield Estimator](../mcps/vineyard-yield-estimator.md) | Predict grape yields and harvest timelines using phenological models. |
@@ -182,12 +187,15 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Wheat Dough Strength Predictor](../mcps/wheat-dough-strength-predictor.md) | Predict wheat dough quality and baking suitability from protein and environmental data. |
 | [Wheat Protein Predictor](../mcps/wheat-protein-predictor.md) | Predict wheat grain protein content and optimize nitrogen application for maximum profit. |
 | [Wine Blending Optimization](../mcps/wine-blending-optimization.md) | Calculate ideal wine proportions to meet chemical targets and budget constraints. |
+| [Wine Blending Session Planner](../mcps/wine-blending-session-planner.md) | Optimizes wine blending trials and sensory evaluation logistics. |
+| [Wine Bottle Variation Predictor](../mcps/wine-bottle-variation-predictor.md) | Predicts bottle-to-bottle variation and quality windows using stochastic oxygen ingress modeling. |
 | [Wine Bottling & Filling Calculator](../mcps/wine-bottling-filling-calculator.md) | Calculate production timelines, material needs, and unit costs for wine bottling lines. |
 | [Wine Brettanomyces Growth Model](../mcps/wine-brettanomyces-growth-model.md) | Predictive modeling for Brettanomyces yeast growth and volatile phenol production in wine. |
 | [Wine Calcium Tartrate Stability Analyzer](../mcps/wine-calcium-tartrate-stability-analyzer.md) | Assess the risk of calcium tartrate precipitation and crystal formation in wine. |
 | [Wine Cellar Capacity Planner](../mcps/wine-cellar-capacity-planner.md) | Plan winery cellar capacity, barrel inventory, and seasonal space utilization. |
 | [Wine Chaptalization Calculator](../mcps/wine-chaptalization-calculator.md) | Calculate precise sugar additions for increasing alcohol potential in grape must. |
 | [Wine Closure Selection Tool](../mcps/wine-closure-selection-tool.md) | Optimizes wine closure selection by balancing oxygen ingress, aging goals, and cost. |
+| [Wine Competitive Set Analysis](../mcps/wine-competitive-set-analysis.md) | Analyze wine market positioning, identify white spaces, and get strategic recommendations. |
 | [Wine Enzyme Addition Optimizer](../mcps/wine-enzyme-addition-optimizer.md) | Optimize enzyme dosage and contact time for grape must extraction and clarification. |
 | [Wine Ester Production Model](../mcps/wine-ester-production-model.md) | Predict ester formation and aroma profiles during fermentation. |
 | [Wine Fermentation Efficiency Analyzer](../mcps/wine-fermentation-efficiency-analyzer.md) | Calculates fermentation efficiency, carbon balance, and identifies metabolic anomalies. |
@@ -198,9 +206,11 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Wine H2S Risk Predictor](../mcps/wine-h2s-risk-predictor.md) | Predict H2S formation risk and get nutrient/copper recommendations. |
 | [Wine Killer Yeast Compatibility](../mcps/wine-killer-yeast-compatibility.md) | Assess yeast strain compatibility and killer factor risks for successful co-inoculation. |
 | [Wine Lab Turnaround Scheduler](../mcps/wine-lab-turnaround-scheduler.md) | Optimize wine laboratory throughput and minimize turnaround time during harvest. |
+| [Wine Loss Tracking System](../mcps/wine-loss-tracking-system.md) | Monitor wine production efficiency by tracking volume losses across all stages. |
 | [Wine MLF Progression Model](../mcps/wine-mlf-progression-model.md) | Models malolactic fermentation progression and predicts completion timelines. |
 | [Wine Nitrogen Requirement Calculator](../mcps/wine-nitrogen-requirement-calculator.md) | Calculate yeast assimilable nitrogen (YAN) needs and precision supplementation strategies. |
 | [Wine Nutrient Addition Timing](../mcps/wine-nutrient-addition-timing.md) | Optimize nutrient timing to maximize aroma and prevent yeast stress. |
+| [Wine Oxidative Aging Trajectory](../mcps/wine-oxidative-aging-trajectory.md) | Models the oxidative aging trajectory of wine using phenolic evolution kinetics. |
 | [Wine Oxygen Ingress Model](../mcps/wine-oxygen-ingress-model.md) | Predictive modeling for oxygen ingress and wine aging trajectories. |
 | [Wine Oxygen Ingress Modeler](../mcps/wine-oxygen-ingress-modeler.md) | Predictive modeling for oxygen ingress through screw cap liners to assess wine stability. |
 | [Wine Oxygen Management Calculator](../mcps/wine-oxygen-management-calculator.md) | Calculate cumulative oxygen pickup, optimize inert gas usage, and validate closure suitability. |
@@ -208,9 +218,13 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Wine Phenolic Maturity Index](../mcps/wine-phenolic-maturity-index.md) | Calculate phenolic maturity, extractability, and harvest timing for grapes. |
 | [Wine Reductive Compound Formation](../mcps/wine-reductive-compound-formation.md) | Predictive modeling for reductive sulfur compound formation in wine. |
 | [Wine Residual Sugar Kinetics](../mcps/wine-residual-sugar-kinetics.md) | Predict fermentation completion and diagnose stuck fermentations. |
+| [Wine Score Prediction Model](../mcps/wine-score-prediction-model.md) | Predict professional critic scores and identify score drivers for wines. |
 | [Wine SO2 Equilibrium Calculator](../mcps/wine-so2-equilibrium-calculator.md) | Calculate SO2 speciation and microbial stability in wine. |
+| [Wine Stability Testing Protocol](../mcps/wine-stability-testing-protocol.md) | Generates comprehensive stability testing protocols for wine pre-bottling. |
 | [Wine Tannin Extraction Kinetics](../mcps/wine-tannin-extraction-kinetics.md) | Predict tannin extraction from seeds and skins during fermentation. |
 | [Wine Temperature Stratification Model](../mcps/wine-temperature-stratification-model.md) | Models temperature gradients and predicts hot spots in fermentation tanks. |
+| [Wine Transfer Pump Sizing](../mcps/wine-transfer-pump-sizing.md) | Calculate pump requirements and transfer logistics for moving wine through piping systems. |
+| [Wine Variety Trend Analysis](../mcps/wine-variety-trend-analysis.md) | Analyze wine variety market trends, growth rates, and future market share projections. |
 | [Wine Volatile Acidity Predictor](../mcps/wine-volatile-acidity-predictor.md) | Predict volatile acidity formation and ensure regulatory compliance during wine fermentation. |
 | [Wine Yeast Growth Kinetics](../mcps/wine-yeast-growth-kinetics.md) | Models yeast population dynamics and fermentation success using Monod kinetics. |
 | [Winemaking Chemistry Calculator](../mcps/winemaking-chemistry-calculator.md) | Deterministic chemical calculator for grape juice processing and fermentation management. |

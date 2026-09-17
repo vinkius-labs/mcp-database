@@ -41,6 +41,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Tattoo Time Estimator](../mcps/tattoo-time-estimator.md) | Calculate tattoo session duration, number of appointments, and healing time. |
 | [Valid Outfit Generator](../mcps/valid-outfit-generator.md) | Calculate and sample valid clothing combinations based on formality consistency rules. |
 | [VTuber Name Fortune Calculator](../mcps/vtuber-name-fortune-calculator.md) | Calculate VTuber debut potential using traditional Seimei Handan and modern persona alignment. |
+| [Wine Optimal Drinking Window](../mcps/wine-optimal-drinking-window.md) | Predict the ideal consumption period for wine based on chemical composition and storage. |
 | [Wine Pairing Matcher](../mcps/wine-pairing-matcher.md) | Get expert wine recommendations based on dish characteristics like protein, sauce weight, and intensity. |
 
 

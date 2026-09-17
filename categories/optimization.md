@@ -13,6 +13,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [AI Quantization Cost-Benefit Engine](../mcps/ai-quantization-cost-benefit-engine.md) | Evaluate the economic and performance impact of model quantization. |
 | [Animation Frame Timing & Memory Calculator](../mcps/animation-frame-timing-memory-calculator.md) | Calculate animation duration, memory footprint, and optimization potential for skeletal animations. |
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
+| [Bentonite Dose Optimization](../mcps/bentonite-dose-optimization.md) | Optimize bentonite dosage for protein stability and minimize wine loss. |
 | [Blending Optimization Mining](../mcps/blending-optimization-mining.md) | Optimize ore blending using linear programming to meet grade constraints and maximize value. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |

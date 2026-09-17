@@ -7,6 +7,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [AI Compute Supply Chain Risk Engine](../mcps/ai-compute-supply-chain-risk-engine.md) | Quantify GPU scarcity and cloud-based compute supply vulnerabilities. |
 | [Avocado Maturity Index](../mcps/avocado-maturity-index.md) | Calculate avocado maturity, shelf life, and market suitability. |
 | [Batch Chemical Process Scheduler](../mcps/batch-chemical-process-scheduler.md) | Optimizes batch production sequences, equipment utilization, and resource allocation. |
+| [Bottling Line Changeover Optimizer](../mcps/bottling-line-changeover-optimizer.md) | Quantify changeover duration and cost using SMED principles. |
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Canola Oil Quality Predictor](../mcps/canola-oil-quality-predictor.md) | Predict canola oil grade, refining losses, and meal quality from seed characteristics. |
 | [Chickpea Quality Grader](../mcps/chickpea-quality-grader.md) | Grades chickpea quality and predicts market suitability and value. |
@@ -44,6 +45,9 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Wine DTC Shipping & Logistics](../mcps/wine-dtc-shipping-logistics.md) | Calculate DTC wine shipping costs, packaging expenses, and carrier comparisons. |
 | [Wine Harvest Logistics Planner](../mcps/wine-harvest-logistics-planner.md) | Optimizes vineyard harvest schedules, truck logistics, and winery capacity utilization. |
 | [Wine Packaging Carbon & Logistics Calculator](../mcps/wine-packaging-carbon-logistics-calculator.md) | Calculate carbon footprint and shipping logistics for wine packaging. |
+| [Wine Shipment Temperature Monitoring](../mcps/wine-shipment-temperature-monitoring.md) | Calculate thermal risk, monitoring frequency, and data logger requirements for wine shipments. |
+| [Wine Shipping Cost Optimizer](../mcps/wine-shipping-cost-optimizer.md) | Find the most cost-effective shipping methods for wine orders. |
+| [Wine Traceability & Lot Tracking](../mcps/wine-traceability-lot-tracking.md) | Track wine production from grape harvest to bottling with full lineage and recall capabilities. |
 
 
 ---

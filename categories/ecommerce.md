@@ -202,6 +202,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [VTEX Checkout](../mcps/vtex-checkout.md) | Simulate carts, calculate shipping, apply coupons, and manage client profiles on your VTEX store — all from any AI agent. |
 | [VTEX Orders](../mcps/vtex-orders.md) | Search, track, invoice, and cancel orders on your VTEX store — manage your entire order lifecycle from any AI agent. |
 | [Weimob / 微盟](../mcps/weimob.md) | Leading E-commerce and marketing SaaS platform in China — manage products, orders, and members via AI. |
+| [Wine E-commerce Conversion Optimizer](../mcps/wine-e-commerce-conversion-optimizer.md) | Predict conversion rates and revenue impact for wine e-commerce sites. |
 | [Wine-Searcher](../mcps/wine-searcher.md) | Search global wine pricing, critic scores, grape varieties, regions, and producer data from 100,000+ merchants worldwide through natural conversation. |
 | [WooCommerce](../mcps/woocommerce-alternative.md) | Manage your WooCommerce store — audit products, orders, and reports via AI. |
 | [WooCommerce Coupon Creator](../mcps/woocommerce-coupon-creator.md) | This MCP allows your AI agent to instantly generate custom discount coupons for your WooCommerce store. Perfect for empowering AI customer support bots to offer appeasement discounts or single-use retention codes. |

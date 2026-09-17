@@ -16,6 +16,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Bioinorganic Chemistry Calculator](../mcps/bioinorganic-chemistry-calculator.md) | Analyze metalloenzyme active sites, redox potentials, and coordination geometries. |
 | [Bioreactor Design Calculator](../mcps/bioreactor-design-calculator.md) | Calculate bioreactor volume, oxygen demand, and agitation requirements. |
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
+| [Bottling Sterile Filter Requirements](../mcps/bottling-sterile-filter-requirements.md) | Calculate sterile filtration parameters, equipment needs, and selection criteria for liquid bottling. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Buffer Solution Calculator](../mcps/buffer-solution-calculator.md) | Calculate buffer solution properties including required ratios, pH shifts, and capacity. |
 | [Butler-Volmer Equation Solver](../mcps/butler-volmer-equation-solver.md) | Calculates electrochemical kinetics, current densities, and activation energies using the Butler-Volmer model. |
@@ -155,7 +156,9 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Wettability & Contact Angle Analyzer](../mcps/wettability-contact-angle-analyzer.md) | Calculate surface energy, work of adhesion, and spreading coefficients using contact angle data. |
 | [Wine Aging Kinetics Predictor](../mcps/wine-aging-kinetics-predictor.md) | Predict wine color, astringency, and aroma evolution using chemical kinetics. |
 | [Wine Aroma Evolution Modeler](../mcps/wine-aroma-evolution-modeler.md) | Predicts chemical transformations of aroma compounds during fermentation and aging. |
+| [Wine Aroma Wheel Mapping](../mcps/wine-aroma-wheel-mapping.md) | Maps chemical concentrations of volatile compounds to human-perceptible wine aroma profiles. |
 | [Wine CO2 Solubility & Pressure Calculator](../mcps/wine-co2-solubility-pressure-calculator.md) | Calculate CO2 solubility, degassing, and bottling pressure in wine using Henry's law. |
+| [Wine Color Density Calculator](../mcps/wine-color-density-calculator.md) | Calculates wine colorimetric properties, intensity, and visual perception from spectrophotometric data. |
 | [Wine Sensory Threshold Calculator](../mcps/wine-sensory-threshold-calculator.md) | Predict sensory detection and impact of chemical compounds in wine using matrix-correction factors. |
 | [Zeta Potential Calculator](../mcps/zeta-potential-calculator.md) | Calculate zeta potential, surface charge, and colloidal stability from electrophoretic mobility. |
 

@@ -4,6 +4,7 @@ Explore the open database of **industrial-automation** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Filtration Throughput Calculator](../mcps/filtration-throughput-calculator.md) | Calculate required filter area, maintenance needs, and filtration time for wine processing. |
 | [Flotation Clarification System](../mcps/flotation-clarification-system.md) | Calculates equipment requirements and economic efficiency for juice flotation processes. |
 
 
