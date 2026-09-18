@@ -14,9 +14,9 @@ This MCP server provides specialized tools to design precise stretching sessions
 
 
 ## Available Tools (4)
+- **get_muscle_specific_modifiers**: Retrieves specific duration adjustments based on the complexity or size of the target muscle group
 - **analyze_session_balance**: Evaluates the composition of a proposed session to ensure it aligns with the user's activity timing
 - **calculate_stretch_protocol**: Generates a complete stretching session plan including hold times and set counts
-- **get_muscle_specific_modifiers**: Retrieves specific duration adjustments based on the complexity or size of the target muscle group
 - **validate_flexibility_progression**: Checks if the proposed intensity is appropriate for the user's current flexibility level to prevent injury
 
 
