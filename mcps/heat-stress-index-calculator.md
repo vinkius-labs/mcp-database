@@ -7,17 +7,17 @@
 
 **Category:** [health](../categories/health.md)
 
-Evaluate workplace thermal risk and automate safety protocols.
+Calculates heat stress risk, WBGT, and safety protocols from weather and activity data.
 
 ## Description
-This MCP server provides essential tools for industrial safety managers to manage thermal risk in high-temperature environments. It calculates the Wet Bulb Globe Temperature (WBGT) using `calculate_wbgt_risk`, determines mandatory recovery cycles with `get_work_rest_schedule`, estimates fluid intake via `estimate_hydration_needs`, and adjusts thermal load based on attire using `evaluate_clothing_impact`. It helps prevent heat exhaustion by providing data-driven work-rest regimens and hydration plans.
+This MCP server provides critical thermal safety assessments. It allows AI agents to calculate the perceived temperature using `calculate_heat_index` and the comprehensive Wet Bulb Globe Temperature via `calculate_wbgt`. By combining these metrics with physical factors, agents can use `assess_risk_profile` to determine danger levels, work/rest cycles, and hydration needs. Finally, `get_safety_guidelines` provides specific safety protocols tailored to regional standards in the USA or Europe.
 
 
 ## Available Tools (4)
-- **calculate_wbgt_risk**: Determine the environmental heat stress level using the WBGT metric
-- **estimate_hydration_needs**: Calculate the minimum fluid intake required to prevent dehydration
-- **evaluate_clothing_impact**: Adjust the perceived heat stress based on the insulating properties of work clothing
-- **get_work_rest_schedule**: Provide a mandatory work-rest cycle based on heat stress and worker characteristics
+- **assess_risk_profile**: Categorizes the level of heat danger and provides actionable safety mitigations
+- **calculate_heat_index**: Determines the perceived temperature based on ambient air conditions
+- **calculate_wbgt**: Provides a comprehensive thermal stress index considering multiple environmental factors
+- **get_safety_guidelines**: Retrieves specific safety protocols based on the identified risk
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides essential tools for industrial safety managers to manag
 Here are some examples of how you can interact with the **Heat Stress Index Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the heat stress level if the air temperature is 35°C, humidity is 60%, wet bulb is 28°C, and black globe is 32°C?"
+> "Calculate the heat index for a temperature of 32°C and 70% humidity."
 
 **🤖 AI Agent:**
-> The calculated WBGT value is 29.4, which falls into the High heat stress category.
+> The calculated heat index is 38.5°C.
 
 ---
 
 **👤 You:**
-> "A worker is performing heavy work in High heat stress. They are not acclimatized. What is the required work-rest schedule?"
+> "What is the WBGT if temperature is 35°C, humidity is 60%, radiant heat is 10, and wind speed is 2?"
 
 **🤖 AI Agent:**
-> For heavy work in High heat stress without acclimatization, the mandatory schedule is 20 minutes of work followed by 40 minutes of rest.
+> The calculated WBGT value is 31.2°C.
 
 ---
 
 **👤 You:**
-> "How much water should a worker drink during a 4-hour shift with moderate work in High heat stress?"
+> "Assess the risk for a heat index of 40°C, WBGT of 35°C, heavy activity, clothing insulation of 0.5, and an acclimatized person."
 
 **🤖 AI Agent:**
-> The worker requires a total of 3.2 liters of water, with a recommended intake of 0.8 liters per hour every 20 minutes.
+> The risk category is Extreme. Recommended work/rest cycle is 15 min work / 45 min rest. Hydration requirement is 1.2 liters per hour.
 
 
 ## ❓ FAQ
 
-**Q: How does this tool help with worker safety?**
-It uses `calculate_wbgt_risk` to assess environmental danger and `get_work_rest_schedule` to mandate specific rest periods, ensuring workers stay within safe physiological limits.
+**Q: What is the difference between Heat Index and WBGT?**
+The Heat Index measures perceived temperature based on air temperature and humidity, while `calculate_wbgt` provides a more comprehensive index by also accounting for radiant heat and wind speed.
 
-**Q: Can I account for different types of work intensity?**
-Yes, the `estimate_hydration_needs` and `get_work_rest_schedule` tools allow you to input metabolic intensity levels ranging from light to very heavy.
+**Q: How can I get specific safety protocols for my region?**
+After assessing the risk profile, use `get_safety_guidelines` and specify your location as either USA or Europe to receive compliant safety instructions.
 
-**Q: Does it consider the impact of protective gear?**
-Yes, you can use `evaluate_clothing_impact` to adjust the perceived heat stress based on whether workers are wearing breathable, standard, or heavy protective clothing.
+**Q: Does the tool account for physical activity levels?**
+Yes, `assess_risk_profile` uses the activity level (light, moderate, heavy, or extreme) to adjust the risk category and hydration requirements.
 
 
 ## Installation & Usage

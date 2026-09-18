@@ -40,12 +40,35 @@ Get artist profile info
 - **get_playlist_by_id**: Provide the ID to fetch the details.
 
 Get playlist info by ID
-- **repost_music**: Supply the unique identifier of the content to be reposted.
-
-Repost a track or album (Requires Auth)
 - **add_track_to_playlist**: You must specify both the playlist ID and the music ID.
 
 Add a track to a playlist (Requires Auth)
+- **get_artist_uploads**: Always provide the artist slug to filter results.
+
+Get artist uploads
+- **get_charts**: Specify the page number to navigate results.
+
+Get Audiomack charts
+- **get_music_by_id**: Get song or album info by ID
+- **get_music_by_slug**: Get song or album info by slug
+- **get_trending_music**: Get trending music
+- **play_music**: Play a track (Requires Auth)
+- **unfollow_artist**: Supply the artist’s slug.
+
+Unfollow an artist (Requires Auth)
+- **unrepost_music**: Provide the unique identifier of the content to un-repost.
+
+Remove a reposted track or album (Requires Auth)
+- **get_recent_music**: Get most recent music
+- **delete_playlist**: Supply the unique playlist ID to confirm deletion.
+
+Delete a playlist (Requires Auth)
+- **favorite_music**: Use this tool only when the user explicitly requests favoriting content.
+
+Favorite a track or album (Requires Auth)
+- **flag_music_unplayable**: Supply both the artist and music slugs.
+
+Flag a track or album as unplayable
 - **create_playlist**: You must provide a title and genre for the playlist.
 
 Create a new playlist (Requires Auth)
@@ -64,50 +87,27 @@ Get users an artist is following
 - **get_artist_playlists**: Supply the artist slug to identify the source.
 
 Get artist playlists
-- **get_artist_uploads**: Always provide the artist slug to filter results.
-
-Get artist uploads
-- **get_charts**: Specify the page number to navigate results.
-
-Get Audiomack charts
-- **get_music_by_id**: Get song or album info by ID
-- **get_music_by_slug**: Get song or album info by slug
 - **get_playlist_by_slug**: Provide either the artist or playlist slug.
 
 Get playlist info by slug
-- **get_trending_music**: Get trending music
-- **play_music**: Play a track (Requires Auth)
 - **remove_track_from_playlist**: Specify both the playlist ID and the music ID.
 
 Remove a track from a playlist (Requires Auth)
-- **search_autosuggest**: Provide a search query to get suggestions.
+- **repost_music**: Supply the unique identifier of the content to be reposted.
 
-Get search autosuggestions
+Repost a track or album (Requires Auth)
 - **search**: Provide a search query to begin the search.
 
 Search for music, artists, or albums
+- **search_autosuggest**: Provide a search query to get suggestions.
+
+Get search autosuggestions
 - **unfavorite_music**: Provide the unique identifier of the content to remove.
 
 Remove a track or album from favorites (Requires Auth)
-- **unfollow_artist**: Supply the artist’s slug.
-
-Unfollow an artist (Requires Auth)
-- **unrepost_music**: Provide the unique identifier of the content to un-repost.
-
-Remove a reposted track or album (Requires Auth)
 - **update_playlist**: You must provide the playlist ID to modify the details.
 
 Edit an existing playlist (Requires Auth)
-- **get_recent_music**: Get most recent music
-- **delete_playlist**: Supply the unique playlist ID to confirm deletion.
-
-Delete a playlist (Requires Auth)
-- **favorite_music**: Use this tool only when the user explicitly requests favoriting content.
-
-Favorite a track or album (Requires Auth)
-- **flag_music_unplayable**: Supply both the artist and music slugs.
-
-Flag a track or album as unplayable
 
 
 ## 💬 Prompt Examples

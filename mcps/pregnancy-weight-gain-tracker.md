@@ -7,16 +7,17 @@
 
 **Category:** [health](../categories/health.md)
 
-Monitor maternal weight trends against IOM guidelines.
+Monitor pregnancy weight progression using IOM clinical guidelines.
 
 ## Description
-This MCP server provides clinical-grade monitoring for pregnancy weight gain based on the Institute of Medicine (IOM) standards. It allows users to track BMI categories, calculate expected weight gain by gestational week, and analyze weekly velocity to detect deviations from healthy ranges using tools like `get_bmi_recommendations`, `calculate_gain_deviation`, and `analyze_weekly_velocity`.
+This MCP server provides clinical weight monitoring for pregnancy. It uses Institute of Medicine (IOM) standards to calculate healthy weight gain ranges based on pre-pregnancy BMI and pregnancy type. Use `get_weight_gain_guidelines` to find specific targets, `calculate_current_status` to check if you are on track, `get_weekly_target_projection` to plan future gain, and `get_trimester_milestones` to see cumulative goals for each trimester.
 
 
-## Available Tools (3)
-- **calculate_gain_deviation**: Compares current weight progress against projected ideal weight
-- **analyze_weekly_velocity**: Analyzes recent weight changes to detect rapid fluctuations or stagnation
-- **get_bmi_recommendations**: Retrieves standardized IOM weight targets based on pre-pregnancy BMI
+## Available Tools (4)
+- **calculate_current_status**: Compares current weight against historical weight to assess if the user is on track
+- **get_trimester_milestones**: Provides a roadmap of what weight gain should look like at the end of each trimester
+- **get_weekly_target_projection**: Predicts the necessary weekly weight gain to reach the ideal end-of-pregnancy weight
+- **get_weight_gain_guidelines**: Retrieves specific weight gain targets and rules based on the user's physiological profile
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ This MCP server provides clinical-grade monitoring for pregnancy weight gain bas
 Here are some examples of how you can interact with the **Pregnancy Weight Gain Tracker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What are my recommended weight gain targets for a pre-pregnancy BMI of 26.5?"
+> "I have a BMI of 22 and I am expecting one baby. What are my weight gain guidelines?"
 
 **🤖 AI Agent:**
-> For a BMI of 26.5, you fall into the Overweight category. Your recommended total weight gain range is 15 to 25 pounds.
+> For a BMI of 22 (Normal Weight) and a singleton pregnancy, the recommended total weight gain is between 25 and 35 pounds.
 
 ---
 
 **👤 You:**
-> "I am at week 20 and my current weight is 160 lbs. My pre-pregnancy weight was 140 lbs and BMI was 23. How am I doing?"
+> "I am 20 weeks pregnant, my pre-pregnancy weight was 130 lbs, and my current weight is 145 lbs. My pre-pregnancy BMI was 21. Am I on track?"
 
 **🤖 AI Agent:**
-> You have gained 20 lbs so far. Based on your Normal weight category, the expected gain at week 20 is approximately 14.5 lbs, meaning you are currently 5.5 lbs above the ideal trajectory.
+> Yes, your current weight gain of 15 lbs is within the ideal range for your BMI and gestational age.
 
 ---
 
 **👤 You:**
-> "Check if my recent weight gain is healthy: last week I was 158 lbs and this week I am 160 lbs at week 24."
+> "What should my weight gain targets be at the end of the second trimester if I have a BMI of 27 and am expecting twins?"
 
 **🤖 AI Agent:**
-> Your weekly velocity is 2.0 lbs per week. This is outside the standard healthy range of 0.5 to 1 lb per week for the second and third trimesters.
+> For a BMI of 27 and a multiple pregnancy, the target weight gain at the end of the second trimester is approximately 32 pounds.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool determine weight targets?**
-The `get_bmi_recommendations` tool uses your pre-pregnancy BMI to identify your category (Underweight, Normal, Overweight, or Obese) and provides the specific weight gain range recommended by IOM.
+**Q: How are the weight gain targets determined?**
+Targets are determined using the Institute of Medicine (IOM) guidelines, which factor in your pre-pregnancy BMI and whether you are expecting a singleton or multiple pregnancy.
 
-**Q: Can I track my weekly rate of gain?**
-Yes, the `analyze_weekly_velocity` tool compares your previous and current weight to calculate pounds gained per week and checks if it falls within the healthy 0.5-1 lb/week range.
+**Q: Can I use this for twin pregnancies?**
+Yes. By using the `isMultiplePregnancy` parameter in the tools, the tracker adjusts all recommendations to account for the higher weight gain requirements of multiple pregnancies.
 
-**Q: What happens if my weight gain is outside the expected range?**
-The `calculate_gain_deviation` tool calculates exactly how many pounds you are above or below the projected ideal weight for your current gestational week.
+**Q: How often should I check my status?**
+It is recommended to check your status regularly as you progress through your trimesters to ensure you remain within the healthy weight gain range.
 
 
 ## Installation & Usage

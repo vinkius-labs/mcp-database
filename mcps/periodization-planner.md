@@ -7,16 +7,17 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Generate structured athletic training macrocycles based on periodization models and target event timelines.
+Systematic training schedule generator using periodization principles.
 
 ## Description
-The Periodization Planner is a mathematical engine designed for athletes and coaches to structure long-term training plans. By providing a target event date, the number of weeks available, and a chosen periodization model (such as Linear, Daily Undulating, Weekly Undulating, or Block Periodization), the tool calculates a complete macrocycle breakdown. It determines the division of phases including Preparatory, Specific, Competitive, and Tapering, along with mesocycles. Users can also use `get_phase_attributes` to retrieve specific training focuses like volume and intensity for each phase, and `generate_weekly_load_progression` to obtain a week-by-week breakdown of relative training load percentages. This ensures physiological adaptation is maximized through systematic planning.
+Periodization Planner connects AI agents to professional athletic programming. It uses scientific principles to divide training into mesocycles, managing the inverse relationship between volume and intensity. Use `get_mesocycle_structure` to define training blocks, `calculate_weekly_progression` to set specific weekly targets, `get_recovery_strategy` to identify necessary deload weeks, and `summarize_training_plan` for a high-level overview of the entire strategy.
 
 
-## Available Tools (3)
-- **generate_weekly_load_progression**: Provides a week-by-week breakdown of the relative training load
-- **calculate_macrocycle_structure**: Determines how the total available time should be divided into phases and mesocycles
-- **get_phase_attributes**: Retrieves the specific training focus, target volume, and target intensity for a given phase
+## Available Tools (4)
+- **calculate_weekly_progression**: Provides the specific volume and intensity targets for every week within the generated mesocycles
+- **get_mesocycle_structure**: Determines how the training period is divided into specific blocks leading up to the competition
+- **get_recovery_strategy**: Informs the athlete when and how to perform deloads to ensure physiological adaptation
+- **summarize_training_plan**: Provides a high-level overview of the entire training periodization strategy
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ The Periodization Planner is a mathematical engine designed for athletes and coa
 Here are some examples of how you can interact with the **Periodization Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate a training structure for an event on 2025-12-01 with 24 weeks available using the Linear model."
+> "Create a training structure for a marathon runner in the Preparatory phase using Linear periodization."
 
 **🤖 AI Agent:**
-> The macrocycle is divided into four phases: Preparatory (Weeks 1-10), Specific (Weeks 11-17), Competitive (Weeks 18-22), and Tapering (Weeks 23-24).
+> The training period is divided into three mesocycles: a foundational base block, a strength-building block, and a pre-competition block, following a linear progression of decreasing volume and increasing intensity.
 
 ---
 
 **👤 You:**
-> "What is the training focus for the Preparatory phase in a Block Periodization plan?"
+> "What is the weekly volume and intensity for an advanced strength athlete?"
 
 **🤖 AI Agent:**
-> In the Preparatory phase, the target volume is High, the target intensity is Low, and the primary focus is building an aerobic base and work capacity.
+> For an advanced athlete, the weekly schedule shows high-intensity peaks with precise volume management to trigger adaptation while preventing overtraining.
 
 ---
 
 **👤 You:**
-> "Show me the weekly load progression for 12 weeks using Daily Undulating Periodization."
+> "Summarize my training plan for a power sport."
 
 **🤖 AI Agent:**
-> Week 1: 75%, Week 2: 80%, Week 3: 70%, Week 4: 85%, Week 5: 75%, Week 6: 80%, Week 7: 70%, Week 8: 85%, Week 9: 75%, Week 10: 80%, Week 11: 60%, Week 12: 50%.
+> The training plan spans 12 weeks, with a peak intensity occurring in week 10, focusing on explosive power development.
 
 
 ## ❓ FAQ
 
-**Q: What periodization models are supported?**
-The engine supports Linear, Daily Undulating, Weekly Undulating, and Block Periodization models.
+**Q: How does the planner handle different athlete levels?**
+The planner adjusts volume and intensity progression based on the athlete level. For example, `calculate_weekly_progression` uses the athlete level to determine how steeply intensity climbs and how frequently recovery is needed.
 
-**Q: How do I know the training intensity for a specific phase?**
-You can use the `get_phase_attributes` tool to retrieve qualitative descriptions of volume, intensity, and primary physiological focus for any given phase.
+**Q: Can I choose between linear and undulating models?**
+Yes, you can specify the `periodizationModel` in `get_mesocycle_structure` to choose between Linear or Undulating approaches.
 
-**Q: Can I see a week-by-week breakdown of my training load?**
-Yes, the `generate_weekly_load_progression` tool provides an array containing the week number and the relative load percentage for your entire macrocycle.
+**Q: How are recovery weeks determined?**
+Recovery weeks are strategically identified using `get_recovery_strategy`, which places deloads at the end of high-stress mesocycles to ensure physiological adaptation.
 
 
 ## Installation & Usage

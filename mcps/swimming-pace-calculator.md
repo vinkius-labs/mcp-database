@@ -14,9 +14,9 @@ This MCP server provides a suite of precision tools for swimmers to convert dist
 
 
 ## Available Tools (4)
+- **estimate_stroke_rate**: Estimate strokes per minute
 - **calculate_lap_splits**: Generate a schedule of individual lap times
 - **calculate_pace_metrics**: Calculate base swimming pace per 100 units
-- **estimate_stroke_rate**: Estimate strokes per minute
 - **generate_interval_plan**: Create a structured swimming interval plan
 
 
