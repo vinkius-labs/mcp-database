@@ -14,10 +14,10 @@ This MCP server provides precise physiological recovery estimates for athletes a
 
 
 ## Available Tools (4)
-- **predict_doms_peak**: Forecasts when the user will experience maximum muscle soreness
 - **calculate_next_session_window**: Determines the earliest safe time to retrain the same muscle groups
 - **get_muscle_recovery_status**: Calculates the specific recovery duration required for each muscle group trained
 - **get_recovery_optimization_plan**: Provides actionable advice to speed up the recovery process
+- **predict_doms_peak**: Forecasts when the user will experience maximum muscle soreness
 
 
 ## 💬 Prompt Examples

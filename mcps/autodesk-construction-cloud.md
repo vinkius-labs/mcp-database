@@ -34,18 +34,21 @@ Connect your **Autodesk Construction Cloud (ACC)** environment to any AI agent a
 
 ## Available Tools (10)
 - **list_hubs**: List all accessible Autodesk hubs
-- **list_projects**: Provide the Hub ID to ensure accurate results.
-
-List projects in a specific hub
 - **get_asset_details**: Pass the Project ID and Asset ID.
 
 Get details for a specific asset
-- **create_issue**: You must provide the Project ID and a title.
-
-Create a new issue in a project
 - **get_issue_details**: Provide the Project ID and Issue ID.
 
 Get complete details for a specific issue
+- **list_projects**: Provide the Hub ID to ensure accurate results.
+
+List projects in a specific hub
+- **list_top_folders**: Specify the Hub ID and Project ID.
+
+List the top-level folders in a project
+- **create_issue**: You must provide the Project ID and a title.
+
+Create a new issue in a project
 - **get_project_details**: Supply both the Hub ID and Project ID.
 
 Get details for a specific project
@@ -58,9 +61,6 @@ List files and subfolders within a folder
 - **list_issues**: Only the Project ID is required.
 
 List issues in a specific project
-- **list_top_folders**: Specify the Hub ID and Project ID.
-
-List the top-level folders in a project
 
 
 ## 💬 Prompt Examples

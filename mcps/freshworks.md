@@ -37,9 +37,9 @@ Connect your **Freshworks** account to any AI agent and take full control of you
 
 
 ## Available Tools (9)
+- **list_tickets**: List all helpdesk tickets
 - **list_groups**: List all agent groups
 - **list_agents**: List all support agents
-- **list_tickets**: List all helpdesk tickets
 - **get_ticket**: Get ticket details
 - **list_helpdesk_contacts**: List helpdesk contacts
 - **list_companies**: List all companies

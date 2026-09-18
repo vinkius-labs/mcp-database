@@ -14,10 +14,10 @@ This MCP server provides intelligent tools to design safe and effective mobility
 
 
 ## Available Tools (4)
-- **evaluate_equipment_compatibility**: Verifies if a specific set of drills can be performed with the available equipment
-- **generate_routine**: Constructs a complete, sequenced mobility routine
 - **get_drill_library**: Provides a searchable list of available mobility drills
 - **validate_progression**: Checks if a proposed sequence of drills follows safe mobility progression principles
+- **generate_routine**: Constructs a complete, sequenced mobility routine
+- **evaluate_equipment_compatibility**: Verifies if a specific set of drills can be performed with the available equipment
 
 
 ## 💬 Prompt Examples

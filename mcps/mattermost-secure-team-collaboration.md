@@ -39,13 +39,9 @@ Connect your **Mattermost** instance to any AI agent and take full control of yo
 - **search_channels**: Scan the database aggressively discovering a hidden/public Channel
 - **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
 - **get_channel_posts**: Retrieve the exact timeline matrix identifying Enterprise messages
-- **get_team_members**: Enumerate explicitly attached user capabilities active within a Team
-- **get_teams**: Necessary strictly to obtain `team_id` properties resolving all subsequent deep-level routing architectures over the network.
+- **get_all_users**: Returns explicit `user_id` mapping arrays required for routing `@mentions` properly bypassing username spoofing by querying absolute Database entries via API v4.
 
-Identify global Mattermost Workspace (Team) underlying endpoints
-- **update_post**: Substitutes literal byte contents appending explicit "(edited)" timestamps visibly preserving audit compliance capabilities inherently.
-
-Mutate global Chat String pre-existing records via HTTP PUT
+Identify precise active Human/Bot constraints navigating the server
 - **delete_post**: Changes the internal `delete_at` marker implicitly wiping visibility synchronously across all active UI clients leaving no front-end trace replacing caching bounds.
 
 Irreversibly vaporize an explicit text post off Mattermost arrays
@@ -53,9 +49,13 @@ Irreversibly vaporize an explicit text post off Mattermost arrays
 - **list_team_channels**: Scans core enterprise contexts identifying where payload deployments land.
 
 Perform structural extraction of public routing Channels on a Team
-- **get_all_users**: Returns explicit `user_id` mapping arrays required for routing `@mentions` properly bypassing username spoofing by querying absolute Database entries via API v4.
+- **get_team_members**: Enumerate explicitly attached user capabilities active within a Team
+- **get_teams**: Necessary strictly to obtain `team_id` properties resolving all subsequent deep-level routing architectures over the network.
 
-Identify precise active Human/Bot constraints navigating the server
+Identify global Mattermost Workspace (Team) underlying endpoints
+- **update_post**: Substitutes literal byte contents appending explicit "(edited)" timestamps visibly preserving audit compliance capabilities inherently.
+
+Mutate global Chat String pre-existing records via HTTP PUT
 
 
 ## 💬 Prompt Examples

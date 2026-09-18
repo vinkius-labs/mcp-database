@@ -14,10 +14,10 @@ This MCP server provides specialized tools for strength athletes to manage train
 
 
 ## Available Tools (4)
-- **calculate_recovery_timeline**: calculate_recovery_timeline
 - **evaluate_fatigue_status**: evaluate_fatigue_status
 - **get_exercise_templates**: get_exercise_templates
 - **plan_deload**: 
+- **calculate_recovery_timeline**: calculate_recovery_timeline
 
 
 ## 💬 Prompt Examples

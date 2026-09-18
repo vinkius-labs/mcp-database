@@ -33,6 +33,9 @@ Connect your **Chargify (Maxio)** site to any AI agent and take absolute control
 
 
 ## Available Tools (10)
+- **get_customer_details**: json` checking exactly what references exist per SaaS consumer.
+
+Perform structural extraction of properties driving active Account logic
 - **get_subscription_details**: json` tracking exact billing cycle, MRR, and past-due flags.
 
 Inspect deep internal arrays mitigating specific Plan Math
@@ -40,9 +43,6 @@ Inspect deep internal arrays mitigating specific Plan Math
 
 Provision a highly-available JSON Payload generating hard Customer bindings
 - **cancel_subscription**: Irreversibly vaporize explicit validations extracting rich Churn flags
-- **get_customer_details**: json` checking exactly what references exist per SaaS consumer.
-
-Perform structural extraction of properties driving active Account logic
 - **hold_subscription**: json` clamping the subscription entirely forbidding next billing until cleared.
 
 Identify precise active arrays spanning native Pause tracking

@@ -7,16 +7,17 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Assess burnout risk for Singapore professionals using work, commute, sleep, and vacation data.
+Quantifies occupational burnout risk using Maslach Burnout Inventory principles.
 
 ## Description
-This MCP server provides deterministic tools to evaluate burnout risk for young professionals in Singapore. By analyzing work hours, commute times, sleep patterns, and vacation usage, it calculates a comprehensive burnout profile. Use `get_burnout_profile` for a full diagnostic report, `get_commitment_metrics` to isolate workload components, or `get_recovery_deficit` to identify physiological and statutory recovery gaps.
+This MCP server provides tools to assess burnout risk by mapping work environmental factors to psychological burnout domains. It uses the Maslach Burnout Inventory methodology to evaluate how workload, autonomy, recognition, and recovery time impact emotional exhaustion, depersonalization, and personal accomplishment. Use `calculate_burnout_risk` for a full assessment, `analyze_recovery_efficiency` to check rest adequacy, or `identify_mbi_domain_alignment` to map stressors to specific psychological domains.
 
 
-## Available Tools (3)
-- **get_burnout_profile**: Provides a full diagnostic profile of a professional's burnout risk based on their current work and lifestyle habits
-- **get_commitment_metrics**: Isolates the professional workload components to understand the pure time commitment without health recovery factors
-- **get_recovery_deficit**: Calculates the biological and statutory recovery gaps (sleep and vacation) to identify physiological strain
+## Available Tools (4)
+- **analyze_recovery_efficiency**: Evaluates if the amount of recovery time is sufficient given the workload and hours worked
+- **calculate_burnout_risk**: Provides a comprehensive assessment of an individual's burnout risk based on their current work environment
+- **get_risk_thresholds**: Informs the user of the specific score ranges used to categorize risk levels
+- **identify_mbi_domain_alignment**: Maps specific occupational stressors to the three Maslach Burnout Inventory domains
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ This MCP server provides deterministic tools to evaluate burnout risk for young 
 Here are some examples of how you can interact with the **Burnout Risk Assessment** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate my burnout risk. I work 9 hours a day, commute 45 minutes each way, work 5 hours of overtime per week, have taken 4 vacation days this year, and sleep 7 hours a night."
+> "Calculate my burnout risk. I work 50 hours a week, have an autonomy level of 3, recognition level of 4, workload intensity of 8, and 10 hours of recovery."
 
 **🤖 AI Agent:**
-> Your weekly work hours are 50, and your total commitment is 65 hours. Your burnout index is Critical, your vacation deficit is 10 days, and your recovery score is 48.
+> Your burnout risk score is 8.5, which is categorized as Critical. The primary risk factors are high workload and low autonomy.
 
 ---
 
 **👤 You:**
-> "What are my commitment metrics? I work 8 hours a day, commute 30 minutes each way, and do 2 hours of overtime weekly."
+> "Is my recovery time sufficient? I work 40 hours, have 15 hours of recovery, and a workload intensity of 5."
 
 **🤖 AI Agent:**
-> Your weekly work hours are 42, your weekly commute hours are 5, and your total commitment is 47 hours.
+> Your recovery status is Sufficient. Your recovery ratio is well-balanced for your current workload intensity.
 
 ---
 
 **👤 You:**
-> "Check my recovery deficit. I've taken 10 vacation days this year and sleep 7 hours per night."
+> "How do my stressors map to burnout domains? Autonomy is 2, recognition is 5, and workload is 9."
 
 **🤖 AI Agent:**
-> Your vacation deficit is 4 days and your weekly sleep debt is 7 hours.
+> Your profile shows high risk for Emotional Exhaustion due to low autonomy and high workload, and risk for Reduced Personal Accomplishment due to low recognition.
 
 
 ## ❓ FAQ
 
-**Q: What is included in the burnout profile?**
-The `get_burnout_profile` tool provides weekly work hours, total commitment hours, a qualitative burnout index (Low to Critical), vacation deficit, and a holistic recovery score.
+**Q: How is the burnout risk calculated?**
+The risk is determined by evaluating the imbalance between stressors like workload and low autonomy against protective factors like recovery time.
 
-**Q: How is the vacation deficit calculated?**
-It is calculated by subtracting the number of vacation days taken from the Singapore standard of 14 days.
+**Q: What are the Maslach Burnout Inventory domains?**
+The tool maps stressors to Emotional Exhaustion, Depersonalization, and Reduced Personal Accomplishment.
 
-**Q: Can I see just my workload without health factors?**
-Yes, you can use the `get_commitment_metrics` tool to isolate work and commute hours from recovery data.
+**Q: Can I check if my rest time is enough?**
+Yes, you can use `analyze_recovery_efficiency` to evaluate if your recovery hours are sufficient relative to your workload intensity.
 
 
 ## Installation & Usage

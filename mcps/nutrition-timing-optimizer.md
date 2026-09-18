@@ -14,10 +14,10 @@ This MCP server provides precise nutritional guidance to align your eating sched
 
 
 ## Available Tools (4)
-- **get_pre_workout_strategy**: Determines the ideal timing and macronutrient makeup of a meal to prepare for a workout
 - **get_daily_distribution_plan**: Provides a full-day nutritional structure integrating workout nutrition
 - **get_intra_workout_plan**: Recommends whether and what to consume during the workout
 - **get_post_workout_recovery**: Identifies the optimal window and nutrient profile for recovery
+- **get_pre_workout_strategy**: Determines the ideal timing and macronutrient makeup of a meal to prepare for a workout
 
 
 ## 💬 Prompt Examples

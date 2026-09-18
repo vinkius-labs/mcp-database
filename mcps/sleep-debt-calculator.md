@@ -7,17 +7,17 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Quantify accumulated sleep deficit, predict recovery timelines, and optimize nap schedules.
+Quantify cumulative sleep insufficiency and generate recovery strategies.
 
 ## Description
-The Sleep Debt Calculator is an analytical tool designed to help you understand the physiological impact of insufficient rest. By analyzing your age-based sleep requirements against your actual sleep logs from the past week, it calculates your total accumulated sleep debt in hours. Beyond just quantifying the deficit, the server provides a roadmap for recovery using `forecast_recovery_timeline` to predict how many nights of surplus sleep you need to reach milestones. It also assesses mental alertness via `evaluate_cognitive_impact`, estimating the percentage drop in cognitive performance due to your current debt levels. To assist in active recovery, `schedule_nap_remedy` suggests optimal nap windows by considering your last caffeine intake and its half-life, ensuring naps are restorative rather than disruptive. Finally, use `calculate_sleep_debt` to initiate the analysis with your recent sleep history.
+This MCP server provides a specialized engine to quantify cumulative sleep insufficiency. It allows AI agents to calculate total sleep debt using `calculate_current_debt`, design personalized recovery schedules with `estimate_recovery_plan`, assess cognitive and physical risks via `get_fatigue_impact`, and monitor safety limits with `verify_debt_thresholds`. It is designed to help users understand their sleep health and implement tactical adjustments to return to optimal rest levels.
 
 
 ## Available Tools (4)
-- **evaluate_cognitive_impact**: Estimate percentage reduction in cognitive performance
-- **forecast_recovery_timeline**: Predict nights required to reach debt reduction milestones
-- **schedule_nap_remedy**: Suggest optimal nap windows adjusted for caffeine interference
-- **calculate_sleep_debt**: Determine total sleep deficit accumulated over the past week
+- **verify_debt_thresholds**: Checks if the current sleep pattern is approaching or has exceeded the safety ceiling
+- **calculate_current_debt**: Calculates the total accumulated sleep debt for a specific period
+- **estimate_recovery_plan**: Determines how much extra sleep is needed to clear the debt
+- **get_fatigue_impact**: Translates debt levels into specific cognitive/physical risk profiles
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ The Sleep Debt Calculator is an analytical tool designed to help you understand 
 Here are some examples of how you can interact with the **Sleep Debt Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am 25 years old. Over the last week, I slept: Mon 6h (0.8), Tue 5h (0.7), Wed 7h (0.9), Thu 4h (0.5), Fri 6h (0.6), Sat 9h (0.9), Sun 8h (0.8). How much sleep debt do I have?"
+> "I sleep 8 hours ideally, but I only slept 6, 5, and 7 hours for the last three nights. What is my total sleep debt?"
 
 **🤖 AI Agent:**
-> Your total accumulated sleep debt is 7.4 hours. Your sleep consistency is rated as 'Erratic'.
+> Your total sleep debt is 4 hours.
 
 ---
 
 **👤 You:**
-> "I have 10 hours of sleep debt and I plan to sleep 2 extra hours every night. When will I be fully recovered?"
+> "I have a 6-hour sleep debt. How can I recover over the next 3 days?"
 
 **🤖 AI Agent:**
-> You will reach full recovery in 5 nights, and you can expect to reach the fifty percent reduction milestone in 2.5 nights.
+> To clear your 6-hour debt in 3 days, you should sleep an additional 2 hours each night. For example, if you usually sleep 8 hours, try to sleep 10 hours for the next 3 nights.
 
 ---
 
 **👤 You:**
-> "I just drank 200mg of caffeine at 2:00 PM. It is currently 4:00 PM. I have 5 hours of sleep debt. When should I nap?"
+> "What is the impact of having 10 hours of sleep debt?"
 
 **🤖 AI Agent:**
-> A recommended nap window is between 8:00 PM and 8:30 PM for a duration of 25 minutes. Note that caffeine levels are still high enough to potentially interfere with deep sleep.
+> A 10-hour sleep debt results in a High risk category, with significant cognitive impairment and moderate physical impairment.
 
 
 ## ❓ FAQ
 
-**Q: How is my sleep debt calculated?**
-The `calculate_sleep_debt` tool compares your actual hours slept over the last seven days against the biological requirement for your age. It also weights each night's sleep by a quality score to ensure only restorative sleep counts toward reducing debt.
+**Q: How do I calculate my total sleep debt?**
+You can use the `calculate_current_debt` tool by providing your ideal sleep hours and a list of your actual sleep hours for each night.
 
-**Q: Can the tool help me plan naps around caffeine?**
-Yes. The `schedule_nap_remedy` tool analyzes your last caffeine consumption and its milligram amount to suggest nap windows that avoid sleep inertia or disruption caused by stimulant half-life.
+**Q: Can this tool help me create a recovery plan?**
+Yes, the `estimate_recovery_plan` tool calculates how much extra sleep you need and provides a recommended schedule adjustment to clear your debt.
 
-**Q: How does sleep debt affect my performance?**
-Using `evaluate_cognitive_impact`, the tool estimates the percentage reduction in your mental alertness. As accumulated debt increases, you may experience higher severity levels ranging from 'Mild' to 'Severe' impairment.
+**Q: How does the tool assess fatigue risk?**
+The `get_fatigue_impact` tool translates your current debt into specific cognitive and physical impairment levels to help you understand your risk profile.
 
 
 ## Installation & Usage

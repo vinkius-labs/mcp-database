@@ -46,18 +46,21 @@ Remove an object from a bucket
 - **get_bucket_iam**: Provide the bucket name.
 
 Get IAM policy for a bucket
-- **get_bucket_metadata**: Provide the required bucket name.
-
-Get metadata for a specific bucket
 - **get_object_metadata**: Supply both the bucket and object names.
 
 Get metadata for a specific object (file)
-- **list_bucket_acl**: Provide the name of the bucket.
-
-Check bucket permissions
 - **list_buckets**: Do not specify any parameters.
 
 List all buckets in the project
+- **copy_object**: Specify all four required names: source bucket, source object, destination bucket, and destination object.
+
+Copy an object within or between buckets
+- **get_bucket_metadata**: Provide the required bucket name.
+
+Get metadata for a specific bucket
+- **list_bucket_acl**: Provide the name of the bucket.
+
+Check bucket permissions
 - **list_hmac_keys**: Pass the service account email address.
 
 List HMAC keys for a service account
@@ -70,9 +73,6 @@ List objects within a bucket
 - **upload_object**: Provide the bucket name, object name, and file content.
 
 Upload a new file to a bucket
-- **copy_object**: Specify all four required names: source bucket, source object, destination bucket, and destination object.
-
-Copy an object within or between buckets
 
 
 ## 💬 Prompt Examples

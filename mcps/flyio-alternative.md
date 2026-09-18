@@ -46,12 +46,12 @@ Delete a Fly.io machine permanently
 - **get_machine**: Provide both the app_name and machine_id.
 
 Get details for a specific Fly.io machine
-- **list_apps**: io account. Each app is a collection of machines (VMs) running your code across Fly.io's global edge network. Returns app name, status, region and creation date. Use the app name for all subsequent machine, volume and certificate operations.
-
-List all Fly.io apps
 - **list_certificates**: io app. Each certificate has a hostname, status (issued, pending, failed) and source (lets_encrypt, self_signed, acme). Use this to audit HTTPS certificate status for your app's domains.
 
 List TLS/SSL certificates for a Fly.io app
+- **list_apps**: io account. Each app is a collection of machines (VMs) running your code across Fly.io's global edge network. Returns app name, status, region and creation date. Use the app name for all subsequent machine, volume and certificate operations.
+
+List all Fly.io apps
 - **list_machines**: io app. Each machine has an ID, name, state (started, stopped, created, destroyed), region, image reference, CPU/memory config and IP addresses. Machines are the fundamental compute units on Fly.io.
 
 List machines (VMs) for a Fly.io app

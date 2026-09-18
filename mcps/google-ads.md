@@ -47,6 +47,7 @@ Get detailed settings for a campaign
 - **get_campaign_report**: Specify a dateRange (e.g., LAST_7_DAYS).
 
 Fetch performance metrics for campaigns
+- **get_change_status**: Check recent changes in the account
 - **list_accessible_customers**: List accessible Google Ads customer accounts
 - **list_ad_groups**: Must provide a campaignId.
 
@@ -61,7 +62,6 @@ List all Google Ads campaigns
 - **search_keywords**: Provide the keyword text to search for.
 
 Search for keywords and their performance
-- **get_change_status**: Check recent changes in the account
 - **get_keyword_performance**: Must provide an adGroupId.
 
 Get performance metrics for keywords in an ad group

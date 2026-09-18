@@ -14,10 +14,10 @@ This MCP server provides precise circadian and behavioral recommendations for at
 
 
 ## Available Tools (4)
-- **get_travel_adjustment_plan**: Analyzes the impact of travel on the circadian rhythm and provides a phase-shifting plan
 - **get_environment_optimization**: Provides actionable environmental adjustments to support sleep quality
 - **get_nap_strategy**: Determines the optimal timing and duration for naps to manage sleep pressure
 - **get_sleep_schedule**: Provides the core timing recommendations for the athlete's sleep-wake cycle
+- **get_travel_adjustment_plan**: Analyzes the impact of travel on the circadian rhythm and provides a phase-shifting plan
 
 
 ## 💬 Prompt Examples

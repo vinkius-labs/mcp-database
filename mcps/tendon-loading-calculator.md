@@ -14,9 +14,9 @@ This MCP server provides clinicians and athletes with precise mechanical loading
 
 
 ## Available Tools (4)
+- **generate_isometric_parameters**: Provides specific parameters for isometric hold exercises
 - **calculate_progression_plan**: Defines how to incrementally increase load over time
 - **estimate_return_timeline**: Predicts the approximate timeframe for returning to a specific baseline activity
-- **generate_isometric_parameters**: Provides specific parameters for isometric hold exercises
 - **get_current_load_capacity**: Determines the maximum safe mechanical load for the tendon based on current physiological status
 
 

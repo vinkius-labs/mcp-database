@@ -41,9 +41,6 @@ Post to WhatsApp Channels from any AI agent through **WAHA**, a free open-source
 
 
 ## Available Tools (8)
-- **create_channel**: The WAHA session must use the NOWEB, WPP or GOWS engine — the default WEBJS engine cannot create channels (posting to an existing channel still works on WEBJS). Keep the name short and unique. Optionally attach a profile picture from any public image URL.
-
-Create a new WhatsApp Channel owned by the logged-in number
 - **get_channel_preview**: Pass the invite code from a whatsapp.com/channel/<CODE> link or the @newsletter id. Only the preview window is visible; use get_channel_messages for full history of channels you follow.
 
 Preview the latest posts of any public channel without subscribing to it
@@ -65,6 +62,9 @@ Publish a text post to a WhatsApp Channel you own or administer
 - **search_channels**: Paginate with start_cursor using the endCursor from the previous response (recommended limit 50). Useful to monitor competitors or find a channel before subscribing.
 
 Discover public WhatsApp Channels by keyword (like the in-app explore search)
+- **create_channel**: The WAHA session must use the NOWEB, WPP or GOWS engine — the default WEBJS engine cannot create channels (posting to an existing channel still works on WEBJS). Keep the name short and unique. Optionally attach a profile picture from any public image URL.
+
+Create a new WhatsApp Channel owned by the logged-in number
 
 
 

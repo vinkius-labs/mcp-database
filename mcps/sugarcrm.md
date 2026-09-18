@@ -20,24 +20,24 @@ Create a new account
 - **get_account**: Provide the account ID.
 
 Retrieve details for a specific account
-- **get_contact**: Provide the contact ID.
-
-Retrieve details for a specific contact
 - **get_lead**: Provide the lead ID.
 
 Retrieve details for a specific lead
-- **list_accounts**: List all accounts (companies)
-- **list_contacts**: List all contacts
-- **list_tasks**: List all tasks
-- **get_me**: Check API connectivity and get current user info
 - **get_opportunity**: Provide the opportunity ID.
 
 Retrieve details for a specific opportunity
-- **list_leads**: List all leads
 - **list_opportunities**: List all sales opportunities
 - **search_global**: Use a specific search term.
 
 Perform a global search across all modules
+- **get_contact**: Provide the contact ID.
+
+Retrieve details for a specific contact
+- **list_accounts**: List all accounts (companies)
+- **list_contacts**: List all contacts
+- **list_tasks**: List all tasks
+- **get_me**: Check API connectivity and get current user info
+- **list_leads**: List all leads
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server connects AI agents to the Banister Fitness-Fatigue model, allowi
 
 
 ## Available Tools (5)
-- **assess_readiness**: Provides a qualitative status of the athlete's readiness for competition
-- **calculate_peaking_index**: Calculates the net readiness value for a specific competition date
 - **get_fatigue_level**: Quantifies the immediate physiological strain accumulated from recent training
 - **get_fitness_level**: Determines the current physiological capacity of the athlete based on historical training
+- **assess_readiness**: Provides a qualitative status of the athlete's readiness for competition
+- **calculate_peaking_index**: Calculates the net readiness value for a specific competition date
 - **predict_peak_day**: Identifies the optimal date for competition to maximize the peaking index
 
 

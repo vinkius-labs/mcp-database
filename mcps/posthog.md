@@ -35,23 +35,23 @@ Connect your **PostHog** project to any AI agent and take full control of your p
 
 
 ## Available Tools (10)
-- **get_insight**: Provide the insight ID as the primary identifier.
-
-Get details for a specific insight
 - **get_person**: Provide the person ID as the primary identifier.
 
 Get details for a specific person
-- **list_dashboards**: List project dashboards
 - **list_events**: List recent project events
-- **list_feature_flags**: List all feature flags
-- **list_actions**: Use this tool to retrieve available actions.
-
-List defined user actions
-- **list_experiments**: List all active and past experiments
+- **list_dashboards**: List project dashboards
 - **list_persons**: List identified persons/users
 - **get_event**: Provide the event ID as the primary identifier.
 
 Get details for a specific event
+- **get_insight**: Provide the insight ID as the primary identifier.
+
+Get details for a specific insight
+- **list_actions**: Use this tool to retrieve available actions.
+
+List defined user actions
+- **list_experiments**: List all active and past experiments
+- **list_feature_flags**: List all feature flags
 - **list_insights**: ) for the project.
 
 List PostHog insights

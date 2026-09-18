@@ -14,11 +14,11 @@ This MCP server provides a comprehensive suite of tools to evaluate physical mob
 
 
 ## Available Tools (5)
+- **assess_mobility_deficits**: Compares measured ROM against normative data to identify specific deficits
 - **detect_asymmetry**: Identifies significant imbalances between left and right side measurements
 - **evaluate_functional_impact**: Determines how mobility issues affect the user's specific lifestyle or sport
 - **get_joint_norms**: Retrieves the expected normative range of motion for a specific joint and age group
 - **recommend_mobility_drills**: Suggests specific movements to address identified restrictions
-- **assess_mobility_deficits**: Compares measured ROM against normative data to identify specific deficits
 
 
 ## 💬 Prompt Examples
