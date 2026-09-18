@@ -6,6 +6,8 @@ Explore the open database of **lead-generation** Model Context Protocol (MCP) se
 |-----------|-------------|
 | [Mailshake](../mcps/mailshake.md) | Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API. |
 | [Pipedrive Leads](../mcps/pipedrive-leads.md) | Manage your Pipedrive lead inbox — create, update, and organize leads with labels and sources before they become deals. |
+| [StartupHub Discovery](../mcps/startuphub-discovery.md) | Find startups before the press does — search 65M+ companies discovered from new domains, registries and GitHub orgs. |
+| [StartupHub People & Intel](../mcps/startuphub-people-intel.md) | Find founders and investors, discover verified professional emails, and unlock deep-intelligence dossiers. |
 
 
 ---

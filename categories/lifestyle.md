@@ -10,13 +10,16 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Carbon Footprint Personal Calculator](../mcps/carbon-footprint-personal-calculator.md) | Estimate your annual CO2e emissions from housing, transport, and lifestyle. |
 | [Cat Facts](../mcps/cat-facts.md) | Universal cat intelligence engine — get random cat facts and breed info via AI. |
 | [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
+| [CBD Dosage Calculator](../mcps/cbd-dosage-calculator.md) | Personalized CBD dosage plans and titration schedules based on wellness goals. |
 | [Chope Tissue Optimization](../mcps/chope-tissue-optimization.md) | Deterministic strategy calculator for optimizing table reservations in food courts. |
+| [Daily Water Intake Calculator](../mcps/daily-water-intake-calculator.md) | Personalized daily hydration recommendations based on weight, activity, and climate. |
 | [Dating App Success Predictor](../mcps/dating-app-success-predictor.md) | Predict dating app engagement and match timelines in Singapore. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
 | [Drop Angle Calculator](../mcps/drop-angle-calculator.md) | Calculate optimal takeoff angles, speeds, and positioning for surfing based on wave physics. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
+| [Grounding & Earthing Duration Guide](../mcps/grounding-earthing-duration-guide.md) | Personalized grounding practice schedules based on health goals and contact methods. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |

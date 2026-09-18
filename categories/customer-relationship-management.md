@@ -32,6 +32,7 @@ Explore the open database of **customer-relationship-management** Model Context 
 | [Pipedrive Contacts](../mcps/pipedrive-contacts.md) | Search, create, and manage Pipedrive persons and organizations — full contact lifecycle management through natural conversation. |
 | [Scoro](../mcps/scoro.md) | Bring your Scoro end-to-end work management platform into your AI workflows — query projects, invoices, and time logs seamlessly. |
 | [sevDesk](../mcps/sevdesk.md) | Empower your AI with direct read and write access to sevDesk to autonomously manage invoices, CRM contacts, sales orders, vouchers, and accounting records. |
+| [StartupHub Enrich](../mcps/startuphub-enrich.md) | Turn any domain into a full company dossier: funding, revenue, tech stack, hiring, news mentions and Reddit sentiment. |
 | [vCita](../mcps/vcita.md) | Run your small business with online scheduling, payment collection, and client management that keeps everything in one place. |
 | [Virtuagym](../mcps/virtuagym.md) | Manage members, events, trainers, memberships, nutrition plans, and workout programs for your Virtuagym club through natural conversation. |
 | [Wayfront](../mcps/wayfront.md) | Manage your parking operations with digital permits, enforcement tracking, and revenue analytics for parking facility operators. |

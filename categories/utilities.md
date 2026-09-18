@@ -18,6 +18,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Beer ABV Calculator](../mcps/beer-abv-calculator.md) | Calculate ABV, attenuation, calories, and beer style from gravity readings. |
 | [Bingo Card Generator](../mcps/bingo-card-generator.md) | Generate reproducible 5x5 Bingo cards and validate game states. |
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
+| [BMI Calculator](../mcps/bmi-calculator.md) | Calculate Body Mass Index and weight health metrics. |
 | [Board Game Initiative Resolver](../mcps/board-game-initiative-resolver.md) | Deterministic turn order generator for board games. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
@@ -39,6 +40,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Culinary Unit Converter](../mcps/culinary-unit-converter.md) | Convert culinary measurements between units like cups, spoons, and ml, or estimate ingredient mass. |
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
+| [Detox Bath Calculator](../mcps/detox-bath-calculator.md) | Calculate optimal Epsom salt concentrations and bath recipes tailored to your physical profile. |
 | [Dew Point Calculator](../mcps/dew-point-calculator.md) | Calculate dew point, wet-bulb temperature, and humidity metrics. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
 | [Domino Game Validator](../mcps/domino-game-validator.md) | A deterministic validator for standard double-six domino games. |
@@ -47,6 +49,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Electrical Circuit Calculator](../mcps/electrical-circuit-calculator.md) | Verify residential electrical compliance, voltage drop, and breaker adequacy using NEC standards. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
+| [Floors Climbed Calculator](../mcps/floors-climbed-calculator.md) | Quantify the metabolic, distance, and cardiovascular impact of stair climbing. |
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Fractions Arithmetic and Simplifier](../mcps/fractions-arithmetic-and-simplifier.md) | Perform exact mathematical operations on fractions with automatic simplification. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
@@ -59,6 +62,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [HbA1c to Average Glucose Converter](../mcps/hba1c-to-average-glucose-converter.md) | Estimate average glucose, time in range, and glucose variability from HbA1c. |
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
+| [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
 | [Insulin Dose Calculator](../mcps/insulin-dose-calculator.md) | A deterministic tool for calculating mealtime insulin doses and estimating insulin on board. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
@@ -113,6 +117,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
 | [Sudoku Grid Validator](../mcps/sudoku-grid-validator.md) | A deterministic engine for validating 9x9 Sudoku grid states and identifying rule violations. |
 | [Sugar Cooking Stages Calculator](../mcps/sugar-cooking-stages-calculator.md) | Identify precise candy-making stages, temperature ranges, and altitude adjustments. |
+| [Sunlight Vitamin D Synthesizer](../mcps/sunlight-vitamin-d-synthesizer.md) | Calculates vitamin D synthesis time and safe sun exposure limits. |
 | [Swimming Pace & CSS Calculator](../mcps/swimming-pace-css-calculator.md) | Calculate precise swimming splits, pacing, and Critical Swim Speed (CSS). |
 | [TCG Mana Curve Analyzer](../mcps/tcg-mana-curve-analyzer.md) | A deterministic probability engine for TCG deckbuilding and mana consistency. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |

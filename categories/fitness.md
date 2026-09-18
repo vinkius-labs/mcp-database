@@ -17,6 +17,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 | [Paddle Speed Calculator](../mcps/paddle-speed-calculator.md) | Predict paddling speed, catch rates, and wave count potential for surfboards. |
 | [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Generates structured strength and hypertrophy training progressions using periodization principles. |
 | [Pyramid Scheme Builder](../mcps/pyramid-scheme-builder.md) | Generate and compare training repetition sequences using pyramidal progression. |
+| [Return-to-Sport Progression](../mcps/return-to-sport-progression.md) | Calculates personalized athletic recovery timelines and phase advancement criteria. |
 | [RPE to Weight Converter](../mcps/rpe-to-weight-converter.md) | Convert RPE to training weight and vice versa using standardized intensity tables. |
 | [Splitboard Touring Efficiency](../mcps/splitboard-touring-efficiency.md) | Calculate touring time, calories burned, and optimal pacing for splitboard backcountry trips. |
 | [Sport-Specific Fitness Testing](../mcps/sport-specific-fitness-testing.md) | Generate standardized physical testing protocols, athletic benchmarks, and composite fitness scores for various sports. |

@@ -201,6 +201,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Chaikin Money Flow Calculator](../mcps/chaikin-money-flow-calculator.md) | Deterministic technical analysis engine for CMF, A/D Line, and momentum signals. |
 | [Chaikin Oscillator Calculator](../mcps/chaikin-oscillator-calculator.md) | Analyze momentum shifts and trend strength using the Chaikin Oscillator. |
 | [Change Order Impact Calculator](../mcps/change-order-impact-calculator.md) | Quantify the financial and schedule consequences of scope changes in construction projects. |
+| [China Financial Markets](../mcps/china-financial-markets.md) | Keyless live data for China's A-share, HK and CNY markets — quotes, candle history, index breadth and FX, no API key. |
 | [Choppiness Index Calculator](../mcps/choppiness-index-calculator.md) | Measure market volatility and identify regime shifts using the Choppiness Index. |
 | [Choppiness Index Strategy](../mcps/choppiness-index-strategy.md) | Detect market regimes and generate deterministic trading signals using the Choppiness Index. |
 | [Churn Rate Analysis](../mcps/churn-rate-analysis.md) | Calculate customer churn, net growth, revenue impact, and churn composition. |

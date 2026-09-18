@@ -116,6 +116,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Reaction Mechanism Simulator](../mcps/reaction-mechanism-simulator.md) | Predict organic reaction pathways, mechanisms, and energetic profiles. |
 | [Reaction Rate Calculator](../mcps/reaction-rate-calculator.md) | Calculate reaction orders, rate constants, half-lives, and concentration profiles. |
 | [Reagent Selection Guide](../mcps/reagent-selection-guide.md) | Identify optimal reagents, reaction conditions, and selectivity for chemical transformations. |
+| [Red Light Therapy Dosage Calculator](../mcps/red-light-therapy-dosage-calculator.md) | Calculate precise photobiomodulation parameters including exposure time, frequency, and energy delivery. |
 | [Relative Permeability Engine](../mcps/relative-permeability-engine.md) | Generates multi-phase relative permeability curves using Corey and empirical models. |
 | [Restriction Enzyme Analysis](../mcps/restriction-enzyme-analysis.md) | Analyze DNA digestion patterns, fragment sizes, and enzyme characteristics. |
 | [Retrosynthetic Analysis Engine](../mcps/retrosynthetic-analysis-engine.md) | Deconstruct complex molecules into simpler precursors using strategic disconnection analysis. |
@@ -134,6 +135,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Spectroscopy Wavelength Calculator](../mcps/spectroscopy-wavelength-calculator.md) | Converts between energy, frequency, wavelength, and wavenumber for spectroscopic transitions. |
 | [Statistical Mechanics Partition Function Calculator](../mcps/statistical-mechanics-partition-function-calculator.md) | Calculates molecular partition functions for translational, rotational, vibrational, and electronic modes. |
 | [Stereochemistry Analysis](../mcps/stereochemistry-analysis.md) | Determine R/S configurations, E/Z geometry, and stereoisomer relationships. |
+| [Sun Exposure & Vitamin D Optimizer](../mcps/sun-exposure-vitamin-d-optimizer.md) | Calculate safe UV exposure limits for optimal vitamin D production and burn prevention. |
 | [Surface Area Measurement](../mcps/surface-area-measurement.md) | Calculate specific surface area and monolayer capacity using BET isotherm analysis. |
 | [Surface Binding Energy Engine](../mcps/surface-binding-energy-engine.md) | Calculate surface binding energy, adsorption enthalpy, and site heterogeneity from isotherm data. |
 | [Surface Tension Calculator](../mcps/surface-tension-calculator.md) | Calculates surface tension, capillary rise, and work of cohesion. |

@@ -4,6 +4,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Anxiety Screening Scorer](../mcps/anxiety-screening-scorer.md) | Scores anxiety screening questionnaires like GAD-7 to provide severity assessments and clinical recommendations. |
 | [Apgar Score Calculator](../mcps/apgar-score-calculator.md) | Calculate and compare newborn Apgar scores to assess vitality at 1 and 5 minutes. |
 | [Blood Pressure Category Assessment](../mcps/blood-pressure-category-assessment.md) | Categorizes blood pressure readings and assesses cardiovascular risk using international guidelines. |
 | [Blood Type Compatibility & Demographics](../mcps/blood-type-compatibility-demographics.md) | Check blood and plasma transfusion compatibility, pregnancy risks, and regional blood type distributions. |
@@ -12,6 +13,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Cholesterol Risk Calculator](../mcps/cholesterol-risk-calculator.md) | Estimates 10-year cardiovascular risk and provides LDL targets. |
 | [Creatinine Clearance Calculator](../mcps/creatinine-clearance-calculator.md) | Calculate creatinine clearance using the Cockcroft-Gault equation and identify drug dose adjustments. |
 | [CURB-65 Calculator](../mcps/curb-65-calculator.md) | Calculate the CURB-65 score to assess pneumonia severity and treatment needs. |
+| [Depression Screening Scorer](../mcps/depression-screening-scorer.md) | Clinical tool for scoring PHQ-9 depression assessments and analyzing symptom clusters. |
 | [Dose Escalation Scheduler](../mcps/dose-escalation-scheduler.md) | Generate precise medication titration timelines and dose escalation schedules. |
 | [Drug Half-Life Tracker](../mcps/drug-half-life-tracker.md) | Predict medication steady-state concentrations and the impact of missed doses using pharmacokinetic modeling. |
 | [Drug Renal Dose Adjuster](../mcps/drug-renal-dose-adjuster.md) | Calculate medication dose modifications and interval extensions based on renal function levels (CrCl or eGFR) and identify contraindications. |

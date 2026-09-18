@@ -130,6 +130,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Bizzabo](../mcps/bizzabo.md) | Orchestrate your event experience via Bizzabo — manage events, registrations, and attendees directly from any AI agent. |
 | [BL.INK](../mcps/blink.md) | Manage enterprise links via BL.INK — shorten URLs, track analytics, and manage branded domains directly from any AI agent. |
 | [BlaBlaCar](../mcps/blablacar.md) | AI carpool search: find rides, compare prices, and book shared journeys via agents. |
+| [Blue Light Mitigation Planner](../mcps/blue-light-mitigation-planner.md) | Creates personalized schedules to reduce blue light exposure and optimize sleep hygiene. |
 | [BoardEffect](../mcps/boardeffect.md) | Manage board activities via BoardEffect — list meetings, members, and documents directly from any AI agent. |
 | [BoardMix](../mcps/boardmix.md) | Collaborative whiteboard and visual production platform — manage whiteboards, design nodes, and teams via AI. |
 | [Bodybuilding Split Generator](../mcps/bodybuilding-split-generator.md) | Generates personalized bodybuilding split routines based on training frequency and muscle priorities. |
@@ -152,6 +153,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Break-even Price Calculator](../mcps/break-even-price-calculator.md) | Calculate commodity break-even prices, margin targets, and productivity requirements. |
 | [Breakeven Yield Calculator](../mcps/breakeven-yield-calculator.md) | Calculate critical break-even yield and price thresholds for crop production. |
 | [Breakthrough Ideation Prover](../mcps/breakthrough-ideation-prover.md) | AI agents default to safe, obvious ideas or hallucinate impossible ones. This tool forces breakthrough ideation: challenge convention with facts, integrate real constraints, map a concrete roadmap, and prove feasibility for every blocker. Radical AND realizable. |
+| [Breathing Exercise Timer](../mcps/breathing-exercise-timer.md) | Generate structured breathing patterns and physiological insights. |
+| [Breathwork Session Designer](../mcps/breathwork-session-designer.md) | Generates structured breathwork protocols tailored to specific techniques and experience levels. |
 | [Breezy HR](../mcps/breezy-hr.md) | Manage your recruitment process via Breezy HR — track candidates, positions, and stages directly from any AI agent. |
 | [Breezy HR](../mcps/breezy-hr-alternative.md) | Manage recruitment workflows via Breezy HR — list companies, track job positions, and manage candidates directly from any AI agent. |
 | [BrightHR](../mcps/brighthr.md) | Simplify people management with holiday tracking, shift scheduling, and absence management built for UK and ANZ businesses. |
@@ -171,11 +174,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Builder Toolstack Optimization](../mcps/builder-toolstack-optimization.md) | Evaluate toolstack efficiency and cost-benefit ratios. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
 | [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
-| [Burnout Risk Assessment](../mcps/burnout-risk-assessment.md) | Assess burnout risk for Singapore professionals using work, commute, sleep, and vacation data. |
+| [Burnout Risk Assessment](../mcps/burnout-risk-assessment.md) | Quantifies occupational burnout risk using Maslach Burnout Inventory principles. |
 | [Business Day Calculator](../mcps/business-day-calculator.md) | Calculate workdays, holidays, and business day ranges across 50+ countries. |
 | [Business Timezone & Holiday Scheduler](../mcps/business-timezone-holiday-scheduler.md) | Eradicate LLM scheduling errors. Calculate exact business days skipping global public holidays and convert precise timezones flawlessly. |
 | [Buttondown](../mcps/buttondown-alternative.md) | Automate your newsletter and subscriber management via Buttondown — manage lists, draft emails, and track tags directly from any AI agent. |
 | [Caffeine Countdown Clock](../mcps/caffeine-countdown-clock.md) | Calculate the latest safe time to consume caffeine to avoid sleep disruption. |
+| [Caffeine Metabolism Tracker](../mcps/caffeine-metabolism-tracker.md) | Track caffeine clearance and sleep disruption risk based on your metabolism. |
 | [Caiyun AI Translate / 彩云小译](../mcps/caiyun-ai-translate.md) | Popular high-precision machine translation — translate text lists and detect languages via AI. |
 | [Cal.com](../mcps/calcom-alternative-1.md) | Automate scheduling via Cal.com — manage bookings, event types, and availability directly from any AI agent. |
 | [Calendarific](../mcps/calendarific.md) | Access global holiday data via Calendarific — track public, religious, and local holidays across 230+ countries directly from any AI agent. |
@@ -202,8 +206,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Chuangkit / 创客贴](../mcps/chuangkit.md) | Leading graphic design platform in China — manage templates, materials, and designs via AI. |
 | [Chuck Norris](../mcps/chuck-norris.md) | Access the legendary power of Chuck Norris facts — get random jokes, browse categories, and search the entire database directly from your AI agent. |
 | [ChurchStamp](../mcps/churchstamp.md) | Manage church operations with member directories, event planning, volunteer coordination, and donation tracking for ministries. |
+| [Circadian Light Exposure Planner](../mcps/circadian-light-exposure-planner.md) | Optimize your circadian rhythm by planning strategic light exposure and restriction. |
 | [Circadian REM Sleep Cycle Optimizer](../mcps/circadian-rem-sleep-cycle-optimizer.md) | Harmonize your workflow with biological data. Calculate optimal wake-up times and bedtimes respecting 90-minute REM sleep phases for peak chronotype management. |
 | [Circadian Rhythm Aligner](../mcps/circadian-rhythm-aligner.md) | Gradually shift your feeding window to match new sleep patterns without metabolic shock. |
+| [Circadian Rhythm Optimizer](../mcps/circadian-rhythm-optimizer.md) | Synchronize your daily schedule with your biological clock for peak performance. |
 | [Circle.so](../mcps/circleso.md) | Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent. |
 | [Circuit Workout Timer](../mcps/circuit-workout-timer.md) | Design and analyze circuit training workouts with precise timing and muscle distribution metrics. |
 | [Claude Context Window Budget Tracker](../mcps/claude-context-window-budget-tracker.md) | Monitors and enforces token consumption budgets to prevent context window saturation. |
@@ -329,6 +335,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Diagonal Cut Pythagorean Calculator](../mcps/diagonal-cut-pythagorean-calculator.md) | Calculate exact diagonal spans, mitered edge lengths, and miter offsets for precise angled cuts. |
 | [Digital Transformation ROI Calculator](../mcps/digital-transformation-roi-calculator.md) | Quantify the financial impact, payback period, and risk-adjusted value of digital transformation initiatives. |
 | [Digital Wellness Boundary Setter](../mcps/digital-wellness-boundary-setter.md) | Establish healthy digital habits with personalized notification schedules, social media limits, and a digital sunset time. |
+| [Digital Wellness Score](../mcps/digital-wellness-score.md) | Analyze screen time data to assess digital health and addiction risk. |
 | [Divided Dose Scheduler](../mcps/divided-dose-scheduler.md) | Precisely split a total daily medication volume into equal time intervals. |
 | [Docamatic](../mcps/docamatic.md) | Generate professional PDFs from templates with dynamic data injection for invoices, reports, and custom documents at scale. |
 | [Docdown](../mcps/docdown.md) | Equip your AI agent to generate documents, manage templates, and track output files via the Docdown API. |
@@ -344,6 +351,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Docupilot](../mcps/docupilot.md) | Equip your AI agent to automate document creation, manage templates, and track merges via the Docupilot API. |
 | [DocuSeal](../mcps/docuseal.md) | Automate document signing workflows via DocuSeal — manage templates, send signature requests, and track signers directly from any AI agent. |
 | [Doodle](../mcps/doodle.md) | Manage group scheduling via Doodle — create meeting polls, track participant votes, handle comments, and close polls directly from any AI agent. |
+| [Dopamine Detox Planner](../mcps/dopamine-detox-planner.md) | Design personalized neurochemical reset protocols to improve focus and mental clarity. |
 | [Dose Tapering Scheduler](../mcps/dose-tapering-scheduler.md) | Generate precise, week-by-week medication reduction timelines based on custom dosage decrements and intervals. |
 | [DottedSign](../mcps/dottedsign-alternative.md) | Automate e-signature workflows via DottedSign — create signing tasks, manage templates, and track document status directly from any AI agent. |
 | [DottedSign](../mcps/dottedsign.md) | E-signature and document management with DottedSign. |
@@ -422,6 +430,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Exercise Max Tracker](../mcps/exercise-max-tracker.md) | Track lifting progress, estimated 1RM, and strength trends. |
 | [Exercise Order Optimizer](../mcps/exercise-order-optimizer.md) | Optimizes workout sequencing based on physiological energy systems and training goals. |
 | [Expensya](../mcps/expensya.md) | Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows. |
+| [Eye Strain Index](../mcps/eye-strain-index.md) | Assess ocular health and screen-related fatigue risk. |
 | [Factorial](../mcps/factorial.md) | Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using. |
 | [Fair Chore Rotation Algorithm](../mcps/fair-chore-rotation-algorithm.md) | A deterministic scheduling system to rotate tasks among participants without consecutive repeats. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
@@ -499,6 +508,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GoTo Connect](../mcps/goto-connect.md) | Manage your cloud phone system — view call records, send SMS, and manage voicemails via AI. |
 | [GoTo Meeting](../mcps/goto-meeting.md) | Host reliable video conferences with screen sharing, recording, and transcription for productive remote team meetings. |
 | [Granola](../mcps/granola.md) | Manage AI meeting notes via Granola — list and search meeting documents, retrieve transcripts and summaries, and track action items directly from any AI agent. |
+| [Gratitude Journal Analytics](../mcps/gratitude-journal-analytics.md) | Analyze gratitude patterns, consistency, and wellbeing correlations. |
 | [Gravity Forms](../mcps/gravity-forms.md) | Manage your WordPress Gravity Forms — list forms, retrieve entries, and handle submissions directly via AI. |
 | [GRE Score Calculator](../mcps/gre-score-calculator.md) | Convert raw GRE answers into scaled scores, percentiles, and check graduate program eligibility. |
 | [Greenhouse](../mcps/greenhouse-alternative.md) | Hire the right people with structured interviewing, customizable pipelines, and data-driven recruiting that scales with your team. |
@@ -514,6 +524,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Gym Buddy Matching Score](../mcps/gym-buddy-matching-score.md) | Calculate gym partner compatibility and find optimal training windows. |
 | [Gym Equipment ROI Calculator](../mcps/gym-equipment-roi-calculator.md) | Calculate the financial return and break-even point for home gym equipment purchases. |
 | [Gym Membership Value Calculator](../mcps/gym-membership-value-calculator.md) | Calculate the true economic value of your gym membership. |
+| [Habit Streak Projection](../mcps/habit-streak-projection.md) | Predict habit achievement, streak longevity, and recovery strategies. |
 | [Habitify](../mcps/habitify.md) | Automate habit tracking via Habitify — manage habits, logs, and personal growth directly from any AI agent. |
 | [Hacker News](../mcps/hacker-news.md) | Explore current Hacker News top stories, newest stories, individual items, and date-filtered story search through the public Algolia index. |
 | [Hallucination Detector Prover](../mcps/hallucination-detector-prover.md) | LLMs present fabricated information as fact. This tool forces epistemic rigor: cite verifiable sources for every claim, quantify confidence per assertion, separate facts from opinions, declare knowledge boundaries, and cross-reference for internal contradictions. |
@@ -565,6 +576,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Insightful](../mcps/insightful.md) | Manage employee productivity, time tracking, and activity via Insightful API. |
 | [Intelligent Loan Comparator](../mcps/intelligent-loan-comparator.md) | Empower your AI Agent with deterministic financial modeling. Instantly compare loan options and calculate exact amortization schedules offline, guaranteeing precision and privacy. |
 | [intelliHR](../mcps/intellihr.md) | Manage employee directory, jobs, and organization data via intelliHR API. |
+| [Intermittent Fasting Scheduler](../mcps/intermittent-fasting-scheduler.md) | Generates personalized fasting schedules, meal timings, and adaptation forecasts. |
+| [Interoception Training Protocol](../mcps/interoception-training-protocol.md) | Personalized training plans to improve body awareness and physiological regulation. |
 | [Interview Scheduling Optimizer](../mcps/interview-scheduling-optimizer.md) | Optimize interview scheduling by maximizing coverage and minimizing conflicts across timezones. |
 | [Invoice Ninja](../mcps/invoice-ninja.md) | Manage clients, invoices, and products directly through AI. |
 | [Invoice Ninja (Invoicing & Billing)](../mcps/invoice-ninja-invoicing-billing.md) | Manage invoicing via Invoice Ninja — create clients, track payments, and manage invoices and balances. |
@@ -676,6 +689,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Merriam-Webster](../mcps/merriam-webster.md) | Official Merriam-Webster dictionary and thesaurus — access definitions and synonyms via AI. |
 | [MetCon Duration Estimator](../mcps/metcon-duration-estimator.md) | Predict workout duration, time caps, and scaling options for metabolic conditioning. |
 | [Mighty Networks](../mcps/mighty-networks.md) | Build thriving online communities with courses, events, and member networking features all under your own brand. |
+| [Mindfulness Minute Counter](../mcps/mindfulness-minute-counter.md) | Track and project your mindfulness practice progress and habit growth. |
 | [Mingdao Cloud](../mcps/mingdao-cloud.md) | Enterprise zero-code application and workflow platform — manage worksheets, records, and automations via AI. |
 | [Miniflux (RSS Reader)](../mcps/miniflux-rss-reader.md) | Manage your RSS feeds and read articles via Miniflux — discover feeds, list entries, and organize categories directly from your AI agent. |
 | [Minimum Grade Calculator](../mcps/minimum-grade-calculator.md) | Calculate the exact minimum grade needed on your final exam to pass. |
@@ -705,10 +719,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Nap Optimizer](../mcps/nap-optimizer.md) | Optimize your rest with science-based nap recommendations. |
 | [Nap Strategy Calculator](../mcps/nap-strategy-calculator.md) | Optimize your rest with intelligent nap scheduling based on sleep patterns and goals. |
 | [NeonCRM](../mcps/neoncrm.md) | Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent. |
+| [Nervous System Regulation Planner](../mcps/nervous-system-regulation-planner.md) | Personalized regulation strategies based on Polyvagal Theory. |
 | [Neuroplasticity Activity Planner](../mcps/neuroplasticity-activity-planner.md) | Generates optimized cognitive activity schedules to stimulate brain plasticity. |
 | [Nextcloud](../mcps/nextcloud.md) | Manage your Nextcloud instance — handle files, shares, user statuses, and server capabilities directly from your AI agent. |
 | [NFe.io](../mcps/nfeio.md) | Orchestrate NFe.io services — manage service invoices (NFS-e), validate city codes, and monitor company data directly from any AI agent. |
 | [Nifty (All-in-One Project Management)](../mcps/nifty-all-in-one-project-management.md) | Manage projects via Nifty — create tasks, track sprint milestones, and audit project portfolios. |
+| [Nootropic Stack Designer](../mcps/nootropic-stack-designer.md) | Engineers optimized nootropic combinations based on cognitive goals, budget, and safety. |
 | [Nozbe](../mcps/nozbe.md) | Task management and team productivity. |
 | [ntfy (Push Notifications)](../mcps/ntfy-push-notifications.md) | Send and receive push notifications via ntfy topics directly from your AI agent to any device. |
 | [Nuclino](../mcps/nuclino.md) | Equip your AI agent with full read/write access to your Nuclino workspaces, teams, and items — the unified tool for knowledge, docs, and projects. |
@@ -773,6 +789,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pomodoro Day Planner](../mcps/pomodoro-day-planner.md) | Plan your productivity by calculating Pomodoro cycles and generating detailed work/break itineraries within any time window. |
 | [Pomodoro Mental Health Tracker](../mcps/pomodoro-mental-health-tracker.md) | Prevent burnout by adapting focus cycles with mandatory active breaks, ensuring sustained mental energy throughout your workday. |
 | [Pomodoro Study Planner](../mcps/pomodoro-study-planner.md) | Optimize your study sessions with adaptive Pomodoro scheduling based on energy and subject type. |
+| [Posture Risk Evaluator](../mcps/posture-risk-evaluator.md) | Quantifies musculoskeletal risk from workstation setup and habits. |
 | [Power Nap Duration Calculator](../mcps/power-nap-duration-calculator.md) | Optimize your rest with science-based nap planning. |
 | [Power Nap Optimizer](../mcps/power-nap-optimizer.md) | Optimize your nap timing to avoid sleep inertia and grogginess. |
 | [PracticePanther](../mcps/practicepanther.md) | Manage law practice via PracticePanther — matters, contacts, time tracking, bills, payments, tasks, and calendar. |
@@ -868,9 +885,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Singapore Salary Benchmark](../mcps/singapore-salary-benchmark.md) | Calculate your salary percentile rank against Singapore market benchmarks. |
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
 | [Sleep Chronotype Assessment](../mcps/sleep-chronotype-assessment.md) | Determine your biological sleep timing and peak performance windows. |
-| [Sleep Debt Calculator](../mcps/sleep-debt-calculator.md) | Quantify accumulated sleep deficit, predict recovery timelines, and optimize nap schedules. |
+| [Sleep Debt Calculator](../mcps/sleep-debt-calculator.md) | Quantify cumulative sleep insufficiency and generate recovery strategies. |
 | [Sleep Debt Recovery Planner](../mcps/sleep-debt-recovery-planner.md) | Incrementally resolve sleep deficits without disrupting your circadian rhythm. |
 | [Sleep Debt Tracker](../mcps/sleep-debt-tracker.md) | Quantify accumulated sleep debt, identify trends, and predict recovery timelines. |
+| [Sleep Efficiency Tracker](../mcps/sleep-efficiency-tracker.md) | Calculate sleep quality metrics and efficiency from sleep diary data. |
 | [Sleep Quality Scorer](../mcps/sleep-quality-scorer.md) | Analyze your sleep patterns and receive a diagnostic score based on duration, continuity, and subjective recovery. |
 | [Sleep-Before-Competition](../mcps/sleep-before-competition.md) | Optimizes sleep timing, nap strategies, and environment for athletes preparing for competition. |
 | [SM2 Spaced Repetition](../mcps/sm2-spaced-repetition.md) | High-performance implementation of the SM-2 algorithm for optimal review scheduling. |
@@ -914,6 +932,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Superdocu](../mcps/superdocu.md) | Automate document collection and client onboarding with Superdocu and AI agents. |
 | [SuperSaaS](../mcps/supersaas.md) | Automate online scheduling and bookings via SuperSaaS — manage schedules, appointments, and users directly from any AI agent. |
 | [Superset Timer Generator](../mcps/superset-timer-generator.md) | Calculates precise work and rest intervals for superset training based on physiological goals. |
+| [Supplement Timing Scheduler](../mcps/supplement-timing-scheduler.md) | Optimizes supplement timing based on pharmacokinetics and daily routines. |
 | [Surf Goal Framework](../mcps/surf-goal-framework.md) | Transform surfing aspirations into actionable SMART goal roadmaps. |
 | [Surf Performance Journaling System](../mcps/surf-performance-journaling-system.md) | A structured system to design surf performance journals, balancing qualitative feel with quantitative metrics. |
 | [Surf Session Efficiency Metrics](../mcps/surf-session-efficiency-metrics.md) | Analyze surfing session performance and efficiency. |
@@ -1040,6 +1059,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |
 | [WHOOP](../mcps/whoop.md) | Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent. |
 | [Wiki.js](../mcps/wikijs.md) | Manage your Wiki.js instance—create, search, and update documentation pages directly from your AI agent. |
+| [Wim Hof Breathing Timer](../mcps/wim-hof-breathing-timer.md) | A specialized timing engine for structured Wim Hof Method breathing sessions. |
 | [Wine Saignée Calculator](../mcps/wine-saignee-calculator.md) | Calculate juice removal volumes and color impact for rosé production. |
 | [Wolai](../mcps/wolai.md) | All-in-one information organization and collaboration platform — manage pages, databases, and blocks via AI. |
 | [WordPress Media Uploader](../mcps/wordpress-media-uploader.md) | This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly. |
