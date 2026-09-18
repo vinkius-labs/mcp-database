@@ -38,6 +38,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Catalyst Lifetime Prediction](../mcps/catalyst-lifetime-prediction.md) | Predict catalyst operational lifespan and deactivation kinetics. |
+| [Chronic Pain Diary Analyzer](../mcps/chronic-pain-diary-analyzer.md) | Identifies correlations between physiological, environmental, and activity data to manage chronic pain. |
 | [Combination Score Analysis](../mcps/combination-score-analysis.md) | Analyze two-wave scoring potential, calculate backup requirements, and predict winning outcomes. |
 | [Competition Heat Strategy](../mcps/competition-heat-strategy.md) | Optimized heat strategies for professional surfing competitions. |
 | [Conductivity Measurement Analysis](../mcps/conductivity-measurement-analysis.md) | Analyze electrolyte properties including molar conductivity and dissociation. |
@@ -46,6 +47,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Crowd Density Impact](../mcps/crowd-density-impact.md) | Analyze how crowd density affects surf session quality and wave access. |
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
 | [Emissions Reporting Calculator](../mcps/emissions-reporting-calculator.md) | Calculate annual emissions, GHG intensity, and regulatory reporting status. |
+| [Emotional Regulation Scoring Engine](../mcps/emotional-regulation-scoring-engine.md) | Quantifies emotional regulation abilities using the DERS framework. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
@@ -70,6 +72,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Peaking Index Calculator](../mcps/peaking-index-calculator.md) | Model athletic readiness using the Banister Fitness-Fatigue model. |
 | [Personal Record Tracker](../mcps/personal-record-tracker.md) | Predictive analytics for athletes to track PRs and forecast performance peaks. |
 | [Pipeline Flow Assurance](../mcps/pipeline-flow-assurance.md) | Analyze fluid transport risks, hydrate formation, and wax deposition in subsea and terrestrial pipelines. |
 | [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
@@ -84,6 +87,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Refinery Emission Inventory Engine](../mcps/refinery-emission-inventory-engine.md) | Quantify pollutant emissions from refinery operations using standardized emission factors. |
 | [Refinery Utility Balancer](../mcps/refinery-utility-balancer.md) | Analyze and balance refinery utility supplies including steam, power, water, and air. |
+| [Resilience Scale Scorer](../mcps/resilience-scale-scorer.md) | Analyzes psychological resilience questionnaires to provide standardized scoring and personalized growth strategies. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
 | [Scoring Potential Calculator](../mcps/scoring-potential-calculator.md) | Estimates competitive scoring potential by analyzing wave quality and maneuver execution. |
@@ -97,6 +101,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
+| [Training Load Ratio](../mcps/training-load-ratio.md) | Calculate Acute:Chronic Workload Ratio (ACWR) to assess injury risk and optimize training. |
 | [Training Volume Calculator](../mcps/training-volume-calculator.md) | Quantify training workload, muscle distribution, and intensity metrics. |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |

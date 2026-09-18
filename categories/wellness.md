@@ -6,6 +6,7 @@ Explore the open database of **wellness** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Crystal Matcher](../mcps/crystal-matcher.md) | Connect AI agents to a curated catalog of crystals based on intent, element, and chakra. |
 | [Meditation Session Planner](../mcps/meditation-session-planner.md) | Get a structured meditation plan tailored to your time and mental goal, complete with phase guidance. |
+| [Purpose in Life Assessment](../mcps/purpose-in-life-assessment.md) | Assess your sense of purpose, clarity, and engagement through psychometric analysis. |
 | [Sleep Cycle Calculator](../mcps/sleep-cycle-calculator.md) | Calculate optimal bedtimes and sleep stage distributions using 90-minute circadian cycles. |
 | [Surf Therapy Session Designer](../mcps/surf-therapy-session-designer.md) | Designs structured surf therapy sessions by integrating therapeutic goals with surf methodology and safety protocols. |
 

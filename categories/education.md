@@ -22,6 +22,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Class Rank Estimator](../mcps/class-rank-estimator.md) | Estimate your class rank percentile using GPA, mean, and standard deviation. |
 | [Coordination Chemistry Calculator](../mcps/coordination-chemistry-calculator.md) | Calculate oxidation states, d-electron counts, and CFSE for coordination complexes. |
 | [Coordination Compound Nomenclature](../mcps/coordination-compound-nomenclature.md) | Generate IUPAC names, formulas, and geometries for coordination complexes. |
+| [Developmental Milestone Tracker](../mcps/developmental-milestone-tracker.md) | Monitor child development by comparing milestones against standardized norms and adjusted age. |
 | [Electrochemical Cell Calculator](../mcps/electrochemical-cell-calculator.md) | Calculates cell potential and Gibbs free energy using the Nernst equation. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
 | [Equilibrium Constant Calculator](../mcps/equilibrium-constant-calculator.md) | Compute Kc, Kp, reaction quotients, and equilibrium concentrations. |

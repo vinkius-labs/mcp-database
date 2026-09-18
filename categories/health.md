@@ -5,16 +5,21 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Advanced BMI & Anthropometric Analyzer](../mcps/advanced-bmi-anthropometric-analyzer.md) | Precision body composition and physiological metric analyzer for fitness and clinical assessment. |
+| [Air Quality Health Impact Assessment](../mcps/air-quality-health-impact-assessment.md) | Assess health risks and symptom likelihood from air quality levels. |
 | [Alcohol Hypoglycemia Risk Calculator](../mcps/alcohol-hypoglycemia-risk-calculator.md) | Assess the risk of alcohol-induced hypoglycemia based on blood glucose and consumption details. |
 | [Allergen Checker](../mcps/allergen-checker.md) | Scan ingredients and recipes for the 14 mandatory allergens. |
 | [Baby Bottle Feeding Scheduler](../mcps/baby-bottle-feeding-scheduler.md) | Generate precise 24-hour infant feeding schedules and monthly formula inventory predictions. |
 | [Balance & Stability Index](../mcps/balance-stability-index.md) | Quantify surfer physical readiness with stability scores and training advice. |
+| [Basal Body Temperature Tracker](../mcps/basal-body-temperature-tracker.md) | Analyze menstrual cycle phases and ovulation using BBT data. |
 | [Battle Rope Workout Timer](../mcps/battle-rope-workout-timer.md) | Generates structured battle rope HIIT sessions based on rope dimensions and fitness levels. |
+| [Bench Press Arch Evaluator](../mcps/bench-press-arch-evaluator.md) | Optimize your powerlifting bench press arch for maximum efficiency and competition legality. |
 | [Bento Macro Balancer](../mcps/bento-macro-balancer.md) | Calculate precise nutritional profiles and traditional balance ratios for Japanese bento boxes. |
 | [Blood Flow Restriction Calculator](../mcps/blood-flow-restriction-calculator.md) | Calculate safe and effective BFR training parameters including pressure, sets, and reps. |
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Body Mass Index & Metabolic Calculator](../mcps/body-mass-index-metabolic-calculator.md) | Calculate BMI, BMR, TDEE, and macronutrient needs for metabolic health. |
+| [Bone Health Assessment](../mcps/bone-health-assessment.md) | Evaluates bone density risk factors and provides personalized lifestyle and nutritional recommendations. |
 | [Box Jump Height Recommender](../mcps/box-jump-height-recommender.md) | Safe and effective box jump height recommendations based on explosive power and experience. |
+| [Breastfeeding Calorie Calculator](../mcps/breastfeeding-calorie-calculator.md) | Calculates caloric, hydration, and nutritional needs for lactating individuals. |
 | [Breath-Hold Capacity Estimator](../mcps/breath-hold-capacity-estimator.md) | Predict apnea capabilities and optimize training for surfers. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
@@ -22,43 +27,62 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Cardio Zone Prescriber](../mcps/cardio-zone-prescriber.md) | Calculate precise heart rate zones and training prescriptions using the Karvonen method. |
 | [Chemical Exposure Assessment](../mcps/chemical-exposure-assessment.md) | Quantify worker chemical exposure and assess risk levels. |
 | [Cold Injury Risk Calculator](../mcps/cold-injury-risk-calculator.md) | Assess frostbite and hypothermia risks based on temperature, wind, and clothing. |
+| [Cold Stress Assessment](../mcps/cold-stress-assessment.md) | Assess hypothermia and frostbite risks based on environmental conditions. |
+| [Competition Fueling Schedule](../mcps/competition-fueling-schedule.md) | Generates precise nutrition and hydration timelines for athletes. |
 | [Continuous Glucose Trend Arrow Calculator](../mcps/continuous-glucose-trend-arrow-calculator.md) | Predictive CGM velocity and trend arrow analysis. |
 | [Continuous Glucose Trend Calculator](../mcps/continuous-glucose-trend-calculator.md) | Predictive CGM glucose velocity and trend arrow analysis. |
+| [Cool-down Effectiveness Engine](../mcps/cool-down-effectiveness-engine.md) | Physiological analysis to evaluate post-exercise recovery protocols. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |
 | [Dehydration BG Spike Estimator](../mcps/dehydration-bg-spike-estimator.md) | Estimates blood glucose concentration spikes caused by dehydration-induced hemoconcentration. |
 | [Deload Calculator](../mcps/deload-calculator.md) | Calculate precise training deload protocols based on accumulated fatigue and athletic discipline. |
+| [Deload Week Planner](../mcps/deload-week-planner.md) | Calculate optimal recovery parameters and deload strategies for strength athletes. |
+| [Diabetes Risk Assessment](../mcps/diabetes-risk-assessment.md) | Assess Type 2 Diabetes risk using clinical scoring models. |
 | [Early Breaking Decision Engine](../mcps/early-breaking-decision-engine.md) | Quantify the metabolic cost of breaking a fast before your target duration. |
 | [Endurance Training Zones](../mcps/endurance-training-zones.md) | Calculate heart rate training zones, session intensity, and recovery needs for surfers. |
 | [Exercise BG Impact Calculator](../mcps/exercise-bg-impact-calculator.md) | Predict blood glucose fluctuations and safety recommendations for different exercise types. |
 | [Fatigue & Performance Analyzer](../mcps/fatigue-performance-analyzer.md) | Models physiological fatigue, performance decline, and injury risk for athletes. |
+| [Fatigue Severity Scorer](../mcps/fatigue-severity-scorer.md) | Analyzes Fatigue Severity Scale (FSS) responses to provide clinical scoring and impact assessments. |
+| [Fertility Window Predictor](../mcps/fertility-window-predictor.md) | Predicts fertile windows and ovulation timing based on menstrual cycle patterns. |
 | [Fluid Requirement Calculator](../mcps/fluid-requirement-calculator.md) | Calculate personalized daily fluid intake needs based on weight, age, and environmental factors. |
+| [Foam Roller Density Selector](../mcps/foam-roller-density-selector.md) | Recommends the ideal foam roller density and usage strategy based on physical condition. |
+| [Foam Rolling Duration Guide](../mcps/foam-rolling-duration-guide.md) | Precision SMR session parameters for recovery and performance. |
 | [Fruit Portion Sizing Engine](../mcps/fruit-portion-sizing-engine.md) | Calculate exact fruit portions to hit a 15g carbohydrate target. |
 | [Glycemic Index Meal Calculator](../mcps/glycemic-index-meal-calculator.md) | Calculate the weighted average Glycemic Index of a meal based on ingredient proportions. |
 | [Glycemic Load Calculator](../mcps/glycemic-load-calculator.md) | Calculate the metabolic impact and blood glucose spike magnitude of food combinations. |
+| [Heart Rate Recovery Calculator](../mcps/heart-rate-recovery-calculator.md) | Assess cardiovascular fitness and mortality risk using heart rate recovery metrics. |
 | [Heart Rate Zone Calculator](../mcps/heart-rate-zone-calculator.md) | Calculate personalized training zones using the Karvonen formula and sport-specific adjustments. |
 | [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate personalized aerobic training zones using the Karvonen formula. |
-| [Heat Stress Index Calculator](../mcps/heat-stress-index-calculator.md) | Evaluate workplace thermal risk and automate safety protocols. |
+| [Heat Stress Index Calculator](../mcps/heat-stress-index-calculator.md) | Calculates heat stress risk, WBGT, and safety protocols from weather and activity data. |
 | [High-Fat/Protein Bolus Calculator](../mcps/high-fatprotein-bolus-calculator.md) | Calculates insulin dosing for high-fat and high-protein meals to mitigate the 'Pizza Effect'. |
 | [HIIT Interval Optimizer](../mcps/hiit-interval-optimizer.md) | Optimize HIIT workouts with research-based interval structures. |
 | [HRV Coherence Calculator](../mcps/hrv-coherence-calculator.md) | Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify cardiorespiratory coherence level using R-R intervals. |
 | [Hydration & Sweat Rate Calculator](../mcps/hydration-sweat-rate-calculator.md) | Calculate sweat rates, dehydration levels, and precise fluid/electrolyte replacement strategies. |
+| [Hydration Needs Athlete](../mcps/hydration-needs-athlete.md) | Precision hydration planning for athletes based on physiological and environmental data. |
 | [Hypoglycemia Recovery Protocol](../mcps/hypoglycemia-recovery-protocol.md) | Deterministic 'Rule of 15' calculator for immediate hypoglycemia treatment. |
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Determine personalized healthy weight ranges and nutritional transition plans using physiological markers. |
+| [Insomnia Severity Index (ISI) Analyzer](../mcps/insomnia-severity-index-isi-analyzer.md) | Clinical assessment tool to calculate Insomnia Severity Index scores and sleep profiles. |
 | [Insulin on Board Decay Calculator](../mcps/insulin-on-board-decay-calculator.md) | Calculate remaining active insulin and assess stacking risk. |
+| [Joint Mobility Assessment](../mcps/joint-mobility-assessment.md) | Assess joint mobility, detect asymmetries, and receive targeted mobility drills. |
 | [Jump Rope Calorie Estimator](../mcps/jump-rope-calorie-estimator.md) | Calculate calories burned, jump counts, and running equivalents for jump rope workouts. |
 | [Kettlebell Swing Calculator](../mcps/kettlebell-swing-calculator.md) | Calculate total volume, workout structure, power output, and progression for kettlebell swings. |
 | [Kite Session Energy Engine](../mcps/kite-session-energy-engine.md) | Calculate energy expenditure, hydration needs, and recovery time for kiteboarding sessions. |
 | [Knee Stability Surfing Assessment](../mcps/knee-stability-surfing-assessment.md) | Assess knee stability, injury risk, and muscle needs for surfers. |
 | [Lactate Threshold Estimator](../mcps/lactate-threshold-estimator.md) | Estimate metabolic lactate thresholds using effort-based metrics or heart rate drift analysis. |
+| [Lean Body Mass Calculator](../mcps/lean-body-mass-calculator.md) | Calculate lean body mass, fat mass, and protein requirements. |
 | [Menstrual Cycle Insulin Resistance Tracker](../mcps/menstrual-cycle-insulin-resistance-tracker.md) | Adjust insulin parameters based on menstrual cycle phases. |
+| [Metabolic Age Calculator](../mcps/metabolic-age-calculator.md) | Determine your metabolic age and efficiency compared to your chronological age. |
 | [Metabolic Stress Estimator](../mcps/metabolic-stress-estimator.md) | Calculate metabolic stress, recovery needs, and nutritional support for workouts. |
+| [Migraine Trigger Analyzer](../mcps/migraine-trigger-analyzer.md) | Identifies statistical correlations between lifestyle triggers and migraine episodes. |
+| [Mobility Routine Generator](../mcps/mobility-routine-generator.md) | Construct personalized mobility routines using joint-by-joint progression principles. |
 | [Muscle Activation Tracker](../mcps/muscle-activation-tracker.md) | Monitor muscle recruitment through perceived effort and EMG data. |
 | [Muscle Damage Estimator](../mcps/muscle-damage-estimator.md) | Predict muscle damage, DOMS peaks, and recovery timelines from workouts. |
+| [Muscle Recovery Timer](../mcps/muscle-recovery-timer.md) | Estimates muscle recovery time and provides optimization tips. |
 | [Muscle-Mind Connection Drills](../mcps/muscle-mind-connection-drills.md) | Generate specialized training protocols to improve neurological recruitment and muscle activation. |
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
 | [Net Carb Validator](../mcps/net-carb-validator.md) | Calculate precise net carbohydrates and keto suitability from nutrition labels. |
 | [NS IPPT Score Calculator](../mcps/ns-ippt-score-calculator.md) | Deterministic scoring for National Service IPPT, calculating points, tiers, and incentives. |
 | [Nutrition Macro Calculator](../mcps/nutrition-macro-calculator.md) | High-precision nutritional analysis for food items and meals. |
+| [Nutrition Timing Optimizer](../mcps/nutrition-timing-optimizer.md) | Optimize your nutrient intake around workouts for peak performance and recovery. |
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [Occlusion Training Prescription](../mcps/occlusion-training-prescription.md) | Prescribe safe KAATSU-style BFR training protocols. |
 | [Oral Syringe Volume Converter](../mcps/oral-syringe-volume-converter.md) | Convert liquid medication doses from ml to teaspoons, tablespoons, and drops. |
@@ -75,16 +99,21 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pet Treat Limit Calculator](../mcps/pet-treat-limit-calculator.md) | Calculate the maximum number of treats your pet can have without exceeding 10% of their daily calories. |
 | [Pet Water Intake Calculator](../mcps/pet-water-intake-calculator.md) | Calculate optimal daily water intake for dogs and cats based on weight, food type, and temperature. |
 | [Pill Fraction Simplifier](../mcps/pill-fraction-simplifier.md) | Converts decimal pill doses into the easiest physical way to cut them. |
+| [Postpartum Recovery Timeline](../mcps/postpartum-recovery-timeline.md) | Estimates postpartum recovery milestones, activity progression, and energy levels. |
 | [Pregnancy Due Date Calculator](../mcps/pregnancy-due-date-calculator.md) | Calculate estimated due dates, gestational age, and clinical milestones. |
 | [Pregnancy Due Date Engine](../mcps/pregnancy-due-date-engine.md) | Calculate gestational age, due dates, and prenatal schedules using LMP, IVF, or ultrasound data. |
 | [Pregnancy Week Calculator](../mcps/pregnancy-week-calculator.md) | Track your pregnancy progress, from gestational age to weekly fetal milestones. |
-| [Pregnancy Weight Gain Tracker](../mcps/pregnancy-weight-gain-tracker.md) | Monitor maternal weight trends against IOM guidelines. |
+| [Pregnancy Weight Gain Tracker](../mcps/pregnancy-weight-gain-tracker.md) | Monitor pregnancy weight progression using IOM clinical guidelines. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Pull-up Progression Planner](../mcps/pull-up-progression-planner.md) | Generates structured training roadmaps to reach your pull-up repetition goals. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
+| [Resting Heart Rate Assessment](../mcps/resting-heart-rate-assessment.md) | Analyze cardiovascular health and fitness trends using resting heart rate data. |
+| [Running Injury Risk Score](../mcps/running-injury-risk-score.md) | Calculates running injury risk profiles using the RRI model. |
 | [Running Pace Equivalent](../mcps/running-pace-equivalent.md) | Predict equivalent race times and training zones using physiological performance models. |
+| [Sarcopenia Risk Assessment](../mcps/sarcopenia-risk-assessment.md) | Estimates muscle loss risk and provides functional health insights. |
 | [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
+| [Self-Compassion Scale Scorer](../mcps/self-compassion-scale-scorer.md) | Calculate psychological self-compassion profiles and receive actionable wellness insights. |
 | [Shoulder Impingement Risk Assessment for Surfers](../mcps/shoulder-impingement-risk-assessment-for-surfers.md) | Assess shoulder impingement risk and get personalized prevention exercises for surfers. |
 | [Sick Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster-1.md) | Deterministic insulin adjustment and care planning for illness. |
 | [Sick-Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster.md) | Calculates insulin adjustments, monitoring frequency, and hydration needs during illness. |
@@ -97,6 +126,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Strength Standards Checker](../mcps/strength-standards-checker.md) | Classify weightlifting strength levels and predict future milestones. |
 | [Strength Standards Classifier](../mcps/strength-standards-classifier.md) | Classifies lifts by strength standards and provides progression targets. |
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
+| [Stretching Duration Calculator](../mcps/stretching-duration-calculator.md) | Generate optimal stretching protocols based on physiological goals and timing. |
 | [Supplement Dosage Calculator](../mcps/supplement-dosage-calculator.md) | Calculate precise supplement dosages based on body weight, age, sex, and ingredient chemistry. |
 | [Supplement Stacker](../mcps/supplement-stacker.md) | Analyze supplement interactions, nutrient competition, and optimal timing schedules. |
 | [Surf Back Pain Analyzer](../mcps/surf-back-pain-analyzer.md) | Identify causes of back pain in surfers by analyzing posture, flexibility, and surfing style. |
@@ -104,11 +134,18 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Surf Injury Prevention Program](../mcps/surf-injury-prevention-program.md) | Customized injury prevention protocols for surfers based on injury history and biomechanics. |
 | [Surf Session Calorie Burn](../mcps/surf-session-calorie-burn.md) | Calculate calories burned during surfing sessions based on intensity and activity breakdown. |
 | [Surf Session Duration Calculator](../mcps/surf-session-duration-calculator.md) | Calculate safe surf session durations and rest strategies based on water temperature, wave intensity, and fitness. |
+| [Sweat Rate Calculator](../mcps/sweat-rate-calculator.md) | Precision hydration tool to estimate sweat loss, sodium depletion, and personalized fluid replacement. |
 | [Symmetry Score Calculator](../mcps/symmetry-score-calculator.md) | Evaluate muscle symmetry and identify physical imbalances. |
+| [Taper Calculator](../mcps/taper-calculator.md) | Generate optimal tapering schedules to maximize athletic performance. |
 | [Tempo Prescription](../mcps/tempo-prescription.md) | Get precise lifting tempo sequences based on your training goals and experience. |
+| [Tendon Loading Calculator](../mcps/tendon-loading-calculator.md) | Determines safe mechanical loading progressions for injured tendons. |
 | [Time in Range Analyzer](../mcps/time-in-range-analyzer.md) | Calculates clinical glycemic control metrics like TIR, GMI, and CV from glucose readings. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
+| [UV Exposure Risk Calculator](../mcps/uv-exposure-risk-calculator.md) | Estimate sunburn risk, safe sun exposure time, and Vitamin D synthesis potential. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |
+| [Waist-to-Height Ratio (WHtR) Health Assessment](../mcps/waist-to-height-ratio-whtr-health-assessment.md) | Assess abdominal obesity and metabolic health risk using waist-to-height ratio. |
+| [Waist-to-Hip Ratio Analyzer](../mcps/waist-to-hip-ratio-analyzer.md) | Assess body fat distribution and health risks using waist-to-hip ratio analysis. |
+| [Warm-up Duration Calculator](../mcps/warm-up-duration-calculator.md) | Calculates optimized warm-up protocols including duration, specific sets, and PAP timing. |
 | [Warm-up Set Calculator](../mcps/warm-up-set-calculator.md) | Generates structured warm-up progressions for strength athletes. |
 | [Weight Loss Plateau Recalculator](../mcps/weight-loss-plateau-recalculator.md) | Predictive simulation engine to model dietary adjustments for overcoming weight loss stalls. |
 | [WHO-5 Wellbeing Index](../mcps/who-5-wellbeing-index.md) | Calculate the WHO-5 Well-Being Index score and identify potential wellbeing risks. |

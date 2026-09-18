@@ -6,6 +6,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Acid-Base Strength Predictor](../mcps/acid-base-strength-predictor.md) | Predict pKa and analyze electronic stability of molecular structures. |
 | [Activation Energy Calculator](../mcps/activation-energy-calculator.md) | Derive activation energy and pre-exponential factors from temperature-dependent rate data. |
+| [Altitude Acclimatization Timeline](../mcps/altitude-acclimatization-timeline.md) | Estimates safe ascent schedules and health risks for high-altitude climbing. |
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
 | [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
 | [Atom Economy Calculator](../mcps/atom-economy-calculator.md) | Calculate atom economy, E-factor, and waste metrics for chemical reactions. |
@@ -31,6 +32,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Chromatography Protein Purification Designer](../mcps/chromatography-protein-purification-designer.md) | Design optimal chromatography parameters including column sizing, resin capacity, and elution strategies. |
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
+| [Cognitive Reserve Estimator](../mcps/cognitive-reserve-estimator.md) | Estimate cognitive reserve and get brain health insights. |
 | [Cold Water Survival Estimator](../mcps/cold-water-survival-estimator.md) | Estimates survival time, hypothermia onset, and swim failure in cold water. |
 | [Colligative Properties Calculator](../mcps/colligative-properties-calculator.md) | Calculate boiling point elevation, freezing point depression, osmotic pressure, and vapor pressure lowering. |
 | [Collision Theory Calculator](../mcps/collision-theory-calculator.md) | Calculates collision parameters for gas molecules using kinetic theory. |
