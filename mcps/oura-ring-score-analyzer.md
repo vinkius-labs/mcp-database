@@ -14,9 +14,9 @@ This MCP server acts as an intelligence layer for your Oura Ring data. It transl
 
 
 ## Available Tools (4)
-- **evaluate_hrv_trends**: Analyzes how heart rate variability is changing to detect signs of overtraining or systemic stress
 - **analyze_current_status**: Provides a holistic snapshot of the user's current physiological state
 - **calculate_sleep_quality**: Breaks down the sleep score into actionable insights regarding sleep architecture
+- **evaluate_hrv_trends**: Analyzes how heart rate variability is changing to detect signs of overtraining or systemic stress
 - **get_optimization_priority**: Determines which area of life the user should focus on to improve their readiness
 
 

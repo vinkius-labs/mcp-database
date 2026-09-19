@@ -14,10 +14,10 @@ This MCP server provides tools to help users navigate their autonomic nervous sy
 
 
 ## Available Tools (4)
-- **validate_symptom_alignment**: Checks if the reported symptoms are consistent with the reported autonomic state
-- **get_regulation_plan**: Generates a customized set of activities to help a user move toward a more regulated state
 - **get_state_characteristics**: Provides a description of what a specific autonomic state feels like
 - **track_regulation_progress**: Records the outcome of a regulation session
+- **validate_symptom_alignment**: Checks if the reported symptoms are consistent with the reported autonomic state
+- **get_regulation_plan**: Generates a customized set of activities to help a user move toward a more regulated state
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server connects AI agents to WHOOP physiological data to optimize daily
 
 
 ## Available Tools (4)
-- **suggest_recovery_interventions**: Provides actionable lifestyle advice to improve the recovery score
 - **analyze_daily_readiness**: Determines the specific training path and physiological state for the current day
 - **evaluate_rest_necessity**: Validates if the user's current physiological state requires a complete cessation of training
 - **get_training_prescription**: Provides a detailed workout suggestion based on the user's ability to handle strain
+- **suggest_recovery_interventions**: Provides actionable lifestyle advice to improve the recovery score
 
 
 ## 💬 Prompt Examples
