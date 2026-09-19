@@ -14,9 +14,9 @@ This MCP server provides a specialized system for developing personalized intero
 
 
 ## Available Tools (4)
-- **generate_protocol**: Generates a personalized interoception training plan
 - **calculate_training_load**: Estimates the cognitive and physiological effort required for a planned session
 - **evaluate_progression_readiness**: Determines if a user is ready to move to a more advanced training tier
+- **generate_protocol**: Generates a personalized interoception training plan
 - **suggest_daily_integration_exercise**: Provides a specific, low-effort exercise to help apply interoceptive skills to daily life
 
 

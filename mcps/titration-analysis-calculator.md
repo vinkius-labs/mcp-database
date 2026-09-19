@@ -15,15 +15,15 @@ This MCP server provides specialized tools for quantitative chemical analysis th
 
 ## Available Tools (4)
 - **get_equivalence_point**: 
-- **get_indirect_titration**: Use this when multiple reagents are involved in the analysis.
-
-Calculates indirect titration results
-- **get_back_titration**: Ensure all reagent volumes and concentrations are provided.
-
-Calculates back titration results
 - **get_direct_titration**: Provide titrant and analyte concentrations for accurate results.
 
 Calculates direct titration results
+- **get_back_titration**: Ensure all reagent volumes and concentrations are provided.
+
+Calculates back titration results
+- **get_indirect_titration**: Use this when multiple reagents are involved in the analysis.
+
+Calculates indirect titration results
 
 
 ## 💬 Prompt Examples

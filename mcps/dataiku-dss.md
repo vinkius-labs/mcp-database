@@ -36,7 +36,6 @@ Connect your **Dataiku DSS** instance to any AI agent and take full control of y
 
 
 ## Available Tools (14)
-- **get_job**: Get job state, timing, and outputs
 - **get_project**: Get project metadata, settings, and tags
 - **list_datasets**: List all datasets in a project
 - **list_scenarios**: List automation scenarios in a project
@@ -44,12 +43,13 @@ Connect your **Dataiku DSS** instance to any AI agent and take full control of y
 - **list_projects**: List all DSS projects accessible to the API key
 - **list_recipes**: List all recipes (data transformations) in a project
 - **get_recipe**: Get recipe configuration and settings
-- **list_jobs**: List pipeline jobs in a project (build tasks, training runs)
 - **run_scenario**: Trigger a scenario execution (build pipeline, retrain model)
 - **list_models**: List deployed/saved ML models in a project
 - **get_model**: Get saved model metadata, algorithm, and performance metrics
 - **list_plugins**: List installed DSS plugins
 - **list_connections**: List all DSS data connections (databases, cloud storage, APIs)
+- **get_job**: Get job state, timing, and outputs
+- **list_jobs**: List pipeline jobs in a project (build tasks, training runs)
 
 
 ## 💬 Prompt Examples

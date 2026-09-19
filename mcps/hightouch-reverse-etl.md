@@ -34,22 +34,22 @@ Connect your **Hightouch** account to any AI agent and take full control of your
 
 
 ## Available Tools (6)
-- **list_syncs**: Each entry exposes its source model, destination, schedule, and an id you pass to get_sync or list_sync_runs.
-
-List every sync in the workspace — each sync is a pipeline that pushes rows from a model to a destination on a schedule
-- **get_sync**: Identify the sync_id with list_syncs first.
-
-Retrieve one sync's full configuration and last-known status
 - **list_sync_runs**: List the execution history of a single sync
 - **list_models**: A model is a query against a connected source, and its output is the exact row set a sync sends downstream.
 
 List the models — saved SQL queries that define which warehouse rows are available to sync
-- **list_sources**: Sources sit at the start of every pipeline; pair with list_destinations to see both ends.
+- **get_sync**: Identify the sync_id with list_syncs first.
 
-List the connected data warehouses and databases that models query
+Retrieve one sync's full configuration and last-known status
 - **list_destinations**: A destination receives the rows a sync sends from its model.
 
 List the SaaS tools and systems that syncs can write data to
+- **list_sources**: Sources sit at the start of every pipeline; pair with list_destinations to see both ends.
+
+List the connected data warehouses and databases that models query
+- **list_syncs**: Each entry exposes its source model, destination, schedule, and an id you pass to get_sync or list_sync_runs.
+
+List every sync in the workspace — each sync is a pipeline that pushes rows from a model to a destination on a schedule
 
 
 ## 💬 Prompt Examples

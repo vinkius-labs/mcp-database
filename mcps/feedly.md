@@ -36,22 +36,22 @@ Connect your **Feedly** account to any AI agent and take full control of your ne
 
 ## Available Tools (12)
 - **list_tags**: List all your Feedly tags
-- **search_feeds**: Use keywords or a URL for the search query.
-
-Search for new RSS feeds in the Feedly index
 - **get_board_contents**: Provide the board ID to fetch the content.
 
 Retrieve articles from a specific board
 - **get_subscriptions**: List all individual feed subscriptions
-- **get_tag_contents**: Use this tool only when the tag ID is known.
-
-Retrieve articles associated with a specific tag
-- **search_topics**: Provide a topic search query.
-
-Search for trending topics or specific interests
 - **get_entry**: Pass the entry ID to retrieve the details.
 
 Get details for a specific article entry
+- **get_tag_contents**: Use this tool only when the tag ID is known.
+
+Retrieve articles associated with a specific tag
+- **search_feeds**: Use keywords or a URL for the search query.
+
+Search for new RSS feeds in the Feedly index
+- **search_topics**: Provide a topic search query.
+
+Search for trending topics or specific interests
 - **get_profile**: Get current Feedly user profile
 - **get_stream_contents**: Provide a valid stream_id, as the stream is mandatory.
 

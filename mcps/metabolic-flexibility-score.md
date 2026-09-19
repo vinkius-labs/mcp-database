@@ -14,10 +14,10 @@ This MCP server provides tools to evaluate how efficiently your body switches be
 
 
 ## Available Tools (4)
-- **get_dietary_impact_analysis**: Evaluates how much the user's current diet is helping or hindering their metabolic flexibility
 - **assess_fat_oxidation_efficiency**: Specifically isolates the user's ability to utilize lipids as a primary fuel source
 - **calculate_metabolic_status**: Provides a comprehensive snapshot of a user's current metabolic health and fuel-switching efficiency
 - **generate_improvement_plan**: Provides actionable, research-based recommendations to improve metabolic flexibility
+- **get_dietary_impact_analysis**: Evaluates how much the user's current diet is helping or hindering their metabolic flexibility
 
 
 ## 💬 Prompt Examples

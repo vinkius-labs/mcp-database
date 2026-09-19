@@ -48,21 +48,21 @@ Provision a radically fast new CDN reverse proxy domain
 - **add_storage_zone**: Defaults to explicit NY regional primary datacenters.
 
 Bootstrap an entirely empty replication Volume inside Bunny.net
-- **delete_pull_zone**: Instantly invalidates assigned `b-cdn.net` aliases dropping incoming proxy connections out of the Anycast caching tree entirely.
-
-Destroy an active CDN acceleration mapping terminating global traffic
 - **delete_storage_zone**: Requires zone to be empty or forces recursive wipes freeing the namespace back into the registry.
 
 Vaporize an existing Bunny CDN Storage Zone entirely
 - **get_storage_zone**: Returns FTP access credentials, read-only vs read-write keys, and origin PoPs.
 
 Inspect deep internal credentials identifying a precise Storage Zone
-- **list_pull_zones**: Returns pull zone IDs, names, hostnames, and origin URL targets.
-
-Identify global Bunny CDN accelerated delivery domains (Pull Zones)
 - **purge_pull_zone**: Spikes Origin ingress traffic rapidly pulling entirely fresh payload structures.
 
 Blast an immediate Cache Invalidation forcing origin asset re-fetching
+- **delete_pull_zone**: Instantly invalidates assigned `b-cdn.net` aliases dropping incoming proxy connections out of the Anycast caching tree entirely.
+
+Destroy an active CDN acceleration mapping terminating global traffic
+- **list_pull_zones**: Returns pull zone IDs, names, hostnames, and origin URL targets.
+
+Identify global Bunny CDN accelerated delivery domains (Pull Zones)
 
 
 ## 💬 Prompt Examples

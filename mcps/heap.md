@@ -41,39 +41,39 @@ No more manual navigating through complex analytics dashboards for simple data u
 - **get_api_usage**: Run this tool before making high-volume data queries.
 
 Check current API usage and project status
-- **bulk_add_user_properties**: Pass a JSON array of user updates.
-
-Update properties for multiple users in a single request
-- **add_account_properties**: Use this when updating properties for multiple users simultaneously.
-
-Add or update properties for an account (group of users)
-- **add_user_properties**: Use this when you know the user’s unique identity.
-
-Add or update custom properties for a user profile
-- **bulk_track_events**: Ensure the events array is correctly formatted.
-
-Track multiple events concurrently for high-throughput
-- **delete_user_data**: Provide the unique identifier of the user to delete.
-
-Permanently delete a user and all their associated data (GDPR)
-- **get_my_profile**: Use this to confirm the credentials associated with the current session.
-
-Get information about the authenticated API key
-- **identify_user**: Use this only when the user is currently anonymous.
-
-Associate an anonymous session with a specific user identity
-- **get_event_definitions**: Use this tool to verify event names before querying data.
-
-List all custom event definitions in Heap
 - **get_segments**: Do not query segments without specifying a time range.
 
 List all segments defined in your Heap project
 - **query_user_profiles**: Pass the full query object as a JSON string.
 
 Query and filter user profiles based on criteria
+- **add_user_properties**: Use this when you know the user’s unique identity.
+
+Add or update custom properties for a user profile
+- **identify_user**: Use this only when the user is currently anonymous.
+
+Associate an anonymous session with a specific user identity
 - **track_event**: Properties should be a JSON string.
 
 Track a server-side event for a user in Heap
+- **add_account_properties**: Use this when updating properties for multiple users simultaneously.
+
+Add or update properties for an account (group of users)
+- **bulk_add_user_properties**: Pass a JSON array of user updates.
+
+Update properties for multiple users in a single request
+- **bulk_track_events**: Ensure the events array is correctly formatted.
+
+Track multiple events concurrently for high-throughput
+- **delete_user_data**: Provide the unique identifier of the user to delete.
+
+Permanently delete a user and all their associated data (GDPR)
+- **get_event_definitions**: Use this tool to verify event names before querying data.
+
+List all custom event definitions in Heap
+- **get_my_profile**: Use this to confirm the credentials associated with the current session.
+
+Get information about the authenticated API key
 
 
 ## 💬 Prompt Examples

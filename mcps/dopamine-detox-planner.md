@@ -14,10 +14,10 @@ The Dopamine Detox Planner is a strategic engine designed to help you recalibrat
 
 
 ## Available Tools (4)
-- **plan_restriction_list**: 
-- **generate_replacement_schedule**: 
 - **get_detox_summary**: 
 - **get_reintroduction_roadmap**: 
+- **plan_restriction_list**: 
+- **generate_replacement_schedule**: 
 
 
 ## 💬 Prompt Examples

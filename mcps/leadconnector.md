@@ -31,15 +31,15 @@ Unleash the full potential of your **LeadConnector** (GoHighLevel) CRM straight 
 
 
 ## Available Tools (3)
-- **list_contacts**: Provide a location_id to scope the search results.
-
-List contacts in LeadConnector
-- **list_opportunities**: Specify a location_id to filter results.
-
-List opportunities across pipelines
 - **list_appointments**: Must provide a location_id.
 
 List calendar appointments
+- **list_opportunities**: Specify a location_id to filter results.
+
+List opportunities across pipelines
+- **list_contacts**: Provide a location_id to scope the search results.
+
+List contacts in LeadConnector
 
 
 ## 💬 Prompt Examples

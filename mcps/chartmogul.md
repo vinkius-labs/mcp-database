@@ -36,12 +36,11 @@ Connect your **ChartMogul** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
-- **get_subscription_metrics**: ) for a given date range. Specify both start and end dates.
+- **list_mogul_customers**: List all customers in ChartMogul
+- **list_mogul_data_sources**: List all data sources configured in the account
+- **get_arr_metrics**: Use this for ARR analysis.
 
-Retrieve all high-level subscription metrics (MRR, ARR, etc)
-- **ping_mogul_api**: Execute this to check API status.
-
-Verify connectivity and authentication with the ChartMogul API
+Retrieve Annualized Run Rate metrics
 - **get_customer_count_metrics**: Provide the start and end dates for the period.
 
 Retrieve total customer count metrics over time
@@ -51,11 +50,12 @@ Get detailed information for a specific customer
 - **get_mrr_metrics**: Use this for MRR analysis.
 
 Retrieve Monthly Recurring Revenue metrics
-- **list_mogul_customers**: List all customers in ChartMogul
-- **list_mogul_data_sources**: List all data sources configured in the account
-- **get_arr_metrics**: Use this for ARR analysis.
+- **get_subscription_metrics**: ) for a given date range. Specify both start and end dates.
 
-Retrieve Annualized Run Rate metrics
+Retrieve all high-level subscription metrics (MRR, ARR, etc)
+- **ping_mogul_api**: Execute this to check API status.
+
+Verify connectivity and authentication with the ChartMogul API
 
 
 ## 💬 Prompt Examples

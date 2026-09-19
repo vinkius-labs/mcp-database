@@ -28,25 +28,25 @@ The **AppsFlyer Pull API MCP Server** provides your AI agent with direct access 
 
 
 ## Available Tools (7)
-- **get_geo_report**: Specify both start and end dates (YYYY-MM-DD).
-
-Get aggregate performance report by geography
-- **get_account_check**: Run this query to confirm connectivity.
-
-Verify AppsFlyer account connection
-- **get_uninstalls_report**: Specify both start and end dates (YYYY-MM-DD).
-
-Get uninstalls raw data report
 - **get_daily_report**: Specify both start and end dates (YYYY-MM-DD).
 
 Get aggregate daily performance report
+- **get_account_check**: Run this query to confirm connectivity.
+
+Verify AppsFlyer account connection
+- **get_installs_report**: Get non-organic installs raw data report
+- **get_geo_report**: Specify both start and end dates (YYYY-MM-DD).
+
+Get aggregate performance report by geography
 - **get_in_app_events_report**: Specify both start and end dates (YYYY-MM-DD).
 
 Get in-app events raw data report
-- **get_installs_report**: Get non-organic installs raw data report
 - **get_partners_report**: Specify both start and end dates (YYYY-MM-DD).
 
 Get aggregate performance report by media source
+- **get_uninstalls_report**: Specify both start and end dates (YYYY-MM-DD).
+
+Get uninstalls raw data report
 
 
 ## 💬 Prompt Examples

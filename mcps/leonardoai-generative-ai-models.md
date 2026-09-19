@@ -40,10 +40,10 @@ Connect your **Leonardo.ai** account to any AI agent and take full control of st
 
 Generate images from a text prompt using Leonardo.ai
 - **get_user**: Get active authenticated Leonardo AI user metrics
+- **list_platform_models**: List all global public platform models hosted on Leonardo.ai
 - **create_variation**: Create an unzoom context extension expanding a Leonardo.ai generated image
 - **delete_generation**: Delete a Leonardo generation history log and its image array explicitly
 - **get_generation**: Get the active status or completed result of a generation
-- **list_platform_models**: List all global public platform models hosted on Leonardo.ai
 - **list_custom_models**: List fine-tuned and custom-trained models available explicitly on your Leonardo instance
 - **get_model**: Get specific details and parameters of a Leonardo.ai model
 - **upload_init_image**: Acquire a secure presigned URL tracking for image-to-image inference datasets

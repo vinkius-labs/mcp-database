@@ -14,10 +14,10 @@ This MCP server provides a comprehensive toolkit for managing post-prandial gluc
 
 
 ## Available Tools (4)
-- **schedule_movement**: Determines the best time and duration for physical activity based on availability to mitigate spikes
-- **calculate_vinegar_timing**: Advises on whether and when to consume vinegar to maximize its glucose-lowering effects
 - **generate_mitigation_strategy**: Aggregates the meal sequence, vinegar timing, and movement plan into a single, cohesive prevention strategy
 - **plan_meal_sequence**: Determines the optimal order of food items to minimize glucose response
+- **schedule_movement**: Determines the best time and duration for physical activity based on availability to mitigate spikes
+- **calculate_vinegar_timing**: Advises on whether and when to consume vinegar to maximize its glucose-lowering effects
 
 
 ## 💬 Prompt Examples

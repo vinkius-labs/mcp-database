@@ -52,21 +52,21 @@ List all custom tags for a location
 - **search_opportunities**: Use the pipeline ID to scope the search.
 
 Search for opportunities within a pipeline
-- **list_contact_tasks**: Pass the contact ID to filter the tasks.
-
-List all tasks assigned to a specific contact
 - **search_contacts**: Pass search criteria as a JSON string in "search_json".
 
 Search for contacts in HighLevel
 - **create_contact**: Pass payload as JSON string in "body_json" (requires firstName, email, or phone).
 
 Add a new contact/lead to HighLevel
-- **get_calendar_free_slots**: Provide the calendar ID and the desired start/end timestamps.
-
-Check availability for a specific calendar
 - **get_contact_details**: Provide the unique contact ID as input.
 
 Get detailed information for a specific contact
+- **get_calendar_free_slots**: Provide the calendar ID and the desired start/end timestamps.
+
+Check availability for a specific calendar
+- **list_contact_tasks**: Pass the contact ID to filter the tasks.
+
+List all tasks assigned to a specific contact
 - **list_pipelines**: Supply the location ID to filter results.
 
 List sales pipelines for a specific location

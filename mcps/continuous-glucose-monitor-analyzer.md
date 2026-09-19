@@ -15,10 +15,10 @@ This MCP server provides advanced tools for analyzing Continuous Glucose Monitor
 
 ## Available Tools (5)
 - **get_glucose_summary**: Get general glucose status over a period
-- **analyze_postprandial_impact**: Analyze how meals affect glucose levels
 - **assess_sleep_stability**: Assess glucose stability during sleep
 - **calculate_metabolic_health_score**: Calculate overall metabolic health score
 - **evaluate_exercise_response**: Evaluate glucose response to exercise
+- **analyze_postprandial_impact**: Analyze how meals affect glucose levels
 
 
 ## 💬 Prompt Examples

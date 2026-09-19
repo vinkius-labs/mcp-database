@@ -33,14 +33,22 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 
 
 ## Available Tools (18)
-- **create_stream**: Create a new QuickNode stream
-- **create_webhook**: Create a webhook from a template
-- **delete_kv_set**: Specify the key to be removed.
-
-Delete a KV Store key-value pair
 - **delete_stream**: Ensure the provided Stream ID is correct.
 
 Delete a QuickNode stream
+- **create_stream**: Create a new QuickNode stream
+- **create_webhook**: Create a webhook from a template
+- **list_webhooks**: Retrieve all QuickNode webhooks
+- **update_kv_list**: Must specify a key and either add or remove items.
+
+Add or remove items from a KV Store list
+- **create_kv_list**: Create a new KV Store list
+- **create_kv_set**: Both the key and value must be provided.
+
+Create a KV Store key-value pair
+- **delete_kv_set**: Specify the key to be removed.
+
+Delete a KV Store key-value pair
 - **delete_webhook**: Use the unique Webhook ID for deletion.
 
 Delete a QuickNode webhook
@@ -56,7 +64,6 @@ Retrieve details of a specific QuickNode stream
 - **list_streams**: Do not attempt to list non-existent streams.
 
 List all active QuickNode streams
-- **list_webhooks**: Retrieve all QuickNode webhooks
 - **rpc_eth_blocknumber**: This tool requires no input parameters.
 
 Returns the number of the most recent block
@@ -69,16 +76,9 @@ Returns an array of all logs matching a given filter object
 - **rpc_eth_gettransactionreceipt**: Provide a valid transaction hash as input.
 
 Returns the receipt of a transaction by hash
-- **update_kv_list**: Must specify a key and either add or remove items.
-
-Add or remove items from a KV Store list
 - **update_stream**: Must provide both a Stream ID and at least one update parameter.
 
 Update an existing QuickNode stream
-- **create_kv_list**: Create a new KV Store list
-- **create_kv_set**: Both the key and value must be provided.
-
-Create a KV Store key-value pair
 
 
 ## 💬 Prompt Examples

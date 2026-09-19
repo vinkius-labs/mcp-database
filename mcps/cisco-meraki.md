@@ -36,19 +36,19 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 
 
 ## Available Tools (8)
-- **list_meraki_organizations**: List all organizations the API key has access to
-- **list_organization_inventory**: Provide the organization ID as input.
-
-List all devices in the organization inventory
-- **get_network_summary**: Provide the network ID as input.
-
-Get summary details for a specific network
-- **list_organization_admins**: Provide the organization ID as input.
-
-List all administrators for an organization
 - **get_device_details**: Provide the serial number as input.
 
 Get detailed information for a specific device by serial
+- **get_network_summary**: Provide the network ID as input.
+
+Get summary details for a specific network
+- **list_organization_inventory**: Provide the organization ID as input.
+
+List all devices in the organization inventory
+- **list_meraki_organizations**: List all organizations the API key has access to
+- **list_organization_admins**: Provide the organization ID as input.
+
+List all administrators for an organization
 - **list_network_clients**: Provide the network ID as input.
 
 List all connected clients in a network
