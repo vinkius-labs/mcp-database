@@ -6,6 +6,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Airline Baggage Calculator](../mcps/airline-baggage-calculator.md) | Calculate baggage allowances and excess fees based on airline, fare class, and route. |
 | [Altitude Sickness Risk Assessment](../mcps/altitude-sickness-risk-assessment.md) | Calculate AMS risk, acclimatization needs, and safety protocols for high-altitude trips. |
+| [Altitude Sleep Optimizer](../mcps/altitude-sleep-optimizer.md) | Predict sleep disruption and plan acclimatization using altitude physiology. |
 | [Baggage Allowance Comparator](../mcps/baggage-allowance-comparator.md) | Compare airline baggage dimensions, weight limits, and sports equipment fees. |
 | [Board Quiver Planner](../mcps/board-quiver-planner.md) | Optimize your surfboard quiver for any trip or wave conditions. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |

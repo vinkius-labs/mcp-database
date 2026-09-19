@@ -6,6 +6,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Acid-Base Strength Predictor](../mcps/acid-base-strength-predictor.md) | Predict pKa and analyze electronic stability of molecular structures. |
 | [Activation Energy Calculator](../mcps/activation-energy-calculator.md) | Derive activation energy and pre-exponential factors from temperature-dependent rate data. |
+| [Alcohol Sleep Impact Calculator](../mcps/alcohol-sleep-impact-calculator.md) | Quantify how alcohol consumption disrupts your sleep architecture and REM cycles. |
 | [Altitude Acclimatization Timeline](../mcps/altitude-acclimatization-timeline.md) | Estimates safe ascent schedules and health risks for high-altitude climbing. |
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
 | [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
@@ -72,6 +73,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Isomerism Identification](../mcps/isomerism-identification.md) | Identify structural, geometric, optical, and conformational isomerism in chemical compounds. |
 | [Lattice Energy Calculator](../mcps/lattice-energy-calculator.md) | Calculate lattice energy, enthalpy of formation, and thermodynamic stability of ionic compounds. |
 | [Light Therapy Dosage Calculator](../mcps/light-therapy-dosage-calculator.md) | Calculates precise light therapy dosages for blue and red light treatments. |
+| [Longevity Intervention Prioritizer](../mcps/longevity-intervention-prioritizer.md) | Prioritize lifestyle and medical interventions to maximize healthspan and lifespan. |
 | [Mass Balance Calculator](../mcps/mass-balance-calculator.md) | Perform rigorous mass balance calculations for chemical processes. |
 | [Mass Spectrum Interpreter](../mcps/mass-spectrum-interpreter.md) | High-precision analytical tool for interpreting mass spectrometry data and identifying molecular structures. |
 | [Maxwell-Boltzmann Distribution](../mcps/maxwell-boltzmann-distribution.md) | Calculate gas particle speed distributions and statistical characteristics. |
@@ -157,6 +159,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Watchmaking Gear Calculator](../mcps/watchmaking-gear-calculator.md) | Deterministic engine for horological gear train ratios, beat rates, and power reserves. |
 | [Wave Speed and Period Analyzer](../mcps/wave-speed-and-period-analyzer.md) | Deterministic physics engine for calculating wave dynamics in deep and shallow water. |
 | [Wave Speed Calculator](../mcps/wave-speed-calculator.md) | Calculates wave velocity, breaking depth, and energy transformations. |
+| [Wellness Trend Validator](../mcps/wellness-trend-validator.md) | Scientifically validate wellness trends and assess their feasibility and safety. |
 | [Wetsuit Buoyancy Calculator](../mcps/wetsuit-buoyancy-calculator.md) | Quantify wetsuit buoyancy, effective weight, and depth-based compression. |
 | [Wettability & Contact Angle Analyzer](../mcps/wettability-contact-angle-analyzer.md) | Calculate surface energy, work of adhesion, and spreading coefficients using contact angle data. |
 | [Wine Aging Kinetics Predictor](../mcps/wine-aging-kinetics-predictor.md) | Predict wine color, astringency, and aroma evolution using chemical kinetics. |

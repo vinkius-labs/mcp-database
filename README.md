@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **9,148 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **9,213 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,7 +10,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1094 servers)
+- [productivity](categories/productivity.md) (1136 servers)
 - [finance](categories/finance.md) (933 servers)
 - [developer-tools](categories/developer-tools.md) (692 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
@@ -19,15 +19,15 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [marketing-automation](categories/marketing-automation.md) (241 servers)
 - [agriculture](categories/agriculture.md) (225 servers)
 - [ecommerce](categories/ecommerce.md) (208 servers)
-- [health](categories/health.md) (182 servers)
-- [science](categories/science.md) (162 servers)
+- [health](categories/health.md) (195 servers)
+- [science](categories/science.md) (165 servers)
 - [construction](categories/construction.md) (150 servers)
 - [utilities](categories/utilities.md) (134 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [communication-messaging](categories/communication-messaging.md) (130 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
-- [analytics](categories/analytics.md) (110 servers)
+- [analytics](categories/analytics.md) (113 servers)
 - [customer-support](categories/customer-support.md) (108 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
@@ -49,12 +49,12 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [optimization](categories/optimization.md) (54 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [supply-chain](categories/supply-chain.md) (45 servers)
+- [lifestyle](categories/lifestyle.md) (43 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
-- [lifestyle](categories/lifestyle.md) (42 servers)
 - [chemistry](categories/chemistry.md) (40 servers)
 - [document-management](categories/document-management.md) (40 servers)
 - [collaboration](categories/collaboration.md) (39 servers)
-- [healthcare](categories/healthcare.md) (38 servers)
+- [healthcare](categories/healthcare.md) (39 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
 - [utility](categories/utility.md) (36 servers)
@@ -78,10 +78,10 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [fitness](categories/fitness.md) (21 servers)
 - [devops](categories/devops.md) (19 servers)
 - [environment](categories/environment.md) (18 servers)
+- [travel](categories/travel.md) (18 servers)
 - [audio-music](categories/audio-music.md) (17 servers)
 - [content-management](categories/content-management.md) (17 servers)
 - [data-analysis](categories/data-analysis.md) (17 servers)
-- [travel](categories/travel.md) (17 servers)
 - [energy](categories/energy.md) (16 servers)
 - [social-media](categories/social-media.md) (16 servers)
 - [architecture](categories/architecture.md) (15 servers)
@@ -298,6 +298,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [rag](categories/rag.md) (1 servers)
 - [rate-limiting](categories/rate-limiting.md) (1 servers)
 - [recruitment](categories/recruitment.md) (1 servers)
+- [research](categories/research.md) (1 servers)
 - [routing](categories/routing.md) (1 servers)
 - [sales](categories/sales.md) (1 servers)
 - [sales-intelligence](categories/sales-intelligence.md) (1 servers)

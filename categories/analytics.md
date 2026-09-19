@@ -94,6 +94,9 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
 | [Skill Level Assessment Tool](../mcps/skill-level-assessment-tool.md) | Objectively assess surfer proficiency, progression, and learning priorities. |
+| [Sleep Consistency Index](../mcps/sleep-consistency-index.md) | Quantify sleep regularity and circadian alignment through advanced stability analysis. |
+| [Sleep Onset Latency Tracker](../mcps/sleep-onset-latency-tracker.md) | Analyze sleep onset latency patterns and receive personalized hygiene recommendations. |
+| [Sleep Trend Analyzer](../mcps/sleep-trend-analyzer.md) | Analyzes long-term sleep patterns and intervention effectiveness. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Snowboard Rocker Profile Analyzer](../mcps/snowboard-rocker-profile-analyzer.md) | Predict snowboard performance metrics like float, edge grip, and terrain suitability based on rocker geometry. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |

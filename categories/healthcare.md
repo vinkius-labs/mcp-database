@@ -37,6 +37,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Pharmacokinetics Calculator](../mcps/pharmacokinetics-calculator.md) | Derive fundamental pharmacokinetic parameters from concentration-time data. |
 | [Safe Syringe Rounding](../mcps/safe-syringe-rounding.md) | Ensures medical safety by rounding liquid doses down to the nearest syringe marking. |
 | [Sleep Apnea Risk Screener](../mcps/sleep-apnea-risk-screener.md) | Clinical screening tool for Obstructive Sleep Apnea risk using STOP-BANG. |
+| [Sleep Intervention Effectiveness Measurer](../mcps/sleep-intervention-effectiveness-measurer.md) | Quantify the impact, significance, and longevity of sleep-related health interventions. |
 | [SOFA Score Calculator](../mcps/sofa-score-calculator.md) | Calculate SOFA scores, mortality risk, and sepsis status. |
 | [Vaccine Schedule Generator](../mcps/vaccine-schedule-generator.md) | Automated vaccination timeline and booster calculator for dogs and cats. |
 | [Weight to Liquid Dose Calculator](../mcps/weight-to-liquid-dose-calculator.md) | Calculate exact liquid medication volumes based on patient weight and concentration. |

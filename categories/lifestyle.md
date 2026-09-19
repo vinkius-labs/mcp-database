@@ -34,6 +34,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Seimei Handan Fortune Engine](../mcps/seimei-handan-fortune-engine.md) | Calculate Japanese name destiny using the Five Grids numerology. |
 | [Singapore Kopi Decoder](../mcps/singapore-kopi-decoder.md) | Translates Singaporean coffee shorthand and calculates nutritional data. |
 | [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
+| [Sleep Duration Recommender](../mcps/sleep-duration-recommender.md) | Get personalized sleep recommendations based on age, activity, and health. |
 | [Soap Saponification Calculator](../mcps/soap-saponification-calculator.md) | Deterministic cold-process soap formulation calculator for precise lye and water requirements. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Surf Equipment Sizing for Youth](../mcps/surf-equipment-sizing-for-youth.md) | Calculates surfboard dimensions, volume, and wetsuit sizes for youth surfers based on growth and skill. |
