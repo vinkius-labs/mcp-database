@@ -714,6 +714,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Solar Panel Estimator](../mcps/solar-panel-estimator.md) | Estimate solar panel requirements, installation area, and financial payback. |
 | [SOPR & NUPL Bitcoin Strategy](../mcps/sopr-nupl-bitcoin-strategy.md) | Deterministic on-chain signals for Bitcoin market bottoms and tops. |
 | [SOX Compliance Cost Estimator](../mcps/sox-compliance-cost-estimator.md) | Estimate the annual costs of Sarbanes-Oxley (SOX) compliance for pre-IPO companies. |
+| [Spa Supply Cost Allocator](../mcps/spa-supply-cost-allocator.md) | Distribute supply costs to services and calculate profitability. |
 | [Spain IRPF Calculator](../mcps/spain-irpf-calculator.md) | Calculate Spanish Personal Income Tax (IRPF) liabilities, including taxable base determination and regional tax application. |
 | [Split-Bill Grace Period Calculator](../mcps/split-bill-grace-period-calculator.md) | Calculate adjusted repayment amounts for shared expenses when one party covers the cost upfront and the other delays their contribution. |
 | [Square Footage Rent Comparer](../mcps/square-footage-rent-comparer.md) | Fairly split monthly rent between roommates based on room square footage. |

@@ -130,6 +130,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
 | [Pediatric Sleep Duration Guide](../mcps/pediatric-sleep-duration-guide.md) | Precision sleep recommendations for children based on AAP guidelines. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
+| [Percussive Therapy Timer](../mcps/percussive-therapy-timer.md) | Plan optimal massage gun sessions with precise speed and duration settings. |
 | [Pet Body Condition Score (BCS) Assessor](../mcps/pet-body-condition-score-bcs-assessor.md) | Assess pet weight and nutritional status using a 9-point Body Condition Score (BCS) system. |
 | [Pet Daily Food Calculator](../mcps/pet-daily-food-calculator.md) | Calculate precise daily food portions and feeding schedules for your dog based on weight, life stage, and activity level. |
 | [Pet Food Portion Calculator](../mcps/pet-food-portion-calculator.md) | Calculate precise daily food portions for dogs and cats based on weight, activity, and life stage. |
@@ -201,6 +202,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
 | [UV Exposure Risk Calculator](../mcps/uv-exposure-risk-calculator.md) | Estimate sunburn risk, safe sun exposure time, and Vitamin D synthesis potential. |
 | [Vagal Tone Improvement Plan](../mcps/vagal-tone-improvement-plan.md) | Personalized vagus nerve stimulation protocols based on HRV and lifestyle. |
+| [Vibration Therapy Frequency Selector](../mcps/vibration-therapy-frequency-selector.md) | Determines optimal vibration therapy parameters based on clinical goals and patient safety. |
 | [Vitamin D Dosage Calculator](../mcps/vitamin-d-dosage-calculator.md) | Personalized Vitamin D supplementation strategies based on physiological and environmental factors. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |
 | [Waist-to-Height Ratio (WHtR) Health Assessment](../mcps/waist-to-height-ratio-whtr-health-assessment.md) | Assess abdominal obesity and metabolic health risk using waist-to-height ratio. |

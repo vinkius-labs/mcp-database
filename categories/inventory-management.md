@@ -13,6 +13,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Reorder Point Calculator](../mcps/reorder-point-calculator.md) | Calculate optimal reorder points and safety stock levels based on demand volatility and service level targets. |
 | [Safety Stock Calculator](../mcps/safety-stock-calculator.md) | Calculate optimal safety stock levels using Square Root, Statistical, and Fixed Coverage methods. |
 | [Seasonality Index Calculator](../mcps/seasonality-index-calculator.md) | Calculate seasonal indices and optimize inventory planning using historical sales data. |
+| [Spa Product Inventory Forecaster](../mcps/spa-product-inventory-forecaster.md) | Forecast spa product inventory needs and calculate reorder points. |
 | [Stockpile Management Model](../mcps/stockpile-management-model.md) | Optimize stockpile inventory, blending ratios, and draw strategies with real-time grade and capacity tracking. |
 | [Wine Allocations Management](../mcps/wine-allocations-management.md) | Optimized distribution planning for finite wine inventory across sales channels. |
 | [Wine Storage Rotation System](../mcps/wine-storage-rotation-system.md) | Manage wine inventory freshness using FIFO/FEFO rotation logic and aging models. |

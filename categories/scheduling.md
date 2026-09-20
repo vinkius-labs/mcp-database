@@ -11,6 +11,7 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 | [Pet Worming Schedule](../mcps/pet-worming-schedule.md) | Calculate deworming intervals and product suitability for dogs and cats based on age and risk. |
 | [Priority Queue with Aging Scheduler](../mcps/priority-queue-with-aging-scheduler.md) | A deterministic scheduler that manages task execution using priority-based queues with an anti-starvation aging mechanism. |
 | [Recurring Event Expander](../mcps/recurring-event-expander.md) | Expands RFC 5545 RRULE strings into concrete lists of occurrence dates. |
+| [Spa Client Journey Timer](../mcps/spa-client-journey-timer.md) | Maps the complete spa client experience from arrival to departure. |
 | [Timeline Cushion Calculator](../mcps/timeline-cushion-calculator.md) | Generate a synchronized wedding timeline with realistic logistical buffers and milestone timestamps. |
 | [Wave Pool Surf Scheduling Optimizer](../mcps/wave-pool-surf-scheduling-optimizer.md) | Optimize surf session scheduling, wave counts, and rest intervals for wave pools. |
 

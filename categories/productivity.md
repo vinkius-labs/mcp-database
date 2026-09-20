@@ -278,6 +278,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [COR Alternative](../mcps/cor-alternative.md) | Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job. |
 | [Cornerstone OnDemand](../mcps/cornerstone-ondemand.md) | Equip your AI agent to manage training, performance, and employee transcripts via the Cornerstone LMS API. |
 | [Corporate Buzzword](../mcps/corporate-buzzword.md) | Generate random corporate buzzwords and professional phrases to elevate your business speak or add humor to your workflow. |
+| [Corporate Wellness Package Designer](../mcps/corporate-wellness-package-designer.md) | Design structured corporate wellness programs based on company size, budget, and goals. |
 | [Corsizio](../mcps/corsizio.md) | Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees. |
 | [Corsizio](../mcps/corsizio-alternative.md) | Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees. |
 | [Counterfactual-Variant Prover](../mcps/counterfactual-variant-prover.md) | AI models recite memorized answers to classic puzzles, failing when variables or rules are changed. This tool forces cognitive decontamination: isolate variables, compare prompt rules against standard puzzle templates, execute first-principles logic step-by-step, and prove decontaminated output. |
@@ -956,6 +957,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Song Structure Timer](../mcps/song-structure-timer.md) | Calculate musical timing, section durations, and full song timelines based on BPM and meter. |
 | [SoundCloud](../mcps/soundcloud.md) | Manage your SoundCloud account — audit tracks, playlists, and followers via AI. |
 | [Sourdough Starter Tracker](../mcps/sourdough-starter-tracker.md) | Deterministic feeding plans and microbial activity predictions for sourdough starters. |
+| [Spa Room Occupancy Optimizer](../mcps/spa-room-occupancy-optimizer.md) | Optimize spa treatment room utilization and staff scheduling. |
 | [Spec Prover](../mcps/spec-prover.md) | Catch broken formulas before they reach your codebase. Spec Prover forces AI agents to prove every specification works with real inputs — one trace exposes bugs that abstract review never finds. |
 | [Speechmatics](../mcps/speechmatics.md) | Automate speech-to-text and text-to-speech — transcribe audio files, generate natural voices, and manage transcription jobs directly. |
 | [Spell Slot Optimizer](../mcps/spell-slot-optimizer.md) | Strategically distribute spell slots across encounters to maximize damage and utility in RPGs. |
@@ -1026,6 +1028,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [TheCocktailDB](../mcps/thecocktaildb.md) | Search cocktail recipes by name, ingredient, or category — with full mixing instructions, measurements, glass type, and cocktail images. |
 | [TheMealDB](../mcps/themealdb.md) | Search international recipes by name, category, cuisine, or ingredient — with full cooking instructions, measurements, and video tutorials. |
 | [TheMealDB](../mcps/themealdb-alternative.md) | Search recipes, browse ingredients, and discover meals from global cuisines via AI. |
+| [Therapist Schedule Optimizer](../mcps/therapist-schedule-optimizer.md) | Optimizes clinical schedules by balancing therapist expertise, service demand, and room availability. |
 | [Thesaurus API](../mcps/thesaurus-api.md) | Search synonyms and antonyms — audit linguistics via AI. |
 | [TheySaidSo](../mcps/theysaidso.md) | Access the world's largest quote API — retrieve the Quote of the Day, search by author, and fetch random inspiration directly via AI. |
 | [Thinkific](../mcps/thinkific.md) | Create and sell online courses with a platform that handles course hosting, student enrollment, and payment processing beautifully. |
@@ -1062,6 +1065,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Transport for London](../mcps/transport-for-london.md) | Get live tube status, bus arrivals, journey planning, road disruptions and bike point data across London. |
 | [Transposition Calculator](../mcps/transposition-calculator.md) | Transpose notes, chords, scales, and progressions with ease. |
 | [Travel Sleep Preparation Planner](../mcps/travel-sleep-preparation-planner.md) | Optimize your sleep schedule and biological readiness for time zone changes. |
+| [Treatment Room Setup Timer](../mcps/treatment-room-setup-timer.md) | Precision scheduling for spa room turnover and operational workflows. |
 | [Troops](../mcps/troops.md) | Automate HR and recruitment workflows via Troops — manage job offers, candidates, contracts, and timesheets directly from your AI agent. |
 | [Tumblr](../mcps/tumblr.md) | Publish multimedia blog posts, follow creative communities, and engage with millions of users on the iconic blogging platform. |
 | [Tuya](../mcps/tuya.md) | Control and monitor your Tuya IoT ecosystem — query device status and send real-time commands to smart hardware via AI. |
