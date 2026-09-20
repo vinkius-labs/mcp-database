@@ -34,22 +34,36 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 
 
 ## Available Tools (29)
+- **search_workspace_images**: Search and filter images within a workspace
+- **get_dataset_health**: Requires both workspace and project identifiers.
+
+Check dataset health (class distribution, missing annotations, etc)
+- **get_image**: Supply the workspace, project, and unique image ID.
+
+Get details for a specific image
+- **get_root**: Verify authentication and retrieve default workspace
+- **get_training_results**: Supply the workspace, project, and version details.
+
+Retrieve metrics and status for a version training run
+- **restore_trash**: Provide the workspace and the item ID.
+
+Restore an item from the trash
+- **run_inference**: Provide the dataset ID and version ID.
+
+Run inference on an image using hosted models
+- **search_project_images**: Search and filter images within a specific project
 - **add_projects_to_folder**: Provide the workspace, folder ID, and list of project IDs.
 
 Add projects to a folder (Enterprise)
-- **list_workspace_projects**: Provide the workspace ID or slug.
-
-List information about a workspace and its projects
-- **search_workspace_images**: Search and filter images within a workspace
-- **start_training**: Provide the workspace, project, and version ID.
-
-Start training a model on a dataset version
 - **auto_label**: Specify the workspace, project, and batch ID.
 
 Start an auto-labeling job using foundation models
 - **cancel_training**: Provide the workspace, project, and version ID.
 
 Cancel an active training job
+- **get_project**: Supply both the workspace and project identifiers.
+
+Get project details, metadata, and versions
 - **create_annotation_job**: Provide the workspace, project, and batch ID.
 
 Assign a batch of images to a labeler and reviewer
@@ -74,19 +88,6 @@ Fork a public project from Roboflow Universe
 - **get_async_task**: Provide the workspace and task ID.
 
 Track long-running operations like forking or large exports
-- **get_dataset_health**: Requires both workspace and project identifiers.
-
-Check dataset health (class distribution, missing annotations, etc)
-- **get_image**: Supply the workspace, project, and unique image ID.
-
-Get details for a specific image
-- **get_project**: Supply both the workspace and project identifiers.
-
-Get project details, metadata, and versions
-- **get_root**: Verify authentication and retrieve default workspace
-- **get_training_results**: Supply the workspace, project, and version details.
-
-Retrieve metrics and status for a version training run
 - **get_version**: Provide the workspace, project, and version identifier.
 
 Retrieve metadata for a specific dataset version
@@ -96,16 +97,15 @@ List project folders in a workspace (Enterprise)
 - **list_trash**: Provide the workspace identifier as input.
 
 List items in the workspace trash
+- **list_workspace_projects**: Provide the workspace ID or slug.
+
+List information about a workspace and its projects
 - **manage_image_tags**: Provide the workspace, project, image ID, and list of tags.
 
 Add, remove, or set tags on an image
-- **restore_trash**: Provide the workspace and the item ID.
+- **start_training**: Provide the workspace, project, and version ID.
 
-Restore an item from the trash
-- **run_inference**: Provide the dataset ID and version ID.
-
-Run inference on an image using hosted models
-- **search_project_images**: Search and filter images within a specific project
+Start training a model on a dataset version
 - **stop_training**: Provide the workspace, project, and version ID.
 
 Early stop an active training job

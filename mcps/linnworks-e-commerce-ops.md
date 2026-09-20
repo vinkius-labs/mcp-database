@@ -16,15 +16,17 @@ Connect your **Linnworks** account to any AI agent and take full control of your
 
 - **Order Orchestration** — List all open orders across your integrated marketplaces (Amazon, Shopify, eBay) and retrieve detailed line items and shipping info directly from your agent
 - **Inventory Intelligence** — Query specific product details by exact SKU, including weights, categories, and extended property mappings required for accurate listings
+- **Order Deep-Dive** — Retrieve the complete record of any open order by Order ID: customer and shipping details, notes, totals, and all line items
+- **Inventory Search** — Search the catalog by keyword (SKU, title, or barcode) to locate items and, optionally, their per-location stock levels before deeper lookups
 - **Multi-Location Stock** — Retrieve real-time stock levels across all your physical warehouses and virtual locations to identify shortages or surplus inventory
 - **Logistics Audit** — List configured postal services, shipping methods, and carriers to understand your fulfillment network and cost structures
 - **Sales Channel Monitoring** — Enumerate active sales channels and their integration statuses to ensure your multichannel synchronization is healthy
-- **Supplier & PO Management** — List configured suppliers and monitor recent returns and refunds from the last 30 days to maintain supply chain visibility
+- **Supplier & PO Management** — List configured suppliers and monitor recent returns and refunds from the account ledger to maintain supply chain visibility
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Linnworks Server URL and API Token
+2. Enter your Linnworks Application ID, Application Secret, and Permanent Token (create a System Integration app at developer.linnworks.com and install it on your Linnworks account to obtain the Permanent Token)
 3. Start managing your e-commerce ops from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
@@ -34,37 +36,43 @@ Connect your **Linnworks** account to any AI agent and take full control of your
 - **Operations Teams** — audit supplier data and sales channel integrations to ensure seamless multichannel growth and logistics compliance
 
 
-## Available Tools (10)
-- **get_stock_level**: Returns available, in-order, due, and minimum quantities per location.
+## Available Tools (12)
+- **list_categories**: Use it to understand product organization or when filtering inventory by category.
 
-Get Linnworks stock levels across all locations by Item ID
-- **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
+List Linnworks stock item categories
+- **list_channels**: Use it to check which channels are linked or when the user asks about multichannel sync.
 
-Get Linnworks open orders including lines and customer info
-- **list_categories**: Returns category IDs, names, and parent-child hierarchy. Use to understand product organization and filter inventory.
+List the Linnworks sales channels (Amazon, Shopify, etc.)
+- **list_locations**: Use it to know which warehouses exist before interpreting stock levels, or when the user asks where inventory lives.
 
-Get Linnworks active product grouping categories
-- **list_channels**: ) and their properties via /api/Inventory/GetChannels. Returns channel ID, source name, subchannel info, and integration status.
+List the Linnworks inventory locations/warehouses
+- **list_suppliers**: Use it to audit supplier data or when the user asks who supplies the catalog.
 
-Get Linnworks active sales channel properties (Amazon, Shopify, etc)
-- **list_locations**: Returns location ID, name, address, and configuration settings for each warehouse.
+List the Linnworks suppliers
+- **list_postal_services**: Use it to audit the fulfillment/shipping network or when the user asks which carriers and services are set up.
 
-Get Linnworks explicitly configured inventory locations/warehouses
-- **list_suppliers**: Returns supplier names, codes, contact details, and currency settings.
+List the Linnworks postal/shipping services
+- **get_order_details**: This is faster and richer than the open-orders list for a small set of specific orders. Get the Order ID GUID from `list_open_orders` results (the `OrderId` field) or from an order the user references. Pass one or several Order ID GUIDs, space- or comma-separated.
 
-Get Linnworks configured purchase order suppliers
-- **list_returns**: Returns return IDs, reason codes, refund amounts, order references, and processing status.
+Get full details of one or more open Linnworks orders by Order ID (GUID)
+- **search_stock_items**: Use it to discover items by name before calling `get_stock_level` (which needs the Stock Item ID GUIDs found here) or when the user asks to find a product by title or description. Set `with_stock_levels` to "true" to also include per-location stock quantities in each result. `limit` controls the page size (default 50, max 200).
 
-Get Linnworks recent returns from the last 30 days
-- **execute_custom_rpc**: Example path: /api/Inventory/GetInventoryItemTitles. All Linnworks APIs are POST-based RPC. Refer to apps.linnworks.net/Api for the full endpoint list.
+Search Linnworks stock items by keyword (item number/SKU, title, or barcode)
+- **list_open_orders**: Use it when asked what is waiting to be fulfilled or to audit order volume. Pass `limit` only to control the page size (default 20). Orders are the first page of the open-orders list; raise `limit` for a longer view.
 
-Execute any custom fallback POST RPC method exposed by Linnworks API
-- **get_inventory_item**: Use this to check product details, pricing, weight, and category assignment for a specific product.
+List open orders in the Linnworks account, including order lines and customer info
+- **get_inventory_item**: Use it when the user names a specific product. The API matches exact codes — if nothing comes back, the code is likely not a stock-item code in this account; confirm the code or list items via `execute_custom_rpc`.
 
-Get Linnworks inventory item details by exact SKU
-- **list_postal_services**: Returns service names, carriers, tracking capabilities, and cost configuration.
+Look up a Linnworks stock item by its exact SKU/item code
+- **get_stock_level**: IDs are GUIDs, space- or comma-separated — get them from `get_inventory_item` results. Use it to check available vs. committed/due quantities and spot shortages or surplus across locations. Returns one level record per item/location combination.
 
-Get Linnworks explicitly configured postal services
+Get Linnworks stock levels by Stock Item ID(s)
+- **list_returns**: Use it to monitor returns activity. The list is a paged search of the ledger; it is not filterable by date range.
+
+Search Linnworks returns/refunds records
+- **execute_custom_rpc**: Pass the operation path (for example `/Orders/GetOpenOrders` — the leading `/api` is added automatically) and the JSON payload as a string. Use it as an escape hatch for lookups or actions; check the Linnworks API reference (apidocs.linnworks.net) for operation names and expected payloads before calling. Returns the operation result.
+
+Call an arbitrary Linnworks API operation by path and JSON payload
 
 
 ## 💬 Prompt Examples

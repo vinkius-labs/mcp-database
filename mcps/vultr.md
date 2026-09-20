@@ -34,12 +34,6 @@ Connect your **Vultr** account to any AI agent to manage your cloud infrastructu
 
 
 ## Available Tools (19)
-- **get_bare_metal_ipv6**: Pass the instance ID to query the details.
-
-Get IPv6 info for a bare metal instance
-- **halt_bare_metal**: Use the instance ID to power down the machine.
-
-Halt a bare metal instance
 - **get_account**: Get Vultr account info
 - **list_api_keys**: List API keys
 - **get_account_bgp**: Get Account BGP Info
@@ -48,9 +42,6 @@ Halt a bare metal instance
 - **list_backups**: List backups
 - **list_bare_metals**: List bare metal instances
 - **create_bare_metal**: Create a bare metal instance
-- **delete_bare_metal**: Supply the instance ID to permanently remove the resource.
-
-Delete a bare metal instance
 - **get_backup**: Get a specific backup
 - **get_bare_metal_ipv4**: Pass the instance ID to query the details.
 
@@ -61,13 +52,22 @@ Reboot a bare metal instance
 - **reinstall_bare_metal**: Pass the instance ID to initiate the OS reinstall.
 
 Reinstall a bare metal instance
+- **setup_bgp**: Setup BGP for the account
+- **delete_bare_metal**: Supply the instance ID to permanently remove the resource.
+
+Delete a bare metal instance
+- **get_bare_metal_ipv6**: Pass the instance ID to query the details.
+
+Get IPv6 info for a bare metal instance
+- **halt_bare_metal**: Use the instance ID to power down the machine.
+
+Halt a bare metal instance
 - **set_bare_metal_ipv4_reverse**: Provide the instance ID and the target IP address.
 
 Set Reverse DNS for IPv4 on a bare metal instance
 - **set_bare_metal_ipv6_reverse**: Provide the instance ID and the target IP address.
 
 Set Reverse DNS for IPv6 on a bare metal instance
-- **setup_bgp**: Setup BGP for the account
 - **start_bare_metal**: Specify the instance ID as the required parameter.
 
 Start a bare metal instance

@@ -31,10 +31,6 @@ Connect your **Google Calendar** network to any AI agent and optimize scheduling
 
 
 ## Available Tools (15)
-- **check_free_busy**: Provide the Free/Busy query object as a JSON string.
-
-Check availability for a specific time range
-- **get_settings**: Get user calendar settings
 - **get_calendar_metadata**: Provide the calendar ID.
 
 Get metadata for a specific calendar
@@ -48,15 +44,22 @@ Partially update an event (e.g., change just the status or attendees)
 - **quick_add_event**: Supply the target calendar ID and the event text.
 
 Create an event from a simple text string
+- **list_acl**: Provide the calendar ID.
+
+List access control rules for a calendar
+- **update_event**: Specify the calendar ID, event ID, and the updated event data.
+
+Modify an existing event
+- **search_events**: Specify the calendar ID and the search term.
+
+Search for events based on a text query
 - **create_event**: Supply the target calendar ID and the event details.
 
 Schedule a new event
 - **delete_event**: Provide the calendar ID and the event ID.
 
 Cancel/Delete an event
-- **list_acl**: Provide the calendar ID.
-
-List access control rules for a calendar
+- **get_settings**: Get user calendar settings
 - **list_event_instances**: Supply the calendar ID and the recurring event ID.
 
 List instances of a recurring event
@@ -66,12 +69,9 @@ List upcoming events from a specific calendar
 - **move_event**: Provide both the source and target calendar IDs.
 
 Move an event to a different calendar
-- **search_events**: Specify the calendar ID and the search term.
+- **check_free_busy**: Provide the Free/Busy query object as a JSON string.
 
-Search for events based on a text query
-- **update_event**: Specify the calendar ID, event ID, and the updated event data.
-
-Modify an existing event
+Check availability for a specific time range
 
 
 ## 💬 Prompt Examples

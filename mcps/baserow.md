@@ -36,21 +36,21 @@ No more manual entry into spreadsheet-like tables or digging through complex rel
 
 
 ## Available Tools (9)
+- **list_tables**: List tables in a database
+- **create_row**: Provide data as a JSON string of field names and values.
+
+Create a new row in a table
+- **list_workspaces**: List all Baserow workspaces
+- **delete_row**: Delete a specific row
+- **get_row**: Get details for a specific row
 - **list_applications**: List all Baserow applications (databases)
 - **list_fields**: List fields in a table
 - **list_rows**: Supports search and pagination.
 
 List rows in a table
-- **list_tables**: List tables in a database
 - **update_row**: Provide data as a JSON string.
 
 Update an existing row
-- **list_workspaces**: List all Baserow workspaces
-- **create_row**: Provide data as a JSON string of field names and values.
-
-Create a new row in a table
-- **delete_row**: Delete a specific row
-- **get_row**: Get details for a specific row
 
 
 ## 💬 Prompt Examples

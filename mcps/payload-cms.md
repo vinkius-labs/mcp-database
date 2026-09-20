@@ -40,9 +40,9 @@ Connect your generative environments explicitly to the **Payload CMS Local REST 
 - **list_collection_documents**: Identify bounded routing spaces inside the Headless Payload Collections
 - **list_payload_users**: Identify precise active arrays spanning rented Admin identities
 - **search_collection_where**: Retrieve explicit Cloud logging tracing explicit Payload Queries
-- **patch_cms_document**: Mutate global Web CRM boundaries substituting database Blocks via ID
 - **update_singleton_global**: Dispatch an automated validation check routing Global updates
 - **create_cms_document**: Provision a highly-available JSON Payload writing Rows into Payload
+- **patch_cms_document**: Mutate global Web CRM boundaries substituting database Blocks via ID
 
 
 ## 💬 Prompt Examples

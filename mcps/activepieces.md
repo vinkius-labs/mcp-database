@@ -47,10 +47,10 @@ Apply an operation to a flow
 - **create_project_release**: Create a project release
 - **create_project**: Create a new project
 - **delete_app_connection**: Delete an app connection
+- **delete_folder**: Delete a folder
 - **delete_flow**: Use this only when the flow is no longer needed.
 
 Delete a flow by ID
-- **delete_folder**: Delete a folder
 - **delete_global_connection**: Delete a global connection
 - **get_flow_run**: Get detailed execution data for a flow run
 - **get_flow**: Get a specific flow by ID
@@ -59,9 +59,6 @@ Delete a flow by ID
 - **list_app_connections**: List app connections
 - **list_flow_runs**: List flow runs
 - **list_flows**: List automation flows
-- **list_folders**: Specify the project ID to target the correct scope.
-
-List folders
 - **list_tables**: List internal data tables
 - **list_users**: List users
 - **rotate_mcp_token**: Rotate MCP token for a project
@@ -72,12 +69,15 @@ List folders
 
 Create or update an app connection
 - **upsert_global_connection**: Create or update a global connection
-- **list_global_connections**: List global connections
 - **list_project_members**: List members of a project
+- **list_records**: List records in a table
 - **list_projects**: Filter by external ID or display name.
 
 List projects
-- **list_records**: List records in a table
+- **list_folders**: Specify the project ID to target the correct scope.
+
+List folders
+- **list_global_connections**: List global connections
 
 
 ## 💬 Prompt Examples

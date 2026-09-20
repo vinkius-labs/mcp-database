@@ -36,13 +36,13 @@ List all 160 whisky distilleries tracked by auction data (Scotland, Japan, US...
 - **compare_distilleries**: Slugs from list_distilleries.
 
 Compare auction performance of up to 6 distilleries side by side (latest month + all-time averages)
-- **get_market_overview**: 2157+ auction-month rows.
-
-Get the globalThis whisky auction market overview (all auctions aggregated per month)
 - **get_auction_houses**: auction, Bonhams, JustWhisky...) with months recorded, mean bid and total volume — useful to know where rare bottles actually trade.
 
 List every whisky auction house tracked, with activity stats
 - **find_price_spikes**: Find the biggest price spikes and drops in a distillery's auction history
+- **get_market_overview**: 2157+ auction-month rows.
+
+Get the globalThis whisky auction market overview (all auctions aggregated per month)
 
 
 ## 💬 Prompt Examples
