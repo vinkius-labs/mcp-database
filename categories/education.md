@@ -26,6 +26,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Electrochemical Cell Calculator](../mcps/electrochemical-cell-calculator.md) | Calculates cell potential and Gibbs free energy using the Nernst equation. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
 | [Equilibrium Constant Calculator](../mcps/equilibrium-constant-calculator.md) | Compute Kc, Kp, reaction quotients, and equilibrium concentrations. |
+| [Feldenkrais Lesson Planner](../mcps/feldenkrais-lesson-planner.md) | Design specialized Awareness Through Movement (ATM) lessons based on functional goals and physical constraints. |
 | [Final Grade Needed Calculator](../mcps/final-grade-needed-calculator.md) | Calculate the exact score needed on upcoming exams or assignments to reach your target course grade. |
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |

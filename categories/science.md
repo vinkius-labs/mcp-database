@@ -42,6 +42,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Crystal Field Theory Calculator](../mcps/crystal-field-theory-calculator.md) | Calculate electronic configurations, CFSE, magnetic moments, and color predictions for transition metal complexes. |
 | [Crystallite Size Calculator](../mcps/crystallite-size-calculator.md) | Analyze XRD data to determine crystallite size, microstrain, and instrumental broadening. |
 | [Debye-Hückel Theory Calculator](../mcps/debye-huckel-theory-calculator.md) | Calculate ionic activity coefficients and Debye length in electrolyte solutions. |
+| [Delayed Sleep Phase Assessment](../mcps/delayed-sleep-phase-assessment.md) | Assess circadian misalignment and get chronotherapy guidance. |
 | [Diffusion Coefficient Calculator](../mcps/diffusion-coefficient-calculator.md) | Calculate diffusion coefficients, particle radii, and transport kinetics using the Stokes-Einstein framework. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Precise volume calculations for single-step and serial dilutions. |
 | [Distillation Proof Calculator](../mcps/distillation-proof-calculator.md) | Deterministic tools for alcohol proof correction, distillation stage identification, and volume-based cuts. |

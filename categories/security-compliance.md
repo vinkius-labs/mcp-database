@@ -4,6 +4,7 @@ Explore the open database of **security-compliance** Model Context Protocol (MCP
 
 | Tool Name | Description |
 |-----------|-------------|
+| [1Password SaaS Manager](../mcps/1password-saas-manager.md) | Govern your 1Password organization for AI agents: catalog SaaS apps, inspect people and teams, read the audit log, and run automation workflows. |
 | [AbuseIPDB](../mcps/abuseipdb.md) | Audit IP addresses — check abuse scores and reports via AI. |
 | [Acunetix 360](../mcps/acunetix-360.md) | Automated web vulnerability scanning — manage scans, track issues, and audit security via AI. |
 | [Anura](../mcps/anura.md) | Ad fraud detection MCP server. Validate visitors in real-time and manage fraud reports via Anura.io. |
