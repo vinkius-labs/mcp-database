@@ -14,10 +14,10 @@ This MCP server provides specialized inventory management tools for spa operatio
 
 
 ## Available Tools (4)
-- **predict_usage_patterns**: Projects future inventory depletion by combining standard usage and scheduled booking spikes
 - **analyze_stock_health**: Provides a high-level status report on whether a product is well-stocked, at risk, or in a stockout state
 - **calculate_reorder_thresholds**: Determines the safety stock and the reorder point for a specific product
 - **calculate_replenishment_plan**: Determines how much to order and when to place the order
+- **predict_usage_patterns**: Projects future inventory depletion by combining standard usage and scheduled booking spikes
 
 
 ## 💬 Prompt Examples

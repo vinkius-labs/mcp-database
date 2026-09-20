@@ -34,17 +34,17 @@ Connect your **Mailshake** account to any AI agent to automate your cold outreac
 
 
 ## Available Tools (9)
+- **list_outreach_campaigns**: List all outreach campaigns
 - **list_outreach_messages**: List sent and received messages
+- **get_message_content**: Get content for a specific email message
+- **pause_outreach_campaign**: Pause a running campaign
+- **list_campaign_recipients**: List all recipients in a campaign
 - **add_prospects_to_campaign**: Requires a JSON body with recipient details.
 
 Add new prospects to an existing campaign
-- **list_outreach_campaigns**: List all outreach campaigns
 - **get_campaign_details**: Get details for a specific campaign
 - **get_lead_history**: Get history for a specific lead
-- **get_message_content**: Get content for a specific email message
 - **list_campaign_leads**: List qualified leads
-- **pause_outreach_campaign**: Pause a running campaign
-- **list_campaign_recipients**: List all recipients in a campaign
 
 
 ## 💬 Prompt Examples

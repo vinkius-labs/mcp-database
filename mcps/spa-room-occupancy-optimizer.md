@@ -14,10 +14,10 @@ This MCP server provides advanced optimization tools for spa management. It help
 
 
 ## Available Tools (4)
-- **get_optimal_booking_slots**: Identifies the best windows for scheduling services to minimize idle time
 - **analyze_scheduling_gaps**: Detects wasted time where rooms or staff are available but cannot be utilized for a full service
 - **calculate_maximum_capacity**: Forecasts the total number of clients that can be serviced in a single operational day
 - **calculate_turnover_requirements**: Determines the necessary downtime between services to maintain hygiene and readiness standards
+- **get_optimal_booking_slots**: Identifies the best windows for scheduling services to minimize idle time
 
 
 ## 💬 Prompt Examples

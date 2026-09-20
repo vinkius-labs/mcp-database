@@ -14,8 +14,8 @@ This MCP server provides advanced scheduling logic for therapeutic clinics. It r
 
 
 ## Available Tools (4)
-- **calculate_break_windows**: Identifies appropriate times for therapists to take breaks without disrupting service
 - **analyze_service_distribution**: Evaluates how evenly or unevenly work is distributed across the staff
+- **calculate_break_windows**: Identifies appropriate times for therapists to take breaks without disrupting service
 - **check_overtime_risk**: Monitors and flags potential violations of therapist work hour limits
 - **generate_optimal_schedule**: Produces a complete clinical schedule that balances demand against therapist and room availability
 

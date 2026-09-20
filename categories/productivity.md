@@ -1121,6 +1121,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Weight Increment Calculator](../mcps/weight-increment-calculator.md) | Calculates optimal weight increases for progressive overload. |
 | [Weighted Average Calculator](../mcps/weighted-average-calculator.md) | Predict academic performance and calculate required grades to pass subjects. |
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |
+| [Wellness Program Duration Planner](../mcps/wellness-program-duration-planner.md) | Plans wellness program duration, phases, and progression strategies. |
 | [White Noise Sleep Planner](../mcps/white-noise-sleep-planner.md) | Optimizes white noise volume, duration, and sound type for better sleep. |
 | [WHOOP](../mcps/whoop.md) | Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent. |
 | [Wiki.js](../mcps/wikijs.md) | Manage your Wiki.js instance—create, search, and update documentation pages directly from your AI agent. |

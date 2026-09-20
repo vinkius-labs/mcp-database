@@ -14,10 +14,10 @@ This MCP server provides specialized tools for spa and wellness professionals to
 
 
 ## Available Tools (4)
-- **generate_cleaning_checklist**: Provides a specific list of sanitary tasks based on the previous service
-- **plan_setup_sequence**: Determines the chronological order of tasks to ensure hygiene and efficiency
 - **calculate_turnover**: Calculates the total estimated time needed to transition the room
 - **evaluate_buffer_adequacy**: Checks if the planned turnover time allows for a safe margin of error
+- **generate_cleaning_checklist**: Provides a specific list of sanitary tasks based on the previous service
+- **plan_setup_sequence**: Determines the chronological order of tasks to ensure hygiene and efficiency
 
 
 ## 💬 Prompt Examples

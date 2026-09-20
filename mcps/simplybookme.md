@@ -34,8 +34,6 @@ Connect your **SimplyBook.me** account to any AI agent to automate your online b
 
 
 ## Available Tools (11)
-- **cancel_booking**: Cancel an existing booking
-- **list_promotions**: List all active promotions and discounts
 - **check_availability**: Check available time slots
 - **get_booking_details**: Get details for a specific booking
 - **list_all_bookings**: List recent appointments
@@ -45,8 +43,10 @@ Connect your **SimplyBook.me** account to any AI agent to automate your online b
 List registered clients
 - **list_providers**: List service providers (staff)
 - **list_services**: List all bookable services
-- **get_client**: Get details for a specific client
 - **create_booking**: Create a new appointment
+- **cancel_booking**: Cancel an existing booking
+- **get_client**: Get details for a specific client
+- **list_promotions**: List all active promotions and discounts
 
 
 ## 💬 Prompt Examples
