@@ -35,24 +35,24 @@ Connect your **Browserless.io** account to any AI agent and orchestrate your hea
 
 
 ## Available Tools (8)
-- **get_page_content**: Use this when you need the raw page source.
-
-Retrieve the rendered HTML content of a URL
 - **list_active_sessions**: List currently active browser sessions
 - **check_system_health**: This function does not require any input.
 
 Check the health of the Browserless service
+- **take_screenshot**: Ensure the URL is fully qualified and accessible.
+
+Take a screenshot of a URL using headless Chrome
 - **generate_pdf**: Provide the URL as the primary argument.
 
 Generate a PDF of a URL
 - **get_account_config**: Retrieve account configuration
+- **get_page_content**: Use this when you need the raw page source.
+
+Retrieve the rendered HTML content of a URL
 - **get_usage_stats**: Retrieve account usage statistics
 - **run_scrape**: Define all desired elements and selectors in the elements array.
 
 Run a custom scraping script
-- **take_screenshot**: Ensure the URL is fully qualified and accessible.
-
-Take a screenshot of a URL using headless Chrome
 
 
 ## 💬 Prompt Examples

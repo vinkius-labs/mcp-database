@@ -39,9 +39,6 @@ Get list of checking accounts
 - **get_credit_card_invoices**: Get credit card invoices
 - **get_balance**: Get current account balance and limits
 - **create_pix**: Send a Pix payment to a key
-- **pay_barcode**: Use this tool only when paying a bill via barcode.
-
-Pay a barcode/boleto bill
 - **pay_utility_bill**: Pay a utility bill via barcode
 - **get_pix_history**: Type can be RECEIVED or SENT.
 
@@ -50,6 +47,9 @@ Get history of Pix transfers (Sent/Received)
 - **get_statement**: Dates in YYYY-MM-DD format.
 
 Get account statement (transactions) by date range
+- **pay_barcode**: Use this tool only when paying a bill via barcode.
+
+Pay a barcode/boleto bill
 
 
 ## 💬 Prompt Examples

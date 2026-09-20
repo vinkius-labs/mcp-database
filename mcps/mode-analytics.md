@@ -34,28 +34,28 @@ Connect your **Mode Analytics** workspace to any AI agent and take full control 
 
 
 ## Available Tools (10)
-- **get_mode_account**: Get authenticated account details
-- **list_mode_definitions**: List calculated field definitions
-- **list_mode_members**: List workspace members
-- **list_mode_queries**: Supply the report token to access the queries.
-
-List SQL queries in a report
 - **list_mode_spaces**: List Mode Analytics spaces
-- **run_mode_report**: Pass the report token and required parameters.
-
-Trigger a new run for a report
 - **get_mode_report_run**: Supply both the report and run tokens.
 
 Get details for a report run
-- **get_mode_report**: Use the report token to identify the target report.
-
-Get details for a specific report
 - **list_mode_report_runs**: Supply the report token to view run history.
 
 List runs for a report
 - **list_mode_reports**: Provide a space token to list reports.
 
 List reports in a space
+- **get_mode_account**: Get authenticated account details
+- **get_mode_report**: Use the report token to identify the target report.
+
+Get details for a specific report
+- **list_mode_definitions**: List calculated field definitions
+- **list_mode_members**: List workspace members
+- **list_mode_queries**: Supply the report token to access the queries.
+
+List SQL queries in a report
+- **run_mode_report**: Pass the report token and required parameters.
+
+Trigger a new run for a report
 
 
 ## 💬 Prompt Examples

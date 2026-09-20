@@ -35,25 +35,25 @@ No manual searches inside cluttered visual portals. Your AI agent digs up the ex
 
 
 ## Available Tools (10)
-- **get_account_usage**: Retrieve account storage and traffic usage
 - **list_tags**: List all asset tags
-- **list_smart_filters**: Execute the function to retrieve the list of available filters.
-
-List configured smart filters
 - **list_assets**: Use a keyword to filter results, but always specify the asset type.
 
 List digital assets from the DAM
+- **get_account_usage**: Retrieve account storage and traffic usage
+- **get_download_link**: Pass the asset ID to obtain the secure link.
+
+Get a direct download URL for an asset
+- **list_users**: List all portal users
 - **get_asset**: Provide the unique asset ID to fetch the data.
 
 Get details of a specific asset
 - **get_collection**: You must provide the unique collection ID.
 
 Get details of a specific collection
-- **get_download_link**: Pass the asset ID to obtain the secure link.
-
-Get a direct download URL for an asset
 - **list_collections**: List all media collections
-- **list_users**: List all portal users
+- **list_smart_filters**: Execute the function to retrieve the list of available filters.
+
+List configured smart filters
 - **patch_asset_metadata**: Provide the asset ID and the fields to update.
 
 Update metadata for an asset

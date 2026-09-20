@@ -30,16 +30,7 @@ The **Atera MCP Server** provides your AI agent with a powerful interface to you
 
 ## Available Tools (9)
 - **list_tickets**: List all support tickets
-- **get_ticket**: Provide the required Ticket ID.
-
-Get details for a specific ticket
 - **get_account_check**: Verify Atera account connection
-- **create_ticket**: You must provide a title and description.
-
-Create a new support ticket
-- **get_agent**: Provide the required Agent ID.
-
-Get details for a specific agent
 - **get_customer**: Provide the required Customer ID.
 
 Get details for a specific customer
@@ -48,6 +39,15 @@ Get details for a specific customer
 List all monitored agents (devices) in Atera
 - **list_alerts**: List recent system alerts
 - **list_customers**: List all customers (organizations)
+- **create_ticket**: You must provide a title and description.
+
+Create a new support ticket
+- **get_agent**: Provide the required Agent ID.
+
+Get details for a specific agent
+- **get_ticket**: Provide the required Ticket ID.
+
+Get details for a specific ticket
 
 
 ## 💬 Prompt Examples

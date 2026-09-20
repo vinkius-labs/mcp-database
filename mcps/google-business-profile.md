@@ -37,12 +37,6 @@ Keep your business information up-to-date and your customers heard without manua
 
 
 ## Available Tools (12)
-- **create_review_reply**: Use the review name to target the correct review.
-
-Reply to a customer review
-- **list_reviews**: Provide the location ID to ensure accurate results.
-
-Fetch reviews for a location
 - **get_location_insights**: Pass the location ID.
 
 Fetch performance metrics for a location
@@ -52,20 +46,26 @@ Get details of a specific review
 - **get_verification_status**: Pass the location ID.
 
 Check verification status for a location
+- **list_local_posts**: Supply the location ID.
+
+List posts (updates, events, offers) for a location
 - **answer_question**: Use the question name and the desired answer text.
 
 Provide an answer to a customer question
+- **create_review_reply**: Use the review name to target the correct review.
+
+Reply to a customer review
 - **get_location_details**: Provide a valid location ID to ensure accurate results.
 
 Get detailed info for a specific location
 - **list_accounts**: List managed Google Business accounts
-- **list_local_posts**: Supply the location ID.
-
-List posts (updates, events, offers) for a location
 - **list_locations**: List business locations managed by the account
 - **list_questions**: Provide the location ID.
 
 List customer questions for a location
+- **list_reviews**: Provide the location ID to ensure accurate results.
+
+Fetch reviews for a location
 - **update_business_hours**: Pass the location ID and the hours JSON string.
 
 Change business operating hours

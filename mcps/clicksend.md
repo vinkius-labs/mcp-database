@@ -42,24 +42,24 @@ Retrieve core account details and balance
 - **send_clicksend_sms**: Numbers should be in E.164 format.
 
 Send one or more SMS messages
-- **list_clicksend_contact_lists**: Use this tool to view available recipient groups.
-
-List all contact lists stored in ClickSend
-- **get_sms_outbound_history**: Use this tool to review past outbound communications.
-
-Retrieve a history of sent SMS messages
-- **list_received_sms**: Use this tool to review received communications.
-
-List all inbound (received) SMS messages
 - **get_physical_mail_history**: Use this tool to view post mailing records.
 
 Retrieve a history of physical letters sent via ClickSend Post
-- **list_sms_marketing_campaigns**: Use this tool to view campaign status.
+- **get_sms_outbound_history**: Use this tool to review past outbound communications.
 
-List all scheduled and sent SMS marketing campaigns
+Retrieve a history of sent SMS messages
+- **list_clicksend_contact_lists**: Use this tool to view available recipient groups.
+
+List all contact lists stored in ClickSend
 - **get_voice_call_history**: Use this tool to review past voice call activity.
 
 Retrieve a history of automated voice calls sent
+- **list_received_sms**: Use this tool to review received communications.
+
+List all inbound (received) SMS messages
+- **list_sms_marketing_campaigns**: Use this tool to view campaign status.
+
+List all scheduled and sent SMS marketing campaigns
 
 
 ## 💬 Prompt Examples

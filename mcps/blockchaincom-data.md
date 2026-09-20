@@ -40,21 +40,21 @@ Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cr
 - **get_latest_block**: Do not specify a block hash.
 
 Get details of the latest Bitcoin block
+- **get_chart**: Specify the chart name.
+
+Retrieve historical chart data (e.g. market-price, n-transactions)
+- **get_mempool_stats**: Get current mempool statistics
+- **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
 - **get_address**: Must provide the target address.
 
 Get balance and transaction history for a Bitcoin address
 - **get_block**: Provide the required block hash.
 
 Get details of a specific block by hash
-- **get_chart**: Specify the chart name.
-
-Retrieve historical chart data (e.g. market-price, n-transactions)
-- **get_mempool_stats**: Get current mempool statistics
 - **get_ticker**: Get current BTC prices in various fiat currencies
 - **get_transaction**: Provide the required transaction hash.
 
 Get details of a specific transaction by hash
-- **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
 
 
 ## 💬 Prompt Examples

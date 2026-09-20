@@ -32,15 +32,12 @@ Connect your AI to **CoinGecko**, the crypto market data platform tracking price
 
 
 ## Available Tools (8)
-- **list_categories**: to this tool.
+- **list_markets**: Pass the necessary parameters in the payload.
 
-Retrieve a list of all cryptocurrency categories
-- **list_exchanges**: Specify filtering criteria within the payload.
+Retrieve a list of coins with detailed market data
+- **get_coin_details**: Ensure the coin ID is included in the payload.
 
-Retrieve a list of cryptocurrency exchanges
-- **search_crypto**: Pass the search term and type in the payload.
-
-Search for coins, exchanges, and categories by keyword
+Retrieve detailed information about a specific cryptocurrency
 - **get_global_data**: Use the payload to specify the required data scope.
 
 Retrieve global cryptocurrency market data
@@ -50,12 +47,15 @@ Retrieve the current price of one or more cryptocurrencies
 - **get_trending**: Include necessary time range or filters in the payload.
 
 Retrieve trending coins from the last 24 hours
-- **list_markets**: Pass the necessary parameters in the payload.
+- **list_categories**: to this tool.
 
-Retrieve a list of coins with detailed market data
-- **get_coin_details**: Ensure the coin ID is included in the payload.
+Retrieve a list of all cryptocurrency categories
+- **list_exchanges**: Specify filtering criteria within the payload.
 
-Retrieve detailed information about a specific cryptocurrency
+Retrieve a list of cryptocurrency exchanges
+- **search_crypto**: Pass the search term and type in the payload.
+
+Search for coins, exchanges, and categories by keyword
 
 
 ## 💬 Prompt Examples

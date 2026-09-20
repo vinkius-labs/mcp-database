@@ -43,9 +43,6 @@ List Secret Group dictionaries injecting into the environments
 - **delete_project**: Eliminates the Northflank project boundary entirely, severing traffic routing, killing active cron-jobs, and dropping ephemeral node.js/python backend service processes executing memory.
 
 Permanently tear down a Project and all cascading microservices
-- **get_project**: Correlates global resource restrictions backing subsequent application microservice pipelines.
-
-Examine deeper regional metadata for a Northflank Project
 - **get_service**: Useful for assessing horizontal scaling needs and verifying external domain SSL associations.
 
 Retrieve the exact structural anatomy of a single Service
@@ -62,6 +59,9 @@ Gracefully cycle container replicas for a specific Service
 - **create_project**: Directly assigns the fundamental cloud region routing ingress requests, acting as a crucial first step in any IaC bootstrapping sequence.
 
 Provision a brand new isolated Northflank Project space
+- **get_project**: Correlates global resource restrictions backing subsequent application microservice pipelines.
+
+Examine deeper regional metadata for a Northflank Project
 
 
 ## 💬 Prompt Examples

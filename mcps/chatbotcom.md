@@ -40,18 +40,18 @@ Connect your **ChatBot.com** account to any AI agent and take full control of yo
 
 Get detailed information for a specific story
 - **list_chatbot_entities**: List custom entities used for NLP matching
+- **list_chatbot_webhooks**: List all configured webhook integrations
+- **list_chatbot_stories**: List all stories (bot workflows)
 - **get_chatbot_user_details**: Provide the unique user ID for accurate retrieval.
 
 Get details for a specific chatbot user
+- **list_chatbot_users**: List all users who have interacted with the bot
 - **list_story_interactions**: Use the story ID to filter results.
 
 List all interactions within a story
-- **list_chatbot_stories**: List all stories (bot workflows)
 - **list_training_data**: Execute the function without arguments.
 
 List unrecognized phrases that require bot training
-- **list_chatbot_users**: List all users who have interacted with the bot
-- **list_chatbot_webhooks**: List all configured webhook integrations
 
 
 ## 💬 Prompt Examples

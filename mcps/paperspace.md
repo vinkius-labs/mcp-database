@@ -34,11 +34,11 @@ Bring **DigitalOcean Paperspace Cloud Insights** directly into your AI workflows
 
 ## Available Tools (6)
 - **list_machines**: Identify bounded Compute resources inside the Headless Paperspace limits
-- **get_machine_details**: Perform structural extraction of properties driving active Instance logic
 - **list_deployments**: Retrieve explicit Cloud logging tracing explicit Deploy targets
 - **list_notebooks**: Inspect deep internal arrays mitigating specific AI workload limits
 - **list_projects**: Enumerate explicitly attached structured rules exporting active Team limits
 - **get_user_details**: Identify precise active arrays spanning native Identity Auth
+- **get_machine_details**: Perform structural extraction of properties driving active Instance logic
 
 
 ## 💬 Prompt Examples

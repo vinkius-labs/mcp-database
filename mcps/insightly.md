@@ -14,34 +14,34 @@ Empower your AI agents to manage your customer relationships with Insightly. Thi
 
 
 ## Available Tools (10)
-- **list_organisations**: No arguments are required for this query.
-
-Lists all registered organisations
-- **list_teams**: No arguments are required for this query.
-
-Lists all defined teams
-- **list_tasks**: No arguments are required for this query.
-
-Lists all tasks across projects
 - **list_users**: No arguments are required for this query.
 
 Lists all users in the system
-- **list_contacts**: Lists all contacts in Insightly
-- **list_events**: No arguments are required for this query.
+- **list_tasks**: No arguments are required for this query.
 
-Lists all calendar events
+Lists all tasks across projects
+- **list_contacts**: Lists all contacts in Insightly
 - **list_leads**: No arguments are required for this query.
 
 Lists all marketing leads
 - **list_opportunities**: No arguments are required for this query.
 
 Lists all sales opportunities
-- **list_projects**: No arguments are required for this query.
-
-Lists all active and past projects
 - **get_contact**: Provide the contact ID as the required argument.
 
 Retrieves details for a specific contact
+- **list_events**: No arguments are required for this query.
+
+Lists all calendar events
+- **list_organisations**: No arguments are required for this query.
+
+Lists all registered organisations
+- **list_projects**: No arguments are required for this query.
+
+Lists all active and past projects
+- **list_teams**: No arguments are required for this query.
+
+Lists all defined teams
 
 
 ## 💬 Prompt Examples

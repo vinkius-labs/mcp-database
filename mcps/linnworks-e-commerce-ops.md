@@ -49,30 +49,30 @@ List the Linnworks inventory locations/warehouses
 - **list_suppliers**: Use it to audit supplier data or when the user asks who supplies the catalog.
 
 List the Linnworks suppliers
-- **list_postal_services**: Use it to audit the fulfillment/shipping network or when the user asks which carriers and services are set up.
-
-List the Linnworks postal/shipping services
 - **get_order_details**: This is faster and richer than the open-orders list for a small set of specific orders. Get the Order ID GUID from `list_open_orders` results (the `OrderId` field) or from an order the user references. Pass one or several Order ID GUIDs, space- or comma-separated.
 
 Get full details of one or more open Linnworks orders by Order ID (GUID)
-- **search_stock_items**: Use it to discover items by name before calling `get_stock_level` (which needs the Stock Item ID GUIDs found here) or when the user asks to find a product by title or description. Set `with_stock_levels` to "true" to also include per-location stock quantities in each result. `limit` controls the page size (default 50, max 200).
+- **list_postal_services**: Use it to audit the fulfillment/shipping network or when the user asks which carriers and services are set up.
 
-Search Linnworks stock items by keyword (item number/SKU, title, or barcode)
-- **list_open_orders**: Use it when asked what is waiting to be fulfilled or to audit order volume. Pass `limit` only to control the page size (default 20). Orders are the first page of the open-orders list; raise `limit` for a longer view.
-
-List open orders in the Linnworks account, including order lines and customer info
-- **get_inventory_item**: Use it when the user names a specific product. The API matches exact codes — if nothing comes back, the code is likely not a stock-item code in this account; confirm the code or list items via `execute_custom_rpc`.
-
-Look up a Linnworks stock item by its exact SKU/item code
+List the Linnworks postal/shipping services
 - **get_stock_level**: IDs are GUIDs, space- or comma-separated — get them from `get_inventory_item` results. Use it to check available vs. committed/due quantities and spot shortages or surplus across locations. Returns one level record per item/location combination.
 
 Get Linnworks stock levels by Stock Item ID(s)
+- **list_open_orders**: Use it when asked what is waiting to be fulfilled or to audit order volume. Pass `limit` only to control the page size (default 20). Orders are the first page of the open-orders list; raise `limit` for a longer view.
+
+List open orders in the Linnworks account, including order lines and customer info
 - **list_returns**: Use it to monitor returns activity. The list is a paged search of the ledger; it is not filterable by date range.
 
 Search Linnworks returns/refunds records
+- **get_inventory_item**: Use it when the user names a specific product. The API matches exact codes — if nothing comes back, the code is likely not a stock-item code in this account; confirm the code or list items via `execute_custom_rpc`.
+
+Look up a Linnworks stock item by its exact SKU/item code
 - **execute_custom_rpc**: Pass the operation path (for example `/Orders/GetOpenOrders` — the leading `/api` is added automatically) and the JSON payload as a string. Use it as an escape hatch for lookups or actions; check the Linnworks API reference (apidocs.linnworks.net) for operation names and expected payloads before calling. Returns the operation result.
 
 Call an arbitrary Linnworks API operation by path and JSON payload
+- **search_stock_items**: Use it to discover items by name before calling `get_stock_level` (which needs the Stock Item ID GUIDs found here) or when the user asks to find a product by title or description. Set `with_stock_levels` to "true" to also include per-location stock quantities in each result. `limit` controls the page size (default 50, max 200).
+
+Search Linnworks stock items by keyword (item number/SKU, title, or barcode)
 
 
 ## 💬 Prompt Examples

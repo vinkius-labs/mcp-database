@@ -42,9 +42,6 @@ Connect your **Chorus.ai (ZoomInfo)** account to any AI agent and take full cont
 Get detailed information for a specific meeting
 - **list_meeting_playlists**: List all shared meeting playlists
 - **get_my_chorus_profile**: Retrieve information about the currently authenticated session
-- **get_meeting_moments**: Use the specific engagement ID.
-
-Retrieve AI-identified key moments for a meeting
 - **get_meeting_transcript**: Provide the engagement ID.
 
 Retrieve the full text transcript for a meeting
@@ -52,6 +49,9 @@ Retrieve the full text transcript for a meeting
 - **list_chorus_meetings**: ai.
 
 List recent meetings and calls
+- **get_meeting_moments**: Use the specific engagement ID.
+
+Retrieve AI-identified key moments for a meeting
 - **list_chorus_users**: List all users and team members in the account
 
 

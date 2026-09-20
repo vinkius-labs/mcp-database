@@ -43,12 +43,12 @@ Connect your **imgix** account to any AI agent and take full control of your rea
 - **create_source**: Create a new Imgix source. Connects your origin (S3, GCS, web folder) to Imgix CDN
 - **list_sources**: List all Imgix sources. Imgix is an image CDN that optimizes, resizes, and transforms images in real-time via URL parameters
 - **list_assets**: List assets in an Imgix source. Returns file paths, sizes, and content types
-- **get_asset**: Use the source_id and path to identify the asset.
-
-Get metadata of a specific asset in Imgix. Returns path, size, content type
 - **delete_source**: Provide the source_id to execute the deletion.
 
 Delete an Imgix source permanently
+- **get_asset**: Use the source_id and path to identify the asset.
+
+Get metadata of a specific asset in Imgix. Returns path, size, content type
 
 
 ## 💬 Prompt Examples

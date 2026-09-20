@@ -39,31 +39,31 @@ Connect your **Canny** account to any AI agent and orchestrate your product feed
 
 Add a comment to a feedback post
 - **get_account_info**: Retrieve core account information
-- **list_votes**: Supply the post ID.
-
-List votes for a specific post
-- **create_feedback_post**: ). Must specify the board ID and author ID.
-
-Create a new feedback post (idea, bug, etc)
 - **vote_on_post**: You must provide both the post ID and the voter ID.
 
 Add a vote to a feedback post
-- **get_board_details**: Use the board ID as the parameter.
-
-Get details of a specific board
 - **get_post_details**: Provide the post ID in the request.
 
 Get details of a specific feedback post
-- **list_feedback_boards**: Use this tool to find the board ID before submitting feedback.
+- **list_users**: List users who have interacted with your boards
+- **create_feedback_post**: ). Must specify the board ID and author ID.
 
-List all feedback boards
+Create a new feedback post (idea, bug, etc)
+- **get_board_details**: Use the board ID as the parameter.
+
+Get details of a specific board
 - **list_comments**: Provide the post ID.
 
 List comments for a specific feedback post
+- **list_feedback_boards**: Use this tool to find the board ID before submitting feedback.
+
+List all feedback boards
 - **list_feedback_posts**: Provide a board ID to execute the query.
 
 List feedback items (posts) from a specific board
-- **list_users**: List users who have interacted with your boards
+- **list_votes**: Supply the post ID.
+
+List votes for a specific post
 
 
 ## 💬 Prompt Examples

@@ -40,17 +40,17 @@ Extract detailed parameters and installation instructions for a specific Glama M
 
 Investigate granular attributes (prices, context window, parameters) of a specific proxied Gateway Model
 - **glama_get_gateway_models**: Audit the complete list of AI models supported natively by the Glama OpenAI-compatible gateway
-- **glama_list_mcp_servers**: Capable of loose text matching to discover new agentic capabilities.
-
-Search and list MCP servers directly from the global Glama directory
 - **glama_get_hosted_instances**: Cannot access public instances natively from here.
 
 Fetch all Private Hosted MCP instances assigned to your specific Glama account
-- **glama_get_mcp_attributes**: List filtering attributes and semantic categorizations mapped within the Glama MCP Registry
 - **glama_send_telemetry**: Can be triggered after your AI uses a specific external server.
 
 Report semantic usage execution metrics back to the Glama Telemetry backend
 - **glama_run_gateway_chat**: Bifurcate an isolated conversational prompt using a specific model through the Glama proxy network
+- **glama_get_mcp_attributes**: List filtering attributes and semantic categorizations mapped within the Glama MCP Registry
+- **glama_list_mcp_servers**: Capable of loose text matching to discover new agentic capabilities.
+
+Search and list MCP servers directly from the global Glama directory
 
 
 ## 💬 Prompt Examples

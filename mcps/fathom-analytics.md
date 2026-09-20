@@ -39,9 +39,6 @@ Connect your **Fathom Analytics** account to any AI agent and take full control 
 - **get_top_pages**: Requires the site ID.
 
 Get top pages for a site
-- **get_current_visitors**: Requires the site ID.
-
-Get the number of current visitors on a site
 - **get_device_stats**: Pass the site ID to filter results.
 
 Get device type aggregations for a site
@@ -55,16 +52,19 @@ Get pageview aggregations for a site
 - **get_referrers**: Requires the site ID.
 
 Get top referrers for a site
+- **list_events**: Provide the site ID to filter results.
+
+List custom events for a specific site
+- **list_sites**: List all sites in your Fathom Analytics account
+- **get_current_visitors**: Requires the site ID.
+
+Get the number of current visitors on a site
 - **get_site**: Use the site ID as the primary identifier.
 
 Get details for a specific site
 - **get_visitors**: Specify both start and end dates.
 
 Get visitor aggregations for a site
-- **list_events**: Provide the site ID to filter results.
-
-List custom events for a specific site
-- **list_sites**: List all sites in your Fathom Analytics account
 
 
 ## 💬 Prompt Examples
