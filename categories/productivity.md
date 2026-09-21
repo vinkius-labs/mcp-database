@@ -142,12 +142,14 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [BlaBlaCar](../mcps/blablacar.md) | AI carpool search: find rides, compare prices, and book shared journeys via agents. |
 | [Blue Light Exposure Timer](../mcps/blue-light-exposure-timer.md) | Optimize sleep quality by calculating ideal light exposure and screen cutoff times. |
 | [Blue Light Mitigation Planner](../mcps/blue-light-mitigation-planner.md) | Creates personalized schedules to reduce blue light exposure and optimize sleep hygiene. |
+| [Board Game Session Tracker](../mcps/board-game-session-tracker.md) | Track and aggregate total time spent playing board games. |
 | [BoardEffect](../mcps/boardeffect.md) | Manage board activities via BoardEffect — list meetings, members, and documents directly from any AI agent. |
 | [BoardMix](../mcps/boardmix.md) | Collaborative whiteboard and visual production platform — manage whiteboards, design nodes, and teams via AI. |
 | [Bodybuilding Split Generator](../mcps/bodybuilding-split-generator.md) | Generates personalized bodybuilding split routines based on training frequency and muscle priorities. |
 | [Bodypart Priority Planner](../mcps/bodypart-priority-planner.md) | Optimizes training splits and volume to prioritize lagging muscle groups. |
 | [BoldDesk](../mcps/bolddesk.md) | Empower your customer support via BoldDesk — manage tickets, contacts, and agents directly from any AI agent. |
 | [Bonusly](../mcps/bonusly.md) | Recognize and reward your team via Bonusly — give bonuses, track points, and view leaderboards directly from any AI agent. |
+| [Book Club Cost Splitter](../mcps/book-club-cost-splitter.md) | Divide book club expenses equally among members with precise rounding. |
 | [Book Club Reading Scheduler](../mcps/book-club-reading-scheduler.md) | Generate optimized reading schedules that respect chapter integrity and availability. |
 | [Book Imposition Calculator](../mcps/book-imposition-calculator.md) | Calculate print signatures, imposition layouts, and paper creep. |
 | [Bookbinding Calculator](../mcps/bookbinding-calculator.md) | Deterministic calculator for professional bookbinding dimensions and materials. |
@@ -175,6 +177,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [BrioHR](../mcps/briohr.md) | Orchestrate BrioHR management — retrieve employee profiles, monitor leave, and integrate claim reports directly from any AI agent. |
 | [Browser Bookmarks Parser](../mcps/browser-bookmarks-parser.md) | Turn messy Chrome, Safari, and Firefox bookmark HTML exports into clean, structured JSON data. Instantly allow your AI to organize your digital life and remove duplicate links. |
 | [Browserbear](../mcps/browserbear.md) | Automate browser tasks via Browserbear — take screenshots, scrape data, and run multi-step automations directly from any AI agent. |
+| [brush-count](../mcps/brush-count.md) | Quantify and categorize painting brushes in your inventory. |
 | [Brushfire](../mcps/brushfire.md) | Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent. |
 | [Buddy Punch](../mcps/buddy-punch.md) | Track employee hours with GPS-verified clock-ins, PTO management, and payroll-ready timesheet exports your team will love. |
 | [Budget Envelope Allocator](../mcps/budget-envelope-allocator.md) | A deterministic zero-based budgeting engine for precise income distribution. |
@@ -294,6 +297,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Couples Shared Account Engine](../mcps/couples-shared-account-engine.md) | Calculate fair, proportional expense sharing between partners based on income ratios. |
 | [Courier](../mcps/courier.md) | Equip your AI agent to send multi-channel notifications and monitor delivery status through the Courier API. |
 | [Craft (Docs & Notes)](../mcps/craft-docs-notes.md) | Manage collaborative docs via Craft.do — list documents, handle blocks, track tasks, and retrieve daily notes directly from any AI agent. |
+| [Craft Night Cost Tracker](../mcps/craft-night-cost-tracker.md) | Manage and settle expenses for organized crafting sessions. |
 | [Craft.io](../mcps/craftio.md) | Build product roadmaps that connect strategy to execution with visual planning tools your whole organization can follow. |
 | [Crisp](../mcps/crisp.md) | Chat with website visitors in real time, manage support conversations, and build a knowledge base that reduces ticket volume. |
 | [Critical Thinking Prover](../mcps/critical-thinking-prover.md) | AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence. |
@@ -654,6 +658,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Kitsu](../mcps/kitsu.md) | Search and manage your anime and manga collections via Kitsu — browse titles, check user profiles, and update your library directly from any AI agent. |
 | [Kizeo Forms](../mcps/kizeo-forms.md) | Manage mobile forms, data submissions, and users via the Kizeo Forms API. |
 | [Knackly](../mcps/knackly.md) | Generate legal and business documents from smart templates with conditional logic that adapts content to every unique situation. |
+| [Knitting Row Counter](../mcps/knitting-row-counter.md) | Calculate the exact number of rows needed for your knitting projects. |
 | [Knowledge Management ROI Calculator](../mcps/knowledge-management-roi-calculator.md) | Quantify the financial impact of your knowledge management investments. |
 | [Kraken.io](../mcps/krakenio.md) | Optimize, compress, and resize images via URL or direct upload using the Kraken.io API. |
 | [Lamha](../mcps/lamha.md) | Build AI chatbots for Arabic-speaking audiences with natural language understanding designed for Middle Eastern dialects. |
@@ -705,6 +710,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Mailosaur](../mcps/mailosaur.md) | Automate email and SMS testing and management via the Mailosaur REST API. |
 | [MakePlans](../mcps/makeplans.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [MakePlans](../mcps/makeplans-alternative.md) | Online booking and appointment scheduling via MakePlans MCP. |
+| [Manga Volume Counter](../mcps/manga-volume-counter.md) | Track and manage volume counts for your manga collections. |
 | [Marilyn vos Savant Probabilistic Clarity Prover](../mcps/marilyn-vos-savant-probabilistic-clarity-prover.md) | Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion. |
 | [Markdown HTML Compiler](../mcps/markdown-html-compiler.md) | Stop wasting AI tokens converting text. Compile Markdown into clean, minified HTML instantly for emails and CMS platforms. |
 | [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator.md) | Enforce strict markdown formatting rules for LLM outputs. |
@@ -863,6 +869,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [PSPDFKit (Nutrient)](../mcps/pspdfkit-nutrient.md) | Professional PDF and document processing — generate, convert, OCR, and edit documents via the Nutrient API. |
 | [PunkAPI](../mcps/punkapi.md) | Explore BrewDog's beer catalog — search by name, style, ABV, IBU, hops, food pairing and get random beer suggestions. |
 | [Push-up Volume Planner](../mcps/push-up-volume-planner.md) | A specialized engine for planning structured push-up progression and volume management. |
+| [Puzzle Table Area Calculator](../mcps/puzzle-table-area-calculator.md) | Calculate table surface area and check if puzzles will fit. |
+| [puzzle-piece-count](../mcps/puzzle-piece-count.md) | Calculate and manage piece counts for jigsaw puzzle collections. |
 | [Pyramid Set Generator](../mcps/pyramid-set-generator.md) | Calculates weight, repetitions, and training metrics for pyramid training progressions. |
 | [Python Excellence Prover](../mcps/python-excellence-prover.md) | AI agents generate Python with no type hints, bare except blocks, mutable defaults, print() in production, and os.path everywhere. This tool forces excellence: Pydantic for boundaries, structured logging, pathlib, async I/O, and proper architecture. Zero tolerance for un-Pythonic code. |
 | [QA Arbiter](../mcps/qa-arbiter.md) | A test fails. Is the assertion wrong or is the code broken? Most agents guess, retry blindly, and deadlock the pipeline. QA Arbiter resolves this in one call — structured fault diagnosis with two boolean pivots that yield a deterministic verdict: TEST_ERROR, ENGINE_DEFECT, or BOTH_WRONG. |

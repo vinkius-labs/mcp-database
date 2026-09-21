@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **9,461 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **9,480 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,8 +10,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1200 servers)
-- [finance](categories/finance.md) (966 servers)
+- [productivity](categories/productivity.md) (1208 servers)
+- [finance](categories/finance.md) (970 servers)
 - [developer-tools](categories/developer-tools.md) (693 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -22,7 +22,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [ecommerce](categories/ecommerce.md) (208 servers)
 - [science](categories/science.md) (167 servers)
 - [construction](categories/construction.md) (151 servers)
-- [utilities](categories/utilities.md) (142 servers)
+- [utilities](categories/utilities.md) (144 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (131 servers)
 - [communication-messaging](categories/communication-messaging.md) (130 servers)
 - [erp-operations](categories/erp-operations.md) (128 servers)
@@ -69,7 +69,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [government-public-data](categories/government-public-data.md) (29 servers)
 - [sports](categories/sports.md) (29 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
-- [gaming](categories/gaming.md) (26 servers)
+- [gaming](categories/gaming.md) (28 servers)
 - [safety](categories/safety.md) (26 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [automation](categories/automation.md) (24 servers)
@@ -86,11 +86,11 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [statistics](categories/statistics.md) (17 servers)
 - [business](categories/business.md) (16 servers)
 - [energy](categories/energy.md) (16 servers)
+- [inventory-management](categories/inventory-management.md) (16 servers)
 - [social-media](categories/social-media.md) (16 servers)
-- [inventory-management](categories/inventory-management.md) (15 servers)
+- [design](categories/design.md) (15 servers)
 - [product-management](categories/product-management.md) (15 servers)
 - [weather-climate](categories/weather-climate.md) (15 servers)
-- [design](categories/design.md) (14 servers)
 - [sustainability](categories/sustainability.md) (13 servers)
 - [event-management](categories/event-management.md) (12 servers)
 - [project-management](categories/project-management.md) (12 servers)
@@ -202,6 +202,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [industrial-hygiene](categories/industrial-hygiene.md) (2 servers)
 - [kiteboarding](categories/kiteboarding.md) (2 servers)
 - [management](categories/management.md) (2 servers)
+- [manufacturing](categories/manufacturing.md) (2 servers)
 - [marketing-advertising](categories/marketing-advertising.md) (2 servers)
 - [marketing-analytics](categories/marketing-analytics.md) (2 servers)
 - [media-production](categories/media-production.md) (2 servers)
@@ -274,7 +275,6 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [llm-inference](categories/llm-inference.md) (1 servers)
 - [llm-ops](categories/llm-ops.md) (1 servers)
 - [logic](categories/logic.md) (1 servers)
-- [manufacturing](categories/manufacturing.md) (1 servers)
 - [marine](categories/marine.md) (1 servers)
 - [marketing-tools](categories/marketing-tools.md) (1 servers)
 - [mechanical-engineering](categories/mechanical-engineering.md) (1 servers)

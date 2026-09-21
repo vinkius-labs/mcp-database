@@ -4,6 +4,8 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Board Game Player Count](../mcps/board-game-player-count.md) | Monitor player occupancy and table capacity across all game sessions. |
+| [Card Collection Counter](../mcps/card-collection-counter.md) | Track and analyze your collectible card game collections. |
 | [Card Draw Probability Calculator](../mcps/card-draw-probability-calculator.md) | Calculate the mathematical likelihood of drawing specific cards in TCGs like Magic: The Gathering or Yu-Gi-Oh. |
 | [Combat Balance Checker](../mcps/combat-balance-checker.md) | Quantify combat outcomes and attribute influence through large-scale simulations. |
 | [Crafting Cost Calculator](../mcps/crafting-cost-calculator.md) | Analyze production costs, profit margins, and optimal ingredient sourcing strategies. |

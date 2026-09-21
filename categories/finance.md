@@ -211,6 +211,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Cloud Vendor Lock-in Risk Analyzer](../mcps/cloud-vendor-lock-in-risk-analyzer.md) | Evaluate financial and operational exposure to cloud providers through risk scoring and switching cost modeling. |
 | [CNPJ Validator](../mcps/cnpj-validator.md) | Verify the mathematical validity and structure of Brazilian CNPJ numbers. |
 | [COE Bidding Optimizer](../mcps/coe-bidding-optimizer.md) | Deterministic bidding strategy calculator for Singapore COE auctions. |
+| [Collectible Price Analyzer](../mcps/collectible-price-analyzer.md) | Calculate total market value and statistical summaries for collectible collections. |
 | [Commitment of Traders (COT) Strategy](../mcps/commitment-of-traders-cot-strategy.md) | Analyze commercial and non-commercial positioning to generate deterministic trading signals. |
 | [Commodity Basis Analyzer](../mcps/commodity-basis-analyzer.md) | Analyze grain basis patterns and receive optimal delivery timing recommendations. |
 | [Commodity Hedging Strategy Analyzer](../mcps/commodity-hedging-strategy-analyzer.md) | Analyze commodity exposure and optimize hedging strategies using swaps, collars, and options. |
@@ -240,6 +241,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [CPF Optimization Strategy](../mcps/cpf-optimization-strategy.md) | Deterministic CPF allocation and projection engine for Singaporeans aged 20-35. |
 | [Crack Spread Analysis](../mcps/crack-spread-analysis.md) | Analyze refinery profitability by calculating crack spreads and hedge ratios. |
 | [Crack Spread Strategy](../mcps/crack-spread-strategy.md) | Analyze refining margins and identify mean-reversion opportunities using a 3:2:1 crack spread model. |
+| [Craft Kit Cost Calculator](../mcps/craft-kit-cost-calculator.md) | Calculate material expenses and resource requirements for craft kits. |
 | [Creator Revenue Split](../mcps/creator-revenue-split.md) | Reconcile multi-party revenue distributions and calculate exact payouts. |
 | [Credit Card Payoff Engine](../mcps/credit-card-payoff-engine.md) | Calculate exact credit card payoff timelines, interest costs, and compare repayment strategies using daily compounding logic. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
@@ -513,6 +515,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Layer 2 Bridge Arbitrage Strategy](../mcps/layer-2-bridge-arbitrage-strategy.md) | Identify and validate arbitrage opportunities between Ethereum L1 and Layer 2 networks. |
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
 | [Lending Yield Curve Arbitrage](../mcps/lending-yield-curve-arbitrage.md) | Identify and evaluate profitable yield arbitrage loops between stablecoin lending protocols. |
+| [Library Fine Calculator](../mcps/library-fine-calculator.md) | Calculates overdue fines and provides status summaries for library items. |
 | [Lien Waiver Deadline Calculator](../mcps/lien-waiver-deadline-calculator.md) | Calculate statutory Mechanics Lien deadlines for preliminary notice, filing, and enforcement. |
 | [Life Milestone Timing Calculator](../mcps/life-milestone-timing-calculator.md) | Deterministic life milestone projections based on Singapore demographic statistics. |
 | [Lifting Cost Calculator](../mcps/lifting-cost-calculator.md) | Calculate production costs per barrel, analyze cost trends, and benchmark performance. |
@@ -571,6 +574,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Moving Cost Estimator](../mcps/moving-cost-estimator.md) | Calculate detailed moving costs for DIY, local, and full-service scenarios. |
 | [MRR and ARR Calculator](../mcps/mrr-and-arr-calculator.md) | Calculate Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) from subscription data, broken down by plan segment. |
 | [Multi-Modal AI Economics Engine](../mcps/multi-modal-ai-economics-engine.md) | Calculate multi-modal AI costs, margins, and optimal pricing strategies. |
+| [Museum Ticket Calculator](../mcps/museum-ticket-calculator.md) | Calculate total museum ticket costs for groups and individuals. |
 | [Music Licensing Royalty Calculator](../mcps/music-licensing-royalty-calculator.md) | Estimate royalties for sync, mechanical, performance, and print music licensing. |
 | [Nail Art Service Time Calculator](../mcps/nail-art-service-time-calculator.md) | Calculate appointment duration, labor costs, and business metrics for nail services. |
 | [Negative Volume Index Calculator](../mcps/negative-volume-index-calculator.md) | Calculate NVI and PVI to identify smart money activity and market sentiment. |
