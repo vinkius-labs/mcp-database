@@ -202,6 +202,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DNSimple](../mcps/dnsimple.md) | Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent. |
 | [DocBreach](../mcps/docbreach.md) | Real-time documentation discovery for AI agents. Discover, read, and extract any API documentation without browser rendering or API keys. |
 | [Dogechain Explorer (Dogechain Block Explorer API)](../mcps/dogechain-explorer-dogechain-block-explorer-api.md) | Automate Dogecoin blockchain analysis via Dogechain — check address balances, inspect transactions, and query block data directly from any AI agent. |
+| [Domain Lookup](../mcps/domain-lookup.md) | Keyless domain availability and DNS intelligence — check if a domain is free, read its registry record, resolve DNS, and browse TLDs, straight from the official IANA and Cloudflare sources. |
 | [Dopplio](../mcps/dopplio.md) | Send personalized video messages at scale that use AI to customize each clip for the recipient and boost response rates. |
 | [Dot Object Transformer](../mcps/dot-object-transformer.md) | Flatten deeply nested JSON objects into dot-notation keys, or reconstruct nested objects from flat dictionaries. |
 | [Dot-Notation Object Flattener](../mcps/dot-notation-object-flattener.md) | Convert deeply nested JSON objects into flat structures using dot-separated keys. |

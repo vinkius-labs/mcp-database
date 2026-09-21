@@ -563,6 +563,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Monthly Recurring Revenue (MRR) Analyzer](../mcps/monthly-recurring-revenue-mrr-analyzer.md) | Calculate MRR growth, churn analysis, and future revenue projections. |
 | [Mortgage Amortization Engine](../mcps/mortgage-amortization-engine.md) | Generate precise mortgage amortization schedules and calculate payoff acceleration. |
 | [Mortgage Payment Calculator](../mcps/mortgage-payment-calculator.md) | Calculate monthly mortgage payments, amortization schedules, and compare rent vs. buy scenarios. |
+| [Movie Ticket Total Calculator](../mcps/movie-ticket-total-calculator.md) | Calculate movie admission costs with tiered pricing and group discounts. |
 | [Moving Average Calculator](../mcps/moving-average-calculator.md) | Compute advanced moving average indicators and trend signals from financial time series data. |
 | [Moving Average Envelope Calculator](../mcps/moving-average-envelope-calculator.md) | Calculates moving average center lines, upper/lower envelopes, and breakout signals. |
 | [Moving Average Ribbon Calculator](../mcps/moving-average-ribbon-calculator.md) | Analyze market trends and volatility using multi-layered Moving Average ribbons. |
@@ -712,8 +713,13 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Seed Stage Valuation Engine](../mcps/seed-stage-valuation-engine.md) | Calculate precise seed-stage startup valuations using a weighted scorecard method. |
 | [Sensitivity Analysis for Mining](../mcps/sensitivity-analysis-for-mining.md) | Evaluate NPV fluctuations and project risks through parameter sensitivity analysis. |
 | [Sensitivity Analysis Matrix](../mcps/sensitivity-analysis-matrix.md) | Generates sensitivity matrices for price and yield combinations to identify profit/loss zones. |
+| [Serasa ClearSale — Fraud Risk Analysis (Connect & Payment Link)](../mcps/serasa-clearsale-fraud-risk-analysis-connect-payment-link.md) | Submit orders and identities for ClearSale fraud scoring, then read the decision, score and insights. |
 | [Serasa ClearSale Partners — Reseller Store Onboarding](../mcps/serasa-clearsale-partners-reseller-store-onboarding.md) | Quote, provision and deactivate ClearSale stores, and read their API credentials. |
+| [Serasa Experian Credit Monitoring](../mcps/serasa-experian-credit-monitoring.md) | Let AI agents watch CPFs and CNPJs for credit events — build monitoring rules, add documents, read alerts, and wire up webhooks. |
+| [Serasa Experian Credit Reports](../mcps/serasa-experian-credit-reports.md) | Query the Serasa Experian credit bureau from any AI workflow — PF/PJ credit reports, standalone scores, economic groups and credit rating. |
+| [Serasa Experian PowerCurve — Credit Decision Engine](../mcps/serasa-experian-powercurve-credit-decision-engine.md) | Submit credit proposals to PowerCurve and read back the decision, score and policy outcome. |
 | [Serasa Recomenda — Credit Limit Recommendations](../mcps/serasa-recomenda-credit-limit-recommendations.md) | Generate credit-grant decisions and recommended limits for CPF and CNPJ across nine distribution channels. |
+| [Serasa Verify ID — Identity Verification & Enrichment](../mcps/serasa-verify-id-identity-verification-enrichment.md) | Verify people and companies against the Serasa base, enrich registrations and request fraud scores. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |

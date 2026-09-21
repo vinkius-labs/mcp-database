@@ -113,6 +113,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
+| [Sustainable Packaging Impact Calculator](../mcps/sustainable-packaging-impact-calculator.md) | Evaluate environmental footprint and economic feasibility of packaging materials. |
 | [Team Form Calculator](../mcps/team-form-calculator.md) | Quantify football team performance trends using recent match windows. |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
 | [Training Load Ratio](../mcps/training-load-ratio.md) | Calculate Acute:Chronic Workload Ratio (ACWR) to assess injury risk and optimize training. |

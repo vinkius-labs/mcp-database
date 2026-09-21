@@ -109,6 +109,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [ATS Anywhere](../mcps/ats-anywhere.md) | Manage your recruiting process with ATS Anywhere — track jobs, applicants, and sites via AI. |
 | [Attendance Tracker](../mcps/attendance-tracker.md) | Predictive monitoring system to track attendance frequency and calculate academic failure risk. |
 | [Attorney Fees Calculator](../mcps/attorney-fees-calculator.md) | Calculate and compare legal billing models including hourly, contingency, flat fee, and blended rates. |
+| [Audiobook Duration Aggregator](../mcps/audiobook-duration-aggregator.md) | Calculate total, average, and statistical audiobook listening times. |
 | [Audiobook Listening Time Calculator](../mcps/audiobook-listening-time-calculator.md) | Predict audiobook completion dates and manage listening schedules. |
 | [Automate.io](../mcps/automateio.md) | Manage Automate.io workflows seamlessly — audit your bots, connections, and execution runs directly from your AI agent. |
 | [AwardWallet](../mcps/awardwallet.md) | Manage loyalty points, travel rewards, and itineraries via AwardWallet — monitor your miles and trips directly via AI. |
@@ -267,6 +268,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Collectible Set Completion Calculator](../mcps/collectible-set-completion-calculator.md) | Track completion status, missing items, and acquisition budgets for collectible sets. |
 | [CometChat](../mcps/cometchat.md) | Enable your AI agent to manage chat users, groups, and messages via the CometChat API. |
 | [Competitive Intelligence Prover](../mcps/competitive-intelligence-prover.md) | AI agents fabricate competitor data, list vague weaknesses, propose fantasy strategies, and ignore your own gaps. This tool forces fact-grounded competitive analysis: verifiable sources, measurable weaknesses, feasible attack plans, self-aware assessment, and kill criteria with deadlines. |
+| [Concert Set Duration Calculator](../mcps/concert-set-duration-calculator.md) | Calculate total setlist duration and manage performance time slots. |
 | [Concurso Score Calculator](../mcps/concurso-score-calculator.md) | Calculate final examination scores, manage stage thresholds, and estimate competition rankings for civil service exams. |
 | [Condeco (Eptura Engage)](../mcps/condeco-eptura-engage.md) | Manage workspace bookings via Condeco — book meeting rooms, reserve hot desks, track availability, and handle office check-ins directly from any AI agent. |
 | [ContentGroove](../mcps/contentgroove.md) | Equip your AI agent to automatically generate video highlights, splice long-form clips, and manage video projects natively with ContentGroove. |
@@ -351,6 +353,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DevRel Voice Prover](../mcps/devrel-voice-prover.md) | AI agents write developer content that sounds like a press release. This tool forces authentic developer-to-developer voice: community-aware context, value over features, actionable code paths, and genuine engagement. No corporate speak, no feature dumps. |
 | [Dext](../mcps/dext.md) | Equip your AI agent to manage receipts, track invoices, and monitor accounting data via the Dext API. |
 | [Diagonal Cut Pythagorean Calculator](../mcps/diagonal-cut-pythagorean-calculator.md) | Calculate exact diagonal spans, mitered edge lengths, and miter offsets for precise angled cuts. |
+| [Diagrams](../mcps/diagrams.md) | Turn text into diagrams — flowcharts, UML, graphs and charts — rendered from Mermaid, PlantUML, D2 and more, with no key. |
 | [Digital Detox Duration Recommender](../mcps/digital-detox-duration-recommender.md) | Personalized digital detox roadmaps and wellness strategies. |
 | [Digital Transformation ROI Calculator](../mcps/digital-transformation-roi-calculator.md) | Quantify the financial impact, payback period, and risk-adjusted value of digital transformation initiatives. |
 | [Digital Wellness Boundary Setter](../mcps/digital-wellness-boundary-setter.md) | Establish healthy digital habits with personalized notification schedules, social media limits, and a digital sunset time. |
@@ -475,6 +478,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Financial Audit Prover](../mcps/financial-audit-prover.md) | Forces AI to ground every financial conclusion in ASC codification, trace numbers to source documents, reconcile statements, and identify required disclosures instead of generating plausible numbers without audit trails. |
 | [Financial Math Engine](../mcps/financial-math-engine.md) | Equip your AI with zero-hallucination financial calculation powers. Calculate flawless Amortization Schedules (SAC/PRICE), Compound Interest, and Loan projections. |
 | [Finmei](../mcps/finmei.md) | Manage expenses, tax rates, and payments through conversational AI agents with Finmei. |
+| [Fireflies](../mcps/fireflies.md) | Turn your recorded meetings into work: transcripts, action items, speaking metrics and AskFred Q&A. |
 | [Fireflies.ai](../mcps/firefliesai.md) | Transcribe meetings, analyze conversation metrics, and query transcripts via AI agents with Fireflies.ai. |
 | [Fireflies.ai](../mcps/firefliesai-alternative.md) | Record, transcribe, and search across all your meetings with AI that captures every conversation and makes it instantly findable. |
 | [Flatwork ATS](../mcps/flatwork-ats.md) | Streamline your hiring pipeline with an applicant tracking system that organizes candidates, interviews, and offer management. |
@@ -835,6 +839,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Play.ht (AI Voice Generation & TTS)](../mcps/playht-ai-voice-generation-tts.md) | Generate ultra-realistic AI voices and convert text to speech instantly using Play.ht's advanced neural engine. |
 | [Playlist BPM & Flow Calculator](../mcps/playlist-bpm-flow-calculator.md) | Sequences songs by BPM, key, and energy to create smooth playlist transitions. |
 | [Plecto](../mcps/plecto.md) | Automate KPI dashboards and data tracking via Plecto — manage registrations, dashboards, and teams directly from any AI agent. |
+| [Podcast Episode Counter](../mcps/podcast-episode-counter.md) | Count and categorize podcast episodes from datasets. |
+| [Podcast Season Duration](../mcps/podcast-season-duration.md) | Calculate total playback time and listening estimates for podcast seasons. |
 | [Pointagram](../mcps/pointagram.md) | Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges. |
 | [Polyrhythm Calculator](../mcps/polyrhythm-calculator.md) | Calculate precise alignment, attack timestamps, and subdivision grids for complex polyrhythms. |
 | [Pomodoro Day Planner](../mcps/pomodoro-day-planner.md) | Plan your productivity by calculating Pomodoro cycles and generating detailed work/break itineraries within any time window. |
@@ -1054,6 +1060,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Teyuto](../mcps/teyuto.md) | Build your own video streaming platform with monetization, audience analytics, and content management for video creators. |
 | [Thai Massage Sequence Timer](../mcps/thai-massage-sequence-timer.md) | A precision scheduling engine for structured Thai massage sequences. |
 | [The Botforge](../mcps/the-botforge.md) | Deploy custom AI chatbots for enterprise customer support with multilingual capability and deep integration into your tech stack. |
+| [Theater Seat Counter](../mcps/theater-seat-counter.md) | Calculate seating capacity and validate theater layouts. |
 | [TheCocktailDB](../mcps/thecocktaildb-alternative.md) | Global cocktail database — search recipes, ingredients, and mixology guides via AI. |
 | [TheCocktailDB](../mcps/thecocktaildb.md) | Search cocktail recipes by name, ingredient, or category — with full mixing instructions, measurements, glass type, and cocktail images. |
 | [TheMealDB](../mcps/themealdb.md) | Search international recipes by name, category, cuisine, or ingredient — with full cooking instructions, measurements, and video tutorials. |

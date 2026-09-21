@@ -282,6 +282,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [SAMHSA Treatment Locator](../mcps/samhsa-treatment-locator.md) | Find substance use and mental health treatment facilities across the US using official SAMHSA locator data. |
 | [Santiment (On-chain, Social & Dev Metrics for Crypto)](../mcps/santiment-on-chain-social-dev-metrics-for-crypto.md) | Access deep on-chain, social, and development metrics for thousands of crypto assets directly from your AI agent. |
 | [São Paulo (Cidade)](../mcps/sao-paulo-cidade.md) | Access the official São Paulo Open Data portal — search datasets, query resources via SQL, and explore city organizations and themes. |
+| [Satellite Tracking](../mcps/satellite-tracking.md) | Track 16,000+ satellites in real time — the full Starlink constellation, the ISS, and every active object in orbit, with live orbital elements from Celestrak. |
 | [ScrapingBee](../mcps/scrapingbee-alternative.md) | Powerful web scraping with JS rendering, premium proxies, and AI-powered data extraction directly from your AI agent. |
 | [Sergipe Dados Abertos](../mcps/sergipe-dados-abertos.md) | Access public data from the State of Sergipe, Brazil—including expenditures, revenues, personnel, and budget execution—directly from any AI agent. |
 | [SerpApi](../mcps/serpapi-alternative.md) | Scrape search engine results — audit Google, Bing, and YouTube via AI. |

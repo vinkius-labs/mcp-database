@@ -25,6 +25,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Sustainable Trip Emissions Calculator](../mcps/sustainable-trip-emissions-calculator.md) | Calculate the carbon footprint of your travels, including flights, trains, cars, and lodging. |
 | [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
+| [US Forest Service Trails](../mcps/us-forest-service-trails.md) | The trail inventory of the US National Forests — search trails by name, list the trails crossing any area, and read each trail's permitted uses, surface, grade and accessibility. |
 | [Visa Requirement Checker](../mcps/visa-requirement-checker.md) | Check visa requirements, travel advisories, and passport validity rules globally. |
 
 

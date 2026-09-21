@@ -119,6 +119,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [Sneaker Size Converter](../mcps/sneaker-size-converter.md) | Translate footwear sizes across US, UK, EU, JP, and CM systems. |
 | [Solitaire Solver](../mcps/solitaire-solver.md) | A deterministic engine for validating Klondike solitaire moves and identifying legal plays. |
+| [Song Count Total](../mcps/song-count-total.md) | Aggregate and analyze song counts across musical albums. |
 | [Spot Distance Calculation](../mcps/spot-distance-calculation.md) | Calculate great-circle distances, bearings, and travel times using spherical geometry. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |

@@ -7,12 +7,18 @@ Explore the open database of **weather-climate** Model Context Protocol (MCP) se
 | [Aurora Forecast](../mcps/aurora-forecast.md) | Live aurora and space weather from NOAA SWPC — Kp index, storm scales, solar wind, and the OVATION model's aurora probability at any location. |
 | [Climate History](../mcps/climate-history.md) | Daily weather history for over 130,000 stations worldwide from NOAA NCEI GHCN-Daily — temperatures, precipitation and wind for any past date, keyless. |
 | [Earth Imagery](../mcps/earth-imagery.md) | Images of Earth from NASA's EPIC camera aboard DSCOVR — the freshest frames, the archive by date, and the scans centred nearest a place, keyless. |
+| [Earth Snapshot](../mcps/earth-snapshot.md) | Render satellite imagery of any place on any day — NASA Worldview layers for true colour, active fires, aerosols and land surface, keyless. |
+| [GOES Satellite Imagery](../mcps/goes-satellite-imagery.md) | Live imagery URLs from NOAA's GOES satellites — full disk, continental US and mesoscale regions, with capture time, resolution and file size, keyless. |
 | [Hurricane Tracker](../mcps/hurricane-tracker.md) | Active tropical cyclones and official NHC forecast tracks — position, wind, pressure, the five-day track with wind radii, and the Tropical Weather Outlook, keyless. |
 | [Live Rain Radar](../mcps/live-rain-radar.md) | Live global precipitation radar from RainViewer — list the latest radar sweeps, get tile URLs for any location, and build playable rain animations. |
 | [Marine Conditions](../mcps/marine-conditions.md) | The marine go/no-go for any coastal point — official NWS marine warnings in effect for those waters, wave and swell forecasts, and the latest station observation, in one answer. |
+| [Ocean Buoys](../mcps/ocean-buoys.md) | Live sea state and marine weather from NOAA NDBC buoys and C-MAN stations — wind, waves, swell, water temperature and pressure at over a thousand stations worldwide. |
+| [River Gauges](../mcps/river-gauges.md) | Live streamflow and river level from USGS gauges — how high the river is right now, whether it is rising or falling, and what the site is. |
 | [Severe Weather Alerts](../mcps/severe-weather-alerts.md) | Active watches, warnings and advisories across the United States — NOAA NWS alerts by state, point or zone, with forecaster text, keyless. |
 | [Solar Flares](../mcps/solar-flares.md) | Live solar X-ray flux, detected solar flares and GOES magnetometer conditions from NOAA SWPC — the A/B/C/M/X class of the Sun right now, keyless. |
 | [Solar Imagery](../mcps/solar-imagery.md) | Live images of the Sun from NASA's SDO and SOHO — every AIA wavelength, the HMI magnetogram, and the LASCO coronagraphs that watch for coronal mass ejections, keyless. |
+| [Tide Gauges](../mcps/tide-gauges.md) | Live water levels and tide predictions from NOAA CO-OPS tide stations — what the sea is actually doing right now, plus the astronomic plan, highs and lows, and flood thresholds. |
+| [Volcano Activity](../mcps/volcano-activity.md) | The Smithsonian / USGS Weekly Volcanic Activity Report as structured data — which volcanoes erupted this week, where, at what alert level, and how far the exclusion zone reaches. Keyless. |
 
 
 ---
