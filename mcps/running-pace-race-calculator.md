@@ -15,9 +15,9 @@ This MCP server provides specialized tools for runners to manage their race stra
 
 ## Available Tools (4)
 - **elevation_impact_calculator**: Adjusts the target finish time or required pace based on the course's total elevation gain
-- **pace_convert**: Converts between pace and speed or between distance/time units
 - **race_checkpoint_query**: Calculates the exact time a runner should reach specific distance markers during a race
 - **split_plan_generator**: Generates detailed split strategies (even or progressive) for a specific race distance and target time
+- **pace_convert**: Converts between pace and speed or between distance/time units
 
 
 ## 💬 Prompt Examples

@@ -29,15 +29,15 @@ X-class flares can trigger planet-wide radio blackouts; M-class flares disrupt h
 - **get_solar_flare_status**: 1–0.8 nm channel, its NOAA class (e.g. "C3.4") and whether the flux is rising or falling. X-class means a major flare; M-class is moderate. Readings flagged for electron contamination are provisional. For the full curve use list_xray_flux_history; for detected events use list_solar_flares.
 
 Get the current solar X-ray class right now — A, B, C, M or X — from the NOAA GOES satellite, plus the peak and the trend over the last hour. This is the "is the Sun active?" headline tool
+- **list_xray_flux_history**: Up to 360 minutes reads the 6-hour feed at full one-minute cadence; longer requests read the 7-day feed and sample it down to at most 120 points so the response stays small. Points are oldest-first so the curve reads left to right. Each point carries its NOAA class already computed, so no flux math is needed downstream.
+
+Get the recent solar X-ray flux curve as class-tagged samples — the input to any "how is solar activity evolving" or "when did that flare peak" question
 - **get_geomagnetic_conditions**: The level label is derived from the one-hour Hp swing: storm >= 40 nT, active >= 20, unsettled >= 8, otherwise quiet. Readings with the arcjet flag set are contaminated by a station-keeping burn. For aurora probability, pair this with a planetary K-index source.
 
 Get the live GOES magnetometer reading — the Hp component, its swing over the last hour, and a quiet/active/storm label. Use this for "is a geomagnetic storm arriving"
 - **get_space_weather_summary**: Follow up with list_solar_flares for event detail or list_xray_flux_history for the curve. If the geomagnetic part is absent the magnetometer feed was momentarily unavailable, not silently dropped.
 
 One-look space weather briefing: current X-ray class, the biggest recent flare, and the geomagnetic state — the right first call for any solar-storm question
-- **list_xray_flux_history**: Up to 360 minutes reads the 6-hour feed at full one-minute cadence; longer requests read the 7-day feed and sample it down to at most 120 points so the response stays small. Points are oldest-first so the curve reads left to right. Each point carries its NOAA class already computed, so no flux math is needed downstream.
-
-Get the recent solar X-ray flux curve as class-tagged samples — the input to any "how is solar activity evolving" or "when did that flare peak" question
 - **list_solar_flares**: An event with no end time is still in progress, and an event whose peak is pending shows no class yet — SWPC writes "Unk" for its max_time. Use min_class "M" or "X" when the question is about flares that matter for Earth; C-class events are common and mostly harmless. When nothing clears the minimum, the unfiltered list is returned with a note rather than an error.
 
 List solar flare events detected by NOAA SWPC — begin time, peak class and end time for each, newest first. Pass min_class to see only significant flares

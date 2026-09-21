@@ -28,15 +28,15 @@ The figures are long-term averages from the weather record, typically 2005–202
 
 
 ## Available Tools (5)
-- **compare_configurations**: Give configurations as a comma-separated list of label:slope or label:slope:azimuth — for example "Flat:0,South-35:35:0,Roof:20:-30,Optimal" — where azimuth is degrees from south (0 south, -90 east, 90 west) and a bare label like Optimal asks PVGIS to choose the best angle. The answer sorts by kWh per year and shows how far each option trails the best. Useful for weighing yield against installation cost: a roof a few percent off ideal often beats the price of a frame.
-
-Compare several panel tilts and orientations side by side, sorted by yield — how much each mounting option would generate per year, in one call
 - **estimate_pv_generation**: Give latitude and longitude in decimal degrees; peak_power_kw defaults to 1 kWp so a question about the site needs no system size, and the answer scales linearly — 10 kWp is ten times the figures. Leave slope out to have PVGIS choose the optimal tilt and orientation, and the answer reports which angles it picked. slope is degrees from horizontal (0 flat, 90 vertical) and azimuth is degrees from south — 0 south, -90 east, 90 west; a compass letter like W also works. system_loss_pct defaults to 14, typical for a grid-connected system. radiation_database is PVGIS-ERA5 (global, the default) or PVGIS-SARAH3 (Europe, Africa, Asia). Errors carry PVGIS's own reason, which lists the valid values when one is wrong.
 
 Estimate how much electricity a solar panel system would generate at any location on Earth — monthly and yearly kilowatt-hours, plus the sunlight available, from the European Commission JRC PVGIS database
 - **find_optimal_tilt**: Returns the optimal slope in degrees from horizontal and the azimuth in degrees from south, together with the yearly and monthly yield that orientation gives. A shallow tilt favours summer, a steeper one winter — compare_configurations shows that trade-off across several angles. Only fixed free-standing mountings are modelled; this version of PVGIS does not support tracking systems.
 
 The best tilt and orientation for solar panels at a location, and how much electricity that ideal mounting would generate
+- **compare_configurations**: Give configurations as a comma-separated list of label:slope or label:slope:azimuth — for example "Flat:0,South-35:35:0,Roof:20:-30,Optimal" — where azimuth is degrees from south (0 south, -90 east, 90 west) and a bare label like Optimal asks PVGIS to choose the best angle. The answer sorts by kWh per year and shows how far each option trails the best. Useful for weighing yield against installation cost: a roof a few percent off ideal often beats the price of a frame.
+
+Compare several panel tilts and orientations side by side, sorted by yield — how much each mounting option would generate per year, in one call
 - **get_monthly_profile**: PVGIS serves 8760 hourly records per year; this aggregates them into one average day for the month asked about, so the response stays small. month is 1–12 and year defaults to the most recent year PVGIS holds. The shape of the day matters more than the peak for storage: read how many hours carry power and how much lands midday versus evening.
 
 When in the day a solar system would actually deliver power — the mean output for each hour of a chosen month, plus the month's total, from the PVGIS hourly series

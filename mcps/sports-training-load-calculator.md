@@ -14,10 +14,10 @@ This MCP server provides a specialized engine for quantifying physical exertion 
 
 
 ## Available Tools (4)
-- **analyze_session_load**: Calculates the specific load for a single training session
 - **calculate_fitness_readiness**: Determines the athlete's current readiness and injury risk
 - **evaluate_training_pattern**: Analyzes the variety of training to identify risks of overtraining
 - **summarize_weekly_metrics**: Provides a high-level overview of training volume and intensity for a specific week
+- **analyze_session_load**: Calculates the specific load for a single training session
 
 
 ## 💬 Prompt Examples

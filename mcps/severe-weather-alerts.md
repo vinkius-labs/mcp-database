@@ -26,12 +26,12 @@ A warning is only useful if it reaches someone in time. Tornado Warnings carry u
 
 
 ## Available Tools (5)
-- **summarize_active_alerts**: It reads the whole feed once and aggregates, so it costs one request instead of paging through hundreds of alerts. The by_state and by_event tables tell you which filter to pass to list_active_alerts next.
-
-Summarise every weather alert in force across the United States right now — counts by event, severity, urgency and state, plus the most severe alerts in force, from NOAA NWS
 - **list_active_alerts**: Alert ids look like urn:oid:2.49... and are what get_alert_details takes. Feed entries that are system tests are left out unless include_tests is set — they say "Monitoring message only, please disregard".
 
 List the weather watches, warnings and advisories in force right now — ranked most severe first, with event, severity, urgency, area, states and expiry for each, from NOAA NWS
+- **summarize_active_alerts**: It reads the whole feed once and aggregates, so it costs one request instead of paging through hundreds of alerts. The by_state and by_event tables tell you which filter to pass to list_active_alerts next.
+
+Summarise every weather alert in force across the United States right now — counts by event, severity, urgency and state, plus the most severe alerts in force, from NOAA NWS
 - **get_alert_details**: id from list_active_alerts or summarize_active_alerts, or the full https URL of a single alert. Expired alerts are removed from the API, so an id that has ended returns "no alert exists" rather than a stale record — say so rather than retrying.
 
 Read one weather alert in full — the forecaster's product text, the protective instructions, the area, the AWIPS and WMO product identifiers and the products it supersedes

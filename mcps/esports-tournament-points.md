@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools for managing esports tourname
 
 
 ## Available Tools (4)
-- **audit_ranking_decision**: Provides a transparent audit trail for why a team is ranked at a specific position
-- **calculate_standings**: Generates the complete tournament leaderboard and qualification status
 - **get_team_record**: Retrieves the performance history and statistical summary for a single team
 - **validate_tournament_integrity**: Ensures the match data is mathematically consistent and free of logical errors
+- **audit_ranking_decision**: Provides a transparent audit trail for why a team is ranked at a specific position
+- **calculate_standings**: Generates the complete tournament leaderboard and qualification status
 
 
 ## 💬 Prompt Examples

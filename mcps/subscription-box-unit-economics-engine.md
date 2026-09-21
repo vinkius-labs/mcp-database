@@ -15,9 +15,9 @@ This MCP server provides a complete financial modeling engine for subscription b
 
 ## Available Tools (4)
 - **analyze_sensitivity**: Evaluates how much the LTV changes when a specific cost or rate is adjusted
-- **calculate_unit_economics**: Calculates fundamental profitability metrics (Contribution Margin and LTV) for a single subscription unit
 - **get_margin_breakdown**: Provides a detailed view of where the revenue is going to identify cost-heavy areas
 - **simulate_cohort_growth**: Projects the total monthly profit of a cohort over time based on initial acquisition and churn
+- **calculate_unit_economics**: Calculates fundamental profitability metrics (Contribution Margin and LTV) for a single subscription unit
 
 
 ## 💬 Prompt Examples

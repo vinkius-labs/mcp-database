@@ -14,10 +14,10 @@ This MCP server manages the complex revenue waterfall for creators and their sta
 
 
 ## Available Tools (4)
+- **validate_split_integrity**: 
 - **analyze_creator_payout_impact**: 
 - **calculate_revenue_distribution**: 
 - **get_tax_and_compliance_summary**: 
-- **validate_split_integrity**: 
 
 
 ## 💬 Prompt Examples

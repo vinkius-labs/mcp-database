@@ -26,18 +26,18 @@ Space weather starts on the Sun. A flare in 94 Å and a CME in LASCO C3 are the 
 
 
 ## Available Tools (4)
-- **find_solar_product_for**: Returns the best product plus alternates that show the same thing; pass the id to get_solar_image for the frame. For an Earth-directed CME the answer is the LASCO C3 coronagraph.
-
-Pick the solar image product that shows a phenomenon — sunspots, a flare, a coronal mass ejection, a coronal hole, a filament, the magnetic field — with the reason it fits
 - **get_solar_image**: A frame older than a day is flagged stale — SDO pauses for manoeuvres and lunar transits, so try another wavelength or the coronagraphs.
 
 Get a live image of the Sun — a stable NASA archive URL plus capture time, file size and whether the frame is fresh, for any AIA wavelength, HMI product, composite or LASCO coronagraph
-- **list_solar_instruments**: AIA photographs the solar atmosphere in ten extreme-ultraviolet wavelengths that each show a different temperature; HMI maps the visible surface and magnetic field; LASCO occults the disc to photograph coronal mass ejections. All keyless, all live.
-
-List the solar imagers this API serves — SDO's AIA and HMI, and SOHO's LASCO coronagraphs — with what each one observes and how many products it publishes
 - **list_solar_image_products**: Optionally narrow to one instrument: AIA, HMI or LASCO.
 
 List the solar image products one imager publishes — every AIA wavelength, the HMI continuum and magnetogram, the composites, and the LASCO coronagraphs — with what each one reveals
+- **list_solar_instruments**: AIA photographs the solar atmosphere in ten extreme-ultraviolet wavelengths that each show a different temperature; HMI maps the visible surface and magnetic field; LASCO occults the disc to photograph coronal mass ejections. All keyless, all live.
+
+List the solar imagers this API serves — SDO's AIA and HMI, and SOHO's LASCO coronagraphs — with what each one observes and how many products it publishes
+- **find_solar_product_for**: Returns the best product plus alternates that show the same thing; pass the id to get_solar_image for the frame. For an Earth-directed CME the answer is the LASCO C3 coronagraph.
+
+Pick the solar image product that shows a phenomenon — sunspots, a flare, a coronal mass ejection, a coronal hole, a filament, the magnetic field — with the reason it fits
 
 
 ## 💬 Prompt Examples

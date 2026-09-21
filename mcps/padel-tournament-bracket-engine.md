@@ -14,10 +14,10 @@ This MCP server provides a deterministic engine for managing professional padel 
 
 
 ## Available Tools (4)
-- **advance_tournament_stage**: Moves teams from a group or previous round into the next stage
 - **calculate_group_rankings**: Determines the standings for teams within a Round-robin or Swiss stage
 - **generate_bracket**: Generates the initial tournament structure and fixture list
 - **get_consolation_bracket**: Generates a secondary bracket for teams that have been eliminated
+- **advance_tournament_stage**: Moves teams from a group or previous round into the next stage
 
 
 ## 💬 Prompt Examples

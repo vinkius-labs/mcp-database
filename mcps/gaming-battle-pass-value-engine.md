@@ -14,9 +14,9 @@ This MCP server provides a decision-support engine to calculate the true value o
 
 
 ## Available Tools (4)
-- **analyze_break_even**: Calculates the break-even point for the Battle Pass
 - **calculate_pass_efficiency**: Calculates the value-to-price ratio and total weighted utility of a Battle Pass
 - **evaluate_reward_density**: Evaluates the concentration of value across the Battle Pass tiers
+- **analyze_break_even**: Calculates the break-even point for the Battle Pass
 - **simulate_completion_scenarios**: g., finishing 50% vs 100%).
 
 Simulates expected value across different completion percentages
