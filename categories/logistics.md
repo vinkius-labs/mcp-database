@@ -7,9 +7,10 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
+| [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
 | [Downwind Run Planner](../mcps/downwind-run-planner.md) | Plan logistics for downwind runs, including distance, drift, and shuttle needs. |
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
-| [Event Seating Planner](../mcps/event-seating-planner.md) | Deterministic venue capacity and seating layout calculator. |
+| [Event Seating Planner](../mcps/event-seating-planner.md) | Automated deterministic seating arrangement generator. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |

@@ -125,6 +125,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Retrosynthetic Analysis Engine](../mcps/retrosynthetic-analysis-engine.md) | Deconstruct complex molecules into simpler precursors using strategic disconnection analysis. |
 | [Sedimentation Velocity Dynamics](../mcps/sedimentation-velocity-dynamics.md) | Calculate particle sedimentation coefficients, terminal velocities, and Svedberg constants. |
 | [Sequence Alignment Scoring](../mcps/sequence-alignment-scoring.md) | Quantify biological similarity for DNA and Protein sequence alignments. |
+| [Skincare Ingredient Compatibility](../mcps/skincare-ingredient-compatibility.md) | Validate your skincare routine against a scientific matrix of ingredient interactions. |
 | [Slope Stability Analysis](../mcps/slope-stability-analysis.md) | Evaluate soil slope stability using Bishop's simplified method. |
 | [Snow Crystal Size Effect](../mcps/snow-crystal-size-effect.md) | Models the impact of snow crystal morphology and environment on skiing performance. |
 | [Snow Friction Coefficient Calculator](../mcps/snow-friction-coefficient-calculator.md) | Calculate snow friction, glide performance, and wax compatibility. |

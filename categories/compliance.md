@@ -23,6 +23,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | [Radioactive Material Management](../mcps/radioactive-material-management.md) | Manage NORM compliance and radiation safety for oil and gas operations. |
 | [Reporting Compliance Calendar](../mcps/reporting-compliance-calendar.md) | Automated regulatory reporting schedules and compliance tracking for oil and gas operations. |
 | [SDS Hazard Communication Evaluator](../mcps/sds-hazard-communication-evaluator.md) | Evaluates Safety Data Sheet (SDS) compliance against GHS and OSHA HCS standards. |
+| [Substitution Window Tracker](../mcps/substitution-window-tracker.md) | A regulatory compliance engine for monitoring football substitution limits, windows, and bench capacity. |
 | [Venting & Fugitive Emissions Calculator](../mcps/venting-fugitive-emissions-calculator.md) | Calculate methane and VOC emissions from oil and gas facilities using EPA methods. |
 | [Waste Management Classification](../mcps/waste-management-classification.md) | Classifies oil and gas waste for regulatory compliance and disposal. |
 

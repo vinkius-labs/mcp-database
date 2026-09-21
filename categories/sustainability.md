@@ -15,6 +15,7 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 | [Packaging Footprint Comparator](../mcps/packaging-footprint-comparator.md) | Compare the environmental impact and CO2e emissions of different packaging materials. |
 | [Personal Carbon Budget Tracker](../mcps/personal-carbon-budget-tracker.md) | Evaluate your annual carbon footprint against the 1.5°C climate target. |
 | [Pollution Prevention Opportunity Assessment](../mcps/pollution-prevention-opportunity-assessment.md) | Identify and evaluate pollution prevention opportunities using P2 methodology. |
+| [Slow Fashion Material Impact](../mcps/slow-fashion-material-impact.md) | Calculate and compare the environmental footprint of garments based on material mass, fiber type, and lifecycle longevity. |
 | [Tree Planting Offset Calc](../mcps/tree-planting-offset-calc.md) | Calculate the number of trees and land area needed to offset your annual carbon footprint. |
 
 

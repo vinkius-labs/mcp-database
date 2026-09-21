@@ -17,6 +17,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Content Pillar Rotator](../mcps/content-pillar-rotator.md) | Automate content variety by rotating categories through a defined period while preventing repetition. |
 | [Content ROI Calculator](../mcps/content-roi-calculator.md) | Calculate production costs, attributed revenue, and profitability metrics for content marketing assets. |
 | [Conversion Funnel Copy Scorer](../mcps/conversion-funnel-copy-scorer.md) | Analyze marketing funnel stages for message match, friction words, and CTA alignment. |
+| [Creator Sponsorship Rate Card](../mcps/creator-sponsorship-rate-card.md) | A specialized pricing engine for influencer marketing campaigns. |
 | [crm4 solution](../mcps/crm4-solution.md) | Italian lead management and call center CRM. |
 | [Crowdfunding Pitch Scorer](../mcps/crowdfunding-pitch-scorer.md) | Analyze crowdfunding campaign effectiveness using linguistic analysis of narrative ratio, rewards, and trust. |
 | [Customer Acquisition Cost Engine](../mcps/customer-acquisition-cost-engine.md) | Calculate blended CAC, channel-specific costs, and payback periods. |
@@ -46,6 +47,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Personalization Token Validator](../mcps/personalization-token-validator.md) | Validate syntax, fallback availability, and linguistic safety of dynamic merge fields in templates. |
 | [Persuasion Framework Scorer](../mcps/persuasion-framework-scorer.md) | Scans copy for structural and persuasive patterns using Cialdini's principles and copywriting frameworks. |
 | [Placer.ai](../mcps/placerai.md) | Access foot traffic analytics — track visit trends, demographics, and trade areas directly from any AI agent. |
+| [Podcast Sponsorship Calculator](../mcps/podcast-sponsorship-calculator.md) | Calculate precise advertising pricing and campaign ROI for podcast sponsorships. |
 | [PPC Campaign Efficiency Analyzer](../mcps/ppc-campaign-efficiency-analyzer.md) | Calculates advanced PPC metrics including CTR, CPC, CPA, ROAS, and break-even thresholds. |
 | [Pricing Psychology Calculator](../mcps/pricing-psychology-calculator.md) | Analyze price presentation strategies like charm pricing, anchoring, and the decoy effect. |
 | [Product Description FAB Analyzer](../mcps/product-description-fab-analyzer.md) | Audit your product copy for Feature-Advantage-Benefit (FAB) structural integrity and persuasive impact. |

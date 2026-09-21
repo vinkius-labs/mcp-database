@@ -5,6 +5,7 @@ Explore the open database of **management** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Gym Capacity Planner](../mcps/gym-capacity-planner.md) | Calculate gym floor capacity, equipment needs, and daily throughput. |
+| [Squad Roster Validator](../mcps/squad-roster-validator.md) | Validates football competition rosters for compliance with age, size, and homegrown rules. |
 
 
 ---

@@ -5,6 +5,7 @@ Explore the open database of **medical** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Graston Technique Pressure Guide](../mcps/graston-technique-pressure-guide.md) | Provides precise instrument application parameters based on Graston Technique methodologies. |
+| [Hydro-Facial Pressure Calculator](../mcps/hydro-facial-pressure-calculator.md) | Generates precise hydro-facial treatment parameters including pressure, flow, and suction. |
 | [Pet Anesthesia Risk Scorer](../mcps/pet-anesthesia-risk-scorer.md) | Estimate ASA physical status classification for veterinary patients based on physiological and medical markers. |
 
 

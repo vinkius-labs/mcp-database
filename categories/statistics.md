@@ -8,10 +8,15 @@ Explore the open database of **statistics** Model Context Protocol (MCP) servers
 | [Agent A/B Test Calculator](../mcps/agent-ab-test-calculator.md) | A deterministic statistical engine for evaluating performance differences between agent variants. |
 | [Calibration Curve Generator](../mcps/calibration-curve-generator.md) | Generates mathematical calibration models and statistical analysis for analytical instruments. |
 | [Data Analysis Prover](../mcps/data-analysis-prover.md) | A marketing team asked an AI to analyze campaign data. The AI reported 'significant correlation between email frequency and purchase rate (p<0.05).' The team tripled emails. Unsubscribes spiked 340%. Sample: N=47 self-selected respondents, no power analysis. Correlation: observational, no confounders. Distribution: right-skewed but mean used. p=0.043 but Cohen's d=0.12 — trivial. Chart: truncated Y-axis making a 2% difference look enormous. This tool forces five axes: sample validity, causal inference, distribution awareness, significance with effect size, and visualization integrity. |
+| [Head-to-Head Record Calculator](../mcps/head-to-head-record-calculator.md) | Calculate precise historical football performance metrics and H2H records between teams. |
+| [Match Statistics Aggregator](../mcps/match-statistics-aggregator.md) | Aggregate football performance metrics for teams and players. |
 | [Multivariate Test Analyzer](../mcps/multivariate-test-analyzer.md) | Perform 2k factorial analysis to identify optimal element combinations and interaction effects in multivariate experiments. |
+| [Over/Under Goals Probability Calculator](../mcps/overunder-goals-probability-calculator.md) | Calculate football total-goals probabilities for any goal line using scoreline matrices. |
+| [Player Rating Aggregator](../mcps/player-rating-aggregator.md) | Aggregate football player match ratings using arithmetic, weighted, or minutes-weighted averages. |
 | [Quality Control Chart Design](../mcps/quality-control-chart-design.md) | Designs statistical process control charts to monitor process stability. |
 | [Resource Assessment Uncertainty](../mcps/resource-assessment-uncertainty.md) | Quantify geological uncertainty using probabilistic Monte Carlo simulations. |
 | [Sampling Plan Designer](../mcps/sampling-plan-designer.md) | Generates statistically rigorous sampling plans for quality control. |
+| [Scoreline Probability Calculator](../mcps/scoreline-probability-calculator.md) | Computes exact football scoreline probabilities from goal distributions or matrices. |
 | [Test Duration Calculator](../mcps/test-duration-calculator.md) | Calculate required A/B test duration, sample sizes, and experiment risk levels. |
 | [Wind Statistics Analysis](../mcps/wind-statistics-analysis.md) | Analyze wind speed distributions and seasonality for session planning. |
 | [Wine Quality Score Analysis](../mcps/wine-quality-score-analysis.md) | Statistical analysis of sensory evaluation scores for wine quality. |

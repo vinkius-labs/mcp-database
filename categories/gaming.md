@@ -12,10 +12,12 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
 | [Economy Inflation Detector](../mcps/economy-inflation-detector.md) | Analyze and balance in-game economies by measuring inflation, purchasing power, and wealth inequality. |
 | [Encounter Difficulty Calculator](../mcps/encounter-difficulty-calculator.md) | Calculate D&D 5e/PF2e combat difficulty, lethality risk, and encounter adjustments. |
+| [esports-tournament-points](../mcps/esports-tournament-points.md) | Calculate esports standings, team records, and ranking audits. |
 | [FPS Hardware Bottleneck Estimator](../mcps/fps-hardware-bottleneck-estimator.md) | Predict gaming performance and identify hardware bottlenecks for specific games and resolutions. |
 | [Gacha Pity Simulator](../mcps/gacha-pity-simulator.md) | Analyze gacha mechanics including base rates, soft pity ramps, and hard pity guarantees to predict player costs. |
 | [Gachapon Probability Calculator](../mcps/gachapon-probability-calculator.md) | Calculate the statistical likelihood, expected costs, and purchase requirements for completing a full Gachapon collection. |
 | [Game Economy Inflation Calculator](../mcps/game-economy-inflation-calculator.md) | Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks and faucets. |
+| [Gaming Battle Pass Value Engine](../mcps/gaming-battle-pass-value-engine.md) | Quantify the economic value of any video game Battle Pass. |
 | [Loot Box Expectation Calculator](../mcps/loot-box-expectation-calculator.md) | Calculate gacha success probabilities, expected costs, and bad luck streak risks. |
 | [Loot Drop Probability Engine](../mcps/loot-drop-probability-engine.md) | Analyze loot table probabilities, pity mechanics, and economic value distributions. |
 | [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |

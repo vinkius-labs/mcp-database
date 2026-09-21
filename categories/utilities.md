@@ -9,9 +9,11 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Acoustic Reverberation Calculator](../mcps/acoustic-reverberation-calculator.md) | Estimate RT60 reverberation time and assess room acoustic suitability. |
 | [Advanced Timezone Engine](../mcps/advanced-timezone-engine.md) | Precise IANA timezone operations including historical DST transitions, ambiguity detection, and global time synchronization. |
 | [Agent Context Window Manager](../mcps/agent-context-window-manager.md) | Deterministic token tracking and context optimization for long-running AI conversations. |
+| [Aggregate Score Calculator](../mcps/aggregate-score-calculator.md) | Calculate aggregate winners and tiebreak requirements for two-legged football ties. |
 | [Aquarium Water Chemistry Calculator](../mcps/aquarium-water-chemistry-calculator.md) | Calculate precise chemical dosages for freshwater aquariums. |
 | [attempt-selector](../mcps/attempt-selector.md) | Strategic competition attempt selection for powerlifters. |
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |
+| [Away Goals Rule Evaluator](../mcps/away-goals-rule-evaluator.md) | Determines the winner of two-legged football ties using aggregate scores and away goals rules. |
 | [AWS Location Service Geofencing Calculator](../mcps/aws-location-service-geofencing-calculator.md) | Estimate AWS Location Service capacity, resource usage, and operational performance. |
 | [Barbecue Meat Calculator](../mcps/barbecue-meat-calculator.md) | Deterministic planning for BBQ meat procurement, cooking times, and fuel needs. |
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
@@ -20,6 +22,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [BMI Calculator](../mcps/bmi-calculator.md) | Calculate Body Mass Index and weight health metrics. |
 | [Board Game Initiative Resolver](../mcps/board-game-initiative-resolver.md) | Deterministic turn order generator for board games. |
+| [Board Game Score Calculator](../mcps/board-game-score-calculator.md) | A precision scoring engine for board games that generates scorecards, rankings, and audit trails. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
 | [Bridge Scoring Engine](../mcps/bridge-scoring-engine.md) | Deterministic duplicate bridge scoring for contract results, trick points, bonuses, and penalties. |
@@ -72,6 +75,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |
+| [League Tiebreaker Resolver](../mcps/league-tiebreaker-resolver.md) | Resolves football league ties using a custom sequence of rules. |
 | [Mahjong Riichi Scoring](../mcps/mahjong-riichi-scoring.md) | Deterministic Japanese Riichi Mahjong scoring calculator. |
 | [Mahjong Scoring Engine](../mcps/mahjong-scoring-engine.md) | A deterministic Riichi Mahjong scoring calculator for Yaku, Fu, and final scores. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
@@ -103,14 +107,17 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
 | [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert between Arabic numbers and Roman numerals with strict notation rules. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
+| [Round-Robin Fixture Generator](../mcps/round-robin-fixture-generator.md) | Generates complete round-robin football schedules using the circle method. |
 | [Rowing Pace Calculator](../mcps/rowing-pace-calculator.md) | Calculate rowing ergometer pace, power, and stroke rate. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
+| [Running Pace & Race Calculator](../mcps/running-pace-race-calculator.md) | Calculate race split plans, pace conversions, and elevation adjustments. |
 | [Running Pace & Split Calculator](../mcps/running-pace-split-calculator.md) | Generate precise running pace schedules and cumulative time markers. |
 | [Running Pace Calculator](../mcps/running-pace-calculator.md) | High-precision running pace, split times, and performance predictions. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
+| [Sneaker Size Converter](../mcps/sneaker-size-converter.md) | Translate footwear sizes across US, UK, EU, JP, and CM systems. |
 | [Solitaire Solver](../mcps/solitaire-solver.md) | A deterministic engine for validating Klondike solitaire moves and identifying legal plays. |
 | [Spot Distance Calculation](../mcps/spot-distance-calculation.md) | Calculate great-circle distances, bearings, and travel times using spherical geometry. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |

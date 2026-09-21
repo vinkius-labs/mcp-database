@@ -87,6 +87,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Ground Freezing Design Tool](../mcps/ground-freezing-design-tool.md) | Calculates thermal and hydraulic parameters for artificial ground freezing. |
 | [Ground Improvement Design](../mcps/ground-improvement-design.md) | Technical design for soil improvement methods including stone columns, vibro-compaction, and grouting. |
 | [HDB Renovation Compliance Checker](../mcps/hdb-renovation-compliance-checker.md) | Validate HDB renovation plans against structural and regulatory rules. |
+| [Home Paint Material Calculator](../mcps/home-paint-material-calculator.md) | Calculate paint, primer, labor, and total costs for any room or project. |
 | [HVAC Load Calculator (Manual J)](../mcps/hvac-load-calculator-manual-j.md) | Calculate heating and cooling loads in BTU/h and Tons using simplified Manual J standards. |
 | [Insulation R-Value Calculator](../mcps/insulation-r-value-calculator.md) | Calculate minimum insulation R-values, required thickness, and estimated costs based on IECC climate zones. |
 | [Isolated Rectangular Footing Designer](../mcps/isolated-rectangular-footing-designer.md) | Calculates dimensions, thickness, and reinforcement for isolated rectangular footings. |

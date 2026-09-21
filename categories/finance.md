@@ -152,6 +152,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ATR-Calculator](../mcps/atr-calculator.md) | Calculate Average True Range and classify market volatility. |
 | [Awesome Oscillator Calculator](../mcps/awesome-oscillator-calculator.md) | Calculate Bill Williams' Awesome Oscillator and detect momentum patterns. |
 | [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
+| [Bankroll Kelly Calculator](../mcps/bankroll-kelly-calculator.md) | Deterministic mathematical tool for calculating optimal football betting stakes using the Kelly Criterion. |
 | [Basis Calculator](../mcps/basis-calculator.md) | Calculate and analyze commodity basis by comparing local physical prices against exchange futures. |
 | [Basket Trading Strategy](../mcps/basket-trading-strategy.md) | Execute deterministic basket trading by evaluating correlated asset groups against a benchmark. |
 | [Battle Pass Value Calculator](../mcps/battle-pass-value-calculator.md) | Analyze the economic efficiency of gaming Battle Passes by calculating ROI and break-even points. |
@@ -161,6 +162,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Black Swan Zero Premium Selling](../mcps/black-swan-zero-premium-selling.md) | Identify and exploit impossible prediction market outcomes for guaranteed profit. |
 | [Black-Scholes Calculator](../mcps/black-scholes-calculator.md) | Deterministic engine for European option pricing and Greeks sensitivity analysis. |
 | [Blended CAC Calculator](../mcps/blended-cac-calculator.md) | Calculate precise Customer Acquisition Cost (CAC) across multiple channels and optimize future marketing spend allocation. |
+| [Blind-Box Expected Value Engine](../mcps/blind-box-expected-value-engine.md) | Mathematical analysis for blind-box collectors to predict costs and risks. |
 | [BNPL Financial Comparator](../mcps/bnpl-financial-comparator.md) | Expose the true cost of BNPL, credit cards, and cash payments by calculating effective APRs and hidden fees. |
 | [Bollinger Band Squeeze Strategy](../mcps/bollinger-band-squeeze-strategy.md) | Identify market volatility contractions and breakout signals using Bollinger Bands and Keltner Channels. |
 | [Bollinger Bands Calculator](../mcps/bollinger-bands-calculator.md) | Calculate volatility bands, squeeze states, and price positioning. |
@@ -216,6 +218,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Commodity Selection Index Calculator](../mcps/commodity-selection-index-calculator.md) | Calculate the Commodity Selection Index (CSI) to identify momentum-driven trends relative to volatility. |
 | [Compensation Band Generator](../mcps/compensation-band-generator.md) | Generate structured compensation packages including base salary, bonus targets, and equity ranges based on global market data. |
 | [Compound Interest Optimizer](../mcps/compound-interest-optimizer.md) | Detailed investment growth projections accounting for inflation, taxes, and penalties. |
+| [Concert Ticket Total Cost Calculator](../mcps/concert-ticket-total-cost-calculator.md) | Calculate the full economic impact of attending live music events, including tickets and ancillary costs. |
 | [Conditional Market Arbitrage Engine](../mcps/conditional-market-arbitrage-engine.md) | Identify risk-free arbitrage in conditional prediction markets using Bayesian probability. |
 | [Connors RSI Calculator](../mcps/connors-rsi-calculator.md) | Calculate Connors RSI and identify mean-reversion trading signals. |
 | [Conservation Program Payment Calculator](../mcps/conservation-program-payment-calculator.md) | Financial modeling for USDA conservation programs (CRP, EQIP, CSP) and crop economics. |
@@ -237,6 +240,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [CPF Optimization Strategy](../mcps/cpf-optimization-strategy.md) | Deterministic CPF allocation and projection engine for Singaporeans aged 20-35. |
 | [Crack Spread Analysis](../mcps/crack-spread-analysis.md) | Analyze refinery profitability by calculating crack spreads and hedge ratios. |
 | [Crack Spread Strategy](../mcps/crack-spread-strategy.md) | Analyze refining margins and identify mean-reversion opportunities using a 3:2:1 crack spread model. |
+| [Creator Revenue Split](../mcps/creator-revenue-split.md) | Reconcile multi-party revenue distributions and calculate exact payouts. |
 | [Credit Card Payoff Engine](../mcps/credit-card-payoff-engine.md) | Calculate exact credit card payoff timelines, interest costs, and compare repayment strategies using daily compounding logic. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
 | [Crop Insurance Indemnity Calculator](../mcps/crop-insurance-indemnity-calculator.md) | Calculates crop insurance indemnity payments and break-even analyses. |
@@ -245,6 +249,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Cross-Chain Arbitrage Engine](../mcps/cross-chain-arbitrage-engine.md) | Identify profitable arbitrage opportunities across chains using messaging protocols. |
 | [Cross-Market Logical Arbitrage](../mcps/cross-market-logical-arbitrage.md) | Detect risk-free profit opportunities between logically related binary markets. |
 | [Cross-Platform Price Discrepancy Analyzer](../mcps/cross-platform-price-discrepancy-analyzer.md) | Calculate exact net arbitrage profit and capital requirements across prediction markets. |
+| [Cruise Trip Cost Calculator](../mcps/cruise-trip-cost-calculator.md) | Calculate total cruise costs, per-person daily rates, and package value comparisons. |
 | [Crush Spread Strategy](../mcps/crush-spread-strategy.md) | Analyze soybean processing margins and generate deterministic trading signals. |
 | [Crypto Index Rebalancing Strategy](../mcps/crypto-index-rebalancing-strategy.md) | A deterministic decision engine for cryptocurrency index rebalancing based on tracking error and cost-benefit analysis. |
 | [Cryptocurrency Tax Lot Tracker](../mcps/cryptocurrency-tax-lot-tracker.md) | Calculate cost basis, realized gains, and tax liabilities using FIFO, LIFO, HIFO, and Specific Identification methods. |
@@ -368,6 +373,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Farm Labor Cost Calculator](../mcps/farm-labor-cost-calculator.md) | Estimate total seasonal labor expenses including H-2A compliance, taxes, and benefits. |
 | [Farm Profitability Dashboard](../mcps/farm-profitability-dashboard.md) | Calculate comprehensive farm profitability, EBITDA, and crop efficiency metrics. |
 | [Farm Succession Estate Planner](../mcps/farm-succession-estate-planner.md) | Calculate estate tax liability and generational transfer timelines for farm assets. |
+| [Fashion Resale Profit Calculator](../mcps/fashion-resale-profit-calculator.md) | Calculate exact net profit, ROI, and break-even prices for clothing and sneaker reselling. |
 | [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
 | [Fibonacci Retracement Calculator](../mcps/fibonacci-retracement-calculator.md) | Calculate precise Fibonacci retracement levels, price extensions, and time zones. |
 | [Financial Ratios Calculator](../mcps/financial-ratios-calculator.md) | Calculate essential financial health indicators including liquidity, solvency, and interest coverage ratios. |
@@ -378,6 +384,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Fisher Transform Calculator](../mcps/fisher-transform-calculator.md) | Deterministic Ehlers Fisher Transform for trend and reversal detection. |
 | [Fisher Transform Strategy](../mcps/fisher-transform-strategy.md) | A deterministic mean-reversion strategy using Fisher Transform to identify market exhaustion. |
 | [Flash Loan Arbitrage Strategy](../mcps/flash-loan-arbitrage-strategy.md) | Identify and validate profitable flash loan arbitrage opportunities across DEXs. |
+| [Flower Arrangement Cost Calculator](../mcps/flower-arrangement-cost-calculator.md) | Calculate precise costs, margins, and stem inventory for floral arrangements. |
 | [France Income Tax Calculator](../mcps/france-income-tax-calculator.md) | Calculate French income tax using the quotient familial system, progressive brackets, and social contributions. |
 | [Freelancer Budget Prover](../mcps/freelancer-budget-prover.md) | A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis. |
 | [Freight Cost Calculator](../mcps/freight-cost-calculator.md) | Calculate and compare shipping costs across road, rail, air, sea, and multimodal transport modes. |
@@ -445,6 +452,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [High-Low Index Calculator](../mcps/high-low-index-calculator.md) | Calculate market breadth, cumulative summation, and detect momentum divergence. |
 | [Historical Volatility Calculator](../mcps/historical-volatility-calculator.md) | Calculate annualized historical volatility, percentile ranks, and volatility cones. |
 | [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
+| [Home Comfort Energy Budget](../mcps/home-comfort-energy-budget.md) | Estimate household energy consumption and costs for heating, cooling, and appliances. |
+| [Hotel Room Cost Splitter](../mcps/hotel-room-cost-splitter.md) | Equitable cost distribution for shared accommodations. |
 | [Hugging Face Deployment Economics](../mcps/hugging-face-deployment-economics.md) | Financial modeling for Hugging Face deployment costs and self-hosting comparisons. |
 | [IBAN and BIC Checksum Validator](../mcps/iban-and-bic-checksum-validator.md) | Verify the mathematical integrity of IBANs and the structural validity of BIC/SWIFT codes. |
 | [Ichimoku Cloud Calculator](../mcps/ichimoku-cloud-calculator.md) | Deterministic engine for Ichimoku Kinko Hyo indicator components and signals. |
@@ -558,9 +567,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Moving Average Envelope Calculator](../mcps/moving-average-envelope-calculator.md) | Calculates moving average center lines, upper/lower envelopes, and breakout signals. |
 | [Moving Average Ribbon Calculator](../mcps/moving-average-ribbon-calculator.md) | Analyze market trends and volatility using multi-layered Moving Average ribbons. |
 | [Moving Cost Comparator](../mcps/moving-cost-comparator.md) | Compare the financial impact of DIY truck rentals versus professional full-service moving companies. |
+| [Moving Cost Estimator](../mcps/moving-cost-estimator.md) | Calculate detailed moving costs for DIY, local, and full-service scenarios. |
 | [MRR and ARR Calculator](../mcps/mrr-and-arr-calculator.md) | Calculate Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) from subscription data, broken down by plan segment. |
 | [Multi-Modal AI Economics Engine](../mcps/multi-modal-ai-economics-engine.md) | Calculate multi-modal AI costs, margins, and optimal pricing strategies. |
 | [Music Licensing Royalty Calculator](../mcps/music-licensing-royalty-calculator.md) | Estimate royalties for sync, mechanical, performance, and print music licensing. |
+| [Nail Art Service Time Calculator](../mcps/nail-art-service-time-calculator.md) | Calculate appointment duration, labor costs, and business metrics for nail services. |
 | [Negative Volume Index Calculator](../mcps/negative-volume-index-calculator.md) | Calculate NVI and PVI to identify smart money activity and market sentiment. |
 | [Net Balance Minimizer](../mcps/net-balance-minimizer.md) | Efficiently settle group debts with the minimum number of transactions. |
 | [Net Revenue Retention Calculator](../mcps/net-revenue-retention-calculator.md) | Calculate and analyze NRR and GRR metrics across customer cohorts to evaluate subscription health. |
@@ -604,8 +615,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Percentage Price Oscillator (PPO) Engine](../mcps/percentage-price-oscillator-ppo-engine.md) | A deterministic engine for calculating normalized price momentum via PPO indicators. |
 | [Percentage Volume Oscillator (PVO) Calculator](../mcps/percentage-volume-oscillator-pvo-calculator.md) | Calculate PVO metrics, signal crossovers, and volume-price divergences. |
+| [Perfume Cost Per Wear Calculator](../mcps/perfume-cost-per-wear-calculator.md) | Calculate fragrance cost per spray, wear, month, and year. |
 | [Perp DEX Funding Rate Manipulation Strategy](../mcps/perp-dex-funding-rate-manipulation-strategy.md) | Detect and exploit artificial funding rate spikes in perpetual DEXs. |
 | [Pet Cost Lifetime Estimator](../mcps/pet-cost-lifetime-estimator.md) | Estimate the total lifetime cost of owning a dog or cat, including upfront and annual expenses. |
+| [Pet Food Budget Planner](../mcps/pet-food-budget-planner.md) | Calculate precise pet food quantities and costs for weekly, monthly, and annual budgets. |
+| [Pet Lifetime Cost Calculator](../mcps/pet-lifetime-cost-calculator.md) | Project lifetime pet ownership costs including food, medical, and inflation. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
 | [Petrochemical Market Analysis](../mcps/petrochemical-market-analysis.md) | Analyze global petrochemical supply-demand, operating rates, and price outlooks. |
 | [Petrochemical Process Economics](../mcps/petrochemical-process-economics.md) | Evaluate the financial viability and sensitivity of petrochemical production processes. |
@@ -687,6 +701,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Safe Note Converter](../mcps/safe-note-converter.md) | Calculate equity conversion, share issuance, and ownership dilution from SAFE conversions. |
 | [Salary Net Calculator](../mcps/salary-net-calculator.md) | Calculate net salary, INSS, IRRF, and FGTS deductions based on gross pay. |
 | [Sales Quota Attainment Engine](../mcps/sales-quota-attainment-engine.md) | Track sales progress, evaluate performance against targets, and project required daily sales velocity. |
+| [Salon Service Pricing Calculator](../mcps/salon-service-pricing-calculator.md) | Calculate precise service pricing, profit margins, and professional earnings for salon services. |
 | [SBA Loan Eligibility Accelerator](../mcps/sba-loan-eligibility-accelerator.md) | Analyze SBA loan eligibility and portfolio potential for small businesses. |
 | [Scalping Strategy Engine](../mcps/scalping-strategy-engine.md) | Deterministic momentum-based scalping engine using EMA and Stochastic oscillators. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
@@ -697,6 +712,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Seed Stage Valuation Engine](../mcps/seed-stage-valuation-engine.md) | Calculate precise seed-stage startup valuations using a weighted scorecard method. |
 | [Sensitivity Analysis for Mining](../mcps/sensitivity-analysis-for-mining.md) | Evaluate NPV fluctuations and project risks through parameter sensitivity analysis. |
 | [Sensitivity Analysis Matrix](../mcps/sensitivity-analysis-matrix.md) | Generates sensitivity matrices for price and yield combinations to identify profit/loss zones. |
+| [Serasa ClearSale Partners — Reseller Store Onboarding](../mcps/serasa-clearsale-partners-reseller-store-onboarding.md) | Quote, provision and deactivate ClearSale stores, and read their API credentials. |
+| [Serasa Recomenda — Credit Limit Recommendations](../mcps/serasa-recomenda-credit-limit-recommendations.md) | Generate credit-grant decisions and recommended limits for CPF and CNPJ across nine distribution channels. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |
@@ -717,6 +734,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Spa Supply Cost Allocator](../mcps/spa-supply-cost-allocator.md) | Distribute supply costs to services and calculate profitability. |
 | [Spain IRPF Calculator](../mcps/spain-irpf-calculator.md) | Calculate Spanish Personal Income Tax (IRPF) liabilities, including taxable base determination and regional tax application. |
 | [Split-Bill Grace Period Calculator](../mcps/split-bill-grace-period-calculator.md) | Calculate adjusted repayment amounts for shared expenses when one party covers the cost upfront and the other delays their contribution. |
+| [Squad Budget Calculator](../mcps/squad-budget-calculator.md) | Financial planning engine for football squad budgets and compliance. |
 | [Square Footage Rent Comparer](../mcps/square-footage-rent-comparer.md) | Fairly split monthly rent between roommates based on room square footage. |
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup 409A Valuation Estimator](../mcps/startup-409a-valuation-estimator.md) | Estimates 409A Fair Market Value (FMV) for early-stage companies using revenue multiples and DLOM analysis. |
@@ -748,6 +766,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Stock Profit/Loss Calculator](../mcps/stock-profitloss-calculator.md) | Calculate ROI, tax liabilities, and risk metrics for stock trades and options strategies. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Streaming Cost Per Hour Calculator](../mcps/streaming-cost-per-hour-calculator.md) | Calculate the real value of streaming services by determining cost per hour of entertainment. |
+| [Subscription Box Unit Economics Engine](../mcps/subscription-box-unit-economics-engine.md) | Calculate profitability, LTV, and payback periods for subscription box models. |
 | [SuperTrend Calculator](../mcps/supertrend-calculator.md) | Deterministic SuperTrend indicator for trend direction and stop-loss levels. |
 | [SuperTrend Strategy Engine](../mcps/supertrend-strategy-engine.md) | Deterministic trend-following strategy with volatility and trend-strength filters. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
@@ -773,9 +792,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Token Bonding Curve Strategy](../mcps/token-bonding-curve-strategy.md) | Deterministic trading signals based on mathematical bonding curve deviations. |
 | [Token Vesting Claim Strategy](../mcps/token-vesting-claim-strategy.md) | Optimize token claims by balancing price, gas, and tax. |
 | [Tournament Arbitrage Analyzer](../mcps/tournament-arbitrage-analyzer.md) | Identify risk-free arbitrage opportunities in tournament markets by calculating implied probabilities and optimal stake distributions. |
+| [Trading Card Break-Even Calculator](../mcps/trading-card-break-even-calculator.md) | Calculate precise break-even prices, ROI, and profit margins for trading card resales. |
+| [Transfer Fee Amortization Calculator](../mcps/transfer-fee-amortization-calculator.md) | Calculate football player acquisition costs, amortization schedules, and impairment adjustments. |
 | [Transfer Pricing Calculator](../mcps/transfer-pricing-calculator.md) | Verify arm's length compliance for related-party transactions using CUP, Cost Plus, and Resale Minus methods. |
 | [Travel Budget Estimator](../mcps/travel-budget-estimator.md) | Estimate daily travel costs for global cities based on your travel style and group size. |
 | [Travel Budget Optimizer](../mcps/travel-budget-optimizer.md) | Plan regional trips with precise budget, flight, and savings calculations. |
+| [Travel Points Redemption Calculator](../mcps/travel-points-redemption-calculator.md) | Analyze the financial efficiency of loyalty point redemptions. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |
 | [Trend Filter Strategy](../mcps/trend-filter-strategy.md) | Deterministic trading strategy using ADX for trend detection and Moving Averages for execution. |
 | [Trend-Following Ensemble Strategy](../mcps/trend-following-ensemble-strategy.md) | Generates high-conviction trade signals using an ensemble of MA, MACD, and ADX indicators. |
@@ -890,6 +912,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Venture Term Sheet Analysis](../mcps/venture-term-sheet-analysis.md) | Analyze venture capital term sheet economics, ownership dilution, and exit waterfalls. |
 | [Venture Vesting Acceleration](../mcps/venture-vesting-acceleration.md) | Quantify the economic impact of equity acceleration during corporate exits. |
 | [Vesting Schedule Engine](../mcps/vesting-schedule-engine.md) | Calculate equity vesting timelines, cliff impacts, and acceleration outcomes. |
+| [Vintage Clothing Repair Estimator](../mcps/vintage-clothing-repair-estimator.md) | Calculate repair costs, labor time, and resale profitability for vintage garments. |
 | [Virtual Currency Converter](../mcps/virtual-currency-converter.md) | Calculate real-world USD costs and economic efficiency of virtual currency bundles, item purchases, and gacha mechanics. |
 | [VIX Term Structure Calculator](../mcps/vix-term-structure-calculator.md) | Analyze VIX futures term structure, roll yields, and market regimes. |
 | [Volatility Arbitrage Strategy](../mcps/volatility-arbitrage-strategy.md) | Identify mispriced volatility using IV-RV spreads and VIX term structure analysis. |
@@ -907,9 +930,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
 | [WeChat Red Packet Distributor](../mcps/wechat-red-packet-distributor.md) | Calculate fair and deterministic WeChat Red Packet distributions. |
 | [WeChat Red Packet Simulator](../mcps/wechat-red-packet-simulator.md) | Simulate deterministic WeChat 'Lucky Money' distributions with inequality metrics. |
+| [Wedding Budget Allocator](../mcps/wedding-budget-allocator.md) | Intelligently distribute wedding funds across categories based on priorities and limits. |
 | [Wedding Budget Reality Check](../mcps/wedding-budget-reality-check.md) | Deterministic Singapore wedding budget calculator and reality check. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
 | [Well Abandonment Cost Estimator](../mcps/well-abandonment-cost-estimator.md) | Calculate total financial liability for well plugging and abandonment (P&A) operations. |
+| [Wellness Membership Pricing Calculator](../mcps/wellness-membership-pricing-calculator.md) | Design profitable tiered membership structures for wellness businesses. |
+| [Wellness Retreat Budget Planner](../mcps/wellness-retreat-budget-planner.md) | Precision financial modeling for wellness retreats, calculating total costs, per-person pricing, and break-even occupancy. |
 | [Whole Farm Budget Planner](../mcps/whole-farm-budget-planner.md) | Aggregate enterprise budgets into a holistic farm financial plan. |
 | [Williams %R Calculator](../mcps/williams-r-calculator.md) | Deterministic technical analysis engine for Williams %R, divergence, and failure swing detection. |
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |

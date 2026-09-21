@@ -14,6 +14,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 | [Genealogy Kinship Calculator](../mcps/genealogy-kinship-calculator.md) | Calculate exact kinship terms, civil law degrees, and biological coefficients. |
 | [MinHash Text Deduplicator](../mcps/minhash-text-deduplicator.md) | Detect near-duplicate texts using MinHash signatures and Jaccard similarity. |
 | [Ore Reserve Estimator](../mcps/ore-reserve-estimator.md) | Estimates mineral ore reserves using geostatistical interpolation and geological constraints. |
+| [Promotion & Relegation Calculator](../mcps/promotion-relegation-calculator.md) | Analyze football league standings to determine promotion, playoff, safety, and relegation status. |
 | [rag-chunk-boundary-optimizer](../mcps/rag-chunk-boundary-optimizer-1.md) | Analyzes text chunking strategies for RAG pipelines by measuring overlap, sentence integrity, and semantic continuity. |
 | [Reservoir Heterogeneity Index](../mcps/reservoir-heterogeneity-index.md) | Quantify reservoir heterogeneity using Dykstra-Parsons and Lorenz coefficients. |
 | [Resource Model Validation](../mcps/resource-model-validation.md) | Validate mineral resource block models using statistical analysis and spatial swath plots. |

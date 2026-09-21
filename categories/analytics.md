@@ -45,12 +45,15 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Crowd Density Impact](../mcps/crowd-density-impact.md) | Analyze how crowd density affects surf session quality and wave access. |
+| [Defensive Action Rates](../mcps/defensive-action-rates.md) | Calculate football defensive metrics including success rates, actions per 90, and efficiency comparisons. |
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
 | [Emissions Reporting Calculator](../mcps/emissions-reporting-calculator.md) | Calculate annual emissions, GHG intensity, and regulatory reporting status. |
 | [Emotional Regulation Scoring Engine](../mcps/emotional-regulation-scoring-engine.md) | Quantifies emotional regulation abilities using the DERS framework. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
+| [Football Match Result Validator](../mcps/football-match-result-validator.md) | Validates football match records for mathematical consistency and logical integrity. |
+| [Goal Difference Calculator](../mcps/goal-difference-calculator.md) | Calculate football performance metrics like goal difference, clean sheets, and scoring efficiency. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
 | [Gym Session Efficiency Scorer](../mcps/gym-session-efficiency-scorer.md) | Analyzes workout data to score efficiency, density, and wasted time. |
 | [Heat Remaining Time Management](../mcps/heat-remaining-time-management.md) | Strategic analysis of competition heat status, wave urgency, and performance risk. |
@@ -72,10 +75,15 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Mine Power Consumption Model](../mcps/mine-power-consumption-model.md) | Calculate electricity demand and costs for mining operations. |
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Offside Line Calculator](../mcps/offside-line-calculator.md) | Determines football offside status and margins using defender and ball coordinates. |
+| [Passing Accuracy Calculator](../mcps/passing-accuracy-calculator.md) | High-precision football analytics for passing metrics. |
 | [Peaking Index Calculator](../mcps/peaking-index-calculator.md) | Model athletic readiness using the Banister Fitness-Fatigue model. |
 | [Personal Record Tracker](../mcps/personal-record-tracker.md) | Predictive analytics for athletes to track PRs and forecast performance peaks. |
 | [Pipeline Flow Assurance](../mcps/pipeline-flow-assurance.md) | Analyze fluid transport risks, hydrate formation, and wax deposition in subsea and terrestrial pipelines. |
 | [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
+| [Player Performance Index](../mcps/player-performance-index.md) | Calculate deterministic football player performance scores using weighted statistical components. |
+| [Points Per Game Calculator](../mcps/points-per-game-calculator.md) | Calculate football performance metrics, PPG, and projected points. |
+| [Possession Statistics Calculator](../mcps/possession-statistics-calculator.md) | Calculate football possession percentages, average durations, and match timeline integrity. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
 | [Prompt Economics Engine](../mcps/prompt-economics-engine.md) | Analyze the financial impact of prompt engineering, versioning, and A/B testing. |
@@ -85,6 +93,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Reconciliation Analysis](../mcps/reconciliation-analysis.md) | Analyze mine production discrepancies by comparing resource models, mine output, and mill feed. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
+| [Referee Discipline Rate Calculator](../mcps/referee-discipline-rate-calculator.md) | Analyze football referee disciplinary patterns, card rates, and impartiality metrics. |
 | [Refinery Emission Inventory Engine](../mcps/refinery-emission-inventory-engine.md) | Quantify pollutant emissions from refinery operations using standardized emission factors. |
 | [Refinery Utility Balancer](../mcps/refinery-utility-balancer.md) | Analyze and balance refinery utility supplies including steam, power, water, and air. |
 | [Resilience Scale Scorer](../mcps/resilience-scale-scorer.md) | Analyzes psychological resilience questionnaires to provide standardized scoring and personalized growth strategies. |
@@ -93,6 +102,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Scoring Potential Calculator](../mcps/scoring-potential-calculator.md) | Estimates competitive scoring potential by analyzing wave quality and maneuver execution. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
+| [Shooting Efficiency Calculator](../mcps/shooting-efficiency-calculator.md) | Transform raw football shooting data into professional efficiency metrics and per-90 statistics. |
 | [Skill Level Assessment Tool](../mcps/skill-level-assessment-tool.md) | Objectively assess surfer proficiency, progression, and learning priorities. |
 | [Sleep Consistency Index](../mcps/sleep-consistency-index.md) | Quantify sleep regularity and circadian alignment through advanced stability analysis. |
 | [Sleep Onset Latency Tracker](../mcps/sleep-onset-latency-tracker.md) | Analyze sleep onset latency patterns and receive personalized hygiene recommendations. |
@@ -103,6 +113,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
+| [Team Form Calculator](../mcps/team-form-calculator.md) | Quantify football team performance trends using recent match windows. |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
 | [Training Load Ratio](../mcps/training-load-ratio.md) | Calculate Acute:Chronic Workload Ratio (ACWR) to assess injury risk and optimize training. |
 | [Training Volume Calculator](../mcps/training-volume-calculator.md) | Quantify training workload, muscle distribution, and intensity metrics. |

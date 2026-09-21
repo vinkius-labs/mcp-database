@@ -63,6 +63,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Flax Linen Quality Calculator](../mcps/flax-linen-quality-calculator.md) | Analyzes flax fiber properties and predicts linen yarn quality. |
 | [Flaxseed Lignan Predictor](../mcps/flaxseed-lignan-predictor.md) | Predicts flaxseed SDG content, oil, and protein levels based on environmental and genetic data. |
 | [Forestry Board Foot Calculator](../mcps/forestry-board-foot-calculator.md) | Deterministic timber volume and basal area calculator for forestry professionals. |
+| [Garden Yield Estimator](../mcps/garden-yield-estimator.md) | Calculate planting capacity and harvest yields for your garden. |
 | [Goat Milk Composition Model](../mcps/goat-milk-composition-model.md) | Predict goat milk yield, nutritional composition, and cheese potential. |
 | [Grain Bin Capacity & Aeration](../mcps/grain-bin-capacity-aeration.md) | Calculate grain storage capacity, pile height, and aeration requirements for round bins. |
 | [Grain Drying Calculator](../mcps/grain-drying-calculator.md) | Calculate grain drying time, energy needs, and mass shrinkage. |
@@ -87,6 +88,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Irrigation Pond Sizing](../mcps/irrigation-pond-sizing.md) | Calculate required irrigation pond volumes, physical dimensions, and water loss estimates. |
 | [Irrigation Salinity Management](../mcps/irrigation-salinity-management.md) | Calculate leaching requirements and predict crop yield impacts from soil salinity. |
 | [Irrigation Scheduler](../mcps/irrigation-scheduler.md) | Calculate precise irrigation needs using the FAO-56 Penman-Monteith model. |
+| [Irrigation Water Budget](../mcps/irrigation-water-budget.md) | Calculate garden irrigation volume and costs based on plant zones and environmental factors. |
 | [Irrigation Water Optimizer](../mcps/irrigation-water-optimizer.md) | Calculate precise weekly water requirements, irrigation frequency, and session dosage for your garden. |
 | [Irrigation Water Requirement Calculator](../mcps/irrigation-water-requirement-calculator.md) | Calculate crop evapotranspiration, water deficit, and required irrigation depths. |
 | [Jojoba Wax Composition Predictor](../mcps/jojoba-wax-composition-predictor.md) | Predicts jojoba wax ester composition and industrial suitability. |

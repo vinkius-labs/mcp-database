@@ -14,6 +14,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Duck Dive Depth Calculator](../mcps/duck-dive-depth-calculator.md) | Calculate required dive depth, timing, and effort for successful duck dives. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
+| [Houseplant Light Estimator](../mcps/houseplant-light-estimator.md) | Calculate light deficits and optimal plant placement using DLI and lux measurements. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
 | [Kite Relaunch Probability](../mcps/kite-relaunch-probability.md) | Estimates kite relaunch success based on wind, water, and kite type. |

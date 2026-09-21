@@ -38,6 +38,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Basis Technologies](../mcps/basis-technologies.md) | Manage your Basis DSP campaigns, tactics, and ads directly from any AI agent. |
 | [Benchmark Email](../mcps/benchmark-email.md) | Automate email marketing via Benchmark Email — manage contacts, lists, and campaigns directly from any AI agent. |
 | [BigMailer](../mcps/bigmailer.md) | Manage email marketing via BigMailer — list brands, contacts, and campaigns directly from any AI agent. |
+| [BigMarker](../mcps/bigmarker.md) | Run webinar programs from any AI workflow — search and schedule sessions, manage registrations and attendance, and pull reporting from BigMarker. |
 | [BlackTwist](../mcps/blacktwist.md) | Enrich B2B lead data with verified company information, technographics, and contact details for precision targeting. |
 | [Blueshift](../mcps/blueshift.md) | Orchestrate customer engagement via Blueshift — manage campaigns, track events, and sync customer data directly from any AI agent. |
 | [Brand Voice Consistency Checker](../mcps/brand-voice-consistency-checker.md) | Audit copy samples against brand voice profiles for linguistic and stylistic alignment. |

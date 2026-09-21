@@ -6,8 +6,10 @@ Explore the open database of **nutrition** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Bubble Tea Nutrition Calculator](../mcps/bubble-tea-nutrition-calculator.md) | Calculate calories, sugar, and caffeine for customized bubble tea drinks. |
 | [Diet Carbon Footprint Calculator](../mcps/diet-carbon-footprint-calculator.md) | Estimate the CO2e emissions of different dietary patterns and food weights. |
+| [Functional Beverage Nutrition Calculator](../mcps/functional-beverage-nutrition-calculator.md) | Calculate precise nutritional profiles, label rounding, and compliance for beverage formulations. |
 | [Ingredient Substitution Engine](../mcps/ingredient-substitution-engine.md) | Find dietary-friendly ingredient alternatives with usage ratios and sensory impact analysis. |
 | [Pet Calorie Needs](../mcps/pet-calorie-needs.md) | Calculate precise daily energy requirements (RER and MER) for pets based on weight and lifestyle. |
+| [Protein & Fiber Meal Scaler](../mcps/protein-fiber-meal-scaler.md) | Scales recipes to specific servings or target protein and fiber amounts. |
 | [Reverse Diet Metabolism Builder](../mcps/reverse-diet-metabolism-builder.md) | Design a controlled, week-by-week calorie increase plan to restore metabolic health and minimize fat gain. |
 
 
