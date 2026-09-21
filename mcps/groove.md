@@ -35,34 +35,34 @@ Connect your **Groove** helpdesk account to any AI agent and take full control o
 
 
 ## Available Tools (12)
-- **create_ticket**: The body parameter must be a JSON string containing body, from, and to fields.
+- **create_message**: Ensure the body parameter is a JSON string containing body, author, and recipient.
 
-Create a new helpdesk ticket
+Add a reply or internal note to a ticket
 - **get_agent**: Get details for a specific agent by email
 - **get_customer**: Must provide a valid email address to proceed.
 
 Get details for a specific customer by email
-- **create_message**: Ensure the body parameter is a JSON string containing body, author, and recipient.
-
-Add a reply or internal note to a ticket
-- **update_ticket_state**: Specify both the ticket number and the desired new state.
-
-Change the status of a ticket
 - **get_ticket**: Must provide a valid ticket number.
 
 Get details for a specific ticket by its number
-- **list_agents**: List all agents in the Groove account
+- **list_customers**: List all customers in the Groove account
+- **list_mailboxes**: List all mailboxes in the account
 - **list_messages**: Only requires the ticket number.
 
 List all messages and comments in a ticket
+- **update_ticket_state**: Specify both the ticket number and the desired new state.
+
+Change the status of a ticket
+- **create_ticket**: The body parameter must be a JSON string containing body, from, and to fields.
+
+Create a new helpdesk ticket
+- **list_agents**: List all agents in the Groove account
 - **list_tickets**: Filter results by specifying a state (e.g., opened, closed).
 
 List all helpdesk tickets
 - **get_mailbox**: Provide the unique mailbox ID.
 
 Get details for a specific mailbox by ID
-- **list_customers**: List all customers in the Groove account
-- **list_mailboxes**: List all mailboxes in the account
 
 
 ## 💬 Prompt Examples

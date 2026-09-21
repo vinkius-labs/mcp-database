@@ -17,15 +17,15 @@ This MCP server provides specialized tools for evolutionary biology. It allows A
 - **build_distance_tree**: Provide a valid alignment and model.
 
 Construct a phylogenetic tree using distance-based algorithms
-- **build_likelihood_tree**: Provide an alignment, substitution model, and bootstrap iterations.
-
-Construct a phylogenetic tree using Maximum Likelihood estimation
 - **calculate_evolutionary_distances**: Provide the alignment and distance model.
 
 Generate a raw distance matrix from an alignment without building a full tree
 - **evaluate_tree_reliability**: Provide the tree topology, original alignment, and resampling method.
 
 Analyze the statistical confidence and stability of a previously constructed tree
+- **build_likelihood_tree**: Provide an alignment, substitution model, and bootstrap iterations.
+
+Construct a phylogenetic tree using Maximum Likelihood estimation
 
 
 ## 💬 Prompt Examples

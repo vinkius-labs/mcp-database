@@ -33,9 +33,6 @@ Integrate **CustomerGauge**, the leading B2B Experience Management platform, dir
 
 
 ## Available Tools (10)
-- **get_portfolio_nps_summary**: Resolves global experience metrics. Touches the executive reporting boundary.
-
-Get an overall NPS summary across your entire account portfolio
 - **get_contact_profile**: Resolves interaction history and individual sentiment trends. Interacts with the customer lifecycle boundary.
 
 Get detailed profile and survey history for a contact
@@ -63,6 +60,9 @@ List revenue data associated with accounts for experience impact analysis
 - **search_responses_by_keyword**: Resolves feedback entries matching the query keyword. Touches the indexed text search boundary.
 
 Search through survey comments and feedback by keyword
+- **get_portfolio_nps_summary**: Resolves global experience metrics. Touches the executive reporting boundary.
+
+Get an overall NPS summary across your entire account portfolio
 
 
 ## 💬 Prompt Examples

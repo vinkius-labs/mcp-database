@@ -36,28 +36,28 @@ Connect your **Cheddar (formerly CheddarGetter)** account to any AI agent and ta
 
 
 ## Available Tools (8)
-- **add_cheddar_charge**: Requires valid customer code and charge code.
-
-Add a one-time or quantity-based charge to a customer
-- **get_cheddar_product_info**: No arguments are required.
-
-Retrieve core product and configuration information
-- **get_cheddar_customer_details**: Must provide a valid customer code.
-
-Get detailed information for a specific customer
 - **list_cheddar_promotions**: Use this tool to retrieve current promotional offers.
 
 List active promotions and coupons
-- **list_cheddar_transactions**: No arguments are required.
-
-List recent billing transactions
 - **list_cheddar_customers**: List all customers for the product
+- **add_cheddar_charge**: Requires valid customer code and charge code.
+
+Add a one-time or quantity-based charge to a customer
+- **get_cheddar_customer_details**: Must provide a valid customer code.
+
+Get detailed information for a specific customer
+- **get_cheddar_product_info**: No arguments are required.
+
+Retrieve core product and configuration information
 - **list_cheddar_invoices**: No arguments are required.
 
 List recent customer invoices
 - **list_cheddar_plans**: No arguments are required.
 
 List all available pricing plans
+- **list_cheddar_transactions**: No arguments are required.
+
+List recent billing transactions
 
 
 ## 💬 Prompt Examples

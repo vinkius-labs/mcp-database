@@ -35,39 +35,39 @@ Connect your **Griffin** Banking-as-a-Service account to any AI agent and take f
 
 
 ## Available Tools (12)
-- **get_organization**: Provide the organizationId as a required parameter.
-
-Get details for a specific organization
-- **get_verification**: Pass the verificationId to target the correct data.
-
-Get details for a specific verification
-- **list_verifications**: Always include the organizationId.
-
-List KYC/KYB verifications for an organization
-- **get_account**: Use the accountId to identify the target account.
-
-Get details for a specific bank account
-- **get_index**: Do not use this tool if you know the specific resource type.
-
-Get the root index of resources from the Griffin API
-- **get_me**: This tool requires no input parameters.
-
-Get details of the current authenticated user
-- **list_organizations**: This tool does not require any parameters.
-
-List all accessible organizations
-- **list_payees**: You must provide the organizationId.
-
-List saved payees for an organization
-- **list_transactions**: The accountId parameter is mandatory.
-
-Retrieve transaction history for a bank account
 - **create_internal_transfer**: Supply a JSON body containing amount, source, and destination.
 
 Transfer money between internal accounts
+- **get_account**: Use the accountId to identify the target account.
+
+Get details for a specific bank account
+- **get_me**: This tool requires no input parameters.
+
+Get details of the current authenticated user
+- **get_organization**: Provide the organizationId as a required parameter.
+
+Get details for a specific organization
 - **get_transaction**: Supply the transactionId to specify the record.
 
 Get details for a specific transaction
+- **list_organizations**: This tool does not require any parameters.
+
+List all accessible organizations
+- **list_transactions**: The accountId parameter is mandatory.
+
+Retrieve transaction history for a bank account
+- **list_verifications**: Always include the organizationId.
+
+List KYC/KYB verifications for an organization
+- **get_verification**: Pass the verificationId to target the correct data.
+
+Get details for a specific verification
+- **get_index**: Do not use this tool if you know the specific resource type.
+
+Get the root index of resources from the Griffin API
+- **list_payees**: You must provide the organizationId.
+
+List saved payees for an organization
 - **list_accounts**: You must provide the organizationId.
 
 List bank accounts for an organization

@@ -34,21 +34,21 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 
 
 ## Available Tools (11)
-- **get_trends_overview**: Provide a date string, or the query will use the default date.
-
-Get historical aggregate data overview
-- **get_trends_devices**: Specify the date for the data, or the query will use the default date.
-
-Get historical device breakdown data
-- **get_trends_sources**: Specify the date for the data, or the query will use the default date.
-
-Get historical traffic sources data
-- **get_trends_pages**: Specify the date for the data, or the query will use the default date.
-
-Get historical aggregate data for pages
 - **get_now_campaigns**: This tool does not accept parameters.
 
 Get active campaigns currently driving traffic
+- **get_trends_devices**: Specify the date for the data, or the query will use the default date.
+
+Get historical device breakdown data
+- **get_trends_overview**: Provide a date string, or the query will use the default date.
+
+Get historical aggregate data overview
+- **get_trends_pages**: Specify the date for the data, or the query will use the default date.
+
+Get historical aggregate data for pages
+- **get_trends_sources**: Specify the date for the data, or the query will use the default date.
+
+Get historical traffic sources data
 - **get_now_overview**: This tool does not accept parameters.
 
 Get a top-level overview of concurrent active visitors

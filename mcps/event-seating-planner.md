@@ -7,16 +7,19 @@
 
 **Category:** [logistics](../categories/logistics.md)
 
-Deterministic venue capacity and seating layout calculator.
+Automated deterministic seating arrangement generator.
 
 ## Description
-Plan your event with precision using the Event Seating Planner. This tool calculates maximum guest capacity based on fire code regulations and generates optimized seating arrangements. Use `calculate_capacity` to determine legal occupancy limits, `plan_seating_layout` to organize tables and dance floors, and `estimate_supplies` to get exact counts for linens and centerpieces.
+This MCP server provides tools to automate complex event seating arrangements. It uses deterministic algorithms to assign guests to tables or zones while strictly adhering to capacity, accessibility, grouping, and separation constraints. Use `plan_seating` to generate a complete arrangement, `validate_constraints` to verify a specific chart, `get_utilization_metrics` to analyze space efficiency, and `find_alternative_layouts` to discover different valid configurations without randomness.
 
 
-## Available Tools (3)
-- **calculate_capacity**: Determines the maximum legal and practical number of guests for a given venue and setup
-- **estimate_supplies**: Provides the count of physical items needed to service the planned layout
-- **plan_seating_layout**: Calculates the specific arrangement of tables, dance floor, and guest capacity based on furniture choices
+## Available Tools (4)
+- **find_alternative_layouts**: Identifies different valid seating arrangements that satisfy the same constraints without using random seeds
+- **get_utilization_metrics**: Analyzes how efficiently the seating plan uses the available capacity
+- **plan_seating**: Provide guests, locations, and optional grouping/separation rules.
+
+Generates a complete seating arrangement based on provided guests and locations while respecting all constraints
+- **validate_constraints**: Checks a specific seating chart against a set of rules to verify if it is legally valid
 
 
 ## 💬 Prompt Examples
@@ -24,38 +27,38 @@ Plan your event with precision using the Event Seating Planner. This tool calcul
 Here are some examples of how you can interact with the **Event Seating Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the maximum capacity for a 50x100 foot venue with a 200 sq ft stage?"
+> "Generate a seating plan for 10 guests and 3 tables with these constraints."
 
 **🤖 AI Agent:**
-> The maximum capacity for a 50x100 foot venue with a 200 sq ft stage is 252 guests.
+> The seating chart has been generated: Table 1 contains guests A, B, and C; Table 2 contains guests D, E, and F; Table 3 contains guests G, H, I, and J. All accessibility and grouping rules are satisfied.
 
 ---
 
 **👤 You:**
-> "Plan a layout for a 40x60 foot room using 60 inch round tables and 8 guests per table."
+> "How efficient is my current seating arrangement?"
 
 **🤖 AI Agent:**
-> The layout for a 40x60 foot room with 60 inch round tables accommodates 48 guests across 6 tables.
+> The current utilization rate is 85%, with 2 guests assigned out of a total capacity of 24 across all locations.
 
 ---
 
 **👤 You:**
-> "How many centerpieces do I need for 15 tables?"
+> "Find another way to seat these guests that still follows the rules."
 
 **🤖 AI Agent:**
-> You will need 15 centerpieces.
+> An alternative valid layout has been found: Table 1 now contains guests A, D, and G, while Table 2 contains B, E, and H.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool calculate maximum capacity?**
-The `calculate_capacity` tool evaluates both standing and seated occupancy limits based on the venue's usable area to ensure compliance with safety regulations.
+**Q: How does the seating algorithm ensure results are consistent?**
+The system uses deterministic logic rather than random placement, ensuring that the same input always produces the same seating chart.
 
-**Q: Can I plan for different table types?**
-Yes, `plan_seating_layout` supports round 60", round 72", rectangular 6ft, rectangular 8ft, and banquet table configurations.
+**Q: Can I check if a seating plan is valid?**
+Yes, you can use the `validate_constraints` tool to check any seating chart against your specific guest and location rules.
 
-**Q: How many linens do I need to order?**
-You can use `estimate_supplies` to get the exact number of linens and centerpieces required based on your calculated table count.
+**Q: What happens if a guest's accessibility needs cannot be met?**
+The `plan_seating` tool will identify the issue and report it as a violated constraint if no suitable location is available.
 
 
 ## Installation & Usage

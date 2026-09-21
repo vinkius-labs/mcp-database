@@ -33,36 +33,36 @@ Integrate **Custify**, the comprehensive customer success platform, directly int
 
 
 ## Available Tools (10)
-- **get_customer_details**: Resolves health scores, recent activity, and segment membership. Interacts with the behavioral analytics boundary.
-
-Get full profile and health metrics for a specific customer
 - **list_customer_success_tasks**: Resolves task priority, status, and assigned owners. Interacts with the workflow automation boundary.
 
 List open and completed customer success tasks
-- **get_company_details**: Resolves organizational attributes and health metrics. Touches the core company repository.
-
-Get detailed settings and metrics for a specific company
 - **list_people**: Resolves contact details and account associations. Touches the relationship management boundary.
 
 List all people associated with accounts
-- **create_customer_profile**: Resolves the newly generated customer ID and validation status. Mutates the customer database state.
-
-Create a new customer profile in Custify
-- **list_companies**: Resolves company IDs, domain information, and association metrics. Touches the account-level organization boundary.
-
-List all companies in Custify
-- **list_customers**: Resolves properties such as customer ID, name, email, and lifecycle stage. Interacts with the customer success management boundary.
-
-List all customers in Custify
 - **list_customer_kpis**: Resolves metric definitions and threshold values. Interacts with the performance monitoring boundary.
 
 List key performance indicators defined in the account
+- **list_customers**: Resolves properties such as customer ID, name, email, and lifecycle stage. Interacts with the customer success management boundary.
+
+List all customers in Custify
 - **list_customer_notes**: Resolves note content and authorship metadata. Touches the internal communications boundary.
 
 List internal CRM notes for a specific customer
 - **search_customers_by_keyword**: Resolves matching customer profiles based on name or email. Touches the search and indexing boundary.
 
 Search for customers by name or email
+- **create_customer_profile**: Resolves the newly generated customer ID and validation status. Mutates the customer database state.
+
+Create a new customer profile in Custify
+- **get_company_details**: Resolves organizational attributes and health metrics. Touches the core company repository.
+
+Get detailed settings and metrics for a specific company
+- **get_customer_details**: Resolves health scores, recent activity, and segment membership. Interacts with the behavioral analytics boundary.
+
+Get full profile and health metrics for a specific customer
+- **list_companies**: Resolves company IDs, domain information, and association metrics. Touches the account-level organization boundary.
+
+List all companies in Custify
 
 
 ## 💬 Prompt Examples

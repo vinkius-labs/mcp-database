@@ -37,28 +37,16 @@ No more manual exporting of company lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
-- **get_enrichment_status**: Use the ID returned by a 201 enrichment response.
-
-Check the status of a background enrichment request
-- **search_startups**: Pass filters as a JSON string.
-
-Search for startups using filters like industry, location, and headcount
-- **search_investors**: Pass filters as a JSON string.
-
-Search for investment firms and angels
 - **enrich_company**: Provide a valid company domain.
 
 Enrich a company with firmographics, funding, and social signals
-- **enrich_person**: Use a valid LinkedIn URL.
-
-Enrich a person with professional history and social signals
+- **get_api_profile**: Get information about the current API user
 - **get_company_stats**: Supply the company’s unique identifier.
 
 Get growth and headcount statistics for a company
 - **get_investor_portfolio**: Supply the investor’s unique identifier.
 
 Get the list of portfolio companies for an investor
-- **get_api_profile**: Get information about the current API user
 - **list_company_news**: Supply the company’s unique identifier.
 
 List recent news and press releases for a company
@@ -68,6 +56,18 @@ List funding rounds for a specific company
 - **list_traction_signals**: Supply the company’s unique identifier.
 
 List social and web traction signals for a company
+- **search_startups**: Pass filters as a JSON string.
+
+Search for startups using filters like industry, location, and headcount
+- **get_enrichment_status**: Use the ID returned by a 201 enrichment response.
+
+Check the status of a background enrichment request
+- **search_investors**: Pass filters as a JSON string.
+
+Search for investment firms and angels
+- **enrich_person**: Use a valid LinkedIn URL.
+
+Enrich a person with professional history and social signals
 
 
 ## 💬 Prompt Examples

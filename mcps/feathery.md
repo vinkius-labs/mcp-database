@@ -36,15 +36,7 @@ Connect your **Feathery.io** account to any AI agent and take full control of yo
 
 
 ## Available Tools (11)
-- **get_me**: Get current API token identity info
-- **list_workflows**: List all automated workflows
 - **get_account_info**: Get Feathery account details
-- **get_form_details**: Use the Form ID to specify the target form.
-
-Get details for a specific form
-- **get_form_session**: Both User ID and Form ID are required.
-
-Retrieve the current state/session of a specific form for a user
 - **get_user_data**: Provide the User ID to retrieve data.
 
 Get all field values submitted by a specific user across forms
@@ -57,6 +49,14 @@ List recent API connector error logs for a specific form
 - **list_environments**: List available Feathery environments
 - **list_forms**: List all forms in your Feathery account
 - **list_users**: List all users in your Feathery environment
+- **get_me**: Get current API token identity info
+- **list_workflows**: List all automated workflows
+- **get_form_details**: Use the Form ID to specify the target form.
+
+Get details for a specific form
+- **get_form_session**: Both User ID and Form ID are required.
+
+Retrieve the current state/session of a specific form for a user
 
 
 ## 💬 Prompt Examples

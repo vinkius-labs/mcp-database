@@ -14,12 +14,12 @@ This MCP server provides advanced biochemical analysis for proteins. Use `analyz
 
 
 ## Available Tools (4)
-- **get_nutritional_profile**: Provides a detailed breakdown of nutritional adequacy based on existing composition data
-- **analyze_hydrolysate**: Evaluates protein quality from mass-based laboratory data
-- **analyze_sequence**: Calculates composition and physical properties from a raw protein primary structure
 - **calculate_molecular_properties**: Provide the protein sequence.
 
 Specifically computes physical mass and residue-level metrics
+- **get_nutritional_profile**: Provides a detailed breakdown of nutritional adequacy based on existing composition data
+- **analyze_hydrolysate**: Evaluates protein quality from mass-based laboratory data
+- **analyze_sequence**: Calculates composition and physical properties from a raw protein primary structure
 
 
 ## 💬 Prompt Examples

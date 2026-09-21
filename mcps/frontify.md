@@ -38,11 +38,11 @@ Connect your **Frontify** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **list_native_brands**: Perform structural extraction of properties driving active Global namespaces
 - **execute_graphql_payload**: Identify bounded routing spaces inside the Headless Frontify DAM utilizing native GraphQL strings
 - **get_account_limits**: Inspect deep internal arrays mitigating specific Picture constraints
 - **list_workspace_projects**: Enumerate explicitly attached structured rules exporting active Workspaces
 - **get_project_assets**: Retrieve explicit Cloud logging tracing explicit Asset Limits
-- **list_native_brands**: Perform structural extraction of properties driving active Global namespaces
 - **list_brand_guidelines**: Identify precise active arrays spanning rented Documentation trees
 - **list_platform_users**: Retrieve the exact structural matching verifying Identity schemas
 - **invite_workspace_user**: Dispatch an automated validation check routing explicit Workspace roles

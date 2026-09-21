@@ -40,6 +40,7 @@ No more manual navigating through complex billing tabs. Your AI assistant acts a
 - **record_payment**: Pass details as a JSON string in "body_json" (requires amount, date, and payment_method).
 
 Record a manual payment against an invoice
+- **get_api_profile**: Retrieve information about the authenticated account
 - **get_customer_details**: Provide the unique hash key of the connection.
 
 Get detailed profile information for a network connection
@@ -49,17 +50,16 @@ Get detailed information about a specific estimate
 - **get_invoice_details**: Provide the unique hash key of the invoice.
 
 Get detailed information about a specific invoice
-- **get_api_profile**: Retrieve information about the authenticated account
-- **list_estimates**: List all estimates (quotations) in Hiveage
 - **list_customers**: List all connections (customers/vendors) in your network
 - **list_invoice_payments**: Provide the unique hash key of the invoice.
 
 List all payments recorded for a specific invoice
 - **list_tax_profiles**: List all configured tax profiles
-- **list_billing_items**: List saved items and services used for invoicing
 - **send_invoice_email**: Provide the unique hash key of the invoice.
 
 Deliver an invoice to the customer via email
+- **list_estimates**: List all estimates (quotations) in Hiveage
+- **list_billing_items**: List saved items and services used for invoicing
 - **list_invoices**: Use this to monitor billing and find hash keys for specific invoice actions.
 
 List all invoices in your Hiveage account

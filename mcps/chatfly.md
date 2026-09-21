@@ -36,22 +36,22 @@ Connect your **CHATFLY** account to any AI agent and take full control of your c
 
 
 ## Available Tools (8)
+- **list_chatfly_bots**: List all AI chatbots in your account
+- **get_chatbot_details**: The ID must be provided to execute the query.
+
+Get detailed information for a specific chatbot
+- **get_chatfly_account_info**: Retrieve core account and quota information
 - **get_conversation_history**: Provide the unique conversation ID.
 
 Retrieve the message history for a specific conversation
-- **get_chatfly_account_info**: Retrieve core account and quota information
-- **list_chatfly_bots**: List all AI chatbots in your account
 - **list_fly_conversations**: List recent chat conversations
+- **list_uploaded_documents**: List all files uploaded to the knowledge base
 - **send_bot_message**: Provide the bot ID and message content.
 
 Send a message to a chatbot and receive a response
 - **trigger_bot_training**: You must provide the target chatbot’s ID.
 
 Trigger the training process for a chatbot
-- **list_uploaded_documents**: List all files uploaded to the knowledge base
-- **get_chatbot_details**: The ID must be provided to execute the query.
-
-Get detailed information for a specific chatbot
 
 
 ## 💬 Prompt Examples
