@@ -26,15 +26,9 @@ EPIC is the only camera that continuously watches the whole sunlit disc, which i
 
 
 ## Available Tools (6)
-- **find_earth_images_near**: Distances are great-circle kilometres from the place to the scan centre; a small distance means the place was near the middle of the frame. Widen max_distance_km or raise max_dates when nothing matches.
-
-Find the NASA EPIC scans whose view was centred closest to a latitude and longitude — the frames where a given place was facing the camera
 - **get_earth_images_by_date**: Accepts ISO dates only (YYYY-MM-DD). Throws when the collection has no frames that day and names dates that do.
 
 Get every image of Earth NASA EPIC captured on one date — capture time, sub-spacecraft point and archive URL for each scan
-- **get_earth_image**: Get identifiers from get_latest_earth_images, get_earth_images_by_date or find_earth_images_near.
-
-Get one NASA EPIC frame by its identifier — the full record with archive URL, capture time, sub-spacecraft point and the J2000 positions of DSCOVR, the Moon and the Sun
 - **get_latest_earth_images**: The natural collection publishes the same day; the enhanced collection lags it, so ask for natural when freshness matters. Returns the newest frame first. The URL points into the permanent archive and never changes.
 
 Get the freshest images of Earth NASA EPIC has published — capture time, the point on Earth under the spacecraft, and a stable archive URL for each frame
@@ -44,6 +38,12 @@ List the NASA EPIC imagery collections — natural colour and enhanced colour �
 - **list_epic_dates**: This tool lists the dates that actually have frames. Pass offset to page backwards in time; amounts over 100 are rejected because the index is long. Hand one of the dates to get_earth_images_by_date.
 
 Page through every date NASA EPIC captured imagery, newest first — the archive index for planning a lookup by date
+- **find_earth_images_near**: Distances are great-circle kilometres from the place to the scan centre; a small distance means the place was near the middle of the frame. Widen max_distance_km or raise max_dates when nothing matches.
+
+Find the NASA EPIC scans whose view was centred closest to a latitude and longitude — the frames where a given place was facing the camera
+- **get_earth_image**: Get identifiers from get_latest_earth_images, get_earth_images_by_date or find_earth_images_near.
+
+Get one NASA EPIC frame by its identifier — the full record with archive URL, capture time, sub-spacecraft point and the J2000 positions of DSCOVR, the Moon and the Sun
 
 
 ## 💬 Prompt Examples

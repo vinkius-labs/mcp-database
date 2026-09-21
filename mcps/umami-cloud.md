@@ -14,12 +14,12 @@ The Umami Cloud MCP Server connects AI agents to the Umami Analytics API. It all
 
 
 ## Available Tools (2)
-- **websites**: Set type to the dimension (url, browser, os, country, etc.) and supply websiteId with the startAt/endAt Unix millisecond window.
-
-Get specific metrics (urls, browsers, os, devices) for a website
 - **users**: Supply websiteId from websites.list.
 
 Get the number of active users on a website
+- **websites**: Set type to the dimension (url, browser, os, country, etc.) and supply websiteId with the startAt/endAt Unix millisecond window.
+
+Get specific metrics (urls, browsers, os, devices) for a website
 
 
 ## 💬 Prompt Examples

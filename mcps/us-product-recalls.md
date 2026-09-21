@@ -31,9 +31,6 @@ Here the broken filters are never sent: hazards and UPCs are matched against the
 - **check_product**: Give a product name, a brand, a model or a recall number — anything from two characters up. The term is matched across product names, recall titles and descriptions, the companies involved and the UPC list, so "Char-Broil", "Bistro Pro" and a barcode all reach the same notices. Each match reports the recall number and date, what was recalled, roughly how many units, whether injuries were reported, and what the agency told buyers to do. The database covers recalls the CPSC published from 1973 to today, and only recalls — an absence means the agency has not recalled anything under that term, not that the product is safe: a product under investigation, or recalled by another agency such as the FDA or NHTSA, will not appear here. Results are paginated with offset and amount.
 
 Whether the US Consumer Product Safety Commission has recalled a product — the safety check before you buy, keep or gift something
-- **get_recall**: The number is four to six digits, sometimes with one trailing letter, and appears on the agency's notice and in its web address. The response carries the products with their unit counts, every hazard the agency named, whether injuries were reported and the summary of them, the remedy in the agency's words and the options it offered, who made and imported it, where it was sold and for how much, and the consumer contact line. A number that matches nothing reports that plainly rather than guessing.
-
-Everything the CPSC published about one recall — the products, the hazard, the injuries, the remedy and who to contact, by recall number
 - **recent_recalls**: Give days for a rolling window ending today, or an explicit date_start and date_end in YYYY-MM-DD form for a specific period; both bounds are inclusive. The default window is 30 days, which is roughly the agency's cadence. Each row is the short form — number, date, products, unit count, whether injuries were reported and the remedy — and get_recall carries the full notice. Results are paginated with offset and amount.
 
 The recalls the CPSC has published inside a window of days — what was pulled from shelves recently, newest first
@@ -43,6 +40,9 @@ The CPSC recall database filtered by hazard, company, product, remedy, date and 
 - **summarize_recalls**: Give days for a rolling window or an explicit date_start and date_end in YYYY-MM-DD form. The response counts recalls by month, by remedy offered, and by company, and reports how many had injuries reported and roughly how many units were affected. Unit totals are the agency's own "about N" figures added together, so they are an approximation of the announced count, not an audited number; a company appearing several times had several distinct recalls.
 
 The shape of a recall period without the list — how many, which hazards and remedies dominate, and which companies recur
+- **get_recall**: The number is four to six digits, sometimes with one trailing letter, and appears on the agency's notice and in its web address. The response carries the products with their unit counts, every hazard the agency named, whether injuries were reported and the summary of them, the remedy in the agency's words and the options it offered, who made and imported it, where it was sold and for how much, and the consumer contact line. A number that matches nothing reports that plainly rather than guessing.
+
+Everything the CPSC published about one recall — the products, the hazard, the injuries, the remedy and who to contact, by recall number
 
 
 ## 💬 Prompt Examples

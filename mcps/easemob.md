@@ -38,11 +38,11 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 - **register_user**: Register a new IM user
 - **create_group**: Create chat group
 - **delete_user**: Delete IM user
+- **get_group**: Get group details
+- **get_user**: Get user details
 - **get_chat_history**: Use a cursor for pagination.
 
 Get chat history
-- **get_group**: Get group details
-- **get_user**: Get user details
 - **list_groups**: List chat groups
 - **list_users**: List IM users
 - **add_group_member**: Add group member

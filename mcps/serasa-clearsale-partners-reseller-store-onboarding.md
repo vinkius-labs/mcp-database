@@ -17,9 +17,6 @@ ClearSale sells through partners, and this connector automates what a reseller d
 - **create_entity_quote**: Send the store profile honestly — average ticket and monthly order volume drive the price, and misstating them skews the risk calibration later. The response answers a transactionCode only — the priced amount is shown in the ClearSale portal, not in this call.
 
 Quote the price of onboarding a new store (entity) to ClearSale
-- **create_entity**: All fields are required by ClearSale; transactionCode must be the one create_entity_quote returned. storeUrl is a list — send at least one storefront URL. On success ClearSale answers 204 with no body; the connector reports the created clientID back from your request. Follow up with get_entity_credentials to read the API credentials the store will use.
-
-Create a new store (entity) in ClearSale from an accepted quote
 - **deactivate_entity**: Use it when a store churns or is suspended. Send the clientID you created the entity with.
 
 Deactivate a store (entity) in ClearSale
@@ -29,12 +26,15 @@ Read the API credentials of a store (entity) created through the Partners API
 - **list_client_products**: The ids returned here are what create_entity_quote expects as product / segment ids. Each product is a ClearSale anti-fraud product the partner can resell.
 
 List the ClearSale products available to this partner client
-- **list_products_with_segments**: Use it to choose a valid product/segment pair for create_entity_quote — sending a segment the product does not support is the usual cause of a 400.
-
-List ClearSale products with the segments (frentes) each one supports
 - **list_segments**: g. Calçados). Pick one before quoting — the segment plus the product and the store profile drives the price. Pair this with list_products_with_segments to see which segments each product accepts.
 
 List the market segments a ClearSale entity can operate in
+- **create_entity**: All fields are required by ClearSale; transactionCode must be the one create_entity_quote returned. storeUrl is a list — send at least one storefront URL. On success ClearSale answers 204 with no body; the connector reports the created clientID back from your request. Follow up with get_entity_credentials to read the API credentials the store will use.
+
+Create a new store (entity) in ClearSale from an accepted quote
+- **list_products_with_segments**: Use it to choose a valid product/segment pair for create_entity_quote — sending a segment the product does not support is the usual cause of a 400.
+
+List ClearSale products with the segments (frentes) each one supports
 
 
 ## 💬 Prompt Examples

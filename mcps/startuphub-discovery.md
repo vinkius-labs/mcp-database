@@ -18,7 +18,7 @@ Connect **StartupHub.ai** to your AI agent and discover companies the way invest
 - **Watch the domain radar** — Freshly registered .ai / .io names from NRD feeds, company registries and new GitHub orgs, with MX, parking and content-quality signals
 - **Generate lists from a brief** — Describe an ICP in plain language (or paste a YC batch, a portfolio page or a CSV) and get a curated, directory-matched list of up to 50 startups
 - **Read momentum** — Fastest-hiring companies, who is getting news and podcast buzz, and biggest AI-readiness score movers over 7/30/90 days
-- **Get market context (free, no key)** — Weekly capital deployed, round counts, top sectors, countries, stages, notable rounds and exits
+- **Get market context (0 credits)** — Weekly capital deployed, round counts, top sectors, countries, stages, notable rounds and exits
 - **Track companies** — Create monitors that fire webhooks the moment a watched company raises, hires, changes stack or gets acquired
 
 ### Why this is different from web search
@@ -28,7 +28,7 @@ Web-search APIs answer "what was written about yesterday". StartupHub ingests ne
 ### How it works
 
 1. Add this server to your agent
-2. Optionally add your **StartupHub API key** (Account → API) — `market_trends` and `sector_trends` work without one, the rest needs it
+2. Add your **StartupHub API key** (Account → API) — required for every tool; anonymous calls are rejected with a payment challenge
 3. Ask: "find stealth AI startups in Israel founded this month with verified founder emails"
 
 ### Who is this for?
@@ -39,13 +39,7 @@ Web-search APIs answer "what was written about yesterday". StartupHub ingests ne
 
 
 ## Available Tools (10)
-- **sector_trends**: Free, works without an API key. Use after market_trends to drill into a sector that attracted capital this week.
-
-Funding momentum and company counts for a sector, or resolve one company to its sectors
-- **trending_hiring**: Costs 1 credit. Use it to pre-qualify a search_startups result list — companies actively scaling are warmer outreach targets.
-
-Rank companies by how fast they are adding open roles right now
-- **market_trends**: Returns capital deployed this week vs last with the week-over-week delta, round count, new startups count, median round size, top sectors and countries by capital, notable rounds with their source articles, active investors and exits. Use it to open a prospecting conversation with market context.
+- **market_trends**: Use it to open a prospecting conversation with market context.
 
 Weekly snapshot of the AI startup market: capital deployed, rounds, top sectors, countries, stages and exits
 - **monitor_company**: Costs 5 credits. Set webhook_url to receive {event, entity_id, title, body, metadata, delivered_at} the instant a change is detected; frequency is clamped to your plan (faster cadence needs a higher tier). Closes the discovery loop: find with search_startups, then track with this tool.
@@ -60,15 +54,21 @@ Biggest AI-readiness score risers and fallers over the last 7, 30 or 90 days
 - **search_domains**: These are NOT companies: no enrichment, no sectors. A startup_slug appears only once the homepage passes quality review and a public profile is published — then switch to search_startups. Default status is "queued,quality_failed" (names still being watched). Costs 1 credit.
 
 Watch freshly registered domains (the raw radar) before they become company profiles
+- **submit_startup**: Strict format: third-person prose, no HTML or markdown, no listicle words ("best", "top", "2026") in the name. On invalid input the API returns 400 with field-level errors and copy-paste suggestions — fix those exact fields and resubmit. A 409 means the domain already has a profile: do not resubmit. sectors_json must hold 1-5 sectors. Free tier allows 10 submissions/day.
+
+Submit a new company for inclusion in the StartupHub.ai directory
+- **trending_hiring**: Costs 1 credit. Use it to pre-qualify a search_startups result list — companies actively scaling are warmer outreach targets.
+
+Rank companies by how fast they are adding open roles right now
+- **sector_trends**: Use after market_trends to drill into a sector that attracted capital this week.
+
+Funding momentum and company counts for a sector, or resolve one company to its sectors
 - **ai_generate_list**: The engine runs a grounded web search, parses results and matches them to the directory, returning up to 50 startups. Costs 5 credits, with a burst limit of 10 calls per 10 minutes. On 502/504, retry with a more specific prompt. Requires an API key.
 
 Turn a natural-language brief into a curated list of matching startups
 - **search_startups**: Each row returns name, slug, one-liner, website, HQ, founded date, sectors, score and detected tech fingerprint; paginate with limit/offset (total shown in the response). Costs 1 credit. Two different "new" timestamps: sort=created_at.desc means added to the directory this week; founded_after/founded_before filter by the company's own founding date.
 
 Search 65M+ proactively discovered companies by sector, country, funding, stealth and 40+ detected tech signals
-- **submit_startup**: Strict format: third-person prose, no HTML or markdown, no listicle words ("best", "top", "2026") in the name. On invalid input the API returns 400 with field-level errors and copy-paste suggestions — fix those exact fields and resubmit. A 409 means the domain already has a profile: do not resubmit. sectors_json must hold 1-5 sectors. Free tier allows 10 submissions/day.
-
-Submit a new company for inclusion in the StartupHub.ai directory
 
 
 ## 💬 Prompt Examples
@@ -93,7 +93,7 @@ Here are some examples of how you can interact with the **StartupHub Discovery**
 ## ❓ FAQ
 
 **Q: Do I need an API key?**
-It is optional. `market_trends` and `sector_trends` work with no key at all. Directory search, the domain radar, AI list generation, submissions and monitors require an sk_live_ key — create one at https://www.startuphub.ai/my-account?tab=api. Without a key, paid endpoints return a payment challenge instead of data.
+Yes — every tool requires an sk_live_ key. Create one at https://www.startuphub.ai/my-account?tab=api. Without a key the API answers anonymous calls with an x402 payment challenge instead of data, so the connector asks for the key up front.
 
 **Q: How are credits charged?**
 Each call spends credits from the plan's daily allowance: 1 for a search or domain-radar page, 2 for news mentions, 5 for an AI-generated list or a monitor. Market trends, sector trends and submissions are free (10 submissions/day on the free tier). Responses include the remaining balance so the agent can budget.

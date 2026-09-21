@@ -35,15 +35,15 @@ Radar sweeps refresh roughly every 10 minutes, and each frame's URL is ephemeral
 
 
 ## Available Tools (3)
+- **list_radar_frames**: Each frame has a Unix time and an ISO timestamp. Nothing here is an image yet — use the frame times with get_radar_tile or build_radar_animation to get tile URLs. The infrared satellite layer is listed separately and is often empty at night; that is expected, not an outage.
+
+List the precipitation radar frames currently available from RainViewer — past sweeps plus nowcast
 - **build_radar_animation**: Play them in order at ~10-minute intervals to animate the radar. Each URL is a raster tile addressed by lat/lon and zoom — this server builds the URLs, it does not return image bytes. Frame hashes expire within minutes, so build the animation close to when you need it.
 
 Build a sequence of radar tile URLs for a location — one per frame — so a UI can play the rain moving over time
 - **get_radar_tile**: Omit frame_time for the latest observed sweep, or pass a Unix time from list_radar_frames to pick the closest frame. Frame hashes are ephemeral: a tile URL built more than a few minutes ago may 404 — rebuild from a fresh index if so. Zoom 0-20 (8 is a good city-scale default); size 256 or 512; color 0-8 controls the palette (2 is the classic RainViewer blue-green-red).
 
 Get the URL of the live precipitation radar tile covering a latitude/longitude, for the latest or a specific radar frame
-- **list_radar_frames**: Each frame has a Unix time and an ISO timestamp. Nothing here is an image yet — use the frame times with get_radar_tile or build_radar_animation to get tile URLs. The infrared satellite layer is listed separately and is often empty at night; that is expected, not an outage.
-
-List the precipitation radar frames currently available from RainViewer — past sweeps plus nowcast
 
 
 ## 💬 Prompt Examples

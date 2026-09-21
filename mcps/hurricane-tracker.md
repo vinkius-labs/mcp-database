@@ -25,16 +25,16 @@ Every other weather source paraphrases the NHC. This reads the actual WMO foreca
 
 
 ## Available Tools (4)
-- **get_storm_forecast**: Wind radii are the largest radius in nautical miles where that wind strength is expected somewhere in that quadrant. Points marked "outlook" are the day 4–5 extended forecast with larger errors; a state of "POST-TROP/REMNT LOW" or "DISSIPATED" means the storm is forecast to lose tropical characteristics, not that a position exists. Throws when the storm is too weak for an advisory.
-
-Get the official NHC forecast track for one active tropical cyclone — the five-day positions, maximum wind and gusts at each forecast time, the 34/50/64-knot wind radii, and when the next advisory is due
 - **get_tropical_outlook**: Basins: AT (Atlantic, Gulf and Caribbean), EP (eastern Pacific off Mexico) and CP (central Pacific around Hawaii). The text is a verbatim WMO product, quoted as a block.
 
 Read the plain-text Tropical Weather Outlook for a basin — the NHC forecaster discussion of disturbances that could develop into tropical cyclones over the next two to seven days
-- **list_tropical_basins**: List the tropical cyclone basins NHC publishes outlooks for, with what each one covers
 - **list_active_storms**: The list is the NHC official active-storm summary and refreshes several times a day. When the answer is empty, there really is nothing active — do not retry, suggest the Tropical Weather Outlook instead. The id (e.g. al062026) is what the other tools take; a name like "Six" also works once this list has been loaded.
 
 List every active tropical depression, tropical storm and hurricane in the Atlantic and eastern Pacific right now — name, id, classification, wind speed, pressure, position and movement, from NOAA NHC
+- **list_tropical_basins**: List the tropical cyclone basins NHC publishes outlooks for, with what each one covers
+- **get_storm_forecast**: Wind radii are the largest radius in nautical miles where that wind strength is expected somewhere in that quadrant. Points marked "outlook" are the day 4–5 extended forecast with larger errors; a state of "POST-TROP/REMNT LOW" or "DISSIPATED" means the storm is forecast to lose tropical characteristics, not that a position exists. Throws when the storm is too weak for an advisory.
+
+Get the official NHC forecast track for one active tropical cyclone — the five-day positions, maximum wind and gusts at each forecast time, the 34/50/64-knot wind radii, and when the next advisory is due
 
 
 ## 💬 Prompt Examples

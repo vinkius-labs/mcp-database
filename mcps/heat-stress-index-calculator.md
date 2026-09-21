@@ -14,10 +14,10 @@ This MCP server provides critical thermal safety assessments. It allows AI agent
 
 
 ## Available Tools (4)
-- **assess_risk_profile**: Categorizes the level of heat danger and provides actionable safety mitigations
 - **calculate_heat_index**: Determines the perceived temperature based on ambient air conditions
-- **calculate_wbgt**: Provides a comprehensive thermal stress index considering multiple environmental factors
 - **get_safety_guidelines**: Retrieves specific safety protocols based on the identified risk
+- **assess_risk_profile**: Categorizes the level of heat danger and provides actionable safety mitigations
+- **calculate_wbgt**: Provides a comprehensive thermal stress index considering multiple environmental factors
 
 
 ## 💬 Prompt Examples

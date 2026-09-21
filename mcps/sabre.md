@@ -34,11 +34,46 @@ Connect your **Sabre** developer account to any AI agent and manage global trave
 
 
 ## Available Tools (5)
-- **create_booking**: Create a Passenger Name Record (PNR) for a flight
-- **search_hotels**: Search for hotels globally
-- **shop_flights**: Search for lowest available flight fares (Bargain Finder Max)
-- **book_hotel**: Book a hotel reservation
-- **get_hotel_details**: Get detailed information about a specific hotel
+- **book_hotel**: The payload is a CreatePassengerNameRecordRQ object for a hotel segment. Top-level shape:
+{ "CreatePassengerNameRecordRQ": { "TravelItineraryAddInfoRQ": { ... }, "HotelContent": { ... }, "PaymentInfo": { ... } } }
+
+TravelItineraryAddInfoRQ carries "AgencyInfo", "CustomerInfo" (array of "PersonName" and contact "Email"/"Phone") and "TravelItineraryRef". HotelContent holds the selected room/rate taken from the price-checked search result. PaymentInfo carries the "PaymentCard" (CardType, CardNumber, ExpiryMonth/ExpiryYear, SecurityCode).
+
+This is a state-changing action that creates a real hotel reservation. Confirm traveler names, room selection, cancellation policy and payment with the user before calling.
+
+Book a hotel reservation
+- **create_booking**: The payload is a CreateBookingRQ object. Top-level shape:
+{ "CreateBookingRQ": { "BookedFlight": { ... }, "Travelers": [ ... ], "FormOfPayment": { ... }, "PostProcessing": { ... } } }
+
+BookedFlight comes from the price-check/revalidate response of shop_flights. Travelers is an array of objects with "PersonName" (given "First" and sur "Last") plus contact "Email" and "Phone". FormOfPayment requires a "PaymentCard" with "CardType" (e.g. "VI"), "CardNumber", "ExpiryMonth"/"ExpiryYear" and "SecurityCode".
+
+This is a state-changing action: it creates a real PNR in the Sabre environment configured (cert or prod). Always confirm the traveler names and payment details with the user before calling.
+
+Create a Passenger Name Record (PNR) for a flight
+- **get_hotel_details**: The payload is a GetHotelDetailsRQ object. Top-level shape:
+{ "GetHotelDetailsRQ": { "SearchCriteria": { "HotelRefs": [ { "HotelCode": "1002345" } ] } } }
+
+HotelCode comes from the "HotelAvailInfo" array of search_hotels, or can be looked up by name/city through that same search. Multiple HotelRefs can be sent in one call. The response carries "HotelInfo" with "Amenities", "Descriptions", "Policies" (including cancellation and check-in/out rules), "ContactInfo" and "MediaInfo".
+
+Use this after search_hotels to narrow down a property before booking; it does not return live rates.
+
+Get detailed information about a specific hotel
+- **search_hotels**: The payload is a GetHotelAvailRQ object. Top-level shape:
+{ "GetHotelAvailRQ": { "POS": { "Source": { "PseudoCityCode": "..." } }, "SearchCriteria": { "GeoSearch": { ... }, "StayDateTimeRange": { "StartDate", "EndDate" }, "RoomInfo": { ... } } } }
+
+StayDateTimeRange uses ISO dates (StartDate "2026-06-01", EndDate "2026-06-05"). Location is set through GeoSearch: either "GeoRef" with "Radius" plus a "Address" / "GeoCoordinates" point, or a "HotelCityCode" / "CountryCode" inside "SearchCriteria". RoomInfo takes "GuestCount" entries (a "Count" per "AgeQualifyingCode": ADT=adult, CHD=child) and "RoomCount".
+
+Response includes a "HotelAvailInfo" array with hotel codes, names, rates and a "SearchCacheKey" used by get_hotel_details. Rates shown are the lead rate and may change at price-check time.
+
+Search for hotels globally
+- **shop_flights**: The payload is a BargainFinderMaxRQ object. Top-level shape:
+{ "OTA_AirLowFareSearchRQ": { "OriginDestinationInformation": [ ... ], "TravelerInfo": { ... }, "TPA_Extensions": { ... } } }
+
+Each OriginDestinationInformation entry needs "OriginLocation" (IATA code), "DestinationLocation" (IATA code), "DepartureDateTime" (ISO, e.g. "2026-12-10T00:00:00"), and for round trips a second entry with "ReturnDateTime" or a "RPH" of 2. TravelerInfo needs "AirTraveler" entries with a numeric "TravelerTypeCode" (ADT=adult, CHD=child, INF=infant) and "PassengerTypeQuantity".
+
+Dates are in the traveler's local airport time. Use IATA airport codes (JFK, LHR, CDG), never city names. The response contains priced itineraries grouped by slice; fares are not guaranteed until revalidated.
+
+Search for lowest available flight fares (Bargain Finder Max)
 
 
 ## 💬 Prompt Examples

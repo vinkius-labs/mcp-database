@@ -36,18 +36,12 @@ The token is read-only scoped to your company. Tokens are environment-bound — 
 
 
 ## Available Tools (14)
-- **get_employment_basic_information**: Shares the same employment id.
-
-Get the v2 basic-information profile for one employment
 - **get_employment**: Find the employment id with list_employments first.
 
 Get full details for one employment
-- **get_leave_policy_summary**: Covers what the deprecated timeoff-balances endpoint used to return.
+- **get_employment_basic_information**: Shares the same employment id.
 
-Summarize the leave policy balances for one employment
-- **list_companies**: Use external_id to look up a single company by your own identifier.
-
-List the companies in your Remote account
+Get the v2 basic-information profile for one employment
 - **list_company_departments**: List departments for a company
 - **list_contractor_invoices**: Only contractor employments produce invoices.
 
@@ -55,25 +49,31 @@ List contractor invoices
 - **list_countries**: Use it to plan where an Employer-of-Record hire is possible before creating an employment.
 
 List the countries Remote can hire and pay in
-- **list_country_holidays**: Pass the country code from list_countries and a 4-digit year.
-
-List the public holidays for a country
-- **list_employments**: Pass a higher `page` to continue. Filter with status=active and employment_type to narrow the roster.
-
-List employees and contractors at the company
 - **list_expenses**: The Remote API takes no employment_id or status filter on this endpoint — match records to an employment client-side.
 
 List expense claims
 - **list_payroll_runs**: Filter by payroll_period (YYYY-MM). Status is draft/processing/paid.
 
 List payroll runs
-- **list_payslips**: List payslips
 - **list_timeoff**: Dates are ISO (YYYY-MM-DD).
 
 List time-off requests
 - **list_timesheets**: The Remote API takes no employment_id filter on this endpoint — fetch by status and match records to an employment client-side.
 
 List timesheet entries
+- **get_leave_policy_summary**: Covers what the deprecated timeoff-balances endpoint used to return.
+
+Summarize the leave policy balances for one employment
+- **list_companies**: Use external_id to look up a single company by your own identifier.
+
+List the companies in your Remote account
+- **list_country_holidays**: Pass the country code from list_countries and a 4-digit year.
+
+List the public holidays for a country
+- **list_employments**: Pass a higher `page` to continue. Filter with status=active and employment_type to narrow the roster.
+
+List employees and contractors at the company
+- **list_payslips**: List payslips
 
 
 ## 💬 Prompt Examples
