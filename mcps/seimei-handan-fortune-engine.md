@@ -17,10 +17,10 @@ This MCP server provides deterministic Japanese name fortune-telling (Seimei Han
 - **evaluate_fortune**: Provide a numerical score as input.
 
 Evaluate if a score is auspicious
+- **calculate_five_grids**: 
 - **generate_full_report**: Ensure all four stroke counts are provided.
 
 Generate a full fortune report
-- **calculate_five_grids**: 
 
 
 ## 💬 Prompt Examples

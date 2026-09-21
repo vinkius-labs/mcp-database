@@ -38,25 +38,25 @@ Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrat
 - **take_screenshot**: Always provide the URL to be captured.
 
 Take a quick screenshot of a URL
+- **get_run**: Use the unique run ID.
+
+Get status and results of a task run
 - **create_task**: You must provide a name for the task.
 
 Create a new browser automation task
 - **delete_run**: Specify the ID of the run to delete.
 
 Delete a task run record
-- **get_run**: Use the unique run ID.
-
-Get status and results of a task run
+- **get_account_usage**: Retrieve account usage statistics
 - **get_task**: Provide the required task ID.
 
 Get details of a specific task
-- **get_account_usage**: Retrieve account usage statistics
 - **list_projects**: List all projects in the account
 - **list_runs**: List all task runs
+- **list_tasks**: List all browser automation tasks
 - **run_task**: Supply the task ID to run the task.
 
 Trigger a run for a specific task
-- **list_tasks**: List all browser automation tasks
 
 
 ## 💬 Prompt Examples

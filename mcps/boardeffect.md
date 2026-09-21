@@ -35,21 +35,9 @@ Connect your **BoardEffect (Diligent)** account to any AI agent and orchestrate 
 
 
 ## Available Tools (10)
-- **get_member**: Supply the unique member ID to fetch the required information.
-
-Get specific member details
-- **list_meetings**: Use this tool to retrieve a list of available meetings.
-
-List all board meetings
 - **list_workrooms**: Use this tool to see a list of active workroom spaces.
 
 List all workrooms
-- **get_account_info**: Execute this tool to view personal account information.
-
-Get current user account information
-- **get_meeting**: Provide the required meeting ID to execute the query.
-
-Get specific meeting details
 - **list_archives**: Execute this tool to retrieve a list of historical records.
 
 List archived board records
@@ -65,6 +53,18 @@ List board polls
 - **list_surveys**: Use this tool to see a list of available surveys.
 
 List board surveys
+- **get_account_info**: Execute this tool to view personal account information.
+
+Get current user account information
+- **get_meeting**: Provide the required meeting ID to execute the query.
+
+Get specific meeting details
+- **get_member**: Supply the unique member ID to fetch the required information.
+
+Get specific member details
+- **list_meetings**: Use this tool to retrieve a list of available meetings.
+
+List all board meetings
 
 
 ## 💬 Prompt Examples

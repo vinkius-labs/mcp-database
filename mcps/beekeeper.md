@@ -37,16 +37,9 @@ Connect your **Beekeeper** account to any AI agent and streamline your internal 
 - **list_posts**: Must provide the Stream ID.
 
 List posts in a specific stream
-- **list_groups**: List Beekeeper groups
 - **list_messages**: Must provide the Conversation ID.
 
 List messages in a conversation
-- **list_users**: List all Beekeeper users
-- **list_streams**: List Beekeeper streams (channels)
-- **get_tenant_info**: Retrieve Beekeeper tenant information
-- **get_user**: Provide the required User ID.
-
-Get details of a specific user
 - **search_users**: Use this tool for name or email searches.
 
 Search for users by name or email
@@ -56,6 +49,13 @@ Send a direct message to a user
 - **create_post**: Requires both Stream ID and post content.
 
 Create a new post in a stream
+- **get_tenant_info**: Retrieve Beekeeper tenant information
+- **get_user**: Provide the required User ID.
+
+Get details of a specific user
+- **list_groups**: List Beekeeper groups
+- **list_streams**: List Beekeeper streams (channels)
+- **list_users**: List all Beekeeper users
 
 
 ## 💬 Prompt Examples

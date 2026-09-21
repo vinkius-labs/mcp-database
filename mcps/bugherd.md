@@ -35,9 +35,6 @@ Connect your **BugHerd** account to any AI agent and orchestrate your visual fee
 
 
 ## Available Tools (10)
-- **create_task**: Supply the Project ID and a description. Priority is optional.
-
-Create a new task or feedback in a project
 - **list_tasks**: You must provide the Project ID.
 
 List all tasks in a project
@@ -45,12 +42,6 @@ List all tasks in a project
 
 Create a new BugHerd project
 - **list_projects**: List all BugHerd projects
-- **get_organization_info**: No parameters are needed.
-
-Retrieve core organization settings
-- **get_project**: Provide the required Project ID.
-
-Get details of a specific project
 - **get_task**: Supply both the Project ID and the Task ID.
 
 Get details of a specific task
@@ -58,6 +49,15 @@ Get details of a specific task
 
 List tasks specifically in the Feedback queue
 - **list_users**: List all users in the organization
+- **create_task**: Supply the Project ID and a description. Priority is optional.
+
+Create a new task or feedback in a project
+- **get_organization_info**: No parameters are needed.
+
+Retrieve core organization settings
+- **get_project**: Provide the required Project ID.
+
+Get details of a specific project
 - **update_task**: Supply the Project ID and Task ID. Only update one field at a time.
 
 Update an existing task status or details

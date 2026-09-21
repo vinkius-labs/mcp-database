@@ -41,9 +41,9 @@ No manual database lookups mapping specific Markdown texts. Your AI agent explor
 - **list_global_collections**: Enumerate explicitly attached structured rules exporting Content items
 - **list_custom_pages**: Inspect deep internal arrays mitigating specific Page configurations
 - **list_blog_posts**: Identify bounded routing spaces inside the Headless ButterCMS Post limit
-- **list_butter_tags**: Mutate global Web CRM boundaries mapping Taxonomy hits
 - **search_blog_posts**: Perform structural extraction of properties driving active Keywords
 - **search_collection_field**: Identify precise active arrays spanning filtered Collections
+- **list_butter_tags**: Mutate global Web CRM boundaries mapping Taxonomy hits
 
 
 ## 💬 Prompt Examples

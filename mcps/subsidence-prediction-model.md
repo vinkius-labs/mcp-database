@@ -14,8 +14,8 @@ This MCP server provides specialized tools for geological engineering to model s
 
 
 ## Available Tools (4)
-- **estimate_affected_area**: Define the geographic footprint of the subsidence event
 - **calculate_subsidence_profile**: Determine the spatial distribution and peak magnitude of surface movement
+- **estimate_affected_area**: Define the geographic footprint of the subsidence event
 - **evaluate_fault_risk**: Assess the likelihood of geological instability caused by predicted subsidence
 - **get_reservoir_summary**: Provide a high-level overview of reservoir characteristics and impact
 

@@ -14,15 +14,15 @@ This MCP server provides precise calculations for the Chinese sexagenary cycle. 
 
 
 ## Available Tools (3)
+- **get_zodiac_details**: Provide either the full birth date or the birth year, but not both.
+
+Identifies the specific zodiac attributes for a given date or year
 - **get_compatibility_analysis**: Pass only the name of the animal to analyze.
 
 Determines how a specific zodiac animal relates to others through trines and clashes
 - **get_cycle_period**: Pass the year as a number.
 
 Identifies which 60-year cycle a specific year belongs to
-- **get_zodiac_details**: Provide either the full birth date or the birth year, but not both.
-
-Identifies the specific zodiac attributes for a given date or year
 
 
 ## 💬 Prompt Examples
