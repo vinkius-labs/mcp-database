@@ -36,28 +36,28 @@ Connect your **Churnkey** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **get_retention_session_details**: Use the unique session ID.
-
-Get details for a specific cancellation session
 - **bulk_update_billing_contacts**: Pass an array of customer update objects in the payload.
 
 Update billing recovery contacts for multiple customers at once
+- **delete_customer_gdpr_data**: Provide the unique customer ID.
+
+Delete all data for a customer for GDPR compliance
+- **get_retention_session_details**: Use the unique session ID.
+
+Get details for a specific cancellation session
+- **list_customer_retention_history**: Provide the unique customer ID.
+
+List all cancellation sessions for a specific customer
+- **update_billing_contacts**: Provide the customer ID and the array of user contacts.
+
+Update recovery contacts for a specific customer
 - **get_customer_gdpr_data**: Provide the unique customer ID.
 
 Access all data stored for a customer for GDPR compliance
 - **get_session_aggregates**: Do not query aggregates for inactive accounts.
 
 Retrieve grouped session counts
-- **delete_customer_gdpr_data**: Provide the unique customer ID.
-
-Delete all data for a customer for GDPR compliance
-- **list_customer_retention_history**: Provide the unique customer ID.
-
-List all cancellation sessions for a specific customer
 - **list_retention_sessions**: List cancellation flow sessions
-- **update_billing_contacts**: Provide the customer ID and the array of user contacts.
-
-Update recovery contacts for a specific customer
 
 
 ## 💬 Prompt Examples

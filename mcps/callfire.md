@@ -34,6 +34,9 @@ Connect your **CallFire** account to any AI agent and manage your voice and SMS 
 
 
 ## Available Tools (10)
+- **list_campaigns**: Use this tool to view the full list of active campaigns.
+
+List all broadcast campaigns
 - **list_webhooks**: List all webhooks
 - **get_call**: Get a specific call
 - **get_campaign**: Get a specific broadcast campaign
@@ -41,9 +44,6 @@ Connect your **CallFire** account to any AI agent and manage your voice and SMS 
 - **get_text**: Get a specific text message
 - **get_webhook**: Get a specific webhook
 - **list_calls**: List all calls
-- **list_campaigns**: Use this tool to view the full list of active campaigns.
-
-List all broadcast campaigns
 - **list_contacts**: List all contacts
 - **list_texts**: List all text messages
 

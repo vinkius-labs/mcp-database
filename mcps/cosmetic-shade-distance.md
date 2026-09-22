@@ -14,10 +14,10 @@ This MCP server provides essential tools for the cosmetic industry to perform ac
 
 
 ## Available Tools (4)
-- **batch_compare_shades**: Compares a single target color against multiple potential shade options
 - **calculate_rgb_distance**: Determines the mathematical difference between two specific RGB colors
 - **find_closest_shade**: Searches a collection of available cosmetic shades to find the one most similar to a target color
 - **validate_color_integrity**: Ensures that a set of color data adheres to strict cosmetic industry standards
+- **batch_compare_shades**: Compares a single target color against multiple potential shade options
 
 
 ## 💬 Prompt Examples

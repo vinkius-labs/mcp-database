@@ -34,8 +34,8 @@ Connect your **Chanty** workspace to any AI agent and command your team's commun
 
 ## Available Tools (10)
 - **send_message**: Provision a highly-available JSON Payload dropping messages into Chanty Chats
-- **get_profile**: Inspect deep internal arrays evaluating self-assigned permissions
 - **set_status**: Mutate global Web CRM boundaries substituting plain Status texts
+- **get_profile**: Inspect deep internal arrays evaluating self-assigned permissions
 - **invite_member**: Dispatch an automated JSON block emitting email triggers
 - **create_conversation**: Bootstrap an entirely empty structural chat Room dynamically
 - **delete_conversation**: Irreversibly vaporize explicit Channel spaces terminating histories

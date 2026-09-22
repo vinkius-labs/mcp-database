@@ -36,21 +36,21 @@ List all BotPenguin contacts/leads
 - **get_chat_history**: Use the chat ID to fetch the message records.
 
 Retrieve message history of a chat
-- **list_agents**: Requires no parameters.
-
-List all human agents/operators
-- **send_message**: You must provide both a chat ID and message content.
-
-Send a message in a specific chat
 - **get_contact**: Provide a valid contact ID to retrieve information.
 
 Get details of a specific contact
-- **send_otp**: Ensure the phone number includes the country code.
+- **list_agents**: Requires no parameters.
 
-Send an OTP SMS to verify a phone number
+List all human agents/operators
 - **list_chats**: Do not use this tool if no chats are expected.
 
 List active chat sessions
+- **send_message**: You must provide both a chat ID and message content.
+
+Send a message in a specific chat
+- **send_otp**: Ensure the phone number includes the country code.
+
+Send an OTP SMS to verify a phone number
 
 
 ## 💬 Prompt Examples

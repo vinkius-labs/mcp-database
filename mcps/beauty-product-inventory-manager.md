@@ -14,10 +14,10 @@ This MCP server connects AI agents to your beauty product inventory system. It a
 
 
 ## Available Tools (4)
-- **check_low_stock_items**: Identifies products that are at or below their restock threshold
 - **get_current_stock**: Answers how much of a specific product is left right now
 - **get_inventory_summary**: Provides an overall status of the entire inventory
 - **record_usage**: Records the usage of a product and updates inventory
+- **check_low_stock_items**: Identifies products that are at or below their restock threshold
 
 
 ## 💬 Prompt Examples

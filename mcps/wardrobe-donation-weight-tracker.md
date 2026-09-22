@@ -14,10 +14,10 @@ This MCP server provides tools for charitable organizations to manage clothing d
 
 
 ## Available Tools (4)
-- **add_garment**: Adds a single piece of clothing to a specific donation batch
 - **calculate_batch_status**: Determines the logistics readiness of a donation batch
 - **get_batch_summary**: Provides a high-level overview of a batch's composition
 - **list_batches**: Retrieves a list of all active donation batches
+- **add_garment**: Adds a single piece of clothing to a specific donation batch
 
 
 ## 💬 Prompt Examples

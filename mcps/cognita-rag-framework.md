@@ -38,8 +38,8 @@ Connect your **Cognita** (TrueFoundry) instance to any AI agent and take full co
 ## Available Tools (7)
 - **rag_query**: Identify precise active arrays spanning rented Transformation vectors
 - **list_collections**: Identify bounded routing spaces inside the Headless Cognita RAG limit
-- **get_collection**: Retrieve explicit Cloud logging tracing explicit Payload IDs
 - **list_data_sources**: Perform structural extraction of properties driving active Buckets
+- **get_collection**: Retrieve explicit Cloud logging tracing explicit Payload IDs
 - **ingest_data**: Provision a highly-available JSON Payload generating new Resource directories
 - **search_chunks**: Enumerate explicitly attached structured rules exporting active Presets
 - **list_models**: Inspect deep internal arrays mitigating specific Picture constraints

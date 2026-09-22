@@ -15,9 +15,9 @@ This MCP server provides tools to manage and analyze clothing donation data. Use
 
 ## Available Tools (4)
 - **get_category_summary**: Detailed list of categories
-- **get_impact_tier**: Determines scale of donation
 - **get_condition_distribution**: Distribution of quality grades
 - **get_donation_tally**: Provides a summary of total garments
+- **get_impact_tier**: Determines scale of donation
 
 
 ## 💬 Prompt Examples

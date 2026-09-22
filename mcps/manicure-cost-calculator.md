@@ -14,12 +14,12 @@ This MCP server provides tools to manage manicure service pricing and client est
 
 
 ## Available Tools (4)
-- **validate_service_eligibility**: Checks if a specific combination of services is compatible
 - **calculate_total_cost**: Calculates the sum of a specific selection of manicure services
 - **get_service_catalog**: You can filter by tier.
 
 Retrieves the list of available manicure services and their associated costs
 - **get_tier_summary**: Provides a summary of the price range and average cost within a specific service tier
+- **validate_service_eligibility**: Checks if a specific combination of services is compatible
 
 
 ## 💬 Prompt Examples

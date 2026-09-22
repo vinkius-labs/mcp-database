@@ -48,13 +48,13 @@ Provision a highly-available XML Payload generating new Content nodes
 Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_site_globals**: Enumerate explicitly attached structured rules exporting active Configuration
 - **list_studio_users**: Retrieve the exact structural matching verifying Blueprint constraints
-- **get_studio_tree**: json` identifying exact folders tracing nested XML structures safely.
-
-Perform structural extraction of properties driving active Git hierarchies
 - **publish_crafter_content**: json` executing workflow bounds migrating a Studio change onto the Delivery Engine live endpoint.
 
 Dispatch an automated validation check routing explicit Deployments
 - **search_crafter_delivery**: Inspect deep internal arrays mitigating specific Picture constraints
+- **get_studio_tree**: json` identifying exact folders tracing nested XML structures safely.
+
+Perform structural extraction of properties driving active Git hierarchies
 
 
 ## 💬 Prompt Examples

@@ -27,9 +27,6 @@ Connect your **Bot9** account to any AI agent and orchestrate your customer supp
 
 
 ## Available Tools (8)
-- **list_data_sources**: Must provide a bot ID.
-
-List knowledge base sources for a bot
 - **add_data_source**: Use the provided bot ID.
 
 Add a URL to train the bot
@@ -39,16 +36,19 @@ Create a new AI chatbot
 - **get_bot**: Provide a valid bot ID.
 
 Get details of a specific bot
-- **get_conversation_history**: Requires both bot and conversation IDs.
-
-Retrieve message history of a conversation
 - **list_bots**: List all AI bots
 - **list_conversations**: Must provide a bot ID.
 
 List active conversations for a bot
+- **list_data_sources**: Must provide a bot ID.
+
+List knowledge base sources for a bot
 - **send_message**: Ensure the bot ID is valid.
 
 Send a message to a bot and get a response
+- **get_conversation_history**: Requires both bot and conversation IDs.
+
+Retrieve message history of a conversation
 
 
 ## 💬 Prompt Examples

@@ -34,24 +34,24 @@ Connect your **FantasyData (SportsDataIO)** account to any AI agent and take ful
 
 
 ## Available Tools (12)
-- **get_mlb_player_details**: Provide a valid player ID.
-
-Get details for a specific MLB player
-- **get_nfl_scores**: Provide the date in YYYY-MM-DD format.
-
-Get NFL scores for a specific date
 - **list_nba_players**: Do not specify a player ID.
 
 List all active NBA players
+- **get_mlb_player_details**: Provide a valid player ID.
+
+Get details for a specific MLB player
 - **get_mlb_schedule**: Use a valid season identifier (e.g. 2024).
 
 Get the MLB schedule for a specific season
-- **list_mlb_players**: Do not specify a player ID.
-
-List all active MLB players
 - **get_mlb_scores**: Provide the date in YYYY-MM-DD format.
 
 Get MLB scores for a specific date
+- **get_nfl_scores**: Provide the date in YYYY-MM-DD format.
+
+Get NFL scores for a specific date
+- **list_mlb_players**: Do not specify a player ID.
+
+List all active MLB players
 - **get_nba_player_details**: Provide a valid player ID.
 
 Get details for a specific NBA player

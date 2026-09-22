@@ -14,12 +14,12 @@ This MCP server provides tools to manage and calculate foundation funding commit
 
 
 ## Available Tools (4)
-- **calculate_total_by_status**: g., "Approved") to calculate the total amount and count.
-
-Calculate total funding committed to applications in a specific status
 - **get_application_details**: Get specific details and funding amount of a single application
 - **get_applications_by_applicant**: Get all applications submitted by a specific applicant
 - **verify_funding_capacity**: Verify if current total requested funding is within a specific threshold
+- **calculate_total_by_status**: g., "Approved") to calculate the total amount and count.
+
+Calculate total funding committed to applications in a specific status
 
 
 ## 💬 Prompt Examples

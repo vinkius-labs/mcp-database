@@ -38,9 +38,6 @@ Create a new group in CometChat
 - **create_user**: The payload must contain all required user details.
 
 Create a new user in CometChat
-- **deactivate_user**: Pass the user ID in the payload to prevent permanent deletion.
-
-Deactivate a user instead of deleting them
 - **delete_user**: the deletion.
 
 Permanently delete a user from CometChat
@@ -53,15 +50,18 @@ Retrieve detailed information about a specific user
 - **list_groups**: Specify any required filtering criteria in the payload.
 
 Retrieve a list of groups from CometChat
+- **send_message**: The payload must specify the recipient and message content.
+
+Send a text message to a user or group
+- **deactivate_user**: Pass the user ID in the payload to prevent permanent deletion.
+
+Deactivate a user instead of deleting them
 - **list_messages**: Include the group ID and time range in the payload.
 
 Retrieve chat history messages
 - **list_users**: Provide necessary filtering parameters in the payload.
 
 Retrieve a list of users from CometChat
-- **send_message**: The payload must specify the recipient and message content.
-
-Send a text message to a user or group
 
 
 ## 💬 Prompt Examples

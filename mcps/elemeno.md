@@ -33,6 +33,7 @@ Integrate **Elemeno**, the headless CMS designed for developers, directly into y
 
 
 ## Available Tools (10)
+- **list_content_singletons**: List all singleton content blocks (unique global pages/settings)
 - **get_elemeno_account_metadata**: Retrieve metadata and limits for your Elemeno account
 - **get_collection_details**: Get detailed settings and field schema for a specific collection
 - **get_collection_item_details**: Get full content and metadata for a specific item in a collection
@@ -41,7 +42,6 @@ Integrate **Elemeno**, the headless CMS designed for developers, directly into y
 - **list_content_collections**: List all content collections configured in your Elemeno account
 - **list_collection_items**: List all content items within a specific collection
 - **list_published_content**: Identify items that are currently in a "Published" status
-- **list_content_singletons**: List all singleton content blocks (unique global pages/settings)
 - **search_collection_content**: Search for items within a collection using a title or slug keyword
 
 
