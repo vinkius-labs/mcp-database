@@ -20,6 +20,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Creator Sponsorship Rate Card](../mcps/creator-sponsorship-rate-card.md) | A specialized pricing engine for influencer marketing campaigns. |
 | [crm4 solution](../mcps/crm4-solution.md) | Italian lead management and call center CRM. |
 | [Crowdfunding Pitch Scorer](../mcps/crowdfunding-pitch-scorer.md) | Analyze crowdfunding campaign effectiveness using linguistic analysis of narrative ratio, rewards, and trust. |
+| [Customer Acquisition Cost Analytics](../mcps/customer-acquisition-cost-analytics.md) | Calculate and analyze marketing spend efficiency and customer acquisition costs. |
 | [Customer Acquisition Cost Engine](../mcps/customer-acquisition-cost-engine.md) | Calculate blended CAC, channel-specific costs, and payback periods. |
 | [Customer Segmentation Value](../mcps/customer-segmentation-value.md) | Analyze segment-level unit economics, LTV, CAC, and prioritization. |
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |

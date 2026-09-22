@@ -58,6 +58,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Floors Climbed Calculator](../mcps/floors-climbed-calculator.md) | Quantify the metabolic, distance, and cardiovascular impact of stair climbing. |
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Fractions Arithmetic and Simplifier](../mcps/fractions-arithmetic-and-simplifier.md) | Perform exact mathematical operations on fractions with automatic simplification. |
+| [Freezer Space Volume Calculator](../mcps/freezer-space-volume-calculator.md) | Calculate internal freezer capacity using metric or imperial dimensions. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
 | [Gacha Epitomized Path Calculator](../mcps/gacha-epitomized-path-calculator.md) | Calculate exact pull probabilities and resource costs for weapon banners. |
 | [Gacha Pity Calculator](../mcps/gacha-pity-calculator.md) | Calculate exact gacha probabilities, soft pity escalation, and resource costs. |

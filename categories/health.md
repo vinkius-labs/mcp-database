@@ -68,6 +68,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Fatigue & Performance Analyzer](../mcps/fatigue-performance-analyzer.md) | Models physiological fatigue, performance decline, and injury risk for athletes. |
 | [Fatigue Severity Scorer](../mcps/fatigue-severity-scorer.md) | Analyzes Fatigue Severity Scale (FSS) responses to provide clinical scoring and impact assessments. |
 | [Fertility Window Predictor](../mcps/fertility-window-predictor.md) | Predicts fertile windows and ovulation timing based on menstrual cycle patterns. |
+| [Fiber Per Serving](../mcps/fiber-per-serving.md) | Calculates fiber distribution per serving for nutritional planning. |
 | [Fitness Age Calculator](../mcps/fitness-age-calculator.md) | Estimate your physiological fitness age using aerobic and metabolic metrics. |
 | [Flexibility Assessment Scorer](../mcps/flexibility-assessment-scorer.md) | Evaluates physical flexibility by comparing range-of-motion measurements against normative data. |
 | [Flexibility Score Assessment](../mcps/flexibility-score-assessment.md) | Assess flexibility using sit-and-reach measurements and demographic norms. |
@@ -166,6 +167,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pregnancy Weight Gain Tracker](../mcps/pregnancy-weight-gain-tracker.md) | Monitor pregnancy weight progression using IOM clinical guidelines. |
 | [Protein Intake Optimizer](../mcps/protein-intake-optimizer.md) | Calculate precise daily protein targets, meal distributions, and leucine thresholds for muscle synthesis. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
+| [protein-per-serving](../mcps/protein-per-serving.md) | Calculates protein content per individual serving. |
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Pull-up Progression Planner](../mcps/pull-up-progression-planner.md) | Generates structured training roadmaps to reach your pull-up repetition goals. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
@@ -182,6 +184,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Sauna Session Planner](../mcps/sauna-session-planner.md) | Generates optimized sauna session parameters based on your physiological profile and wellness goals. |
 | [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
 | [Self-Compassion Scale Scorer](../mcps/self-compassion-scale-scorer.md) | Calculate psychological self-compassion profiles and receive actionable wellness insights. |
+| [Serving Calorie Total](../mcps/serving-calorie-total.md) | Calculates total caloric content for recipe servings. |
 | [Shoulder Impingement Risk Assessment for Surfers](../mcps/shoulder-impingement-risk-assessment-for-surfers.md) | Assess shoulder impingement risk and get personalized prevention exercises for surfers. |
 | [Sick Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster-1.md) | Deterministic insulin adjustment and care planning for illness. |
 | [Sick-Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster.md) | Calculates insulin adjustments, monitoring frequency, and hydration needs during illness. |

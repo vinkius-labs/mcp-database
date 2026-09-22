@@ -19,6 +19,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
 | [Oil Tanker Voyage Planner](../mcps/oil-tanker-voyage-planner.md) | Calculate voyage duration, fuel consumption, and maritime profitability. |
+| [Package Serving Calculator](../mcps/package-serving-calculator.md) | Calculate total, full, and remaining servings from package weight. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
