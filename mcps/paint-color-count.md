@@ -14,10 +14,10 @@ This MCP server provides analytical tools for artists to understand their color 
 
 
 ## Available Tools (4)
-- **analyze_color_diversity**: Calculates palette complexity
 - **check_palette_integrity**: Validates color format
 - **count_palette_colors**: Counts colors in a palette
 - **find_dominant_colors**: Finds most frequent colors
+- **analyze_color_diversity**: Calculates palette complexity
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides essential tools for knitters to manage project dimensio
 
 
 ## Available Tools (4)
-- **validate_gauge_consistency**: Checks if the provided row gauge is physically realistic for standard knitting
 - **compare_height_targets**: Determines the difference in row counts between two different target heights
 - **get_project_summary**: Provides a complete overview of a project's vertical requirements
 - **get_row_count**: Calculates the total number of rows needed to reach a target height
+- **validate_gauge_consistency**: Checks if the provided row gauge is physically realistic for standard knitting
 
 
 ## 💬 Prompt Examples
