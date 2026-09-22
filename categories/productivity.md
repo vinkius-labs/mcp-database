@@ -86,6 +86,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Anime Canon & Filler Tracker](../mcps/anime-canon-filler-tracker.md) | Calculate canon episode counts, filler ratios, and optimized binge times for anime series. |
 | [Anime Filler Ratio Calculator](../mcps/anime-filler-ratio-calculator.md) | Analyze anime pacing and calculate filler ratios to optimize your watch time. |
 | [Annotation Extractor and Tracker](../mcps/annotation-extractor-and-tracker.md) | Automatically detect, track, and report code annotations like FIXME, HACK, and XXX in your codebase. |
+| [Annual Expense Total](../mcps/annual-expense-total.md) | Calculate projected annual expenditures based on monthly spending. |
 | [AntEater](../mcps/anteater.md) | Monitor website changes, detect content updates, and receive alerts when key pages are modified across your digital properties. |
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
 | [API Design Prover](../mcps/api-design-prover.md) | An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written. |
@@ -133,6 +134,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Bible API](../mcps/bible-api.md) | Search and retrieve scripture — audit Bible versions and verses via AI. |
 | [BibTeX Bibliography Parser](../mcps/bibtex-bibliography-parser.md) | Parse academic .bib bibliography files into structured JSON. Let your AI format citations in APA, IEEE, or Chicago style instantly local. |
 | [BigOven](../mcps/bigoven.md) | Access over a million recipes via BigOven — search dishes, read reviews, and explore collections directly from any AI agent. |
+| [Bill Due Date Calculator](../mcps/bill-due-date-calculator.md) | Calculate precise invoice maturity dates using specific payment terms. |
 | [Bill Due Date Shifter](../mcps/bill-due-date-shifter.md) | Align bill due dates with your payday to prevent overdrafts. |
 | [Biohacking Stack Designer](../mcps/biohacking-stack-designer.md) | Design personalized biohacking protocols based on your goals, budget, and risk tolerance. |
 | [Biorhythm Calculator](../mcps/biorhythm-calculator.md) | Calculate and analyze the three primary biological cycles--physical, emotional, and intellectual. |
@@ -181,6 +183,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Brushfire](../mcps/brushfire.md) | Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent. |
 | [Buddy Punch](../mcps/buddy-punch.md) | Track employee hours with GPS-verified clock-ins, PTO management, and payroll-ready timesheet exports your team will love. |
 | [Budget Envelope Allocator](../mcps/budget-envelope-allocator.md) | A deterministic zero-based budgeting engine for precise income distribution. |
+| [Budget Surplus Calculator](../mcps/budget-surplus-calculator.md) | Calculate net financial positions, income vs expense breakdowns, and category summaries. |
 | [Buffer](../mcps/buffer.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Builder Automation ROI Calculator](../mcps/builder-automation-roi-calculator.md) | Calculate the financial viability and strategic priority of automating manual processes. |
@@ -754,6 +757,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Moka HR](../mcps/moka-hr.md) | Intelligent applicant tracking system (ATS) — manage jobs, candidates, and interviews via AI. |
 | [Mokaform](../mcps/mokaform.md) | Create interactive forms and surveys with visual logic builders that adapt questions based on previous answers dynamically. |
 | [Monthly Compound Table Generator](../mcps/monthly-compound-table-generator.md) | Generate detailed monthly compounding schedules and investment summaries. |
+| [Monthly Expense Total](../mcps/monthly-expense-total.md) | Track and aggregate monthly spending across categories. |
 | [Mood & Productivity Correlator](../mcps/mood-productivity-correlator.md) | Analyze the statistical relationship between your mood, lifestyle habits, and daily productivity levels. |
 | [Mood Pattern Detector](../mcps/mood-pattern-detector.md) | Identify recurring emotional trends and correlations between mood fluctuations and lifestyle variables. |
 | [Mood Tracker MCP](../mcps/mood-tracker-mcp.md) | Analyze daily mood logs to identify emotional trends and weekly patterns. |

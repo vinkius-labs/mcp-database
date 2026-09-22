@@ -161,6 +161,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Beauty Basket Total](../mcps/beauty-basket-total.md) | Calculate beauty product prices, subtotals, and regional taxes. |
 | [Beauty Service Discount Engine](../mcps/beauty-service-discount-engine.md) | Calculates discounted service prices for beauty salons using loyalty and seasonal rules. |
 | [Beta Calculator](../mcps/beta-calculator.md) | Calculate asset volatility sensitivity, Jensen's Alpha, and risk classification relative to market benchmarks. |
+| [Bill Payment Analyzer](../mcps/bill-payment-analyzer.md) | Analyzes collections of bills to count paid and unpaid statuses and calculate outstanding totals. |
 | [Binary Options Synthetic Creation](../mcps/binary-options-synthetic-creation.md) | Create synthetic price ranges using nested binary prediction markets. |
 | [Black Swan Zero Premium Selling](../mcps/black-swan-zero-premium-selling.md) | Identify and exploit impossible prediction market outcomes for guaranteed profit. |
 | [Black-Scholes Calculator](../mcps/black-scholes-calculator.md) | Deterministic engine for European option pricing and Greeks sensitivity analysis. |
@@ -259,6 +260,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Crypto Index Rebalancing Strategy](../mcps/crypto-index-rebalancing-strategy.md) | A deterministic decision engine for cryptocurrency index rebalancing based on tracking error and cost-benefit analysis. |
 | [Cryptocurrency Tax Lot Tracker](../mcps/cryptocurrency-tax-lot-tracker.md) | Calculate cost basis, realized gains, and tax liabilities using FIFO, LIFO, HIFO, and Specific Identification methods. |
 | [Currency Converter Fixed](../mcps/currency-converter-fixed.md) | Deterministic historical currency conversion using ECB rates. |
+| [Currency Fee Calculator](../mcps/currency-fee-calculator.md) | Calculate precise conversion fees and total transaction values. |
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
 | [Cut-Off Grade Optimization](../mcps/cut-off-grade-optimization.md) | Optimize mining cut-off grades to maximize NPV and production efficiency. |
@@ -279,6 +281,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
 | [Dividend Capture Strategy Engine](../mcps/dividend-capture-strategy-engine.md) | Identify and validate profitable dividend capture opportunities with deterministic modeling. |
 | [Dividend Discount Model](../mcps/dividend-discount-model.md) | Calculate intrinsic equity value using Gordon Growth and Two-Stage DDM models. |
+| [Dividend Total](../mcps/dividend-total.md) | Calculate gross and net dividend income, annual projections, and dividend yields. |
 | [Dollar Cost Averaging Simulator](../mcps/dollar-cost-averaging-simulator.md) | Simulate and compare DCA vs Lump Sum investment strategies using historical price data. |
 | [Dollar-Cost Averaging Strategy Simulator](../mcps/dollar-cost-averaging-strategy-simulator.md) | Simulate a deterministic DCA strategy with valuation-based adjustments. |
 | [Donchian Channels Calculator](../mcps/donchian-channels-calculator.md) | Deterministic Donchian Channels and breakout signal calculator for Turtle Traders. |
@@ -373,6 +376,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Exact Decimal Currency Calculator](../mcps/exact-decimal-currency-calculator.md) | Perform error-free financial arithmetic using integer-based cent calculations. |
 | [Expansion Revenue Analysis](../mcps/expansion-revenue-analysis.md) | Decompose revenue growth into expansion drivers and retention health metrics. |
 | [Expected Value vs Implied Probability](../mcps/expected-value-vs-implied-probability.md) | A deterministic decision-support tool for evaluating market edges and optimal position sizing. |
+| [Expense Growth Rate](../mcps/expense-growth-rate.md) | Calculate percentage changes between expense periods. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
 | [Fabric Cost Calculator](../mcps/fabric-cost-calculator.md) | Calculate fabric procurement costs including waste, MOQ, and bulk discounts. |
 | [Farm Asset Depreciation Generator](../mcps/farm-asset-depreciation-generator.md) | Generate detailed depreciation schedules and tax impact analyses for farm assets using IRS guidelines. |
@@ -651,6 +655,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Portfolio Rebalancing Engine](../mcps/portfolio-rebalancing-engine.md) | Identify portfolio drift and generate precise buy/sell orders to align asset weights with target allocations. |
 | [Portfolio Sharpe Optimization](../mcps/portfolio-sharpe-optimization.md) | Deterministic capital allocation engine for maximizing Sharpe ratio in prediction markets. |
 | [Portfolio Volatility Calculator](../mcps/portfolio-volatility-calculator.md) | Calculate asset volatility, pairwise covariance, and portfolio risk metrics. |
+| [Portfolio Weight Engine](../mcps/portfolio-weight-engine.md) | Calculate asset weights, concentration risk, and rebalancing needs. |
 | [Position Trading Strategy](../mcps/position-trading-strategy.md) | A deterministic trading system combining technical momentum, fundamental value, and sector strength. |
 | [Pre-Event Volatility Crush](../mcps/pre-event-volatility-crush.md) | Deterministic liquidity provision for capturing spreads during binary event volatility. |
 | [Pre-Seed Investment Terms Calculator](../mcps/pre-seed-investment-terms-calculator.md) | Model early-stage investment structures like SAFE and Convertible Notes. |
@@ -786,6 +791,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Statistical Arbitrage Pairs Strategy](../mcps/statistical-arbitrage-pairs-strategy.md) | Execute deterministic pairs trading using cointegration tests and z-score signals. |
 | [Stochastic Oscillator Calculator](../mcps/stochastic-oscillator-calculator.md) | Calculate Stochastic Oscillator values, identify crossovers, and detect price-momentum divergences. |
 | [Stochastic RSI Calculator](../mcps/stochastic-rsi-calculator.md) | Deterministic Stochastic RSI indicator with signal detection. |
+| [Stock Average Price Tracker](../mcps/stock-average-price-tracker.md) | Calculate weighted average cost basis for stock portfolios. |
 | [Stock Profit/Loss Calculator](../mcps/stock-profitloss-calculator.md) | Calculate ROI, tax liabilities, and risk metrics for stock trades and options strategies. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Streaming Cost Per Hour Calculator](../mcps/streaming-cost-per-hour-calculator.md) | Calculate the real value of streaming services by determining cost per hour of entertainment. |
