@@ -36,15 +36,21 @@ Connect your **PipeRun CRM** account to any AI agent to streamline your sales op
 - **delete_activity**: Requires the unique ID of the activity to be deleted.
 
 Delete an activity
+- **get_activity**: Pass the activity ID to fetch the data.
+
+Get details for a specific activity
+- **list_files**: Supports pagination and filtering.
+
+List files attached to deals, persons, or companies
+- **upload_file**: Requires base64 encoded file content.
+
+Upload a file to a deal, person, or company
 - **create_activity**: Provide at least an activity type ID and a title.
 
 Create a new activity
 - **delete_file**: Specify the file ID to be deleted.
 
 Delete a file from PipeRun
-- **get_activity**: Pass the activity ID to fetch the data.
-
-Get details for a specific activity
 - **get_activity_type**: Pass the required activity type ID.
 
 Get details for a specific activity type
@@ -57,15 +63,9 @@ List activities (tasks and appointments)
 - **list_activity_types**: Use the ’cursor’ parameter for pagination.
 
 List all activity types
-- **list_files**: Supports pagination and filtering.
-
-List files attached to deals, persons, or companies
 - **update_activity**: Must provide the activity ID and at least one field to update.
 
 Update an existing activity
-- **upload_file**: Requires base64 encoded file content.
-
-Upload a file to a deal, person, or company
 
 
 ## 💬 Prompt Examples

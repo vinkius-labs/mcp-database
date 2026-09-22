@@ -14,10 +14,10 @@ This MCP server provides tools to manage museum ticket pricing. You can use `get
 
 
 ## Available Tools (4)
-- **validate_visitor_data**: Ensures that the provided visitor information is logically sound
 - **calculate_group_total**: Calculates the total cost for a specific group of visitors
 - **calculate_individual_price**: Determines the cost of a single ticket based on the visitor profile
 - **get_category_prices**: Retrieves the current standard ticket prices for each visitor category
+- **validate_visitor_data**: Ensures that the provided visitor information is logically sound
 
 
 ## 💬 Prompt Examples

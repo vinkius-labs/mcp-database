@@ -42,6 +42,11 @@ Get details for a specific objective
 - **get_snippet**: Must provide the snippet ID.
 
 Get details of a specific check-in snippet
+- **list_objectives**: List team objectives
+- **list_teams**: List all teams
+- **list_updates**: Can be filtered by target_id or for_user_id.
+
+List team check-ins (updates)
 - **get_team**: Must provide the team’s unique ID.
 
 Get details for a specific team
@@ -51,11 +56,6 @@ Get details of a specific update (check-in)
 - **get_user**: Must provide the user’s unique ID.
 
 Get details for a specific team member
-- **list_objectives**: List team objectives
-- **list_teams**: List all teams
-- **list_updates**: Can be filtered by target_id or for_user_id.
-
-List team check-ins (updates)
 - **create_update**: Post a new standup update
 - **list_goals**: List all team goals
 - **list_users**: List all users in the organization

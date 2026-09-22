@@ -14,8 +14,8 @@ This MCP server provides specialized tools for calculating movie ticket costs. U
 
 
 ## Available Tools (4)
-- **apply_group_discount**: 
 - **calculate_tiered_total**: 
+- **apply_group_discount**: 
 - **calculate_basic_total**: 
 - **get_pricing_tier_info**: 
 

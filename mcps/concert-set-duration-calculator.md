@@ -15,9 +15,9 @@ This MCP server helps concert organizers and performers manage performance timin
 
 ## Available Tools (4)
 - **get_setlist_summary**: Provides a high-level breakdown of a setlist's composition and total length
+- **validate_set_against_slot**: Checks if a proposed setlist fits within a specific allocated performance time slot
 - **calculate_ideal_buffer**: Determines the maximum possible buffer time that can be placed between songs to perfectly fill an allocated time slot
 - **get_total_set_duration**: Calculates the total time a setlist will take from start to finish
-- **validate_set_against_slot**: Checks if a proposed setlist fits within a specific allocated performance time slot
 
 
 ## 💬 Prompt Examples

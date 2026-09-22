@@ -14,10 +14,10 @@ This MCP server provides tools to manage and analyze the market value of collect
 
 
 ## Available Tools (4)
+- **filter_high_value_items**: Extracts a subset of items that meet or exceed a specific value threshold
 - **find_highest_value_item**: Identifies the single most expensive item in a provided list
 - **get_price_statistics**: Provides a statistical summary of the collection's value distribution
 - **calculate_collection_total**: Calculates the total combined market value of a provided list of collectible prices
-- **filter_high_value_items**: Extracts a subset of items that meet or exceed a specific value threshold
 
 
 ## 💬 Prompt Examples

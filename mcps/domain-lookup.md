@@ -32,12 +32,6 @@ For the 1200+ TLDs that publish RDAP, the answer is authoritative: HTTP 200 mean
 
 
 ## Available Tools (8)
-- **parse_domain**: example.co.uk it returns the registrable domain example.co.uk, the suffix co.uk and the subdomain www. Naive splits get this wrong because some effective TLDs have two labels. Use this before any other lookup when the input might be a subdomain, since RDAP and DNS work on the registrable domain.
-
-Split a hostname into its pieces — registrable domain, public suffix and subdomain
-- **check_domain_availability**: g. example.com) and reports whether it is registered or available. For most TLDs the answer is authoritative: it comes from the official RDAP server for that TLD, resolved through the IANA bootstrap. Some ccTLDs publish no RDAP at all; for those the answer comes from DNS and is labelled authoritative: no, so read that field. This is the tool for "is this domain taken".
-
-Check whether a domain name is free to register — authoritative from the registry that owns the TLD, keyless
 - **check_multiple_domains**: Use it when comparing candidates — "which of these names are still free". Each row carries its own authoritative flag, because a batch can mix TLDs with RDAP and TLDs without it.
 
 Check many domain names at once and get an availability summary for the whole list
@@ -53,9 +47,15 @@ Browse the official IANA list of top-level domains, with which ones support auth
 - **lookup_dns_records**: For A and AAAA the CNAME is reported separately so you see the effective host. The trusted field says whether the answer was cryptographically validated. Use this for "where does this domain point" and "what are its mail servers" — a domain with no A records and no MX is parked or unused. Supported types: A, AAAA, NS, MX, TXT, CNAME, SOA, CAA, SRV, PTR.
 
 Live DNS records for a domain — A, AAAA, MX, TXT, NS, CNAME, CAA and more, via DNS-over-HTTPS
+- **parse_domain**: example.co.uk it returns the registrable domain example.co.uk, the suffix co.uk and the subdomain www. Naive splits get this wrong because some effective TLDs have two labels. Use this before any other lookup when the input might be a subdomain, since RDAP and DNS work on the registrable domain.
+
+Split a hostname into its pieces — registrable domain, public suffix and subdomain
 - **suggest_domain_names**: g. "mybrand") and get back the variants that look free. The engine combines the name with the TLDs you list — or a popular default set (com, io, ai, app, dev, co, net, org, xyz, so, sh, me) — and with prefixes like get-, try- and the -hq suffix, then filters to the ones that are available. Use it for "help me name my project". Every suggestion keeps its authoritative flag: names from TLDs without RDAP are DNS-inferred and should be confirmed at a registrar before you fall in love with them.
 
 Find available variants of a brand or idea across popular TLDs and common prefixes
+- **check_domain_availability**: g. example.com) and reports whether it is registered or available. For most TLDs the answer is authoritative: it comes from the official RDAP server for that TLD, resolved through the IANA bootstrap. Some ccTLDs publish no RDAP at all; for those the answer comes from DNS and is labelled authoritative: no, so read that field. This is the tool for "is this domain taken".
+
+Check whether a domain name is free to register — authoritative from the registry that owns the TLD, keyless
 
 
 ## 💬 Prompt Examples

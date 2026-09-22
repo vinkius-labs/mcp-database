@@ -14,10 +14,10 @@ This MCP server provides real-time insights into board game table occupancy. It 
 
 
 ## Available Tools (4)
-- **get_aggregate_attendance_rate**: Answers what percentage of total game capacity is currently being used
 - **get_table_details**: Answers specific questions about the capacity and current state of a single table
 - **get_table_occupancy_status**: Answers how many tables are currently full, partially full, or empty
 - **get_total_player_count**: Answers how many people are playing games in total across all tables
+- **get_aggregate_attendance_rate**: Answers what percentage of total game capacity is currently being used
 
 
 ## 💬 Prompt Examples

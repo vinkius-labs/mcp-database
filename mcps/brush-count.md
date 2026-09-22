@@ -14,9 +14,9 @@ Manage your studio supplies with precision. This MCP server provides tools to au
 
 
 ## Available Tools (4)
-- **count_brushes_by_type**: Count brushes of a specific type
 - **audit_brush_condition**: Audit the overall health status of the brush collection
 - **calculate_size_distribution**: Calculate the distribution of brush sizes
+- **count_brushes_by_type**: Count brushes of a specific type
 - **get_inventory_tier_summary**: Get a high-level breakdown of inventory across categories
 
 

@@ -44,19 +44,19 @@ Create a new issue
 Retrieve messages for an issue
 - **get_issue**: Get details for a specific support issue
 - **list_accounts**: List all customer accounts
-- **list_knowledge_bases**: List all knowledge bases
 - **list_tags**: List all available issue tags
-- **reply_to_issue**: Ensure the body_json contains all required reply details.
-
-Send a reply to an issue
 - **update_issue**: Update a support issue
+- **list_issues**: List all Pylon issues
 - **get_account**: Provide a valid Account ID.
 
 Get details for a specific customer account
 - **list_articles**: Provide the specific knowledge base ID (kb_id) for the search.
 
 List knowledge base articles
-- **list_issues**: List all Pylon issues
+- **list_knowledge_bases**: List all knowledge bases
+- **reply_to_issue**: Ensure the body_json contains all required reply details.
+
+Send a reply to an issue
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server allows AI agents to manage board game session data. You can reco
 
 
 ## Available Tools (4)
-- **add_game_session**: 
 - **get_all_game_totals**: 
 - **get_average_session_length**: 
 - **get_total_game_time**: 
+- **add_game_session**: 
 
 
 ## 💬 Prompt Examples

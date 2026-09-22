@@ -37,9 +37,6 @@ Empower your AI agent to orchestrate your customer service with **Sobot** (智�
 ## Available Tools (10)
 - **get_agent_status**: Get agent online status
 - **get_org_summary**: Get organization activity summary
-- **list_chat_history**: Specify a start and end time to narrow the search range.
-
-List chat history
 - **list_users**: List customers/users
 - **list_agents**: List support agents
 - **list_knowledge**: List knowledge base articles
@@ -47,6 +44,9 @@ List chat history
 - **create_ticket**: Create a new ticket
 - **get_knowledge_detail**: Get knowledge article details
 - **get_ticket_details**: Get ticket details
+- **list_chat_history**: Specify a start and end time to narrow the search range.
+
+List chat history
 
 
 ## 💬 Prompt Examples

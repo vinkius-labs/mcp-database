@@ -14,10 +14,10 @@ This MCP server provides tools to manage library penalties. It can calculate exa
 
 
 ## Available Tools (4)
-- **check_overdue_status**: Determines if an item is currently within a grace period, accruing fines, or has hit the maximum penalty
 - **get_fine_amount**: Calculates the total fine owed for a specific item based on how many days it is overdue
 - **get_fine_summary**: Provides a detailed breakdown of the overdue status, including the days subject to charging and the final amount
 - **validate_fine_parameters**: Verifies that the provided fee and period parameters are logically consistent and valid for a library system
+- **check_overdue_status**: Determines if an item is currently within a grace period, accruing fines, or has hit the maximum penalty
 
 
 ## 💬 Prompt Examples

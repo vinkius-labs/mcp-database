@@ -14,10 +14,10 @@ This MCP server provides tools to manage and analyze book series data. You can u
 
 
 ## Available Tools (4)
-- **get_series_books**: Retrieves a list of all books belonging to a specific series
+- **calculate_subset_total**: Calculates the total page count for a specific selection of books from a series
 - **get_series_statistics**: Provides high-level metrics about a series' length and composition
 - **calculate_series_total**: Calculates the total page count for all books in a specific series
-- **calculate_subset_total**: Calculates the total page count for a specific selection of books from a series
+- **get_series_books**: Retrieves a list of all books belonging to a specific series
 
 
 ## 💬 Prompt Examples

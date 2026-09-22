@@ -39,9 +39,6 @@ No more manual tagging or hunting for lost files in folders. Your AI acts as a d
 - **add_comment**: Add a comment to an asset
 - **search_assets**: Search for assets
 - **update_asset**: Update asset metadata
-- **create_collection**: Provide a parent ID if the collection must belong to a specific folder.
-
-Create a new collection
 - **get_asset**: Get details for a specific asset
 - **get_collection**: Get details for a specific collection
 - **list_assets**: Optionally filter by collection ID.
@@ -50,6 +47,9 @@ List all digital assets
 - **list_collections**: List all collections
 - **list_comments**: List comments on an asset
 - **list_revisions**: List asset revisions
+- **create_collection**: Provide a parent ID if the collection must belong to a specific folder.
+
+Create a new collection
 - **delete_collection**: Ensure you have the correct collection ID before executing.
 
 Delete a collection

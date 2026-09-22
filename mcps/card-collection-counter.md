@@ -18,10 +18,10 @@ This MCP server provides tools to manage and analyze collectible card game (CCG)
 
 
 ## Available Tools (4)
-- **getUniqueCardCount**: Get the number of unique card identities in a collection
-- **getCollectionComposition**: Get the breakdown of cards by rarity or set name
 - **getSetCoveragePercentage**: Get the percentage of a specific set owned
 - **getTotalCardCount**: Get the total number of cards in a collection
+- **getUniqueCardCount**: Get the number of unique card identities in a collection
+- **getCollectionComposition**: Get the breakdown of cards by rarity or set name
 
 
 ## 💬 Prompt Examples

@@ -32,10 +32,10 @@ Connect your **SuperSaaS** account to any AI agent and simplify your online appo
 - **list_account_users**: List registered users
 - **get_account_balance**: Check account credit balance
 - **list_appointments**: List appointments for a schedule
-- **update_appointment**: Update an existing appointment
 - **list_changes**: List recent changes to a schedule
 - **delete_appointment**: Delete an appointment
 - **get_user**: Get details for a specific user
+- **update_appointment**: Update an existing appointment
 - **create_appointment**: Create a new booking
 - **get_appointment_details**: Get details for a specific booking
 - **list_schedules**: List SuperSaaS schedules

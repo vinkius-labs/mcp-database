@@ -14,10 +14,10 @@ This MCP server provides a specialized engine for managing the financial aspects
 
 
 ## Available Tools (4)
-- **add_expense**: Records a new cost associated with a specific crafting session
-- **calculate_participant_balances**: Determines exactly how much each person needs to pay or receive to settle the session debts
 - **get_session_summary**: Provides a high-level financial overview of a single crafting session
 - **list_session_expenses**: Retrieves a detailed itemized list of all costs incurred during a session
+- **add_expense**: Records a new cost associated with a specific crafting session
+- **calculate_participant_balances**: Determines exactly how much each person needs to pay or receive to settle the session debts
 
 
 ## 💬 Prompt Examples

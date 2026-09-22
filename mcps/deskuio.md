@@ -38,19 +38,19 @@ No more manual ticket searching or complex dashboard navigation. Your AI acts as
 ## Available Tools (9)
 - **create_ticket**: Create a new ticket
 - **get_ticket**: Get ticket details
-- **list_agents**: List support agents
 - **list_customers**: List support customers
 - **update_ticket**: Update a ticket
-- **get_customer**: Must provide a valid customer ID.
-
-Get customer details
-- **list_conversations**: Requires a valid ticket ID.
-
-List conversation history for a ticket
 - **create_conversation**: Reply to a ticket
 - **list_tickets**: io account.
 
 List support tickets
+- **get_customer**: Must provide a valid customer ID.
+
+Get customer details
+- **list_agents**: List support agents
+- **list_conversations**: Requires a valid ticket ID.
+
+List conversation history for a ticket
 
 
 ## 💬 Prompt Examples

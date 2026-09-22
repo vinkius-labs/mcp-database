@@ -14,10 +14,10 @@ This MCP server provides tools to analyze music collections by calculating song 
 
 
 ## Available Tools (4)
-- **get_album_details**: 
-- **calculate_collection_total**: 
 - **find_albums_by_artist**: 
 - **get_album_density**: 
+- **get_album_details**: 
+- **calculate_collection_total**: 
 
 
 ## 💬 Prompt Examples

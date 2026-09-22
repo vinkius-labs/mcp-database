@@ -14,12 +14,12 @@ This MCP server provides tools to analyze the composition and integrity of movie
 
 
 ## Available Tools (4)
+- **get_watchlist_summary**: Provides a high-level overview of the total number of movies in a watchlist
+- **validate_watchlist_completeness**: Checks if a watchlist contains any entries missing critical information (title or year)
 - **get_decade_breakdown**: Analyzes the temporal distribution of movies by their release decade
 - **get_genre_distribution**: You can optionally filter by specific genres.
 
 Answers how many movies in a watchlist belong to specific genres
-- **get_watchlist_summary**: Provides a high-level overview of the total number of movies in a watchlist
-- **validate_watchlist_completeness**: Checks if a watchlist contains any entries missing critical information (title or year)
 
 
 ## 💬 Prompt Examples

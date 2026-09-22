@@ -14,9 +14,9 @@ This MCP server provides tools to manage and query art gallery inventories. It a
 
 
 ## Available Tools (4)
-- **get_gallery_display_metrics**: Answers how many pieces of art are currently visible to the public in this gallery
 - **get_all_galleries_report**: Answers which galleries have the largest collections
 - **get_artwork_status_distribution**: Answers the breakdown of art statuses (Display vs Storage) within a specific gallery
+- **get_gallery_display_metrics**: Answers how many pieces of art are currently visible to the public in this gallery
 - **get_gallery_inventory_summary**: Answers how many artworks are currently in the inventory for a specific gallery
 
 

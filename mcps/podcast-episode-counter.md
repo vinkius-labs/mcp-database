@@ -14,12 +14,12 @@ This MCP server provides tools to analyze podcast datasets. You can use `list_al
 
 
 ## Available Tools (4)
-- **list_all_episodes**: Answers how many total episodes are available in the provided dataset
-- **count_episodes_by_series**: Answers how many episodes belong to a specific podcast series
 - **count_episodes_by_status**: g., "released" or "upcoming").
 
 Answers how many episodes are currently released versus those that are upcoming
 - **get_episode_summary_stats**: Answers the high-level distribution of episodes across the dataset
+- **list_all_episodes**: Answers how many total episodes are available in the provided dataset
+- **count_episodes_by_series**: Answers how many episodes belong to a specific podcast series
 
 
 ## 💬 Prompt Examples

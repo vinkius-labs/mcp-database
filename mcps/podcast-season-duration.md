@@ -14,10 +14,10 @@ This MCP server provides tools to analyze podcast season durations. Use `get_sea
 
 
 ## Available Tools (4)
-- **get_season_episode_stats**: Provides a breakdown of the episode distribution and length within a season
 - **get_season_metadata**: Retrieves basic identifying information about a specific season
-- **estimate_listening_time**: Calculates how long it will take to finish a season based on a user's preferred playback speed
 - **get_season_total_duration**: Calculates the total raw playback time for a specific podcast season
+- **get_season_episode_stats**: Provides a breakdown of the episode distribution and length within a season
+- **estimate_listening_time**: Calculates how long it will take to finish a season based on a user's preferred playback speed
 
 
 ## 💬 Prompt Examples
