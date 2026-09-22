@@ -14,10 +14,10 @@ This MCP server provides mathematical tools to track and project savings activit
 
 
 ## Available Tools (4)
-- **validate_contribution_parameters**: Validates if the provided savings parameters are valid
 - **get_contribution_progress**: Calculates how much has been contributed toward a savings goal
 - **get_contribution_schedule_summary**: Projects future totals at a specific milestone
 - **get_total_contribution**: Calculates the total sum of all deposits made
+- **validate_contribution_parameters**: Validates if the provided savings parameters are valid
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides precise apparel size recommendations by bridging the ga
 
 
 ## Available Tools (4)
-- **find_size_by_label**: What are the actual physical dimensions associated with a specific size label?
 - **get_available_sizing_systems**: What regional sizing standards and gender categories does this tool support?
 - **get_size_by_measurements**: Based on my body measurements, what size should I buy in a specific region's sizing system?
 - **validate_measurements**: Are these physical measurements realistic and complete for the requested gender?
+- **find_size_by_label**: What are the actual physical dimensions associated with a specific size label?
 
 
 ## 💬 Prompt Examples

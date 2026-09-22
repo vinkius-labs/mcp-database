@@ -14,10 +14,10 @@ This MCP server provides a high-precision calculation engine for fashion retail 
 
 
 ## Available Tools (4)
-- **validate_currency_consistency**: Validate currency
 - **apply_tax_by_region**: Calculate tax
 - **calculate_order_total**: Calculate final total
 - **calculate_subtotal**: Calculate subtotal
+- **validate_currency_consistency**: Validate currency
 
 
 ## 💬 Prompt Examples

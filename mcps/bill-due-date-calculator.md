@@ -14,8 +14,8 @@ This MCP server provides a precision calculation engine to determine when invoic
 
 
 ## Available Tools (4)
-- **get_term_details**: Get the details of a specific payment term
 - **calculate_due_date**: Calculate the due date for an invoice based on its terms
+- **get_term_details**: Get the details of a specific payment term
 - **list_available_terms**: List all available payment terms
 - **validate_term_application**: Validate if a payment term can be applied to an invoice date
 

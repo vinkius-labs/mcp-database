@@ -14,10 +14,10 @@ This MCP server provides tools to manage and analyze budget data. Use `list_budg
 
 
 ## Available Tools (4)
-- **get_net_position**: 
-- **list_budget_periods**: 
 - **get_category_summary**: 
 - **get_income_vs_expense_breakdown**: 
+- **get_net_position**: 
+- **list_budget_periods**: 
 
 
 ## 💬 Prompt Examples

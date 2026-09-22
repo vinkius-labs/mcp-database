@@ -14,9 +14,9 @@ This MCP server provides precise financial calculation tools for managing invest
 
 
 ## Available Tools (4)
-- **get_portfolio_concentration**: Identifies if an asset's weight exceeds predefined risk thresholds
 - **calculate_rebalancing_requirement**: Determines how much value must be added or removed from an asset to reach a target weight
 - **get_asset_weight**: Calculates the specific percentage weight of a single asset within a portfolio
+- **get_portfolio_concentration**: Identifies if an asset's weight exceeds predefined risk thresholds
 - **validate_portfolio_composition**: Checks if the sum of all asset weights in a portfolio is mathematically consistent
 
 

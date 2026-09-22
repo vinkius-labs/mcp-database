@@ -14,10 +14,10 @@ This MCP server provides specialized tools for retail and tailoring logistics to
 
 
 ## Available Tools (4)
-- **get_fitting_count_by_customer_segment**: How many fitting appointments are being performed by different customer tiers?
-- **get_fitting_distribution_by_status**: What is the breakdown of fitting appointments across different statuses?
 - **get_fitting_count**: How many fitting appointments occurred within a specific time frame?
+- **get_fitting_count_by_customer_segment**: How many fitting appointments are being performed by different customer tiers?
 - **get_fitting_density_report**: On which days or times are fitting appointments most concentrated?
+- **get_fitting_distribution_by_status**: What is the breakdown of fitting appointments across different statuses?
 
 
 ## 💬 Prompt Examples

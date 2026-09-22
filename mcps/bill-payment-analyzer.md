@@ -14,10 +14,10 @@ This MCP server provides tools to analyze financial obligations within a list of
 
 
 ## Available Tools (4)
-- **filter_bills_by_status**: Filters bills by their status (paid or unpaid)
-- **get_unpaid_bill_total**: Calculates the total outstanding amount for all unpaid bills
 - **count_bill_statuses**: Counts how many bills are paid and how many are unpaid
+- **filter_bills_by_status**: Filters bills by their status (paid or unpaid)
 - **get_payment_completion_rate**: Calculates the percentage of bills that have been paid
+- **get_unpaid_bill_total**: Calculates the total outstanding amount for all unpaid bills
 
 
 ## 💬 Prompt Examples

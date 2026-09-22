@@ -14,10 +14,10 @@ This MCP server provides tools to calculate conversion costs for currency transa
 
 
 ## Available Tools (4)
-- **get_conversion_fee**: Calculates only the specific service fee amount for a given transaction
 - **get_total_transaction_value**: Calculates the total amount required to cover both the principal and the service fee
 - **summarize_transaction_costs**: Provides a full breakdown of a conversion, including the principal, the fee, and the total
 - **validate_fee_structure**: Checks if a proposed fee configuration meets specific business safety thresholds
+- **get_conversion_fee**: Calculates only the specific service fee amount for a given transaction
 
 
 ## 💬 Prompt Examples
