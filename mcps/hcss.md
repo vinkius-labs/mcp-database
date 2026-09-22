@@ -37,13 +37,13 @@ No more manual exporting of field reports or logging into multiple portals. Your
 
 
 ## Available Tools (11)
-- **list_employees**: List all employees synced in HCSS
 - **get_bid_items**: Provide the estimate ID as the required parameter.
 
 List bid items for a specific estimate
 - **get_equipment_location**: Use the unique equipment ID as the required parameter.
 
 Get current GPS coordinates for a specific piece of equipment
+- **list_employees**: List all employees synced in HCSS
 - **get_equipment_meters**: Supply the equipment’s unique identifier.
 
 Get latest meter readings (odometer/hours) for equipment
