@@ -5,6 +5,7 @@ Explore the open database of **calculation** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [DIY Angle Miter Calculator](../mcps/diy-angle-miter-calculator.md) | Calculate exact miter and bevel angles for woodworking joints like baseboards and crown molding. |
+| [Jewelry Metal Weight Calculator](../mcps/jewelry-metal-weight-calculator.md) | Calculate and validate precise metal weights for jewelry collections. |
 
 
 ---

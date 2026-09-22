@@ -52,6 +52,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [DPS Damage Balance Calculator](../mcps/dps-damage-balance-calculator.md) | Deterministic combat math for calculating raw DPS, effective DPS, and time to kill. |
 | [Durian Value-Yield Calculator](../mcps/durian-value-yield-calculator.md) | Calculate the true edible yield and cost-efficiency of durian varieties. |
 | [Electrical Circuit Calculator](../mcps/electrical-circuit-calculator.md) | Verify residential electrical compliance, voltage drop, and breaker adequacy using NEC standards. |
+| [Fashion Size Table Lookup](../mcps/fashion-size-table-lookup.md) | Maps physical body measurements to standardized apparel sizes across different regional sizing systems. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
 | [Floors Climbed Calculator](../mcps/floors-climbed-calculator.md) | Quantify the metabolic, distance, and cardiovascular impact of stair climbing. |
@@ -68,6 +69,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
 | [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
+| [Instrument Case Volume Calculator](../mcps/instrument-case-volume-calculator.md) | Calculate the volume and surface area of instrument cases. |
 | [Insulin Dose Calculator](../mcps/insulin-dose-calculator.md) | A deterministic tool for calculating mealtime insulin doses and estimating insulin on board. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
@@ -118,6 +120,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
+| [Shoe Size Difference Calculator](../mcps/shoe-size-difference-calculator.md) | Calculate the physical millimeter difference between any two shoe sizes across global standards. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [Sneaker Size Converter](../mcps/sneaker-size-converter.md) | Translate footwear sizes across US, UK, EU, JP, and CM systems. |
 | [Solitaire Solver](../mcps/solitaire-solver.md) | A deterministic engine for validating Klondike solitaire moves and identifying legal plays. |
@@ -137,6 +140,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Token Budget Remaining Calculator](../mcps/token-budget-remaining-calculator.md) | Monitor and manage token consumption to prevent context window overflows. |
 | [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
+| [Trivia Score Total](../mcps/trivia-score-total.md) | Calculate and aggregate trivia competition scores across multiple rounds. |
 | [Truncation Detector & Graceful Terminator](../mcps/truncation-detector-graceful-terminator.md) | Detects and repairs truncated LLM outputs to restore structural integrity. |
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |
 | [URL and Email Token Detector](../mcps/url-and-email-token-detector.md) | Detect URLs and emails to calculate potential LLM token savings. |

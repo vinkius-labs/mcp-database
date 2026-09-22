@@ -39,6 +39,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Catalyst Lifetime Prediction](../mcps/catalyst-lifetime-prediction.md) | Predict catalyst operational lifespan and deactivation kinetics. |
 | [Chronic Pain Diary Analyzer](../mcps/chronic-pain-diary-analyzer.md) | Identifies correlations between physiological, environmental, and activity data to manage chronic pain. |
+| [Clothing Donation Counter](../mcps/clothing-donation-counter.md) | Track and analyze donated garment counts and quality distributions. |
 | [Combination Score Analysis](../mcps/combination-score-analysis.md) | Analyze two-wave scoring potential, calculate backup requirements, and predict winning outcomes. |
 | [Competition Heat Strategy](../mcps/competition-heat-strategy.md) | Optimized heat strategies for professional surfing competitions. |
 | [Conductivity Measurement Analysis](../mcps/conductivity-measurement-analysis.md) | Analyze electrolyte properties including molar conductivity and dissociation. |
@@ -52,6 +53,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Enterprise Executive Sponsor Engagement](../mcps/enterprise-executive-sponsor-engagement.md) | Measures executive engagement effectiveness and provides strategic guidance for enterprise sales cycles. |
+| [Fitting Appointment Counter](../mcps/fitting-appointment-counter.md) | Analyze and count fitting appointments within specific timeframes and customer segments. |
 | [Football Match Result Validator](../mcps/football-match-result-validator.md) | Validates football match records for mathematical consistency and logical integrity. |
 | [Goal Difference Calculator](../mcps/goal-difference-calculator.md) | Calculate football performance metrics like goal difference, clean sheets, and scoring efficiency. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
@@ -76,6 +78,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Mining Labor Productivity Analysis](../mcps/mining-labor-productivity-analysis.md) | Analyze mining workforce efficiency, labor costs, and stability impacts. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Offside Line Calculator](../mcps/offside-line-calculator.md) | Determines football offside status and margins using defender and ball coordinates. |
+| [Outfit Item Counter](../mcps/outfit-item-counter.md) | Quantify and analyze the composition of fashion outfits. |
 | [Passing Accuracy Calculator](../mcps/passing-accuracy-calculator.md) | High-precision football analytics for passing metrics. |
 | [Peaking Index Calculator](../mcps/peaking-index-calculator.md) | Model athletic readiness using the Banister Fitness-Fatigue model. |
 | [Personal Record Tracker](../mcps/personal-record-tracker.md) | Predictive analytics for athletes to track PRs and forecast performance peaks. |

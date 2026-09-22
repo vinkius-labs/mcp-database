@@ -4,6 +4,7 @@ Explore the open database of **payment-processing** Model Context Protocol (MCP)
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Celcoin BaaS & Open Finance](../mcps/celcoin-baas-open-finance.md) | The Celcoin Open Finance BaaS v2 as an MCP: BaaS accounts, wallet balances, movement statements, registered Pix keys, outgoing Pix and interbank TED transfers with status tracking — OAuth client_credentials bearer, sandbox by default. |
 | [Copperx](../mcps/copperx.md) | Equip your AI agent to manage crypto payments, invoices, and subscriptions directly with Copperx. |
 | [Donately](../mcps/donately.md) | Manage Donately fundraising and donor data using AI agents. |
 | [Donorbox](../mcps/donorbox.md) | Equip your AI agent to manage donations, track recurring plans, and monitor fundraising campaigns via the Donorbox API. |

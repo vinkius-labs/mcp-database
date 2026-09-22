@@ -22,7 +22,9 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
 | [Fragrance Layering Compatibility](../mcps/fragrance-layering-compatibility.md) | Analyze fragrance combinations for harmony, intensity, and optimal application order. |
+| [Fragrance Spray Calculator](../mcps/fragrance-spray-calculator.md) | Calculate total sprays, usage duration, and bottle efficiency for fragrance products. |
 | [Grounding & Earthing Duration Guide](../mcps/grounding-earthing-duration-guide.md) | Personalized grounding practice schedules based on health goals and contact methods. |
+| [Hair Wash Frequency Calculator](../mcps/hair-wash-frequency-calculator.md) | Calculate monthly hair wash frequency and product usage needs. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |

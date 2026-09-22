@@ -12,6 +12,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [BaZi Four Pillars Calculator](../mcps/bazi-four-pillars-calculator.md) | Calculate precise Chinese BaZi Four Pillars, Day Master, and elemental balance. |
 | [Both Teams to Score Calculator](../mcps/both-teams-to-score-calculator.md) | Calculates mutually exclusive football scoring probabilities from a scoreline matrix. |
 | [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |
+| [Cosmetic Shade Distance](../mcps/cosmetic-shade-distance.md) | Calculates precise numeric color distance between RGB colors for cosmetic shade matching. |
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Depth of Field Calculator](../mcps/depth-of-field-calculator.md) | Deterministic photographic engine for depth of field, hyperfocal distance, and sensor equivalence. |
 | [DOTS Score Calculator](../mcps/dots-score-calculator.md) | Calculate modern DOTS scores and strength levels for powerlifting. |
@@ -64,6 +65,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Woodturning Speed Calculator](../mcps/woodturning-speed-calculator.md) | Deterministic RPM and surface speed calculations for safe woodturning. |
 | [XP Curve Calculator](../mcps/xp-curve-calculator.md) | Deterministic RPG experience progression engine. |
 | [Yarn Substitution Calculator](../mcps/yarn-substitution-calculator.md) | Calculate exact yarn requirements and fiber compatibility for knitting and crochet substitutions. |
+| [Zipper Length Totalizer](../mcps/zipper-length-totalizer.md) | Calculate aggregate lengths and analyze zipper segment distributions. |
 
 
 ---

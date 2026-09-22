@@ -5,6 +5,7 @@ Explore the open database of **planning** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Triathlon Pace Planner](../mcps/triathlon-pace-planner.md) | Strategic pacing, nutrition, and physiological planning for triathletes. |
+| [Yarn Ball Calculator](../mcps/yarn-ball-calculator.md) | Calculate required yarn balls and project costs for textile crafts. |
 
 
 ---

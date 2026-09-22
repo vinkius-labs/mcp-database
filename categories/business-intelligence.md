@@ -61,6 +61,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [Pike13](../mcps/pike13.md) | Manage classes, clients, staff, invoices, visits, and analytics for your Pike13-powered fitness studio through natural conversation. |
 | [Product-Market Fit Score Engine](../mcps/product-market-fit-score-engine.md) | Quantify product-market fit using Sean Ellis methodology and business metrics. |
 | [Risk Matrix Calculator](../mcps/risk-matrix-calculator.md) | Quantify risk levels using configurable assessment matrices. |
+| [Salon Client Analytics](../mcps/salon-client-analytics.md) | Analyze salon engagement, retention, and churn using appointment data. |
 | [Startup NPS Analysis Engine](../mcps/startup-nps-analysis-engine.md) | A specialized analytical engine for evaluating Net Promoter Score (NPS) health, statistical reliability, and segment performance. |
 | [TeamUp](../mcps/teamup.md) | Manage events, customers, coaches, memberships, and payments for your TeamUp-powered fitness studio through natural conversation. |
 | [Vendor Scorecard Calculator](../mcps/vendor-scorecard-calculator.md) | Calculate and monitor supplier performance using weighted metrics. |
