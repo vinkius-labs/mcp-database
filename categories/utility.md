@@ -10,10 +10,13 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Board Speed Variance Calculator](../mcps/board-speed-variance-calculator.md) | Calculates speed fluctuations and control difficulty for kiteboarders in gusty wind conditions. |
 | [Cake Serving Sizer](../mcps/cake-serving-sizer.md) | Calculate exact cake tier combinations and serving yields using Wilton standards. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
+| [Curtain Panel Calculator](../mcps/curtain-panel-calculator.md) | Calculate the exact number of curtain panels needed for any window. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Duck Dive Depth Calculator](../mcps/duck-dive-depth-calculator.md) | Calculate required dive depth, timing, and effort for successful duck dives. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
+| [Garden Area Calculator](../mcps/garden-area-calculator.md) | Calculate garden bed areas and estimate material volumes and costs. |
+| [Garden Hose Reach](../mcps/garden-hose-reach.md) | Calculate hose reach, coverage, and capacity for gardening tasks. |
 | [Houseplant Light Estimator](../mcps/houseplant-light-estimator.md) | Calculate light deficits and optimal plant placement using DLI and lux measurements. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
@@ -24,7 +27,12 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
 | [Leash Length Optimizer](../mcps/leash-length-optimizer.md) | Deterministic surfboard leash length and thickness calculator. |
 | [Leatherworking Pattern Calculator](../mcps/leatherworking-pattern-calculator.md) | Calculate leather area, hide yield, and material consumables for leathercraft projects. |
+| [Mulch Volume Calculator](../mcps/mulch-volume-calculator.md) | Calculate exact mulch volume and bag counts for your garden. |
+| [Oven Time Adjuster](../mcps/oven-time-adjuster.md) | Adjust cooking times by a specific percentage. |
+| [Pizza Slice Calculator](../mcps/pizza-slice-calculator.md) | Calculate total slices, pizza requirements, and slice distribution. |
+| [Popcorn Serving Count](../mcps/popcorn-serving-count.md) | Calculate full servings and leftover weight for popcorn portions. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
+| [Raised Bed Soil Volume Calculator](../mcps/raised-bed-soil-volume-calculator.md) | Calculate the exact amount of soil needed for your raised garden beds. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Snow Density Loading](../mcps/snow-density-loading.md) | Calculate rider sinkage and flotation capacity based on snow properties. |
 | [Snowboard Detune Zone Calculator](../mcps/snowboard-detune-zone-calculator.md) | Calculate optimal edge detuning parameters to prevent edge catches during park riding. |
@@ -39,7 +47,9 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Tool Output Truncator and Size Limiter](../mcps/tool-output-truncator-and-size-limiter.md) | Safely shrinks tool outputs to fit byte limits without breaking multi-byte characters. |
 | [Tube Ride Duration Calculator](../mcps/tube-ride-duration-calculator.md) | Estimate tube ride duration, speed requirements, and exit windows using wave dynamics. |
 | [Unit Fraction Simplifier](../mcps/unit-fraction-simplifier.md) | Decomposes decimal measurements into the simplest combination of standard volume and length units. |
+| [Wallpaper Roll Calculator](../mcps/wallpaper-roll-calculator.md) | Calculate the exact number of wallpaper rolls needed for any project. |
 | [Wax Selection Guide](../mcps/wax-selection-guide.md) | Recommends specialized ski waxes based on real-time snow and environmental conditions. |
+| [Window Curtain Drop Calculator](../mcps/window-curtain-drop-calculator.md) | Calculate precise curtain fabric lengths based on window height and style. |
 | [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |
 
 

@@ -31,7 +31,6 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Chemical Equilibrium Solver](../mcps/chemical-equilibrium-solver.md) | Solves complex chemical equilibrium systems and calculates species concentrations. |
 | [Chromatography Method Development](../mcps/chromatography-method-development.md) | Automate chromatography method selection, column recommendation, and resolution prediction. |
 | [Chromatography Protein Purification Designer](../mcps/chromatography-protein-purification-designer.md) | Design optimal chromatography parameters including column sizing, resin capacity, and elution strategies. |
-| [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Cognitive Reserve Estimator](../mcps/cognitive-reserve-estimator.md) | Estimate cognitive reserve and get brain health insights. |
 | [Cold Water Survival Estimator](../mcps/cold-water-survival-estimator.md) | Estimates survival time, hypothermia onset, and swim failure in cold water. |

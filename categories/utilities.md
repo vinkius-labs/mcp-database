@@ -26,6 +26,8 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
 | [Bridge Scoring Engine](../mcps/bridge-scoring-engine.md) | Deterministic duplicate bridge scoring for contract results, trick points, bonuses, and penalties. |
+| [Brine Water Calculator](../mcps/brine-water-calculator.md) | Calculate precise salt mass and water volume for specific salinity concentrations. |
+| [Bulb Energy Calculator](../mcps/bulb-energy-calculator.md) | Calculate energy consumption, costs, and efficiency for light bulbs. |
 | [Button Sizing Engine](../mcps/button-sizing-engine.md) | Converts button sizes between Ligne, mm, and inches, and calculates buttonhole dimensions. |
 | [Calendar & Holiday Engine](../mcps/calendar-holiday-engine.md) | Calculate exact dates for global holidays across Gregorian, Islamic, Hebrew, Chinese, and Hindu calendars. |
 | [Calendar Converter](../mcps/calendar-converter.md) | Convert dates between 15+ calendar systems including Gregorian, Chinese, Persian, and Japanese Era. |
@@ -38,6 +40,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Compression Ratio Calculator](../mcps/compression-ratio-calculator.md) | A deterministic utility to evaluate text compression performance. |
 | [Constellation Locator](../mcps/constellation-locator.md) | Calculate real-time constellation visibility, transit times, and celestial profiles. |
 | [Context Window Token Estimator](../mcps/context-window-token-estimator.md) | Calculate exact token counts and payload distribution for AI agent context windows. |
+| [Cooking Temperature Converter](../mcps/cooking-temperature-converter.md) | Convert oven temperatures between Celsius and Fahrenheit with culinary precision. |
 | [Correlation Matrix Engine](../mcps/correlation-matrix-engine.md) | Generate exact Pearson and Spearman correlation matrices across all numeric columns local. Find the strongest relationships in your data without LLM math errors. |
 | [Country Data Resolver](../mcps/country-data-resolver.md) | Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data. |
 | [CRC32 Checksum Engine](../mcps/crc32-checksum-engine.md) | Calculate CRC32 checksums instantly — the same algorithm inside ZIP, PNG, Ethernet, and MPEG-2. Pure JS, zero dependencies, three output formats. |
@@ -106,8 +109,10 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Postal Address Normalizer](../mcps/postal-address-normalizer.md) | Standardizes and validates unstructured postal addresses for US, UK, CA, and AU. |
 | [PostgreSQL Connection String Parser](../mcps/postgresql-connection-string-parser.md) | Deconstructs PostgreSQL URIs into precise connection parameters. |
 | [Prime Factorization, GCD & LCM Calculator](../mcps/prime-factorization-gcd-lcm-calculator.md) | Compute exact prime factorizations and calculate GCD and LCM for sets of integers. |
+| [Rain Barrel Volume Calculator](../mcps/rain-barrel-volume-calculator.md) | Estimate rainwater collection from roof area and rainfall. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
+| [Recipe Pan Converter](../mcps/recipe-pan-converter.md) | Accurately scale ingredient quantities when switching between different pan sizes or shapes. |
 | [Retry Backoff Calculator](../mcps/retry-backoff-calculator.md) | Calculate deterministic exponential backoff delays and retry schedules. |
 | [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
 | [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert between Arabic numbers and Roman numerals with strict notation rules. |
@@ -148,6 +153,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
 | [Water Analysis Calculator](../mcps/water-analysis-calculator.md) | Calculates water quality indices, hardness levels, and regulatory compliance. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
+| [Water Tank Volume Calculator](../mcps/water-tank-volume-calculator.md) | Calculate geometric volume and fluid capacity for rectangular water tanks. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 | [Western Astrology Calculator](../mcps/western-astrology-calculator.md) | Calculate sun signs, moon signs, ascendants, and planetary positions. |
 | [Wind Chill Calculator](../mcps/wind-chill-calculator.md) | Calculate perceived wind chill temperatures and frostbite risk levels. |

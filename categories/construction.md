@@ -10,6 +10,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Basement Waterproofing Designer](../mcps/basement-waterproofing-designer.md) | Technical tool for designing basement waterproofing systems, including membranes and drainage. |
 | [Beam Design Simplified](../mcps/beam-design-simplified.md) | Calculate reinforced concrete beam parameters including steel area, bar selection, and shear reinforcement. |
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |
+| [Ceiling Area Calculator](../mcps/ceiling-area-calculator.md) | Calculate rectangular ceiling areas and convert between units. |
 | [Column Load Capacity Calculator](../mcps/column-load-capacity-calculator.md) | Calculate axial load, moment capacity, and slenderness for reinforced concrete columns. |
 | [Column Sizing Estimator](../mcps/column-sizing-estimator.md) | Preliminary sizing for reinforced concrete and steel columns based on vertical load accumulation. |
 | [Concrete Bleeding Rate Predictor](../mcps/concrete-bleeding-rate-predictor.md) | Predicts water bleeding rates, total volume, and finishing windows for fresh concrete mixes. |
@@ -74,6 +75,8 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Fieldwire](../mcps/fieldwire.md) | Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent. |
 | [Floor Flatness & Levelness Analyzer](../mcps/floor-flatness-levelness-analyzer.md) | Analyze concrete floor compliance using FF/FL F-number standards. |
 | [Floor Material Calculator](../mcps/floor-material-calculator.md) | Calculate the exact amount of tiles, wood, or porcelain needed for your flooring project. |
+| [Floor Tile Calculator](../mcps/floor-tile-calculator.md) | Calculate precise tile requirements including waste factors. |
+| [Flooring Waste Calculator](../mcps/flooring-waste-calculator.md) | Calculate flooring material requirements and waste amounts accurately. |
 | [Footing Size Calculator](../mcps/footing-size-calculator.md) | Calculate minimum square footing dimensions and thickness based on column load and soil bearing capacity. |
 | [Formwork Area Calculator](../mcps/formwork-area-calculator.md) | Estimate material requirements and quantities for construction formwork systems. |
 | [Formwork Pressure Calculator](../mcps/formwork-pressure-calculator.md) | Calculates lateral pressure on formwork using ACI standards. |
@@ -86,6 +89,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Ground Freezing Design](../mcps/ground-freezing-design.md) | Engineering tool for calculating freeze-wall formation parameters for shaft and tunnel excavations. |
 | [Ground Freezing Design Tool](../mcps/ground-freezing-design-tool.md) | Calculates thermal and hydraulic parameters for artificial ground freezing. |
 | [Ground Improvement Design](../mcps/ground-improvement-design.md) | Technical design for soil improvement methods including stone columns, vibro-compaction, and grouting. |
+| [Grout Quantity Calculator](../mcps/grout-quantity-calculator.md) | Calculate precise grout volumes and masses for construction joints. |
 | [HDB Renovation Compliance Checker](../mcps/hdb-renovation-compliance-checker.md) | Validate HDB renovation plans against structural and regulatory rules. |
 | [Home Paint Material Calculator](../mcps/home-paint-material-calculator.md) | Calculate paint, primer, labor, and total costs for any room or project. |
 | [HVAC Load Calculator (Manual J)](../mcps/hvac-load-calculator-manual-j.md) | Calculate heating and cooling loads in BTU/h and Tons using simplified Manual J standards. |
@@ -98,6 +102,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Micropile Design Engineer](../mcps/micropile-design-engineer.md) | Calculate bond length, steel sizing, and grout volume for micropile foundations. |
 | [Paint & Coating Calculator](../mcps/paint-coating-calculator.md) | Calculate theoretical and practical coverage, material waste, and coating requirements. |
 | [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
+| [Patio Paver Estimator](../mcps/patio-paver-estimator.md) | Calculate the exact number of pavers and total project cost for outdoor patio installations. |
 | [Pile Load Capacity Calculator](../mcps/pile-load-capacity-calculator.md) | Calculate pile axial capacity, allowable load, and settlement. |
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
 | [Plumbing Pipe Sizing](../mcps/plumbing-pipe-sizing.md) | Deterministic water supply pipe sizing based on IPC and Hunter's Curve. |
@@ -118,6 +123,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Sediment Control Design](../mcps/sediment-control-design.md) | Calculates pond dimensions, trap efficiency, and settling requirements for erosion control. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Sheet Pile Design](../mcps/sheet-pile-design.md) | Structural and geotechnical design for cantilever and anchored sheet pile walls. |
+| [Shelf Board Count](../mcps/shelf-board-count.md) | Calculate required shelving boards and optimize cutting patterns. |
 | [Shotcrete Mix Design Engineer](../mcps/shotcrete-mix-design-engineer.md) | Calculate precise shotcrete mix proportions, fiber dosages, and accelerator requirements. |
 | [Shotcrete Thickness Design](../mcps/shotcrete-thickness-design.md) | Calculates required shotcrete thickness, reinforcement, and application layers for ground support. |
 | [Slab Thickness Design](../mcps/slab-thickness-design.md) | Calculates required slab thickness, reinforcement, and deflection compliance. |
@@ -149,6 +155,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [US ADA Compliance Checker](../mcps/us-ada-compliance-checker.md) | Verify architectural elements against US ADA accessibility standards. |
 | [US Seismic Zone Checker](../mcps/us-seismic-zone-checker.md) | Identify Seismic Design Categories and structural detailing requirements based on US regional seismic data. |
 | [US Wind Load Calculator](../mcps/us-wind-load-calculator.md) | Calculate wind pressure (psf) based on ASCE 7 standards using regional wind speeds and terrain exposure. |
+| [Wall Area Calculator](../mcps/wall-area-calculator.md) | Calculate wall surface areas and estimate material needs. |
 | [Wallpaper Pattern Calculator](../mcps/wallpaper-pattern-calculator.md) | Calculate precise wallpaper quantities and cutting plans based on pattern repeats. |
 | [Water Heater Sizing Calculator](../mcps/water-heater-sizing-calculator.md) | Calculate required First Hour Rating (FHR), tank capacity, and efficiency benchmarks for water heaters based on occupancy and fuel type. |
 | [Waterproofing Area Calculator](../mcps/waterproofing-area-calculator.md) | Calculate material quantity, consumption, and estimated costs for waterproofing projects across various environments. |

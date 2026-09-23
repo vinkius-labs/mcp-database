@@ -381,6 +381,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Expense Growth Rate](../mcps/expense-growth-rate.md) | Calculate percentage changes between expense periods. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
 | [Fabric Cost Calculator](../mcps/fabric-cost-calculator.md) | Calculate fabric procurement costs including waste, MOQ, and bulk discounts. |
+| [Fan Cost Calculator](../mcps/fan-cost-calculator.md) | Calculate the electrical cost of running electric fans. |
 | [Farm Asset Depreciation Generator](../mcps/farm-asset-depreciation-generator.md) | Generate detailed depreciation schedules and tax impact analyses for farm assets using IRS guidelines. |
 | [Farm Financial Ratio Analyzer](../mcps/farm-financial-ratio-analyzer.md) | Calculate essential farm liquidity, solvency, profitability, and efficiency ratios. |
 | [Farm Labor Cost Calculator](../mcps/farm-labor-cost-calculator.md) | Estimate total seasonal labor expenses including H-2A compliance, taxes, and benefits. |
@@ -399,6 +400,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Fisher Transform Strategy](../mcps/fisher-transform-strategy.md) | A deterministic mean-reversion strategy using Fisher Transform to identify market exhaustion. |
 | [Flash Loan Arbitrage Strategy](../mcps/flash-loan-arbitrage-strategy.md) | Identify and validate profitable flash loan arbitrage opportunities across DEXs. |
 | [Flower Arrangement Cost Calculator](../mcps/flower-arrangement-cost-calculator.md) | Calculate precise costs, margins, and stem inventory for floral arrangements. |
+| [Food Delivery Tip Calculator](../mcps/food-delivery-tip-calculator.md) | Calculate precise delivery tips and view industry standard recommendations. |
+| [Food Order Splitter](../mcps/food-order-splitter.md) | Splits shared food orders equally among diners. |
 | [Food Price per Kilogram](../mcps/food-price-per-kilogram.md) | Calculate and compare food unit prices per kilogram to find the best value. |
 | [foundation-amount-total](../mcps/foundation-amount-total.md) | Calculates aggregate foundation funding by analyzing application details and statuses. |
 | [Fragrance Cost per Spray](../mcps/fragrance-cost-per-spray.md) | Calculate the precise cost of every individual fragrance spray. |
@@ -456,6 +459,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |
 | [Grain Storage Economics](../mcps/grain-storage-economics.md) | Evaluate the financial viability of on-farm grain storage decisions. |
 | [Grid Trading Strategy](../mcps/grid-trading-strategy.md) | Automated grid trading for sideways markets with volatility filtering. |
+| [Grocery Discount Calculator](../mcps/grocery-discount-calculator.md) | Calculate grocery savings and final totals with precision. |
 | [Gross Margin Analysis for SaaS](../mcps/gross-margin-analysis-for-saas.md) | Calculate SaaS profitability, break-even points, and scale efficiencies. |
 | [Gross Margin Analyzer](../mcps/gross-margin-analyzer.md) | Calculate product gross margins, identify underperforming products against industry benchmarks, and simulate COGS reduction impact. |
 | [Gross Profit Efficiency Calculator](../mcps/gross-profit-efficiency-calculator.md) | Analyze SaaS unit economics, COGS breakdown, and simulate margin improvement levers. |
@@ -464,6 +468,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [HDB BTO Ballot Probability Calculator](../mcps/hdb-bto-ballot-probability-calculator.md) | Calculate your relative chances of securing an HDB BTO flat based on applicant type, project maturity, and ethnic quotas. |
 | [HDB Proximity Grant Calculator](../mcps/hdb-proximity-grant-calculator.md) | Calculate exact HDB Proximity Housing Grant (PHG) amounts based on family ties and flat type. |
 | [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
+| [Heater Cost Calculator](../mcps/heater-cost-calculator.md) | Calculate the operational costs of electric heaters based on wattage and electricity rates. |
 | [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
 | [High-Low Index Calculator](../mcps/high-low-index-calculator.md) | Calculate market breadth, cumulative summation, and detect momentum divergence. |
@@ -823,6 +828,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Percentage Calculator](../mcps/tax-percentage-calculator.md) | Derive tax rates and validate monetary tax figures. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
+| [tea-leaf-cost](../mcps/tea-leaf-cost.md) | Calculate tea costs for single servings, bulk batches, and inventory tiers. |
 | [Techstars Deal Economics Analyzer](../mcps/techstars-deal-economics-analyzer.md) | Calculate effective cost of capital and net economic benefits for Techstars accelerator deals. |
 | [Testing Automation ROI Calculator](../mcps/testing-automation-roi-calculator.md) | Calculate the financial and operational return on investment for transitioning from manual to automated testing. |
 | [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |

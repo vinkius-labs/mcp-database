@@ -9,14 +9,17 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Asset Panda](../mcps/asset-panda.md) | Track and manage fixed assets with Asset Panda — audit groups, objects, and locations via AI. |
 | [Beauty Product Inventory Manager](../mcps/beauty-product-inventory-manager.md) | Track and manage beauty product stock levels and usage. |
 | [Button Count Utility](../mcps/button-count-utility.md) | Calculate total button requirements and production buffers for garment manufacturing. |
+| [Cleaning Product Inventory Manager](../mcps/cleaning-product-inventory-manager.md) | Manage and audit cleaning supply inventories with real-time stock tracking. |
 | [Days of Supply Calculator](../mcps/days-of-supply-calculator.md) | Monitor inventory health by calculating stock coverage and identifying supply risks. |
 | [Envi Healthcare Supply Chain](../mcps/envi-healthcare-supply-chain.md) | Equip your AI agent to manage healthcare purchase orders, track medical inventory, and monitor vendors via the Envi API. |
 | [Festival Wristband Planner](../mcps/festival-wristband-planner.md) | Calculate precise wristband inventory requirements for festivals. |
+| [Food Donation Logistics](../mcps/food-donation-logistics.md) | Calculate required donation boxes and packing efficiency for food logistics. |
 | [Gallery Artwork Counter](../mcps/gallery-artwork-counter.md) | Track and analyze artwork inventory and display metrics across multiple art galleries. |
 | [Garment Size Averaging](../mcps/garment-size-averaging.md) | Convert qualitative garment sizes into quantitative numeric averages. |
 | [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
 | [Nail Polish Inventory Planner](../mcps/nail-polish-inventory-planner.md) | Calculate required nail polish bottles and manage manicure inventory efficiency. |
 | [Order Time](../mcps/order-time.md) | Inventory and order management — manage items, customers, and sales orders via Order Time. |
+| [Plant Pot Counter](../mcps/plant-pot-counter.md) | Calculate required plant pots based on plant counts and grouping rules. |
 | [Reorder Point Calculator](../mcps/reorder-point-calculator.md) | Calculate optimal reorder points and safety stock levels based on demand volatility and service level targets. |
 | [Safety Stock Calculator](../mcps/safety-stock-calculator.md) | Calculate optimal safety stock levels using Square Root, Statistical, and Fixed Coverage methods. |
 | [Seasonality Index Calculator](../mcps/seasonality-index-calculator.md) | Calculate seasonal indices and optimize inventory planning using historical sales data. |

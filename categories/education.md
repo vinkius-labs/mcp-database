@@ -47,6 +47,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Periodic Trend Analyzer](../mcps/periodic-trend-analyzer.md) | Analyzes periodic trends and elemental properties, accounting for atomic structure anomalies. |
 | [pH & pOH Calculator](../mcps/ph-poh-calculator.md) | Calculate pH, pOH, and ion concentrations for strong/weak electrolytes and buffers. |
 | [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
+| [Quiz Average Analytics](../mcps/quiz-average-analytics.md) | Calculate and analyze student quiz performance metrics. |
 | [Redox Reaction Balancer](../mcps/redox-reaction-balancer.md) | Balance redox reactions and identify chemical agents. |
 | [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |

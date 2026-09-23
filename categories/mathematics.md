@@ -50,6 +50,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Slope Vertical Drop Calculator](../mcps/slope-vertical-drop-calculator.md) | Calculate vertical elevation changes, steepness, and terrain profiles. |
 | [Sourdough Hydration Calculator](../mcps/sourdough-hydration-calculator.md) | Calculate precise baker's percentages, hydration, and batch scaling for sourdough recipes. |
 | [Spice Level Adjuster](../mcps/spice-level-adjuster.md) | Scale recipe heat and manage spice tolerance using Scoville Heat Units. |
+| [Spice Mix Scaler](../mcps/spice-mix-scaler.md) | Scales spice blend recipes for commercial batch production using precise multipliers. |
 | [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
 | [Swell Refraction Calculator](../mcps/swell-refraction-calculator.md) | Predict wave refraction, height changes, and breaking stability using Snell's and Green's Laws. |
 | [Synth FM Ratio Calculator](../mcps/synth-fm-ratio-calculator.md) | A deterministic FM synthesis engine for calculating harmonic ratios and sideband spectra. |

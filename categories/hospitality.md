@@ -4,6 +4,7 @@ Explore the open database of **hospitality** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Mocktail Glass Count](../mcps/mocktail-glass-count.md) | Calculate exact serving yields and batch requirements for event planning. |
 | [Wine Serving Calculator](../mcps/wine-serving-calculator.md) | Deterministic wine service planning for events. |
 
 

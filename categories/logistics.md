@@ -6,11 +6,15 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
+| [Beverage Ice Volume Calculator](../mcps/beverage-ice-volume-calculator.md) | Calculate precise ice requirements for beverage service. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
 | [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
+| [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
+| [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
 | [Downwind Run Planner](../mcps/downwind-run-planner.md) | Plan logistics for downwind runs, including distance, drift, and shuttle needs. |
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
 | [Event Seating Planner](../mcps/event-seating-planner.md) | Automated deterministic seating arrangement generator. |
+| [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
@@ -19,10 +23,12 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
 | [Oil Tanker Voyage Planner](../mcps/oil-tanker-voyage-planner.md) | Calculate voyage duration, fuel consumption, and maritime profitability. |
+| [Outdoor Chair Counter](../mcps/outdoor-chair-counter.md) | Calculate precise chair and table requirements for outdoor events. |
 | [Package Serving Calculator](../mcps/package-serving-calculator.md) | Calculate total, full, and remaining servings from package weight. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
+| [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |
 | [Shipping Route Optimization](../mcps/shipping-route-optimization.md) | Optimize maritime routes for tankers using weather-aware routing and fuel efficiency calculations. |
 | [Short-Term Mine Planning Optimizer](../mcps/short-term-mine-planning-optimizer.md) | Aligns equipment, grade, and stockpiles into actionable mining schedules. |
 | [Spill Response Equipment Planner](../mcps/spill-response-equipment-planner.md) | Determines necessary spill response equipment, quantities, and strategic deployment locations. |

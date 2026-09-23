@@ -87,6 +87,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Rate Limiter State Calculator](../mcps/rate-limiter-state-calculator.md) | Deterministic engine for evaluating Token Bucket, Leaky Bucket, and sliding window rate limiting states. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
 | [SNS Fanout & Filtering Calculator](../mcps/sns-fanout-filtering-calculator.md) | Calculate AWS SNS fanout, throughput, and filter policy complexity. |
+| [Storage Utilization Utility](../mcps/storage-utilization-utility.md) | Calculate storage usage, remaining capacity, and threshold alerts. |
 | [Subsea Pipeline Design Engineer](../mcps/subsea-pipeline-design-engineer.md) | Calculates structural requirements, stability, and installation methods for subsea pipelines. |
 | [Vector Database TCO Calculator](../mcps/vector-database-tco-calculator.md) | Calculate the total cost of ownership for vector databases, comparing managed vs self-hosted models. |
 | [Voice AI Economics Calculator](../mcps/voice-ai-economics-calculator.md) | Calculate voice AI integration costs, infrastructure needs, and UX value. |

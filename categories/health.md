@@ -22,6 +22,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Battle Rope Workout Timer](../mcps/battle-rope-workout-timer.md) | Generates structured battle rope HIIT sessions based on rope dimensions and fitness levels. |
 | [Bench Press Arch Evaluator](../mcps/bench-press-arch-evaluator.md) | Optimize your powerlifting bench press arch for maximum efficiency and competition legality. |
 | [Bento Macro Balancer](../mcps/bento-macro-balancer.md) | Calculate precise nutritional profiles and traditional balance ratios for Japanese bento boxes. |
+| [Beverage Sugar Tracker](../mcps/beverage-sugar-tracker.md) | Calculate cumulative sugar content from various beverage selections. |
 | [Blood Flow Restriction Calculator](../mcps/blood-flow-restriction-calculator.md) | Calculate safe and effective BFR training parameters including pressure, sets, and reps. |
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Body Fat Percentage Estimator](../mcps/body-fat-percentage-estimator.md) | Estimate body fat, lean mass, and fat mass using the US Navy method. |
