@@ -17,15 +17,15 @@ This MCP server provides precise chemical energy calculations. Use `calculate_to
 - **compare_bond_strengths**: Pass a comma-separated list of bond types.
 
 Compares two or more bond types to identify which is stronger or weaker
-- **get_bond_dissociation_energy**: Specify the bond type and molecule name if required.
-
-Provides the energy required to break a specific single bond, allowing the user to distinguish between average values and specific molecular bond strengths
 - **calculate_reaction_enthalpy**: Supply lists for both reactants and products.
 
 Determines the enthalpy of a chemical reaction by comparing the energy used to break reactant bonds against the energy released by forming product bonds
 - **calculate_total_bond_energy**: Provide a list of bonds to break.
 
 Calculates the total energy required to break all bonds in a given set of molecules or a list of specific bonds
+- **get_bond_dissociation_energy**: Specify the bond type and molecule name if required.
+
+Provides the energy required to break a specific single bond, allowing the user to distinguish between average values and specific molecular bond strengths
 
 
 ## 💬 Prompt Examples

@@ -38,11 +38,11 @@ Connect your AI agent to **Calenso** to natively manage appointment scheduling, 
 
 List branches/locations
 - **list_calenso_staff**: List staff members
-- **create_calenso_customer**: Create a new customer
-- **list_calenso_customers**: List all customers
 - **list_calenso_services**: Only use this tool to list available services.
 
 List available services
+- **create_calenso_customer**: Create a new customer
+- **list_calenso_customers**: List all customers
 - **list_calenso_appointments**: List all appointments
 
 

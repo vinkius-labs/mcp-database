@@ -14,9 +14,6 @@ Empower your AI agents to interact with your corporate intranet using Interact S
 
 
 ## Available Tools (10)
-- **list_content**: This action does not require any parameters.
-
-Lists intranet content items
 - **list_events**: This action does not require any parameters.
 
 Lists upcoming intranet events
@@ -26,12 +23,6 @@ Retrieves intranet usage analytics
 - **list_groups**: This action does not require any parameters.
 
 Lists all collaboration groups
-- **get_person**: Provide the unique identifier of the person.
-
-Retrieves details for a specific person
-- **list_departments**: This action does not require any parameters.
-
-Lists all organization departments
 - **list_locations**: This action does not require any parameters.
 
 Lists all organization locations
@@ -41,6 +32,15 @@ Lists latest news articles
 - **search**: Always include a search query string.
 
 Searches for content, people, and groups
+- **get_person**: Provide the unique identifier of the person.
+
+Retrieves details for a specific person
+- **list_content**: This action does not require any parameters.
+
+Lists intranet content items
+- **list_departments**: This action does not require any parameters.
+
+Lists all organization departments
 - **list_people**: This action does not require any parameters.
 
 Lists all people/users in the intranet

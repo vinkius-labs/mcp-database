@@ -15,9 +15,9 @@ This MCP server provides tools to assess burnout risk by mapping work environmen
 
 ## Available Tools (4)
 - **analyze_recovery_efficiency**: Evaluates if the amount of recovery time is sufficient given the workload and hours worked
-- **calculate_burnout_risk**: Provides a comprehensive assessment of an individual's burnout risk based on their current work environment
 - **get_risk_thresholds**: Informs the user of the specific score ranges used to categorize risk levels
 - **identify_mbi_domain_alignment**: Maps specific occupational stressors to the three Maslach Burnout Inventory domains
+- **calculate_burnout_risk**: Provides a comprehensive assessment of an individual's burnout risk based on their current work environment
 
 
 ## 💬 Prompt Examples

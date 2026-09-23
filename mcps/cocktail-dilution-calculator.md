@@ -5,18 +5,19 @@
 
 ## Overview
 
-**Category:** [science](../categories/science.md)
+**Category:** [food-and-drink](../categories/food-and-drink.md)
 
-Calculate final volume, ABV, and water dilution for cocktails.
+Calculate precise water and ice dilution for cocktail recipes.
 
 ## Description
-This MCP server provides deterministic calculations for cocktail chemistry. It determines the final volume, alcohol-by-volume (ABV), and total water added based on ingredients, preparation methods, and dilution physics. Use `calculate_cocktail_stats` to get precise results for stirred, shaken, or blended drinks, or `validate_recipe_integrity` to ensure your recipe follows standard cocktail logic. It also provides specific dilution guidelines via `get_dilution_guidelines`.
+This MCP server provides precision calculation tools for mixologists to manage cocktail dilution. It allows you to determine the exact amount of water or melted ice needed to reach specific dilution targets based on your base ingredients. Use `calculate_dilution_volume` to find the required water volume, `calculate_total_from_target` to work backward from a desired final drink size, `estimate_ice_melt_volume` to convert water volume into ice weight, or `validate_recipe_balance` to verify if your current volumes match your target percentage.
 
 
-## Available Tools (3)
-- **calculate_cocktail_stats**: Calculates the final volume, final ABV, and water added for a specific cocktail recipe
-- **get_dilution_guidelines**: Provides the expected dilution percentages and temperature targets based on the chosen method
-- **validate_recipe_integrity**: Ensures a recipe is physically possible and follows standard cocktail logic
+## Available Tools (4)
+- **estimate_ice_melt_volume**: Converts a target dilution volume into a weight of ice, assuming standard ice melting properties
+- **calculate_dilution_volume**: Determines how much water/ice is needed to hit a specific dilution target
+- **calculate_total_from_target**: Determines the required base volume if the user knows their final desired cocktail volume and target dilution
+- **validate_recipe_balance**: Checks if a proposed set of volumes (base and dilution) matches a specific target dilution percentage
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ This MCP server provides deterministic calculations for cocktail chemistry. It d
 Here are some examples of how you can interact with the **Cocktail Dilution Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate the stats for a Negroni: 30ml Gin (40% ABV), 30ml Sweet Vermouth (18% ABV), and 30ml Campari (25% ABV), stirred."
+> "I have 60ml of base ingredients. How much water do I need for a 25% dilution?"
 
 **🤖 AI Agent:**
-> The Negroni will have a final volume of 117.0ml, a final ABV of 23.5%, and 27.0ml of water added.
+> You need 15ml of water, resulting in a total volume of 75ml.
 
 ---
 
 **👤 You:**
-> "What are the dilution guidelines for a shaken cocktail?"
+> "I want a final cocktail volume of 120ml with a 20% dilution. What is my base volume?"
 
 **🤖 AI Agent:**
-> A shaken cocktail typically results in a 40% dilution and a cold target serving temperature.
+> You need 100ml of base ingredients and 20ml of dilution volume.
 
 ---
 
 **👤 You:**
-> "Is a recipe with 1000ml of Gin valid?"
+> "How much ice weight do I need to get 30ml of water?"
 
 **🤖 AI Agent:**
-> No, the recipe is invalid because the total volume exceeds the standard serving size limit.
+> You need approximately 31.2g of ice.
 
 
 ## ❓ FAQ
 
-**Q: How does the dilution calculation work?**
-The tool applies empirical dilution rates: 30% for stirred, 40% for shaken, and 50% for blended drinks. For layered drinks, no dilution is applied.
+**Q: How do I calculate the water needed for a Negroni?**
+You can use the `calculate_dilution_volume` tool by providing the total volume of your gin, vermouth, and bitters as the base volume, and your target dilution percentage.
 
-**Q: Can I check if my recipe is valid?**
-Yes, you can use the `validate_recipe_integrity` tool to check for negative volumes, invalid ABV values, or excessive total volumes.
+**Q: Can I estimate how much ice I need to melt?**
+Yes, use the `estimate_ice_melt_volume` tool to convert your required dilution volume into the estimated weight of ice needed.
 
-**Q: What information do I need to provide?**
-You need to provide a list of ingredients (name, volume, and ABV), the preparation method (stirred, shaken, blended, or layered), and whether the drink is layered.
+**Q: How do I check if my cocktail is balanced?**
+Use the `validate_recipe_balance` tool to input your base volume, dilution volume, and target percentage to see if they match.
 
 
 ## Installation & Usage
