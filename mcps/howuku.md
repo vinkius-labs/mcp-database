@@ -14,12 +14,22 @@ Empower your AI agents to analyze user behavior on your websites. This MCP serve
 
 
 ## Available Tools (10)
-- **list_events**: Provide the project ID to ensure accurate results.
+- **list_projects**: Lists Howuku projects (sites)
+- **list_surveys**: Use the project ID to filter results.
 
-Lists custom tracking events for a project
+Lists surveys for a project
+- **get_me**: No arguments are needed.
+
+Gets current authenticated user info
 - **get_project**: Provide the project ID as the required argument.
 
 Retrieves details for a specific project
+- **list_events**: Provide the project ID to ensure accurate results.
+
+Lists custom tracking events for a project
+- **list_feedback**: Pass the project ID to narrow down the results.
+
+Lists visual feedback items for a project
 - **list_funnels**: Specify the project ID to retrieve relevant funnels.
 
 Lists conversion funnels for a project
@@ -27,19 +37,9 @@ Lists conversion funnels for a project
 
 Lists heatmaps for a project
 - **list_organizations**: Lists organizations associated with your account
-- **list_projects**: Lists Howuku projects (sites)
 - **list_recordings**: You must provide the project ID.
 
 Lists session recordings for a project
-- **list_surveys**: Use the project ID to filter results.
-
-Lists surveys for a project
-- **get_me**: No arguments are needed.
-
-Gets current authenticated user info
-- **list_feedback**: Pass the project ID to narrow down the results.
-
-Lists visual feedback items for a project
 
 
 ## 💬 Prompt Examples

@@ -32,15 +32,6 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 
 
 ## Available Tools (12)
-- **apply_for_loan**: The customer ID and requested amount are mandatory.
-
-Apply for a loan on behalf of a customer
-- **create_customer**: Ensure all required personal details are provided.
-
-Register a new customer for lending
-- **disburse_funds**: Provide the loan ID to trigger the transaction.
-
-Trigger fund disbursement for an approved loan
 - **get_balance**: Get current wallet balance in Fig Finance
 - **get_customer**: Provide the customer ID as a required parameter.
 
@@ -57,6 +48,15 @@ Get details for the authorized application account
 - **get_repayments**: Pass the loan ID to fetch the required data.
 
 Get the repayment schedule and status for a loan
+- **apply_for_loan**: The customer ID and requested amount are mandatory.
+
+Apply for a loan on behalf of a customer
+- **create_customer**: Ensure all required personal details are provided.
+
+Register a new customer for lending
+- **disburse_funds**: Provide the loan ID to trigger the transaction.
+
+Trigger fund disbursement for an approved loan
 - **list_customers**: Do not use this tool if you only need details for one customer.
 
 List all customers in your Fig Finance account

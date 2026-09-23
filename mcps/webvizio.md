@@ -41,11 +41,11 @@ Connect your **WebVizio** account to any AI agent and streamline your visual col
 - **list_webvizio_projects**: List all website feedback projects
 - **list_webvizio_tasks**: List tasks in a project
 - **list_webvizio_webhooks**: List configured webhooks
+- **create_webvizio_task**: Create a new feedback task
+- **get_webvizio_task_details**: Get task details
 - **update_webvizio_task**: Use this tool only when the task ID is known.
 
 Update a task status or details
-- **create_webvizio_task**: Create a new feedback task
-- **get_webvizio_task_details**: Get task details
 
 
 ## 💬 Prompt Examples

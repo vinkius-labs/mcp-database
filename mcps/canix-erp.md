@@ -35,36 +35,36 @@ Connect your **Canix** account to any AI agent and orchestrate your cannabis cul
 
 
 ## Available Tools (10)
-- **list_inventory_packages**: This tool does not require any parameters.
-
-List all cannabis packages (inventory) in Canix
-- **get_package_details**: Provide the package ID to execute the query.
-
-Get details of a specific cannabis package
 - **get_sales_order**: Pass the unique sales order ID to fetch the data.
 
 Get details of a specific sales order
 - **get_account_info**: No parameters are needed for this query.
 
 Retrieve core account information
-- **get_non_cannabis_product**: Supply the product ID to fetch the required information.
-
-Get details of a specific non-cannabis product
 - **get_plant_details**: Use the plant ID to identify the required record.
 
 Get details of a specific plant
-- **list_plant_batches**: This tool does not require any parameters.
-
-List immature plant batches
 - **list_non_cannabis_inventory**: This tool does not require any parameters.
 
 List non-cannabis inventory like packaging or nutrients
+- **list_plant_batches**: This tool does not require any parameters.
+
+List immature plant batches
 - **list_plants**: This tool does not require any parameters.
 
 List individual plants in the cultivation phase
 - **list_sales_orders**: This tool does not require any parameters.
 
 List all sales orders
+- **get_non_cannabis_product**: Supply the product ID to fetch the required information.
+
+Get details of a specific non-cannabis product
+- **get_package_details**: Provide the package ID to execute the query.
+
+Get details of a specific cannabis package
+- **list_inventory_packages**: This tool does not require any parameters.
+
+List all cannabis packages (inventory) in Canix
 
 
 ## 💬 Prompt Examples

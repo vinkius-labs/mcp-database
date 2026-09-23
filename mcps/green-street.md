@@ -35,16 +35,26 @@ Connect your **Green Street** account to any AI agent and take full control of y
 
 
 ## Available Tools (12)
-- **get_forecast_scenarios**: Retrieve forward-looking market and sector projections
 - **get_market_grades**: Must provide the name or ID of the market.
 
 Get grades and rankings for a specific market
-- **get_earnings_metrics**: Provide the company’s ticker symbol.
-
-Get FFO/FAD earnings data for a company
 - **get_historical_transactions**: Optionally filter results by a specific market.
 
 Retrieve historical transaction summaries
+- **list_sectors**: List available real estate sectors
+- **get_company_summary**: Must provide a valid company symbol.
+
+Get financial summary for a specific company by symbol
+- **get_earnings_metrics**: Provide the company’s ticker symbol.
+
+Get FFO/FAD earnings data for a company
+- **get_forecast_scenarios**: Retrieve forward-looking market and sector projections
+- **get_market_projections**: Must specify the target market name or ID.
+
+Get forward-looking NOI projections for a market
+- **get_market_sector_summary**: Must provide a valid sector name.
+
+Get analytics and grades for a specific market sector
 - **get_nav_estimates**: Provide the company’s ticker symbol.
 
 Get Net Asset Value (NAV) estimates for a company
@@ -55,16 +65,6 @@ Search and retrieve commercial real estate news
 
 Get geographic and property-type breakouts for a portfolio
 - **list_companies**: List all REITs and real estate companies covered by Green Street
-- **list_sectors**: List available real estate sectors
-- **get_market_projections**: Must specify the target market name or ID.
-
-Get forward-looking NOI projections for a market
-- **get_market_sector_summary**: Must provide a valid sector name.
-
-Get analytics and grades for a specific market sector
-- **get_company_summary**: Must provide a valid company symbol.
-
-Get financial summary for a specific company by symbol
 
 
 ## 💬 Prompt Examples

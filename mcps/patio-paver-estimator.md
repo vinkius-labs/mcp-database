@@ -14,10 +14,10 @@ This MCP server provides specialized tools for outdoor landscaping projects. It 
 
 
 ## Available Tools (4)
-- **apply_waste_factor**: Adjusts the base quantity of pavers to include a buffer for breakage and cutting
-- **calculate_base_paver_count**: Determines the absolute minimum number of pavers needed to cover a surface
 - **estimate_project_cost**: Calculates the total monetary investment required for the pavers
 - **validate_dimensions**: Checks if the provided dimensions for a single paver are physically realistic
+- **apply_waste_factor**: Adjusts the base quantity of pavers to include a buffer for breakage and cutting
+- **calculate_base_paver_count**: Determines the absolute minimum number of pavers needed to cover a surface
 
 
 ## 💬 Prompt Examples

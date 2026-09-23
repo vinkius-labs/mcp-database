@@ -14,10 +14,10 @@ This MCP server provides tools to manage household inventory by calculating supp
 
 
 ## Available Tools (4)
-- **analyze_usage_trend**: Evaluates the relationship between current stock and usage to identify potential shortages
 - **get_conservative_duration**: Calculates a safety-first estimate of remaining days by applying a buffer
 - **get_replenishment_target**: Determines the required quantity to purchase to reach a desired number of days of coverage
 - **get_supply_duration**: Calculates the total number of days the current supply will last
+- **analyze_usage_trend**: Evaluates the relationship between current stock and usage to identify potential shortages
 
 
 ## 💬 Prompt Examples

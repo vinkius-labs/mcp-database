@@ -14,10 +14,10 @@ This MCP server provides tools to analyze student quiz performance. Use `get_ave
 
 
 ## Available Tools (4)
-- **evaluate_passing_status**: Checks if a calculated average meets a specific requirement
 - **get_average_score**: Calculates the mean score from a provided list of quiz results
 - **get_performance_spread**: Determines the range and distribution of scores
 - **get_tier_classification**: Maps a score to a qualitative performance category
+- **evaluate_passing_status**: Checks if a calculated average meets a specific requirement
 
 
 ## 💬 Prompt Examples

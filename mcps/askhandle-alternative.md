@@ -36,22 +36,22 @@ Connect your **AskHandle** account to any AI agent to manage your conversational
 ## Available Tools (18)
 - **create_room**: Create a new chat room
 - **create_message**: Send a new message and get an AI response
-- **create_webhook**: Create a new webhook subscription
 - **delete_lead**: Delete a lead record
+- **get_webhook**: Retrieve a specific webhook
+- **list_rooms**: List all chat rooms
+- **update_webhook**: Update a webhook (e.g., change target URL)
+- **get_message**: Retrieve a specific message
+- **delete_webhook**: Remove a webhook subscription
+- **list_webhooks**: List all active webhooks
+- **create_lead**: Manually create a new lead
+- **create_webhook**: Create a new webhook subscription
 - **delete_room**: Delete a specific room
 - **get_lead**: Retrieve a specific lead
 - **get_room**: Retrieve details of a specific room
-- **get_webhook**: Retrieve a specific webhook
 - **list_leads**: List all leads
-- **list_rooms**: List all chat rooms
-- **update_lead**: Update lead information
-- **update_webhook**: Update a webhook (e.g., change target URL)
-- **delete_webhook**: Remove a webhook subscription
-- **get_message**: Retrieve a specific message
 - **list_messages**: List all messages
-- **list_webhooks**: List all active webhooks
+- **update_lead**: Update lead information
 - **update_room**: Update a specific room
-- **create_lead**: Manually create a new lead
 
 
 ## 💬 Prompt Examples

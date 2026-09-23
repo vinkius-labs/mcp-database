@@ -33,6 +33,26 @@ Connect your **Gotify** instance to any AI agent to streamline your notification
 
 
 ## Available Tools (22)
+- **delete_all_messages**: Do not use this tool if you only intend to delete specific messages.
+
+Delete all messages for the authenticated client
+- **get_clients**: List all clients
+- **get_version**: Get server version info
+- **send_message**: Requires GOTIFY_APP_TOKEN.
+
+Send a message via Gotify
+- **update_client**: Specify the Client ID and the fields to modify.
+
+Update a client
+- **create_application**: Supply both the required name and description.
+
+Create a new application
+- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
+
+Retrieve messages
+- **get_users**: Requires admin privileges.
+
+List all users (Admin only)
 - **change_password**: Must provide a new password.
 
 Change current user password
@@ -42,36 +62,9 @@ Create a new client
 - **create_user**: Provide the username and password; admin status is optional.
 
 Create a new user (Admin only)
-- **delete_all_messages**: Do not use this tool if you only intend to delete specific messages.
-
-Delete all messages for the authenticated client
 - **delete_application**: Provide the unique Application ID.
 
 Delete an application
-- **get_clients**: List all clients
-- **get_current_user**: Get current user details
-- **get_plugin_config**: Requires a plugin ID.
-
-Get plugin configuration
-- **get_plugin_display**: Requires a plugin ID.
-
-Get plugin display info
-- **get_version**: Get server version info
-- **send_message**: Requires GOTIFY_APP_TOKEN.
-
-Send a message via Gotify
-- **update_application**: Specify the Application ID and the fields to modify.
-
-Update an application
-- **update_client**: Specify the Client ID and the fields to modify.
-
-Update a client
-- **update_plugin_config**: Must provide both an ID and the new configuration.
-
-Update plugin configuration
-- **create_application**: Supply both the required name and description.
-
-Create a new application
 - **delete_client**: Provide the unique Client ID.
 
 Delete a client
@@ -79,14 +72,21 @@ Delete a client
 
 Delete a specific message
 - **get_applications**: List all applications
+- **get_current_user**: Get current user details
 - **get_health**: Get server health status
+- **get_plugin_config**: Requires a plugin ID.
+
+Get plugin configuration
+- **get_plugin_display**: Requires a plugin ID.
+
+Get plugin display info
 - **get_plugins**: List all plugins
-- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
+- **update_application**: Specify the Application ID and the fields to modify.
 
-Retrieve messages
-- **get_users**: Requires admin privileges.
+Update an application
+- **update_plugin_config**: Must provide both an ID and the new configuration.
 
-List all users (Admin only)
+Update plugin configuration
 
 
 ## 💬 Prompt Examples

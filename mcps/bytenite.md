@@ -38,27 +38,27 @@ Connect your **ByteNite** account to any AI agent and orchestrate your video enc
 - **create_encoding_job**: Ensure the template ID and input URL are provided.
 
 Start a new video encoding job
-- **get_system_info**: This tool does not require any parameters.
-
-Retrieve core system information and health
 - **get_account_info**: This tool does not require any parameters.
 
 Retrieve core account/profile statistics
 - **get_app**: Provide the required App ID.
 
 Get details of a specific app
+- **list_storage_buckets**: This tool does not require any parameters.
+
+List all configured storage buckets
 - **get_encoding_job**: Provide a valid Job ID.
 
 Get details and progress of a specific encoding job
+- **get_system_info**: This tool does not require any parameters.
+
+Retrieve core system information and health
 - **get_template**: Use the required Template ID.
 
 Get details of a specific encoding template
 - **list_apps**: This tool does not require any parameters.
 
 List all available apps in the ByteNite ecosystem
-- **list_storage_buckets**: This tool does not require any parameters.
-
-List all configured storage buckets
 - **list_encoding_jobs**: This tool does not require any parameters.
 
 List all video encoding jobs

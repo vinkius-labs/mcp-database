@@ -41,10 +41,10 @@ Connect your **Flux Markets** (Onyx) account to any AI agent to monitor energy m
 - **get_live_tickers**: Get real-time energy prices
 - **get_market_snapshot**: Get current market snapshot
 - **get_officials**: Get benchmark reports (The Officials)
+- **get_historical_tickers**: Get historical energy prices
 - **get_account_info**: Use this tool only to retrieve current account status.
 
 Get account and API usage details
-- **get_historical_tickers**: Get historical energy prices
 
 
 ## 💬 Prompt Examples

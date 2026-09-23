@@ -50,10 +50,10 @@ Start a new data export in the background
 
 Detailed stats for a specific item in a category
 - **create_site**: Create a new site
+- **get_export**: Get export status and metadata
 - **get_stats_hits**: Use start and end dates to define the reporting period.
 
 Overview of pageviews per path
-- **get_export**: Get export status and metadata
 
 
 ## 💬 Prompt Examples

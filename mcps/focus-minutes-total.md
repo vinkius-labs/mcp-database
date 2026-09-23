@@ -14,8 +14,8 @@ This MCP server provides tools to manage and analyze focus session data. It allo
 
 
 ## Available Tools (4)
-- **get_average_session_duration**: Get the average duration of focus sessions for a user
 - **get_session_count**: Get the total number of focus sessions for a user
+- **get_average_session_duration**: Get the average duration of focus sessions for a user
 - **get_total_focus_minutes**: You can optionally filter by a session ID pattern.
 
 Get the total focus minutes for a user

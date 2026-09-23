@@ -14,10 +14,10 @@ This MCP server provides tools to manage and monitor task progress within a faci
 
 
 ## Available Tools (4)
-- **get_room_completion_rate**: 
 - **get_room_details**: 
 - **get_room_task_counts**: 
 - **list_all_rooms**: 
+- **get_room_completion_rate**: 
 
 
 ## 💬 Prompt Examples

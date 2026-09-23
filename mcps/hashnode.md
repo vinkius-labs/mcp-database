@@ -64,12 +64,12 @@ Publish an existing draft as a post
 
 Update an existing draft
 - **update_post**: Modify an existing post
-- **get_feed**: Use after cursor for pagination.
-
-Get the global Hashnode feed
 - **submit_draft_for_review**: Used by contributors.
 
 Submit a draft for editor review
+- **get_feed**: Use after cursor for pagination.
+
+Get the global Hashnode feed
 
 
 ## 💬 Prompt Examples

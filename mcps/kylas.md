@@ -33,25 +33,25 @@ Connect your **Kylas** account to any AI agent and manage your sales CRM through
 
 
 ## Available Tools (7)
-- **create_contact**: Provide all required contact details in the body JSON.
-
-Create a new contact
 - **create_lead**: Pass data as a JSON string.
 
 Create a new lead
+- **list_leads**: List all Kylas leads
+- **create_contact**: Provide all required contact details in the body JSON.
+
+Create a new contact
 - **get_lead**: Pass the lead ID as the required argument.
 
 Get specific lead details
 - **list_contacts**: Use this tool to retrieve a list of contacts.
 
 List all CRM contacts
-- **list_leads**: List all Kylas leads
-- **list_tasks**: Use this tool to retrieve a list of scheduled tasks.
-
-List CRM tasks
 - **list_deals**: Do not use this tool if you only need a summary.
 
 List all CRM deals
+- **list_tasks**: Use this tool to retrieve a list of scheduled tasks.
+
+List CRM tasks
 
 
 ## 💬 Prompt Examples

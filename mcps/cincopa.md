@@ -37,14 +37,14 @@ Connect your **Cincopa** account to any AI agent and take full control of your v
 
 ## Available Tools (8)
 - **get_asset_metadata**: Get detailed metadata for a specific media asset
+- **get_gallery_details**: Get detailed information for a specific gallery
+- **list_cincopa_galleries**: List all media galleries in the account
+- **get_media_upload_url**: Retrieve a temporary URL for uploading new media files
+- **list_cincopa_assets**: List all media assets (videos, images, audio)
 - **create_new_gallery**: Provide both the name and template FID.
 
 Create a new media gallery using a template
-- **get_gallery_details**: Get detailed information for a specific gallery
 - **delete_media_asset**: Permanently delete a media asset from the account
-- **get_media_upload_url**: Retrieve a temporary URL for uploading new media files
-- **list_cincopa_assets**: List all media assets (videos, images, audio)
-- **list_cincopa_galleries**: List all media galleries in the account
 - **list_cincopa_templates**: List available gallery templates
 
 

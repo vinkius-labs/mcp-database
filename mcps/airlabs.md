@@ -47,12 +47,6 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **get_aircraft**: Returns aircraft registration number, ICAO type code, manufacturer and model, owner/operator, registration country, year built, engine type and count, and current operational status. The hex code is a unique identifier assigned to each aircraft transponder and can be found in flight tracking data. Essential for aviation enthusiasts, aircraft tracking, fleet verification, and detailed aircraft research. AI agents use this when users have an aircraft hex code from flight tracking data and need to look up the full aircraft registration and specifications.
 
 Get information about a specific aircraft by hex code
-- **get_airlines**: Supports filtering by country code, IATA code, ICAO code, airline name, or callsign. Returns airline details including IATA/ICAO codes, full name, country of registration, callsign, fleet size, founding year, hub airports, airline type (scheduled, cargo, charter), and operational status (active, inactive). Essential for airline industry research, competitor analysis, travel planning context, aviation market intelligence, and airline profile generation. AI agents should use this when users ask "show me all airlines in the US", "tell me about Lufthansa", "what airlines fly from Dubai", or need airline metadata to contextualize flight and fleet data.
-
-Search and retrieve airline database information
-- **get_airports**: Supports filtering by country code, city name, IATA code, ICAO code, airport name, or timezone. Returns airport details including IATA/ICAO codes, full name, location (city, state, country), geographic coordinates (latitude, longitude, elevation), timezone, airport type (large, medium, small), and operational status. Essential for airport identification, travel planning, geographic aviation research, multi-airport city analysis, and flight briefing preparation. AI agents should reference this when users ask "show me all airports in Germany", "find airports in Tokyo", "what is the ICAO code for Heathrow", or need airport metadata to contextualize flight queries.
-
-Search and retrieve airport database information
 - **autocomplete_airport**: Returns matching airports ranked by relevance with IATA/ICAO codes, full names, cities, countries, and airport types. Ideal for building airport search interfaces, type-ahead functionality, and airport identification when the user only knows part of the airport name or code. Essential for travel application development, airport search workflows, and user-friendly airport identification. AI agents should use this when users type partial airport names or codes and need quick suggestions, or when the exact airport code is unknown but a partial name is provided.
 
 Search airports by name or code with autocomplete suggestions
@@ -80,6 +74,12 @@ Get all routes operated by a specific airline
 - **get_schedules**: Returns scheduled flights with airline, flight number, aircraft type, departure and arrival airports, scheduled times, frequency of service, days of operation, and aircraft registration if assigned. Supports filtering by airline IATA code, departure airport IATA, arrival airport IATA, date range, and flight number. Essential for travel planning, route analysis, schedule reliability studies, airline timetable research, and flight itinerary preparation. AI agents should reference this when users ask "what is the schedule from JFK to LAX", "show me all Delta flights from ATL", or need to analyze flight schedules between airports.
 
 Get flight schedules and timetables for airlines and airports
+- **get_airlines**: Supports filtering by country code, IATA code, ICAO code, airline name, or callsign. Returns airline details including IATA/ICAO codes, full name, country of registration, callsign, fleet size, founding year, hub airports, airline type (scheduled, cargo, charter), and operational status (active, inactive). Essential for airline industry research, competitor analysis, travel planning context, aviation market intelligence, and airline profile generation. AI agents should use this when users ask "show me all airlines in the US", "tell me about Lufthansa", "what airlines fly from Dubai", or need airline metadata to contextualize flight and fleet data.
+
+Search and retrieve airline database information
+- **get_airports**: Supports filtering by country code, city name, IATA code, ICAO code, airport name, or timezone. Returns airport details including IATA/ICAO codes, full name, location (city, state, country), geographic coordinates (latitude, longitude, elevation), timezone, airport type (large, medium, small), and operational status. Essential for airport identification, travel planning, geographic aviation research, multi-airport city analysis, and flight briefing preparation. AI agents should reference this when users ask "show me all airports in Germany", "find airports in Tokyo", "what is the ICAO code for Heathrow", or need airport metadata to contextualize flight queries.
+
+Search and retrieve airport database information
 
 
 ## 💬 Prompt Examples

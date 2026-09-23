@@ -14,18 +14,18 @@ This MCP server provides precise tools for analyzing the spatial arrangement of 
 
 
 ## Available Tools (4)
-- **identify_stereoisomers**: Ensure both structures are fully defined for comparison.
-
-Classifies the relationship between different stereoisomers of a molecule
-- **analyze_double_bond_geometry**: Specify bond indices if only certain bonds need analysis.
-
-Determines the geometric configuration (E/Z) for all double bonds in a molecule
 - **analyze_stereocenters**: Provide a complete structure for accurate analysis.
 
 Determines the absolute configuration (R/S) for every chiral center within a given molecular structure
 - **detect_meso_compounds**: Submit the structure to check for internal symmetry.
 
 Identifies if a specific molecular structure is a meso compound
+- **analyze_double_bond_geometry**: Specify bond indices if only certain bonds need analysis.
+
+Determines the geometric configuration (E/Z) for all double bonds in a molecule
+- **identify_stereoisomers**: Ensure both structures are fully defined for comparison.
+
+Classifies the relationship between different stereoisomers of a molecule
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides tools to analyze study habits by converting total study
 
 
 ## Available Tools (4)
+- **getSessionTiers**: Categorizes a user's study volume into different engagement levels
 - **calculateSessionEfficiency**: Evaluates how effectively time is being used relative to the chosen session length
 - **getSessionCount**: Determines how many full study sessions have been completed
-- **getSessionTiers**: Categorizes a user's study volume into different engagement levels
 - **predictRequiredTime**: Estimates how much more time is needed to reach a specific number of completed sessions
 
 
