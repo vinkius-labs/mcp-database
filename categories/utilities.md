@@ -71,6 +71,8 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [HbA1c to Average Glucose Converter](../mcps/hba1c-to-average-glucose-converter.md) | Estimate average glucose, time in range, and glucose variability from HbA1c. |
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
+| [Hiking Distance Total](../mcps/hiking-distance-total.md) | Calculate and manage cumulative hiking distances from individual trail segments. |
+| [Hiking Elevation Average](../mcps/hiking-elevation-average.md) | Calculate and analyze hiking trail steepness and incline intensity. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
 | [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
 | [Instrument Case Volume Calculator](../mcps/instrument-case-volume-calculator.md) | Calculate the volume and surface area of instrument cases. |
@@ -82,6 +84,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Japanese Era Converter](../mcps/japanese-era-converter.md) | Convert Gregorian dates to Japanese imperial eras and calculate era metrics. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
+| [Kayak Speed Calculator](../mcps/kayak-speed-calculator.md) | Calculate kayak velocity, pace, and performance tiers. |
 | [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |
 | [League Tiebreaker Resolver](../mcps/league-tiebreaker-resolver.md) | Resolves football league ties using a custom sequence of rules. |
 | [Mahjong Riichi Scoring](../mcps/mahjong-riichi-scoring.md) | Deterministic Japanese Riichi Mahjong scoring calculator. |
@@ -98,6 +101,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
 | [Onsen Mineral Classifier](../mcps/onsen-mineral-classifier.md) | Classify Japanese hot spring water quality, legal status, and therapeutic benefits. |
+| [Paddle Stroke Counter](../mcps/paddle-stroke-counter.md) | Calculate total paddling strokes and session intensity. |
 | [Paddle-Out Calorie Estimator](../mcps/paddle-out-calorie-estimator.md) | Calculate physiological energy expenditure and time for surfing paddle-outs based on water currents. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
@@ -109,6 +113,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Postal Address Normalizer](../mcps/postal-address-normalizer.md) | Standardizes and validates unstructured postal addresses for US, UK, CA, and AU. |
 | [PostgreSQL Connection String Parser](../mcps/postgresql-connection-string-parser.md) | Deconstructs PostgreSQL URIs into precise connection parameters. |
 | [Prime Factorization, GCD & LCM Calculator](../mcps/prime-factorization-gcd-lcm-calculator.md) | Compute exact prime factorizations and calculate GCD and LCM for sets of integers. |
+| [Race Finish Time Calculator](../mcps/race-finish-time-calculator.md) | Calculate race finish times, required paces, and distance coverage. |
 | [Rain Barrel Volume Calculator](../mcps/rain-barrel-volume-calculator.md) | Estimate rainwater collection from roof area and rainfall. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
@@ -120,10 +125,12 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Round-Robin Fixture Generator](../mcps/round-robin-fixture-generator.md) | Generates complete round-robin football schedules using the circle method. |
 | [Rowing Pace Calculator](../mcps/rowing-pace-calculator.md) | Calculate rowing ergometer pace, power, and stroke rate. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
+| [Running Lap Counter](../mcps/running-lap-counter.md) | Calculate completed laps and progress on a running track. |
 | [Running Pace & Race Calculator](../mcps/running-pace-race-calculator.md) | Calculate race split plans, pace conversions, and elevation adjustments. |
 | [Running Pace & Split Calculator](../mcps/running-pace-split-calculator.md) | Generate precise running pace schedules and cumulative time markers. |
 | [Running Pace Calculator](../mcps/running-pace-calculator.md) | High-precision running pace, split times, and performance predictions. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
+| [Running Split Calculator](../mcps/running-split-calculator.md) | Calculate precise running splits, cumulative times, and required paces. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shoe Size Difference Calculator](../mcps/shoe-size-difference-calculator.md) | Calculate the physical millimeter difference between any two shoe sizes across global standards. |
@@ -131,12 +138,14 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Sneaker Size Converter](../mcps/sneaker-size-converter.md) | Translate footwear sizes across US, UK, EU, JP, and CM systems. |
 | [Solitaire Solver](../mcps/solitaire-solver.md) | A deterministic engine for validating Klondike solitaire moves and identifying legal plays. |
 | [Song Count Total](../mcps/song-count-total.md) | Aggregate and analyze song counts across musical albums. |
+| [Sport Equipment Weight Calculator](../mcps/sport-equipment-weight-calculator.md) | Calculate total mass and validate load capacity for athletic equipment sets. |
 | [Spot Distance Calculation](../mcps/spot-distance-calculation.md) | Calculate great-circle distances, bearings, and travel times using spherical geometry. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
 | [Sudoku Grid Validator](../mcps/sudoku-grid-validator.md) | A deterministic engine for validating 9x9 Sudoku grid states and identifying rule violations. |
 | [Sugar Cooking Stages Calculator](../mcps/sugar-cooking-stages-calculator.md) | Identify precise candy-making stages, temperature ranges, and altitude adjustments. |
 | [Sunlight Vitamin D Synthesizer](../mcps/sunlight-vitamin-d-synthesizer.md) | Calculates vitamin D synthesis time and safe sun exposure limits. |
+| [Swimming Distance Calculator](../mcps/swimming-distance-calculator.md) | Calculate and aggregate swimming distances across sessions. |
 | [Swimming Pace & CSS Calculator](../mcps/swimming-pace-css-calculator.md) | Calculate precise swimming splits, pacing, and Critical Swim Speed (CSS). |
 | [TCG Mana Curve Analyzer](../mcps/tcg-mana-curve-analyzer.md) | A deterministic probability engine for TCG deckbuilding and mana consistency. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
@@ -145,6 +154,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
 | [Token Budget Remaining Calculator](../mcps/token-budget-remaining-calculator.md) | Monitor and manage token consumption to prevent context window overflows. |
 | [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |
+| [Trail Time Estimator](../mcps/trail-time-estimator.md) | Calculate total hiking duration based on distance, terrain, and elevation. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
 | [Trivia Score Total](../mcps/trivia-score-total.md) | Calculate and aggregate trivia competition scores across multiple rounds. |
 | [Truncation Detector & Graceful Terminator](../mcps/truncation-detector-graceful-terminator.md) | Detects and repairs truncated LLM outputs to restore structural integrity. |
@@ -156,6 +166,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Water Tank Volume Calculator](../mcps/water-tank-volume-calculator.md) | Calculate geometric volume and fluid capacity for rectangular water tanks. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 | [Western Astrology Calculator](../mcps/western-astrology-calculator.md) | Calculate sun signs, moon signs, ascendants, and planetary positions. |
+| [Win-Loss Record Tracker](../mcps/win-loss-record-tracker.md) | Calculate total games, win/loss ratios, and streaks. |
 | [Wind Chill Calculator](../mcps/wind-chill-calculator.md) | Calculate perceived wind chill temperatures and frostbite risk levels. |
 | [Wine ABV & Fermentation Calculator](../mcps/wine-abv-fermentation-calculator.md) | Calculate alcohol by volume, residual sugar, and fermentation progress. |
 | [WSL Heat Scoring Calculator](../mcps/wsl-heat-scoring-calculator.md) | Calculate professional World Surf League heat scores and win probabilities. |

@@ -37,8 +37,10 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
+| [Camp Occupancy Rate](../mcps/camp-occupancy-rate.md) | Calculate campground occupancy, availability, and usage trends. |
 | [Catalyst Lifetime Prediction](../mcps/catalyst-lifetime-prediction.md) | Predict catalyst operational lifespan and deactivation kinetics. |
 | [Chronic Pain Diary Analyzer](../mcps/chronic-pain-diary-analyzer.md) | Identifies correlations between physiological, environmental, and activity data to manage chronic pain. |
+| [Climbing Pitch Average](../mcps/climbing-pitch-average.md) | Analyze climbing routes and sessions by calculating average pitch lengths. |
 | [Clothing Donation Counter](../mcps/clothing-donation-counter.md) | Track and analyze donated garment counts and quality distributions. |
 | [Combination Score Analysis](../mcps/combination-score-analysis.md) | Analyze two-wave scoring potential, calculate backup requirements, and predict winning outcomes. |
 | [Competition Heat Strategy](../mcps/competition-heat-strategy.md) | Optimized heat strategies for professional surfing competitions. |
@@ -113,8 +115,10 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Snowboard Rocker Profile Analyzer](../mcps/snowboard-rocker-profile-analyzer.md) | Predict snowboard performance metrics like float, edge grip, and terrain suitability based on rocker geometry. |
 | [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
+| [Sports Practice Hours](../mcps/sports-practice-hours.md) | Analyze athletic training duration, frequency, and overtraining risk. |
 | [Standard Solution Preparation](../mcps/standard-solution-preparation.md) | Calculate mass, dilution protocols, and uncertainty for analytical standard solutions. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
+| [Surf Wave Analytics](../mcps/surf-wave-analytics.md) | Track wave counts and session density for your surfing sessions. |
 | [Surfer Ranking Projection](../mcps/surfer-ranking-projection.md) | Forecast professional surfer year-end rankings and performance scenarios. |
 | [Sustainable Packaging Impact Calculator](../mcps/sustainable-packaging-impact-calculator.md) | Evaluate environmental footprint and economic feasibility of packaging materials. |
 | [Team Form Calculator](../mcps/team-form-calculator.md) | Quantify football team performance trends using recent match windows. |

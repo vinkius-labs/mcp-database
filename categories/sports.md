@@ -10,6 +10,7 @@ Explore the open database of **sports** Model Context Protocol (MCP) servers.
 | [Butter Trick Mechanics](../mcps/butter-trick-mechanics.md) | Physics-based calculations for snowboarding butter tricks. |
 | [Caballerial Rotation Speed](../mcps/caballerial-rotation-speed.md) | Calculates technical rotation requirements and landing stability for caballerial-style skateboarding maneuvers. |
 | [Carve Turn Radius Physics](../mcps/carve-turn-radius-physics.md) | Physics-based calculator for snowboard carving mechanics and performance. |
+| [Climbing Height Total](../mcps/climbing-height-total.md) | Calculate cumulative vertical gain and analyze climbing pitch data. |
 | [Current Strength Predictor](../mcps/current-strength-predictor.md) | Predict water movement, rip currents, and drift at surf breaks. |
 | [Cutback Trajectory Calculator](../mcps/cutback-trajectory-calculator.md) | Calculates optimal cutback points, turn radii, and re-entry angles for surfers. |
 | [Halfpipe Velocity Entry](../mcps/halfpipe-velocity-entry.md) | Calculate precise entry speeds, pump timing, and exit velocities for halfpipe riding. |

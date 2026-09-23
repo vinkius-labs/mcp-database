@@ -5,6 +5,7 @@ Explore the open database of **performance** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Competition Anxiety Management for Surfers](../mcps/competition-anxiety-management-for-surfers.md) | Tailored anxiety mitigation and breathing protocols for surfers. |
+| [Cycling Climb Rate Analyzer](../mcps/cycling-climb-rate-analyzer.md) | Calculate vertical ascent rate (VAM) and analyze climbing performance. |
 | [Flexibility Surf Performance](../mcps/flexibility-surf-performance.md) | Assess how joint mobility impacts surfing maneuvers and performance. |
 | [Mental Performance Visualization](../mcps/mental-performance-visualization.md) | Tailored mental rehearsal protocols for surfers to optimize performance. |
 | [Paddling Cadence Optimizer](../mcps/paddling-cadence-optimizer.md) | Optimize your paddling efficiency with real-time cadence, power, and endurance analysis. |

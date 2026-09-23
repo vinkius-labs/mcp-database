@@ -768,6 +768,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Singapore ERP Toll Calculator](../mcps/singapore-erp-toll-calculator.md) | Calculate exact Singapore Electronic Road Pricing (ERP) costs for vehicles and routes. |
 | [Singapore Parking Fee Calculator](../mcps/singapore-parking-fee-calculator.md) | Calculate exact HDB and URA parking fees in Singapore. |
 | [Singapore Property Lifetime Cost Calculator](../mcps/singapore-property-lifetime-cost-calculator.md) | Compare the total lifetime costs of HDB flats versus private Condominiums in Singapore. |
+| [Ski Lift Cost Calculator](../mcps/ski-lift-cost-calculator.md) | Calculate total ski trip costs, compare pass options, and estimate budgets. |
 | [Skincare Cost Analyzer](../mcps/skincare-cost-analyzer.md) | Calculate the monthly financial impact of your skincare routine. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Smart Money Wallet Tracking Strategy](../mcps/smart-money-wallet-tracking-strategy.md) | Identify and replicate high-performance smart money wallet movements with statistical confidence. |

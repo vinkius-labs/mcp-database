@@ -14,9 +14,11 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Duck Dive Depth Calculator](../mcps/duck-dive-depth-calculator.md) | Calculate required dive depth, timing, and effort for successful duck dives. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
+| [Fishing Line Length Calculator](../mcps/fishing-line-length-calculator.md) | Calculate total fishing line required based on cast count and line loss per cast. |
 | [Foil Pump Efficiency Engine](../mcps/foil-pump-efficiency-engine.md) | Calculate hydrofoil pumping energy, speed gain, and efficiency. |
 | [Garden Area Calculator](../mcps/garden-area-calculator.md) | Calculate garden bed areas and estimate material volumes and costs. |
 | [Garden Hose Reach](../mcps/garden-hose-reach.md) | Calculate hose reach, coverage, and capacity for gardening tasks. |
+| [Hiking Water Calculator](../mcps/hiking-water-calculator.md) | Calculate precise water requirements for hikers based on duration, intensity, and heat. |
 | [Houseplant Light Estimator](../mcps/houseplant-light-estimator.md) | Calculate light deficits and optimal plant placement using DLI and lux measurements. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
@@ -34,6 +36,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Raised Bed Soil Volume Calculator](../mcps/raised-bed-soil-volume-calculator.md) | Calculate the exact amount of soil needed for your raised garden beds. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
+| [Sleeping Bag Temperature Gap](../mcps/sleeping-bag-temperature-gap.md) | Calculates the safety margin between a sleeping bag's thermal rating and the expected ambient temperature. |
 | [Snow Density Loading](../mcps/snow-density-loading.md) | Calculate rider sinkage and flotation capacity based on snow properties. |
 | [Snowboard Detune Zone Calculator](../mcps/snowboard-detune-zone-calculator.md) | Calculate optimal edge detuning parameters to prevent edge catches during park riding. |
 | [Snowboard Weight Distribution & Float Calculator](../mcps/snowboard-weight-distribution-float-calculator.md) | Calculate weight distribution and powder flotation based on your snowboard setup. |

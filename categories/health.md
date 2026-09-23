@@ -17,6 +17,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Athlete Recovery Sleep Calculator](../mcps/athlete-recovery-sleep-calculator.md) | Calculates precise sleep needs and recovery timelines for athletes based on physiological stress. |
 | [Athletic Taping Protocol](../mcps/athletic-taping-protocol.md) | Generates precise athletic taping configurations for joint injury support. |
 | [Baby Bottle Feeding Scheduler](../mcps/baby-bottle-feeding-scheduler.md) | Generate precise 24-hour infant feeding schedules and monthly formula inventory predictions. |
+| [Backpack Load Safety Calculator](../mcps/backpack-load-safety-calculator.md) | Calculate backpack weight ratios and assess hiking safety based on body weight. |
 | [Balance & Stability Index](../mcps/balance-stability-index.md) | Quantify surfer physical readiness with stability scores and training advice. |
 | [Basal Body Temperature Tracker](../mcps/basal-body-temperature-tracker.md) | Analyze menstrual cycle phases and ovulation using BBT data. |
 | [Battle Rope Workout Timer](../mcps/battle-rope-workout-timer.md) | Generates structured battle rope HIIT sessions based on rope dimensions and fitness levels. |
@@ -51,6 +52,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Cool-down Effectiveness Engine](../mcps/cool-down-effectiveness-engine.md) | Physiological analysis to evaluate post-exercise recovery protocols. |
 | [Cryotherapy Session Planner](../mcps/cryotherapy-session-planner.md) | Personalized whole-body cryotherapy session planning and safety assessment. |
 | [Cupping Duration Planner](../mcps/cupping-duration-planner.md) | Precision planning for cupping therapy sessions, determining suction, timing, and volume. |
+| [Cycling Hydration Manager](../mcps/cycling-hydration-manager.md) | Calculate precise hydration needs and safety limits for cycling sessions. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |
 | [Deep Sleep Estimator](../mcps/deep-sleep-estimator.md) | Estimates deep sleep distribution and physical recovery impact. |
 | [Deep Tissue Pressure Guide](../mcps/deep-tissue-pressure-guide.md) | Decision support for massage therapists to determine precise pressure, speed, and technique. |
@@ -91,6 +93,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Heat Stress Index Calculator](../mcps/heat-stress-index-calculator.md) | Calculates heat stress risk, WBGT, and safety protocols from weather and activity data. |
 | [High-Fat/Protein Bolus Calculator](../mcps/high-fatprotein-bolus-calculator.md) | Calculates insulin dosing for high-fat and high-protein meals to mitigate the 'Pizza Effect'. |
 | [HIIT Interval Optimizer](../mcps/hiit-interval-optimizer.md) | Optimize HIIT workouts with research-based interval structures. |
+| [Hiking Snack Planner](../mcps/hiking-snack-planner.md) | Calculate snack requirements and verify hike safety based on duration and consumption rates. |
 | [Holistic Breathing Assessment](../mcps/holistic-breathing-assessment.md) | Evaluates breathing efficiency and physiological patterns to identify dysfunctions. |
 | [Hormetic Stress Dosage Calculator](../mcps/hormetic-stress-dosage-calculator.md) | Calculates personalized hormetic stress protocols including optimal dose, frequency, and progression. |
 | [Hot Stone Temperature Guide](../mcps/hot-stone-temperature-guide.md) | Professional guidance for safe and effective hot stone therapy parameters. |
