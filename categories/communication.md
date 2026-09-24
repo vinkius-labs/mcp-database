@@ -4,6 +4,7 @@ Explore the open database of **communication** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Home Visitor Protocol](../mcps/accessible-home-visitor-protocol.md) | Structured, privacy-preserving communication flows for managing visitor access and resident needs. |
 | [BulkSMS](../mcps/bulksms.md) | Send and manage SMS messages via BulkSMS.com — track delivery, manage groups, and monitor credits directly from any AI agent. |
 | [Circuit Breaker State Machine](../mcps/circuit-breaker-state-machine.md) | A deterministic state machine for managing agent-to-agent communication stability. |
 | [LiveKit Real-Time Rooms](../mcps/tt-voice.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |

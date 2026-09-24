@@ -12,8 +12,10 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Campsite Availability](../mcps/campsite-availability.md) | Real campsite availability from Recreation.gov — which nights are open at a campground, which sites fit a multi-night stay, and how campgrounds compare side by side. |
 | [Family Trip Seat Count](../mcps/family-trip-seat-count.md) | Calculate vehicle capacity and passenger distribution for family trips. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
+| [Jet Lag Adjustment Calculator](../mcps/jet-lag-adjustment-calculator.md) | Calculate the days needed to adjust to new time zones. |
 | [jp-train-transfer-minimizer](../mcps/jp-train-transfer-minimizer.md) | Calculate precise Japanese train route metrics including transfer penalties. |
 | [Luggage Packing Optimizer](../mcps/luggage-packing-optimizer.md) | Optimize luggage space and weight using intelligent packing algorithms. |
+| [Luggage Volume Calculator](../mcps/luggage-volume-calculator.md) | Calculate luggage volume and check airline compliance. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
 | [Pet Travel Checklist Validator](../mcps/pet-travel-checklist-validator.md) | Audits pet travel plans against destination, transport, and health requirements. |
 | [Shinkansen Routing Optimizer](../mcps/shinkansen-routing-optimizer.md) | Deterministic Japanese Shinkansen travel time and fare calculator. |
@@ -24,8 +26,10 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Surf Trip Car Packing Optimizer](../mcps/surf-trip-car-packing-optimizer.md) | Calculate if your surfboards will fit in your vehicle trunk using nesting efficiency logic. |
 | [Surfability Index Calculator](../mcps/surfability-index-calculator.md) | Quantifies surf quality using environmental and social variables. |
 | [Sustainable Trip Emissions Calculator](../mcps/sustainable-trip-emissions-calculator.md) | Calculate the carbon footprint of your travels, including flights, trains, cars, and lodging. |
+| [Travel Distance Total](../mcps/travel-distance-total.md) | Calculate cumulative, average, and extreme travel leg distances. |
 | [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
+| [Trip Emission Total](../mcps/trip-emission-total.md) | Aggregate and analyze CO2e emissions from individual journey segments. |
 | [US Forest Service Trails](../mcps/us-forest-service-trails.md) | The trail inventory of the US National Forests — search trails by name, list the trails crossing any area, and read each trail's permitted uses, surface, grade and accessibility. |
 | [Visa Requirement Checker](../mcps/visa-requirement-checker.md) | Check visa requirements, travel advisories, and passport validity rules globally. |
 

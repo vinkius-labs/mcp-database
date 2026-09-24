@@ -4,11 +4,16 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Ride Request Protocol](../mcps/accessible-ride-request-protocol.md) | Transforms complex accessibility needs and provider constraints into actionable ride request packages. |
+| [Accessible Transport Disruption Plan](../mcps/accessible-transport-disruption-plan.md) | Automated contingency protocols for users with accessibility needs during transport disruptions. |
 | [Driving Shift Planner](../mcps/driving-shift-planner.md) | Plan long-distance drives with mandatory rest periods. |
 | [Fuel Consumption Converter](../mcps/fuel-consumption-converter.md) | Deterministic bidirectional fuel efficiency conversion and trip cost estimation. |
+| [Fuel Refill Calculator](../mcps/fuel-refill-calculator.md) | Calculate required fuel refills and refueling schedules for any journey. |
 | [J&T Express Malaysia](../mcps/jt-express-malaysia.md) | Orchestrate J&T Express Malaysia logistics — track parcels, manage orders, and calculate shipping directly from any AI agent. |
 | [Lalamove Malaysia](../mcps/lalamove-malaysia.md) | Orchestrate Lalamove Malaysia deliveries — get quotations, manage orders, and track drivers directly from any AI agent. |
 | [MRT vs Grab Decision Engine](../mcps/mrt-vs-grab-decision-engine.md) | A deterministic decision tool to choose between MRT and ride-hailing in Singapore. |
+| [Route Average Speed](../mcps/route-average-speed.md) | Calculate average speed from distance and travel time. |
+| [Trip Distance Average](../mcps/trip-distance-average.md) | Calculate average distances for individual travel legs and entire fleets. |
 
 
 ---

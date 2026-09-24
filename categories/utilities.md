@@ -155,6 +155,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Time-Zone Insulin Adjuster](../mcps/time-zone-insulin-adjuster.md) | Deterministic basal insulin and meal timing adjustment calculator for travel. |
+| [Timezone Offset Difference](../mcps/timezone-offset-difference.md) | Calculate hour differences and gaps between UTC offsets. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
 | [Token Budget Remaining Calculator](../mcps/token-budget-remaining-calculator.md) | Monitor and manage token consumption to prevent context window overflows. |
 | [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |

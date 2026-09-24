@@ -4,6 +4,11 @@ Explore the open database of **accessibility** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Cultural Participation Plan](../mcps/accessible-cultural-participation-plan.md) | Evaluates cultural activity feasibility and generates personalized engagement strategies for accessibility. |
+| [Accessible Event Attendance Commitment Plan](../mcps/accessible-event-attendance-commitment-plan.md) | Evaluates event accessibility against user needs to provide attendance decisions, accommodation roadmaps, and exit plans. |
+| [Accessible Home Entry Planner](../mcps/accessible-home-entry-planner.md) | Plan non-prescriptive entry arrangements, decision-maker briefs, and visitor protocols for improved home access. |
+| [Accessible Recreation Choice Plan](../mcps/accessible-recreation-choice-plan.md) | An intelligent decision engine that matches accessibility needs and interests to actionable recreation plans. |
+| [Accessible Station Navigation Plan](../mcps/accessible-station-navigation-plan.md) | Generates step-by-step accessible transit itineraries and contingency plans. |
 | [Adaptive Surfing Equipment Recommender](../mcps/adaptive-surfing-equipment-recommender.md) | Tailored equipment recommendations for adaptive surfers based on physical profiles and goals. |
 | [AI Feature Accessibility Scorer](../mcps/ai-feature-accessibility-scorer.md) | Assess accessibility health for AI features using WCAG standards. |
 | [Image SEO Auditor](../mcps/image-seo-auditor.md) | Automated analysis of image metadata to identify SEO and accessibility violations. |

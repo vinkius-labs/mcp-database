@@ -4,9 +4,11 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Support Provider Transition Plan](../mcps/accessible-support-provider-transition-plan.md) | Coordinates safe and compliant support service transfers between providers. |
 | [Acupuncture Point Selector](../mcps/acupuncture-point-selector.md) | Select optimal acupuncture point combinations based on symptoms and TCM diagnosis. |
 | [Anxiety Screening Scorer](../mcps/anxiety-screening-scorer.md) | Scores anxiety screening questionnaires like GAD-7 to provide severity assessments and clinical recommendations. |
 | [Apgar Score Calculator](../mcps/apgar-score-calculator.md) | Calculate and compare newborn Apgar scores to assess vitality at 1 and 5 minutes. |
+| [Assistive Equipment Selection Brief](../mcps/assistive-equipment-selection-brief.md) | A decision-support system for evaluating assistive technology against user constraints. |
 | [Blood Pressure Category Assessment](../mcps/blood-pressure-category-assessment.md) | Categorizes blood pressure readings and assesses cardiovascular risk using international guidelines. |
 | [Blood Type Compatibility & Demographics](../mcps/blood-type-compatibility-demographics.md) | Check blood and plasma transfusion compatibility, pregnancy risks, and regional blood type distributions. |
 | [BMI Clinical Calculator](../mcps/bmi-clinical-calculator.md) | Calculate BMI, ideal body weight estimates, and assess bariatric surgery eligibility. |
