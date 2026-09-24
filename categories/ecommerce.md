@@ -17,6 +17,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Amplience](../mcps/amplience.md) | Connect your Amplience CMS to your AI agent — query hubs, pull content, edit schemas, and deploy live items easily via chat. |
 | [Amplifier](../mcps/amplifier.md) | E-commerce fulfillment orchestration — manage orders, inventory, and shipments via AI. |
 | [autoRetouch](../mcps/autoretouch.md) | Retouch product photos at scale with AI-powered background removal, color correction, and beauty editing for e-commerce. |
+| [Average Order Value Analytics](../mcps/average-order-value-analytics.md) | Calculate and analyze Average Order Value (AOV) across business segments and timeframes. |
 | [Awin](../mcps/awin.md) | Global affiliate marketing automation — manage advertiser programmes, track transactions, and generate tracking links via AI. |
 | [Bandcamp](../mcps/bandcamp.md) | Discover independent music — search artists, albums and tracks, browse new releases and best sellers. |
 | [Besitos Corp](../mcps/besitos-corp.md) | Integrate mobile gaming and rewards via Besitos — list games, track user activity, and manage offers directly from any AI agent. |
@@ -161,6 +162,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Omnisend Marketing](../mcps/omnisend-marketing.md) | Manage omnichannel marketing via Omnisend — track email/SMS campaigns, contacts, and segments directly from your AI agent. |
 | [Open Beauty Facts](../mcps/open-beauty-facts.md) | Universal cosmetics intelligence — search ingredients, allergens, and brands via AI. |
 | [OpenSea](../mcps/opensea.md) | Access the world's leading NFT marketplace — query collections, track floor prices, inspect NFT metadata, and monitor wallet balances across multiple chains. |
+| [Order Analytics Connector](../mcps/order-analytics-connector.md) | Retrieve total order counts, customer frequency, and status distributions. |
 | [PedidosYa](../mcps/pedidosya.md) | Automate restaurant operations on PedidosYa — manage orders, update menus, request couriers, and track deliveries across Latin America from any AI agent. |
 | [Podia](../mcps/podia.md) | Manage your Podia store — list customers, track sales, and oversee products and subscriptions directly from any AI agent. |
 | [Polar](../mcps/polar.md) | Manage digital products, subscriptions, orders and customers via Polar — create checkouts, manage discounts and track revenue from any AI agent. |
@@ -172,6 +174,8 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Rebrickable LEGO](../mcps/rebrickable-lego.md) | Explore the LEGO universe — search sets, parts, minifigs, themes and colors with full catalog data from any AI agent. |
 | [Redo](../mcps/redo.md) | Manage returns, track shipping protection claims, and oversee exchanges via AI agents with Redo. |
 | [Refersion](../mcps/refersion.md) | Manage your affiliate marketing program via Refersion — list affiliates, track conversions, and manage webhooks directly from any AI agent. |
+| [Repeat Order Rate Analytics](../mcps/repeat-order-rate-analytics.md) | Calculate customer loyalty and repeat purchase rates. |
+| [Return Rate Analytics](../mcps/return-rate-analytics.md) | Analyze e-commerce return rates by order, product, category, and trends. |
 | [Reverb](../mcps/reverb.md) | Manage your Reverb shop — create listings, track orders, handle payouts, and communicate with buyers directly via AI. |
 | [Sharetribe](../mcps/sharetribe.md) | Equip your AI agent to autonomously manage your marketplace. Approve listings, transition transaction states, audit user profiles, and moderate reviews. |
 | [Sharpei](../mcps/sharpei.md) | Offer product subscriptions and rentals on your Shopify store with flexible recurring payment options your customers will love. |

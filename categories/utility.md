@@ -31,6 +31,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Leatherworking Pattern Calculator](../mcps/leatherworking-pattern-calculator.md) | Calculate leather area, hide yield, and material consumables for leathercraft projects. |
 | [Mulch Volume Calculator](../mcps/mulch-volume-calculator.md) | Calculate exact mulch volume and bag counts for your garden. |
 | [Oven Time Adjuster](../mcps/oven-time-adjuster.md) | Adjust cooking times by a specific percentage. |
+| [Pet Tag Text Validator](../mcps/pet-tag-text-validator.md) | Measure and validate character counts for pet tag engravings. |
 | [Pizza Slice Calculator](../mcps/pizza-slice-calculator.md) | Calculate total slices, pizza requirements, and slice distribution. |
 | [Popcorn Serving Count](../mcps/popcorn-serving-count.md) | Calculate full servings and leftover weight for popcorn portions. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |

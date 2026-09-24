@@ -39,6 +39,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Le Chatelier Prediction](../mcps/le-chatelier-prediction.md) | Predict chemical equilibrium shifts caused by changes in concentration, pressure, or temperature. |
 | [Limiting Reagent Yield Calculator](../mcps/limiting-reagent-yield-calculator.md) | A precision stoichiometry engine for determining limiting reactants, theoretical yields, and efficiency metrics. |
+| [Lunchbox Portion Calculator](../mcps/lunchbox-portion-calculator.md) | Calculate total meal portions needed for school weeks based on child attendance. |
 | [Main Group Chemistry Predictor](../mcps/main-group-chemistry-predictor.md) | Predict reactivity, stability, and reaction outcomes for main group elements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |

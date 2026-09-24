@@ -6,10 +6,13 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Accelerator Marketing ROI Analyzer](../mcps/accelerator-marketing-roi-analyzer.md) | Analyze marketing efficiency and ROI for accelerator program pipelines. |
 | [Ad Copy Compliance Checker](../mcps/ad-copy-compliance-checker.md) | Audit ad copy against platform character limits and content policies. |
+| [Ad Cost Per Click Analytics](../mcps/ad-cost-per-click-analytics.md) | Calculate advertising efficiency by determining the cost per individual user click. |
+| [Ad Spend Total](../mcps/ad-spend-total.md) | Aggregate and analyze advertising expenditure across marketing channels. |
 | [Affiliate Program Economics](../mcps/affiliate-program-economics.md) | Financial modeling for affiliate program profitability and unit economics. |
 | [AI Benchmark Performance & Value Analyzer](../mcps/ai-benchmark-performance-value-analyzer.md) | Quantify the economic impact of AI benchmark leadership on brand equity and marketing ROI. |
 | [Bluesky Automation](../mcps/bluesky-automation.md) | Full-spectrum Bluesky automation — 20 tools for publishing, engagement, analytics, social listening, and lead generation via the AT Protocol. |
 | [BuiltWith Tech Lookup](../mcps/builtwith-tech-lookup.md) | Universal website technology intelligence — detect CMS, analytics, and frameworks via AI. |
+| [Campaign Reach Analyzer](../mcps/campaign-reach-analyzer.md) | Aggregate and analyze unique audience reach across marketing campaigns. |
 | [Cart Abandonment Email Scorer](../mcps/cart-abandonment-email-scorer.md) | Analyze email copy for urgency, scarcity, and incentive clarity. |
 | [Claim Substantiation Checker](../mcps/claim-substantiation-checker.md) | Scans marketing copy for factual and numeric claims requiring substantiation. |
 | [CMO Marketing Prover](../mcps/cmo-marketing-prover.md) | A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation. |
@@ -26,7 +29,9 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |
 | [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |
 | [Douyin Engagement Algorithm](../mcps/douyin-engagement-algorithm.md) | Calculate precise video engagement scores and viral potential for Douyin and TikTok content. |
+| [Email List Auditor](../mcps/email-list-auditor.md) | Analyze email subscriber counts, health scores, and list composition. |
 | [Email Marketing Effectiveness](../mcps/email-marketing-effectiveness.md) | Calculate key email marketing KPIs and perform funnel analysis. |
+| [Email Open Rate Analyzer](../mcps/email-open-rate-analyzer.md) | Calculate and analyze email campaign engagement via open rates and performance tiers. |
 | [eSputnik](../mcps/esputnik.md) | Omnichannel marketing automation with eSputnik. |
 | [European CAC Analytics Engine](../mcps/european-cac-analytics-engine.md) | Calculate and optimize Customer Acquisition Costs (CAC) across European markets. |
 | [European Churn Analysis Engine](../mcps/european-churn-analysis-engine.md) | Calculates churn variation, drivers, and retention priorities across European markets. |

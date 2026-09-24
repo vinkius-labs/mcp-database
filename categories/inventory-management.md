@@ -17,6 +17,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Gallery Artwork Counter](../mcps/gallery-artwork-counter.md) | Track and analyze artwork inventory and display metrics across multiple art galleries. |
 | [Garment Size Averaging](../mcps/garment-size-averaging.md) | Convert qualitative garment sizes into quantitative numeric averages. |
 | [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
+| [Minimum Order Quantity Calculator](../mcps/minimum-order-quantity-calculator.md) | Calculates required order packs and logistics efficiency based on pack sizes. |
 | [Nail Polish Inventory Planner](../mcps/nail-polish-inventory-planner.md) | Calculate required nail polish bottles and manage manicure inventory efficiency. |
 | [Order Time](../mcps/order-time.md) | Inventory and order management — manage items, customers, and sales orders via Order Time. |
 | [Plant Pot Counter](../mcps/plant-pot-counter.md) | Calculate required plant pots based on plant counts and grouping rules. |
@@ -25,6 +26,9 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Seasonality Index Calculator](../mcps/seasonality-index-calculator.md) | Calculate seasonal indices and optimize inventory planning using historical sales data. |
 | [Shoe Pair Counter](../mcps/shoe-pair-counter.md) | Converts individual shoe counts into complete pairs and single shoes. |
 | [Spa Product Inventory Forecaster](../mcps/spa-product-inventory-forecaster.md) | Forecast spa product inventory needs and calculate reorder points. |
+| [Sports Jersey Inventory Manager](../mcps/sports-jersey-inventory-manager.md) | Calculate jersey requirements and manage inventory based on team rosters. |
+| [Stock Shortage Calculator](../mcps/stock-shortage-calculator.md) | Calculate inventory deficits and monitor stock health. |
+| [stock-surplus](../mcps/stock-surplus.md) | Manage and reconcile inventory by calculating surplus and shortfalls. |
 | [Stockpile Management Model](../mcps/stockpile-management-model.md) | Optimize stockpile inventory, blending ratios, and draw strategies with real-time grade and capacity tracking. |
 | [Wine Allocations Management](../mcps/wine-allocations-management.md) | Optimized distribution planning for finite wine inventory across sales channels. |
 | [Wine Storage Rotation System](../mcps/wine-storage-rotation-system.md) | Manage wine inventory freshness using FIFO/FEFO rotation logic and aging models. |

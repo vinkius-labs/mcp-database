@@ -5,6 +5,7 @@ Explore the open database of **shopping** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Grocery Bag Calculator](../mcps/grocery-bag-calculator.md) | Calculate the exact number of bags needed for your groceries. |
+| [Pet Collar Sizing Utility](../mcps/pet-collar-sizing-utility.md) | Verify pet collar fit and explore available sizing tiers. |
 | [US Product Recalls](../mcps/us-product-recalls.md) | Whether the US Consumer Product Safety Commission has recalled a product — check a brand or model against every recall since 1973, and read the full notice. |
 
 

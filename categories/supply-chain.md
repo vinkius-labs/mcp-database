@@ -16,6 +16,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Grape Receiving & Weighing Logistics](../mcps/grape-receiving-weighing-logistics.md) | Calculate truck queuing, sampling protocols, and receiving schedules for grape harvests. |
 | [Infrastructure Supply Chain Risk Analyzer](../mcps/infrastructure-supply-chain-risk-analyzer.md) | Quantify supply chain vulnerabilities, single-source exposure, and mitigation costs. |
 | [Input Purchasing Optimizer](../mcps/input-purchasing-optimizer.md) | Optimizes agricultural procurement by balancing volume discounts, storage limits, and financing costs. |
+| [Inventory Unit Total](../mcps/inventory-unit-total.md) | Aggregate and audit inventory quantities across products and locations. |
 | [Lead Time Analyzer](../mcps/lead-time-analyzer.md) | Analyze and decompose supply chain lead times to identify bottlenecks. |
 | [LTL-FTL Comparator](../mcps/ltl-ftl-comparator.md) | Logistics decision engine to compare LTL and FTL shipment costs, risks, and break-even points. |
 | [ManoMano (Home Improvement Marketplace)](../mcps/manomano-home-improvement-marketplace.md) | Manage your ManoMano seller account — update offer prices, track orders, and audit fulfillment stock. |

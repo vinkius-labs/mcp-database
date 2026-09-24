@@ -35,6 +35,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Calories Burned Calculator](../mcps/calories-burned-calculator.md) | Calculate calories burned using MET values and heart rate data. |
 | [Canvas Area Calculator](../mcps/canvas-area-calculator.md) | Calculate canvas surface area, aspect ratios, and validate dimensions. |
 | [Char-to-Token Estimator](../mcps/char-to-token-estimator.md) | Predict token usage for different LLMs using language-specific character ratios. |
+| [Child Age Calculator](../mcps/child-age-calculator.md) | Precise age breakdown and developmental milestone tracking. |
 | [Chinese Lucky Number Analyzer](../mcps/chinese-lucky-number-analyzer.md) | Analyze the numerological significance of numbers based on Chinese cultural symbolism. |
 | [comic-page-total](../mcps/comic-page-total.md) | Aggregate and audit page counts for comic book collections. |
 | [Compression Ratio Calculator](../mcps/compression-ratio-calculator.md) | A deterministic utility to evaluate text compression performance. |
@@ -105,8 +106,11 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Paddle-Out Calorie Estimator](../mcps/paddle-out-calorie-estimator.md) | Calculate physiological energy expenditure and time for surfing paddle-outs based on water currents. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
+| [Pet Bed Area Calculator](../mcps/pet-bed-area-calculator.md) | Calculate pet bed surface area and check size suitability for different pet categories. |
+| [Pet Leash Length Calculator](../mcps/pet-leash-length-calculator.md) | Calculate cumulative lengths and statistics for pet leash components. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
 | [Pet Medication Dose Splitter](../mcps/pet-medication-dose-splitter.md) | Calculate the exact number and fraction of tablets needed for pet medication dosing. |
+| [Pet Treat Calculator](../mcps/pet-treat-calculator.md) | Calculate treat requirements and dietary compliance for pets. |
 | [Pitch Shift Speed Ratio Calculator](../mcps/pitch-shift-speed-ratio-calculator.md) | Calculate playback speed multipliers, adjusted durations, and new BPM for pitch shifting via varispeed. |
 | [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Deterministic Texas Hold'em odds calculator for hand strength, outs, and win probabilities. |
 | [Pool Chemistry Calculator](../mcps/pool-chemistry-calculator.md) | Deterministic tool for precise swimming pool water chemistry adjustments and LSI analysis. |

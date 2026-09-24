@@ -96,6 +96,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Appcues](../mcps/appcues-alternative.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [ApplicantStack](../mcps/applicantstack.md) | Manage your hiring process with ApplicantStack — track jobs, candidates, and hires via AI. |
 | [Appointlet](../mcps/appointlet.md) | Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly. |
+| [Appointment Capacity Calculator](../mcps/appointment-capacity-calculator.md) | Calculate maximum appointment capacity within specific time windows and constraints. |
 | [Apptoto](../mcps/apptoto.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [Apptoto](../mcps/apptoto-alternative.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [ArcXP](../mcps/arcxp.md) | Automate newsroom publishing via ArcXP — manage, search, and update articles, photos, and videos directly from any AI agent. |
@@ -230,7 +231,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Chameleon.io](../mcps/chameleonio.md) | Manage product adoption and onboarding via Chameleon — trigger tours, analyze surveys, and track user events directly from any AI agent. |
 | [Change Case Engine](../mcps/change-case-engine.md) | Transform text between 12 naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and more) with zero errors. |
 | [Chanty](../mcps/chanty.md) | Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent. |
+| [Childcare Hours Total](../mcps/childcare-hours-total.md) | Aggregates and analyzes childcare duration data, including overlap detection and provider summaries. |
 | [Chord Constructor](../mcps/chord-constructor.md) | Decompose chord notation into notes, inversions, and harmonic roles. |
+| [Chore Points Total](../mcps/chore-points-total.md) | Manage and track reward points earned through completed household chores. |
 | [Chronotype Estimator](../mcps/chronotype-estimator.md) | Classifies biological chronotypes and recommends productivity windows based on natural sleep patterns. |
 | [Chuangkit / 创客贴](../mcps/chuangkit.md) | Leading graphic design platform in China — manage templates, materials, and designs via AI. |
 | [Chuck Norris](../mcps/chuck-norris.md) | Access the legendary power of Chuck Norris facts — get random jokes, browse categories, and search the entire database directly from your AI agent. |
@@ -312,6 +315,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Counterfactual-Variant Prover](../mcps/counterfactual-variant-prover.md) | AI models recite memorized answers to classic puzzles, failing when variables or rules are changed. This tool forces cognitive decontamination: isolate variables, compare prompt rules against standard puzzle templates, execute first-principles logic step-by-step, and prove decontaminated output. |
 | [Couple & Roommate Expense Splitter](../mcps/couple-roommate-expense-splitter.md) | Fairly split household expenses based on income proportions or assigned categories. |
 | [Couples Shared Account Engine](../mcps/couples-shared-account-engine.md) | Calculate fair, proportional expense sharing between partners based on income ratios. |
+| [Coupon Savings Calculator](../mcps/coupon-savings-calculator.md) | Calculate exact savings, final prices, and promotional viability. |
 | [Courier](../mcps/courier.md) | Equip your AI agent to send multi-channel notifications and monitor delivery status through the Courier API. |
 | [course-progress](../mcps/course-progress.md) | Calculates course completion percentages and lesson progress details. |
 | [Craft (Docs & Notes)](../mcps/craft-docs-notes.md) | Manage collaborative docs via Craft.do — list documents, handle blocks, track tasks, and retrieve daily notes directly from any AI agent. |
@@ -484,6 +488,16 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Eye Strain Index](../mcps/eye-strain-index.md) | Assess ocular health and screen-related fatigue risk. |
 | [Factorial](../mcps/factorial.md) | Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using. |
 | [Fair Chore Rotation Algorithm](../mcps/fair-chore-rotation-algorithm.md) | A deterministic scheduling system to rotate tasks among participants without consecutive repeats. |
+| [Family Activity Tracker](../mcps/family-activity-tracker.md) | Track, categorize, and analyze family bonding through completed activities. |
+| [Family Birthday Counter](../mcps/family-birthday-counter.md) | Track and count birthday occurrences within specific timeframes. |
+| [Family Calendar Days](../mcps/family-calendar-days.md) | Analyze family calendar durations, activity density, and overlapping events. |
+| [Family Event Cost Tracker](../mcps/family-event-cost-tracker.md) | Track and analyze expenditures for family celebrations and events. |
+| [Family Gift Total](../mcps/family-gift-total.md) | Manage and aggregate gift costs for family events. |
+| [Family Grocery Cost Calculator](../mcps/family-grocery-cost-calculator.md) | Calculate total and individual grocery expenditures for households. |
+| [Family Meal Count](../mcps/family-meal-count.md) | Calculate total meals for groups and durations. |
+| [Family Member Count](../mcps/family-member-count.md) | Analyze household composition and member counts. |
+| [Family Photo Counter](../mcps/family-photo-counter.md) | Count photos across nested family photo albums. |
+| [Family Screen Time Total](../mcps/family-screen-time-total.md) | Aggregate and analyze screen time usage for family members to monitor digital wellness. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
 | [Farm Working Capital Calculator](../mcps/farm-working-capital-calculator.md) | Project seasonal cash flows and determine peak borrowing needs for agricultural operations. |
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
@@ -616,6 +630,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hourly Cost Calculator](../mcps/hourly-cost-calculator.md) | Calculate labor costs, budget limits, and efficiency ratios. |
 | [Hourly Productivity Tracker](../mcps/hourly-productivity-tracker.md) | Calculate and analyze work output efficiency per hour. |
 | [Hourly Salary & Real Wage Calculator](../mcps/hourly-salary-real-wage-calculator.md) | Convert pay frequencies and calculate your 'real' hourly wage after taxes, commute, and unpaid breaks. |
+| [Household Member Share](../mcps/household-member-share.md) | Divides shared household costs equally among members. |
 | [Household Supply Predictor](../mcps/household-supply-predictor.md) | Predicts how long household supplies will last based on current stock and usage. |
 | [HowLongToBeat](../mcps/howlongtobeat.md) | Universal game completion data — get gameplay hours for any video game via AI. |
 | [Howspace](../mcps/howspace.md) | Facilitate collaborative learning and organizational development with AI-powered workshops that engage participants at scale. |
@@ -855,6 +870,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Optimal Wake Time Calculator](../mcps/optimal-wake-time-calculator.md) | Calculate the most refreshing times to wake up based on 90-minute sleep cycles. |
 | [Orderry](../mcps/orderry.md) | Manage your repair shop, orders, and inventory with Orderry and AI agents. |
 | [Oshi Budget Allocator](../mcps/oshi-budget-allocator.md) | A deterministic budget tool for Oshi fans to balance fixed costs and discretionary spending. |
+| [Outdoor Day Count](../mcps/outdoor-day-count.md) | Quantify your outdoor engagement by analyzing activity date logs. |
 | [Overlapping Utility Splitter](../mcps/overlapping-utility-splitter.md) | Splits utility bills between two residents when one moves out mid-cycle. |
 | [Overtime Calculator](../mcps/overtime-calculator.md) | Calculate overtime pay, night shift premiums, and time bank balances. |
 | [Overtime Hours Tracker](../mcps/overtime-hours-tracker.md) | Track, aggregate, and validate overtime hours across work periods. |
@@ -882,7 +898,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Personal Year Calculator](../mcps/personal-year-calculator.md) | Discover your numerological Personal Year, Month, and Day cycles with detailed forecasts. |
 | [Personalized Sleep Report Generator](../mcps/personalized-sleep-report-generator.md) | Transform raw sleep data and health profiles into actionable sleep optimization reports. |
 | [Persuasion Copywriting Prover](../mcps/persuasion-copywriting-prover.md) | AI copywriting produces generic, robotic text that readers instantly recognize. This tool forces psychologically-grounded persuasion: benefits over features, emotional triggers, proof hierarchy, framework matching (AIDA/PAS/BAB), and human tone (no AI words). |
+| [Pet Cost Splitter](../mcps/pet-cost-splitter.md) | Divide shared pet expenses equally among owners. |
 | [Pet Grooming Schedule Calculator](../mcps/pet-grooming-schedule-calculator.md) | Predictive grooming schedules based on pet needs, budget, and groomer capacity. |
+| [Pet Party Budget Manager](../mcps/pet-party-budget-manager.md) | Manage and track expenses for pet-themed celebrations. |
 | [Phone Addiction Risk Analyzer](../mcps/phone-addiction-risk-analyzer.md) | Quantifies smartphone dependency risk using validated behavioral metrics. |
 | [PhotoPrism](../mcps/photoprism.md) | Search, browse, and manage your PhotoPrism media library — find photos by metadata, retrieve thumbnails, and stream videos via AI. |
 | [Physiological Hydration Metric Engine](../mcps/physiological-hydration-metric-engine.md) | Compute exact metabolic water intake requirements. Structure highly optimized, circadian fluid distribution schedules adapting natively to body mass, physical output, and environmental climate. |
@@ -1004,6 +1022,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Savings Goal Progress](../mcps/savings-goal-progress.md) | Calculate savings progress, remaining amounts, and milestones. |
 | [SavvyCal](../mcps/savvycal.md) | Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI. |
 | [School Start Time Impact Calculator](../mcps/school-start-time-impact-calculator.md) | Analyze how changing school start times affects adolescent sleep, academic performance, and long-term health. |
+| [School Supply Budgeter](../mcps/school-supply-budgeter.md) | Calculate and manage school supply costs with ease. |
 | [Screen Time Impact Calculator](../mcps/screen-time-impact-calculator.md) | Assess the physiological and productivity costs of digital device usage. |
 | [ScreenshotOne](../mcps/screenshotone.md) | Capture website screenshots — audit visual content and generate PDFs via AI. |
 | [Scribe](../mcps/scribe.md) | Create step-by-step guides and SOPs automatically by recording your workflow and generating visual documentation instantly. |

@@ -46,6 +46,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Competition Heat Strategy](../mcps/competition-heat-strategy.md) | Optimized heat strategies for professional surfing competitions. |
 | [Conductivity Measurement Analysis](../mcps/conductivity-measurement-analysis.md) | Analyze electrolyte properties including molar conductivity and dissociation. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
+| [Conversion Rate Analytics](../mcps/conversion-rate-analytics.md) | Analyze e-commerce conversion rates, traffic source efficiency, and performance trends. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Crowd Density Impact](../mcps/crowd-density-impact.md) | Analyze how crowd density affects surf session quality and wave access. |
 | [Defensive Action Rates](../mcps/defensive-action-rates.md) | Calculate football defensive metrics including success rates, actions per 90, and efficiency comparisons. |
@@ -84,6 +85,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Passing Accuracy Calculator](../mcps/passing-accuracy-calculator.md) | High-precision football analytics for passing metrics. |
 | [Peaking Index Calculator](../mcps/peaking-index-calculator.md) | Model athletic readiness using the Banister Fitness-Fatigue model. |
 | [Personal Record Tracker](../mcps/personal-record-tracker.md) | Predictive analytics for athletes to track PRs and forecast performance peaks. |
+| [Pet Walk Distance Tracker](../mcps/pet-walk-distance-tracker.md) | Track and analyze cumulative and average walking distances for pets. |
+| [Pet Walk Tracker](../mcps/pet-walk-tracker.md) | Analyze pet walking frequency and exercise consistency. |
 | [Pipeline Flow Assurance](../mcps/pipeline-flow-assurance.md) | Analyze fluid transport risks, hydrate formation, and wax deposition in subsea and terrestrial pipelines. |
 | [Plant Availability Model](../mcps/plant-availability-model.md) | Model industrial plant availability, reliability, and production capacity. |
 | [Player Performance Index](../mcps/player-performance-index.md) | Calculate deterministic football player performance scores using weighted statistical components. |
@@ -103,7 +106,9 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Refinery Utility Balancer](../mcps/refinery-utility-balancer.md) | Analyze and balance refinery utility supplies including steam, power, water, and air. |
 | [Resilience Scale Scorer](../mcps/resilience-scale-scorer.md) | Analyzes psychological resilience questionnaires to provide standardized scoring and personalized growth strategies. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
+| [Response Time Average](../mcps/response-time-average.md) | Analyze system latency and identify performance outliers. |
 | [Retention Time Predictor](../mcps/retention-time-predictor.md) | Predict chromatography retention times, capacity factors, and selectivity using QSRR. |
+| [Review Average Calculator](../mcps/review-average-calculator.md) | Calculate arithmetic, weighted, and distributed review metrics. |
 | [Scoring Potential Calculator](../mcps/scoring-potential-calculator.md) | Estimates competitive scoring potential by analyzing wave quality and maneuver execution. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Service Contract Negotiation Support](../mcps/service-contract-negotiation-support.md) | Analyze oilfield service contracts using market benchmarking and performance-based incentive modeling. |
