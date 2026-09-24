@@ -37,9 +37,6 @@ No more manual order tracking or switching between Material and CRM apps. Your A
 
 ## Available Tools (11)
 - **get_lead**: Get details for a specific lead
-- **get_project**: Must supply a valid project ID.
-
-Get details of a specific project
 - **list_employees**: List all employees
 - **list_leads**: List all leads
 - **get_company_profile**: Get company profile details
@@ -49,6 +46,9 @@ Get details of a specific project
 - **list_invoices**: List all invoices
 - **list_orders**: List all purchase orders
 - **list_proposals**: List all proposals
+- **get_project**: Must supply a valid project ID.
+
+Get details of a specific project
 
 
 ## 💬 Prompt Examples

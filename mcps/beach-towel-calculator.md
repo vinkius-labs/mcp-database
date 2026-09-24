@@ -14,10 +14,10 @@ This MCP server provides tools to manage beach towel logistics for groups. Use `
 
 
 ## Available Tools (4)
-- **calculate_excess_towels**: Determines how many extra towels are available
 - **estimate_group_tiers**: Categorizes a group into service tiers based on the scale of their towel requirement
 - **get_total_towels**: Answers how many towels are needed for a specific group
 - **validate_group_capacity**: Checks if a requested towel count is within safe operational limits
+- **calculate_excess_towels**: Determines how many extra towels are available
 
 
 ## 💬 Prompt Examples

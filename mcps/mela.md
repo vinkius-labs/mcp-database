@@ -14,34 +14,34 @@ The Mela MCP server connects your AI agent directly to your workspace. Send chan
 
 
 ## Available Tools (12)
+- **get_me**: Retrieve information about the current user
+- **log_materials**: Provide the activity ID and material details in the body.
+
+Track material consumption on-site
+- **list_activities**: List all job sites/activities
+- **update_activity_status**: Supply both the activity ID and the desired new status.
+
+Change the status of an activity
+- **post_message**: You must specify both the activity ID and the message content.
+
+Send a text update or note to an activity feed
+- **create_activity**: Pass the full configuration details in the body parameter.
+
+Create a new job site or activity
 - **get_accounting_data**: Use the activity ID to specify the required data.
 
 Retrieve cost and accounting data for an activity
 - **get_activity**: Provide the activity ID to execute the query.
 
 Retrieve details for a specific activity
-- **get_me**: Retrieve information about the current user
-- **list_teams**: List teams in the workspace
-- **log_work_hours**: Include the activity ID and detailed work hour information in the body.
-
-Record man-hours for an activity
-- **list_users**: List all workspace members
-- **create_activity**: Pass the full configuration details in the body parameter.
-
-Create a new job site or activity
-- **list_activities**: List all job sites/activities
 - **list_checklists**: Supply the activity ID to list relevant checklists.
 
 Retrieve all checklists associated with an activity
-- **log_materials**: Provide the activity ID and material details in the body.
+- **list_teams**: List teams in the workspace
+- **list_users**: List all workspace members
+- **log_work_hours**: Include the activity ID and detailed work hour information in the body.
 
-Track material consumption on-site
-- **post_message**: You must specify both the activity ID and the message content.
-
-Send a text update or note to an activity feed
-- **update_activity_status**: Supply both the activity ID and the desired new status.
-
-Change the status of an activity
+Record man-hours for an activity
 
 
 ## 💬 Prompt Examples

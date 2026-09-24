@@ -14,10 +14,10 @@ This MCP server provides tools to aggregate and analyze athletic training data. 
 
 
 ## Available Tools (4)
-- **assess_overtraining_risk**: Evaluates if the current training volume poses a risk to the athlete
 - **get_session_frequency**: Determines how many individual training sessions were completed in a specific timeframe
 - **get_total_duration**: Calculates the cumulative time spent practicing across all sessions within a given period
 - **get_training_consistency**: Analyzes the regularity of training sessions to identify patterns or gaps
+- **assess_overtraining_risk**: Evaluates if the current training volume poses a risk to the athlete
 
 
 ## 💬 Prompt Examples

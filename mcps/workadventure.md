@@ -37,11 +37,11 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 - **get_member_details**: Get details of a specific member
 - **list_rooms**: List active rooms
 - **create_member**: Add a new member to the world
-- **get_room_variables**: Get variables for a room
 - **get_world_info**: Get virtual world information
 - **list_maps**: List world maps
 - **list_members**: List world members in WorkAdventure
 - **delete_member**: Remove a member from the world
+- **get_room_variables**: Get variables for a room
 - **update_room_variable**: Update a room variable
 
 

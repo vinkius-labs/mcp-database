@@ -14,10 +14,10 @@ This MCP server provides real-time management of sports team rosters. It allows 
 
 
 ## Available Tools (4)
+- **get_roster_summary**: Get a summary of the team roster counts
 - **list_players_by_status**: List all players with a specific status
 - **update_player_status**: Update a player's status
 - **get_player_status**: Get the status and name of a specific player
-- **get_roster_summary**: Get a summary of the team roster counts
 
 
 ## 💬 Prompt Examples

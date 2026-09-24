@@ -14,10 +14,10 @@ This MCP server provides tools to analyze surfing performance. You can use `get_
 
 
 ## Available Tools (4)
+- **get_session_summary**: Get details of a specific surfing session
 - **get_total_wave_count**: Get the total number of waves caught within a specific timeframe
 - **get_wave_activity_by_tier**: Get wave catching trends over daily or weekly increments
 - **get_waves_per_session_average**: Get the average wave density per session for a given period
-- **get_session_summary**: Get details of a specific surfing session
 
 
 ## 💬 Prompt Examples

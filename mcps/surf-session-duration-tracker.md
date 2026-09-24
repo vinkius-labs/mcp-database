@@ -15,9 +15,9 @@ This MCP server provides tools to analyze surfing session data. Use `get_session
 
 ## Available Tools (4)
 - **get_session_window_analysis**: Analyzes the total time spent at the beach including preparation
+- **get_session_duration**: Answers how long a specific surf session was
 - **get_fatigue_risk_assessment**: Assesses if a session duration is likely to cause exhaustion
 - **get_historical_duration_stats**: Calculates historical statistics for a user's sessions
-- **get_session_duration**: Answers how long a specific surf session was
 
 
 ## 💬 Prompt Examples

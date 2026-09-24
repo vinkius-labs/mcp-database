@@ -14,9 +14,9 @@ This MCP server provides tools to manage and analyze preparatory warmup periods 
 
 
 ## Available Tools (4)
-- **map_warmup_to_sessions**: Map each warmup duration to its corresponding session
 - **calculate_total_warmup_time**: Calculate the total time spent warming up before all sessions
 - **get_warmup_distribution**: Get the statistical distribution of warmup times
+- **map_warmup_to_sessions**: Map each warmup duration to its corresponding session
 - **verify_warmup_adequacy**: Verify if the warmup time is sufficient for the planned sessions
 
 

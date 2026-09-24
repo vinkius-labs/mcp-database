@@ -14,10 +14,10 @@ This MCP server provides tools to manage snowboarding session goals. Use `get_se
 
 
 ## Available Tools (4)
-- **get_lap_summary**: Provides a summary of the session activity
 - **get_session_progress**: Calculates the progress of the snowboarding session
 - **get_session_status**: Determines the current status of the snowboarding session
 - **validate_lap_counts**: Validates if the provided lap counts are logically possible
+- **get_lap_summary**: Provides a summary of the session activity
 
 
 ## 💬 Prompt Examples

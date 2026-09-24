@@ -37,21 +37,21 @@ No more manual access management or episode uploading through complex dashboards
 
 ## Available Tools (10)
 - **grant_access**: Grant access to a show
-- **list_audio**: You must provide a show ID to execute this query.
-
-List audio episodes for a show
 - **list_shows**: List all podcast shows
-- **list_tags**: List all contact tags
 - **revoke_access**: Revoke access from a show
-- **add_audio**: You must provide the show ID and episode title.
-
-Add a new audio episode
 - **create_contact**: Create a new contact
 - **get_contact**: Get contact details
 - **get_show**: Get show details
 - **list_contacts**: fm account.
 
 List all contacts (listeners)
+- **add_audio**: You must provide the show ID and episode title.
+
+Add a new audio episode
+- **list_audio**: You must provide a show ID to execute this query.
+
+List audio episodes for a show
+- **list_tags**: List all contact tags
 
 
 ## 💬 Prompt Examples
