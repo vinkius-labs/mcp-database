@@ -35,19 +35,19 @@ Connect your **Hullo** account to any AI agent and manage member communications 
 - **create_member**: Pass member data as a JSON string.
 
 Create a new member
-- **get_conversation**: Use the specific Conversation ID.
-
-Get conversation details
+- **list_members**: List all members
 - **get_member**: Provide a valid Member ID.
 
 Get member details
 - **list_conversations**: Do not use this tool if you know the specific conversation ID.
 
 List all conversations
-- **list_members**: List all members
 - **send_message**: Pass message data as a JSON string.
 
 Send a message to a member
+- **get_conversation**: Use the specific Conversation ID.
+
+Get conversation details
 
 
 ## 💬 Prompt Examples

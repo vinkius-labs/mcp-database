@@ -41,13 +41,13 @@ No more manual review mining. Your AI assistant acts as a dedicated guest relati
 - **list_recent_feedback**: This function executes asynchronously.
 
 List the 50 most recent feedback entries
-- **get_guest_details**: Provide a valid guest ID to execute the query.
-
-Retrieve detailed information for a specific guest ID
 - **list_guest_feedback**: List all guests and their feedback status/results
 - **send_survey**: Requires either an email or phone number.
 
 Trigger a new guest satisfaction survey via Email or SMS
+- **get_guest_details**: Provide a valid guest ID to execute the query.
+
+Retrieve detailed information for a specific guest ID
 
 
 ## 💬 Prompt Examples

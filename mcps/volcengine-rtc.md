@@ -38,12 +38,12 @@ Empower your Agent with **Volcengine RTC**, the exact same Real-Time Communicati
 - **mute_stream**: StreamType should be "audio" or "video".
 
 Mute a specific stream output (audio or video)
-- **stop_transcode**: Use this tool only when the task must be stopped immediately.
-
-Stop MCU stream transcoding
 - **unmute_stream**: StreamType should be "audio" or "video".
 
 Unmute a previously muted stream output
+- **stop_transcode**: Use this tool only when the task must be stopped immediately.
+
+Stop MCU stream transcoding
 - **get_active_rooms**: List all active RTC rooms in Volcengine
 - **start_cloud_record**: Start Volcengine Cloud Recording
 - **start_transcode**: Start Cloud MCU stream transcoding

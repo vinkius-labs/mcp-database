@@ -33,9 +33,6 @@ Integrate **DebtPayPro**, the specialized CRM for the debt settlement and financ
 
 
 ## Available Tools (10)
-- **list_upcoming_payments**: Returns upcoming transaction metadata for proactive account management.
-
-List payments scheduled for the next 7 days (mock logic)
 - **list_crm_tasks**: Returns task descriptions, due dates, and associated contact or case identifiers.
 
 List pending tasks and follow-ups in the system
@@ -63,6 +60,9 @@ List payment history and scheduled payments for a contact
 - **search_contacts_by_name**: Matches the search term against names and email addresses using partial case-insensitive matching.
 
 Search for a contact by name or email keyword
+- **list_upcoming_payments**: Returns upcoming transaction metadata for proactive account management.
+
+List payments scheduled for the next 7 days (mock logic)
 
 
 ## 💬 Prompt Examples

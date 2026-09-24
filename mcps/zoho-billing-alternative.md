@@ -14,39 +14,39 @@ The Zoho Billing MCP server integrates your financial operations with your AI ag
 
 
 ## Available Tools (12)
-- **list_expenses**: Use this tool to review operational costs and receipts.
+- **list_plans**: Use this tool to view the current subscription tiers.
 
-List all recorded expenses
-- **list_payments**: Use this tool to verify payment history and amounts received.
+List all pricing plans
+- **list_subscriptions**: Use this tool to view billing history and status.
 
-List all payments received
-- **list_projects**: Use this tool to view project status and associated revenue.
-
-List all billable projects
-- **list_credit_notes**: Use this tool to review adjustments and refunds applied to accounts.
-
-List all credit notes
+List all subscriptions
 - **get_events**: Execute this tool to check the system’s activity log.
 
 List recent audit events/triggers
+- **list_credit_notes**: Use this tool to review adjustments and refunds applied to accounts.
+
+List all credit notes
 - **list_customers**: Use this tool to retrieve a list of all accounts.
 
 List all customers
 - **list_estimates**: Use this tool to review pending client proposals.
 
 List all estimates (quotes)
+- **list_expenses**: Use this tool to review operational costs and receipts.
+
+List all recorded expenses
 - **list_invoices**: Use this tool to retrieve billing statements for specific periods.
 
 List all invoices
-- **list_plans**: Use this tool to view the current subscription tiers.
+- **list_payments**: Use this tool to verify payment history and amounts received.
 
-List all pricing plans
+List all payments received
 - **list_products**: Use this tool to retrieve a comprehensive list of services offered.
 
 List all products
-- **list_subscriptions**: Use this tool to view billing history and status.
+- **list_projects**: Use this tool to view project status and associated revenue.
 
-List all subscriptions
+List all billable projects
 - **retrieve_customer**: Provide the required customer ID to fetch the account information.
 
 Get details of a specific customer

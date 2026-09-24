@@ -46,13 +46,13 @@ Get processing result data
 - **get_processing_status**: Provide the required processing ID.
 
 Check status of a processing job
-- **list_models**: This function does not require any parameters.
-
-List available geospatial AI models
 - **list_processings**: Do not use this tool to start a new job.
 
 List all geospatial processings
 - **list_projects**: List all MapFlow projects
+- **list_models**: This function does not require any parameters.
+
+List available geospatial AI models
 
 
 ## 💬 Prompt Examples

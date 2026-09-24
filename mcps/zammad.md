@@ -33,16 +33,9 @@ Connect your **Zammad** helpdesk to any AI agent to streamline your customer sup
 
 
 ## Available Tools (41)
-- **get_group**: Provide the required Group ID.
-
-Get details for a specific Zammad group
 - **get_links**: Supply the object type and its unique ID.
 
 Get links for a specific object
-- **list_ticket_states**: List ticket states
-- **search_organizations**: The query must contain organization-identifying keywords.
-
-Search for organizations in Zammad
 - **update_ticket**: You must specify the ticket ID.
 
 Update an existing Zammad ticket
@@ -50,37 +43,51 @@ Update an existing Zammad ticket
 - **summarize_ticket**: Provide the target ticket ID.
 
 Trigger async generation of a ticket summary
-- **add_tag**: Provide both the object type and the object ID.
-
-Add a tag to an object
 - **create_ticket_article**: Always specify the target Ticket ID.
 
 Create a new article on a ticket
 - **create_ticket**: Must provide a title and either a group or customer.
 
 Create a new Zammad ticket
-- **create_user**: Supply all required user details.
-
-Create a new Zammad user
 - **data_privacy_delete_user**: Use this method instead of direct deletion. Provide the User ID.
 
 Delete a user via Data Privacy task (Recommended over direct delete)
-- **delete_ticket**: Provide the unique Ticket ID for deletion.
-
-Delete a Zammad ticket
-- **delete_user**: Specify the target User ID.
-
-Delete a Zammad user
 - **get_me**: Get current Zammad user details
-- **get_organization**: Provide the required Organization ID.
-
-Get details for a specific Zammad organization
 - **get_shared_draft**: Pass the specific ticket ID.
 
 Get shared draft for a ticket
 - **get_ticket_article**: Use the unique Article ID.
 
 Get details for a specific ticket article
+- **list_calendars**: List calendars
+- **list_ticket_articles**: Supply the required Ticket ID.
+
+List articles for a specific ticket
+- **list_tickets**: Use filters to narrow the search results.
+
+List Zammad tickets
+- **list_users**: List all Zammad users
+- **search_groups**: The query must contain group-identifying keywords.
+
+Search for groups in Zammad
+- **add_tag**: Provide both the object type and the object ID.
+
+Add a tag to an object
+- **create_user**: Supply all required user details.
+
+Create a new Zammad user
+- **delete_ticket**: Provide the unique Ticket ID for deletion.
+
+Delete a Zammad ticket
+- **delete_user**: Specify the target User ID.
+
+Delete a Zammad user
+- **get_group**: Provide the required Group ID.
+
+Get details for a specific Zammad group
+- **get_organization**: Provide the required Organization ID.
+
+Get details for a specific Zammad organization
 - **get_ticket**: Provide a valid Ticket ID.
 
 Get details for a specific Zammad ticket
@@ -88,10 +95,9 @@ Get details for a specific Zammad ticket
 
 Get details for a specific Zammad user
 - **list_all_tags**: List all tags in the system (Admin)
-- **list_calendars**: List calendars
 - **list_checklist_items**: List checklist items
-- **list_checklist_templates**: List checklist templates
 - **list_checklists**: List checklists
+- **list_checklist_templates**: List checklist templates
 - **list_groups**: List all Zammad groups
 - **list_mentions**: List mentions
 - **list_roles**: Do not specify any filters when calling this tool.
@@ -101,20 +107,20 @@ List all Zammad roles
 - **list_tags_for_object**: Provide both the object type and its ID.
 
 List tags for a specific object (e.g., Ticket)
-- **list_ticket_articles**: Supply the required Ticket ID.
-
-List articles for a specific ticket
 - **list_ticket_priorities**: List ticket priorities
-- **list_tickets**: Use filters to narrow the search results.
+- **list_ticket_states**: List ticket states
+- **list_time_accountings**: You must provide the ticket ID.
 
-List Zammad tickets
-- **list_users**: List all Zammad users
+List time accountings for a ticket
 - **remove_tag**: You must provide the object type and object ID.
 
 Remove a tag from an object
-- **search_groups**: The query must contain group-identifying keywords.
+- **search_organizations**: The query must contain organization-identifying keywords.
 
-Search for groups in Zammad
+Search for organizations in Zammad
+- **search_roles**: The query must contain role-identifying keywords.
+
+Search for roles in Zammad
 - **search_tickets**: The query must contain ticket-identifying keywords.
 
 Search for tickets in Zammad
@@ -124,12 +130,6 @@ Search for users in Zammad
 - **update_user**: Include the target User ID.
 
 Update an existing Zammad user
-- **list_time_accountings**: You must provide the ticket ID.
-
-List time accountings for a ticket
-- **search_roles**: The query must contain role-identifying keywords.
-
-Search for roles in Zammad
 
 
 ## 💬 Prompt Examples

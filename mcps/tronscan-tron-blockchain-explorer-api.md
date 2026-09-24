@@ -34,53 +34,26 @@ Connect to the **Tronscan API** to turn your AI agent into a powerful blockchain
 
 
 ## Available Tools (58)
-- **list_proposals**: Specify the starting and ending date for the proposals.
+- **get_account_analysis**: Get account analysis (Balance, Transfers, Energy, Bandwidth, Transactions)
+- **get_account_detail**: Provide a valid account address for the query.
 
-Get proposals
+Get detailed information for a specific account
+- **get_account_security**: Specify the account address and date range.
+
+Get account security data
+- **get_account_tags**: Provide the account address.
+
+Get account behavioral tags
 - **get_account_token_asset_overview**: Get token asset overview for an account
-- **get_funds**: Do not specify any parameters for this query.
-
-Get TRX Supply & Marketcap
-- **get_multisign_security**: Requires a wallet address.
-
-Get multi-sign security data
-- **get_url_security**: Provide the URL string to analyze.
-
-Get URL security data
-- **list_account_resources**: 0 data. Supply the account address.
-
-Get account resources (Stake 1.0)
-- **get_block_stats**: Must provide the block height.
-
-Get block statistics
-- **get_contract_events**: Specify the contract address and transaction hashes.
-
-Returns a list of event information for the contract
-- **get_stablecoin_big_amount**: Filter results by a minimum transaction amount.
-
-Get stablecoin large transactions
-- **list_internal_transactions**: Provide necessary filters such as start and end dates.
-
-Get internal transactions
-- **list_transactions**: Provide necessary filters such as start and end dates.
-
-Get transaction list
-- **list_transfers**: Specify the token contract address for filtering.
-
-Get TRX & TRC10 transfers
-- **list_trc1155_transfers**: Specify the token contract address.
-
-Get TRC1155 token transfers
-- **list_trc20_transfers**: Specify the token contract address.
-
-Get TRC20 & TRC721 token transfers
-- **list_voted**: Get voted list for an account
 - **get_acquisition_cost_stats**: Provide a start and end date.
 
 Get resource costs statistics
 - **get_auth_security**: Requires an address.
 
 Get authorization security data
+- **get_block_stats**: Must provide the block height.
+
+Get block statistics
 - **get_chain_parameters**: Do not specify any parameters for this query.
 
 Get chain parameters
@@ -91,6 +64,10 @@ Get contract daily analysis
 - **get_contract_detail**: Use the contract address as the input.
 
 Get contract detail
+- **get_contract_energy_stats**: Get contract energy statistics
+- **get_contract_events**: Specify the contract address and transaction hashes.
+
+Returns a list of event information for the contract
 - **get_contract_top_calls**: Do not query without specifying a contract address.
 
 Get contract call statistics
@@ -100,12 +77,25 @@ Get new users (daily)
 - **get_daily_transactions**: Specify the date range for the transaction count.
 
 Get transaction trend
+- **get_energy_stats**: Provide a start and end date.
+
+Get energy consumption statistics
+- **get_funds**: Do not specify any parameters for this query.
+
+Get TRX Supply & Marketcap
+- **get_homepage_bundle**: Get homepage data bundle
+- **get_multisign_security**: Requires a wallet address.
+
+Get multi-sign security data
 - **get_net_stats**: Provide a start and end date.
 
 Get bandwidth consumption statistics
 - **get_nodemap**: Pass the required index (i) as a parameter.
 
 Get node map
+- **get_stablecoin_big_amount**: Filter results by a minimum transaction amount.
+
+Get stablecoin large transactions
 - **get_stablecoin_blacklist**: Specify the transaction hash to check.
 
 Get stablecoin blacklist transactions
@@ -135,57 +125,67 @@ Get TRC10 token details
 
 Get TRC20/721/1155 token details
 - **get_turnover**: Get total protocol revenue
+- **get_url_security**: Provide the URL string to analyze.
+
+Get URL security data
+- **list_account_resources**: 0 data. Supply the account address.
+
+Get account resources (Stake 1.0)
 - **list_account_resources_v2**: 0 data. Supply the account address.
 
 Get account resources (Stake 2.0)
+- **list_accounts**: Get a list of accounts
 - **list_account_tokens**: Supply the account address.
 
 Get tokens held by an account with balance > 0
 - **list_account_votes**: Specify the account address and vote type.
 
 Get account votes
-- **list_accounts**: Get a list of accounts
 - **list_approvals**: Get approval list for an account
 - **list_blocks**: Specify the block height or range.
 
 Get block list or detail
 - **list_contracts**: Get list of smart contracts
+- **list_internal_transactions**: Provide necessary filters such as start and end dates.
+
+Get internal transactions
+- **list_proposals**: Specify the starting and ending date for the proposals.
+
+Get proposals
 - **list_tokens_overview**: Specify the token contract address for filtering.
 
 Get token list overview
+- **list_transactions**: Provide necessary filters such as start and end dates.
+
+Get transaction list
+- **list_transfers**: Specify the token contract address for filtering.
+
+Get TRX & TRC10 transfers
 - **list_trc10_holders**: Specify the token contract address.
 
 Get TRC10 token holders
 - **list_trc1155_inventory**: Provide the owner’s account address for the inventory check.
 
 Get TRC1155 token inventory (NFTs)
+- **list_trc1155_transfers**: Specify the token contract address.
+
+Get TRC1155 token transfers
 - **list_trc20_holders**: Specify the token contract address.
 
 Get TRC20/721/1155 token holders
+- **list_trc20_transfers**: Specify the token contract address.
+
+Get TRC20 & TRC721 token transfers
 - **list_trc721_inventory**: Provide the owner’s account address for the inventory check.
 
 Get TRC721 token inventory (NFTs)
+- **list_voted**: Get voted list for an account
 - **list_witnesses**: Do not specify any parameters for this query.
 
 Get witness list
 - **search_v2**: Provide a search query string.
 
 Search Tronscan (v2)
-- **get_energy_stats**: Provide a start and end date.
-
-Get energy consumption statistics
-- **get_homepage_bundle**: Get homepage data bundle
-- **get_contract_energy_stats**: Get contract energy statistics
-- **get_account_analysis**: Get account analysis (Balance, Transfers, Energy, Bandwidth, Transactions)
-- **get_account_detail**: Provide a valid account address for the query.
-
-Get detailed information for a specific account
-- **get_account_security**: Specify the account address and date range.
-
-Get account security data
-- **get_account_tags**: Provide the account address.
-
-Get account behavioral tags
 
 
 ## 💬 Prompt Examples

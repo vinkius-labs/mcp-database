@@ -49,11 +49,11 @@ Stop an in-progress chat message generation
 - **submit_feedback**: Submit feedback (like/dislike) for a message
 - **chat_message**: Send a chat message to a Dify Application
 - **get_app_meta**: Get application meta data configuration
+- **get_conversations**: List recent conversations for a user
+- **get_workflow_info**: Get basic App information
 - **delete_conversation**: Provide the conversation ID and user ID.
 
 Delete a Dify conversation
-- **get_conversations**: List recent conversations for a user
-- **get_workflow_info**: Get basic App information
 
 
 ## 💬 Prompt Examples
