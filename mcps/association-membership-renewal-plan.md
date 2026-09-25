@@ -14,11 +14,11 @@ This MCP server provides a complete planning engine for managing association mem
 
 
 ## Available Tools (5)
+- **evaluate_eligibility**: Determines if a member is eligible for renewal based on their specific benefits and usage
 - **generate_evidence_checklist**: Identifies exactly what documents or proofs are needed to satisfy the approval process
 - **get_followup_schedule**: Produces a schedule of reminders to ensure the Decision Owner and member stay on track
 - **get_payment_workflow**: Outlines the necessary financial steps and options to complete the renewal
 - **get_renewal_timeline**: Generates a chronological sequence of all critical milestones for a renewal cycle
-- **evaluate_eligibility**: Determines if a member is eligible for renewal based on their specific benefits and usage
 
 
 ## 💬 Prompt Examples

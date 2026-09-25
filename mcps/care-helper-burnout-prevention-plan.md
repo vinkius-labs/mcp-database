@@ -14,10 +14,10 @@ This MCP connects AI agents to a specialized planning engine designed to maintai
 
 
 ## Available Tools (4)
-- **compose_boundary_messages**: Generates polite, firm text messages for caregivers to use when a task violates safety rules
-- **create_review_agenda**: Produces a structured meeting outline for families to evaluate the care plan periodically
 - **generate_sustainable_rotation**: Creates a balanced schedule that distributes tasks among available helpers without exceeding individual limits
 - **identify_respite_needs**: Detects when the existing caregiver pool is insufficient to cover the required tasks
+- **compose_boundary_messages**: Generates polite, firm text messages for caregivers to use when a task violates safety rules
+- **create_review_agenda**: Produces a structured meeting outline for families to evaluate the care plan periodically
 
 
 ## 💬 Prompt Examples

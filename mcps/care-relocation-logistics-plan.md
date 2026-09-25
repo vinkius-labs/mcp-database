@@ -14,9 +14,9 @@ This MCP server acts as a logistics orchestration engine for relocation manageme
 
 
 ## Available Tools (5)
+- **get_move_timeline**: Generates a chronological schedule of all necessary move-related activities
 - **calculate_budget_utilization**: Validates if the planned logistics fit within the user's financial constraints
 - **get_first_day_checklist**: Provides a prioritized list of tasks for the immediate arrival at the destination
-- **get_move_timeline**: Generates a chronological schedule of all necessary move-related activities
 - **get_packing_assignments**: Allocates packing tasks to the available helpers
 - **get_service_notifications**: Identifies and schedules necessary service transfers
 

@@ -14,12 +14,12 @@ This MCP server provides a suite of strategic planning tools to convert communit
 
 
 ## Available Tools (4)
+- **map_project_dependencies**: Identifies the logical order of operations and critical path
+- **generate_proposal_package**: Synthesizes all analyzed data into a cohesive project plan
+- **validate_resource_alignment**: Checks if the available resources are sufficient to cover the project scope
 - **analyze_project_feasibility**: A status of "viable" is only granted if all critical rubric dimensions meet the minimum threshold.
 
 Determines if the proposed project is viable based on the provided rubric
-- **generate_proposal_package**: Synthesizes all analyzed data into a cohesive project plan
-- **map_project_dependencies**: Identifies the logical order of operations and critical path
-- **validate_resource_alignment**: Checks if the available resources are sufficient to cover the project scope
 
 
 ## 💬 Prompt Examples

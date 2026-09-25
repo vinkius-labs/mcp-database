@@ -14,10 +14,10 @@ This MCP server transforms individual availability and preferences into a struct
 
 
 ## Available Tools (4)
+- **create_communication_plan**: Defines the cadence and method of contact for garden-wide updates and individual session reminders
 - **generate_participation_calendar**: Creates a full schedule of individual plot work and shared communal duties
 - **identify_signup_actions**: Generates a checklist of administrative tasks a member must complete
 - **map_supply_responsibilities**: Assigns specific tools or supplies to members based on the rotation schedule
-- **create_communication_plan**: Defines the cadence and method of contact for garden-wide updates and individual session reminders
 
 
 ## 💬 Prompt Examples

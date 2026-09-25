@@ -14,10 +14,10 @@ This MCP server provides a strategic planning engine for community fundraising. 
 
 
 ## Available Tools (4)
-- **audit_budget_alignment**: Verifies that the proposed financial plan is within the limits and meets the target requirements
 - **generate_milestone_triggers**: Determines the specific actions that must occur when certain financial or temporal thresholds are met
-- **plan_fundraiser_execution**: Generates the complete strategic roadmap for the community event
 - **validate_donor_engagement**: Checks if a proposed communication or outreach action respects the privacy and permission settings of specific donors
+- **audit_budget_alignment**: Verifies that the proposed financial plan is within the limits and meets the target requirements
+- **plan_fundraiser_execution**: Generates the complete strategic roadmap for the community event
 
 
 ## 💬 Prompt Examples

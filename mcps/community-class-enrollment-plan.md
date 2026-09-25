@@ -14,10 +14,10 @@ This MCP server acts as a decision-support engine for community education. It pr
 
 
 ## Available Tools (4)
-- **calculate_financial_summary**: Aggregates all costs and deadlines for a chosen set of classes
 - **generate_backup_plan**: Identifies the best alternative classes when the primary plan is rejected or unavailable
-- **validate_availability**: Checks if a specific set of classes can be attended given the user constraints
 - **plan_enrollment**: Generates the primary optimized enrollment plan and associated logistical details
+- **validate_availability**: Checks if a specific set of classes can be attended given the user constraints
+- **calculate_financial_summary**: Aggregates all costs and deadlines for a chosen set of classes
 
 
 ## 💬 Prompt Examples

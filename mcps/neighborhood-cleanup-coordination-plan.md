@@ -15,9 +15,9 @@ This MCP server acts as a coordination engine for community cleanup events. It t
 
 ## Available Tools (4)
 - **calculate_supply_requirements**: Determine equipment that must be picked up or brought to the site
-- **generate_shift_schedule**: Organize volunteers into time-based shifts based on selected dates and capacity constraints
 - **create_closeout_checklist**: Provide a final verification list to ensure area is clean and waste is handled
 - **draft_participant_comms**: Generate tailored messages for volunteers regarding roles, safety, and meeting locations
+- **generate_shift_schedule**: Organize volunteers into time-based shifts based on selected dates and capacity constraints
 
 
 ## 💬 Prompt Examples

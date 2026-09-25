@@ -15,9 +15,9 @@ This MCP server provides a complete orchestration engine for managing community 
 
 ## Available Tools (4)
 - **create_donor_messaging**: Generates specific communication templates for different promotion channels
-- **assign_volunteers**: Matches available human resources to specific collection tasks and locations
 - **generate_collection_plan**: Creates a structured timeline and location-based strategy for the donation drive
 - **generate_handoff_checklist**: Produces a final verification list for transitioning collected goods to the beneficiary
+- **assign_volunteers**: Matches available human resources to specific collection tasks and locations
 
 
 ## 💬 Prompt Examples

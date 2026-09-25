@@ -14,10 +14,10 @@ This MCP server provides a complete suite of tools to move a local group from co
 
 
 ## Available Tools (4)
-- **get_operating_plan**: Produces a structured roadmap for the first three months of operation
-- **get_outreach_suite**: Provides the communication templates to recruit members
 - **get_founding_agenda**: Creates the meeting structure for the very first gathering
 - **get_launch_timeline**: Generates a chronological roadmap for establishing the group
+- **get_operating_plan**: Produces a structured roadmap for the first three months of operation
+- **get_outreach_suite**: Provides the communication templates to recruit members
 
 
 ## 💬 Prompt Examples
