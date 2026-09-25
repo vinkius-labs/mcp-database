@@ -205,6 +205,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Car True Cost Calculator](../mcps/car-true-cost-calculator.md) | Calculate the total 5-year cost of vehicle ownership, including depreciation and maintenance. |
 | [Carbon Credit Farm Calculator](../mcps/carbon-credit-farm-calculator.md) | Estimate potential carbon credit generation from agricultural land use and sequestration models. |
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
+| [Care Expense Reimbursement Workflow](../mcps/care-expense-reimbursement-workflow.md) | Manage care-related expenses with receipt validation, share calculation, and automated reimbursement requests. |
 | [Carry Trade Strategy](../mcps/carry-trade-strategy.md) | Deterministic forex carry trade strategy using interest rate differentials and volatility filters. |
 | [Cash Flow Projector](../mcps/cash-flow-projector.md) | Project monthly cash flow, identify liquidity gaps, and calculate working capital requirements. |
 | [Cash vs Accrual Converter](../mcps/cash-vs-accrual-converter.md) | Converts farm financial statements from cash basis to accrual basis. |

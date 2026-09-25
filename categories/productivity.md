@@ -28,15 +28,20 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Accelevents](../mcps/accelevents.md) | All-in-one event management platform — manage events, attendees, and session registration via AI. |
 | [Accept Language Parser](../mcps/accept-language-parser.md) | Parse HTTP Accept-Language headers into priority-ordered language preferences with quality weights. |
 | [Accessibility Prover](../mcps/accessibility-prover.md) | Accessibility Prover is a pre-build validation system that forces WCAG 2.2 AA compliance before code is written. It audits semantic HTML, keyboard navigation, contrast ratios (4.5:1 minimum), screen reader compatibility, and motion safety across 5 structured Decision Pivots. Unlike runtime scanners, it catches div soup, missing focus traps, and inaccessible animations during the design phase — before they reach production and before they violate the European Accessibility Act (EAA 2025). |
+| [Accessible Accessibility Review Plan](../mcps/accessible-accessibility-review-plan.md) | Transforms lived experience and accessibility needs into a structured, actionable Keep-Change-Stop review plan. |
+| [Accessible Advocacy Conversation Plan](../mcps/accessible-advocacy-conversation-plan.md) | Generate structured, facts-first advocacy strategies for accessibility needs. |
 | [Accessible Bathroom Routine Planner](../mcps/accessible-bathroom-routine-planner.md) | Transforms bathroom configurations and privacy needs into structured daily routines and safety checklists. |
 | [Accessible Communication Preference Plan](../mcps/accessible-communication-preference-plan.md) | Generate personalized communication profiles, formal accommodation requests, and contact-specific protocols. |
 | [Accessible Commute Planner](../mcps/accessible-commute-planner.md) | Generates structured weekly transit schedules and contingency protocols based on specific mobility requirements. |
 | [Accessible Delivery Handoff Plan](../mcps/accessible-delivery-handoff-plan.md) | Synthesize delivery provider constraints with user accessibility needs to generate actionable handoff instructions and workflows. |
+| [Accessible Employment Visit Planner](../mcps/accessible-employment-visit-planner.md) | Transforms employment visit details into inclusive, actionable visit protocols and communication templates. |
 | [Accessible Event Accommodation Planner](../mcps/accessible-event-accommodation-planner.md) | Generates privacy-respecting accommodation requests based on event policies. |
 | [Accessible Hobby Participation Planner](../mcps/accessible-hobby-participation-planner.md) | Adapts hobby workflows to individual accessibility needs and environmental constraints. |
 | [Accessible Household Support Agreement](../mcps/accessible-household-support-agreement.md) | Generates personalized, consent-driven household management plans. |
 | [Accessible Kitchen Participation Plan](../mcps/accessible-kitchen-participation-plan.md) | Orchestrates safe and inclusive kitchen participation through structured workflows and coordination. |
 | [Accessible Personal Assistance Handoff Plan](../mcps/accessible-personal-assistance-handoff-plan.md) | A coordination system for managing personal assistance transitions, task briefings, and safety protocols. |
+| [Accessible Public Service Visit Planner](../mcps/accessible-public-service-visit-planner.md) | Generates personalized preparedness strategies for public service visits, prioritizing accessibility and document readiness. |
+| [Accessible Routine Planner](../mcps/accessible-routine-planner.md) | Generates phased routine transition plans that respect accessibility needs and support networks. |
 | [Accessible Social Hosting Plan](../mcps/accessible-social-hosting-plan.md) | Organize inclusive gatherings by matching guest accessibility needs with home features and household boundaries. |
 | [Accessible Study Participation Plan](../mcps/accessible-study-participation-plan.md) | Generates participation strategies, communication timelines, and accessibility checklists for students. |
 | [Accessible Technology Adoption Plan](../mcps/accessible-technology-adoption-plan.md) | Generates structured implementation roadmaps for assistive technologies. |
@@ -122,6 +127,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [assignment-time-per-page](../mcps/assignment-time-per-page.md) | Calculates time spent per page to analyze academic workflow efficiency. |
 | [assignment-weighted-grade](../mcps/assignment-weighted-grade.md) | Calculate precise weighted grades and performance summaries. |
 | [Assistive Equipment Trial Planner](../mcps/assistive-equipment-trial-planner.md) | Coordinate and manage assistive technology trials with structured schedules and checklists. |
+| [Association Membership Renewal Plan](../mcps/association-membership-renewal-plan.md) | A planning engine that transforms membership renewal parameters into actionable timelines, evidence checklists, and payment workflows. |
 | [AstrologyAPI](../mcps/astrologyapi.md) | Leading global astrology platform — get daily horoscopes, birth charts, and numerology via AI. |
 | [Atlas](../mcps/atlas.md) | Manage customer support and ticketing with Atlas.so — track conversations, customers, and articles via AI. |
 | [ATS Anywhere](../mcps/ats-anywhere.md) | Manage your recruiting process with ATS Anywhere — track jobs, applicants, and sites via AI. |
@@ -237,7 +243,24 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Capsule CRM](../mcps/capsule-crm.md) | Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent. |
 | [Capsulink](../mcps/capsulink.md) | Manage shortened URLs via Capsulink — create links, track clicks, and monitor analytics directly from any AI agent. |
 | [Cardly](../mcps/cardly.md) | Send physical greeting cards via Cardly — automate personalized card sends, track orders, and manage contacts directly from any AI agent. |
+| [Care Benefits Application Organizer](../mcps/care-benefits-application-organizer.md) | Orchestrates care-related benefit applications by generating filing timelines, evidence indexes, and document action plans. |
+| [Care Decision Meeting Plan](../mcps/care-decision-meeting-plan.md) | Structures clinical decision-making meetings with agendas, pre-reads, and decision logs. |
+| [Care Family Contact Directory](../mcps/care-family-contact-directory.md) | Secure contact management for family and healthcare providers with role-based access. |
+| [Care Family Handoff Brief](../mcps/care-family-handoff-brief.md) | Transform raw caregiving data into structured, role-based handoff briefs for seamless transitions. |
+| [Care Helper Burnout Prevention Plan](../mcps/care-helper-burnout-prevention-plan.md) | Automated scheduling and wellness planning to prevent caregiver burnout. |
+| [Care Household Supply Plan](../mcps/care-household-supply-plan.md) | Automated replenishment scheduling and purchase management for household supplies. |
+| [Care Legal Document Renewal Plan](../mcps/care-legal-document-renewal-plan.md) | Manage legal document lifecycles, renewal deadlines, and secure sharing protocols. |
+| [Care Meal Logistics Plan](../mcps/care-meal-logistics-plan.md) | Automated coordination for meal delivery, shopping, and storage logistics. |
+| [Care Property Upkeep Coordinator](../mcps/care-property-upkeep-coordinator.md) | Coordinate home maintenance tasks, vendor schedules, and budget approvals. |
+| [Care Provider Onboarding Plan](../mcps/care-provider-onboarding-plan.md) | Orchestrates structured onboarding for care providers through staged orientation and sign-off gates. |
+| [Care Recurring Payment Calendar](../mcps/care-recurring-payment-calendar.md) | Manage recurring bill schedules, responsibility matrices, and automated alert workflows. |
+| [Care Relocation Logistics Plan](../mcps/care-relocation-logistics-plan.md) | Orchestrate complex moves with automated timelines, packing assignments, and service notifications. |
+| [Care Service Contract Review Plan](../mcps/care-service-contract-review-plan.md) | Analyze domestic care agreements against household priorities to identify risks and mismatches. |
+| [Care Service Renewal Calendar](../mcps/care-service-renewal-calendar.md) | Automated orchestration for service contract renewal timelines, review agendas, and decision checklists. |
+| [Care Social Visit Plan](../mcps/care-social-visit-plan.md) | Coordinates balanced social schedules, invitations, and transport based on energy limits and accessibility needs. |
+| [Care Visit Coordination Plan](../mcps/care-visit-coordination-plan.md) | Transforms care goals and logistical constraints into actionable visit schedules and checklists. |
 | [Career Progression Timeline](../mcps/career-progression-timeline.md) | Project career velocity, promotion age, and 10-year salary growth for Singapore professionals. |
+| [Caregiver Responsibility Agreement](../mcps/caregiver-responsibility-agreement.md) | Generate structured caregiving agreements, backup plans, and handoff standards to prevent burnout. |
 | [Cash Flow Forecaster](../mcps/cash-flow-forecaster.md) | Project future bank balances and identify upcoming liquidity gaps. |
 | [Cashboard](../mcps/cashboard.md) | Manage time tracking, invoicing, and projects via Cashboard — track expenses, send estimates, and monitor client billing directly from any AI agent. |
 | [Castmagic](../mcps/castmagic.md) | Automate audio and video content repurposing via Castmagic — generate transcripts, show notes, and social posts directly from any AI agent. |
@@ -307,6 +330,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Cold Outreach Email Scorer](../mcps/cold-outreach-email-scorer.md) | Audit cold email effectiveness by scoring personalization, value proposition placement, and call-to-action clarity. |
 | [Collectible Set Completion Calculator](../mcps/collectible-set-completion-calculator.md) | Track completion status, missing items, and acquisition budgets for collectible sets. |
 | [CometChat](../mcps/cometchat.md) | Enable your AI agent to manage chat users, groups, and messages via the CometChat API. |
+| [Community Donation Drive Planner](../mcps/community-donation-drive-planner.md) | Orchestrate community donation drives with intelligent logistics, volunteer matching, and donor messaging. |
+| [Community Fundraiser Planner](../mcps/community-fundraiser-planner.md) | Transform raw fundraising inputs into actionable, compliant execution roadmaps. |
 | [Competitive Intelligence Prover](../mcps/competitive-intelligence-prover.md) | AI agents fabricate competitor data, list vague weaknesses, propose fantasy strategies, and ignore your own gaps. This tool forces fact-grounded competitive analysis: verifiable sources, measurable weaknesses, feasible attack plans, self-aware assessment, and kill criteria with deadlines. |
 | [Concert Set Duration Calculator](../mcps/concert-set-duration-calculator.md) | Calculate total setlist duration and manage performance time slots. |
 | [Concurso Score Calculator](../mcps/concurso-score-calculator.md) | Calculate final examination scores, manage stage thresholds, and estimate competition rankings for civil service exams. |
@@ -508,6 +533,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Family Activity Tracker](../mcps/family-activity-tracker.md) | Track, categorize, and analyze family bonding through completed activities. |
 | [Family Birthday Counter](../mcps/family-birthday-counter.md) | Track and count birthday occurrences within specific timeframes. |
 | [Family Calendar Days](../mcps/family-calendar-days.md) | Analyze family calendar durations, activity density, and overlapping events. |
+| [Family Care Budget Planner](../mcps/family-care-budget-planner.md) | Orchestrate caregiving expenses, contributor schedules, and reimbursement tracking. |
+| [Family Care Calendar](../mcps/family-care-calendar.md) | Coordinate caregiving tasks, helper availability, and complex coverage rules. |
+| [Family Care Update Digest](../mcps/family-care-update-digest.md) | Consolidate caregiver updates into structured, privacy-compliant weekly digests and actionable schedules. |
 | [Family Event Cost Tracker](../mcps/family-event-cost-tracker.md) | Track and analyze expenditures for family celebrations and events. |
 | [Family Gift Total](../mcps/family-gift-total.md) | Manage and aggregate gift costs for family events. |
 | [Family Grocery Cost Calculator](../mcps/family-grocery-cost-calculator.md) | Calculate total and individual grocery expenditures for households. |
@@ -777,8 +805,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Liveblocks (Collaborative)](../mcps/liveblocks-collaborative.md) | Manage real-time collaborative rooms, user presence, and shared storage via Liveblocks — list rooms, track active users, and handle threads directly from your AI agent. |
 | [LLM API Cost Calculator](../mcps/llm-api-cost-calculator.md) | Estimate and compare the financial impact of LLM usage across different providers. |
 | [LLM Context Window Budgeter](../mcps/llm-context-window-budgeter.md) | Monitor and predict LLM context window exhaustion with precision token forecasting. |
+| [Local Advocacy Meeting Planner](../mcps/local-advocacy-meeting-planner.md) | Generate structured meeting agendas, speaker orders, and action plans for local advocacy. |
+| [Local Event Attendance Planner](../mcps/local-event-attendance-planner.md) | Optimize your event schedule by resolving time conflicts, travel logistics, and budget constraints. |
+| [Local Group Launch Plan](../mcps/local-group-launch-plan.md) | A strategic planning engine that transforms group concepts into actionable operational frameworks. |
 | [Local Time Converter](../mcps/local-time-converter.md) | Convert dates and times between different UTC offsets. |
 | [Lokalise](../mcps/lokalise.md) | Automate translation and localization workflows via Lokalise — manage projects, keys, and translations directly from any AI agent. |
+| [Long-Distance Care Coordination](../mcps/long-distance-care-coordination.md) | Orchestrate care for distant loved ones by synchronizing local support, remote assistance, and travel plans. |
 | [Long-Stay Visa Budget Planner](../mcps/long-stay-visa-budget-planner.md) | Plan the costs and timelines for long-stay visa applications. |
 | [Loom (Async Video Messaging)](../mcps/loom-async-video-messaging.md) | Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics. |
 | [Loopio](../mcps/loopio.md) | Connect your Loopio RFP platform to AI — search approved answers, manage proposal projects, and automate questionnaire responses naturally via chat. |
@@ -858,6 +890,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Nap Optimizer](../mcps/nap-optimizer.md) | Optimize your rest with science-based nap recommendations. |
 | [Nap Strategy Calculator](../mcps/nap-strategy-calculator.md) | Optimize your rest with intelligent nap scheduling based on sleep patterns and goals. |
 | [Nap Timing Recommender](../mcps/nap-timing-recommender.md) | Calculates optimal nap windows based on circadian rhythms and sleep pressure. |
+| [Neighborhood Cleanup Coordination Plan](../mcps/neighborhood-cleanup-coordination-plan.md) | Coordinate community cleanups with automated shift planning, supply management, and volunteer communications. |
+| [Neighborhood Meeting Planner](../mcps/neighborhood-meeting-planner.md) | Generate structured meeting agendas, venue selections, and community invitations. |
 | [NeonCRM](../mcps/neoncrm.md) | Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent. |
 | [Nervous System Regulation Planner](../mcps/nervous-system-regulation-planner.md) | Personalized regulation strategies based on Polyvagal Theory. |
 | [Neuroplasticity Activity Planner](../mcps/neuroplasticity-activity-planner.md) | Generates optimized cognitive activity schedules to stimulate brain plasticity. |
@@ -1287,6 +1321,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Vocabulary Forge](../mcps/vocabulary-forge.md) | AI detectors don't scan for bad grammar — they scan for vocabulary. "Delve", "leverage", "furthermore" are fingerprints. Vocabulary Forge makes the agent build a complete voice profile: define the person, map tonal shifts, purge signal words, add human roughness, commit to a signature. Any language. |
 | [Vocabulary Total](../mcps/vocabulary-total.md) | Aggregate and manage English vocabulary learned across multiple sessions. |
 | [Voice Strain Assessment](../mcps/voice-strain-assessment.md) | Assess vocal strain risk and recovery needs for voice professionals. |
+| [Volunteer Onboarding Planner](../mcps/volunteer-onboarding-planner.md) | Automates structured onboarding workflows, timelines, and document checklists for volunteers. |
+| [Volunteer Opportunity Fit Plan](../mcps/volunteer-opportunity-fit-plan.md) | A specialized matching engine that evaluates volunteer candidates against specific opportunities using weighted preference scoring and hard constraint validation. |
 | [vote.direct](../mcps/votedirect.md) | Manage voter info — audit polling locations, elections, and registration via IA. |
 | [Vue.js Excellence Prover](../mcps/vuejs-excellence-prover.md) | AI agents produce legacy Vue 2 configurations, unstable reactivity loops, and untyped interfaces. This prover enforces Vue 3 Composition API excellence, strict reactivity limits, compile-time type-safety, and optimized browser execution. Zero tolerance for Options API and raw prop mutations. |
 | [Wakapi (WakaTime Alternative)](../mcps/wakapi-wakatime-alternative.md) | Track coding time, analyze productivity stats, and manage projects via Wakapi — an open-source WakaTime alternative. |

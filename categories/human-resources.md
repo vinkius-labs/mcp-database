@@ -18,6 +18,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [BLS Labor Force — National Unemployment & CPS](../mcps/bls-labor-force-national-unemployment-cps.md) | Access Current Population Survey (CPS) data. Easily query national unemployment rates, labor force participation, and detailed demographic breakdowns at the push of a button. |
 | [BLS Wages — OEWS Occupational Employment](../mcps/bls-wages-oews-occupational-employment.md) | The holy grail of HR data. Use Occupational Employment and Wage Statistics (OEWS) to extract exact median earnings broken down by detailed professions and states. |
 | [Bullhorn](../mcps/bullhorn.md) | Manage recruitment workflows and ATS data via Bullhorn — retrieve, create, update, and delete entities, notes, and associations directly from any AI agent. |
+| [Care Provider Interview Planner](../mcps/care-provider-interview-planner.md) | A decision-support system for evaluating care provider candidates against family requirements. |
 | [Casting42](../mcps/casting42.md) | Manage talent databases and casting projects via Casting42 — track profiles, media, and custom attributes directly from any AI agent. |
 | [Certn](../mcps/certn.md) | Automate background checks and screenings for HR and Property Management via Certn — invite applicants, run quickscreens, and retrieve reports. |
 | [ChartHop](../mcps/charthop.md) | Manage people operations and organizational data via ChartHop — track jobs, people, and headcount planning directly from any AI agent. |

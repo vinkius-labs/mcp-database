@@ -5,6 +5,8 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Agent Resource Fairness Scheduler](../mcps/agent-resource-fairness-scheduler.md) | Deterministic fair resource allocation for competing agents using weighted fair queuing. |
+| [Care Laundry Household Rotation](../mcps/care-laundry-household-rotation.md) | Manages laundry task rotation, storage capacity, and helper availability. |
+| [Community Garden Participation Planner](../mcps/community-garden-participation-planner.md) | Automate garden schedules, duty rotations, and member signup actions. |
 | [DAG Topological Scheduler](../mcps/dag-topological-scheduler.md) | Deterministic task scheduling and critical path analysis for multi-agent DAGs. |
 | [Graph Coloring Scheduler](../mcps/graph-coloring-scheduler.md) | Deterministic agent scheduling using graph coloring to prevent resource conflicts. |
 | [Group Chat Speaker Selector](../mcps/group-chat-speaker-selector.md) | Deterministic speaker selection engine for multi-agent group chats. |

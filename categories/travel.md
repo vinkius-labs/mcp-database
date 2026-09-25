@@ -10,6 +10,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Baggage Allowance Comparator](../mcps/baggage-allowance-comparator.md) | Compare airline baggage dimensions, weight limits, and sports equipment fees. |
 | [Board Quiver Planner](../mcps/board-quiver-planner.md) | Optimize your surfboard quiver for any trip or wave conditions. |
 | [Campsite Availability](../mcps/campsite-availability.md) | Real campsite availability from Recreation.gov — which nights are open at a campground, which sites fit a multi-night stay, and how campgrounds compare side by side. |
+| [Care Travel Companion Plan](../mcps/care-travel-companion-plan.md) | Coordinates care-specific travel timelines, packing responsibilities, and emergency fallback plans. |
 | [Family Trip Seat Count](../mcps/family-trip-seat-count.md) | Calculate vehicle capacity and passenger distribution for family trips. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
 | [Jet Lag Adjustment Calculator](../mcps/jet-lag-adjustment-calculator.md) | Calculate the days needed to adjust to new time zones. |

@@ -12,6 +12,15 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Blood Pressure Category Assessment](../mcps/blood-pressure-category-assessment.md) | Categorizes blood pressure readings and assesses cardiovascular risk using international guidelines. |
 | [Blood Type Compatibility & Demographics](../mcps/blood-type-compatibility-demographics.md) | Check blood and plasma transfusion compatibility, pregnancy risks, and regional blood type distributions. |
 | [BMI Clinical Calculator](../mcps/bmi-clinical-calculator.md) | Calculate BMI, ideal body weight estimates, and assess bariatric surgery eligibility. |
+| [Care Appointment Companion Plan](../mcps/care-appointment-companion-plan.md) | Logistical coordination for non-medical companions attending healthcare appointments. |
+| [Care Communication & Consent Map](../mcps/care-communication-consent-map.md) | A privacy-first decision engine for managing communication permissions and data disclosure boundaries. |
+| [Care Hospital Visit Logistics](../mcps/care-hospital-visit-logistics.md) | Coordinate hospital visits, travel plans, and handoff protocols. |
+| [Care Incident Documentation Plan](../mcps/care-incident-documentation-plan.md) | Standardizes raw care incident data into objective, chronological, and compliant documentation packages. |
+| [Care Records Transfer Plan](../mcps/care-records-transfer-plan.md) | Coordinate secure medical record transfers with strict consent and chain-of-custody protocols. |
+| [Care Schedule Conflict Resolver](../mcps/care-schedule-conflict-resolver.md) | Resolves scheduling overlaps by balancing task criticality, helper availability, and travel constraints. |
+| [Care Transition Planner](../mcps/care-transition-planner.md) | Coordinate care transitions with dependency gates and consent rules. |
+| [Care Transport Booking Plan](../mcps/care-transport-booking-plan.md) | Synchronizes medical appointments with specialized transit providers and mobility needs. |
+| [Care Volunteer Support Plan](../mcps/care-volunteer-support-plan.md) | Coordinates volunteer rosters, task briefs, and safety protocols for care organizations. |
 | [Child Growth Percentile Calculator](../mcps/child-growth-percentile-calculator.md) | Calculate pediatric growth percentiles, velocity, and status using WHO and CDC standards. |
 | [Cholesterol Risk Calculator](../mcps/cholesterol-risk-calculator.md) | Estimates 10-year cardiovascular risk and provides LDL targets. |
 | [CPAP Pressure Estimator](../mcps/cpap-pressure-estimator.md) | Predicts CPAP pressure requirements using clinical physiological markers. |
@@ -47,6 +56,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Pet Medication Dose Calculator](../mcps/pet-medication-dose-calculator.md) | Calculate estimated medication dosages for pets based on body weight and veterinary standards. |
 | [Pet Vaccine Date Scheduler](../mcps/pet-vaccine-date-scheduler.md) | Calculate future vaccination dates and booster schedules for veterinary management. |
 | [Pharmacokinetics Calculator](../mcps/pharmacokinetics-calculator.md) | Derive fundamental pharmacokinetic parameters from concentration-time data. |
+| [Respite Coverage Planner](../mcps/respite-coverage-planner.md) | Optimized scheduling and logistics for respite care coverage. |
 | [Safe Syringe Rounding](../mcps/safe-syringe-rounding.md) | Ensures medical safety by rounding liquid doses down to the nearest syringe marking. |
 | [Shockwave Therapy Protocol Planner](../mcps/shockwave-therapy-protocol-planner.md) | Generates precise clinical shockwave therapy parameters based on patient condition and chronicity. |
 | [Sleep Apnea Risk Screener](../mcps/sleep-apnea-risk-screener.md) | Clinical screening tool for Obstructive Sleep Apnea risk using STOP-BANG. |

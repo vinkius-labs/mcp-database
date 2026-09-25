@@ -4,6 +4,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Contingency Contact Plan](../mcps/accessible-contingency-contact-plan.md) | Generates structured response protocols and contact summaries for access-dependent operations. |
 | [Accessible Outdoor Activity Planner](../mcps/accessible-outdoor-activity-planner.md) | Generates participation readiness, role assignments, and coordination logistics for accessible outdoor excursions. |
 | [Accessible Ticketing Decision Plan](../mcps/accessible-ticketing-decision-plan.md) | Evaluates ticket availability and purchase feasibility by prioritizing mandatory accessibility needs and budget constraints. |
 | [Accessible Transit Enrollment Planner](../mcps/accessible-transit-enrollment-planner.md) | Maps transport service rules to actionable application sequences and document checklists. |

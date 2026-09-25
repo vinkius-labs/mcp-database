@@ -12,6 +12,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
+| [Care Document Access Plan](../mcps/care-document-access-plan.md) | Strategic planning for sensitive healthcare document access and least-privilege security. |
+| [Care Home Access Roster](../mcps/care-home-access-roster.md) | Manage visitor authorization, entry methods, and safety protocols for care facilities. |
 | [CI/CD Pipeline Config Validator](../mcps/cicd-pipeline-config-validator.md) | Deterministic validator for GitHub Actions and GitLab CI configuration files. |
 | [Claro Antifraud (Open Gateway)](../mcps/claro-antifraud-open-gateway.md) | Line & location security checks on the official Claro Brasil gateway: SIM swap check and last-swap date (GSMA), line-change alerts (Claro Alerta), number recycling, device location verify/retrieval and legacy LBS — OAuth client_credentials. |
 | [Claro Insight (Marketplace API Claro)](../mcps/claro-insight-marketplace-api-claro.md) | The official Claro Brasil API marketplace as an MCP: SIM tenure checks, GSMA KYC match & fill-in, CPF-vs-phone and CPF-vs-address validation, Claro Score credit scoring and facial biometrics lookup — OAuth client_credentials. |
