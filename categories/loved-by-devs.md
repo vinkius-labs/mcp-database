@@ -50,6 +50,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Gitea](../mcps/gitea.md) | Manage self-hosted Git via Gitea — list and manage repositories, track issues and pull requests, handle organizations, and audit branches directly from any AI agent. |
 | [GitHub](../mcps/github-alternative.md) | Manage repositories, pull requests, issues, and CI/CD workflows on the world largest developer collaboration platform. |
 | [GitHub](../mcps/github-extended.md) | Manage repositories, pull requests, issues, and CI/CD workflows on the world largest developer collaboration platform. |
+| [GitHub Gists](../mcps/github-gists.md) | Manage GitHub Gists: list public Gists, read files, and create, edit, fork and delete your Gists. Public reads work keyless; a token unlocks the full suite. |
 | [Gitpod](../mcps/gitpod.md) | Automate cloud development environments — create, start, and manage Gitpod workspaces and organizations directly from any AI agent. |
 | [Glob Pattern Tester](../mcps/glob-pattern-tester.md) | Test whether a file path matches a glob pattern using the same algorithm used by npm and git. 130M+ weekly downloads. |
 | [Grafana](../mcps/grafana.md) | Manage observability via Grafana — search and inspect dashboards, monitor alerts, and handle data sources directly from any AI agent. |

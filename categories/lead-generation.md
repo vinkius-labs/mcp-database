@@ -5,9 +5,12 @@ Explore the open database of **lead-generation** Model Context Protocol (MCP) se
 | Tool Name | Description |
 |-----------|-------------|
 | [Mailshake](../mcps/mailshake.md) | Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API. |
+| [Outbound Briefing](../mcps/outbound-briefing.md) | Keyless pre-call and pre-email card for any target: who they are, whether they are hiring, whose mail they run, what new surface they just shipped, how much fresh federal money they hold — and what to do next. No key, no account. |
+| [Outbound Hiring Signals](../mcps/outbound-hiring-signals.md) | Keyless sales-movement detection from public job boards — open roles, how many days ago they were posted, and the commercial mix per company, straight from public Greenhouse boards. No key, no account. |
 | [Pipedrive Leads](../mcps/pipedrive-leads.md) | Manage your Pipedrive lead inbox — create, update, and organize leads with labels and sources before they become deals. |
 | [StartupHub Discovery](../mcps/startuphub-discovery.md) | Find startups before the press does — search 65M+ companies discovered from new domains, registries and GitHub orgs. |
 | [StartupHub People & Intel](../mcps/startuphub-people-intel.md) | Find founders and investors, discover verified professional emails, and unlock deep-intelligence dossiers. |
+| [Tech Trigger Radar](../mcps/tech-trigger-radar.md) | Keyless technical and demand signals for outbound targeting — subdomains that just appeared, the stack behind a domain, its public age, how the market phrases a need, and what is trending now. No key, no account. |
 
 
 ---

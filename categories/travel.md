@@ -31,6 +31,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
 | [Trip Emission Total](../mcps/trip-emission-total.md) | Aggregate and analyze CO2e emissions from individual journey segments. |
+| [US Airport Weather Sentinel](../mcps/us-airport-weather-sentinel.md) | Know what's happening at your airport before you roll: latest METAR conditions plus every active NWS weather alert for the airport's zone, with since-based deltas so the agent re-checks and reports only what changed — keyless, stateless. |
 | [US Forest Service Trails](../mcps/us-forest-service-trails.md) | The trail inventory of the US National Forests — search trails by name, list the trails crossing any area, and read each trail's permitted uses, surface, grade and accessibility. |
 | [Visa Requirement Checker](../mcps/visa-requirement-checker.md) | Check visa requirements, travel advisories, and passport validity rules globally. |
 

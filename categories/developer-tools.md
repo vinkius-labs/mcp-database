@@ -120,6 +120,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Code Clone Detector](../mcps/code-clone-detector.md) | Identify exact and near-duplicate code blocks within your project. |
 | [Codecov](../mcps/codecov.md) | Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent. |
 | [Codemagic](../mcps/codemagic.md) | Automate mobile CI/CD workflows — trigger builds, manage artifacts, and update environment variables directly from your AI agent. |
+| [Coder Legion](../mcps/coder-legion.md) | Connect AI agents to Coder Legion, a developer community: browse and publish posts and Q&A, jobs, content series, groups, the developer directory and community tags through the official API. |
+| [Coder Legion Developers](../mcps/coder-legion-developers.md) | Connect AI agents to Coder Legion's public developer directory: browse profiles, search by name, skill, location or experience, and open full developer profiles — no account or key needed. |
 | [CoderPad](../mcps/coderpad.md) | Manage technical interviews and assessments via CoderPad — create pads, track interview events, and audit the question bank directly from any AI agent. |
 | [Color Contrast Checker](../mcps/color-contrast-checker-alternative.md) | Instantly verify if your text is readable on any background. WCAG 2.1 AA/AAA compliance in one call — the AI guesses ratios, this engine calculates them. |
 | [Color Contrast Checker](../mcps/color-contrast-checker.md) | Check WCAG color contrast compliance via AI — verify text readability against backgrounds for accessible, inclusive web design. |

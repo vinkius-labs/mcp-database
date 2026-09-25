@@ -6,6 +6,7 @@ Explore the open database of **legal** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Assistive Equipment Sharing Agreement](../mcps/assistive-equipment-sharing-agreement.md) | Formalize logistical and legal frameworks for sharing assistive technology. |
 | [Contract Notice Period Calculator](../mcps/contract-notice-period-calculator.md) | Calculate minimum legal notice periods and effective termination dates for various contract types across USA and Europe. |
+| [Creative Rights Clearance Plan](../mcps/creative-rights-clearance-plan.md) | Manage creative asset permissions and generate actionable clearance workflows. |
 | [Force Majeure Impact Calculator](../mcps/force-majeure-impact-calculator.md) | Calculate the legal and operational impact of Force Majeure events on contract obligations. |
 | [US Non-Compete Enforceability Analyzer](../mcps/us-non-compete-enforceability-analyzer.md) | Assess the legal enforceability of non-compete agreements across US states. |
 | [US Statute of Limitations Calculator](../mcps/us-statute-of-limitations-calculator.md) | Calculate US legal filing deadlines based on claim type, state, and accrual date. |

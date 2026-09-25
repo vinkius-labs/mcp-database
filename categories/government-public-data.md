@@ -4,8 +4,12 @@ Explore the open database of **government-public-data** Model Context Protocol (
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Amsterdam Parking & Traffic Zones](../mcps/amsterdam-parking-traffic-zones.md) | Keyless access to Amsterdam parking zones, individual parking bays, parking zone exceptions, emission (milieu) zones, zero-emission zones and touring car stops — the city's open-data platform, no API key. |
+| [Amsterdam Urban Trees](../mcps/amsterdam-urban-trees.md) | Keyless access to Amsterdam's urban tree registry: individual trees (species, height, planting year), storm damage reports, safety inspections and felling/replanting records — the city's open-data platform, no API key. |
+| [Amsterdam Waste & Recycling](../mcps/amsterdam-waste-recycling.md) | Keyless access to Amsterdam's official waste calendar, waste fractions, street containers, container types and recycling point weighings — the city's open-data platform, no API key. |
 | [ANVISA (Portal de APIs)](../mcps/anvisa-portal-de-apis.md) | Access official Brazilian health regulatory data — query medicines, prices, food registrations, cosmetics, and sanitizers directly from ANVISA. |
 | [Care Quality Commission (CQC)](../mcps/care-quality-commission-cqc.md) | Access UK health and social care regulator data via CQC — search providers, check ratings, and retrieve inspection reports directly from any AI agent. |
+| [CDC Disease Sentinel](../mcps/cdc-disease-sentinel.md) | Detect disease surges in US public health data. CDC's weekly NNDSS case counts with trend, 52-week baseline, YTD comparison and a surge multiplier per disease, state or region — keyless, stateless. |
 | [CTA](../mcps/cta.md) | Access Chicago transit data via CTA — track L trains and buses in real-time, check arrivals, monitor service alerts, and plan trips from any AI agent. |
 | [DonorsChoose](../mcps/donorschoose.md) | Equip your AI agent to search classroom projects, track funding needs, and monitor educational proposals via the DonorsChoose API. |
 | [e-Gov Japan Laws](../mcps/e-gov-japan-laws.md) | Japan's official legislation portal as an MCP: browse all 18,000+ acts, cabinet orders and ordinances, fetch full structured text (chapters > articles > paragraphs), extract single articles or search keywords inside laws — keyless. |
@@ -15,6 +19,7 @@ Explore the open database of **government-public-data** Model Context Protocol (
 | [EU Open Data Portal](../mcps/eu-open-data-portal.md) | Search 1.9M+ open datasets from 36 European countries in data.europa.eu — the official EU portal: full-text search, per-country and format filters, High-Value Datasets (HVD) finder and full dataset details with download links — zero auth. |
 | [Eurostat Environment — EU Green Data](../mcps/eurostat-environment-eu-green-data.md) | EU environmental and energy data: greenhouse gas emissions by sector, complete energy balance sheets, electricity and gas prices, renewable energy share, waste statistics, and agricultural production for all 27 EU member states. |
 | [Facturama (SAT)](../mcps/facturama-sat.md) | Automate CFDI Mexico (SAT) Tax Invoices via Facturama — emit formal invoices, retrieve catalogs, and extract tax data fully relying on your AI. |
+| [Federal Contracts ICP](../mcps/federal-contracts-icp.md) | Keyless US federal spending intelligence from the government's own public database — company federal footprint, fresh contract wins, new-budget triggers and top vendors per industry or agency, for ICP proof and outbound timing. No key, no account. |
 | [FMCSA Licensing & Insurance](../mcps/fmcsa-licensing-insurance.md) | Access real-time FMCSA data to verify motor carrier licensing, insurance, safety ratings, and authority status directly through AI. |
 | [GSA Per Diem Rates](../mcps/gsa-per-diem-rates.md) | Access official U.S. government per diem rates for lodging and meals by city, state, or ZIP code directly from your AI agent. |
 | [GSI Japan Terrain & Geocoding](../mcps/gsi-japan-terrain-geocoding.md) | Japan's Geospatial Information Authority as an MCP: official elevation for any point (1m laser DEM — Mt. Fuji at 3770m), Japanese address geocoding and multi-point terrain profiles. Keyless. |
@@ -32,6 +37,7 @@ Explore the open database of **government-public-data** Model Context Protocol (
 | [OpenGov](../mcps/opengov.md) | Access OpenGov data directly—list reports, query financial funds, and manage users or departments through your AI agent. |
 | [Recreation.gov (RIDB)](../mcps/recreationgov-ridb.md) | Access federal recreation data—find campgrounds, trails, and facilities across the US directly from your AI agent. |
 | [TfL](../mcps/tfl.md) | Access London transport data via TfL — track tube and bus arrivals, plan journeys, check line status, and find bike points from any AI agent. |
+| [US Flood Sentinel](../mcps/us-flood-sentinel.md) | Know when US rivers are actually flooding: USGS gage heights checked against their flood stages, multi-day trends, and every active NWS flood alert nationwide — with since-based deltas so the agent re-checks and reports only what changed. Keyless, stateless. |
 | [USDA FoodData Central](../mcps/usda-fooddata-central-alternative.md) | Manage your nutritional research — audit food records and nutrient data via AI. |
 
 

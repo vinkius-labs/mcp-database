@@ -373,6 +373,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Craft Night Cost Tracker](../mcps/craft-night-cost-tracker.md) | Manage and settle expenses for organized crafting sessions. |
 | [Craft Project Design Brief](../mcps/craft-project-design-brief.md) | A structured planning engine that transforms raw creative intentions into actionable design specifications and execution plans. |
 | [Craft.io](../mcps/craftio.md) | Build product roadmaps that connect strategy to execution with visual planning tools your whole organization can follow. |
+| [Creative Collaborator Credit Plan](../mcps/creative-collaborator-credit-plan.md) | Manage complex attribution and credit workflows for creative projects. |
+| [Creative Grant Application Planner](../mcps/creative-grant-application-planner.md) | Audit grant readiness and generate structured execution roadmaps for complex applications. |
+| [Creative Portfolio Audience Planner](../mcps/creative-portfolio-audience-planner.md) | Strategically map portfolio versions to target audiences and plan deployment. |
+| [Creative Project Retrospective Plan](../mcps/creative-project-retrospective-plan.md) | Transform raw post-project data into structured retrospective outputs and strategic creative directions. |
 | [Crisp](../mcps/crisp.md) | Chat with website visitors in real time, manage support conversations, and build a knowledge base that reduces ticket volume. |
 | [Critical Thinking Prover](../mcps/critical-thinking-prover.md) | AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence. |
 | [Cron Expression Calculator](../mcps/cron-expression-calculator.md) | Calculate the exact future dates of any Cron expression using deterministic JavaScript. Stop LLMs from failing date mathematics and leap year edge cases. |

@@ -17,6 +17,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
 | [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
 | [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
+| [Creative Exhibition Submission Plan](../mcps/creative-exhibition-submission-plan.md) | An intelligent decision-support engine that evaluates artist works against exhibition calls to generate actionable submission strategies. |
 | [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
 | [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
 | [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
@@ -43,6 +44,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Photo Location Permission Planner](../mcps/photo-location-permission-planner.md) | Generate production logistics, compliance checklists, and contact sheets for location shoots. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
+| [Print Edition Release Planner](../mcps/print-edition-release-planner.md) | Automated planning engine for print edition viability, pre-production, and fulfillment. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
 | [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |
 | [Seat Count Calculator](../mcps/seat-count-calculator.md) | Calculate required vehicles and fleet efficiency for traveler groups. |

@@ -5,6 +5,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [AgentFire](../mcps/agentfire.md) | Build high-converting real estate websites, manage property listings, and capture leads for your brokerage with ease. |
+| [Amsterdam Addresses & Properties](../mcps/amsterdam-addresses-properties.md) | Keyless access to Amsterdam's address register (BAG), buildings, property register (WOZ) and protected monuments — addresses, house numbers, building data and monument records, no API key. |
 | [Apex27](../mcps/apex27.md) | Manage letting agency operations with property listings, tenant applications, and maintenance tracking built for estate agents. |
 | [ARGUS Cloud](../mcps/argus-cloud.md) | Manage commercial real estate assets and portfolios with ARGUS — track valuations and alerts via AI. |
 | [BIMobject](../mcps/bimobject.md) | Access BIMobject marketplace — search building products, download technical files, and manage manufacturer data directly from any AI agent. |

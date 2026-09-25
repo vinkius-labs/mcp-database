@@ -5,6 +5,7 @@ Explore the open database of **media-entertainment** Model Context Protocol (MCP
 | Tool Name | Description |
 |-----------|-------------|
 | [FCC Broadcaster](../mcps/fcc-broadcaster.md) | Discover radio and television broadcast licensing records and operations across the United States without authentication. |
+| [TV Episode Sentinel](../mcps/tv-episode-sentinel.md) | Track new TV episodes and season progress across any show. Search the catalog, get everything aired since any date, next air dates and per-season progress — stateless, keyless, no account. |
 
 
 ---

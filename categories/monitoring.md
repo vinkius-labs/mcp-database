@@ -5,6 +5,7 @@ Explore the open database of **monitoring** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Conversation Turn Fairness Enforcer](../mcps/conversation-turn-fairness-enforcer.md) | Prevents agent domination in multi-agent conversations by monitoring turn frequency. |
+| [ESPN Sports Sentinel](../mcps/espn-sports-sentinel.md) | Know what's new in your league without re-reading the whole season: today's board (live, final, to play), completed games in the last days, upcoming games, one team's record and next game, league-wide injury news with a since-baseline, and a derived leaderboard. Keyless, stateless. |
 | [Fouling Resistance Monitor](../mcps/fouling-resistance-monitor.md) | Monitors heat exchanger fouling resistance and predicts cleaning schedules. |
 | [Resource Usage Accountant](../mcps/resource-usage-accountant.md) | Tracks and enforces resource usage limits for agent executions. |
 
