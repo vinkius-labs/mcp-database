@@ -21,6 +21,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Circle of Fifths Navigator](../mcps/circle-of-fifths-navigator.md) | Navigate musical keys, identify tonal relationships, and plan modulations using the Circle of Fifverts framework. |
 | [Class Rank Estimator](../mcps/class-rank-estimator.md) | Estimate your class rank percentile using GPA, mean, and standard deviation. |
 | [Community Class Enrollment Plan](../mcps/community-class-enrollment-plan.md) | Optimized enrollment strategies, schedules, and payment plans for community classes. |
+| [Community Mentor Match Plan](../mcps/community-mentor-match-plan.md) | Generates structured mentorship engagement plans by evaluating mentee goals against mentor profiles and safeguarding rules. |
 | [Coordination Chemistry Calculator](../mcps/coordination-chemistry-calculator.md) | Calculate oxidation states, d-electron counts, and CFSE for coordination complexes. |
 | [Coordination Compound Nomenclature](../mcps/coordination-compound-nomenclature.md) | Generate IUPAC names, formulas, and geometries for coordination complexes. |
 | [Developmental Milestone Tracker](../mcps/developmental-milestone-tracker.md) | Monitor child development by comparing milestones against standardized norms and adjusted age. |

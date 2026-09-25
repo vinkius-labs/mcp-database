@@ -5,6 +5,7 @@ Explore the open database of **research** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Heat Shock Protein Estimator](../mcps/heat-shock-protein-estimator.md) | Estimate HSP activation and optimize thermal stress protocols. |
+| [Local History Project Manager](../mcps/local-history-project-manager.md) | A management engine for organizing community history research, ensuring ethical compliance and structured milestones. |
 
 
 ---

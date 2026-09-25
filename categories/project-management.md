@@ -9,13 +9,17 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [Enterprise Pilot Scope Optimizer](../mcps/enterprise-pilot-scope-optimizer.md) | Calculates optimal pilot scope, duration, and success alignment. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
 | [Innovation Time-to-Market Engine](../mcps/innovation-time-to-market-engine.md) | Calculate and optimize product development timelines, critical paths, and acceleration strategies. |
+| [Music Project Creative Direction Plan](../mcps/music-project-creative-direction-plan.md) | Synthesize musical influences and constraints into cohesive creative mandates. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |
 | [Pipefy](../mcps/pipefy.md) | Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent. |
 | [Productive](../mcps/productive.md) | Manage your entire agency workflow via Productive — fetch budgets, analyze time entries, track deals, and monitor project health directly from any AI agent. |
 | [ProofHub](../mcps/proofhub.md) | Empower your AI agent to manage your ProofHub projects — list tasks, create to-dos, read discussions, and track timesheets instantly. |
+| [Public Art Proposal Planner](../mcps/public-art-proposal-planner.md) | Transform fragmented art call briefs into structured submission strategies and compliance checklists. |
 | [Sprint Velocity Trend](../mcps/sprint-velocity-trend.md) | Analyzes historical sprint performance to forecast capacity and identify velocity patterns. |
 | [Technical Debt Ratio Analyzer](../mcps/technical-debt-ratio-analyzer.md) | Calculates technical debt accumulation and provides strategic investment recommendations. |
 | [Venture Studio Timeline Planner](../mcps/venture-studio-timeline-planner.md) | Estimate venture launch timelines and identify critical bottlenecks. |
+| [Video Collaboration Handoff Plan](../mcps/video-collaboration-handoff-plan.md) | Automate structured handoff protocols and permission-based asset sharing for video production workflows. |
+| [Video Screening Presentation Planner](../mcps/video-screening-presentation-planner.md) | Transform video assets and environmental constraints into a comprehensive screening execution roadmap. |
 
 
 ---

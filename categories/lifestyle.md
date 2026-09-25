@@ -28,6 +28,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
+| [Local Club Membership Planner](../mcps/local-club-membership-planner.md) | Evaluate and plan local club memberships based on budget and fit. |
 | [Matcha Ceremony Parameter Calculator](../mcps/matcha-ceremony-parameter-calculator.md) | Calculate precise matcha recipes, water temperatures, and caffeine estimates. |
 | [Morning-Night Skincare Routine Syncer](../mcps/morning-night-skincare-routine-syncer.md) | Validate skincare routine safety by checking for ingredient incompatibilities and essential dependencies. |
 | [Numerology Calculator](../mcps/numerology-calculator.md) | Get a complete Pythagorean numerology profile including Life Path, Destiny, and Soul Urge numbers. |

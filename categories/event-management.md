@@ -11,6 +11,8 @@ Explore the open database of **event-management** Model Context Protocol (MCP) s
 | [ExhibitDay Trade Show Planning](../mcps/exhibitday-trade-show-planning.md) | Equip your AI agent to manage trade show schedules, track booth shipments, and monitor event budgets via the ExhibitDay API. |
 | [HelloAsso](../mcps/helloasso.md) | Automate association management via HelloAsso — manage payments, forms, and orders for French non-profits directly from any AI agent. |
 | [Line-Up](../mcps/line-up.md) | Manage events, check ticket availability, and process bookings via the Line-Up API. |
+| [Live Music Coordination Engine](../mcps/live-music-coordination-engine.md) | Transform raw performance details into a complete operational roadmap for live music events. |
+| [Local Festival Participation Planner](../mcps/local-festival-participation-planner.md) | Generate readiness plans, checklists, and logistics for local festival participation. |
 | [Momence](../mcps/momence.md) | Manage sessions, members, teachers, memberships, and bookings for your Momence-powered fitness or yoga studio through natural conversation. |
 | [myClub](../mcps/myclub.md) | Sports club management — manage members, events, and invoices via myClub.fi. |
 | [Pet Event Attendance](../mcps/pet-event-attendance.md) | Track and analyze pet attendance and RSVP status for events. |

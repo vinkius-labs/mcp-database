@@ -14,6 +14,7 @@ Explore the open database of **collaboration** Model Context Protocol (MCP) serv
 | [Canny](../mcps/canny.md) | Manage product feedback via Canny — track feature requests, bugs, and user votes directly from any AI agent. |
 | [Canvas LMS](../mcps/canvas-lms.md) | Manage Canvas LMS courses, assignments, and users directly through your AI agent — streamline educational workflows and administrative tasks. |
 | [Common Room](../mcps/common-room-alternative.md) | Unify community signals from Slack, Discord, GitHub, and social media to identify your most engaged users and advocates. |
+| [Community Partnership Planner](../mcps/community-partnership-planner.md) | Transform organizational inputs into structured partnership frameworks, roadmaps, and RACI matrices. |
 | [crowd.dev (LFX CDP)](../mcps/crowddev-lfx-cdp.md) | Equip your AI agent to manage community members, activities, and organizations directly via the crowd.dev (LFX) API. |
 | [Digify](../mcps/digify-alternative.md) | Share documents securely with dynamic watermarks, access controls, and analytics that show exactly who viewed each page. |
 | [Document360](../mcps/document360.md) | Manage knowledge bases via Document360 — list project versions, handle categories and articles, search content, and track analytics directly from any AI agent. |

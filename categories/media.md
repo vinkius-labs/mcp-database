@@ -5,6 +5,7 @@ Explore the open database of **media** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Album Duration Analyzer](../mcps/album-duration-analyzer.md) | Calculate and compare the average durations of music albums. |
+| [Documentary Source Plan](../mcps/documentary-source-plan.md) | A production management system for mapping source usage, outreach, and verification. |
 
 
 ---

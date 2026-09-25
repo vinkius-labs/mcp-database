@@ -9,11 +9,14 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Accessible Ticketing Decision Plan](../mcps/accessible-ticketing-decision-plan.md) | Evaluates ticket availability and purchase feasibility by prioritizing mandatory accessibility needs and budget constraints. |
 | [Accessible Transit Enrollment Planner](../mcps/accessible-transit-enrollment-planner.md) | Maps transport service rules to actionable application sequences and document checklists. |
 | [Accessible Venue Arrival Plan](../mcps/accessible-venue-arrival-plan.md) | Transforms venue accessibility data and user needs into precise arrival and departure strategies. |
+| [Art Installation Approval Plan](../mcps/art-installation-approval-plan.md) | A decision-support engine for evaluating art installation compliance and readiness. |
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
 | [Beach Towel Calculator](../mcps/beach-towel-calculator.md) | Calculate total towel requirements and group service tiers. |
 | [Beverage Ice Volume Calculator](../mcps/beverage-ice-volume-calculator.md) | Calculate precise ice requirements for beverage service. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
+| [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
+| [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
 | [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
 | [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
 | [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
@@ -23,16 +26,21 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
 | [Ferry Capacity Checker](../mcps/ferry-capacity-checker.md) | Monitor ferry occupancy and manage boarding requests in real-time. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
+| [Handmade Gift Commission Plan](../mcps/handmade-gift-commission-plan.md) | Transform raw gift ideas into structured creative briefs and logistical handoff plans. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
 | [LNG Carrier Fleet Sizer](../mcps/lng-carrier-fleet-sizer.md) | Optimize LNG fleet sizing and logistics planning. |
+| [Local Sports Support Plan](../mcps/local-sports-support-plan.md) | Logistics engine for transforming volunteer and resource data into structured operational plans. |
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
+| [Music Release Readiness Plan](../mcps/music-release-readiness-plan.md) | A diagnostic engine to evaluate musical release readiness by validating permissions, assets, and logistics. |
+| [Neighborhood Food Pantry Support Plan](../mcps/neighborhood-food-pantry-support-plan.md) | Transforms pantry requirements and logistical constraints into actionable donation strategies and volunteer schedules. |
 | [Oil Tanker Voyage Planner](../mcps/oil-tanker-voyage-planner.md) | Calculate voyage duration, fuel consumption, and maritime profitability. |
 | [Outdoor Chair Counter](../mcps/outdoor-chair-counter.md) | Calculate precise chair and table requirements for outdoor events. |
 | [Package Serving Calculator](../mcps/package-serving-calculator.md) | Calculate total, full, and remaining servings from package weight. |
 | [Pet Bed Calculator](../mcps/pet-bed-calculator.md) | Calculate required pet beds and facility capacity. |
+| [Photo Location Permission Planner](../mcps/photo-location-permission-planner.md) | Generate production logistics, compliance checklists, and contact sheets for location shoots. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
