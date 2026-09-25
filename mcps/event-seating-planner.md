@@ -14,8 +14,8 @@ This MCP server provides tools to automate complex event seating arrangements. I
 
 
 ## Available Tools (4)
-- **find_alternative_layouts**: Identifies different valid seating arrangements that satisfy the same constraints without using random seeds
 - **get_utilization_metrics**: Analyzes how efficiently the seating plan uses the available capacity
+- **find_alternative_layouts**: Identifies different valid seating arrangements that satisfy the same constraints without using random seeds
 - **plan_seating**: Provide guests, locations, and optional grouping/separation rules.
 
 Generates a complete seating arrangement based on provided guests and locations while respecting all constraints

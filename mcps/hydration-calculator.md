@@ -14,10 +14,10 @@ Predict dough texture and hydration percentage instantly for bread, pizza, or fo
 
 
 ## Available Tools (3)
+- **classify_texture**: Classify dough texture from hydration percentage and profile name
 - **calculate_hydration**: Use this to determine how wet or dry a dough mixture is.
 
 Calculate dough hydration percentage from flour and liquid weights
-- **classify_texture**: Classify dough texture from hydration percentage and profile name
 - **determine_dough_type**: Helps identify what kind of baked good the ingredients are suited for.
 
 Determine dough type from flour and salt composition

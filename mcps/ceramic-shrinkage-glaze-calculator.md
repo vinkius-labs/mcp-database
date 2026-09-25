@@ -14,12 +14,12 @@ This MCP server provides deterministic tools for ceramic artists and manufacture
 
 
 ## Available Tools (3)
-- **calculate_glaze_requirements**: Provide the total surface area to calculate the requirements.
-
-Calculates the mass of glaze needed and the ideal density for the specified application method
 - **calculate_clay_dimensions**: Use the specific clay type and shrinkage percentages.
 
 Determines the necessary wet dimensions required to reach a specific target size after all shrinkage has occurred
+- **calculate_glaze_requirements**: Provide the total surface area to calculate the requirements.
+
+Calculates the mass of glaze needed and the ideal density for the specified application method
 - **get_firing_parameters**: Specify the clay type for accurate results.
 
 Provides the recommended temperature ranges for both the bisque and glaze firing stages based on the clay type

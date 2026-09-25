@@ -14,15 +14,15 @@ Plan your next barbecue with precision. This MCP server provides a deterministic
 
 
 ## Available Tools (3)
+- **calculate_cooking_schedule**: Pass the JSON string containing the calculated meat requirements.
+
+Calculate cooking schedule and fuel requirements
 - **calculate_meat_requirements**: Provide the total number of guests and desired meat types.
 
 Calculate raw meat requirements based on guests, appetite, and style
 - **get_thermal_targets**: Provide a list of meat types.
 
 Get target internal temperatures for specific meat types
-- **calculate_cooking_schedule**: Pass the JSON string containing the calculated meat requirements.
-
-Calculate cooking schedule and fuel requirements
 
 
 ## 💬 Prompt Examples
