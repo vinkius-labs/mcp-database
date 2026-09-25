@@ -34,21 +34,12 @@ Connect **Eden AI** to your AI agent and unlock the power of over 100 leading AI
 
 
 ## Available Tools (13)
-- **create_embedding**: Provide the model name and the text input.
-
-Convert text into numerical vectors
-- **check_credits**: Do not specify any parameters.
-
-Check current Eden AI credit balance
 - **delete_files**: Pass an array of file IDs.
 
 Delete files from Eden AI storage
 - **chat_completions**: Use @edenai for smart routing or specify provider/model.
 
 Create a chat completion using Eden AI LLM routing
-- **get_async_job**: Pass the required job ID.
-
-Get the status and results of an asynchronous Universal AI job
 - **list_embedding_models**: Do not specify any parameters.
 
 List available embedding models
@@ -58,21 +49,30 @@ List all files uploaded to Eden AI
 - **monitor_consumption**: Provide start date, end date, and optional step granularity.
 
 Monitor API consumption and costs
-- **universal_ai_async**: g., Speech-to-Text). Use this when the task requires significant processing time.
-
-Start an asynchronous expert model job (e.g., Speech-to-Text)
 - **universal_ai_sync**: Model format: feature/subfeature/provider[/model]
 
 Execute synchronous expert models (OCR, Translation, Image Gen)
 - **upload_file**: Supply both file name and file data.
 
 Upload a file to Eden AI persistent storage
+- **check_credits**: Do not specify any parameters.
+
+Check current Eden AI credit balance
 - **create_custom_token**: Set the expiration time if the token should not be permanent.
 
 Create a custom API token with specific constraints
+- **create_embedding**: Provide the model name and the text input.
+
+Convert text into numerical vectors
 - **create_stateful_response**: Supply the model, messages, and optionally a previous response ID.
 
 Create a stateful chat response that stores history server-side
+- **get_async_job**: Pass the required job ID.
+
+Get the status and results of an asynchronous Universal AI job
+- **universal_ai_async**: g., Speech-to-Text). Use this when the task requires significant processing time.
+
+Start an asynchronous expert model job (e.g., Speech-to-Text)
 
 
 ## 💬 Prompt Examples

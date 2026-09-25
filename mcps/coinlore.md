@@ -43,8 +43,8 @@ Connect to the **CoinLore** API to empower your AI agent with comprehensive cryp
 - **list_assets**: Get a lightweight list of all coins
 - **get_coin_info**: Get static metadata for a specific coin
 - **list_exchanges**: Get all exchanges listed on CoinLore
-- **get_global_stats**: Get overall cryptocurrency market statistics
 - **get_movers**: Get top 20 winners and losers
+- **get_global_stats**: Get overall cryptocurrency market statistics
 - **get_ohlcv**: Get 365 days of daily OHLCV history
 
 

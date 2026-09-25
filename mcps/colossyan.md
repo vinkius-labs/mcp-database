@@ -36,9 +36,6 @@ Connect your **Colossyan** account to any AI agent to streamline your synthetic 
 ## Available Tools (10)
 - **delete_job**: Delete a video generation job
 - **get_job_status**: Retrieve video generation job status
-- **create_actor**: Provide a valid source URL.
-
-Create an instant avatar from an image or video link
 - **delete_video**: Supply the video ID to target for deletion.
 
 Delete a generated video
@@ -48,6 +45,9 @@ Delete a generated video
 - **get_video**: Retrieve details of a finished video
 - **list_actors**: List available avatars/actors for the workspace
 - **list_voices**: List available voices for the workspace
+- **create_actor**: Provide a valid source URL.
+
+Create an instant avatar from an image or video link
 
 
 ## 💬 Prompt Examples

@@ -37,30 +37,39 @@ Connect your **Cosmic** headless CMS to any AI agent to manage your content infr
 - **delete_object_type**: Specify both the slug and the bucket slug.
 
 Delete an Object Type
-- **create_object**: Specify the object type and the target bucket slug.
-
-Create a new Object
-- **delete_media**: Provide both the media ID and the bucket slug.
-
-Delete Media
 - **list_agent_conversations**: Supply the agent ID.
 
 List conversations for an AI Agent
-- **list_revisions**: Supply the object ID and bucket slug.
+- **get_revision**: Provide the object ID, revision ID, and bucket slug.
 
-Get Revisions for an Object
+Get a single Revision for an Object
+- **list_object_types**: Specify the bucket slug.
+
+List Object Types in a Cosmic Bucket
+- **list_objects**: Use the query parameter (URL encoded JSON) to filter results.
+
+List Objects in a Cosmic Bucket
+- **update_object_type**: Provide the slug and ensure the object type exists.
+
+Update an Object Type
 - **batch_objects**: Limit operations to a maximum of 25.
 
 Perform batch operations on Objects (Max 25)
 - **create_media**: Specify the target bucket slug for the media payload.
 
 Create/Upload Media
+- **create_object**: Specify the object type and the target bucket slug.
+
+Create a new Object
 - **create_object_type**: Specify the bucket slug where the type belongs.
 
 Create a new Object Type
 - **create_revision**: Supply the object ID, bucket slug, and the revision body.
 
 Add a Revision for an Object
+- **delete_media**: Provide both the media ID and the bucket slug.
+
+Delete Media
 - **delete_object**: Provide both the object ID and the bucket slug.
 
 Delete an Object
@@ -73,18 +82,12 @@ Get a single Object by ID
 - **get_object_type**: Provide the slug and the bucket slug.
 
 Get a single Object Type by slug
-- **get_revision**: Provide the object ID, revision ID, and bucket slug.
-
-Get a single Revision for an Object
 - **list_media**: Use the query parameter to filter results.
 
 List Media in a Cosmic Bucket
-- **list_object_types**: Specify the bucket slug.
+- **list_revisions**: Supply the object ID and bucket slug.
 
-List Object Types in a Cosmic Bucket
-- **list_objects**: Use the query parameter (URL encoded JSON) to filter results.
-
-List Objects in a Cosmic Bucket
+Get Revisions for an Object
 - **send_agent_message**: Provide the agent ID and the message content.
 
 Send a message to an AI Agent
@@ -94,9 +97,6 @@ Update Media metadata
 - **update_object**: Supply the object ID and the bucket slug for accurate targeting.
 
 Update an existing Object
-- **update_object_type**: Provide the slug and ensure the object type exists.
-
-Update an Object Type
 
 
 ## 💬 Prompt Examples

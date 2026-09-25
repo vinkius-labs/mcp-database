@@ -40,9 +40,6 @@ Connect the **GIPHY** library to your AI agent to bring visual flair and persona
 - **get_gif**: Get GIF by ID
 - **random_sticker**: Get a random Sticker
 - **trending_gifs**: Get trending GIFs
-- **get_emojis**: Use this tool when you need a list of available emojis.
-
-Fetch GIPHY Emojis
 - **autocomplete**: Autocomplete search terms
 - **get_gifs_by_ids**: Get GIFs by IDs
 - **random_gif**: Get a random GIF
@@ -61,6 +58,9 @@ Get trending GIPHY Clips
 - **trending_searches**: Get trending search terms
 - **trending_stickers**: Get trending Stickers
 - **upload_gif**: Upload a GIF to GIPHY
+- **get_emojis**: Use this tool when you need a list of available emojis.
+
+Fetch GIPHY Emojis
 
 
 ## 💬 Prompt Examples

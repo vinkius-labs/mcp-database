@@ -34,42 +34,21 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 
 
 ## Available Tools (25)
-- **generate_backstory**: Provide a high-level description and the desired character name.
-
-Generate a character description
-- **generate_starter_conversation**: Pass the required conversation details in the payload.
-
-Generate follow-up options
 - **get_character**: Supply the required character ID.
 
 Get details for a specific Convai character
-- **get_response**: Use a session ID of "-1" for starting a new conversation.
-
-Get a response from a character
 - **list_knowledge_bank**: Supply the required listing details in the payload.
 
 List Knowledge Bank status
-- **create_narrative_trigger**: Pass a JSON payload defining the trigger’s conditions and actions.
-
-Create a narrative trigger
-- **create_character**: Provide all necessary details, including name and voice type.
-
-Create a new Convai character
 - **delete_character**: Supply the character ID.
 
 Delete a Convai character
 - **delete_knowledge_bank**: Include the necessary deletion details in the payload.
 
 Delete a Knowledge Bank file
-- **edit_narrative_section**: Pass a JSON payload containing the section ID and updated data.
-
-Edit a narrative section
 - **get_chat_session_details**: Provide both the character ID and session ID.
 
 Get details of a specific chat session
-- **get_prompt**: Supply both the session and character IDs.
-
-Fetch prompt data for debugging or advanced configuration
 - **list_characters**: Use this function to retrieve the full list of characters.
 
 Returns all characters associated with the account
@@ -77,31 +56,52 @@ Returns all characters associated with the account
 
 List chat sessions for a character
 - **list_languages**: Returns supported languages
-- **list_narrative_sections**: Pass a JSON payload to specify filtering or listing criteria.
-
-List narrative sections
 - **list_narrative_triggers**: Pass a JSON payload to specify filtering or listing criteria.
 
 List narrative triggers
 - **toggle_narrative**: Pass a JSON payload containing the required state change.
 
 Toggle narrative driven mode for a character
-- **update_character**: Must provide the character ID to target the update.
-
-Update an existing Convai character
 - **upload_knowledge_bank**: Provide both the file name and content.
 
 Upload a file to the Knowledge Bank
-- **connect_live**: Specify the character ID and desired connection type.
-
-Connect to Live API via WebRTC
 - **create_narrative_section**: Pass a JSON payload detailing the section’s content and properties.
 
 Create a narrative section
+- **list_voices**: Returns available voices categorized by provider
+- **connect_live**: Specify the character ID and desired connection type.
+
+Connect to Live API via WebRTC
+- **create_character**: Provide all necessary details, including name and voice type.
+
+Create a new Convai character
+- **create_narrative_trigger**: Pass a JSON payload defining the trigger’s conditions and actions.
+
+Create a narrative trigger
+- **edit_narrative_section**: Pass a JSON payload containing the section ID and updated data.
+
+Edit a narrative section
 - **evaluate_conversation**: Include the conversation history in the prompt.
 
 Evaluate a conversation transcript based on custom attributes
-- **list_voices**: Returns available voices categorized by provider
+- **generate_backstory**: Provide a high-level description and the desired character name.
+
+Generate a character description
+- **generate_starter_conversation**: Pass the required conversation details in the payload.
+
+Generate follow-up options
+- **get_prompt**: Supply both the session and character IDs.
+
+Fetch prompt data for debugging or advanced configuration
+- **get_response**: Use a session ID of "-1" for starting a new conversation.
+
+Get a response from a character
+- **list_narrative_sections**: Pass a JSON payload to specify filtering or listing criteria.
+
+List narrative sections
+- **update_character**: Must provide the character ID to target the update.
+
+Update an existing Convai character
 - **update_knowledge_bank**: Pass the full update details in the payload.
 
 Update a Knowledge Bank file

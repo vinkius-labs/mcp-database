@@ -32,37 +32,58 @@ Integrate **Cin7 Core** (formerly **DEAR Systems**), the advanced cloud-based in
 - **Sales & Purchasing Reps** — Research customer and supplier details during planning sessions.
 
 
-## Available Tools (10)
+## Available Tools (17)
+- **list_purchase_orders**: Returns a list of purchase orders including supplier details, order date, and inbound status (e.g., ordered, received).
+
+List all purchase orders and inbound shipments
+- **get_product_details**: Resolves detailed attributes such as dimensions, weight, supplier info, and tax rules for the given product GUID.
+
+Get detailed information for a specific product by ID
 - **get_sale_order_details**: Resolves individual line items, shipping addresses, invoice details, and the current fulfillment progress.
 
 Get full details for a specific sales order
 - **get_sku_stock_status**: Provides a detailed breakdown of quantities across all physical locations and virtual bins.
 
 Get stock levels for a specific product SKU
-- **list_crm_customers**: Returns customer metadata including contact names, company details, and credit limits.
-
-List all customers registered in the system
-- **get_product_details**: Resolves detailed attributes such as dimensions, weight, supplier info, and tax rules for the given product GUID.
-
-Get detailed information for a specific product by ID
-- **list_purchase_orders**: Returns a list of purchase orders including supplier details, order date, and inbound status (e.g., ordered, received).
-
-List all purchase orders and inbound shipments
-- **list_sales_orders**: Returns order metadata including customer ID, total value, and current status (e.g., drafted, authorized, packed, shipped).
-
-List all sales orders and their current fulfillment status
-- **search_products_by_sku**: Returns stock and identification data for products matching the provided SKU identifier.
-
-Search for a product using its SKU
 - **get_all_stock_availability**: Returns real-time availability data including on-hand, allocated, and available-to-sell quantities across all configured warehouse locations.
 
 Retrieve current stock availability across all warehouses
-- **list_crm_suppliers**: Returns vendor profiles including primary contact info, default currency, and payment terms.
+- **list_crm_customers**: Returns customer metadata including contact names, company details, and credit limits.
 
-List all suppliers and vendors
+List all customers registered in the system
 - **list_inventory_products**: Returns a list of products with metadata including SKU, name, category, and base price.
 
 List all products in your Cin7 Core (DEAR) catalog
+- **list_sales_orders**: Returns order metadata including customer ID, total value, and current status (e.g., drafted, authorized, packed, shipped).
+
+List all sales orders and their current fulfillment status
+- **get_account_info**: Confirms the credentials are valid and returns account context such as account name, plan, and active status. Use this as a first step to test the integration before other calls.
+
+Verify the connection and get account info for the connected Cin7 Core application
+- **get_purchase_order_details**: Resolves individual line items, supplier, expected delivery date, and inbound progress for the given purchase order GUID.
+
+Get full details for a specific purchase order
+- **list_crm_suppliers**: Returns vendor profiles including primary contact info, default currency, and payment terms.
+
+List all suppliers and vendors
+- **list_transactions**: Returns financial transactions with dates, accounts, amounts, and references. Use the optional date range and account filters to narrow the results.
+
+List financial transactions across account ledgers
+- **list_warehouses**: Returns every physical warehouse and virtual storage location configured in the account, including identifiers and deprecation flags. Use the returned location IDs to scope stock availability queries.
+
+List all warehouse and storage locations in the account
+- **list_stock_adjustments**: Returns corrections to on-hand quantities such as damage, write-offs, and count discrepancies, with quantities and status. Optionally narrow the results with a status filter.
+
+List stock adjustments (quantity corrections)
+- **list_stock_transfers**: Returns transfer records including source and destination, items, quantities, and status. Optionally narrow the results with a status filter.
+
+List stock transfers between warehouses
+- **search_products**: Returns matching product records with SKU, name, category, and base price. Use the optional name and SKU filters to narrow results. For on-hand quantities use get_sku_stock_status instead.
+
+Search the product catalog by name or SKU
+- **search_products_by_sku**: Returns stock and identification data for products matching the provided SKU identifier.
+
+Search for a product using its SKU
 
 
 ## 💬 Prompt Examples

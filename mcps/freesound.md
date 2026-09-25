@@ -34,28 +34,28 @@ Connect your **Freesound** account to any AI agent and access the world's larges
 
 
 ## Available Tools (10)
-- **get_user_sounds**: Provide the target user’s Freesound username.
-
-Get sounds uploaded by a specific user
 - **get_pending_uploads**: Check status of sounds in moderation
 - **search_sounds**: Supports Solr-style filters.
 
 Search for sounds on Freesound
 - **upload_sound**: Upload an audio file to Freesound
-- **describe_sound**: You must specify the sound ID.
-
-Add metadata to an uploaded sound
 - **download_sound**: Triggers a download of the original file.
 
 Download the original high-quality sound file
 - **get_me**: Get information about the currently authenticated OAuth2 user
+- **get_sound**: Get details for a specific sound
+- **describe_sound**: You must specify the sound ID.
+
+Add metadata to an uploaded sound
 - **get_pack**: You must provide the unique Pack ID.
 
 Get information about a sound pack
-- **get_sound**: Get details for a specific sound
 - **get_user**: Only use this tool to retrieve public profile information.
 
 Get information about a Freesound user
+- **get_user_sounds**: Provide the target user’s Freesound username.
+
+Get sounds uploaded by a specific user
 
 
 ## 💬 Prompt Examples

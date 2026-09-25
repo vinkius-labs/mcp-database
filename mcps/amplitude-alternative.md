@@ -35,10 +35,6 @@ Connect your **Amplitude** analytics account to any AI agent to ingest events, q
 
 ## Available Tools (21)
 - **list_cohorts**: Get all behavioral cohorts
-- **list_event_types**: Get all event types (Taxonomy)
-- **create_release**: Provide version and title details.
-
-Create a release to track feature impact
 - **delete_users**: Deletes user data permanently.
 
 Submit data deletion requests (GDPR/CCPA)
@@ -55,18 +51,22 @@ Retrieve variant assignments for users (Experiment API)
 - **send_batch_events**: Send high-volume data to Amplitude (Batch API)
 - **upload_cohort**: Create a cohort from a list of IDs
 - **identify_user**: Update user properties without sending an event
-- **list_categories**: Get all event categories (Taxonomy)
 - **send_events**: Requires an array of event objects.
 
 Send data directly to Amplitude (HTTP V2 API)
-- **create_annotation**: Provide the date and descriptive details.
-
-Annotate charts with important dates
 - **create_category**: Provide both name and description.
 
 Create a new event category (Taxonomy)
-- **list_event_properties**: Get all event properties (Taxonomy)
 - **send_attribution**: Send attribution data from partners
+- **create_annotation**: Provide the date and descriptive details.
+
+Annotate charts with important dates
+- **create_release**: Provide version and title details.
+
+Create a release to track feature impact
+- **list_categories**: Get all event categories (Taxonomy)
+- **list_event_properties**: Get all event properties (Taxonomy)
+- **list_event_types**: Get all event types (Taxonomy)
 
 
 ## 💬 Prompt Examples

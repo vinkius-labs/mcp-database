@@ -34,26 +34,13 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 
 
 ## Available Tools (19)
-- **delete_router**: Ensure the provided router_id is correct before proceeding.
-
-Delete an LLM Router
 - **list_voices**: List voices in the workspace
 - **chat_completions**: Generate chat completions via LLM Router
 - **clone_voice**: Clone a voice from audio samples
 - **create_realtime_call**: Create a WebRTC realtime call
 - **create_router**: Create an LLM Router
-- **delete_voice**: Specify the unique voice ID to be deleted.
-
-Delete a voice
 - **design_voice**: Design a voice from a text prompt
-- **get_router**: Use the unique router_id to identify the target router.
-
-Get details for a specific LLM Router
-- **get_voice**: Provide a valid voiceId to execute the query.
-
-Get details for a specific voice
 - **list_models**: List available LLM models
-- **list_routers**: List all LLM Routers
 - **list_tts_voices**: Use list_voices instead for newer Voice API.
 
 List TTS voices (Deprecated)
@@ -61,12 +48,25 @@ List TTS voices (Deprecated)
 - **synthesize_speech_stream**: Synthesize speech via streaming
 - **synthesize_speech_sync**: Synthesize speech synchronously
 - **transcribe_audio**: Transcribe audio to text (Sync)
-- **update_voice**: Supply the voice ID and at least one update parameter.
+- **delete_router**: Ensure the provided router_id is correct before proceeding.
 
-Update a voice
+Delete an LLM Router
+- **delete_voice**: Specify the unique voice ID to be deleted.
+
+Delete a voice
+- **get_router**: Use the unique router_id to identify the target router.
+
+Get details for a specific LLM Router
+- **get_voice**: Provide a valid voiceId to execute the query.
+
+Get details for a specific voice
+- **list_routers**: List all LLM Routers
 - **update_router**: Supply the router ID and the desired updates.
 
 Update an LLM Router
+- **update_voice**: Supply the voice ID and at least one update parameter.
+
+Update a voice
 
 
 ## 💬 Prompt Examples

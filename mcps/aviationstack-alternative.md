@@ -44,13 +44,13 @@ Get real-time and historical flight data
 
 Get airport timetables
 - **list_aircraft_types**: Get aircraft types and specifications
-- **list_airlines**: Get global airlines list
-- **list_airplanes**: Get specific aircraft details
 - **list_airports**: Get global airports list
+- **list_airplanes**: Get specific aircraft details
 - **list_future_flights**: Requires Professional plan or higher.
 
 Get future flight schedules
 - **list_routes**: Get scheduled airline routes
+- **list_airlines**: Get global airlines list
 
 
 ## 💬 Prompt Examples

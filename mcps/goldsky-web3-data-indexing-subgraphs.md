@@ -35,9 +35,6 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 
 ## Available Tools (12)
 - **get_pipeline_state**: Get internal state of a pipeline
-- **restart_pipeline**: Use this only when the pipeline is known to be stalled.
-
-Restart a pipeline
 - **get_pipeline_status**: g., running, paused, failed) of a pipeline.
 
 Get current runtime status of a pipeline
@@ -50,6 +47,9 @@ Get current runtime status of a pipeline
 - **get_pipeline_logs**: Retrieve execution logs for a pipeline
 - **get_pipeline**: Get details of a specific pipeline
 - **list_pipelines**: List all pipelines in the project
+- **restart_pipeline**: Use this only when the pipeline is known to be stalled.
+
+Restart a pipeline
 
 
 ## 💬 Prompt Examples

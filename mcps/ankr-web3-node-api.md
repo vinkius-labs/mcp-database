@@ -39,27 +39,12 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 - **eth_getTransactionByHash**: Use this to check transaction status.
 
 Returns transaction details
-- **eth_simulateV1**: Provide a payload detailing the simulation scope.
-
-Simulates multiple blocks/transactions
-- **ankr_getAccountBalance**: Supply the chain alias and wallet address.
-
-Retrieves all token balances for a wallet
-- **ankr_getBlocks**: Supply the chain alias and the block range object.
-
-Retrieves full info for a range of blocks
 - **ankr_getInteractions**: Supply the chain alias and the wallet address.
 
 Lists all blockchains a wallet has interacted with
-- **ankr_getNFTHolders**: Supply the chain alias and collection identifier.
-
-Lists all holders of a specific NFT collection
 - **ankr_getNFTMetadata**: Provide the chain alias and contract address.
 
 Retrieves metadata for a specific NFT
-- **ankr_getNFTsByOwner**: Provide the chain alias and wallet address.
-
-Retrieves all NFTs owned by an address across multiple chains
 - **ankr_getTokenPrice**: Provide the chain alias and token identifier.
 
 Returns the current USD price of a token
@@ -69,9 +54,6 @@ Estimates gas needed for a transaction
 - **eth_getCode**: Use this to verify contract deployment.
 
 Returns the code at a given address
-- **eth_getLogs**: Provide the required filter_criteria object.
-
-Returns logs matching filter criteria
 - **eth_getTransactionReceipt**: Use this to confirm execution results.
 
 Returns the receipt of a transaction
@@ -84,19 +66,13 @@ Returns all info associated with a Pubkey
 - **getBlock**: Specify the chain alias and block number.
 
 Returns identity and transaction info for a confirmed block
-- **getProgramAccounts**: Provide the chain alias and program ID.
-
-Returns all accounts owned by a program
 - **getTransaction**: Provide the chain alias and transaction signature.
 
 Returns details for a confirmed transaction
+- **eth_blockNumber**: Returns the most recent block number
 - **ankr_getTokenTransfers**: Supply the chain alias and the target address or token.
 
 Returns historical token transfer data
-- **eth_blockNumber**: Returns the most recent block number
-- **eth_call**: Use this for pre-transaction validation.
-
-Executes a call without creating a transaction
 - **eth_getBlockByHash**: Use this to verify block existence.
 
 Returns block information by hash
@@ -106,27 +82,51 @@ Returns the balance of an address
 - **eth_getBlockByNumber**: Use this to check block history.
 
 Returns block information by number
-- **eth_getStorageAt**: Provide the contract address and storage slot.
-
-Returns the value from a storage position
 - **eth_getTransactionCount**: Use this value when constructing a new transaction.
 
 Returns the number of transactions sent from an address (nonce)
-- **getBalance**: Include both the chain alias and account Pubkey.
-
-Returns the lamport balance of an account
 - **getBlockHeight**: Only the chain alias is required.
 
 Returns the current block height
-- **getEpochInfo**: Specify the target chain alias.
-
-Returns information about the current epoch
-- **getLatestBlockhash**: Specify the target chain alias.
-
-Returns the latest blockhash for transaction building
 - **simulateTransaction**: Provide the chain alias and the transaction object.
 
 Simulates a transaction to check for errors
+- **ankr_getAccountBalance**: Supply the chain alias and wallet address.
+
+Retrieves all token balances for a wallet
+- **getLatestBlockhash**: Specify the target chain alias.
+
+Returns the latest blockhash for transaction building
+- **ankr_getBlocks**: Supply the chain alias and the block range object.
+
+Retrieves full info for a range of blocks
+- **ankr_getNFTHolders**: Supply the chain alias and collection identifier.
+
+Lists all holders of a specific NFT collection
+- **ankr_getNFTsByOwner**: Provide the chain alias and wallet address.
+
+Retrieves all NFTs owned by an address across multiple chains
+- **eth_call**: Use this for pre-transaction validation.
+
+Executes a call without creating a transaction
+- **eth_getLogs**: Provide the required filter_criteria object.
+
+Returns logs matching filter criteria
+- **eth_getStorageAt**: Provide the contract address and storage slot.
+
+Returns the value from a storage position
+- **eth_simulateV1**: Provide a payload detailing the simulation scope.
+
+Simulates multiple blocks/transactions
+- **getBalance**: Include both the chain alias and account Pubkey.
+
+Returns the lamport balance of an account
+- **getEpochInfo**: Specify the target chain alias.
+
+Returns information about the current epoch
+- **getProgramAccounts**: Provide the chain alias and program ID.
+
+Returns all accounts owned by a program
 - **sendTransaction**: Provide the chain alias and the signed transaction data.
 
 Submits a signed transaction

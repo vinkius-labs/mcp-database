@@ -53,7 +53,6 @@ Get current data for a coin
 - **get_exchange_volume_chart**: Get volume chart data for an exchange
 - **list_exchanges_markets**: List all supported markets id and name
 - **list_exchanges**: List all exchanges
-- **get_global_defi**: Get top 100 cryptocurrencies global DeFi data
 - **get_nft_by_contract**: Get NFT data by contract address
 - **get_nft**: ) for an NFT collection.
 
@@ -71,6 +70,7 @@ Get public companies holdings for a specific coin
 - **get_simple_token_price**: Get current price of tokens for a given platform
 - **get_trending**: Get trending search coins
 - **list_asset_platforms**: List all asset platforms
+- **get_global_defi**: Get top 100 cryptocurrencies global DeFi data
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,20 @@ Connect your **Freshsales** CRM to any AI agent to streamline your sales operati
 
 
 ## Available Tools (21)
-- **list_owners**: Fetch all users/owners
 - **convert_lead**: last_name and company_name are mandatory.
 
 Convert a lead to a contact
+- **create_note**: Specify the targetable type and ID.
+
+Create a note for a record
+- **get_lead**: View a specific lead
+- **list_lead_sources**: Fetch lead sources
+- **list_leads**: Use filters API to get view_id if unknown.
+
+List all leads in a specific view
+- **create_lead**: Provide at least a first name or email.
+
+Create a new lead in Freshsales
 - **create_account**: Both the account name and website are required.
 
 Create a new sales account
@@ -50,9 +60,6 @@ Create a new contact
 - **create_deal**: You must specify a name and a deal amount.
 
 Create a new deal
-- **create_note**: Specify the targetable type and ID.
-
-Create a note for a record
 - **create_task**: Provide a title and specify the targetable type and ID.
 
 Create a task
@@ -65,13 +72,9 @@ View a specific contact
 - **get_deal**: Provide the deal ID.
 
 View a specific deal
-- **get_lead**: View a specific lead
 - **list_deal_stages**: Fetch deal stages
 - **list_industry_types**: Fetch industry types
-- **list_lead_sources**: Fetch lead sources
-- **list_leads**: Use filters API to get view_id if unknown.
-
-List all leads in a specific view
+- **list_owners**: Fetch all users/owners
 - **search_global**: Provide both the query and desired entity types.
 
 Global search across entities
@@ -84,9 +87,6 @@ Update an existing contact
 - **update_lead**: Provide the lead ID; otherwise, the update will fail.
 
 Update an existing lead
-- **create_lead**: Provide at least a first name or email.
-
-Create a new lead in Freshsales
 
 
 ## 💬 Prompt Examples

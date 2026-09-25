@@ -39,24 +39,6 @@ No more digging through dashboards to find simple traffic stats. Your AI acts as
 - **create_event**: Provide the site_id and the desired event name.
 
 Create a new event for a site
-- **create_milestone**: Ensure the date is before the current date.
-
-Create a new milestone for a site
-- **create_site**: Supply the name and share_password if private sharing is required.
-
-Create a new Fathom site
-- **get_current_visitors**: Include detailed breakdown by setting the detailed parameter.
-
-Returns the total current visitors on a site
-- **delete_milestone**: Specify both the site and the milestone ID.
-
-Permanently delete a milestone
-- **delete_site**: this irreversible action.
-
-Permanently delete a site
-- **get_event**: Requires both site_id and event_id.
-
-Retrieve a single event by its ID
 - **get_milestone**: Provide both site and milestone IDs.
 
 Retrieve a single milestone by its ID
@@ -69,31 +51,49 @@ List all events for a site
 - **list_sites**: Supports cursor pagination.
 
 List all sites owned by the API key
+- **get_account**: Retrieve information about the Fathom account owner
+- **wipe_event**: Specify the site_id and event_id to wipe data.
+
+Wipe all completion data for an event
+- **create_milestone**: Ensure the date is before the current date.
+
+Create a new milestone for a site
+- **create_site**: Supply the name and share_password if private sharing is required.
+
+Create a new Fathom site
+- **delete_event**: Requires both site_id and event_id for execution.
+
+Permanently delete an event
+- **delete_milestone**: Specify both the site and the milestone ID.
+
+Permanently delete a milestone
+- **delete_site**: this irreversible action.
+
+Permanently delete a site
+- **get_aggregations**: Specify required IDs and date ranges.
+
+Generate flexible reports by grouping and filtering data
+- **get_current_visitors**: Include detailed breakdown by setting the detailed parameter.
+
+Returns the total current visitors on a site
+- **get_event**: Requires both site_id and event_id.
+
+Retrieve a single event by its ID
+- **list_milestones**: Provide site_id and use limit/starting_after for pagination.
+
+List all milestones for a site
 - **update_event**: Supply the site_id, event_id, and the new name.
 
 Update an existing event
 - **update_milestone**: Supply the site ID, milestone ID, and new details.
 
 Update an existing milestone
-- **wipe_site**: Use this function to reset site data.
-
-Wipe all pageviews and event completions from a site
-- **get_account**: Retrieve information about the Fathom account owner
-- **list_milestones**: Provide site_id and use limit/starting_after for pagination.
-
-List all milestones for a site
 - **update_site**: Must provide the site_id and at least one field to update.
 
 Update an existing Fathom site
-- **wipe_event**: Specify the site_id and event_id to wipe data.
+- **wipe_site**: Use this function to reset site data.
 
-Wipe all completion data for an event
-- **get_aggregations**: Specify required IDs and date ranges.
-
-Generate flexible reports by grouping and filtering data
-- **delete_event**: Requires both site_id and event_id for execution.
-
-Permanently delete an event
+Wipe all pageviews and event completions from a site
 
 
 ## 💬 Prompt Examples

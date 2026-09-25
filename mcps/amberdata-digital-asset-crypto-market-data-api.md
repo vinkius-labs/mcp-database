@@ -37,51 +37,18 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 - **get_address_token_transfers**: Always specify the blockchain network.
 
 Get historical token transfer events for an address
-- **get_defi_market_trades_historical**: Must specify the blockchain network.
-
-Get historical tick-by-tick DEX trades
 - **get_spot_bid_ask_spread**: Must provide a valid API version.
 
 Get absolute and percentage spread analytics
 - **get_blockchain_metrics_latest**: Must provide a valid API version.
 
 Get latest block and transaction metrics
-- **get_defi_market_ohlcv_latest**: Must provide a pair identifier.
-
-Get latest OHLCV for a DEX pair
-- **get_spot_trade_frequency**: Must provide a valid API version.
-
-Get aggregated trade counts by size category
-- **get_address_token_balances_latest**: Always specify the blockchain network.
-
-Get current ERC-20 token holdings
-- **get_blocks_metrics_historical**: Must provide a valid API version.
-
-Get historical block-level metrics
 - **get_defi_dex_information**: Must provide a valid API version.
 
 Get list of supported liquidity pools and protocols
-- **get_defi_lending_assets_metrics_summary**: Must specify the blockchain network.
-
-Get aggregated insights into lending asset markets
-- **get_defi_lending_protocols_information**: Must specify the blockchain network.
-
-Get supported lending protocols (Aave, Compound, MakerDAO, etc.)
-- **get_futures_ohlcv**: Specify the instrument identifier.
-
-Get aggregated OHLCV for futures
-- **get_futures_order_book_snapshots**: Specify the instrument identifier.
-
-Get order book snapshots for futures
-- **get_futures_tickers**: Specify the instrument identifier.
-
-Get historical/latest tickers for futures/perpetuals
 - **get_futures_trades**: Specify the instrument identifier.
 
 Get tick-by-tick trades for futures
-- **get_options_ohlcv**: Provide the instrument identifier to ensure accurate data retrieval.
-
-Get aggregated OHLCV for options
 - **get_options_tickers**: Specify the instrument identifier.
 
 Get tickers including Greeks and Implied Volatility for options
@@ -94,6 +61,42 @@ Get aggregated Open, High, Low, Close, Volume for a spot instrument
 - **get_spot_order_book_events**: Specify the instrument identifier.
 
 Get incremental L2 order book updates (deltas) for a spot instrument
+- **get_transactions_metrics_historical**: Must provide a valid API version.
+
+Get historical transaction-level metrics
+- **get_address_balances_latest**: Always specify the blockchain network.
+
+Get current native account balance
+- **get_address_token_balances_latest**: Always specify the blockchain network.
+
+Get current ERC-20 token holdings
+- **get_blocks_metrics_historical**: Must provide a valid API version.
+
+Get historical block-level metrics
+- **get_defi_lending_assets_metrics_summary**: Must specify the blockchain network.
+
+Get aggregated insights into lending asset markets
+- **get_defi_lending_protocols_information**: Must specify the blockchain network.
+
+Get supported lending protocols (Aave, Compound, MakerDAO, etc.)
+- **get_defi_market_ohlcv_latest**: Must provide a pair identifier.
+
+Get latest OHLCV for a DEX pair
+- **get_defi_market_trades_historical**: Must specify the blockchain network.
+
+Get historical tick-by-tick DEX trades
+- **get_futures_ohlcv**: Specify the instrument identifier.
+
+Get aggregated OHLCV for futures
+- **get_futures_order_book_snapshots**: Specify the instrument identifier.
+
+Get order book snapshots for futures
+- **get_futures_tickers**: Specify the instrument identifier.
+
+Get historical/latest tickers for futures/perpetuals
+- **get_options_ohlcv**: Provide the instrument identifier to ensure accurate data retrieval.
+
+Get aggregated OHLCV for options
 - **get_spot_order_book_snapshots**: Specify the instrument identifier.
 
 Get 1-minute snapshots of the full order book for a spot instrument
@@ -103,6 +106,9 @@ Get benchmark prices for BTC/ETH (SOC I/II compliant)
 - **get_spot_tickers**: Specify the instrument identifier.
 
 Get historical/latest best bid/ask (BBO) for a spot instrument
+- **get_spot_trade_frequency**: Must provide a valid API version.
+
+Get aggregated trade counts by size category
 - **get_spot_trade_pressure**: Must provide a valid API version.
 
 Get net trade data (buy vs sell aggressors)
@@ -112,12 +118,6 @@ Get tick-by-tick executed transactions for a spot instrument
 - **get_spot_vwap_twap**: Must provide a valid API version.
 
 Get Volume/Time Weighted Average Price
-- **get_transactions_metrics_historical**: Must provide a valid API version.
-
-Get historical transaction-level metrics
-- **get_address_balances_latest**: Always specify the blockchain network.
-
-Get current native account balance
 
 
 ## 💬 Prompt Examples
