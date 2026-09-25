@@ -14,10 +14,10 @@ This MCP server provides a decision engine to help users navigate complex ticket
 
 
 ## Available Tools (4)
+- **determine_fallback_option**: Provide a secondary choice if the primary ticket is unavailable
 - **analyze_ticket_feasibility**: Determine if a ticket type meets accessibility and budget constraints
 - **generate_purchase_checklist**: Produce a list of logistical actions for the purchase
 - **validate_compliance_terms**: Extract and format legal terms and venue features
-- **determine_fallback_option**: Provide a secondary choice if the primary ticket is unavailable
 
 
 ## 💬 Prompt Examples
