@@ -14,21 +14,21 @@ This MCP server provides deterministic astrological calculations for the tropica
 
 
 ## Available Tools (5)
+- **get_sun_sign**: Provide only the sign name.
+
+Determines the primary zodiac sign based on the user's birth date
 - **get_ascendant**: All four parameters are required.
 
 Calculates the Rising Sign (Ascendant) for a specific birth moment and location
 - **get_house_cusps**: Supply the birth date, time, and location coordinates.
 
 Calculates the starting points (cusps) of the twelve houses
-- **get_planetary_positions**: Only the birth date is required.
-
-Estimates the zodiac positions of major planets
-- **get_sun_sign**: Provide only the sign name.
-
-Determines the primary zodiac sign based on the user's birth date
 - **get_moon_sign**: Use the user’s birth date.
 
 Provides an approximation of the Moon's zodiac placement
+- **get_planetary_positions**: Only the birth date is required.
+
+Estimates the zodiac positions of major planets
 
 
 ## 💬 Prompt Examples

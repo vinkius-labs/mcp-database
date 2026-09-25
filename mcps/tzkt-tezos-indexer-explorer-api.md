@@ -34,21 +34,30 @@ Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain.
 
 
 ## Available Tools (25)
-- **get_operations_by_hash**: Use the operation hash as the required parameter.
-
-Get operations by transaction hash
-- **list_bigmaps**: Use the limit and offset parameters for pagination.
-
-List all big maps
-- **list_token_transfers**: 2 or FA2). Pagination is required for large datasets.
-
-List token transfers (FA1.2 / FA2)
 - **get_account_report**: Supply the account address to generate the report.
 
 Generate a JSON report of account activity
+- **get_contract_entrypoints**: Provide the contract address.
+
+List available contract entrypoints
+- **list_accounts**: Supports filtering by balance, activity, and type.
+
+List accounts with filters
+- **list_delegations**: Use the limit and offset parameters for pagination.
+
+List delegation operations
+- **list_staking**: Use pagination to handle large result sets.
+
+List staking-related operations
+- **list_token_balances**: You must provide at least one account address or token ID.
+
+Get token balances for specific accounts
 - **get_account**: Provide the account address as the required parameter.
 
 Get detailed information for a specific account
+- **get_account_balance_history**: Provide the account address as the required parameter.
+
+Get historical balance changes for an account
 - **get_baker_rewards**: The address is mandatory.
 
 Get baker rewards per cycle
@@ -58,9 +67,6 @@ Get block details by level or hash
 - **get_contract_code**: Provide the desired format (0, 1, or 2).
 
 Get contract Michelson or Micheline code
-- **get_contract_entrypoints**: Provide the contract address.
-
-List available contract entrypoints
 - **get_contract_storage**: Specify the contract address.
 
 Get current or historical contract storage
@@ -68,13 +74,16 @@ Get current or historical contract storage
 
 Get delegator rewards per cycle
 - **get_head**: Get the current state of the indexer and blockchain head
-- **get_statistics**: Get network-wide statistics (TPS, volume, etc.)
-- **list_accounts**: Supports filtering by balance, activity, and type.
+- **get_operations_by_hash**: Use the operation hash as the required parameter.
 
-List accounts with filters
+Get operations by transaction hash
+- **get_statistics**: Get network-wide statistics (TPS, volume, etc.)
 - **list_bigmap_keys**: Provide the big map ID, as this is a required parameter.
 
 List keys in a specific big map
+- **list_bigmaps**: Use the limit and offset parameters for pagination.
+
+List all big maps
 - **list_bigmap_updates**: You must provide the big map ID.
 
 Get update history for a big map
@@ -84,27 +93,18 @@ List blocks with filters
 - **list_contracts**: Use filters to narrow the search results.
 
 List smart contracts with filters
-- **list_delegations**: Use the limit and offset parameters for pagination.
-
-List delegation operations
 - **list_originations**: Use the limit and offset parameters for pagination.
 
 List contract origination operations
-- **list_staking**: Use pagination to handle large result sets.
-
-List staking-related operations
-- **list_token_balances**: You must provide at least one account address or token ID.
-
-Get token balances for specific accounts
 - **list_token_definitions**: Use pagination for large lists.
 
 Get token metadata and definitions
+- **list_token_transfers**: 2 or FA2). Pagination is required for large datasets.
+
+List token transfers (FA1.2 / FA2)
 - **list_transactions**: Specify filters for sender, target, or amount.
 
 List transactions with advanced filtering
-- **get_account_balance_history**: Provide the account address as the required parameter.
-
-Get historical balance changes for an account
 
 
 ## 💬 Prompt Examples

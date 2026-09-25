@@ -36,12 +36,6 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 - **list_knowledge_bases**: Use this tool to view the system’s knowledge base structure.
 
 List all available knowledge bases
-- **list_chatbots**: Use this tool to view the system’s chatbot structure.
-
-List all available chatbots
-- **bulk_run_pipeline**: The ID must correspond to an existing pipeline definition.
-
-Execute multiple instances of a pipeline in parallel
 - **create_chatbot**: Supply the required configuration payload for the new chatbot.
 
 Create a new chatbot
@@ -57,12 +51,28 @@ Create a new transformation (Python/JS)
 - **delete_chatbot**: Ensure the chatbot is not currently in use before calling this tool.
 
 Delete a chatbot
-- **delete_knowledge_base_documents**: Supply the knowledge base ID and the document IDs in the payload.
+- **get_knowledge_base**: Provide at least one identifier.
 
-Delete specific documents by ID from a knowledge base
+Fetch a knowledge base by id or name
+- **get_pipeline**: Fetch a pipeline by id or name
+- **terminate_pipeline**: The ID must belong to an active pipeline run.
+
+Stop a currently running pipeline instance
+- **upload_chatbot_files**: Specify the Chatbot ID and the file upload payload.
+
+Upload files to a chatbot session
+- **list_pipelines**: Use this tool to view the system’s pipeline structure.
+
+List all available pipelines
+- **bulk_run_pipeline**: The ID must correspond to an existing pipeline definition.
+
+Execute multiple instances of a pipeline in parallel
 - **delete_knowledge_base**: Ensure the ID belongs to an existing knowledge base.
 
 Delete a knowledge base
+- **delete_knowledge_base_documents**: Supply the knowledge base ID and the document IDs in the payload.
+
+Delete specific documents by ID from a knowledge base
 - **delete_pipeline**: Ensure the ID belongs to an existing pipeline.
 
 Delete a pipeline by ID
@@ -72,22 +82,18 @@ Delete a transformation
 - **get_chatbot**: Use either the ID or the name parameter, but not both.
 
 Fetch a chatbot by id or name
-- **get_knowledge_base**: Provide at least one identifier.
-
-Fetch a knowledge base by id or name
-- **get_pipeline**: Fetch a pipeline by id or name
 - **get_transformation**: Use either the ID or the name parameter, but not both.
 
 Fetch a transformation by id or name
 - **index_knowledge_base**: ) to a knowledge base. Provide the target knowledge base ID and the data payload.
 
 Add data (files, URLs, etc.) to a knowledge base
+- **list_chatbots**: Use this tool to view the system’s chatbot structure.
+
+List all available chatbots
 - **list_knowledge_base_documents**: Provide the ID of the knowledge base to search.
 
 Find documents within a knowledge base
-- **list_pipelines**: Use this tool to view the system’s pipeline structure.
-
-List all available pipelines
 - **list_transformations**: List all available transformations
 - **pause_pipeline**: The ID must belong to an active pipeline run.
 
@@ -110,12 +116,6 @@ Execute a transformation with inputs
 - **terminate_chatbot**: Provide the Chatbot ID to end the session.
 
 Terminate an active chatbot session
-- **terminate_pipeline**: The ID must belong to an active pipeline run.
-
-Stop a currently running pipeline instance
-- **upload_chatbot_files**: Specify the Chatbot ID and the file upload payload.
-
-Upload files to a chatbot session
 
 
 ## 💬 Prompt Examples

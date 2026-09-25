@@ -35,9 +35,6 @@ No more manual navigation through complex CMS hierarchies. Your AI acts as a con
 
 
 ## Available Tools (17)
-- **get_group**: Provide the group’s unique ID.
-
-Get details for a specific group
 - **update_content**: Supports partial updates.
 
 Update existing content in Plone
@@ -45,28 +42,13 @@ Update existing content in Plone
 
 Update a group
 - **create_content**: Create new content in Plone
-- **create_group**: Must provide a unique group name.
-
-Create a new group
-- **create_user**: Must provide a unique username.
-
-Create a new user
+- **get_content**: Get a specific content object by path
 - **delete_group**: Specify the group ID to delete.
 
 Delete a group
 - **delete_user**: Specify the user ID to delete.
 
 Delete a user
-- **get_content**: Get a specific content object by path
-- **get_user**: Provide the unique user ID.
-
-Get details for a specific user
-- **get_workflow**: Provide the content path.
-
-Get workflow status and history for content
-- **list_groups**: Filter results using a text string.
-
-List groups in Plone
 - **list_users**: Requires Manager role.
 
 List users in Plone
@@ -74,10 +56,28 @@ List users in Plone
 - **transition_workflow**: Specify the content path and transition ID.
 
 Trigger a workflow transition on content
+- **delete_content**: Delete content from Plone
+- **get_user**: Provide the unique user ID.
+
+Get details for a specific user
+- **create_group**: Must provide a unique group name.
+
+Create a new group
+- **create_user**: Must provide a unique username.
+
+Create a new user
+- **get_group**: Provide the group’s unique ID.
+
+Get details for a specific group
+- **get_workflow**: Provide the content path.
+
+Get workflow status and history for content
+- **list_groups**: Filter results using a text string.
+
+List groups in Plone
 - **update_user**: Must specify the user’s unique ID.
 
 Update a user
-- **delete_content**: Delete content from Plone
 
 
 ## 💬 Prompt Examples

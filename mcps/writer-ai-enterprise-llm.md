@@ -33,40 +33,12 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 
 
 ## Available Tools (24)
-- **analyze_vision**: Provide the model, prompt, and variable mappings.
-
-Analyze images or documents using a prompt
-- **create_graph**: Provide a unique name and optional description.
-
-Create a new Knowledge Graph
-- **generate_application_content_async**: Provide the application ID and necessary input variables.
-
-Asynchronous generation using a no-code application (returns job_id)
-- **generate_application_content**: Supply the application ID and all required input variables.
-
-Synchronous generation using a no-code application
-- **get_application_job**: Pass the unique job ID to check its status.
-
-Retrieve job status and result for an application job
-- **get_application**: Provide the application ID to proceed.
-
-Get configuration and inputs for a specific application
 - **get_file**: Pass the unique file ID.
 
 Get metadata for a specific file
-- **list_application_jobs**: Use this tool to view job history and status.
-
-List jobs for a specific application
 - **list_applications**: Use this tool to find available application IDs.
 
 List deployed no-code agents (applications)
-- **add_file_to_graph**: Specify both the graph and file IDs.
-
-Add an uploaded file to a Knowledge Graph
-- **list_files**: Specify sorting or pagination parameters.
-
-Retrieve a paginated list of uploaded files
-- **list_graphs**: List all Knowledge Graphs
 - **list_models**: Retrieve available Writer models
 - **parse_pdf**: Use this tool only for deprecated PDF conversion tasks.
 
@@ -74,31 +46,59 @@ Convert PDF to text or markdown (Deprecated)
 - **remove_file_from_graph**: Provide the graph and file IDs.
 
 Remove a file from a Knowledge Graph
-- **retry_application_job**: Pass the job ID of the job that needs reprocessing.
-
-Retry a failed application job
 - **text_completion**: Use this tool only for direct text generation.
 
 Generate text completions for a single prompt
-- **delete_file**: Supply the unique file ID.
-
-Permanently delete a file
-- **download_file**: Use the file ID to retrieve the content.
-
-Download the binary content of a file
-- **ask_question**: Provide the question and relevant graph IDs.
-
-Ask a question against one or more Knowledge Graphs (RAG)
 - **chat_completion**: Generate a chat completion using Writer models
-- **translate_text**: Specify the source and target language codes.
-
-Translate text between supported languages
 - **upload_file**: Provide the file content and metadata.
 
 Upload a file for Knowledge Graphs or Vision tasks
 - **web_search**: Use this tool when external, real-time knowledge is required.
 
 Search the web for a query
+- **download_file**: Use the file ID to retrieve the content.
+
+Download the binary content of a file
+- **add_file_to_graph**: Specify both the graph and file IDs.
+
+Add an uploaded file to a Knowledge Graph
+- **analyze_vision**: Provide the model, prompt, and variable mappings.
+
+Analyze images or documents using a prompt
+- **ask_question**: Provide the question and relevant graph IDs.
+
+Ask a question against one or more Knowledge Graphs (RAG)
+- **create_graph**: Provide a unique name and optional description.
+
+Create a new Knowledge Graph
+- **delete_file**: Supply the unique file ID.
+
+Permanently delete a file
+- **generate_application_content**: Supply the application ID and all required input variables.
+
+Synchronous generation using a no-code application
+- **generate_application_content_async**: Provide the application ID and necessary input variables.
+
+Asynchronous generation using a no-code application (returns job_id)
+- **get_application**: Provide the application ID to proceed.
+
+Get configuration and inputs for a specific application
+- **get_application_job**: Pass the unique job ID to check its status.
+
+Retrieve job status and result for an application job
+- **list_application_jobs**: Use this tool to view job history and status.
+
+List jobs for a specific application
+- **list_files**: Specify sorting or pagination parameters.
+
+Retrieve a paginated list of uploaded files
+- **list_graphs**: List all Knowledge Graphs
+- **retry_application_job**: Pass the job ID of the job that needs reprocessing.
+
+Retry a failed application job
+- **translate_text**: Specify the source and target language codes.
+
+Translate text between supported languages
 
 
 ## 💬 Prompt Examples

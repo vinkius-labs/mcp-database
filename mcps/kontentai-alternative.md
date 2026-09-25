@@ -40,13 +40,25 @@ Connect your **Kontent.ai** project to any AI agent to streamline your headless 
 List content items via Delivery API
 - **delivery_list_taxonomies**: List taxonomies via Delivery API
 - **delivery_list_types**: List content types via Delivery API
-- **manage_list_assets**: List assets via Management API
-- **manage_create_asset**: Pass the asset details in the JSON body.
-
-Create an asset via Management API
 - **manage_create_item**: Provide a valid JSON payload in the body.
 
 Create a content item via Management API
+- **manage_get_variant**: Supply both the item ID and the language ID.
+
+Get a language variant of a content item
+- **manage_list_items**: List content items via Management API
+- **manage_update_asset**: Provide the asset ID and the update payload.
+
+Update an asset via Management API
+- **manage_update_taxonomy**: Supply the taxonomy ID and the update payload.
+
+Update a taxonomy via Management API
+- **manage_create_asset**: Pass the asset details in the JSON body.
+
+Create an asset via Management API
+- **manage_create_taxonomy**: Pass the full payload as a JSON string.
+
+Create a taxonomy via Management API
 - **manage_create_type**: Provide the type details in the JSON body.
 
 Create a content type via Management API
@@ -62,29 +74,17 @@ Delete a taxonomy via Management API
 - **manage_delete_type**: Provide the type ID as the sole argument.
 
 Delete a content type via Management API
-- **manage_get_variant**: Supply both the item ID and the language ID.
-
-Get a language variant of a content item
-- **manage_list_items**: List content items via Management API
+- **manage_list_assets**: List assets via Management API
 - **manage_list_taxonomies**: List taxonomies via Management API
-- **manage_update_asset**: Provide the asset ID and the update payload.
-
-Update an asset via Management API
 - **manage_update_item**: Specify the item ID and the update payload.
 
 Update a content item via Management API
-- **manage_update_taxonomy**: Supply the taxonomy ID and the update payload.
-
-Update a taxonomy via Management API
 - **manage_update_type**: Supply the type ID and the update payload.
 
 Update a content type via Management API
 - **manage_update_variant**: Supply the item ID, language ID, and the variant payload.
 
 Update a language variant of a content item
-- **manage_create_taxonomy**: Pass the full payload as a JSON string.
-
-Create a taxonomy via Management API
 
 
 ## 💬 Prompt Examples

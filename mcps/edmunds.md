@@ -33,21 +33,66 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 
 
 ## Available Tools (41)
-- **get_reviews_by_make_model_year**: Provide the make, model, and year.
-
-Get car consumer ratings and reviews by make/model/year
-- **get_reviews_by_style**: Provide the style ID to proceed.
-
-Get car consumer ratings and reviews by style ID
 - **get_safety_by_make_model_year**: All three parameters must be provided.
 
 Get safety ratings by make/model/year
-- **get_safety_by_style**: Provide the style ID to proceed.
+- **get_make_details**: Provide the make name.
 
-Get safety ratings by style ID
-- **get_squish_vin**: The VIN must be the first 11 digits minus the 9th digit.
+Get details on a specific car make
+- **get_makes_with_tco**: Do not query without specifying a required parameter.
 
-Get vehicle details by Squish VIN
+Get car makes with TCO value
+- **list_model_years**: Filter by makeNiceName and modelNiceName.
+
+Get a list of model years
+- **get_photos_by_style**: Pass the required style ID.
+
+Find photos by style ID
+- **get_dealership_franchises**: Provide the required Dealership ID.
+
+Find dealership franchises
+- **get_editorial_make**: Provide the make name.
+
+Get editorial make overview
+- **get_transmissions**: Provide the style ID.
+
+Get transmissions for a car style
+- **get_used_tco_details**: Supply the Style ID and ZIP Code.
+
+Get TCO details for used car
+- **list_styles**: Filter by makeNiceName and modelNiceName.
+
+Get a list of styles
+- **submit_dealer_review**: Ensure the body contains all required review data.
+
+Submit dealer review
+- **submit_dealer_review_comment**: Ensure the body contains all required comment data.
+
+Submit dealer review comment
+- **calculate_new_tmv**: Supply both the Style ID and ZIP Code.
+
+Get TMV price for a new car
+- **calculate_typically_equipped_used_tmv**: Supply both the Style ID and ZIP Code.
+
+Get TMV price for a typically equipped used car
+- **calculate_used_tmv**: Supply the Style ID, ZIP Code, and mileage.
+
+Get TMV price for a used car
+- **decode_vin**: Provide the full 17-digit VIN as the primary input.
+
+Get vehicle details through VIN decoding
+- **find_certified_price**: Supply both the Style ID and ZIP Code.
+
+Get TMV price for a certified vehicle
+- **get_color**: Provide the color ID.
+
+Get color details by ID
+- **get_dealer_reviews**: Provide the dealer ID.
+
+Get dealer ratings and reviews by dealer ID
+- **get_editorial_model**: Provide the make and model names.
+
+Get editorial model overview
 - **get_editorial_model_year**: Provide make, model, and year.
 
 Get editorial model/year overview
@@ -60,43 +105,19 @@ Get engines for a car style
 - **get_expert_content**: Provide make, model, and year.
 
 Get expert content for make/model/year
-- **find_certified_price**: Supply both the Style ID and ZIP Code.
-
-Get TMV price for a certified vehicle
 - **get_maintenance_schedule**: Use this tool only when the model year is known.
 
 Get maintenance schedule by car model year ID
-- **get_make_details**: Provide the make name.
-
-Get details on a specific car make
 - **get_makes_count**: Get total count of car makes
-- **list_makes**: Use makeNiceName to filter results.
-
-Get a list of car makes
-- **get_makes_with_tco**: Do not query without specifying a required parameter.
-
-Get car makes with TCO value
-- **list_model_years**: Filter by makeNiceName and modelNiceName.
-
-Get a list of model years
-- **list_models**: Filter by makeNiceName if necessary.
-
-Get a list of models
 - **get_models_with_tco**: Provide the Make ID.
 
 Get car models with TCO value
-- **calculate_used_tmv**: Supply the Style ID, ZIP Code, and mileage.
-
-Get TMV price for a used car
-- **list_equipments**: Provide the style ID.
-
-Get equipments list
-- **get_new_tco_details**: Supply the Style ID and ZIP Code.
-
-Get TCO details for new car
 - **get_new_tco**: Supply both the Style ID and ZIP Code.
 
 Get TCO for a new car
+- **get_new_tco_details**: Supply the Style ID and ZIP Code.
+
+Get TCO details for new car
 - **get_new_tmv_by_msrp_vin**: Provide all three values.
 
 Get TMV price for a new car by MSRP and VIN
@@ -106,54 +127,33 @@ Get the Total Cash Price for a new car
 - **get_photos_by_make_model_year**: Provide all three required vehicle identifiers.
 
 Find photos by make/model/year
-- **get_photos_by_style**: Pass the required style ID.
-
-Find photos by style ID
 - **get_recalls**: Use this tool only when the model year is known.
 
 Get vehicle recalls by car model year ID
-- **get_dealer_reviews**: Provide the dealer ID.
+- **get_reviews_by_make_model_year**: Provide the make, model, and year.
 
-Get dealer ratings and reviews by dealer ID
-- **calculate_new_tmv**: Supply both the Style ID and ZIP Code.
+Get car consumer ratings and reviews by make/model/year
+- **get_reviews_by_style**: Provide the style ID to proceed.
 
-Get TMV price for a new car
-- **calculate_typically_equipped_used_tmv**: Supply both the Style ID and ZIP Code.
+Get car consumer ratings and reviews by style ID
+- **get_safety_by_style**: Provide the style ID to proceed.
 
-Get TMV price for a typically equipped used car
-- **get_color**: Provide the color ID.
+Get safety ratings by style ID
+- **get_squish_vin**: The VIN must be the first 11 digits minus the 9th digit.
 
-Get color details by ID
-- **get_dealership_franchises**: Provide the required Dealership ID.
-
-Find dealership franchises
-- **get_editorial_make**: Provide the make name.
-
-Get editorial make overview
-- **get_editorial_model**: Provide the make and model names.
-
-Get editorial model overview
-- **list_styles**: Filter by makeNiceName and modelNiceName.
-
-Get a list of styles
-- **submit_dealer_review_comment**: Ensure the body contains all required comment data.
-
-Submit dealer review comment
-- **submit_dealer_review**: Ensure the body contains all required review data.
-
-Submit dealer review
-- **get_transmissions**: Provide the style ID.
-
-Get transmissions for a car style
-- **get_used_tco_details**: Supply the Style ID and ZIP Code.
-
-Get TCO details for used car
-- **decode_vin**: Provide the full 17-digit VIN as the primary input.
-
-Get vehicle details through VIN decoding
+Get vehicle details by Squish VIN
 - **get_years_with_styles**: Provide all three identifiers.
 
 Get years with styles for a car make/model
+- **list_equipments**: Provide the style ID.
+
+Get equipments list
+- **list_makes**: Use makeNiceName to filter results.
+
+Get a list of car makes
+- **list_models**: Filter by makeNiceName if necessary.
+
+Get a list of models
 
 
 ## 💬 Prompt Examples

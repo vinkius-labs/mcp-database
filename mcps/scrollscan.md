@@ -34,39 +34,9 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 
 
 ## Available Tools (33)
-- **check_verify_status**: Use the unique GUID provided.
-
-Check Source Code Verification Status
-- **get_contract_source_code**: Provide the contract address.
-
-Get Contract Source Code for Verified Source Codes
-- **proxy_get_transaction_by_hash**: Pass the transaction hash (txhash) to identify the transaction.
-
-eth_getTransactionByHash
-- **get_block_number_by_time**: Input the timestamp value for the calculation.
-
-Get Block Number by Timestamp
-- **get_block_reward**: Supply the block number (blockno) for the query.
-
-Get Block Rewards by BlockNo
 - **get_account_balance_multi**: Use this tool only when querying more than one address.
 
 Get Ether Balance for Multiple Addresses
-- **get_account_balance**: Provide a valid address for the query.
-
-Get Ether Balance for a Single Address
-- **get_block_countdown**: Specify the block number (blockno) to calculate the countdown.
-
-Get Estimated Block Countdown Time by BlockNo
-- **get_contract_abi**: Provide the contract address.
-
-Get Contract ABI for Verified Source Codes
-- **get_erc1155_token_tx**: Specify the address and contract.
-
-Get ERC1155 Token Transfer Events by Address
-- **get_erc20_token_tx**: Specify the address and contract.
-
-Get ERC20 Token Transfer Events by Address
 - **get_erc721_token_tx**: Specify the address and contract.
 
 Get ERC721 Token Transfer Events by Address
@@ -78,52 +48,82 @@ Get Internal Transactions by Block Range
 - **get_internal_tx_list_by_hash**: Provide the transaction hash.
 
 Get Internal Transactions by Transaction Hash
-- **get_internal_tx_list**: Define the address and block range.
-
-Get Internal Transactions by Address
-- **get_logs**: Specify the required block range, address, and topic filters.
-
-Get Logs
-- **get_mined_blocks**: Provide the address.
-
-Get List of Blocks Mined by Address
-- **get_normal_tx_list**: Specify the address and desired block range.
-
-Get Normal Transactions By Address
-- **get_token_balance**: Specify both the contract and the recipient address.
-
-Get ERC20-Token Balance for Address by ContractAddress
 - **get_token_supply**: Provide the contract address.
 
 Get ERC20-Token TotalSupply by ContractAddress
-- **get_tx_receipt_status**: Provide the transaction hash (txhash) to query the status.
-
-Check Check Transaction Receipt Status
 - **get_tx_status**: Pass the transaction hash (txhash) as input.
 
 Check Transaction Receipt Status
-- **proxy_block_number**: This tool requires no parameters.
-
-eth_blockNumber
 - **proxy_call**: Provide the function data payload as the second argument.
 
 eth_call
-- **proxy_estimate_gas**: Supply the target address and value.
-
-eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
-- **proxy_get_block_by_number**: Supply the required tag and boolean flags.
-
-eth_getBlockByNumber
-- **proxy_get_code**: The address must be provided.
-
-eth_getCode
 - **proxy_get_storage_at**: Specify both the contract address and the storage position.
 
 eth_getStorageAt
 - **proxy_get_transaction_receipt**: Provide the transaction hash (txhash) to retrieve the receipt.
 
 eth_getTransactionReceipt
+- **check_verify_status**: Use the unique GUID provided.
+
+Check Source Code Verification Status
+- **get_account_balance**: Provide a valid address for the query.
+
+Get Ether Balance for a Single Address
+- **get_mined_blocks**: Provide the address.
+
+Get List of Blocks Mined by Address
+- **get_block_countdown**: Specify the block number (blockno) to calculate the countdown.
+
+Get Estimated Block Countdown Time by BlockNo
+- **get_block_number_by_time**: Input the timestamp value for the calculation.
+
+Get Block Number by Timestamp
+- **get_block_reward**: Supply the block number (blockno) for the query.
+
+Get Block Rewards by BlockNo
+- **get_contract_abi**: Provide the contract address.
+
+Get Contract ABI for Verified Source Codes
+- **get_contract_source_code**: Provide the contract address.
+
+Get Contract Source Code for Verified Source Codes
+- **get_erc1155_token_tx**: Specify the address and contract.
+
+Get ERC1155 Token Transfer Events by Address
+- **get_erc20_token_tx**: Specify the address and contract.
+
+Get ERC20 Token Transfer Events by Address
+- **get_internal_tx_list**: Define the address and block range.
+
+Get Internal Transactions by Address
+- **get_logs**: Specify the required block range, address, and topic filters.
+
+Get Logs
+- **get_normal_tx_list**: Specify the address and desired block range.
+
+Get Normal Transactions By Address
+- **get_token_balance**: Specify both the contract and the recipient address.
+
+Get ERC20-Token Balance for Address by ContractAddress
+- **get_tx_receipt_status**: Provide the transaction hash (txhash) to query the status.
+
+Check Check Transaction Receipt Status
+- **proxy_block_number**: This tool requires no parameters.
+
+eth_blockNumber
+- **proxy_estimate_gas**: Supply the target address and value.
+
+eth_estimateGas
+- **proxy_get_block_by_number**: Supply the required tag and boolean flags.
+
+eth_getBlockByNumber
+- **proxy_get_code**: The address must be provided.
+
+eth_getCode
+- **proxy_get_transaction_by_hash**: Pass the transaction hash (txhash) to identify the transaction.
+
+eth_getTransactionByHash
 - **verify_source_code**: Provide all necessary parameters in the JSON object.
 
 Verify Source Code

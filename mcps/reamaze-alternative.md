@@ -33,7 +33,6 @@ Connect your **Reamaze** account to any AI agent to streamline your customer sup
 
 
 ## Available Tools (34)
-- **get_report**: Retrieve a specific report
 - **list_articles**: Can be scoped to a topic slug, filtered by status, or searched.
 
 List Help Articles for the Brand
@@ -41,27 +40,6 @@ List Help Articles for the Brand
 
 Retrieve identities for a contact
 - **list_staff**: Retrieve staff users for the Account
-- **create_contact_note**: You must specify the contact’s identifier and the note content.
-
-Attach a note to a contact
-- **create_contact**: Provide at least a name or email address.
-
-Create a new contact
-- **create_conversation**: Supply required customer details and initial message.
-
-Create a new conversation on behalf of a customer
-- **create_incident**: Pass the complete incident payload containing all necessary details.
-
-Create a new incident
-- **create_message**: Provide the conversation slug and message body.
-
-Create a new message under a specific conversation
-- **create_article**: Ensure the article payload includes a title and body.
-
-Create a new Help Article
-- **create_response_template**: Supply the required template payload.
-
-Create a new Response Template
 - **create_staff**: Pass the complete staff payload containing all required user details.
 
 Create a new staff user
@@ -77,46 +55,68 @@ Retrieve a specific channel
 - **get_conversation**: Pass the unique conversation slug.
 
 Retrieve a specific conversation
-- **get_incident**: Pass the unique identifier of the incident you wish to retrieve.
-
-Retrieve a specific incident
 - **get_response_template**: Use the unique template ID.
 
 Retrieve a specific Response Template
-- **list_channels**: List channels for the Brand
 - **list_contact_notes**: Use the contact email or phone number as the identifier.
 
 Retrieve notes for a specific contact
 - **list_contacts**: Use the ’q’ parameter to filter results.
 
 List contacts for the Account
-- **list_conversations**: Filter results using tags, categories, or origin.
-
-List conversations for the Brand
-- **list_incidents**: Retrieve incidents for the Brand
 - **list_messages**: Set ’include’ to "original_body" to get HTML content.
 
 Retrieve individual messages for all conversations
 - **list_satisfaction_ratings**: Retrieve satisfaction survey ratings
-- **list_systems**: The function executes asynchronously.
-
-Retrieve systems for the Brand
-- **create_identity**: Provide the contact’s email address.
-
-Attach an identity to a contact
-- **list_response_templates**: Retrieve Response Templates for the Brand
-- **update_article**: You must provide both the article slug and the updated payload.
-
-Update a specific Help Article
 - **update_contact_note**: Use the identifier to locate the correct contact.
 
 Update a contact note
-- **update_contact**: Specify the contact identifier and the fields to modify.
-
-Update a specific contact
 - **update_conversation**: Specify the conversation slug and the payload to modify.
 
 Update a conversation
+- **create_article**: Ensure the article payload includes a title and body.
+
+Create a new Help Article
+- **create_contact**: Provide at least a name or email address.
+
+Create a new contact
+- **create_contact_note**: You must specify the contact’s identifier and the note content.
+
+Attach a note to a contact
+- **create_conversation**: Supply required customer details and initial message.
+
+Create a new conversation on behalf of a customer
+- **create_identity**: Provide the contact’s email address.
+
+Attach an identity to a contact
+- **create_incident**: Pass the complete incident payload containing all necessary details.
+
+Create a new incident
+- **create_message**: Provide the conversation slug and message body.
+
+Create a new message under a specific conversation
+- **create_response_template**: Supply the required template payload.
+
+Create a new Response Template
+- **get_incident**: Pass the unique identifier of the incident you wish to retrieve.
+
+Retrieve a specific incident
+- **get_report**: Retrieve a specific report
+- **list_channels**: List channels for the Brand
+- **list_conversations**: Filter results using tags, categories, or origin.
+
+List conversations for the Brand
+- **list_incidents**: Retrieve incidents for the Brand
+- **list_response_templates**: Retrieve Response Templates for the Brand
+- **list_systems**: The function executes asynchronously.
+
+Retrieve systems for the Brand
+- **update_article**: You must provide both the article slug and the updated payload.
+
+Update a specific Help Article
+- **update_contact**: Specify the contact identifier and the fields to modify.
+
+Update a specific contact
 - **update_incident**: Specify the incident identifier and the payload containing changes.
 
 Update a specific incident

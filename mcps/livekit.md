@@ -31,13 +31,48 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 
 
 ## Available Tools (41)
+- **search_phone_numbers**: Provide both codes for accurate results.
+
+Search for available numbers by country/area code
+- **create_room**: Create a room with specific settings
+- **delete_sip_trunk**: Use the specific SIP Trunk ID for deletion.
+
+Remove a SIP trunk configuration
+- **list_egress**: Filter results using room name or egress ID.
+
+List active egress jobs
+- **list_ingress**: Filter results using room name or ingress ID.
+
+List provisioned ingresses
+- **list_participants**: Provide the room name to execute the query.
+
+List participants in a room
+- **list_rooms**: List active/open rooms
+- **list_sip_outbound_trunk**: List configured SIP outbound trunks
+- **mute_published_track**: Provide the room name, participant identity, and track SID.
+
+Mute/unmute a participant's track
+- **send_data**: Specify the room name and the data payload.
+
+Send data packets to participants
+- **stop_egress**: Provide the egress ID to terminate the job.
+
+Stop an active egress
+- **update_room_metadata**: Provide the room name and the new metadata string.
+
+Update room-wide metadata
+- **delete_room**: Specify the room name as the only required argument.
+
+Forcibly disconnect all participants and delete the room
+- **start_participant_egress**: Provide the room name and participant identity.
+
+Record a specific participant's audio and video
 - **create_dispatch**: Specify the agent name and room name.
 
 Explicitly trigger a named agent to join a specific room
 - **create_ingress**: Specify the input type and name.
 
 Provision an ingress point (RTMP, WHIP, or URL pull)
-- **create_room**: Create a room with specific settings
 - **create_sip_dispatch_rule**: Specify the rule name and required configurations.
 
 Map incoming calls to specific rooms based on phone numbers or pins
@@ -56,37 +91,17 @@ Remove a dispatch rule
 - **delete_ingress**: Provide the ingress ID to delete the resource.
 
 Remove an ingress point
-- **delete_room**: Specify the room name as the only required argument.
-
-Forcibly disconnect all participants and delete the room
 - **delete_sip_dispatch_rule**: Provide the specific SIP Dispatch Rule ID to delete the resource.
 
 Remove a SIP dispatch rule
-- **delete_sip_trunk**: Use the specific SIP Trunk ID for deletion.
-
-Remove a SIP trunk configuration
 - **get_participant**: Supply both the room name and the participant’s identity.
 
 Get info for a specific participant
 - **list_dispatch**: Provide the room name to retrieve the list.
 
 List dispatches for a room
-- **list_egress**: Filter results using room name or egress ID.
-
-List active egress jobs
-- **list_ingress**: Filter results using room name or ingress ID.
-
-List provisioned ingresses
-- **list_participants**: Provide the room name to execute the query.
-
-List participants in a room
 - **list_phone_numbers**: List numbers owned by the project
-- **list_rooms**: List active/open rooms
 - **list_sip_inbound_trunk**: List configured SIP inbound trunks
-- **list_sip_outbound_trunk**: List configured SIP outbound trunks
-- **mute_published_track**: Provide the room name, participant identity, and track SID.
-
-Mute/unmute a participant's track
 - **purchase_phone_number**: Specify the phone number to be purchased.
 
 Buy a number and optionally assign a SIP dispatch rule
@@ -96,15 +111,6 @@ Release a number back to the inventory
 - **remove_participant**: Supply both the room name and the participant’s identity.
 
 Kick a participant from a room
-- **search_phone_numbers**: Provide both codes for accurate results.
-
-Search for available numbers by country/area code
-- **send_data**: Specify the room name and the data payload.
-
-Send data packets to participants
-- **start_participant_egress**: Provide the room name and participant identity.
-
-Record a specific participant's audio and video
 - **start_room_composite_egress**: Provide the room name and the desired layout name.
 
 Record an entire room using a web layout
@@ -117,9 +123,6 @@ Export a single track without transcoding
 - **start_web_egress**: Provide the URL to be recorded.
 
 Record any web page
-- **stop_egress**: Provide the egress ID to terminate the job.
-
-Stop an active egress
 - **transfer_sip_participant**: Ensure the participant and room names are correct.
 
 Transfer an active SIP call to another number or URI
@@ -135,9 +138,6 @@ Update metadata or permissions for a participant
 - **update_phone_number**: Provide the number and the new rule ID.
 
 Change the dispatch rule for a number
-- **update_room_metadata**: Provide the room name and the new metadata string.
-
-Update room-wide metadata
 - **update_stream**: Use the egress ID to identify the stream.
 
 Add/remove RTMP/SRT output URLs from an active stream

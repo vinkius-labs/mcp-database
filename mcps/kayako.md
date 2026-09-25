@@ -38,13 +38,7 @@ Connect your **Kayako** helpdesk to any AI agent to streamline your customer sup
 - **list_categories**: Do not query categories without specifying a search term.
 
 List Kayako Help Center categories
-- **list_locales**: This tool does not require parameters.
-
-List Kayako locales
 - **list_teams**: List Kayako teams
-- **list_articles**: Do not query articles without specifying a search term.
-
-List Kayako Help Center articles
 - **list_brands**: List Kayako brands
 - **list_case_posts**: List posts for a specific Kayako case
 - **list_cases**: Supports pagination and partial output.
@@ -54,23 +48,29 @@ List Kayako cases (conversations)
 - **list_endpoints**: List Kayako automation endpoints
 - **list_macros**: List Kayako macros
 - **get_me**: Get current Kayako user details
-- **list_monitors**: Do not query monitors without specifying a search term.
-
-List Kayako automation monitors
 - **list_organizations**: List Kayako organizations
-- **list_sections**: Do not query sections without specifying a search term.
-
-List Kayako Help Center sections
 - **list_team_members**: List members of a specific Kayako team
-- **list_triggers**: Do not query triggers without specifying a search term.
-
-List Kayako automation triggers
 - **list_users**: Supports pagination and partial output.
 
 List Kayako users
 - **list_views**: List Kayako views
 - **create_case**: Create a new Kayako case
 - **create_file**: Upload a file to Kayako
+- **list_articles**: Do not query articles without specifying a search term.
+
+List Kayako Help Center articles
+- **list_locales**: This tool does not require parameters.
+
+List Kayako locales
+- **list_monitors**: Do not query monitors without specifying a search term.
+
+List Kayako automation monitors
+- **list_sections**: Do not query sections without specifying a search term.
+
+List Kayako Help Center sections
+- **list_triggers**: Do not query triggers without specifying a search term.
+
+List Kayako automation triggers
 
 
 ## 💬 Prompt Examples
