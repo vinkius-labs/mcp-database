@@ -39,27 +39,9 @@ Returns the receipt of a transaction by hash
 - **get_abi**: Get the Contract ABI for a verified smart contract
 - **balance_multi**: Get ETH balances for multiple addresses
 - **check_verify_status**: Check the status of a verification request
-- **eth_block_number**: This tool does not require any parameters.
-
-Returns the number of the most recent block
-- **eth_call**: Specify the target address and method data.
-
-Executes a new message call immediately without creating a transaction
-- **eth_estimate_gas**: Provide the target address and method data.
-
-Generates an estimate of how much gas is needed for a transaction
-- **eth_get_block_by_number**: Provide the block number in the tag parameter.
-
-Returns information about a block by number
 - **eth_get_transaction_by_hash**: Supply the transaction hash in the txhash parameter.
 
 Returns information about a transaction by hash
-- **eth_price**: This tool does not require any parameters.
-
-Get the current price of ETH in USD and BTC
-- **eth_supply**: This tool requires no parameters.
-
-Get the total supply of ETH on Linea
 - **get_balance**: Get ETH balance for a single address
 - **get_block_countdown**: Get estimated time remaining until a block is mined
 - **get_block_no_by_time**: Get block number by timestamp
@@ -74,6 +56,24 @@ Get the total supply of ETH on Linea
 - **tx_list_internal**: Get a list of Internal transactions for an address
 - **tx_list**: Get a list of Normal transactions for an address
 - **verify_source_code**: Submit a contract for verification
+- **eth_block_number**: This tool does not require any parameters.
+
+Returns the number of the most recent block
+- **eth_call**: Specify the target address and method data.
+
+Executes a new message call immediately without creating a transaction
+- **eth_estimate_gas**: Provide the target address and method data.
+
+Generates an estimate of how much gas is needed for a transaction
+- **eth_get_block_by_number**: Provide the block number in the tag parameter.
+
+Returns information about a block by number
+- **eth_price**: This tool does not require any parameters.
+
+Get the current price of ETH in USD and BTC
+- **eth_supply**: This tool requires no parameters.
+
+Get the total supply of ETH on Linea
 
 
 ## 💬 Prompt Examples

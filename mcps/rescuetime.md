@@ -34,28 +34,40 @@ Connect your **RescueTime** account to any AI agent to gain deep insights into y
 
 
 ## Available Tools (54)
-- **get_accounts**: Use this to view global account configurations.
-
-Retrieve account-level settings
-- **get_categories**: List activity categories
-- **get_focus_sessions**: List persistent session records
-- **get_productivities**: List productivity score definitions
-- **get_projects**: No parameters are needed to list projects.
-
-List projects
-- **get_users**: Retrieve current user info
-- **start_focus_zone**: Provide all required zone details in the body.
-
-Start a focus zone (DND block)
-- **delete_timeline_activities**: Both start_time and end_time must be provided.
-
-Bulk delete tracked time in a range
-- **add_offline_focus_work**: Include all required details in the body JSON.
-
-Add offline focus time (accumulates)
 - **archive_project**: Use the specific Project ID for the operation.
 
 Archive or restore a project
+- **end_focus_time**: Use this only when the session is actively running.
+
+End the current Focus Session (Premium only)
+- **get_alerts**: Use this to check for immediate issues.
+
+List active alerts
+- **get_highlights_feed**: This feature is restricted to Premium users only.
+
+Get daily highlights feed (Premium only)
+- **get_analytic_data**: Query historical activity data and productivity metrics
+- **get_daily_summary_feed**: Get high-level rollup of daily time logged
+- **get_devices**: Do not specify a time range if you want all devices.
+
+List user-machines that have reported time
+- **get_goals**: List goals
+- **get_overview_tree**: Use this for detailed navigation paths.
+
+Get personalized hierarchy with scoring overrides
+- **get_profile_entities**: Do not query without specifying a scope.
+
+List per-account category/score overrides
+- **get_web_notifications**: Use this to review recent activity updates.
+
+List in-app notifications
+- **merge_project_time**: Pass the necessary merge details in the body.
+
+Combine adjacent time entries
+- **get_meeting_events**: List events classified as meetings
+- **add_offline_focus_work**: Include all required details in the body JSON.
+
+Add offline focus time (accumulates)
 - **cancel_or_stop_focus_session**: Include stop details in the body.
 
 End active focus session
@@ -71,63 +83,56 @@ Create a goal
 - **create_project**: Pass all required project details in the body.
 
 Create a project
-- **end_focus_time**: Use this only when the session is actively running.
+- **delete_timeline_activities**: Both start_time and end_time must be provided.
 
-End the current Focus Session (Premium only)
+Bulk delete tracked time in a range
 - **extend_focus_session**: Provide the necessary extension details in the body.
 
 Extend active session duration
-- **get_alerts**: Use this to check for immediate issues.
+- **get_accounts**: Use this to view global account configurations.
 
-List active alerts
-- **get_highlights_feed**: This feature is restricted to Premium users only.
-
-Get daily highlights feed (Premium only)
+Retrieve account-level settings
 - **get_alerts_feed**: Specify the alert ID if filtering is required.
 
 Get running log of recently triggered user-defined alerts
-- **get_analytic_data**: Query historical activity data and productivity metrics
 - **get_calendar_events**: Do not specify any parameters.
 
 List synced calendar events
-- **get_daily_summary_feed**: Get high-level rollup of daily time logged
+- **get_categories**: List activity categories
 - **get_daily_user_summaries**: This provides summarized user data for a given day.
 
 Get pre-computed daily roll-ups
-- **get_devices**: Do not specify a time range if you want all devices.
-
-List user-machines that have reported time
 - **get_extra_works**: List extra-work entries
+- **get_focus_sessions**: List persistent session records
 - **get_focustime_ended_feed**: Use this to view session end history.
 
 Get feed of ended Focus Sessions
 - **get_focustime_started_feed**: Use this to view session start history.
 
 Get feed of started Focus Sessions
-- **get_goals**: List goals
 - **get_managed_users**: List users in teams managed by the caller
 - **get_organizations**: Retrieve organization details
-- **get_overview_tree**: Use this for detailed navigation paths.
-
-Get personalized hierarchy with scoring overrides
 - **get_overviews**: List top-level activity buckets
-- **get_profile_entities**: Do not query without specifying a scope.
+- **get_productivities**: List productivity score definitions
+- **get_projects**: No parameters are needed to list projects.
 
-List per-account category/score overrides
+List projects
 - **get_schedules**: List work schedules
+- **get_tasks**: No parameters are needed to list tasks.
+
+List tasks
+- **get_teams**: List teams the user belongs to
 - **get_timeline_activities**: Provide the date in YYYY-MM-DD format.
 
 Fetch normalized activity stream for a day
-- **get_web_notification_counts**: Get read/unread counts for notifications
-- **get_web_notifications**: Use this to review recent activity updates.
+- **get_users**: Retrieve current user info
+- **get_user_settings**: Use this to check writable configurations.
 
-List in-app notifications
+Retrieve API-writable user settings
+- **get_web_notification_counts**: Get read/unread counts for notifications
 - **log_project_time**: Provide all time log details in the body.
 
 Log time against a project/task
-- **merge_project_time**: Pass the necessary merge details in the body.
-
-Combine adjacent time entries
 - **opt_in_beta**: Do not call this if you are unsure of the user’s intent.
 
 Opt in or out of beta features
@@ -146,6 +151,9 @@ Start a global focus session
 - **start_focus_time**: Specify the duration in minutes, or use -1 to end the day.
 
 Trigger a Focus Session (Premium only)
+- **start_focus_zone**: Provide all required zone details in the body.
+
+Start a focus zone (DND block)
 - **toggle_timesheet_finalized**: Pass the required details in the body.
 
 Toggle finalization (lock) for a date
@@ -158,14 +166,6 @@ Mark notification as read or dismissed
 - **upsert_profile_entity**: Provide all required fields in the body.
 
 Upsert an override for an app/site
-- **get_meeting_events**: List events classified as meetings
-- **get_tasks**: No parameters are needed to list tasks.
-
-List tasks
-- **get_teams**: List teams the user belongs to
-- **get_user_settings**: Use this to check writable configurations.
-
-Retrieve API-writable user settings
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server helps users navigate accessibility requests by applying the Mini
 
 
 ## Available Tools (4)
-- **analyze_policy_and_request**: Evaluates the intersection between the organizer's policy and the user's specific needs
 - **calculate_submission_urgency**: Determines how much time remains before the deadline
 - **generate_escalation_strategy**: Builds a structured hierarchy of contact points if the primary request is not acknowledged
 - **validate_disclosure_compliance**: Verifies if a drafted request adheres to the Minimum-Disclosure Rule
+- **analyze_policy_and_request**: Evaluates the intersection between the organizer's policy and the user's specific needs
 
 
 ## 💬 Prompt Examples

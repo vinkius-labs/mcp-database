@@ -14,10 +14,10 @@ This MCP server provides a suite of tools to help students navigate academic env
 
 
 ## Available Tools (4)
+- **get_materials_access_checklist**: Provides a targeted list to verify that all course materials are accessible
 - **get_communication_sequence**: Creates a step-by-step timeline for notifying relevant parties about required accommodations
 - **get_escalation_route**: Defines the hierarchical path to follow if accommodations are not being met
 - **get_participation_plan**: Generates a comprehensive strategy for engaging with a specific course or class
-- **get_materials_access_checklist**: Provides a targeted list to verify that all course materials are accessible
 
 
 ## 💬 Prompt Examples

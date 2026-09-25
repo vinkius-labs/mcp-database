@@ -14,10 +14,10 @@ This MCP server provides specialized tools to evaluate assistive technology. Use
 
 
 ## Available Tools (4)
-- **generate_vendor_inquiry**: Creates a targeted list of questions for vendors to clarify ambiguities or confirm technical compatibility
-- **plan_acquisition**: Outlines the logistical steps required to purchase or lease the equipment
 - **analyze_fit**: Determines if specific equipment options meet the user's defined criteria and environmental constraints
 - **create_trial_plan**: Formulates a structured schedule and checklist for testing the selected equipment in the user's real-world environment
+- **generate_vendor_inquiry**: Creates a targeted list of questions for vendors to clarify ambiguities or confirm technical compatibility
+- **plan_acquisition**: Outlines the logistical steps required to purchase or lease the equipment
 
 
 ## 💬 Prompt Examples

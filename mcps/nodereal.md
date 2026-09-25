@@ -36,39 +36,39 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 ## Available Tools (24)
 - **aptos_get_ledger_info**: Get the current Aptos ledger information
 - **aptos_simulate_transaction**: Simulate an Aptos transaction submission
-- **eth_send_raw_transaction**: Only use this for signed transactions.
+- **aptos_get_account**: Get high-level information about an Aptos account
+- **aptos_get_transaction_by_hash**: Provide the transaction hash.
 
-Creates new message call transaction or a contract creation for signed transactions (EVM)
-- **nr_get_asset_transfers**: Pass the address and time range details.
+Get an Aptos transaction by its hash
+- **eth_block_number**: Get the current block number (EVM)
+- **eth_chain_id**: Get the chain ID (EVM)
+- **debug_trace_transaction**: Pass the transaction hash and desired trace options.
 
-Get asset transfers for an address (NodeReal Enhanced)
-- **nr_get_transaction_receipts_by_block_number**: Pass the block number and required parameters.
+Trace a transaction (EVM)
+- **eth_get_transaction_receipt**: Pass a JSON array containing the transaction hash.
 
-Get all receipts in a block (NodeReal Enhanced)
+Get the receipt of a transaction (EVM)
+- **nr_get_nft_holders**: Provide the collection contract address.
+
+Get holders of an NFT collection (NodeReal Enhanced)
+- **nr_get_token_balance_20**: Pass the address and token contract details.
+
+Get ERC20 token balance (NodeReal Enhanced)
 - **aptos_get_account_modules**: Provide the account address as input.
 
 Get all Move modules for a specific Aptos account
 - **aptos_get_account_resources**: Provide the account address as input.
 
 Get all resources for a specific Aptos account
-- **aptos_get_account**: Get high-level information about an Aptos account
 - **aptos_get_blocks_by_height**: Optionally include transactions within the block.
 
 Get Aptos blocks by height
-- **aptos_get_transaction_by_hash**: Provide the transaction hash.
-
-Get an Aptos transaction by its hash
 - **aptos_get_transactions**: Use start and limit parameters.
 
 Get a list of Aptos transactions
-- **debug_trace_transaction**: Pass the transaction hash and desired trace options.
-
-Trace a transaction (EVM)
-- **eth_block_number**: Get the current block number (EVM)
 - **eth_call**: Pass a JSON array containing the transaction object and block parameter.
 
 Execute a new message call immediately without creating a transaction (EVM)
-- **eth_chain_id**: Get the chain ID (EVM)
 - **eth_estimate_gas**: Provide the transaction object as the sole parameter.
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete (EVM)
@@ -81,21 +81,21 @@ Get a block by its number (EVM)
 - **eth_get_logs**: Pass a JSON array containing the filter object.
 
 Get logs matching a given filter object (EVM)
-- **eth_get_transaction_receipt**: Pass a JSON array containing the transaction hash.
+- **eth_send_raw_transaction**: Only use this for signed transactions.
 
-Get the receipt of a transaction (EVM)
-- **nr_get_nft_holders**: Provide the collection contract address.
+Creates new message call transaction or a contract creation for signed transactions (EVM)
+- **nr_get_asset_transfers**: Pass the address and time range details.
 
-Get holders of an NFT collection (NodeReal Enhanced)
+Get asset transfers for an address (NodeReal Enhanced)
 - **nr_get_nft_inventory**: Pass the address and collection details.
 
 Get NFT inventory for an address (NodeReal Enhanced)
-- **nr_get_token_balance_20**: Pass the address and token contract details.
-
-Get ERC20 token balance (NodeReal Enhanced)
 - **nr_get_token_holders**: Provide the token contract address and owner filter.
 
 Get list of token holders (NodeReal Enhanced)
+- **nr_get_transaction_receipts_by_block_number**: Pass the block number and required parameters.
+
+Get all receipts in a block (NodeReal Enhanced)
 
 
 ## 💬 Prompt Examples

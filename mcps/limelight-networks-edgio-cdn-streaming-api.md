@@ -40,32 +40,29 @@ Creates a new live event
 - **get_dash_manifest**: Supply the asset or channel ID.
 
 Get DASH manifest for video playback
-- **list_channels**: Lists all configured linear channels
-- **upload_slice**: Provide the slice data payload.
-
-Upload video segments for encoding and storage
-- **get_asset**: Provide the required asset ID.
-
-Retrieves detailed metadata for a specific asset
 - **stop_event**: Supply the event ID.
 
 Signals the end of a live event
-- **delete_asset**: Supply the unique asset ID.
-
-Permanently removes an asset from the system
 - **get_channel**: Supply the channel ID.
 
 Retrieves configuration and status for a channel
-- **get_hls_manifest**: Supply the asset or channel ID.
-
-Get HLS manifest for video playback
 - **get_playback_report**: Retrieves playback statistics (views, duration, etc.)
 - **initialize_preplay_session**: Initialize a playback session for SSAI and security
 - **list_assets**: Returns a list of all assets in your account
-- **list_events**: Lists all scheduled and active live events
 - **list_logs**: Execute the provided asynchronous function.
 
 Lists available log files for download
+- **delete_asset**: Supply the unique asset ID.
+
+Permanently removes an asset from the system
+- **get_asset**: Provide the required asset ID.
+
+Retrieves detailed metadata for a specific asset
+- **get_hls_manifest**: Supply the asset or channel ID.
+
+Get HLS manifest for video playback
+- **list_channels**: Lists all configured linear channels
+- **list_events**: Lists all scheduled and active live events
 - **start_event**: Supply the event ID.
 
 Signals the start of a live event
@@ -75,6 +72,9 @@ Updates metadata (title, tags, etc.) for an asset
 - **update_channel**: Provide the channel ID and the settings object.
 
 Updates channel settings or schedule
+- **upload_slice**: Provide the slice data payload.
+
+Upload video segments for encoding and storage
 
 
 ## 💬 Prompt Examples

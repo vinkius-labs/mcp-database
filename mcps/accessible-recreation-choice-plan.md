@@ -14,10 +14,10 @@ This MCP server provides a specialized decision engine for planning accessible r
 
 
 ## Available Tools (4)
-- **validate_participation_readiness**: Checks if the user's equipment and companion status are sufficient
 - **generate_activity_plan**: Selects the best activity from the eligible list and generates a plan
 - **get_alternative_options**: Provides fallback options when the primary plan cannot be fully met
 - **get_eligible_activities**: Identifies which recreation options satisfy all user-defined mandatory constraints
+- **validate_participation_readiness**: Checks if the user's equipment and companion status are sufficient
 
 
 ## 💬 Prompt Examples

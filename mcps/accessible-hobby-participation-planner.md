@@ -14,10 +14,10 @@ This MCP server provides a specialized planning engine to ensure inclusive hobby
 
 
 ## Available Tools (4)
-- **evaluate_barrier_mitigation**: Validates if the generated plan sufficiently addresses the identified obstacles
-- **generate_participation_plan**: Creates the primary adapted workflow and equipment requirements
 - **create_reflection_template**: Generates a structured set of questions to help the user assess the session
 - **optimize_helper_roles**: Refines helper instructions based on specific assistance preferences
+- **evaluate_barrier_mitigation**: Validates if the generated plan sufficiently addresses the identified obstacles
+- **generate_participation_plan**: Creates the primary adapted workflow and equipment requirements
 
 
 ## 💬 Prompt Examples

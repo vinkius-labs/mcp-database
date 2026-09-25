@@ -34,42 +34,24 @@ Connect your **Replicate** account to any AI agent to run powerful machine learn
 
 
 ## Available Tools (20)
-- **delete_model_version**: Provide the owner, model name, and version ID.
-
-Delete a specific model version
 - **get_account**: Get details about the authenticated user or organization
 - **list_predictions**: List recent predictions
 - **search_models**: Provide the search query.
 
 Search for public models on Replicate
-- **cancel_prediction**: Provide the prediction ID.
-
-Cancel a running prediction
+- **create_prediction**: Create a new prediction to run a model
 - **create_deployment_prediction**: Provide the deployment owner, name, and input parameters.
 
 Create a prediction using a dedicated deployment
-- **create_deployment**: Specify the deployment name and model.
-
-Create a new private deployment with custom autoscaling
 - **create_model**: Provide the owner, name, and required details.
 
 Create a new model on Replicate
-- **create_prediction**: Create a new prediction to run a model
 - **create_training**: Provide base model details and input data.
 
 Create a training to fine-tune an existing model
-- **get_collection**: Use the collection’s unique slug.
-
-Get details of a specific model collection
-- **get_model**: Provide both the owner and name.
-
-Get details of a specific model
 - **get_model_version**: Provide owner, name, and version ID.
 
 Get details of a specific model version, including its OpenAPI schema
-- **get_prediction**: Provide the prediction ID.
-
-Get the status and output of a prediction
 - **get_training**: Provide a valid training ID.
 
 Get the status of a training
@@ -81,6 +63,24 @@ List curated collections of models
 - **list_model_versions**: Provide the owner and model name.
 
 List all versions of a model
+- **cancel_prediction**: Provide the prediction ID.
+
+Cancel a running prediction
+- **create_deployment**: Specify the deployment name and model.
+
+Create a new private deployment with custom autoscaling
+- **delete_model_version**: Provide the owner, model name, and version ID.
+
+Delete a specific model version
+- **get_collection**: Use the collection’s unique slug.
+
+Get details of a specific model collection
+- **get_model**: Provide both the owner and name.
+
+Get details of a specific model
+- **get_prediction**: Provide the prediction ID.
+
+Get the status and output of a prediction
 - **update_model**: Specify the owner and model name.
 
 Update metadata for an existing model

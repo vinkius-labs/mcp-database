@@ -14,10 +14,10 @@ This MCP server provides a coordination system for hosts to organize social gath
 
 
 ## Available Tools (4)
-- **get_closeout_plan**: Defines how the event concludes to respect the host's time and household limits
-- **get_hosting_arrangement**: Generates the spatial and logistical layout for the gathering
 - **get_responsibilities_plan**: Assigns specific tasks to the host and support people for the start of the event
 - **get_guest_communication**: Drafts the information to be sent to guests to prepare them for the event
+- **get_closeout_plan**: Defines how the event concludes to respect the host's time and household limits
+- **get_hosting_arrangement**: Generates the spatial and logistical layout for the gathering
 
 
 ## 💬 Prompt Examples

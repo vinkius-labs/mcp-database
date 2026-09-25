@@ -14,10 +14,10 @@ This MCP server bridges the gap between delivery logistics and personal accessib
 
 
 ## Available Tools (4)
-- **generate_escalation_messages**: Produces messages to be sent to the user or a secondary contact if a delivery attempt fails
+- **generate_delivery_instructions**: Creates specific text instructions for a driver to ensure a successful, accessible handoff
 - **build_provider_setup_checklist**: Generates a checklist for the user to ensure their delivery profiles are correctly configured
 - **create_confirmation_workflow**: Defines the step-by-step operational sequence for a driver to follow to confirm a successful handoff
-- **generate_delivery_instructions**: Creates specific text instructions for a driver to ensure a successful, accessible handoff
+- **generate_escalation_messages**: Produces messages to be sent to the user or a secondary contact if a delivery attempt fails
 
 
 ## 💬 Prompt Examples

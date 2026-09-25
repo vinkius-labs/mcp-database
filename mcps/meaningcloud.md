@@ -40,9 +40,9 @@ Unlock the power of Natural Language Processing with **MeaningCloud**. This serv
 
 Assign categories to a text based on a taxonomy
 - **cluster_text**: Group a collection of documents into clusters
-- **analyze_sentiment**: Analyze the sentiment of a text
 - **summarize_text**: Extract the most relevant sentences to create a summary
 - **extract_topics**: Extract topics, entities, and concepts from text
+- **analyze_sentiment**: Analyze the sentiment of a text
 
 
 ## 💬 Prompt Examples

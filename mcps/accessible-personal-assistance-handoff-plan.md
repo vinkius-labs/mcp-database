@@ -14,9 +14,9 @@ This MCP server provides a structured framework for managing personal assistance
 
 
 ## Available Tools (4)
-- **get_task_briefing**: Provides a concise summary of specific tasks to be performed, filtered by authorized boundaries
 - **get_change_notification**: Creates a formal notification regarding changes in the user's routine or environment
 - **get_shift_handoff_protocol**: Generates a formal transition document between outgoing and incoming assistants
+- **get_task_briefing**: Provides a concise summary of specific tasks to be performed, filtered by authorized boundaries
 - **get_unresolved_question_log**: Retrieves a list of pending questions or ambiguities that must be addressed
 
 

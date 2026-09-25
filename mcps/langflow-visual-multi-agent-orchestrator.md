@@ -34,24 +34,37 @@ Connect your **Langflow** instance to any AI agent and take full control of your
 
 
 ## Available Tools (24)
-- **create_project**: Pass the required project configuration JSON in the project_data parameter.
-
-Create a new project
 - **create_response**: Uses flow_id as the model.
 
 OpenAI compatible responses endpoint
 - **get_monitor_transactions**: Use this to track system component interactions.
 
 Retrieve component interaction logs
-- **create_flow**: Provide the complete flow configuration JSON in the flow_data parameter.
-
-Create a new flow
 - **delete_file_v2**: Pass the File ID of the file to be deleted.
 
 Delete a file (v2)
 - **delete_flow**: Specify the Flow ID of the flow you intend to delete.
 
 Delete a flow
+- **get_logs**: Retrieve recent logs
+- **get_monitor_messages**: Retrieve chat history
+- **list_files_v2**: List user files (v2)
+- **list_flows**: List all flows
+- **list_projects**: List all projects
+- **run_flow**: Supports chat or text inputs.
+
+Execute a Langflow flow
+- **run_workflow**: Run a workflow (v2 API)
+- **trigger_webhook**: Trigger a Langflow webhook
+- **whoami**: This tool requires no parameters.
+
+Get current authenticated user info
+- **create_flow**: Provide the complete flow configuration JSON in the flow_data parameter.
+
+Create a new flow
+- **create_project**: Pass the required project configuration JSON in the project_data parameter.
+
+Create a new project
 - **delete_project**: Specify the Project ID of the project to be deleted.
 
 Delete a project
@@ -61,8 +74,6 @@ Download a file (v2)
 - **get_flow**: Pass the required Flow ID in the id parameter.
 
 Get a specific flow by ID
-- **get_logs**: Retrieve recent logs
-- **get_monitor_messages**: Retrieve chat history
 - **get_monitor_traces**: Retrieve execution traces and span trees
 - **get_project**: Use the Project ID to identify the desired project.
 
@@ -70,26 +81,15 @@ Get project details
 - **list_files_v1**: Provide the Flow ID in the flow_id parameter.
 
 List files for a specific flow (v1)
-- **list_files_v2**: List user files (v2)
-- **list_flows**: List all flows
-- **list_projects**: List all projects
 - **list_users**: Requires superuser privileges to execute.
 
 List all users (requires superuser)
-- **run_flow**: Supports chat or text inputs.
-
-Execute a Langflow flow
-- **run_workflow**: Run a workflow (v2 API)
-- **trigger_webhook**: Trigger a Langflow webhook
-- **update_project**: Provide both the Project ID and the updated project information.
-
-Update project info
 - **update_flow**: Supply both the Flow ID and the updated flow configuration JSON.
 
 Update an existing flow
-- **whoami**: This tool requires no parameters.
+- **update_project**: Provide both the Project ID and the updated project information.
 
-Get current authenticated user info
+Update project info
 
 
 ## 💬 Prompt Examples

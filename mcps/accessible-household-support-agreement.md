@@ -14,8 +14,8 @@ This MCP server provides a framework for creating personalized household managem
 
 
 ## Available Tools (4)
-- **create_review_agenda**: Produces a structured meeting outline for agreement reviews
 - **generate_support_agreement**: Creates the core plain-language support agreement document
+- **create_review_agenda**: Produces a structured meeting outline for agreement reviews
 - **get_communication_and_backup_plan**: Generates logistical details for communication and backup coverage
 - **validate_consent_permission**: Verifies if a task is permissible under current consent boundaries
 

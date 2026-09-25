@@ -14,11 +14,11 @@ This MCP server provides a structured toolkit for employees to manage workplace 
 
 
 ## Available Tools (5)
-- **generate_implementation_plan**: Break down the transition from request to active adjustment into actionable steps
-- **prepare_discussion_agenda**: Prepare the user for a meeting with decision-makers
 - **create_evidence_checklist**: Organize the user's own evidence into a coherent list for verification
 - **generate_accommodation_brief**: Create a formal, structured request for a workplace adjustment
 - **generate_followup_templates**: Provide ready-to-use text for checking in on the status of an accommodation
+- **generate_implementation_plan**: Break down the transition from request to active adjustment into actionable steps
+- **prepare_discussion_agenda**: Prepare the user for a meeting with decision-makers
 
 
 ## 💬 Prompt Examples

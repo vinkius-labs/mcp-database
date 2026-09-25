@@ -18,10 +18,10 @@ This MCP server provides a professional management framework for coordinating th
 
 
 ## Available Tools (5)
-- **generate_trial_schedule_tool**: Creates a chronological timeline of the trial process
-- **get_supplier_communication_steps_tool**: Provides the necessary sequence of actions to interact with the vendor
 - **create_task_checklist_tool**: Generates a structured list of activities to be performed during the trial
+- **generate_trial_schedule_tool**: Creates a chronological timeline of the trial process
 - **get_observation_template_tool**: Produces a standardized format for recording real-time data during the trial
+- **get_supplier_communication_steps_tool**: Provides the necessary sequence of actions to interact with the vendor
 - **prepare_decision_meeting_agenda_tool**: Outlines the formal meeting required to decide the fate of the equipment
 
 

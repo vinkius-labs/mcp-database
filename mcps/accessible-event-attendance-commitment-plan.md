@@ -14,10 +14,10 @@ This MCP server acts as a specialized decision-support bridge for users with spe
 
 
 ## Available Tools (4)
-- **generate_accommodation_actions**: Identifies the specific actions needed to secure required accommodations
-- **construct_exit_plan**: Creates a safety and comfort-focused departure strategy
 - **assign_day_of_roles**: Distributes responsibilities among the user and their companions to ensure seamless participation
+- **construct_exit_plan**: Creates a safety and comfort-focused departure strategy
 - **evaluate_attendance_feasibility**: Determines if the user can realistically and safely attend the event based on provided data
+- **generate_accommodation_actions**: Identifies the specific actions needed to secure required accommodations
 
 
 ## 💬 Prompt Examples

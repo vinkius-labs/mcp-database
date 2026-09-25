@@ -35,19 +35,19 @@ Connect to the **MusicBrainz** database to empower your AI agent with comprehens
 
 
 ## Available Tools (10)
-- **submit_ratings**: Requires authentication.
-
-Submit ratings via XML POST (Requires Auth)
 - **lookup_entity**: Lookup a specific MusicBrainz entity by its MBID
 - **submit_tags**: Requires authentication.
 
 Submit tags via XML POST (Requires Auth)
-- **add_collection_items**: Requires authentication.
-
-Add items to a collection (Requires Auth)
 - **browse_entities**: g., all releases for an artist).
 
 Browse entities linked to another entity
+- **search_entities**: Use Lucene syntax (e.g., "we will rock you" AND arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3).
+
+Search for entities using Lucene query syntax
+- **add_collection_items**: Requires authentication.
+
+Add items to a collection (Requires Auth)
 - **lookup_discid**: Provide the discid as the primary parameter.
 
 Lookup a CD by its discid
@@ -60,9 +60,9 @@ Lookup works by ISWC
 - **remove_collection_item**: Requires authentication.
 
 Remove an item from a collection (Requires Auth)
-- **search_entities**: Use Lucene syntax (e.g., "we will rock you" AND arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3).
+- **submit_ratings**: Requires authentication.
 
-Search for entities using Lucene query syntax
+Submit ratings via XML POST (Requires Auth)
 
 
 ## 💬 Prompt Examples

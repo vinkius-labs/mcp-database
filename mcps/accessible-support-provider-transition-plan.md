@@ -14,11 +14,11 @@ This MCP server manages the transition of support services between outgoing and 
 
 
 ## Available Tools (5)
-- **get_continuity_checklist**: Provides a verification list to ensure no support gaps occur during the switch
-- **get_transition_timeline**: Calculates the chronological sequence of events during the provider switch
 - **get_approved_handoff_package**: Generates a list of data and tasks that are legally cleared for transfer
+- **get_continuity_checklist**: Provides a verification list to ensure no support gaps occur during the switch
 - **get_escalation_contacts**: Provides the contact hierarchy for resolving transition issues
 - **get_introduction_agenda**: Creates a structured plan for the initial meeting between parties
+- **get_transition_timeline**: Calculates the chronological sequence of events during the provider switch
 
 
 ## 💬 Prompt Examples
