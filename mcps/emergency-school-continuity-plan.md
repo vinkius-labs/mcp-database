@@ -14,10 +14,10 @@ This MCP server acts as a decision-support engine for families facing school dis
 
 
 ## Available Tools (4)
-- **get_equipment_plan**: Evaluates if the household has the necessary hardware and connectivity to support the current continuity state
 - **get_adult_assignments**: Determines which adults are responsible for which children during specific time windows
 - **get_communication_checklist**: Generates a list of necessary actions to notify school, caregivers, and pickup contacts
 - **get_continuity_calendar**: Generates a chronological schedule of what each child should be doing, based on school directives and caregiver availability
+- **get_equipment_plan**: Evaluates if the household has the necessary hardware and connectivity to support the current continuity state
 
 
 ## 💬 Prompt Examples

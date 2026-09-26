@@ -14,8 +14,8 @@ This MCP server provides a comprehensive management engine for household emergen
 
 
 ## Available Tools (4)
-- **get_purchase_reminders**: Identifies items that need to be bought to maintain or replenish preparedness levels
 - **generate_maintenance_calendar**: Produces a chronological schedule of all required actions for the upcoming period
+- **get_purchase_reminders**: Identifies items that need to be bought to maintain or replenish preparedness levels
 - **get_readiness_dashboard**: Provides a high-level overview of the household's current preparedness state
 - **get_task_assignments**: Breaks down the maintenance plan into specific responsibilities for each household member
 

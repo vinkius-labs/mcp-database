@@ -14,11 +14,11 @@ This MCP server provides a coordination system for households to ensure emergenc
 
 
 ## Available Tools (5)
-- **sync_alert_subscriptions**: Identifies the necessary actions to align household language settings with official alert sources
 - **analyze_language_needs**: Determines which languages must be supported for all emergency communications
 - **generate_communication_templates**: Creates ready-to-use message templates for different emergency scenarios in multiple languages
 - **match_interpreter_contact**: Identifies the best person to contact for immediate linguistic assistance during an emergency
 - **plan_verification_schedule**: Generates a timeline for when the household should review its language access settings
+- **sync_alert_subscriptions**: Identifies the necessary actions to align household language settings with official alert sources
 
 
 ## 💬 Prompt Examples

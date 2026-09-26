@@ -1,0 +1,110 @@
+# Family Medical Information Card Generator MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/en/ai-agent-connect/family-medical-information-card-generator)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generates compact, shareable medical summary cards for families.
+
+## Description
+This MCP server provides tools to create structured, high-priority medical information cards. It uses `generate_medical_card` to produce a compact summary, `validate_medical_data_completeness` to ensure all critical life-safety data is present, and `filter_sensitive_formatting` to strip out medical advice, leaving only raw facts. It is designed for emergency preparedness, ensuring that allergies and emergency contacts are always prioritized.
+
+
+## Available Tools (4)
+- **filter_sensitive_formatting**: Ensures that the final output does not contain prohibited medical guidance
+- **format_contact_block**: Standardizes the text representation of contact information
+- **generate_medical_card**: Ensure all required fields are provided.
+
+Creates a formatted, compact medical information card based on specific family member details
+- **validate_medical_data_completeness**: Checks if a set of provided medical data meets the minimum requirements
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Family Medical Information Card Generator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a medical card for John Doe with allergies to Penicillin and Peanuts, medications including Lisinopril, and emergency contact Jane Doe (Wife) at 555-0123."
+
+**🤖 AI Agent:**
+> NAME: John Doe
+ALLERGIES: Penicillin, Peanuts
+MEDICATIONS: Lisinopril
+EMERGENCY CONTACT: Jane Doe (Wife): 555-0123
+
+---
+
+**👤 You:**
+> "Check if I have enough info for a medical card with these allergies: None, medications: Aspirin, and contact: Bob (Dad) 555-9999."
+
+**🤖 AI Agent:**
+> The data is incomplete. Missing required field: allergies.
+
+---
+
+**👤 You:**
+> "Format this contact: Dr. Smith, Cardiologist."
+
+**🤖 AI Agent:**
+> Dr. Smith (Cardiologist)
+
+
+## ❓ FAQ
+
+**Q: What information is included on the medical card?**
+The card includes the individual's name, allergies, medications, emergency contacts, and optional details like insurance and providers.
+
+**Q: How do I ensure my data is sufficient for a card?**
+You can use the `validate_medical_data_completeness` tool to check if you have provided the required allergies, medications, and emergency contacts.
+
+**Q: Does this tool provide medical advice?**
+No. The server uses `filter_sensitive_formatting` to ensure the output contains only factual data and no medical guidance or interpretations.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/en/ai-agent-connect/family-medical-information-card-generator](https://vinkius.com/en/ai-agent-connect/family-medical-information-card-generator)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Family Medical Information Card Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `family-medical-information-card-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Family Medical Information Card Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "family-medical-information-card-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius connector registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

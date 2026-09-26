@@ -14,10 +14,10 @@ This MCP server acts as an automated coordinator for household emergency readine
 
 
 ## Available Tools (4)
-- **create_action_plan**: Produces the formal output of the meeting, including decisions and next steps
-- **generate_meeting_agenda**: Transforms raw preparedness data into a structured discussion guide
 - **calculate_supply_needs**: Translates identified gaps into specific procurement requirements based on household size
+- **create_action_plan**: Produces the formal output of the meeting, including decisions and next steps
 - **evaluate_meeting_closure**: Determines if the review meeting has met the criteria to finalize the plan
+- **generate_meeting_agenda**: Transforms raw preparedness data into a structured discussion guide
 
 
 ## 💬 Prompt Examples

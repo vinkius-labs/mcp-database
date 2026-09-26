@@ -14,10 +14,10 @@ Periodization Planner connects AI agents to professional athletic programming. I
 
 
 ## Available Tools (4)
-- **calculate_weekly_progression**: Provides the specific volume and intensity targets for every week within the generated mesocycles
+- **summarize_training_plan**: Provides a high-level overview of the entire training periodization strategy
 - **get_mesocycle_structure**: Determines how the training period is divided into specific blocks leading up to the competition
 - **get_recovery_strategy**: Informs the athlete when and how to perform deloads to ensure physiological adaptation
-- **summarize_training_plan**: Provides a high-level overview of the entire training periodization strategy
+- **calculate_weekly_progression**: Provides the specific volume and intensity targets for every week within the generated mesocycles
 
 
 ## 💬 Prompt Examples

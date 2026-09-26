@@ -14,10 +14,10 @@ This MCP server provides the essential tools for managing emergency volunteer op
 
 
 ## Available Tools (4)
-- **identify_escalation_contacts**: Determines which contact should be notified based on task or personnel status
 - **create_task_briefs**: Generates detailed instruction documents for specific tasks
 - **generate_volunteer_schedule**: Creates a structured timeline of volunteer assignments
 - **get_sign_in_protocol**: Provides the standardized procedure for volunteers to report for duty
+- **identify_escalation_contacts**: Determines which contact should be notified based on task or personnel status
 
 
 ## 💬 Prompt Examples

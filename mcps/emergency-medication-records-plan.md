@@ -14,11 +14,11 @@ This MCP server provides a secure bridge for AI agents to manage critical medica
 
 
 ## Available Tools (5)
-- **generate_emergency_records_card**: Produce a concise, high-level summary for emergency responders
-- **generate_reminder_calendar**: Create a schedule of upcoming medication actions
+- **generate_document_update_checklist**: Provide a step-by-step guide for synchronizing digital records with physical inventory
 - **analyze_medication_entry**: Process raw medication data and validate it against domain rules
 - **compile_authorized_contact_list**: Manage and list the individuals authorized to access the records
-- **generate_document_update_checklist**: Provide a step-by-step guide for synchronizing digital records with physical inventory
+- **generate_emergency_records_card**: Produce a concise, high-level summary for emergency responders
+- **generate_reminder_calendar**: Create a schedule of upcoming medication actions
 
 
 ## 💬 Prompt Examples

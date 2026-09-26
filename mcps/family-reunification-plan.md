@@ -14,10 +14,10 @@ This MCP server provides essential tools for household emergency preparedness. I
 
 
 ## Available Tools (4)
-- **create_drill_schedule**: Generates a structured plan for practicing reunification procedures
-- **generate_reunification_card**: Creates a concise, printable summary of essential reunification data
 - **assign_emergency_roles**: Maps family members to critical emergency roles
 - **build_contact_tree**: Organizes household contacts into a logical hierarchy
+- **create_drill_schedule**: Generates a structured plan for practicing reunification procedures
+- **generate_reunification_card**: Creates a concise, printable summary of essential reunification data
 
 
 ## 💬 Prompt Examples

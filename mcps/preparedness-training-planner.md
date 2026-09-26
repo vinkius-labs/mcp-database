@@ -14,10 +14,10 @@ This MCP server helps households build resilience by organizing emergency prepar
 
 
 ## Available Tools (4)
-- **get_practice_calendar**: Suggests dates for hands-on drills to ensure theoretical knowledge is converted into physical skill
 - **get_enrollment_tasks**: Extracts a specific "to-do" list of administrative actions required to secure training
 - **get_evidence_plan**: Organizes a digital or physical filing structure to store certificates and drill logs
 - **get_learning_schedule**: Generates a chronological timeline of when each household member should undertake specific courses
+- **get_practice_calendar**: Suggests dates for hands-on drills to ensure theoretical knowledge is converted into physical skill
 
 
 ## 💬 Prompt Examples

@@ -14,11 +14,11 @@ This MCP server provides critical coordination tools for emergency relocation. I
 
 
 ## Available Tools (5)
-- **validate_shelter_eligibility**: Matches a household against a specific shelter's rules and current status to determine if they can be admitted
 - **assign_transport_logistics**: Determines the most viable method of travel to a chosen shelter
 - **create_communication_protocol**: Establishes the sequence of contact to ensure all stakeholders are informed of the relocation
 - **generate_contingency_plan**: Identifies the best alternative location if the primary shelter is unavailable
 - **get_departure_checklist**: Provides a personalized list of items and actions required for a household to safely leave their current location
+- **validate_shelter_eligibility**: Matches a household against a specific shelter's rules and current status to determine if they can be admitted
 
 
 ## 💬 Prompt Examples

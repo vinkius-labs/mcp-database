@@ -14,10 +14,10 @@ This MCP server provides a strategic orchestration engine for post-disaster reco
 
 
 ## Available Tools (4)
-- **generate_booking_calendar**: Creates a conflict-free schedule for service providers and household members
-- **get_recovery_sequence**: Generates a prioritized list of tasks required to restore the household
 - **compile_evidence_list**: Aggregates all necessary documentation and observations for insurance purposes
 - **create_communication_plan**: Drafts a schedule of updates for the family based on task progress
+- **generate_booking_calendar**: Creates a conflict-free schedule for service providers and household members
+- **get_recovery_sequence**: Generates a prioritized list of tasks required to restore the household
 
 
 ## 💬 Prompt Examples

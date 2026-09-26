@@ -14,10 +14,10 @@ This MCP server provides specialized planning tools for renters to align their p
 
 
 ## Available Tools (4)
-- **get_landlord_contact_sequence**: Generates an ordered plan of who to contact and when, based on the nature of the preparedness issue
-- **get_review_schedule**: Provides a timeline for when the renter should re-evaluate their preparedness status
 - **get_document_folder_plan**: Organizes the renter's digital or physical files into a logical structure for emergency access
+- **get_landlord_contact_sequence**: Generates an ordered plan of who to contact and when, based on the nature of the preparedness issue
 - **get_readiness_checklist**: Provides a comprehensive list of items the renter must prepare or acquire based on their specific unit and household profile
+- **get_review_schedule**: Provides a timeline for when the renter should re-evaluate their preparedness status
 
 
 ## 💬 Prompt Examples

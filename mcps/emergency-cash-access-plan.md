@@ -14,9 +14,9 @@ This MCP server provides tools to build comprehensive emergency readiness plans.
 
 
 ## Available Tools (4)
-- **get_responsible_contacts**: Identifies who is authorized to act and how they should be reached
 - **get_documentation_checklist**: Produces a list of items that must be prepared or verified for the plan to be valid
 - **get_funding_access_plan**: Calculates the specific financial readiness strategy based on budget and caps
+- **get_responsible_contacts**: Identifies who is authorized to act and how they should be reached
 - **get_review_schedule**: Generates a maintenance calendar to keep the plan updated
 
 

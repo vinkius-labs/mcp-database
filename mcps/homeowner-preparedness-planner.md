@@ -14,9 +14,9 @@ This MCP server provides a comprehensive management system for household safety.
 
 
 ## Available Tools (4)
-- **get_preparedness_roadmap**: Generates a phased, actionable preparedness roadmap based on property features and risk priorities
 - **get_annual_exercise_calendar**: Creates a recurring schedule of drills and inspections to maintain household readiness
 - **get_documentation_tasks**: Identifies necessary paperwork and digital records for insurance and emergency readiness
+- **get_preparedness_roadmap**: Generates a phased, actionable preparedness roadmap based on property features and risk priorities
 - **get_service_reminders**: Provides a list of upcoming maintenance actions required to mitigate specific property risks
 
 

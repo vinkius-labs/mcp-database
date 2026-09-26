@@ -14,9 +14,9 @@ This MCP server provides tools to organize and format critical household contact
 
 
 ## Available Tools (4)
-- **summarize_contact_list**: Provides a high-level count and overview of the contacts provided
 - **generate_contact_card**: Creates a formatted, printable text card containing all provided emergency contacts in a structured layout
 - **get_template_layout**: Retrieves the visual structure/template for the card
+- **summarize_contact_list**: Provides a high-level count and overview of the contacts provided
 - **validate_contact_data**: Checks the completeness and formatting of the contact information
 
 
