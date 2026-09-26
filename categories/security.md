@@ -32,6 +32,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
 | [Execution Trace Tamper-Evident Logger](../mcps/execution-trace-tamper-evident-logger.md) | Creates immutable, cryptographic audit trails for agent execution steps using Merkle trees. |
+| [Family Records Transfer List](../mcps/family-records-transfer-list.md) | Manage secure movement of sensitive family archives with verifiable chain of custody. |
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
 | [Filesystem Sandbox Boundary Enforcer](../mcps/filesystem-sandbox-boundary-enforcer.md) | Enforces strict path boundaries and prevents traversal attacks. |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
@@ -41,6 +42,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |
+| [Household Guest Access Register](../mcps/household-guest-access-register.md) | Manage guest entry, verify area permissions, and track departure protocols. |
 | [IAM Policy Complexity Calculator](../mcps/iam-policy-complexity-calculator.md) | Deterministic AWS IAM policy size and complexity analyzer. |
 | [Input Sanitizer & Escape Handler](../mcps/input-sanitizer-escape-handler.md) | Protects AI agents from shell injection, path traversal, and payload vulnerabilities. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |

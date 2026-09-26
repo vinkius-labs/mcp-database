@@ -5,6 +5,7 @@ Explore the open database of **documentation** Model Context Protocol (MCP) serv
 | Tool Name | Description |
 |-----------|-------------|
 | [Online Community Transition Note](../mcps/online-community-transition-note.md) | Generate professional public announcements and internal administrative guides for community handovers. |
+| [Temporary Guardian Information Pack](../mcps/temporary-guardian-information-pack.md) | Compile comprehensive, printable handoff documentation for temporary caregivers. |
 
 
 ---

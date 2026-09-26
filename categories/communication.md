@@ -9,6 +9,7 @@ Explore the open database of **communication** Model Context Protocol (MCP) serv
 | [Circuit Breaker State Machine](../mcps/circuit-breaker-state-machine.md) | A deterministic state machine for managing agent-to-agent communication stability. |
 | [Emergency Communication Channel Plan](../mcps/emergency-communication-channel-plan.md) | Automated planning for tiered emergency communication protocols. |
 | [Emergency Language Access Plan](../mcps/emergency-language-access-plan.md) | Coordinate emergency communications, interpreter availability, and accessibility requirements for households. |
+| [Family Language Access Plan](../mcps/family-language-access-plan.md) | Generate actionable communication guides by aggregating family language preferences and interpreter resources. |
 | [LiveKit Real-Time Rooms](../mcps/tt-voice.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
 | [LiveKit Real-Time Rooms](../mcps/livekit-real-time-rooms-alternative.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
 | [Thoughtly](../mcps/thoughtly.md) | Deploy AI voice agents to make or receive calls, manage CRM contacts, and access call histories instantly. |

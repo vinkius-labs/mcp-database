@@ -71,6 +71,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Excavation Support Designer](../mcps/excavation-support-designer.md) | Designs temporary excavation support systems including stability and bracing. |
 | [Excavation Volume Calculator](../mcps/excavation-volume-calculator.md) | Calculate precise earthwork volumes, including cut, loose, and backfill requirements. |
 | [Expansion Joint Design Engineer](../mcps/expansion-joint-design-engineer.md) | Calculate precise expansion joint specifications, including thermal movement, seismic displacement, and sealant requirements. |
+| [Exterior Repair Weather Window Optimizer](../mcps/exterior-repair-weather-window-optimizer.md) | Identifies safe work windows for exterior repairs by reconciling weather, contractor availability, and material limits. |
 | [Fence Material Calculator](../mcps/fence-material-calculator.md) | Calculate precise fencing material requirements and costs for pastures. |
 | [Fieldwire](../mcps/fieldwire.md) | Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent. |
 | [Floor Flatness & Levelness Analyzer](../mcps/floor-flatness-levelness-analyzer.md) | Analyze concrete floor compliance using FF/FL F-number standards. |
@@ -102,6 +103,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Micropile Design Engineer](../mcps/micropile-design-engineer.md) | Calculate bond length, steel sizing, and grout volume for micropile foundations. |
 | [Paint & Coating Calculator](../mcps/paint-coating-calculator.md) | Calculate theoretical and practical coverage, material waste, and coating requirements. |
 | [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
+| [Paint Project Coordination Plan](../mcps/paint-project-coordination-plan.md) | Synchronize room sequences, material needs, and occupancy timelines for interior painting projects. |
 | [Patio Paver Estimator](../mcps/patio-paver-estimator.md) | Calculate the exact number of pavers and total project cost for outdoor patio installations. |
 | [Pile Load Capacity Calculator](../mcps/pile-load-capacity-calculator.md) | Calculate pile axial capacity, allowable load, and settlement. |
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
@@ -113,6 +115,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Rebar Lap Length Calculator](../mcps/rebar-lap-length-calculator.md) | Calculate required rebar lap splice lengths and verify structural compliance. |
 | [Rebar Quantity Estimator](../mcps/rebar-quantity-estimator.md) | Calculate precise rebar weights, lengths, and counts for structural elements. |
 | [Rebar Splice Decision Support](../mcps/rebar-splice-decision-support.md) | Evaluates rebar splicing methods based on structural, economic, and site constraints. |
+| [Repair Scope Gap Review](../mcps/repair-scope-gap-review.md) | Audits construction proposals against checklists and property constraints. |
 | [Retaining Wall Drainage Designer](../mcps/retaining-wall-drainage-designer.md) | Calculates drainage pipe diameter, gravel filter thickness, and weep hole spacing for retaining walls. |
 | [Roof Pitch Calculator](../mcps/roof-pitch-calculator.md) | Calculate roof geometry, material needs, and snow load capacity. |
 | [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |

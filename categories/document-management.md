@@ -40,6 +40,7 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [Plone](../mcps/plone.md) | Manage Plone CMS content, users, and workflows directly from your AI agent—search, create, and update resources effortlessly. |
 | [Plone](../mcps/plone-alternative.md) | Manage Plone CMS content, users, and workflows directly from your AI agent—search, create, and update resources effortlessly. |
 | [Regulations.gov (eRulemaking)](../mcps/regulationsgov-erulemaking.md) | Access US federal regulations, search documents, public comments, and dockets directly from agencies like the EPA and FAA. |
+| [Repair Documentation Package](../mcps/repair-documentation-package.md) | Standardize repair evidence into a structured, searchable project record. |
 | [ShangQian / 上上签 (BestSign)](../mcps/shangqian-bestsign.md) | China's leading digital signature platform — manage contracts, register users, and automate signatures via AI. |
 | [Ugosign](../mcps/ugosign.md) | Sign documents electronically with a platform that supports advanced electronic signatures and complies with European regulations. |
 | [Veryfi](../mcps/veryfi.md) | Automate document OCR and data extraction via Veryfi — process receipts, invoices, business cards, bank statements, and tax forms directly from your AI agent. |

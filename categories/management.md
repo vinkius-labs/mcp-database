@@ -4,6 +4,7 @@ Explore the open database of **management** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Family Event Consent Register](../mcps/family-event-consent-register.md) | Manage attendee permissions, restrictions, and consent status for family events. |
 | [Gym Capacity Planner](../mcps/gym-capacity-planner.md) | Calculate gym floor capacity, equipment needs, and daily throughput. |
 | [Pet Toy Inventory Manager](../mcps/pet-toy-inventory-manager.md) | Track and manage pet toy inventory, availability, and health. |
 | [Squad Roster Validator](../mcps/squad-roster-validator.md) | Validates football competition rosters for compliance with age, size, and homegrown rules. |

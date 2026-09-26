@@ -54,6 +54,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Redox Reaction Balancer](../mcps/redox-reaction-balancer.md) | Balance redox reactions and identify chemical agents. |
 | [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
+| [School Contact Update Letter Generator](../mcps/school-contact-update-letter-generator.md) | Generates formal school notification letters for student contact updates. |
 | [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |

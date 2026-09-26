@@ -22,6 +22,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [Edamam](../mcps/edamam-alternative.md) | Manage food and nutrition — audit recipes and ingredients via AI. |
 | [Epic Fhir](../mcps/epic-fhir.md) | Access patient records via Epic's FHIR R4 API — search patients, review encounters, pull lab results and medications from any AI agent. |
 | [Every.org Charity](../mcps/everyorg-charity.md) | Universal charity intelligence — search non-profits, causes, and mission data via AI. |
+| [Family Digital Photo Handoff](../mcps/family-digital-photo-handoff.md) | Generate structured, step-by-step execution plans for transferring digital photo collections. |
 | [FastGPT](../mcps/fastgpt.md) | Manage FastGPT Knowledge Bases — automate dataset creation, document ingestion, and RAG search directly from any AI agent. |
 | [Figshare](../mcps/figshare.md) | Manage research data and scholarly outputs via Figshare — list public articles, manage private uploads, and organize collections directly from your AI agent. |
 | [Foursquare](../mcps/foursquare-alternative.md) | Manage your location data — audit places, photos, and tips via AI. |

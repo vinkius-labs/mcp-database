@@ -739,6 +739,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Relative Volatility Index (RVI) Calculator](../mcps/relative-volatility-index-rvi-calculator.md) | Calculate and analyze volatility momentum using the Relative Volatility Index. |
 | [Renewable Energy Lease Analyzer](../mcps/renewable-energy-lease-analyzer.md) | Evaluate the financial viability of solar or wind energy leases against alternative land uses. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
+| [Repair Budget & Release Plan](../mcps/repair-budget-release-plan.md) | Synchronize project budgets with verifiable milestone completion and gated payments. |
 | [Reserve Replacement Ratio Calculator](../mcps/reserve-replacement-ratio-calculator.md) | Calculate critical petroleum industry metrics like RRR, Reserve Life Index, and F&D costs. |
 | [Resolution Date Proximity Fade](../mcps/resolution-date-proximity-fade.md) | A deterministic mean-reversion strategy for exploiting liquidity premiums near market resolution. |
 | [Resolution Delay Capital Cost](../mcps/resolution-delay-capital-cost.md) | Quantify the opportunity cost of capital locked in delayed prediction market resolutions. |
