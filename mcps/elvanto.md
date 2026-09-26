@@ -27,34 +27,55 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 
 
 ## Available Tools (46)
+- **list_custom_fields**: This tool does not require any parameters.
+
+Get a list of all Custom Fields
+- **list_song_keys**: Use this when you know the arrangement ID.
+
+Get a list of keys within an arrangement
+- **remove_calendar_event**: Use the unique event ID for deletion.
+
+Delete a calendar event
+- **create_calendar_event**: Provide the name and required dates.
+
+Create a new calendar event
+- **create_song_arrangement**: Provide the song ID and arrangement name.
+
+Create an arrangement tied to a specified song
+- **create_transaction**: Specify the person, date, and amounts.
+
+Create a new transaction
+- **get_person**: Pass the person’s unique ID.
+
+Find a person based on their ID
+- **list_financial_categories**: Specify the page number if needed.
+
+Get a list of all Chart of Accounts categories
+- **list_songs**: Specify the desired page, page size, and search criteria.
+
+Get a list of songs
+- **list_transactions**: Provide both start and end dates.
+
+Get a list of all transactions between two dates
+- **remove_group**: Provide the unique group ID to confirm deletion.
+
+Delete a group
 - **add_group_person**: Specify the unique Group ID and Person ID.
 
 Add a person to a group, or change their position
 - **add_person_to_flow_step**: Adds a person to a specified People Flow Step
-- **create_calendar_event**: Provide the name and required dates.
-
-Create a new calendar event
-- **create_financial_category**: Provide the category name.
-
-Creates a new category in the Chart of Accounts
 - **create_group**: You must provide a name for the new group.
 
 Create a new group
 - **create_person**: Provide at least a first name and last name.
 
 Create a new person
-- **create_song**: Provide a title and optionally a CCLI number.
-
-Create a new song
-- **create_song_arrangement**: Provide the song ID and arrangement name.
-
-Create an arrangement tied to a specified song
 - **create_song_key**: Provide the arrangement ID and key name.
 
 Create a key attached to a specified arrangement
-- **create_transaction**: Specify the person, date, and amounts.
+- **create_song**: Provide a title and optionally a CCLI number.
 
-Create a new transaction
+Create a new song
 - **edit_calendar_event**: Supply the event ID and the fields to be updated.
 
 Edit an existing calendar event
@@ -64,91 +85,52 @@ Edit an existing group
 - **edit_person**: Must specify the person’s ID.
 
 Edit an existing person
-- **edit_song**: Must provide both the song ID and the new title.
-
-Edit specific details about a chosen song
-- **edit_song_arrangement**: Must provide the arrangement ID.
-
-Edit a specific arrangement details
 - **edit_song_key**: Must provide the key ID.
 
 Edit an existing key
 - **edit_transaction**: Provide the transaction ID and the amounts to modify.
 
 Edit an existing transaction
-- **get_current_user**: This tool does not require any parameters.
-
-Retrieve information of the logged-in user
 - **get_group**: Provide the unique group ID.
 
 Find a group based on its ID
-- **get_person**: Pass the person’s unique ID.
-
-Find a person based on their ID
 - **get_service**: Provide the ID and optionally specify fields to retrieve.
 
 Find a service based on its ID
-- **get_song**: Optionally request attached files.
-
-Find a song based on its ID
 - **get_song_arrangement**: Provide the arrangement ID to proceed.
 
 Find an arrangement based on its ID
 - **get_song_key**: Provide the key ID to proceed.
 
 Find a key based on its ID
-- **get_transaction**: Provide the transaction ID.
+- **get_song**: Optionally request attached files.
 
-Find a transaction based on its ID
+Find a song based on its ID
 - **list_calendar_events**: Provide start and end dates.
 
 Get a list of all events between two dates
 - **list_calendars**: Get a list of all Calendars that events can be assigned to
-- **list_custom_fields**: This tool does not require any parameters.
-
-Get a list of all Custom Fields
-- **list_financial_categories**: Specify the page number if needed.
-
-Get a list of all Chart of Accounts categories
 - **list_groups**: Use category_id to filter results.
 
 Get a list of all groups
-- **list_people**: Use category_id to filter results if needed.
-
-Get a list of all people
 - **list_people_categories**: This tool does not require any parameters.
 
 Get a list of all People Categories
-- **list_people_flows**: This tool does not require any parameters.
-
-Lists all People Flows in the account
 - **list_people_flow_step_people**: Provide the step_id to scope the search.
 
 Lists members inside a specific People Flow step
 - **list_people_flow_steps**: Provide the flow_id as a parameter.
 
 Lists all People Flow Steps within a given People Flow
-- **list_services**: Specify date ranges or status filters if needed.
+- **list_people_flows**: This tool does not require any parameters.
 
-Get a list of services
+Lists all People Flows in the account
+- **list_people**: Use category_id to filter results if needed.
+
+Get a list of all people
 - **list_song_arrangements**: Use this when you know the song ID.
 
 Get a list of arrangements within a song
-- **list_song_keys**: Use this when you know the arrangement ID.
-
-Get a list of keys within an arrangement
-- **list_songs**: Specify the desired page, page size, and search criteria.
-
-Get a list of songs
-- **list_transactions**: Provide both start and end dates.
-
-Get a list of all transactions between two dates
-- **remove_calendar_event**: Use the unique event ID for deletion.
-
-Delete a calendar event
-- **remove_group**: Provide the unique group ID to confirm deletion.
-
-Delete a group
 - **remove_group_person**: Provide both the Group ID and the Person ID.
 
 Remove a person from a group
@@ -161,6 +143,24 @@ Delete a transaction
 - **search_people**: Always provide a search query in the ’search’ parameter.
 
 Find one or more people matching a specific search query
+- **create_financial_category**: Provide the category name.
+
+Creates a new category in the Chart of Accounts
+- **edit_song**: Must provide both the song ID and the new title.
+
+Edit specific details about a chosen song
+- **edit_song_arrangement**: Must provide the arrangement ID.
+
+Edit a specific arrangement details
+- **get_current_user**: This tool does not require any parameters.
+
+Retrieve information of the logged-in user
+- **get_transaction**: Provide the transaction ID.
+
+Find a transaction based on its ID
+- **list_services**: Specify date ranges or status filters if needed.
+
+Get a list of services
 
 
 ## 💬 Prompt Examples

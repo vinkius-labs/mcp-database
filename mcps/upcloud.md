@@ -36,30 +36,46 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 
 
 ## Available Tools (46)
-- **assign_ip**: Provide the required assignment payload.
-
-Assign a new IP address
-- **backup_storage**: Provide the target storage UUID.
-
-Create a storage backup
-- **clone_storage**: Provide the target storage UUID.
-
-Clone a storage
-- **create_api_token**: Provide the required token configuration payload.
-
-Create a new API token
-- **create_database**: Supply the required configuration details in the body.
-
-Create a managed database instance
-- **create_firewall_rule**: Provide the server UUID and rule configuration payload.
-
-Create a firewall rule for a server
-- **create_kubernetes_cluster**: Supply the required configuration details in the body.
-
-Create a Managed Kubernetes cluster
 - **create_load_balancer**: Supply the required configuration details in the body.
 
 Create a managed load balancer
+- **get_account**: Get UpCloud account information
+- **list_api_tokens**: List API tokens
+- **list_databases**: List managed database services
+- **list_storages**: List all accessible storages
+- **list_zones**: List available zones
+- **restore_storage**: Provide the UUID of the storage.
+
+Restore storage from backup
+- **export_audit_logs**: Export account audit logs
+- **create_firewall_rule**: Provide the server UUID and rule configuration payload.
+
+Create a firewall rule for a server
+- **list_object_storages**: List Managed Object Storage services
+- **list_prices**: List resource prices
+- **release_ip**: Provide the IP address to be released.
+
+Release an IP address
+- **start_server**: Provide the unique server UUID.
+
+Start a server
+- **assign_ip**: Provide the required assignment payload.
+
+Assign a new IP address
+- **list_audit_logs**: List account audit logs
+- **backup_storage**: Provide the target storage UUID.
+
+Create a storage backup
+- **get_billing_summary**: Get monthly billing summary
+- **clone_storage**: Provide the target storage UUID.
+
+Clone a storage
+- **create_database**: Supply the required configuration details in the body.
+
+Create a managed database instance
+- **create_kubernetes_cluster**: Supply the required configuration details in the body.
+
+Create a Managed Kubernetes cluster
 - **create_network**: The body must define the network parameters.
 
 Create a new SDN private network
@@ -75,54 +91,38 @@ Create a new server
 - **create_storage**: The body must contain all necessary details.
 
 Create a new storage
+- **create_api_token**: Provide the required token configuration payload.
+
+Create a new API token
+- **list_database_types**: List available database types and plans
 - **delete_server**: Ensure the server UUID is correct before proceeding.
 
 Delete a server
-- **export_audit_logs**: Export account audit logs
-- **get_account**: Get UpCloud account information
-- **get_billing_summary**: Get monthly billing summary
+- **list_firewall_rules**: Provide the server UUID.
+
+List firewall rules for a server
+- **list_hosts**: List available hosts
+- **import_storage**: Provide the target storage UUID.
+
+Import data to storage
+- **list_ips**: List all IP addresses
+- **get_server**: Use the server’s unique UUID.
+
+Get detailed server information
 - **get_host**: Provide a valid host ID for the query.
 
 Get host details
 - **get_kubernetes_kubeconfig**: Use the cluster UUID.
 
 Get Kubernetes cluster credentials (kubeconfig)
-- **get_server**: Use the server’s unique UUID.
-
-Get detailed server information
-- **import_storage**: Provide the target storage UUID.
-
-Import data to storage
-- **list_api_tokens**: List API tokens
-- **list_audit_logs**: List account audit logs
-- **list_databases**: List managed database services
-- **list_database_types**: List available database types and plans
-- **list_firewall_rules**: Provide the server UUID.
-
-List firewall rules for a server
-- **list_hosts**: List available hosts
-- **list_ips**: List all IP addresses
 - **list_kubernetes_clusters**: List Managed Kubernetes (UKS) clusters
 - **list_load_balancers**: List managed load balancer services
 - **list_networks**: List all SDN private networks
-- **list_object_storages**: List Managed Object Storage services
-- **list_prices**: List resource prices
-- **list_routers**: List routers
-- **list_servers**: List all servers
-- **list_storages**: List all accessible storages
-- **list_zones**: List available zones
-- **release_ip**: Provide the IP address to be released.
-
-Release an IP address
 - **restart_server**: Provide the unique server UUID.
 
 Restart a server
-- **restore_storage**: Provide the UUID of the storage.
-
-Restore storage from backup
-- **start_server**: Provide the unique server UUID.
-
-Start a server
+- **list_routers**: List routers
+- **list_servers**: List all servers
 - **stop_server**: Provide the unique server UUID.
 
 Stop a server

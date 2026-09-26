@@ -15,9 +15,9 @@ This MCP server provides essential tools for analyzing product growth dynamics. 
 
 ## Available Tools (4)
 - **analyze_saturation_impact**: Adjusts growth expectations based on market availability
+- **estimate_time_to_scale**: Predicts how long it will take to reach a specific user target
 - **calculate_growth_multiplier**: Estimates the total expansion of the user base relative to the initial cohort
 - **calculate_viral_k**: Determines the fundamental viral coefficient for a user cohort
-- **estimate_time_to_scale**: Predicts how long it will take to reach a specific user target
 
 
 ## 💬 Prompt Examples

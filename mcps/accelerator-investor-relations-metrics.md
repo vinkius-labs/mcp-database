@@ -14,15 +14,15 @@ This MCP server provides specialized analytical tools for startup accelerators t
 
 
 ## Available Tools (3)
-- **evaluate_engagement_roi**: Use the network quality score from the calculate_network_quality tool.
-
-Evaluate efficiency of engagement efforts
-- **calculate_network_quality**: Provide all three required metrics for accurate calculation.
-
-Calculate strategic value of investor network
 - **analyze_conversion_funnel**: Ensure all three counts are provided to analyze the funnel.
 
 Analyze investor outreach conversion stages
+- **calculate_network_quality**: Provide all three required metrics for accurate calculation.
+
+Calculate strategic value of investor network
+- **evaluate_engagement_roi**: Use the network quality score from the calculate_network_quality tool.
+
+Evaluate efficiency of engagement efforts
 
 
 ## 💬 Prompt Examples

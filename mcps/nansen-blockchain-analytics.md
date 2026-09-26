@@ -34,19 +34,9 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 
 
 ## Available Tools (48)
-- **agent_expert**: Provide the detailed prompt in the body.
-
-Deep multi-step analysis and synthesis
 - **agent_fast**: Provide the query details in the body.
 
 Low-latency streamed answers for simple research questions
-- **perp_leaderboard**: Pass the required body payload.
-
-Most profitable Hyperliquid traders
-- **points_address**: Provide the wallet address as the required input.
-
-Tier lookup for a wallet on the Nansen points leaderboard
-- **points_leaderboard**: Paginated Nansen points leaderboard
 - **portfolio_defi_holdings**: Provide the required portfolio details in the body.
 
 Track DeFi positions across protocols
@@ -56,9 +46,6 @@ Win rate, PnL, and wallet age in prediction markets
 - **prediction_categories**: g., Politics, Crypto). Specify the category in the body.
 
 Stats for market categories (Politics, Crypto, etc.)
-- **prediction_event_screener**: Use this tool to find markets based on specific criteria.
-
-Browse groups of related prediction markets
 - **prediction_market_screener**: Use the body to specify filtering criteria.
 
 Browse and filter all prediction markets
@@ -68,54 +55,27 @@ Browse and filter all prediction markets
 - **prediction_orderbook**: Provide the market ID in the request body.
 
 Real-time bid/ask depth for prediction markets
-- **prediction_pnl_by_address**: Supply the wallet address and time range in the body.
-
-Total PnL for a trader in prediction markets
-- **prediction_pnl_by_market**: Include the market ID and time range in the body.
-
-Profitability rankings for a prediction market
 - **prediction_position_detail**: Include the market ID and wallet address in the body.
 
 Granular holder positions for prediction markets
-- **prediction_top_holders**: Specify the market ID in the request body.
-
-Largest conviction holders in prediction markets
-- **prediction_trades_by_address**: Provide the wallet address and time range in the body.
-
-All trades for a specific wallet in prediction markets
 - **prediction_trades_by_market**: Pass the market ID and time frame in the request body.
 
 Recent trades for a specific prediction market
-- **profiler_counterparties**: Provide the source address in the request body.
-
-Top addresses/entities interacted with
 - **profiler_current_balance**: Provide the address and token details in the body.
 
 Current token balances for an address or entity
 - **profiler_historical_balances**: Specify the address and date range in the request body.
 
 Historical holding snapshots for an address
-- **profiler_labels**: Pass the necessary body payload.
-
-Non-premium labels (ENS, behavioral)
-- **profiler_perp_positions**: Include the required body payload.
-
-Real-time Hyperliquid positions
-- **profiler_perp_trades**: Supply the necessary body payload.
-
-Hyperliquid trade history
-- **profiler_pnl**: Supply the required body payload.
-
-Detailed PnL for a specific address and token
 - **profiler_pnl_summary**: Use this tool to get a summary view of profitability.
 
 Aggregate PnL and top profitable tokens
+- **profiler_pnl**: Supply the required body payload.
+
+Detailed PnL for a specific address and token
 - **profiler_premium_labels**: Supply the required body payload.
 
 All labels including Smart Money
-- **profiler_related_wallets**: Provide the source address in the request body.
-
-Wallets related by on-chain behavior
 - **profiler_transactions**: Include the address and desired time frame in the body.
 
 Recent blockchain transactions for an address
@@ -125,9 +85,6 @@ Search for tokens and entities by name, symbol, or contract address
 - **smart_money_dcas**: Provide the relevant token and time period in the body.
 
 DCA strategies on Jupiter (Solana)
-- **smart_money_dex_trades**: Pass the relevant token and time parameters in the body.
-
-Real-time DEX trading activity (last 24h)
 - **smart_money_historical_holdings**: Include the asset and date range in the request body.
 
 Daily snapshots of smart money holdings (Beta)
@@ -143,12 +100,6 @@ Perpetual trading on Hyperliquid
 - **tgm_dex_trades**: Specify the token and time range in the body.
 
 Individual DEX transactions for a token
-- **tgm_flow_intelligence**: Supply the required body payload.
-
-Segmented flows (Exchanges, Whales, Smart Money)
-- **tgm_flows**: Specify the token and time range in the body.
-
-Hourly snapshots of inflows/outflows by category
 - **tgm_holders**: Provide the token address and time range in the body.
 
 Top holders with balance change tracking
@@ -158,9 +109,6 @@ Risk and Reward scores for a token
 - **tgm_jup_dca**: Include the token address and time range in the body.
 
 Jupiter DCA orders for a token (Solana)
-- **tgm_pnl_leaderboard**: Provide the token address and time range in the body.
-
-Rank traders by profit for a specific token
 - **tgm_token_information**: Supply the required body payload.
 
 Metadata, market metrics, and spot trading stats
@@ -176,6 +124,58 @@ Summary of net buyers/sellers
 - **token_screener**: Pass the required body payload.
 
 Discover trending tokens across chains
+- **agent_expert**: Provide the detailed prompt in the body.
+
+Deep multi-step analysis and synthesis
+- **profiler_perp_positions**: Include the required body payload.
+
+Real-time Hyperliquid positions
+- **points_address**: Provide the wallet address as the required input.
+
+Tier lookup for a wallet on the Nansen points leaderboard
+- **prediction_event_screener**: Use this tool to find markets based on specific criteria.
+
+Browse groups of related prediction markets
+- **prediction_pnl_by_address**: Supply the wallet address and time range in the body.
+
+Total PnL for a trader in prediction markets
+- **prediction_pnl_by_market**: Include the market ID and time range in the body.
+
+Profitability rankings for a prediction market
+- **prediction_top_holders**: Specify the market ID in the request body.
+
+Largest conviction holders in prediction markets
+- **prediction_trades_by_address**: Provide the wallet address and time range in the body.
+
+All trades for a specific wallet in prediction markets
+- **profiler_counterparties**: Provide the source address in the request body.
+
+Top addresses/entities interacted with
+- **profiler_labels**: Pass the necessary body payload.
+
+Non-premium labels (ENS, behavioral)
+- **profiler_perp_trades**: Supply the necessary body payload.
+
+Hyperliquid trade history
+- **profiler_related_wallets**: Provide the source address in the request body.
+
+Wallets related by on-chain behavior
+- **smart_money_dex_trades**: Pass the relevant token and time parameters in the body.
+
+Real-time DEX trading activity (last 24h)
+- **tgm_flow_intelligence**: Supply the required body payload.
+
+Segmented flows (Exchanges, Whales, Smart Money)
+- **tgm_pnl_leaderboard**: Provide the token address and time range in the body.
+
+Rank traders by profit for a specific token
+- **perp_leaderboard**: Pass the required body payload.
+
+Most profitable Hyperliquid traders
+- **points_leaderboard**: Paginated Nansen points leaderboard
+- **tgm_flows**: Specify the token and time range in the body.
+
+Hourly snapshots of inflows/outflows by category
 
 
 ## 💬 Prompt Examples
