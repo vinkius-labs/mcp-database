@@ -4,6 +4,7 @@ Explore the open database of **creative-tools** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Creative Publication Partnership Planner](../mcps/creative-publication-partnership-planner.md) | Strategic planning for creative publication opportunities and rights management. |
 | [Visual Art Series Concept Plan](../mcps/visual-art-series-concept-plan.md) | Transform raw artistic ideas into a structured conceptual framework for cohesive art series. |
 
 

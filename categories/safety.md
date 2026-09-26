@@ -8,6 +8,7 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 | [Big Wave Surf Safety](../mcps/big-wave-surf-safety.md) | Calculates safety parameters, impact pressure, and rescue protocols for big wave surfing. |
 | [Board Float Time Calculator](../mcps/board-float-time-calculator.md) | Calculate board buoyancy, visibility, and retrieval urgency after a rider fall. |
 | [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
+| [Household Emergency Kit Planner](../mcps/household-emergency-kit-planner.md) | Generate staged supply plans, storage assignments, and renewal calendars for household emergency kits. |
 | [Hydrofoil Mast Selector](../mcps/hydrofoil-mast-selector.md) | Recommends optimal mast length based on rider skill, water depth, and wave conditions. |
 | [Impact Force Physics Engine](../mcps/impact-force-physics-engine.md) | Calculates impact forces, knee loads, and injury risks for landings. |
 | [Kite Bladder Pressure Safety Engine](../mcps/kite-bladder-pressure-safety-engine.md) | Calculates kite bladder pressure shifts and safety risks from environmental changes. |

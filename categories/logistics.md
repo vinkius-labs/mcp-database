@@ -44,6 +44,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Photo Location Permission Planner](../mcps/photo-location-permission-planner.md) | Generate production logistics, compliance checklists, and contact sheets for location shoots. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
+| [Preparedness Storage Layout Plan](../mcps/preparedness-storage-layout-plan.md) | Organize emergency supplies using accessibility, weight, and rotation rules. |
 | [Print Edition Release Planner](../mcps/print-edition-release-planner.md) | Automated planning engine for print edition viability, pre-production, and fulfillment. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
 | [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |

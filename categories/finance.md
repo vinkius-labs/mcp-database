@@ -701,6 +701,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Pre-Event Volatility Crush](../mcps/pre-event-volatility-crush.md) | Deterministic liquidity provision for capturing spreads during binary event volatility. |
 | [Pre-Seed Investment Terms Calculator](../mcps/pre-seed-investment-terms-calculator.md) | Model early-stage investment structures like SAFE and Convertible Notes. |
 | [Precision Ag ROI Calculator](../mcps/precision-ag-roi-calculator.md) | Quantify the economic impact of precision agriculture technology adoption. |
+| [Preparedness Budget Phasing Plan](../mcps/preparedness-budget-phasing-plan.md) | A strategic financial engine that transforms emergency readiness gaps into a month-by-month procurement roadmap. |
 | [Presumed Profit Tax Calculator](../mcps/presumed-profit-tax-calculator.md) | Calculate Corporate Income Tax (CIT) and Social Contribution (SCLL) using the Presumed Profit regime. |
 | [Prevailing Wage Calculator](../mcps/prevailing-wage-calculator.md) | Lookup Davis-Bacon Act compliant wage rates and fringe benefits for construction trades. |
 | [Price Forecast Model](../mcps/price-forecast-model.md) | Generate energy price trajectories, confidence intervals, and market scenario probabilities. |

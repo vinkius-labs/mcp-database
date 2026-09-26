@@ -4,8 +4,15 @@ Explore the open database of **emergency-management** Model Context Protocol (MC
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Apartment Emergency Coordination Plan](../mcps/apartment-emergency-coordination-plan.md) | Synthesize building rules and household profiles into actionable emergency preparedness documentation. |
+| [Emergency Pet Evacuation Plan](../mcps/emergency-pet-evacuation-plan.md) | Coordinate pet evacuations by managing readiness, packing, and logistics. |
 | [Emergency Planning Zones](../mcps/emergency-planning-zones.md) | Calculates protective action distances and emergency response strategies for chemical hazards. |
+| [Emergency Vehicle Readiness Plan](../mcps/emergency-vehicle-readiness-plan.md) | Manage vehicle health, driver authorization, and emergency readiness status. |
+| [Emergency Volunteer Coordination Plan](../mcps/emergency-volunteer-coordination-plan.md) | Coordinate volunteer schedules, task briefs, and escalation protocols for emergency response. |
 | [Pipeline Emergency Response](../mcps/pipeline-emergency-response.md) | Generates comprehensive emergency response protocols for pipeline incidents. |
+| [Rural Household Preparedness Plan](../mcps/rural-household-preparedness-plan.md) | Coordinate emergency logistics, supply replenishment, and communication networks for rural households. |
+| [Severe Weather Readiness Plan](../mcps/severe-weather-readiness-plan.md) | Transforms weather alerts and household data into prioritized readiness plans and execution roadmaps. |
+| [Wildfire Smoke Logistics Plan](../mcps/wildfire-smoke-logistics-plan.md) | Generates actionable evacuation and sheltering plans based on smoke alerts and household constraints. |
 
 
 ---

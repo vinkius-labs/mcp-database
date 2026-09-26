@@ -17,6 +17,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [ChangeDetection.io](../mcps/changedetectionio.md) | Monitor website changes automatically — track visual or text updates, manage watches, and receive alerts via any AI agent. |
 | [CNJ (Datajud API Pública)](../mcps/cnj-datajud-api-publica.md) | Access the Brazilian National Council of Justice (CNJ) Datajud API to query judicial processes, procedural classes, and court organs across Brazil. |
 | [Codat Financial Data](../mcps/codat-financial-data.md) | Pull financial data from your customers accounting, banking, and commerce platforms through a single standardized API. |
+| [Data Export Request Checklist](../mcps/data-export-request-checklist.md) | Generate structured, audit-ready checklists for initiating and verifying data export requests. |
 | [DVLA Vehicle API](../mcps/dvla-vehicle-api.md) | Access UK vehicle data — audit registration, tax, and MOT via AI. |
 | [Edamam](../mcps/edamam-alternative.md) | Manage food and nutrition — audit recipes and ingredients via AI. |
 | [Epic Fhir](../mcps/epic-fhir.md) | Access patient records via Epic's FHIR R4 API — search patients, review encounters, pull lab results and medications from any AI agent. |
@@ -33,6 +34,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [iNaturalist](../mcps/inaturalist.md) | Explore biodiversity data — search wildlife observations, identify species, find taxa and discover nature projects. |
 | [IQAir](../mcps/iqair.md) | Monitor air quality and weather — audit pollution data and cities via AI. |
 | [Kindful](../mcps/kindful.md) | Manage nonprofit fundraising and donor relationships via Kindful — query contacts, track transactions, and monitor campaigns directly from your AI agent. |
+| [Legacy Blog Preservation Plan](../mcps/legacy-blog-preservation-plan.md) | Generates actionable preservation checklists for digital assets and legacy websites. |
 | [Metronome](../mcps/metronome.md) | Automate usage-based billing via Metronome — ingest events, query usage data, and manage customer contracts directly from any AI agent. |
 | [Minas Gerais (Estado)](../mcps/minas-gerais-estado.md) | Access the official Open Data Portal of the State of Minas Gerais, Brazil. Query datasets, organizations, and public resources directly. |
 | [Nubarium](../mcps/nubarium.md) | Access Mexican identity and corporate data — audit RFC, CURP, and companies via AI. |
@@ -59,6 +61,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [Truepill](../mcps/truepill.md) | Manage pharmacy operations and patient records via Truepill — create patients, find records, and track prescriptions directly from any AI agent. |
 | [UniCourt](../mcps/unicourt.md) | Access real-time legal data and court records — search cases, track updates, and analyze normalized attorney and judge data directly from your AI agent. |
 | [UtilityAPI](../mcps/utilityapi.md) | Access utility billing, usage data, and meter info from PG&E and 100+ US utilities via a single API. |
+| [Virtual Collection Handoff Plan](../mcps/virtual-collection-handoff-plan.md) | Orchestrate the migration and preservation of digital assets through structured transfer sequences. |
 | [ZIP Codes API](../mcps/zip-codes-api.md) | Manage ZIP code data — audit locations, distances, and regions via AI. |
 
 

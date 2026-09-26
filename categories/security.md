@@ -7,6 +7,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
 | [Agent Config Drift Detector](../mcps/agent-config-drift-detector.md) | Detects unauthorized changes to agent configurations by comparing SHA-256 hashes. |
 | [AI Red-Teaming Cost Structure](../mcps/ai-red-teaming-cost-structure.md) | Quantify the financial investment and ROI of AI red-teaming engagements. |
+| [Authorized Device Retirement Plan](../mcps/authorized-device-retirement-plan.md) | Generate systematic, risk-mitigated task lists for decommissioning hardware with verified data sovereignty. |
 | [AWS Secrets Manager Rotation Calculator](../mcps/aws-secrets-manager-rotation-calculator.md) | Validate AWS Secrets Manager configurations against operational limits and rotation best practices. |
 | [AWS WAF Rules & Rate Limiting Calculator](../mcps/aws-waf-rules-rate-limiting-calculator.md) | Calculate AWS WAF capacity, rate limits, and rule complexity against best practices. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
@@ -24,7 +25,9 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Data Sanitizer for Privacy](../mcps/data-sanitizer-for-privacy.md) | Redacts sensitive PII and PHI from text using deterministic patterns. |
 | [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Audit software dependencies against approved SPDX license identifiers to ensure supply-chain compliance. |
 | [Destructive Command Interceptor](../mcps/destructive-command-interceptor.md) | Intercepts and blocks destructive bash commands using pattern matching and obfuscation detection. |
+| [Digital Legacy Update Log](../mcps/digital-legacy-update-log.md) | Maintain an auditable, chronological record of digital asset changes, including account status, custodian shifts, and instruction versions. |
 | [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
+| [Emergency Digital Access Brief](../mcps/emergency-digital-access-brief.md) | A controlled activation guide for managing critical digital credentials and access protocols during emergency scenarios. |
 | [Enterprise Security Review Timeline](../mcps/enterprise-security-review-timeline.md) | Predict security review duration and identify documentation gaps. |
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
@@ -50,6 +53,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Oracle Manipulation Detection Strategy](../mcps/oracle-manipulation-detection-strategy.md) | Detect and avoid token price manipulation by analyzing oracle deviations and DEX spot prices. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
+| [Personal Data Location Mapper](../mcps/personal-data-location-mapper.md) | Map and audit the physical and digital locations of your personal data. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans text for malicious prompt injection signatures and risk levels. |
@@ -73,6 +77,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Tool Permission Boundary Enforcer](../mcps/tool-permission-boundary-enforcer.md) | Enforces deterministic permission boundaries for tool execution to prevent unbounded access. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
+| [Two-Factor Continuity Instructions](../mcps/two-factor-continuity-instructions.md) | Generates safe, step-by-step recovery procedures for MFA access based on account tiers and roles. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
 | [URL SSRF Prevention Validator](../mcps/url-ssrf-prevention-validator.md) | Prevents SSRF attacks by validating URL schemes and blocking internal IP ranges. |
 | [Vigenère Cipher Engine](../mcps/vigenere-cipher-engine.md) | Deterministic Vigenère cipher encoder and decoder that preserves text formatting. |
