@@ -17,12 +17,12 @@ This MCP server provides professional-grade equine nutrition tools. It allows AI
 - **analyze_metabolic_risk**: The input parameter must be a valid JSON string.
 
 Evaluates the risk of metabolic syndrome based on the proposed ration
-- **calculate_nutrient_requirements**: Must provide all three parameters.
-
-Determines the specific biological nutrient needs for a horse based on its physical and physiological profile
 - **balance_ration**: Ensure all three JSON strings are valid.
 
 Calculates the ideal amount of forage and concentrate to meet the previously calculated requirements
+- **calculate_nutrient_requirements**: Must provide all three parameters.
+
+Determines the specific biological nutrient needs for a horse based on its physical and physiological profile
 
 
 ## 💬 Prompt Examples

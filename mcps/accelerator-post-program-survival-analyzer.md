@@ -14,12 +14,12 @@ This MCP server provides specialized analytical tools to evaluate the post-gradu
 
 
 ## Available Tools (3)
-- **get_failure_analysis**: Provide a list of failure months if analyzing timing.
-
-Identifies the specific ways and when companies in the cohort are failing
 - **get_environmental_adjustment**: Ensure all three indices are provided.
 
 Adjusts the observed survival data to account for external economic factors
+- **get_failure_analysis**: Provide a list of failure months if analyzing timing.
+
+Identifies the specific ways and when companies in the cohort are failing
 - **get_survival_metrics**: Do not query metrics for empty cohorts.
 
 Provides a high-level overview of the cohort's survival health over time

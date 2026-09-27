@@ -14,9 +14,9 @@ This MCP server provides a complete toolkit for managing plumbing repair appoint
 
 
 ## Available Tools (5)
-- **get_escalation_contact_map**: Identifies who needs to be notified based on the complexity or authority of the situation
 - **get_access_preparation_list**: Creates a list of physical actions the user must take to ensure the technician can work efficiently
 - **get_documentation_protocol**: Outlines the steps required after the visit to satisfy landlord or insurance requirements
+- **get_escalation_contact_map**: Identifies who needs to be notified based on the complexity or authority of the situation
 - **get_professional_interrogation_guide**: Provides a list of targeted questions to ask the plumber to ensure thoroughness and prevent hidden costs
 - **get_service_brief**: Generates a concise summary of the plumbing issue to be shared with a professional
 

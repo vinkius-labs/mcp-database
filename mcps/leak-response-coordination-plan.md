@@ -14,9 +14,9 @@ This MCP server provides a decision-support system for managing fluid leak emerg
 
 
 ## Available Tools (4)
+- **coordinate_access_plan**: Generate a logistical plan for property access
 - **create_evidence_protocol**: Generate a checklist for documenting damage for insurance
 - **generate_response_strategy**: Determine prioritized contact order and immediate mitigation steps for a leak
-- **coordinate_access_plan**: Generate a logistical plan for property access
 - **initiate_insurance_log**: Prepare the initial documentation for insurer communication
 
 

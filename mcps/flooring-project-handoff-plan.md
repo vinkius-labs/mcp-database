@@ -14,9 +14,9 @@ This MCP server acts as a logistical orchestration engine for flooring renovatio
 
 
 ## Available Tools (4)
-- **get_installation_schedule**: Generates a step-by-step timeline for the installation day
 - **get_acceptance_checklist**: Generates a checklist to verify installation quality and warranty compliance
 - **get_delivery_checklist**: Generates a checklist of materials required and the expected delivery window
+- **get_installation_schedule**: Generates a step-by-step timeline for the installation day
 - **get_move_out_plan**: Generates a move-out plan including items to move and the sequence of room clearance
 
 

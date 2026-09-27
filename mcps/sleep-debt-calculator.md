@@ -14,10 +14,10 @@ This MCP server provides a specialized engine to quantify cumulative sleep insuf
 
 
 ## Available Tools (4)
-- **verify_debt_thresholds**: Checks if the current sleep pattern is approaching or has exceeded the safety ceiling
 - **calculate_current_debt**: Calculates the total accumulated sleep debt for a specific period
 - **estimate_recovery_plan**: Determines how much extra sleep is needed to clear the debt
 - **get_fatigue_impact**: Translates debt levels into specific cognitive/physical risk profiles
+- **verify_debt_thresholds**: Checks if the current sleep pattern is approaching or has exceeded the safety ceiling
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a comprehensive system for managing workspace safety du
 
 
 ## Available Tools (4)
-- **create_access_instructions**: Generates guidance for contractors regarding entry and occupant interaction
-- **generate_relocation_plan**: Creates a list of items that must be moved out of the work zone
 - **generate_restoration_checklist**: Provides a guide to returning the room to its original state
 - **analyze_protection_requirements**: Evaluates raw user input to determine the necessary scale of protection
+- **create_access_instructions**: Generates guidance for contractors regarding entry and occupant interaction
+- **generate_relocation_plan**: Creates a list of items that must be moved out of the work zone
 
 
 ## 💬 Prompt Examples

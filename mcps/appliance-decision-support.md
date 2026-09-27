@@ -14,8 +14,8 @@ This MCP server provides a decision-support engine for household appliance manag
 
 
 ## Available Tools (4)
-- **get_economic_lifespan_analysis**: Evaluate remaining value and replacement urgency
 - **get_decision_brief**: Evaluate whether to repair or replace an appliance
+- **get_economic_lifespan_analysis**: Evaluate remaining value and replacement urgency
 - **get_replacement_transition_checklist**: Provide a logistical roadmap for replacing an appliance
 - **get_service_booking_requirements**: Generate necessary details for scheduling a professional repair
 

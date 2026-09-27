@@ -15,9 +15,9 @@ This MCP server provides clinical weight monitoring for pregnancy. It uses Insti
 
 ## Available Tools (4)
 - **calculate_current_status**: Compares current weight against historical weight to assess if the user is on track
-- **get_trimester_milestones**: Provides a roadmap of what weight gain should look like at the end of each trimester
 - **get_weekly_target_projection**: Predicts the necessary weekly weight gain to reach the ideal end-of-pregnancy weight
 - **get_weight_gain_guidelines**: Retrieves specific weight gain targets and rules based on the user's physiological profile
+- **get_trimester_milestones**: Provides a roadmap of what weight gain should look like at the end of each trimester
 
 
 ## 💬 Prompt Examples

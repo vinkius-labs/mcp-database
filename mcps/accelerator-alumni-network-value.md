@@ -15,8 +15,8 @@ This MCP server provides advanced network effect modeling to quantify the value 
 
 ## Available Tools (3)
 - **get_brand_equity_value**: Estimates the prestige and reputational value of the accelerator based on alumni success
-- **get_referral_economic_value**: Quantifies the financial impact generated through alumni-to-alumni referrals and capital flow
 - **get_network_density**: Determines how interconnected and active the alumni community is
+- **get_referral_economic_value**: Quantifies the financial impact generated through alumni-to-alumni referrals and capital flow
 
 
 ## 💬 Prompt Examples

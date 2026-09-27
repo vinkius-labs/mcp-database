@@ -14,10 +14,10 @@ This MCP server provides a specialized document organization and lifecycle manag
 
 
 ## Available Tools (4)
-- **validate_document_upload**: 
 - **create_handoff_summary**: 
 - **generate_capture_checklist**: 
 - **get_organized_record_plan**: 
+- **validate_document_upload**: 
 
 
 ## 💬 Prompt Examples
