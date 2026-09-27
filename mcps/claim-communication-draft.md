@@ -14,9 +14,9 @@ This MCP server provides tools to generate precise, factual insurance communicat
 
 
 ## Available Tools (4)
-- **summarize_communication_history**: Condenses a long thread of messages into a concise context
 - **draft_claim_message**: Generates a professional, factual communication draft
 - **format_evidence_citation**: Converts a list of evidence into a formal citation format
+- **summarize_communication_history**: Condenses a long thread of messages into a concise context
 - **validate_claim_context**: Checks if the provided inputs contain sufficient information
 
 

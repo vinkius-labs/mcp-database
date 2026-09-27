@@ -14,8 +14,8 @@ This MCP server provides tools to analyze insurance coverage by matching hypothe
 
 
 ## Available Tools (4)
-- **generate_confirmation_questions**: Identifies specific linguistic ambiguities within a single event/policy match
 - **analyze_coverage_scenarios**: Evaluates a set of events against a policy to determine coverage status and identify ambiguities
+- **generate_confirmation_questions**: Identifies specific linguistic ambiguities within a single event/policy match
 - **summarize_coverage_impact**: Calculates the aggregate financial exposure across all evaluated scenarios
 - **validate_policy_integrity**: Ensures that the provided policy structure is logically consistent
 

@@ -14,10 +14,10 @@ This MCP server provides tools to manage the lifecycle of insurance documents. I
 
 
 ## Available Tools (4)
-- **calculate_document_disposition**: Determine when a specific document is due for review or destruction
 - **evaluate_compliance_risk**: Identify compliance risks in a storage plan
 - **generate_storage_plan**: Create a comprehensive storage and review plan for a policy
 - **get_retention_schedule**: Retrieve standard retention rules for a document type
+- **calculate_document_disposition**: Determine when a specific document is due for review or destruction
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides specialized tools to audit medical billing. It identifi
 
 
 ## Available Tools (4)
-- **calculate_patient_responsibility**: Determine exactly how much a patient should owe based on the intersection of the invoice and the benefit schedule
 - **analyze_reconciliation_discrepancies**: Identify all mismatches between provided medical billing documents
+- **calculate_patient_responsibility**: Determine exactly how much a patient should owe based on the intersection of the invoice and the benefit schedule
 - **generate_evidence_sequence**: Determine the correct chronological and logical order of documents needed to resolve a discrepancy
 - **validate_claim_integrity**: Verify that all submitted documents belong to the same clinical visit or service period
 

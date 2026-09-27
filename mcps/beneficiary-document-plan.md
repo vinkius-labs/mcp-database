@@ -15,9 +15,9 @@ This MCP server provides a suite of tools to manage the logistics of document co
 
 ## Available Tools (4)
 - **generate_collection_plan**: Creates a complete logistical plan including who to contact, what to ask for, and when it is due
+- **get_missing_documents**: Identifies which required documents are not yet available based on the claim requirements and existing records
 - **get_request_template**: Retrieves the specific text to be used when contacting a beneficiary or representative
 - **validate_plan_integrity**: Ensures the generated plan is complete and does not contain logical contradictions
-- **get_missing_documents**: Identifies which required documents are not yet available based on the claim requirements and existing records
 
 
 ## 💬 Prompt Examples

@@ -18,8 +18,8 @@ The Multi-Agent Communication Protocol Validator is an analytical engine designe
 
 Assesses the efficiency of the protocol by comparing payload size to metadata size
 - **calculate_message_hops**: Determines the total number of communication transitions that have occurred
-- **validate_envelope_structure**: Verifies if all messages in a log adhere to the mandatory four-part envelope
 - **identify_circular_routes**: Detects if any messages are trapped in repetitive paths between agents
+- **validate_envelope_structure**: Verifies if all messages in a log adhere to the mandatory four-part envelope
 
 
 ## 💬 Prompt Examples
