@@ -225,6 +225,10 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [NREL Solar Resource](../mcps/nrel-solar-resource.md) | Access NREL's solar irradiance data and National Solar Radiation Database (NSRDB) information for any US location directly from your AI agent. |
 | [Nutritionix](../mcps/nutritionix.md) | Analyze food nutrition from natural language using the industry-leading NLP engine — type any meal description and get instant, precise calorie and macro data. |
 | [NWS (National Weather Service)](../mcps/nws-national-weather-service.md) | Access real-time weather data, forecasts, and active alerts directly from the National Weather Service. |
+| [NYC Buildings & DOB Permits](../mcps/nyc-buildings-dob-permits.md) | Keyless NYC building intelligence: DOB permit filings, DOB NOW permits, building violations, DOB complaints, housing code violations, PLUTO parcel records and vacant storefronts — no API key. |
+| [NYC Crime & Shootings](../mcps/nyc-crime-shootings.md) | Keyless NYC crime data: shooting incidents with offender and victim detail, incident counts and top precincts, bias-motive crime complaints, and the historic NYPD complaint dataset — no API key. |
+| [NYC Open Data Explorer](../mcps/nyc-open-data-explorer.md) | Keyless explorer over the 3,000+ datasets of NYC Open Data: catalog search, dataset metadata with column lists, generic SOQL row browsing, grouped stats and row counts — no API key. |
+| [NYC Taxi & Rideshare Trips](../mcps/nyc-taxi-rideshare-trips.md) | Keyless NYC TLC trip data: yellow and green cab trips by year, FHV/ride-hail dispatch logs, taxi zone maps and monthly zone pickup counts — no API key. |
 | [OECD Data API](../mcps/oecd-data-api.md) | Access global economic data — audit social and fiscal series via AI. |
 | [OilPrice](../mcps/oilprice.md) | Access real-time and historical oil, gas, and energy commodity prices — WTI, Brent, Natural Gas, Diesel, and 40+ more via OilPriceAPI. |
 | [OKX](../mcps/okx.md) | Trade crypto and manage your OKX account via AI — check balances, track positions, and execute orders directly from your agent. |

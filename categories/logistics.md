@@ -22,6 +22,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
 | [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
 | [Downwind Run Planner](../mcps/downwind-run-planner.md) | Plan logistics for downwind runs, including distance, drift, and shuttle needs. |
+| [Electrical Visit Preparation Plan](../mcps/electrical-visit-preparation-plan.md) | Prepare professional service requests and logistical plans for electrical repairs. |
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
 | [Event Seating Planner](../mcps/event-seating-planner.md) | Automated deterministic seating arrangement generator. |
 | [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
@@ -29,6 +30,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Handmade Gift Commission Plan](../mcps/handmade-gift-commission-plan.md) | Transform raw gift ideas into structured creative briefs and logistical handoff plans. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
+| [Kitchen Repair Disruption Planner](../mcps/kitchen-repair-disruption-planner.md) | Manage household logistics during kitchen renovations with precise disruption calendars and meal planning. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
 | [LNG Carrier Fleet Sizer](../mcps/lng-carrier-fleet-sizer.md) | Optimize LNG fleet sizing and logistics planning. |
@@ -60,6 +62,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Tanker Loading Rate Optimizer](../mcps/tanker-loading-rate-optimizer.md) | Optimizes tanker loading rates by balancing vessel capacity, shore infrastructure, and safety constraints. |
 | [Truck-Shovel Fleet Optimizer](../mcps/truck-shovel-fleet-optimizer.md) | Optimizes truck-to-shovel ratios, fleet size, and production capacity. |
 | [Waypoint Counter](../mcps/waypoint-counter.md) | Analyze route complexity, waypoint density, and integrity. |
+| [Window & Door Service Triage](../mcps/window-door-service-triage.md) | Automated triage and coordination for window and door repairs, warranty claims, and service scheduling. |
 | [Wine Club Shipment Optimizer](../mcps/wine-club-shipment-optimizer.md) | Optimizes wine club shipments by matching member preferences with available inventory and price targets. |
 | [Wine Lab Analysis Scheduler](../mcps/wine-lab-analysis-scheduler.md) | Optimize laboratory workflows by scheduling critical wine analyses and identifying instrument bottlenecks. |
 | [Wine Virtual Tasting Kit Sizing](../mcps/wine-virtual-tasting-kit-sizing.md) | Calculate logistics, volume, and per-person pricing for virtual wine tasting kits. |

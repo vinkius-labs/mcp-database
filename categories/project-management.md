@@ -10,12 +10,15 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [Flooring Project Handoff Plan](../mcps/flooring-project-handoff-plan.md) | Orchestrate flooring renovations with precise move-out plans, delivery checklists, and installation schedules. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
 | [Innovation Time-to-Market Engine](../mcps/innovation-time-to-market-engine.md) | Calculate and optimize product development timelines, critical paths, and acceleration strategies. |
+| [Insulation Project Coordination Plan](../mcps/insulation-project-coordination-plan.md) | Transform insulation quotes and site assessments into actionable implementation plans. |
+| [Mold Remediation Coordination](../mcps/mold-remediation-coordination.md) | Coordinate mold remediation workflows, professional escalations, and document preservation. |
 | [Music Project Creative Direction Plan](../mcps/music-project-creative-direction-plan.md) | Synthesize musical influences and constraints into cohesive creative mandates. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |
 | [Pipefy](../mcps/pipefy.md) | Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent. |
 | [Productive](../mcps/productive.md) | Manage your entire agency workflow via Productive — fetch budgets, analyze time entries, track deals, and monitor project health directly from any AI agent. |
 | [ProofHub](../mcps/proofhub.md) | Empower your AI agent to manage your ProofHub projects — list tasks, create to-dos, read discussions, and track timesheets instantly. |
 | [Public Art Proposal Planner](../mcps/public-art-proposal-planner.md) | Transform fragmented art call briefs into structured submission strategies and compliance checklists. |
+| [Repair Contingency Response Plan](../mcps/repair-contingency-response-plan.md) | Automated risk assessment and contingency planning for repair projects. |
 | [Sprint Velocity Trend](../mcps/sprint-velocity-trend.md) | Analyzes historical sprint performance to forecast capacity and identify velocity patterns. |
 | [Technical Debt Ratio Analyzer](../mcps/technical-debt-ratio-analyzer.md) | Calculates technical debt accumulation and provides strategic investment recommendations. |
 | [Venture Studio Timeline Planner](../mcps/venture-studio-timeline-planner.md) | Estimate venture launch timelines and identify critical bottlenecks. |

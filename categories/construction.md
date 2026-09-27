@@ -8,6 +8,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
 | [Backfill Design Calculator](../mcps/backfill-design-calculator.md) | Design underground mine backfill mixes by calculating cement requirements and curing times. |
 | [Basement Waterproofing Designer](../mcps/basement-waterproofing-designer.md) | Technical tool for designing basement waterproofing systems, including membranes and drainage. |
+| [Bathroom Refresh Project Plan](../mcps/bathroom-refresh-project-plan.md) | A specialized coordination engine that transforms bathroom renovation inputs into actionable procurement, contractor, and household logistics. |
 | [Beam Design Simplified](../mcps/beam-design-simplified.md) | Calculate reinforced concrete beam parameters including steel area, bar selection, and shear reinforcement. |
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |
 | [Ceiling Area Calculator](../mcps/ceiling-area-calculator.md) | Calculate rectangular ceiling areas and convert between units. |
@@ -101,6 +102,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Masonry Quantity Calculator](../mcps/masonry-quantity-calculator.md) | Calculate the number of masonry units, mortar volume, and required cement and sand for wall construction. |
 | [Masonry Wall Design](../mcps/masonry-wall-design.md) | Calculate required thickness, stability, and reinforcement for masonry walls. |
 | [Micropile Design Engineer](../mcps/micropile-design-engineer.md) | Calculate bond length, steel sizing, and grout volume for micropile foundations. |
+| [Multi-Trade Repair Coordinator](../mcps/multi-trade-repair-coordinator.md) | Synchronize construction trades with dependency sequencing and room allocation. |
 | [Paint & Coating Calculator](../mcps/paint-coating-calculator.md) | Calculate theoretical and practical coverage, material waste, and coating requirements. |
 | [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
 | [Paint Project Coordination Plan](../mcps/paint-project-coordination-plan.md) | Synchronize room sequences, material needs, and occupancy timelines for interior painting projects. |
@@ -115,6 +117,9 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Rebar Lap Length Calculator](../mcps/rebar-lap-length-calculator.md) | Calculate required rebar lap splice lengths and verify structural compliance. |
 | [Rebar Quantity Estimator](../mcps/rebar-quantity-estimator.md) | Calculate precise rebar weights, lengths, and counts for structural elements. |
 | [Rebar Splice Decision Support](../mcps/rebar-splice-decision-support.md) | Evaluates rebar splicing methods based on structural, economic, and site constraints. |
+| [Repair Change Order Review](../mcps/repair-change-order-review.md) | Automated decision support for evaluating construction change orders. |
+| [Repair Completion Walkthrough](../mcps/repair-completion-walkthrough.md) | Automated audit engine to validate repair work against original scopes and documents. |
+| [Repair Inspection Readiness Plan](../mcps/repair-inspection-readiness-plan.md) | Coordinate site readiness for professional inspections by cross-referencing work evidence against regulatory checklists. |
 | [Repair Scope Gap Review](../mcps/repair-scope-gap-review.md) | Audits construction proposals against checklists and property constraints. |
 | [Retaining Wall Drainage Designer](../mcps/retaining-wall-drainage-designer.md) | Calculates drainage pipe diameter, gravel filter thickness, and weep hole spacing for retaining walls. |
 | [Roof Pitch Calculator](../mcps/roof-pitch-calculator.md) | Calculate roof geometry, material needs, and snow load capacity. |

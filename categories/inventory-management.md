@@ -10,6 +10,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Beauty Product Inventory Manager](../mcps/beauty-product-inventory-manager.md) | Track and manage beauty product stock levels and usage. |
 | [Button Count Utility](../mcps/button-count-utility.md) | Calculate total button requirements and production buffers for garment manufacturing. |
 | [Cleaning Product Inventory Manager](../mcps/cleaning-product-inventory-manager.md) | Manage and audit cleaning supply inventories with real-time stock tracking. |
+| [Damage Inventory Workbook](../mcps/damage-inventory-workbook.md) | Manage damaged goods inventory, verify evidence, and automate replacement requests. |
 | [Days of Supply Calculator](../mcps/days-of-supply-calculator.md) | Monitor inventory health by calculating stock coverage and identifying supply risks. |
 | [Envi Healthcare Supply Chain](../mcps/envi-healthcare-supply-chain.md) | Equip your AI agent to manage healthcare purchase orders, track medical inventory, and monitor vendors via the Envi API. |
 | [Festival Wristband Planner](../mcps/festival-wristband-planner.md) | Calculate precise wristband inventory requirements for festivals. |

@@ -45,6 +45,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Main Group Chemistry Predictor](../mcps/main-group-chemistry-predictor.md) | Predict reactivity, stability, and reaction outcomes for main group elements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
+| [NYC Schools & Education](../mcps/nyc-schools-education.md) | Keyless NYC DOE education data: School Quality Report metrics, chronic absenteeism by school and citywide, enrollment capacity, the public high school directory and 2019-20 performance ratings — no API key. |
 | [Organic Compound Nomenclature](../mcps/organic-compound-nomenclature.md) | Precise IUPAC naming and chemical property analysis for organic molecules. |
 | [Oxidation State Calculator](../mcps/oxidation-state-calculator.md) | Determine oxidation states, redox behavior, and chemical nomenclature. |
 | [Periodic Trend Analyzer](../mcps/periodic-trend-analyzer.md) | Analyzes periodic trends and elemental properties, accounting for atomic structure anomalies. |

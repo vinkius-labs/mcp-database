@@ -57,6 +57,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Acuity Scheduling](../mcps/acuity-scheduling.md) | Manage appointments, availability, calendars, classes, and products for your Acuity Scheduling-powered business through natural conversation. |
 | [AdaptiveWork (Clarizen)](../mcps/adaptivework-clarizen.md) | Enterprise project management — manage projects, tasks, resources, and portfolios via AI. |
 | [ADHD Medication Tracker](../mcps/adhd-medication-tracker.md) | Monitor ADHD medication timing, effectiveness, and coverage gaps using pharmacokinetic modeling. |
+| [Adjuster Meeting Agenda Assistant](../mcps/adjuster-meeting-agenda-assistant.md) | Organize insurance claim meetings by prioritizing topics based on loss complexity and policy constraints. |
 | [Advanced Math Evaluator](../mcps/advanced-math-evaluator.md) | Evaluate complex mathematical expressions — derivatives, complex numbers, parametric equations — deterministically using Math.js. Zero LLM guessing. |
 | [Advice Slip](../mcps/advice-slip.md) | Universal advice engine — get random advice or search by keyword via AI. |
 | [Adviceslip](../mcps/adviceslip.md) | Access over 10 million pieces of advice directly from your AI agent — get random wisdom, search by keyword, or retrieve specific slips by ID. |
@@ -113,6 +114,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Apidog](../mcps/apidog.md) | Sync your Apidog workspace with your AI agent — list projects, fetch endpoint schemas, and export full OpenAPI specifications instantly. |
 | [Appcues](../mcps/appcues.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [Appcues](../mcps/appcues-alternative.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
+| [Appeal Evidence Organizer](../mcps/appeal-evidence-organizer.md) | Organize claim-related facts into a structured evidence index and strategic submission sequence. |
 | [ApplicantStack](../mcps/applicantstack.md) | Manage your hiring process with ApplicantStack — track jobs, candidates, and hires via AI. |
 | [Appointlet](../mcps/appointlet.md) | Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly. |
 | [Appointment Capacity Calculator](../mcps/appointment-capacity-calculator.md) | Calculate maximum appointment capacity within specific time windows and constraints. |
@@ -242,6 +244,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Calendly](../mcps/calendly-alternative.md) | Automate scheduling workflows via Calendly — manage event types, scheduled events, invitees, and availability directly from any AI agent. |
 | [Calenso](../mcps/calenso.md) | Manage appointments, customers, and bookings online via AI. |
 | [Calligraphy Guide Calculator](../mcps/calligraphy-guide-calculator.md) | Generate precise, deterministic calligraphy guide sheets with exact spacing and slant lines. |
+| [Cancellation Claim Packet](../mcps/cancellation-claim-packet.md) | Maps travel documents to insurance claim fields to generate structured assembly plans. |
 | [Capacities](../mcps/capacities.md) | Empower your AI agents to build knowledge graphs, append daily notes, and save weblinks directly into your Capacities spaces. |
 | [Capsule CRM](../mcps/capsule-crm.md) | Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent. |
 | [Capsulink](../mcps/capsulink.md) | Manage shortened URLs via Capsulink — create links, track clicks, and monitor analytics directly from any AI agent. |
@@ -290,6 +293,13 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Circle.so](../mcps/circleso.md) | Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent. |
 | [Circuit Workout Timer](../mcps/circuit-workout-timer.md) | Design and analyze circuit training workouts with precise timing and muscle distribution metrics. |
 | [Civic Hearing Participation Planner](../mcps/civic-hearing-participation-planner.md) | Strategic planning for civic hearing preparation, attendance, and testimony. |
+| [Claim Communication Draft](../mcps/claim-communication-draft.md) | Draft professional, evidence-based insurance claim communications. |
+| [Claim Deadline Calendar](../mcps/claim-deadline-calendar.md) | Precision scheduling for critical claim processing deadlines and reminders. |
+| [Claim Escalation Request Pack](../mcps/claim-escalation-request-pack.md) | Transform fragmented insurance claim data into professional, high-impact escalation packets. |
+| [Claim Evidence Checklist](../mcps/claim-evidence-checklist.md) | Generates prioritized evidence checklists for insurance claims. |
+| [Claim Follow-up Scheduler](../mcps/claim-follow-up-scheduler.md) | Generates proactive follow-up timelines and communication objectives for insurance claims. |
+| [Claim Status Action Board](../mcps/claim-status-action-board.md) | A decision-support engine that maps claim data to status labels and generates actionable boards. |
+| [Claim Submission Packet Utility](../mcps/claim-submission-packet-utility.md) | Audit insurance claim completeness and generate professional submission documentation. |
 | [Claude Context Window Budget Tracker](../mcps/claude-context-window-budget-tracker.md) | Monitors and enforces token consumption budgets to prevent context window saturation. |
 | [Claude Conversation Drift Detector](../mcps/claude-conversation-drift-detector.md) | Monitors AI agent focus by detecting task drift and topic shifts. |
 | [Claude Session Memory Indexer](../mcps/claude-session-memory-indexer.md) | Preserves and retrieves cross-session learnings using deterministic hashing and Jaccard similarity. |
@@ -720,6 +730,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Home Inventory Readiness Plan](../mcps/home-inventory-readiness-plan.md) | Plan your household inventory capture with room-by-room scheduling and secure archiving. |
 | [Home Project Cost Estimator](../mcps/home-project-cost-estimator.md) | Calculate total expenditures for residential renovation projects by tracking material and labor costs. |
 | [Homebase](../mcps/homebase.md) | Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent. |
+| [Homeowner Repair Priority Board](../mcps/homeowner-repair-priority-board.md) | Prioritize home repairs using safety, damage prevention, and budget scoring. |
 | [Homerun](../mcps/homerun.md) | Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent. |
 | [HotDocs](../mcps/hotdocs.md) | Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent. |
 | [Hotel Room Night Calculator](../mcps/hotel-room-night-calculator.md) | Calculate total room nights based on occupancy and stay duration. |
@@ -760,6 +771,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Illumidesk](../mcps/illumidesk.md) | Manage campuses, courses, and users via Illumidesk LMS API. |
 | [iLovePDF](../mcps/ilovepdf.md) | Merge, split, compress, and convert PDF files with a complete toolkit that handles every document processing need online. |
 | [Incident Postmortem Prover](../mcps/incident-postmortem-prover.md) | Most postmortems fail: vague timelines, symptom-level root causes, and action items with no owner. This tool forces SRE-grade rigor: minute-by-minute timeline reconstruction, systemic 5-Whys analysis, root cause isolation, accountable action items with owners and deadlines, and historical pattern detection. |
+| [Incident to Claim Timeline](../mcps/incident-to-claim-timeline.md) | Chronologically sequence insurance incident events, witness statements, and policy milestones into a factual timeline. |
 | [Indeed](../mcps/indeed.md) | Search for job listings on Indeed — find roles by keyword, location, and job type directly from any AI agent. |
 | [Indy](../mcps/indy.md) | Manage your freelance business with proposals, contracts, time tracking, and invoicing that covers the entire client lifecycle. |
 | [Infant Sleep Scheduler](../mcps/infant-sleep-scheduler.md) | Optimizes infant sleep routines using developmental wake windows and feeding patterns. |
@@ -770,6 +782,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Innform](../mcps/innform-alternative.md) | Train your team with an LMS that creates courses from your content, tracks completion, and gamifies the learning experience. |
 | [Inoreader](../mcps/inoreader.md) | Follow hundreds of news sources and blogs with a powerful RSS reader that filters, organizes, and prioritizes content for you. |
 | [Insightful](../mcps/insightful.md) | Manage employee productivity, time tracking, and activity via Insightful API. |
+| [Insurance Repair Claim Organizer](../mcps/insurance-repair-claim-organizer.md) | Organize incident timelines, evidence, and repair documentation into structured claim packets. |
 | [Intelligent Loan Comparator](../mcps/intelligent-loan-comparator.md) | Empower your AI Agent with deterministic financial modeling. Instantly compare loan options and calculate exact amortization schedules offline, guaranteeing precision and privacy. |
 | [intelliHR](../mcps/intellihr.md) | Manage employee directory, jobs, and organization data via intelliHR API. |
 | [Intermittent Fasting Scheduler](../mcps/intermittent-fasting-scheduler.md) | Generates personalized fasting schedules, meal timings, and adaptation forecasts. |
@@ -832,6 +845,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Kraken.io](../mcps/krakenio.md) | Optimize, compress, and resize images via URL or direct upload using the Kraken.io API. |
 | [Lamha](../mcps/lamha.md) | Build AI chatbots for Arabic-speaking audiences with natural language understanding designed for Middle Eastern dialects. |
 | [Landing](../mcps/landing.md) | Create high-converting landing pages in minutes with AI-powered templates and drag-and-drop editing built for marketers. |
+| [Landlord Repair Request Package](../mcps/landlord-repair-request-package.md) | Generate structured, legally-defensible repair request packages from tenancy evidence. |
 | [Language Practice Minutes](../mcps/language-practice-minutes.md) | Track and aggregate time spent on various language learning activities. |
 | [Laravel Excellence Prover](../mcps/laravel-excellence-prover.md) | AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds. |
 | [Last.fm](../mcps/lastfm.md) | Manage your music profile — audit listening habits, top tracks, and artists via AI. |
@@ -1052,6 +1066,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Podcast Episode Counter](../mcps/podcast-episode-counter.md) | Count and categorize podcast episodes from datasets. |
 | [Podcast Season Duration](../mcps/podcast-season-duration.md) | Calculate total playback time and listening estimates for podcast seasons. |
 | [Pointagram](../mcps/pointagram.md) | Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges. |
+| [Policy Consolidation Brief](../mcps/policy-consolidation-brief.md) | Map overlapping insurance coverage and synchronize renewal timings to generate actionable contact and consolidation plans. |
 | [Polyrhythm Calculator](../mcps/polyrhythm-calculator.md) | Calculate precise alignment, attack timestamps, and subdivision grids for complex polyrhythms. |
 | [Pomodoro Break Calculator](../mcps/pomodoro-break-calculator.md) | Calculate cumulative rest durations and break schedules for Pomodoro workflows. |
 | [Pomodoro Cycle Counter](../mcps/pomodoro-cycle-counter.md) | Calculate complete Pomodoro work and break cycles within any timeframe. |
@@ -1080,6 +1095,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Project Cost Per Hour](../mcps/project-cost-per-hour.md) | Calculate project efficiency by analyzing cost per hour metrics. |
 | [ProjectManager](../mcps/projectmanager.md) | Automate project planning and tracking via ProjectManager — manage projects, tasks, and timesheets directly from any AI agent. |
 | [Prompt Compression Efficiency Calculator](../mcps/prompt-compression-efficiency-calculator.md) | Evaluate the performance, cost-effectiveness, and quality impact of prompt compression techniques. |
+| [Property Loss Recovery Planner](../mcps/property-loss-recovery-planner.md) | Sequences recovery tasks, identifies required receipts, and schedules notifications for property loss recovery. |
 | [PSPDFKit (Nutrient)](../mcps/pspdfkit-nutrient.md) | Professional PDF and document processing — generate, convert, OCR, and edit documents via the Nutrient API. |
 | [PunkAPI](../mcps/punkapi.md) | Explore BrewDog's beer catalog — search by name, style, ABV, IBU, hops, food pairing and get random beer suggestions. |
 | [Push-up Volume Planner](../mcps/push-up-volume-planner.md) | A specialized engine for planning structured push-up progression and volume management. |
@@ -1121,8 +1137,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Relaxation Response Timer](../mcps/relaxation-response-timer.md) | Generates structured timing, pacing, and frequency plans for relaxation sessions. |
 | [Remote Program Effectiveness Analyzer](../mcps/remote-program-effectiveness-analyzer.md) | Quantifies remote accelerator success by comparing engagement and outcomes against in-person benchmarks. |
 | [Renovation Progress Tracker](../mcps/renovation-progress-tracker.md) | Track and calculate completion percentages for renovation projects. |
+| [Rental Loss Claim File](../mcps/rental-loss-claim-file.md) | Organize rental damage data into structured insurance claim dossiers and evidence checklists. |
 | [Rep Max Table Generator](../mcps/rep-max-table-generator.md) | Generates complete rep max percentage tables, intensity zones, and warm-up sequences. |
+| [Repair Communication Log Plan](../mcps/repair-communication-log-plan.md) | Generate structured communication schedules, message templates, and escalation workflows. |
 | [Repair Intake & Action Plan](../mcps/repair-intake-action-plan.md) | Converts property damage observations into prioritized repair briefs and safety protocols. |
+| [Repair Permit Coordination Checklist](../mcps/repair-permit-coordination-checklist.md) | Organize permit submissions, responsibility matrices, and deadline calendars for repair projects. |
 | [Repair Sequence Scheduler](../mcps/repair-sequence-scheduler.md) | A high-precision engine for synchronizing home repair timelines, trade dependencies, and room constraints. |
 | [Repetition Pattern Detector](../mcps/repetition-pattern-detector.md) | Detects redundant linguistic patterns and calculates text compression metrics. |
 | [Repetitive Strain Risk Calculator](../mcps/repetitive-strain-risk-calculator.md) | Analyzes work patterns to calculate RSI risk and provide ergonomic recovery recommendations. |
@@ -1164,6 +1183,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [ScreenshotOne](../mcps/screenshotone.md) | Capture website screenshots — audit visual content and generate PDFs via AI. |
 | [Scribe](../mcps/scribe.md) | Create step-by-step guides and SOPs automatically by recording your workflow and generating visual documentation instantly. |
 | [Season Length Optimizer](../mcps/season-length-optimizer.md) | Calculate optimal Battle Pass durations and daily XP requirements based on player behavior. |
+| [Seasonal Home Maintenance Route](../mcps/seasonal-home-maintenance-route.md) | Generate optimized seasonal maintenance plans, vendor routes, and owner task lists. |
 | [Seasonal Sleep Adjustment Planner](../mcps/seasonal-sleep-adjustment-planner.md) | Optimize sleep schedules and light therapy based on seasonal shifts and latitude. |
 | [Semester GPA Projector](../mcps/semester-gpa-projector.md) | Predict your semester GPA and its impact on your cumulative academic standing using performance scenarios. |
 | [SemVer Version Manager](../mcps/semver-version-manager.md) | Stop LLMs from guessing software versions. Deterministically evaluate semantic version bounds, compatibilities, and sort releases perfectly. |

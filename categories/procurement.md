@@ -5,6 +5,7 @@ Explore the open database of **procurement** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Contractor vs Owner-Operator Mining Analysis](../mcps/contractor-vs-owner-operator-mining-analysis.md) | Compare the economic viability of mining contractor vs owner-operator models. |
+| [Repair Vendor Shortlist Builder](../mcps/repair-vendor-shortlist-builder.md) | An intelligent decision-support engine that transforms raw vendor data and custom weighted rubrics into a ranked, auditable shortlist. |
 
 
 ---

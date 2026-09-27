@@ -4,6 +4,7 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Air Quality in the Paris Region (Airparif)](../mcps/air-quality-in-the-paris-region-airparif.md) | Île-de-France air quality via the official Airparif API: the daily air-index forecast per commune/intercommunality, the forecasters' bulletin, high-pollution episodes, and the Hor'Air hourly forecast, history and route modules. Free API key, X-Api-Key header. |
 | [Avalanche Risk Assessment](../mcps/avalanche-risk-assessment.md) | Evaluates snow stability and terrain hazards to determine avalanche danger levels. |
 | [Biodiversity Impact Assessment](../mcps/biodiversity-impact-assessment.md) | Assess ecological impacts from industrial operations using habitat and species data. |
 | [Indoor Air Quality Assessment](../mcps/indoor-air-quality-assessment.md) | Evaluates chemical laboratory safety through IAQ indexing and ventilation analysis. |
@@ -11,6 +12,9 @@ Explore the open database of **environment** Model Context Protocol (MCP) server
 | [Kite Lofting Risk Assessment](../mcps/kite-lofting-risk-assessment.md) | Calculate kite lofting risk by balancing aerodynamic lift against rider weight and wind gusts. |
 | [Kite Visibility Assessor](../mcps/kite-visibility-assessor.md) | Assess kite visibility and safety in various environmental conditions. |
 | [Kite Wind Window Analyzer](../mcps/kite-wind-window-analyzer.md) | Calculates effective wind window area and power zone dynamics using spherical cap geometry. |
+| [NYC Beaches & Waterfront](../mcps/nyc-beaches-waterfront.md) | Keyless NYC beach and waterfront data: the nine public beaches, enterococci water-quality samples against EPA reference values, seasonal beach attendance, and designated waterfront public access areas — no API key. |
+| [NYC Parks & Open Land (DCA)](../mcps/nyc-parks-open-land-dca.md) | Keyless NYC parks data: DCA park properties by type, acreage and waterfront, the Forever Wild conservation sites, functional parkland, DCA playgrounds and synthetic turf fields — no API key. |
+| [Paris Trees & Street Amenities](../mcps/paris-trees-street-amenities.md) | Keyless Paris outdoor data: the city tree inventory, public drinking fountains, heat-island cooling spaces & activities, public AED defibrillators and water shops — filter by arrondissement and type. |
 | [Slope Aspect Effect](../mcps/slope-aspect-effect.md) | Calculates snow stability and solar/wind exposure based on terrain aspect. |
 | [Spot Hazard Rating](../mcps/spot-hazard-rating.md) | Quantify kitesurfing environmental risks and safety. |
 | [Surf Break Classifier](../mcps/surf-break-classifier.md) | Classifies surf break types and predicts wave quality based on bathymetry and swell conditions. |
