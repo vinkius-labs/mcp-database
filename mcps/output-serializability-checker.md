@@ -14,9 +14,9 @@ The Output Serializability Checker bridges the gap between LLM outputs and struc
 
 
 ## Available Tools (3)
+- **suggest_optimal_format**: Recommends the best target format for a given data structure based on its complexity and requirements
 - **analyze_fidelity_loss**: Provides a detailed breakdown of why data fidelity was reduced during a serialization attempt
 - **check_serializability**: Evaluates if a specific dataset can be safely converted to a designated target format
-- **suggest_optimal_format**: Recommends the best target format for a given data structure based on its complexity and requirements
 
 
 ## 💬 Prompt Examples

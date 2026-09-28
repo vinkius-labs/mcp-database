@@ -14,15 +14,15 @@ The Output Format Contract Checker ensures data integrity in LLM-driven pipeline
 
 
 ## Available Tools (3)
-- **get_violation_summary**: Pass a list of violation objects to summarize.
-
-Aggregates violations into a summary
-- **validate_contract**: Provide the actual data and the schema blueprint.
-
-Validates output data against an expected schema
 - **check_coercion_possibility**: Provide the value and the expected type name.
 
 Checks if a value can be coerced to a target type
+- **validate_contract**: Provide the actual data and the schema blueprint.
+
+Validates output data against an expected schema
+- **get_violation_summary**: Pass a list of violation objects to summarize.
+
+Aggregates violations into a summary
 
 
 ## 💬 Prompt Examples

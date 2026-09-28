@@ -14,15 +14,15 @@ JSONPath Extractor provides tools to navigate and select data within complex JSO
 
 
 ## Available Tools (3)
-- **validate_expression_syntax**: Use this to confirm the path is correctly formatted.
-
-Checks if a JSONPath expression is syntactically correct without executing it against data
 - **evaluate_path**: Ensure the provided JSONPath is valid.
 
 Performs the primary extraction of data using a provided JSONPath expression
 - **get_path_metadata**: Use this to analyze object complexity.
 
 Returns information about the structure and complexity of the JSON object relative to a specific path
+- **validate_expression_syntax**: Use this to confirm the path is correctly formatted.
+
+Checks if a JSONPath expression is syntactically correct without executing it against data
 
 
 ## 💬 Prompt Examples

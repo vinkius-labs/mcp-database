@@ -14,12 +14,12 @@ This MCP server provides professional financial modeling for agricultural enterp
 
 
 ## Available Tools (3)
-- **validate_budget_integrity**: Must provide variable costs, fixed costs, and overhead allocation.
-
-Checks if cost breakdown aligns with standards
 - **calculate_break_even_points**: Provide all three required cost inputs.
 
 Determines threshold values to avoid financial loss
+- **validate_budget_integrity**: Must provide variable costs, fixed costs, and overhead allocation.
+
+Checks if cost breakdown aligns with standards
 - **calculate_enterprise_profitability**: Provides a high-level financial summary
 
 
