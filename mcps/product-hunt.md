@@ -38,9 +38,9 @@ Retrieves detailed information about a specific product by its ID
 - **daily_leaderboard**: It returns a list of products with their taglines, vote counts, and URLs.
 
 Fetches the current daily leaderboard of products from Product Hunt
-- **search_products**: g., "AI", "productivity", "marketing").
+- **search_products**: g., "AI", "productivity", "marketing"). The Product Hunt v2 API has no full-text search, so this scans the latest launches and filters by name/tagline.
 
-Searches for products on Product Hunt by keyword or name
+Searches the newest Product Hunt launches by keyword (name or tagline)
 
 
 ## 💬 Prompt Examples

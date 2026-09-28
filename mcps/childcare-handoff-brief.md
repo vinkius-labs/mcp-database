@@ -14,8 +14,8 @@ This MCP server provides a suite of tools to manage secure transitions of care b
 
 
 ## Available Tools (4)
-- **generate_contact_card**: Produces a concise contact and permission card
 - **generate_followup_prompts**: Generates end-of-day questions for the caregiver
+- **generate_contact_card**: Produces a concise contact and permission card
 - **generate_handoff_brief**: Provides a structured summary of the child's status and requirements
 - **generate_pickup_checklist**: Creates a verification list for pickup
 

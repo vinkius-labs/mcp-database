@@ -14,9 +14,9 @@ The Family Responsibility Board connects AI agents to your household logistics. 
 
 
 ## Available Tools (4)
+- **generate_weekly_assignments**: Generates a specific schedule for the upcoming week based on current rules
 - **get_handoff_instructions**: Retrieves the specific operational instructions for a specific person transitioning into a role
 - **get_responsibility_board**: Provides a high-level overview of all recurring tasks and their current status
-- **generate_weekly_assignments**: Generates a specific schedule for the upcoming week based on current rules
 - **get_review_points**: Identifies upcoming dates when the responsibility distribution should be evaluated
 
 

@@ -14,9 +14,9 @@ This MCP server acts as a logic engine for managing childcare logistics. It conn
 
 
 ## Available Tools (4)
-- **generate_sitter_briefing**: Creates a comprehensive instruction set for the chosen caregiver
 - **calculate_payment_plan**: Determines how the budget should be allocated across the booking period
 - **create_cancellation_fallback**: Generates a contingency plan in the event the booking cannot proceed
+- **generate_sitter_briefing**: Creates a comprehensive instruction set for the chosen caregiver
 - **plan_booking_sequence**: Validates the feasibility of a booking request and generates chronological steps
 
 

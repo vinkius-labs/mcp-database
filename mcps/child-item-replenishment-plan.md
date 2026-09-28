@@ -14,10 +14,10 @@ This MCP server provides a proactive procurement engine for managing essential c
 
 
 ## Available Tools (4)
-- **suggest_substitutions**: Finds substitutes matching size/category, prioritizing minimal cost difference
-- **check_budget_compliance**: Sums projected costs against budget limits
 - **get_purchase_calendar**: Predicts exhaustion dates and schedules purchase dates
 - **get_responsibility_assignments**: Maps item categories to roles defined in user profile
+- **suggest_substitutions**: Finds substitutes matching size/category, prioritizing minimal cost difference
+- **check_budget_compliance**: Sums projected costs against budget limits
 
 
 ## 💬 Prompt Examples

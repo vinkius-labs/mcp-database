@@ -14,9 +14,9 @@ This MCP server coordinates group travel logistics by managing the intersection 
 
 
 ## Available Tools (4)
-- **create_departure_plan**: Generates a chronological checklist of tasks to be completed leading up to the trip
 - **identify_purchase_gaps**: Identifies what the group needs to buy before they leave
 - **assign_baggage**: Distributes all required items into specific bags while respecting weight and volume limits
+- **create_departure_plan**: Generates a chronological checklist of tasks to be completed leading up to the trip
 - **generate_packing_lists**: Determines exactly what every person needs to pack based on their profile, the weather, and the planned activities
 
 

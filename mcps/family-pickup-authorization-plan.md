@@ -15,8 +15,8 @@ This MCP server provides a secure management system for coordinating child picku
 
 ## Available Tools (4)
 - **get_emergency_contacts**: Retrieves a high-priority list of individuals permitted to pick up children in urgent or unplanned situations
-- **generate_update_tasks**: Identifies necessary administrative actions to keep the authorization plan valid and current
 - **list_authorization_matrix**: Provides a complete overview of who is authorized to pick up which children according to institutional rules
+- **generate_update_tasks**: Identifies necessary administrative actions to keep the authorization plan valid and current
 - **validate_pickup_attempt**: Confirms if a specific person is cleared to pick up a specific child at a specific time
 
 

@@ -14,10 +14,10 @@ This MCP server automates the complex lifecycle of school communications. It use
 
 
 ## Available Tools (5)
-- **calculate_escalation_schedule**: Generates a timeline of follow-up dates based on response deadlines and the escalation ladder
-- **create_recordkeeping_entry**: Formats the structured data required to log the communication attempt for audit purposes
 - **generate_message_templates**: Produces tailored message content based on the topic and the required language
 - **map_communication_contacts**: Determines which specific school staff members should receive messages based on the provided topic
+- **calculate_escalation_schedule**: Generates a timeline of follow-up dates based on response deadlines and the escalation ladder
+- **create_recordkeeping_entry**: Formats the structured data required to log the communication attempt for audit purposes
 - **validate_delivery_channels**: Checks if the preferred communication channels are permitted given the parent's specific permissions
 
 

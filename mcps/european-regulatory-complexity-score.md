@@ -14,18 +14,18 @@ This MCP server provides specialized tools to measure the regulatory burden of o
 
 
 ## Available Tools (4)
-- **calculate_financial_burden**: Provide both compliance costs and annual revenue.
-
-Measures the financial weight of compliance relative to the scale of the business
-- **estimate_timeline_impact**: Provide the estimated compliance timeline and standard market entry time.
-
-Quantifies the delay in operational readiness caused by regulatory processes
 - **calculate_complexity_score**: Provide all required inputs to ensure an accurate score.
 
 Determines the core difficulty level of the regulatory environment
+- **estimate_timeline_impact**: Provide the estimated compliance timeline and standard market entry time.
+
+Quantifies the delay in operational readiness caused by regulatory processes
 - **get_regulatory_summary**: Specify countries, regulations, and industry type.
 
 Provides a holistic view of the regulatory landscape for a specific configuration
+- **calculate_financial_burden**: Provide both compliance costs and annual revenue.
+
+Measures the financial weight of compliance relative to the scale of the business
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server acts as an operational logistics engine for household meal manag
 
 ## Available Tools (4)
 - **get_backup_options**: Provides a list of fallback meal options for emergency use
+- **get_packing_schedule**: Generates a day-by-day chronological plan for packing lunches
 - **get_responsibility_rotation**: Assigns daily tasks (shopping, prep, packing) to household members
 - **get_shopping_list**: Calculates a weekly list of required ingredients and their estimated costs
-- **get_packing_schedule**: Generates a day-by-day chronological plan for packing lunches
 
 
 ## 💬 Prompt Examples

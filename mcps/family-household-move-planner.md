@@ -14,10 +14,10 @@ This MCP server acts as a specialized orchestration engine for family relocation
 
 
 ## Available Tools (4)
-- **get_packing_plan**: Determines who should pack what and when, based on available helpers and belongings
 - **get_child_transition_plan**: Identifies specific tasks required to maintain emotional and physical stability for children during the move
 - **get_first_week_setup**: Creates an immediate action plan for the first seven days in the new residence
 - **get_move_calendar**: Generates a chronological timeline of all major milestones and deadlines
+- **get_packing_plan**: Determines who should pack what and when, based on available helpers and belongings
 
 
 ## 💬 Prompt Examples

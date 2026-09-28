@@ -14,10 +14,10 @@ This MCP server provides an intelligent procurement engine for school uniform ma
 
 
 ## Available Tools (4)
+- **create_labeling_tasks**: Generates a checklist of administrative tasks needed to organize stock
+- **calculate_budget_plan**: Provides a financial roadmap ensuring the procurement stays within the specified budget
 - **generate_order_sequence**: Determines the chronological timeline of when to place orders to meet all school deadlines
 - **identify_contingency_actions**: Identifies necessary fallback plans when primary procurement paths fail
-- **calculate_budget_plan**: Provides a financial roadmap ensuring the procurement stays within the specified budget
-- **create_labeling_tasks**: Generates a checklist of administrative tasks needed to organize stock
 
 
 ## 💬 Prompt Examples

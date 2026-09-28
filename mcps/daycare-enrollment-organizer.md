@@ -14,8 +14,8 @@ This MCP server acts as a systematic coordinator for managing daycare enrollment
 
 
 ## Available Tools (4)
-- **calculate_submission_schedule**: Maps out the critical dates for submission and subsequent confirmation follow-ups
 - **analyze_enrollment_readiness**: Evaluates the current state of a family's documents against a specific facility's requirements
+- **calculate_submission_schedule**: Maps out the critical dates for submission and subsequent confirmation follow-ups
 - **generate_missing_item_actions**: Provides a specific to-do list for the user to resolve gaps in their application
 - **verify_document_dependencies**: Identifies if a document is currently impossible to obtain because its prerequisite is missing
 

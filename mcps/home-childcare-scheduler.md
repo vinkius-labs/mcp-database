@@ -14,10 +14,10 @@ This MCP server acts as a coordination engine for household childcare. It synchr
 
 
 ## Available Tools (4)
+- **generate_daily_schedule**: Creates a chronological plan for the day based on all input constraints
 - **generate_handoff_cards**: Creates communication summaries for caregiver shifts
 - **generate_supply_tasks**: Extracts a checklist of preparation needs based on meals and activities
 - **get_backup_contacts**: Identifies available backup caregivers when primary coverage is insufficient or during gaps
-- **generate_daily_schedule**: Creates a chronological plan for the day based on all input constraints
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a management system for coordinating the borrowing, mai
 
 
 ## Available Tools (5)
-- **register_checkout_report**: Records the condition of equipment at the moment a user takes possession
-- **check_reservation_availability**: Determines if a specific piece of equipment can be borrowed for a requested period
 - **get_equipment_calendar**: Provides a chronological view of all equipment usage and maintenance
 - **get_maintenance_reminders**: Identifies all equipment that is due for service or has been flagged for issues
+- **check_reservation_availability**: Determines if a specific piece of equipment can be borrowed for a requested period
+- **register_checkout_report**: Records the condition of equipment at the moment a user takes possession
 - **resolve_usage_conflict**: Provides a guided path to resolve disputes when a return is late or an item is returned damaged
 
 
