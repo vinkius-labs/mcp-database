@@ -499,6 +499,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Hotel Room Cost Splitter](../mcps/hotel-room-cost-splitter.md) | Equitable cost distribution for shared accommodations. |
 | [Hotel Tax Calculator](../mcps/hotel-tax-calculator.md) | Calculate precise hotel taxes, VAT, and occupancy fees for USA and Europe. |
 | [Household Bill Splitter](../mcps/household-bill-splitter.md) | Equitably divide household expenses among all residents. |
+| [Household Childcare Budget Planner](../mcps/household-childcare-budget-planner.md) | Evaluate childcare options against family income and budget constraints. |
 | [Hugging Face Deployment Economics](../mcps/hugging-face-deployment-economics.md) | Financial modeling for Hugging Face deployment costs and self-hosting comparisons. |
 | [IBAN and BIC Checksum Validator](../mcps/iban-and-bic-checksum-validator.md) | Verify the mathematical integrity of IBANs and the structural validity of BIC/SWIFT codes. |
 | [Ichimoku Cloud Calculator](../mcps/ichimoku-cloud-calculator.md) | Deterministic engine for Ichimoku Kinko Hyo indicator components and signals. |

@@ -130,6 +130,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Metabolic Stress Estimator](../mcps/metabolic-stress-estimator.md) | Calculate metabolic stress, recovery needs, and nutritional support for workouts. |
 | [Migraine Trigger Analyzer](../mcps/migraine-trigger-analyzer.md) | Identifies statistical correlations between lifestyle triggers and migraine episodes. |
 | [Mobility Routine Generator](../mcps/mobility-routine-generator.md) | Construct personalized mobility routines using joint-by-joint progression principles. |
+| [Moscow Health & Emergency Services](../mcps/moscow-health-emergency-services.md) | Keyless Moscow emergency and health data: hospitals (with emergency departments), pharmacies and 24-hour ones, police and fire stations, plus a citywide safety profile. |
 | [Muscle Activation Tracker](../mcps/muscle-activation-tracker.md) | Monitor muscle recruitment through perceived effort and EMG data. |
 | [Muscle Damage Estimator](../mcps/muscle-damage-estimator.md) | Predict muscle damage, DOMS peaks, and recovery timelines from workouts. |
 | [Muscle Knot Mapping](../mcps/muscle-knot-mapping.md) | Maps muscle knots to clinical referral patterns and treatment priorities. |

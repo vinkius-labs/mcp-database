@@ -13,6 +13,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Damage Inventory Workbook](../mcps/damage-inventory-workbook.md) | Manage damaged goods inventory, verify evidence, and automate replacement requests. |
 | [Days of Supply Calculator](../mcps/days-of-supply-calculator.md) | Monitor inventory health by calculating stock coverage and identifying supply risks. |
 | [Envi Healthcare Supply Chain](../mcps/envi-healthcare-supply-chain.md) | Equip your AI agent to manage healthcare purchase orders, track medical inventory, and monitor vendors via the Envi API. |
+| [Extracurricular Equipment Planner](../mcps/extracurricular-equipment-planner.md) | Optimizes equipment procurement and maintenance for scheduled activities. |
 | [Festival Wristband Planner](../mcps/festival-wristband-planner.md) | Calculate precise wristband inventory requirements for festivals. |
 | [Food Donation Logistics](../mcps/food-donation-logistics.md) | Calculate required donation boxes and packing efficiency for food logistics. |
 | [Gallery Artwork Counter](../mcps/gallery-artwork-counter.md) | Track and analyze artwork inventory and display metrics across multiple art galleries. |

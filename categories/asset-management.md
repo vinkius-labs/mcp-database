@@ -5,6 +5,7 @@ Explore the open database of **asset-management** Model Context Protocol (MCP) s
 | Tool Name | Description |
 |-----------|-------------|
 | [Maintenance After Repair Plan](../mcps/maintenance-after-repair-plan.md) | Generates structured maintenance schedules and inspection checklists for assets following a repair. |
+| [Service History Record Plan](../mcps/service-history-record-plan.md) | Manage asset maintenance, service schedules, and digital evidence organization. |
 
 
 ---

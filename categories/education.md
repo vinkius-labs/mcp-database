@@ -41,14 +41,17 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Le Chatelier Prediction](../mcps/le-chatelier-prediction.md) | Predict chemical equilibrium shifts caused by changes in concentration, pressure, or temperature. |
 | [Limiting Reagent Yield Calculator](../mcps/limiting-reagent-yield-calculator.md) | A precision stoichiometry engine for determining limiting reactants, theoretical yields, and efficiency metrics. |
+| [London Schools: Estate, Distances & Cross-Border Mobility](../mcps/london-schools-estate-distances-cross-border-mobility.md) | Keyless London school data: the 2016 school estate (URN, phase, status, local authority, coordinates), per-school travel-distance trends 2010-2016, home-school distance benchmarks by authority, and 2011 cross-border mobility for children. |
 | [Lunchbox Portion Calculator](../mcps/lunchbox-portion-calculator.md) | Calculate total meal portions needed for school weeks based on child attendance. |
 | [Main Group Chemistry Predictor](../mcps/main-group-chemistry-predictor.md) | Predict reactivity, stability, and reaction outcomes for main group elements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
+| [Moscow Schools, Kindergartens & Universities](../mcps/moscow-schools-kindergartens-universities.md) | Keyless Moscow education: schools, kindergartens, universities and colleges, language and driving schools, plus the Russian Wikipedia university roll. |
 | [Nature Center Visit Planner](../mcps/nature-center-visit-planner.md) | Optimizes nature center visits by matching interests, accessibility needs, and group dynamics. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
 | [NYC Schools & Education](../mcps/nyc-schools-education.md) | Keyless NYC DOE education data: School Quality Report metrics, chronic absenteeism by school and citywide, enrollment capacity, the public high school directory and 2019-20 performance ratings — no API key. |
 | [Organic Compound Nomenclature](../mcps/organic-compound-nomenclature.md) | Precise IUPAC naming and chemical property analysis for organic molecules. |
 | [Oxidation State Calculator](../mcps/oxidation-state-calculator.md) | Determine oxidation states, redox behavior, and chemical nomenclature. |
+| [Paris Schools: Elementary Schools & Catchment Sectors](../mcps/paris-schools-elementary-schools-catchment-sectors.md) | Keyless Paris elementary-school data: the school census (name, address, arrondissement, school year, 2020–2027) and the catchment sectors that assign streets to up to four schools. |
 | [Periodic Trend Analyzer](../mcps/periodic-trend-analyzer.md) | Analyzes periodic trends and elemental properties, accounting for atomic structure anomalies. |
 | [pH & pOH Calculator](../mcps/ph-poh-calculator.md) | Calculate pH, pOH, and ion concentrations for strong/weak electrolytes and buffers. |
 | [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
@@ -57,6 +60,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [School Contact Update Letter Generator](../mcps/school-contact-update-letter-generator.md) | Generates formal school notification letters for student contact updates. |
+| [School Supplies Distribution Planner](../mcps/school-supplies-distribution-planner.md) | Optimizes school supply allocation using reuse-first logic and budget tracking. |
 | [School Uniform Procurement Planner](../mcps/school-uniform-procurement-planner.md) | Sequences uniform orders, optimizes budgets, and generates operational checklists. |
 | [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |

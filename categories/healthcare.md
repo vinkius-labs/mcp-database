@@ -38,6 +38,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Geneva Score Calculator](../mcps/geneva-score-calculator.md) | Calculate pulmonary embolism risk using the Revised Geneva Score algorithm. |
 | [Glasgow Coma Scale Calculator](../mcps/glasgow-coma-scale-calculator.md) | Assess neurological impairment and determine airway management protocols using the Glasgow Coma Scale (GCS). |
 | [HAS-BLED Score Calculator](../mcps/has-bled-score-calculator.md) | Assess major bleeding risk in patients on anticoagulation therapy using the HAS-BLED scoring system. |
+| [Health Records Access Plan](../mcps/health-records-access-plan.md) | A privacy-centric engine for managing medical record access, compliance checklists, and secure archiving. |
 | [Injection Day Alignment](../mcps/injection-day-alignment.md) | Calculate precise medication injection schedules and manage weekday alignment shifts. |
 | [Joint Range of Motion Calculator](../mcps/joint-range-of-motion-calculator.md) | Quantifies mobility deficits by comparing measured joint movement against normative clinical data. |
 | [Medication Adherence Score](../mcps/medication-adherence-score.md) | Analyzes medication adherence through dosage, timing, and persistence metrics. |

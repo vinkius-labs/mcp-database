@@ -25,6 +25,8 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Local Waterfront Visit Planner](../mcps/local-waterfront-visit-planner.md) | Validate waterfront visit feasibility, facility access, and logistics. |
 | [Luggage Packing Optimizer](../mcps/luggage-packing-optimizer.md) | Optimize luggage space and weight using intelligent packing algorithms. |
 | [Luggage Volume Calculator](../mcps/luggage-volume-calculator.md) | Calculate luggage volume and check airline compliance. |
+| [Moscow Hotels, Hostels & Stays](../mcps/moscow-hotels-hostels-stays.md) | Keyless Moscow accommodation: hotels by star rating, hostels, short-stay apartments, guest houses and campsites, plus the Wikipedia hotel roll and a citywide profile. |
+| [Moscow Sights, Landmarks & Views](../mcps/moscow-sights-landmarks-views.md) | Keyless Moscow sightseeing: attractions, viewpoints and fountains with a walking-distance list of the nearest sights, plus the curated Wikipedia landmark roll. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
 | [Pet Travel Checklist Validator](../mcps/pet-travel-checklist-validator.md) | Audits pet travel plans against destination, transport, and health requirements. |
 | [Shinkansen Routing Optimizer](../mcps/shinkansen-routing-optimizer.md) | Deterministic Japanese Shinkansen travel time and fare calculator. |

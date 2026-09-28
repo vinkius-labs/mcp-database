@@ -4,6 +4,7 @@ Explore the open database of **geospatial** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Moscow Places & Geography](../mcps/moscow-places-geography.md) | Keyless Moscow geography: place and address search, structured and reverse geocoding, citywide OSM point-of-interest densities and the official city boundary. |
 | [Swell Window Analysis](../mcps/swell-window-analysis.md) | Geometric analysis of swell windows and coastal shadowing. |
 
 

@@ -47,6 +47,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [IAM Policy Complexity Calculator](../mcps/iam-policy-complexity-calculator.md) | Deterministic AWS IAM policy size and complexity analyzer. |
 | [Input Sanitizer & Escape Handler](../mcps/input-sanitizer-escape-handler.md) | Protects AI agents from shell injection, path traversal, and payload vulnerabilities. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
+| [Legal Records Organizer](../mcps/legal-records-organizer.md) | Secure management of legal documentation, access permissions, and professional review schedules. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Luhn Credit Card Validator](../mcps/luhn-credit-card-validator.md) | Validates credit card numbers using the Luhn algorithm and identifies the issuer. |
 | [MAC Address Validator and Vendor Extractor](../mcps/mac-address-validator-and-vendor-extractor.md) | Validate MAC address formats and identify hardware vendors via OUI. |
@@ -57,6 +58,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [Personal Data Location Mapper](../mcps/personal-data-location-mapper.md) | Map and audit the physical and digital locations of your personal data. |
+| [Personal Records Disposal Plan](../mcps/personal-records-disposal-plan.md) | Automated strategic planning for record retention, disposal scheduling, and secure handling protocols. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans text for malicious prompt injection signatures and risk levels. |

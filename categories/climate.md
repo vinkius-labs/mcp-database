@@ -4,6 +4,7 @@ Explore the open database of **climate** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Moscow Air, Weather & Green Spaces](../mcps/moscow-air-weather-green-spaces.md) | Keyless Moscow environment: live air quality and its band, hourly air and weather forecasts, ERA5 monthly climate normals, parks and rivers. |
 | [NYC Flooding (FloodNet)](../mcps/nyc-flooding-floodnet.md) | Keyless NYC flooding data: DEP FloodNet street-flooding events with depths and durations, plus the flood sensor installation metadata — no API key. |
 
 

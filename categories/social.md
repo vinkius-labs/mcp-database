@@ -4,6 +4,7 @@ Explore the open database of **social** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Family Playdate Coordinator](../mcps/family-playdate-coordinator.md) | Manage multi-family playdate logistics, safety, and handoff protocols. |
 | [Local Experience Companion Plan](../mcps/local-experience-companion-plan.md) | Coordinate local activities with companions through mutual agreement and role-based planning. |
 
 

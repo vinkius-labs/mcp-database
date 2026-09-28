@@ -27,6 +27,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Electrical Visit Preparation Plan](../mcps/electrical-visit-preparation-plan.md) | Prepare professional service requests and logistical plans for electrical repairs. |
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
 | [Event Seating Planner](../mcps/event-seating-planner.md) | Automated deterministic seating arrangement generator. |
+| [Family Car Seat Logistics Plan](../mcps/family-car-seat-logistics-plan.md) | Synchronize car seat hardware, vehicle compatibility, and driver assignments for safe travel. |
 | [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
 | [Ferry Capacity Checker](../mcps/ferry-capacity-checker.md) | Monitor ferry occupancy and manage boarding requests in real-time. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
