@@ -13,8 +13,16 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Care Travel Companion Plan](../mcps/care-travel-companion-plan.md) | Coordinates care-specific travel timelines, packing responsibilities, and emergency fallback plans. |
 | [Family Trip Seat Count](../mcps/family-trip-seat-count.md) | Calculate vehicle capacity and passenger distribution for family trips. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
+| [Heritage Rail Experience Planner](../mcps/heritage-rail-experience-planner.md) | Coordinate heritage rail journeys by synthesizing timetables, accessibility needs, and operator rules. |
 | [Jet Lag Adjustment Calculator](../mcps/jet-lag-adjustment-calculator.md) | Calculate the days needed to adjust to new time zones. |
 | [jp-train-transfer-minimizer](../mcps/jp-train-transfer-minimizer.md) | Calculate precise Japanese train route metrics including transfer penalties. |
+| [Local Arts Night Planner](../mcps/local-arts-night-planner.md) | Orchestrates optimal itineraries for arts events based on time, venue, and accessibility constraints. |
+| [Local Food & Culture Experience Planner](../mcps/local-food-culture-experience-planner.md) | Plan cohesive cultural dining itineraries by synthesizing user preferences, dietary needs, and venue constraints. |
+| [Local Guided Tour Selection Plan](../mcps/local-guided-tour-selection-plan.md) | An intelligent decision engine that filters and ranks local guided tours based on strict logistical constraints and personal preferences. |
+| [Local Museum Visit Decision Plan](../mcps/local-museum-visit-decision-plan.md) | Evaluates museum options against mandatory constraints and generates actionable visit plans. |
+| [Local Rainy Day Experience Plan](../mcps/local-rainy-day-experience-plan.md) | Generates cohesive indoor activity itineraries by reconciling user preferences, venue constraints, and weather forecasts. |
+| [Local Seasonal Experience Planner](../mcps/local-seasonal-experience-planner.md) | Plan perfect seasonal outings by matching local offerings with your specific needs and budget. |
+| [Local Waterfront Visit Planner](../mcps/local-waterfront-visit-planner.md) | Validate waterfront visit feasibility, facility access, and logistics. |
 | [Luggage Packing Optimizer](../mcps/luggage-packing-optimizer.md) | Optimize luggage space and weight using intelligent packing algorithms. |
 | [Luggage Volume Calculator](../mcps/luggage-volume-calculator.md) | Calculate luggage volume and check airline compliance. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |

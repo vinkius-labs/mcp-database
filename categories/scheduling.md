@@ -8,8 +8,10 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 | [Care Laundry Household Rotation](../mcps/care-laundry-household-rotation.md) | Manages laundry task rotation, storage capacity, and helper availability. |
 | [Community Garden Participation Planner](../mcps/community-garden-participation-planner.md) | Automate garden schedules, duty rotations, and member signup actions. |
 | [DAG Topological Scheduler](../mcps/dag-topological-scheduler.md) | Deterministic task scheduling and critical path analysis for multi-agent DAGs. |
+| [Family Babysitter Booking Plan](../mcps/family-babysitter-booking-plan.md) | Orchestrate childcare logistics by matching approved sitters to specific dates and household needs. |
 | [Graph Coloring Scheduler](../mcps/graph-coloring-scheduler.md) | Deterministic agent scheduling using graph coloring to prevent resource conflicts. |
 | [Group Chat Speaker Selector](../mcps/group-chat-speaker-selector.md) | Deterministic speaker selection engine for multi-agent group chats. |
+| [Local Fitness Class Planner](../mcps/local-fitness-class-planner.md) | Evaluates local fitness classes against your constraints, accessibility needs, and provider policies. |
 | [Pet Worming Schedule](../mcps/pet-worming-schedule.md) | Calculate deworming intervals and product suitability for dogs and cats based on age and risk. |
 | [Priority Queue with Aging Scheduler](../mcps/priority-queue-with-aging-scheduler.md) | A deterministic scheduler that manages task execution using priority-based queues with an anti-starvation aging mechanism. |
 | [Recurring Event Expander](../mcps/recurring-event-expander.md) | Expands RFC 5545 RRULE strings into concrete lists of occurrence dates. |

@@ -4,6 +4,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessibility Confirmation Planner](../mcps/accessibility-confirmation-planner.md) | Plan accessibility logistics and contact sequences for local experiences. |
 | [Accessible Contingency Contact Plan](../mcps/accessible-contingency-contact-plan.md) | Generates structured response protocols and contact summaries for access-dependent operations. |
 | [Accessible Outdoor Activity Planner](../mcps/accessible-outdoor-activity-planner.md) | Generates participation readiness, role assignments, and coordination logistics for accessible outdoor excursions. |
 | [Accessible Ticketing Decision Plan](../mcps/accessible-ticketing-decision-plan.md) | Evaluates ticket availability and purchase feasibility by prioritizing mandatory accessibility needs and budget constraints. |
@@ -15,6 +16,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Beach Towel Calculator](../mcps/beach-towel-calculator.md) | Calculate total towel requirements and group service tiers. |
 | [Beverage Ice Volume Calculator](../mcps/beverage-ice-volume-calculator.md) | Calculate precise ice requirements for beverage service. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
+| [Child Item Replenishment Plan](../mcps/child-item-replenishment-plan.md) | A logistics and budgeting engine for managing essential child supplies. |
 | [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
 | [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
 | [Creative Exhibition Submission Plan](../mcps/creative-exhibition-submission-plan.md) | An intelligent decision-support engine that evaluates artist works against exhibition calls to generate actionable submission strategies. |
@@ -34,7 +36,13 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
 | [LNG Carrier Fleet Sizer](../mcps/lng-carrier-fleet-sizer.md) | Optimize LNG fleet sizing and logistics planning. |
+| [Local Culture Plan Engine](../mcps/local-culture-plan-engine.md) | Generates feasible visit sequences and logistics for cultural outings. |
+| [Local Experience Weather Contingency Plan](../mcps/local-experience-weather-contingency-plan.md) | Evaluate outdoor activities against weather thresholds and provider rules to generate actionable contingency plans. |
+| [Local Group Reservation Coordinator](../mcps/local-group-reservation-coordinator.md) | Coordinates group reservations by aligning participant commitments with venue policies. |
+| [Local Park Amenity Planner](../mcps/local-park-amenity-planner.md) | Reconcile park regulations and available facilities with user recreation goals. |
+| [Local Sports Spectator Plan](../mcps/local-sports-spectator-plan.md) | A decision-support engine for evaluating local sports event attendance feasibility and logistics. |
 | [Local Sports Support Plan](../mcps/local-sports-support-plan.md) | Logistics engine for transforming volunteer and resource data into structured operational plans. |
+| [local-reservation-readiness-plan](../mcps/local-reservation-readiness-plan.md) | Evaluates reservation intent against venue policies to generate readiness packages. |
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
 | [Music Release Readiness Plan](../mcps/music-release-readiness-plan.md) | A diagnostic engine to evaluate musical release readiness by validating permissions, assets, and logistics. |

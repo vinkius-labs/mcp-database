@@ -44,6 +44,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Lunchbox Portion Calculator](../mcps/lunchbox-portion-calculator.md) | Calculate total meal portions needed for school weeks based on child attendance. |
 | [Main Group Chemistry Predictor](../mcps/main-group-chemistry-predictor.md) | Predict reactivity, stability, and reaction outcomes for main group elements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
+| [Nature Center Visit Planner](../mcps/nature-center-visit-planner.md) | Optimizes nature center visits by matching interests, accessibility needs, and group dynamics. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
 | [NYC Schools & Education](../mcps/nyc-schools-education.md) | Keyless NYC DOE education data: School Quality Report metrics, chronic absenteeism by school and citywide, enrollment capacity, the public high school directory and 2019-20 performance ratings — no API key. |
 | [Organic Compound Nomenclature](../mcps/organic-compound-nomenclature.md) | Precise IUPAC naming and chemical property analysis for organic molecules. |
@@ -56,6 +57,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [School Contact Update Letter Generator](../mcps/school-contact-update-letter-generator.md) | Generates formal school notification letters for student contact updates. |
+| [School Uniform Procurement Planner](../mcps/school-uniform-procurement-planner.md) | Sequences uniform orders, optimizes budgets, and generates operational checklists. |
 | [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |

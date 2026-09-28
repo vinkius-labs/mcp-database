@@ -6,6 +6,7 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 |-----------|-------------|
 | [Accessible Ride Request Protocol](../mcps/accessible-ride-request-protocol.md) | Transforms complex accessibility needs and provider constraints into actionable ride request packages. |
 | [Accessible Transport Disruption Plan](../mcps/accessible-transport-disruption-plan.md) | Automated contingency protocols for users with accessibility needs during transport disruptions. |
+| [Activity Transport Rotation](../mcps/activity-transport-rotation.md) | Optimizes driver assignments and vehicle routing for group activities. |
 | [Driving Shift Planner](../mcps/driving-shift-planner.md) | Plan long-distance drives with mandatory rest periods. |
 | [Fuel Consumption Converter](../mcps/fuel-consumption-converter.md) | Deterministic bidirectional fuel efficiency conversion and trip cost estimation. |
 | [Fuel Refill Calculator](../mcps/fuel-refill-calculator.md) | Calculate required fuel refills and refueling schedules for any journey. |

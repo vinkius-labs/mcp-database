@@ -29,6 +29,9 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Local Club Membership Planner](../mcps/local-club-membership-planner.md) | Evaluate and plan local club memberships based on budget and fit. |
+| [Local Community Market Visit Planner](../mcps/local-community-market-visit-planner.md) | Orchestrates market visits by transforming logistics and personal priorities into structured plans. |
+| [Local Experience Gift Planner](../mcps/local-experience-gift-planner.md) | Plan perfect local gifts by matching recipient interests with available experiences and provider terms. |
+| [Local Family Outing Decision Plan](../mcps/local-family-outing-decision-plan.md) | Plan perfect family outings by matching venues to specific family needs and constraints. |
 | [Matcha Ceremony Parameter Calculator](../mcps/matcha-ceremony-parameter-calculator.md) | Calculate precise matcha recipes, water temperatures, and caffeine estimates. |
 | [Morning-Night Skincare Routine Syncer](../mcps/morning-night-skincare-routine-syncer.md) | Validate skincare routine safety by checking for ingredient incompatibilities and essential dependencies. |
 | [Numerology Calculator](../mcps/numerology-calculator.md) | Get a complete Pythagorean numerology profile including Life Path, Destiny, and Soul Urge numbers. |

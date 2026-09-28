@@ -576,6 +576,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [LNG Project Economics](../mcps/lng-project-economics.md) | Economic analysis for LNG value chains, including delivered cost, NPV, and break-even price. |
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Loan Interest Calculator](../mcps/loan-interest-calculator.md) | Calculate total interest, repayment ratios, and financial summaries for loans. |
+| [Local Attraction Pass Decision Plan](../mcps/local-attraction-pass-decision-plan.md) | Evaluate the financial and logistical viability of local attraction passes. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
 | [LP Reporting Metrics Engine](../mcps/lp-reporting-metrics-engine.md) | Calculates comprehensive LP performance dashboards, trend analysis, and peer benchmarking. |

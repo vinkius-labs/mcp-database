@@ -32,6 +32,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
 | [Execution Trace Tamper-Evident Logger](../mcps/execution-trace-tamper-evident-logger.md) | Creates immutable, cryptographic audit trails for agent execution steps using Merkle trees. |
+| [Family Pickup Authorization Plan](../mcps/family-pickup-authorization-plan.md) | Manage and verify child pickup authorizations against institutional security rules. |
 | [Family Records Transfer List](../mcps/family-records-transfer-list.md) | Manage secure movement of sensitive family archives with verifiable chain of custody. |
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
 | [Filesystem Sandbox Boundary Enforcer](../mcps/filesystem-sandbox-boundary-enforcer.md) | Enforces strict path boundaries and prevents traversal attacks. |

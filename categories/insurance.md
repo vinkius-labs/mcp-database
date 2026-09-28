@@ -6,7 +6,9 @@ Explore the open database of **insurance** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Auto-Claim Repair Choice](../mcps/auto-claim-repair-choice.md) | Synthesize repair estimates, shop terms, and policy constraints into a prioritized repair checklist and booking sequence. |
 | [Beneficiary Document Plan](../mcps/beneficiary-document-plan.md) | Generates neutral document collection strategies for claim processing. |
+| [Claim Reopen Request Generator](../mcps/claim-reopen-request-generator.md) | Generates professional, factual insurance claim reopening requests based on new evidence and policy context. |
 | [Endorsement Update Plan](../mcps/endorsement-update-plan.md) | Maps insurance asset changes to required documentation and generates submission timelines. |
+| [Loss Prevention & Renewal Tracker](../mcps/loss-prevention-renewal-tracker.md) | Track risk mitigation progress and generate renewal confirmation packets. |
 | [Multi-Policy Overlap Map](../mcps/multi-policy-overlap-map.md) | Identify overlapping and distinct insurance benefits from multiple policies. |
 | [Policy Change Impact Brief](../mcps/policy-change-impact-brief.md) | Maps textual policy revisions to insured assets and planned activities to prevent coverage gaps. |
 | [Renewal Document Pack](../mcps/renewal-document-pack.md) | Reconcile renewal questionnaires against policy data, asset changes, and evidence files. |

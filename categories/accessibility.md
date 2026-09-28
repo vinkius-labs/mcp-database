@@ -15,6 +15,7 @@ Explore the open database of **accessibility** Model Context Protocol (MCP) serv
 | [AI Feature Accessibility Scorer](../mcps/ai-feature-accessibility-scorer.md) | Assess accessibility health for AI features using WCAG standards. |
 | [Emergency Accessibility Support Plan](../mcps/emergency-accessibility-support-plan.md) | Transforms accessibility needs and local resources into actionable emergency response plans and contact cards. |
 | [Image SEO Auditor](../mcps/image-seo-auditor.md) | Automated analysis of image metadata to identify SEO and accessibility violations. |
+| [Local Sensory-Friendly Experience Planner](../mcps/local-sensory-friendly-experience-planner.md) | Evaluate event compatibility and generate personalized sensory support plans. |
 | [Microcopy UX Friction Analyzer](../mcps/microcopy-ux-friction-analyzer.md) | Audit UX microcopy for clarity, friction, and actionability. |
 
 

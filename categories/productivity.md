@@ -278,7 +278,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Chameleon.io](../mcps/chameleonio.md) | Manage product adoption and onboarding via Chameleon — trigger tours, analyze surveys, and track user events directly from any AI agent. |
 | [Change Case Engine](../mcps/change-case-engine.md) | Transform text between 12 naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and more) with zero errors. |
 | [Chanty](../mcps/chanty.md) | Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent. |
+| [Childcare Handoff Brief](../mcps/childcare-handoff-brief.md) | Secure and structured handoff tools for childcare transitions. |
 | [Childcare Hours Total](../mcps/childcare-hours-total.md) | Aggregates and analyzes childcare duration data, including overlap detection and provider summaries. |
+| [Children Room Transition Plan](../mcps/children-room-transition-plan.md) | A phased, safety-first planning engine for moving children between living spaces. |
 | [Chord Constructor](../mcps/chord-constructor.md) | Decompose chord notation into notes, inversions, and harmonic roles. |
 | [Chore Points Total](../mcps/chore-points-total.md) | Manage and track reward points earned through completed household chores. |
 | [Chronotype Estimator](../mcps/chronotype-estimator.md) | Classifies biological chronotypes and recommends productivity windows based on natural sleep patterns. |
@@ -421,6 +423,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Data Sorting & Filtering Engine](../mcps/data-sorting-filtering-engine.md) | Perfect array manipulation. Sort and deduplicate massive JSON lists with native Vinkius Edge JavaScript instead of relying on token-limited LLMs. |
 | [Database Architect Prover](../mcps/task-planner.md) | An AI agent designed a database schema with no indexes on search columns, no foreign keys, and a VARCHAR(255) for every field. Query response time went from 200ms to 14 seconds after 500K rows. Table locks during updates froze the application for 8 minutes. This tool forces 3NF normalization, index strategies mapped to access patterns, explicit foreign key constraints, and partition planning for high-volume tables. |
 | [DataScope](../mcps/datascope.md) | Create mobile forms for field inspections, audits, and data collection that work offline and sync when connectivity returns. |
+| [Daycare Enrollment Organizer](../mcps/daycare-enrollment-organizer.md) | Coordinate daycare applications, document readiness, and submission timelines. |
 | [Daylight Saving Time Adapter](../mcps/daylight-saving-time-adapter.md) | Creates personalized circadian adaptation plans for DST transitions. |
 | [Days Between Dates Calculator](../mcps/days-between-dates-calculator.md) | Calculate precise intervals between two dates in years, months, weeks, and days. |
 | [Deadline Calculator](../mcps/deadline-calculator.md) | Calculate precise end dates by adding calendar or business days, accounting for weekends and regional holidays. |
@@ -578,7 +581,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Eye Strain Index](../mcps/eye-strain-index.md) | Assess ocular health and screen-related fatigue risk. |
 | [Factorial](../mcps/factorial.md) | Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using. |
 | [Fair Chore Rotation Algorithm](../mcps/fair-chore-rotation-algorithm.md) | A deterministic scheduling system to rotate tasks among participants without consecutive repeats. |
+| [Family Absence Coverage Plan](../mcps/family-absence-coverage-plan.md) | Coordinate childcare, routines, and logistics during parental absence. |
 | [Family Account Permission Matrix](../mcps/family-account-permission-matrix.md) | Manage and audit family service access permissions through structured matrices and secure access references. |
+| [Family Activity Planner](../mcps/family-activity-planner.md) | Organize family activities by managing budgets, deadlines, and schedules. |
 | [Family Activity Tracker](../mcps/family-activity-tracker.md) | Track, categorize, and analyze family bonding through completed activities. |
 | [Family Address Change Notice Generator](../mcps/family-address-change-notice-generator.md) | Draft personalized relocation notices for household members to send to service providers and personal contacts. |
 | [Family Anniversary Reminder Plan](../mcps/family-anniversary-reminder-plan.md) | Automate your family celebrations by transforming occasions into actionable reminder schedules. |
@@ -590,17 +595,22 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Family Care Update Digest](../mcps/family-care-update-digest.md) | Consolidate caregiver updates into structured, privacy-compliant weekly digests and actionable schedules. |
 | [Family Document Renewal Calendar](../mcps/family-document-renewal-calendar.md) | A scheduling engine that transforms document metadata into a chronological sequence of actionable renewal reminders and tasks. |
 | [Family Emergency Drill Planner](../mcps/family-emergency-drill-planner.md) | Generate structured household emergency rehearsal schedules, roles, and checklists. |
+| [Family Equipment Sharing Plan](../mcps/family-equipment-sharing-plan.md) | Coordinate shared gear, maintenance, and reservations within a group. |
 | [Family Event Cost Tracker](../mcps/family-event-cost-tracker.md) | Track and analyze expenditures for family celebrations and events. |
 | [Family Gift Total](../mcps/family-gift-total.md) | Manage and aggregate gift costs for family events. |
 | [Family Grocery Cost Calculator](../mcps/family-grocery-cost-calculator.md) | Calculate total and individual grocery expenditures for households. |
+| [Family Household Move Planner](../mcps/family-household-move-planner.md) | Orchestrate complex family moves with synchronized timelines for packing, school continuity, and child stability. |
 | [Family Insurance Contact Sheet](../mcps/family-insurance-contact-sheet.md) | Aggregates insurance policies, covered people, provider contacts, and claim history into a single dashboard. |
 | [Family Meal Count](../mcps/family-meal-count.md) | Calculate total meals for groups and durations. |
 | [Family Medical Information Card Generator](../mcps/family-medical-information-card-generator.md) | Generates compact, shareable medical summary cards for families. |
 | [Family Member Count](../mcps/family-member-count.md) | Analyze household composition and member counts. |
 | [Family Photo Counter](../mcps/family-photo-counter.md) | Count photos across nested family photo albums. |
 | [Family Relocation Records Plan](../mcps/family-relocation-records-plan.md) | Manage and sequence document transfers for family relocations. |
+| [Family Responsibility Board](../mcps/family-responsibility-board.md) | Automate household and childcare logistics with structured ownership and rotation logic. |
 | [Family Screen Time Total](../mcps/family-screen-time-total.md) | Aggregate and analyze screen time usage for family members to monitor digital wellness. |
+| [Family Trip Packing Coordinator](../mcps/family-trip-packing-coordinator.md) | Synchronize personal packing lists with group logistics and weather. |
 | [Family Visitor Information Pack](../mcps/family-visitor-information-pack.md) | Synthesize household data into a cohesive, guest-ready visitor document. |
+| [Family Weekly Logistics Plan](../mcps/family-weekly-logistics-plan.md) | Coordinate household schedules, transport, and chores into a conflict-free weekly plan. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
 | [Farm Working Capital Calculator](../mcps/farm-working-capital-calculator.md) | Project seasonal cash flows and determine peak borrowing needs for agricultural operations. |
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
@@ -726,6 +736,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hobby Budget Tracker](../mcps/hobby-budget-tracker.md) | Track and analyze expenses for your personal hobbies. |
 | [Holiday API](../mcps/holiday-api.md) | Manage global holidays — audit public and federal holidays via AI. |
 | [Holiday Weekend Bridge Optimizer](../mcps/holiday-weekend-bridge-optimizer.md) | Maximize your long weekends by identifying the most efficient PTO bridge days. |
+| [Home Childcare Scheduler](../mcps/home-childcare-scheduler.md) | Synchronize caregiver availability, child routines, and parent work schedules into actionable daily plans. |
 | [Home Emergency Contact Tree](../mcps/home-emergency-contact-tree.md) | Organize household members and external contacts into a prioritized, rule-based emergency call tree. |
 | [Home Inventory Readiness Plan](../mcps/home-inventory-readiness-plan.md) | Plan your household inventory capture with room-by-room scheduling and secure archiving. |
 | [Home Project Cost Estimator](../mcps/home-project-cost-estimator.md) | Calculate total expenditures for residential renovation projects by tracking material and labor costs. |
@@ -883,12 +894,22 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [LLM Context Window Budgeter](../mcps/llm-context-window-budgeter.md) | Monitor and predict LLM context window exhaustion with precision token forecasting. |
 | [Local Advocacy Meeting Planner](../mcps/local-advocacy-meeting-planner.md) | Generate structured meeting agendas, speaker orders, and action plans for local advocacy. |
 | [Local Board Application Planner](../mcps/local-board-application-planner.md) | Transforms board candidacy data into actionable execution roadmaps. |
+| [Local Book Talk Attendance Planner](../mcps/local-book-talk-attendance-planner.md) | Evaluates literary event feasibility and generates logistical and intellectual participation plans. |
+| [Local Civic & Culture Visit Planner](../mcps/local-civic-culture-visit-planner.md) | Plan cultural visits with precise itineraries, registration tasks, and engagement agendas. |
+| [Local Culture Membership Decision Plan](../mcps/local-culture-membership-decision-plan.md) | Evaluate cultural memberships and create actionable utilization and renewal plans. |
 | [Local Donation Budget Planner](../mcps/local-donation-budget-planner.md) | Plan and schedule charitable giving with precise budget allocation and recordkeeping. |
 | [Local Event Attendance Planner](../mcps/local-event-attendance-planner.md) | Optimize your event schedule by resolving time conflicts, travel logistics, and budget constraints. |
+| [Local Experience Feedback Planner](../mcps/local-experience-feedback-planner.md) | Generate structured, factual, and low-disclosure feedback plans for local experiences. |
+| [Local Experience Group Agreement](../mcps/local-experience-group-agreement.md) | Generate structured group agreements, commitment timelines, and logistical frameworks for shared local activities. |
+| [Local Experience Membership Review Plan](../mcps/local-experience-membership-review-plan.md) | Analyze membership utility, optimize benefit usage, and plan future activities. |
+| [Local Experience Planner](../mcps/local-experience-planner.md) | Transform lifestyle constraints into a structured annual roadmap of local experiences. |
 | [Local Group Launch Plan](../mcps/local-group-launch-plan.md) | A strategic planning engine that transforms group concepts into actionable operational frameworks. |
+| [Local History Experience Planner](../mcps/local-history-experience-planner.md) | Transform historical site data into structured itineraries, preparation tasks, and engagement guides. |
+| [Local Library Experience Plan](../mcps/local-library-experience-plan.md) | Synthesize library requirements, membership status, and program availability into a comprehensive visit plan. |
 | [Local Library Participation Plan](../mcps/local-library-participation-plan.md) | Transform library program options and personal constraints into actionable calendars, signup tasks, and travel itineraries. |
 | [Local Networking Participation Plan](../mcps/local-networking-participation-plan.md) | Strategic planning engine for networking itineraries and follow-up schedules. |
 | [Local Time Converter](../mcps/local-time-converter.md) | Convert dates and times between different UTC offsets. |
+| [local-solo-exploration-plan](../mcps/local-solo-exploration-plan.md) | A structured planner for managing individual outings by synchronizing venue constraints with personal availability. |
 | [Lokalise](../mcps/lokalise.md) | Automate translation and localization workflows via Lokalise — manage projects, keys, and translations directly from any AI agent. |
 | [Long-Distance Care Coordination](../mcps/long-distance-care-coordination.md) | Orchestrate care for distant loved ones by synchronizing local support, remote assistance, and travel plans. |
 | [Long-Stay Visa Budget Planner](../mcps/long-stay-visa-budget-planner.md) | Plan the costs and timelines for long-stay visa applications. |
@@ -905,6 +926,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Mailosaur](../mcps/mailosaur.md) | Automate email and SMS testing and management via the Mailosaur REST API. |
 | [MakePlans](../mcps/makeplans.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [MakePlans](../mcps/makeplans-alternative.md) | Online booking and appointment scheduling via MakePlans MCP. |
+| [Maker-Space Access Planner](../mcps/maker-space-access-planner.md) | Evaluates user eligibility for maker-space access based on membership, training, and project constraints. |
 | [Makeup Use Count](../mcps/makeup-use-count.md) | Calculate product longevity and application frequency. |
 | [Manga Volume Counter](../mcps/manga-volume-counter.md) | Track and manage volume counts for your manga collections. |
 | [Marilyn vos Savant Probabilistic Clarity Prover](../mcps/marilyn-vos-savant-probabilistic-clarity-prover.md) | Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion. |
@@ -1177,6 +1199,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Savings Contribution Calculator](../mcps/savings-contribution-calculator.md) | Calculate total savings, progress toward goals, and future contribution schedules. |
 | [Savings Goal Progress](../mcps/savings-goal-progress.md) | Calculate savings progress, remaining amounts, and milestones. |
 | [SavvyCal](../mcps/savvycal.md) | Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI. |
+| [School Break Coverage Plan](../mcps/school-break-coverage-plan.md) | Synchronize childcare, adult schedules, and budgets into a foolproof holiday coverage plan. |
+| [School Document Deadline Planner](../mcps/school-document-deadline-planner.md) | Transforms school notices into structured submission workflows with safety buffers and signer dependency tracking. |
+| [School Event Attendance Planner](../mcps/school-event-attendance-planner.md) | Optimize family attendance for school events by balancing availability, childcare, and transport. |
+| [School Lunch Logistics Plan](../mcps/school-lunch-logistics-plan.md) | Transforms dietary rules, allergies, and budgets into actionable meal schedules and shopping lists. |
+| [School Morning Readiness Plan](../mcps/school-morning-readiness-plan.md) | Synchronize family routines using backward scheduling and task dependency logic. |
 | [School Start Time Impact Calculator](../mcps/school-start-time-impact-calculator.md) | Analyze how changing school start times affects adolescent sleep, academic performance, and long-term health. |
 | [School Supply Budgeter](../mcps/school-supply-budgeter.md) | Calculate and manage school supply costs with ease. |
 | [Screen Time Impact Calculator](../mcps/screen-time-impact-calculator.md) | Assess the physiological and productivity costs of digital device usage. |
@@ -1470,6 +1497,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Workload](../mcps/workload.md) | Build visual workflow automations that connect your favorite apps and eliminate repetitive manual tasks across your business. |
 | [Workout Density Calculator](../mcps/workout-density-calculator.md) | Quantify training intensity by analyzing volume, time, and recovery. |
 | [Workout Quality Index](../mcps/workout-quality-index.md) | Quantify and analyze the multidimensional quality of your training sessions. |
+| [Workshop Experience Planner](../mcps/workshop-experience-planner.md) | A decision-support engine that evaluates workshop compatibility by cross-referencing user preferences and provider requirements. |
 | [Worktile](../mcps/worktile.md) | Collaborative project management and team communication platform — manage tasks, projects, and messages via AI. |
 | [Workvivo](../mcps/workvivo.md) | Manage social posts, employee profiles, and collaboration spaces on Workvivo — the employee experience platform. |
 | [World Time (Keyless)](../mcps/world-time-keyless.md) | Get precise current atomic time, UTC offsets, and DST states for any timezone worldwide — no API key required. |
