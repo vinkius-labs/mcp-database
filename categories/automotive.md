@@ -8,9 +8,17 @@ Explore the open database of **automotive** Model Context Protocol (MCP) servers
 | [EV Battery Swap Queue Calculator](../mcps/ev-battery-swap-queue-calculator.md) | Estimate battery swap wait times and vehicle safety margins. |
 | [EV Range Anxiety Loop](../mcps/ev-range-anxiety-loop.md) | Simulate EV battery depletion and calculate necessary charging stops. |
 | [Fuel Tank Segment Simulator](../mcps/fuel-tank-segment-simulator.md) | Simulate fuel consumption and refueling events across multiple journey segments. |
+| [Motorcycle Gear Replacement Planner](../mcps/motorcycle-gear-replacement-planner.md) | Prioritize motorcycle safety gear replacements based on age, condition, and budget. |
 | [Repair History File](../mcps/repair-history-file.md) | Transform fragmented service data into structured, chronological maintenance records. |
 | [Repair Quote Comparison](../mcps/repair-quote-comparison.md) | Analyze and compare repair estimates to find the best value based on cost, labor, and warranty. |
+| [Roadside Kit Inventory Auditor](../mcps/roadside-kit-inventory-auditor.md) | Audits roadside emergency kits for missing or expired items and calculates replacement costs. |
 | [Speed vs Fuel Economy Tradeoff](../mcps/speed-vs-fuel-economy-tradeoff.md) | Calculate time saved vs extra fuel burned at higher speeds. |
+| [Tire Pressure Log Summary](../mcps/tire-pressure-log-summary.md) | Analyzes tire pressure logs to identify deviations, problematic positions, and maintenance schedules. |
+| [Tire Replacement Timeline Forecast](../mcps/tire-replacement-timeline-forecast.md) | Predict when vehicle tires will reach unsafe tread levels. |
+| [Trailer Towing & Load Safety Validator](../mcps/trailer-towing-load-safety-validator.md) | Validates towing capacity, payload, tongue weight, and axle loads for safe towing configurations. |
+| [Vehicle Cleaning Supply Planner](../mcps/vehicle-cleaning-supply-planner.md) | Calculates cleaning chemical requirements and purchase plans for vehicle fleets. |
+| [Vehicle Service Record Book](../mcps/vehicle-service-record-book.md) | Manage vehicle maintenance logs, track spending, and identify missing service intervals. |
+| [Vehicle Trim Comparison Engine](../mcps/vehicle-trim-comparison-engine.md) | Rank and compare vehicle trims using weighted scoring for price, features, and utility. |
 
 
 ---

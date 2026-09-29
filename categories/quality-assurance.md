@@ -10,6 +10,8 @@ Explore the open database of **quality-assurance** Model Context Protocol (MCP) 
 | [Failure Analysis Methodology](../mcps/failure-analysis-methodology.md) | A systematic framework for diagnosing component failures through environmental, visual, and mechanical analysis. |
 | [FAQ Clarity Analyzer](../mcps/faq-clarity-analyzer.md) | Audit FAQ content for naturalness, complexity, and readability consistency. |
 | [Guardrail Violation Detector](../mcps/guardrail-violation-detector.md) | Analyzes AI agent outputs for safety and compliance violations. |
+| [Repair Pickup Checklist](../mcps/repair-pickup-checklist.md) | Verify automotive or technical repairs against original work orders. |
+| [Repair Quality Review](../mcps/repair-quality-review.md) | Automated quality assurance that compares repair scopes against completion results. |
 
 
 ---

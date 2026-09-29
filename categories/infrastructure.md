@@ -33,6 +33,8 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [AWS SQS Calculator](../mcps/aws-sqs-calculator.md) | Calculate SQS payload strategies, throughput, and in-flight limits. |
 | [AWS SSM Parameter Store Sizing Calculator](../mcps/aws-ssm-parameter-store-sizing-calculator.md) | Deterministic sizing and validation tool for AWS Systems Manager Parameter Store configurations. |
 | [AWS Timestream Sizing Calculator](../mcps/aws-timestream-sizing-calculator.md) | Deterministic sizing engine for AWS Timestream workloads. |
+| [Backup Coverage Audit](../mcps/backup-coverage-audit.md) | Audit backup configurations to identify protection gaps, staleness, and redundancy. |
+| [Backup Storage Capacity Forecast](../mcps/backup-storage-capacity-forecast.md) | Predict backup storage consumption, exhaustion timelines, and required expansions. |
 | [Brunel Engineering Prover](../mcps/brunel-engineering-prover.md) | A warehouse system hit 3x its tested throughput on a Tuesday morning. Sorting stations jammed in 12 minutes. 4 hours of standstill. $180K in delayed shipments. The operations manual said 'should handle expected growth.' Nobody tested what 'expected' meant — or when it stopped being true. Brunel specified Box Tunnel's gradient to exactly 1 in 100. Every brick course counted. This tool forces that rigor: analyze what breaks at 10x/100x, map integration interfaces, specify exact tolerances, quantify risks with probability and blast radius, and challenge precedent at your scale. |
 | [Cathodic Protection Design](../mcps/cathodic-protection-design.md) | Design electrochemical cathodic protection systems for pipelines and structures using NACE standards. |
 | [CIDR IP Calculator](../mcps/cidr-ip-calculator.md) | Perform IPv4 and IPv6 subnet mathematics, including network boundaries and host range calculations. |
@@ -74,6 +76,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
 | [LNG Terminal Capacity Analyzer](../mcps/lng-terminal-capacity-analyzer.md) | Calculate LNG import terminal capacity, throughput, and storage utilization. |
 | [Load Balancer Distributor](../mcps/load-balancer-distributor.md) | Deterministic simulation engine for evaluating load balancing algorithms. |
+| [Local Storage Upgrade Planner](../mcps/local-storage-upgrade-planner.md) | Calculate required storage capacity, hardware configurations, and cost efficiency. |
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
 | [ML Experiment Tracking Cost Analyzer](../mcps/ml-experiment-tracking-cost-analyzer.md) | Calculate infrastructure, storage, and knowledge management costs for ML experiments. |
 | [Multi-Tenant Isolation Calculator](../mcps/multi-tenant-isolation-calculator.md) | Deterministic resource isolation and quota calculator for multi-tenant environments. |

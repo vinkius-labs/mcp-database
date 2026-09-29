@@ -7,13 +7,17 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 | [Accessible Ride Request Protocol](../mcps/accessible-ride-request-protocol.md) | Transforms complex accessibility needs and provider constraints into actionable ride request packages. |
 | [Accessible Transport Disruption Plan](../mcps/accessible-transport-disruption-plan.md) | Automated contingency protocols for users with accessibility needs during transport disruptions. |
 | [Activity Transport Rotation](../mcps/activity-transport-rotation.md) | Optimizes driver assignments and vehicle routing for group activities. |
+| [Bicycle Commute Readiness](../mcps/bicycle-commute-readiness.md) | Assess if you are prepared for your bike commute based on gear, weather, and timing. |
+| [Carpool Seat Rotation](../mcps/carpool-seat-rotation.md) | Automated rider assignment and vehicle scheduling based on capacity and fairness. |
 | [Driving Shift Planner](../mcps/driving-shift-planner.md) | Plan long-distance drives with mandatory rest periods. |
+| [EV Charging Stop Planner](../mcps/ev-charging-stop-planner.md) | Calculates optimal charging stops for electric vehicle routes. |
 | [Fuel Consumption Converter](../mcps/fuel-consumption-converter.md) | Deterministic bidirectional fuel efficiency conversion and trip cost estimation. |
 | [Fuel Refill Calculator](../mcps/fuel-refill-calculator.md) | Calculate required fuel refills and refueling schedules for any journey. |
 | [J&T Express Malaysia](../mcps/jt-express-malaysia.md) | Orchestrate J&T Express Malaysia logistics — track parcels, manage orders, and calculate shipping directly from any AI agent. |
 | [Lalamove Malaysia](../mcps/lalamove-malaysia.md) | Orchestrate Lalamove Malaysia deliveries — get quotations, manage orders, and track drivers directly from any AI agent. |
 | [MRT vs Grab Decision Engine](../mcps/mrt-vs-grab-decision-engine.md) | A deterministic decision tool to choose between MRT and ride-hailing in Singapore. |
 | [Route Average Speed](../mcps/route-average-speed.md) | Calculate average speed from distance and travel time. |
+| [School Run Route Timetable](../mcps/school-run-route-timetable.md) | Generates optimized departure timelines for school transport routes. |
 | [Trip Distance Average](../mcps/trip-distance-average.md) | Calculate average distances for individual travel legs and entire fleets. |
 
 

@@ -155,6 +155,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Asset Valuation DCF](../mcps/asset-valuation-dcf.md) | Calculate oil and gas asset NPV using discounted cash flow analysis. |
 | [ATR-Calculator](../mcps/atr-calculator.md) | Calculate Average True Range and classify market volatility. |
 | [Attraction Ticket Calculator](../mcps/attraction-ticket-calculator.md) | Calculate total revenue, tax impact, and tiered pricing for attraction visitors. |
+| [Auto Insurance Deductible Comparator](../mcps/auto-insurance-deductible-comparator.md) | Compare auto insurance policies by analyzing annual costs across different claim scenarios. |
 | [Awesome Oscillator Calculator](../mcps/awesome-oscillator-calculator.md) | Calculate Bill Williams' Awesome Oscillator and detect momentum patterns. |
 | [Babysitter Cost Calculator](../mcps/babysitter-cost-calculator.md) | Calculate babysitter compensation including overtime, complexity, and travel. |
 | [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
@@ -177,6 +178,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Bollinger Band Squeeze Strategy](../mcps/bollinger-band-squeeze-strategy.md) | Identify market volatility contractions and breakout signals using Bollinger Bands and Keltner Channels. |
 | [Bollinger Bands Calculator](../mcps/bollinger-bands-calculator.md) | Calculate volatility bands, squeeze states, and price positioning. |
 | [Bond Yield Calculator](../mcps/bond-yield-calculator.md) | Calculate YTM, Current Yield, and interest rate sensitivity for fixed-income bonds. |
+| [Brake Service Cost Forecaster](../mcps/brake-service-cost-forecaster.md) | Calculate detailed brake service budgets, axle-level costs, and compare service quotes. |
 | [Brazil CLT Payroll Calculator](../mcps/brazil-clt-payroll-calculator.md) | Calculate Brazil's CLT payroll components including INSS, IRRF, net pay, and employer costs. |
 | [Brazilian Income Tax & Social Security Calculator](../mcps/brazilian-income-tax-social-security-calculator.md) | Calculate Brazilian IRPF and INSS deductions for 2024/2025. |
 | [Break-even Analysis Tool](../mcps/break-even-analysis-tool.md) | Calculate break-even points, contribution margins, and sensitivity scenarios for agricultural enterprises. |
@@ -204,6 +206,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [CAPEX Efficiency Modeler](../mcps/capex-efficiency-modeler.md) | Quantify the financial impact of AI on capital expenditure and asset productivity. |
 | [CAPM Calculator](../mcps/capm-calculator.md) | Calculate expected asset returns using the Capital Asset Pricing Model (CAPM) and evaluate investment attractiveness. |
 | [Car True Cost Calculator](../mcps/car-true-cost-calculator.md) | Calculate the total 5-year cost of vehicle ownership, including depreciation and maintenance. |
+| [Car-Share Trip Settlement](../mcps/car-share-trip-settlement.md) | Settle shared car-use costs by calculating net amounts and minimum transfers. |
 | [Carbon Credit Farm Calculator](../mcps/carbon-credit-farm-calculator.md) | Estimate potential carbon credit generation from agricultural land use and sequestration models. |
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Care Expense Reimbursement Workflow](../mcps/care-expense-reimbursement-workflow.md) | Manage care-related expenses with receipt validation, share calculation, and automated reimbursement requests. |
@@ -320,6 +323,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Elder Impulse Strategy](../mcps/elder-impulse-strategy.md) | Deterministic trading signals using EMA and MACD momentum. |
 | [Elder Ray Index Calculator](../mcps/elder-ray-index-calculator.md) | Calculate Bulls Power, Bears Power, and detect market setups and divergences. |
 | [Elder-Ray Strategy](../mcps/elder-ray-strategy.md) | Deterministic trading signals using Bulls and Bears Power indicators. |
+| [Electric Vehicle Charge Cost Calculator](../mcps/electric-vehicle-charge-cost-calculator.md) | Calculate EV charging costs, distance efficiency, and monthly budget projections. |
 | [Embedding Economics Calculator](../mcps/embedding-economics-calculator.md) | Calculate the economic impact of embedding generation, including setup, maintenance, and optimization. |
 | [Emergency Fund Calculator](../mcps/emergency-fund-calculator.md) | Calculate your personalized emergency fund target and monthly savings plan. |
 | [Emergency Fund Drain Timeline](../mcps/emergency-fund-drain-timeline.md) | Predict how many days your emergency fund will last based on income loss and essential expenses. |
@@ -399,6 +403,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Expected Value vs Implied Probability](../mcps/expected-value-vs-implied-probability.md) | A deterministic decision-support tool for evaluating market edges and optimal position sizing. |
 | [Expense Growth Rate](../mcps/expense-growth-rate.md) | Calculate percentage changes between expense periods. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
+| [Extended Warranty Review Engine](../mcps/extended-warranty-review-engine.md) | Evaluate the economic value of extended warranties using reliability data and user priorities. |
 | [Fabric Cost Calculator](../mcps/fabric-cost-calculator.md) | Calculate fabric procurement costs including waste, MOQ, and bulk discounts. |
 | [Fan Cost Calculator](../mcps/fan-cost-calculator.md) | Calculate the electrical cost of running electric fans. |
 | [Farm Asset Depreciation Generator](../mcps/farm-asset-depreciation-generator.md) | Generate detailed depreciation schedules and tax impact analyses for farm assets using IRS guidelines. |
@@ -646,6 +651,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [OBV Calculator](../mcps/obv-calculator.md) | Deterministic On-Balance Volume (OBV) analysis engine. |
 | [Offshore Decommissioning Estimator](../mcps/offshore-decommissioning-estimator.md) | Calculate structural removal and well P&A costs for offshore energy facilities. |
 | [Oil and Gas Cost Inflation Forecast](../mcps/oil-and-gas-cost-inflation-forecast.md) | Forecast oil and gas project cost escalation using historical data and economic indicators. |
+| [Oil Change Supply Comparator](../mcps/oil-change-supply-comparator.md) | Compares total costs for oil change services including oil, filters, labor, and fees. |
 | [Oil Field Economics Model](../mcps/oil-field-economics-model.md) | Perform detailed economic analysis for oil field developments using DCF modeling. |
 | [Opening Range Breakout Strategy](../mcps/opening-range-breakout-strategy.md) | A deterministic intraday strategy that identifies price breakouts from the initial market opening range. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
@@ -753,7 +759,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Renewal Comparison Brief](../mcps/renewal-comparison-brief.md) | Compare insurance policy terms and generate renewal decision briefs. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
 | [Repair Budget & Release Plan](../mcps/repair-budget-release-plan.md) | Synchronize project budgets with verifiable milestone completion and gated payments. |
+| [Repair Budget Contingency Plan](../mcps/repair-budget-contingency-plan.md) | Analyze repair budgets, quantify financial uncertainty, and generate contingency strategies. |
 | [Repair Cost Approval Plan](../mcps/repair-cost-approval-plan.md) | Automates repair cost authorization workflows by applying financial rules and stage-based constraints. |
+| [Repair Payment Milestone Plan](../mcps/repair-payment-milestone-plan.md) | Automated engine to transform repair quotes into verifiable payment release schedules. |
 | [Repair-or-Replace Decision Engine](../mcps/repair-or-replace-decision-engine.md) | An automated decision-support engine that evaluates whether to repair an existing asset or replace it with a new one. |
 | [Reserve Replacement Ratio Calculator](../mcps/reserve-replacement-ratio-calculator.md) | Calculate critical petroleum industry metrics like RRR, Reserve Life Index, and F&D costs. |
 | [Resolution Date Proximity Fade](../mcps/resolution-date-proximity-fade.md) | A deterministic mean-reversion strategy for exploiting liquidity premiums near market resolution. |
@@ -951,6 +959,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US State Tax Calculator](../mcps/us-state-tax-calculator.md) | Calculate US state income tax rates and liabilities based on residency and taxable income. |
 | [US WARN Act Compliance Calculator](../mcps/us-warn-act-compliance-calculator.md) | Calculate employer liabilities and verify compliance with the US WARN Act. |
 | [US Wrongful Termination Calculator](../mcps/us-wrongful-termination-calculator.md) | Estimate potential financial damages and legal liabilities for US wrongful termination claims. |
+| [Used Vehicle Inspection Budget Calculator](../mcps/used-vehicle-inspection-budget-calculator.md) | Calculate total acquisition costs, repair subtotals, and maximum purchase offers for used vehicles. |
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |
 | [Valuation Revenue Multiple Estimator](../mcps/valuation-revenue-multiple-estimator.md) | Estimate startup valuations using revenue multiples, growth adjustments, and sensitivity analysis. |
 | [Value Engineering Comparator](../mcps/value-engineering-comparator.md) | Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-Investment Ratios. |

@@ -7,6 +7,7 @@ Explore the open database of **property-management** Model Context Protocol (MCP
 | [Accessibility Repair Request Brief](../mcps/accessibility-repair-request-brief.md) | Generate professional accessibility repair documentation, provider scope questions, and implementation timelines. |
 | [Emergency Repair Contact Roster](../mcps/emergency-repair-contact-roster.md) | Generates prioritized emergency response workflows and printable contact rosters. |
 | [Leak Response Coordination Plan](../mcps/leak-response-coordination-plan.md) | Generates structured emergency response protocols for water or fluid leaks, prioritizing safety and insurance compliance. |
+| [Repair Access Arrangement](../mcps/repair-access-arrangement.md) | Coordinates technician visits by validating property access rules and availability. |
 | [Repair Record Retention Plan](../mcps/repair-record-retention-plan.md) | Organize, schedule, and control access to property repair documentation. |
 | [Weather Damage Claim Plan](../mcps/weather-damage-claim-plan.md) | Generate structured notification workflows and safety-first mitigation task plans for weather-related property damage. |
 

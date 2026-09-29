@@ -28,6 +28,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
 | [Parts Compatibility Plan](../mcps/parts-compatibility-plan.md) | Validate part compatibility and generate purchase and installation plans. |
+| [Parts Return Preparation](../mcps/parts-return-preparation.md) | Generates structured packing and dispatch checklists for industrial and automotive part returns. |
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
 | [Petrochemical Complex Planner](../mcps/petrochemical-complex-planner.md) | Optimize product slates, unit capacities, and feedstock mixes for integrated petrochemical complexes. |

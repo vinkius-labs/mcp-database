@@ -14,6 +14,7 @@ Explore the open database of **insurance** Model Context Protocol (MCP) servers.
 | [Renewal Document Pack](../mcps/renewal-document-pack.md) | Reconcile renewal questionnaires against policy data, asset changes, and evidence files. |
 | [Roof Service Coordination Plan](../mcps/roof-service-coordination-plan.md) | Synchronize property inspections, contractor quotes, and insurance deadlines into actionable maintenance timelines. |
 | [Theft Claim Item File Processor](../mcps/theft-claim-item-file-processor.md) | Transforms raw theft incident data into structured, evidentiary claim files. |
+| [Vehicle Warranty Coverage Check](../mcps/vehicle-warranty-coverage-check.md) | Evaluates vehicle repair items against warranty terms, mileage limits, and exclusions. |
 
 
 ---

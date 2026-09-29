@@ -57,6 +57,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [DPS Damage Balance Calculator](../mcps/dps-damage-balance-calculator.md) | Deterministic combat math for calculating raw DPS, effective DPS, and time to kill. |
 | [Durian Value-Yield Calculator](../mcps/durian-value-yield-calculator.md) | Calculate the true edible yield and cost-efficiency of durian varieties. |
 | [Electrical Circuit Calculator](../mcps/electrical-circuit-calculator.md) | Verify residential electrical compliance, voltage drop, and breaker adequacy using NEC standards. |
+| [EV Home Charging Scheduler](../mcps/ev-home-charging-scheduler.md) | Calculate optimal EV charging schedules within off-peak electricity windows. |
 | [Fashion Size Table Lookup](../mcps/fashion-size-table-lookup.md) | Maps physical body measurements to standardized apparel sizes across different regional sizing systems. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |

@@ -9,6 +9,7 @@ Explore the open database of **crm** Model Context Protocol (MCP) servers.
 | [Enterprise Demo Conversion Analytics](../mcps/enterprise-demo-conversion-analytics.md) | Analyze sales demonstration efficiency and effectiveness metrics. |
 | [Enterprise Sales Stage Conversion](../mcps/enterprise-sales-stage-conversion.md) | Analyze sales funnel efficiency, stage velocity, and optimization priorities. |
 | [Enterprise SEQ Score Calculator](../mcps/enterprise-seq-score-calculator.md) | Measure sales engagement effectiveness using the SEQ methodology. |
+| [Warranty Contact Calendar](../mcps/warranty-contact-calendar.md) | Generates proactive customer communication schedules based on warranty timelines and case milestones. |
 
 
 ---

@@ -5,6 +5,8 @@ Explore the open database of **legal-tech** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Enterprise Negotiation Cycle Time](../mcps/enterprise-negotiation-cycle-time.md) | Analyze negotiation timelines, round efficiency, and stakeholder impact. |
+| [Repair Service Agreement Auditor](../mcps/repair-service-agreement-auditor.md) | Audit service agreements to identify missing contractual components and generate actionable checklists. |
+| [Warranty Exclusion Question Set](../mcps/warranty-exclusion-question-set.md) | Generates neutral, fact-based inquiries to bridge defects and warranty exclusions. |
 
 
 ---

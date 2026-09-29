@@ -7,6 +7,7 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [Diese](../mcps/diese.md) | Equip your AI agent to manage ERP projects, track invoices, and monitor resource planning via the Diese API. |
 | [Enterprise Implementation Duration](../mcps/enterprise-implementation-duration.md) | Calculate precise implementation timelines, resource needs, and risk profiles for large-scale software deployments. |
 | [Enterprise Pilot Scope Optimizer](../mcps/enterprise-pilot-scope-optimizer.md) | Calculates optimal pilot scope, duration, and success alignment. |
+| [Estimate Scope Reconciliation](../mcps/estimate-scope-reconciliation.md) | Detect discrepancies between project baselines and revised estimates to generate approval checklists. |
 | [Flooring Project Handoff Plan](../mcps/flooring-project-handoff-plan.md) | Orchestrate flooring renovations with precise move-out plans, delivery checklists, and installation schedules. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
 | [Innovation Time-to-Market Engine](../mcps/innovation-time-to-market-engine.md) | Calculate and optimize product development timelines, critical paths, and acceleration strategies. |
@@ -19,6 +20,7 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [ProofHub](../mcps/proofhub.md) | Empower your AI agent to manage your ProofHub projects — list tasks, create to-dos, read discussions, and track timesheets instantly. |
 | [Public Art Proposal Planner](../mcps/public-art-proposal-planner.md) | Transform fragmented art call briefs into structured submission strategies and compliance checklists. |
 | [Repair Contingency Response Plan](../mcps/repair-contingency-response-plan.md) | Automated risk assessment and contingency planning for repair projects. |
+| [Repair Scope Change Request Assistant](../mcps/repair-scope-change-request-assistant.md) | Draft factual scope-change requests and response deadlines for project management. |
 | [Sprint Velocity Trend](../mcps/sprint-velocity-trend.md) | Analyzes historical sprint performance to forecast capacity and identify velocity patterns. |
 | [Technical Debt Ratio Analyzer](../mcps/technical-debt-ratio-analyzer.md) | Calculates technical debt accumulation and provides strategic investment recommendations. |
 | [Venture Studio Timeline Planner](../mcps/venture-studio-timeline-planner.md) | Estimate venture launch timelines and identify critical bottlenecks. |

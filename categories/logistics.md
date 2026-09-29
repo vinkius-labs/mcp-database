@@ -9,10 +9,12 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Accessible Outdoor Activity Planner](../mcps/accessible-outdoor-activity-planner.md) | Generates participation readiness, role assignments, and coordination logistics for accessible outdoor excursions. |
 | [Accessible Ticketing Decision Plan](../mcps/accessible-ticketing-decision-plan.md) | Evaluates ticket availability and purchase feasibility by prioritizing mandatory accessibility needs and budget constraints. |
 | [Accessible Transit Enrollment Planner](../mcps/accessible-transit-enrollment-planner.md) | Maps transport service rules to actionable application sequences and document checklists. |
+| [Accessible Vehicle Transfer Planner](../mcps/accessible-vehicle-transfer-planner.md) | Coordinates mobility equipment transfers by checking vehicle compatibility, staff availability, and scheduling conflicts. |
 | [Accessible Venue Arrival Plan](../mcps/accessible-venue-arrival-plan.md) | Transforms venue accessibility data and user needs into precise arrival and departure strategies. |
 | [Art Installation Approval Plan](../mcps/art-installation-approval-plan.md) | A decision-support engine for evaluating art installation compliance and readiness. |
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
+| [Battery Replacement Readiness](../mcps/battery-replacement-readiness.md) | Plan battery replacements by analyzing age, warranty, and budget requirements. |
 | [Beach Towel Calculator](../mcps/beach-towel-calculator.md) | Calculate total towel requirements and group service tiers. |
 | [Beverage Ice Volume Calculator](../mcps/beverage-ice-volume-calculator.md) | Calculate precise ice requirements for beverage service. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
@@ -20,6 +22,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
 | [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
 | [Creative Exhibition Submission Plan](../mcps/creative-exhibition-submission-plan.md) | An intelligent decision-support engine that evaluates artist works against exhibition calls to generate actionable submission strategies. |
+| [Delivery Route Stop Sequencer](../mcps/delivery-route-stop-sequencer.md) | Optimize delivery routes by calculating efficient stop sequences and timing. |
 | [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
 | [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
 | [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
@@ -37,6 +40,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
 | [LNG Carrier Fleet Sizer](../mcps/lng-carrier-fleet-sizer.md) | Optimize LNG fleet sizing and logistics planning. |
+| [Loaner Item Plan](../mcps/loaner-item-plan.md) | Manages loaner item reservations, availability, and return logistics. |
 | [Local Culture Plan Engine](../mcps/local-culture-plan-engine.md) | Generates feasible visit sequences and logistics for cultural outings. |
 | [Local Experience Weather Contingency Plan](../mcps/local-experience-weather-contingency-plan.md) | Evaluate outdoor activities against weather thresholds and provider rules to generate actionable contingency plans. |
 | [Local Group Reservation Coordinator](../mcps/local-group-reservation-coordinator.md) | Coordinates group reservations by aligning participant commitments with venue policies. |
@@ -67,7 +71,9 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Preparedness Storage Layout Plan](../mcps/preparedness-storage-layout-plan.md) | Organize emergency supplies using accessibility, weight, and rotation rules. |
 | [Print Edition Release Planner](../mcps/print-edition-release-planner.md) | Automated planning engine for print edition viability, pre-production, and fulfillment. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
+| [Repair Vendor Selection Engine](../mcps/repair-vendor-selection-engine.md) | A decision-support engine that evaluates and selects the optimal repair service provider based on user priorities. |
 | [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |
+| [Scooter Charge & Range Planner](../mcps/scooter-charge-range-planner.md) | Manage electric scooter energy constraints and trip feasibility. |
 | [Seat Count Calculator](../mcps/seat-count-calculator.md) | Calculate required vehicles and fleet efficiency for traveler groups. |
 | [Shipping Route Optimization](../mcps/shipping-route-optimization.md) | Optimize maritime routes for tankers using weather-aware routing and fuel efficiency calculations. |
 | [Short-Term Mine Planning Optimizer](../mcps/short-term-mine-planning-optimizer.md) | Aligns equipment, grade, and stockpiles into actionable mining schedules. |
