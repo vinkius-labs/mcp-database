@@ -34,29 +34,29 @@ Connect your **Tatum** account to any AI agent to streamline blockchain infrastr
 
 
 ## Available Tools (11)
-- **cancel_subscription**: Provide the unique subscription ID to proceed.
-
-Cancel a webhook subscription
 - **create_subscription**: ).
 
 Create a webhook subscription
 - **create_virtual_account**: Create a virtual account (off-chain ledger)
 - **estimate_evm_gas**: Estimate EVM gas limit and price
+- **get_recommended_fee**: Get recommended fee for a blockchain
+- **get_wallet_portfolio**: Get wallet portfolio balances
+- **estimate_transaction_fee**: ).
+
+Estimate transaction fee
+- **cancel_subscription**: Provide the unique subscription ID to proceed.
+
+Cancel a webhook subscription
 - **get_exchange_rate**: Specify the asset symbol and base pair.
 
 Get exchange rate for a crypto or fiat asset
-- **get_recommended_fee**: Get recommended fee for a blockchain
 - **get_transaction_history**: Specify a time range using blockFrom and blockTo.
 
 Get transaction history for an address
 - **get_virtual_account_balance**: Get virtual account balance
-- **get_wallet_portfolio**: Get wallet portfolio balances
 - **list_subscriptions**: Use this tool to list all subscriptions for a given address.
 
 List active webhook subscriptions
-- **estimate_transaction_fee**: ).
-
-Estimate transaction fee
 
 
 ## 💬 Prompt Examples

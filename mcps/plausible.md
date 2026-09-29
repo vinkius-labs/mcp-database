@@ -40,26 +40,26 @@ Get visitors by country
 - **get_aggregate_stats**: , for a period (e.g., "30d", "7d", "day").
 
 Get aggregate site statistics
-- **get_top_sources**: Use this tool to analyze where traffic originates.
+- **get_top_browsers**: Use this tool to understand browser usage statistics.
 
-Get top traffic sources
+Get visitors by browser
 - **get_custom_breakdown**: g., "visit:source", "event:page").
 
 Get breakdown by custom property
 - **get_realtime_visitors**: Get current active visitors
 - **get_timeseries_stats**: Get site stats over time
-- **get_top_browsers**: Use this tool to understand browser usage statistics.
-
-Get visitors by browser
 - **get_top_devices**: Use this tool to analyze device usage patterns.
 
 Get visitors by device type
-- **get_top_os**: Use this tool to analyze OS-specific traffic data.
-
-Get visitors by operating system
 - **get_top_pages**: Use this tool to identify high-traffic content.
 
 Get most visited pages
+- **get_top_os**: Use this tool to analyze OS-specific traffic data.
+
+Get visitors by operating system
+- **get_top_sources**: Use this tool to analyze where traffic originates.
+
+Get top traffic sources
 
 
 ## 💬 Prompt Examples

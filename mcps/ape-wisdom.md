@@ -34,9 +34,6 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 
 
 ## Available Tools (10)
-- **get_sentiment_leaders**: Specify a filter if needed.
-
-Get assets with the highest positive sentiment
 - **get_top_gainers**: Specify a filter if needed.
 
 Get assets with the highest mention growth in the last 24h
@@ -49,12 +46,6 @@ List trending stocks and crypto from all boards
 - **list_trending_4chan**: This operation runs asynchronously and does not require parameters.
 
 List trending assets from 4chan boards
-- **list_trending_crypto**: Use this tool only for crypto-related queries.
-
-List trending cryptocurrencies from crypto-focused subreddits
-- **list_trending_stocks**: Use this tool only for stock-related queries.
-
-List trending stocks from stock-focused subreddits
 - **list_trending_subreddit**: Provide the subreddit name as the primary argument.
 
 List trending assets from a specific subreddit
@@ -64,6 +55,15 @@ List trending assets specifically from r/wallstreetbets
 - **search_ticker**: Provide the ticker symbol to narrow the search.
 
 Search for a specific ticker or coin in the trending lists
+- **get_sentiment_leaders**: Specify a filter if needed.
+
+Get assets with the highest positive sentiment
+- **list_trending_crypto**: Use this tool only for crypto-related queries.
+
+List trending cryptocurrencies from crypto-focused subreddits
+- **list_trending_stocks**: Use this tool only for stock-related queries.
+
+List trending stocks from stock-focused subreddits
 
 
 ## 💬 Prompt Examples

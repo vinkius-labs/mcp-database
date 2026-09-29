@@ -35,6 +35,7 @@ Connect your **Nutshell CRM** account to your AI agent and take control of your 
 
 
 ## Available Tools (10)
+- **universal_search**: Search across all entities
 - **list_activities**: List CRM activities
 - **list_activity_types**: g. Phone Call, Email) available for logging.
 
@@ -44,7 +45,6 @@ List available activity types
 - **get_account_details**: Get specific account info
 - **get_contact_details**: Get specific contact details
 - **list_custom_fields**: List CRM custom fields
-- **universal_search**: Search across all entities
 - **get_lead_details**: Get specific lead info
 - **list_accounts**: Find and list business accounts
 

@@ -26,24 +26,24 @@ Connect your **Brankas** Open Finance account to any AI agent and orchestrate yo
 
 
 ## Available Tools (8)
+- **get_balance**: Verify the account is linked before execution.
+
+Retrieve linked bank account balances
 - **get_identities**: Use this tool only when the user explicitly requests identity information.
 
 Retrieve linked identity data
 - **get_statement**: Ensure the account is linked before calling this tool.
 
 Retrieve linked bank statement data
-- **create_checkout**: Provide both the amount and currency.
-
-Create a new Direct payment checkout session
 - **get_transaction**: Must provide a transaction ID.
 
 Get status of a Direct payment transaction
+- **create_checkout**: Provide both the amount and currency.
+
+Create a new Direct payment checkout session
 - **get_transfer_status**: Must provide a transfer ID.
 
 Get status of a Disburse transfer
-- **get_balance**: Verify the account is linked before execution.
-
-Retrieve linked bank account balances
 - **inter_bank_transfer**: Specify the amount, currency, and all beneficiary details.
 
 Initiate an inter-bank disbursement (payout)

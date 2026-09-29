@@ -32,9 +32,6 @@ Connect your **Google Contacts** directory to any AI agent and take full control
 
 
 ## Available Tools (9)
-- **get_contact_group**: Provide the exact resource name of the group.
-
-Retrieves a specific contact group by resource name
 - **create_contact_group**: 
 - **get_contact**: Gets the full details of a specific contact
 - **list_contact_groups**: Lists the user's contact groups (or labels)
@@ -45,6 +42,9 @@ Retrieves a specific contact group by resource name
 - **update_contact**: Must provide an etag obtained from get_contact.
 
 Updates an existing contact
+- **get_contact_group**: Provide the exact resource name of the group.
+
+Retrieves a specific contact group by resource name
 
 
 ## 💬 Prompt Examples

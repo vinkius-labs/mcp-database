@@ -34,21 +34,21 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 
 
 ## Available Tools (10)
-- **get_tenant_config**: This function requires no arguments.
-
-Retrieve core tenant configuration
-- **get_interaction_details**: Use the interaction’s unique ID.
-
-Get metadata for a specific interaction
 - **get_realtime_stats**: Get real-time contact center statistics
 - **get_user**: Provide the user’s ID.
 
 Get details of a specific user
+- **list_teams**: List all agent teams
+- **get_interaction_details**: Use the interaction’s unique ID.
+
+Get metadata for a specific interaction
+- **get_tenant_config**: This function requires no arguments.
+
+Retrieve core tenant configuration
 - **list_campaigns**: List all outbound campaigns
 - **list_interactions**: List recent interactions (calls, chats)
 - **list_services**: List all contact center services
 - **list_skills**: List all configured agent skills
-- **list_teams**: List all agent teams
 - **list_users**: List all contact center users
 
 

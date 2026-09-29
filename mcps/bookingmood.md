@@ -35,12 +35,12 @@ Connect your **Bookingmood** rental management account to any AI agent and orche
 
 
 ## Available Tools (10)
-- **delete_booking**: Use only when the booking must be deleted and cannot be modified.
-
-Delete/cancel a booking permanently
 - **list_calendar_events**: List raw calendar events (blocks)
 - **list_contacts**: List guest contacts
 - **search_availability**: Search for available products across dates
+- **delete_booking**: Use only when the booking must be deleted and cannot be modified.
+
+Delete/cancel a booking permanently
 - **create_booking**: Create a new booking
 - **get_product**: Get details of a specific rental product
 - **list_bookings**: List all current bookings

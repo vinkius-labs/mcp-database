@@ -35,25 +35,25 @@ Connect your **OvationCXM (BoomTown)** account to any AI agent and orchestrate y
 
 ## Available Tools (10)
 - **list_teams**: List all support teams
-- **get_customer**: Ensure the ID matches the customer record.
-
-Get details of a specific customer
 - **get_journey**: The ID must be a valid journey identifier.
 
 Get details of a specific journey
 - **get_issue**: The ID must be a valid issue identifier.
 
 Get details of a specific issue
-- **get_team**: The ID must be a valid team identifier.
-
-Get details of a specific team
-- **get_organization**: The ID must be a valid organization identifier.
-
-Get details of a specific organization
 - **list_customers**: List all customers/end-users
 - **list_issues**: List all support issues/cases
 - **list_journeys**: List all customer journeys
 - **list_organizations**: List all organizations
+- **get_customer**: Ensure the ID matches the customer record.
+
+Get details of a specific customer
+- **get_organization**: The ID must be a valid organization identifier.
+
+Get details of a specific organization
+- **get_team**: The ID must be a valid team identifier.
+
+Get details of a specific team
 
 
 ## 💬 Prompt Examples

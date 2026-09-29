@@ -34,19 +34,19 @@ Connect your **Brandwatch Consumer Research** account to any AI agent and orches
 
 
 ## Available Tools (8)
-- **create_tag**: Supply the project ID and the desired tag name.
-
-Create a new tag for categorizing mentions
 - **list_queries**: Supply the project ID to scope the query list.
 
 List configured queries in a project
-- **get_project**: Provide the project ID to ensure accurate data retrieval.
-
-Get details of a specific project
 - **list_dashboards**: Pass the project ID to fetch the available dashboards.
 
 List dashboards in a project
 - **get_mentions**: Retrieve mentions for a specific query
+- **create_tag**: Supply the project ID and the desired tag name.
+
+Create a new tag for categorizing mentions
+- **get_project**: Provide the project ID to ensure accurate data retrieval.
+
+Get details of a specific project
 - **get_volume_aggregates**: Provide project, query, and date ranges to execute the calculation.
 
 Get mention volume aggregates for a query
