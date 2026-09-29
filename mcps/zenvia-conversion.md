@@ -35,14 +35,14 @@ Connect your **Zenvia Conversion** (formerly Sirena) account to any AI agent to 
 
 ## Available Tools (10)
 - **list_agents**: List agents in the account
-- **get_prospect**: Must provide the prospect ID.
-
-Get detailed information about a specific prospect
 - **list_groups**: List agent groups
 - **list_interactions**: List interactions for a prospect
 - **list_prospects**: List all prospects in Zenvia Conversion
 - **send_template**: Send a message template (HSM) to a prospect
 - **list_labels**: List labels
+- **get_prospect**: Must provide the prospect ID.
+
+Get detailed information about a specific prospect
 - **create_lead**: You can include contact details and an initial message (comment).
 
 Create a new lead in Zenvia Conversion

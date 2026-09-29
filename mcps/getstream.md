@@ -34,22 +34,56 @@ Connect **GetStream** to your AI agent to orchestrate complex social architectur
 
 
 ## Available Tools (23)
+- **upload_file**: The file data must be provided in the file_data parameter.
+
+Upload a file
+- **upload_image**: The image data must be provided in the image_data parameter.
+
+Upload an image
 - **add_activity_to_feed**: Add an activity to a feed
+- **get_open_graph**: Provide the URL to be scraped in the url parameter.
+
+Scrape Open Graph data from a URL
+- **partial_update_activity**: Partially update activity data
+- **remove_activity_from_feed**: Remove an activity from a feed
+- **get_activities**: Retrieve specific activities by ID or foreign ID
+- **process_image**: Provide the image URL and required dimensions (w, h).
+
+Process or resize an image
+- **get_feed**: Supports pagination.
+
+Retrieve activities in a feed
+- **batch_follow**: Ensure the follows array contains complete follow objects.
+
+Batch follow multiple feeds
 - **batch_get_collections**: Batch retrieve collections
+- **add_to_collection**: The data must be a valid object.
+
+Add objects to a collection
+- **batch_delete_collections**: Provide a payload containing the collections to be deleted.
+
+Batch delete collections
 - **batch_post_collections**: Pass the entire payload in the data parameter.
 
 Batch create/update collections
+- **delete_collection_object**: Provide the collection name and the object ID to delete.
+
+Delete an individual collection object
+- **delete_file**: The URL must point to the file to be deleted.
+
+Delete a file by URL
 - **follow_feed**: Use the target format (e.g., user:456) for the target parameter.
 
 Follow a target feed
 - **get_collection_object**: Both parameters are required.
 
 Retrieve an individual collection object
-- **get_open_graph**: Provide the URL to be scraped in the url parameter.
+- **list_feed_followers**: Provide both the feed slug and user ID.
 
-Scrape Open Graph data from a URL
-- **partial_update_activity**: Partially update activity data
-- **remove_activity_from_feed**: Remove an activity from a feed
+List feeds following this feed
+- **list_feed_follows**: Provide both the feed slug and user ID.
+
+List feeds this feed follows
 - **unfollow_feed**: Use the target format (e.g., user:456) for the target parameter.
 
 Unfollow a target feed
@@ -59,40 +93,6 @@ Update activity metadata
 - **update_collection_object**: Specify the collection name, object ID, and new data.
 
 Update an individual collection object
-- **upload_file**: The file data must be provided in the file_data parameter.
-
-Upload a file
-- **upload_image**: The image data must be provided in the image_data parameter.
-
-Upload an image
-- **batch_delete_collections**: Provide a payload containing the collections to be deleted.
-
-Batch delete collections
-- **delete_collection_object**: Provide the collection name and the object ID to delete.
-
-Delete an individual collection object
-- **delete_file**: The URL must point to the file to be deleted.
-
-Delete a file by URL
-- **get_activities**: Retrieve specific activities by ID or foreign ID
-- **process_image**: Provide the image URL and required dimensions (w, h).
-
-Process or resize an image
-- **add_to_collection**: The data must be a valid object.
-
-Add objects to a collection
-- **batch_follow**: Ensure the follows array contains complete follow objects.
-
-Batch follow multiple feeds
-- **get_feed**: Supports pagination.
-
-Retrieve activities in a feed
-- **list_feed_followers**: Provide both the feed slug and user ID.
-
-List feeds following this feed
-- **list_feed_follows**: Provide both the feed slug and user ID.
-
-List feeds this feed follows
 
 
 ## 💬 Prompt Examples

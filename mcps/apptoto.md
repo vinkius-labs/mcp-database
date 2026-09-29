@@ -40,10 +40,10 @@ No more manual status checking of reminder logs or digging through fragmented co
 - **list_messages**: List recent messages
 - **get_appointment**: Get appointment details
 - **list_address_books**: List all address books
+- **list_contacts**: List contacts in an address book
 - **list_calendars**: Do not call this tool if no calendars are expected.
 
 List connected calendars
-- **list_contacts**: List contacts in an address book
 
 
 ## 💬 Prompt Examples

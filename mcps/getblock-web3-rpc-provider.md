@@ -40,76 +40,76 @@ Create a transaction in the Partially Signed Bitcoin Transaction format
 - **btc_getbestblockhash**: Do not provide any arguments.
 
 Get the hash of the best (tip) block
-- **debug_trace_block_by_number**: Requires a hex block number.
-
-Get traces for all transactions in a block
-- **eth_estimate_gas**: Pass a JSON string containing the transaction details.
-
-Estimate gas necessary to allow the transaction to complete
 - **sol_get_latest_blockhash**: Do not provide any arguments.
 
 Get the latest blockhash from the ledger
 - **sol_send_transaction**: Provide the signed transaction string as the argument.
 
 Submit a signed transaction to the cluster for processing
+- **btc_analyzepsbt**: Pass the PSBT string as the argument.
+
+Analyze and provide information about a PSBT
+- **btc_getblockchaininfo**: Do not provide any arguments.
+
+Get an object containing various state info regarding blockchain processing
+- **btc_getblockcount**: Do not provide any arguments.
+
+Get the number of blocks in the longest blockchain
 - **sol_get_transaction**: Pass the transaction signature as the argument.
 
 Get transaction details for a confirmed transaction signature
 - **eth_get_code**: Must provide a valid address.
 
 Get code at a given address
-- **eth_get_transaction_by_hash**: Provide the hash as a string.
-
-Get information about a transaction by hash
-- **btc_analyzepsbt**: Pass the PSBT string as the argument.
-
-Analyze and provide information about a PSBT
-- **btc_getblockcount**: Do not provide any arguments.
-
-Get the number of blocks in the longest blockchain
-- **btc_getblockchaininfo**: Do not provide any arguments.
-
-Get an object containing various state info regarding blockchain processing
 - **btc_sendrawtransaction**: Use this tool only for fully serialized, hex-encoded transactions.
 
 Submit raw transaction (serialized, hex-encoded) to local node and network
-- **debug_trace_call**: Provide a transaction object as the argument.
+- **debug_trace_block_by_number**: Requires a hex block number.
 
-Run an eth_call within the context of the given block execution
+Get traces for all transactions in a block
 - **debug_trace_transaction**: Provide the hash as a string.
 
 Get all traces of a given transaction
 - **eth_accounts**: Requires no parameters.
 
 Get a list of addresses owned by client
-- **eth_block_number**: Requires no parameters.
-
-Get the number of the most recent block
 - **eth_call**: Pass a JSON string for the transaction object.
 
 Execute a new message call immediately without creating a transaction
+- **eth_estimate_gas**: Pass a JSON string containing the transaction details.
+
+Estimate gas necessary to allow the transaction to complete
 - **eth_get_balance**: Must provide a valid address.
 
 Get the balance of an Ethereum account
+- **debug_trace_call**: Provide a transaction object as the argument.
+
+Run an eth_call within the context of the given block execution
+- **eth_block_number**: Requires no parameters.
+
+Get the number of the most recent block
 - **eth_get_block_by_hash**: Provide the hash as a string.
 
 Get information about a block by hash
-- **eth_get_block_by_number**: Use "latest" for the current block.
-
-Get information about a block by block number
+- **rpc_call**: Execute any generic JSON-RPC method via GetBlock
 - **eth_get_transaction_receipt**: Provide the hash as a string.
 
 Get the receipt of a transaction by hash
-- **rpc_call**: Execute any generic JSON-RPC method via GetBlock
-- **sol_get_account_info**: Pass the account Pubkey as the argument.
-
-Get all information associated with the account of provided Pubkey
 - **sol_get_balance**: Pass the account Pubkey as the argument.
 
 Get the balance of the provided Pubkey
 - **sol_get_token_account_balance**: Pass the SPL Token Account Pubkey as the argument.
 
 Get the token balance of an SPL Token account
+- **eth_get_block_by_number**: Use "latest" for the current block.
+
+Get information about a block by block number
+- **eth_get_transaction_by_hash**: Provide the hash as a string.
+
+Get information about a transaction by hash
+- **sol_get_account_info**: Pass the account Pubkey as the argument.
+
+Get all information associated with the account of provided Pubkey
 
 
 ## 💬 Prompt Examples

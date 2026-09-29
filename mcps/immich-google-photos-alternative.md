@@ -40,44 +40,44 @@ Get details for a specific person
 
 Get details for a specific user
 - **list_assets**: List all assets (photos/videos) in Immich
-- **list_persons**: Use this to find a person’s unique identifier.
-
-List all recognized persons in Immich
-- **list_tags**: Use this to find a tag’s unique identifier.
-
-List all tags in Immich
 - **get_server_info**: Get Immich server version and status information
 - **update_asset**: g., isFavorite).
 
 Update an existing Immich asset
-- **update_person**: Supply the person’s UUID and the data payload.
-
-Update an existing person (e.g., change name)
-- **update_tag**: Supply the tag’s UUID and the data payload.
-
-Update an existing tag
 - **upload_asset**: Upload a new photo or video to Immich
-- **get_tag**: Pass the tag’s UUID to fetch the information.
-
-Get details for a specific tag
 - **create_album**: Supply a JSON payload containing the album details.
 
 Create a new album
-- **list_albums**: Do not specify any parameters.
+- **create_person**: Supply a JSON payload with the person’s details.
 
-List all albums in Immich
+Create a new person record
 - **create_user**: Supply a JSON payload with the required user details.
 
 Create a new user
 - **delete_album**: Use the album UUID to identify the target album.
 
 Delete an album
-- **delete_person**: Use the person’s UUID to identify the record.
-
-Delete a person record
 - **delete_tag**: Provide the UUID of the tag to be deleted.
 
 Delete a tag
+- **get_tag**: Pass the tag’s UUID to fetch the information.
+
+Get details for a specific tag
+- **list_albums**: Do not specify any parameters.
+
+List all albums in Immich
+- **list_persons**: Use this to find a person’s unique identifier.
+
+List all recognized persons in Immich
+- **list_tags**: Use this to find a tag’s unique identifier.
+
+List all tags in Immich
+- **list_users**: No authentication is required for this query.
+
+List all users in Immich
+- **delete_person**: Use the person’s UUID to identify the record.
+
+Delete a person record
 - **delete_user**: Provide the UUID of the user to be deleted.
 
 Delete a user
@@ -88,16 +88,16 @@ Get details for a specific album
 - **create_tag**: Supply a JSON payload containing the tag details.
 
 Create a new tag
-- **list_users**: No authentication is required for this query.
-
-List all users in Immich
-- **create_person**: Supply a JSON payload with the person’s details.
-
-Create a new person record
 - **delete_asset**: Delete an Immich asset
 - **update_album**: Supply both the album ID and the data payload.
 
 Update an existing album
+- **update_person**: Supply the person’s UUID and the data payload.
+
+Update an existing person (e.g., change name)
+- **update_tag**: Supply the tag’s UUID and the data payload.
+
+Update an existing tag
 - **update_user**: Provide the user ID and the data payload.
 
 Update an existing user

@@ -14,10 +14,10 @@ This MCP server provides a strategic engine for managing subscription lifecycles
 
 
 ## Available Tools (4)
-- **analyze_renewal_schedule**: Evaluates all provided subscriptions against notice windows and usage thresholds to generate a prioritized action plan
-- **calculate_savings_reallocation**: Determines how much capital is liberated by cancellations and suggests where to move those funds
 - **get_owner_action_items**: Generates a specific to-do list for the subscription owners based on the analysis
+- **calculate_savings_reallocation**: Determines how much capital is liberated by cancellations and suggests where to move those funds
 - **validate_payment_authorization**: Checks if a specific upcoming renewal is financially permissible under current budget constraints
+- **analyze_renewal_schedule**: Evaluates all provided subscriptions against notice windows and usage thresholds to generate a prioritized action plan
 
 
 ## 💬 Prompt Examples

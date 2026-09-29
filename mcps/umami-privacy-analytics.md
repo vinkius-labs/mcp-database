@@ -34,28 +34,70 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 
 
 ## Available Tools (53)
-- **create_pixel**: Supply a unique name for the pixel.
-
-Creates a pixel
-- **create_website**: Provide both the name and domain to ensure successful creation.
-
-Creates a website
-- **get_me_teams**: Get all teams for the current user
-- **get_session**: Provide the website ID and session ID.
-
-Individual session details
-- **get_team_users**: Provide the required team ID.
-
-Get team members
 - **get_user_websites**: Provide the required user ID.
 
 Gets all websites belonging to a user (Admin only)
+- **list_reports**: Supply the required website ID.
+
+Get all reports by website ID
+- **create_pixel**: Supply a unique name for the pixel.
+
+Creates a pixel
 - **get_website_active**: Pass the website ID to scope the query.
 
 Active users in the last 5 minutes
 - **get_website**: Use the website ID to target the correct resource.
 
 Gets a website by ID
+- **create_report**: Include all necessary parameters for the report.
+
+Creates a report
+- **create_team**: Ensure the name is unique.
+
+Creates a team
+- **delete_website**: deletion.
+
+Deletes a website
+- **get_me_websites**: Get all websites for the current user
+- **get_website_daterange**: Provide the website ID.
+
+Available data date range
+- **get_website_event_data_events**: Specify the website ID and time range. Filters are optional.
+
+Event data names and counts
+- **get_website_events_stats**: Specify the website ID and time range. Filters are optional.
+
+Aggregated event statistics
+- **get_website_sessions**: Specify the website ID and time range. Filters are optional.
+
+Website session details
+- **get_website_sessions_stats**: Specify the website ID and time range. Filters are optional.
+
+Summarized session statistics
+- **get_website_stats**: Provide the website ID and time range for accurate data.
+
+Summarized website statistics (pageviews, visitors, etc.)
+- **list_pixels**: Returns all user pixels
+- **list_teams**: Returns all teams
+- **list_websites**: Returns all user websites
+- **login**: Use valid credentials for both username and password.
+
+Login to self-hosted Umami to get a token
+- **reset_website**: Use this function to completely wipe the website’s data.
+
+Removes all data related to the website
+- **update_user**: Supply the required user ID and the fields to update.
+
+Updates a user (Admin only)
+- **get_user**: Pass the required user ID.
+
+Gets a user by ID (Admin only)
+- **get_user_teams**: Pass the target user ID as a string.
+
+Gets all teams belonging to a user (Admin only)
+- **create_attribution_report**: Supply the required website ID.
+
+Marketing attribution report
 - **add_team_user**: Specify the team ID and the user’s unique ID.
 
 Add user to team
@@ -74,111 +116,69 @@ Conversion funnel report
 - **create_link**: Provide both a name and a URL to successfully create the link.
 
 Creates a link
-- **create_report**: Include all necessary parameters for the report.
-
-Creates a report
 - **create_retention_report**: Supply the required website ID.
 
 User retention report
 - **create_revenue_report**: Supply the required website ID.
 
 Revenue report
-- **create_team**: Ensure the name is unique.
-
-Creates a team
 - **create_user**: Supply the required username, password, and role.
 
 Creates a user (Admin only)
+- **create_website**: Provide both the name and domain to ensure successful creation.
+
+Creates a website
 - **delete_user**: Supply the required user ID.
 
 Deletes a user (Admin only)
-- **delete_website**: deletion.
-
-Deletes a website
 - **get_me**: Get information about the current session
-- **get_me_websites**: Get all websites for the current user
+- **get_me_teams**: Get all teams for the current user
+- **get_realtime_stats**: Provide a valid website ID for the query.
+
+Realtime stats within the last 30 minutes
+- **get_session**: Provide the website ID and session ID.
+
+Individual session details
 - **get_session_activity**: Provide the website ID and session ID. Filters are optional.
 
 Activity for a session
+- **get_team_users**: Provide the required team ID.
+
+Get team members
 - **get_team_websites**: Provide a valid team ID to execute the query.
 
 Get team websites
-- **get_user_teams**: Pass the target user ID as a string.
-
-Gets all teams belonging to a user (Admin only)
-- **get_website_daterange**: Provide the website ID.
-
-Available data date range
-- **get_website_event_data_events**: Specify the website ID and time range. Filters are optional.
-
-Event data names and counts
-- **get_website_event_data_fields**: Specify the website ID and time range. Filters are optional.
-
-Property and value counts
 - **get_website_event_data**: Specify the website ID and time range. Filters are optional.
 
 Event data grouped by event
-- **get_website_events_stats**: Specify the website ID and time range. Filters are optional.
+- **get_website_event_data_fields**: Specify the website ID and time range. Filters are optional.
 
-Aggregated event statistics
+Property and value counts
 - **get_website_events**: Specify the website ID and time range. Filters are optional.
 
 Website event details
-- **get_website_metrics_expanded**: Provide the website ID and metric type. Filters are optional.
-
-Expanded metrics including bounces and total time
 - **get_website_metrics**: Specify the website ID and the desired metric type.
 
 Metrics for a given time range (type: path, browser, os, etc.)
+- **get_website_metrics_expanded**: Provide the website ID and metric type. Filters are optional.
+
+Expanded metrics including bounces and total time
 - **get_website_pageviews**: Specify the website ID and time range. Use a time unit for aggregation.
 
 Pageviews and sessions series data
-- **get_website_sessions_stats**: Specify the website ID and time range. Filters are optional.
-
-Summarized session statistics
-- **get_website_sessions**: Specify the website ID and time range. Filters are optional.
-
-Website session details
-- **get_website_stats**: Provide the website ID and time range for accurate data.
-
-Summarized website statistics (pageviews, visitors, etc.)
 - **join_team**: Ensure the provided code is correct and active.
 
 Join a team via access code
 - **list_links**: Returns all user links
-- **list_pixels**: Returns all user pixels
-- **list_reports**: Supply the required website ID.
-
-Get all reports by website ID
-- **list_teams**: Returns all teams
-- **list_websites**: Returns all user websites
-- **login**: Use valid credentials for both username and password.
-
-Login to self-hosted Umami to get a token
-- **reset_website**: Use this function to completely wipe the website’s data.
-
-Removes all data related to the website
 - **send_event**: Provide the required website ID and page URL.
 
 Send an event to Umami
-- **update_user**: Supply the required user ID and the fields to update.
-
-Updates a user (Admin only)
 - **update_website**: Supply the website ID and at least one field to update.
 
 Updates a website
 - **verify_token**: Do not use this tool if you are unsure of the token’s status.
 
 Verify if the current token is still valid
-- **get_realtime_stats**: Provide a valid website ID for the query.
-
-Realtime stats within the last 30 minutes
-- **get_user**: Pass the required user ID.
-
-Gets a user by ID (Admin only)
-- **create_attribution_report**: Supply the required website ID.
-
-Marketing attribution report
 
 
 ## 💬 Prompt Examples

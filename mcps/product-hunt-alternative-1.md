@@ -46,10 +46,10 @@ No more manual scrolling through the feed for daily highlights. Your AI acts as 
 - **list_featured_posts**: List front-page products
 - **list_trending_products**: List top products
 - **list_discovery_topics**: List product categories
+- **get_my_profile**: Get account info
 - **search_products**: The Product Hunt v2 API has no full-text search, so only recent launches are covered.
 
 Find products by keyword among the newest launches
-- **get_my_profile**: Get account info
 
 
 ## 💬 Prompt Examples

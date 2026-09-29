@@ -34,15 +34,15 @@ Connect your **Predibase** account to any AI agent to manage high-performance LL
 
 
 ## Available Tools (7)
+- **get_metrics**: Use this tool only for monitoring purposes.
+
+Get Prometheus metrics for the deployment
 - **classify**: Batch classification for one or more inputs
 - **get_health**: Check health status of the inference endpoint
 - **chat_completion**: Create a chat completion (OpenAI compatible)
 - **completion**: Create a completion (OpenAI compatible)
 - **generate_text**: Generate text using a deployed LLM
 - **get_info**: Get inference endpoint metadata
-- **get_metrics**: Use this tool only for monitoring purposes.
-
-Get Prometheus metrics for the deployment
 
 
 ## 💬 Prompt Examples

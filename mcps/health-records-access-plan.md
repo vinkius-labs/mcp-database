@@ -14,10 +14,10 @@ This MCP server provides a privacy-aware orchestration layer for medical data ma
 
 
 ## Available Tools (4)
-- **build_secure_archive_plan**: How should these records be stored and protected based on their sensitivity and type?
 - **create_request_checklist**: What steps must be completed to fulfill this specific access request?
 - **generate_access_map**: Who is allowed to see what, and under what conditions?
 - **sync_appointment_calendar**: When are the upcoming events that trigger new consent requirements or record updates?
+- **build_secure_archive_plan**: How should these records be stored and protected based on their sensitivity and type?
 
 
 ## 💬 Prompt Examples
