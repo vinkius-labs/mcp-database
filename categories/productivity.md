@@ -108,6 +108,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Anime Filler Ratio Calculator](../mcps/anime-filler-ratio-calculator.md) | Analyze anime pacing and calculate filler ratios to optimize your watch time. |
 | [Annotation Extractor and Tracker](../mcps/annotation-extractor-and-tracker.md) | Automatically detect, track, and report code annotations like FIXME, HACK, and XXX in your codebase. |
 | [Annual Expense Total](../mcps/annual-expense-total.md) | Calculate projected annual expenditures based on monthly spending. |
+| [Annual Personal Records Maintenance Plan](../mcps/annual-personal-records-maintenance-plan.md) | A strategic planning tool for managing document lifecycles through rolling review intervals and priority-based maintenance. |
 | [AntEater](../mcps/anteater.md) | Monitor website changes, detect content updates, and receive alerts when key pages are modified across your digital properties. |
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
 | [API Design Prover](../mcps/api-design-prover.md) | An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written. |
@@ -116,6 +117,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Appcues](../mcps/appcues.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [Appcues](../mcps/appcues-alternative.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [Appeal Evidence Organizer](../mcps/appeal-evidence-organizer.md) | Organize claim-related facts into a structured evidence index and strategic submission sequence. |
+| [Appliance Manuals & Warranty Manager](../mcps/appliance-manuals-warranty-manager.md) | Organize appliance manuals, track warranties, and schedule maintenance. |
 | [ApplicantStack](../mcps/applicantstack.md) | Manage your hiring process with ApplicantStack — track jobs, candidates, and hires via AI. |
 | [Appointlet](../mcps/appointlet.md) | Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly. |
 | [Appointment Capacity Calculator](../mcps/appointment-capacity-calculator.md) | Calculate maximum appointment capacity within specific time windows and constraints. |
@@ -438,6 +440,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Decluttering & Resale Batch Planner](../mcps/decluttering-resale-batch-planner.md) | Categorize household items into keep, resale, donate, recycle, or discard batches with logistical insights. |
 | [Deep Analyst Prover](../mcps/deep-analyst-prover.md) | AI gives surface analysis — restates the question, misses hidden assumptions, uses single-lens thinking. This tool forces multi-model depth: First Principles decomposition, Second-Order cascades (3 levels), Steelmanning (Ideological Turing Test), Inversion, and Premortem risk mapping.... |
 | [DeepL](../mcps/deepl.md) | Translate text between 30+ languages with neural machine translation that captures nuance and tone better than generic engines. |
+| [Defect Evidence Record](../mcps/defect-evidence-record.md) | Organize technical defect evidence and identify evidentiary gaps for warranty claims. |
 | [Degreed](../mcps/degreed.md) | Equip your AI agent to discover learning content, track skills, and monitor user completions via the Degreed API. |
 | [Delivery Integrity Prover](../mcps/delivery-integrity-prover.md) | Forces AI agents to reflect on task execution, matching prompt requirements to actual changes, verifying logs, and declaring gaps before claiming completion. |
 | [Deload Week Inserter](../mcps/deload-week-inserter.md) | Automatically integrate recovery weeks into your training blocks by scaling weights and volume. |
@@ -608,6 +611,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Family Event Cost Tracker](../mcps/family-event-cost-tracker.md) | Track and analyze expenditures for family celebrations and events. |
 | [Family Gift Total](../mcps/family-gift-total.md) | Manage and aggregate gift costs for family events. |
 | [Family Grocery Cost Calculator](../mcps/family-grocery-cost-calculator.md) | Calculate total and individual grocery expenditures for households. |
+| [Family History Archive Plan](../mcps/family-history-archive-plan.md) | A strategic planning engine for organizing family history, oral histories, and digital archives. |
 | [Family Household Move Planner](../mcps/family-household-move-planner.md) | Orchestrate complex family moves with synchronized timelines for packing, school continuity, and child stability. |
 | [Family Insurance Contact Sheet](../mcps/family-insurance-contact-sheet.md) | Aggregates insurance policies, covered people, provider contacts, and claim history into a single dashboard. |
 | [Family Meal Count](../mcps/family-meal-count.md) | Calculate total meals for groups and durations. |
@@ -1074,9 +1078,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Percentage Calculation Engine](../mcps/percentage-calculation-engine.md) | Stop LLMs from miscalculating discounts and interest. Deterministically calculate exact percentages and relative increases. |
 | [Periodization Planner](../mcps/periodization-planner.md) | Systematic training schedule generator using periodization principles. |
 | [Personal Archive Migration Planner](../mcps/personal-archive-migration-planner.md) | Converts chaotic data inventories into structured, secure migration schedules. |
+| [Personal Assets Record Plan](../mcps/personal-assets-record-plan.md) | Manage high-value assets with evidence linking and insurance-ready reporting. |
 | [Personal Digital Legacy Plan](../mcps/personal-digital-legacy-plan.md) | Organize digital assets, access rights, and estate instructions with strict privacy controls. |
 | [Personal Document Renewal Planner](../mcps/personal-document-renewal-planner.md) | Plan your document renewals with precise checklists, timelines, and submission strategies. |
 | [Personal Records Emergency Folder](../mcps/personal-records-emergency-folder.md) | Securely organize and access life-critical documents and emergency contacts. |
+| [Personal Records Handoff Plan](../mcps/personal-records-handoff-plan.md) | Securely manage the transfer of sensitive personal documentation with automated checklists and timelines. |
 | [Personal Records Master Plan](../mcps/personal-records-master-plan.md) | A strategic engine to transform document inventories into structured records architectures. |
 | [Personal Trainer Cost-Benefit Analyzer](../mcps/personal-trainer-cost-benefit-analyzer.md) | Evaluate the financial and temporal value of professional coaching versus self-guided fitness. |
 | [Personal Trainer Session Planner](../mcps/personal-trainer-session-planner.md) | Generate personalized, goal-oriented weight training session structures based on objectives and physical constraints. |
@@ -1084,10 +1090,24 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Personalized Sleep Report Generator](../mcps/personalized-sleep-report-generator.md) | Transform raw sleep data and health profiles into actionable sleep optimization reports. |
 | [Persuasion Copywriting Prover](../mcps/persuasion-copywriting-prover.md) | AI copywriting produces generic, robotic text that readers instantly recognize. This tool forces psychologically-grounded persuasion: benefits over features, emotional triggers, proof hierarchy, framework matching (AIDA/PAS/BAB), and human tone (no AI words). |
 | [Pest Service Coordination Plan](../mcps/pest-service-coordination-plan.md) | Coordinate pest inspections, compare service quotes, and prepare your home for visits. |
+| [Pet Care Annual Review Plan](../mcps/pet-care-annual-review-plan.md) | Transform pet care logistics into a structured annual execution plan. |
+| [Pet Care Cost Sharing Plan](../mcps/pet-care-cost-sharing-plan.md) | Manage and reconcile shared pet expenses among co-owners using explicit contribution rules. |
+| [Pet Caregiver Handoff Plan](../mcps/pet-caregiver-handoff-plan.md) | Securely manage pet care transitions and caregiver instructions. |
 | [Pet Cost Splitter](../mcps/pet-cost-splitter.md) | Divide shared pet expenses equally among owners. |
 | [Pet Custody Handoff Manager](../mcps/pet-custody-handoff-manager.md) | Generate actionable caretaker instruction sheets for pet custody transfers. |
+| [Pet Custody Transition Planner](../mcps/pet-custody-transition-planner.md) | Generates structured logistics, handoff lists, and responsibility frameworks for pet custody transitions. |
+| [Pet Expense Commitment Plan](../mcps/pet-expense-commitment-plan.md) | Coordinate recurring pet costs, household contributions, and budget enforcement. |
 | [Pet Grooming Schedule Calculator](../mcps/pet-grooming-schedule-calculator.md) | Predictive grooming schedules based on pet needs, budget, and groomer capacity. |
+| [Pet Household Role Plan](../mcps/pet-household-role-plan.md) | Coordinate pet care responsibilities, handoffs, and backup coverage for households. |
+| [Pet Insurance Claim Preparation Plan](../mcps/pet-insurance-claim-preparation-plan.md) | Transforms raw pet insurance data into structured, actionable submission strategies. |
+| [Pet Lease Transition Planner](../mcps/pet-lease-transition-planner.md) | Logistical planning for pet owners transitioning between residences. |
+| [Pet License Registration Plan](../mcps/pet-license-registration-plan.md) | Transforms pet registration requirements into actionable filing checklists, submission sequences, and renewal plans. |
+| [Pet Memorial Logistics Planner](../mcps/pet-memorial-logistics-planner.md) | A logistical coordination engine for organizing pet memorial events. |
 | [Pet Party Budget Manager](../mcps/pet-party-budget-manager.md) | Manage and track expenses for pet-themed celebrations. |
+| [Pet Rental Accommodation Planner](../mcps/pet-rental-accommodation-planner.md) | Generate structured request packets, communication plans, and negotiation strategies for pet accommodation requests. |
+| [Pet Supply Subscription Optimizer](../mcps/pet-supply-subscription-optimizer.md) | Optimize pet supply subscriptions by balancing inventory, budget, and storage limits. |
+| [Pet-Neighbor Communication Plan](../mcps/pet-neighbor-communication-plan.md) | A structured framework for managing pet-related shared-living concerns through factual and respectful communication. |
+| [Pet-New-Baby Logistics Plan](../mcps/pet-new-baby-logistics-plan.md) | Converts household dynamics and pet care requirements into structured transition plans and coordination protocols for new parents. |
 | [Phone Addiction Risk Analyzer](../mcps/phone-addiction-risk-analyzer.md) | Quantifies smartphone dependency risk using validated behavioral metrics. |
 | [Photography Project Planner](../mcps/photography-project-planner.md) | A strategic planning engine for photography projects, generating briefs, logistics, and workflows. |
 | [PhotoPrism](../mcps/photoprism.md) | Search, browse, and manage your PhotoPrism media library — find photos by metadata, retrieve thumbnails, and stream videos via AI. |
@@ -1173,6 +1193,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Recipe Cost Calculator](../mcps/recipe-cost-calculator.md) | Calculate the exact cost per serving for any recipe based on ingredient unit prices. |
 | [Recipe Scaler](../mcps/recipe-scaler.md) | Precisely scale recipe ingredients while maintaining culinary proportions and practical measurements. |
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
+| [Records Review Meeting Planner](../mcps/records-review-meeting-planner.md) | Transforms household administrative data into structured meeting agendas and action plans. |
 | [Recovery Time Planner](../mcps/recovery-time-planner.md) | Calculate estimated recovery duration and progressive weekly plans based on burnout levels and mitigation strategies. |
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refactoring Schedule Optimizer](../mcps/refactoring-schedule-optimizer.md) | Strategic decision-support for balancing technical debt reduction with feature delivery. |
@@ -1188,6 +1209,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Rep Max Table Generator](../mcps/rep-max-table-generator.md) | Generates complete rep max percentage tables, intensity zones, and warm-up sequences. |
 | [Repair Communication Log Plan](../mcps/repair-communication-log-plan.md) | Generate structured communication schedules, message templates, and escalation workflows. |
 | [Repair Intake & Action Plan](../mcps/repair-intake-action-plan.md) | Converts property damage observations into prioritized repair briefs and safety protocols. |
+| [Repair Intake Brief Generator](../mcps/repair-intake-brief-generator.md) | Transforms raw service data into structured, professional intake summaries for technicians. |
 | [Repair Permit Coordination Checklist](../mcps/repair-permit-coordination-checklist.md) | Organize permit submissions, responsibility matrices, and deadline calendars for repair projects. |
 | [Repair Sequence Scheduler](../mcps/repair-sequence-scheduler.md) | A high-precision engine for synchronizing home repair timelines, trade dependencies, and room constraints. |
 | [Repetition Pattern Detector](../mcps/repetition-pattern-detector.md) | Detects redundant linguistic patterns and calculates text compression metrics. |
@@ -1214,6 +1236,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [RSS Feed Parser](../mcps/rss-feed-parser.md) | Turn any RSS 2.0 or Atom feed into clean, structured JSON. Extract titles, links, dates, authors, and full content from blogs, news sites, and podcasts — ready for your agent to process. |
 | [Running Race Predictor](../mcps/running-race-predictor.md) | Predict race performance and generate segmented pacing strategies using the Riegel model. |
 | [Running Splits Calculator](../mcps/running-splits-calculator.md) | Decompose target times and distances into precise pacing segments and strategies. |
+| [Safe Repair Appointment Scheduler](../mcps/safe-repair-appointment-scheduler.md) | Synchronizes shop availability, item readiness, and transport safety to generate optimized repair plans. |
 | [Salary Increase Calculator](../mcps/salary-increase-calculator.md) | Calculate new salaries and compare percentage increases. |
 | [Sally](../mcps/sally.md) | Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat. |
 | [Salon Chair Hours](../mcps/salon-chair-hours.md) | Calculate salon chair occupancy, utilization, and staffing needs. |
@@ -1242,6 +1265,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SemVer Version Manager](../mcps/semver-version-manager.md) | Stop LLMs from guessing software versions. Deterministically evaluate semantic version bounds, compatibilities, and sort releases perfectly. |
 | [Sensors Data](../mcps/sensors-data.md) | Orchestrate Sensors Data analytics — manage events, query user profiles, and monitor data ingestion directly from any AI agent. |
 | [SEO Authority Prover](../mcps/seo-authority-prover.md) | AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority. |
+| [Service Center Inquiry Assistant](../mcps/service-center-inquiry-assistant.md) | Generates prioritized questions for service centers based on repair quotes and warranties. |
 | [Service Utilization](../mcps/service-utilization.md) | Measure resource efficiency by calculating booked versus available hours. |
 | [Set-List Planner](../mcps/set-list-planner.md) | Optimize your live performance with energy-driven song sequencing and musical transition analysis. |
 | [Severance Pay Calculator](../mcps/severance-pay-calculator.md) | Calculate precise employee termination payouts, including salary balances and statutory penalties. |
@@ -1492,7 +1516,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wardrobe Color Counter](../mcps/wardrobe-color-counter.md) | Count and analyze your garment inventory by color. |
 | [Warehouse Picking Productivity Calculator](../mcps/warehouse-picking-productivity-calculator.md) | Measure warehouse picking efficiency, error rates, and operational costs. |
 | [Warmup Time Total](../mcps/warmup-time-total.md) | Calculate and analyze preparatory warmup durations for activity sequences. |
+| [Warranty Claim Packet](../mcps/warranty-claim-packet.md) | Assemble complete warranty claim packets with missing-evidence checklists. |
+| [Warranty Expiry Calendar](../mcps/warranty-expiry-calendar.md) | Calculate precise warranty lifecycles, renewal deadlines, and claim windows. |
 | [Warranty Registration Planner](../mcps/warranty-registration-planner.md) | Validate product ownership and manage warranty registration workflows. |
+| [Warranty Remedy Comparison](../mcps/warranty-remedy-comparison.md) | Analyze warranty options and generate formal remedy requests. |
 | [Wave Accounting](../mcps/wave-accounting.md) | Manage customers, invoices, and accounting workflows on Wave — the money management tool for small businesses. |
 | [Wave Count Predictor](../mcps/wave-count-predictor.md) | Predict wave counts, wait times, and optimal lineup positioning for surfing sessions. |
 | [Weekend Sleep Recovery Planner](../mcps/weekend-sleep-recovery-planner.md) | Optimized weekend sleep scheduling to mitigate weekday sleep debt. |

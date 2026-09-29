@@ -753,6 +753,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Renewal Comparison Brief](../mcps/renewal-comparison-brief.md) | Compare insurance policy terms and generate renewal decision briefs. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
 | [Repair Budget & Release Plan](../mcps/repair-budget-release-plan.md) | Synchronize project budgets with verifiable milestone completion and gated payments. |
+| [Repair Cost Approval Plan](../mcps/repair-cost-approval-plan.md) | Automates repair cost authorization workflows by applying financial rules and stage-based constraints. |
+| [Repair-or-Replace Decision Engine](../mcps/repair-or-replace-decision-engine.md) | An automated decision-support engine that evaluates whether to repair an existing asset or replace it with a new one. |
 | [Reserve Replacement Ratio Calculator](../mcps/reserve-replacement-ratio-calculator.md) | Calculate critical petroleum industry metrics like RRR, Reserve Life Index, and F&D costs. |
 | [Resolution Date Proximity Fade](../mcps/resolution-date-proximity-fade.md) | A deterministic mean-reversion strategy for exploiting liquidity premiums near market resolution. |
 | [Resolution Delay Capital Cost](../mcps/resolution-delay-capital-cost.md) | Quantify the opportunity cost of capital locked in delayed prediction market resolutions. |

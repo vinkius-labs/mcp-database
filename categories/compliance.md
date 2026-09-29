@@ -17,6 +17,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | [Hazardous Waste Classifier](../mcps/hazardous-waste-classifier.md) | Classifies waste streams as hazardous or non-hazardous using RCRA and EU standards. |
 | [Hot Work Permit System](../mcps/hot-work-permit-system.md) | Automated safety compliance for hot work operations. |
 | [Lockout/Tagout Procedure Generator](../mcps/lockouttagout-procedure-generator.md) | Generates OSHA-compliant lockout/tagout (LOTO) procedures for industrial equipment. |
+| [Membership Records Plan](../mcps/membership-records-plan.md) | Manage membership lifecycles, renewal calendars, and compliance checklists. |
 | [Permit Compliance Tracking](../mcps/permit-compliance-tracking.md) | Monitor and validate environmental permit adherence across air, water, and waste media. |
 | [Process Safety Management Audit](../mcps/process-safety-management-audit.md) | Automated OSHA 1910.119 compliance auditing for hazardous chemical facilities. |
 | [Product Quality Specification Engine](../mcps/product-quality-specification-engine.md) | Validates product properties against international standards with regional and seasonal adjustments. |

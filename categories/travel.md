@@ -27,8 +27,11 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Luggage Volume Calculator](../mcps/luggage-volume-calculator.md) | Calculate luggage volume and check airline compliance. |
 | [Moscow Hotels, Hostels & Stays](../mcps/moscow-hotels-hostels-stays.md) | Keyless Moscow accommodation: hotels by star rating, hostels, short-stay apartments, guest houses and campsites, plus the Wikipedia hotel roll and a citywide profile. |
 | [Moscow Sights, Landmarks & Views](../mcps/moscow-sights-landmarks-views.md) | Keyless Moscow sightseeing: attractions, viewpoints and fountains with a walking-distance list of the nearest sights, plus the curated Wikipedia landmark roll. |
+| [Pet Air Travel Document Plan](../mcps/pet-air-travel-document-plan.md) | Synthesize airline policies and destination rules into a structured travel timeline and logistics plan. |
+| [Pet Lodging Coordination Plan](../mcps/pet-lodging-coordination-plan.md) | Coordinates pet stay compatibility and generates compliance checklists for lodging. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
 | [Pet Travel Checklist Validator](../mcps/pet-travel-checklist-validator.md) | Audits pet travel plans against destination, transport, and health requirements. |
+| [Pet Vehicle Travel Readiness Plan](../mcps/pet-vehicle-travel-readiness-plan.md) | Coordinate pet travel logistics including departure readiness, packing, and responsibility rosters. |
 | [Shinkansen Routing Optimizer](../mcps/shinkansen-routing-optimizer.md) | Deterministic Japanese Shinkansen travel time and fare calculator. |
 | [Singapore MRT Delay Compensation Calculator](../mcps/singapore-mrt-delay-compensation-calculator.md) | Determine eligibility for MRT delay compensation based on official transit rules. |
 | [Surf Camp Selection Tool](../mcps/surf-camp-selection-tool.md) | Find and rank the perfect surf camps based on your skill, budget, and goals. |

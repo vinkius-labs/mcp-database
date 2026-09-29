@@ -19,6 +19,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Intelligent Completion Design Engine](../mcps/intelligent-completion-design-engine.md) | Design intelligent completion systems by calculating ICV sizes, control lines, and HPU requirements. |
 | [JSONPath Query Executor](../mcps/jsonpath-query-executor.md) | Execute deterministic JSONPath queries against any JSON data. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
+| [Pet Walking Service Plan](../mcps/pet-walking-service-plan.md) | Transforms pet walking constraints into operational protocols. |
 | [Postgres Migration Dependency Resolver](../mcps/postgres-migration-dependency-resolver.md) | Resolves the execution order of SQL migrations using graph theory to prevent deployment errors. |
 | [Regex from Examples](../mcps/regex-from-examples.md) | Generate ranked regular expression candidates from input and extraction pairs. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |

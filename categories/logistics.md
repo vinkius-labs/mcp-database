@@ -47,11 +47,20 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
 | [Music Release Readiness Plan](../mcps/music-release-readiness-plan.md) | A diagnostic engine to evaluate musical release readiness by validating permissions, assets, and logistics. |
+| [Name Change Records Plan](../mcps/name-change-records-plan.md) | Orchestrate organizational name changes with sequenced execution plans and document checklists. |
 | [Neighborhood Food Pantry Support Plan](../mcps/neighborhood-food-pantry-support-plan.md) | Transforms pantry requirements and logistical constraints into actionable donation strategies and volunteer schedules. |
 | [Oil Tanker Voyage Planner](../mcps/oil-tanker-voyage-planner.md) | Calculate voyage duration, fuel consumption, and maritime profitability. |
 | [Outdoor Chair Counter](../mcps/outdoor-chair-counter.md) | Calculate precise chair and table requirements for outdoor events. |
 | [Package Serving Calculator](../mcps/package-serving-calculator.md) | Calculate total, full, and remaining servings from package weight. |
+| [Pet Adoption Homecoming Plan](../mcps/pet-adoption-homecoming-plan.md) | Coordinate pet adoption transitions with structured logistics, room allocation, and family responsibilities. |
 | [Pet Bed Calculator](../mcps/pet-bed-calculator.md) | Calculate required pet beds and facility capacity. |
+| [Pet Boarding Readiness Plan](../mcps/pet-boarding-readiness-plan.md) | A decision-support engine for evaluating pet boarding providers and generating logistical checklists. |
+| [Pet Daycare Enrollment Planner](../mcps/pet-daycare-enrollment-planner.md) | Plan pet daycare transitions with structured enrollment sequences and logistical checks. |
+| [Pet Equipment Acquisition Planner](../mcps/pet-equipment-acquisition-planner.md) | Evaluates pet equipment suitability based on physical constraints, budget, and usage needs. |
+| [Pet Equipment Sharing Plan](../mcps/pet-equipment-sharing-plan.md) | Manage pet equipment sharing with formal agreements, handoff checklists, and condition reports. |
+| [Pet Introduction Coordination Plan](../mcps/pet-introduction-coordination-plan.md) | A logistical engine for planning pet introductions, spatial responsibilities, and communication protocols. |
+| [Pet Playgroup Commitment Planner](../mcps/pet-playgroup-commitment-planner.md) | Evaluate pet playgroup suitability and generate participation strategies. |
+| [Pet Trip Care Planner](../mcps/pet-trip-care-planner.md) | Generates comprehensive pet care execution plans by matching trip dates and pet constraints with available care options. |
 | [Photo Location Permission Planner](../mcps/photo-location-permission-planner.md) | Generate production logistics, compliance checklists, and contact sheets for location shoots. |
 | [Pipeline Batch Tracking](../mcps/pipeline-batch-tracking.md) | Monitor product batch positions, transmix volumes, and delivery timing in liquid pipelines. |
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |

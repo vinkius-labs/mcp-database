@@ -7,6 +7,7 @@ Explore the open database of **pet-care** Model Context Protocol (MCP) servers.
 | [Dog Exercise Needs Calculator](../mcps/dog-exercise-needs-calculator.md) | Calculates optimal daily exercise requirements, recommended activity types, and potential health risks specific to your dog's breed, age, and energy level. |
 | [Pet Enrichment Planner](../mcps/pet-enrichment-planner.md) | Generates personalized, weekly enrichment plans for pets by assessing breed needs and home environment constraints. |
 | [Pet Food Package Calculator](../mcps/pet-food-package-calculator.md) | Calculate the exact number of pet food packages needed based on nutritional requirements. |
+| [Pet Service Provider Directory](../mcps/pet-service-provider-directory.md) | Manage approved pet service providers with privacy safeguards and maintenance workflows. |
 | [Pet-Friendly Home Planner](../mcps/pet-friendly-home-planner.md) | Optimizes room layouts to balance human furniture needs with pet-specific spatial requirements. |
 
 

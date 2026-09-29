@@ -12,6 +12,10 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 | [Graph Coloring Scheduler](../mcps/graph-coloring-scheduler.md) | Deterministic agent scheduling using graph coloring to prevent resource conflicts. |
 | [Group Chat Speaker Selector](../mcps/group-chat-speaker-selector.md) | Deterministic speaker selection engine for multi-agent group chats. |
 | [Local Fitness Class Planner](../mcps/local-fitness-class-planner.md) | Evaluates local fitness classes against your constraints, accessibility needs, and provider policies. |
+| [Pet Enrichment Rotation Plan](../mcps/pet-enrichment-rotation-plan.md) | Automated scheduling and logistics for pet enrichment activities and item rotation. |
+| [Pet Grooming Appointment Planner](../mcps/pet-grooming-appointment-planner.md) | Synthesize pet grooming needs with provider availability to generate complete logistical plans. |
+| [Pet Overnight Care Plan](../mcps/pet-overnight-care-plan.md) | Orchestrate detailed overnight pet care plans with strict boundary enforcement. |
+| [Pet Senior Care Support Plan](../mcps/pet-senior-care-support-plan.md) | Non-clinical coordination for senior pet routines and caregiver protocols. |
 | [Pet Worming Schedule](../mcps/pet-worming-schedule.md) | Calculate deworming intervals and product suitability for dogs and cats based on age and risk. |
 | [Priority Queue with Aging Scheduler](../mcps/priority-queue-with-aging-scheduler.md) | A deterministic scheduler that manages task execution using priority-based queues with an anti-starvation aging mechanism. |
 | [Recurring Event Expander](../mcps/recurring-event-expander.md) | Expands RFC 5545 RRULE strings into concrete lists of occurrence dates. |

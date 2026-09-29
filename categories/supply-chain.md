@@ -27,6 +27,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Oil Supply Chain Optimizer](../mcps/oil-supply-chain-optimizer.md) | Optimize crude oil routing, inventory levels, and quality compliance across the supply chain. |
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
+| [Parts Compatibility Plan](../mcps/parts-compatibility-plan.md) | Validate part compatibility and generate purchase and installation plans. |
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
 | [Petrochemical Complex Planner](../mcps/petrochemical-complex-planner.md) | Optimize product slates, unit capacities, and feedstock mixes for integrated petrochemical complexes. |
@@ -36,6 +37,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |
 | [Refinery Blending Optimization](../mcps/refinery-blending-optimization.md) | Optimizes refinery product blending using linear programming to maximize margins and ensure compliance. |
 | [Refinery Utilization Planning](../mcps/refinery-utilization-planning.md) | Optimize refinery throughput, maintenance timing, and inventory levels. |
+| [Repair Parts Order Plan](../mcps/repair-parts-order-plan.md) | Sequences part procurement based on diagnostic requirements and supplier lead times. |
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |

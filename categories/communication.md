@@ -12,6 +12,7 @@ Explore the open database of **communication** Model Context Protocol (MCP) serv
 | [Family Language Access Plan](../mcps/family-language-access-plan.md) | Generate actionable communication guides by aggregating family language preferences and interpreter resources. |
 | [LiveKit Real-Time Rooms](../mcps/tt-voice.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
 | [LiveKit Real-Time Rooms](../mcps/livekit-real-time-rooms-alternative.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
+| [Pet Care Communication Charter](../mcps/pet-care-communication-charter.md) | Formalize communication protocols, decision authority, and privacy rules between pet owners and caregivers. |
 | [School Communication Workflow](../mcps/school-communication-workflow.md) | Automate school-to-parent routing, escalation, and recordkeeping. |
 | [Thoughtly](../mcps/thoughtly.md) | Deploy AI voice agents to make or receive calls, manage CRM contacts, and access call histories instantly. |
 

@@ -53,6 +53,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Pediatric Dose Calculator](../mcps/pediatric-dose-calculator.md) | Calculate safe pediatric medication dosages based on weight and frequency. |
 | [Pediatric Fluid Calculator](../mcps/pediatric-fluid-calculator.md) | Calculate pediatric fluid maintenance requirements using the Holliday-Segar rule. |
 | [Pediatric Growth Percentile Calculator](../mcps/pediatric-growth-percentile-calculator.md) | Calculate pediatric growth percentiles and Z-scores using WHO (0-60m) and CDC (61-216m) standards. |
+| [Pet Emergency Authorization Plan](../mcps/pet-emergency-authorization-plan.md) | Manage pet emergency contacts, caregiver permissions, and medical access protocols. |
 | [Pet Medical Record Auditor](../mcps/pet-medical-record-auditor.md) | Audit and summarize medical record volumes for specific pets. |
 | [Pet Medication Dose Calculator](../mcps/pet-medication-dose-calculator.md) | Calculate estimated medication dosages for pets based on body weight and veterinary standards. |
 | [Pet Vaccine Date Scheduler](../mcps/pet-vaccine-date-scheduler.md) | Calculate future vaccination dates and booster schedules for veterinary management. |

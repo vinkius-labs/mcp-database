@@ -11,6 +11,7 @@ Explore the open database of **emergency-management** Model Context Protocol (MC
 | [Emergency Vehicle Readiness Plan](../mcps/emergency-vehicle-readiness-plan.md) | Manage vehicle health, driver authorization, and emergency readiness status. |
 | [Emergency Volunteer Coordination Plan](../mcps/emergency-volunteer-coordination-plan.md) | Coordinate volunteer schedules, task briefs, and escalation protocols for emergency response. |
 | [Family Contact Tree](../mcps/family-contact-tree.md) | Manage hierarchical family contact structures and calculate prioritized notification sequences. |
+| [Pet Evacuation Logistics Plan](../mcps/pet-evacuation-logistics-plan.md) | Transform evacuation data and official guidance into actionable pet safety plans. |
 | [Pipeline Emergency Response](../mcps/pipeline-emergency-response.md) | Generates comprehensive emergency response protocols for pipeline incidents. |
 | [Rural Household Preparedness Plan](../mcps/rural-household-preparedness-plan.md) | Coordinate emergency logistics, supply replenishment, and communication networks for rural households. |
 | [Severe Weather Readiness Plan](../mcps/severe-weather-readiness-plan.md) | Transforms weather alerts and household data into prioritized readiness plans and execution roadmaps. |

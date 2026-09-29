@@ -7,6 +7,7 @@ Explore the open database of **media** Model Context Protocol (MCP) servers.
 | [Album Duration Analyzer](../mcps/album-duration-analyzer.md) | Calculate and compare the average durations of music albums. |
 | [Documentary Source Plan](../mcps/documentary-source-plan.md) | A production management system for mapping source usage, outreach, and verification. |
 | [Family Digital Photo Sharing Plan](../mcps/family-digital-photo-sharing-plan.md) | Coordinate digital photo distribution, access rights, and family sharing calendars. |
+| [Personal Photos Archive Planner](../mcps/personal-photos-archive-planner.md) | Organize photo collections with automated consent, storage, and preservation planning. |
 
 
 ---
