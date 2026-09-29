@@ -14,10 +14,10 @@ This MCP server provides tools to quantify how an investor's reputation translat
 
 
 ## Available Tools (4)
-- **assess_reputation_trust_index**: Quantifies the qualitative trust built through founder relationships
 - **calculate_brand_equity**: Calculates the total monetary value of the investor's brand
 - **evaluate_deal_flow_impact**: Measures how much the investor's brand improves the quality of incoming investment opportunities
 - **get_brand_premium_on_allocation**: Determines the percentage advantage an investor has in winning competitive deals
+- **assess_reputation_trust_index**: Quantifies the qualitative trust built through founder relationships
 
 
 ## 💬 Prompt Examples

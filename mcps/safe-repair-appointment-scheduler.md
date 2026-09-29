@@ -14,10 +14,10 @@ This MCP server acts as a specialized scheduling engine that reconciles four cri
 
 
 ## Available Tools (4)
-- **check_transport_safety**: Validates if a proposed transport window satisfies safety constraints for a specific item
-- **plan_repair_appointment**: The primary orchestrator that synthesizes all data to produce a valid appointment plan
 - **query_item_status**: Checks if an item is ready to be transported for repair
 - **query_shop_availability**: Retrieves the operational windows for a specific repair facility
+- **plan_repair_appointment**: The primary orchestrator that synthesizes all data to produce a valid appointment plan
+- **check_transport_safety**: Validates if a proposed transport window satisfies safety constraints for a specific item
 
 
 ## 💬 Prompt Examples

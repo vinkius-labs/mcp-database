@@ -14,9 +14,9 @@ This MCP server provides specialized tools to help venture-backed founders asses
 
 
 ## Available Tools (4)
+- **estimate_insurance_cost**: Provides a rough cost estimate for securing the recommended coverage
 - **analyze_personal_exposure**: Evaluates how much of a founder's private wealth is at risk
 - **calculate_coverage_needs**: Determines the recommended amount of additional insurance a founder should secure
-- **estimate_insurance_cost**: Provides a rough cost estimate for securing the recommended coverage
 - **evaluate_tail_requirement**: Determines if additional tail coverage is necessary based on exit scenarios
 
 

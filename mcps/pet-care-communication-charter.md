@@ -15,8 +15,8 @@ This MCP server provides a structured framework for managing the relationship be
 
 ## Available Tools (5)
 - **schedule_charter_review**: Sets a future date for re-evaluating the charter
-- **build_escalation_tree**: Maps out the path of communication when specific triggers are met
 - **create_standard_update_template**: Generates a standardized format for routine status updates
+- **build_escalation_tree**: Maps out the path of communication when specific triggers are met
 - **generate_communication_charter**: Creates the foundational agreement governing all interactions between owner and caregiver
 - **setup_absence_coverage**: Defines the temporary shift in communication responsibilities when the primary caregiver is unavailable
 

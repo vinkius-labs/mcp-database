@@ -14,10 +14,10 @@ This MCP server provides decision-support tools to evaluate competing repair est
 
 
 ## Available Tools (4)
-- **analyze_labor_efficiency**: Evaluates if the quoted labor hours are reasonable for the specific parts being replaced
 - **check_turnaround_feasibility**: Checks if the quoted repair time fits within the user's required window
 - **compare_quotes**: Identifies the best quote by comparing matching services and parts against the user's budget
 - **evaluate_warranty_value**: Determines the qualitative value of the warranty provided in a quote
+- **analyze_labor_efficiency**: Evaluates if the quoted labor hours are reasonable for the specific parts being replaced
 
 
 ## 💬 Prompt Examples

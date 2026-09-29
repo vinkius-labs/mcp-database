@@ -14,10 +14,10 @@ This MCP server provides a precision matching engine for industrial components. 
 
 
 ## Available Tools (4)
-- **validate_part_constraints**: Check if a set of user constraints is logically sound and possible within the context of a specific model
-- **generate_purchase_plan**: Create a list of all compatible parts that can be acquired to complete a specific project requirement
 - **get_compatibility_report**: Determine if a specific candidate part is suitable for a target model under given user constraints
 - **get_installation_requirements**: Provide the necessary physical and logistical steps required to install a matched part
+- **validate_part_constraints**: Check if a set of user constraints is logically sound and possible within the context of a specific model
+- **generate_purchase_plan**: Create a list of all compatible parts that can be acquired to complete a specific project requirement
 
 
 ## 💬 Prompt Examples

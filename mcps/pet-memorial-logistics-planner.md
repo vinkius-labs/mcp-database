@@ -14,11 +14,11 @@ This MCP server provides a structured framework for organizing pet memorial serv
 
 
 ## Available Tools (5)
+- **create_notification_templates**: Generates formal or gentle notices and invitations for participants
 - **generate_followup_plan**: Outlines the necessary logistical steps to conclude the event
 - **generate_logistics_roadmap**: Provides a chronological sequence of actions required to execute the memorial
 - **prepare_item_checklist**: Creates a comprehensive list of physical items to be gathered
 - **assign_event_roles**: Distributes practical tasks among the participants
-- **create_notification_templates**: Generates formal or gentle notices and invitations for participants
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a precise temporal engine for managing product protecti
 
 
 ## Available Tools (4)
-- **get_coverage_status**: Checks if a specific date falls within a valid claim window or active coverage period
 - **get_renewal_schedule**: Determines when a user needs to take action to renew a warranty to prevent coverage gaps
 - **get_warranty_lifecycle**: Calculates the complete timeline for a single product's warranty lifecycle
 - **list_upcoming_deadlines**: Generates a sorted calendar of upcoming critical dates for a set of products
+- **get_coverage_status**: Checks if a specific date falls within a valid claim window or active coverage period
 
 
 ## 💬 Prompt Examples

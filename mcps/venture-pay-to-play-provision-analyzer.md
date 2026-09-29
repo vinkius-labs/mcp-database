@@ -14,10 +14,10 @@ This MCP server provides specialized tools for venture capital analysts and inve
 
 
 ## Available Tools (4)
-- **evaluate_incentive_alignment**: Determines if the pay-to-play provision effectively aligns investor interests with the company's survival
 - **analyze_dilution_impact**: Calculates the specific ownership and value loss for an investor if they fail to meet the follow-on requirement
 - **calculate_conversion_impact**: Models the transition of an investor's position from preferred to common stock
 - **simulate_participation_decision**: Provides a recommendation on whether an investor should participate in the round based on their financial standing
+- **evaluate_incentive_alignment**: Determines if the pay-to-play provision effectively aligns investor interests with the company's survival
 
 
 ## 💬 Prompt Examples

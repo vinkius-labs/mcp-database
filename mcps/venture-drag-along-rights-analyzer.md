@@ -14,10 +14,10 @@ This MCP server provides specialized tools for analyzing drag-along rights in sh
 
 
 ## Available Tools (4)
-- **analyze_veto_risk**: 
-- **simulate_exit_scenarios**: 
 - **calculate_drag_impact**: 
+- **analyze_veto_risk**: 
 - **evaluate_minority_value**: 
+- **simulate_exit_scenarios**: 
 
 
 ## 💬 Prompt Examples

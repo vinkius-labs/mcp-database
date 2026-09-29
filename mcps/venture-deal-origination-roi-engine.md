@@ -14,10 +14,10 @@ This MCP server provides venture capital firms with an analytical engine to eval
 
 
 ## Available Tools (4)
-- **get_channel_efficiency**: Evaluates the basic financial efficiency of each sourcing channel
 - **rank_channel_prioritization**: Provides strategic recommendations on which channels to fund or scale
 - **analyze_deal_flow_quality**: Calculates a weighted quality score for each channel
 - **calculate_channel_attribution**: Distributes credit for closed deals across multiple channels
+- **get_channel_efficiency**: Evaluates the basic financial efficiency of each sourcing channel
 
 
 ## 💬 Prompt Examples

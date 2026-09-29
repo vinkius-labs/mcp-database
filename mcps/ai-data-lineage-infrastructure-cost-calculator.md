@@ -14,6 +14,9 @@ This MCP server provides a suite of tools to model the economic impact of implem
 
 
 ## Available Tools (4)
+- **calculate_compliance_value**: Provide lineageDepth and dataSensitivity.
+
+What is the monetary value of our lineage in terms of regulatory risk mitigation?
 - **calculate_debugging_efficiency**: Provide lineageDepth, averageIncidentCount, and engineerHourlyRate.
 
 How much time/money will we save in engineering hours by using this lineage?
@@ -23,9 +26,6 @@ How much will it cost to maintain our data lineage?
 - **get_lineage_roi_summary**: Pass the results from the three calculation tools.
 
 What is the total Return on Investment (ROI) for our lineage infrastructure?
-- **calculate_compliance_value**: Provide lineageDepth and dataSensitivity.
-
-What is the monetary value of our lineage in terms of regulatory risk mitigation?
 
 
 ## 💬 Prompt Examples
