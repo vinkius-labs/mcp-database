@@ -14,8 +14,8 @@ This MCP server provides predictive modeling for juice clarification processes. 
 
 
 ## Available Tools (4)
-- **get_accumulation_rate**: Estimates the rate at which solids gather at the bottom of the settling vessel
 - **get_optimal_temperature**: Recommends the best temperature to balance settling speed against potential juice quality degradation
+- **get_accumulation_rate**: Estimates the rate at which solids gather at the bottom of the settling vessel
 - **get_settling_time**: Determines how long it will take for the juice to reach a specific clarity level
 - **simulate_enzyme_impact**: Compares the settling performance of untreated juice against juice treated with enzymes
 

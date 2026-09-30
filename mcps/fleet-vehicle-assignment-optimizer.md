@@ -14,10 +14,10 @@ This MCP server provides tools to optimize logistical operations by matching ser
 
 
 ## Available Tools (4)
-- **assign_fleet_jobs**: 
 - **calculate_remaining_capacity**: 
 - **check_driver_eligibility**: 
 - **validate_vehicle_availability**: 
+- **assign_fleet_jobs**: 
 
 
 ## 💬 Prompt Examples

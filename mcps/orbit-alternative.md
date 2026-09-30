@@ -34,28 +34,28 @@ Connect your **Orbit** workspace to any AI agent and take full control of your c
 
 
 ## Available Tools (10)
+- **list_orbit_activities**: List all workspace activities
+- **list_orbit_members**: List community members
+- **list_orbit_organizations**: List organizations in the workspace
+- **get_orbit_me**: Get authenticated user info
 - **create_orbit_activity**: Provide all necessary details, including the unique key.
 
 Create a new activity for a member
 - **create_orbit_member_note**: Specify both the member ID and the note content.
 
 Add a note to a member profile
-- **get_orbit_me**: Get authenticated user info
-- **get_orbit_member_activities**: Provide the member’s ID.
-
-Get activities for a specific member
 - **get_orbit_member**: Use this tool when you know the member’s ID or slug.
 
 Get details for a specific member
+- **get_orbit_member_activities**: Provide the member’s ID.
+
+Get activities for a specific member
 - **get_orbit_organization**: Supply the organization ID or slug.
 
 Get details for a specific organization
-- **list_orbit_activities**: List all workspace activities
-- **list_orbit_members**: List community members
 - **list_orbit_member_notes**: You must provide the member’s ID.
 
 List notes for a specific member
-- **list_orbit_organizations**: List organizations in the workspace
 
 
 ## 💬 Prompt Examples

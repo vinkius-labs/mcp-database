@@ -41,33 +41,33 @@ No more switching between your calendar app and your workspace. Your AI agent be
 - **list_availability**: Use the user_uri to identify the account.
 
 List availability schedules for a user
+- **get_event_type**: Provide a valid UUID.
+
+Get event type details by UUID
 - **cancel_event**: Provide the event UUID and an optional reason.
 
 Cancel scheduled event. Sends cancellation email to invitee
-- **get_user**: This URI is required for subsequent calls to the Calendly API.
+- **get_available_times**: Provide all three required parameters.
 
-Get Calendly user profile. Returns user URI needed for other calls
-- **list_scheduled_events**: Specify status (active or canceled) to filter results.
-
-List scheduled events for a user. Filter by active/canceled
+Get available time slots for event type in date range
 - **get_scheduled_event**: Ensure the UUID is correct.
 
 Get scheduled event details by UUID
+- **get_user**: This URI is required for subsequent calls to the Calendly API.
+
+Get Calendly user profile. Returns user URI needed for other calls
+- **list_event_types**: Requires a valid user_uri.
+
+List event types (meeting templates) for a user
 - **list_invitees**: Pass the event’s unique UUID.
 
 List invitees for a scheduled event
 - **list_org_members**: Pass the organization’s URI.
 
 List organization members
-- **get_available_times**: Provide all three required parameters.
+- **list_scheduled_events**: Specify status (active or canceled) to filter results.
 
-Get available time slots for event type in date range
-- **list_event_types**: Requires a valid user_uri.
-
-List event types (meeting templates) for a user
-- **get_event_type**: Provide a valid UUID.
-
-Get event type details by UUID
+List scheduled events for a user. Filter by active/canceled
 
 
 ## 💬 Prompt Examples

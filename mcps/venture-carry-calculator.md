@@ -16,8 +16,8 @@ This MCP server provides precise tools for venture fund distribution modeling. I
 ## Available Tools (4)
 - **calculate_clawback_liability**: Determines if the GP owes money back to the LPs based on realized performance
 - **validate_gp_commitment_alignment**: Validates if the GP's financial commitment is sufficient according to specific fund rules
-- **check_hurdle_status**: Checks if the fund has met the minimum return required for the GP to begin receiving carry
 - **get_full_waterfall_distribution**: Provides a complete breakdown of the entire distribution process from gross proceeds to final split
+- **check_hurdle_status**: Checks if the fund has met the minimum return required for the GP to begin receiving carry
 
 
 ## 💬 Prompt Examples

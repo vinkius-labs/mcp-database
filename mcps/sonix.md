@@ -37,44 +37,12 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 
 
 ## Available Tools (30)
-- **create_summarization**: Provide the media ID and optionally a custom prompt.
-
-Create a summarization for a media file
-- **get_transcript_vtt**: Specify the media ID and desired formatting options.
-
-Get VTT transcript file
-- **list_users**: List all users in the account
-- **submit_media**: Provide the file URL and name. Do not submit media without a file URL.
-
-Submit new media for transcription
-- **create_media_export**: Provide the media ID and optionally remove strikethrough text.
-
-Create a media export
-- **get_video_burn_in**: Provide the unique export ID to check the status.
-
-Get video burn-in status
-- **invite_user**: Requires both email and role.
-
-Invite a new user to the account
-- **list_folders**: List all folders
-- **update_folder**: Provide the folder ID and the new name.
-
-Update a folder
-- **create_folder**: Specify the name and optional parent folder ID.
-
-Create a new folder
 - **create_batch_summarization**: Supply the folder ID and the summarization prompt.
 
 Create a batch summarization for a folder
-- **create_share**: Requires the media ID and the recipient’s email address.
-
-Share a media file with a user
 - **create_translation**: Provide the media ID and target language code.
 
 Create a translation for a media file
-- **create_video_burn_in**: Supply the media ID and required styling parameters.
-
-Create a video burn-in (subtitles on video)
 - **delete_media**: the deletion.
 
 Delete a media file
@@ -84,28 +52,25 @@ Remove a share from a media file
 - **get_batch_summarization**: Provide the batch ID.
 
 Get batch summarization details
-- **get_media_export**: Use the unique export ID to query the status.
-
-Get media export status
 - **get_media**: Use the specific media ID for the query.
 
 Get media status and details
+- **get_media_export**: Use the unique export ID to query the status.
+
+Get media export status
 - **get_summarization**: Use the provided summarization ID.
 
 Get summarization details
 - **get_transcript_json**: Use the media ID to fetch word-level timestamps.
 
 Get JSON transcript with word-level timestamps
-- **get_transcript_srt**: Specify the media ID and desired formatting options.
-
-Get SRT transcript file
+- **list_media**: List media files
 - **get_transcript_text**: Provide the media ID to fetch the content.
 
 Get plain text transcript
 - **get_translation**: Supply the media ID and target language code.
 
 Get translation status
-- **list_media**: List media files
 - **list_shares**: List shares for a media file
 - **split_transcript**: Provide the media ID and desired subtitle formatting parameters.
 
@@ -119,6 +84,41 @@ Update transcript words and speakers
 - **update_user**: Must provide both the user ID and the desired role.
 
 Update a user role
+- **create_folder**: Specify the name and optional parent folder ID.
+
+Create a new folder
+- **create_media_export**: Provide the media ID and optionally remove strikethrough text.
+
+Create a media export
+- **create_share**: Requires the media ID and the recipient’s email address.
+
+Share a media file with a user
+- **create_summarization**: Provide the media ID and optionally a custom prompt.
+
+Create a summarization for a media file
+- **create_video_burn_in**: Supply the media ID and required styling parameters.
+
+Create a video burn-in (subtitles on video)
+- **get_transcript_srt**: Specify the media ID and desired formatting options.
+
+Get SRT transcript file
+- **get_transcript_vtt**: Specify the media ID and desired formatting options.
+
+Get VTT transcript file
+- **get_video_burn_in**: Provide the unique export ID to check the status.
+
+Get video burn-in status
+- **invite_user**: Requires both email and role.
+
+Invite a new user to the account
+- **list_folders**: List all folders
+- **list_users**: List all users in the account
+- **submit_media**: Provide the file URL and name. Do not submit media without a file URL.
+
+Submit new media for transcription
+- **update_folder**: Provide the folder ID and the new name.
+
+Update a folder
 
 
 ## 💬 Prompt Examples

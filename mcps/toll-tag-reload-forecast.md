@@ -14,9 +14,9 @@ This MCP server provides predictive tools to manage toll-tag balances. Use `fore
 
 
 ## Available Tools (4)
-- **analyze_spending_patterns**: 
 - **forecast_reload_events**: Forecasts when the user will need to reload their toll-tag balance
 - **get_safety_margin**: Calculates how many trips can be taken before reaching the reload threshold
+- **analyze_spending_patterns**: 
 - **simulate_trip_impact**: 
 
 

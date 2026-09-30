@@ -14,8 +14,8 @@ This MCP server provides specialized tools for enologists and winemakers to mode
 
 
 ## Available Tools (4)
-- **assess_reductive_risk**: Evaluates if the wine is at risk of developing reductive off-odors due to lack of oxygen
 - **calculate_ingress_rate**: Determines how much oxygen is entering the bottle per unit of time
+- **assess_reductive_risk**: Evaluates if the wine is at risk of developing reductive off-odors due to lack of oxygen
 - **predict_evolution_timeline**: Projects the change in dissolved oxygen over a specific duration
 - **simulate_storage_impact**: A high-level tool to combine all factors to determine the end-state of a bottle after a period of storage
 

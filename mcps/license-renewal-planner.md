@@ -14,10 +14,10 @@ This MCP server provides tools to manage license renewal processes. It calculate
 
 
 ## Available Tools (4)
-- **calculate_renewal_window**: Determines the time remaining to complete the renewal process
 - **get_renewal_checklist**: Generates a complete timeline of actions and a status report for the renewal process
 - **summarize_financial_requirements**: Provides a breakdown of the costs involved in the renewal
 - **validate_document_readiness**: Checks if a specific document is valid and ready for use on the appointment date
+- **calculate_renewal_window**: Determines the time remaining to complete the renewal process
 
 
 ## 💬 Prompt Examples

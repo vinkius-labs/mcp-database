@@ -14,9 +14,9 @@ This MCP server provides specialized calculation tools for sparkling wine produc
 
 
 ## Available Tools (4)
+- **calculate_required_sugar**: Calculates how much sugar must be added to achieve a specific target pressure
 - **calculate_carbonation_pressure**: Determines the expected internal pressure based on current fermentation parameters
 - **calculate_nitrogen_dilution**: Determines how much nitrogen gas is needed to dilute CO2 to a lower target pressure
-- **calculate_required_sugar**: Calculates how much sugar must be added to achieve a specific target pressure
 - **estimate_disgorgement_window**: Provides an estimate of when the wine will reach its target pressure
 
 

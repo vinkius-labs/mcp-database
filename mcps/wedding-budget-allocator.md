@@ -7,17 +7,17 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Intelligently distribute wedding funds across categories based on priorities and limits.
+Manage and distribute wedding expenses across vendors, guests, and contingency funds.
 
 ## Description
-This MCP server provides a suite of tools to manage wedding finances. Use `allocate_budget` to distribute a total budget across essential categories like venue, food, and decor based on your specific priorities and spending limits. You can also use `get_category_summary` to inspect individual category details, `calculate_per_guest_impact` to see how guest counts affect your spending, and `validate_budget_integrity` to ensure your plan follows all constraints.
+The Wedding Budget Allocator is a specialized financial engine designed to manage wedding spending. It allows you to distribute a total budget across various vendor categories like `VENUE`, `CATERING`, and `PHOTOGRAPHY` while accounting for priority levels. You can use `allocate_vendor_budget` to assign funds to specific vendors, including tax and deposit calculations. The tool also handles guest-driven costs via `calculate_guest_costs` and ensures financial stability using `validate_budget_health` to keep all spending within your total budget and contingency reserves.
 
 
 ## Available Tools (4)
-- **allocate_budget**: Calculates the distribution of funds across all wedding categories
-- **calculate_per_guest_impact**: Analyzes how changes in guest count affect the available budget per person
-- **get_category_summary**: Provides a detailed breakdown of a specific category's allocation
-- **validate_budget_integrity**: Checks if the current allocation adheres to all constraints and business rules
+- **allocate_vendor_budget**: Assigns a specific portion of the budget to a single vendor or category
+- **calculate_guest_costs**: Estimates costs that fluctuate based on the number of wedding guests
+- **get_budget_summary**: Provides a high-level overview of the current financial standing
+- **validate_budget_health**: Performs a comprehensive check to ensure all allocations stay within the total budget
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides a suite of tools to manage wedding finances. Use `alloc
 Here are some examples of how you can interact with the **Wedding Budget Allocator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Allocate a $20,000 budget for 100 guests. Prioritize Food and Venue highly, and set a $2,000 limit for Flowers."
+> "I have a total budget of $30,000. I want to reserve 10% for emergencies. What is my available budget?"
 
 **🤖 AI Agent:**
-> The budget has been allocated. Venue: $7,000, Food: $6,000, Beverage: $2,000, Attire: $1,000, Photography: $1,500, Music: $500, Decor: $500, Flowers: $2,000, Transport: $500, Guests: $0, Taxes: $0, Contingency: $0. Per-guest cost is $200.
+> With a $30,000 budget and a 10% contingency reserve ($3,000), you have $27,000 available for allocation.
 
 ---
 
 **👤 You:**
-> "How much will my per-guest cost change if I increase my guest count from 100 to 120 with a $20,000 budget?"
+> "Allocate $5,000 to the Catering vendor. It is an ESSENTIAL item, has a 7% tax rate, and requires a $500 deposit."
 
 **🤖 AI Agent:**
-> Increasing the guest count to 120 reduces your current per-guest cost from $200 to $166.67.
+> The allocation for Catering is complete. The total cost including 7% tax is $5,350, and after the $500 deposit, the remaining balance for this vendor is $4,850.
 
 ---
 
 **👤 You:**
-> "Show me the details for the Food category from my allocation."
+> "I have 120 guests and the catering cost is $85 per person with a 5% tax. How much will this cost in total?"
 
 **🤖 AI Agent:**
-> The Food category has been allocated $6,000 with no specific limit set.
+> The total cost for 120 guests at $85 per person, including a 5% tax, is $10,710.
 
 
 ## ❓ FAQ
 
-**Q: How does the budget allocation work?**
-The `allocate_budget` tool distributes funds by following your priority ranking. It fills higher priority categories first until they reach their limit or the total budget is used.
+**Q: How does the tool handle taxes and deposits?**
+When using `allocate_vendor_budget`, you can specify a tax rate and a deposit amount. The tool calculates the total cost including tax and tracks the remaining balance after the deposit is applied.
 
-**Q: Can I set maximum spending limits for specific categories?**
-Yes, when using `allocate_budget`, you can provide a limits object to set hard ceilings on specific categories.
+**Q: Can I set aside money for emergencies?**
+Yes, you can use `get_budget_summary` to define a contingency percentage, which reserves a portion of your total budget for unforeseen expenses.
 
-**Q: How do I check if my budget plan is valid?**
-You can use the `validate_budget_integrity` tool to check if your allocation is consistent and adheres to all set limits.
+**Q: How are guest-related costs calculated?**
+You can use `calculate_guest_costs` by providing the number of guests and the cost per person. The tool will calculate the total cost, including any applicable taxes.
 
 
 ## Installation & Usage

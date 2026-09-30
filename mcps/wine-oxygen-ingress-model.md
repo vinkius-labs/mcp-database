@@ -14,10 +14,10 @@ This MCP server provides a predictive modeling engine to simulate oxygen transmi
 
 
 ## Available Tools (4)
-- **calculate_annual_ingress**: Calculate the total mass of oxygen entering the wine in a single year
-- **predict_oxygen_saturation_timing**: Estimate when oxygen levels in the wine will reach a critical threshold
 - **predict_wine_evolution_state**: Categorize the predicted chemical state of the wine
 - **simulate_temperature_impact**: Adjust ingress and consumption parameters based on thermal fluctuations
+- **calculate_annual_ingress**: Calculate the total mass of oxygen entering the wine in a single year
+- **predict_oxygen_saturation_timing**: Estimate when oxygen levels in the wine will reach a critical threshold
 
 
 ## 💬 Prompt Examples

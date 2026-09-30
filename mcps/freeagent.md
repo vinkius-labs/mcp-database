@@ -25,7 +25,7 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 ### How it works
 
 1. Subscribe to this server through the Vinkius Marketplace
-2. Authorize your FreeAgent account via OAuth 2.0
+2. Set up your OAuth 2.0 authorization — register a small app at the FreeAgent Developer Dashboard with the Vinkius redirect URI, then connect and approve access to your account
 3. Start managing your accounting data from Claude, Cursor, or any MCP client
 
 ### Who is this for?
@@ -37,17 +37,17 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 
 ## Available Tools (12)
 - **get_contact_details**: Get contact metadata
-- **get_company_details**: Get company metadata
 - **get_invoice_details**: Get invoice metadata
+- **get_company_details**: Get company metadata
 - **get_profit_and_loss**: Get P&L summary
+- **list_bank_accounts**: List bank accounts
 - **list_bank_transactions**: List transactions for an account
+- **list_purchase_bills**: List purchase invoices (bills)
 - **list_chart_of_accounts**: List accounting categories
 - **list_contacts**: List customers and suppliers
 - **list_out_of_pocket_expenses**: List employee expenses
-- **list_projects**: List active projects
-- **list_purchase_bills**: List purchase invoices (bills)
 - **list_invoices**: List sales invoices
-- **list_bank_accounts**: List bank accounts
+- **list_projects**: List active projects
 
 
 ## 💬 Prompt Examples
@@ -80,7 +80,7 @@ Here are some examples of how you can interact with the **FreeAgent** MCP server
 ## ❓ FAQ
 
 **Q: How do I connect my FreeAgent account?**
-This server uses OAuth 2.0. Simply click 'Connect' in the Vinkius interface, and you will be redirected to FreeAgent to authorize the integration.
+This server uses OAuth 2.0. First, create a small application at the [FreeAgent Developer Dashboard](https://dev.freeagent.com/apps) and set its Redirect URI to `https://api.vinkius.com/marketplace/oauth/callback`. Then paste your app's Client ID and Client Secret into the Vinkius credential fields, save them, and click 'Connect with FreeAgent' to authorize the integration in your FreeAgent account.
 
 **Q: Can I see my actual bank transactions using the agent?**
 Yes! The 'list_bank_transactions' tool allows you to retrieve the history for any configured bank account in your FreeAgent profile.

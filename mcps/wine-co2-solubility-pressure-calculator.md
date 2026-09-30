@@ -14,8 +14,8 @@ This MCP server provides precise calculations for carbon dioxide behavior in win
 
 
 ## Available Tools (4)
-- **analyze_still_wine_degassing**: Predicts how much CO2 will be lost from a still wine during storage or warming
 - **calculate_equilibrium_solubility**: Determines the concentration of dissolved CO2 at a specific state
+- **analyze_still_wine_degassing**: Predicts how much CO2 will be lost from a still wine during storage or warming
 - **calculate_sparkling_wine_target**: Calculates the necessary pressure to achieve a specific level of effervescence
 - **predict_bottling_pressure**: Estimates the internal bottle pressure at a later time based on bottling conditions
 

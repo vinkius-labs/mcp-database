@@ -15,9 +15,9 @@ This MCP server provides tools to forecast backup storage needs. It calculates m
 
 ## Available Tools (4)
 - **estimate_expansion_requirement**: Calculates how much additional storage capacity must be added to meet a specific target date
-- **calculate_exhaustion_date**: Determines when the backup storage will run out of space
 - **get_monthly_usage_forecast**: Calculates the projected storage footprint for each month over a specified horizon
 - **validate_retention_policy**: Ensures the retention schedule and version count are mathematically consistent
+- **calculate_exhaustion_date**: Determines when the backup storage will run out of space
 
 
 ## 💬 Prompt Examples

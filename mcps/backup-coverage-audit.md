@@ -14,10 +14,10 @@ This MCP server provides a comprehensive auditing engine for enterprise backup e
 
 
 ## Available Tools (4)
-- **verify_retention_compliance_tool**: Ensure that backup retention rules are being honored and that old data is being purged
-- **analyze_coverage_tool**: Identify which critical data assets are missing backup protection
 - **audit_redundancy_tool**: Detect wasted storage by finding duplicate data sets across different destinations
 - **check_staleness_tool**: Find backup jobs that have failed to run or complete within their required frequency
+- **verify_retention_compliance_tool**: Ensure that backup retention rules are being honored and that old data is being purged
+- **analyze_coverage_tool**: Identify which critical data assets are missing backup protection
 
 
 ## 💬 Prompt Examples
