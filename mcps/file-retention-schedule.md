@@ -14,9 +14,9 @@ Manage the lifecycle of digital documents with precision. This MCP server connec
 
 
 ## Available Tools (4)
+- **calculate_retention_milestones**: Calculates the full lifecycle timeline for a specific file based on its metadata and retention rules
 - **filter_files_by_action**: Identifies a list of files that have reached a specific lifecycle stage
 - **get_category_rules**: Retrieves the default retention settings for a specific document classification
-- **calculate_retention_milestones**: Calculates the full lifecycle timeline for a specific file based on its metadata and retention rules
 - **validate_retention_override**: Verifies if a user-provided retention override is compliant with organizational policy
 
 

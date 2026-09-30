@@ -14,10 +14,10 @@ The Account Inventory Register provides a structured way to manage your digital 
 
 
 ## Available Tools (4)
-- **identify_vulnerable_accounts**: Locates accounts that lack a recovery method
 - **list_accounts**: Provides a full overview of all registered accounts
 - **find_duplicate_purposes**: Identifies accounts that share the same provider and purpose
 - **get_review_priorities**: Generates a prioritized list of accounts that need user intervention
+- **identify_vulnerable_accounts**: Locates accounts that lack a recovery method
 
 
 ## 💬 Prompt Examples

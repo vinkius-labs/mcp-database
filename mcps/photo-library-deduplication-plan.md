@@ -14,9 +14,9 @@ This MCP server provides tools to manage digital photo libraries by identifying 
 
 
 ## Available Tools (4)
+- **select_master_files**: Determine which specific file should be kept for every identified duplicate group
 - **analyze_recovery_impact**: Calculate the total storage impact of a deduplication plan
 - **find_duplicate_groups**: Identify sets of photo records that are considered exact duplicates
-- **select_master_files**: Determine which specific file should be kept for every identified duplicate group
 - **validate_deduplication_safety**: Verify that a proposed deduplication plan will not result in data loss of unique files
 
 

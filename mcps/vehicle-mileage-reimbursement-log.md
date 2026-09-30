@@ -14,9 +14,9 @@ This MCP server provides tools to manage the financial reconciliation of vehicle
 
 
 ## Available Tools (4)
+- **aggregate_period_reimbursements**: Summarizes all trips within a specific timeframe to find the total amount earned
 - **audit_trip_logs**: Validates a batch of logs to ensure all entries are compliant with business rules
 - **calculate_trip_reimbursement**: Calculates the specific reimbursement amount for a single completed trip
-- **aggregate_period_reimbursements**: Summarizes all trips within a specific timeframe to find the total amount earned
 - **reconcile_with_advances**: Calculates the final payment owed to the user after accounting for money already received
 
 

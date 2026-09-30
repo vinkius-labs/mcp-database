@@ -14,10 +14,10 @@ This MCP server provides a decision-support engine to evaluate and rank cloud st
 
 
 ## Available Tools (4)
-- **get_plan_details**: Retrieves the specific details of a single storage plan
 - **calculate_plan_efficiency**: Determines the financial and capacity efficiency of a plan relative to a user's current needs
 - **compare_plans**: Ranks multiple plans to find the optimal choice based on cost and capacity
 - **get_overage_projection**: Predicts the total cost if a user exceeds their plan capacity
+- **get_plan_details**: Retrieves the specific details of a single storage plan
 
 
 ## 💬 Prompt Examples

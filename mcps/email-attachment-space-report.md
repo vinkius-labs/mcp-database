@@ -14,10 +14,10 @@ This MCP server provides tools to analyze email attachment metadata. Use `analyz
 
 
 ## Available Tools (4)
-- **filter_large_files**: Retrieves a list of all attachments that exceed a specific size limit
-- **group_by_category**: Breaks down storage consumption by file type or organizational label
 - **analyze_attachment_totals**: Provides a high-level summary of total storage usage across all provided records
+- **filter_large_files**: Retrieves a list of all attachments that exceed a specific size limit
 - **find_largest_attachments**: Identifies the specific files consuming the most space
+- **group_by_category**: Breaks down storage consumption by file type or organizational label
 
 
 ## 💬 Prompt Examples

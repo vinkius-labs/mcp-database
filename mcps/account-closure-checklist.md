@@ -14,10 +14,10 @@ This MCP server provides a structured framework for managing the complex process
 
 
 ## Available Tools (4)
-- **calculate_closure_timeline**: Determines the final target date for account deactivation based on service rules and pending tasks
 - **get_closure_prerequisites**: Identifies the immediate manual actions required to prepare an account for closure
 - **map_closure_dependencies**: Determines the order of operations by identifying which tasks must be completed before others
 - **verify_account_readiness**: Performs a final audit to see if the account meets all criteria for immediate closure
+- **calculate_closure_timeline**: Determines the final target date for account deactivation based on service rules and pending tasks
 
 
 ## 💬 Prompt Examples

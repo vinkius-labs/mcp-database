@@ -14,11 +14,11 @@ This MCP server provides tools to analyze your download directory and create act
 
 
 ## Available Tools (4)
-- **identify_duplicates**: Finds groups of files that are exact bit-for-bit copies of one another
+- **get_review_folders**: Identifies logical groupings of files that require user intervention based on specific criteria
 - **calculate_space_by_category**: ) are taking up the most space.
 
 Summarizes how much disk space is being consumed by different file types
-- **get_review_folders**: Identifies logical groupings of files that require user intervention based on specific criteria
+- **identify_duplicates**: Finds groups of files that are exact bit-for-bit copies of one another
 - **propose_archive_groups**: Suggests bundles of files that can be moved to an archive based on age and type
 
 
