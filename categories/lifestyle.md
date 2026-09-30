@@ -28,6 +28,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Grounding & Earthing Duration Guide](../mcps/grounding-earthing-duration-guide.md) | Personalized grounding practice schedules based on health goals and contact methods. |
 | [Hair Wash Frequency Calculator](../mcps/hair-wash-frequency-calculator.md) | Calculate monthly hair wash frequency and product usage needs. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
+| [Home Bar Stock Planner](../mcps/home-bar-stock-planner.md) | Plan cocktail events by calculating exact ingredient, ice, and glassware needs. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Local Club Membership Planner](../mcps/local-club-membership-planner.md) | Evaluate and plan local club memberships based on budget and fit. |
@@ -40,6 +41,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Numerology Compatibility](../mcps/numerology-compatibility.md) | Discover the vibrational alignment between individuals using numerological profiles. |
 | [Numerology Life Path Calculator](../mcps/numerology-life-path-calculator.md) | Discover your spiritual purpose and personality traits through Pythagorean numerology calculation. |
 | [Picnic Event Planner](../mcps/picnic-event-planner.md) | A complete logistics assistant for planning picnics, managing food, gear, and budget. |
+| [Picnic Quantity Planner](../mcps/picnic-quantity-planner.md) | Calculates food, drink, ice, and seating needs for outdoor gatherings. |
 | [Pregnancy Week-by-Week Calculator](../mcps/pregnancy-week-by-week-calculator.md) | Track pregnancy progress, fetal development milestones, and trimester symptoms. |
 | [Ring Size Calculator](../mcps/ring-size-calculator.md) | Convert finger measurements into precise international ring sizes. |
 | [Seimei Handan Fortune Calculator](../mcps/seimei-handan-fortune-calculator.md) | Calculate Japanese name fortunes using the traditional Five Grids (Go-Grid) system. |

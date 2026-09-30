@@ -286,6 +286,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Chameleon.io](../mcps/chameleonio.md) | Manage product adoption and onboarding via Chameleon — trigger tours, analyze surveys, and track user events directly from any AI agent. |
 | [Change Case Engine](../mcps/change-case-engine.md) | Transform text between 12 naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and more) with zero errors. |
 | [Chanty](../mcps/chanty.md) | Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent. |
+| [Charity Run Team Planner](../mcps/charity-run-team-planner.md) | Coordinate registrations, fundraising, apparel, and travel for charity running teams. |
 | [Child Birthday Logistics Plan](../mcps/child-birthday-logistics-plan.md) | Automate birthday party planning with booking timelines, supervision safety checks, and guest communication. |
 | [Childcare Handoff Brief](../mcps/childcare-handoff-brief.md) | Secure and structured handoff tools for childcare transitions. |
 | [Childcare Hours Total](../mcps/childcare-hours-total.md) | Aggregates and analyzes childcare duration data, including overlap detection and provider summaries. |
@@ -352,6 +353,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Code Review Economics Engine](../mcps/code-review-economics-engine.md) | Quantify the financial impact and ROI of your code review processes. |
 | [Coffee & Lunch Habit Cost Calculator](../mcps/coffee-lunch-habit-cost-calculator.md) | Quantify the long-term opportunity cost of daily habits like coffee or lunch. |
 | [Coffee Caffeine Tracker](../mcps/coffee-caffeine-tracker.md) | Calculate caffeine content in coffee servings and track daily intake. |
+| [Coffee Home Savings Calculator](../mcps/coffee-home-savings-calculator.md) | Compare the cost of cafe coffee versus brewing at home. |
 | [Cognitive Load Estimator](../mcps/cognitive-load-estimator.md) | Quantify mental strain from workload metrics and get actionable mitigation strategies. |
 | [Cognitive Load Scorer](../mcps/cognitive-load-scorer.md) | Quantify the mental effort required to process text by measuring linguistic complexity. |
 | [Cognito Forms](../mcps/cognito-forms.md) | Build smart online forms with conditional logic, calculations, and payment collection that adapt to every response. |
@@ -614,6 +616,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Family Address Update Plan](../mcps/family-address-update-plan.md) | Orchestrates a prioritized roadmap for updating family accounts and institutions during a relocation. |
 | [Family Anniversary Reminder Plan](../mcps/family-anniversary-reminder-plan.md) | Automate your family celebrations by transforming occasions into actionable reminder schedules. |
 | [Family Birthday Counter](../mcps/family-birthday-counter.md) | Track and count birthday occurrences within specific timeframes. |
+| [Family Breakfast Rotation](../mcps/family-breakfast-rotation.md) | Automated weekly breakfast scheduling based on prep time, budget, and nutrition. |
 | [Family Calendar Days](../mcps/family-calendar-days.md) | Analyze family calendar durations, activity density, and overlapping events. |
 | [Family Care Budget Planner](../mcps/family-care-budget-planner.md) | Orchestrate caregiving expenses, contributor schedules, and reimbursement tracking. |
 | [Family Care Calendar](../mcps/family-care-calendar.md) | Coordinate caregiving tasks, helper availability, and complex coverage rules. |
@@ -686,6 +689,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Focus Minutes Total](../mcps/focus-minutes-total.md) | Track and aggregate total focus time and session metrics. |
 | [folk](../mcps/folk.md) | Manage relationships across sales, recruiting, and partnerships with a lightweight CRM that syncs contacts from everywhere. |
 | [Food Delivery vs. Cooking Analyzer](../mcps/food-delivery-vs-cooking-analyzer.md) | A deterministic cost and time-efficiency analyzer for Singaporean young adults. |
+| [Food Storage Container Planner](../mcps/food-storage-container-planner.md) | Optimizes meal prep by matching food portions to the best available storage containers. |
 | [Forecast](../mcps/forecast.md) | Manage AI-powered project resources via Forecast — track projects and tasks, handle team availability, and monitor milestones directly from any AI agent. |
 | [Forgetting Curve Calculator](../mcps/forgetting-curve-calculator.md) | Predict memory decay and schedule learning reinforcements using the Ebbinghaus Forgetting Curve. |
 | [Forj](../mcps/forj.md) | Manage community members, groups, and activity via AI agents with Forj (formerly Mobilize). |
@@ -693,6 +697,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Formstack](../mcps/formstack.md) | Manage professional forms, track submissions, and automate data collection via AI agents with Formstack. |
 | [FreeAgent](../mcps/freeagent.md) | Manage accounting, track invoices, and oversee bank transactions via AI agents with FreeAgent. |
 | [Freelancer Rate Calculator](../mcps/freelancer-rate-calculator.md) | Calculate sustainable hourly rates based on target income and billable capacity. |
+| [Freezer Meal Inventory Planner](../mcps/freezer-meal-inventory-planner.md) | Manage freezer stock, optimize consumption, and plan restocks. |
 | [FreshBooks](../mcps/freshbooks.md) | Manage small business accounting via FreshBooks — track clients and invoices, handle payments and billing via AI agents. |
 | [Friend Trip Payment Plan](../mcps/friend-trip-payment-plan.md) | Manage group travel finances, deposits, and peer-to-peer reimbursements. |
 | [Fuel Economy Log Analysis](../mcps/fuel-economy-log-analysis.md) | Analyze vehicle fuel efficiency, cost per distance, and performance trends. |
@@ -747,6 +752,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Grocery Basket Budget Optimizer](../mcps/grocery-basket-budget-optimizer.md) | Optimizes grocery shopping by selecting items to meet dietary, meal, and household needs within a strict budget. |
 | [Grocy (Home ERP)](../mcps/grocy-home-erp.md) | Automate your household management with Grocy — track inventory, manage shopping lists, and organize chores directly from your AI agent. |
 | [Gross-to-Net Calculator](../mcps/gross-to-net-calculator.md) | Calculate precise take-home pay by applying fixed and percentage-based deductions to gross income. |
+| [Group Class Cost Splitter](../mcps/group-class-cost-splitter.md) | Equitably divide instructor, venue, material, tax, and payment fees among class participants. |
+| [Group Transport Planner](../mcps/group-transport-planner.md) | Compare group travel options by cost, capacity, and accessibility. |
 | [Growth Strategist](../mcps/growth-strategist.md) | AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue. |
 | [GrowthZone](../mcps/growthzone.md) | Automate association management via GrowthZone — manage contacts, memberships, events, and organizations directly from any AI agent. |
 | [Guerrilla Marketing](../mcps/guerrilla-marketing.md) | Real guerrilla costs nothing — only sweat equity. Most AI-generated tactics quietly sneak in paid spend and call it creative. This tool makes the agent prove zero cost, pinpoint the exact ambush moment, design a sharing trigger, assess risk, and trace every play back to revenue. |
@@ -775,9 +782,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hive (Project Management)](../mcps/hive-project-management.md) | Manage projects via Hive — create actions, track initiatives, and organize workspaces. |
 | [Hobby Budget Tracker](../mcps/hobby-budget-tracker.md) | Track and analyze expenses for your personal hobbies. |
 | [Holiday API](../mcps/holiday-api.md) | Manage global holidays — audit public and federal holidays via AI. |
+| [Holiday Cookie Batch Planner](../mcps/holiday-cookie-batch-planner.md) | Converts holiday gifting needs into actionable baking batches, ingredient lists, and oven schedules. |
 | [Holiday Dinner Planner](../mcps/holiday-dinner-planner.md) | Transform guest lists and recipes into complete cooking schedules, shopping lists, and budget estimates. |
 | [Holiday Weekend Bridge Optimizer](../mcps/holiday-weekend-bridge-optimizer.md) | Maximize your long weekends by identifying the most efficient PTO bridge days. |
 | [Home Childcare Scheduler](../mcps/home-childcare-scheduler.md) | Synchronize caregiver availability, child routines, and parent work schedules into actionable daily plans. |
+| [Home Dinner Host Plan](../mcps/home-dinner-host-plan.md) | Complete management for hosting dinner parties, from menu design to cleanup. |
 | [Home Emergency Contact Tree](../mcps/home-emergency-contact-tree.md) | Organize household members and external contacts into a prioritized, rule-based emergency call tree. |
 | [Home Inventory Readiness Plan](../mcps/home-inventory-readiness-plan.md) | Plan your household inventory capture with room-by-room scheduling and secure archiving. |
 | [Home Inventory Record Plan](../mcps/home-inventory-record-plan.md) | A structured planning engine for systematic home asset documentation and management. |
@@ -970,6 +979,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Lovo AI (Genny TTS & Voice Synthesis API)](../mcps/lovo-ai-genny-tts-voice-synthesis-api.md) | Generate high-quality AI voices and text-to-speech synthesis directly from your AI agent using Lovo AI's Genny API. |
 | [Lumber Cut List Generator](../mcps/lumber-cut-list-generator.md) | Optimize wood cutting from standard lumber and plywood stock. |
 | [Lunatask](../mcps/lunatask.md) | Manage tasks, habits, and notes via the Lunatask REST API (Encrypted Metadata Only). |
+| [Lunch Budget Planner](../mcps/lunch-budget-planner.md) | Optimize your workday lunch spending and maximize monthly savings. |
 | [MagicBell](../mcps/magicbell.md) | Manage notifications and broadcasts via MagicBell — list, retrieve, and trigger multi-channel alerts directly from your AI agent. |
 | [Maildroppa](../mcps/maildroppa.md) | Grow your email list and send targeted campaigns with a simple email marketing platform designed for solopreneurs and creators. |
 | [Mailinator](../mcps/mailinator.md) | Test email workflows with disposable inboxes that catch every message without touching production mailboxes or real addresses. |
@@ -991,7 +1001,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [MCPFusion Developer Prover](../mcps/mcpfusion-developer-prover.md) | LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag... |
 | [Meal Cost Calculator](../mcps/meal-cost-calculator.md) | Calculate total recipe expenses and individual serving costs based on ingredient unit prices. |
 | [Meal Per Diem Calculator](../mcps/meal-per-diem-calculator.md) | Calculates travel meal allowances based on daily rates and trip duration. |
+| [Meal Plan Budget Optimizer](../mcps/meal-plan-budget-optimizer.md) | Optimize your weekly meal plan by balancing budget, nutrition, and personal preferences. |
 | [Meal Prep Container Calculator](../mcps/meal-prep-container-calculator.md) | Calculate exactly how many storage containers you need for your meal prep plan. |
+| [Meal Prep Sunday Plan](../mcps/meal-prep-sunday-plan.md) | A scheduling engine that orchestrates recipe prep, cooking, and cooling. |
 | [Meal Prep Time Planner](../mcps/meal-prep-time-planner.md) | Optimized meal preparation scheduling with critical path and equipment conflict analysis. |
 | [Mealie (Recipe Manager)](../mcps/mealie-recipe-manager.md) | Manage your Mealie recipes, meal plans, and shopping lists directly through your AI agent. |
 | [Mechanical Drop Set Planner](../mcps/mechanical-drop-set-planner.md) | Design progressive resistance training sequences using mechanical advantage transitions. |
@@ -1097,6 +1109,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Page Turn Time](../mcps/page-turn-time.md) | Estimate reading duration based on page count and speed. |
 | [PagePixels](../mcps/pagepixels.md) | Capture website screenshots and generate visual previews programmatically with an API that handles rendering at any resolution. |
 | [Pantry Expiry & Rotation Planner](../mcps/pantry-expiry-rotation-planner.md) | Manage pantry inventory and minimize food waste with intelligent rotation plans. |
+| [Pantry Expiry Meal Plan](../mcps/pantry-expiry-meal-plan.md) | Minimize food waste by generating meal plans that prioritize ingredients closest to their expiration date. |
+| [Pantry Meal Builder](../mcps/pantry-meal-builder.md) | Plan meals based on your current pantry inventory and ingredient substitutions. |
 | [Pantry Shelf Life Tracker](../mcps/pantry-shelf-life-tracker.md) | Calculate precise use-by dates and manage pantry expiration using shelf-life durations. |
 | [PaperQuotes](../mcps/paperquotes.md) | Access a vast library of quotes, search by author or tags, and get the quote of the day directly in your AI agent. |
 | [Parent-Teacher Meeting Planner](../mcps/parent-teacher-meeting-planner.md) | Optimizes meeting schedules by reconciling time constraints, topic priorities, and language needs. |
@@ -1231,6 +1245,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Rebrandly](../mcps/rebrandly.md) | Link management platform to create and manage branded short URLs with AI. |
 | [Recall Notice Organizer](../mcps/recall-notice-organizer.md) | Organizes vehicle recall notices into prioritized appointment plans. |
 | [Receipt Retention Plan](../mcps/receipt-retention-plan.md) | Manage purchase records, warranty periods, and tax retention schedules. |
+| [Recipe Batch Scaler](../mcps/recipe-batch-scaler.md) | Scales ingredient quantities for target servings, waste allowance, and container size. |
 | [Recipe Cost Calculator](../mcps/recipe-cost-calculator.md) | Calculate the exact cost per serving for any recipe based on ingredient unit prices. |
 | [Recipe Scaler](../mcps/recipe-scaler.md) | Precisely scale recipe ingredients while maintaining culinary proportions and practical measurements. |
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
@@ -1364,6 +1379,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SmartThings](../mcps/smartthings.md) | Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent. |
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |
 | [Snowboard Lap Tracker](../mcps/snowboard-lap-tracker.md) | Track snowboarding session progress and lap counts. |
+| [Social Calendar Builder](../mcps/social-calendar-builder.md) | Optimize your social life by balancing availability, budget, and travel. |
 | [Social Jetlag Calculator](../mcps/social-jetlag-calculator.md) | Analyze circadian misalignment and sleep patterns. |
 | [Softinn](../mcps/softinn.md) | Orchestrate Softinn Hotel PMS — manage reservations, rooms, and guest folios directly from any AI agent. |
 | [Soil Test ROI Calculator](../mcps/soil-test-roi-calculator.md) | Quantify the economic impact of soil testing programs. |
@@ -1575,6 +1591,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Weekend Hosting Plan](../mcps/weekend-hosting-plan.md) | Orchestrate guest stays with complete timelines, meal schedules, and prep checklists. |
 | [Weekend Sleep Recovery Planner](../mcps/weekend-sleep-recovery-planner.md) | Optimized weekend sleep scheduling to mitigate weekday sleep debt. |
 | [Weekly Goal Progress](../mcps/weekly-goal-progress.md) | Track and predict weekly goal completion and progress velocity. |
+| [Weekly Grocery Plan](../mcps/weekly-grocery-plan.md) | Generate optimized grocery lists by reconciling meal needs with pantry stock and budget. |
 | [Weekly Pay Calculator](../mcps/weekly-pay-calculator.md) | Calculate weekly gross pay, tax estimates, and workload status. |
 | [Weekly Volume Distributor](../mcps/weekly-volume-distributor.md) | Distributes weekly training volume across sessions based on muscle group targets and split types. |
 | [Weight Increment Calculator](../mcps/weight-increment-calculator.md) | Calculates optimal weight increases for progressive overload. |

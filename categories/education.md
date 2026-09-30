@@ -60,6 +60,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Redox Reaction Predictor](../mcps/redox-reaction-predictor.md) | Predict spontaneous redox reactions, calculate cell potentials, and identify reaction products. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [School Contact Update Letter Generator](../mcps/school-contact-update-letter-generator.md) | Generates formal school notification letters for student contact updates. |
+| [School Snack Planner](../mcps/school-snack-planner.md) | Plan nutritious snack distributions for students while managing budgets and dietary restrictions. |
 | [School Supplies Distribution Planner](../mcps/school-supplies-distribution-planner.md) | Optimizes school supply allocation using reuse-first logic and budget tracking. |
 | [School Uniform Procurement Planner](../mcps/school-uniform-procurement-planner.md) | Sequences uniform orders, optimizes budgets, and generates operational checklists. |
 | [Solubility Product Calculator](../mcps/solubility-product-calculator.md) | Calculate Ksp, molar solubility, and predict precipitation in chemical solutions. |

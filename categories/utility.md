@@ -36,6 +36,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Popcorn Serving Count](../mcps/popcorn-serving-count.md) | Calculate full servings and leftover weight for popcorn portions. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Raised Bed Soil Volume Calculator](../mcps/raised-bed-soil-volume-calculator.md) | Calculate the exact amount of soil needed for your raised garden beds. |
+| [Recipe Leftover Transformer](../mcps/recipe-leftover-transformer.md) | Match your leftovers to recipes to minimize food waste and cost. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Sleeping Bag Temperature Gap](../mcps/sleeping-bag-temperature-gap.md) | Calculates the safety margin between a sleeping bag's thermal rating and the expected ambient temperature. |
 | [Snow Density Loading](../mcps/snow-density-loading.md) | Calculate rider sinkage and flotation capacity based on snow properties. |

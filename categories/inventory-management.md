@@ -18,6 +18,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Food Donation Logistics](../mcps/food-donation-logistics.md) | Calculate required donation boxes and packing efficiency for food logistics. |
 | [Gallery Artwork Counter](../mcps/gallery-artwork-counter.md) | Track and analyze artwork inventory and display metrics across multiple art galleries. |
 | [Garment Size Averaging](../mcps/garment-size-averaging.md) | Convert qualitative garment sizes into quantitative numeric averages. |
+| [Kitchen Equipment Purchase Planner](../mcps/kitchen-equipment-purchase-planner.md) | Optimize kitchen procurement by ranking equipment based on cost, usage, and space. |
 | [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
 | [Minimum Order Quantity Calculator](../mcps/minimum-order-quantity-calculator.md) | Calculates required order packs and logistics efficiency based on pack sizes. |
 | [Nail Polish Inventory Planner](../mcps/nail-polish-inventory-planner.md) | Calculate required nail polish bottles and manage manicure inventory efficiency. |

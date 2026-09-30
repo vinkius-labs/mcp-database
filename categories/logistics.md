@@ -13,16 +13,21 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Accessible Venue Arrival Plan](../mcps/accessible-venue-arrival-plan.md) | Transforms venue accessibility data and user needs into precise arrival and departure strategies. |
 | [Art Installation Approval Plan](../mcps/art-installation-approval-plan.md) | A decision-support engine for evaluating art installation compliance and readiness. |
 | [Backcountry Rescue Logistics](../mcps/backcountry-rescue-logistics.md) | Estimates emergency response times, evacuation methods, and aerial feasibility for wilderness rescues. |
+| [Baking Production Planner](../mcps/baking-production-planner.md) | Orchestrate bakery production from orders to packaging. |
+| [Barbecue Shopping Planner](../mcps/barbecue-shopping-planner.md) | A logistics engine that generates precise shopping lists for food, drinks, ice, fuel, and serving ware. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
 | [Battery Replacement Readiness](../mcps/battery-replacement-readiness.md) | Plan battery replacements by analyzing age, warranty, and budget requirements. |
 | [Beach Towel Calculator](../mcps/beach-towel-calculator.md) | Calculate total towel requirements and group service tiers. |
+| [Beverage Batch Planner](../mcps/beverage-batch-planner.md) | Scale drink recipes by guests, glass size, ice displacement, and garnish. |
 | [Beverage Ice Volume Calculator](../mcps/beverage-ice-volume-calculator.md) | Calculate precise ice requirements for beverage service. |
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
 | [Child Item Replenishment Plan](../mcps/child-item-replenishment-plan.md) | A logistics and budgeting engine for managing essential child supplies. |
+| [Children Playdate Planner](../mcps/children-playdate-planner.md) | Organize safe, fun, and budget-friendly playdates with automated scheduling and allergy checks. |
 | [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
 | [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
 | [Creative Exhibition Submission Plan](../mcps/creative-exhibition-submission-plan.md) | An intelligent decision-support engine that evaluates artist works against exhibition calls to generate actionable submission strategies. |
 | [Delivery Route Stop Sequencer](../mcps/delivery-route-stop-sequencer.md) | Optimize delivery routes by calculating efficient stop sequences and timing. |
+| [Dinner Party Quantity Planner](../mcps/dinner-party-quantity-planner.md) | Calculate precise food, drink, ice, and supply quantities for any event. |
 | [Dog Park Capacity Planner](../mcps/dog-park-capacity-planner.md) | Calculate safe operating capacities, peak queues, and zone utilization for dog parks. |
 | [Door Clearance Checker](../mcps/door-clearance-checker.md) | Verify if furniture can fit through specific doorways. |
 | [Dough Batch Calculator](../mcps/dough-batch-calculator.md) | Calculate required dough batches and production efficiency for industrial bakeries. |
@@ -31,6 +36,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Enemy Avoidance Seater](../mcps/enemy-avoidance-seater.md) | Automated seating engine that assigns guests to tables while strictly enforcing social constraints and enemy proximity rules. |
 | [Event Seating Planner](../mcps/event-seating-planner.md) | Automated deterministic seating arrangement generator. |
 | [Family Car Seat Logistics Plan](../mcps/family-car-seat-logistics-plan.md) | Synchronize car seat hardware, vehicle compatibility, and driver assignments for safe travel. |
+| [Family Reunion Seating Planner](../mcps/family-reunion-seating-planner.md) | Optimizes family seating arrangements based on group size, accessibility, and social relationships. |
 | [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
 | [Ferry Capacity Checker](../mcps/ferry-capacity-checker.md) | Monitor ferry occupancy and manage boarding requests in real-time. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |

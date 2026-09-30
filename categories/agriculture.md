@@ -57,6 +57,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Ethanol Yield Calculator](../mcps/ethanol-yield-calculator.md) | Calculate ethanol production, co-product yields, and energy/GHG metrics from grain feedstocks. |
 | [Feed Bunk Space Calculator](../mcps/feed-bunk-space-calculator.md) | Calculates feed bunk space requirements and feeding schedules for livestock. |
 | [Feedlot Pen Sizing](../mcps/feedlot-pen-sizing.md) | Calculate precise feedlot pen dimensions, infrastructure needs, and performance impacts. |
+| [Fermentation Batch Planner](../mcps/fermentation-batch-planner.md) | Precision scaling and planning for fermentation batches. |
 | [Fermentation Monitoring Frequency](../mcps/fermentation-monitoring-frequency.md) | Determines optimal monitoring intervals for Brix, temperature, and density during fermentation. |
 | [Fertilizer Calculator](../mcps/fertilizer-calculator.md) | Calculate precise NPK requirements and optimized fertilizer blends. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
