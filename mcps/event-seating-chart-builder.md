@@ -14,8 +14,8 @@ This MCP server provides a sophisticated engine for managing event seating. It u
 
 
 ## Available Tools (4)
-- **generate_seating_plan**: Calculates an optimized seating arrangement that satisfies all guest constraints and table capacities
 - **check_group_cohesion**: Measures how well a seating plan preserves social groups
+- **generate_seating_plan**: Calculates an optimized seating arrangement that satisfies all guest constraints and table capacities
 - **get_table_proximity_map**: Evaluates the spatial relationship between tables to assist in placement logic
 - **validate_constraints**: Audits an existing seating plan to check for violations of rules
 

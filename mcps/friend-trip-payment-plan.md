@@ -15,9 +15,9 @@ This MCP server provides tools to coordinate group travel finances. It allows ag
 
 ## Available Tools (4)
 - **get_trip_summary**: Provides a high-level overview of the trip's financial health
+- **get_participant_ledger**: Retrieves a detailed breakdown of a specific person's financial standing within the trip
 - **track_reimbursement**: Records a transfer between two participants to settle internal debts
 - **calculate_upcoming_deadlines**: Identifies all future payment requirements to help the group prepare for upcoming costs
-- **get_participant_ledger**: Retrieves a detailed breakdown of a specific person's financial standing within the trip
 
 
 ## 💬 Prompt Examples

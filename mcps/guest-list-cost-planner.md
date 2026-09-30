@@ -14,10 +14,10 @@ This MCP server provides essential tools for event budget management. Use `get_t
 
 
 ## Available Tools (4)
-- **get_total_budget**: Calculates the total projected cost of the event
 - **check_venue_capacity**: Determines if the planned guest list fits within the venue's limits
 - **get_budget_summary**: Provides a high-level breakdown of fixed versus variable cost proportions
 - **get_cost_sensitivity**: Analyzes how much the total cost changes when the guest count fluctuates
+- **get_total_budget**: Calculates the total projected cost of the event
 
 
 ## 💬 Prompt Examples

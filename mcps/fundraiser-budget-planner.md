@@ -14,8 +14,8 @@ This MCP server provides financial modeling tools for event organizers. Use `sim
 
 
 ## Available Tools (4)
-- **calculate_required_tickets**: Calculate the number of tickets needed to reach a target net profit
 - **analyze_expense_impact**: Analyze how increases in expenses or fees impact the net profit
+- **calculate_required_tickets**: Calculate the number of tickets needed to reach a target net profit
 - **compare_scenarios**: Compare two different fundraising scenarios
 - **simulate_event_profit**: Simulate event profit given specific revenue and expense numbers
 

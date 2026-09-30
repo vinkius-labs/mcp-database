@@ -14,10 +14,10 @@ This MCP server acts as a coordination engine for organizing potluck events. It 
 
 
 ## Available Tools (4)
-- **assign_dish**: Finalizes a specific food or drink item to an attendee
 - **get_event_summary**: Provides a high-level overview of the potluck's current state of readiness
 - **manage_equipment**: Tracks and assigns necessary serving equipment to attendees
 - **suggest_contributions**: Recommends specific food or drink items to attendees based on their profile
+- **assign_dish**: Finalizes a specific food or drink item to an attendee
 
 
 ## 💬 Prompt Examples

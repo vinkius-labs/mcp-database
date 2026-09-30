@@ -14,10 +14,10 @@ The Game Night Planner connects your AI assistant to the logistics of your socia
 
 
 ## Available Tools (4)
-- **organize_players_and_teams**: Manages the list of attendees and creates balanced teams for specific game rounds
-- **plan_games**: Schedules the sequence of games and rounds to ensure the night fits within the desired timeframe
 - **calculate_shared_costs**: Calculates the total expenditure and the individual split for all participants
 - **manage_snacks**: Tracks the food and beverage requirements for the event
+- **organize_players_and_teams**: Manages the list of attendees and creates balanced teams for specific game rounds
+- **plan_games**: Schedules the sequence of games and rounds to ensure the night fits within the desired timeframe
 
 
 ## 💬 Prompt Examples

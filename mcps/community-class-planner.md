@@ -14,10 +14,10 @@ This MCP server provides essential financial and logistical tools for managing c
 
 
 ## Available Tools (4)
+- **get_material_budget**: 
+- **calculate_class_financials**: 
 - **determine_breakeven_point**: 
 - **validate_class_capacity**: 
-- **calculate_class_financials**: 
-- **get_material_budget**: 
 
 
 ## 💬 Prompt Examples

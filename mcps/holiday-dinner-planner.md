@@ -14,11 +14,11 @@ The Holiday Dinner Planner is a comprehensive planning engine designed to handle
 
 
 ## Available Tools (5)
-- **calculate_table_settings**: Determines the inventory of physical items needed for the dining arrangement
-- **plan_menu_quantities**: Calculates the total amount of each ingredient needed to serve the entire guest list based on provided recipes
 - **create_shopping_list**: Generates a consolidated and categorized list of items to purchase
+- **calculate_table_settings**: Determines the inventory of physical items needed for the dining arrangement
 - **estimate_total_budget**: Provides a high-level financial overview of the planned dinner
 - **generate_cooking_timeline**: Creates a chronological schedule of tasks to ensure the meal is ready at the desired time
+- **plan_menu_quantities**: Calculates the total amount of each ingredient needed to serve the entire guest list based on provided recipes
 
 
 ## 💬 Prompt Examples

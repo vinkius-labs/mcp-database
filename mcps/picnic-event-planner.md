@@ -14,10 +14,10 @@ This MCP server provides a comprehensive suite of tools to organize the perfect 
 
 
 ## Available Tools (4)
-- **plan_gear**: Determine the necessary gear and equipment for the event
 - **analyze_budget**: Analyze the total plan against a defined budget
-- **evaluate_weather_risk**: Evaluate weather risks and provide contingency planning
 - **plan_food_and_beverage**: Calculate necessary food and beverage quantities based on guest count and dietary needs
+- **plan_gear**: Determine the necessary gear and equipment for the event
+- **evaluate_weather_risk**: Evaluate weather risks and provide contingency planning
 
 
 ## 💬 Prompt Examples

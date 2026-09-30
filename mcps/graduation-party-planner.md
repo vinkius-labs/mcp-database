@@ -14,11 +14,11 @@ This MCP server provides a complete suite of tools to manage every aspect of a g
 
 
 ## Available Tools (5)
-- **build_timeline**: Constructs the chronological flow of the event
-- **manage_guest_list**: Tracks and validates the number of invitees
-- **plan_item**: Adds a specific requirement to the party plan
 - **create_party_profile**: Establishes the foundational constraints of the graduation event
 - **get_budget_summary**: Provides a breakdown of spending across all planning pillars
+- **manage_guest_list**: Tracks and validates the number of invitees
+- **plan_item**: Adds a specific requirement to the party plan
+- **build_timeline**: Constructs the chronological flow of the event
 
 
 ## 💬 Prompt Examples

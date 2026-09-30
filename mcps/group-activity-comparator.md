@@ -14,11 +14,11 @@ This MCP server provides a decision-support engine for planning group outings. I
 
 
 ## Available Tools (4)
-- **find_activities**: Retrieves all available activities that meet the baseline availability criteria
 - **calculate_rankings**: 0). Optional constraints like maxBudget or maxDuration can be provided.
 
 Generates a ranked list of activities based on user-defined weights and group requirements
 - **compare_activity_pairs**: Provides a head-to-head comparison between two specific activities
+- **find_activities**: Retrieves all available activities that meet the baseline availability criteria
 - **get_accessibility_score**: g., ["wheelchair_access", "low_noise"]).
 
 Evaluates how well an activity accommodates specific group needs regarding accessibility

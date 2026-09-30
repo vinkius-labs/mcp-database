@@ -14,11 +14,11 @@ This MCP server provides a complete planning engine for baby showers. It uses gu
 
 
 ## Available Tools (5)
-- **calculate_catering_requirements**: Provides a detailed breakdown of food and drink quantities needed
-- **generate_decor_and_favor_list**: Lists the necessary decorations and guest favors
 - **construct_event_timeline**: Generates a chronological schedule for the event
+- **generate_decor_and_favor_list**: Lists the necessary decorations and guest favors
 - **generate_event_blueprint**: Creates the complete master plan for the baby shower
 - **plan_entertainment_and_games**: Suggests a selection of games and activities
+- **calculate_catering_requirements**: Provides a detailed breakdown of food and drink quantities needed
 
 
 ## 💬 Prompt Examples

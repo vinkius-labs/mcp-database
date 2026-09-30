@@ -14,10 +14,10 @@ This MCP server connects AI agents to your book club's organizational data. It a
 
 
 ## Available Tools (4)
-- **get_reading_cycles**: Retrieves a list of all scheduled or past reading cycles
 - **get_discussion_plan**: Retrieves the curated topics for a meeting
 - **get_financial_summary**: Calculates the total book cost for a specific cycle
 - **get_meeting_details**: Provides specific logistics for a scheduled meeting
+- **get_reading_cycles**: Retrieves a list of all scheduled or past reading cycles
 
 
 ## 💬 Prompt Examples

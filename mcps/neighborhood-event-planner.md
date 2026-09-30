@@ -14,9 +14,9 @@ This MCP server provides a complete toolkit for organizing community gatherings.
 
 
 ## Available Tools (5)
-- **check_permits_and_compliance**: Determines if the event is legally cleared to proceed
 - **coordinate_volunteers**: Answers questions about personnel availability and task assignments
 - **get_event_summary**: Provides a high-level overview of the event's current status and health
+- **check_permits_and_compliance**: Determines if the event is legally cleared to proceed
 - **manage_supplies**: Answers questions regarding what items are needed and how much they cost
 - **plan_activity_schedule**: Answers questions about the timeline and the resources required for specific event segments
 

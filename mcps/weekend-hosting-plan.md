@@ -14,9 +14,9 @@ Manage every aspect of guest hosting with precision. This MCP server provides to
 
 
 ## Available Tools (5)
+- **allocate_sleeping_arrangements**: Verifies and assigns sleeping locations based on guest count and available capacity
 - **audit_hosting_plan**: Validates an existing plan to ensure no constraints are violated
 - **calculate_meal_schedule**: Determines the optimal timing for breakfast, lunch, and dinner
-- **allocate_sleeping_arrangements**: Verifies and assigns sleeping locations based on guest count and available capacity
 - **generate_prep_checklist**: Creates a list of necessary tasks to complete before the guest arrival
 - **plan_hosting_timeline**: Generates a complete, chronologically ordered itinerary covering all hosting aspects
 
