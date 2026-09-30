@@ -14,8 +14,8 @@ This MCP server manages wedding finances by converting vendor contracts into act
 
 
 ## Available Tools (4)
-- **check_budget_compliance**: Determines if a vendor contract fits within the predefined budget for its category
 - **calculate_cash_flow_forecast**: Projects total wedding expenditure at a specific milestone date
+- **check_budget_compliance**: Determines if a vendor contract fits within the predefined budget for its category
 - **generate_master_payment_calendar**: Creates a unified, chronological list of all upcoming payments for all vendors
 - **get_vendor_payment_schedule**: Calculates specific payment dates and amounts for a single vendor
 
