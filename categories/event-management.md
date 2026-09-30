@@ -8,6 +8,7 @@ Explore the open database of **event-management** Model Context Protocol (MCP) s
 | [CellarPass](../mcps/cellarpass.md) | Manage winery tasting room reservations, experiences, availability, venues, and guest history for your CellarPass account through natural conversation. |
 | [Clubspeed](../mcps/clubspeed.md) | Manage entertainment venues and bookings via Clubspeed — track customers, monitor reservations, and manage race heats directly from any AI agent. |
 | [CoinMarketCal](../mcps/coinmarketcal.md) | Enable your AI agent to browse upcoming crypto events, listings, and forks via the CoinMarketCal API. |
+| [Event Seating Chart Builder](../mcps/event-seating-chart-builder.md) | Optimizes guest seating based on social groups, capacity, and accessibility. |
 | [ExhibitDay Trade Show Planning](../mcps/exhibitday-trade-show-planning.md) | Equip your AI agent to manage trade show schedules, track booth shipments, and monitor event budgets via the ExhibitDay API. |
 | [HelloAsso](../mcps/helloasso.md) | Automate association management via HelloAsso — manage payments, forms, and orders for French non-profits directly from any AI agent. |
 | [Line-Up](../mcps/line-up.md) | Manage events, check ticket availability, and process bookings via the Line-Up API. |

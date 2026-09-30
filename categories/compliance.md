@@ -19,6 +19,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | [Lockout/Tagout Procedure Generator](../mcps/lockouttagout-procedure-generator.md) | Generates OSHA-compliant lockout/tagout (LOTO) procedures for industrial equipment. |
 | [Membership Records Plan](../mcps/membership-records-plan.md) | Manage membership lifecycles, renewal calendars, and compliance checklists. |
 | [Permit Compliance Tracking](../mcps/permit-compliance-tracking.md) | Monitor and validate environmental permit adherence across air, water, and waste media. |
+| [Privacy Policy Change Log Analyzer](../mcps/privacy-policy-change-log-analyzer.md) | Compares privacy policy versions to identify added, removed, or changed clauses and service impacts. |
 | [Process Safety Management Audit](../mcps/process-safety-management-audit.md) | Automated OSHA 1910.119 compliance auditing for hazardous chemical facilities. |
 | [Product Quality Specification Engine](../mcps/product-quality-specification-engine.md) | Validates product properties against international standards with regional and seasonal adjustments. |
 | [Radioactive Material Management](../mcps/radioactive-material-management.md) | Manage NORM compliance and radiation safety for oil and gas operations. |

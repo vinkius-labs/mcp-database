@@ -11,6 +11,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Conversation Termination Evaluator](../mcps/conversation-termination-evaluator.md) | Prevents runaway agent loops by detecting repetition and stagnation. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
+| [Device Update Calendar](../mcps/device-update-calendar.md) | Schedules device firmware updates by evaluating release dates, maintenance windows, and hardware constraints. |
 | [Documentation Request Plan](../mcps/documentation-request-plan.md) | Orchestrate claim documentation by mapping requirements to owners and automating follow-up schedules. |
 | [Git Atomic Operations Validator](../mcps/git-atomic-operations-validator.md) | Prevent destructive Git operations and enforce commit standards. |
 | [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |

@@ -4,6 +4,7 @@ Explore the open database of **energy-utilities** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Preço do Gás](../mcps/preco-do-gas.md) | Look up the current cooking-gas price near any Brazilian address or CEP: how much a botijão costs, who delivers it and in how long — from the resellers of Preço do Gás, the largest gas reseller network in Brazil. |
 | [Solar Energy](../mcps/solar-energy.md) | How much electricity solar panels would generate at any location on Earth — yearly and monthly yield, the optimal tilt and orientation, hourly output profiles and the typical climate year, from the European Commission JRC PVGIS database. Keyless. |
 
 

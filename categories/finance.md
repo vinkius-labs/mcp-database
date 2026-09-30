@@ -144,6 +144,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Airport Transfer Cost Calculator](../mcps/airport-transfer-cost-calculator.md) | Calculate precise airport transfer costs based on distance and pricing tiers. |
 | [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
 | [Allowance Total Calculator](../mcps/allowance-total-calculator.md) | Calculate total allowances and compare financial plans. |
+| [Anniversary Planner](../mcps/anniversary-planner.md) | Compare and optimize anniversary celebration scenarios. |
 | [Annual Recurring Revenue Engine](../mcps/annual-recurring-revenue-engine.md) | A financial engine to calculate ARR, growth rates, and revenue composition. |
 | [Apparel Discount Calculator](../mcps/apparel-discount-calculator.md) | Calculate precise apparel discounts, net totals, and savings comparisons. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
@@ -239,6 +240,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Commodity Hedging Strategy Analyzer](../mcps/commodity-hedging-strategy-analyzer.md) | Analyze commodity exposure and optimize hedging strategies using swaps, collars, and options. |
 | [Commodity Price Converter](../mcps/commodity-price-converter.md) | Convert commodity prices across units and currencies instantly. |
 | [Commodity Selection Index Calculator](../mcps/commodity-selection-index-calculator.md) | Calculate the Commodity Selection Index (CSI) to identify momentum-driven trends relative to volatility. |
+| [Community Class Planner](../mcps/community-class-planner.md) | Manage enrollment, costs, and break-even analysis for community educational classes. |
 | [Compensation Band Generator](../mcps/compensation-band-generator.md) | Generate structured compensation packages including base salary, bonus targets, and equity ranges based on global market data. |
 | [Compound Interest Optimizer](../mcps/compound-interest-optimizer.md) | Detailed investment growth projections accounting for inflation, taxes, and penalties. |
 | [Concert Ticket Total Cost Calculator](../mcps/concert-ticket-total-cost-calculator.md) | Calculate the full economic impact of attending live music events, including tickets and ancillary costs. |
@@ -300,6 +302,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Diabetes Supply Budget Optimizer](../mcps/diabetes-supply-budget-optimizer.md) | Calculate precise daily and monthly costs for diabetes supplies like insulin, CGM, and test strips. |
 | [Diamond 4Cs Estimator](../mcps/diamond-4cs-estimator.md) | A deterministic valuation engine for estimating diamond market value using the 4Cs. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
+| [Dinner Reservation Splitter](../mcps/dinner-reservation-splitter.md) | Fairly distribute restaurant bills, taxes, tips, and fees among diners. |
 | [Disaster Payment Eligibility](../mcps/disaster-payment-eligibility.md) | Calculate USDA disaster program eligibility and estimated payments for ARC, PLC, ELAP, and LFP. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
 | [Dividend Capture Strategy Engine](../mcps/dividend-capture-strategy-engine.md) | Identify and validate profitable dividend capture opportunities with deterministic modeling. |
@@ -413,6 +416,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Farm Succession Estate Planner](../mcps/farm-succession-estate-planner.md) | Calculate estate tax liability and generational transfer timelines for farm assets. |
 | [Fashion Order Total Calculator](../mcps/fashion-order-total-calculator.md) | High-precision calculation engine for fashion retail order totals, taxes, and currency validation. |
 | [Fashion Resale Profit Calculator](../mcps/fashion-resale-profit-calculator.md) | Calculate exact net profit, ROI, and break-even prices for clothing and sneaker reselling. |
+| [Festival Group Planner](../mcps/festival-group-planner.md) | Centralized logistics coordinator for managing group itineraries, expenses, and shared resources during music festivals. |
 | [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
 | [Fibonacci Retracement Calculator](../mcps/fibonacci-retracement-calculator.md) | Calculate precise Fibonacci retracement levels, price extensions, and time zones. |
 | [Financial Ratios Calculator](../mcps/financial-ratios-calculator.md) | Calculate essential financial health indicators including liquidity, solvency, and interest coverage ratios. |
@@ -488,6 +492,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Gross Margin Analyzer](../mcps/gross-margin-analyzer.md) | Calculate product gross margins, identify underperforming products against industry benchmarks, and simulate COGS reduction impact. |
 | [Gross Profit Calculator](../mcps/gross-profit-calculator.md) | Calculate gross profit, margins, and efficiency ratings. |
 | [Gross Profit Efficiency Calculator](../mcps/gross-profit-efficiency-calculator.md) | Analyze SaaS unit economics, COGS breakdown, and simulate margin improvement levers. |
+| [Group Donation Plan](../mcps/group-donation-plan.md) | Calculates distribution of collective donation funds to causes based on pledges, matching rules, and targets. |
 | [Growth Rate Calculator](../mcps/growth-rate-calculator.md) | Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data. |
 | [Harmonic Pattern Detector](../mcps/harmonic-pattern-detector.md) | Identify Gartley, Butterfly, Bat, and Crab patterns using Fibonacci ratios. |
 | [HDB BTO Ballot Probability Calculator](../mcps/hdb-bto-ballot-probability-calculator.md) | Calculate your relative chances of securing an HDB BTO flat based on applicant type, project maturity, and ethnic quotas. |
@@ -1052,9 +1057,10 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
 | [WeChat Red Packet Distributor](../mcps/wechat-red-packet-distributor.md) | Calculate fair and deterministic WeChat Red Packet distributions. |
 | [WeChat Red Packet Simulator](../mcps/wechat-red-packet-simulator.md) | Simulate deterministic WeChat 'Lucky Money' distributions with inequality metrics. |
-| [Wedding Budget Allocator](../mcps/wedding-budget-allocator.md) | Intelligently distribute wedding funds across categories based on priorities and limits. |
+| [Wedding Budget Allocator](../mcps/wedding-budget-allocator.md) | Manage and distribute wedding expenses across vendors, guests, and contingency funds. |
 | [Wedding Budget Reality Check](../mcps/wedding-budget-reality-check.md) | Deterministic Singapore wedding budget calculator and reality check. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
+| [Wedding Vendor Payment Planner](../mcps/wedding-vendor-payment-planner.md) | Transforms vendor contracts into structured payment timelines and budget trackers. |
 | [Weekly Revenue Analyzer](../mcps/weekly-revenue-analyzer.md) | Aggregate and analyze weekly transaction volumes for financial visibility. |
 | [Well Abandonment Cost Estimator](../mcps/well-abandonment-cost-estimator.md) | Calculate total financial liability for well plugging and abandonment (P&A) operations. |
 | [Wellness Membership Pricing Calculator](../mcps/wellness-membership-pricing-calculator.md) | Design profitable tiered membership structures for wellness businesses. |

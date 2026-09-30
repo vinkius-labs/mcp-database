@@ -36,6 +36,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [IQAir](../mcps/iqair.md) | Monitor air quality and weather — audit pollution data and cities via AI. |
 | [Kindful](../mcps/kindful.md) | Manage nonprofit fundraising and donor relationships via Kindful — query contacts, track transactions, and monitor campaigns directly from your AI agent. |
 | [Legacy Blog Preservation Plan](../mcps/legacy-blog-preservation-plan.md) | Generates actionable preservation checklists for digital assets and legacy websites. |
+| [Location History Retention Plan](../mcps/location-history-retention-plan.md) | Categorize location records into keep, review, or delete-on buckets based on user-defined retention policies. |
 | [Metronome](../mcps/metronome.md) | Automate usage-based billing via Metronome — ingest events, query usage data, and manage customer contracts directly from any AI agent. |
 | [Minas Gerais (Estado)](../mcps/minas-gerais-estado.md) | Access the official Open Data Portal of the State of Minas Gerais, Brazil. Query datasets, organizations, and public resources directly. |
 | [Nubarium](../mcps/nubarium.md) | Access Mexican identity and corporate data — audit RFC, CURP, and companies via AI. |
@@ -45,6 +46,7 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [OpenStates](../mcps/openstates.md) | US state legislative data platform — track bills, legislators, and committees via AI. |
 | [OpenStreetMap](../mcps/openstreetmap.md) | Access and edit OpenStreetMap data — manage changesets, query map elements, and retrieve geospatial data directly from any AI agent. |
 | [Orb](../mcps/orb.md) | Automate usage-based billing via Orb — ingest events, manage subscriptions, and track invoices directly from any AI agent. |
+| [Phone Storage Cleanup Plan](../mcps/phone-storage-cleanup-plan.md) | Analyze phone storage to identify space-saving opportunities and prioritize data management. |
 | [Pipedrive Admin & Settings](../mcps/pipedrive-admin-settings.md) | Manage Pipedrive users, sales goals, files, webhooks, currencies, and custom deal fields through natural conversation. |
 | [Poké](../mcps/poke.md) | Access the ultimate Pokémon encyclopedia — query berries, contest effects, and encounter methods directly from your AI agent. |
 | [PokéAPI](../mcps/pokeapi.md) | Access Pokémon data, stats, abilities, types, and evolution chains via AI. |

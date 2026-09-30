@@ -5,8 +5,10 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
+| [Account Recovery Readiness Audit](../mcps/account-recovery-readiness-audit.md) | Evaluates user account security profiles to identify recovery vulnerabilities and prioritized remediation steps. |
 | [Agent Config Drift Detector](../mcps/agent-config-drift-detector.md) | Detects unauthorized changes to agent configurations by comparing SHA-256 hashes. |
 | [AI Red-Teaming Cost Structure](../mcps/ai-red-teaming-cost-structure.md) | Quantify the financial investment and ROI of AI red-teaming engagements. |
+| [App Permission Review](../mcps/app-permission-review.md) | Audit application permissions against official requirements to identify security risks. |
 | [Authorized Device Retirement Plan](../mcps/authorized-device-retirement-plan.md) | Generate systematic, risk-mitigated task lists for decommissioning hardware with verified data sovereignty. |
 | [AWS Secrets Manager Rotation Calculator](../mcps/aws-secrets-manager-rotation-calculator.md) | Validate AWS Secrets Manager configurations against operational limits and rotation best practices. |
 | [AWS WAF Rules & Rate Limiting Calculator](../mcps/aws-waf-rules-rate-limiting-calculator.md) | Calculate AWS WAF capacity, rate limits, and rule complexity against best practices. |
@@ -26,12 +28,15 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Audit software dependencies against approved SPDX license identifiers to ensure supply-chain compliance. |
 | [Destructive Command Interceptor](../mcps/destructive-command-interceptor.md) | Intercepts and blocks destructive bash commands using pattern matching and obfuscation detection. |
 | [Digital Legacy Update Log](../mcps/digital-legacy-update-log.md) | Maintain an auditable, chronological record of digital asset changes, including account status, custodian shifts, and instruction versions. |
+| [Email Forwarding Audit](../mcps/email-forwarding-audit.md) | Audit email forwarding rules to detect unapproved destinations and compliance conflicts. |
 | [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
 | [Emergency Digital Access Brief](../mcps/emergency-digital-access-brief.md) | A controlled activation guide for managing critical digital credentials and access protocols during emergency scenarios. |
+| [Encrypted Archive Inventory](../mcps/encrypted-archive-inventory.md) | Organize and audit encrypted digital archives by category, lifecycle, and recovery status. |
 | [Enterprise Security Review Timeline](../mcps/enterprise-security-review-timeline.md) | Predict security review duration and identify documentation gaps. |
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
 | [Execution Trace Tamper-Evident Logger](../mcps/execution-trace-tamper-evident-logger.md) | Creates immutable, cryptographic audit trails for agent execution steps using Merkle trees. |
+| [Family Photo Sharing Logic Engine](../mcps/family-photo-sharing-logic-engine.md) | Manages photo album access using consent, audience groups, and expiration rules. |
 | [Family Pickup Authorization Plan](../mcps/family-pickup-authorization-plan.md) | Manage and verify child pickup authorizations against institutional security rules. |
 | [Family Records Transfer List](../mcps/family-records-transfer-list.md) | Manage secure movement of sensitive family archives with verifiable chain of custody. |
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
@@ -43,6 +48,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |
+| [Home Network Device Inventory](../mcps/home-network-device-inventory.md) | Organize and monitor all connected devices on your home network. |
 | [Household Guest Access Register](../mcps/household-guest-access-register.md) | Manage guest entry, verify area permissions, and track departure protocols. |
 | [IAM Policy Complexity Calculator](../mcps/iam-policy-complexity-calculator.md) | Deterministic AWS IAM policy size and complexity analyzer. |
 | [Input Sanitizer & Escape Handler](../mcps/input-sanitizer-escape-handler.md) | Protects AI agents from shell injection, path traversal, and payload vulnerabilities. |
@@ -75,6 +81,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
 | [Security Vulnerability Scanner](../mcps/security-vulnerability-scanner.md) | Scans code for security vulnerabilities like SQL injection and command injection using AST pattern matching. |
 | [Sensitive Data Exposure Detector](../mcps/sensitive-data-exposure-detector.md) | Intercepts and redacts sensitive information from file reads and tool outputs. |
+| [Shared Folder Access Audit](../mcps/shared-folder-access-audit.md) | Audits folder permissions to identify unauthorized access, expired permissions, and external sharing risks. |
+| [Social Profile Visibility Check](../mcps/social-profile-visibility-check.md) | Audit social media profiles against privacy policies to find exposure mismatches. |
 | [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
 | [SQL Syntax & Injection Checker](../mcps/sql-syntax-injection-checker.md) | Static analysis for SQL syntax validation and injection risk detection. |
 | [System Prompt Leakage Detector](../mcps/system-prompt-leakage-detector-alternative.md) | Detects verbatim system prompt exfiltration using LCS algorithms. |
@@ -83,6 +91,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Tool Permission Boundary Enforcer](../mcps/tool-permission-boundary-enforcer.md) | Enforces deterministic permission boundaries for tool execution to prevent unbounded access. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Two-Factor Continuity Instructions](../mcps/two-factor-continuity-instructions.md) | Generates safe, step-by-step recovery procedures for MFA access based on account tiers and roles. |
+| [Two-Factor Coverage Report](../mcps/two-factor-coverage-report.md) | Audit account security posture by comparing enabled MFA methods against required security tiers. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
 | [URL SSRF Prevention Validator](../mcps/url-ssrf-prevention-validator.md) | Prevents SSRF attacks by validating URL schemes and blocking internal IP ranges. |
 | [Vigenère Cipher Engine](../mcps/vigenere-cipher-engine.md) | Deterministic Vigenère cipher encoder and decoder that preserves text formatting. |

@@ -34,6 +34,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Fermentation Batch Calculator](../mcps/fermentation-batch-calculator.md) | Calculate required fermentation batches and production efficiency. |
 | [Ferry Capacity Checker](../mcps/ferry-capacity-checker.md) | Monitor ferry occupancy and manage boarding requests in real-time. |
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
+| [Group Activity Comparator](../mcps/group-activity-comparator.md) | Rank and compare group activities based on cost, travel, and accessibility. |
 | [Handmade Gift Commission Plan](../mcps/handmade-gift-commission-plan.md) | Transform raw gift ideas into structured creative briefs and logistical handoff plans. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Kitchen Repair Disruption Planner](../mcps/kitchen-repair-disruption-planner.md) | Manage household logistics during kitchen renovations with precise disruption calendars and meal planning. |
