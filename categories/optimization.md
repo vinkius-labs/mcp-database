@@ -15,6 +15,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
 | [Bentonite Dose Optimization](../mcps/bentonite-dose-optimization.md) | Optimize bentonite dosage for protein stability and minimize wine loss. |
 | [Blending Optimization Mining](../mcps/blending-optimization-mining.md) | Optimize ore blending using linear programming to meet grade constraints and maximize value. |
+| [Ceramic Firing Shelf Planner](../mcps/ceramic-firing-shelf-planner.md) | Optimizes kiln shelf layouts by assigning ceramic pieces to available shelves. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
 | [CloudFront Cache Analyzer](../mcps/cloudfront-cache-analyzer.md) | Calculate AWS CloudFront cache hit ratios, origin load reduction, and TTL optimization. |
@@ -26,6 +27,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Drill Pattern Optimization](../mcps/drill-pattern-optimization.md) | Optimize drill hole spacing and configuration based on geological variability and budget. |
 | [Equipment Gear Ratio Optimizer](../mcps/equipment-gear-ratio-optimizer.md) | Optimize kite and board combinations for perfect wind range coverage. |
+| [Frame Material Cut List](../mcps/frame-material-cut-list.md) | Calculates optimal cutting patterns, stock usage, and offcuts for picture frame manufacturing. |
 | [Glass Cutting Optimizer](../mcps/glass-cutting-optimizer.md) | Deterministic 2D guillotine-style cutting optimizer for industrial glass fabrication. |
 | [Grade Control Modeling](../mcps/grade-control-modeling.md) | Models grade control for ore/waste discrimination to optimize extraction accuracy. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |

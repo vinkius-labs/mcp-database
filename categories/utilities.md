@@ -78,6 +78,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Hiking Elevation Average](../mcps/hiking-elevation-average.md) | Calculate and analyze hiking trail steepness and incline intensity. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
 | [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
+| [Image Backup Space Estimator](../mcps/image-backup-space-estimator.md) | Calculate primary and backup storage needs for digital media collections. |
 | [Instrument Case Volume Calculator](../mcps/instrument-case-volume-calculator.md) | Calculate the volume and surface area of instrument cases. |
 | [Insulin Dose Calculator](../mcps/insulin-dose-calculator.md) | A deterministic tool for calculating mealtime insulin doses and estimating insulin on board. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |

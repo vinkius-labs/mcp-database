@@ -4,7 +4,9 @@ Explore the open database of **planning** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Bloom Sequence Planner](../mcps/bloom-sequence-planner.md) | Optimize garden beds for continuous flowering and aesthetic color transitions. |
 | [Meal Portion Remainder](../mcps/meal-portion-remainder.md) | Calculates leftover food portions after serving guests. |
+| [Pond Plant Coverage Planner](../mcps/pond-plant-coverage-planner.md) | Calculates plant quantities and package orders for pond ecosystem planning. |
 | [Triathlon Pace Planner](../mcps/triathlon-pace-planner.md) | Strategic pacing, nutrition, and physiological planning for triathletes. |
 | [Yarn Ball Calculator](../mcps/yarn-ball-calculator.md) | Calculate required yarn balls and project costs for textile crafts. |
 

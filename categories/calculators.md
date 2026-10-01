@@ -8,6 +8,7 @@ Explore the open database of **calculators** Model Context Protocol (MCP) server
 | [Exposure Triangle Calculator](../mcps/exposure-triangle-calculator.md) | Deterministic photographic exposure calculator for aperture, shutter speed, and ISO adjustments. |
 | [Flash Guide Number Calculator](../mcps/flash-guide-number-calculator.md) | Calculate photographic exposure, power adjustments, and flash stacking requirements. |
 | [Foil Glide Ratio Calculator](../mcps/foil-glide-ratio-calculator.md) | Calculate hydrofoil glide efficiency, speed envelopes, and pumping effectiveness. |
+| [Screen Print Ink Estimator](../mcps/screen-print-ink-estimator.md) | Calculates ink volume requirements for screen printing production runs. |
 
 
 ---

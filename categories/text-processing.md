@@ -4,6 +4,7 @@ Explore the open database of **text-processing** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Character Appearance Counter](../mcps/character-appearance-counter.md) | Track character presence across chapters with precise name variant counting. |
 | [Exact Levenshtein Distance Calculator](../mcps/exact-levenshtein-distance-calculator.md) | Compute precise edit distances and string similarity scores. |
 | [Exact Levenshtein Distance Calculator](../mcps/exact-levenshtein-distance-calculator-alternative.md) | Compute precise edit distances and string similarity scores. |
 

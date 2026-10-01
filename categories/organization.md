@@ -5,6 +5,7 @@ Explore the open database of **organization** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [Drawer Space Volume Utility](../mcps/drawer-space-volume-utility.md) | Calculate drawer capacity and item fitment. |
+| [Trading Card Binder Layout Planner](../mcps/trading-card-binder-layout-planner.md) | Automated planning for trading card collection organization and binder allocation. |
 
 
 ---

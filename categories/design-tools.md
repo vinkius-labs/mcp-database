@@ -7,6 +7,7 @@ Explore the open database of **design-tools** Model Context Protocol (MCP) serve
 | [Color Difference Engine](../mcps/color-difference-engine.md) | Calculate perceptual color differences using CIE76, CIEDE2000, and OKLAB models. |
 | [Color Format Converter](../mcps/color-format-converter.md) | Convert between HEX, RGB(A), HSL(A), HSV, and CMYK with precision. |
 | [Color Space Converter](../mcps/color-space-converter.md) | High-precision mathematical conversion between RGB, HSL, CMYK, LAB, OKLAB, and more. |
+| [Photo Exhibit Wall Layout](../mcps/photo-exhibit-wall-layout.md) | Calculates optimal positioning for framed prints on a wall. |
 | [Surfboard Blank Selection](../mcps/surfboard-blank-selection.md) | Select optimal foam blanks for surfboard shaping based on dimensions and buoyancy. |
 
 

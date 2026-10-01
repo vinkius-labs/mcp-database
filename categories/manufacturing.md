@@ -4,6 +4,7 @@ Explore the open database of **manufacturing** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Clay Reclaim Yield Estimator](../mcps/clay-reclaim-yield-estimator.md) | Calculate usable reclaimed clay from scrap weight, moisture loss, and contamination. |
 | [Embroidery Stitch Count Utility](../mcps/embroidery-stitch-count-utility.md) | Calculate and aggregate stitch counts for embroidery production planning. |
 | [Saw Blade Kerf Compensator](../mcps/saw-blade-kerf-compensator.md) | Adjust cutting and layout calculations by accounting for material lost to saw blade thickness (kerf). |
 

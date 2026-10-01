@@ -23,6 +23,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Cellar Space Optimization](../mcps/cellar-space-optimization.md) | Optimize cellar space through tank allocation, barrel stacking, and seasonal capacity forecasting. |
 | [Child Item Replenishment Plan](../mcps/child-item-replenishment-plan.md) | A logistics and budgeting engine for managing essential child supplies. |
 | [Children Playdate Planner](../mcps/children-playdate-planner.md) | Organize safe, fun, and budget-friendly playdates with automated scheduling and allergy checks. |
+| [Collection Display Capacity Planner](../mcps/collection-display-capacity-planner.md) | Calculate shelf capacity, item orientation, and multi-shelf requirements. |
 | [Community Election Volunteer Plan](../mcps/community-election-volunteer-plan.md) | Coordinate election volunteer mobilization with strict nonpartisan compliance and eligibility tracking. |
 | [Community Space Booking Plan](../mcps/community-space-booking-plan.md) | Evaluate venue suitability, timelines, and setup needs for community events. |
 | [Creative Exhibition Submission Plan](../mcps/creative-exhibition-submission-plan.md) | An intelligent decision-support engine that evaluates artist works against exhibition calls to generate actionable submission strategies. |
@@ -69,6 +70,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Pet Daycare Enrollment Planner](../mcps/pet-daycare-enrollment-planner.md) | Plan pet daycare transitions with structured enrollment sequences and logistical checks. |
 | [Pet Equipment Acquisition Planner](../mcps/pet-equipment-acquisition-planner.md) | Evaluates pet equipment suitability based on physical constraints, budget, and usage needs. |
 | [Pet Equipment Sharing Plan](../mcps/pet-equipment-sharing-plan.md) | Manage pet equipment sharing with formal agreements, handoff checklists, and condition reports. |
+| [Pet Food Purchase Planner](../mcps/pet-food-purchase-planner.md) | Calculate pet food replenishment schedules, package counts, and monthly budgets. |
 | [Pet Introduction Coordination Plan](../mcps/pet-introduction-coordination-plan.md) | A logistical engine for planning pet introductions, spatial responsibilities, and communication protocols. |
 | [Pet Playgroup Commitment Planner](../mcps/pet-playgroup-commitment-planner.md) | Evaluate pet playgroup suitability and generate participation strategies. |
 | [Pet Trip Care Planner](../mcps/pet-trip-care-planner.md) | Generates comprehensive pet care execution plans by matching trip dates and pet constraints with available care options. |

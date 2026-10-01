@@ -18,15 +18,19 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Food Donation Logistics](../mcps/food-donation-logistics.md) | Calculate required donation boxes and packing efficiency for food logistics. |
 | [Gallery Artwork Counter](../mcps/gallery-artwork-counter.md) | Track and analyze artwork inventory and display metrics across multiple art galleries. |
 | [Garment Size Averaging](../mcps/garment-size-averaging.md) | Convert qualitative garment sizes into quantitative numeric averages. |
+| [Instrument String Replacement Planner](../mcps/instrument-string-replacement-planner.md) | Calculates replacement schedules and total costs for instrument strings. |
 | [Kitchen Equipment Purchase Planner](../mcps/kitchen-equipment-purchase-planner.md) | Optimize kitchen procurement by ranking equipment based on cost, usage, and space. |
 | [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
+| [Material Inventory Gap Analysis](../mcps/material-inventory-gap-analysis.md) | Analyze material shortages, excesses, and required purchase quantities against project needs. |
 | [Minimum Order Quantity Calculator](../mcps/minimum-order-quantity-calculator.md) | Calculates required order packs and logistics efficiency based on pack sizes. |
 | [Nail Polish Inventory Planner](../mcps/nail-polish-inventory-planner.md) | Calculate required nail polish bottles and manage manicure inventory efficiency. |
 | [Order Time](../mcps/order-time.md) | Inventory and order management — manage items, customers, and sales orders via Order Time. |
 | [Plant Pot Counter](../mcps/plant-pot-counter.md) | Calculate required plant pots based on plant counts and grouping rules. |
+| [Pot Size Upgrade Selector](../mcps/pot-size-upgrade-selector.md) | Selects compatible pot sizes based on plant root mass, height, and desired clearance. |
 | [Reorder Point Calculator](../mcps/reorder-point-calculator.md) | Calculate optimal reorder points and safety stock levels based on demand volatility and service level targets. |
 | [Safety Stock Calculator](../mcps/safety-stock-calculator.md) | Calculate optimal safety stock levels using Square Root, Statistical, and Fixed Coverage methods. |
 | [Seasonality Index Calculator](../mcps/seasonality-index-calculator.md) | Calculate seasonal indices and optimize inventory planning using historical sales data. |
+| [Seed Storage Inventory Manager](../mcps/seed-storage-inventory-manager.md) | Categorize and manage seed packet viability and inventory levels. |
 | [Shoe Pair Counter](../mcps/shoe-pair-counter.md) | Converts individual shoe counts into complete pairs and single shoes. |
 | [Spa Product Inventory Forecaster](../mcps/spa-product-inventory-forecaster.md) | Forecast spa product inventory needs and calculate reorder points. |
 | [Spare Parts Stock Plan](../mcps/spare-parts-stock-plan.md) | Strategic replenishment and reorder trigger system for critical equipment components. |

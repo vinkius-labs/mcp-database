@@ -4,6 +4,7 @@ Explore the open database of **media-management** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Portfolio Image Selection Score](../mcps/portfolio-image-selection-score.md) | Ranks portfolio assets using weighted criteria like quality, relevance, and variety. |
 | [Video Participant Release Manager](../mcps/video-participant-release-manager.md) | Manage participant consent, outreach, and usage rights for video productions. |
 
 

@@ -19,6 +19,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Garden Area Calculator](../mcps/garden-area-calculator.md) | Calculate garden bed areas and estimate material volumes and costs. |
 | [Garden Hose Reach](../mcps/garden-hose-reach.md) | Calculate hose reach, coverage, and capacity for gardening tasks. |
 | [Hiking Water Calculator](../mcps/hiking-water-calculator.md) | Calculate precise water requirements for hikers based on duration, intensity, and heat. |
+| [Home Recording Track Sheet Generator](../mcps/home-recording-track-sheet-generator.md) | Generate structured, numbered recording track sheets and detect logistical conflicts. |
 | [Houseplant Light Estimator](../mcps/houseplant-light-estimator.md) | Calculate light deficits and optimal plant placement using DLI and lux measurements. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
 | [Kite Relaunch Estimator](../mcps/kite-relaunch-estimator.md) | Calculate relaunch time, success probability, and technique for kites in water. |
@@ -29,6 +30,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
 | [Leash Length Optimizer](../mcps/leash-length-optimizer.md) | Deterministic surfboard leash length and thickness calculator. |
 | [Leatherworking Pattern Calculator](../mcps/leatherworking-pattern-calculator.md) | Calculate leather area, hide yield, and material consumables for leathercraft projects. |
+| [Lens Kit Weight Comparator](../mcps/lens-kit-weight-comparator.md) | Evaluate camera kits based on weight, focal range, and user ergonomics. |
 | [Mulch Volume Calculator](../mcps/mulch-volume-calculator.md) | Calculate exact mulch volume and bag counts for your garden. |
 | [Oven Time Adjuster](../mcps/oven-time-adjuster.md) | Adjust cooking times by a specific percentage. |
 | [Pet Tag Text Validator](../mcps/pet-tag-text-validator.md) | Measure and validate character counts for pet tag engravings. |

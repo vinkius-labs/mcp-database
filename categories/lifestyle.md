@@ -6,6 +6,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Baby Shower Planner](../mcps/baby-shower-planner.md) | Automated logistics planning for baby showers including food, decor, and timelines. |
 | [BaZi Basic Calculator](../mcps/bazi-basic-calculator.md) | Calculate the Four Pillars of Destiny (BaZi) using birth date and time. |
+| [Birthday Party Planner](../mcps/birthday-party-planner.md) | Plan complete party logistics including timelines, shopping lists, and staffing. |
 | [BreezoMeter Air Quality & Pollen](../mcps/breezometer-air-quality-pollen.md) | Universal air quality intelligence — get real-time AQI, pollutants, and pollen data via AI. |
 | [Calendarific](../mcps/calendarific-alternative.md) | Universal holiday intelligence — get public, bank, and religious holidays worldwide via AI. |
 | [Capsule Wardrobe Planner](../mcps/capsule-wardrobe-planner.md) | A deterministic engine to build optimal capsule wardrobes based on climate, season, and style rules. |

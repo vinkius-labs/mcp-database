@@ -5,6 +5,7 @@ Explore the open database of **publishing** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [author-readiness-release-plan](../mcps/author-readiness-release-plan.md) | A strategic decision-support engine for evaluating creative works against legal rights and approval workflows. |
+| [Zine Imposition Planner](../mcps/zine-imposition-planner.md) | Calculate print spreads and blank page placement for professional zine production. |
 
 
 ---

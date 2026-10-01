@@ -85,6 +85,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Formwork Striking Time Optimizer](../mcps/formwork-striking-time-optimizer.md) | Calculates safe formwork removal timing based on concrete strength and environmental factors. |
 | [Formwork Tie Rod Design Engine](../mcps/formwork-tie-rod-design-engine.md) | Calculates optimal tie rod spacing, waler sizing, and safety checks for concrete formwork. |
 | [Foundation Load Calculator](../mcps/foundation-load-calculator.md) | Calculate total structural loads for columns and foundation beams. |
+| [Garden Path Material Estimator](../mcps/garden-path-material-estimator.md) | Calculate precise gravel, edging, fabric, and delivery requirements for garden paths. |
 | [Giddyup](../mcps/giddyup.md) | Coordinate field service teams with job dispatching, route optimization, and real-time status updates for mobile workforces. |
 | [Gripr](../mcps/gripr.md) | Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools. |
 | [Ground Anchor Capacity Calculator](../mcps/ground-anchor-capacity-calculator.md) | Calculate ultimate capacity, bond length, and anchor geometry for geotechnical engineering. |

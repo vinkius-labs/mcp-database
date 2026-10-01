@@ -7,6 +7,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Agent Fallback Chain Reliability](../mcps/agent-fallback-chain-reliability.md) | Calculate reliability, latency, and quality impact for multi-tier agent fallback strategies. |
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
 | [Claude Computer Use Coordinate Normalizer](../mcps/claude-computer-use-coordinate-normalizer.md) | Transforms absolute pixel coordinates into the standardized 1024x768 viewport space for Anthropic's Computer Use API. |
+| [Cold Frame Venting Schedule](../mcps/cold-frame-venting-schedule.md) | Automated vent scheduling for cold frames based on temperature forecasts and thermal gain. |
 | [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |
 | [Conversation Termination Evaluator](../mcps/conversation-termination-evaluator.md) | Prevents runaway agent loops by detecting repetition and stagnation. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
@@ -15,6 +16,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Documentation Request Plan](../mcps/documentation-request-plan.md) | Orchestrate claim documentation by mapping requirements to owners and automating follow-up schedules. |
 | [Git Atomic Operations Validator](../mcps/git-atomic-operations-validator.md) | Prevent destructive Git operations and enforce commit standards. |
 | [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |
+| [Grow Light Runtime Calculator](../mcps/grow-light-runtime-calculator.md) | Calculate supplemental lighting hours and electrical costs for indoor plants. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Human Approval Gate Manager](../mcps/human-approval-gate-manager.md) | Manages deterministic human-in-the-loop approval gates for agent actions. |
 | [Intelligent Completion Design Engine](../mcps/intelligent-completion-design-engine.md) | Design intelligent completion systems by calculating ICV sizes, control lines, and HPU requirements. |

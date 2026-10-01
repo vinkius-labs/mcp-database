@@ -102,6 +102,7 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Recharge](../mcps/recharge-alternative.md) | Automate subscription commerce via Recharge — manage subscriptions, customers, and orders directly from any AI agent. |
 | [Recurly](../mcps/recurly-alternative.md) | Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent. |
 | [Recurly](../mcps/recurly.md) | Equip your AI to directly manage subscriptions, billing accounts, and invoices within your Recurly ecosystem without shifting interfaces. |
+| [RevenueCat](../mcps/revenuecat.md) | Run your in-app subscription infrastructure from your AI agent — look up RevenueCat customers, grant and revoke entitlements, and manage subscriptions, offerings, products and discounts. |
 | [Revolut Business](../mcps/revolut-business.md) | Grant your AI access to Europe's powerhouse treasury. Automate multi-currency exchange, mass payouts and real-time vendor bulk-payments. |
 | [Rong360 Open API](../mcps/rong360-open-api.md) | Bring high-level financial risk assessment and identity KYC directly to your agent. Evaluate credit scores and verify names. |
 | [Salesbricks](../mcps/salesbricks.md) | Integrate Salesbricks seamlessly into your AI. Quickly manage B2B customer billing, track active subscriptions, list available software plans, and audit invoices natively. |

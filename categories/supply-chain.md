@@ -11,6 +11,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Canola Oil Quality Predictor](../mcps/canola-oil-quality-predictor.md) | Predict canola oil grade, refining losses, and meal quality from seed characteristics. |
 | [Chickpea Quality Grader](../mcps/chickpea-quality-grader.md) | Grades chickpea quality and predicts market suitability and value. |
+| [Cut Flower Harvest Planner](../mcps/cut-flower-harvest-planner.md) | Precision planning for stem requirements, harvest scheduling, and yield projections. |
 | [Demand Forecast Calculator](../mcps/demand-forecast-calculator.md) | Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing methods. |
 | [Fill Rate Calculator](../mcps/fill-rate-calculator.md) | Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs. |
 | [Food Donation Allocation](../mcps/food-donation-allocation.md) | Optimizes the distribution of surplus food to recipient groups based on dietary needs and transport limits. |
