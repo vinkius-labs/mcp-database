@@ -16,8 +16,8 @@ This MCP server provides specialized tools for sports scientists and coaches to 
 ## Available Tools (4)
 - **calculate_acwr**: Calculates the primary ACWR value and determines the risk assessment
 - **get_load_recommendations**: Provides specific physiological training adjustments based on a current ACWR
-- **simulate_load_progression**: Predicts the future ACWR if a specific planned workload is added
 - **validate_training_readiness**: Aggregates load data to provide a qualitative readiness assessment
+- **simulate_load_progression**: Predicts the future ACWR if a specific planned workload is added
 
 
 ## 💬 Prompt Examples

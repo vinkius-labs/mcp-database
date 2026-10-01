@@ -14,10 +14,10 @@ This MCP server provides physiological modeling to help climbers plan safe ascen
 
 
 ## Available Tools (4)
-- **generate_ascent_schedule**: Provides a day-by-day breakdown of recommended movement and rest
 - **evaluate_health_risk**: Determines the statistical risk of developing Acute Mountain Sickness (AMS)
 - **get_acclimatization_estimate**: Calculates the total time required to safely reach a target altitude
 - **predict_symptom_timeline**: Forecasts the window of time when a user might experience physiological symptoms
+- **generate_ascent_schedule**: Provides a day-by-day breakdown of recommended movement and rest
 
 
 ## 💬 Prompt Examples

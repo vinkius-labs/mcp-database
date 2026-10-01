@@ -14,10 +14,10 @@ This MCP server provides specialized physiological analysis to evaluate the qual
 
 
 ## Available Tools (4)
-- **calculate_effectiveness_score**: Provides a single, unified metric representing the overall success of the cool-down protocol
 - **estimate_lactate_clearance**: Predicts the efficiency of metabolic byproduct removal
-- **evaluate_flexibility_benefits**: Assesses the potential for improved range of motion and muscle relaxation
 - **predict_heart_rate_recovery**: Estimates how quickly the user's heart rate will return to resting levels based on the cool-down performed
+- **calculate_effectiveness_score**: Provides a single, unified metric representing the overall success of the cool-down protocol
+- **evaluate_flexibility_benefits**: Assesses the potential for improved range of motion and muscle relaxation
 
 
 ## 💬 Prompt Examples

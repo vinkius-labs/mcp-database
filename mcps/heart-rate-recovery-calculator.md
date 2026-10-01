@@ -14,10 +14,10 @@ This MCP server provides specialized tools to evaluate cardiovascular health by 
 
 
 ## Available Tools (4)
-- **assess_fitness_and_risk**: Interpret recovery numbers into fitness categories and mortality risk levels
 - **calculate_recovery_metrics**: Calculate raw heart rate recovery values (1-min and 2-min drops)
 - **generate_training_recommendations**: Provide actionable exercise advice based on the user's recovery profile
 - **validate_exercise_intensity**: Verify if the peak heart rate reached was sufficient for a meaningful assessment
+- **assess_fitness_and_risk**: Interpret recovery numbers into fitness categories and mortality risk levels
 
 
 ## 💬 Prompt Examples

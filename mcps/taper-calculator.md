@@ -16,8 +16,8 @@ Taper Calculator provides data-driven tapering strategies to help athletes reach
 ## Available Tools (4)
 - **analyze_performance_readiness**: Predicts the expected performance outcome and identifies potential risks based on the planned taper
 - **get_intensity_profile**: Defines how the athlete should maintain or adjust intensity to ensure they are sharp for the event
-- **get_taper_plan**: Generates a comprehensive tapering schedule including duration, volume, and intensity guidelines
 - **get_volume_breakdown**: Provides a detailed, granular schedule of volume percentages for a specific taper duration
+- **get_taper_plan**: Generates a comprehensive tapering schedule including duration, volume, and intensity guidelines
 
 
 ## 💬 Prompt Examples

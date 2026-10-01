@@ -16,8 +16,8 @@ This MCP server acts as a specialized planning engine for yoga instructors and p
 ## Available Tools (4)
 - **validate_sequence_integrity**: Checks if a generated sequence plan is safe and logical according to difficulty and focus
 - **calculate_pose_metrics**: Breaks down a specific phase into individual pose metrics, including breathing and transition times
-- **generate_sequence_timing**: Generates a complete timing architecture for a yoga session based on user constraints
 - **get_style_guidelines**: Provides the specific sequencing rules and intensity constraints for a given yoga style
+- **generate_sequence_timing**: Generates a complete timing architecture for a yoga session based on user constraints
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server provides tools to evaluate the probability of developing Type 2 
 
 ## Available Tools (4)
 - **analyze_modifiable_factors**: Identify specific aspects of the user's profile that could be improved through lifestyle changes
-- **calculate_risk_score**: Compute the numerical risk score and determine the qualitative risk category
 - **generate_prevention_plan**: Provide tailored health recommendations based on risk and modifiable factors
 - **get_risk_thresholds**: Retrieve the score boundaries used to define risk categories
+- **calculate_risk_score**: Compute the numerical risk score and determine the qualitative risk category
 
 
 ## 💬 Prompt Examples

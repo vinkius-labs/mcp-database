@@ -14,10 +14,10 @@ This MCP server provides clinical tools to evaluate metabolic health using stand
 
 
 ## Available Tools (4)
-- **get_criteria_thresholds**: Retrieves the specific numerical thresholds used by the different medical frameworks for a given profile
-- **summarize_risk_profile**: Generates a high-level qualitative summary of the metabolic risk status
-- **screen_metabolic_status**: Evaluates the user's metabolic health based on provided biometric and lab data
 - **validate_biometric_range**: Verifies if the provided biometric inputs fall within physiologically plausible human ranges
+- **summarize_risk_profile**: Generates a high-level qualitative summary of the metabolic risk status
+- **get_criteria_thresholds**: Retrieves the specific numerical thresholds used by the different medical frameworks for a given profile
+- **screen_metabolic_status**: Evaluates the user's metabolic health based on provided biometric and lab data
 
 
 ## 💬 Prompt Examples

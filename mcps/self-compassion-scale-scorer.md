@@ -14,10 +14,10 @@ This MCP server provides a specialized engine to calculate psychological scores 
 
 
 ## Available Tools (4)
-- **get_scale_metadata**: Retrieve the structural definition of the scale (item lists and types)
-- **score_scs_responses**: Calculate the comprehensive self-compassion profile from a set of raw survey responses
 - **get_subdomain_insights**: Provide specific, actionable psychological guidance based on a particular subdomain score
 - **validate_response_set**: Ensure a set of raw data is structurally sound and complete before attempting heavy computation
+- **get_scale_metadata**: Retrieve the structural definition of the scale (item lists and types)
+- **score_scs_responses**: Calculate the comprehensive self-compassion profile from a set of raw survey responses
 
 
 ## 💬 Prompt Examples

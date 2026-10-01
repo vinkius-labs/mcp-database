@@ -14,10 +14,10 @@ This MCP server helps users transition from sedentary sitting to regular standin
 
 
 ## Available Tools (4)
-- **calculate_transition_schedule**: Generates a day-by-day or week-by-week progression plan for the user
 - **estimate_adaptation_timeline**: Provides a high-level summary of how long the full transition will take
 - **evaluate_ergonomic_readiness**: Determines if the user's current equipment is sufficient to support the planned transition speed
 - **get_recommended_intervals**: Provides specific sit/stand ratio patterns based on the current stage of the transition
+- **calculate_transition_schedule**: Generates a day-by-day or week-by-week progression plan for the user
 
 
 ## 💬 Prompt Examples

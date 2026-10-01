@@ -14,9 +14,9 @@ This MCP server provides precise ergonomic calculations to prevent musculoskelet
 
 
 ## Available Tools (4)
-- **get_dual_monitor_setup**: Calculates dimensions for a workstation utilizing two monitors
 - **get_lighting_and_glare_guidance**: Provides specific lighting recommendations to prevent eye strain
 - **get_reach_zone_requirements**: Determines the optimal placement area for peripherals
+- **get_dual_monitor_setup**: Calculates dimensions for a workstation utilizing two monitors
 - **get_single_monitor_setup**: Calculates dimensions for a standard single-monitor workstation
 
 

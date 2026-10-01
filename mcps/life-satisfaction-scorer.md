@@ -14,8 +14,8 @@ This MCP server provides a specialized toolkit for evaluating psychological life
 
 
 ## Available Tools (4)
-- **calculate_swls_score**: Calculates the raw total score and the qualitative satisfaction category for a given set of responses
 - **compare_to_norms**: Compares a specific total score against established population distribution norms
+- **calculate_swls_score**: Calculates the raw total score and the qualitative satisfaction category for a given set of responses
 - **get_reflection_prompts**: Generates personalized qualitative questions to help the user reflect on their life satisfaction
 - **validate_response_format**: Ensures a user's input data adheres to the requirements of the SWLS instrument before calculation begins
 

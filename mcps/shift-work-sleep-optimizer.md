@@ -14,10 +14,10 @@ This MCP server provides specialized tools to manage circadian rhythms for shift
 
 
 ## Available Tools (4)
-- **calculate_sleep_schedule**: Provides the primary window of time when the user should attempt to sleep to maximize rest and minimize circadian misalignment
-- **generate_caffeine_protocol**: Determines the safe window for caffeine consumption to ensure it does not interfere with the planned sleep windows
 - **optimize_light_exposure**: Tells the user exactly when to seek bright light to stay alert and when to avoid light to prepare for sleep
 - **plan_napping_strategy**: Recommends specific nap timings to manage sleep pressure during or around shifts
+- **calculate_sleep_schedule**: Provides the primary window of time when the user should attempt to sleep to maximize rest and minimize circadian misalignment
+- **generate_caffeine_protocol**: Determines the safe window for caffeine consumption to ensure it does not interfere with the planned sleep windows
 
 
 ## 💬 Prompt Examples

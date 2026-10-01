@@ -15,8 +15,8 @@ This MCP server provides tools to calculate skin safety during UV exposure. Use 
 
 ## Available Tools (4)
 - **calculate_sunburn_risk**: Determines the likelihood of skin redness for a specific exposure session
-- **compare_protection_efficacy**: Evaluates how much a specific SPF increases the user's window of safety
 - **estimate_vitamin_d_potential**: Assesses the ability to synthesize Vitamin D during the current conditions
+- **compare_protection_efficacy**: Evaluates how much a specific SPF increases the user's window of safety
 - **get_safe_exposure_window**: Calculates how long a user can safely stay in the sun before reaching the redness threshold
 
 

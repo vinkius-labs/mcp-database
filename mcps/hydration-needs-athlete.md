@@ -14,10 +14,10 @@ This MCP server provides a precision hydration planning engine for athletes. It 
 
 
 ## Available Tools (4)
+- **estimate_sweat_rate**: Predicts the athlete's expected sweat rate when a specific measurement is unavailable
 - **assess_environmental_risk**: Evaluates the thermal danger level of the planned exercise environment
 - **calculate_electrolyte_needs**: Determines the specific sodium replacement requirements to prevent hyponatremia
 - **calculate_hydration_plan**: Generates a comprehensive hydration strategy covering all stages of an athletic session
-- **estimate_sweat_rate**: Predicts the athlete's expected sweat rate when a specific measurement is unavailable
 
 
 ## 💬 Prompt Examples

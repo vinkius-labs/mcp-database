@@ -16,8 +16,8 @@ This MCP server provides deep insights into cardiovascular health by analyzing r
 ## Available Tools (4)
 - **get_comparative_percentile**: Calculates how the user's RHR compares to a specific demographic subset
 - **get_fitness_trend**: Analyzes how the current RHR compares to a provided historical RHR to determine trends
-- **get_rhr_status**: Provides a primary health assessment of the user's current RHR
 - **get_training_recommendations**: Provides actionable training advice based on the current cardiovascular status
+- **get_rhr_status**: Provides a primary health assessment of the user's current RHR
 
 
 ## 💬 Prompt Examples

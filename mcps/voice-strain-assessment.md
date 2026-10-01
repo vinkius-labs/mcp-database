@@ -14,10 +14,10 @@ This MCP server provides specialized tools for voice professionals to monitor ph
 
 
 ## Available Tools (4)
-- **get_hygiene_recommendations**: Provides personalized vocal care advice based on current environmental and physiological factors
-- **validate_vocal_capacity**: Checks if a planned speaking session is safe given current physiological conditions
 - **assess_vocal_risk**: Determines the current physiological risk level and total vocal load for a user
 - **calculate_recovery_needs**: Predicts the necessary duration of vocal rest to mitigate identified strain
+- **get_hygiene_recommendations**: Provides personalized vocal care advice based on current environmental and physiological factors
+- **validate_vocal_capacity**: Checks if a planned speaking session is safe given current physiological conditions
 
 
 ## 💬 Prompt Examples

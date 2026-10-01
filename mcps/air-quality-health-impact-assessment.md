@@ -14,10 +14,10 @@ This MCP server provides specialized tools to evaluate how air quality affects h
 
 
 ## Available Tools (4)
+- **get_symptom_probability**: Estimates the likelihood of experiencing specific physiological symptoms
 - **check_sensitive_group_status**: Determines if an individual requires heightened monitoring based on their profile
 - **get_activity_guidelines**: Recommends specific lifestyle or physical activity changes to mitigate health impact
 - **get_risk_assessment**: Provides a comprehensive health risk profile for an individual based on current air conditions
-- **get_symptom_probability**: Estimates the likelihood of experiencing specific physiological symptoms
 
 
 ## 💬 Prompt Examples

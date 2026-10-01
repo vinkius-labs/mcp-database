@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools to assess running injury r
 
 
 ## Available Tools (4)
-- **get_environmental_load_impact**: Assesses how external factors like surface and gear influence the current load
 - **analyze_biomechanics**: Evaluates movement patterns to determine their contribution to injury risk
 - **get_prevention_plan**: Generates a set of personalized recommendations based on the risk profile
 - **get_risk_score**: Calculates the primary injury risk score and identifies specific high-risk factors
+- **get_environmental_load_impact**: Assesses how external factors like surface and gear influence the current load
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides critical physiological safety assessments for cold envi
 
 
 ## Available Tools (4)
-- **assess_frostbite_danger**: Determines the risk and estimated time until frostbite occurs on exposed skin
 - **calculate_hypothermia_risk**: Estimates the time remaining before a person reaches a dangerous state of core temperature drop
-- **get_clothing_recommendations**: Suggests appropriate insulation levels to mitigate identified risks
 - **get_wind_chill**: Determines the perceived temperature based on environmental conditions
+- **assess_frostbite_danger**: Determines the risk and estimated time until frostbite occurs on exposed skin
+- **get_clothing_recommendations**: Suggests appropriate insulation levels to mitigate identified risks
 
 
 ## 💬 Prompt Examples

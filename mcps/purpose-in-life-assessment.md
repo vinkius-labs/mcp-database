@@ -14,9 +14,9 @@ This MCP server provides a suite of psychological assessment tools to help you u
 
 
 ## Available Tools (4)
+- **get_purpose_activities**: Recommends specific types of activities to increase or sustain purpose
 - **get_clarity_profile**: Analyzes the degree of ambiguity versus direction in the user's life
 - **get_engagement_metrics**: Evaluates how actively a person is living out their perceived meaning
-- **get_purpose_activities**: Recommends specific types of activities to increase or sustain purpose
 - **get_purpose_score**: Calculates the primary purpose metric based on raw assessment responses
 
 

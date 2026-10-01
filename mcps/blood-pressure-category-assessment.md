@@ -14,10 +14,10 @@ This MCP server provides clinical decision support for blood pressure management
 
 
 ## Available Tools (4)
-- **assess_blood_pressure**: Performs the primary clinical classification of a single blood pressure reading
 - **calculate_monitoring_schedule**: Determines how frequently a patient should monitor their blood pressure
 - **compare_guideline_standards**: Compares a patient's current reading against different international standards
 - **get_lifestyle_guidelines**: Retrieves specific, evidence-based lifestyle modifications tailored to a patient's risk profile
+- **assess_blood_pressure**: Performs the primary clinical classification of a single blood pressure reading
 
 
 ## 💬 Prompt Examples
