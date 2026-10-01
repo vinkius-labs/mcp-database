@@ -14,14 +14,14 @@ This MCP server connects AI agents to a specialized tracking system for monitori
 
 
 ## Available Tools (4)
-- **get_avoidance_plan**: Provides personalized recommendations to reduce symptom occurrence
 - **analyze_symptom_patterns**: Identifies trends and correlations between symptoms and environmental factors
-- **log_exposure_event**: Provide pollenCount for pollen exposures.
-
-Records an instance where a user was exposed to a potential allergen
 - **log_symptom_event**: Ensure severity is between 0 and 10.
 
 Records a specific instance of a user experiencing an allergy symptom
+- **get_avoidance_plan**: Provides personalized recommendations to reduce symptom occurrence
+- **log_exposure_event**: Provide pollenCount for pollen exposures.
+
+Records an instance where a user was exposed to a potential allergen
 
 
 ## 💬 Prompt Examples

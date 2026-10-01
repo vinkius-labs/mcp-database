@@ -15,9 +15,9 @@ This MCP server provides clinical analysis of the Fatigue Severity Scale (FSS). 
 
 ## Available Tools (4)
 - **assess_functional_impact**: Evaluates how much the reported fatigue interferes with daily life activities
+- **generate_clinical_recommendations**: Provides guidance for next steps based on the severity and impact of the fatigue
 - **calculate_fss_score**: Calculates the primary numerical score and fatigue category based on raw questionnaire responses
 - **compare_to_norms**: Compares the user's score against standard healthy population benchmarks
-- **generate_clinical_recommendations**: Provides guidance for next steps based on the severity and impact of the fatigue
 
 
 ## 💬 Prompt Examples

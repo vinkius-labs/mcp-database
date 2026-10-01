@@ -14,10 +14,10 @@ This MCP server provides clinical-grade pediatric growth analysis. It connects A
 
 
 ## Available Tools (4)
-- **get_growth_percentiles**: Calculates current percentile rankings for a child's physical measurements
 - **get_growth_status**: Evaluates whether a child's growth is within a clinically normal range
 - **get_growth_velocity**: Determines how quickly a child's measurements have changed between two time points
 - **validate_measurement_integrity**: Checks if the provided physical measurements are biologically plausible
+- **get_growth_percentiles**: Calculates current percentile rankings for a child's physical measurements
 
 
 ## 💬 Prompt Examples

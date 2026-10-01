@@ -14,10 +14,10 @@ The Pill Reminder Optimizer connects AI agents to advanced scheduling logic to m
 
 
 ## Available Tools (4)
-- **get_food_window_requirements**: Calculates the necessary empty or full stomach windows required by the medication schedule
-- **resolve_routine_conflicts**: Identifies and suggests adjustments when medication requirements clash with the user's daily routine
 - **calculate_optimized_schedule**: Generates a complete, optimized daily medication schedule based on all user inputs
 - **check_medication_compatibility**: Checks if two specific medications can be taken at the same time
+- **get_food_window_requirements**: Calculates the necessary empty or full stomach windows required by the medication schedule
+- **resolve_routine_conflicts**: Identifies and suggests adjustments when medication requirements clash with the user's daily routine
 
 
 ## 💬 Prompt Examples

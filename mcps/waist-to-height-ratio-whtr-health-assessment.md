@@ -15,9 +15,9 @@ This MCP server provides specialized tools to evaluate metabolic health through 
 
 ## Available Tools (4)
 - **get_ideal_waist_for_height**: Determines the target waist circumference for a specific height to maintain optimal health
+- **compare_to_bmi_profile**: Explains the qualitative difference between a user's WHtR profile and what a BMI measurement would suggest
 - **get_risk_thresholds**: Informs the user of the specific ratio boundaries used for their assessment
 - **get_whtr_assessment**: Provides a complete health assessment based on a user's physical measurements
-- **compare_to_bmi_profile**: Explains the qualitative difference between a user's WHtR profile and what a BMI measurement would suggest
 
 
 ## 💬 Prompt Examples

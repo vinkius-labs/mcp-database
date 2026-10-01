@@ -15,9 +15,9 @@ This MCP server provides specialized tools for tracking child developmental prog
 
 ## Available Tools (4)
 - **check_milestone_readiness**: Determines which milestones a child should be working toward given their current age
-- **get_developmental_profile**: Provides a comprehensive overview of a child's current developmental standing
 - **list_milestone_norms**: Provides a reference list of all standard milestones and their expected age ranges
 - **validate_milestone_data**: Verifies that a list of achieved milestones is logically consistent with the child's age
+- **get_developmental_profile**: Provides a comprehensive overview of a child's current developmental standing
 
 
 ## 💬 Prompt Examples

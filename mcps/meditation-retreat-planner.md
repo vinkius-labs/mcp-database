@@ -14,10 +14,10 @@ This MCP server provides specialized tools for planning meditation retreats. It 
 
 
 ## Available Tools (4)
-- **calculate_daily_rhythm**: Provides a summarized view of the daily patterns
 - **get_retreat_schedule**: Generates a complete, hourly schedule for a specified retreat duration
 - **get_silence_policy**: Determines the nature and duration of Noble Silence periods
 - **validate_retreat_feasibility**: Checks if a requested retreat configuration is sustainable
+- **calculate_daily_rhythm**: Provides a summarized view of the daily patterns
 
 
 ## 💬 Prompt Examples

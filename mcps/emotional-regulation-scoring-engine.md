@@ -14,12 +14,12 @@ This MCP server provides a specialized analytical engine for quantifying emotion
 
 
 ## Available Tools (4)
+- **calculate_ders_scores**: Calculates the total and subdomain scores based on raw scale responses
+- **generate_recommendations**: Provides actionable behavioral advice based on calculated score profiles
 - **get_thresholds**: g., "total", "awareness") to get specific thresholds.
 
 Provides the clinical or normative benchmarks used to interpret scores
 - **validate_format**: Ensures that a set of user inputs conforms to the expected scale structure
-- **calculate_ders_scores**: Calculates the total and subdomain scores based on raw scale responses
-- **generate_recommendations**: Provides actionable behavioral advice based on calculated score profiles
 
 
 ## 💬 Prompt Examples

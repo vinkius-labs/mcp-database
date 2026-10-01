@@ -14,10 +14,10 @@ This MCP server provides clinical tools to evaluate Obstructive Sleep Apnea (OSA
 
 
 ## Available Tools (4)
-- **get_clinical_guidelines**: Returns standardized clinical recommendations based on the calculated risk level
 - **get_risk_factor_details**: Provides a detailed breakdown of which specific STOP-BANG criteria were met
 - **calculate_osa_risk**: Performs the primary calculation of the OSA risk score and categorization based on patient inputs
 - **evaluate_gender_specific_risk**: Adjusts the interpretation of the risk assessment based on gender-specific clinical nuances
+- **get_clinical_guidelines**: Returns standardized clinical recommendations based on the calculated risk level
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools to help you navigate sleep cycles and
 
 
 ## Available Tools (4)
-- **evaluate_caffeine_nap_viability**: Determines if a caffeine nap is recommended based on the user's specific constraints
-- **get_optimal_nap_plan**: Calculates the specific nap duration and timing to maximize alertness for a given window of time
 - **get_post_nap_recommendations**: Provides actionable steps to mitigate sleep inertia and sustain alertness after waking
 - **predict_alertness_curve**: Provides a qualitative forecast of alertness levels following the nap
+- **evaluate_caffeine_nap_viability**: Determines if a caffeine nap is recommended based on the user's specific constraints
+- **get_optimal_nap_plan**: Calculates the specific nap duration and timing to maximize alertness for a given window of time
 
 
 ## 💬 Prompt Examples

@@ -15,9 +15,9 @@ This MCP server provides specialized tools to help travelers manage circadian mi
 
 ## Available Tools (4)
 - **analyze_travel_fatigue**: Estimates the specific windows of time where the user will experience maximum cognitive or physical impairment
-- **calculate_recovery_profile**: Provides a comprehensive overview of the user's jet lag impact and recovery timeline
 - **get_light_exposure_schedule**: Provides a specific plan for using light to accelerate circadian realignment
 - **get_melatonin_strategy**: Advise on the optimal timing for melatonin supplementation to assist sleep onset
+- **calculate_recovery_profile**: Provides a comprehensive overview of the user's jet lag impact and recovery timeline
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides biological calculation tools to help users understand t
 
 
 ## Available Tools (4)
-- **compare_cycles**: Evaluates the stability of the user's cycle by comparing historical cycle lengths to the current cycle
-- **get_conception_probability**: Provides a specific probability score for a given date within a cycle
 - **get_cycle_summary**: Provides a high-level overview of the current cycle status and upcoming milestones
 - **predict_fertility_window**: Calculates the complete fertile window and related reproductive milestones
+- **compare_cycles**: Evaluates the stability of the user's cycle by comparing historical cycle lengths to the current cycle
+- **get_conception_probability**: Provides a specific probability score for a given date within a cycle
 
 
 ## 💬 Prompt Examples

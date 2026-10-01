@@ -14,10 +14,10 @@ This MCP server provides a specialized planning engine designed to stimulate neu
 
 
 ## Available Tools (4)
-- **analyze_current_state**: Evaluates the user's existing cognitive habits to determine their baseline stimulation level
 - **calculate_optimal_parameters**: Determines the ideal balance of challenge and novelty based on user demographics and goals
-- **create_weekly_schedule**: Constructs a structured weekly plan that integrates suggested activities and accounts for physical synergy
 - **generate_activity_recommendations**: Suggests new, specific activities that fill the gaps in the user's current routine
+- **analyze_current_state**: Evaluates the user's existing cognitive habits to determine their baseline stimulation level
+- **create_weekly_schedule**: Constructs a structured weekly plan that integrates suggested activities and accounts for physical synergy
 
 
 ## 💬 Prompt Examples

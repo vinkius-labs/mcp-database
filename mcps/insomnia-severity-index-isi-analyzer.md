@@ -14,10 +14,10 @@ This MCP server provides clinical-grade tools to assess insomnia using the valid
 
 
 ## Available Tools (4)
-- **get_clinical_guidance**: 
 - **get_isi_score**: 
 - **get_sleep_quality_profile**: 
 - **get_subdomain_analysis**: 
+- **get_clinical_guidance**: 
 
 
 ## 💬 Prompt Examples

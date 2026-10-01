@@ -16,8 +16,8 @@ This MCP server provides precise temporal structures for various relaxation moda
 ## Available Tools (4)
 - **calculate_script_pacing**: Determines the speed and rhythm of verbal instructions
 - **get_frequency_recommendations**: Provides a schedule for how often the user should practice
-- **plan_relaxation_session**: Generates a complete timing structure for a single relaxation session
 - **validate_session_feasibility**: Checks if a requested session configuration is physically and temporally possible
+- **plan_relaxation_session**: Generates a complete timing structure for a single relaxation session
 
 
 ## 💬 Prompt Examples

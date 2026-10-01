@@ -15,9 +15,9 @@ This MCP server provides physiological assessment tools to monitor muscle health
 
 ## Available Tools (4)
 - **estimate_muscle_health**: Provides an estimation of current muscle mass status and functional capacity
-- **get_sarcopenia_risk**: Determines the current risk level of muscle loss based on primary physiological indicators
 - **get_training_recommendations**: Generates personalized resistance training guidance based on risk and current status
 - **predict_decline_trajectory**: Forecasts the likely direction of physical mobility and strength over time
+- **get_sarcopenia_risk**: Determines the current risk level of muscle loss based on primary physiological indicators
 
 
 ## 💬 Prompt Examples

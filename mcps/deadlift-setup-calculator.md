@@ -14,10 +14,10 @@ This MCP server provides precise anthropometric calculations to optimize deadlif
 
 
 ## Available Tools (4)
+- **validate_setup_readiness**: Checks if the calculated setup parameters are within safe physiological bounds
 - **compare_variations**: Compares the calculated setup for Conventional vs. Sumo for a specific individual
 - **get_mechanical_advantage_profile**: Provides a qualitative assessment of how the lifter's proportions affect their deadlift efficiency
 - **get_setup_parameters**: Calculates specific physical setup dimensions based on user body measurements
-- **validate_setup_readiness**: Checks if the calculated setup parameters are within safe physiological bounds
 
 
 ## 💬 Prompt Examples

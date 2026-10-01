@@ -14,10 +14,10 @@ This MCP server provides clinical decision support for bone health. It allows AI
 
 
 ## Available Tools (4)
-- **get_gender_specific_analysis**: Provides deeper insight into how the user's specific gender influences their risk profile
-- **get_intervention_plan**: Generates a personalized list of actionable lifestyle and dietary changes
 - **get_risk_summary**: Provides a high-level overview of the user's current bone health risk profile
 - **validate_nutritional_sufficiency**: Checks if the current nutritional intake meets the physiological requirements for bone maintenance
+- **get_gender_specific_analysis**: Provides deeper insight into how the user's specific gender influences their risk profile
+- **get_intervention_plan**: Generates a personalized list of actionable lifestyle and dietary changes
 
 
 ## 💬 Prompt Examples

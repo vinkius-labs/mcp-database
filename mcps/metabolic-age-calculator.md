@@ -14,10 +14,10 @@ This MCP server provides tools to calculate metabolic age by comparing Basal Met
 
 
 ## Available Tools (4)
+- **validate_bmr_range**: Verifies if a provided BMR is within physiologically plausible limits
 - **get_demographic_benchmarks**: Retrieves statistical averages for BMR used for comparison logic
 - **get_improvement_plan**: Provides actionable lifestyle recommendations based on the metabolic gap
 - **get_metabolic_profile**: Calculates core metabolic age metrics based on user physical data
-- **validate_bmr_range**: Verifies if a provided BMR is within physiologically plausible limits
 
 
 ## 💬 Prompt Examples

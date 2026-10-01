@@ -14,10 +14,10 @@ This MCP server connects AI agents to advanced pattern analysis for migraine man
 
 
 ## Available Tools (4)
-- **identify_likely_triggers**: Provides a focused list of the most probable culprits for a user's migraines
 - **analyze_trigger_synergies**: Detects patterns where multiple triggers occurring together increase migraine risk
 - **get_avoidance_plan**: Generates actionable recommendations to reduce migraine frequency
 - **get_trigger_correlations**: Identifies which triggers show the strongest statistical relationship with migraine episodes
+- **identify_likely_triggers**: Provides a focused list of the most probable culprits for a user's migraines
 
 
 ## 💬 Prompt Examples

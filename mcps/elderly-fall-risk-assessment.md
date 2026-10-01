@@ -15,9 +15,9 @@ This MCP server provides specialized tools to identify fall risks in older adult
 
 ## Available Tools (4)
 - **analyze_medication_impact**: Determines how the current medication load contributes to the overall risk profile
-- **get_mobility_guidelines**: Provides specific physical activity recommendations based on the user's current mobility
-- **calculate_fall_risk**: Calculates the comprehensive risk profile for an individual
 - **evaluate_home_safety**: Analyzes environmental factors to identify specific trip and fall hazards
+- **calculate_fall_risk**: Calculates the comprehensive risk profile for an individual
+- **get_mobility_guidelines**: Provides specific physical activity recommendations based on the user's current mobility
 
 
 ## 💬 Prompt Examples

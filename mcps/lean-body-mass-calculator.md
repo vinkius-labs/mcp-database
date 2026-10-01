@@ -14,8 +14,8 @@ This MCP server provides precise body composition analysis. Use `get_composition
 
 
 ## Available Tools (4)
-- **calculate_body_composition**: Provides a fundamental breakdown of body mass into fat and lean components
 - **calculate_muscularity_index**: Evaluates how much lean mass an individual carries relative to their height
+- **calculate_body_composition**: Provides a fundamental breakdown of body mass into fat and lean components
 - **calculate_protein_needs**: Determines the daily protein intake required to maintain current lean muscle mass
 - **get_composition_summary**: Provides a complete overview of all calculated body metrics in a single call
 

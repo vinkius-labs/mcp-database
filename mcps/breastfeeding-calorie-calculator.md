@@ -14,10 +14,10 @@ This MCP server provides specialized tools to manage nutritional requirements du
 
 
 ## Available Tools (4)
-- **get_weight_management_safety**: Determines the nutritional safety boundaries for individuals attempting to manage weight during lactation
 - **get_energy_cost_summary**: Breaks down where the energy is being used (Basal vs. Activity vs. Lactation)
 - **get_hydration_guidelines**: Calculates specific fluid intake targets and provides context on hydration needs
 - **get_lactation_requirements**: Provides a comprehensive overview of caloric and hydration needs based on the current lactation status
+- **get_weight_management_safety**: Determines the nutritional safety boundaries for individuals attempting to manage weight during lactation
 
 
 ## 💬 Prompt Examples

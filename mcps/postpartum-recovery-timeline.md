@@ -14,10 +14,10 @@ This MCP server provides physiological recovery estimates for new mothers. It us
 
 
 ## Available Tools (4)
-- **get_red_flag_warnings**: Identifies critical symptoms that require immediate medical attention
 - **get_activity_progression**: Recommends a safe, gradual increase in physical activity levels
-- **get_energy_level_estimate**: Predicts energy fluctuations to help the user manage expectations regarding fatigue
 - **get_recovery_timeline**: Provides a high-level overview of when major recovery milestones are expected to occur
+- **get_energy_level_estimate**: Predicts energy fluctuations to help the user manage expectations regarding fatigue
+- **get_red_flag_warnings**: Identifies critical symptoms that require immediate medical attention
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides tools to estimate an individual's cognitive reserve--th
 
 
 ## Available Tools (4)
-- **analyze_occupational_impact**: Evaluates how much a user's current or past work contributes to their cognitive buffer
-- **estimate_cognitive_reserve**: Calculates the primary cognitive reserve score and identifies key protective drivers
 - **evaluate_social_and_cognitive_activity**: Analyzes the "active reserve" being maintained through current lifestyle choices
 - **get_health_recommendations**: Provides personalized lifestyle adjustments based on a calculated reserve
+- **analyze_occupational_impact**: Evaluates how much a user's current or past work contributes to their cognitive buffer
+- **estimate_cognitive_reserve**: Calculates the primary cognitive reserve score and identifies key protective drivers
 
 
 ## 💬 Prompt Examples
