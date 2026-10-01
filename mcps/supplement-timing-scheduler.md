@@ -14,9 +14,9 @@ This MCP server acts as a precision scheduling engine for nutritional optimizati
 
 
 ## Available Tools (4)
+- **get_food_dependency_guidance**: Provides specific dietary instructions for each supplement to ensure maximum efficacy
 - **analyze_absorption_conflicts**: Identifies potential biological or chemical interference between supplements and medications
 - **check_circadian_alignment**: Evaluates if the current supplement plan aligns with the user's biological clock and energy needs
-- **get_food_dependency_guidance**: Provides specific dietary instructions for each supplement to ensure maximum efficacy
 - **get_optimized_schedule**: Generates a complete, chronologically ordered daily plan for all provided supplements
 
 

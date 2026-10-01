@@ -14,9 +14,9 @@ The Recipe Leftover Transformer connects your kitchen inventory to a smart recip
 
 
 ## Available Tools (4)
-- **calculate_recipe_cost**: Determines the financial impact of preparing a specific recipe
 - **check_ingredient_availability**: Validates if a specific ingredient is available and checks its freshness
 - **find_recipes_by_leftovers**: Identifies recipes that can be made using the current inventory of leftovers
+- **calculate_recipe_cost**: Determines the financial impact of preparing a specific recipe
 - **optimize_waste_reduction**: Suggests the best recipe to cook to prevent food from expiring
 
 

@@ -45,9 +45,6 @@ Estimated revenue for one company by domain, with verification status and revenu
 - **company_technology**: Costs 1 credit. Use it to qualify buyers (e.g. a Greenhouse ATS + SOC 2 badge suggests a mature hiring process) or to find lookalike stacks.
 
 Detected technology stack for one company by domain — CDN, hosting, email provider, frameworks, payments, analytics
-- **effective_domain_rating**: Useful when qualifying marketing-tool prospects: a high EDR with a low DR means real attention that link metrics miss.
-
-Effective Domain Rating (0-100): realized cross-surface visibility vs the classic Ahrefs DR
 - **enrich_company**: Runs live search grounding, a website scrape, tech fingerprinting and LinkedIn/jobs/GitHub passes, and creates a pending stub if the company is not on file yet. Costs 5 credits and needs Pro Lite or higher. Set fast=true to read the cached row only (no pipeline, no fresh cost); force=true to re-run even if enriched within the last 7 days. This deepens a row you already found — to discover net-new companies use search_startups instead.
 
 Run the full grounded enrichment pipeline on a known company and return its profile
@@ -60,9 +57,6 @@ Hiring signal for one company: open-role count, recent velocity and a sample of 
 - **resolve_company**: com) or a LinkedIn company URL/handle, get back name, slug, website, one-liner, sectors, HQ, funding, employee count and score. Domain lookups cost 1 credit; LinkedIn lookups cost 3 because they can live-fetch from LinkedIn — prefer the domain when you have it. A 404 means no company matched: fall back to search_startups in the discovery server, or enrich_company to create the profile.
 
 Resolve a website domain or a LinkedIn company page to a full StartupHub company record
-- **trust_reputation**: Great as a pre-outreach sanity check or a vendor-risk signal.
-
-Trust and reputation score (0-100) for any domain, with a per-signal breakdown
 - **company_funding**: Costs 1 credit. Ideal for enriching a single CRM row from its website.
 
 Funding snapshot for one company by domain: total raised, latest round, valuation, fundraising status
@@ -72,6 +66,12 @@ Batch-resolve up to 100 domains to company records in one call — for enriching
 - **reddit_reviews**: Costs 1 credit. Real-user complaints are gold for qualification and for objection handling in outreach.
 
 Public Reddit sentiment and review snippets for one company
+- **effective_domain_rating**: Useful when qualifying marketing-tool prospects: a high EDR with a low DR means real attention that link metrics miss.
+
+Effective Domain Rating (0-100): realized cross-surface visibility vs the classic Ahrefs DR
+- **trust_reputation**: Great as a pre-outreach sanity check or a vendor-risk signal.
+
+Trust and reputation score (0-100) for any domain, with a per-signal breakdown
 
 
 ## 💬 Prompt Examples

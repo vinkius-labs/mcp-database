@@ -14,10 +14,10 @@ This MCP server acts as a logistics engine to minimize food waste. It connects A
 
 
 ## Available Tools (4)
-- **validate_allocation_feasibility**: Checks if a specific proposed allocation plan is physically and dietarily possible
+- **calculate_optimal_allocation**: Generates a suggested plan to distribute food to recipients based on priority and constraints
 - **find_eligible_recipients**: Finds groups capable of receiving specific types of food
 - **query_available_surplus**: Identifies all currently available food supplies that have not yet been allocated
-- **calculate_optimal_allocation**: Generates a suggested plan to distribute food to recipients based on priority and constraints
+- **validate_allocation_feasibility**: Checks if a specific proposed allocation plan is physically and dietarily possible
 
 
 ## 💬 Prompt Examples

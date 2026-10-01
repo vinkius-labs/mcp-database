@@ -14,9 +14,9 @@ A precision planning engine for fermentation producers. This MCP server provides
 
 
 ## Available Tools (4)
-- **calculate_batch_cost**: Aggregates the total financial cost of the ingredients for the planned batch
 - **calculate_batch_scaling**: Determines the exact weight of every ingredient required to reach the target yield
 - **plan_brine_requirements**: Calculates the amount of salt and water needed to create the brine component
+- **calculate_batch_cost**: Aggregates the total financial cost of the ingredients for the planned batch
 - **validate_vessel_fit**: Checks if the planned batch will fit into the intended fermentation vessel
 
 

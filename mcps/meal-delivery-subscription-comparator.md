@@ -14,8 +14,8 @@ This MCP server provides decision-support tools to evaluate the true cost of mea
 
 
 ## Available Tools (4)
-- **calculate_waste_impact**: Estimates the environmental and financial cost of food waste for both models
 - **compare_subscription_plans**: Compares a specific meal kit subscription against a grocery-based plan for a defined period
+- **calculate_waste_impact**: Estimates the environmental and financial cost of food waste for both models
 - **evaluate_flexibility_cost**: Analyzes how skipping weeks affects the overall value and price per serving of a subscription
 - **get_addon_efficiency**: Determines if adding extra items to a subscription is more cost-effective than buying them separately via groceries
 

@@ -14,10 +14,10 @@ The Home Bar Stock Planner is a precision engine for hosting perfect cocktail ev
 
 
 ## Available Tools (4)
-- **get_cocktail_recipe**: Retrieves the detailed ingredient list and glassware requirements for a specific cocktail
-- **get_stock_status**: Provides a summary of the current inventory levels to help the user understand their starting point
 - **calculate_total_requirements**: Calculates the absolute volume and quantity of every item needed for a planned event
 - **compare_requirements_to_stock**: Identifies exactly what needs to be purchased by comparing the event requirements against what is currently in the bar
+- **get_cocktail_recipe**: Retrieves the detailed ingredient list and glassware requirements for a specific cocktail
+- **get_stock_status**: Provides a summary of the current inventory levels to help the user understand their starting point
 
 
 ## 💬 Prompt Examples

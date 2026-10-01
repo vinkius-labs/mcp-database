@@ -14,10 +14,10 @@ This MCP server provides decision-support tools for optimizing kitchen inventory
 
 
 ## Available Tools (4)
-- **calculate_purchase_priority**: Determines the optimized order of purchase based on specific user needs and constraints
 - **get_equipment_catalog**: Retrieves the master list of available kitchen equipment and their baseline attributes
 - **simulate_budget_scenario**: Answers "What happens if I increase/decrease my budget or change my space constraints?"
 - **validate_storage_capacity**: Checks if a specific set of equipment can physically fit within a designated area
+- **calculate_purchase_priority**: Determines the optimized order of purchase based on specific user needs and constraints
 
 
 ## 💬 Prompt Examples

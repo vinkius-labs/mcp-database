@@ -15,8 +15,8 @@ This MCP server provides physiological calculations to optimize athletic perform
 
 ## Available Tools (4)
 - **get_environmental_adjustment**: Provides specific physiological modifiers based on the surroundings
-- **get_general_warmup_duration**: Determines the recommended length of the initial, non-specific warm-up phase
 - **get_rest_and_pap_timing**: Defines the recovery period between warm-up sets and the optimal window for Post-Activation Potentiation
+- **get_general_warmup_duration**: Determines the recommended length of the initial, non-specific warm-up phase
 - **get_specific_warmup_plan**: Calculates the number of sets and repetitions for activity-specific movements
 
 

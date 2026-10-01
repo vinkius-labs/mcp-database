@@ -14,10 +14,10 @@ Plan your food expenses with precision. This MCP server connects your AI agent t
 
 
 ## Available Tools (4)
+- **get_item_price**: Retrieves the current unit price for a specific piece of produce
 - **calculate_monthly_consumption**: Calculates how much of an item is needed for a specific month
 - **forecast_annual_spending**: Provides a full year overview of expected spending
 - **generate_monthly_budget**: Calculates the total cost for a specific month across all planned produce items
-- **get_item_price**: Retrieves the current unit price for a specific piece of produce
 
 
 ## 💬 Prompt Examples
