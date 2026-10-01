@@ -15,9 +15,9 @@ This MCP server provides precise calculations for kettlebell swing training. Use
 
 ## Available Tools (4)
 - **calculate_volume**: Calculate the total volume of kettlebell swings
-- **estimate_power**: Estimate the power output of a kettlebell swing session
 - **get_progression_path**: Get recommended progression for the next workout
 - **plan_workout_structure**: Plan the structure of a kettlebell swing workout
+- **estimate_power**: Estimate the power output of a kettlebell swing session
 
 
 ## 💬 Prompt Examples

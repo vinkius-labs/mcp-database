@@ -16,8 +16,8 @@ This MCP server provides specialized tools for runners to manage their pacing. U
 ## Available Tools (4)
 - **calculate_negative_split_strategy**: Generates a pacing plan where the runner progressively accelerates throughout the workout
 - **calculate_splits_and_progress**: Provides a complete breakdown of a workout including individual split times, cumulative elapsed time, and required pace per segment
-- **compare_pace_targets**: Compares a user's current average pace against a theoretical target pace to determine if they are ahead or behind schedule
 - **get_split_summary**: Provides a high-level summary of a completed workout to quickly assess performance against a goal
+- **compare_pace_targets**: Compares a user's current average pace against a theoretical target pace to determine if they are ahead or behind schedule
 
 
 ## 💬 Prompt Examples

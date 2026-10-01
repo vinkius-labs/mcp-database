@@ -30,14 +30,11 @@ Power users, data scientists, multi-disciplinary analysts, and anyone building t
 
 Get historical weather (1940–present)
 - **get_weather_forecast**: Get weather forecast for any location (up to 16 days)
+- **get_river_discharge**: Get river discharge data at 5km resolution
+- **get_flood_forecast**: Get flood forecast up to 7 months ahead
 - **get_climate_projection**: The API rejects ranges longer than 365 days with a 400 error, so keep end_date within 365 days of start_date and make one call per year for multi-year analyses.
 
 Get climate projections (2015–2100; max 1-year range per call)
-- **get_ensemble_forecast**: The Open-Meteo Ensemble API requires a model slug, so models defaults to icon_seamless_eps (DWD ICON EPS Seamless). Confirmed working slugs: icon_seamless_eps, icon_global_eps, icon_eu_eps, icon_d2_eps, meteoswiss_icon_ch1, gem_global_ensemble — comma-separate slugs to combine models.
-
-Get probabilistic ensemble forecast from a specific ensemble model
-- **get_river_discharge**: Get river discharge data at 5km resolution
-- **get_flood_forecast**: Get flood forecast up to 7 months ahead
 - **search_location**: Search cities and locations globally
 - **get_elevation**: Get terrain elevation for any coordinates
 - **get_current_weather**: Get current weather conditions
@@ -49,6 +46,9 @@ Get probabilistic ensemble forecast from a specific ensemble model
 Get air quality pollutant concentrations
 - **get_aqi_index**: Get AQI (European and US standards)
 - **get_pollen_forecast**: Get pollen and allergen forecast
+- **get_ensemble_forecast**: The Open-Meteo Ensemble API requires a model slug, so models defaults to icon_seamless_eps (DWD ICON EPS Seamless). Confirmed working slugs: icon_seamless_eps, icon_global_eps, icon_eu_eps, icon_d2_eps, meteoswiss_icon_ch1, gem_global_ensemble — comma-separate slugs to combine models.
+
+Get probabilistic ensemble forecast from a specific ensemble model
 
 
 ## 💬 Prompt Examples

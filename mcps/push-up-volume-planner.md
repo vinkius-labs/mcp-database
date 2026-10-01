@@ -14,9 +14,9 @@ This MCP server provides a structured planning engine to help users increase the
 
 
 ## Available Tools (3)
-- **calculate_progression_plan**: Generates a comprehensive structured plan to move from a current maximum to a goal maximum
 - **get_set_breakdown**: Provides specific instructions on how to organize a single training session's volume into sets
 - **recommend_variations**: Suggests specific push-up variations to assist in reaching the target volume and strength
+- **calculate_progression_plan**: Generates a comprehensive structured plan to move from a current maximum to a goal maximum
 
 
 ## 💬 Prompt Examples

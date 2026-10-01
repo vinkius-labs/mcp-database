@@ -14,9 +14,9 @@ This MCP server provides a physics-based engine to translate cycling power into 
 
 
 ## Available Tools (4)
+- **get_power_to_weight_metrics**: Provides a breakdown of the power-to-weight efficiency for a specific setup
 - **get_energy_expenditure**: Determines the total energy consumed during a specific duration of effort
 - **get_estimated_speed**: Calculates the expected velocity for a given power output and environmental context
-- **get_power_to_weight_metrics**: Provides a breakdown of the power-to-weight efficiency for a specific setup
 - **get_time_to_distance**: Predicts how long it will take to cover a specific distance at a given power level
 
 

@@ -14,8 +14,8 @@ This MCP server provides specialized guidance for athletes looking to optimize t
 
 
 ## Available Tools (4)
-- **generate_progression_plan**: Creates a structured multi-stage plan to help the user increase their box jump height over time
 - **get_alternative_exercises**: Suggests movements that build the necessary components of the box jump if the user cannot perform it safely
+- **generate_progression_plan**: Creates a structured multi-stage plan to help the user increase their box jump height over time
 - **get_recommended_height**: Determines the single most appropriate box height for a user's current profile
 - **get_safety_considerations**: Provides specific physiological and environmental warnings tailored to the user's profile
 

@@ -14,8 +14,8 @@ This MCP server connects AI agents to physiological running models to calculate 
 
 
 ## Available Tools (4)
-- **compare_performances**: Compares a target race pace against a current training pace
 - **get_distance_constants**: Returns the list of standard racing distances recognized by the system
+- **compare_performances**: Compares a target race pace against a current training pace
 - **get_training_zones**: Calculates training intensity zones based on a known race performance
 - **predict_equivalent_time**: Predicts equivalent race time for a target distance based on a known performance
 

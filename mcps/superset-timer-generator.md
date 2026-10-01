@@ -14,9 +14,9 @@ This MCP server provides specialized timing protocols for superset training. It 
 
 
 ## Available Tools (4)
+- **summarize_training_session**: Aggregates multiple superset timings into a high-level session overview
 - **calculate_superset_timing**: Calculates the full timing structure for a single superset pairing
 - **get_goal_recommendations**: Provides a summary of expected physiological intensity and rest-to-work ratios for a selected goal
-- **summarize_training_session**: Aggregates multiple superset timings into a high-level session overview
 - **validate_pairing_logic**: Checks if a proposed pair of exercises is physiologically compatible
 
 

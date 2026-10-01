@@ -14,10 +14,10 @@ This MCP server provides a complete biomechanical assessment for squatting perfo
 
 
 ## Available Tools (4)
-- **analyze_squat_depth**: Determines the quality of the squat and identifies the primary mechanical or mobility drivers
 - **evaluate_mobility_deficits**: Compares current joint range of motion against the ideal requirements for a deep squat
-- **optimize_stance_width**: Suggests the ideal lateral foot positioning to accommodate the user's specific anatomy
 - **recommend_corrective_exercises**: Provides a list of specific movements to improve the identified limiting factors
+- **analyze_squat_depth**: Determines the quality of the squat and identifies the primary mechanical or mobility drivers
+- **optimize_stance_width**: Suggests the ideal lateral foot positioning to accommodate the user's specific anatomy
 
 
 ## 💬 Prompt Examples
