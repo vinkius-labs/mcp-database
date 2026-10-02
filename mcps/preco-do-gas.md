@@ -23,12 +23,12 @@ Fetches articles from the official Preço do Gás blog (gas news, Vale Gás, cam
 - **lookup_cep**: When the user wants the price at a CEP, call search_gas_prices (it geocodes CEPs internally).
 
 Resolves a CEP to street, neighbourhood, city, UF and whether the area has gas delivery coverage. Not a price lookup — for the price at a CEP, use search_gas_prices
+- **search_gas_prices**: A CEP alone is a valid location — pass it in `address` or in `cep` (e.g. "22041-020"). Do NOT use for news (list_gas_news), order tracking (track_gas_order) or CEP coverage checks (lookup_cep).
+
+Looks up the current cooking-gas price for a location in Brazil — the answer to "how much is gas?", "qual o preço do gás?" and "quanto custa o botijão?". Pass the location as `address` (street, city or CEP) and/or `cep` (postal code alone). Returns the offers that deliver there in the site's own order (cheapest first by default; subsidized "Gás do Povo" program offers last), market stats and a ready-to-read pt-BR answer. Each result carries a `url` (that offer's direct checkout link); the search also carries `priceListUrl` (page listing all prices for the location). Fetch only if more detail is needed
 - **track_gas_order**: Phone: DDD + number in any format ((11) 99999-8888, +55 11 99999-8888, 5511999998888). Not for prices (search_gas_prices) or news (list_gas_news).
 
 Tracks a gas order by the phone number it was placed with ("onde está meu pedido de gás?"). Returns status, tracking token and detail link. Not a price lookup
-- **search_gas_prices**: A CEP alone is a valid location — pass it in `address` or in `cep` (e.g. "22041-020"). Do NOT use for news (list_gas_news), order tracking (track_gas_order) or CEP coverage checks (lookup_cep).
-
-Looks up the current cooking-gas price for a location in Brazil — the answer to "how much is gas?", "qual o preço do gás?" and "quanto custa o botijão?". Pass the location as `address` (street, city or CEP) and/or `cep` (postal code alone). Returns resellers that deliver there ranked by price (cheapest first by default), market stats and a ready-to-read pt-BR answer. Each result carries a `url` (that reseller's direct order link); the search also carries `priceListUrl` (page listing all prices for the location). Fetch only if more detail is needed
 
 
 ## 💬 Prompt Examples
