@@ -76,6 +76,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [Hiking Distance Total](../mcps/hiking-distance-total.md) | Calculate and manage cumulative hiking distances from individual trail segments. |
 | [Hiking Elevation Average](../mcps/hiking-elevation-average.md) | Calculate and analyze hiking trail steepness and incline intensity. |
+| [Home Garden Watering Plan](../mcps/home-garden-watering-plan.md) | Generate optimized watering calendars based on plant needs, container volume, and weather. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
 | [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
 | [Image Backup Space Estimator](../mcps/image-backup-space-estimator.md) | Calculate primary and backup storage needs for digital media collections. |

@@ -415,6 +415,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
 | [Extended Warranty Review Engine](../mcps/extended-warranty-review-engine.md) | Evaluate the economic value of extended warranties using reliability data and user priorities. |
 | [Fabric Cost Calculator](../mcps/fabric-cost-calculator.md) | Calculate fabric procurement costs including waste, MOQ, and bulk discounts. |
+| [Family Phone Plan Comparator](../mcps/family-phone-plan-comparator.md) | Compare multi-line mobile plans to find the lowest total cost of ownership. |
 | [Fan Cost Calculator](../mcps/fan-cost-calculator.md) | Calculate the electrical cost of running electric fans. |
 | [Farm Asset Depreciation Generator](../mcps/farm-asset-depreciation-generator.md) | Generate detailed depreciation schedules and tax impact analyses for farm assets using IRS guidelines. |
 | [Farm Financial Ratio Analyzer](../mcps/farm-financial-ratio-analyzer.md) | Calculate essential farm liquidity, solvency, profitability, and efficiency ratios. |
@@ -517,9 +518,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
 | [High-Low Index Calculator](../mcps/high-low-index-calculator.md) | Calculate market breadth, cumulative summation, and detect momentum divergence. |
 | [Historical Volatility Calculator](../mcps/historical-volatility-calculator.md) | Calculate annualized historical volatility, percentile ranks, and volatility cones. |
+| [HOA Dues Forecast](../mcps/hoa-dues-forecast.md) | Forecast association dues, annual increases, and special assessments. |
 | [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
 | [Home Comfort Energy Budget](../mcps/home-comfort-energy-budget.md) | Estimate household energy consumption and costs for heating, cooling, and appliances. |
 | [Home Energy Savings Plan](../mcps/home-energy-savings-plan.md) | Analyze and optimize home energy efficiency improvements for maximum financial return. |
+| [Home Purchase Cash to Close](../mcps/home-purchase-cash-to-close.md) | Calculates the total liquid capital required to finalize a real estate transaction. |
+| [Homeowners Insurance Coverage Comparator](../mcps/homeowners-insurance-coverage-comparator.md) | Compare homeowners insurance policies by analyzing coverage limits, premiums, and loss scenarios. |
 | [Hostel Bed Cost Calculator](../mcps/hostel-bed-cost-calculator.md) | Calculate total hostel stay costs, compare booking options, and estimate bulk discounts. |
 | [Hotel Room Cost Splitter](../mcps/hotel-room-cost-splitter.md) | Equitable cost distribution for shared accommodations. |
 | [Hotel Tax Calculator](../mcps/hotel-tax-calculator.md) | Calculate precise hotel taxes, VAT, and occupancy fees for USA and Europe. |
@@ -756,6 +760,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Product Cost Total](../mcps/product-cost-total.md) | Aggregate and audit cumulative costs for product components and inventory. |
 | [Product Markup Calculator](../mcps/product-markup-calculator.md) | Calculate markup, selling price, and profit margins. |
 | [Production Sharing Contract Model](../mcps/production-sharing-contract-model.md) | Models the economic distribution of resources within a Production Sharing Contract (PSC). |
+| [Property Tax Installment Calendar](../mcps/property-tax-installment-calendar.md) | Generates detailed tax payment timelines, escrow impact analysis, and compliance checks. |
 | [Prorated Rent Calculator](../mcps/prorated-rent-calculator.md) | Calculate exact rent for partial months. |
 | [Protective Collar Strategy](../mcps/protective-collar-strategy.md) | A deterministic hedging engine for locking in profits and mitigating downside risk using protective collars. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
@@ -841,6 +846,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Security Deposit Deductor](../mcps/security-deposit-deductor.md) | Calculate security deposit refunds by itemizing repair costs. |
 | [Seed Stage Valuation Engine](../mcps/seed-stage-valuation-engine.md) | Calculate precise seed-stage startup valuations using a weighted scorecard method. |
 | [Seed Swap Balance Sheet](../mcps/seed-swap-balance-sheet.md) | Calculates exchange balances and market state for seed trading networks. |
+| [Seller Net Proceeds Estimator](../mcps/seller-net-proceeds-estimator.md) | Calculate the final cash amount a seller retains after all transaction costs. |
 | [Sensitivity Analysis for Mining](../mcps/sensitivity-analysis-for-mining.md) | Evaluate NPV fluctuations and project risks through parameter sensitivity analysis. |
 | [Sensitivity Analysis Matrix](../mcps/sensitivity-analysis-matrix.md) | Generates sensitivity matrices for price and yield combinations to identify profit/loss zones. |
 | [Serasa ClearSale — Fraud Risk Analysis (Connect & Payment Link)](../mcps/serasa-clearsale-fraud-risk-analysis-connect-payment-link.md) | Submit orders and identities for ClearSale fraud scoring, then read the decision, score and insights. |

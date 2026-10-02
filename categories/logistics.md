@@ -44,6 +44,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Group Activity Comparator](../mcps/group-activity-comparator.md) | Rank and compare group activities based on cost, travel, and accessibility. |
 | [Handmade Gift Commission Plan](../mcps/handmade-gift-commission-plan.md) | Transform raw gift ideas into structured creative briefs and logistical handoff plans. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
+| [Home Emergency Supply Planner](../mcps/home-emergency-supply-planner.md) | Calculate essential household supplies, identify inventory gaps, and manage expiration schedules. |
 | [Kitchen Repair Disruption Planner](../mcps/kitchen-repair-disruption-planner.md) | Manage household logistics during kitchen renovations with precise disruption calendars and meal planning. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
@@ -58,6 +59,8 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [local-reservation-readiness-plan](../mcps/local-reservation-readiness-plan.md) | Evaluates reservation intent against venue policies to generate readiness packages. |
 | [Marine Terminal Layout Designer](../mcps/marine-terminal-layout-designer.md) | Calculate berth requirements, jetty dimensions, and loading reach for marine terminals. |
 | [Mining Equipment Fleet Selector](../mcps/mining-equipment-fleet-selector.md) | Calculate optimal loader and truck fleet sizes for mining operations. |
+| [Moving Box Allocation Engine](../mcps/moving-box-allocation-engine.md) | Optimize household item packing using volume, weight, and fragility constraints. |
+| [Moving Crew Labor Estimator](../mcps/moving-crew-labor-estimator.md) | Calculate moving labor hours, billable time, and total costs based on logistical variables. |
 | [Music Release Readiness Plan](../mcps/music-release-readiness-plan.md) | A diagnostic engine to evaluate musical release readiness by validating permissions, assets, and logistics. |
 | [Name Change Records Plan](../mcps/name-change-records-plan.md) | Orchestrate organizational name changes with sequenced execution plans and document checklists. |
 | [Neighborhood Food Pantry Support Plan](../mcps/neighborhood-food-pantry-support-plan.md) | Transforms pantry requirements and logistical constraints into actionable donation strategies and volunteer schedules. |
@@ -82,6 +85,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
 | [Repair Vendor Selection Engine](../mcps/repair-vendor-selection-engine.md) | A decision-support engine that evaluates and selects the optimal repair service provider based on user priorities. |
 | [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |
+| [School Lunch Prep Plan](../mcps/school-lunch-prep-plan.md) | Generate precise lunch portions, grocery lists, and prep schedules for school lunches. |
 | [Scooter Charge & Range Planner](../mcps/scooter-charge-range-planner.md) | Manage electric scooter energy constraints and trip feasibility. |
 | [Seat Count Calculator](../mcps/seat-count-calculator.md) | Calculate required vehicles and fleet efficiency for traveler groups. |
 | [Shipping Route Optimization](../mcps/shipping-route-optimization.md) | Optimize maritime routes for tankers using weather-aware routing and fuel efficiency calculations. |

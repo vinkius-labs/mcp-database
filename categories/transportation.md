@@ -15,6 +15,7 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 | [Fuel Refill Calculator](../mcps/fuel-refill-calculator.md) | Calculate required fuel refills and refueling schedules for any journey. |
 | [J&T Express Malaysia](../mcps/jt-express-malaysia.md) | Orchestrate J&T Express Malaysia logistics — track parcels, manage orders, and calculate shipping directly from any AI agent. |
 | [Lalamove Malaysia](../mcps/lalamove-malaysia.md) | Orchestrate Lalamove Malaysia deliveries — get quotations, manage orders, and track drivers directly from any AI agent. |
+| [Moving Truck Load Planner](../mcps/moving-truck-load-planner.md) | Optimize truck cargo space and weight distribution for safe transport. |
 | [MRT vs Grab Decision Engine](../mcps/mrt-vs-grab-decision-engine.md) | A deterministic decision tool to choose between MRT and ride-hailing in Singapore. |
 | [Route Average Speed](../mcps/route-average-speed.md) | Calculate average speed from distance and travel time. |
 | [School Run Route Timetable](../mcps/school-run-route-timetable.md) | Generates optimized departure timelines for school transport routes. |

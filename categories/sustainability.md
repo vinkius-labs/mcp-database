@@ -10,6 +10,7 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 | [CO2 Savings Calculator](../mcps/co2-savings-calculator.md) | Calculate the mass of CO2 emissions avoided by using recycled materials instead of primary production. |
 | [Food Waste Impact Calculator](../mcps/food-waste-impact-calculator.md) | Quantify the environmental and financial impact of food waste, including CO2e, methane, water loss, and monetary cost. |
 | [Food Waste Reducer](../mcps/food-waste-reducer.md) | Minimize food waste with intelligent meal planning and grocery optimization. |
+| [Household Waste Reduction Planner](../mcps/household-waste-reduction-planner.md) | Analyze household waste profiles and calculate savings from reduction strategies. |
 | [Lighting Power Density (LPD) Calculator](../mcps/lighting-power-density-lpd-calculator.md) | Calculate LPD, verify ASHRAE 90.1 compliance, and estimate LED energy savings. |
 | [Micro Impact Aggregator](../mcps/micro-impact-aggregator.md) | Track daily sustainable actions and convert them into measurable environmental impact and financial savings. |
 | [Packaging Footprint Comparator](../mcps/packaging-footprint-comparator.md) | Compare the environmental impact and CO2e emissions of different packaging materials. |
