@@ -288,12 +288,14 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [CATS ATS](../mcps/cats-ats.md) | Manage recruitment workflows via CATS ATS — track candidates, job orders, and activities directly from any AI agent. |
 | [Causal-Graph Navigator](../mcps/causal-graph-navigator.md) | LLMs reason by statistical proximity, confusing word co-occurrence with direct causal relationships. This tool forces causal graph isolation: identify entities as nodes, map directed influence edges, isolate statistical associations, validate graph coherence, and derive paths strictly from the DAG. |
 | [certificate-progress](../mcps/certificate-progress.md) | Tracks and calculates certification completion status and requirement fulfillment. |
+| [Certification Roadmap](../mcps/certification-roadmap.md) | Plan and track your professional certification journey with precision. |
 | [Certifier](../mcps/certifier.md) | Issue branded digital certificates and badges at scale for courses, events, and achievements that recipients can verify online. |
 | [Chameleon.io](../mcps/chameleonio.md) | Manage product adoption and onboarding via Chameleon — trigger tours, analyze surveys, and track user events directly from any AI agent. |
 | [Change Case Engine](../mcps/change-case-engine.md) | Transform text between 12 naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and more) with zero errors. |
 | [Chanty](../mcps/chanty.md) | Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent. |
 | [Charity Run Team Planner](../mcps/charity-run-team-planner.md) | Coordinate registrations, fundraising, apparel, and travel for charity running teams. |
 | [Child Birthday Logistics Plan](../mcps/child-birthday-logistics-plan.md) | Automate birthday party planning with booking timelines, supervision safety checks, and guest communication. |
+| [Child Tutoring Plan Manager](../mcps/child-tutoring-plan-manager.md) | Manage academic subjects, tutor sessions, homework, and budgets in one place. |
 | [Childcare Handoff Brief](../mcps/childcare-handoff-brief.md) | Secure and structured handoff tools for childcare transitions. |
 | [Childcare Hours Total](../mcps/childcare-hours-total.md) | Aggregates and analyzes childcare duration data, including overlap detection and provider summaries. |
 | [Children Room Transition Plan](../mcps/children-room-transition-plan.md) | A phased, safety-first planning engine for moving children between living spaces. |
@@ -319,6 +321,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Claim Follow-up Scheduler](../mcps/claim-follow-up-scheduler.md) | Generates proactive follow-up timelines and communication objectives for insurance claims. |
 | [Claim Status Action Board](../mcps/claim-status-action-board.md) | A decision-support engine that maps claim data to status labels and generates actionable boards. |
 | [Claim Submission Packet Utility](../mcps/claim-submission-packet-utility.md) | Audit insurance claim completeness and generate professional submission documentation. |
+| [Classroom Project Planner](../mcps/classroom-project-planner.md) | Organize classroom group projects by managing tasks, student workloads, and milestones. |
 | [Claude Context Window Budget Tracker](../mcps/claude-context-window-budget-tracker.md) | Monitors and enforces token consumption budgets to prevent context window saturation. |
 | [Claude Conversation Drift Detector](../mcps/claude-conversation-drift-detector.md) | Monitors AI agent focus by detecting task drift and topic shifts. |
 | [Claude Session Memory Indexer](../mcps/claude-session-memory-indexer.md) | Preserves and retrieves cross-session learnings using deterministic hashing and Jaccard similarity. |
@@ -620,6 +623,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Exact Type Inference Validator](../mcps/exact-type-inference-validator.md) | Analyze TypeScript source code to detect implicit 'any', type assertions, and unannotated declarations. |
 | [Exam Notice Study Planner](../mcps/exam-notice-study-planner.md) | Transform exam notices into optimized study schedules and milestones. |
 | [Exam Study Calendar](../mcps/exam-study-calendar.md) | Creates personalized daily study schedules based on exam dates, topics, and available study hours. |
+| [exam-retake-plan](../mcps/exam-retake-plan.md) | Organize revision schedules, registration, costs, and readiness for exam retakes. |
 | [Exercise & Sleep Timing Optimizer](../mcps/exercise-sleep-timing-optimizer.md) | Aligns physical activity with circadian rhythms to maximize sleep quality. |
 | [Exercise Max Tracker](../mcps/exercise-max-tracker.md) | Track lifting progress, estimated 1RM, and strength trends. |
 | [Exercise Order Optimizer](../mcps/exercise-order-optimizer.md) | Optimizes workout sequencing based on physiological energy systems and training goals. |
@@ -769,6 +773,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GoRest](../mcps/gorest.md) | Access and manage RESTful data for users, posts, and comments via the GoRest API — perfect for testing, prototyping, and data simulation. |
 | [GoTo Connect](../mcps/goto-connect.md) | Manage your cloud phone system — view call records, send SMS, and manage voicemails via AI. |
 | [GoTo Meeting](../mcps/goto-meeting.md) | Host reliable video conferences with screen sharing, recording, and transcription for productive remote team meetings. |
+| [Grade Target Calculator](../mcps/grade-target-calculator.md) | Calculate required scores to reach your target academic grade. |
 | [Graduation Party Planner](../mcps/graduation-party-planner.md) | Orchestrate perfect graduation celebrations with tools for budgeting, guest lists, and timelines. |
 | [Granola](../mcps/granola.md) | Manage AI meeting notes via Granola — list and search meeting documents, retrieve transcripts and summaries, and track action items directly from any AI agent. |
 | [Gratitude Journal Analytics](../mcps/gratitude-journal-analytics.md) | Analyze gratitude patterns, consistency, and wellbeing correlations. |
@@ -831,6 +836,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Homebase](../mcps/homebase.md) | Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent. |
 | [Homeowner Repair Priority Board](../mcps/homeowner-repair-priority-board.md) | Prioritize home repairs using safety, damage prevention, and budget scoring. |
 | [Homerun](../mcps/homerun.md) | Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent. |
+| [Homework Time Budget](../mcps/homework-time-budget.md) | Intelligent homework scheduling that balances task duration, difficulty, and mandatory breaks. |
 | [HotDocs](../mcps/hotdocs.md) | Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent. |
 | [Hotel Room Night Calculator](../mcps/hotel-room-night-calculator.md) | Calculate total room nights based on occupancy and stay duration. |
 | [Hourly Cost Calculator](../mcps/hourly-cost-calculator.md) | Calculate labor costs, budget limits, and efficiency ratios. |
@@ -895,6 +901,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Intelligent Loan Comparator](../mcps/intelligent-loan-comparator.md) | Empower your AI Agent with deterministic financial modeling. Instantly compare loan options and calculate exact amortization schedules offline, guaranteeing precision and privacy. |
 | [intelliHR](../mcps/intellihr.md) | Manage employee directory, jobs, and organization data via intelliHR API. |
 | [Intermittent Fasting Scheduler](../mcps/intermittent-fasting-scheduler.md) | Generates personalized fasting schedules, meal timings, and adaptation forecasts. |
+| [Internship Application Planner](../mcps/internship-application-planner.md) | Manage your internship application lifecycle, from portfolio readiness to interview scheduling. |
 | [Interoception Training Protocol](../mcps/interoception-training-protocol.md) | Personalized training plans to improve body awareness and physiological regulation. |
 | [Interview Scheduling Optimizer](../mcps/interview-scheduling-optimizer.md) | Optimize interview scheduling by maximizing coverage and minimizing conflicts across timezones. |
 | [Interview-Based Story Plan](../mcps/interview-based-story-plan.md) | A strategic planning engine for journalistic and qualitative storytelling workflows. |
@@ -955,6 +962,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Lamha](../mcps/lamha.md) | Build AI chatbots for Arabic-speaking audiences with natural language understanding designed for Middle Eastern dialects. |
 | [Landing](../mcps/landing.md) | Create high-converting landing pages in minutes with AI-powered templates and drag-and-drop editing built for marketers. |
 | [Landlord Repair Request Package](../mcps/landlord-repair-request-package.md) | Generate structured, legally-defensible repair request packages from tenancy evidence. |
+| [Language Learning Scheduler](../mcps/language-learning-scheduler.md) | Allocates lessons, practice, reviews, and speaking sessions across your weekly availability. |
 | [Language Practice Minutes](../mcps/language-practice-minutes.md) | Track and aggregate time spent on various language learning activities. |
 | [Laravel Excellence Prover](../mcps/laravel-excellence-prover.md) | AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds. |
 | [Last.fm](../mcps/lastfm.md) | Manage your music profile — audit listening habits, top tracks, and artists via AI. |
@@ -966,9 +974,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Layover Duration Calculator](../mcps/layover-duration-calculator.md) | Calculate flight layover times, connection viability, and transit risks. |
 | [LEAP Legal](../mcps/leap-legal-1.md) | Manage legal matters, cards (contacts), and documents via the LEAP API. |
 | [Learn Amp](../mcps/learn-amp.md) | Combine learning, engagement, and performance in one people development platform that helps employees grow and organizations thrive. |
+| [Learning Goal Tracker](../mcps/learning-goal-tracker.md) | Transform broad learning ambitions into actionable milestones and weekly study targets. |
+| [Learning Subscription Comparator](../mcps/learning-subscription-comparator.md) | Compare online learning subscriptions by cost, content, and flexibility. |
 | [Learning Velocity Tracker](../mcps/learning-velocity-tracker.md) | Analyze study efficiency and predict completion timelines by correlating time investment with knowledge retention. |
 | [LearningSuite](../mcps/learningsuite.md) | Create and deliver corporate training programs with course authoring, quizzes, and progress tracking for distributed teams. |
 | [LearnUpon](../mcps/learnupon.md) | Manage users, courses, and enrollments via the LearnUpon LMS API. |
+| [Lecture Note Review Planner](../mcps/lecture-note-review-planner.md) | Optimizes study schedules by mapping lecture topics to available time windows. |
 | [Legal Citation Formatter](../mcps/legal-citation-formatter.md) | Converts raw legal citations into standardized formats for Bluebook, OSCOLA, AGLC, McGill, and ALWD. |
 | [Legal Counsel Prover](../mcps/legal-counsel-prover.md) | AI agents cite fabricated statutes, ignore deadlines, and deliver one-sided legal memos. This tool forces rigorous reasoning: identify jurisdiction, cite verifiable law, map procedure, address the opposing argument, connect to the client's facts. |
 | [Legal Deadline Calculator Engine](../mcps/legal-deadline-calculator-engine.md) | Compute rigorous procedural deadlines in business days without risking LLM mathematical hallucination. |
@@ -1164,6 +1175,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pantry Shelf Life Tracker](../mcps/pantry-shelf-life-tracker.md) | Calculate precise use-by dates and manage pantry expiration using shelf-life durations. |
 | [Paper Craft Sheet Yield](../mcps/paper-craft-sheet-yield.md) | Calculate paper sheet requirements and layout density for printing jobs. |
 | [PaperQuotes](../mcps/paperquotes.md) | Access a vast library of quotes, search by author or tags, and get the quote of the day directly in your AI agent. |
+| [Parent School Calendar](../mcps/parent-school-calendar.md) | Synchronize school events, fees, assignments, and transport logistics. |
 | [Parent-Teacher Meeting Planner](../mcps/parent-teacher-meeting-planner.md) | Optimizes meeting schedules by reconciling time constraints, topic priorities, and language needs. |
 | [Parking Permit Calendar](../mcps/parking-permit-calendar.md) | Manage permit schedules, renewal deadlines, and valid parking windows. |
 | [Parseur](../mcps/parseur.md) | Automate document processing via Parseur — list mailboxes, upload PDFs/Emails, extract structured data pipelines, and trigger template logic natively. |
@@ -1257,6 +1269,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Preparedness Review Meeting Planner](../mcps/preparedness-review-meeting-planner.md) | Transforms raw household preparedness data into structured review agendas and actionable execution plans. |
 | [Preparedness Training Planner](../mcps/preparedness-training-planner.md) | A personalized scheduler for household emergency preparedness training and practice drills. |
 | [Presentation Duration Calculator](../mcps/presentation-duration-calculator.md) | Estimate presentation length and get pacing recommendations. |
+| [Presentation Timeline Manager](../mcps/presentation-timeline-manager.md) | Schedules research, slides, rehearsal, and feedback around a presentation date. |
 | [Presenton](../mcps/presenton.md) | Automate presentation generation via Presenton — create AI slide decks and manage exports directly from any AI agent. |
 | [Pricing Strategy Prover](../mcps/pricing-strategy-prover.md) | An AI recommended '$29/month per seat' because that is what three competitors charge. No value metric analysis — seat count has nothing to do with value delivered. No WTP research — the price was copied, not discovered. No segmentation — enterprise pays the same as a 3-person startup. No unit economics — CAC was $380 and LTV at $29/month with 14-month retention was $406. LTV/CAC of 1.07x. The company grew revenue 12% while burning 40% of cash on acquisition. This tool forces value metric definition, WTP research, segment pricing, unit economics, and packaging design. |
 | [Priority Score Calculator](../mcps/priority-score-calculator.md) | Calculate task priority by multiplying importance and urgency scores. |
@@ -1294,6 +1307,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Raven Tools](../mcps/raven-tools.md) | Track SEO rankings, audit website health, and generate white-label marketing reports for your clients automatically. |
 | [Readability Score Analyzer](../mcps/readability-score-analyzer.md) | Analyze text complexity using standard linguistic formulas like Flesch-Kincaid and SMOG. |
 | [Reading Pace Calculator](../mcps/reading-pace-calculator.md) | Calculate your daily reading goal to finish any book by a specific date. |
+| [Reading Plan Builder](../mcps/reading-plan-builder.md) | Divide books or chapters into daily reading targets leading up to specific deadlines. |
 | [Reading Submission Tracker](../mcps/reading-submission-tracker.md) | Manage manuscript submission timelines and follow-up schedules. |
 | [Reading Time Estimator](../mcps/reading-time-estimator.md) | Calculate reading duration and completion dates based on word count and speed. |
 | [Readwise](../mcps/readwise-alternative.md) | Connect your AI agents to Readwise to manage books, highlights, tags, and spaced repetition reviews directly through natural language. |
@@ -1367,7 +1381,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Savings Contribution Calculator](../mcps/savings-contribution-calculator.md) | Calculate total savings, progress toward goals, and future contribution schedules. |
 | [Savings Goal Progress](../mcps/savings-goal-progress.md) | Calculate savings progress, remaining amounts, and milestones. |
 | [SavvyCal](../mcps/savvycal.md) | Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI. |
+| [Scholarship Deadline Planner](../mcps/scholarship-deadline-planner.md) | Organize scholarship applications, documents, and deadlines in a unified calendar. |
 | [School Break Coverage Plan](../mcps/school-break-coverage-plan.md) | Synchronize childcare, adult schedules, and budgets into a foolproof holiday coverage plan. |
+| [School Commute Planner](../mcps/school-commute-planner.md) | Compare transport options by cost, time, and safety for school travel. |
 | [School Document Deadline Planner](../mcps/school-document-deadline-planner.md) | Transforms school notices into structured submission workflows with safety buffers and signer dependency tracking. |
 | [School Event Attendance Planner](../mcps/school-event-attendance-planner.md) | Optimize family attendance for school events by balancing availability, childcare, and transport. |
 | [School Fee Payment Planner](../mcps/school-fee-payment-planner.md) | Transforms school fee notices into structured payment schedules and funding assignments. |
@@ -1385,6 +1401,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Seasonal Sleep Adjustment Planner](../mcps/seasonal-sleep-adjustment-planner.md) | Optimize sleep schedules and light therapy based on seasonal shifts and latitude. |
 | [Seasonal Vehicle Storage Planner](../mcps/seasonal-vehicle-storage-planner.md) | Generate detailed maintenance checklists for seasonal vehicle storage and reactivation. |
 | [Semester GPA Projector](../mcps/semester-gpa-projector.md) | Predict your semester GPA and its impact on your cumulative academic standing using performance scenarios. |
+| [Semester Savings Plan](../mcps/semester-savings-plan.md) | Decompose semester costs into a manageable savings timeline. |
 | [SemVer Version Manager](../mcps/semver-version-manager.md) | Stop LLMs from guessing software versions. Deterministically evaluate semantic version bounds, compatibilities, and sort releases perfectly. |
 | [Sensors Data](../mcps/sensors-data.md) | Orchestrate Sensors Data analytics — manage events, query user profiles, and monitor data ingestion directly from any AI agent. |
 | [SEO Authority Prover](../mcps/seo-authority-prover.md) | AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority. |
@@ -1480,6 +1497,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Structured](../mcps/structured.md) | Connect your AI to Structured. Programmatically manage your daily planner, tasks, and routines seamlessly directly from your terminal. |
 | [Student Budget Builder](../mcps/student-budget-builder.md) | A monthly financial planning tool to balance income, academic costs, and living expenses. |
 | [Student Exam Sleep Planner](../mcps/student-exam-sleep-planner.md) | Optimizes sleep cycles and study windows using neuroscientific principles. |
+| [Student Loan Payment Planner](../mcps/student-loan-payment-planner.md) | Simulate and compare student loan repayment strategies to minimize interest and time. |
 | [Study Cost Calculator](../mcps/study-cost-calculator.md) | Calculate cumulative expenditures for courses, books, and study materials. |
 | [Study Hours Estimator](../mcps/study-hours-estimator.md) | Calculate required study duration and structured learning phases for standardized exams. |
 | [Study Schedule Generator](../mcps/study-schedule-generator.md) | Generate personalized study schedules based on subject difficulty and available time. |

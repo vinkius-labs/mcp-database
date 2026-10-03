@@ -843,6 +843,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [SBA Loan Eligibility Accelerator](../mcps/sba-loan-eligibility-accelerator.md) | Analyze SBA loan eligibility and portfolio potential for small businesses. |
 | [Scalping Strategy Engine](../mcps/scalping-strategy-engine.md) | Deterministic momentum-based scalping engine using EMA and Stochastic oscillators. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
+| [School Supplies Budget Optimizer](../mcps/school-supplies-budget-optimizer.md) | A precision procurement engine that calculates optimal school supply purchases by reconciling requirements against stock and budget. |
 | [Seasonal Strategy Engine](../mcps/seasonal-strategy-engine.md) | Generate deterministic trading signals by synchronizing historical seasonal patterns with trend filters. |
 | [Secondary Market Liquidity Accelerator](../mcps/secondary-market-liquidity-accelerator.md) | Estimates cash value and optimal exit timing for private equity stakes. |
 | [Secondhand Value Calculator](../mcps/secondhand-value-calculator.md) | Estimate the current market value and optimal resale strategy for used items. |
@@ -917,6 +918,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Stock Profit/Loss Calculator](../mcps/stock-profitloss-calculator.md) | Calculate ROI, tax liabilities, and risk metrics for stock trades and options strategies. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Streaming Cost Per Hour Calculator](../mcps/streaming-cost-per-hour-calculator.md) | Calculate the real value of streaming services by determining cost per hour of entertainment. |
+| [Student Housing Budget Analyzer](../mcps/student-housing-budget-analyzer.md) | Compare the true cost of student housing including rent, utilities, and commute. |
 | [Subscription Box Unit Economics Engine](../mcps/subscription-box-unit-economics-engine.md) | Calculate profitability, LTV, and payback periods for subscription box models. |
 | [SuperTrend Calculator](../mcps/supertrend-calculator.md) | Deterministic SuperTrend indicator for trend direction and stop-loss levels. |
 | [SuperTrend Strategy Engine](../mcps/supertrend-strategy-engine.md) | Deterministic trend-following strategy with volatility and trend-strength filters. |
