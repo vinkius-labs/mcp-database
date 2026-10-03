@@ -118,6 +118,8 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Rebar Lap Length Calculator](../mcps/rebar-lap-length-calculator.md) | Calculate required rebar lap splice lengths and verify structural compliance. |
 | [Rebar Quantity Estimator](../mcps/rebar-quantity-estimator.md) | Calculate precise rebar weights, lengths, and counts for structural elements. |
 | [Rebar Splice Decision Support](../mcps/rebar-splice-decision-support.md) | Evaluates rebar splicing methods based on structural, economic, and site constraints. |
+| [Renovation Material Planner](../mcps/renovation-material-planner.md) | Calculate material orders, package counts, and delivery deadlines for renovation projects. |
+| [Renovation Phase Calendar](../mcps/renovation-phase-calendar.md) | Schedules renovation phases by synchronizing tasks, dependencies, and resource availability. |
 | [Repair Change Order Review](../mcps/repair-change-order-review.md) | Automated decision support for evaluating construction change orders. |
 | [Repair Completion Walkthrough](../mcps/repair-completion-walkthrough.md) | Automated audit engine to validate repair work against original scopes and documents. |
 | [Repair Inspection Readiness Plan](../mcps/repair-inspection-readiness-plan.md) | Coordinate site readiness for professional inspections by cross-referencing work evidence against regulatory checklists. |

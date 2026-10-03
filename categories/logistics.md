@@ -92,6 +92,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Short-Term Mine Planning Optimizer](../mcps/short-term-mine-planning-optimizer.md) | Aligns equipment, grade, and stockpiles into actionable mining schedules. |
 | [Spill Response Equipment Planner](../mcps/spill-response-equipment-planner.md) | Determines necessary spill response equipment, quantities, and strategic deployment locations. |
 | [Storage Unit Picker](../mcps/storage-unit-picker.md) | Calculate the required storage unit size based on your items' volume and stacking efficiency. |
+| [Storage Unit Size Planner](../mcps/storage-unit-size-planner.md) | Estimate storage needs, find suitable units, and optimize costs based on item dimensions and access frequency. |
 | [Table Seating Optimizer](../mcps/table-seating-optimizer.md) | Calculate venue capacity, table layouts, and space requirements for events. |
 | [Tank Cleaning & Sanitation Scheduler](../mcps/tank-cleaning-sanitation-scheduler.md) | Automated scheduling for dairy and food-processing tank sanitation and harvest turnover. |
 | [Tank Farm Optimization](../mcps/tank-farm-optimization.md) | Optimize refinery tank farm operations including tank allocation, blending schedules, and inventory buffers. |

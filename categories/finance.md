@@ -149,6 +149,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Annual Recurring Revenue Engine](../mcps/annual-recurring-revenue-engine.md) | A financial engine to calculate ARR, growth rates, and revenue composition. |
 | [Apparel Discount Calculator](../mcps/apparel-discount-calculator.md) | Calculate precise apparel discounts, net totals, and savings comparisons. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
+| [Appliance Energy Cost Comparison](../mcps/appliance-energy-cost-comparison.md) | Calculate and compare the total cost of ownership for household appliances. |
 | [Appliance Replacement Comparator](../mcps/appliance-replacement-comparator.md) | Analyze whether to repair or replace appliances using lifecycle cost and break-even analysis. |
 | [Arms Index (TRIN) Calculator](../mcps/arms-index-trin-calculator.md) | Calculate the Arms Index (TRIN) to measure market breadth and sentiment. |
 | [Aroon Indicator Calculator](../mcps/aroon-indicator-calculator.md) | Calculate Aroon Up, Down, and Oscillator metrics to identify market trends. |
@@ -257,6 +258,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Content Marketing ROI Engine](../mcps/content-marketing-roi-engine.md) | Analyze content efficiency, ROI, and prioritization. |
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
 | [Contract Backlog & Revenue Engine](../mcps/contract-backlog-revenue-engine.md) | Calculate contracted revenue backlog, recognized revenue, and future visibility. |
+| [Contractor Payment Milestone Plan](../mcps/contractor-payment-milestone-plan.md) | Calculates payment milestones, retainage, and contract balances for construction and service contracts. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
 | [Convertible Note Conversion Engine](../mcps/convertible-note-conversion-engine.md) | Calculate conversion shares, effective price, and equity ownership for convertible notes. |
@@ -592,6 +594,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Land Cash Rent Calculator](../mcps/land-cash-rent-calculator.md) | Determine equitable cash rent using crop-share equivalency, margin analysis, and yield probability. |
 | [Land Rent Viability Calculator](../mcps/land-rent-viability-calculator.md) | Calculate the economic viability of agricultural land leasing. |
 | [Layer 2 Bridge Arbitrage Strategy](../mcps/layer-2-bridge-arbitrage-strategy.md) | Identify and validate arbitrage opportunities between Ethereum L1 and Layer 2 networks. |
+| [Lease Renewal Decision Summary](../mcps/lease-renewal-decision-summary.md) | Compare the costs of staying in your current lease versus moving to a new residence. |
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
 | [Lending Yield Curve Arbitrage](../mcps/lending-yield-curve-arbitrage.md) | Identify and evaluate profitable yield arbitrage loops between stablecoin lending protocols. |
 | [Library Fine Calculator](../mcps/library-fine-calculator.md) | Calculates overdue fines and provides status summaries for library items. |
@@ -859,6 +862,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sewing Thread Cost Calculator](../mcps/sewing-thread-cost-calculator.md) | Calculate thread consumption costs and spool requirements for sewing projects. |
+| [Shared Building Expense Settlement](../mcps/shared-building-expense-settlement.md) | Settles shared building expenses by calculating unit obligations and optimized transfers. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |
 | [Shipping Charge Totalizer](../mcps/shipping-charge-totalizer.md) | Aggregates and validates shipping fees to calculate total logistics costs. |
 | [Shipping Zone Cost Calculator](../mcps/shipping-zone-cost-calculator.md) | Calculate precise freight costs using dimensional weight and shipping zones. |

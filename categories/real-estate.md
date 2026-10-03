@@ -34,6 +34,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [NCREIF](../mcps/ncreif.md) | Access institutional commercial real estate data via NCREIF — track property performance, indices, and fund returns directly from your AI agent. |
 | [NCREIF Custom Query](../mcps/ncreif-custom-query.md) | Institutional real estate data — execute custom SQL-like queries on NPI and other indices via NCREIF. |
 | [Nestoria](../mcps/nestoria.md) | Search real estate listings globally — find properties to buy or rent across multiple countries with advanced filters. |
+| [Property Showing Itinerary Optimizer](../mcps/property-showing-itinerary-optimizer.md) | Sequences property showings by calculating optimal arrival times, travel logistics, and schedule conflicts. |
 | [PropertyData](../mcps/propertydata.md) | Access comprehensive UK property market data, valuations, and building analytics directly from your AI agent. |
 | [ProspectX](../mcps/prospectx.md) | Find and verify B2B prospect data with AI-powered enrichment that builds targeted outreach lists for your sales team. |
 | [RentCast](../mcps/rentcast-alternative.md) | Access real-time real estate data, property records, and rental market analytics directly from your AI agent. |
