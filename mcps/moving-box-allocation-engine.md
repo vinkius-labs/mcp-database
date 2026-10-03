@@ -14,10 +14,10 @@ This MCP server provides an intelligent logistics engine to optimize the packing
 
 
 ## Available Tools (4)
-- **calculate_packing_plan**: Determines the most efficient way to distribute items into available boxes
 - **get_box_inventory**: Retrieves the available stock of different box sizes
 - **simulate_packing_efficiency**: Predicts the required number of boxes for a theoretical set of items
 - **validate_item_safety**: Checks if a specific grouping of items is safe to be packed together
+- **calculate_packing_plan**: Determines the most efficient way to distribute items into available boxes
 
 
 ## 💬 Prompt Examples

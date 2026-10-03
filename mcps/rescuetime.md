@@ -34,40 +34,12 @@ Connect your **RescueTime** account to any AI agent to gain deep insights into y
 
 
 ## Available Tools (54)
-- **archive_project**: Use the specific Project ID for the operation.
-
-Archive or restore a project
-- **end_focus_time**: Use this only when the session is actively running.
-
-End the current Focus Session (Premium only)
-- **get_alerts**: Use this to check for immediate issues.
-
-List active alerts
-- **get_highlights_feed**: This feature is restricted to Premium users only.
-
-Get daily highlights feed (Premium only)
-- **get_analytic_data**: Query historical activity data and productivity metrics
-- **get_daily_summary_feed**: Get high-level rollup of daily time logged
-- **get_devices**: Do not specify a time range if you want all devices.
-
-List user-machines that have reported time
-- **get_goals**: List goals
-- **get_overview_tree**: Use this for detailed navigation paths.
-
-Get personalized hierarchy with scoring overrides
-- **get_profile_entities**: Do not query without specifying a scope.
-
-List per-account category/score overrides
-- **get_web_notifications**: Use this to review recent activity updates.
-
-List in-app notifications
-- **merge_project_time**: Pass the necessary merge details in the body.
-
-Combine adjacent time entries
-- **get_meeting_events**: List events classified as meetings
 - **add_offline_focus_work**: Include all required details in the body JSON.
 
 Add offline focus time (accumulates)
+- **archive_project**: Use the specific Project ID for the operation.
+
+Archive or restore a project
 - **cancel_or_stop_focus_session**: Include stop details in the body.
 
 End active focus session
@@ -86,22 +58,33 @@ Create a project
 - **delete_timeline_activities**: Both start_time and end_time must be provided.
 
 Bulk delete tracked time in a range
+- **end_focus_time**: Use this only when the session is actively running.
+
+End the current Focus Session (Premium only)
 - **extend_focus_session**: Provide the necessary extension details in the body.
 
 Extend active session duration
 - **get_accounts**: Use this to view global account configurations.
 
 Retrieve account-level settings
+- **get_alerts**: Use this to check for immediate issues.
+
+List active alerts
 - **get_alerts_feed**: Specify the alert ID if filtering is required.
 
 Get running log of recently triggered user-defined alerts
+- **get_analytic_data**: Query historical activity data and productivity metrics
 - **get_calendar_events**: Do not specify any parameters.
 
 List synced calendar events
 - **get_categories**: List activity categories
+- **get_daily_summary_feed**: Get high-level rollup of daily time logged
 - **get_daily_user_summaries**: This provides summarized user data for a given day.
 
 Get pre-computed daily roll-ups
+- **get_devices**: Do not specify a time range if you want all devices.
+
+List user-machines that have reported time
 - **get_extra_works**: List extra-work entries
 - **get_focus_sessions**: List persistent session records
 - **get_focustime_ended_feed**: Use this to view session end history.
@@ -110,10 +93,21 @@ Get feed of ended Focus Sessions
 - **get_focustime_started_feed**: Use this to view session start history.
 
 Get feed of started Focus Sessions
+- **get_goals**: List goals
+- **get_highlights_feed**: This feature is restricted to Premium users only.
+
+Get daily highlights feed (Premium only)
 - **get_managed_users**: List users in teams managed by the caller
+- **get_meeting_events**: List events classified as meetings
 - **get_organizations**: Retrieve organization details
 - **get_overviews**: List top-level activity buckets
+- **get_overview_tree**: Use this for detailed navigation paths.
+
+Get personalized hierarchy with scoring overrides
 - **get_productivities**: List productivity score definitions
+- **get_profile_entities**: Do not query without specifying a scope.
+
+List per-account category/score overrides
 - **get_projects**: No parameters are needed to list projects.
 
 List projects
@@ -130,9 +124,15 @@ Fetch normalized activity stream for a day
 
 Retrieve API-writable user settings
 - **get_web_notification_counts**: Get read/unread counts for notifications
+- **get_web_notifications**: Use this to review recent activity updates.
+
+List in-app notifications
 - **log_project_time**: Provide all time log details in the body.
 
 Log time against a project/task
+- **merge_project_time**: Pass the necessary merge details in the body.
+
+Combine adjacent time entries
 - **opt_in_beta**: Do not call this if you are unsure of the user’s intent.
 
 Opt in or out of beta features

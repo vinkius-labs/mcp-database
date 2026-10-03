@@ -14,10 +14,10 @@ This MCP server provides tools to calculate fair rent splits based on private ro
 
 
 ## Available Tools (4)
-- **calculate_rent_split**: Calculates the individual financial obligations for each roommate based on their specific living conditions
 - **get_area_distribution_summary**: Provides a high-level overview of how living space is distributed among the household
-- **simulate_amenity_impact**: Allows roommates to see how much the total cost would change if someone gained or lost a private amenity
 - **validate_cost_integrity**: Verifies that the sum of all individual shares perfectly matches the total household cost
+- **calculate_rent_split**: Calculates the individual financial obligations for each roommate based on their specific living conditions
+- **simulate_amenity_impact**: Allows roommates to see how much the total cost would change if someone gained or lost a private amenity
 
 
 ## 💬 Prompt Examples

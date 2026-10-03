@@ -14,10 +14,10 @@ This MCP server provides an intelligent scheduling engine to manage household ta
 
 
 ## Available Tools (4)
-- **get_resident_workload_balance**: Analyzes how evenly the chore effort is distributed among the household members
 - **get_unassigned_reasoning**: Explains why specific chores were not assigned to any resident
 - **get_weekly_schedule**: Generates a complete chore assignment plan for the upcoming week
 - **validate_rotation_fairness**: Checks if the current assignment plan is effectively rotating tasks based on historical data
+- **get_resident_workload_balance**: Analyzes how evenly the chore effort is distributed among the household members
 
 
 ## 💬 Prompt Examples

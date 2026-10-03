@@ -15,9 +15,9 @@ This MCP server provides tools to manage move-out cleaning operations. It allows
 
 ## Available Tools (4)
 - **get_personnel_availability**: Provides the availability windows for all people assigned to the move-out cleaning
-- **get_task_list**: Retrieves a summary of all tasks that need to be performed
 - **generate_cleaning_schedule**: Calculates the most efficient distribution of tasks among available people
 - **validate_schedule_capacity**: Checks if the total estimated cleaning time exceeds the total available person-minutes
+- **get_task_list**: Retrieves a summary of all tasks that need to be performed
 
 
 ## 💬 Prompt Examples

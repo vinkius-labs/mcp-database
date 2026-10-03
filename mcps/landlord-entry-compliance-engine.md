@@ -14,10 +14,10 @@ This MCP server provides a compliance and scheduling validation engine for prope
 
 
 ## Available Tools (4)
-- **check_tenant_availability**: Check availability
-- **detect_calendar_conflicts**: Detect conflicts
 - **generate_compliance_report**: Generate report
 - **get_entry_compliance**: Audit entry request
+- **check_tenant_availability**: Check availability
+- **detect_calendar_conflicts**: Detect conflicts
 
 
 ## 💬 Prompt Examples
