@@ -57,33 +57,33 @@ List all products in your Cin7 Core (DEAR) catalog
 - **list_sales_orders**: Returns order metadata including customer ID, total value, and current status (e.g., drafted, authorized, packed, shipped).
 
 List all sales orders and their current fulfillment status
-- **get_account_info**: Confirms the credentials are valid and returns account context such as account name, plan, and active status. Use this as a first step to test the integration before other calls.
-
-Verify the connection and get account info for the connected Cin7 Core application
 - **get_purchase_order_details**: Resolves individual line items, supplier, expected delivery date, and inbound progress for the given purchase order GUID.
 
 Get full details for a specific purchase order
 - **list_crm_suppliers**: Returns vendor profiles including primary contact info, default currency, and payment terms.
 
 List all suppliers and vendors
-- **list_transactions**: Returns financial transactions with dates, accounts, amounts, and references. Use the optional date range and account filters to narrow the results.
-
-List financial transactions across account ledgers
-- **list_warehouses**: Returns every physical warehouse and virtual storage location configured in the account, including identifiers and deprecation flags. Use the returned location IDs to scope stock availability queries.
-
-List all warehouse and storage locations in the account
-- **list_stock_adjustments**: Returns corrections to on-hand quantities such as damage, write-offs, and count discrepancies, with quantities and status. Optionally narrow the results with a status filter.
-
-List stock adjustments (quantity corrections)
 - **list_stock_transfers**: Returns transfer records including source and destination, items, quantities, and status. Optionally narrow the results with a status filter.
 
 List stock transfers between warehouses
-- **search_products**: Returns matching product records with SKU, name, category, and base price. Use the optional name and SKU filters to narrow results. For on-hand quantities use get_sku_stock_status instead.
+- **list_warehouses**: Returns every physical warehouse and virtual storage location configured in the account, including identifiers and deprecation flags. Use the returned location IDs to scope stock availability queries.
 
-Search the product catalog by name or SKU
+List all warehouse and storage locations in the account
 - **search_products_by_sku**: Returns stock and identification data for products matching the provided SKU identifier.
 
 Search for a product using its SKU
+- **get_account_info**: Confirms the credentials are valid and returns account context such as account name, plan, and active status. Use this as a first step to test the integration before other calls.
+
+Verify the connection and get account info for the connected Cin7 Core application
+- **list_stock_adjustments**: Returns corrections to on-hand quantities such as damage, write-offs, and count discrepancies, with quantities and status. Optionally narrow the results with a status filter.
+
+List stock adjustments (quantity corrections)
+- **list_transactions**: Returns financial transactions with dates, accounts, amounts, and references. Use the optional date range and account filters to narrow the results.
+
+List financial transactions across account ledgers
+- **search_products**: Returns matching product records with SKU, name, category, and base price. Use the optional name and SKU filters to narrow results. For on-hand quantities use get_sku_stock_status instead.
+
+Search the product catalog by name or SKU
 
 
 ## 💬 Prompt Examples
