@@ -850,6 +850,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hourly Cost Calculator](../mcps/hourly-cost-calculator.md) | Calculate labor costs, budget limits, and efficiency ratios. |
 | [Hourly Productivity Tracker](../mcps/hourly-productivity-tracker.md) | Calculate and analyze work output efficiency per hour. |
 | [Hourly Salary & Real Wage Calculator](../mcps/hourly-salary-real-wage-calculator.md) | Convert pay frequencies and calculate your 'real' hourly wage after taxes, commute, and unpaid breaks. |
+| [Hourly Wage & Commute Calculator](../mcps/hourly-wage-commute-calculator.md) | Calculate your true effective hourly wage by accounting for taxes and commute costs. |
 | [Household Absence Instructions](../mcps/household-absence-instructions.md) | Generate structured, day-by-day caretaker guides from travel schedules and care requirements. |
 | [Household Accounts Record Plan](../mcps/household-accounts-record-plan.md) | Organize household account metadata, provider contacts, and access governance. |
 | [Household Chore Rotation](../mcps/household-chore-rotation.md) | Distributes household chores among residents using effort points and availability. |
@@ -1046,6 +1047,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Mailinator](../mcps/mailinator.md) | Test email workflows with disposable inboxes that catch every message without touching production mailboxes or real addresses. |
 | [Mailosaur](../mcps/mailosaur.md) | Automate email and SMS testing and management via the Mailosaur REST API. |
 | [Maintenance & Warranty Calendar Engine](../mcps/maintenance-warranty-calendar-engine.md) | Calculate service due dates and generate maintenance calendars by reconciling usage, warranty, and provider availability. |
+| [Major Purchase Comparator](../mcps/major-purchase-comparator.md) | Rank products using weighted metrics like price, running cost, and warranty. |
 | [MakePlans](../mcps/makeplans.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [MakePlans](../mcps/makeplans-alternative.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [Maker-Space Access Planner](../mcps/maker-space-access-planner.md) | Evaluates user eligibility for maker-space access based on membership, training, and project constraints. |
@@ -1107,6 +1109,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Move-in Room Layout](../mcps/move-in-room-layout.md) | Optimize furniture placement in rectangular rooms with physical constraints. |
 | [Move-Out Cleaning Scheduler](../mcps/move-out-cleaning-scheduler.md) | Optimizes cleaning task assignments based on personnel availability and deadlines. |
 | [Moving Box Packing Plan](../mcps/moving-box-packing-plan.md) | Optimize your move by assigning belongings to the best box sizes. |
+| [Moving Cost Budgeter](../mcps/moving-cost-budgeter.md) | Calculate and analyze moving expenses across upfront, move-week, and first-month phases. |
 | [Moving Truck Calculator](../mcps/moving-truck-calculator.md) | Calculate truck size, volume, weight, and moving supplies. |
 | [Moxie](../mcps/moxie.md) | Manage your freelance or agency business with client portals, project tracking, time logging, and invoicing in one clean tool. |
 | [Multi-Agent Orchestrator Prover](../mcps/multi-agent-orchestrator-prover.md) | An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing. |
@@ -1363,6 +1366,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Rest Timer Accumulator](../mcps/rest-timer-accumulator.md) | Calculate total workout duration including rest periods. |
 | [Rest-Pause Set Planner](../mcps/rest-pause-set-planner.md) | Generates optimized rest-pause training protocols and fatigue projections. |
 | [Retable](../mcps/retable.md) | Organize data in smart spreadsheets with relational views, team collaboration, and workflow automation that goes beyond basic tables. |
+| [Retirement Contribution Planner](../mcps/retirement-contribution-planner.md) | Calculate exact contribution dates and amounts to reach your annual retirement savings target. |
 | [Reunion Travel Cost Planner](../mcps/reunion-travel-cost-planner.md) | Calculate, track, and reconcile group travel expenses. |
 | [Rev.ai](../mcps/revai.md) | High-accuracy speech-to-text and transcription — submit media files, generate AI summaries, and create captions directly from your AI agent. |
 | [Reverse Pyramid Training Planner](../mcps/reverse-pyramid-training-planner.md) | Design precise Reverse Pyramid Training (RPT) protocols with automated weight and rep calculations. |
@@ -1432,6 +1436,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Short.io](../mcps/shortio.md) | Automate branded link management via Short.io — manage domains, links, and analytics directly from any AI agent. |
 | [Showpad](../mcps/showpad.md) | Equip your AI agent to radically infiltrate your Showpad enablement platform. Search sales collateral, fetch user profiles, track channels, and extract asset metadata. |
 | [Side Hustle Viability Calculator](../mcps/side-hustle-viability-calculator.md) | Deterministic financial feasibility analysis for side hustles in Singapore. |
+| [Side-Gig Profit Planner](../mcps/side-gig-profit-planner.md) | Calculate net take-home pay by accounting for fees, expenses, and taxes. |
 | [SignRequest](../mcps/signrequest.md) | Manage e-signatures and documents via SignRequest — create signing requests, track document status, and manage templates directly from any AI agent. |
 | [Simian](../mcps/simian.md) | Video sharing and collaboration platform. |
 | [Simplenote](../mcps/simplenote.md) | Manage your Simplenote notes directly from your AI assistant. Create, search, edit, and organize plain-text notes without leaving the conversation. |
@@ -1694,6 +1699,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Watercolor Palette Mix Ratio](../mcps/watercolor-palette-mix-ratio.md) | Calculate exact pigment masses for custom watercolor mixes. |
 | [Wave Accounting](../mcps/wave-accounting.md) | Manage customers, invoices, and accounting workflows on Wave — the money management tool for small businesses. |
 | [Wave Count Predictor](../mcps/wave-count-predictor.md) | Predict wave counts, wait times, and optimal lineup positioning for surfing sessions. |
+| [Wedding Payment Planner](../mcps/wedding-payment-planner.md) | Generate payment timelines, cash flow forecasts, and budget summaries for wedding planning. |
 | [Weekend Hosting Plan](../mcps/weekend-hosting-plan.md) | Orchestrate guest stays with complete timelines, meal schedules, and prep checklists. |
 | [Weekend Sleep Recovery Planner](../mcps/weekend-sleep-recovery-planner.md) | Optimized weekend sleep scheduling to mitigate weekday sleep debt. |
 | [Weekly Goal Progress](../mcps/weekly-goal-progress.md) | Track and predict weekly goal completion and progress velocity. |
