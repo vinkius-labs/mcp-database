@@ -15,9 +15,9 @@ This MCP server provides tools to analyze how price fluctuations in recurring co
 
 ## Available Tools (4)
 - **calculate_household_summary**: Aggregates multiple item impacts to provide a holistic view of the budget change
-- **calculate_item_impact**: Determines the specific monthly and annual cost increases for a single recurring item
 - **compare_frequency_scenarios**: Analyzes how changing the purchase frequency of a specific item affects the long-term budget impact
 - **identify_major_contributors**: Identifies which items are causing the most significant financial strain due to price changes
+- **calculate_item_impact**: Determines the specific monthly and annual cost increases for a single recurring item
 
 
 ## 💬 Prompt Examples

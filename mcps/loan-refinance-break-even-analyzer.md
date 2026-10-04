@@ -14,10 +14,10 @@ This MCP server provides specialized financial tools to evaluate the economic vi
 
 
 ## Available Tools (4)
-- **get_refinance_analysis**: Evaluates the financial impact of switching from a current loan to a new loan
 - **validate_loan_eligibility**: Checks if the provided loan parameters meet basic sanity checks for a refinance evaluation
 - **get_amortization_comparison**: Compares the total interest paid over the lifetime of both loan scenarios
 - **get_monthly_payment**: Calculates the monthly installment for a given loan configuration
+- **get_refinance_analysis**: Evaluates the financial impact of switching from a current loan to a new loan
 
 
 ## 💬 Prompt Examples

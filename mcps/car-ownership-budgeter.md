@@ -14,10 +14,10 @@ This MCP server provides tools to calculate the total cost of vehicle ownership.
 
 
 ## Available Tools (4)
-- **calculate_annual_projection**: Provides a yearly view of total ownership costs for long-term financial planning
-- **calculate_monthly_projection**: Provides a comprehensive monthly breakdown of all expected vehicle expenses
 - **compare_scenarios**: Compares two different driving or ownership profiles to see which is more cost-effective
+- **calculate_monthly_projection**: Provides a comprehensive monthly breakdown of all expected vehicle expenses
 - **get_distance_efficiency**: Calculates how much it costs to drive a single unit of distance based on usage patterns
+- **calculate_annual_projection**: Provides a yearly view of total ownership costs for long-term financial planning
 
 
 ## 💬 Prompt Examples

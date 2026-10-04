@@ -15,9 +15,9 @@ This MCP server provides a complete engine for managing shared household expense
 
 ## Available Tools (4)
 - **get_expense_summary**: Get a high-level summary of total household expenses
-- **calculate_individual_standings**: Calculate individual financial standings based on expenses and ownership weights
 - **generate_settlement_plan**: Generate a minimum transfer settlement plan
 - **validate_weights**: Validate if ownership weights are mathematically valid
+- **calculate_individual_standings**: Calculate individual financial standings based on expenses and ownership weights
 
 
 ## 💬 Prompt Examples

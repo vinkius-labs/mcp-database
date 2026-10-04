@@ -14,10 +14,10 @@ This MCP server provides financial tools to compare vehicle acquisition methods.
 
 
 ## Available Tools (4)
+- **get_depreciation_impact**: Evaluates how much value the vehicle loses specifically through depreciation over the horizon
 - **get_lease_cost_summary**: Calculates the total financial impact of leasing a vehicle over a specific timeframe
 - **get_purchase_cost_summary**: Calculates the total financial impact of purchasing a vehicle over a specific timeframe
 - **compare_acquisition_models**: Performs a direct side-by-side comparison between a purchase plan and a lease plan
-- **get_depreciation_impact**: Evaluates how much value the vehicle loses specifically through depreciation over the horizon
 
 
 ## 💬 Prompt Examples

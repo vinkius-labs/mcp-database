@@ -14,9 +14,9 @@ Plan your next trip with precision using the Vacation Savings Countdown MCP. Thi
 
 
 ## Available Tools (4)
+- **get_savings_summary**: Provides a high-level overview of the savings plan without the granular breakdown
 - **calculate_missed_payment_impact**: Quantifies the damage to the savings goal caused by skipping a single scheduled contribution
 - **get_savings_schedule**: Generates a complete chronological list of planned contributions required to meet the goal
-- **get_savings_summary**: Provides a high-level overview of the savings plan without the granular breakdown
 - **validate_savings_feasibility**: Determines if the user's desired contribution amount is sufficient to reach the goal
 
 
