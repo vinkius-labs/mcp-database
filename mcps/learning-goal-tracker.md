@@ -14,10 +14,10 @@ The Learning Goal Tracker connects your AI assistant to a structured planning sy
 
 
 ## Available Tools (5)
-- **get_goal_status**: Provides a high-level overview of a goal's health and trajectory
 - **calculate_weekly_targets**: Determines the specific number of hours required per week to meet the goal deadline
 - **create_learning_goal**: Initializes a new learning objective with a timeframe and estimated effort
 - **generate_milestones**: Decomposes a learning goal into a structured set of milestones
+- **get_goal_status**: Provides a high-level overview of a goal's health and trajectory
 - **log_progress**: Records the amount of time spent studying toward a specific goal
 
 

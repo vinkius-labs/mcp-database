@@ -15,9 +15,9 @@ This MCP server provides tools to manage the entire lifecycle of an exam retake.
 
 ## Available Tools (4)
 - **calculate_financial_requirements**: Determine the total cost associated with the retake attempt
+- **verify_registration_window**: Check if the user is currently allowed to register for the retake
 - **check_readiness_status**: Assess if the student is sufficiently prepared based on progress
 - **get_revision_schedule**: Retrieve a structured plan of study activities leading up to the retake
-- **verify_registration_window**: Check if the user is currently allowed to register for the retake
 
 
 ## 💬 Prompt Examples

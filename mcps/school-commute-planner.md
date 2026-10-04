@@ -14,8 +14,8 @@ This MCP server helps students and parents evaluate the best ways to get to scho
 
 
 ## Available Tools (4)
-- **analyze_commute_options**: Compares multiple transport modes to find the best fit based on user priorities
 - **calculate_route_efficiency**: Evaluates the relationship between distance and time for a specific mode
+- **analyze_commute_options**: Compares multiple transport modes to find the best fit based on user priorities
 - **get_safety_profile**: Provides a detailed breakdown of safety considerations for a chosen mode
 - **summarize_weekly_budget**: Calculates the total financial impact of different transport combinations
 

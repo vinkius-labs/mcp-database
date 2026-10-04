@@ -14,9 +14,9 @@ Classroom Project Planner helps educators manage complex group assignments. Use 
 
 
 ## Available Tools (4)
+- **check_milestone_readiness**: Determines if all requirements for a specific milestone have been met
 - **get_project_overview**: Provides a high-level summary of the entire project status
 - **get_student_workload**: Checks how much work is assigned to a specific student to prevent burnout
-- **check_milestone_readiness**: Determines if all requirements for a specific milestone have been met
 - **list_task_dependencies**: Answers which tasks are blocking others to identify the critical path
 
 

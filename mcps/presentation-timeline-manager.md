@@ -14,10 +14,10 @@ This MCP server manages the end-to-end preparation lifecycle for presentations. 
 
 
 ## Available Tools (4)
-- **calculate_buffer_margin**: Determines the amount of available safety time between the end of the rehearsal phase and the delivery date
 - **check_phase_readiness**: Determines if a specific phase can begin based on the status of its predecessor
 - **get_timeline_milestones**: Provides a full schedule of all necessary preparation milestones based on a target date
 - **validate_phase_sequence**: Checks if a proposed sequence of tasks follows the logical flow of preparation
+- **calculate_buffer_margin**: Determines the amount of available safety time between the end of the rehearsal phase and the delivery date
 
 
 ## 💬 Prompt Examples
