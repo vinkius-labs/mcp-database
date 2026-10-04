@@ -201,6 +201,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Business Interruption Claim Log](../mcps/business-interruption-claim-log.md) | Automated forensic accounting to reconcile business closures with revenue and expense records. |
 | [Business License Fee Calculator](../mcps/business-license-fee-calculator.md) | Estimate business licensing, permit, and annual renewal costs across multiple jurisdictions. |
 | [Business Profit Margin Calculator](../mcps/business-profit-margin-calculator.md) | Calculate gross, operating, and net profit margins, break-even points, optimal pricing, and seasonal cash flow projections. |
+| [Buy vs Lease Comparator](../mcps/buy-vs-lease-comparator.md) | Compare the total cost of vehicle purchase versus leasing. |
 | [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
 | [CAC Payback Period Analyzer](../mcps/cac-payback-period-analyzer.md) | Calculate CAC payback, break-even thresholds, and customer lifetime value. |
 | [Cafe Break-Even Planner](../mcps/cafe-break-even-planner.md) | Calculate daily revenue and unit targets needed to cover cafe operational costs. |
@@ -242,6 +243,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [COE Bidding Optimizer](../mcps/coe-bidding-optimizer.md) | Deterministic bidding strategy calculator for Singapore COE auctions. |
 | [Collectible Insurance Coverage Gap Analyzer](../mcps/collectible-insurance-coverage-gap-analyzer.md) | Calculate insurance coverage gaps and inflation-adjusted valuations for collectibles. |
 | [Collectible Price Analyzer](../mcps/collectible-price-analyzer.md) | Calculate total market value and statistical summaries for collectible collections. |
+| [College Application Budget Planner](../mcps/college-application-budget-planner.md) | Track and aggregate all costs for the college application process. |
 | [Commission Total](../mcps/commission-total.md) | Calculate and summarize commission amounts and agent earnings. |
 | [Commitment of Traders (COT) Strategy](../mcps/commitment-of-traders-cot-strategy.md) | Analyze commercial and non-commercial positioning to generate deterministic trading signals. |
 | [Commodity Basis Analyzer](../mcps/commodity-basis-analyzer.md) | Analyze grain basis patterns and receive optimal delivery timing recommendations. |
@@ -279,6 +281,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Craft Kit Cost Calculator](../mcps/craft-kit-cost-calculator.md) | Calculate material expenses and resource requirements for craft kits. |
 | [Creator Revenue Split](../mcps/creator-revenue-split.md) | Reconcile multi-party revenue distributions and calculate exact payouts. |
 | [Credit Card Payoff Engine](../mcps/credit-card-payoff-engine.md) | Calculate exact credit card payoff timelines, interest costs, and compare repayment strategies using daily compounding logic. |
+| [Credit Card Payoff Planner](../mcps/credit-card-payoff-planner.md) | Generate detailed month-by-month debt repayment schedules and payoff summaries. |
 | [Credit Utilization Analyzer](../mcps/credit-utilization-analyzer.md) | Calculate credit usage, risk tiers, and available credit. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
 | [Crop Insurance Indemnity Calculator](../mcps/crop-insurance-indemnity-calculator.md) | Calculates crop insurance indemnity payments and break-even analyses. |
@@ -609,6 +612,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [LNG Project Economics](../mcps/lng-project-economics.md) | Economic analysis for LNG value chains, including delivered cost, NPV, and break-even price. |
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Loan Interest Calculator](../mcps/loan-interest-calculator.md) | Calculate total interest, repayment ratios, and financial summaries for loans. |
+| [Loan Refinance Break-Even Analyzer](../mcps/loan-refinance-break-even-analyzer.md) | Calculate monthly savings, lifetime savings, and the break-even month for mortgage refinancing. |
 | [Local Attraction Pass Decision Plan](../mcps/local-attraction-pass-decision-plan.md) | Evaluate the financial and logistical viability of local attraction passes. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
@@ -657,6 +661,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Monthly Revenue Analyzer](../mcps/monthly-revenue-analyzer.md) | Aggregate and analyze transaction data to calculate monthly revenue totals and growth trends. |
 | [Mortgage Amortization Engine](../mcps/mortgage-amortization-engine.md) | Generate precise mortgage amortization schedules and calculate payoff acceleration. |
 | [Mortgage Payment Calculator](../mcps/mortgage-payment-calculator.md) | Calculate monthly mortgage payments, amortization schedules, and compare rent vs. buy scenarios. |
+| [Mortgage Payment Comparator](../mcps/mortgage-payment-comparator.md) | Compare mortgage scenarios to find the best monthly payment, total interest, or cash to close. |
 | [Movie Ticket Total Calculator](../mcps/movie-ticket-total-calculator.md) | Calculate movie admission costs with tiered pricing and group discounts. |
 | [Moving Average Calculator](../mcps/moving-average-calculator.md) | Compute advanced moving average indicators and trend signals from financial time series data. |
 | [Moving Average Envelope Calculator](../mcps/moving-average-envelope-calculator.md) | Calculates moving average center lines, upper/lower envelopes, and breakout signals. |
@@ -793,6 +798,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Renewable Energy Lease Analyzer](../mcps/renewable-energy-lease-analyzer.md) | Evaluate the financial viability of solar or wind energy leases against alternative land uses. |
 | [Renewal Comparison Brief](../mcps/renewal-comparison-brief.md) | Compare insurance policy terms and generate renewal decision briefs. |
 | [Renovation Budget Planner](../mcps/renovation-budget-planner.md) | Track renovation costs, phase summaries, and cash flow timelines. |
+| [Rent Affordability Scenario](../mcps/rent-affordability-scenario.md) | Evaluate housing options against income, debts, and savings goals. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
 | [Repair Budget & Release Plan](../mcps/repair-budget-release-plan.md) | Synchronize project budgets with verifiable milestone completion and gated payments. |
 | [Repair Budget Contingency Plan](../mcps/repair-budget-contingency-plan.md) | Analyze repair budgets, quantify financial uncertainty, and generate contingency strategies. |
@@ -843,6 +849,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [SBA Loan Eligibility Accelerator](../mcps/sba-loan-eligibility-accelerator.md) | Analyze SBA loan eligibility and portfolio potential for small businesses. |
 | [Scalping Strategy Engine](../mcps/scalping-strategy-engine.md) | Deterministic momentum-based scalping engine using EMA and Stochastic oscillators. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
+| [School Event Budget Planner](../mcps/school-event-budget-planner.md) | Calculate comprehensive costs for school activities, including transport, meals, and clothing. |
 | [School Supplies Budget Optimizer](../mcps/school-supplies-budget-optimizer.md) | A precision procurement engine that calculates optimal school supply purchases by reconciling requirements against stock and budget. |
 | [Seasonal Strategy Engine](../mcps/seasonal-strategy-engine.md) | Generate deterministic trading signals by synchronizing historical seasonal patterns with trend filters. |
 | [Secondary Market Liquidity Accelerator](../mcps/secondary-market-liquidity-accelerator.md) | Estimates cash value and optimal exit timing for private equity stakes. |
@@ -966,6 +973,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [TRIX Strategy](../mcps/trix-strategy.md) | Deterministic momentum trading strategy using Triple EMA and signal line analysis. |
 | [TRIX-Calculator](../mcps/trix-calculator.md) | Deterministic Triple EMA oscillator for trend and momentum analysis. |
 | [True Strength Index (TSI) Calculator](../mcps/true-strength-index-tsi-calculator.md) | A deterministic technical analysis engine for calculating TSI values, signal lines, and momentum signals. |
+| [Tutoring Rate Comparator](../mcps/tutoring-rate-comparator.md) | Compare tutors by hourly price, travel fees, package discounts, and availability. |
 | [UK Income Tax Calculator](../mcps/uk-income-tax-calculator.md) | Calculate UK income tax liabilities, including personal allowance tapering and National Insurance contributions. |
 | [UK Statutory Interest Calculator](../mcps/uk-statutory-interest-calculator.md) | Calculate statutory interest and fixed compensation for late commercial payments in the UK. |
 | [Ultimate Momentum Indicator Calculator](../mcps/ultimate-momentum-indicator-calculator.md) | A deterministic technical analysis tool that synthesizes multi-timeframe momentum oscillators into a single weighted indicator. |
@@ -1002,8 +1010,10 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US WARN Act Compliance Calculator](../mcps/us-warn-act-compliance-calculator.md) | Calculate employer liabilities and verify compliance with the US WARN Act. |
 | [US Wrongful Termination Calculator](../mcps/us-wrongful-termination-calculator.md) | Estimate potential financial damages and legal liabilities for US wrongful termination claims. |
 | [Used Vehicle Inspection Budget Calculator](../mcps/used-vehicle-inspection-budget-calculator.md) | Calculate total acquisition costs, repair subtotals, and maximum purchase offers for used vehicles. |
+| [Utility Bill Forecast Engine](../mcps/utility-bill-forecast-engine.md) | Predict utility costs using tiered pricing and scenario modeling. |
 | [Utility Usage Comparator](../mcps/utility-usage-comparator.md) | Compare monthly utility bills against historical trends and household occupancy. |
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |
+| [Vacation Savings Countdown](../mcps/vacation-savings-countdown.md) | Generate detailed savings schedules and impact analysis for travel budgeting. |
 | [Valuation Revenue Multiple Estimator](../mcps/valuation-revenue-multiple-estimator.md) | Estimate startup valuations using revenue multiples, growth adjustments, and sensitivity analysis. |
 | [Value Engineering Comparator](../mcps/value-engineering-comparator.md) | Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-Investment Ratios. |
 | [Value-Added Processing Economics](../mcps/value-added-processing-economics.md) | Analyze profitability and ROI for transitioning from raw commodities to processed goods. |
@@ -1131,6 +1141,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Working Capital Optimization AI](../mcps/working-capital-optimization-ai.md) | Calculate the financial impact of AI-driven improvements on working capital and cash flow. |
 | [Y Combinator Deal Economics Calculator](../mcps/y-combinator-deal-economics-calculator.md) | Calculate YC equity stakes, dilution, and deal scenarios. |
 | [Yield Curve Analyzer](../mcps/yield-curve-analyzer.md) | Analyze interest rate curves, identify spreads, and detect recession signals. |
+| [Zero-Based Budget Builder](../mcps/zero-based-budget-builder.md) | Distribute monthly income across categories to ensure every dollar is assigned. |
 | [ZigZag Indicator Calculator](../mcps/zigzag-indicator-calculator.md) | Detect price swing points and analyze market structure using deterministic ZigZag logic. |
 
 

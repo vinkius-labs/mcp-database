@@ -40,6 +40,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Interval Calculator](../mcps/interval-calculator.md) | Calculate musical intervals, properties, and note frequencies. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Le Chatelier Prediction](../mcps/le-chatelier-prediction.md) | Predict chemical equilibrium shifts caused by changes in concentration, pressure, or temperature. |
+| [Library Book Plan](../mcps/library-book-plan.md) | Manage book lifecycles, reading progress, and return logistics. |
 | [Limiting Reagent Yield Calculator](../mcps/limiting-reagent-yield-calculator.md) | A precision stoichiometry engine for determining limiting reactants, theoretical yields, and efficiency metrics. |
 | [London Schools: Estate, Distances & Cross-Border Mobility](../mcps/london-schools-estate-distances-cross-border-mobility.md) | Keyless London school data: the 2016 school estate (URN, phase, status, local authority, coordinates), per-school travel-distance trends 2010-2016, home-school distance benchmarks by authority, and 2011 cross-border mobility for children. |
 | [Lunchbox Portion Calculator](../mcps/lunchbox-portion-calculator.md) | Calculate total meal portions needed for school weeks based on child attendance. |
