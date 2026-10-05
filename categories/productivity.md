@@ -241,6 +241,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Builder Team Velocity Metrics](../mcps/builder-team-velocity-metrics.md) | Analyzes software team productivity using velocity, quality, and delivery speed metrics. |
 | [Builder Toolstack Optimization](../mcps/builder-toolstack-optimization.md) | Evaluate toolstack efficiency and cost-benefit ratios. |
 | [Building Maintenance Notice Planner](../mcps/building-maintenance-notice-planner.md) | Organizes building maintenance notices into actionable household plans and service impact assessments. |
+| [Bulk Buying Comparator](../mcps/bulk-buying-comparator.md) | Evaluate the economic and practical viability of bulk purchases. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
 | [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
 | [Burnout Risk Assessment](../mcps/burnout-risk-assessment.md) | Quantifies occupational burnout risk using Maslach Burnout Inventory principles. |
@@ -974,6 +975,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Landlord Repair Request Package](../mcps/landlord-repair-request-package.md) | Generate structured, legally-defensible repair request packages from tenancy evidence. |
 | [Language Learning Scheduler](../mcps/language-learning-scheduler.md) | Allocates lessons, practice, reviews, and speaking sessions across your weekly availability. |
 | [Language Practice Minutes](../mcps/language-practice-minutes.md) | Track and aggregate time spent on various language learning activities. |
+| [Laptop Purchase Planner](../mcps/laptop-purchase-planner.md) | A decision-support system that ranks laptops based on workload, budget, and personal priorities. |
 | [Laravel Excellence Prover](../mcps/laravel-excellence-prover.md) | AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds. |
 | [Last.fm](../mcps/lastfm.md) | Manage your music profile — audit listening habits, top tracks, and artists via AI. |
 | [Later (Social Media Management)](../mcps/later-social-media-management.md) | Manage social media via Later — schedule posts, access your media library, and analyze profile performance. |
@@ -1110,6 +1112,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Move-Out Cleaning Scheduler](../mcps/move-out-cleaning-scheduler.md) | Optimizes cleaning task assignments based on personnel availability and deadlines. |
 | [Moving Box Packing Plan](../mcps/moving-box-packing-plan.md) | Optimize your move by assigning belongings to the best box sizes. |
 | [Moving Cost Budgeter](../mcps/moving-cost-budgeter.md) | Calculate and analyze moving expenses across upfront, move-week, and first-month phases. |
+| [Moving Sale Pricer](../mcps/moving-sale-pricer.md) | Optimize listing prices for residential liquidation sales. |
 | [Moving Truck Calculator](../mcps/moving-truck-calculator.md) | Calculate truck size, volume, weight, and moving supplies. |
 | [Moxie](../mcps/moxie.md) | Manage your freelance or agency business with client portals, project tracking, time logging, and invoicing in one clean tool. |
 | [Multi-Agent Orchestrator Prover](../mcps/multi-agent-orchestrator-prover.md) | An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing. |
@@ -1240,6 +1243,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pet-Neighbor Communication Plan](../mcps/pet-neighbor-communication-plan.md) | A structured framework for managing pet-related shared-living concerns through factual and respectful communication. |
 | [Pet-New-Baby Logistics Plan](../mcps/pet-new-baby-logistics-plan.md) | Converts household dynamics and pet care requirements into structured transition plans and coordination protocols for new parents. |
 | [Phone Addiction Risk Analyzer](../mcps/phone-addiction-risk-analyzer.md) | Quantifies smartphone dependency risk using validated behavioral metrics. |
+| [Phone Upgrade Comparator](../mcps/phone-upgrade-comparator.md) | Analyze the total cost of ownership for smartphone upgrades. |
 | [Photo Session Timekeeper](../mcps/photo-session-timekeeper.md) | Generates precise photography session timelines including setups, shots, and breaks. |
 | [Photography Project Planner](../mcps/photography-project-planner.md) | A strategic planning engine for photography projects, generating briefs, logistics, and workflows. |
 | [PhotoPrism](../mcps/photoprism.md) | Search, browse, and manage your PhotoPrism media library — find photos by metadata, retrieve thumbnails, and stream videos via AI. |
@@ -1361,6 +1365,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Repetition Pattern Detector](../mcps/repetition-pattern-detector.md) | Detects redundant linguistic patterns and calculates text compression metrics. |
 | [Repetitive Strain Risk Calculator](../mcps/repetitive-strain-risk-calculator.md) | Analyzes work patterns to calculate RSI risk and provide ergonomic recovery recommendations. |
 | [Requirement Decomposition Prover](../mcps/requirement-decomposition-prover.md) | AI generates the happy path but omits error handling, edge cases, security, and observability — the '80% Problem'. This tool forces complete requirement decomposition BEFORE code generation: specify inputs/outputs, map failure modes, cover boundary conditions, validate OWASP, plan logging. |
+| [Resale Profit Calculator](../mcps/resale-profit-calculator.md) | Calculate net profit for resale items, accounting for repairs, fees, shipping, and return risks. |
 | [RescueTime](../mcps/rescuetime.md) | Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent. |
 | [research-source-count](../mcps/research-source-count.md) | Quantify and categorize research sources by type. |
 | [Rest Timer Accumulator](../mcps/rest-timer-accumulator.md) | Calculate total workout duration including rest periods. |
@@ -1445,6 +1450,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Singapore Salary Benchmark](../mcps/singapore-salary-benchmark.md) | Calculate your salary percentile rank against Singapore market benchmarks. |
 | [Ski Run Counter](../mcps/ski-run-counter.md) | Calculate completed ski runs and efficiency metrics based on time spent on slopes. |
 | [Skincare Routine Analyzer](../mcps/skincare-routine-analyzer.md) | Analyze skincare regimens to count products and assess complexity. |
+| [Skincare Routine Budget Manager](../mcps/skincare-routine-budget-manager.md) | Track product longevity, replenishment dates, and monthly skincare spending limits. |
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
 | [Sleep Banking Calculator](../mcps/sleep-banking-calculator.md) | Calculate sleep banking potential and mitigation strategies for upcoming sleep deprivation. |
 | [Sleep Chronotype Assessment](../mcps/sleep-chronotype-assessment.md) | Determine your biological sleep timing and peak performance windows. |
@@ -1526,6 +1532,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Study Space Budget Planner](../mcps/study-space-budget-planner.md) | Plan an optimized study environment by selecting furniture and tools within your physical space and budget constraints. |
 | [Subscription Annualizer](../mcps/subscription-annualizer.md) | Standardize subscription costs to true monthly and annual values. |
 | [Subscription Audit Calculator](../mcps/subscription-audit-calculator.md) | Audit subscription costs and identify wasted spending. |
+| [Subscription Box Comparator](../mcps/subscription-box-comparator.md) | Evaluate and rank subscription services based on value, flexibility, and item relevance. |
 | [Subscription Cashflow Aligner](../mcps/subscription-cashflow-aligner.md) | Find the safest day of the month to set subscription billing dates and minimize overdrafts. |
 | [Subscription Killer Calculator](../mcps/subscription-killer-calculator.md) | Analyze and optimize recurring expenses to maximize disposable income. |
 | [Subscription Renewal Planner](../mcps/subscription-renewal-planner.md) | Analyze subscription renewals, budget constraints, and usage to generate actionable keep/cancel/review plans. |

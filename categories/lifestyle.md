@@ -15,6 +15,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
 | [CBD Dosage Calculator](../mcps/cbd-dosage-calculator.md) | Personalized CBD dosage plans and titration schedules based on wellness goals. |
 | [Chope Tissue Optimization](../mcps/chope-tissue-optimization.md) | Deterministic strategy calculator for optimizing table reservations in food courts. |
+| [Clothing Capsule Planner](../mcps/clothing-capsule-planner.md) | Build a cohesive wardrobe by identifying gaps and generating optimized shopping plans. |
 | [Coffee Brewing Ratio Calculator](../mcps/coffee-brewing-ratio-calculator.md) | Calculate precise coffee doses, water volumes, and brew ratios for any method. |
 | [Daily Water Intake Calculator](../mcps/daily-water-intake-calculator.md) | Personalized daily hydration recommendations based on weight, activity, and climate. |
 | [Date Night Budget Planner](../mcps/date-night-budget-planner.md) | Generates cohesive date night itineraries by balancing activities, meals, transport, and budget. |
