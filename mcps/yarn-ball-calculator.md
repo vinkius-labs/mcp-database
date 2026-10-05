@@ -14,10 +14,10 @@ This MCP server provides essential tools for textile and craft planning. Use `ge
 
 
 ## Available Tools (4)
-- **get_required_balls**: Calculates the total number of yarn balls a user must purchase to meet their total requirement
 - **get_yarn_inventory_summary**: Provides a summary of the total length of yarn available based on a current inventory count
-- **validate_supply_sufficiency**: Determines if a user's current inventory of yarn balls is enough to complete a specific project
 - **calculate_project_cost_estimate**: Estimates the total cost of purchasing the necessary yarn for a project
+- **get_required_balls**: Calculates the total number of yarn balls a user must purchase to meet their total requirement
+- **validate_supply_sufficiency**: Determines if a user's current inventory of yarn balls is enough to complete a specific project
 
 
 ## 💬 Prompt Examples

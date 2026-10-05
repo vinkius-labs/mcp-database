@@ -14,8 +14,8 @@ This MCP server provides tools to manage puzzle assembly spaces. Use `get_table_
 
 
 ## Available Tools (4)
-- **check_puzzle_fit**: Determines if a specific puzzle can be placed on a given table
 - **get_available_tables**: Lists all registered tables in the system
+- **check_puzzle_fit**: Determines if a specific puzzle can be placed on a given table
 - **get_table_area**: Calculates the total available surface area of a specific table
 - **validate_dimensions**: Checks if a set of dimensions are physically possible and logical
 
