@@ -13,6 +13,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Bluesky Automation](../mcps/bluesky-automation.md) | Full-spectrum Bluesky automation — 20 tools for publishing, engagement, analytics, social listening, and lead generation via the AT Protocol. |
 | [BuiltWith Tech Lookup](../mcps/builtwith-tech-lookup.md) | Universal website technology intelligence — detect CMS, analytics, and frameworks via AI. |
 | [Campaign Reach Analyzer](../mcps/campaign-reach-analyzer.md) | Aggregate and analyze unique audience reach across marketing campaigns. |
+| [Campaign ROI Calculator](../mcps/campaign-roi-calculator.md) | Calculate net profit, ROI, and break-even points for marketing campaigns. |
 | [Cart Abandonment Email Scorer](../mcps/cart-abandonment-email-scorer.md) | Analyze email copy for urgency, scarcity, and incentive clarity. |
 | [Claim Substantiation Checker](../mcps/claim-substantiation-checker.md) | Scans marketing copy for factual and numeric claims requiring substantiation. |
 | [CMO Marketing Prover](../mcps/cmo-marketing-prover.md) | A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation. |
@@ -45,6 +46,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [LinkedIn Hashtag Strategy Validator](../mcps/linkedin-hashtag-strategy-validator.md) | Analyze LinkedIn hashtag usage for density, accessibility, and strategic positioning. |
 | [LinkedIn Link Penalty and Placement Analyzer](../mcps/linkedin-link-penalty-and-placement-analyzer.md) | Analyzes LinkedIn post text to identify external link placement risks and bypass phrase detection. |
 | [Market Education Strategy Calculator](../mcps/market-education-strategy-calculator.md) | Calculate investment, ROI, and optimal channel mix for market education campaigns. |
+| [Marketing Budget Allocator](../mcps/marketing-budget-allocator.md) | Optimize marketing spend by balancing channel capacity, cost, and revenue. |
 | [Marketing ROI Calculator](../mcps/marketing-roi-calculator.md) | Calculate marketing Return on Investment (ROI), payback period, and efficiency across all campaigns using detailed cost and revenue attribution. |
 | [Meta Ad Creative Copy-Pairing Scorer](../mcps/meta-ad-creative-copy-pairing-scorer.md) | Score the alignment between Meta ad copy and visual descriptions to optimize performance. |
 | [Meta Tag Analyzer](../mcps/meta-tag-analyzer.md) | Validate HTML title and meta description tags for SEO optimization. |

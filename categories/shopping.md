@@ -4,6 +4,7 @@ Explore the open database of **shopping** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Baby Gear Comparator](../mcps/baby-gear-comparator.md) | Compare baby products by price, safety, lifespan, and compatibility. |
 | [Furniture Shopping Planner](../mcps/furniture-shopping-planner.md) | Select optimal furniture based on room dimensions, budget, and logistics. |
 | [Grocery Bag Calculator](../mcps/grocery-bag-calculator.md) | Calculate the exact number of bags needed for your groceries. |
 | [Pet Collar Sizing Utility](../mcps/pet-collar-sizing-utility.md) | Verify pet collar fit and explore available sizing tiers. |

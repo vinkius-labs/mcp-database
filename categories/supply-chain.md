@@ -46,6 +46,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |
 | [Tank Storage Capacity Planning](../mcps/tank-storage-capacity-planning.md) | Plan industrial tank infrastructure by calculating required volumes, tank counts, and turnover efficiency. |
+| [Vendor Quote Comparator](../mcps/vendor-quote-comparator.md) | Compare supplier quotes by unit price, lead time, and risk. |
 | [Warehouse ABC Slotting Optimizer](../mcps/warehouse-abc-slotting-optimizer.md) | Optimize warehouse SKU placement using ABC analysis to minimize travel distance. |
 | [Warehouse Capacity Calculator](../mcps/warehouse-capacity-calculator.md) | Calculate warehouse storage density, utilization rates, and financial implications of pallet vacancy. |
 | [Wine Club Fulfillment Planner](../mcps/wine-club-fulfillment-planner.md) | Plans wine club shipment logistics, labor requirements, and seasonal staffing needs. |

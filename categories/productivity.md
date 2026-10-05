@@ -167,6 +167,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Batch Cooking Planner](../mcps/batch-cooking-planner.md) | Consolidate ingredients from multiple recipes into a single, organized shopping list. |
 | [Beamer](../mcps/beamer.md) | Manage product updates and user feedback via Beamer — create posts, track analytics, and monitor feedback directly from any AI agent. |
 | [Bear](../mcps/bear.md) | Manage your Bear notes via AI — search, create, and organize your markdown knowledge base autonomously. |
+| [Beauty Product Refill Planner](../mcps/beauty-product-refill-planner.md) | Schedules beauty product repurchases based on consumption and stock. |
 | [Beauty Routine Cost Calculator](../mcps/beauty-routine-cost-calculator.md) | Analyze your beauty spending, track product depletion, and optimize subscription savings. |
 | [Bedroom Environment Scorer](../mcps/bedroom-environment-scorer.md) | Assess and optimize your bedroom environment for better sleep quality. |
 | [Bedtime Routine Timer](../mcps/bedtime-routine-timer.md) | Reverse-engineer your perfect bedtime routine using sleep hygiene principles. |
@@ -446,6 +447,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
 | [Custify](../mcps/custify-alternative.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Custom Farming Rate Calculator](../mcps/custom-farming-rate-calculator.md) | Calculate precise operational costs and fair custom service rates for agricultural tasks. |
+| [Custom Gift Cost Planner](../mcps/custom-gift-cost-planner.md) | Calculate comprehensive costs for custom gifts, including base price, personalization, shipping, and taxes. |
 | [Customer Discovery Prover](../mcps/customer-discovery-prover.md) | An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals. |
 | [Customer.io](../mcps/customerio.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customer.io](../mcps/customerio-alternative.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
@@ -686,6 +688,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
 | [Farm Working Capital Calculator](../mcps/farm-working-capital-calculator.md) | Project seasonal cash flows and determine peak borrowing needs for agricultural operations. |
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
+| [Fashion Outfit Cost Planner](../mcps/fashion-outfit-cost-planner.md) | Manage total expenditure and cost-per-wear for curated fashion outfits. |
 | [Fasting Streak Accumulator](../mcps/fasting-streak-accumulator.md) | Validate fasting logs, track success streaks, and calculate compliance percentages. |
 | [Fasting Window Resolver](../mcps/fasting-window-resolver.md) | Calculate and track feeding and fasting windows with precision. |
 | [Fathom](../mcps/fathom.md) | Manage AI meeting notes via Fathom — list and search meetings, retrieve transcripts and summaries, and track action items directly from any AI agent. |
@@ -733,6 +736,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Formsite](../mcps/formsite.md) | Manage forms, retrieve results, and automate data collection via AI agents with Formsite. |
 | [Formstack](../mcps/formstack.md) | Manage professional forms, track submissions, and automate data collection via AI agents with Formstack. |
 | [FreeAgent](../mcps/freeagent.md) | Manage accounting, track invoices, and oversee bank transactions via AI agents with FreeAgent. |
+| [Freelance Utilization Forecast](../mcps/freelance-utilization-forecast.md) | Predict freelance revenue and capacity by modeling billable hours, rates, and overhead. |
 | [Freelancer Rate Calculator](../mcps/freelancer-rate-calculator.md) | Calculate sustainable hourly rates based on target income and billable capacity. |
 | [Freezer Meal Inventory Planner](../mcps/freezer-meal-inventory-planner.md) | Manage freezer stock, optimize consumption, and plan restocks. |
 | [FreshBooks](../mcps/freshbooks.md) | Manage small business accounting via FreshBooks — track clients and invoices, handle payments and billing via AI agents. |
@@ -826,10 +830,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hiring Cost Calculator](../mcps/hiring-cost-calculator.md) | Calculate the total first-year economic impact of a new hire, including salary, benefits, recruitment, and productivity ramp-up. |
 | [Hive (Project Management)](../mcps/hive-project-management.md) | Manage projects via Hive — create actions, track initiatives, and organize workspaces. |
 | [Hobby Budget Tracker](../mcps/hobby-budget-tracker.md) | Track and analyze expenses for your personal hobbies. |
+| [Hobby Supply Shopping Planner](../mcps/hobby-supply-shopping-planner.md) | Optimize hobby project procurement by balancing material needs, budget, and existing tool inventory. |
 | [Holiday API](../mcps/holiday-api.md) | Manage global holidays — audit public and federal holidays via AI. |
 | [Holiday Budget Planner](../mcps/holiday-budget-planner.md) | Synchronize holiday spending with monthly savings to ensure financial stability. |
 | [Holiday Cookie Batch Planner](../mcps/holiday-cookie-batch-planner.md) | Converts holiday gifting needs into actionable baking batches, ingredient lists, and oven schedules. |
 | [Holiday Dinner Planner](../mcps/holiday-dinner-planner.md) | Transform guest lists and recipes into complete cooking schedules, shopping lists, and budget estimates. |
+| [Holiday Shopping Calendar](../mcps/holiday-shopping-calendar.md) | A strategic planning engine to optimize holiday gift purchases. |
 | [Holiday Weekend Bridge Optimizer](../mcps/holiday-weekend-bridge-optimizer.md) | Maximize your long weekends by identifying the most efficient PTO bridge days. |
 | [Home Childcare Scheduler](../mcps/home-childcare-scheduler.md) | Synchronize caregiver availability, child routines, and parent work schedules into actionable daily plans. |
 | [Home Dinner Host Plan](../mcps/home-dinner-host-plan.md) | Complete management for hosting dinner parties, from menu design to cleanup. |
@@ -868,6 +874,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Household Recovery Orchestrator](../mcps/household-recovery-orchestrator.md) | Converts post-disaster property data into actionable recovery sequences and schedules. |
 | [Household Safety Drill Record](../mcps/household-safety-drill-record.md) | Document and audit residential emergency preparedness drills. |
 | [Household Service Contact Book](../mcps/household-service-contact-book.md) | Organize and retrieve service provider profiles, contact methods, and service histories. |
+| [Household Stock-Up Plan](../mcps/household-stock-up-plan.md) | Optimize household inventory replenishment by balancing stock levels, consumption, and budget. |
 | [Household Supply Predictor](../mcps/household-supply-predictor.md) | Predicts how long household supplies will last based on current stock and usage. |
 | [Household Utility Handover Sheet](../mcps/household-utility-handover-sheet.md) | Generate structured handover documentation and synchronized task lists for utility transitions. |
 | [Housewarming Party Planner](../mcps/housewarming-party-planner.md) | Coordinate guest lists, catering, home readiness, and budgets for your housewarming. |
@@ -1245,6 +1252,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Phone Addiction Risk Analyzer](../mcps/phone-addiction-risk-analyzer.md) | Quantifies smartphone dependency risk using validated behavioral metrics. |
 | [Phone Upgrade Comparator](../mcps/phone-upgrade-comparator.md) | Analyze the total cost of ownership for smartphone upgrades. |
 | [Photo Session Timekeeper](../mcps/photo-session-timekeeper.md) | Generates precise photography session timelines including setups, shots, and breaks. |
+| [Photographer Package Pricer](../mcps/photographer-package-pricer.md) | Calculate professional photography quotes including labor, gear, travel, and margins. |
 | [Photography Project Planner](../mcps/photography-project-planner.md) | A strategic planning engine for photography projects, generating briefs, logistics, and workflows. |
 | [PhotoPrism](../mcps/photoprism.md) | Search, browse, and manage your PhotoPrism media library — find photos by metadata, retrieve thumbnails, and stream videos via AI. |
 | [Physiological Hydration Metric Engine](../mcps/physiological-hydration-metric-engine.md) | Compute exact metabolic water intake requirements. Structure highly optimized, circadian fluid distribution schedules adapting natively to body mass, physical output, and environmental climate. |
@@ -1371,7 +1379,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Rest Timer Accumulator](../mcps/rest-timer-accumulator.md) | Calculate total workout duration including rest periods. |
 | [Rest-Pause Set Planner](../mcps/rest-pause-set-planner.md) | Generates optimized rest-pause training protocols and fatigue projections. |
 | [Retable](../mcps/retable.md) | Organize data in smart spreadsheets with relational views, team collaboration, and workflow automation that goes beyond basic tables. |
+| [Retail Staffing Plan](../mcps/retail-staffing-plan.md) | Optimizes retail personnel allocation using sales forecasts and labor constraints. |
 | [Retirement Contribution Planner](../mcps/retirement-contribution-planner.md) | Calculate exact contribution dates and amounts to reach your annual retirement savings target. |
+| [Return Window Calendar](../mcps/return-window-calendar.md) | Track and manage product return deadlines based on purchase and shipping dates. |
 | [Reunion Travel Cost Planner](../mcps/reunion-travel-cost-planner.md) | Calculate, track, and reconcile group travel expenses. |
 | [Rev.ai](../mcps/revai.md) | High-accuracy speech-to-text and transcription — submit media files, generate AI summaries, and create captions directly from your AI agent. |
 | [Reverse Pyramid Training Planner](../mcps/reverse-pyramid-training-planner.md) | Design precise Reverse Pyramid Training (RPT) protocols with automated weight and rep calculations. |
@@ -1428,6 +1438,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Sensors Data](../mcps/sensors-data.md) | Orchestrate Sensors Data analytics — manage events, query user profiles, and monitor data ingestion directly from any AI agent. |
 | [SEO Authority Prover](../mcps/seo-authority-prover.md) | AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority. |
 | [Service Center Inquiry Assistant](../mcps/service-center-inquiry-assistant.md) | Generates prioritized questions for service centers based on repair quotes and warranties. |
+| [Service Pricing Builder](../mcps/service-pricing-builder.md) | Generate precise service quotes by calculating labor, travel, materials, overhead, and profit. |
 | [Service Utilization](../mcps/service-utilization.md) | Measure resource efficiency by calculating booked versus available hours. |
 | [Set-List Planner](../mcps/set-list-planner.md) | Optimize your live performance with energy-driven song sequencing and musical transition analysis. |
 | [Severance Pay Calculator](../mcps/severance-pay-calculator.md) | Calculate precise employee termination payouts, including salary balances and statutory penalties. |
@@ -1479,6 +1490,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Slide Count Calculator](../mcps/slide-count-calculator.md) | Calculate presentation slide counts and schedules based on duration and pacing. |
 | [Slowmad Monthly Budget](../mcps/slowmad-monthly-budget.md) | Calculate total trip costs, monthly burn rates, and savings sufficiency for long-term travel. |
 | [SM2 Spaced Repetition](../mcps/sm2-spaced-repetition.md) | High-performance implementation of the SM-2 algorithm for optimal review scheduling. |
+| [Small Business Cashflow Planner](../mcps/small-business-cashflow-planner.md) | Predict liquidity and model cash inflows and outflows for business planning. |
 | [Smart Recipe Scaler](../mcps/smart-recipe-scaler.md) | Scale ingredient quantities precisely using metric-based conversion and smart rounding. |
 | [SmartThings](../mcps/smartthings.md) | Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent. |
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |

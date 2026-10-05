@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,822 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,856 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,8 +10,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1767 servers)
-- [finance](categories/finance.md) (1164 servers)
+- [productivity](categories/productivity.md) (1779 servers)
+- [finance](categories/finance.md) (1182 servers)
 - [developer-tools](categories/developer-tools.md) (695 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -35,7 +35,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
 - [security](categories/security.md) (95 servers)
 - [infrastructure](categories/infrastructure.md) (92 servers)
-- [marketing](categories/marketing.md) (83 servers)
+- [marketing](categories/marketing.md) (85 servers)
 - [education](categories/education.md) (74 servers)
 - [human-resources](categories/human-resources.md) (71 servers)
 - [healthcare](categories/healthcare.md) (66 servers)
@@ -52,7 +52,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [optimization](categories/optimization.md) (56 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [utility](categories/utility.md) (54 servers)
-- [supply-chain](categories/supply-chain.md) (52 servers)
+- [supply-chain](categories/supply-chain.md) (53 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [real-estate](categories/real-estate.md) (45 servers)
 - [travel](categories/travel.md) (43 servers)
@@ -122,10 +122,10 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [nutrition](categories/nutrition.md) (8 servers)
 - [property-management](categories/property-management.md) (8 servers)
 - [quality-assurance](categories/quality-assurance.md) (8 servers)
+- [shopping](categories/shopping.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
 - [legal](categories/legal.md) (7 servers)
 - [risk-assessment](categories/risk-assessment.md) (7 servers)
-- [shopping](categories/shopping.md) (7 servers)
 - [ai-agents](categories/ai-agents.md) (6 servers)
 - [ai-infrastructure](categories/ai-infrastructure.md) (6 servers)
 - [crm](categories/crm.md) (6 servers)
