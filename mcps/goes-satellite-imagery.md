@@ -26,12 +26,12 @@ GOES imagery is how wildfires, dust storms, fog banks and hurricanes are tracked
 
 
 ## Available Tools (5)
-- **find_goes_region**: Region ids are the centre coordinates written as "33N-101W". Only GOES satellites publish mesoscale regions.
-
-Find the GOES mesoscale region that covers or sits nearest a latitude and longitude — pass a place, get back the region id to use with get_latest_satellite_image
 - **get_latest_satellite_image**: The capture time is read from the newest archived scan in the same directory, since the file itself carries no usable timestamp. Pass resolution "latest" for the full-resolution master (very large — tens of megabytes for full disk) or a WxH.jpg name from available_resolutions for something lighter. Mesoscale imagery needs a region id like "33N-101W"; find one with list_goes_sectors or find_goes_region. Unknown values are rejected with the nearest valid suggestion.
 
 Get the URL of the latest GOES satellite image — full disk, continental US or a mesoscale region — with its capture time, pixel dimensions and file size
+- **find_goes_region**: Region ids are the centre coordinates written as "33N-101W". Only GOES satellites publish mesoscale regions.
+
+Find the GOES mesoscale region that covers or sits nearest a latitude and longitude — pass a place, get back the region id to use with get_latest_satellite_image
 - **list_goes_products**: The list comes from the CDN directory itself, so it reflects what that satellite and sector actually publish — mesoscale regions offer a smaller set than full disk. ABI bands 01–16 are deliberately absent: they are zip-only on the CDN. Pass a region when sector is MESO.
 
 List the composite imagery products published for one satellite and sector — GEOCOLOR, FireTemperature, Dust, DayNightCloudMicroCombo and the rest — each with a note on what it reveals

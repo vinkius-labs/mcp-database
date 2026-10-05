@@ -41,15 +41,15 @@ Streamflow is the volume of water moving past the gauge — cubic feet per secon
 - **get_river_conditions**: Returns the latest reading for each parameter the gauge reports, plus the last few measurements so the trend shows. Site ids are digits, e.g. 01646500 for the Potomac at Little Falls. Discover an id with list_gauges_by_state or get_gauge_site. By default asks for streamflow (00060) and gage height (00065); pass parameter_codes to add water temperature (00010), specific conductance (00095), dissolved oxygen (00300) or pH (00400). Readings marked provisional are preliminary — USGS revises them later.
 
 Get live streamflow and gage height at a USGS river gauge — what the river is doing right now
+- **list_gauges_by_state**: Give a two-letter state code — "NY", "CA", "TX" — and get back every active stream gauge there that has instantaneous data. Counts are in the hundreds per state, so results are paged with limit (default 50, max 500) and the list is cached for 6 hours. This covers the United States only; USGS has no gauges outside it.
+
+List the active USGS stream gauges in a US state that report real-time data
 - **get_gauge_site**: Drainage area is in square miles; altitude in feet.
 
 Get metadata for one USGS gauge site: name, coordinates, drainage area, altitude and type
 - **get_river_stage_history**: Reports the day range, the latest level, and whether the river is rising or falling over the window. This is the tool for "is the river coming up?" — a rising curve under heavy rain is the flood signature. Gage height is relative to the gauge staff, not a sea-level altitude; compare it against the site metadata and any local flood stage you know.
 
 Get the recent gage-height curve at a USGS gauge — the shape a flood watch or a paddler reads
-- **list_gauges_by_state**: Give a two-letter state code — "NY", "CA", "TX" — and get back every active stream gauge there that has instantaneous data. Counts are in the hundreds per state, so results are paged with limit (default 50, max 500) and the list is cached for 6 hours. This covers the United States only; USGS has no gauges outside it.
-
-List the active USGS stream gauges in a US state that report real-time data
 
 
 ## 💬 Prompt Examples

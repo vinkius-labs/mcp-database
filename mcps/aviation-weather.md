@@ -28,24 +28,24 @@ The flight category turns raw meteorology into a decision: VFR is fine visually,
 
 
 ## Available Tools (7)
-- **get_airport_weather**: g. KLAX. Use it for "what is the weather doing at the airport" and "is my flight likely to be delayed" — flight_category is VFR, MVFR, IFR or LIFR, where IFR and LIFR mean instrument conditions and low ceilings that hold departures. The TAF raw text is included as issued for pilots. Three-letter codes like LAX or ORD are IATA/FAA codes and are not resolved by the source; call find_airports with a bounding box first to get the ICAO code.
-
-Read the current weather at one airport — the decoded METAR observation (wind, visibility, ceiling, flight category) plus its terminal forecast (TAF), from NOAA Aviation Weather Center
 - **find_airports**: Coverage is the United States and its territories. Results are paged with offset and amount.
 
 Find airports inside a bounding box — ICAO and IATA codes, name, tower status and radio frequencies, from the FAA airport database via NOAA Aviation Weather Center
-- **list_terminal_forecasts**: Give station_ids (4-letter ICAO codes) or a bounding_box. The raw text is returned verbatim: groups begin with a time (FM201800 = from 20:18Z), and TEMPO marks temporary fluctuations. A station that publishes only a METAR (many untowered fields) has no TAF — an empty answer there is real. Results are paged with offset and amount.
+- **get_airport_weather**: g. KLAX. Use it for "what is the weather doing at the airport" and "is my flight likely to be delayed" — flight_category is VFR, MVFR, IFR or LIFR, where IFR and LIFR mean instrument conditions and low ceilings that hold departures. The TAF raw text is included as issued for pilots. Three-letter codes like LAX or ORD are IATA/FAA codes and are not resolved by the source; call find_airports with a bounding box first to get the ICAO code.
 
-List Terminal Aerodrome Forecasts (TAF) for stations or an area — the forecast wind, weather and cloud conditions at an airport for the next day, as issued, from NOAA Aviation Weather Center
+Read the current weather at one airport — the decoded METAR observation (wind, visibility, ceiling, flight category) plus its terminal forecast (TAF), from NOAA Aviation Weather Center
 - **list_observations**: Results are paged: defaults give 25 from offset 0 and has_more says whether to call again with a higher offset. hours is how far back to look, 1.5 by default, up to 24. Use summarize_area_conditions instead when you want the whole picture for a region in one call.
 
 List decoded METAR weather observations for stations or an area — wind, visibility, cloud ceiling, temperature and flight category for each, newest first, from NOAA Aviation Weather Center
-- **get_pilot_reports**: Give airport_id (a 4-letter ICAO code) plus distance in nautical miles (e.g. KORD with 200), or a bounding_box — not both. age is how far back, 1 hour by default. An empty answer means nobody filed anything, which usually means smooth air, not missing data.
-
-List pilot reports (PIREPs) near an airport or inside an area — the turbulence and icing that crews actually met in flight, at a stated flight level, from NOAA Aviation Weather Center
 - **list_significant_weather**: Filter with product (sigmet or airmet) and hazard (conv, turb, ice, ifr). Each entry carries the polygon it covers, its altitude band and the direction it is moving. Coverage is the contiguous US only — the source does not publish international SIGMETs. Call summarize_area_conditions to see only what covers a region.
 
 List the SIGMETs and AIRMETs in force right now over the contiguous United States — convective, turbulence, icing and low-ceiling hazards, with altitude, movement and the raw product text
+- **list_terminal_forecasts**: Give station_ids (4-letter ICAO codes) or a bounding_box. The raw text is returned verbatim: groups begin with a time (FM201800 = from 20:18Z), and TEMPO marks temporary fluctuations. A station that publishes only a METAR (many untowered fields) has no TAF — an empty answer there is real. Results are paged with offset and amount.
+
+List Terminal Aerodrome Forecasts (TAF) for stations or an area — the forecast wind, weather and cloud conditions at an airport for the next day, as issued, from NOAA Aviation Weather Center
+- **get_pilot_reports**: Give airport_id (a 4-letter ICAO code) plus distance in nautical miles (e.g. KORD with 200), or a bounding_box — not both. age is how far back, 1 hour by default. An empty answer means nobody filed anything, which usually means smooth air, not missing data.
+
+List pilot reports (PIREPs) near an airport or inside an area — the turbulence and icing that crews actually met in flight, at a stated flight level, from NOAA Aviation Weather Center
 - **summarize_area_conditions**: The answer aggregates three sources in one request: the observations in the box, the SIGMETs whose polygon reaches into it, and the pilot reports filed there. It is the right first call when the question is "is it flyable around here" or "why are flights held". hours is the observation window, 3 by default. For a single airport, get_airport_weather is cheaper.
 
 One glance at flying conditions across an area — counts by flight category (VFR/MVFR/IFR/LIFR), the SIGMETs and AIRMETs covering it, and the turbulence and icing pilots reported there

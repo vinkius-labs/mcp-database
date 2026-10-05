@@ -39,24 +39,24 @@ Observed level and predicted level are different things and this server keeps th
 
 
 ## Available Tools (6)
-- **find_tide_stations**: Two modes: pass a state code ("NY", "HI") to list stations there, or pass latitude and longitude to get the closest stations nationwide with distance implied by ordering. There are about 300 stations, including the Great Lakes, Alaska, Hawaii, Puerto Rico and the Pacific territories; the list is cached so repeat calls are cheap. Defaults to 20 results, max 200.
-
-Find NOAA water level stations — by US state, or the nearest stations to a latitude/longitude
-- **get_station_datums**: Needed when a source quotes a depth or clearance against a different datum than the one a water level reading uses.
-
-Get the vertical datums for a tide station — the heights of MHHW, MLLW, MSL and the rest above station datum
-- **get_flood_thresholds**: Compare the current water level from get_current_water_level against these to answer "is the harbour flooding today?". Not every station publishes thresholds; coastal ones usually do. Heights are above station datum — fetch the datums first if your reading uses MLLW.
-
-Get the water level heights at which minor, moderate and major coastal flooding begin at a tide station
-- **get_tide_highs_and_lows**: Returns each turning point with its time and height, high water marked ▲ and low water ▼. Times and heights are derived from the 6-minute prediction curve, not the official bulletin — close enough for planning a beach trip or a launch window, not for navigation. A semidiurnal station shows roughly two highs and two lows; a diurnal station shows one of each.
-
-Get the high and low water times for a station on one date — when the tide turns and how high it reaches
-- **get_tide_predictions**: Date defaults to today and is read as UTC; pass an explicit YYYY-MM-DD for any other day. For just the turn of the tide (when is high water, when is low), call get_tide_highs_and_lows instead — it derives those from this same curve. Predictions are astronomic: they do not include storm surge or wind setup. Compare against get_current_water_level to see how far off plan the sea actually is.
-
-Get the astronomic tide prediction curve for a station on one date — the plan the sea intends to follow
 - **get_current_water_level**: Station id is 6-8 digits, e.g. 8518750 for The Battery, New York. Find a station id with find_tide_stations (by state or nearest to a lat/lon). Datum defaults to MLLW — the depth most coastal users care about; use MHHW for the high-water reference or STND for the raw station datum. This is what the sea is actually doing right now, including wind setup and storm surge; for the astronomic plan use get_tide_predictions.
 
 Get the latest observed water level at a NOAA tide station, in metres above a chosen datum
+- **get_flood_thresholds**: Compare the current water level from get_current_water_level against these to answer "is the harbour flooding today?". Not every station publishes thresholds; coastal ones usually do. Heights are above station datum — fetch the datums first if your reading uses MLLW.
+
+Get the water level heights at which minor, moderate and major coastal flooding begin at a tide station
+- **get_station_datums**: Needed when a source quotes a depth or clearance against a different datum than the one a water level reading uses.
+
+Get the vertical datums for a tide station — the heights of MHHW, MLLW, MSL and the rest above station datum
+- **get_tide_highs_and_lows**: Returns each turning point with its time and height, high water marked ▲ and low water ▼. Times and heights are derived from the 6-minute prediction curve, not the official bulletin — close enough for planning a beach trip or a launch window, not for navigation. A semidiurnal station shows roughly two highs and two lows; a diurnal station shows one of each.
+
+Get the high and low water times for a station on one date — when the tide turns and how high it reaches
+- **find_tide_stations**: Two modes: pass a state code ("NY", "HI") to list stations there, or pass latitude and longitude to get the closest stations nationwide with distance implied by ordering. There are about 300 stations, including the Great Lakes, Alaska, Hawaii, Puerto Rico and the Pacific territories; the list is cached so repeat calls are cheap. Defaults to 20 results, max 200.
+
+Find NOAA water level stations — by US state, or the nearest stations to a latitude/longitude
+- **get_tide_predictions**: Date defaults to today and is read as UTC; pass an explicit YYYY-MM-DD for any other day. For just the turn of the tide (when is high water, when is low), call get_tide_highs_and_lows instead — it derives those from this same curve. Predictions are astronomic: they do not include storm surge or wind setup. Compare against get_current_water_level to see how far off plan the sea actually is.
+
+Get the astronomic tide prediction curve for a station on one date — the plan the sea intends to follow
 
 
 ## 💬 Prompt Examples

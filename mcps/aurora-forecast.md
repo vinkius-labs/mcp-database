@@ -39,24 +39,24 @@ Aurora needs three things: high geomagnetic activity, a dark sky, and clear weat
 
 
 ## Available Tools (7)
-- **list_space_weather_alerts**: Filter with product_id — a prefix match, case-insensitive: "K04" for Kp-4 warnings, "K05" for Kp-5, "A20" for the 20cm radio burst watch, and so on. Without a filter you get the most recent 10 of everything. Useful for "has a storm warning been issued?" — pair with list_kp_forecast for timing.
-
-List space weather alerts, watches and warnings issued by NOAA SWPC, most recent first
 - **get_aurora_conditions**: Returns the latest 3-hourly planetary Kp index, its NOAA G-scale level, the geomagnetic latitude down to which aurora is typically visible, today's R/S/G storm scales, and the live solar wind. Pass latitude and longitude to add a point forecast: the OVATION model's aurora probability directly overhead that spot, plus the strongest value within 2 degrees of it. A probability of 50 or more means aurora is likely overhead; under 25 means it is not worth travelling for. This is a nowcast of the sky, not a weather forecast — a high probability still needs clear, dark skies.
 
 Report current aurora and geomagnetic conditions: live Kp index, NOAA storm scale, solar wind, and aurora chance at a location
-- **list_kp_forecast**: By default returns the most recent 32 values; the window covers roughly 7 days back and 3 days forward. The peak row in the returned window is highlighted — that is the best moment to plan an aurora watch around. Predicted Kp is a model output and shifts as new observations arrive, so re-check shortly before going out.
-
-List the observed and predicted Kp index — about a week of history plus 3 days of forecast, 3-hourly
-- **list_recent_kp_index**: By default returns the most recent 8 values (24 hours); raise limit for a longer history. Kp 4 means active conditions, 5 starts the G1 minor storm scale, 9 is extreme. For what is coming next rather than what already happened, use list_kp_forecast.
-
-List recent planetary Kp index values — the last week of 3-hourly measurements, latest last
 - **get_aurora_probability**: The model grid is 1 degree resolution, so the neighbourhood value catches arcs that fall between cells. Use get_aurora_conditions instead when you also want the Kp index and storm scales; this tool is for checking many points cheaply. The value refreshes roughly every 10 minutes.
 
 Get the OVATION model's aurora probability at one exact latitude/longitude, right now
 - **get_storm_scales**: Each runs 1 (minor) to 5 (extreme). This returns the current scale for today plus the 3 forecast days, including NOAA's own percentage chances for minor and major events. The G scale is the one that matters for aurora: G1 reaches 60 degrees geomagnetic latitude, G5 can reach 40.
 
 Get NOAA space weather scales (R/S/G) for today and the next 3 days, with probabilities for each level
+- **list_kp_forecast**: By default returns the most recent 32 values; the window covers roughly 7 days back and 3 days forward. The peak row in the returned window is highlighted — that is the best moment to plan an aurora watch around. Predicted Kp is a model output and shifts as new observations arrive, so re-check shortly before going out.
+
+List the observed and predicted Kp index — about a week of history plus 3 days of forecast, 3-hourly
+- **list_recent_kp_index**: By default returns the most recent 8 values (24 hours); raise limit for a longer history. Kp 4 means active conditions, 5 starts the G1 minor storm scale, 9 is extreme. For what is coming next rather than what already happened, use list_kp_forecast.
+
+List recent planetary Kp index values — the last week of 3-hourly measurements, latest last
+- **list_space_weather_alerts**: Filter with product_id — a prefix match, case-insensitive: "K04" for Kp-4 warnings, "K05" for Kp-5, "A20" for the 20cm radio burst watch, and so on. Without a filter you get the most recent 10 of everything. Useful for "has a storm warning been issued?" — pair with list_kp_forecast for timing.
+
+List space weather alerts, watches and warnings issued by NOAA SWPC, most recent first
 - **get_solar_wind**: 7 cm radio flux in solar flux units. Bz matters most for aurora — sustained negative (southward) Bz lets solar wind energy into the magnetosphere and drives the storms that push aurora equatorward. Values are point-in-time measurements refreshed every few minutes.
 
 Get the latest solar wind speed, magnetic field strength and F10.7 radio flux from NOAA

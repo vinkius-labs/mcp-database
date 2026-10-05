@@ -14,10 +14,10 @@ This MCP server provides precision calculation tools for mixologists to manage c
 
 
 ## Available Tools (4)
-- **estimate_ice_melt_volume**: Converts a target dilution volume into a weight of ice, assuming standard ice melting properties
 - **calculate_dilution_volume**: Determines how much water/ice is needed to hit a specific dilution target
-- **calculate_total_from_target**: Determines the required base volume if the user knows their final desired cocktail volume and target dilution
+- **estimate_ice_melt_volume**: Converts a target dilution volume into a weight of ice, assuming standard ice melting properties
 - **validate_recipe_balance**: Checks if a proposed set of volumes (base and dilution) matches a specific target dilution percentage
+- **calculate_total_from_target**: Determines the required base volume if the user knows their final desired cocktail volume and target dilution
 
 
 ## 💬 Prompt Examples

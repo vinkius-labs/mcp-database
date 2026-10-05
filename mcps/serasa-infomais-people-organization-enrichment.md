@@ -30,15 +30,15 @@ Useful combinations: ["name","birthDate","motherName","gender","maritalStatus","
 `distributor_type` and `distributor_dw` apply only to the distributor variant of the product; leave them unset otherwise.
 
 Enrich a CPF with the requested Infomais attributes: name, contacts, income, affinities and more
-- **filter_enrichment**: Infomais answers with the document it resolved plus name, age, city, neighborhood and uf — use it to validate a document before calling enrich_person or enrich_organization. This endpoint also requires a user token: set `user_token`.
-
-Resolve loose data about a person or organization to candidate documents
 - **find_organization_by_keys**: The endpoint is `enrichments/organizations/retrieve` and it requires a user token in addition to the client token — set `user_token` to the USER token issued for your application. `response_limit` caps the number of candidates.
 
 Find CNPJs matching partial data — corporate name, CEP, phone — without knowing the document
 - **find_person_by_keys**: The endpoint is `enrichments/person/retrieve` and it requires a user token in addition to the client token — set `user_token` to the USER token issued for your application. `response_limit` caps the number of candidates.
 
 Find CPFs matching partial data — name, address, phone, birth date — without knowing the document
+- **filter_enrichment**: Infomais answers with the document it resolved plus name, age, city, neighborhood and uf — use it to validate a document before calling enrich_person or enrich_organization. This endpoint also requires a user token: set `user_token`.
+
+Resolve loose data about a person or organization to candidate documents
 
 
 ## 💬 Prompt Examples

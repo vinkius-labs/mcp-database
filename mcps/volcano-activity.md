@@ -28,21 +28,21 @@ The report is a summary of activity that met selected criteria. It is not a comp
 
 
 ## Available Tools (5)
-- **get_volcano_report**: Only volcanoes in the current week's report can be returned; when the name is unknown the error lists every volcano this week's report does cover, so read it and retry. The body is the report as published — quote it rather than paraphrasing it, and name the observatory in the Sources list as the authority. Alert level, ash plume and exclusion zone are read out of prose: treat them as a reading aid and check them against the body before acting on them.
-
-The full weekly report for one volcano — the complete scientist-written narrative, its sources, the reporting observatory and whatever alert level, ash plume height and exclusion zone the text states
-- **list_active_volcanoes**: Filters combine: activity_type (New Eruptive Activity, Continuing Eruptive Activity, New Unrest, Continuing Unrest, Other Observations), country (matched loosely, accents folded), free text q on the volcano name or its Smithsonian number, and bounding_box as south,west,north,east. Results are paged: defaults give 25 from offset 0 and has_more says whether to ask again with a higher offset. New activity sorts first. Alert levels, ash plume heights and exclusion zones are extracted from the report prose and may be absent for a given volcano — the summary field always has the human-written lead sentence.
-
-List the volcanoes in this week's report — name, country, activity type, position, alert level, ash plume height and exclusion zone, filterable by type, country, text and area
 - **find_volcanoes_nearby**: Give latitude and longitude in decimal degrees and radius_km (default 100, capped at 2000). An empty answer is the normal result for most of the planet: the report lists only about twenty volcanoes a week worldwide, so absence means nothing notable is active there, not missing data. Widen radius_km before concluding nothing is nearby. Results are paged with offset and amount.
 
 Volcanoes with notable activity within a radius of any point on Earth — nearest first, with distance in kilometres
-- **list_new_activity**: country, free text q and bounding_box all narrow it further, and results are paged with offset and amount. When this list is empty, nothing new began: the week's activity is all continuing.
-
-Only the volcanoes whose activity is NEW this week — new eruptions and new unrest. These are the reports that change the situation rather than describe a continuing one
 - **get_report_summary**: This is the Smithsonian / USGS Weekly Volcanic Activity Report, published every Thursday by 2300 UTC: it summarises activity that met selected criteria and is NOT a complete list of every eruption on Earth — say so when you report it. Optionally pass a bounding_box to count only one region. Alert levels, ash heights and exclusion zones are read out of scientists' free prose and may be missing; the per-volcano reports carry the full text.
 
 The state of volcanic activity worldwide this week — how many volcanoes are reported, which countries they are in, how many began erupting or showed new unrest, and the highest alert levels, ash plumes and exclusion zones in the report
+- **list_active_volcanoes**: Filters combine: activity_type (New Eruptive Activity, Continuing Eruptive Activity, New Unrest, Continuing Unrest, Other Observations), country (matched loosely, accents folded), free text q on the volcano name or its Smithsonian number, and bounding_box as south,west,north,east. Results are paged: defaults give 25 from offset 0 and has_more says whether to ask again with a higher offset. New activity sorts first. Alert levels, ash plume heights and exclusion zones are extracted from the report prose and may be absent for a given volcano — the summary field always has the human-written lead sentence.
+
+List the volcanoes in this week's report — name, country, activity type, position, alert level, ash plume height and exclusion zone, filterable by type, country, text and area
+- **get_volcano_report**: Only volcanoes in the current week's report can be returned; when the name is unknown the error lists every volcano this week's report does cover, so read it and retry. The body is the report as published — quote it rather than paraphrasing it, and name the observatory in the Sources list as the authority. Alert level, ash plume and exclusion zone are read out of prose: treat them as a reading aid and check them against the body before acting on them.
+
+The full weekly report for one volcano — the complete scientist-written narrative, its sources, the reporting observatory and whatever alert level, ash plume height and exclusion zone the text states
+- **list_new_activity**: country, free text q and bounding_box all narrow it further, and results are paged with offset and amount. When this list is empty, nothing new began: the week's activity is all continuing.
+
+Only the volcanoes whose activity is NEW this week — new eruptions and new unrest. These are the reports that change the situation rather than describe a continuing one
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Wedding Budget Allocator is a specialized financial engine designed to manag
 
 
 ## Available Tools (4)
+- **validate_budget_health**: Performs a comprehensive check to ensure all allocations stay within the total budget
 - **allocate_vendor_budget**: Assigns a specific portion of the budget to a single vendor or category
 - **calculate_guest_costs**: Estimates costs that fluctuate based on the number of wedding guests
 - **get_budget_summary**: Provides a high-level overview of the current financial standing
-- **validate_budget_health**: Performs a comprehensive check to ensure all allocations stay within the total budget
 
 
 ## 💬 Prompt Examples

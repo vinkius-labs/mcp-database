@@ -27,48 +27,48 @@ The server authenticates with your Client ID / Client Secret, caches the Bearer 
 
 
 ## Available Tools (14)
-- **add_monitored_documents**: `documents` is a JSON array or a comma list; non-digits are stripped. The response separates accepted from rejected documents with per-document error codes (e.g. MDC412 — already monitored). A 207 response means partial success and is still returned as a result, not an error.
-
-Add CPFs or CNPJs to an existing monitoring rule
-- **create_monitoring_rule**: Returns the rule `id`, which you pass to add_monitored_documents. `variables` is a JSON array of numeric ids or a comma list like "1,2,3". Score variables accept optional interval overrides via variables_config (JSON array of {"id","intervalMode":"CUSTOM","minValue","maxValue"}). To watch partners/shareholders, set rule type to CNPJ and pass partner variable ids in partners_variables.
-
-Create a monitoring rule that watches credit events for a list of CPFs or CNPJs
 - **delete_webhook**: Poll list_alerts afterwards to keep read visibility of the events.
 
 Delete a webhook by id, stopping alert delivery to its endpoints
 - **list_alerts**: Filter by document number (comma list accepted), viewed/deleted status, document type or the rule name. `unlink_document=true` includes alerts for documents already removed from monitoring. Use summarize_alerts for counts and mark_alerts_read to clear the queue.
 
 List credit-event alerts generated for the monitored documents
-- **list_monitored_documents**: Filter by document number, rule id or active status; date filters (included_at_start/included_at_end) are ISO 8601. The summary block reports how many monitoring links still have a future expiration date and the product types in play.
-
-List the documents currently monitored, with their rules, inclusion dates and status
-- **list_monitoring_rules**: Use the rule id with add_monitored_documents / remove_monitored_documents, and filter alerts by the rule name. Set active=false to list only inactive rules.
-
-List the monitoring rules already created in the organization
 - **list_monitoring_subjects**: Each subject exposes `variables` — the numeric ids you pass to create_monitoring_rule. Call this first to discover the variable ids for the document type you monitor. Score subjects also show the allowed custom interval range (valueMin–valueMax).
 
 List the monitoring subjects (attributes/variables) available for CPF, CNPJ or partners
 - **list_notifications**: Filter by subtype, type (INFO/WARNING/ERROR) or read status; created_at takes one or two ISO dates that form a range.
 
 List operational notifications about the monitoring itself — rule creation/activation, document processing and exclusions
+- **register_webhook**: Pass them as a JSON array of {"type","endpoint"} objects. The credentials (clientId/clientSecret) authenticate the delivery, not this call.
+
+Register webhook endpoints so Serasa pushes alerts to your system instead of only polling
+- **update_monitoring_rule**: Omitted optional fields keep their current value on the Serasa side only when not sent. Pass active=false to pause a rule without deleting it — its documents stop being monitored. Rule id comes from list_monitoring_rules.
+
+Update a monitoring rule: rename it, change the watched variables, alert emails or active status
+- **add_monitored_documents**: `documents` is a JSON array or a comma list; non-digits are stripped. The response separates accepted from rejected documents with per-document error codes (e.g. MDC412 — already monitored). A 207 response means partial success and is still returned as a result, not an error.
+
+Add CPFs or CNPJs to an existing monitoring rule
+- **create_monitoring_rule**: Returns the rule `id`, which you pass to add_monitored_documents. `variables` is a JSON array of numeric ids or a comma list like "1,2,3". Score variables accept optional interval overrides via variables_config (JSON array of {"id","intervalMode":"CUSTOM","minValue","maxValue"}). To watch partners/shareholders, set rule type to CNPJ and pass partner variable ids in partners_variables.
+
+Create a monitoring rule that watches credit events for a list of CPFs or CNPJs
+- **list_monitored_documents**: Filter by document number, rule id or active status; date filters (included_at_start/included_at_end) are ISO 8601. The summary block reports how many monitoring links still have a future expiration date and the product types in play.
+
+List the documents currently monitored, with their rules, inclusion dates and status
+- **list_monitoring_rules**: Use the rule id with add_monitored_documents / remove_monitored_documents, and filter alerts by the rule name. Set active=false to list only inactive rules.
+
+List the monitoring rules already created in the organization
 - **list_webhooks**: Use the id with delete_webhook.
 
 List the registered webhook endpoints for alert delivery
 - **mark_alerts_read**: Clearing the queue keeps list_alerts results available with viewed=true.
 
 Mark one or more alerts as read so they leave the unread queue
-- **register_webhook**: Pass them as a JSON array of {"type","endpoint"} objects. The credentials (clientId/clientSecret) authenticate the delivery, not this call.
-
-Register webhook endpoints so Serasa pushes alerts to your system instead of only polling
 - **remove_monitored_documents**: Documents removed here stop generating alerts for this rule but keep their alert history. The response mirrors the add format (accepted/rejected lists).
 
 Remove CPFs or CNPJs from a monitoring rule
 - **summarize_alerts**: Pairs well with a document_number filter for a single customer.
 
 Aggregate alerts by document — total counts and unread counts per monitored CPF/CNPJ
-- **update_monitoring_rule**: Omitted optional fields keep their current value on the Serasa side only when not sent. Pass active=false to pause a rule without deleting it — its documents stop being monitored. Rule id comes from list_monitoring_rules.
-
-Update a monitoring rule: rename it, change the watched variables, alert emails or active status
 
 
 ## 💬 Prompt Examples

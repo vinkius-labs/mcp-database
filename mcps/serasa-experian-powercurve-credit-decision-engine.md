@@ -24,14 +24,14 @@ Re-run the decision flow on an existing PowerCurve proposal, e.g. after data cha
 `numero_proposta` is your own proposal identifier; `id_servico` selects the service configured in PowerCurve. The product block (produto, valor_emprestimo / valor_credito, prazo, finalidade, subprodutos) describes what the customer is asking for. The applicant block carries the person's identity. Anything the typed parameters do not cover can be sent as a full `extra_data` JSON object, which is merged over the built body.
 
 Submit a proposal through the Coad flow for co-advised or consortium credit
-- **submit_fintech_proposal**: Use it when your contract with Serasa is the Fintech service rather than the generic NovaProposta one.
-`numero_proposta` is your own proposal identifier; `id_servico` selects the service configured in PowerCurve. The product block (produto, valor_emprestimo / valor_credito, prazo, finalidade, subprodutos) describes what the customer is asking for. The applicant block carries the person's identity. Anything the typed parameters do not cover can be sent as a full `extra_data` JSON object, which is merged over the built body.
-
-Submit a proposal through the Fintech flow, optimised for real-time digital onboarding
 - **submit_proposal**: The response also carries the enriched Serasa data the decision was based on (score, restrictions, income range, risk level), so one call is often the whole underwriting step.
 `numero_proposta` is your own proposal identifier; `id_servico` selects the service configured in PowerCurve. The product block (produto, valor_emprestimo / valor_credito, prazo, finalidade, subprodutos) describes what the customer is asking for. The applicant block carries the person's identity. Anything the typed parameters do not cover can be sent as a full `extra_data` JSON object, which is merged over the built body.
 
 Submit a credit proposal to PowerCurve and get the automated decision (approve, deny or refer)
+- **submit_fintech_proposal**: Use it when your contract with Serasa is the Fintech service rather than the generic NovaProposta one.
+`numero_proposta` is your own proposal identifier; `id_servico` selects the service configured in PowerCurve. The product block (produto, valor_emprestimo / valor_credito, prazo, finalidade, subprodutos) describes what the customer is asking for. The applicant block carries the person's identity. Anything the typed parameters do not cover can be sent as a full `extra_data` JSON object, which is merged over the built body.
+
+Submit a proposal through the Fintech flow, optimised for real-time digital onboarding
 
 
 ## 💬 Prompt Examples

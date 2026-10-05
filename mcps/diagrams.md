@@ -33,18 +33,18 @@ mermaid (flowcharts, sequence, Gantt), plantuml (full UML), graphviz (DOT), d2, 
 - **get_diagram_example**: Use it to learn the syntax or as a skeleton to edit. Supports the same names as list_diagram_types.
 
 Get a working starter snippet for one diagram language
-- **list_diagram_types**: It lists every renderer (mermaid, plantuml, graphviz, d2, excalidraw, ditaa, nomnoml, erd, vega_lite, wavedrom) with a one-line description of what each is good for, plus the svg and png output formats. Everything renders through the public Kroki service with no key.
-
-List the diagram languages and output formats this server can render
-- **render_diagram**: Pass the source and the language; get back a public URL that serves the rendered image, plus — for svg — the markup itself, ready to paste into an HTML page, a doc or a slide. Output defaults to svg; choose png only where svg is not accepted. If the source does not parse, the error names the line; call get_diagram_example for a working starter. The URL is deterministic: the same source always yields the same image, so it is safe to embed permanently.
-
-Render diagram source to SVG or PNG and return it with a shareable URL
 - **render_mermaid_image**: Returns a stable public URL; the same source always renders the same image. Mermaid only; for other languages use render_diagram.
 
 Render a Mermaid diagram to a PNG image URL via the mermaid.ink service
 - **validate_diagram**: Cheaper than render_diagram when the goal is only to confirm syntax — for example before writing the diagram into a file that a build step renders.
 
 Check that diagram source parses, without rendering it
+- **list_diagram_types**: It lists every renderer (mermaid, plantuml, graphviz, d2, excalidraw, ditaa, nomnoml, erd, vega_lite, wavedrom) with a one-line description of what each is good for, plus the svg and png output formats. Everything renders through the public Kroki service with no key.
+
+List the diagram languages and output formats this server can render
+- **render_diagram**: Pass the source and the language; get back a public URL that serves the rendered image, plus — for svg — the markup itself, ready to paste into an HTML page, a doc or a slide. Output defaults to svg; choose png only where svg is not accepted. If the source does not parse, the error names the line; call get_diagram_example for a working starter. The URL is deterministic: the same source always yields the same image, so it is safe to embed permanently.
+
+Render diagram source to SVG or PNG and return it with a shareable URL
 
 
 ## 💬 Prompt Examples

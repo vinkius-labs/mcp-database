@@ -26,15 +26,15 @@ This is the tool for "what did it look like then". Wildfire extent, smoke plumes
 
 
 ## Available Tools (5)
+- **get_earth_snapshot**: The image renders on request from the URL, which never expires. An overlay layer can be stacked on top — the classic pairing is true colour underneath with fires or aerosol on top. Out-of-range dates are rejected rather than rendered blank.
+
+Render a satellite image of a place on a date — a NASA Worldview snapshot URL for any layer, any region, any day the layer was published
 - **find_active_fires**: A detection frame with no coloured points means no hot pixels that day — not a failed render. Fires are best seen on the day they burn; the burn scar shows for weeks afterwards in true colour.
 
 Render the active fire detections over a region on a date — VIIRS 375 m thermal anomaly points, alone and overlaid on true-colour satellite imagery, keyless
 - **get_layer_details**: Accepts a layer id or a search phrase like "aerosol" or "night lights"; returns the best match.
 
 Get the details of one NASA Worldview layer — title, instrument, date range and projections — plus a small sample snapshot URL
-- **get_earth_snapshot**: The image renders on request from the URL, which never expires. An overlay layer can be stacked on top — the classic pairing is true colour underneath with fires or aerosol on top. Out-of-range dates are rejected rather than rendered blank.
-
-Render a satellite image of a place on a date — a NASA Worldview snapshot URL for any layer, any region, any day the layer was published
 - **list_imagery_categories**: The categories cover the physical questions people ask of imagery: what it looks like, what is burning, what is in the air, and what is on the ground.
 
 List the themes of satellite imagery available — true colour, fires and thermal anomalies, aerosols and air, land surface — with what each one shows

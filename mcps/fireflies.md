@@ -30,21 +30,21 @@ The meeting ended an hour ago and nobody remembers what was decided. This reads 
 - **ask_fred**: Ask either about one meeting (transcript_id) or across a range of meetings — pass exactly one of the two, never both, or Fireflies rejects it. Optional response_language is an ISO 639-1 code: en, pt, es, fr, de, ja and so on. The answer may arrive with status "processing" — poll it with get_askfred_thread.
 
 Ask Fred a question about your meetings
-- **get_meeting_action_items**: Same fields as get_meeting, trimmed to what a follow-up needs.
-
-Pull the action items out of one meeting
-- **get_askfred_thread**: Find the id with list_askfred_threads.
-
-Read a full AskFred thread with its question and answer history
 - **get_meeting_dialogue**: Narrow it with a speaker name, a search string or a time window in seconds from the start, then page through with offset/amount (defaults 0/60). Use this to quote a decision, find a number someone mentioned, or reconstruct who said what.
 
 Read what was actually said in a meeting, line by line
-- **get_meeting_metrics**: Useful for coaching, reviewing a demo, or seeing whether one person dominated the room.
+- **get_askfred_thread**: Find the id with list_askfred_threads.
 
-Get speaking metrics and sentiment for a meeting
+Read a full AskFred thread with its question and answer history
+- **get_meeting_action_items**: Same fields as get_meeting, trimmed to what a follow-up needs.
+
+Pull the action items out of one meeting
 - **get_meeting**: Find the id with list_meetings first. For the line-by-line conversation use get_meeting_dialogue; for speaking metrics use get_meeting_metrics.
 
 Get one meeting in full: attendees, attendance, summary, action items and topics
+- **get_meeting_metrics**: Useful for coaching, reviewing a demo, or seeing whether one person dominated the room.
+
+Get speaking metrics and sentiment for a meeting
 - **list_askfred_threads**: Filter by transcript_id to see the questions asked about one meeting, then read the answers with get_askfred_thread.
 
 List AskFred question threads, optionally for one meeting

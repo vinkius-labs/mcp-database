@@ -20,6 +20,9 @@ Enrich a company with registration data from Verify ID
 - **enrich_person**: package is the data you want back (BASIC, ONLINE_ASYNC, PEP, phone, presumedIncome, profession, PLUS_1, SCHOLARITY, PLD_FLAG, PLD, SEGMENT, REGISTRATIONSTATUS, PVE, PVE_FLAG, ALERTS, FAROL_APOSTADOR, NATIONALITY, PRESUMEDINCOME_2); score is the risk scores you want computed (FRAUD_SCORE_PF, ALERTA_LARANJA_PF, SCORE_C_CADASTRO, TRANSACIONAL, AUTO_FRAUDE, EMAIL, SCORE_C_CADASTRO_CUSTOM_1, ALERTA_LARANJA_PF_2, SCORE_C_CADASTRO_CUSTOM_2, ALERTA_LARANJA_PF_VALOR_1, SCORE_POSITIVO, FRAUDE_VEICULOS, SCORE_CUSTOM_P1, SCORE_CUSTOM_P2, SCORE_CUSTOM_B2, SCORE_CUSTOM_C1, SCORE_CUSTOM_C2, ALERTA_LARANJA_PF_4). The reply is asynchronous for some packages — when the response carries a requestId instead of the data, poll get_person_enrichment until it is done.
 
 Enrich a person with registration packages and request fraud scores from Verify ID
+- **verify_organization**: Send the CNPJ plus the registration data you collected; score_parameters accepts VERIFY, VERIFY_DISTINCT and REQUEST (FRAUD is person-only). The response shape is the same: coded attribute results, verificationScore and verificationRisk.
+
+Verify a company's registration data against the Serasa base and get a verification score
 - **get_organization_enrichment**: Poll this until the response carries the data instead of the pending marker.
 
 Read back the result of an asynchronous company enrichment by its requestId
@@ -29,9 +32,6 @@ Read back the result of an asynchronous person enrichment by its requestId
 - **list_pep_files**: Use it to see which PEP snapshots are available before consulting them through the PEP endpoints.
 
 List the PEP (politically exposed person) files available to this client
-- **verify_organization**: Send the CNPJ plus the registration data you collected; score_parameters accepts VERIFY, VERIFY_DISTINCT and REQUEST (FRAUD is person-only). The response shape is the same: coded attribute results, verificationScore and verificationRisk.
-
-Verify a company's registration data against the Serasa base and get a verification score
 - **verify_people_batch**: people is a JSON array of objects, each with its own id plus the attributes to verify (document, name, birthDate, motherName, email, phone, address). The response is an array with one verification result per person, in the same order. Prefer this over looping verify_person when you have a whole list to check.
 
 Verify several people's registration data in one synchronous batch call

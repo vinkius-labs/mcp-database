@@ -14,21 +14,21 @@ ClearSale scores transactions for fraud risk across two products, and this conne
 
 
 ## Available Tools (7)
-- **get_payment_link_order**: The response carries the analysisId, the transactionId you sent, the current status code and the risk score (0–100, higher = riskier). Use it to decide whether to keep waiting, release the order or cancel it.
-
-Read the status, score and result of a ClearSale payment-link analysis
-- **mark_chargeback**: ClearSale uses it as negative feedback, which sharpens future scores for the same buyer, card and device signals. code is the order code you submitted; chargeback_date_utc is the acquirer notification date. Send bin or pan plus the card brand when you have them — they strengthen the device/card linkage.
-
-Mark a ClearSale payment-link order as chargeback to calibrate the risk analysis
-- **submit_payment_link_order**: ClearSale scores 0–100 where higher is riskier; the status code (e.g. APA for approved, PMA for manual review) tells you what to do next. Poll get_payment_link_order until the status stops changing, then confirm the outcome with update_payment_link_status. The order must identify the buyer (document, name, email), the total value and the payment. Billing is required; shipping defaults to the billing address unless shipping_* fields are given. Use order_data as a full JSON object to set or override any part of the ClearSale payload — it merges over the built body.
-
-Submit an order to the ClearSale Link de Pagamentos API for fraud risk analysis
-- **update_payment_link_status**: Send the status you actually applied: PGA when the payment was captured, PGR / a rejection code when you declined, etc. Call it once the decision is final — ClearSale uses it as feedback for future scoring.
-
-Update the status of a ClearSale payment-link order after the risk analysis
 - **create_connect_analysis**: The response returns an executionId, an analysisId and a transactionId plus the first decision (status + score), the coded insights, an optional MFA challenge and the biolink verdict. When the MFA status is pending, the flow waits for the user to answer the challenge — poll get_connect_analysis until the decision status is done. integration_id is the id of the integration configured in ClearSale Connect — it selects the flow. payload is the integration request as a JSON object; its fields depend on the integration, so send the document / email / phone / device signals your flow requires.
 
 Run a fraud analysis through a ClearSale Connect integration
+- **mark_chargeback**: ClearSale uses it as negative feedback, which sharpens future scores for the same buyer, card and device signals. code is the order code you submitted; chargeback_date_utc is the acquirer notification date. Send bin or pan plus the card brand when you have them — they strengthen the device/card linkage.
+
+Mark a ClearSale payment-link order as chargeback to calibrate the risk analysis
+- **update_payment_link_status**: Send the status you actually applied: PGA when the payment was captured, PGR / a rejection code when you declined, etc. Call it once the decision is final — ClearSale uses it as feedback for future scoring.
+
+Update the status of a ClearSale payment-link order after the risk analysis
+- **get_payment_link_order**: The response carries the analysisId, the transactionId you sent, the current status code and the risk score (0–100, higher = riskier). Use it to decide whether to keep waiting, release the order or cancel it.
+
+Read the status, score and result of a ClearSale payment-link analysis
+- **submit_payment_link_order**: ClearSale scores 0–100 where higher is riskier; the status code (e.g. APA for approved, PMA for manual review) tells you what to do next. Poll get_payment_link_order until the status stops changing, then confirm the outcome with update_payment_link_status. The order must identify the buyer (document, name, email), the total value and the payment. Billing is required; shipping defaults to the billing address unless shipping_* fields are given. Use order_data as a full JSON object to set or override any part of the ClearSale payload — it merges over the built body.
+
+Submit an order to the ClearSale Link de Pagamentos API for fraud risk analysis
 - **get_connect_analysis**: The decision status is done once the flow finished; an MFA status of pending means the user has not answered the challenge yet, and biolink reports the device-binding score. The insights array is the coded reasoning behind the decision — each item has a code (e.g. RDR0040), a description, a category, a relevance level and the data points it relates to.
 
 Read the current decision, insights, MFA state and biolink of a ClearSale Connect analysis

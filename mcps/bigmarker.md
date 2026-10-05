@@ -43,34 +43,34 @@ Cancel an attendee’s registration for a webinar
 - **create_webinar**: Set start_time as ISO 8601 with the time_zone name (e.g. "America/New_York") so the session lands on the right day locally. The API accepts ~55 optional fields — this tool exposes the ones used most; configure advanced settings in the dashboard afterwards.
 
 Create a new webinar in a channel
-- **get_webinar_stats**: For the rolled-up event summary use get_event_summary.
-
-Get attendance and engagement statistics for a webinar
 - **get_webinar**: Find the id with list_webinars or search_webinars first.
 
 Get full details for one webinar
+- **list_channel_webinars**: Paginated with page/per_page.
+
+List the webinars in one channel
+- **list_registrations**: Filter by email or an updated_since timestamp. For registrations including custom-field answers, see the registrations_with_fields variant in the BigMarker docs.
+
+List registrations for a webinar
+- **list_webinars**: Filter by type, role, or a time window. Use search_webinars instead when you are looking for webinars by title or tag.
+
+List webinars across your BigMarker channels
+- **search_webinars**: Returns the same paginated conference envelope.
+
+Search webinars by title, tag, presenter, or date window
+- **get_webinar_stats**: For the rolled-up event summary use get_event_summary.
+
+Get attendance and engagement statistics for a webinar
 - **get_event_summary**: Get the rolled-up reporting summary for a webinar
 - **list_attendees**: Paginated with current_page/per_page; set show_chat to include each attendee’s chat messages.
 
 List attendees who joined a webinar
-- **list_channel_webinars**: Paginated with page/per_page.
-
-List the webinars in one channel
 - **list_channels**: The id from here feeds create_webinar and list_channel_webinars.
 
 List the channels in your BigMarker account
-- **list_webinars**: Filter by type, role, or a time window. Use search_webinars instead when you are looking for webinars by title or tag.
-
-List webinars across your BigMarker channels
-- **list_registrations**: Filter by email or an updated_since timestamp. For registrations including custom-field answers, see the registrations_with_fields variant in the BigMarker docs.
-
-List registrations for a webinar
 - **register_attendee**: Pass custom_fields as a JSON object of the webinar’s registration questions. Use register_or_update in the BigMarker docs for upsert semantics with external ids.
 
 Register an attendee for a webinar
-- **search_webinars**: Returns the same paginated conference envelope.
-
-Search webinars by title, tag, presenter, or date window
 
 
 ## 💬 Prompt Examples
