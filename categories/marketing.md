@@ -26,6 +26,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Crowdfunding Pitch Scorer](../mcps/crowdfunding-pitch-scorer.md) | Analyze crowdfunding campaign effectiveness using linguistic analysis of narrative ratio, rewards, and trust. |
 | [Customer Acquisition Cost Analytics](../mcps/customer-acquisition-cost-analytics.md) | Calculate and analyze marketing spend efficiency and customer acquisition costs. |
 | [Customer Acquisition Cost Engine](../mcps/customer-acquisition-cost-engine.md) | Calculate blended CAC, channel-specific costs, and payback periods. |
+| [Customer Loyalty Value Engine](../mcps/customer-loyalty-value-engine.md) | Quantify long-term customer economic worth through purchase behavior and retention analysis. |
 | [Customer Segmentation Value](../mcps/customer-segmentation-value.md) | Analyze segment-level unit economics, LTV, CAC, and prioritization. |
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |
 | [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |

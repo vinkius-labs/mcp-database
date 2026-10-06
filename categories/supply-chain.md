@@ -44,6 +44,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Repair Parts Order Plan](../mcps/repair-parts-order-plan.md) | Sequences part procurement based on diagnostic requirements and supplier lead times. |
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
+| [Shipping Cost Comparator](../mcps/shipping-cost-comparator.md) | Compare shipping rates, zones, and surcharges across multiple carriers. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |
 | [Tank Storage Capacity Planning](../mcps/tank-storage-capacity-planning.md) | Plan industrial tank infrastructure by calculating required volumes, tank counts, and turnover efficiency. |
 | [Vendor Quote Comparator](../mcps/vendor-quote-comparator.md) | Compare supplier quotes by unit price, lead time, and risk. |

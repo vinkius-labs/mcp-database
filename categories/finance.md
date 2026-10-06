@@ -201,6 +201,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Burn Multiple Calculator](../mcps/burn-multiple-calculator.md) | Evaluate SaaS growth efficiency by measuring capital expenditure against new ARR. |
 | [Burn Rate Analysis](../mcps/burn-rate-analysis.md) | Analyze startup burn rates, trends, and projected runway. |
 | [Burn Rate Analyzer](../mcps/burn-rate-analyzer.md) | Analyze startup burn rate, expense composition, and runway forecasting. |
+| [Business Expense Audit](../mcps/business-expense-audit.md) | Analyze spending patterns, detect budget variances, and identify savings opportunities. |
 | [Business Interruption Claim Log](../mcps/business-interruption-claim-log.md) | Automated forensic accounting to reconcile business closures with revenue and expense records. |
 | [Business License Fee Calculator](../mcps/business-license-fee-calculator.md) | Estimate business licensing, permit, and annual renewal costs across multiple jurisdictions. |
 | [Business Profit Margin Calculator](../mcps/business-profit-margin-calculator.md) | Calculate gross, operating, and net profit margins, break-even points, optimal pricing, and seasonal cash flow projections. |
@@ -223,6 +224,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Care Expense Reimbursement Workflow](../mcps/care-expense-reimbursement-workflow.md) | Manage care-related expenses with receipt validation, share calculation, and automated reimbursement requests. |
 | [Carry Trade Strategy](../mcps/carry-trade-strategy.md) | Deterministic forex carry trade strategy using interest rate differentials and volatility filters. |
+| [Cash Discount Comparator](../mcps/cash-discount-comparator.md) | Compare early-payment discounts against investment opportunity costs. |
 | [Cash Flow Projector](../mcps/cash-flow-projector.md) | Project monthly cash flow, identify liquidity gaps, and calculate working capital requirements. |
 | [Cash vs Accrual Converter](../mcps/cash-vs-accrual-converter.md) | Converts farm financial statements from cash basis to accrual basis. |
 | [Cash-and-Carry Arbitrage Strategy](../mcps/cash-and-carry-arbitrage-strategy.md) | Identify and track deterministic futures arbitrage opportunities by exploiting contango. |
@@ -265,6 +267,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Conditional Market Arbitrage Engine](../mcps/conditional-market-arbitrage-engine.md) | Identify risk-free arbitrage in conditional prediction markets using Bayesian probability. |
 | [Connors RSI Calculator](../mcps/connors-rsi-calculator.md) | Calculate Connors RSI and identify mean-reversion trading signals. |
 | [Conservation Program Payment Calculator](../mcps/conservation-program-payment-calculator.md) | Financial modeling for USDA conservation programs (CRP, EQIP, CSP) and crop economics. |
+| [Construction Job Budgeting](../mcps/construction-job-budgeting.md) | Calculate and manage total construction project costs including labor, materials, and contingency. |
 | [Consumer Financing Comparator](../mcps/consumer-financing-comparator.md) | Compare loan offers by total cost, APR, and repayment impact. |
 | [Content Marketing ROI Engine](../mcps/content-marketing-roi-engine.md) | Analyze content efficiency, ROI, and prioritization. |
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
@@ -382,6 +385,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Enterprise TCV Calculator](../mcps/enterprise-tcv-calculator.md) | Calculate Total Contract Value, revenue splits, and expected lifetime value for enterprise contracts. |
 | [Environmental Liability Assessment](../mcps/environmental-liability-assessment.md) | Assess environmental liabilities and insurance gaps for oil and gas operations. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
+| [Equipment Lease vs Buy Comparator](../mcps/equipment-lease-vs-buy-comparator.md) | Compare the total cost of ownership and net present value for equipment leasing versus direct purchase. |
 | [Equipment Replacement Analysis](../mcps/equipment-replacement-analysis.md) | Determine the optimal timing for industrial equipment replacement using economic lifecycle modeling. |
 | [Equity Dilution Modeler](../mcps/equity-dilution-modeler.md) | Model ownership changes and dilution across multiple venture capital funding rounds. |
 | [ETF Arbitrage Strategy](../mcps/etf-arbitrage-strategy.md) | Identify and quantify arbitrage opportunities between ETF market prices and NAV. |
@@ -423,6 +427,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [European Venture Funding Analyzer](../mcps/european-venture-funding-analyzer.md) | Analyze European VC availability, valuation gaps, and optimal funding strategies. |
 | [EV Charging Cost Calculator](../mcps/ev-charging-cost-calculator.md) | Calculate and compare the costs of electric vehicle charging versus gasoline consumption. |
 | [Event Ticket Cost Comparator](../mcps/event-ticket-cost-comparator.md) | Calculate and compare the true total cost of event tickets, including fees, transport, and companion expenses. |
+| [Event Vendor Profit Planner](../mcps/event-vendor-profit-planner.md) | Project net profits by calculating sales, inventory, labor, and commissions. |
 | [Exact Decimal Currency Calculator](../mcps/exact-decimal-currency-calculator.md) | Perform error-free financial arithmetic using integer-based cent calculations. |
 | [Exchange Fee Calculator](../mcps/exchange-fee-calculator.md) | Calculate transaction fees using standard, tiered, or comparative strategies. |
 | [Expansion Revenue Analysis](../mcps/expansion-revenue-analysis.md) | Decompose revenue growth into expansion drivers and retention health metrics. |
@@ -455,6 +460,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Fisher Transform Strategy](../mcps/fisher-transform-strategy.md) | A deterministic mean-reversion strategy using Fisher Transform to identify market exhaustion. |
 | [Flash Loan Arbitrage Strategy](../mcps/flash-loan-arbitrage-strategy.md) | Identify and validate profitable flash loan arbitrage opportunities across DEXs. |
 | [Flower Arrangement Cost Calculator](../mcps/flower-arrangement-cost-calculator.md) | Calculate precise costs, margins, and stem inventory for floral arrangements. |
+| [Food Cost & Menu Planner](../mcps/food-cost-menu-planner.md) | Calculate precise ingredient costs, target menu prices, and profitability margins. |
 | [Food Delivery Fee Comparator](../mcps/food-delivery-fee-comparator.md) | Compare the true cost of Pickup, Delivery, and Dine-in options. |
 | [Food Delivery Tip Calculator](../mcps/food-delivery-tip-calculator.md) | Calculate precise delivery tips and view industry standard recommendations. |
 | [Food Order Splitter](../mcps/food-order-splitter.md) | Splits shared food orders equally among diners. |
@@ -636,6 +642,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Loan Interest Calculator](../mcps/loan-interest-calculator.md) | Calculate total interest, repayment ratios, and financial summaries for loans. |
 | [Loan Refinance Break-Even Analyzer](../mcps/loan-refinance-break-even-analyzer.md) | Calculate monthly savings, lifetime savings, and the break-even month for mortgage refinancing. |
 | [Local Attraction Pass Decision Plan](../mcps/local-attraction-pass-decision-plan.md) | Evaluate the financial and logistical viability of local attraction passes. |
+| [Local Delivery Price Plan](../mcps/local-delivery-price-plan.md) | A precision pricing engine for calculating delivery fees based on operational costs and profit targets. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
 | [Loyalty Points Value Calculator](../mcps/loyalty-points-value-calculator.md) | Calculate the economic value of loyalty points, redemption efficiency, and expiration risks. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
@@ -776,6 +783,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Pivot Point Strategy](../mcps/pivot-point-strategy.md) | Deterministic technical analysis for pivot-based support and resistance signals. |
 | [Pivot Points Calculator](../mcps/pivot-points-calculator.md) | Deterministic technical analysis engine for pivot point, support, and resistance levels. |
 | [Polling Bias & EV Engine](../mcps/polling-bias-ev-engine.md) | A deterministic pricing engine that adjusts polling data for historical bias and calculates Expected Value (EV) for prediction markets. |
+| [Pop-up Shop Budget Planner](../mcps/pop-up-shop-budget-planner.md) | Model operational costs and revenue targets for retail pop-up events. |
 | [Portfolio Concentration Calculator](../mcps/portfolio-concentration-calculator.md) | Measure investment risk using the Herfindahl-Hirschman Index (HHI) across asset, sector, and geography dimensions. |
 | [Portfolio Rebalance Planner](../mcps/portfolio-rebalance-planner.md) | A precision engine for calculating automated trade instructions to align holdings with target allocations. |
 | [Portfolio Rebalancing Engine](../mcps/portfolio-rebalancing-engine.md) | Identify portfolio drift and generate precise buy/sell orders to align asset weights with target allocations. |
@@ -848,6 +856,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Restaurant Table Turn Plan](../mcps/restaurant-table-turn-plan.md) | Forecasts seating capacity, table turnover, labor, and break-even points. |
 | [Retirement Planning Engine](../mcps/retirement-planning-engine.md) | Project retirement savings growth, optimize Social Security benefits, and simulate withdrawal success. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
+| [Return Cost Reserve Calculator](../mcps/return-cost-reserve-calculator.md) | Calculate capital reserves needed to cover product return costs. |
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Per Customer Analytics](../mcps/revenue-per-customer-analytics.md) | Analyze average revenue per customer across timeframes and segments. |
 | [Revenue Predictability Engine](../mcps/revenue-predictability-engine.md) | Analyzes revenue stability and predictability using recurring revenue and contract metrics. |
@@ -880,6 +889,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Sales Quota Attainment Engine](../mcps/sales-quota-attainment-engine.md) | Track sales progress, evaluate performance against targets, and project required daily sales velocity. |
 | [Sales Target Progress Engine](../mcps/sales-target-progress-engine.md) | Calculate sales progress, pacing status, performance tiers, and revenue forecasts. |
 | [Sales Total Aggregator](../mcps/sales-total-aggregator.md) | Aggregates and analyzes sales transaction amounts. |
+| [Salon Chair Profit Planner](../mcps/salon-chair-profit-planner.md) | Calculate net profitability for salon chairs based on revenue, splits, and overhead. |
 | [Salon Service Pricing Calculator](../mcps/salon-service-pricing-calculator.md) | Calculate precise service pricing, profit margins, and professional earnings for salon services. |
 | [SBA Loan Eligibility Accelerator](../mcps/sba-loan-eligibility-accelerator.md) | Analyze SBA loan eligibility and portfolio potential for small businesses. |
 | [Scalping Strategy Engine](../mcps/scalping-strategy-engine.md) | Deterministic momentum-based scalping engine using EMA and Stochastic oscillators. |

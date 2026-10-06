@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,856 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,872 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,8 +10,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1779 servers)
-- [finance](categories/finance.md) (1182 servers)
+- [productivity](categories/productivity.md) (1782 servers)
+- [finance](categories/finance.md) (1192 servers)
 - [developer-tools](categories/developer-tools.md) (695 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -35,7 +35,7 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
 - [security](categories/security.md) (95 servers)
 - [infrastructure](categories/infrastructure.md) (92 servers)
-- [marketing](categories/marketing.md) (85 servers)
+- [marketing](categories/marketing.md) (86 servers)
 - [education](categories/education.md) (74 servers)
 - [human-resources](categories/human-resources.md) (71 servers)
 - [healthcare](categories/healthcare.md) (66 servers)
@@ -51,15 +51,15 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [growth-engine](categories/growth-engine.md) (56 servers)
 - [optimization](categories/optimization.md) (56 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
+- [supply-chain](categories/supply-chain.md) (54 servers)
 - [utility](categories/utility.md) (54 servers)
-- [supply-chain](categories/supply-chain.md) (53 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [real-estate](categories/real-estate.md) (45 servers)
 - [travel](categories/travel.md) (43 servers)
 - [document-management](categories/document-management.md) (42 servers)
 - [chemistry](categories/chemistry.md) (40 servers)
 - [collaboration](categories/collaboration.md) (40 servers)
-- [inventory-management](categories/inventory-management.md) (38 servers)
+- [inventory-management](categories/inventory-management.md) (39 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
 - [brain-trust](categories/brain-trust.md) (32 servers)

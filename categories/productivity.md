@@ -128,6 +128,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [ApplicantStack](../mcps/applicantstack.md) | Manage your hiring process with ApplicantStack — track jobs, candidates, and hires via AI. |
 | [Appointlet](../mcps/appointlet.md) | Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly. |
 | [Appointment Capacity Calculator](../mcps/appointment-capacity-calculator.md) | Calculate maximum appointment capacity within specific time windows and constraints. |
+| [Appointment Revenue Planner](../mcps/appointment-revenue-planner.md) | Forecast appointment revenue by analyzing service capacity, staff availability, and no-show rates. |
 | [Apptoto](../mcps/apptoto.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [Apptoto](../mcps/apptoto-alternative.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [ArcXP](../mcps/arcxp.md) | Automate newsroom publishing via ArcXP — manage, search, and update articles, photos, and videos directly from any AI agent. |
@@ -216,6 +217,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Brain Training Progress Tracker](../mcps/brain-training-progress-tracker.md) | Analyze cognitive performance trends, detect plateaus, and receive personalized training advice. |
 | [Bread Fermentation Calculator](../mcps/bread-fermentation-calculator.md) | Deterministic scheduling for bread fermentation timing and temperature. |
 | [Break Count Calculator](../mcps/break-count-calculator.md) | Calculate mandatory break counts and schedules based on work duration. |
+| [Break-Even Event Attendance Calculator](../mcps/break-even-event-attendance-calculator.md) | Calculate the exact number of attendees needed to cover all event costs. |
 | [Break-even Price Calculator](../mcps/break-even-price-calculator.md) | Calculate commodity break-even prices, margin targets, and productivity requirements. |
 | [break-time-total](../mcps/break-time-total.md) | A precision utility for calculating and managing cumulative break durations. |
 | [Breakeven Yield Calculator](../mcps/breakeven-yield-calculator.md) | Calculate critical break-even yield and price thresholds for crop production. |
@@ -434,6 +436,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Creative Residency Decision Support](../mcps/creative-residency-decision-support.md) | Evaluate creative residency opportunities against your personal goals and constraints. |
 | [Creative Supply Expiration Planner](../mcps/creative-supply-expiration-planner.md) | Manage and prioritize creative inventory like paints and inks by monitoring shelf life and expiration. |
 | [Creator Account Legacy Brief](../mcps/creator-account-legacy-brief.md) | Consolidate digital assets, access protocols, and publishing mandates for creator estate planning. |
+| [Creator Campaign Rate Card](../mcps/creator-campaign-rate-card.md) | Calculate precise creator deliverable pricing based on production, reach, and usage rights. |
 | [Crisp](../mcps/crisp.md) | Chat with website visitors in real time, manage support conversations, and build a knowledge base that reduces ticket volume. |
 | [Critical Thinking Prover](../mcps/critical-thinking-prover.md) | AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence. |
 | [Cron Expression Calculator](../mcps/cron-expression-calculator.md) | Calculate the exact future dates of any Cron expression using deterministic JavaScript. Stop LLMs from failing date mathematics and leap year edge cases. |
