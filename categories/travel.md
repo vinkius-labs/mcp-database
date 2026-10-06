@@ -11,6 +11,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Board Quiver Planner](../mcps/board-quiver-planner.md) | Optimize your surfboard quiver for any trip or wave conditions. |
 | [Campsite Availability](../mcps/campsite-availability.md) | Real campsite availability from Recreation.gov — which nights are open at a campground, which sites fit a multi-night stay, and how campgrounds compare side by side. |
 | [Care Travel Companion Plan](../mcps/care-travel-companion-plan.md) | Coordinates care-specific travel timelines, packing responsibilities, and emergency fallback plans. |
+| [Connection Risk Comparator](../mcps/connection-risk-comparator.md) | Assess flight connection reliability and buffer safety. |
 | [Family Trip Seat Count](../mcps/family-trip-seat-count.md) | Calculate vehicle capacity and passenger distribution for family trips. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
 | [Heritage Rail Experience Planner](../mcps/heritage-rail-experience-planner.md) | Coordinate heritage rail journeys by synthesizing timetables, accessibility needs, and operator rules. |

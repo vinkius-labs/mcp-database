@@ -8,6 +8,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Avocado Maturity Index](../mcps/avocado-maturity-index.md) | Calculate avocado maturity, shelf life, and market suitability. |
 | [Batch Chemical Process Scheduler](../mcps/batch-chemical-process-scheduler.md) | Optimizes batch production sequences, equipment utilization, and resource allocation. |
 | [Bottling Line Changeover Optimizer](../mcps/bottling-line-changeover-optimizer.md) | Quantify changeover duration and cost using SMED principles. |
+| [Bulk Purchase Container Calculator](../mcps/bulk-purchase-container-calculator.md) | Calculates required reusable containers based on product mass, density, and volume constraints. |
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Canola Oil Quality Predictor](../mcps/canola-oil-quality-predictor.md) | Predict canola oil grade, refining losses, and meal quality from seed characteristics. |
 | [Chickpea Quality Grader](../mcps/chickpea-quality-grader.md) | Grades chickpea quality and predicts market suitability and value. |
@@ -30,6 +31,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Oil Supply Chain Optimizer](../mcps/oil-supply-chain-optimizer.md) | Optimize crude oil routing, inventory levels, and quality compliance across the supply chain. |
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
+| [Packaging Material Scorecard](../mcps/packaging-material-scorecard.md) | Evaluate and rank packaging materials based on sustainability and cost. |
 | [Parts Compatibility Plan](../mcps/parts-compatibility-plan.md) | Validate part compatibility and generate purchase and installation plans. |
 | [Parts Return Preparation](../mcps/parts-return-preparation.md) | Generates structured packing and dispatch checklists for industrial and automotive part returns. |
 | [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
@@ -43,6 +45,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Refinery Utilization Planning](../mcps/refinery-utilization-planning.md) | Optimize refinery throughput, maintenance timing, and inventory levels. |
 | [Repair Parts Order Plan](../mcps/repair-parts-order-plan.md) | Sequences part procurement based on diagnostic requirements and supplier lead times. |
 | [Rice Milling Yield Predictor](../mcps/rice-milling-yield-predictor.md) | Predicts rice milling quality and economic output from kernel traits. |
+| [Seasonal Produce Distance Comparator](../mcps/seasonal-produce-distance-comparator.md) | Compare produce procurement options by calculating environmental and economic impact scores. |
 | [Sesame Seed Quality Grader](../mcps/sesame-seed-quality-grader.md) | Grade sesame seed quality, predict yields, and estimate market value. |
 | [Shipping Cost Comparator](../mcps/shipping-cost-comparator.md) | Compare shipping rates, zones, and surcharges across multiple carriers. |
 | [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |

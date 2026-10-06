@@ -4,6 +4,7 @@ Explore the open database of **smart-home** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Home Energy Load Shifter](../mcps/home-energy-load-shifter.md) | Schedules appliance usage into preferred electricity tariff windows. |
 | [Sleep Environment Calculator](../mcps/sleep-environment-calculator.md) | Optimize your bedroom for better sleep by calculating ideal temperature, humidity, air purification, and sensory settings. |
 
 

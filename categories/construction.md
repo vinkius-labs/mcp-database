@@ -159,6 +159,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Steel-Concrete Composite Beam Designer](../mcps/steel-concrete-composite-beam-designer.md) | Design composite steel-concrete beams using AISC methodologies, calculating moment capacity, shear studs, and deflection. |
 | [Structural Load Calculator](../mcps/structural-load-calculator.md) | Estimate structural engineering loads (permanent and variable) per square meter based on NBR 6120 standards. |
 | [Stud Wall Load Calculator](../mcps/stud-wall-load-calculator.md) | Calculate the allowable axial and lateral load capacity for wood stud walls based on NDS standards. |
+| [Sustainable Renovation Material Planner](../mcps/sustainable-renovation-material-planner.md) | Rank renovation materials by environmental impact, cost, and durability. |
 | [Tank Foundation Design](../mcps/tank-foundation-design.md) | Engineering tool for determining tank foundation types, settlement, and bearing capacity. |
 | [Thermal Mass Estimator](../mcps/thermal-mass-estimator.md) | Calculate thermal lag, amplitude damping, and U-value for wall structures based on material properties. |
 | [Tile Floor Calculator](../mcps/tile-floor-calculator.md) | Calculate tiles, grout, adhesive, and costs for any floor layout. |

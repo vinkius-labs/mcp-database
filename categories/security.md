@@ -28,6 +28,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Audit software dependencies against approved SPDX license identifiers to ensure supply-chain compliance. |
 | [Destructive Command Interceptor](../mcps/destructive-command-interceptor.md) | Intercepts and blocks destructive bash commands using pattern matching and obfuscation detection. |
 | [Digital Legacy Update Log](../mcps/digital-legacy-update-log.md) | Maintain an auditable, chronological record of digital asset changes, including account status, custodian shifts, and instruction versions. |
+| [e-waste-storage-inventory](../mcps/e-waste-storage-inventory.md) | Manage and prioritize electronic waste inventory with precision. |
 | [Email Forwarding Audit](../mcps/email-forwarding-audit.md) | Audit email forwarding rules to detect unapproved destinations and compliance conflicts. |
 | [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
 | [Emergency Digital Access Brief](../mcps/emergency-digital-access-brief.md) | A controlled activation guide for managing critical digital credentials and access protocols during emergency scenarios. |

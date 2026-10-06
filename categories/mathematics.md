@@ -49,6 +49,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Quest Branching Factor Calculator](../mcps/quest-branching-factor-calculator.md) | Quantify narrative complexity and state explosion in branching quest systems. |
 | [Sailing VMG Calculator](../mcps/sailing-vmg-calculator.md) | Deterministic sailing vector math and performance calculator for wind and speed analysis. |
 | [Slope Vertical Drop Calculator](../mcps/slope-vertical-drop-calculator.md) | Calculate vertical elevation changes, steepness, and terrain profiles. |
+| [Solar Self-Consumption Calculator](../mcps/solar-self-consumption-calculator.md) | Analyze solar energy flows, battery dynamics, and economic impact. |
 | [Sourdough Hydration Calculator](../mcps/sourdough-hydration-calculator.md) | Calculate precise baker's percentages, hydration, and batch scaling for sourdough recipes. |
 | [Spice Level Adjuster](../mcps/spice-level-adjuster.md) | Scale recipe heat and manage spice tolerance using Scoville Heat Units. |
 | [Spice Mix Scaler](../mcps/spice-mix-scaler.md) | Scales spice blend recipes for commercial batch production using precise multipliers. |

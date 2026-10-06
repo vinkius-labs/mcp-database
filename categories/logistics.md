@@ -16,6 +16,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Baking Production Planner](../mcps/baking-production-planner.md) | Orchestrate bakery production from orders to packaging. |
 | [Barbecue Shopping Planner](../mcps/barbecue-shopping-planner.md) | A logistics engine that generates precise shopping lists for food, drinks, ice, fuel, and serving ware. |
 | [Barrel Washing System Sizing](../mcps/barrel-washing-system-sizing.md) | Calculate industrial capacity, water requirements, and station counts for barrel cleaning facilities. |
+| [Battery Recycling Drop-off Planner](../mcps/battery-recycling-drop-off-planner.md) | Organize battery recycling logistics by calculating loads, checking facility compliance, and scheduling drop-offs. |
 | [Battery Replacement Readiness](../mcps/battery-replacement-readiness.md) | Plan battery replacements by analyzing age, warranty, and budget requirements. |
 | [Beach Towel Calculator](../mcps/beach-towel-calculator.md) | Calculate total towel requirements and group service tiers. |
 | [Beverage Batch Planner](../mcps/beverage-batch-planner.md) | Scale drink recipes by guests, glass size, ice displacement, and garnish. |
@@ -45,6 +46,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Handmade Gift Commission Plan](../mcps/handmade-gift-commission-plan.md) | Transform raw gift ideas into structured creative briefs and logistical handoff plans. |
 | [Haulage Cost Optimization](../mcps/haulage-cost-optimization.md) | Optimize mining logistics by calculating haulage costs and fleet requirements. |
 | [Home Emergency Supply Planner](../mcps/home-emergency-supply-planner.md) | Calculate essential household supplies, identify inventory gaps, and manage expiration schedules. |
+| [Household Chemical Dilution Planner](../mcps/household-chemical-dilution-planner.md) | Calculate precise concentrate and water volumes for cleaning tasks. |
 | [Kitchen Repair Disruption Planner](../mcps/kitchen-repair-disruption-planner.md) | Manage household logistics during kitchen renovations with precise disruption calendars and meal planning. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [LNG Boil-Off Management](../mcps/lng-boil-off-management.md) | Predict and manage LNG boil-off rates, reliquefaction needs, and fuel consumption. |
@@ -82,6 +84,8 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [Pipeline Route Optimization Engine](../mcps/pipeline-route-optimization-engine.md) | Calculate efficient, compliant, and cost-effective pipeline paths through complex terrain. |
 | [Preparedness Storage Layout Plan](../mcps/preparedness-storage-layout-plan.md) | Organize emergency supplies using accessibility, weight, and rotation rules. |
 | [Print Edition Release Planner](../mcps/print-edition-release-planner.md) | Automated planning engine for print edition viability, pre-production, and fulfillment. |
+| [Rainwater Task Allocation](../mcps/rainwater-task-allocation.md) | Precision resource management for distributing stored rainwater among prioritized tasks. |
+| [Refill Product Cost Comparator](../mcps/refill-product-cost-comparator.md) | Compare the economic feasibility of single-use vs refillable packaging systems. |
 | [Refinery Turnaround Planner](../mcps/refinery-turnaround-planner.md) | Optimize refinery turnaround schedules by analyzing critical paths, resource needs, and inspection impacts. |
 | [Repair Vendor Selection Engine](../mcps/repair-vendor-selection-engine.md) | A decision-support engine that evaluates and selects the optimal repair service provider based on user priorities. |
 | [Restaurant Table Capacity Manager](../mcps/restaurant-table-capacity-manager.md) | Calculate seating capacity, occupancy rates, and seating distributions. |

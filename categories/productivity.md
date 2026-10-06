@@ -268,6 +268,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Cancellation Claim Packet](../mcps/cancellation-claim-packet.md) | Maps travel documents to insurance claim fields to generate structured assembly plans. |
 | [Capacities](../mcps/capacities.md) | Empower your AI agents to build knowledge graphs, append daily notes, and save weblinks directly into your Capacities spaces. |
 | [Capsule CRM](../mcps/capsule-crm.md) | Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent. |
+| [Capsule Wardrobe Gap Analyzer](../mcps/capsule-wardrobe-gap-analyzer.md) | Identify missing clothing items needed to meet outfit goals, color rules, and climate needs. |
 | [Capsulink](../mcps/capsulink.md) | Manage shortened URLs via Capsulink — create links, track clicks, and monitor analytics directly from any AI agent. |
 | [Car Ownership Budgeter](../mcps/car-ownership-budgeter.md) | Project monthly and annual vehicle costs including fuel, insurance, and maintenance. |
 | [Cardly](../mcps/cardly.md) | Send physical greeting cards via Cardly — automate personalized card sends, track orders, and manage contacts directly from any AI agent. |
@@ -391,6 +392,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Community Sponsorship Outreach Plan](../mcps/community-sponsorship-outreach-plan.md) | A strategic engine to transform event goals and sponsor lists into actionable outreach sequences and tracking systems. |
 | [Commuter Mode Cost Comparator](../mcps/commuter-mode-cost-comparator.md) | Compare commuting costs and travel time efficiency across different modes. |
 | [Competitive Intelligence Prover](../mcps/competitive-intelligence-prover.md) | AI agents fabricate competitor data, list vague weaknesses, propose fantasy strategies, and ignore your own gaps. This tool forces fact-grounded competitive analysis: verifiable sources, measurable weaknesses, feasible attack plans, self-aware assessment, and kill criteria with deadlines. |
+| [Complete Trip Budget](../mcps/complete-trip-budget.md) | Comprehensive financial planning for travel expenses. |
 | [Concert Night Budgeter](../mcps/concert-night-budgeter.md) | Plan and split all expenses for your next concert trip. |
 | [Concert Set Duration Calculator](../mcps/concert-set-duration-calculator.md) | Calculate total setlist duration and manage performance time slots. |
 | [Concurso Score Calculator](../mcps/concurso-score-calculator.md) | Calculate final examination scores, manage stage thresholds, and estimate competition rankings for civil service exams. |
@@ -804,6 +806,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Grocy (Home ERP)](../mcps/grocy-home-erp.md) | Automate your household management with Grocy — track inventory, manage shopping lists, and organize chores directly from your AI agent. |
 | [Gross-to-Net Calculator](../mcps/gross-to-net-calculator.md) | Calculate precise take-home pay by applying fixed and percentage-based deductions to gross income. |
 | [Group Class Cost Splitter](../mcps/group-class-cost-splitter.md) | Equitably divide instructor, venue, material, tax, and payment fees among class participants. |
+| [Group Room Cost Splitter](../mcps/group-room-cost-splitter.md) | A precision engine for splitting lodging expenses by occupancy, room type, and privacy. |
 | [Group Transport Planner](../mcps/group-transport-planner.md) | Compare group travel options by cost, capacity, and accessibility. |
 | [Growth Strategist](../mcps/growth-strategist.md) | AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue. |
 | [GrowthZone](../mcps/growthzone.md) | Automate association management via GrowthZone — manage contacts, memberships, events, and organizations directly from any AI agent. |
@@ -934,6 +937,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Ironclad](../mcps/ironclad.md) | Manage contracts, workflows, approvals, and counterparties via Ironclad CLM — launch, track, and search agreements directly from any AI agent. |
 | [itch.io](../mcps/itchio.md) | Access your itch.io account — browse your games, collections and profile info from any AI agent. |
 | [Itemized Shared Grocery Splitter](../mcps/itemized-shared-grocery-splitter.md) | Split grocery receipts by item consumption and distribute tax equally. |
+| [Itinerary Day Builder](../mcps/itinerary-day-builder.md) | Constructs feasible daily travel plans by reconciling attraction hours, visit durations, and travel times. |
 | [Itinerary Day Count](../mcps/itinerary-day-count.md) | Calculates inclusive calendar days for travel itineraries. |
 | [Japanese Train Delay Validator](../mcps/japanese-train-delay-validator.md) | Calculate Japanese train delay certificate eligibility and excuse categories. |
 | [Jasper](../mcps/jasper.md) | Equip your AI agent with direct access to Jasper — generate marketing copy, manage brand voices, and orchestrate content campaigns without opening the Jasper app. |
@@ -1002,6 +1006,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [LearningSuite](../mcps/learningsuite.md) | Create and deliver corporate training programs with course authoring, quizzes, and progress tracking for distributed teams. |
 | [LearnUpon](../mcps/learnupon.md) | Manage users, courses, and enrollments via the LearnUpon LMS API. |
 | [Lecture Note Review Planner](../mcps/lecture-note-review-planner.md) | Optimizes study schedules by mapping lecture topics to available time windows. |
+| [Leftover Portion Reuse Plan](../mcps/leftover-portion-reuse-plan.md) | Optimize food reuse by matching leftovers to upcoming meals. |
 | [Legal Citation Formatter](../mcps/legal-citation-formatter.md) | Converts raw legal citations into standardized formats for Bluebook, OSCOLA, AGLC, McGill, and ALWD. |
 | [Legal Counsel Prover](../mcps/legal-counsel-prover.md) | AI agents cite fabricated statutes, ignore deadlines, and deliver one-sided legal memos. This tool forces rigorous reasoning: identify jurisdiction, cite verifiable law, map procedure, address the opposing argument, connect to the client's facts. |
 | [Legal Deadline Calculator Engine](../mcps/legal-deadline-calculator-engine.md) | Compute rigorous procedural deadlines in business days without risking LLM mathematical hallucination. |
@@ -1121,6 +1126,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Move-in Room Layout](../mcps/move-in-room-layout.md) | Optimize furniture placement in rectangular rooms with physical constraints. |
 | [Move-Out Cleaning Scheduler](../mcps/move-out-cleaning-scheduler.md) | Optimizes cleaning task assignments based on personnel availability and deadlines. |
 | [Moving Box Packing Plan](../mcps/moving-box-packing-plan.md) | Optimize your move by assigning belongings to the best box sizes. |
+| [Moving Box Reuse Planner](../mcps/moving-box-reuse-planner.md) | Calculate moving box needs and rental costs based on room inventory and existing boxes. |
 | [Moving Cost Budgeter](../mcps/moving-cost-budgeter.md) | Calculate and analyze moving expenses across upfront, move-week, and first-month phases. |
 | [Moving Sale Pricer](../mcps/moving-sale-pricer.md) | Optimize listing prices for residential liquidation sales. |
 | [Moving Truck Calculator](../mcps/moving-truck-calculator.md) | Calculate truck size, volume, weight, and moving supplies. |
@@ -1192,9 +1198,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Overtime Hours Tracker](../mcps/overtime-hours-tracker.md) | Track, aggregate, and validate overtime hours across work periods. |
 | [Overtime Threshold Detector](../mcps/overtime-threshold-detector.md) | Identify exactly when overtime kicks in during a work week and calculate pay splits. |
 | [Ovulation and Fertile Window Calculator](../mcps/ovulation-and-fertile-window-calculator.md) | Predict ovulation dates, fertile windows, and peak conception days based on your menstrual cycle. |
+| [Packing List Builder](../mcps/packing-list-builder.md) | Calculate precise travel packing lists based on trip duration, weather, and activities. |
 | [Page Turn Time](../mcps/page-turn-time.md) | Estimate reading duration based on page count and speed. |
 | [PagePixels](../mcps/pagepixels.md) | Capture website screenshots and generate visual previews programmatically with an API that handles rendering at any resolution. |
 | [Pantry Expiry & Rotation Planner](../mcps/pantry-expiry-rotation-planner.md) | Manage pantry inventory and minimize food waste with intelligent rotation plans. |
+| [Pantry Expiry & Use-First Planner](../mcps/pantry-expiry-use-first-planner.md) | Prioritize food usage to minimize waste with smart meal planning. |
 | [Pantry Expiry Meal Plan](../mcps/pantry-expiry-meal-plan.md) | Minimize food waste by generating meal plans that prioritize ingredients closest to their expiration date. |
 | [Pantry Meal Builder](../mcps/pantry-meal-builder.md) | Plan meals based on your current pantry inventory and ingredient substitutions. |
 | [Pantry Restock Plan](../mcps/pantry-restock-plan.md) | Automated inventory management to calculate optimal shopping lists and budget projections. |
@@ -1386,6 +1394,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Retirement Contribution Planner](../mcps/retirement-contribution-planner.md) | Calculate exact contribution dates and amounts to reach your annual retirement savings target. |
 | [Return Window Calendar](../mcps/return-window-calendar.md) | Track and manage product return deadlines based on purchase and shipping dates. |
 | [Reunion Travel Cost Planner](../mcps/reunion-travel-cost-planner.md) | Calculate, track, and reconcile group travel expenses. |
+| [Reusable Cleaning Cloth Planner](../mcps/reusable-cleaning-cloth-planner.md) | Calculate cloth inventory and laundry schedules for cleaning operations. |
 | [Rev.ai](../mcps/revai.md) | High-accuracy speech-to-text and transcription — submit media files, generate AI summaries, and create captions directly from your AI agent. |
 | [Reverse Pyramid Training Planner](../mcps/reverse-pyramid-training-planner.md) | Design precise Reverse Pyramid Training (RPT) protocols with automated weight and rep calculations. |
 | [Reverse Sleep Calculator](../mcps/reverse-sleep-calculator.md) | Calculate your ideal bedtime by counting backwards from your wake-up time. |
@@ -1698,6 +1707,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Vesting Schedule Calculator](../mcps/vesting-schedule-calculator.md) | Generate precise monthly equity vesting timelines, identify cliff milestones, and project liquidity values. |
 | [Viesus](../mcps/viesus.md) | Enhance photos automatically with AI that adjusts exposure, color balance, and sharpness to make every image look professional. |
 | [Vimeo](../mcps/vimeo.md) | Manage your Vimeo account — audit videos, folders, and showcases via AI. |
+| [Visa Stay Counter](../mcps/visa-stay-counter.md) | Track visa usage and calculate remaining stay days. |
 | [VivifyScrum](../mcps/vivifyscrum.md) | Manage agile projects with Scrum and Kanban boards, sprint planning, and backlog grooming for software development teams. |
 | [Vocabulary Forge](../mcps/vocabulary-forge.md) | AI detectors don't scan for bad grammar — they scan for vocabulary. "Delve", "leverage", "furthermore" are fingerprints. Vocabulary Forge makes the agent build a complete voice profile: define the person, map tonal shifts, purge signal words, add human roughness, commit to a signature. Any language. |
 | [Vocabulary Total](../mcps/vocabulary-total.md) | Aggregate and manage English vocabulary learned across multiple sessions. |
@@ -1777,6 +1787,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Zeev](../mcps/zeev.md) | Digitize business processes with BPMN workflows, electronic forms, and approval chains that replace paper and email chaos. |
 | [Zenkit](../mcps/zenkit.md) | Manage workspaces, lists, and entries via the Zenkit API. |
 | [ZenQuotes API](../mcps/zenquotes-api.md) | Access inspirational quotes — audit random and daily quotes via AI. |
+| [Zero-Waste Shopping Assistant](../mcps/zero-waste-shopping-assistant.md) | Converts shopping items into precise refill quantities based on container capacity and usage. |
 | [Zingtree](../mcps/zingtree.md) | Analyze decision trees, workflows, and user session data via the Zingtree API. |
 | [ZipRecruiter](../mcps/ziprecruiter.md) | Search millions of job listings on ZipRecruiter — find roles by keyword, location, and salary directly from your AI agent. |
 | [Zoho CRM](../mcps/zoho-crm.md) | Manage leads, contacts, and deals on Zoho CRM — the AI-powered sales platform for growing teams. |

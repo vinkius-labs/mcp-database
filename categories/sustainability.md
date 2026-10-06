@@ -8,15 +8,19 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 | [Circular Economy Opportunity Identifier](../mcps/circular-economy-opportunity-identifier.md) | Identify circular economy pathways in oil and gas by analyzing waste streams and material flows. |
 | [Cloud Carbon Footprint Calculator](../mcps/cloud-carbon-footprint-calculator.md) | Estimate and compare CO2e emissions for cloud compute workloads. |
 | [CO2 Savings Calculator](../mcps/co2-savings-calculator.md) | Calculate the mass of CO2 emissions avoided by using recycled materials instead of primary production. |
+| [Donation vs Disposal Comparator](../mcps/donation-vs-disposal-comparator.md) | Compare the economic and environmental impact of donation, resale, recycling, and disposal. |
 | [Food Waste Impact Calculator](../mcps/food-waste-impact-calculator.md) | Quantify the environmental and financial impact of food waste, including CO2e, methane, water loss, and monetary cost. |
 | [Food Waste Reducer](../mcps/food-waste-reducer.md) | Minimize food waste with intelligent meal planning and grocery optimization. |
+| [Furniture Material Impact Comparator](../mcps/furniture-material-impact-comparator.md) | Compare the environmental impact of furniture based on materials, durability, and logistics. |
 | [Household Waste Reduction Planner](../mcps/household-waste-reduction-planner.md) | Analyze household waste profiles and calculate savings from reduction strategies. |
+| [Household Waste Stream Audit](../mcps/household-waste-stream-audit.md) | Calculate waste composition, category distribution, and diversion rates. |
 | [Lighting Power Density (LPD) Calculator](../mcps/lighting-power-density-lpd-calculator.md) | Calculate LPD, verify ASHRAE 90.1 compliance, and estimate LED energy savings. |
 | [Micro Impact Aggregator](../mcps/micro-impact-aggregator.md) | Track daily sustainable actions and convert them into measurable environmental impact and financial savings. |
 | [Packaging Footprint Comparator](../mcps/packaging-footprint-comparator.md) | Compare the environmental impact and CO2e emissions of different packaging materials. |
 | [Personal Carbon Budget Tracker](../mcps/personal-carbon-budget-tracker.md) | Evaluate your annual carbon footprint against the 1.5°C climate target. |
 | [Pollution Prevention Opportunity Assessment](../mcps/pollution-prevention-opportunity-assessment.md) | Identify and evaluate pollution prevention opportunities using P2 methodology. |
 | [Repair & Disposal Decision Engine](../mcps/repair-disposal-decision-engine.md) | Evaluates the most responsible next steps for physical items based on condition, cost, and environmental impact. |
+| [Repair or Replace Scorecard](../mcps/repair-or-replace-scorecard.md) | Rank repair and replacement options using weighted multi-factor scoring. |
 | [Slow Fashion Material Impact](../mcps/slow-fashion-material-impact.md) | Calculate and compare the environmental footprint of garments based on material mass, fiber type, and lifecycle longevity. |
 | [Tree Planting Offset Calc](../mcps/tree-planting-offset-calc.md) | Calculate the number of trees and land area needed to offset your annual carbon footprint. |
 

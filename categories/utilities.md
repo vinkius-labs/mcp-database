@@ -77,6 +77,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Hiking Distance Total](../mcps/hiking-distance-total.md) | Calculate and manage cumulative hiking distances from individual trail segments. |
 | [Hiking Elevation Average](../mcps/hiking-elevation-average.md) | Calculate and analyze hiking trail steepness and incline intensity. |
 | [Home Garden Watering Plan](../mcps/home-garden-watering-plan.md) | Generate optimized watering calendars based on plant needs, container volume, and weather. |
+| [Household Water Use Audit](../mcps/household-water-use-audit.md) | Calculate residential water consumption, leak impacts, and monthly projections. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
 | [Hydration Multiplier Calculator](../mcps/hydration-multiplier-calculator.md) | Calculate precise electrolyte and fluid needs based on activity, sweat rate, and climate. |
 | [Image Backup Space Estimator](../mcps/image-backup-space-estimator.md) | Calculate primary and backup storage needs for digital media collections. |
@@ -91,6 +92,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Kayak Speed Calculator](../mcps/kayak-speed-calculator.md) | Calculate kayak velocity, pace, and performance tiers. |
 | [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |
+| [Laundry Resource Comparator](../mcps/laundry-resource-comparator.md) | Analyze and compare water, energy, and detergent usage across different laundry machine settings. |
 | [League Tiebreaker Resolver](../mcps/league-tiebreaker-resolver.md) | Resolves football league ties using a custom sequence of rules. |
 | [Mahjong Riichi Scoring](../mcps/mahjong-riichi-scoring.md) | Deterministic Japanese Riichi Mahjong scoring calculator. |
 | [Mahjong Scoring Engine](../mcps/mahjong-scoring-engine.md) | A deterministic Riichi Mahjong scoring calculator for Yaku, Fu, and final scores. |
