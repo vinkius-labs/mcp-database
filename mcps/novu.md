@@ -36,15 +36,43 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 
 
 ## Available Tools (39)
-- **bulk_update_subscriber_preferences**: Provide the subscriber ID and array of preferences.
-
-Bulk update subscriber preferences
 - **cancel_trigger**: Provide the specific transaction ID to be canceled.
 
 Cancel active or pending workflows (e.g., digests, delays)
 - **check_topic_subscriber**: Supply the topic key and the external subscriber ID.
 
 Check if a subscriber is subscribed to a topic
+- **delete_messages_by_transaction**: Use the transaction ID to identify messages.
+
+Delete messages by transaction ID
+- **delete_subscriber**: Specify the unique subscriber ID to delete.
+
+Delete a subscriber
+- **create_topic_subscriptions**: Provide the topic key and an array of subscriber IDs.
+
+Create subscriptions for a topic
+- **get_subscriber**: Only provide the subscriber ID.
+
+Retrieve a subscriber by ID
+- **get_subscriber_preferences**: Provide the subscriber ID.
+
+Retrieve subscriber preferences
+- **trigger_bulk_event**: Pass an array of event objects, ensuring the total count does not exceed 100.
+
+Trigger multiple events in a single request
+- **trigger_event**: Trigger a notification to one or more subscribers
+- **update_integration**: Must provide the integration ID to target the update.
+
+Update an integration
+- **update_topic**: Specify the topic key and the new name.
+
+Update a topic
+- **get_topic_subscription**: Provide the topic key and the specific subscription identifier.
+
+Retrieve a topic subscription
+- **bulk_update_subscriber_preferences**: Provide the subscriber ID and array of preferences.
+
+Bulk update subscriber preferences
 - **create_environment_variable**: Supply both a unique name and its corresponding value.
 
 Create an environment variable
@@ -60,9 +88,6 @@ Create a new subscriber
 - **create_topic**: Supply both a unique key and a descriptive name for the topic.
 
 Create a new topic
-- **create_topic_subscriptions**: Provide the topic key and an array of subscriber IDs.
-
-Create subscriptions for a topic
 - **create_workflow**: Define the workflow name, description, and array of steps.
 
 Create a new workflow
@@ -72,12 +97,6 @@ Delete an integration
 - **delete_message**: Provide the unique message ID to delete the message.
 
 Delete a message
-- **delete_messages_by_transaction**: Use the transaction ID to identify messages.
-
-Delete messages by transaction ID
-- **delete_subscriber**: Specify the unique subscriber ID to delete.
-
-Delete a subscriber
 - **delete_subscriber_credentials**: Specify both the subscriber ID and the provider ID.
 
 Delete subscriber credentials
@@ -90,18 +109,9 @@ Delete subscriptions from a topic
 - **get_environment_variable_usage**: Supply the variable key.
 
 Retrieve usage of an environment variable
-- **get_subscriber**: Only provide the subscriber ID.
-
-Retrieve a subscriber by ID
-- **get_subscriber_preferences**: Provide the subscriber ID.
-
-Retrieve subscriber preferences
 - **get_topic**: Supply the required topic key.
 
 Retrieve a topic by key
-- **get_topic_subscription**: Provide the topic key and the specific subscription identifier.
-
-Retrieve a topic subscription
 - **list_active_integrations**: Do not require any parameters.
 
 List active integrations
@@ -126,16 +136,9 @@ Set an integration as primary
 - **trigger_broadcast**: Specify the workflow name and payload. Overrides are optional.
 
 Send a notification to all existing subscribers
-- **trigger_bulk_event**: Pass an array of event objects, ensuring the total count does not exceed 100.
-
-Trigger multiple events in a single request
-- **trigger_event**: Trigger a notification to one or more subscribers
 - **update_environment_variable**: Must specify the variable key and provide the new value.
 
 Update an environment variable
-- **update_integration**: Must provide the integration ID to target the update.
-
-Update an integration
 - **update_subscriber**: Must provide the subscriber ID and at least one field to update.
 
 Update an existing subscriber
@@ -145,9 +148,6 @@ Update subscriber credentials
 - **update_subscriber_preference**: Requires the subscriber ID and preference object.
 
 Update a subscriber preference
-- **update_topic**: Specify the topic key and the new name.
-
-Update a topic
 - **upsert_subscriber_credentials**: Provide the subscriber ID, provider ID, and credentials object.
 
 Upsert subscriber credentials

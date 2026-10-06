@@ -36,21 +36,21 @@ No more manual toggling between video dashboards or digging through complex embe
 
 
 ## Available Tools (9)
-- **update_video_details**: Modify video metadata
 - **create_video_object**: Set title and description here.
 
 Initialize a new video
 - **delete_video**: video.
 
 Permanently delete a video
+- **get_video_analytics**: Retrieve performance metrics
+- **get_video_details**: Get metadata for a video
 - **list_player_themes**: List custom player themes
 - **list_video_captions**: List captions for a video
 - **list_video_chapters**: List chapters for a video
-- **get_video_analytics**: Retrieve performance metrics
-- **get_video_details**: Get metadata for a video
 - **list_videos**: Supports filtering by title or tags.
 
 List your api.video videos
+- **update_video_details**: Modify video metadata
 
 
 ## 💬 Prompt Examples

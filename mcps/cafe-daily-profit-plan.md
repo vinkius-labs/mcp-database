@@ -14,10 +14,10 @@ This MCP server provides cafe owners with a complete toolkit to monitor financia
 
 
 ## Available Tools (4)
-- **calculate_ingredient_costs**: Determines the total cost of ingredients used for items sold and the cost of wasted ingredients
 - **calculate_operational_overhead**: Calculates the daily fixed and variable expenses excluding food and ingredients
 - **get_daily_profit_report**: Provides the final net profit calculation by aggregating sales, ingredients, labor, waste, rent, and fees
 - **get_sales_summary**: Retrieves the total revenue and volume of items sold for a specific day
+- **calculate_ingredient_costs**: Determines the total cost of ingredients used for items sold and the cost of wasted ingredients
 
 
 ## 💬 Prompt Examples
