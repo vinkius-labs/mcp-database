@@ -14,10 +14,10 @@ This MCP server provides tools to calculate the three-dimensional volume of rect
 
 
 ## Available Tools (4)
+- **calculate_room_volume**: Calculate the total volume of a rectangular room
 - **compare_volumes**: Compare the volumes of two different rooms
 - **get_dimension_summary**: Get a summary of the room dimensions
 - **validate_dimensions**: Validate if the provided dimensions are physically possible
-- **calculate_room_volume**: Calculate the total volume of a rectangular room
 
 
 ## 💬 Prompt Examples
