@@ -14,10 +14,10 @@ This MCP server provides a financial reconciliation engine for community tool-sh
 
 
 ## Available Tools (4)
+- **get_member_balance**: To determine the current outstanding amount or credit for a specific member
 - **calculate_booking_cost**: To calculate the total cost of a specific tool rental, including penalties
 - **get_member_activity_summary**: To provide a high-level view of a member's financial interactions with the cooperative
 - **list_pending_payments**: To identify members who currently owe money to the cooperative
-- **get_member_balance**: To determine the current outstanding amount or credit for a specific member
 
 
 ## 💬 Prompt Examples

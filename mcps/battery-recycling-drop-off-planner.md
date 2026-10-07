@@ -14,10 +14,10 @@ This MCP server provides essential tools for managing the logistics of battery r
 
 
 ## Available Tools (4)
-- **validate_facility_compliance**: Checks if a specific shipment can be legally/safely dropped off at a facility
-- **calculate_shipment_load**: Determines the total weight and physical footprint of a collection of batteries
 - **get_battery_specs**: Retrieves the standardized physical properties of a specific battery type
 - **plan_dropoff_schedule**: Determines if a shipment can be dropped off within the user's travel itinerary
+- **validate_facility_compliance**: Checks if a specific shipment can be legally/safely dropped off at a facility
+- **calculate_shipment_load**: Determines the total weight and physical footprint of a collection of batteries
 
 
 ## 💬 Prompt Examples

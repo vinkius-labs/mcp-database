@@ -14,10 +14,10 @@ This MCP server provides tools to analyze flight connection risks. Use `evaluate
 
 
 ## Available Tools (4)
-- **evaluate_single_connection**: Assesses the risk level of a single connection between two flights
-- **get_airport_mct_lookup**: Provides the standard MCT for a specific airport and transfer scenario
 - **calculate_buffer_fatigue**: Determines how much a delay in the first flight will erode the safety margin
 - **compare_connection_options**: Compares two different connection itineraries to determine which offers better reliability
+- **evaluate_single_connection**: Assesses the risk level of a single connection between two flights
+- **get_airport_mct_lookup**: Provides the standard MCT for a specific airport and transfer scenario
 
 
 ## 💬 Prompt Examples

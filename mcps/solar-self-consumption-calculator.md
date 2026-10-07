@@ -14,10 +14,10 @@ This MCP server provides tools to model residential solar and battery systems. U
 
 
 ## Available Tools (4)
-- **calculate_daily_economics**: Determines the total financial cost or savings for a single day based on energy flows
-- **simulate_battery_cycling**: Projects the state of the battery over a series of hourly flows
 - **analyze_self_consumption_efficiency**: Evaluates how effectively the system is utilizing its solar generation
+- **calculate_daily_economics**: Determines the total financial cost or savings for a single day based on energy flows
 - **calculate_hourly_energy_flow**: Calculates the specific energy movements (consumption, storage, export, import) for a single hour
+- **simulate_battery_cycling**: Projects the state of the battery over a series of hourly flows
 
 
 ## 💬 Prompt Examples

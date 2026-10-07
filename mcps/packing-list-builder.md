@@ -14,10 +14,10 @@ This MCP server acts as a smart travel assistant that calculates exactly what yo
 
 
 ## Available Tools (4)
+- **add_activity_gear**: Adds specialized equipment required for specific scheduled events
 - **apply_inventory_deductions**: Adjusts the required quantities by subtracting items the user already possesses
 - **calculate_clothing_requirements**: Determines the number of essential clothing items needed based on trip length and logistics
 - **validate_luggage_capacity**: Checks if the final packing list fits within the user's physical luggage constraints
-- **add_activity_gear**: Adds specialized equipment required for specific scheduled events
 
 
 ## 💬 Prompt Examples

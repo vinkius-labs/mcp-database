@@ -14,10 +14,10 @@ This MCP server provides a weighted allocation model to split lodging costs fair
 
 
 ## Available Tools (4)
-- **generate_cost_split**: Produces a finalized list of what each person owes
 - **validate_stay_details**: Validates a proposed group stay configuration
-- **calculate_individual_weight**: Calculates a single person's relative cost weight
 - **get_room_rate_tiers**: Retrieves available room categories and base prices for a region
+- **calculate_individual_weight**: Calculates a single person's relative cost weight
+- **generate_cost_split**: Produces a finalized list of what each person owes
 
 
 ## 💬 Prompt Examples

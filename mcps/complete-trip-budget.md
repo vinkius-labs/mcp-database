@@ -14,8 +14,8 @@ This MCP server provides a complete suite of financial tools for travelers. Use 
 
 
 ## Available Tools (4)
-- **get_category_breakdown**: 
 - **get_daily_spending_profile**: 
+- **get_category_breakdown**: 
 - **get_group_cost_distribution**: 
 - **get_total_trip_budget**: 
 

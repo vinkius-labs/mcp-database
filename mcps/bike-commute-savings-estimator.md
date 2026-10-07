@@ -14,10 +14,10 @@ This MCP server provides tools to calculate the impact of changing your commute 
 
 
 ## Available Tools (4)
-- **calculate_emission_savings**: Calculate emissions saved by switching to a bike
 - **calculate_financial_savings**: Calculate money saved by switching to a bike
 - **compare_transit_vs_bike**: Compare bike efficiency vs transit
 - **get_annual_impact_summary**: Get yearly impact summary
+- **calculate_emission_savings**: Calculate emissions saved by switching to a bike
 
 
 ## 💬 Prompt Examples

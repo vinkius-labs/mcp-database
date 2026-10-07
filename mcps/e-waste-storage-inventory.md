@@ -14,11 +14,11 @@ This MCP server provides a complete management system for organizing electronic 
 
 
 ## Available Tools (5)
-- **add_item**: Records a new piece of electronic waste into the inventory
 - **get_storage_summary**: Analyzes current warehouse utilization and capacity constraints
 - **get_urgent_deadlines**: Identifies items that are approaching their required departure date
 - **query_inventory**: Provides a filtered and sorted view of the current electronic waste inventory
 - **update_erasure_status**: Updates the security status of a device once data sanitization is complete
+- **add_item**: Records a new piece of electronic waste into the inventory
 
 
 ## 💬 Prompt Examples

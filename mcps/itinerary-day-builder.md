@@ -14,9 +14,9 @@ This MCP server acts as a sophisticated scheduling engine for travelers. It uses
 
 
 ## Available Tools (4)
-- **calculate_travel_time**: Determines the time required to move between two points
 - **build_optimized_itinerary**: Generates the best possible schedule based on a user's desired locations and time constraints
 - **get_attraction_details**: Retrieves the specific operating constraints and characteristics of a single attraction
+- **calculate_travel_time**: Determines the time required to move between two points
 - **validate_itinerary**: Checks if a proposed sequence of attractions is physically and logically possible
 
 

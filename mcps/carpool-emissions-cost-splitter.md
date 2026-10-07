@@ -14,10 +14,10 @@ This MCP server provides precise allocation logic for carpool journeys. It calcu
 
 
 ## Available Tools (4)
-- **calculate_cost_split**: Determines the financial cost assigned to each rider
-- **calculate_detour_impact**: Quantifies the specific "penalty" or extra distance added to a trip due to a rider's pickup/drop-off requirements
 - **calculate_emissions_distribution**: Determines how much carbon emissions each rider is responsible for
 - **get_trip_summary**: Provides a high-level overview of the efficiency and environmental impact of a carpool
+- **calculate_detour_impact**: Quantifies the specific "penalty" or extra distance added to a trip due to a rider's pickup/drop-off requirements
+- **calculate_cost_split**: Determines the financial cost assigned to each rider
 
 
 ## 💬 Prompt Examples

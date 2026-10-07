@@ -14,10 +14,10 @@ This MCP server connects AI agents to a comprehensive travel insurance compariso
 
 
 ## Available Tools (4)
-- **check_policy_exclusions**: Identify which policies exclude coverage for specific activities or conditions
 - **compare_policy_financials**: Compare the direct monetary costs (premiums and deductibles) between specific policies
 - **evaluate_risk_scenario**: Determine which policy provides the best financial protection for a specific hypothetical event
 - **get_available_policies**: Retrieve a list of all insurance policies currently available in the system for comparison
+- **check_policy_exclusions**: Identify which policies exclude coverage for specific activities or conditions
 
 
 ## 💬 Prompt Examples
