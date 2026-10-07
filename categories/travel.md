@@ -4,11 +4,15 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accessible Trip Planner](../mcps/accessible-trip-planner.md) | Evaluates transport, lodging, and attractions against specific mobility and timing needs. |
 | [Airline Baggage Calculator](../mcps/airline-baggage-calculator.md) | Calculate baggage allowances and excess fees based on airline, fare class, and route. |
+| [Airport Transfer Comparator](../mcps/airport-transfer-comparator.md) | Compare taxi, rideshare, transit, and other airport transport options. |
 | [Altitude Sickness Risk Assessment](../mcps/altitude-sickness-risk-assessment.md) | Calculate AMS risk, acclimatization needs, and safety protocols for high-altitude trips. |
 | [Altitude Sleep Optimizer](../mcps/altitude-sleep-optimizer.md) | Predict sleep disruption and plan acclimatization using altitude physiology. |
 | [Baggage Allowance Comparator](../mcps/baggage-allowance-comparator.md) | Compare airline baggage dimensions, weight limits, and sports equipment fees. |
+| [Beach Trip Gear Planner](../mcps/beach-trip-gear-planner.md) | Plan beach trips by calculating gear costs, cooler capacity, shade coverage, and transport feasibility. |
 | [Board Quiver Planner](../mcps/board-quiver-planner.md) | Optimize your surfboard quiver for any trip or wave conditions. |
+| [Camping Trip Planner](../mcps/camping-trip-planner.md) | Automated logistics for camping trips, covering gear, food, fuel, and permits. |
 | [Campsite Availability](../mcps/campsite-availability.md) | Real campsite availability from Recreation.gov — which nights are open at a campground, which sites fit a multi-night stay, and how campgrounds compare side by side. |
 | [Care Travel Companion Plan](../mcps/care-travel-companion-plan.md) | Coordinates care-specific travel timelines, packing responsibilities, and emergency fallback plans. |
 | [Connection Risk Comparator](../mcps/connection-risk-comparator.md) | Assess flight connection reliability and buffer safety. |
@@ -28,6 +32,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Luggage Volume Calculator](../mcps/luggage-volume-calculator.md) | Calculate luggage volume and check airline compliance. |
 | [Moscow Hotels, Hostels & Stays](../mcps/moscow-hotels-hostels-stays.md) | Keyless Moscow accommodation: hotels by star rating, hostels, short-stay apartments, guest houses and campsites, plus the Wikipedia hotel roll and a citywide profile. |
 | [Moscow Sights, Landmarks & Views](../mcps/moscow-sights-landmarks-views.md) | Keyless Moscow sightseeing: attractions, viewpoints and fountains with a walking-distance list of the nearest sights, plus the curated Wikipedia landmark roll. |
+| [Multi-City Trip Route Planner](../mcps/multi-city-trip-route-planner.md) | Validate, calculate metrics, and compare multi-city travel routes. |
 | [Pet Air Travel Document Plan](../mcps/pet-air-travel-document-plan.md) | Synthesize airline policies and destination rules into a structured travel timeline and logistics plan. |
 | [Pet Lodging Coordination Plan](../mcps/pet-lodging-coordination-plan.md) | Coordinates pet stay compatibility and generates compliance checklists for lodging. |
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
@@ -41,6 +46,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Surf Trip Car Packing Optimizer](../mcps/surf-trip-car-packing-optimizer.md) | Calculate if your surfboards will fit in your vehicle trunk using nesting efficiency logic. |
 | [Surfability Index Calculator](../mcps/surfability-index-calculator.md) | Quantifies surf quality using environmental and social variables. |
 | [Sustainable Trip Emissions Calculator](../mcps/sustainable-trip-emissions-calculator.md) | Calculate the carbon footprint of your travels, including flights, trains, cars, and lodging. |
+| [Travel Carbon Comparator](../mcps/travel-carbon-comparator.md) | Quantify and compare the carbon footprint of different travel itineraries. |
 | [Travel Distance Total](../mcps/travel-distance-total.md) | Calculate cumulative, average, and extreme travel leg distances. |
 | [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |

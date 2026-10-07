@@ -1,6 +1,6 @@
 # Vinkius Connector Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,922 unique connectors**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius connector catalog, featuring automatically updated documentation for **10,942 unique connectors**.
 
 This dataset is meticulously sourced from the Vinkius connector catalog — a curated, enterprise-grade marketplace of production-ready connectors for AI agents. The catalog encompasses connectors that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,8 +10,8 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (1793 servers)
-- [finance](categories/finance.md) (1211 servers)
+- [productivity](categories/productivity.md) (1801 servers)
+- [finance](categories/finance.md) (1217 servers)
 - [developer-tools](categories/developer-tools.md) (695 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [engineering](categories/engineering.md) (384 servers)
@@ -53,9 +53,9 @@ Vinkius actively curates and maintains these connector listings to guarantee the
 - [optimization](categories/optimization.md) (56 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
 - [utility](categories/utility.md) (54 servers)
+- [travel](categories/travel.md) (50 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [real-estate](categories/real-estate.md) (45 servers)
-- [travel](categories/travel.md) (44 servers)
 - [document-management](categories/document-management.md) (42 servers)
 - [chemistry](categories/chemistry.md) (40 servers)
 - [collaboration](categories/collaboration.md) (40 servers)

@@ -493,6 +493,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Design Pickle](../mcps/design-pickle.md) | Equip your AI agent to manage graphic design requests, track brand profiles, and monitor your production queue via the Design Pickle API. |
 | [Design Prover](../mcps/design-prover.md) | Every AI frontend looks identical: hero, 3 cards, 3 cards, CTA, rounded-xl, shadow-lg, blue/gray/white. Design Prover forces the agent to prove its design has dramatic hierarchy, unpredictable layout, intentional whitespace, commanding typography, and color with actual personality. |
 | [DeskTime](../mcps/desktime.md) | Understand how your team spends their workday with automatic time tracking, productivity scoring, and project cost analysis. |
+| [destination-daylight-plan](../mcps/destination-daylight-plan.md) | Optimizes outdoor activity schedules based on daylight windows and travel constraints. |
 | [Detergent Load Calculator](../mcps/detergent-load-calculator.md) | Calculate laundry loads, inventory status, and consumption projections for detergent stock. |
 | [Deterministic 50/30/20 Budget Engine](../mcps/deterministic-503020-budget-engine.md) | Transform your AI into a hyper-precise financial controller. Mathematically enforce the 50/30/20 budgeting rule on pre-categorized expense pipelines to detect exact capital deviations. |
 | [Deterministic Datetime Engine](../mcps/deterministic-datetime-engine.md) | Equip your AI with exact temporal math. Deterministically calculate date differences, leap years, and add business days (skipping weekends) 100% locally. |
@@ -515,6 +516,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Digital Legacy Document Plan](../mcps/digital-legacy-document-plan.md) | Synthesize digital assets and contacts into a structured legacy record with completeness checklists and review schedules. |
 | [Digital Legacy Message Library](../mcps/digital-legacy-message-library.md) | Manage, validate, and schedule the delivery of posthumous or timed messages. |
 | [Digital Membership Transition List](../mcps/digital-membership-transition-list.md) | Generate actionable, date-driven checklists for transitioning or closing organizational memberships. |
+| [Digital Nomad Month Planner](../mcps/digital-nomad-month-planner.md) | Plan your monthly relocation with precise budget and workday capacity estimates. |
 | [Digital Project Succession Brief](../mcps/digital-project-succession-brief.md) | Generates standardized, continuation-ready project succession briefs from disparate project data. |
 | [Digital Receipt Archive Plan](../mcps/digital-receipt-archive-plan.md) | Classify and organize digital receipt records by merchant, category, and deadlines. |
 | [Digital Records Review Calendar](../mcps/digital-records-review-calendar.md) | Transform record governance policies into actionable review schedules. |
@@ -687,6 +689,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Family Screen Time Total](../mcps/family-screen-time-total.md) | Aggregate and analyze screen time usage for family members to monitor digital wellness. |
 | [Family Trip Packing Coordinator](../mcps/family-trip-packing-coordinator.md) | Synchronize personal packing lists with group logistics and weather. |
 | [Family Trip Readiness Plan](../mcps/family-trip-readiness-plan.md) | Manage travel checklists, document requirements, and logistical dependencies for family trips. |
+| [Family Trip Schedule](../mcps/family-trip-schedule.md) | Build cohesive daily itineraries that balance biological needs with travel and activities. |
 | [Family Visitor Information Pack](../mcps/family-visitor-information-pack.md) | Synthesize household data into a cohesive, guest-ready visitor document. |
 | [Family Weekend Coverage Plan](../mcps/family-weekend-coverage-plan.md) | Synchronize family obligations, adult availability, and chores into a fair, actionable weekend schedule. |
 | [Family Weekly Logistics Plan](../mcps/family-weekly-logistics-plan.md) | Coordinate household schedules, transport, and chores into a conflict-free weekly plan. |
@@ -704,6 +707,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Feedly](../mcps/feedly-alternative.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
 | [Fellow](../mcps/fellow-alternative.md) | Run better meetings with collaborative agendas, action item tracking, and AI-generated summaries that keep teams accountable. |
 | [Festival Camping Packing Planner](../mcps/festival-camping-packing-planner.md) | Generate deterministic festival packing plans with weight, volume, and group sharing optimization. |
+| [Festival Trip Budgeter](../mcps/festival-trip-budgeter.md) | Calculate and manage comprehensive costs for music and arts festival trips. |
 | [Feynman Radical Simplification Prover](../mcps/feynman-radical-simplification-prover.md) | Stop your AI from hiding behind jargon — force it to explain simply, build from scratch, and justify every piece of complexity. |
 | [Fibery](../mcps/fibery.md) | Connect your Fibery workspace to automate work management — query entities, create tasks, and manage comments directly from your AI agent. |
 | [File Retention Schedule](../mcps/file-retention-schedule.md) | Automate document lifecycle management by calculating keep, archive, review, and deletion dates. |
@@ -807,6 +811,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Gross-to-Net Calculator](../mcps/gross-to-net-calculator.md) | Calculate precise take-home pay by applying fixed and percentage-based deductions to gross income. |
 | [Group Class Cost Splitter](../mcps/group-class-cost-splitter.md) | Equitably divide instructor, venue, material, tax, and payment fees among class participants. |
 | [Group Room Cost Splitter](../mcps/group-room-cost-splitter.md) | A precision engine for splitting lodging expenses by occupancy, room type, and privacy. |
+| [Group Tour Payment Planner](../mcps/group-tour-payment-planner.md) | Schedules deposits and installment timelines for group travelers. |
 | [Group Transport Planner](../mcps/group-transport-planner.md) | Compare group travel options by cost, capacity, and accessibility. |
 | [Growth Strategist](../mcps/growth-strategist.md) | AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue. |
 | [GrowthZone](../mcps/growthzone.md) | Automate association management via GrowthZone — manage contacts, memberships, events, and organizations directly from any AI agent. |
@@ -1337,6 +1342,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Quilting Block & Fabric Calculator](../mcps/quilting-block-fabric-calculator.md) | Calculate exact cutting dimensions, fabric yardage, and quilt layout for any block pattern. |
 | [Quotable API](../mcps/quotable-api.md) | Access thousands of quotes — audit authors and tags via AI. |
 | [QWeather / 和风天气](../mcps/qweather.md) | Leading professional weather data service in China — retrieve forecasts, air quality, and life indices via AI. |
+| [Rail Pass Value Comparator](../mcps/rail-pass-value-comparator.md) | Compare the cost-effectiveness of rail passes versus individual tickets. |
 | [Raindrop.io (Bookmarks)](../mcps/raindropio-bookmarks.md) | Manage your Raindrop.io bookmarks, collections, and tags directly from any AI agent. |
 | [Random Facts API](../mcps/random-facts-api.md) | Access thousands of interesting facts — audit random data via AI. |
 | [Random User Generator](../mcps/random-user-generator.md) | Generate high-quality random user data for testing and prototyping — names, emails, and profile photos directly via AI. |
@@ -1660,6 +1666,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Travel Cost Splitter](../mcps/travel-cost-splitter.md) | Calculate individual debts and optimize reimbursement transfers for shared travel expenses. |
 | [Travel Document Counter](../mcps/travel-document-counter.md) | Track document completeness, missing items, and expiration dates for travel readiness. |
 | [Travel Document Readiness Plan](../mcps/travel-document-readiness-plan.md) | A planning engine that evaluates traveler documentation against destination requirements to generate timelines and renewal tasks. |
+| [Travel Document Timeline](../mcps/travel-document-timeline.md) | Generates a chronological schedule for travel preparations like passports and visas. |
 | [Travel Sleep Preparation Planner](../mcps/travel-sleep-preparation-planner.md) | Optimize your sleep schedule and biological readiness for time zone changes. |
 | [Treatment Room Setup Timer](../mcps/treatment-room-setup-timer.md) | Precision scheduling for spa room turnover and operational workflows. |
 | [Trip Day Counter](../mcps/trip-day-counter.md) | Calculates exact travel durations between departure and return dates. |
@@ -1732,6 +1739,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wave Accounting](../mcps/wave-accounting.md) | Manage customers, invoices, and accounting workflows on Wave — the money management tool for small businesses. |
 | [Wave Count Predictor](../mcps/wave-count-predictor.md) | Predict wave counts, wait times, and optimal lineup positioning for surfing sessions. |
 | [Wedding Payment Planner](../mcps/wedding-payment-planner.md) | Generate payment timelines, cash flow forecasts, and budget summaries for wedding planning. |
+| [Weekend Getaway Comparator](../mcps/weekend-getaway-comparator.md) | Rank and compare short-trip destinations based on travel time, cost, and personal preferences. |
 | [Weekend Hosting Plan](../mcps/weekend-hosting-plan.md) | Orchestrate guest stays with complete timelines, meal schedules, and prep checklists. |
 | [Weekend Sleep Recovery Planner](../mcps/weekend-sleep-recovery-planner.md) | Optimized weekend sleep scheduling to mitigate weekday sleep debt. |
 | [Weekly Goal Progress](../mcps/weekly-goal-progress.md) | Track and predict weekly goal completion and progress velocity. |

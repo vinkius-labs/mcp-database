@@ -248,6 +248,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Churn Rate Analysis](../mcps/churn-rate-analysis.md) | Calculate customer churn, net growth, revenue impact, and churn composition. |
 | [Churn Rate Calculator](../mcps/churn-rate-calculator.md) | Calculate Customer Churn Rate, Revenue Churn Rate, and Net Revenue Retention (NRR) to instantly assess account health against industry benchmarks. |
 | [City Pass Value Calculator](../mcps/city-pass-value-calculator.md) | Calculate savings and find the best value City Pass for your planned attractions. |
+| [City Pass Value Comparator](../mcps/city-pass-value-comparator.md) | Compare city tourist passes against individual attraction and transport costs. |
 | [Claim Payment Allocation Record](../mcps/claim-payment-allocation-record.md) | Assign payments to claim items and generate reconciliation reports. |
 | [Claim Settlement Review Sheet](../mcps/claim-settlement-review-sheet.md) | Reconcile insurance settlement statements against inventories and policy limits. |
 | [Client Retainer Comparator](../mcps/client-retainer-comparator.md) | Analyze retainer profitability, scope drift, and payment reliability. |
@@ -562,6 +563,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Home Insulation Payback Calculator](../mcps/home-insulation-payback-calculator.md) | Calculate annual energy savings and payback periods for home insulation upgrades. |
 | [Home Purchase Cash to Close](../mcps/home-purchase-cash-to-close.md) | Calculates the total liquid capital required to finalize a real estate transaction. |
 | [Homeowners Insurance Coverage Comparator](../mcps/homeowners-insurance-coverage-comparator.md) | Compare homeowners insurance policies by analyzing coverage limits, premiums, and loss scenarios. |
+| [Honeymoon Budget Planner](../mcps/honeymoon-budget-planner.md) | Intelligently distributes honeymoon funds across travel, lodging, meals, and more. |
 | [Hostel Bed Cost Calculator](../mcps/hostel-bed-cost-calculator.md) | Calculate total hostel stay costs, compare booking options, and estimate bulk discounts. |
 | [Hotel Option Comparator](../mcps/hotel-option-comparator.md) | Ranks hotel options by cost, location, capacity, and amenities. |
 | [Hotel Room Cost Splitter](../mcps/hotel-room-cost-splitter.md) | Equitable cost distribution for shared accommodations. |
@@ -608,6 +610,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Insurance Deductible Comparator](../mcps/insurance-deductible-comparator.md) | Compare insurance policy costs by evaluating premiums, deductibles, and risk scenarios. |
 | [Insurance Renewal Negotiator](../mcps/insurance-renewal-negotiator.md) | Analyze insurance renewal quotes against competing offers to generate prioritized negotiation questions. |
 | [Intermarket Spread Strategy](../mcps/intermarket-spread-strategy.md) | Deterministic mean-reversion engine for trading commodity ratio spreads. |
+| [International Data Plan Comparator](../mcps/international-data-plan-comparator.md) | Compare roaming, eSIM, and local SIM options to find the best connectivity for your trip. |
 | [Inventory Turnover Calculator](../mcps/inventory-turnover-calculator.md) | Calculate inventory turnover ratio, DSI, and compare performance against industry benchmarks. |
 | [Inventory Value Total](../mcps/inventory-value-total.md) | Calculate and analyze the total monetary value of warehouse or retail stock. |
 | [Investment Allocation by Age](../mcps/investment-allocation-by-age.md) | Deterministic portfolio allocation for Singaporean young adults. |
@@ -941,6 +944,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Singapore Property Lifetime Cost Calculator](../mcps/singapore-property-lifetime-cost-calculator.md) | Compare the total lifetime costs of HDB flats versus private Condominiums in Singapore. |
 | [Sinking Fund Planner](../mcps/sinking-fund-planner.md) | Calculate periodic deposits needed to reach savings targets for future expenses. |
 | [Ski Lift Cost Calculator](../mcps/ski-lift-cost-calculator.md) | Calculate total ski trip costs, compare pass options, and estimate budgets. |
+| [Ski Trip Cost Planner](../mcps/ski-trip-cost-planner.md) | Plan and split costs for your next ski trip. |
 | [Skincare Cost Analyzer](../mcps/skincare-cost-analyzer.md) | Calculate the monthly financial impact of your skincare routine. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Smart Money Wallet Tracking Strategy](../mcps/smart-money-wallet-tracking-strategy.md) | Identify and replicate high-performance smart money wallet movements with statistical confidence. |
@@ -1032,8 +1036,10 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Travel Claim Reconciliation Engine](../mcps/travel-claim-reconciliation-engine.md) | Reconcile travel expenses with disruptions and insurance policies. |
 | [Travel Companion Split](../mcps/travel-companion-split.md) | Splits shared travel expenses equally among a group of companions. |
 | [Travel Insurance Comparator](../mcps/travel-insurance-comparator.md) | Compare travel insurance policies by cost, coverage, and risk scenarios. |
+| [Travel Luggage Fee Comparator](../mcps/travel-luggage-fee-comparator.md) | Compare airline baggage fees against shipping costs to find the cheapest travel strategy. |
 | [Travel Points Redemption Calculator](../mcps/travel-points-redemption-calculator.md) | Analyze the financial efficiency of loyalty point redemptions. |
 | [Travel Savings Planner](../mcps/travel-savings-planner.md) | Calculate precise deposit schedules to fund your future trips. |
+| [Travel Tipping Budget Calculator](../mcps/travel-tipping-budget-calculator.md) | Estimate total tipping reserves for trips based on regional customs and service types. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |
 | [Trend Filter Strategy](../mcps/trend-filter-strategy.md) | Deterministic trading strategy using ADX for trend detection and Moving Averages for execution. |
 | [Trend-Following Ensemble Strategy](../mcps/trend-following-ensemble-strategy.md) | Generates high-conviction trade signals using an ensemble of MA, MACD, and ADX indicators. |
