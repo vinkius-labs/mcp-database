@@ -438,6 +438,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Event Ticket Cost Comparator](../mcps/event-ticket-cost-comparator.md) | Calculate and compare the true total cost of event tickets, including fees, transport, and companion expenses. |
 | [Event Vendor Profit Planner](../mcps/event-vendor-profit-planner.md) | Project net profits by calculating sales, inventory, labor, and commissions. |
 | [Exact Decimal Currency Calculator](../mcps/exact-decimal-currency-calculator.md) | Perform error-free financial arithmetic using integer-based cent calculations. |
+| [Exchange Cash Plan](../mcps/exchange-cash-plan.md) | Calculate optimal cash withdrawals and trip budgets based on daily needs and ATM fees. |
 | [Exchange Fee Calculator](../mcps/exchange-fee-calculator.md) | Calculate transaction fees using standard, tiered, or comparative strategies. |
 | [Expansion Revenue Analysis](../mcps/expansion-revenue-analysis.md) | Decompose revenue growth into expansion drivers and retention health metrics. |
 | [Expected Value vs Implied Probability](../mcps/expected-value-vs-implied-probability.md) | A deterministic decision-support tool for evaluating market edges and optimal position sizing. |
@@ -806,6 +807,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Portfolio Volatility Calculator](../mcps/portfolio-volatility-calculator.md) | Calculate asset volatility, pairwise covariance, and portfolio risk metrics. |
 | [Portfolio Weight Engine](../mcps/portfolio-weight-engine.md) | Calculate asset weights, concentration risk, and rebalancing needs. |
 | [Position Trading Strategy](../mcps/position-trading-strategy.md) | A deterministic trading system combining technical momentum, fundamental value, and sector strength. |
+| [Post-Trip Expense Reconciliation](../mcps/post-trip-expense-reconciliation.md) | Reconcile planned vs. actual trip spending by category, traveler, and currency. |
 | [Pre-Event Volatility Crush](../mcps/pre-event-volatility-crush.md) | Deterministic liquidity provision for capturing spreads during binary event volatility. |
 | [Pre-Seed Investment Terms Calculator](../mcps/pre-seed-investment-terms-calculator.md) | Model early-stage investment structures like SAFE and Convertible Notes. |
 | [Precision Ag ROI Calculator](../mcps/precision-ag-roi-calculator.md) | Quantify the economic impact of precision agriculture technology adoption. |

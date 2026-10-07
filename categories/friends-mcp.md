@@ -19,8 +19,6 @@ Explore the open database of **friends-mcp** Model Context Protocol (MCP) server
 | [Firecrawl](../mcps/firecrawl-alternative.md) | Crawl and scrape entire websites into clean LLM-ready markdown with a single API call that handles JavaScript rendering. |
 | [Firecrawl](../mcps/firecrawl-extended.md) | Crawl and scrape entire websites into clean LLM-ready markdown with a single API call that handles JavaScript rendering. |
 | [FlowiseAI](../mcps/flowiseai.md) | Build LLM orchestration flows visually with a drag-and-drop interface for creating AI chatbots, agents, and RAG pipelines. |
-| [Glama](../mcps/glama.md) | Connect your AI agent to the Glama directory. Discover MCP servers dynamically, analyze attributes, and proxy external intelligence networks through a unified gateway natively. |
-| [Haystack (deepset Cloud)](../mcps/haystack-deepset-cloud.md) | Build and manage AI-powered search and RAG pipelines via deepset Cloud — search documents, run pipelines, and manage workspaces. |
 | [Kong (AI API Gateway)](../mcps/kong-ai-api-gateway.md) | Manage your API Gateway via Kong — orchestrate services, routes, and AI plugins directly from your agent. |
 | [Kong Gateway](../mcps/kong-gateway.md) | Manage your API Gateway infrastructure — list services, configure routes, and manage consumers or plugins directly from any AI agent. |
 | [Langfuse (LLM Tracing & Evals)](../mcps/langfuse-llm-tracing-evals.md) | Monitor LLM apps via Langfuse — track traces, manage prompt templates, and audit evaluation scores. |

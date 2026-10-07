@@ -38,11 +38,8 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Harmonic](../mcps/harmonic.md) | Automate company and startup intelligence via Harmonic — enrich domains, track funding, and discover investors directly from any AI agent. |
 | [HeyReach](../mcps/heyreach.md) | Automate LinkedIn outreach via HeyReach — manage campaigns, leads, and connected accounts directly from any AI agent. |
 | [HigherGov](../mcps/highergov.md) | Find and track government contracts, grants, and procurement opportunities with intelligence built for public sector vendors. |
-| [Hunter](../mcps/hunter.md) | Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach. |
 | [Hunter](../mcps/hunter-alternative.md) | Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach. |
 | [Icypeas](../mcps/icypeas.md) | Lead generation and email verification via Icypeas API. |
-| [Insightly](../mcps/insightly.md) | Manage CRM contacts, opportunities, and projects via Insightly API. |
-| [Instantly](../mcps/instantly.md) | Equip your AI agent with direct access to Instantly — manage cold email campaigns, track deliverability, and scale outreach across unlimited sending accounts. |
 | [Kylas](../mcps/kylas.md) | Scale your Indian SMB sales team with a CRM that combines lead management, pipeline tracking, and WhatsApp integration natively. |
 | [Lusha](../mcps/lusha.md) | Enrich your prospect data with verified direct dials and email addresses from a B2B contact intelligence platform. |
 | [Mailshake](../mcps/mailshake-alternative.md) | Run cold email outreach campaigns with personalization, automated follow-ups, and reply detection that fills your sales pipeline. |

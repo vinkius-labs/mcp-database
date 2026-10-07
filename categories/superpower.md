@@ -13,7 +13,6 @@ Explore the open database of **superpower** Model Context Protocol (MCP) servers
 | [DJI Developer](../mcps/dji-developer.md) | Orchestrate DJI drones and payloads — manage flight logs, monitor device health, and handle firmware updates directly from any AI agent. |
 | [E2B](../mcps/e2b.md) | Secure cloud sandboxes for AI code execution — run Python, JavaScript, and shell commands in isolated Firecracker microVMs with ~150ms cold start. |
 | [Home Assistant](../mcps/home-assistant.md) | Control smart home devices and automations via Home Assistant REST API — lights, climate, media, covers, sensors, and more. |
-| [Hyperbrowser (Web Infra for AI)](../mcps/hyperbrowser-web-infra-for-ai.md) | Cloud browsers for AI agents via Hyperbrowser — manage sessions, scrape pages, and extract structured data. |
 | [Lambda Labs (GPU Cloud)](../mcps/lambda-labs-gpu-cloud.md) | Manage AI infrastructure via Lambda Labs — launch GPU instances, monitor ML workloads, and manage SSH keys. |
 | [LangGraph Cloud (Stateful AI Agents)](../mcps/langgraph-cloud-stateful-ai-agents.md) | Orchestrate stateful AI agents via LangGraph Cloud — manage assistants, monitor conversation threads, and handle human-in-the-loop overrides. |
 | [LangSmith (LLM Observability & Hub)](../mcps/langsmith-llm-observability-hub.md) | Monitor LLM apps via LangSmith — track traces, audit prompt templates, and manage evaluation datasets. |
@@ -21,7 +20,6 @@ Explore the open database of **superpower** Model Context Protocol (MCP) servers
 | [Midjourney AI (Generative Image Arts)](../mcps/midjourney-ai-generative-image-arts.md) | Generate professional AI art via Midjourney — use 'imagine' for text-to-image, upscale grids, and perform camera edits. |
 | [Modal (Serverless AI Infrastructure)](../mcps/modal-serverless-ai-infrastructure.md) | Manage serverless compute via Modal — audit active apps, track GPU deployments, and monitor network volumes. |
 | [OpenAI](../mcps/openai.md) | Use GPT-4o, DALL-E 3, embeddings, fine-tuning, and moderation as tools inside your AI agent workflows. |
-| [Paperspace](../mcps/paperspace.md) | Provision and track powerful GPU workloads via Paperspace — list compute instances, fetch active deployments, trace team projects, and query Gradient environments via AI. |
 | [Replicate](../mcps/replicate.md) | Equip your AI to dynamically search, run, and monitor thousands of open-source machine learning models hosted on Replicate via simple text commands. |
 | [Retool](../mcps/retool.md) | Connect your AI assistant to Retool to inspect applications, audit users, review connected resources, and monitor workflows directly from chat. |
 | [RunPod](../mcps/runpod.md) | Integrate your AI securely to RunPod to cleanly quickly provision scalable GPU pods, manage active instances, and inspect serverless endpoints and custom templates natively. |

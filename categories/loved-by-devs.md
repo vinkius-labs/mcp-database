@@ -74,11 +74,8 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Linear](../mcps/linear.md) | Ship software faster with issue tracking built for modern teams that combines speed, keyboard shortcuts, and beautiful design. |
 | [Linear](../mcps/linear-alternative.md) | Ship software faster with issue tracking built for modern teams that combines speed, keyboard shortcuts, and beautiful design. |
 | [Linear (Issue Tracking & PM)](../mcps/linear-issue-tracking-pm.md) | Manage product development via Linear — track issues, monitor sprint cycles, and audit team projects. |
-| [Logseq (Knowledge Management)](../mcps/logseq-knowledge-management.md) | Manage your knowledge base via Logseq — create pages, insert outliner blocks, and search across your local graph. |
-| [Medusa (Headless E-commerce Engine)](../mcps/medusa-headless-e-commerce-engine.md) | Manage headless commerce via MedusaJS — search products, track orders, and audit customer data. |
 | [Meilisearch](../mcps/meilisearch.md) | Manage your Meilisearch instance — handle indexes, documents, and search configurations directly from your AI agent. |
 | [Milvus (Open-Source Vector Database)](../mcps/milvus-open-source-vector-database.md) | Manage vector storage via Milvus — perform ANN searches, query scalar entities, and audit collections. |
-| [MindsDB (AI Database & Predictors)](../mcps/mindsdb-ai-database-predictors.md) | Manage AI-powered data via MindsDB — execute SQL predictions, audit ML models, and connect data sources. |
 | [Miro](../mcps/miro.md) | Manage Miro boards, items and comments via API — create boards, add sticky notes, browse items and manage members from any AI agent. |
 | [Miro (Visual Collaboration & Whiteboarding)](../mcps/miro-visual-collaboration-whiteboarding.md) | Manage collaborative boards via Miro — create sticky notes, list visual items, and audit team members. |
 | [Mustache Template Engine](../mcps/mustache-template-engine.md) | Render logic-less Mustache templates with JSON data — the universal spec implemented in 40+ languages. Same template works in JS, Python, Go, Ruby, Rust, and Java. |
@@ -96,7 +93,6 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Notion V3](../mcps/notion-alternative.md) | Notion V3 — Page styling (icon/cover), bulk database listing & page creation with children blocks. |
 | [Open WebUI](../mcps/open-webui.md) | Manage your Open WebUI instance — list models, handle chat completions, and manage RAG collections directly from any AI agent. |
 | [OpenSearch Vector](../mcps/opensearch-vector.md) | Run k-NN vector searches on OpenSearch — create indexes, upsert embeddings, query similar documents, and manage your vector store from any AI agent. |
-| [Orkes Conductor](../mcps/orkes-conductor.md) | Orchestrate microservice workflows via Orkes Conductor — list definitions, track running executions, search workflow history, and inspect task states from any AI agent. |
 | [Paperless-ngx](../mcps/paperless-ngx.md) | Manage your digital archive via Paperless-ngx — search documents, upload files, manage tags, and organize correspondents directly from any AI agent. |
 | [Password Strength Evaluator](../mcps/password-strength-evaluator.md) | Equip SecOps agents with Dropbox's zxcvbn engine. Algorithmically evaluate password entropy and crack times local. |
 | [Password Strength Scorer](../mcps/password-strength-scorer.md) | Evaluate any password using the Dropbox zxcvbn engine — the same algorithm protecting 700M+ users. Returns a 0-4 score, real crack time estimates, and actionable improvement suggestions. No AI can do this. |

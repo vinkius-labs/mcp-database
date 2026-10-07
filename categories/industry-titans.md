@@ -169,7 +169,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Google BigQuery](../mcps/google-bigquery.md) | Empower your AI agent to query massive datasets via BigQuery — execute Standard SQL, track active jobs, and inspect table schemas natively. |
 | [Google Books](../mcps/google-books.md) | Search and explore millions of books on Google Books — find titles, authors, reviews, previews and full text from any AI agent. |
 | [Google Books](../mcps/google-books-alternative.md) | Search the world's most comprehensive index of full-text books, manage personal bookshelves, and retrieve detailed literary metadata. |
-| [Google Business Profile](../mcps/google-business-profile.md) | Manage your local business presence — track reviews, posts, and customer Q&A via AI. |
 | [Google Calendar](../mcps/google-calendar.md) | Sync and orchestrate your agenda securely — scan, schedule, and manipulate Google Calendar events natively in chat. |
 | [Google Chat Webhook Notifier](../mcps/google-chat-webhook-notifier.md) | This MCP does exactly one thing: it sends messages to your Google Chat spaces. That's its only function, and nothing else. Incredible for giving your AI agents a voice. |
 | [Google Civic Information](../mcps/google-civic-information.md) | Manage political data — audit representatives and elections via AI. |
@@ -184,18 +183,15 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Google Drive: Folders & Shared Drives](../mcps/google-drive-folders-shared-drives.md) | Manage your Drive hierarchy — organize folders, manage Shared Drives, and create shortcuts via AI. |
 | [Google Firestore Collection](../mcps/google-firestore-collection.md) | This MCP does exactly one thing: it manages documents in a single Google Firestore Collection. That's its only function, and nothing else. Incredible for giving your AI a secure NoSQL database. |
 | [Google Fonts API](../mcps/google-fonts-api.md) | Manage web fonts — audit families, variants, and categories via AI. |
-| [Google Forms](../mcps/google-forms.md) | Analyze datasets actively — list active Google Forms, query exact responses, and fetch metadata programmatically. |
 | [Google Lighthouse SEO Auditor](../mcps/google-lighthouse-seo-auditor.md) | Transform your AI into a Technical SEO & Performance Agency. Instantly run official Google PageSpeed Insights (Lighthouse) audits on any website and get exact code fixes to achieve a perfect 100/100 score. |
 | [Google Maps](../mcps/google-maps.md) | Empower location intelligence via Google Maps — perform geocoding, search millions of places, retrieve rich venue details, and calculate directions directly from any AI agent. |
 | [Google Maps Platform](../mcps/google-maps-platform.md) | Get directions, place details, geocoding, and timezone data via official Google Maps APIs. |
 | [Google Play Developer](../mcps/google-play-developer.md) | Manage your Android apps - respond to reviews and check subscriptions via AI. |
 | [Google Pub/Sub Subscription](../mcps/google-pubsub-subscription.md) | This MCP does exactly one thing: it pulls and acknowledges messages from a single Google Pub/Sub Subscription. That's its only function, and nothing else. Incredible for building secure AI workers. |
 | [Google Pub/Sub Topic](../mcps/google-pubsub-topic.md) | This MCP does exactly one thing: it publishes messages to a single Google Pub/Sub Topic. That's its only function, and nothing else. Incredible for giving your AI the power to trigger cloud events. |
-| [Google Roads](../mcps/google-roads.md) | Access Google Roads API — snap GPS tracks to roads, find nearest road segments, and get speed limit data for any road segment worldwide from any AI agent. |
 | [Google Search Console](../mcps/google-search-console.md) | Monitor your website's search performance, fix indexing issues, and manage sitemaps via AI. |
 | [Google Sheets](../mcps/google-sheets.md) | Interact with Google Sheets to read, write, and manipulate data via AI. |
 | [Google Sheets (OAuth)](../mcps/google-sheets-oauth.md) | Power up spreadsheets via Google Sheets — create, read, write, and append data, handle batch operations, and audit sheet info directly from any AI agent. |
-| [GrabFood Partner](../mcps/grabfood-partner.md) | Automate GrabFood restaurant operations — manage orders, update menus, control store status, and run marketing campaigns directly from any AI agent. |
 | [HERE (Location & Maps)](../mcps/here-location-maps.md) | Build with location data via HERE — geocode addresses, calculate routes, track traffic, and get weather. |
 | [HERE Mobility](../mcps/here-mobility.md) | AI transit planning: discover routes, schedules, and stations for public transport via agents. |
 | [Heroku (PaaS)](../mcps/heroku-paas.md) | Manage Heroku apps via AI — list apps, restart dynos, toggle maintenance mode, and audit config vars. |
@@ -207,7 +203,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [HubSpot](../mcps/hubspot.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
 | [HubSpot](../mcps/hubspot-alternative.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
 | [HubSpot Analytics](../mcps/hubspot-analytics.md) | View web analytics, track events, list reports, and get email campaign statistics through natural conversation. |
-| [HubSpot CMS Hub](../mcps/hubspot-cms-hub.md) | Manage blog posts, site pages, landing pages, authors, tags, and domains through natural conversation. |
 | [HubSpot CRM](../mcps/hubspot-crm.md) | Search, create, and manage HubSpot contacts, companies, notes, tasks, and associations through natural conversation. |
 | [HubSpot CRM (Full)](../mcps/hubspot-crm-full.md) | Manage contacts, companies, deals, tickets, notes, owners, and pipelines — full access to your HubSpot CRM through natural conversation. |
 | [HubSpot Lead Creator](../mcps/hubspot-lead-creator.md) | This MCP does exactly one thing: it extracts customer data from conversations and creates a new Contact in your HubSpot CRM. That's its only function. Incredible for turning your AI into an automated sales assistant. |
@@ -257,13 +252,9 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Meituan Waimai Open API / 美团外卖](../mcps/meituan-waimai-open-api.md) | China's leading food delivery platform — manage store operations, orders, and delivery tracking via AI. |
 | [Memberful](../mcps/memberful.md) | Monetize your content with membership subscriptions that integrate seamlessly into your existing website and WordPress setup. |
 | [Mercado Libre](../mcps/mercado-libre.md) | Manage your Mercado Libre business via AI — list products, track orders, handle shipments, and answer buyer questions directly. |
-| [Mercado Livre Catalog](../mcps/mercado-livre-catalog.md) | Create, update, and manage product listings, stock, and prices on Mercado Livre. |
-| [Mercado Livre Interactions](../mcps/mercado-livre-interactions.md) | Answer buyer questions, check reputation, and view metrics on Mercado Livre. |
-| [Mercado Livre Orders](../mcps/mercado-livre-orders.md) | Search sales, manage shipments, track packages, and handle cancellations on Mercado Livre. |
 | [Messenger](../mcps/messenger.md) | Control and manage your Facebook Page conversations — audit messages and personas via AI. |
 | [Meta Ads](../mcps/meta-ads.md) | Equip your AI agent with direct access to Meta Ads — manage Facebook and Instagram campaigns, track ad performance, and optimize spend without opening Meta Ads Manager. |
 | [Microsoft Ads](../mcps/microsoft-ads.md) | Connect Microsoft Ads to any AI agent via MCP. |
-| [Microsoft App Store](../mcps/microsoft-app-store.md) | Manage your Microsoft Store apps — track submissions, add-ons, and package flights via the Submission API. |
 | [Microsoft Clarity](../mcps/microsoft-clarity.md) | See exactly how users interact with your website through heatmaps, session recordings, and behavioral analytics that reveal UX insights. |
 | [Microsoft Dynamics 365](../mcps/microsoft-dynamics-365.md) | Manage accounts, opportunities, orders, and business processes on Microsoft Dynamics 365 — the unified CRM & ERP platform. |
 | [Microsoft Teams Events](../mcps/microsoft-teams-events.md) | Organize webinars and virtual events through Microsoft Teams with registration, attendee tracking, and engagement features. |
@@ -274,7 +265,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [MongoDB Atlas Vector Search](../mcps/mongodb-atlas-vector-search.md) | Manage vector storage via MongoDB Atlas — perform similarity searches, query MQL documents, and audit collections. |
 | [Moody's](../mcps/moodys.md) | Credit ratings and risk analysis — access issuer ratings, issue details, and rating actions via Moody's. |
 | [NationBuilder](../mcps/nationbuilder.md) | Organize communities, run campaigns, and mobilize supporters with a platform built for political and nonprofit leadership. |
-| [NCR Voyix](../mcps/ncr-voyix.md) | Manage commerce and retail operations via NCR Voyix — track orders, sites, products, and inventory directly from your AI agent. |
 | [NeetoCal](../mcps/neetocal.md) | Let clients book appointments through your personalized scheduling page with calendar sync and automatic reminders. |
 | [NetEase Cloud Gaming](../mcps/netease-cloud-gaming.md) | Manage NetEase Cloud Gaming sessions — orchestrate server instances, monitor user quotas, and scaling capacity directly from any AI agent. |
 | [Netease Yunxin / 网易云信](../mcps/netease-yunxin.md) | Massive scale RTC and IM platform — manage user accounts, chat groups, and messaging via AI. |
@@ -331,7 +321,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [PassKit](../mcps/passkit.md) | Create digital passes for Apple Wallet and Google Pay with loyalty cards, coupons, and event tickets that update in real time. |
 | [Payfunnels](../mcps/payfunnels.md) | Build payment funnels and checkout experiences that maximize conversions with upsells, order bumps, and subscription options. |
 | [Payhip](../mcps/payhip.md) | Sell ebooks, courses, memberships, and digital downloads directly to your audience with zero upfront costs and simple setup. |
-| [Paylocity](../mcps/paylocity.md) | Manage payroll and HR via Paylocity — list employees, track earnings, and audit benefits setup directly from any AI agent. |
 | [Payrexx](../mcps/payrexx.md) | Accept payments online with a Swiss payment gateway that supports local and international methods with PCI compliance built in. |
 | [PDF.co](../mcps/pdfco.md) | Parse, generate, merge, and convert PDF documents programmatically with an API that handles complex document processing tasks. |
 | [PDFMonkey](../mcps/pdfmonkey.md) | Generate dynamic PDF documents from JSON data and HTML templates with an API built for high-volume document automation. |

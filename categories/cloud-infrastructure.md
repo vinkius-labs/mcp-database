@@ -39,10 +39,8 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | [KeyCDN (Content Delivery Network)](../mcps/keycdn-content-delivery-network.md) | Manage edge caching via KeyCDN — purge zones and URLs, manage pull zones, and monitor traffic bandwidth. |
 | [Kinesis Shard Calculator](../mcps/kinesis-shard-calculator.md) | Calculate optimal AWS Kinesis Data Streams shard counts and storage needs. |
 | [Kisi](../mcps/kisi-alternative.md) | Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards. |
-| [Kolide](../mcps/kolide.md) | Audit fleet security — list devices, track issues, and monitor people. |
 | [Limelight Networks (Edgio CDN & Streaming API)](../mcps/limelight-networks-edgio-cdn-streaming-api.md) | Manage Edgio (formerly Limelight/Uplynk) streaming services — control VOD assets, linear channels, and live events directly through AI. |
 | [Livepeer (Decentralized Video)](../mcps/livepeer-decentralized-video.md) | Manage decentralized video infrastructure via Livepeer — upload assets, manage live streams, create clips, and monitor viewership metrics directly from any AI agent. |
-| [MainWP](../mcps/mainwp.md) | Manage multiple WordPress sites, updates, and security via the MainWP REST API. |
 | [Mapbox](../mcps/mapbox.md) | Geocode addresses, get directions, calculate distances and generate maps with Mapbox's location platform. |
 | [myDevices](../mcps/mydevices.md) | IoT device management — monitor telemetry and control assets via myDevices Cayenne. |
 | [NetBird](../mcps/netbird.md) | Automate Zero Trust networking via NetBird — manage accounts, users, and access controls directly from any AI agent. |

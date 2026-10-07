@@ -85,10 +85,8 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Flexport Logistics](../mcps/flexport-logistics.md) | Manage e-commerce fulfillment, inventory, and returns via AI agents with Flexport Logistics. |
 | [Focus Varejo](../mcps/focus-varejo.md) | Emit NFC-e, NFCom, manifest documents and manage retail invoices via Focus NFe API. |
 | [Fomo](../mcps/fomo.md) | Manage social proof notifications, push real-time events, and oversee templates via AI agents with Fomo. |
-| [Foodpanda](../mcps/foodpanda.md) | Automate food delivery operations via Foodpanda — manage vendor catalogs, track orders, and control restaurant status directly from any AI agent. |
 | [Fortnite Cosmetics & Item Shop](../mcps/fortnite-cosmetics-item-shop.md) | The definitive server for Fortnite cosmetics — track daily shop rotations, leaked skins, and rarity via AI. |
 | [Free Shipping Threshold Filler](../mcps/free-shipping-threshold-filler.md) | Calculate the exact items to add to your cart to hit free shipping with zero waste. |
-| [Gelato](../mcps/gelato.md) | Manage print-on-demand orders, track fulfillment, and get shipping quotes via AI agents with Gelato. |
 | [GetYourGuide](../mcps/getyourguide.md) | Search and book tours, activities, and travel experiences via AI agents with GetYourGuide. |
 | [Gift Up!](../mcps/gift-up.md) | Manage gift card orders, track balances, and process redemptions via AI agents with Gift Up!. |
 | [GiveWP](../mcps/givewp.md) | Manage donation forms, track donors, and oversee fundraising stats via AI agents with GiveWP. |
@@ -110,7 +108,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Hotmart](../mcps/hotmart-alternative.md) | Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond. |
 | [Humanitix](../mcps/humanitix.md) | Manage events, tickets, and attendees via Humanitix API. |
 | [Imagine.io](../mcps/imagineio.md) | Create 3D product visualizations and room renders from photos using AI that turns concepts into photorealistic images. |
-| [Impala](../mcps/impala.md) | Search hotels, check availability, compare rates, and browse reviews through a unified global hotel data platform via natural conversation. |
 | [Indiegogo Crowdfunding API](../mcps/indiegogo-crowdfunding-api.md) | Access crowdfunding data — audit campaigns, funding, and categories via AI. |
 | [IsThereAnyDeal](../mcps/isthereanydeal.md) | Track game prices, find the best deals, and check historical lows across multiple digital stores using the IsThereAnyDeal API. |
 | [Judge.me](../mcps/judgeme.md) | Manage product reviews, questions, and ratings via Judge.me API. |
@@ -120,7 +117,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Kajabi](../mcps/kajabi.md) | All-in-one business platform for creators — manage courses, customers, and marketing via AI. |
 | [KDniao](../mcps/kdniao.md) | Major logistics tracking platform in China — manage express deliveries, waybills, and status updates via AI. |
 | [Kelkoo](../mcps/kelkoo.md) | Search product offers, compare prices, and explore retail catalogs via Kelkoo. |
-| [Kentico (CMS & DXP)](../mcps/kentico-cms-dxp.md) | Manage content and system objects via Kentico Xperience — retrieve documents, manage users, and audit custom tables. |
 | [Kibo Commerce](../mcps/kibo-commerce.md) | Manage e-commerce catalogs, orders, and real-time inventory via Kibo Commerce. |
 | [Kiwify](../mcps/kiwify.md) | Sell digital products and online courses in the Brazilian market with a platform that handles payments, delivery, and affiliates. |
 | [Klevu (E-commerce AI Search)](../mcps/klevu-e-commerce-ai-search.md) | Power your e-commerce discovery via Klevu AI — execute keyword searches, manage category merchandising, and retrieve product recommendations. |
@@ -135,7 +131,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [LearnWorlds](../mcps/learnworlds.md) | Build and sell online courses with a white-label LMS that includes interactive video, community forums, and built-in marketing tools. |
 | [Lemon Squeezy](../mcps/lemon-squeezy.md) | Sell software, subscriptions, and digital products globally with built-in tax compliance, billing, and licensing as your merchant of record. |
 | [Lemon Squeezy (Merchant of Record & Payments)](../mcps/lemon-squeezy-merchant-of-record-payments.md) | Manage your Lemon Squeezy store, products, and customers directly through AI — handle payments and subscriptions via natural conversation. |
-| [Linnworks (E-commerce Ops)](../mcps/linnworks-e-commerce-ops.md) | Manage e-commerce operations via Linnworks — audit open orders, track inventory SKUs, and monitor multi-location stock levels. |
 | [Lodgify](../mcps/lodgify.md) | Manage vacation rental properties, bookings, availability, rates, quotes, and channel connections for your Lodgify account through natural conversation. |
 | [Loop](../mcps/loop.md) | Collect customer feedback through micro-surveys that measure NPS, CSAT, and product sentiment without disrupting the user experience. |
 | [Loop Alternative](../mcps/loop-alternative.md) | Collect customer feedback through micro-surveys that measure NPS, CSAT, and product sentiment without disrupting the user experience. |
@@ -143,12 +138,9 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Loyverse](../mcps/loyverse.md) | Free POS and inventory management system. |
 | [MailboxPower](../mcps/mailboxpower.md) | Delight contacts with personalized physical gifts, greeting cards, and direct mail sent automatically from your CRM. |
 | [Marketplace Liquidity Engine](../mcps/marketplace-liquidity-engine.md) | Analyze marketplace health with real-time liquidity metrics. |
-| [Marketplacer (Enterprise Marketplace Platform)](../mcps/marketplacer-enterprise-marketplace-platform.md) | Manage your enterprise marketplace via Marketplacer — list products, track orders, and audit seller networks. |
 | [Maropost](../mcps/maropost.md) | Automate marketing and commerce via Maropost — manage contacts, campaigns, and workflows. |
-| [Memberstack](../mcps/memberstack.md) | Member authentication and user management via Memberstack — manage members, plans, and custom fields. |
 | [MENU TIGER](../mcps/menu-tiger.md) | Create digital restaurant menus with QR code ordering, table management, and payment integration that modernize the dining experience. |
 | [MerchantSpring](../mcps/merchantspring.md) | Cross-marketplace reporting via MerchantSpring — track sales, orders, and products from multiple stores. |
-| [Mirakl (Enterprise Marketplace Platform)](../mcps/mirakl-enterprise-marketplace-platform.md) | Manage your enterprise marketplace via Mirakl — list global offers, track multi-vendor orders, and audit seller shops. |
 | [Moova](../mcps/moova.md) | Automate smart logistics via Moova — create shipments, track deliveries, get shipping quotes, and orchestrate carriers from any AI agent. |
 | [MSAAQ](../mcps/msaaq.md) | Manage courses, enrollments, and student progress via MSAAQ directly from your AI agent. |
 | [Narvar](../mcps/narvar.md) | Streamline post-purchase experiences — track shipments, manage returns, and provide delivery estimates directly through your AI agent. |
@@ -158,8 +150,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Northbeam](../mcps/northbeam.md) | Analyze marketing attribution via Northbeam — track metrics, breakdowns, and data exports directly from your AI agent. |
 | [Okendo Reviews](../mcps/okendo-reviews.md) | Manage customer reviews and social proof via Okendo — track ratings, questions, and product feedback directly from your AI agent. |
 | [Ometria Intelligence](../mcps/ometria-intelligence.md) | Analyze customer data and retail marketing via Ometria — track contacts, orders, and segments directly from your AI agent. |
-| [Omie ERP](../mcps/omie-erp.md) | Manage your Omie ERP data via API — list clients, products, sales orders, financial accounts, and inventory directly from any AI agent. |
-| [Omnisend Marketing](../mcps/omnisend-marketing.md) | Manage omnichannel marketing via Omnisend — track email/SMS campaigns, contacts, and segments directly from your AI agent. |
 | [Open Beauty Facts](../mcps/open-beauty-facts.md) | Universal cosmetics intelligence — search ingredients, allergens, and brands via AI. |
 | [OpenSea](../mcps/opensea.md) | Access the world's leading NFT marketplace — query collections, track floor prices, inspect NFT metadata, and monitor wallet balances across multiple chains. |
 | [Order Analytics Connector](../mcps/order-analytics-connector.md) | Retrieve total order counts, customer frequency, and status distributions. |

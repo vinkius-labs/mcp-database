@@ -44,7 +44,6 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Flowise](../mcps/flowise.md) | Manage low-code AI workflows via Flowise — run predictions, track chatflows and agentflows, handle tools, and audit execution history directly from any AI agent. |
 | [Groq](../mcps/groq.md) | Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale. |
 | [Groq](../mcps/groq-alternative.md) | Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale. |
-| [H2O.ai](../mcps/h2oai.md) | Manage AI models via H2O.ai — track data frames, monitor machine learning models and training jobs, and audit cloud cluster status directly from any AI agent. |
 | [Helicone (LLM Observability)](../mcps/helicone-llm-observability.md) | Monitor LLM usage via Helicone — track requests, analyze costs, measure latency, and manage prompts. |
 | [HeyGen](../mcps/heygen.md) | Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication. |
 | [HeyGen](../mcps/heygen-alternative.md) | Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication. |
@@ -57,9 +56,7 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Ideogram (AI Image Generation)](../mcps/ideogram-ai-image-generation.md) | Generate and edit images via Ideogram — the industry leader for rendering text within AI-generated visuals. |
 | [Jina AI](../mcps/jina-ai.md) | Search and read the web for AI — audit search results and reader content via AI. |
 | [Jina AI (Search Foundation & LLM Grounding)](../mcps/jina-ai-search-foundation-llm-grounding.md) | Power your RAG and search via Jina AI — generate embeddings, rerank documents, read URLs, and perform semantic web search. |
-| [Kling AI (Generative Video & Image)](../mcps/kling-ai-generative-video-image.md) | Generate cinematic videos and images via Kling AI — use text-to-video, image-to-video, and AI virtual try-on. |
 | [Leonardo.ai (Generative AI & Models)](../mcps/leonardoai-generative-ai-models.md) | Generate high-fidelity images via Leonardo.ai — orchestrate generations, audit AI models, and manage visual assets. |
-| [Linkup (AI Search & RAG)](../mcps/linkup-ai-search-rag.md) | Power your AI agents with real-time web search via Linkup — execute semantic queries and extract RAG-ready content. |
 | [LiteLLM (LLM Proxy & Spend Tracking)](../mcps/litellm-llm-proxy-spend-tracking.md) | Manage your LLM gateway via LiteLLM — generate API keys, track spending, and orchestrate model fallback paths. |
 | [LlamaCloud (Managed RAG & Parsing)](../mcps/llamacloud-managed-rag-parsing.md) | Manage RAG pipelines and document parsing via LlamaCloud — orchestrate LlamaParse jobs and audit data ingestion. |
 | [LlamaIndex (AI Data Framework & RAG)](../mcps/llamaindex-ai-data-framework-rag.md) | Query and manage RAG pipelines via LlamaIndex — execute natural language searches, audit indexed files, and monitor data pipelines. |

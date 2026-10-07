@@ -11,7 +11,6 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Authorize.net](../mcps/authorizenet.md) | Process cards, manage refunds, capture holds, and inspect settled transactions on Authorize.net directly from your AI agent. |
 | [Authorize.net](../mcps/authorizenet-1.md) | Manage payments, transactions, and customer profiles via Authorize.net — the trusted payment gateway directly via AI. |
 | [Avalara AvaTax](../mcps/avalara-avatax-1.md) | Manage sales tax — audit transactions, addresses, and codes via AI. |
-| [Banco Inter](../mcps/banco-inter.md) | Connect to your Banco Inter Empresas digital account. Automate Pix, Boletos, balance inquiries and statements. |
 | [Baremetrics](../mcps/baremetrics.md) | SaaS financial analytics — audit MRR, churn, LTV, and customer subscriptions via AI. |
 | [Belvo](../mcps/belvo.md) | Access financial data across Latin America via Belvo — list links, accounts, and transactions directly from any AI agent. |
 | [BILL (Bill.com)](../mcps/bill-billcom.md) | Manage financial operations via BILL — list vendors, customers, bills, and invoices directly from any AI agent. |
@@ -72,7 +71,6 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [LianLian Pay](../mcps/lianlian-pay.md) | Global cross-border payment and settlement platform — manage balances, payments, and settlements via AI. |
 | [Mambu](../mcps/mambu.md) | Manage clients, loans, deposits, and tasks on Mambu Cloud Banking Platform. |
 | [Marqeta](../mcps/marqeta.md) | Issue cards, manage users, and process payments via Marqeta's modern card issuing platform. |
-| [Maxio (SaaS Billing & FinOps)](../mcps/maxio-saas-billing-finops.md) | Manage SaaS billing via Maxio — audit customer contracts, track ARR/MRR metrics, and create invoices. |
 | [Mercado Pago](../mcps/mercado-pago.md) | Process payments, generate Pix QR codes, manage customers and refunds via Mercado Pago API. |
 | [Mercury](../mcps/mercury.md) | Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies. |
 | [Mercury](../mcps/mercury-alternative.md) | Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies. |
@@ -85,12 +83,8 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [NachoNacho](../mcps/nachonacho.md) | Optimize your SaaS spending with virtual cards, subscription tracking, and vendor management that reveals hidden savings. |
 | [Nasdaq Data Link (Quandl)](../mcps/nasdaq-data-link-quandl.md) | Access financial, economic, and alternative data from Nasdaq Data Link. Query datatables, fetch metadata, and manage bulk downloads directly from your AI agent. |
 | [Nue.io Revenue](../mcps/nueio-revenue.md) | Manage the revenue lifecycle via Nue.io — track product catalogs, price tags, and revenue workflows directly from your AI agent. |
-| [Nuvei](../mcps/nuvei.md) | Connect your AI agent to Nuvei to track transactions, manage payments, and securely tokenize cards through natural conversation. |
-| [Nuvemshop](../mcps/nuvemshop.md) | Manage your Nuvemshop e-commerce via API — list products, orders, customers, coupons, and webhooks directly from any AI agent. |
 | [OpenExchangeAPI](../mcps/openexchangeapi.md) | Retrive real-time exchange rates — audit currency data and conversions via AI. |
 | [Paddle](../mcps/paddle.md) | Manage billing, subscriptions, and transactions via Paddle — inspect customers, list products, pause recurring plans, and void transactions from any AI agent. |
-| [Pagar.me](../mcps/pagarme.md) | Create orders, manage subscriptions, and process Pix/Boleto payments via Pagar.me API. |
-| [PagBank PagSeguro](../mcps/pagbank-pagseguro.md) | Create Pix, Boleto, and Card payment links, and manage transactions via PagBank API. |
 | [PayPal](../mcps/paypal.md) | Manage e-commerce payments via PayPal — orchestrate orders, process captures securely, issue refunds natively, and structure active subscriptions using AI. |
 | [Paystack](../mcps/paystack.md) | Manage payments via Paystack — list transactions, verify payments, and manage customers directly from any AI agent. |
 | [Ping++](../mcps/ping.md) | Bring unified payment intelligence to your AI with Ping++. Integrate WeChat, Alipay, and UnionPay through a single clean API interface. |

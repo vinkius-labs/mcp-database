@@ -25,14 +25,11 @@ Explore the open database of **ship-it** Model Context Protocol (MCP) servers.
 | [Fly.io](../mcps/flyio-extended.md) | Manage Fly.io apps, machines, and infrastructure—provision resources, control machine lifecycles, and manage volumes directly from any AI agent. |
 | [Grafana k6 Cloud (Load Testing)](../mcps/grafana-k6-cloud-load-testing.md) | Manage load tests via k6 Cloud — run tests, monitor performance metrics, and audit thresholds. |
 | [Harness](../mcps/harness.md) | Automate CI/CD and DevOps workflows via Harness — manage pipelines, executions, and secrets directly from any AI agent. |
-| [Katalon TestOps (AI Test Management)](../mcps/katalon-testops-ai-test-management.md) | Manage test orchestration via Katalon TestOps — rerun test runs, monitor execution results, and audit software releases. |
 | [Laravel Forge](../mcps/laravel-forge.md) | Manage Laravel Forge servers, orchestrate site deployments, and query databases directly from your AI agent. |
 | [LaunchDarkly](../mcps/launchdarkly.md) | Manage LaunchDarkly feature flags, environments, assignments and deployments smoothly through conversational AI. |
 | [LinearB](../mcps/linearb.md) | Export software delivery metrics, manage deployments, and report incidents via the LinearB API. |
 | [Mailgun (Transactional Email & Domains)](../mcps/mailgun-transactional-email-domains.md) | Manage email infrastructure via Mailgun — send transactional emails, monitor domain health, and audit delivery logs. |
-| [Mux](../mcps/mux.md) | Manage video assets and live streams via Mux — create assets and track performance directly from your AI agent. |
 | [n8n (AI Workflow Automation)](../mcps/n8n-ai-workflow-automation.md) | Manage workflow automation via n8n — audit active workflows, track execution logs, and monitor credentials. |
-| [Northflank (Developer Cloud & Orchestration)](../mcps/northflank-developer-cloud-orchestration.md) | Manage cloud infrastructure via Northflank — deploy microservices, trigger CI builds, and audit background jobs. |
 | [Percy](../mcps/percy.md) | Execute visual regression tests via Percy — track visual diffs natively, inspect snapshot limits, approve builds, and verify UI components using AI. |
 | [Pipedream](../mcps/pipedream.md) | Manage Pipedream serverless workflows, sources, webhooks, and raw event data natively via AI agents. |
 | [Portainer](../mcps/portainer.md) | Manage Docker containers and environments via Portainer — list, create, and start containers directly from your AI agent. |

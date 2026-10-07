@@ -15,7 +15,6 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 | [Mold Remediation Coordination](../mcps/mold-remediation-coordination.md) | Coordinate mold remediation workflows, professional escalations, and document preservation. |
 | [Music Project Creative Direction Plan](../mcps/music-project-creative-direction-plan.md) | Synthesize musical influences and constraints into cohesive creative mandates. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |
-| [Pipefy](../mcps/pipefy.md) | Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent. |
 | [Productive](../mcps/productive.md) | Manage your entire agency workflow via Productive — fetch budgets, analyze time entries, track deals, and monitor project health directly from any AI agent. |
 | [ProofHub](../mcps/proofhub.md) | Empower your AI agent to manage your ProofHub projects — list tasks, create to-dos, read discussions, and track timesheets instantly. |
 | [Public Art Proposal Planner](../mcps/public-art-proposal-planner.md) | Transform fragmented art call briefs into structured submission strategies and compliance checklists. |

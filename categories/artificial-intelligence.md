@@ -44,7 +44,6 @@ Explore the open database of **artificial-intelligence** Model Context Protocol 
 | [Mav](../mcps/mav-alternative.md) | Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks. |
 | [MeaningCloud](../mcps/meaningcloud.md) | Advanced text analytics for sentiment analysis, topic extraction, language detection, and automatic summarization. |
 | [Namsor](../mcps/namsor-alternative.md) | Detect gender, origin, and ethnicity from names, parse full names, and format phone numbers with AI-powered onomastics. |
-| [NewsAPI](../mcps/newsapi.md) | Search breaking news and historical articles from 150,000+ sources via NewsAPI.org. |
 | [NewsCatcher](../mcps/newscatcher.md) | Search millions of news articles in real-time with AI clustering and topic tracking. |
 | [NotCo](../mcps/notco.md) | Interact with Giuseppe AI, NotCo's proprietary plant-based formulation engine, to analyze ingredients, match flavor profiles, and generate recipes. |
 | [Otreeba Cannabis API](../mcps/otreeba-cannabis-api.md) | Access cannabis strain data, lab results, and brand info via Otreeba API. |

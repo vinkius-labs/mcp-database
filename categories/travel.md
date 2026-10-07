@@ -48,6 +48,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Sustainable Trip Emissions Calculator](../mcps/sustainable-trip-emissions-calculator.md) | Calculate the carbon footprint of your travels, including flights, trains, cars, and lodging. |
 | [Travel Carbon Comparator](../mcps/travel-carbon-comparator.md) | Quantify and compare the carbon footprint of different travel itineraries. |
 | [Travel Distance Total](../mcps/travel-distance-total.md) | Calculate cumulative, average, and extreme travel leg distances. |
+| [Travel Photo Storage Planner](../mcps/travel-photo-storage-planner.md) | Estimate storage needs, hardware costs, and backup schedules for photography trips. |
 | [Travel Time Wave Quality](../mcps/travel-time-wave-quality.md) | Evaluate surf trip efficiency by weighing wave quality against travel time and fuel costs. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
 | [Trip Emission Total](../mcps/trip-emission-total.md) | Aggregate and analyze CO2e emissions from individual journey segments. |

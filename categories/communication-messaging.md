@@ -53,7 +53,6 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [FreeScout](../mcps/freescout.md) | Manage your FreeScout helpdesk — list mailboxes, handle conversations, reply to customers, and manage users directly via AI. |
 | [Front](../mcps/front.md) | Manage shared inboxes across email, SMS, and social with team collaboration tools that keep customer conversations organized. |
 | [Front](../mcps/front-alternative.md) | Manage shared inboxes across email, SMS, and social with team collaboration tools that keep customer conversations organized. |
-| [Gallabox](../mcps/gallabox.md) | Automate WhatsApp Business communication, send templates, and manage chats via AI agents with Gallabox. |
 | [Giphy](../mcps/giphy-alternative.md) | Search, browse, and integrate the world largest library of animated GIFs and stickers into your apps and conversations. |
 | [Giphy](../mcps/giphy-alternative-1.md) | Enhance conversations with GIPHY — search millions of GIFs, stickers, and emojis, or translate text into visual expressions directly from your AI agent. |
 | [Gotify](../mcps/gotify.md) | Send and receive push notifications via your own Gotify server — manage messages, applications, and clients directly through AI. |

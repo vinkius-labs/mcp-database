@@ -29,13 +29,11 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Fusebill (Enterprise Subscription Billing API)](../mcps/fusebill-enterprise-subscription-billing-api.md) | Automate enterprise subscription billing via Fusebill — manage customers, track subscriptions, and handle billing lifecycles directly from any AI agent. |
 | [Getpaid](../mcps/getpaid.md) | Manage billing, track payments, and initiate checkouts via AI agents with Getpaid.io. |
 | [Hiveage](../mcps/hiveage.md) | Automate online invoicing via Hiveage — manage invoices, estimates, and payments directly from any AI agent. |
-| [Invoiced](../mcps/invoiced.md) | Get paid faster with automated invoicing, smart payment reminders, and accounts receivable workflows that reduce DSO. |
 | [InvoiceXpress (Online Invoicing)](../mcps/invoicexpress-online-invoicing.md) | Manage invoicing via InvoiceXpress — create clients, track payments, and manage invoices and estimates in Portugal. |
 | [isvat](../mcps/isvat.md) | Validate European VAT numbers — audit tax IDs via AI. |
 | [Ko-fi](../mcps/ko-fi.md) | Monitor your Ko-fi donations, subscriptions, and shop orders directly from your AI agent. |
 | [Kraken](../mcps/kraken-alternative.md) | Access real-time crypto market data, account balances, and trade history from Kraken directly within your AI agent. |
 | [Lemonade](../mcps/lemonade.md) | Manage Lemonade insurance — generate quotes, retrieve policy details, file claims, and handle cancellations via AI. |
-| [Lexware Office (Accounting & Invoicing)](../mcps/lexware-office-accounting-invoicing.md) | Manage bookkeeping via Lexware Office (lexoffice) — create contacts, track invoices, and audit accounting vouchers in Germany. |
 | [Meld](../mcps/meld.md) | Unified API for digital assets via Meld — track blockchain networks, assets, and exchange rates. |
 | [Middesk](../mcps/middesk.md) | Business identity verification — verify entities, Secretary of State records, and tax registrations via Middesk. |
 | [Monnify](../mcps/monnify.md) | Manage payments and virtual accounts in Nigeria via Monnify — track transactions and reserve accounts directly from your AI agent. |

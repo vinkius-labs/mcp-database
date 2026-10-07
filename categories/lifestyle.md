@@ -31,6 +31,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Hair Wash Frequency Calculator](../mcps/hair-wash-frequency-calculator.md) | Calculate monthly hair wash frequency and product usage needs. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
 | [Home Bar Stock Planner](../mcps/home-bar-stock-planner.md) | Plan cocktail events by calculating exact ingredient, ice, and glassware needs. |
+| [Hydration Purchase Planner](../mcps/hydration-purchase-planner.md) | Calculate total water, electrolyte, and container needs for your household. |
 | [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Local Club Membership Planner](../mcps/local-club-membership-planner.md) | Evaluate and plan local club memberships based on budget and fit. |

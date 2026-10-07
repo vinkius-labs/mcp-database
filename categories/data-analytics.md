@@ -170,7 +170,6 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [INE Portugal Official Statistics](../mcps/ine-portugal-official-statistics.md) | Statistics Portugal (INE) official indicator API: CPI, unemployment, population, GDP, wages and hundreds of series broken down by NUTS regions and all 3000+ municipalities — keyless, no registration. |
 | [Inep Dados Abertos](../mcps/inep-dados-abertos.md) | Access official Brazilian educational data from INEP — query Censo Escolar, ENEM, and higher education statistics directly. |
 | [Interest Amortization Engine](../mcps/interest-amortization-engine.md) | Generate exact SAC and Price (French) amortization schedules for real estate litigation. |
-| [Intrinio](../mcps/intrinio.md) | Access real-time and historical financial market data via Intrinio API. |
 | [ItemPath](../mcps/itempath.md) | Manage inventory, materials, and orders via ItemPath API. |
 | [Japan e-Stat](../mcps/japan-e-stat.md) | Query official Japanese government statistics — population, GDP, industry, trade, employment, and more — from the e-Stat national database. |
 | [Johnson Controls Metasys](../mcps/johnson-controls-metasys.md) | Johnson Controls Metasys building automation as an MCP: browse the object tree, live alarms with annotations, equipment, network devices and spaces — official REST API v4 with bearer JWT auth. |
@@ -201,19 +200,16 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Massive](../mcps/massive.md) | Access historical stock dividend data and distribution records directly from any AI agent. |
 | [Mato Grosso do Sul Open Data](../mcps/mato-grosso-do-sul-open-data.md) | Access public datasets from the state of Mato Grosso do Sul (Brazil) — list packages, search datastores, and query public records via SQL. |
 | [Matomo](../mcps/matomo-alternative.md) | Track website traffic, analyze visitor behavior, and generate detailed analytics reports directly from your AI agent. |
-| [Matomo](../mcps/matomo.md) | Open-source web analytics via Matomo — track visits, goals, and user behavior directly from any AI agent. |
 | [Mattermark](../mcps/mattermark.md) | Startup and venture capital data via Mattermark — search companies, investors, and funding rounds. |
 | [MDIC (Comércio Exterior)](../mcps/mdic-comercio-exterior.md) | Access Brazilian foreign trade data from MDIC — list datasets, search for trade packages, and query the datastore for export/import statistics. |
 | [Messari](../mcps/messari.md) | Crypto market intelligence via Messari — track assets, metrics, and blockchain news. |
 | [Metabolic Energy Estimator](../mcps/metabolic-energy-estimator.md) | Empower your AI Agent with deterministic metabolic calculations. Estimate burned calories with a local catalog of 80+ activities, calculate TDEE, and project weight loss timelines. |
-| [Metaplane](../mcps/metaplane.md) | Data observability via Metaplane — track monitors, incidents, and data quality metrics. |
 | [MeteoSource](../mcps/meteosource.md) | Monitor global weather — audit forecasts and places via AI. |
 | [Meteostat](../mcps/meteostat.md) | Access historical weather data and climate statistics from thousands of weather stations and geographic points worldwide. |
 | [MLB Stats](../mcps/mlb-stats.md) | Access real-time MLB data, player stats, game schedules, and live feeds directly from your AI agent. |
 | [Mnemonic](../mcps/mnemonic.md) | Deep NFT analytics and Web3 intelligence via Mnemonic — track collections, portfolios, and transfers directly from your AI agent. |
 | [Monetary Correction Engine](../mcps/monetary-correction-engine.md) | Calculate precise financial monetary corrections with compound or simple interest securely local. |
 | [Moving Average Engine](../mcps/moving-average-engine.md) | Calculate Simple (SMA) and Exponential (EMA) moving averages exactly. Stop LLMs from estimating financial technical indicators. |
-| [MTA](../mcps/mta.md) | Access NYC transit data via MTA — track subway and bus in real-time, check arrivals, monitor LIRR and Metro-North, and check service alerts from any AI agent. |
 | [MyJohnDeere](../mcps/myjohndeere.md) | Manage agricultural operations via MyJohnDeere — list organizations, equipment assets, fields, and machine telematics directly from any AI agent. |
 | [MySportsFeeds](../mcps/mysportsfeeds.md) | Access real-time and historical sports data for NFL, MLB, NBA, NHL, and more—get standings, player stats, and game boxscores directly. |
 | [Nansen (Blockchain Analytics)](../mcps/nansen-blockchain-analytics.md) | Access institutional-grade blockchain analytics — track Smart Money, profile wallets, and monitor real-time token flows across multiple chains. |
@@ -340,7 +336,6 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [U.S. EIA Energy Data](../mcps/us-eia-energy-data.md) | Equip your AI agent to access official U.S. energy statistics, track electricity generation, and monitor fuel prices via the EIA API. |
 | [UK ONS Discovery — Search 337+ Statistical Datasets](../mcps/uk-ons-discovery-search-337-statistical-datasets.md) | Explore the full ONS dataset catalog: search 337+ datasets by keyword, browse metadata and dimensions, discover available filter options, and query any dataset with flexible parameters covering every aspect of UK statistics. |
 | [UK ONS Economy — GDP, Inflation & Consumer Spending](../mcps/uk-ons-economy-gdp-inflation-consumer-spending.md) | Official UK economic data: quarterly and annual GDP by region, CPIH inflation (the UK's headline measure), retail sales index, real-time card spending indicators, and household income statistics from the Office for National Statistics. |
-| [UK ONS Full — Complete Statistical Intelligence](../mcps/uk-ons-full-complete-statistical-intelligence.md) | The definitive UK ONS Mega-Server: 20 tools spanning GDP, inflation, retail sales, card spending, household income, weekly deaths, well-being, population projections, trade, business counts, and a universal query engine for any of the 337+ available datasets. |
 | [UK ONS Population — Deaths, Well-being & Demographics](../mcps/uk-ons-population-deaths-well-being-demographics.md) | UK population and health statistics: weekly death registrations by age, sex, and region, personal well-being estimates (life satisfaction, happiness, anxiety), suicide data by local authority, and population projections from the ONS. |
 | [Umami Cloud](../mcps/umami-cloud.md) | Privacy-focused web analytics alternative to Google Analytics. |
 | [Upstream Lens](../mcps/upstream-lens.md) | Monitor upstream oil and gas operations with production data analytics, well performance tracking, and field reporting tools. |

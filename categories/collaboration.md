@@ -26,13 +26,11 @@ Explore the open database of **collaboration** Model Context Protocol (MCP) serv
 | [Frame.io](../mcps/frameio.md) | Collaborate on video, manage creative assets, and track comments via AI agents with Frame.io. |
 | [Frill](../mcps/frill.md) | Manage product feedback, roadmaps, and announcements via Frill — create ideas, list updates, and organize categories directly from your AI agent. |
 | [GaggleAMP](../mcps/gaggleamp.md) | Amplify your brand reach through employee advocacy with curated social sharing activities that boost organic engagement. |
-| [GatherContent](../mcps/gathercontent.md) | Manage structured content projects, track items, and oversee workflows via AI agents with GatherContent. |
 | [GitScrum Knowledge](../mcps/gitscrum-knowledge.md) | Build and query knowledge bases via GitScrum — manage notes as agent memory, maintain wiki pages, communicate through discussions, and search across all resources from any AI agent. |
 | [Grain](../mcps/grain.md) | Manage AI meeting notes via Grain — list and search recordings, retrieve transcripts and AI insights, and track action items directly from any AI agent. |
 | [Hubilo](../mcps/hubilo.md) | Manage virtual and hybrid events via Hubilo API. |
 | [Incident.io](../mcps/incidentio.md) | Manage incidents, roles, and on-call schedules via Incident.io API. |
 | [Interact Software](../mcps/interact-software.md) | Manage intranet people, content, and groups via Interact Software API. |
-| [Kontent.ai (Enterprise Headless CMS)](../mcps/kontentai-enterprise-headless-cms.md) | Manage enterprise content via Kontent.ai — create items, publish language variants, and audit content types. |
 | [Loomly](../mcps/loomly.md) | Plan and approve social media content with a collaborative calendar that streamlines reviews and keeps your brand consistent. |
 | [MediaSilo (Legacy)](../mcps/mediasilo-legacy.md) | Share and review video content with creative teams using secure media workspaces, annotations, and approval workflows. |
 | [MediaWiki](../mcps/mediawiki.md) | Connect to any MediaWiki instance to search pages, read content, list categories, and track recent changes directly from your AI agent. |
