@@ -7,17 +7,17 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Quantify the financial impact of corporate meetings.
+Calculate the economic impact of meetings by aggregating attendee compensation, duration, and preparation time.
 
 ## Description
-This MCP server provides tools to calculate the economic cost of meetings. Use `calculate_single_meeting_cost` to find the total expenditure for a specific session, or `estimate_meeting_efficiency` to check if a meeting stays within a defined budget. You can also use `batch_calculate_meeting_costs` to compare multiple scenarios or `find_optimal_attendee_count` to determine the maximum number of participants allowed under a specific budget limit.
+This MCP server provides tools to quantify the hidden costs of synchronous collaboration. Use `summarize_meeting_series` to get a full report on per-meeting and annual costs, or `get_meeting_efficiency_score` to evaluate if a meeting's importance justifies its financial impact. It accounts for attendee compensation, meeting duration, and the critical preparation time required for each participant.
 
 
 ## Available Tools (4)
-- **batch_calculate_meeting_costs**: Calculates costs for a list of different meeting scenarios to compare them
-- **calculate_single_meeting_cost**: Calculates the total financial cost for a single specific meeting
-- **estimate_meeting_efficiency**: Evaluates if a meeting's cost is justified relative to a defined budget threshold
-- **find_optimal_attendee_count**: Determines how many attendees can be present without exceeding a specific budget
+- **calculate_annual_impact**: Projects the total cost of a recurring meeting series over a full year
+- **calculate_single_meeting_cost**: Calculates the total labor cost for one single instance of a meeting
+- **get_meeting_efficiency_score**: Provides a ratio to help determine if the meeting's purpose justifies its cost
+- **summarize_meeting_series**: Aggregates all meeting metrics into a single report for a specific series
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides tools to calculate the economic cost of meetings. Use `
 Here are some examples of how you can interact with the **Meeting Cost Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the cost of a 60-minute meeting with 10 people earning $50 per hour?"
+> "What is the total cost for a 1-hour meeting with three people earning $50, $60, and $70 per hour, including 0.5 hours of prep time each?"
 
 **🤖 AI Agent:**
-> The total cost for this meeting is $500.00, with a cost of $50.00 per attendee.
+> The total cost for this single meeting is $270.00, with a total of 4.5 labor hours spent.
 
 ---
 
 **👤 You:**
-> "How many people can attend a 30-minute meeting if the average rate is $100/hr and my budget is $250?"
+> "Calculate the annual cost of a monthly meeting that costs $400 per instance."
 
 **🤖 AI Agent:**
-> You can have a maximum of 5 attendees for this meeting.
+> The total annual cost for this meeting series is $4,800.00.
 
 ---
 
 **👤 You:**
-> "Is a 45-minute meeting with 5 people at $60/hr within a $150 budget?"
+> "Is a meeting costing $500 with 5 attendees and a decision weight of 1000 efficient?"
 
 **🤖 AI Agent:**
-> Yes, the meeting is within budget. The total cost is $75.00.
+> Yes, with a score of 2.0, this meeting is rated as High Efficiency.
 
 
 ## ❓ FAQ
 
-**Q: How is the meeting cost calculated?**
-The cost is calculated by multiplying the number of attendees by the meeting duration (in hours) and the average hourly rate of the participants.
+**Q: How does the tool account for preparation time?**
+The `summarize_meeting_series` tool includes the preparation time for every attendee in both the per-meeting and annual cost calculations.
 
-**Q: Can I compare multiple meeting scenarios at once?**
-Yes, you can use the `batch_calculate_meeting_costs` tool to process a list of different meeting configurations simultaneously.
+**Q: Can I calculate the yearly impact of a weekly meeting?**
+Yes, you can use `calculate_annual_impact` by providing the per-meeting cost and a frequency of 52 for a weekly meeting.
 
-**Q: How do I know if my meeting is over budget?**
-You can use `estimate_meeting_efficiency` to compare the calculated cost against your specific budget limit.
+**Q: What is an efficiency score?**
+The efficiency score, calculated via `get_meeting_efficiency_score`, is a ratio of the meeting's decision weight to its total cost, helping you determine if the meeting is worth the investment.
 
 
 ## Installation & Usage
