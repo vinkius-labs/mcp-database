@@ -7,17 +7,17 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Precision financial modeling for wellness retreats, calculating total costs, per-person pricing, and break-even occupancy.
+Calculate comprehensive wellness retreat costs including logistics, operations, and overhead.
 
 ## Description
-This MCP server provides a complete financial engine for planning wellness retreats. It allows planners to model complex cost structures including lodging, treatments, meals, and transport. Use `calculate_total_budget` to generate a full breakdown with taxes and contingencies, or `analyze_profitability` to find the minimum number of guests needed to break even. You can also use `get_daily_spend_forecast` to visualize daily cash flow or `compare_budget_scenarios` to evaluate how changing guest counts affects your margins.
+This MCP server provides a complete financial planning suite for organizing wellness retreats. It allows AI agents to calculate precise budgets by breaking down costs into core logistics, operational services, wellness add-ons, and financial overhead. Use `calculate_base_logistics` to handle housing and travel, `calculate_operational_costs` for meals and classes, and `calculate_wellness_and_overhead` for treatments and taxes. Finally, use `generate_final_budget` to aggregate all figures into a complete group and per-person financial summary with a safety contingency.
 
 
 ## Available Tools (4)
-- **analyze_profitability**: Determines the financial feasibility of a retreat
-- **calculate_total_budget**: Calculates the complete financial breakdown of a retreat
-- **compare_budget_scenarios**: Compares two different budget configurations
-- **get_daily_spend_forecast**: Provides a granular view of daily spending
+- **generate_final_budget**: Aggregates all cost categories into the final group and per-person summaries
+- **calculate_base_logistics**: Calculates the primary costs related to housing and travel for the group
+- **calculate_operational_costs**: Calculates the costs associated with food and scheduled activities
+- **calculate_wellness_and_overhead**: Calculates the costs for specialized treatments and government/administrative obligations
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides a complete financial engine for planning wellness retre
 Here are some examples of how you can interact with the **Wellness Retreat Budget Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate the total budget for a 5-night retreat for 15 guests with $200 lodging per night, $150 treatments, $50 class fees, $40 meals per day, $500 fixed transport, 8% tax, 10% service fee, and 15% contingency."
+> "Calculate the base logistics for a retreat with 20 people, where lodging is $150 per person and total transport is $2000."
 
 **🤖 AI Agent:**
-> The total budget for the retreat is $23,456.50, with a per-person cost of $1,563.77.
+> The total lodging cost is $3,000 and the transport cost is $2,000, resulting in a base logistics total of $5,000. The per-person logistics cost is $250.
 
 ---
 
 **👤 You:**
-> "If my total budget is $15,000 and I charge $1,200 per person, how many guests do I need to break even?"
+> "What are the operational costs for 10 participants if meals are $50 per person and classes cost $500 in total?"
 
 **🤖 AI Agent:**
-> You need at least 13 guests to reach the break-even point.
+> The total meal cost is $500 and the class cost is $500, making the operational total $1,000. The per-person operational cost is $100.
 
 ---
 
 **👤 You:**
-> "Show me the daily spending forecast for a 3-night retreat with 10 guests, $200 daily fixed costs, and $150 daily variable costs per person."
+> "I have a subtotal of $5000. Calculate the overhead if treatments cost $1000, taxes are 10%, and service fees are $200."
 
 **🤖 AI Agent:**
-> The daily spend for each of the 3 days is $1,700.00, with an average daily spend of $1,700.00.
+> The treatment cost is $1,000, the tax total is $500, and the service fees are $200, resulting in an overhead total of $1,700.
 
 
 ## ❓ FAQ
 
-**Q: How do I calculate the minimum number of guests needed?**
-You can use the `analyze_profitability` tool. Provide the total budget, the price you intend to charge per person, and the expected guest count to find your break-even occupancy.
+**Q: How do I calculate the total cost for my retreat?**
+You can use `generate_final_budget` to aggregate all your calculated costs into a single total, which includes a contingency buffer for unforeseen expenses.
 
-**Q: Can I see a day-by-day breakdown of expenses?**
-Yes, the `get_daily_spend_forecast` tool provides a granular view of daily spending, including fixed and variable costs for each day of the retreat.
+**Q: Can I include taxes and service fees in the budget?**
+Yes, the `calculate_wellness_and_overhead` tool is specifically designed to include treatment costs, tax percentages, and service fees.
 
-**Q: Does the budget include taxes and service fees?**
-Yes, when using `calculate_total_budget`, you can specify tax and service fee rates to ensure the final total includes all mandatory levies and fees.
+**Q: Does this tool account for the number of participants?**
+Yes, most tools require the `participantCount` to accurately calculate per-person costs and total lodging or meal expenses.
 
 
 ## Installation & Usage
