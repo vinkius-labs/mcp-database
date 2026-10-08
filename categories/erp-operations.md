@@ -52,6 +52,7 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [Flexport](../mcps/flexport.md) | Manage global freight shipments, purchase orders, and logistics documents via AI agents with Flexport. |
 | [Focus Admin](../mcps/focus-admin.md) | Send CC-e, inutilize numbering, distribute DF-e and list fiscal documents via Focus NFe API. |
 | [Focus Logística](../mcps/focus-logistica.md) | Emit CT-e, MDF-e, manage cargo manifests and transport documents via Focus NFe API. |
+| [Focus NFe](../mcps/focus-nfe.md) | Emit, consult, cancel and download XML for NFS-e and NF-e via Focus NFe API. |
 | [Fxiaoke](../mcps/fxiaoke.md) | Leading sales management and CRM platform in China — manage leads, opportunities, and approvals via AI. |
 | [Glofox](../mcps/glofox.md) | Manage members, classes, trainers, bookings, and purchases for your Glofox-powered gym or fitness studio through natural conversation. |
 | [Good Grants](../mcps/good-grants.md) | Discover and manage grant applications with a platform that matches your organization to the right funding opportunities. |
@@ -73,6 +74,7 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [IP Parking](../mcps/ip-parking.md) | Manage PARCS operations: sites, tariffs, gates, and ANPR events via IP Parking API. |
 | [JobProgress (Leap)](../mcps/jobprogress-leap.md) | Manage contractors, customers, and jobs via JobProgress API. |
 | [Kargo](../mcps/kargo.md) | Automate logistics and loading dock operations via Kargo — track shipments and sync data directly from your AI agent. |
+| [Katana](../mcps/katana.md) | Automate manufacturing ERP workflows, sales orders, and inventory via Katana Cloud Manufacturing. |
 | [leadtributor.cloud](../mcps/leadtributorcloud.md) | Distribute leads to your sales team and partner network with routing rules, SLA tracking, and performance analytics. |
 | [Leiting Games](../mcps/leiting-games.md) | Leading game publisher and developer platform — manage submissions, track performance, and audit compliance via AI. |
 | [LendAPI](../mcps/lendapi.md) | Manage loan applications, borrower profiles, and credit decisioning via the LendAPI REST API. |
@@ -82,6 +84,8 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [MarketMan](../mcps/marketman.md) | Manage restaurant inventory, purchase orders, vendors, recipes, food cost, and waste tracking through natural conversation. |
 | [MeasureSquare CRM](../mcps/measuresquare-crm.md) | Manage flooring and construction project estimates, client relationships, and job tracking for specialty contractors. |
 | [Megaventory](../mcps/megaventory-alternative.md) | Track inventory across multiple warehouses, manage purchase orders, and coordinate manufacturing with a cloud ERP for SMBs. |
+| [Mews](../mcps/mews.md) | Manage hotel reservations, guests, rooms, billing, housekeeping, and services for your Mews property through natural conversation. |
+| [Mindbody](../mcps/mindbody.md) | Manage classes, appointments, clients, staff, and sales from your Mindbody-powered fitness studio, spa, or wellness business through natural conversation. |
 | [MINDBODY Health & Wellness](../mcps/mindbody-health-wellness.md) | Manage your wellness business via MINDBODY — track class schedules, client profiles, and visit history directly via AI. |
 | [MOBIDI](../mcps/mobidi.md) | Manage your mobile advertising campaigns with real-time bidding, audience targeting, and performance analytics for app installs. |
 | [MoeGo](../mcps/moego.md) | Manage your pet care business via MoeGo — track appointments, pets, and customers directly from your AI agent. |
@@ -97,6 +101,7 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [Odoo Manufacturing](../mcps/odoo-manufacturing.md) | Create manufacturing orders, manage BOMs, work orders, and work centers — Odoo MRP through natural conversation. |
 | [Odoo Purchase](../mcps/odoo-purchase.md) | Create purchase orders, manage RFQs, search vendors, and track procurement — Odoo Purchasing through natural conversation. |
 | [Odoo Sales](../mcps/odoo-sales.md) | Create quotations, confirm sales orders, manage products and pricelists — Odoo Sales pipeline through natural conversation. |
+| [Onfleet](../mcps/onfleet.md) | Manage last-mile deliveries via Onfleet — create tasks, track drivers, check ETAs, and complete orders directly from any AI agent. |
 | [Paperless Parts](../mcps/paperless-parts.md) | Quote custom manufacturing jobs faster with automated pricing, 3D model analysis, and quoting workflows for machine shops. |
 | [Pennylane](../mcps/pennylane.md) | Manage French accounting workflows via Pennylane — track invoices, customers, suppliers, and synchronize estimates dynamically using AI. |
 | [PharmWare](../mcps/pharmware.md) | Automate cannabis laboratory testing via PharmWare — manage samples, track test results, issue Certificates of Analysis, and monitor lab workflows from any AI agent. |

@@ -17,6 +17,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [Estated](../mcps/estated.md) | Access comprehensive US property data including ownership, assessment, and structural details directly from any AI agent. |
 | [Evernest Property Management](../mcps/evernest-property-management.md) | Equip your AI agent to manage rental properties, track tenants, and monitor maintenance via the Evernest API. |
 | [Floor Area Ratio Calculator](../mcps/floor-area-ratio-calculator.md) | Calculate maximum buildable footprint, total floor area, and green space compliance for any plot size in seconds. |
+| [Follow Up Boss](../mcps/follow-up-boss.md) | Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance. |
 | [Follow Up Boss](../mcps/follow-up-boss-alternative.md) | Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance. |
 | [Green Street](../mcps/green-street.md) | Manage commercial real estate & REIT data via Green Street — list companies, retrieve market analytics, and track transaction summaries directly via AI. |
 | [Home River Group](../mcps/home-river-group.md) | Connect and manage Home River Group properties, units, and residents via Entrata API. |

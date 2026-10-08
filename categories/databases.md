@@ -21,6 +21,7 @@ Explore the open database of **databases** Model Context Protocol (MCP) servers.
 | [Materialize (Streaming SQL DB)](../mcps/materialize-streaming-sql-db.md) | Execute streaming SQL, manage compute clusters, and monitor real-time data pipelines directly from your AI agent. |
 | [MusicBrainz](../mcps/musicbrainz-alternative.md) | Access the world's largest open music encyclopedia — search artists, lookup releases, and manage your music collections directly from your AI agent. |
 | [MyScale (SQL Vector Database API)](../mcps/myscale-sql-vector-database-api.md) | Manage MyScale vector databases via SQL — execute queries, perform vector searches, and manage indices directly from any AI agent. |
+| [Nile (PostgreSQL for Multi-Tenant Apps)](../mcps/nile-postgresql-for-multi-tenant-apps.md) | Manage tenant-aware databases via Nile — provision B2B tenants, monitor DB metrics, and audit user access. |
 | [NLM RxNorm (Drug Database)](../mcps/nlm-rxnorm-drug-database.md) | Access the NLM RxNorm database to search for drugs, retrieve RxCUIs, and inspect standardized drug properties and identifiers. |
 | [Nookipedia](../mcps/nookipedia.md) | Access the ultimate Animal Crossing encyclopedia — query villager data, New Horizons items, bugs, fish, and recipes directly from any AI agent. |
 | [Paleobiology Database](../mcps/paleobiology-database.md) | Access the world's largest fossil database — query occurrences, analyze taxonomic diversity, and explore geological intervals directly from your AI agent. |

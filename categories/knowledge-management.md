@@ -36,6 +36,7 @@ Explore the open database of **knowledge-management** Model Context Protocol (MC
 | [Genius](../mcps/genius-alternative.md) | Access the world's largest collection of song lyrics and musical knowledge. Search songs, artists, and annotations directly from your AI agent. |
 | [Gipuzkoa Irekia](../mcps/gipuzkoa-irekia.md) | Access open data from Gipuzkoa (Spain) — search datasets, explore resources, and query organizations or thematic groups directly from any AI agent. |
 | [Gobierno Abierto Valencia](../mcps/gobierno-abierto-valencia.md) | Access Valencia's Open Data portal to query datasets, resources, and public records directly from your AI agent. |
+| [GPTBots](../mcps/gptbots.md) | Manage your conversational AI agents, workflows, and knowledge bases via AI. |
 | [GroundX](../mcps/groundx.md) | Data search and RAG optimization platform. |
 | [Gutendex](../mcps/gutendex.md) | Search and discover 70,000+ free public domain ebooks from Project Gutenberg — no API key required. |
 | [Harry Potter API](../mcps/harry-potter-api.md) | Explore the wizarding world — search characters, students, staff, houses and spells from the Harry Potter universe. |
@@ -43,6 +44,7 @@ Explore the open database of **knowledge-management** Model Context Protocol (MC
 | [Harvard Art Museums](../mcps/harvard-art-museums-alternative.md) | Explore the Harvard Art Museums' vast collection — search over 250,000 objects, research artists, and browse exhibitions directly via AI. |
 | [Hudu](../mcps/hudu.md) | Document your IT infrastructure with password vaults, knowledge bases, and asset tracking built for managed service providers. |
 | [Hyrule Compendium](../mcps/hyrule-compendium.md) | Access the comprehensive Breath of the Wild and Tears of the Kingdom compendium — search creatures, monsters, materials, and equipment directly from your AI agent. |
+| [Internet Archive Metadata](../mcps/internet-archive-metadata.md) | Get detailed metadata, files, reviews, and stats for any Internet Archive item. |
 | [Internet Archive Search](../mcps/internet-archive-search.md) | Search 40M+ books, videos, audio, software across the Internet Archive. |
 | [Internet Archive Wayback](../mcps/internet-archive-wayback.md) | Check URL archival status, explore capture history, and analyze Wayback Machine data. |
 | [Jservice](../mcps/jservice.md) | Access the Jeopardy! clue database — fetch clues by category, value, or date, and get random trivia for your AI agent. |

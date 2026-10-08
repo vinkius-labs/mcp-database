@@ -47,18 +47,25 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [International Hiring Cost Modeler](../mcps/international-hiring-cost-modeler.md) | Model and compare the financial impact of hiring via EOR versus local entities. |
 | [iSpring Learn](../mcps/ispring-learn.md) | Train employees with a corporate LMS that delivers SCORM courses, tracks certifications, and generates compliance reports. |
 | [Jibble](../mcps/jibble.md) | Track time, attendance, and projects via Jibble API. |
+| [KeyPay](../mcps/keypay.md) | Manage payroll, employees, and pay runs via the Employment Hero Payroll (KeyPay) API. |
+| [KnowBe4 (KMSAT Reporting)](../mcps/knowbe4-kmsat-reporting.md) | Audit security awareness — list users, track phishing tests, and monitor risk scores. |
 | [Kombo](../mcps/kombo.md) | Unified API for HRIS, ATS, and LMS — manage employees, job openings, and training courses across 50+ platforms through a single interface. |
 | [KPA Flex](../mcps/kpa-flex.md) | Manage EHS compliance — list inspections, audit employees, and search reports. |
 | [Lever](../mcps/lever.md) | Manage recruitment postings, candidate opportunities, and hiring stages via the Lever API. |
 | [Liaison](../mcps/liaison.md) | Centralize admissions and enrollment management for higher education with applicant tracking and document collection workflows. |
 | [Lightcast Labor Market](../mcps/lightcast-labor-market.md) | Equip your AI agent to access labor market data, track skill taxonomies, and monitor job titles via the Lightcast API. |
+| [Lucca (HR & Finance Suite)](../mcps/lucca-hr-finance-suite.md) | Manage your HRIS via Lucca — track employee data, leave requests (Timmi), and expense reports (Cleemy). |
 | [Manatal](../mcps/manatal.md) | Manatal AI Recruitment and ATS platform to manage candidates, jobs, and applications. |
 | [Mosaic (Resource Planning & Workforce Management)](../mcps/mosaic-resource-planning-workforce-management.md) | Manage resource planning via Mosaic — track work plans, audit budget estimates, and monitor team capacity. |
+| [Namely](../mcps/namely.md) | Manage HRIS data via Namely — track employee profiles, job info, and organization groups directly from your AI agent. |
 | [Odoo HR](../mcps/odoo-hr.md) | Search employees, manage leaves, track attendance and expenses — Odoo HR through natural conversation. |
 | [Onfido](../mcps/onfido.md) | Automate identity verification via Onfido — create applicants, manage workflow runs, and retrieve verification reports directly from any AI agent. |
+| [OnPay](../mcps/onpay.md) | Payroll and HR management — manage employees, transactions, and schedules via OnPay. |
 | [OpenClassrooms](../mcps/openclassrooms.md) | Monitor student progress on OpenClassrooms — search courses, track diploma paths, review mentoring sessions, and verify certificates from any AI agent. |
 | [Org Design Ratio Calculator](../mcps/org-design-ratio-calculator.md) | Analyze organizational efficiency by comparing headcount ratios against industry benchmarks. |
 | [Oyster](../mcps/oyster.md) | Manage global HR, payroll, and compliance via Oyster — list engagements, track expenses, and manage time-off requests directly from any AI agent. |
+| [PayFit](../mcps/payfit.md) | Automate HR and payroll operations via PayFit — list collaborators, fetch payslips securely, overview company structure, and export accounting entries via AI. |
+| [Personio](../mcps/personio.md) | Orchestrate HR logistics via Personio — manage workforce lists, track specific absences, log attendances securely, and evaluate custom attributes structurally via AI. |
 | [Personio](../mcps/personio-alternative.md) | Orchestrate HR logistics via Personio — manage workforce lists, track specific absences, log attendances securely, and evaluate custom attributes structurally via AI. |
 | [Remote.com](../mcps/remotecom.md) | Query your Remote.com HRIS from any AI workflow — employments, leave, timesheets, payslips, expenses, invoices, payroll runs and hiring reference data. |
 | [Retention Risk Scorer](../mcps/retention-risk-scorer.md) | Predict employee turnover risk and quantify the financial impact of attrition. |

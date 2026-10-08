@@ -4,6 +4,7 @@ Explore the open database of **operations-management** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [MaintainX](../mcps/maintainx.md) | Manage work orders, assets, and facility locations via the MaintainX REST API. |
 | [Skedda](../mcps/skedda.md) | Manage your workspace scheduling — create, update, and track bookings for desks, meeting rooms, and special venues directly through AI agents. |
 
 

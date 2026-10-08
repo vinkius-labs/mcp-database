@@ -251,6 +251,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [City Pass Value Comparator](../mcps/city-pass-value-comparator.md) | Compare city tourist passes against individual attraction and transport costs. |
 | [Claim Payment Allocation Record](../mcps/claim-payment-allocation-record.md) | Assign payments to claim items and generate reconciliation reports. |
 | [Claim Settlement Review Sheet](../mcps/claim-settlement-review-sheet.md) | Reconcile insurance settlement statements against inventories and policy limits. |
+| [Class Pack Value Comparator](../mcps/class-pack-value-comparator.md) | Evaluates the true cost of fitness pricing models by factoring in attendance probability and travel costs. |
 | [Client Retainer Comparator](../mcps/client-retainer-comparator.md) | Analyze retainer profitability, scope drift, and payment reliability. |
 | [Cloud Vendor Lock-in Risk Analyzer](../mcps/cloud-vendor-lock-in-risk-analyzer.md) | Evaluate financial and operational exposure to cloud providers through risk scoring and switching cost modeling. |
 | [Club Membership Budgeting](../mcps/club-membership-budgeting.md) | Aggregate dues, operational expenses, and participation projections for club financial planning. |
@@ -1191,7 +1192,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Weekly Revenue Analyzer](../mcps/weekly-revenue-analyzer.md) | Aggregate and analyze weekly transaction volumes for financial visibility. |
 | [Well Abandonment Cost Estimator](../mcps/well-abandonment-cost-estimator.md) | Calculate total financial liability for well plugging and abandonment (P&A) operations. |
 | [Wellness Membership Pricing Calculator](../mcps/wellness-membership-pricing-calculator.md) | Design profitable tiered membership structures for wellness businesses. |
-| [Wellness Retreat Budget Planner](../mcps/wellness-retreat-budget-planner.md) | Precision financial modeling for wellness retreats, calculating total costs, per-person pricing, and break-even occupancy. |
+| [Wellness Retreat Budget Planner](../mcps/wellness-retreat-budget-planner.md) | Calculate comprehensive wellness retreat costs including logistics, operations, and overhead. |
 | [Whole Farm Budget Planner](../mcps/whole-farm-budget-planner.md) | Aggregate enterprise budgets into a holistic farm financial plan. |
 | [Wholesale Order Total](../mcps/wholesale-order-total.md) | Calculate wholesale order totals, tiered pricing, and eligibility. |
 | [Wholesale Price Calculator](../mcps/wholesale-price-calculator.md) | A precision pricing engine for calculating optimal wholesale prices. |

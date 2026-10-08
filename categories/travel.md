@@ -5,6 +5,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Accessible Trip Planner](../mcps/accessible-trip-planner.md) | Evaluates transport, lodging, and attractions against specific mobility and timing needs. |
+| [Active Commute Planner](../mcps/active-commute-planner.md) | Compare walking, cycling, transit, and driving options based on weather and distance. |
 | [Airline Baggage Calculator](../mcps/airline-baggage-calculator.md) | Calculate baggage allowances and excess fees based on airline, fare class, and route. |
 | [Airport Transfer Comparator](../mcps/airport-transfer-comparator.md) | Compare taxi, rideshare, transit, and other airport transport options. |
 | [Altitude Sickness Risk Assessment](../mcps/altitude-sickness-risk-assessment.md) | Calculate AMS risk, acclimatization needs, and safety protocols for high-altitude trips. |

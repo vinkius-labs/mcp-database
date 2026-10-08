@@ -107,6 +107,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Freshmarketer](../mcps/freshmarketer.md) | Manage marketing automation, sync contacts, and trigger email journeys via AI agents with Freshmarketer. |
 | [Friendbuy](../mcps/friendbuy.md) | Manage referral programs, track purchases, and oversee rewards via AI agents with Friendbuy. |
 | [FunnelCockpit](../mcps/funnelcockpit.md) | Build high-converting sales funnels, landing pages, and email sequences with an all-in-one German marketing platform. |
+| [Gainsight PX](../mcps/gainsight-px.md) | Manage product experience, track user behavior, and oversee engagements via AI agents with Gainsight PX. |
 | [Galxe](../mcps/galxe.md) | Automate Web3 community management via Galxe — check quest eligibility, track leaderboards, and manage credentials directly from any AI agent. |
 | [Gameball](../mcps/gameball-alternative.md) | Turn customers into loyal fans with gamified rewards, referral programs, and engagement challenges that drive repeat purchases. |
 | [GAN.ai](../mcps/ganai.md) | Generate personalized videos at scale, track generation status, and oversee campaigns via AI agents with GAN.ai. |
@@ -116,6 +117,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [GetResponse](../mcps/getresponse.md) | Grow your audience with email marketing, landing pages, webinars, and marketing automation that works together seamlessly. |
 | [GetResponse](../mcps/getresponse-alternative.md) | Grow your audience with email marketing, landing pages, webinars, and marketing automation that works together seamlessly. |
 | [Ghost (Publishing & Newsletter Platform API)](../mcps/ghost-publishing-newsletter-platform-api.md) | Manage your Ghost publication — browse public content, manage posts, and automate your newsletter workflow directly from your AI agent. |
+| [Giftbit](../mcps/giftbit.md) | Order, send, and track digital gift cards and rewards via AI agents with Giftbit. |
 | [GoHighLevel](../mcps/gohighlevel-alternative.md) | Manage your GHL location — audit contacts, opportunities, and tasks via AI. |
 | [GoSquared](../mcps/gosquared.md) | Monitor real-time web traffic and analyze historical trends via AI. |
 | [GRIN](../mcps/grin.md) | Manage influencer marketing & creator CRMs via GRIN — list contacts, track campaigns, and monitor content via AI. |
@@ -123,6 +125,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Heyzine](../mcps/heyzine.md) | Transform PDFs into interactive flipbooks with page-turn animations, embedded media, and sharing analytics for digital publishing. |
 | [Hiro.fm](../mcps/hirofm.md) | Create and distribute audio content with a podcast-like platform that lets you build a private audio feed for your audience. |
 | [HypeAuditor](../mcps/hypeauditor.md) | Analyze influencers and retrieve reports via HypeAuditor API. |
+| [Impact.com](../mcps/impactcom.md) | Manage partnership campaigns, ads, and affiliate payouts via Impact.com API. |
 | [Inbox (useinbox.com)](../mcps/inbox-useinboxcom.md) | Manage email campaigns, contact lists, and newsletters via UseINBOX API. |
 | [Influencers Club](../mcps/influencers-club.md) | Discover and connect with influencers across social platforms with verified engagement data and audience demographics. |
 | [Integrate (Integrate.com)](../mcps/integrate-integratecom.md) | Manage marketing campaigns, leads, and sources via Integrate.com API. |
@@ -140,6 +143,8 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Kudosity](../mcps/kudosity.md) | Automate SMS & WhatsApp messaging via Kudosity — send and cancel SMS, send WhatsApp messages, manage contacts and lists, track delivery, and check account balance from any AI agent. |
 | [Lead Scoring Calculator](../mcps/lead-scoring-calculator.md) | Calculate a lead's conversion readiness score instantly using configurable firmographic and behavioral data points. |
 | [LeadConnector](../mcps/leadconnector.md) | Power up HighLevel/LeadConnector — fetch contacts, trace opportunities, and handle appointments seamlessly. |
+| [Leadfeeder](../mcps/leadfeeder.md) | Bring Leadfeeder B2B visit intelligence to your AI. Discover which companies visit your website natively. |
+| [LeadSquared](../mcps/leadsquared.md) | Manage leads, sales activities, and opportunities via the LeadSquared CRM API. |
 | [LeadsRx](../mcps/leadsrx.md) | Analyze marketing attribution and track conversions via LeadsRx — get campaign results and touchpoint insights directly from your AI agent. |
 | [Leal](../mcps/leal.md) | Retain customers in Latin America with digital loyalty programs, cashback rewards, and personalized offers for retail businesses. |
 | [Lemlist](../mcps/lemlist.md) | Equip your AI agent with direct access to Lemlist — manage cold email campaigns, track lead engagement, and automate outreach without opening the Lemlist dashboard. |
@@ -149,6 +154,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Lob](../mcps/lob.md) | Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows. |
 | [Lob](../mcps/lob-alternative.md) | Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows. |
 | [Local Falcon](../mcps/local-falcon.md) | Track your Google Maps rankings across geographic grids and monitor local SEO performance for every business location. |
+| [Loops](../mcps/loops.md) | Email marketing and transactional email platform with powerful automation, audience segmentation, and analytics. |
 | [Mail Blaze](../mcps/mail-blaze.md) | Manage email marketing campaigns and subscriber lists via the Mail Blaze REST API. |
 | [Maileon](../mcps/maileon.md) | Manage email marketing contacts, mailings, and reporting via the Maileon REST API. |
 | [MailerLite](../mcps/mailerlite.md) | Design beautiful emails, grow your subscriber base, and sell digital products with marketing tools that put simplicity first. |
@@ -157,10 +163,14 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Mailify (Sarbacane)](../mcps/mailify-sarbacane.md) | Manage email and SMS marketing campaigns, address books, and contacts via the Mailify API. |
 | [Mailingwork](../mcps/mailingwork.md) | Execute professional email marketing campaigns with advanced segmentation, A/B testing, and GDPR-compliant list management. |
 | [Mailjet](../mcps/mailjet-alternative.md) | Deliver emails at scale with collaborative template editing, real-time monitoring, and deliverability analytics in one platform. |
+| [MarketMuse (AI Content Strategy & SEO)](../mcps/marketmuse-ai-content-strategy-seo.md) | Plan and optimize content via MarketMuse AI — analyze topic authority, generate content briefs, and audit SEO performance. |
 | [Mediastack](../mcps/mediastack.md) | Access real-time and historical news articles from over 7,500 sources worldwide directly through your AI agent. |
 | [Medium](../mcps/medium-alternative.md) | Manage your Medium profile — publish stories, audit publications, and contributors via AI. |
+| [Meltwater](../mcps/meltwater.md) | Media intelligence and social monitoring via Meltwater — track news, mentions, and analytics. |
 | [MemeLord](../mcps/memelord.md) | Generate viral memes and humorous visual content with AI that understands internet culture and creates shareable images instantly. |
+| [Mention](../mcps/mention.md) | Monitor brand mentions across the web, social media, and news in real time to protect your reputation and spot trends early. |
 | [Mention](../mcps/mention-alternative.md) | Monitor brand mentions across the web, social media, and news in real time to protect your reputation and spot trends early. |
+| [Metricool](../mcps/metricool.md) | Social media analytics and scheduling via Metricool — track Instagram, Facebook, and Twitter metrics. |
 | [Minutemailer](../mcps/minutemailer.md) | Email and SMS marketing — manage contacts, lists, and templates via Minutemailer. |
 | [Mobile Action](../mcps/mobile-action.md) | All-in-one app marketing intelligence via Mobile Action — track ASO, keywords, and ad creatives directly from your AI agent. |
 | [Modash](../mcps/modash.md) | Find and analyze influencers across Instagram, TikTok, and YouTube with Modash. |
@@ -170,6 +180,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Moosend (Email Marketing & Automation)](../mcps/moosend-email-marketing-automation.md) | Manage email marketing via Moosend — create campaigns, track mailing lists, and audit performance analytics. |
 | [Mozscape](../mcps/mozscape.md) | Analyze SEO metrics, domain authority, and link profiles directly from your AI agent using the Mozscape API. |
 | [Namsor](../mcps/namsor.md) | Automate name analytics via Namsor — predict gender, origin, and ethnicity directly from any AI agent. |
+| [NeverBounce](../mcps/neverbounce.md) | Verify and clean email addresses via NeverBounce — track single checks and bulk jobs directly from your AI agent. |
 | [NiftyImages](../mcps/niftyimages.md) | Manage personalized images and dynamic content via NiftyImages — track images, widgets, and countdown timers directly from your AI agent. |
 | [Nimble CRM](../mcps/nimble-crm.md) | Manage relationships and deals via Nimble CRM — track contacts, deals, and activities directly from your AI agent. |
 | [NinjaCat](../mcps/ninjacat.md) | Manage marketing reporting and advertisers via NinjaCat — track reports, data sources, and campaigns directly from your AI agent. |
@@ -180,12 +191,14 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Oktopost](../mcps/oktopost.md) | Manage B2B social media via Oktopost — track campaigns, posts, and analytics directly from your AI agent. |
 | [Ometria Email Events](../mcps/ometria-email-events.md) | Track and analyze email engagement events via Ometria — monitor opens, clicks, and bounces directly from your AI agent. |
 | [OneLocal LocalReviews](../mcps/onelocal-localreviews.md) | Boost your local business visibility with automated review collection, reputation monitoring, and response management tools. |
+| [Ontraport](../mcps/ontraport.md) | Manage marketing and sales via Ontraport — list contacts, track campaigns, and monitor transactions directly from any AI agent. |
 | [OpenPanel](../mcps/openpanel.md) | Track events, identify users, and manage profile properties directly from your AI agent using OpenPanel analytics. |
 | [Orbit](../mcps/orbit.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
 | [Orbit](../mcps/orbit-alternative.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
 | [Ortto (formerly Autopilot)](../mcps/ortto-formerly-autopilot.md) | Manage your CDP, customer data, and marketing automations via Ortto — orchestrate journeys natively via AI. |
 | [Papermark (Docsend Alternative)](../mcps/papermark-docsend-alternative.md) | Securely share documents, track engagement, and manage links with Papermark — the open-source DocSend alternative for your AI agent. |
 | [PartnerStack](../mcps/partnerstack.md) | Manage affiliate and partner programs via PartnerStack — list partners, track leads, and monitor rewards directly from any AI agent. |
+| [PhantomBuster](../mcps/phantombuster.md) | Automate web data extraction via PhantomBuster — list Phantoms, launch automations, and track results directly from any AI agent. |
 | [Phyllo](../mcps/phyllo.md) | Automate creator economy analysis via Phyllo — fetching live creator metrics, cross-platform audience growth, and campaign reach directly from any AI agent. |
 | [PitchBox](../mcps/pitchbox.md) | Manage influencer outreach and content marketing via PitchBox — list projects, track opportunities, and monitor emails directly from any AI agent. |
 | [Plunk Email Marketing](../mcps/plunk-email-marketing.md) | Automate your email marketing via Plunk — send transactional emails, track events, and manage contacts. |

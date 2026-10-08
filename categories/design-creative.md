@@ -15,6 +15,7 @@ Explore the open database of **design-creative** Model Context Protocol (MCP) se
 | [Frontify](../mcps/frontify.md) | Manage digital assets and brand guidelines via Frontify — list workspace projects and assets, handle metadata, audit brand portals, and manage users directly from any AI agent. |
 | [Getty Images](../mcps/getty-images.md) | Manage stock media via Getty Images — search millions of creative and editorial photos, handle video discovery, and download assets directly from any AI agent. |
 | [Meshy (3D AI)](../mcps/meshy-3d-ai.md) | Transform text and images into high-quality 3D models using Meshy's generative AI directly from your agent. |
+| [Pexels](../mcps/pexels.md) | Retrieve free high-quality stock media via Pexels — search photos, track videos natively, and explore curated visual collections entirely through AI constraints. |
 | [Pexels](../mcps/pexels-alternative.md) | Search and retrieve high-quality royalty-free photos and videos from Pexels directly within your AI agent. |
 | [Pixabay](../mcps/pixabay.md) | Search and retrieve royalty-free stock images, vectors, illustrations, and videos via AI directly from Pixabay. |
 | [Pixabay](../mcps/pixabay-alternative.md) | Search and retrieve millions of royalty-free images and videos directly from Pixabay's massive creative library. |

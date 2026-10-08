@@ -29,6 +29,7 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [FutureVault](../mcps/futurevault.md) | Manage digital vaults, track documents, and oversee folder structures via AI agents with FutureVault. |
 | [GovInfo (GPO Legislative Docs)](../mcps/govinfo-gpo-legislative-docs.md) | Access official US government documents, legislative bills, and federal registers directly from the GPO. |
 | [Insurance Document Retention Plan](../mcps/insurance-document-retention-plan.md) | Automated storage and review scheduling for insurance documentation. |
+| [LEAP Legal](../mcps/leap-legal.md) | Manage law practice via LEAP Legal Software — matters, contacts, time tracking, bills, payments, tasks, documents, and calendar. |
 | [Memo Meister](../mcps/memo-meister.md) | Create and organize smart notes with AI-powered tagging, search, and knowledge connections that make your ideas retrievable. |
 | [Modusign](../mcps/modusign.md) | Manage electronic contracts and signatures via Modusign — track documents and request signatures directly from your AI agent. |
 | [MyCase Legal](../mcps/mycase-legal.md) | Manage law practice via MyCase — cases/matters, clients, time tracking, invoices, and calendar through MyCase API. |

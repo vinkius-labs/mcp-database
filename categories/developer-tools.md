@@ -243,16 +243,19 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Foxentry](../mcps/foxentry.md) | Validate and autocomplete addresses, emails, and phone numbers in forms to eliminate bad data before it enters your systems. |
 | [FreeClimb](../mcps/freeclimb.md) | Build programmable voice and SMS workflows via AI agents with FreeClimb. |
 | [FreeToGame](../mcps/freetogame.md) | Explore thousands of free-to-play games — list titles, filter by genre or platform, and inspect system requirements directly via AI. |
+| [Frontegg](../mcps/frontegg.md) | Manage B2B identity, provision users, and oversee tenants via AI agents with Frontegg. |
 | [FtmScan (Fantom Network Explorer)](../mcps/ftmscan-fantom-network-explorer.md) | Access Fantom blockchain data directly—query wallet balances, transaction history, smart contract source code, and token transfers via FtmScan. |
 | [Fundamental Math](../mcps/fundamental-math.md) | A deterministic, zero-latency mathematical engine for exact calculations. Safely compute percentages, square roots, factorials, and the rule of three completely local. |
 | [FusionAuth (Enterprise Identity & Auth)](../mcps/fusionauth-enterprise-identity-auth.md) | Manage enterprise identity, users, and applications via FusionAuth — create users, list applications, and handle authentication flows directly from any AI agent. |
 | [Fuzzy Match Search](../mcps/fuzzy-match-search.md) | Perform lightning-fast fuzzy string matching across large datasets. Find the closest matches instantly using Levenshtein distance. |
 | [Fuzzy String Distance Engine](../mcps/fuzzy-string-distance-engine.md) | Calculate exact Levenshtein, Jaro-Winkler, and Dice distances for fuzzy text matching natively local. |
 | [Gandi.net (Domain Registration & Hosting API)](../mcps/gandinet-domain-registration-hosting-api.md) | Manage Gandi.net domains, DNS records, mailboxes, and hosting instances directly from your AI agent. |
+| [Gatling](../mcps/gatling.md) | Manage load testing via Gatling Enterprise — list and start simulations, monitor test runs and request stats, and handle generator pools directly from any AI agent. |
 | [Geekflare](../mcps/geekflare.md) | Test your website performance, security headers, and DNS configuration with a comprehensive suite of technical audit tools. |
 | [Gelato Network](../mcps/gelato-network.md) | Automate Web3 transactions via Gelato — relay transactions, manage ERC-4337 UserOperations, and get real-time gas estimates across multiple chains. |
 | [Genderize](../mcps/genderize.md) | Predict the gender of a person based on their first name via AI agents with Genderize.io. |
 | [Geocode.xyz](../mcps/geocodexyz.md) | Convert addresses to coordinates, perform reverse geocoding, and extract location data from text with Geocode.xyz. |
+| [Geocodio](../mcps/geocodio.md) | Empower geocoding via Geocodio — perform batch geocoding and reverse geocoding for US/Canada, and retrieve Census and legislative data directly from any AI agent. |
 | [Geometry Calculator](../mcps/geometry-calculator.md) | Compute exact Euclidean distances, 2D areas, and 3D volumes completely local. A zero-latency geometry engine for autonomous AI agents. |
 | [Gerrit](../mcps/gerrit.md) | Manage code reviews via Gerrit — query changes and patch sets, handle reviewers and approvals, and audit project branches directly from any AI agent. |
 | [GetBlock (Web3 RPC Provider)](../mcps/getblock-web3-rpc-provider.md) | Access 50+ blockchain networks (Ethereum, Solana, Bitcoin) via RPC. Query balances, blocks, and transactions directly from your AI agent. |
@@ -267,6 +270,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Gotenberg](../mcps/gotenberg.md) | Convert URLs, HTML, and Markdown to PDF or screenshots, and manage PDF files with tools for merging, splitting, and metadata editing. |
 | [Gradient AI (LLM API & Finetuning)](../mcps/gradient-ai-llm-api-finetuning.md) | Access powerful LLMs, fine-tune models on your own data, and generate embeddings directly through your AI agent. |
 | [Graph State Merge Conflict Resolver](../mcps/graph-state-merge-conflict-resolver.md) | Resolves deterministic merge conflicts for parallel graph node state updates. |
+| [GraphHopper](../mcps/graphhopper.md) | Empower routing and geocoding via GraphHopper — calculate optimal routes, perform reverse geocoding, solve vehicle routing problems, and analyze reachability directly from any AI agent. |
 | [GraphQL Fragment Merger](../mcps/graphql-fragment-merger.md) | Deterministically inlines GraphQL fragments into a single query string. |
 | [Grepsr](../mcps/grepsr.md) | Automate web scraping via Grepsr — manage reports, trigger crawls, and retrieve data directly via AI. |
 | [Greptile](../mcps/greptile.md) | Search and understand any codebase instantly with AI that reads your repositories and answers technical questions accurately. |
@@ -283,8 +287,10 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Healthchecks.io](../mcps/healthchecksio.md) | Monitor cron jobs and background tasks via Healthchecks.io — list checks, track pings, and manage alerts directly from any AI agent. |
 | [Helius (Solana)](../mcps/helius-solana.md) | Access high-performance Solana data—fetch assets, balances, transaction history, and priority fee estimates directly through your AI agent. |
 | [Hetzner](../mcps/hetzner.md) | Manage Hetzner Cloud infrastructure—list servers, manage firewalls, and control power states directly from any AI agent. |
+| [Hevo Data (ETL & Data Pipeline)](../mcps/hevo-data-etl-data-pipeline.md) | Manage data pipelines via Hevo — list pipelines, monitor destinations, and track usage. |
 | [Hexometer](../mcps/hexometer.md) | Automate website monitoring via Hexometer — monitor uptime, performance, and health directly from any AI agent. |
 | [Highlight (Session Replay & UX)](../mcps/highlight-session-replay-ux.md) | Streamline observability by ingesting raw logs, OTLP logs, and OTLP traces directly into Highlight for session replay and UX monitoring. |
+| [Honeybadger (Error Tracking)](../mcps/honeybadger-error-tracking.md) | Monitor app exceptions and uptime via Honeybadger — list projects, resolve faults, and track deployments. |
 | [Hono Router Pattern Matcher](../mcps/hono-router-pattern-matcher.md) | Deterministic Hono-style route pattern matching for edge computing. |
 | [Hookdeck](../mcps/hookdeck.md) | Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent. |
 | [Hookdeck (Webhook Gateway)](../mcps/hookdeck-webhook-gateway.md) | Manage your webhook infrastructure via Hookdeck — monitor connections, route events, and control sources directly from any AI agent. |
@@ -301,6 +307,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [IBAN Bank Validator](../mcps/iban-bank-validator.md) | Validate international bank accounts instantly using Modulus 97 checksums. Prevent failed transactions with 100% local precision. |
 | [ICU MessageFormat Validator](../mcps/icu-messageformat-validator.md) | A deterministic validator for ICU MessageFormat strings to prevent i18n breakage from unbalanced braces or incorrect syntax. |
 | [ICU MessageFormat Validator](../mcps/icu-messageformat-validator-alternative.md) | A deterministic validator for ICU MessageFormat strings to prevent i18n breakage from unbalanced braces or incorrect syntax. |
+| [ImageKit (Media Optimization & DAM)](../mcps/imagekit-media-optimization-dam.md) | Manage and optimize media via ImageKit — list files, purge CDN cache, and audit image metadata. |
+| [imgix (Real-time Image Processing)](../mcps/imgix-real-time-image-processing.md) | Optimize and transform images via imgix — manage CDN sources, purge assets, and monitor origin connections. |
 | [Immutable X](../mcps/immutable-x.md) | Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent. |
 | [Import Order Enforcer](../mcps/import-order-enforcer.md) | Enforce deterministic import ordering and detect unused imports using AST analysis. |
 | [Import.io (Web Data Extraction)](../mcps/importio-web-data-extraction.md) | Extract structured data from any website via Import.io — run extractors, manage bulk crawls, and monitor API usage. |
@@ -311,6 +319,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [IoTeX (IoTeX Block Explorer API)](../mcps/iotex-iotex-block-explorer-api.md) | Access IoTeX blockchain data — query accounts, blocks, transactions, and token details directly from your AI agent. |
 | [IP Subnet Calculator](../mcps/ip-subnet-calculator.md) | Flawless binary math. Calculate perfect network boundaries, broadcast addresses, and IP ranges without LLM hallucination. |
 | [IP2WHOIS](../mcps/ip2whois.md) | Look up domain registration details, ownership information, and expiration dates with instant WHOIS queries at scale. |
+| [IPGeolocation (IP Intelligence & Time)](../mcps/ipgeolocation-ip-intelligence-time.md) | Resolve IP addresses via IPGeolocation — get precise location, timezone details, and local astronomy data. |
 | [IPQualityScore (IPQS)](../mcps/ipqualityscore-ipqs.md) | Detect fraud, proxies, and malicious activity via IPQS API. |
 | [IPRoyal (Proxy Services)](../mcps/iproyal-proxy-services.md) | Manage proxies via IPRoyal — monitor traffic, rotate credentials, and manage whitelisted IPs. |
 | [Irys](../mcps/irys.md) | Manage permanent data storage on Irys — check storage prices, query transactions via GraphQL, and manage balances across multiple tokens. |
@@ -351,6 +360,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LeanCloud](../mcps/leancloud.md) | Scalable backend-as-a-service platform — manage data classes, users, and push notifications via AI. |
 | [Legacy System Pattern Matcher](../mcps/legacy-system-pattern-matcher.md) | Identifies legacy code patterns and provides deterministic rules for safe interaction. |
 | [Levenshtein Distance Engine](../mcps/levenshtein-distance-engine.md) | Calculate the exact edit distance between two strings. Essential for fuzzy matching, spell checking, and deduplication. Stop LLMs from guessing string similarity. |
+| [Levo.ai (API Security & Observability)](../mcps/levoai-api-security-observability.md) | Secure your APIs via Levo.ai — audit endpoints, monitor sensitive data (PII/PHI), and manage OWASP vulnerabilities. |
 | [LibreTranslate API](../mcps/libretranslate-api.md) | Translate and detect text — audit languages via AI. |
 | [License Header Injector and Verifier](../mcps/license-header-injector-and-verifier.md) | Enforce, audit, and repair mandatory copyright headers in source files. |
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
@@ -373,8 +383,10 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Mabl (AI-Powered Test Automation)](../mcps/mabl-ai-powered-test-automation.md) | Manage E2E testing via Mabl — trigger test plans, monitor execution results, and perform AI-driven failure analysis. |
 | [Magnolia (Enterprise Headless CMS)](../mcps/magnolia-enterprise-headless-cms.md) | Manage enterprise content via Magnolia CMS — query JCR nodes, audit template schemas, and orchestrate headless delivery. |
 | [Maileroo](../mcps/maileroo.md) | Deliver transactional emails reliably at scale with an SMTP relay and API that prioritizes inbox placement and speed. |
+| [MailerSend](../mcps/mailersend.md) | Send transactional and marketing emails with templates, analytics, and deliverability tools built for developers and businesses. |
 | [MailerSend](../mcps/mailersend-alternative.md) | Send transactional and marketing emails with templates, analytics, and deliverability tools built for developers and businesses. |
 | [Mailsac](../mcps/mailsac.md) | Manage disposable and private email addresses via the Mailsac REST API. |
+| [MailSlurp](../mcps/mailslurp.md) | Manage temporary inboxes and automate email testing via the MailSlurp REST API. |
 | [Mailtrap](../mcps/mailtrap.md) | Test, debug, and preview emails in a sandbox before sending to production with analytics that catch rendering issues early. |
 | [MailWizz](../mcps/mailwizz.md) | Manage email marketing campaigns and subscriber lists via the MailWizz REST API. |
 | [Makeswift](../mcps/makeswift.md) | Build stunning Next.js websites with a visual editor that lets marketers update pages without touching code or deployments. |
@@ -408,8 +420,10 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Natural Tokenizer Engine](../mcps/natural-tokenizer-engine.md) | Tokenize text into words, numbers, emails, URLs, emojis, and hashtags deterministically. AI struggles with mixed content — this engine extracts exact linguistic entities instantly. |
 | [ncScale](../mcps/ncscale.md) | Monitor and observe your no-code stack via ncScale — track logs, alerts, and tickets directly from your AI agent. |
 | [Nearblocks (Near Blockchain Explorer API)](../mcps/nearblocks-near-blockchain-explorer-api.md) | Explore the Near blockchain — query account balances, transactions, tokens, and network statistics directly via AI. |
+| [Neptune.ai (ML Experiment Tracking)](../mcps/neptuneai-ml-experiment-tracking.md) | Manage ML experiments via Neptune.ai — track training runs, monitor metrics, and audit model versions. |
 | [Newton](../mcps/newton.md) | Perform advanced symbolic mathematics—simplify expressions, calculate derivatives, find integrals, and solve equations directly through your AI agent. |
 | [Nhost](../mcps/nhost.md) | Manage Nhost authentication and storage — handle user sign-ins, registrations, profile management, and file uploads directly from any AI agent. |
+| [Nimbleway](../mcps/nimbleway.md) | Web data collection and scraping via Nimbleway — extract content and search the web directly from your AI agent. |
 | [NLP Cloud](../mcps/nlp-cloud.md) | High-performance NLP API for text summarization, entity extraction, classification, sentiment analysis, ASR, and translation. |
 | [Nodereal](../mcps/nodereal.md) | High-performance blockchain infrastructure for Aptos and EVM networks — query accounts, blocks, and simulate transactions. |
 | [Nominatim](../mcps/nominatim.md) | Geocode addresses, reverse geocode coordinates and explore OpenStreetMap data — no API key required. |
@@ -420,6 +434,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Nyckel ML](../mcps/nyckel-ml.md) | Classify data and perform semantic search via Nyckel — track ML functions, samples, and labels directly from your AI agent. |
 | [Object Hash Engine](../mcps/object-hash-engine.md) | Generate deterministic SHA-256 fingerprints of any JSON object. Keys are automatically sorted so {b:2,a:1} and {a:1,b:2} always produce the exact same hash. Essential for deduplication. |
 | [Observability & Tracing Calculator](../mcps/observability-tracing-calculator.md) | Deterministic engine for distributed tracing metrics, cost estimation, and anomaly detection. |
+| [Octoparse](../mcps/octoparse.md) | Scrape data from any website visually with a no-code web scraper that handles pagination, login, and JavaScript rendering. |
 | [OKLink (Multi-chain Web3 Blockchain Data API)](../mcps/oklink-multi-chain-web3-blockchain-data-api.md) | Access real-time blockchain data across multiple chains—query addresses, tokens, transactions, and blocks directly from your AI agent. |
 | [Ollama](../mcps/ollama.md) | Run LLM models via Ollama cloud API — generate completions, chat with multimodal models, create embeddings, and inspect model details from any AI agent. |
 | [Olostep](../mcps/olostep.md) | Scrape web pages at scale with a headless browser API that renders JavaScript and returns clean structured data instantly. |
@@ -441,6 +456,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Output Format Stability Checker](../mcps/output-format-stability-checker.md) | Detect non-deterministic shifts in LLM response structures. |
 | [Output Format Token Comparator](../mcps/output-format-token-comparator.md) | Analyze token efficiency, overhead, and complexity across different data serialization formats. |
 | [Oxylabs](../mcps/oxylabs.md) | Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent. |
+| [ParseHub](../mcps/parsehub.md) | Control advanced cloud scraping projects via ParseHub — list targets, dispatch headless runs, trace crawler status, and fetch extracted datasets directly via AI. |
 | [Particle Network](../mcps/particle-network.md) | Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI. |
 | [Password Generator API](../mcps/password-generator-api.md) | Generate secure passwords — audit entropy and length via AI. |
 | [Password Manager Export Analyzer](../mcps/password-manager-export-analyzer.md) | Analyze Bitwarden, LastPass, or 1Password CSV exports for weak and duplicate passwords — without EVER sending real passwords to the AI. |
@@ -454,6 +470,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Phone Validator Engine](../mcps/phone-validator-engine.md) | Stop LLMs from hallucinating phone numbers. Validates and formats numbers to E.164 natively. |
 | [Phrase (Software Localization API)](../mcps/phrase-software-localization-api.md) | Manage software localization projects, locales, and translation keys directly through the Phrase API. |
 | [PingCode](../mcps/pingcode.md) | Agile project management and R&D collaboration platform — manage work items, sprints, and wiki pages via AI. |
+| [Pingdom](../mcps/pingdom.md) | Monitor website uptime and performance via Pingdom — list checks, track response times, and manage alerts directly from any AI agent. |
 | [PipeStream](../mcps/pipestream.md) | Streamline real-time data flows — create streams, publish events, and fetch historical data directly from your AI agent. |
 | [Pixso](../mcps/pixso.md) | Collaborative design platform and UI/UX tool — manage design files, nodes, and teams via AI. |
 | [Plasmic (Visual Headless Page Builder)](../mcps/plasmic-visual-headless-page-builder.md) | Manage Plasmic projects, pages, and components via AI — list projects, inspect page structures, and trigger publishes directly. |

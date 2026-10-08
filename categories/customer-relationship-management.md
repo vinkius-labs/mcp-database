@@ -24,6 +24,7 @@ Explore the open database of **customer-relationship-management** Model Context 
 | [Little Green Light](../mcps/little-green-light.md) | Manage donor constituents, gifts, and appeals via the Little Green Light REST API. |
 | [MyTime](../mcps/mytime.md) | Manage business operations via MyTime — track appointments, staff, and services directly from your AI agent. |
 | [OfficeRnD Flex](../mcps/officernd-flex.md) | Manage flexible workspaces via OfficeRnD — track members, bookings, and billing directly from your AI agent. |
+| [Ordergroove](../mcps/ordergroove.md) | Subscription management for eCommerce — manage recurring orders and customer loyalty via Ordergroove. |
 | [Outreach](../mcps/outreach.md) | Equip your AI agent with direct access to Outreach — manage prospects, track sequences, and analyze sales engagement without opening the Outreach platform. |
 | [Pabbly Email Marketing](../mcps/pabbly-email-marketing.md) | Manage email campaigns and subscribers via Pabbly — list campaigns, track subscribers, and monitor automations directly from any AI agent. |
 | [Phorest](../mcps/phorest.md) | Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent. |

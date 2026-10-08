@@ -217,6 +217,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Brain Training Progress Tracker](../mcps/brain-training-progress-tracker.md) | Analyze cognitive performance trends, detect plateaus, and receive personalized training advice. |
 | [Bread Fermentation Calculator](../mcps/bread-fermentation-calculator.md) | Deterministic scheduling for bread fermentation timing and temperature. |
 | [Break Count Calculator](../mcps/break-count-calculator.md) | Calculate mandatory break counts and schedules based on work duration. |
+| [Break Reminder Schedule](../mcps/break-reminder-schedule.md) | Calculates work-break reminders and total break time based on your work hours and focus intervals. |
 | [Break-Even Event Attendance Calculator](../mcps/break-even-event-attendance-calculator.md) | Calculate the exact number of attendees needed to cover all event costs. |
 | [Break-even Price Calculator](../mcps/break-even-price-calculator.md) | Calculate commodity break-even prices, margin targets, and productivity requirements. |
 | [break-time-total](../mcps/break-time-total.md) | A precision utility for calculating and managing cumulative break durations. |
@@ -513,6 +514,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Dext](../mcps/dext.md) | Equip your AI agent to manage receipts, track invoices, and monitor accounting data via the Dext API. |
 | [Diagonal Cut Pythagorean Calculator](../mcps/diagonal-cut-pythagorean-calculator.md) | Calculate exact diagonal spans, mitered edge lengths, and miter offsets for precise angled cuts. |
 | [Diagrams](../mcps/diagrams.md) | Turn text into diagrams — flowcharts, UML, graphs and charts — rendered from Mermaid, PlantUML, D2 and more, with no key. |
+| [Digital Detox Calendar](../mcps/digital-detox-calendar.md) | Find optimal device-free windows by balancing work, family, and wellness. |
 | [Digital Detox Duration Recommender](../mcps/digital-detox-duration-recommender.md) | Personalized digital detox roadmaps and wellness strategies. |
 | [Digital Identity Update Notice Generator](../mcps/digital-identity-update-notice-generator.md) | Generates professional, platform-specific identity update notices for service providers. |
 | [Digital Legacy Document Plan](../mcps/digital-legacy-document-plan.md) | Synthesize digital assets and contacts into a structured legacy record with completeness checklists and review schedules. |
@@ -748,6 +750,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Formsite](../mcps/formsite.md) | Manage forms, retrieve results, and automate data collection via AI agents with Formsite. |
 | [Formstack](../mcps/formstack.md) | Manage professional forms, track submissions, and automate data collection via AI agents with Formstack. |
 | [FreeAgent](../mcps/freeagent.md) | Manage accounting, track invoices, and oversee bank transactions via AI agents with FreeAgent. |
+| [Freelance Rate Builder](../mcps/freelance-rate-builder.md) | Calculate sustainable hourly rates based on income targets, taxes, and overhead. |
 | [Freelance Utilization Forecast](../mcps/freelance-utilization-forecast.md) | Predict freelance revenue and capacity by modeling billable hours, rates, and overhead. |
 | [Freelancer Rate Calculator](../mcps/freelancer-rate-calculator.md) | Calculate sustainable hourly rates based on target income and billable capacity. |
 | [Freezer Meal Inventory Planner](../mcps/freezer-meal-inventory-planner.md) | Manage freezer stock, optimize consumption, and plan restocks. |
@@ -794,10 +797,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Google Docs](../mcps/google-docs.md) | Read, write, and export Google Docs documents — a full text workflow for any AI agent through the official Docs API. |
 | [Google Slides](../mcps/google-slides.md) | Read, create, and edit Google Slides decks — a full presentation workflow for any AI agent through the official Slides API. |
 | [GoRest](../mcps/gorest.md) | Access and manage RESTful data for users, posts, and comments via the GoRest API — perfect for testing, prototyping, and data simulation. |
+| [GoTo Connect](../mcps/goto-connect.md) | Manage your cloud phone system — view call records, send SMS, and manage voicemails via AI. |
 | [GoTo Meeting](../mcps/goto-meeting.md) | Host reliable video conferences with screen sharing, recording, and transcription for productive remote team meetings. |
 | [Grade Target Calculator](../mcps/grade-target-calculator.md) | Calculate required scores to reach your target academic grade. |
 | [Graduation Budget Planner](../mcps/graduation-budget-planner.md) | Track and manage all costs for your graduation celebration. |
 | [Graduation Party Planner](../mcps/graduation-party-planner.md) | Orchestrate perfect graduation celebrations with tools for budgeting, guest lists, and timelines. |
+| [Granola](../mcps/granola.md) | Manage AI meeting notes via Granola — list and search meeting documents, retrieve transcripts and summaries, and track action items directly from any AI agent. |
 | [Gratitude Journal Analytics](../mcps/gratitude-journal-analytics.md) | Analyze gratitude patterns, consistency, and wellbeing correlations. |
 | [Gravity Forms](../mcps/gravity-forms.md) | Manage your WordPress Gravity Forms — list forms, retrieve entries, and handle submissions directly via AI. |
 | [GRE Score Calculator](../mcps/gre-score-calculator.md) | Convert raw GRE answers into scaled scores, percentiles, and check graduate program eligibility. |
@@ -823,6 +828,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Gym Buddy Matching Score](../mcps/gym-buddy-matching-score.md) | Calculate gym partner compatibility and find optimal training windows. |
 | [Gym Equipment ROI Calculator](../mcps/gym-equipment-roi-calculator.md) | Calculate the financial return and break-even point for home gym equipment purchases. |
 | [Gym Membership Value Calculator](../mcps/gym-membership-value-calculator.md) | Calculate the true economic value of your gym membership. |
+| [Gym Visit Cost Calculator](../mcps/gym-visit-cost-calculator.md) | Calculate the true cost of every gym session by amortizing fees and travel. |
 | [Habit Completion Rate](../mcps/habit-completion-rate.md) | Track habit adherence and streaks with precise completion metrics. |
 | [Habit Cost Calculator](../mcps/habit-cost-calculator.md) | Calculate the monthly and annual financial impact of your recurring habits. |
 | [Habit Streak Analyzer](../mcps/habit-streak-analyzer.md) | Calculate current and longest streaks from a list of completion dates. |
@@ -836,13 +842,16 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Harvest](../mcps/harvest.md) | Automate time tracking and invoicing via Harvest — manage clients, invoices, and time entries directly from any AI agent. |
 | [Hashnode](../mcps/hashnode.md) | Manage your Hashnode blog directly from your AI agent — fetch user profiles, read publication posts, and publish or update content. |
 | [Healthy Habit Streak Plan](../mcps/healthy-habit-streak-plan.md) | Generate structured habit schedules, tracking targets, and streak logic. |
+| [Height (Project Management)](../mcps/height-project-management.md) | Manage projects and tasks via Height — track activities, list tasks, and manage workspace lists. |
 | [Hexomatic](../mcps/hexomatic.md) | Automate web scraping and worklfows via Hexomatic — manage workflows, recipes, and automation logs directly from any AI agent. |
 | [HeySummit](../mcps/heysummit.md) | Launch virtual summits and online conferences with speaker management, attendee registration, and engagement tracking built in. |
 | [HiBob](../mcps/hibob.md) | Automate HR workflows via HiBob — manage employees, time off, and tasks directly from any AI agent. |
 | [HiFlow](../mcps/hiflow.md) | Workflow and business process management. |
 | [Hiring Cost Calculator](../mcps/hiring-cost-calculator.md) | Calculate the total first-year economic impact of a new hire, including salary, benefits, recruitment, and productivity ramp-up. |
+| [Hive (Project Management)](../mcps/hive-project-management.md) | Manage projects via Hive — create actions, track initiatives, and organize workspaces. |
 | [Hobby Budget Tracker](../mcps/hobby-budget-tracker.md) | Track and analyze expenses for your personal hobbies. |
 | [Hobby Supply Shopping Planner](../mcps/hobby-supply-shopping-planner.md) | Optimize hobby project procurement by balancing material needs, budget, and existing tool inventory. |
+| [Hobby-Relaxation-Scheduler](../mcps/hobby-relaxation-scheduler.md) | Protects personal well-being by scheduling hobby time around mandatory household duties. |
 | [Holiday API](../mcps/holiday-api.md) | Manage global holidays — audit public and federal holidays via AI. |
 | [Holiday Budget Planner](../mcps/holiday-budget-planner.md) | Synchronize holiday spending with monthly savings to ensure financial stability. |
 | [Holiday Cookie Batch Planner](../mcps/holiday-cookie-batch-planner.md) | Converts holiday gifting needs into actionable baking batches, ingredient lists, and oven schedules. |
@@ -852,6 +861,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Home Childcare Scheduler](../mcps/home-childcare-scheduler.md) | Synchronize caregiver availability, child routines, and parent work schedules into actionable daily plans. |
 | [Home Dinner Host Plan](../mcps/home-dinner-host-plan.md) | Complete management for hosting dinner parties, from menu design to cleanup. |
 | [Home Emergency Contact Tree](../mcps/home-emergency-contact-tree.md) | Organize household members and external contacts into a prioritized, rule-based emergency call tree. |
+| [Home Exercise Space Planner](../mcps/home-exercise-space-planner.md) | Optimize your home gym layout by calculating room capacity, budget limits, and spatial fit for fitness equipment. |
 | [Home Inspection Action List](../mcps/home-inspection-action-list.md) | Prioritize home inspection findings into a strategic action plan. |
 | [Home Inventory Readiness Plan](../mcps/home-inventory-readiness-plan.md) | Plan your household inventory capture with room-by-room scheduling and secure archiving. |
 | [Home Inventory Record Plan](../mcps/home-inventory-record-plan.md) | A structured planning engine for systematic home asset documentation and management. |
@@ -860,13 +870,16 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Home Office Setup Budget Planner](../mcps/home-office-setup-budget-planner.md) | Plan and optimize your workspace budget based on physical constraints, ergonomics, and financial limits. |
 | [Home Project Cost Estimator](../mcps/home-project-cost-estimator.md) | Calculate total expenditures for residential renovation projects by tracking material and labor costs. |
 | [Home Service Quote Comparator](../mcps/home-service-quote-comparator.md) | Normalize and compare contractor bids to find the best value. |
+| [Home Spa Planner](../mcps/home-spa-planner.md) | Plan spa sessions by calculating product needs, costs, and time feasibility. |
 | [Homebase](../mcps/homebase.md) | Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent. |
 | [Homeowner Repair Priority Board](../mcps/homeowner-repair-priority-board.md) | Prioritize home repairs using safety, damage prevention, and budget scoring. |
 | [Homerun](../mcps/homerun.md) | Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent. |
 | [Homework Time Budget](../mcps/homework-time-budget.md) | Intelligent homework scheduling that balances task duration, difficulty, and mandatory breaks. |
+| [HotDocs](../mcps/hotdocs.md) | Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent. |
 | [Hotel Room Night Calculator](../mcps/hotel-room-night-calculator.md) | Calculate total room nights based on occupancy and stay duration. |
 | [Hourly Cost Calculator](../mcps/hourly-cost-calculator.md) | Calculate labor costs, budget limits, and efficiency ratios. |
 | [Hourly Productivity Tracker](../mcps/hourly-productivity-tracker.md) | Calculate and analyze work output efficiency per hour. |
+| [Hourly Rate After Expenses](../mcps/hourly-rate-after-expenses.md) | Calculate your true net hourly earnings by accounting for taxes and business overhead. |
 | [Hourly Salary & Real Wage Calculator](../mcps/hourly-salary-real-wage-calculator.md) | Convert pay frequencies and calculate your 'real' hourly wage after taxes, commute, and unpaid breaks. |
 | [Hourly Wage & Commute Calculator](../mcps/hourly-wage-commute-calculator.md) | Calculate your true effective hourly wage by accounting for taxes and commute costs. |
 | [Household Absence Instructions](../mcps/household-absence-instructions.md) | Generate structured, day-by-day caretaker guides from travel schedules and care requirements. |
@@ -885,9 +898,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Household Recovery Orchestrator](../mcps/household-recovery-orchestrator.md) | Converts post-disaster property data into actionable recovery sequences and schedules. |
 | [Household Safety Drill Record](../mcps/household-safety-drill-record.md) | Document and audit residential emergency preparedness drills. |
 | [Household Service Contact Book](../mcps/household-service-contact-book.md) | Organize and retrieve service provider profiles, contact methods, and service histories. |
+| [Household Sleep Window Planner](../mcps/household-sleep-window-planner.md) | Coordinate household activities by finding quiet windows based on sleep schedules and noise sensitivity. |
 | [Household Stock-Up Plan](../mcps/household-stock-up-plan.md) | Optimize household inventory replenishment by balancing stock levels, consumption, and budget. |
 | [Household Supply Predictor](../mcps/household-supply-predictor.md) | Predicts how long household supplies will last based on current stock and usage. |
 | [Household Utility Handover Sheet](../mcps/household-utility-handover-sheet.md) | Generate structured handover documentation and synchronized task lists for utility transitions. |
+| [Household Wellness & Shopping List](../mcps/household-wellness-shopping-list.md) | Manage household inventory and automate shopping lists based on routine usage. |
 | [Housewarming Party Planner](../mcps/housewarming-party-planner.md) | Coordinate guest lists, catering, home readiness, and budgets for your housewarming. |
 | [Housing Cost Annual Calendar](../mcps/housing-cost-annual-calendar.md) | Generates a yearly schedule of housing expenses including rent, utilities, and periodic costs. |
 | [HowLongToBeat](../mcps/howlongtobeat.md) | Universal game completion data — get gameplay hours for any video game via AI. |
@@ -962,6 +977,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [JokeAPI](../mcps/jokeapi-alternative.md) | Access thousands of jokes — audit categories and flags via AI. |
 | [Jokes API (API Ninjas)](../mcps/jokes-api-api-ninjas.md) | Access random jokes — audit content and limits via AI. |
 | [Jooble](../mcps/jooble.md) | Search millions of job vacancies across the globe from Jooble directly within your AI agent. |
+| [Joomla (Open-Source CMS)](../mcps/joomla-open-source-cms.md) | Manage content via Joomla — list and create articles, manage categories and tags, and audit site menus. |
 | [Jotform](../mcps/jotform-alternative.md) | Build powerful online forms with drag-and-drop ease, collect payments, gather signatures, and process submissions automatically. |
 | [JotForm](../mcps/jotform.md) | Manage forms, submissions, and reports via JotForm API. |
 | [Journal Entry Counter](../mcps/journal-entry-counter.md) | Analyze journal writing habits and entry counts. |
@@ -975,6 +991,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Karaoke Session Time Calculator](../mcps/karaoke-session-time-calculator.md) | Estimates karaoke session durations based on song counts and song lengths. |
 | [Karaoke Song Counter](../mcps/karaoke-song-counter.md) | Analyze and count karaoke song queues based on artists, users, and unique songs. |
 | [Kayak Distance & Session Tracker](../mcps/kayak-distance-session-tracker.md) | Calculate total distance, average speed, and session summaries for paddling activities. |
+| [Kintone](../mcps/kintone.md) | Build custom business apps without code using drag-and-drop forms, workflow automation, and team collaboration spaces. |
 | [Kintone](../mcps/kintone-alternative.md) | Build custom business apps without code using drag-and-drop forms, workflow automation, and team collaboration spaces. |
 | [Kippy](../mcps/kippy.md) | Track GPS locations of pets and loved ones in real time with wearable devices that send alerts when they leave safe zones. |
 | [Kissflow](../mcps/kissflow.md) | Build low-code workflows, process apps, and case management solutions that digitize operations without heavy IT involvement. |
@@ -995,10 +1012,13 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Laptop Purchase Planner](../mcps/laptop-purchase-planner.md) | A decision-support system that ranks laptops based on workload, budget, and personal priorities. |
 | [Laravel Excellence Prover](../mcps/laravel-excellence-prover.md) | AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds. |
 | [Last.fm](../mcps/lastfm.md) | Manage your music profile — audit listening habits, top tracks, and artists via AI. |
+| [Later (Social Media Management)](../mcps/later-social-media-management.md) | Manage social media via Later — schedule posts, access your media library, and analyze profile performance. |
+| [Lattice](../mcps/lattice.md) | Retrieve HR employees, goals, feedback, and reviews directly from Lattice. |
 | [Laundry Cycle Optimizer](../mcps/laundry-cycle-optimizer.md) | Minimize laundry loads by grouping items based on color, material, and temperature. |
 | [Laundry Load Planner](../mcps/laundry-load-planner.md) | Plan efficient laundry cycles by managing garment weights, machine capacities, and time constraints. |
 | [Laundry Water Usage Calculator](../mcps/laundry-water-usage-calculator.md) | Calculate total water consumption based on laundry loads and machine efficiency. |
 | [Layover Duration Calculator](../mcps/layover-duration-calculator.md) | Calculate flight layover times, connection viability, and transit risks. |
+| [LEAP Legal](../mcps/leap-legal-1.md) | Manage legal matters, cards (contacts), and documents via the LEAP API. |
 | [Learn Amp](../mcps/learn-amp.md) | Combine learning, engagement, and performance in one people development platform that helps employees grow and organizations thrive. |
 | [Learning Goal Tracker](../mcps/learning-goal-tracker.md) | Transform broad learning ambitions into actionable milestones and weekly study targets. |
 | [Learning Subscription Comparator](../mcps/learning-subscription-comparator.md) | Compare online learning subscriptions by cost, content, and flexibility. |
@@ -1052,6 +1072,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Long-Distance Care Coordination](../mcps/long-distance-care-coordination.md) | Orchestrate care for distant loved ones by synchronizing local support, remote assistance, and travel plans. |
 | [Long-Stay Visa Budget Planner](../mcps/long-stay-visa-budget-planner.md) | Plan the costs and timelines for long-stay visa applications. |
 | [Loom (Async Video Messaging)](../mcps/loom-async-video-messaging.md) | Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics. |
+| [Loopio](../mcps/loopio.md) | Connect your Loopio RFP platform to AI — search approved answers, manage proposal projects, and automate questionnaire responses naturally via chat. |
 | [Lorem Ipsum Generator](../mcps/lorem-ipsum-generator.md) | Generate deterministic placeholder text by words, sentences, or paragraphs. When an AI writes filler text, it varies wildly every time — this engine delivers consistent, predictable lorem ipsum. |
 | [Loripsum](../mcps/loripsum.md) | Generate professional placeholder text (Lorem Ipsum) with customizable HTML formatting, lists, and headers for your mockups. |
 | [Lovo AI (Genny TTS & Voice Synthesis API)](../mcps/lovo-ai-genny-tts-voice-synthesis-api.md) | Generate high-quality AI voices and text-to-speech synthesis directly from your AI agent using Lovo AI's Genny API. |
@@ -1061,6 +1082,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [MagicBell](../mcps/magicbell.md) | Manage notifications and broadcasts via MagicBell — list, retrieve, and trigger multi-channel alerts directly from your AI agent. |
 | [Maildroppa](../mcps/maildroppa.md) | Grow your email list and send targeted campaigns with a simple email marketing platform designed for solopreneurs and creators. |
 | [Mailinator](../mcps/mailinator.md) | Test email workflows with disposable inboxes that catch every message without touching production mailboxes or real addresses. |
+| [Mailosaur](../mcps/mailosaur.md) | Automate email and SMS testing and management via the Mailosaur REST API. |
 | [Maintenance & Warranty Calendar Engine](../mcps/maintenance-warranty-calendar-engine.md) | Calculate service due dates and generate maintenance calendars by reconciling usage, warranty, and provider availability. |
 | [Major Purchase Comparator](../mcps/major-purchase-comparator.md) | Rank products using weighted metrics like price, running cost, and warranty. |
 | [MakePlans](../mcps/makeplans.md) | Online booking and appointment scheduling via MakePlans MCP. |
@@ -1078,6 +1100,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [MasterGo](../mcps/mastergo.md) | Collaborative design platform and UI/UX tool — manage design files, nodes, and comments via AI. |
 | [match-ticket-total](../mcps/match-ticket-total.md) | Calculates total ticket costs based on attendee counts and pricing tiers. |
 | [MCPFusion Developer Prover](../mcps/mcpfusion-developer-prover.md) | LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag... |
+| [Meal Break Scheduler](../mcps/meal-break-scheduler.md) | Optimizes meal and snack placement within a workday while respecting meeting conflicts and travel time. |
 | [Meal Cost Calculator](../mcps/meal-cost-calculator.md) | Calculate total recipe expenses and individual serving costs based on ingredient unit prices. |
 | [Meal Per Diem Calculator](../mcps/meal-per-diem-calculator.md) | Calculates travel meal allowances based on daily rates and trip duration. |
 | [Meal Plan Budget Optimizer](../mcps/meal-plan-budget-optimizer.md) | Optimize your weekly meal plan by balancing budget, nutrition, and personal preferences. |
@@ -1090,7 +1113,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Meditation Bowl Timer](../mcps/meditation-bowl-timer.md) | Generates precise striking and silence patterns for singing bowl meditation sessions. |
 | [Meditation Retreat Planner](../mcps/meditation-retreat-planner.md) | Generates structured meditation retreat schedules and silence policies. |
 | [Meditation Time Planner](../mcps/meditation-time-planner.md) | Automated scheduling engine for optimizing meditation sessions within daily time windows. |
-| [Meeting Cost Calculator](../mcps/meeting-cost-calculator.md) | Quantify the financial impact of corporate meetings. |
+| [Meeting Cost Calculator](../mcps/meeting-cost-calculator.md) | Calculate the economic impact of meetings by aggregating attendee compensation, duration, and preparation time. |
 | [Mem AI (Knowledge Workspace)](../mcps/mem-ai-knowledge-workspace.md) | Manage your knowledge base via Mem.ai — create notes, run AI semantic search, and organize collections. |
 | [Meme Generator](../mcps/meme-generator.md) | Universal meme engine — generate custom memes using popular templates via AI. |
 | [MemeGen API](../mcps/memegen-api.md) | Generate meme images — audit templates and fonts via AI. |
@@ -1107,6 +1130,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Miniflux (RSS Reader)](../mcps/miniflux-rss-reader.md) | Manage your RSS feeds and read articles via Miniflux — discover feeds, list entries, and organize categories directly from your AI agent. |
 | [Minimum Grade Calculator](../mcps/minimum-grade-calculator.md) | Calculate the exact minimum grade needed on your final exam to pass. |
 | [Minimum Payment Exploder](../mcps/minimum-payment-exploder.md) | Reveal the true cost of only paying minimums on your credit card debt. |
+| [Mixmax](../mcps/mixmax.md) | Accelerate your sales cycle with Mixmax — sequences, scheduling, and email tracking. |
 | [Mobile Data Usage Forecast](../mcps/mobile-data-usage-forecast.md) | Predict mobile data consumption, manage plan allowances, and project overage costs. |
 | [Moka HR](../mcps/moka-hr.md) | Intelligent applicant tracking system (ATS) — manage jobs, candidates, and interviews via AI. |
 | [Mokaform](../mcps/mokaform.md) | Create interactive forms and surveys with visual logic builders that adapt questions based on previous answers dynamically. |
@@ -1119,6 +1143,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Moodle](../mcps/moodle-alternative.md) | Power your e-learning environment with the world most flexible open-source LMS for course creation and student management. |
 | [Morning Alertness Scorer](../mcps/morning-alertness-scorer.md) | Predict sleep inertia severity and optimize morning alertness. |
 | [Morning Routine Builder](../mcps/morning-routine-builder.md) | A backward scheduling engine for precise morning timelines. |
+| [Motion (AI Calendar & Task Management)](../mcps/motion-ai-calendar-task-management.md) | Manage your schedule via Motion — create AI-optimized tasks, track projects, and audit your timeline. |
 | [Mouse Sensitivity Converter](../mcps/mouse-sensitivity-converter.md) | Convert mouse sensitivity, eDPI, and cm/360 precisely between competitive games like CS2, Valorant, and Apex Legends. |
 | [Move-Day Utility & Access Planner](../mcps/move-day-utility-access-planner.md) | Synchronize utility windows, logistics, and crew arrivals into a single move-day schedule. |
 | [Move-in Room Layout](../mcps/move-in-room-layout.md) | Optimize furniture placement in rectangular rooms with physical constraints. |
@@ -1151,6 +1176,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Neighborhood Meeting Planner](../mcps/neighborhood-meeting-planner.md) | Generate structured meeting agendas, venue selections, and community invitations. |
 | [Neighborhood Safety Meeting Planner](../mcps/neighborhood-safety-meeting-planner.md) | Coordinate community safety meetings with structured agendas, stakeholder invitations, and follow-up tracking. |
 | [Neighborhood Skill-Share Planner](../mcps/neighborhood-skill-share-planner.md) | Coordinates skill-sharing sessions by matching participants, venues, and materials. |
+| [NeonCRM](../mcps/neoncrm.md) | Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent. |
 | [Nervous System Regulation Planner](../mcps/nervous-system-regulation-planner.md) | Personalized regulation strategies based on Polyvagal Theory. |
 | [Neuroplasticity Activity Planner](../mcps/neuroplasticity-activity-planner.md) | Generates optimized cognitive activity schedules to stimulate brain plasticity. |
 | [New Parent Sleep Planner](../mcps/new-parent-sleep-planner.md) | Coordinate rest cycles and sleep strategies for new parents. |
@@ -1172,6 +1198,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Odoo Project](../mcps/odoo-project.md) | Create projects, manage tasks, log timesheets — Odoo Project Management through natural conversation. |
 | [Offer Contingency Calendar](../mcps/offer-contingency-calendar.md) | Generates real estate offer timelines and tracks critical contingency deadlines. |
 | [OfficeRnD Hybrid](../mcps/officernd-hybrid.md) | Hybrid work management — book desks, rooms, and manage office resources via OfficeRnD. |
+| [Officevibe](../mcps/officevibe.md) | Manage employee engagement via Officevibe — track pulse survey scores, feedback, and NPS directly from your AI agent. |
 | [OKR Progress Tracking](../mcps/okr-progress-tracking.md) | Calculate OKR progress, forecasts, and stretch assessments. |
 | [Omnivore (Read-Later)](../mcps/omnivore-read-later.md) | Manage your Omnivore library — search articles, read full content, and save new links directly from your AI agent. |
 | [On-Call Economics Engine](../mcps/on-call-economics-engine.md) | Quantify the economic impact of on-call rotations by balancing compensation costs against burnout and attrition risks. |
@@ -1189,6 +1216,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Oshi Budget Allocator](../mcps/oshi-budget-allocator.md) | A deterministic budget tool for Oshi fans to balance fixed costs and discretionary spending. |
 | [Outage Readiness & Coordination Plan](../mcps/outage-readiness-coordination-plan.md) | Transforms household data into actionable outage checklists, communication protocols, and supply requirements. |
 | [Outdoor Day Count](../mcps/outdoor-day-count.md) | Quantify your outdoor engagement by analyzing activity date logs. |
+| [Outdoor Time Calendar](../mcps/outdoor-time-calendar.md) | Schedules outdoor activities based on daylight, weather, and availability. |
 | [Overlapping Utility Splitter](../mcps/overlapping-utility-splitter.md) | Splits utility bills between two residents when one moves out mid-cycle. |
 | [Overtime Calculator](../mcps/overtime-calculator.md) | Calculate overtime pay, night shift premiums, and time bank balances. |
 | [Overtime Hours Tracker](../mcps/overtime-hours-tracker.md) | Track, aggregate, and validate overtime hours across work periods. |
@@ -1208,6 +1236,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Parent School Calendar](../mcps/parent-school-calendar.md) | Synchronize school events, fees, assignments, and transport logistics. |
 | [Parent-Teacher Meeting Planner](../mcps/parent-teacher-meeting-planner.md) | Optimizes meeting schedules by reconciling time constraints, topic priorities, and language needs. |
 | [Parking Permit Calendar](../mcps/parking-permit-calendar.md) | Manage permit schedules, renewal deadlines, and valid parking windows. |
+| [Parseur](../mcps/parseur.md) | Automate document processing via Parseur — list mailboxes, upload PDFs/Emails, extract structured data pipelines, and trigger template logic natively. |
 | [Party Budget Builder](../mcps/party-budget-builder.md) | Calculate complete event budgets including taxes, tips, and contingency buffers. |
 | [Password Manager Migration Plan](../mcps/password-manager-migration-plan.md) | Strategic planning engine for migrating account records and vault structures. |
 | [Patreon (Creator Subscriptions)](../mcps/patreon-creator-subscriptions.md) | Manage your Patreon creator account—list campaigns, track members, and monitor posts directly from your AI agent. |
@@ -1224,9 +1253,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Periodization Planner](../mcps/periodization-planner.md) | Systematic training schedule generator using periodization principles. |
 | [Personal Archive Migration Planner](../mcps/personal-archive-migration-planner.md) | Converts chaotic data inventories into structured, secure migration schedules. |
 | [Personal Assets Record Plan](../mcps/personal-assets-record-plan.md) | Manage high-value assets with evidence linking and insurance-ready reporting. |
+| [Personal Challenge Calendar](../mcps/personal-challenge-calendar.md) | Generate and manage structured completion schedules for personal discipline challenges. |
 | [Personal Data Export Checklist](../mcps/personal-data-export-checklist.md) | Track and manage data portability requests from digital services. |
 | [Personal Digital Legacy Plan](../mcps/personal-digital-legacy-plan.md) | Organize digital assets, access rights, and estate instructions with strict privacy controls. |
 | [Personal Document Renewal Planner](../mcps/personal-document-renewal-planner.md) | Plan your document renewals with precise checklists, timelines, and submission strategies. |
+| [Personal Goal Time Budgeter](../mcps/personal-goal-time-budgeter.md) | Calculate the weekly time needed to achieve your personal milestones and manage workload capacity. |
 | [Personal Records Emergency Folder](../mcps/personal-records-emergency-folder.md) | Securely organize and access life-critical documents and emergency contacts. |
 | [Personal Records Handoff Plan](../mcps/personal-records-handoff-plan.md) | Securely manage the transfer of sensitive personal documentation with automated checklists and timelines. |
 | [Personal Records Master Plan](../mcps/personal-records-master-plan.md) | A strategic engine to transform document inventories into structured records architectures. |
@@ -1269,6 +1300,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pipeline CRM](../mcps/pipeline-crm.md) | Manage sales and contacts via Pipeline CRM — list deals, track people, and monitor tasks directly from any AI agent. |
 | [Pipeliner](../mcps/pipeliner.md) | Manage sales pipelines and opportunities via Pipeliner CRM — list leads, track deals, and monitor activities directly from any AI agent. |
 | [Pitch Deck Prover](../mcps/pitch-deck-prover.md) | An AI built a pitch deck that claimed a '$4.2B TAM' with no source, described the problem as 'everyone struggles with this,' showed '15K downloads' as traction with 3% D30 retention, and asked for 'funding to accelerate growth' — no amount, no use of funds, no milestones. The deck got rejected in 8 minutes. This tool forces problem validation with evidence, sourced market sizing, defined unit economics, retention-based traction, and a specific fundraising ask. |
+| [Pivotal Tracker](../mcps/pivotal-tracker.md) | Manage agile projects via Pivotal Tracker — list stories, track epics, and update tasks directly from any AI agent. |
 | [Pizza Dough Calculator](../mcps/pizza-dough-calculator.md) | Precise baker's percentage calculations for Neapolitan and NY style dough. |
 | [Plane](../mcps/plane.md) | Manage Plane.so projects, track issues, review sprint cycles, and audit agile modules completely autonomously. |
 | [Plane](../mcps/plane-alternative.md) | Manage projects, issues, and product roadmaps via Plane — create projects, toggle features, and organize workspaces directly from your AI agent. |
@@ -1311,6 +1343,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Productivity Output Rate](../mcps/productivity-output-rate.md) | Calculate and analyze work efficiency by comparing completed tasks against time spent. |
 | [Proforms](../mcps/proforms.md) | Online form builder and data collection. |
 | [Project Cost Per Hour](../mcps/project-cost-per-hour.md) | Calculate project efficiency by analyzing cost per hour metrics. |
+| [Project Fee Quote Builder](../mcps/project-fee-quote-builder.md) | A precision tool for generating comprehensive project fee quotations by aggregating labor, materials, and margins. |
 | [ProjectManager](../mcps/projectmanager.md) | Automate project planning and tracking via ProjectManager — manage projects, tasks, and timesheets directly from any AI agent. |
 | [Prompt Compression Efficiency Calculator](../mcps/prompt-compression-efficiency-calculator.md) | Evaluate the performance, cost-effectiveness, and quality impact of prompt compression techniques. |
 | [Property Loss Recovery Planner](../mcps/property-loss-recovery-planner.md) | Sequences recovery tasks, identifies required receipts, and schedules notifications for property loss recovery. |
@@ -1333,6 +1366,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [QWeather / 和风天气](../mcps/qweather.md) | Leading professional weather data service in China — retrieve forecasts, air quality, and life indices via AI. |
 | [Rail Pass Value Comparator](../mcps/rail-pass-value-comparator.md) | Compare the cost-effectiveness of rail passes versus individual tickets. |
 | [Raindrop.io (Bookmarks)](../mcps/raindropio-bookmarks.md) | Manage your Raindrop.io bookmarks, collections, and tags directly from any AI agent. |
+| [Raise Negotiation Calculator](../mcps/raise-negotiation-calculator.md) | Calculate the real impact of salary increases, bonuses, and benefits on your take-home pay. |
 | [Random Facts API](../mcps/random-facts-api.md) | Access thousands of interesting facts — audit random data via AI. |
 | [Random User Generator](../mcps/random-user-generator.md) | Generate high-quality random user data for testing and prototyping — names, emails, and profile photos directly via AI. |
 | [RandomUser API](../mcps/randomuser-api.md) | Generate random user data — audit personas and locations via AI. |
@@ -1352,6 +1386,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Recipe Scaler](../mcps/recipe-scaler.md) | Precisely scale recipe ingredients while maintaining culinary proportions and practical measurements. |
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
 | [Records Review Meeting Planner](../mcps/records-review-meeting-planner.md) | Transforms household administrative data into structured meeting agendas and action plans. |
+| [Recovery Day Planner](../mcps/recovery-day-planner.md) | Automated scheduling for optimal athletic recovery. |
 | [Recovery Time Planner](../mcps/recovery-time-planner.md) | Calculate estimated recovery duration and progressive weekly plans based on burnout levels and mitigation strategies. |
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refactoring Schedule Optimizer](../mcps/refactoring-schedule-optimizer.md) | Strategic decision-support for balancing technical debt reduction with feature delivery. |
@@ -1362,6 +1397,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Relative Care Visit Brief](../mcps/relative-care-visit-brief.md) | Generates structured operational briefings for caregivers by organizing routines, access, and tasks. |
 | [Relative Contact Change Log](../mcps/relative-contact-change-log.md) | Track and manage contact information updates for family members with scheduled effective dates. |
 | [Relaxation Response Timer](../mcps/relaxation-response-timer.md) | Generates structured timing, pacing, and frequency plans for relaxation sessions. |
+| [Relaxation Trip Scheduler](../mcps/relaxation-trip-scheduler.md) | Generates low-pressure, restorative travel itineraries by balancing activities with essential downtime. |
 | [Remote Program Effectiveness Analyzer](../mcps/remote-program-effectiveness-analyzer.md) | Quantifies remote accelerator success by comparing engagement and outcomes against in-person benchmarks. |
 | [Renovation Progress Tracker](../mcps/renovation-progress-tracker.md) | Track and calculate completion percentages for renovation projects. |
 | [Rent Increase Notice Calculator](../mcps/rent-increase-notice-calculator.md) | Quantify the financial and legal impact of rent increase notices. |
@@ -1410,6 +1446,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Running Splits Calculator](../mcps/running-splits-calculator.md) | Decompose target times and distances into precise pacing segments and strategies. |
 | [Safe Repair Appointment Scheduler](../mcps/safe-repair-appointment-scheduler.md) | Synchronizes shop availability, item readiness, and transport safety to generate optimized repair plans. |
 | [Salary Increase Calculator](../mcps/salary-increase-calculator.md) | Calculate new salaries and compare percentage increases. |
+| [Salary Offer Comparator](../mcps/salary-offer-comparator.md) | Compare job offers by normalizing salary, taxes, cost of living, and lifestyle factors. |
 | [Sally](../mcps/sally.md) | Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat. |
 | [Salon Chair Hours](../mcps/salon-chair-hours.md) | Calculate salon chair occupancy, utilization, and staffing needs. |
 | [Sansan](../mcps/sansan.md) | Digitize and manage business cards via AI — browse contacts, verify details, and explore your company's network effortlessly. |
@@ -1437,6 +1474,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Season Length Optimizer](../mcps/season-length-optimizer.md) | Calculate optimal Battle Pass durations and daily XP requirements based on player behavior. |
 | [Seasonal Clothing Swap Plan](../mcps/seasonal-clothing-swap-plan.md) | Automate household wardrobe rotation and seasonal clothing management. |
 | [Seasonal Home Maintenance Route](../mcps/seasonal-home-maintenance-route.md) | Generate optimized seasonal maintenance plans, vendor routes, and owner task lists. |
+| [Seasonal Routine Switcher](../mcps/seasonal-routine-switcher.md) | Dynamically adjusts daily schedules based on seasonal daylight, weather, and commitments. |
 | [Seasonal Sleep Adjustment Planner](../mcps/seasonal-sleep-adjustment-planner.md) | Optimize sleep schedules and light therapy based on seasonal shifts and latitude. |
 | [Seasonal Vehicle Storage Planner](../mcps/seasonal-vehicle-storage-planner.md) | Generate detailed maintenance checklists for seasonal vehicle storage and reactivation. |
 | [Self-Care Budget Calendar](../mcps/self-care-budget-calendar.md) | Plan monthly self-care spending by synchronizing appointments and product replacement cycles. |
@@ -1533,12 +1571,14 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Stannp](../mcps/stannp.md) | Automate direct mail and physical letters via Stannp — manage letters, postcards, and campaigns directly from any AI agent. |
 | [Statute of Limitations Calculator](../mcps/statute-of-limitations-calculator.md) | Determine legal expiration dates for various claims by applying statutory periods. |
 | [Steam Performance & Scouting Intelligence](../mcps/steam-performance-scouting-intelligence.md) | The definitive server for professional Steam scouting — analyze player performance, achievements, and technical game stats via AI. |
+| [Step Goal Progress Plan](../mcps/step-goal-progress-plan.md) | Calculate daily step requirements to reach your weekly activity goals. |
 | [Stirling PDF](../mcps/stirling-pdf.md) | Manage PDF documents via Stirling PDF — add watermarks, convert images to PDF, sign documents with certificates, and monitor server metrics directly. |
 | [Strava](../mcps/strava-alternative.md) | Connect Strava to your AI agent to track activities, analyze athlete performance stats, and manage segments or routes directly. |
 | [Strava Planning](../mcps/strava-planning.md) | Plan routes, export GPX/TCX, create activities, manage gear, and star segments on Strava. |
 | [Strava Social](../mcps/strava-social.md) | Explore Strava activities feed, kudos, comments, clubs, and discover new segments. |
 | [Streaming Account Continuity Planner](../mcps/streaming-account-continuity-planner.md) | Generate structured transition plans for streaming service accounts. |
 | [Stress-Free Weekend Planner](../mcps/stress-free-weekend-planner.md) | Balance chores, social plans, and recovery with an optimized weekend schedule. |
+| [Stretching Routine Timeline](../mcps/stretching-routine-timeline.md) | Schedules stretching sessions around your work, workouts, and commutes. |
 | [String Metrics Analyzer](../mcps/string-metrics-analyzer.md) | Bypass LLM tokenization blindness. Get exact character counts, word counts, and specific string occurrences deterministically. |
 | [String Operations Engine](../mcps/string-operations-engine.md) | Equip your AI with deterministic text manipulation. Instantly format casings (camelCase, PascalCase, slugify), truncate safely, and count exact characters local. |
 | [Structured](../mcps/structured.md) | Connect your AI to Structured. Programmatically manage your daily planner, tasks, and routines seamlessly directly from your terminal. |
@@ -1737,6 +1777,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Weekend Getaway Comparator](../mcps/weekend-getaway-comparator.md) | Rank and compare short-trip destinations based on travel time, cost, and personal preferences. |
 | [Weekend Hosting Plan](../mcps/weekend-hosting-plan.md) | Orchestrate guest stays with complete timelines, meal schedules, and prep checklists. |
 | [Weekend Sleep Recovery Planner](../mcps/weekend-sleep-recovery-planner.md) | Optimized weekend sleep scheduling to mitigate weekday sleep debt. |
+| [Weekly Energy Plan](../mcps/weekly-energy-plan.md) | Optimizes task scheduling by matching task difficulty with your daily energy patterns. |
 | [Weekly Goal Progress](../mcps/weekly-goal-progress.md) | Track and predict weekly goal completion and progress velocity. |
 | [Weekly Grocery Plan](../mcps/weekly-grocery-plan.md) | Generate optimized grocery lists by reconciling meal needs with pantry stock and budget. |
 | [Weekly Household Planner](../mcps/weekly-household-planner.md) | Coordinate household chores, meals, and appointments into an optimized weekly schedule. |
@@ -1746,6 +1787,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Weight Increment Calculator](../mcps/weight-increment-calculator.md) | Calculates optimal weight increases for progressive overload. |
 | [Weighted Average Calculator](../mcps/weighted-average-calculator.md) | Predict academic performance and calculate required grades to pass subjects. |
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |
+| [Wellness Expense Tracker](../mcps/wellness-expense-tracker.md) | Monitor and analyze your wellness-specific spending patterns. |
 | [Wellness Program Duration Planner](../mcps/wellness-program-duration-planner.md) | Plans wellness program duration, phases, and progression strategies. |
 | [Wellness Retreat Schedule Generator](../mcps/wellness-retreat-schedule-generator.md) | Create structured, balanced daily itineraries for wellness retreats based on participant experience. |
 | [Wellness Subscription Comparator](../mcps/wellness-subscription-comparator.md) | Evaluate the true cost and utility of wellness memberships. |
@@ -1775,6 +1817,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Workshop Experience Planner](../mcps/workshop-experience-planner.md) | A decision-support engine that evaluates workshop compatibility by cross-referencing user preferences and provider requirements. |
 | [Worktile](../mcps/worktile.md) | Collaborative project management and team communication platform — manage tasks, projects, and messages via AI. |
 | [Workvivo](../mcps/workvivo.md) | Manage social posts, employee profiles, and collaboration spaces on Workvivo — the employee experience platform. |
+| [Workweek Capacity Planner](../mcps/workweek-capacity-planner.md) | Allocates tasks across work hours using estimates, deadlines, and priority. |
 | [World Time (Keyless)](../mcps/world-time-keyless.md) | Get precise current atomic time, UTC offsets, and DST states for any timezone worldwide — no API key required. |
 | [Wrike](../mcps/wrike.md) | Collaborative project management to manage tasks, projects, and team workflows with AI. |
 | [Writing Collaboration Charter](../mcps/writing-collaboration-charter.md) | A governance engine for establishing formal agreements and ownership boundaries in collaborative writing. |

@@ -37,6 +37,7 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Make.com Webhook Trigger](../mcps/makecom-webhook-trigger.md) | This MCP does exactly one thing: it sends JSON payloads to Make.com Webhooks. That's its only function. Incredible for connecting AI agents to thousands of visual automation workflows instantly. |
 | [Mixpanel (Event Analytics & Insights)](../mcps/mixpanel-event-analytics-insights.md) | Manage product analytics via Mixpanel — query event trends, track conversion funnels, and audit user cohorts. |
 | [MoEngage](../mcps/moengage.md) | Engage mobile app users with personalized push notifications, in-app messages, and AI-optimized customer journeys across channels. |
+| [Moz (SEO Metrics & Link Research)](../mcps/moz-seo-metrics-link-research.md) | Manage SEO metrics via Moz — audit Domain Authority (DA), analyze backlinks, and track site rankings. |
 | [OneSignal](../mcps/onesignal.md) | Automate push notifications via OneSignal — send messages, manage segments, and track delivery stats directly from any AI agent. |
 | [Pinterest Ads](../mcps/pinterest-ads.md) | Manage advertising and pins via Pinterest Ads — list campaigns, track analytics, and audit audiences directly from any AI agent. |
 | [Pinterest Ads](../mcps/pinterest-ads-1.md) | Equip your AI agent with direct access to Pinterest Ads — manage campaigns, track pin performance, and optimize shopping ad spend without opening Pinterest Ads Manager. |
