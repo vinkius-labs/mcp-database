@@ -7,17 +7,17 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate net seller proceeds by accounting for commissions, payment fees, shipping, taxes, and promotions.
+Calculate marketplace fees and seller payouts for single or batch transactions.
 
 ## Description
-This MCP server provides precise financial modeling for marketplace sellers. It allows AI agents to calculate exact net proceeds by subtracting commissions, payment processing fees, shipping costs, taxes, and promotion expenses from the gross sale price. Use `get_seller_proceeds` for a quick net total, `get_fee_breakdown` to see an itemized list of all deductions, or `simulate_margin_impact` to perform what-if analysis on variables like shipping or promotion costs. It also includes `validate_fee_structure` to ensure a pricing model remains profitable.
+This MCP server provides tools to manage marketplace financial calculations. You can use `calculate_single_transaction` to find the fee and payout for one sale, `calculate_batch_fees` to process multiple transactions at once, `validate_fee_config` to check if a fee is within allowed limits, and `simulate_payout_impact` to see how changing fee percentages affects seller earnings.
 
 
 ## Available Tools (4)
-- **get_fee_breakdown**: Provides a detailed itemized list of every deduction applied to the gross sale price
-- **get_seller_proceeds**: Calculates the final net amount a seller will receive from a single transaction
-- **simulate_margin_impact**: Determines how changing a single variable affects the final proceeds
-- **validate_fee_structure**: Checks if a specific combination of fees and costs is mathematically viable for a given sale price
+- **validate_fee_config**: 
+- **calculate_batch_fees**: 
+- **calculate_single_transaction**: 
+- **simulate_payout_impact**: 
 
 
 ## 💬 Prompt Examples
@@ -25,38 +25,38 @@ This MCP server provides precise financial modeling for marketplace sellers. It 
 Here are some examples of how you can interact with the **Marketplace Fee Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What are my net proceeds for a $100 sale with a 15% commission, $2 fixed payment fee, 3% payment percentage fee, $10 shipping, $8 tax, and $5 promotion cost?"
+> "Calculate the fee and payout for a $100 sale with a 10% fee."
 
 **🤖 AI Agent:**
-> Your net proceeds for this transaction are $62.00.
+> The marketplace fee is $10.00 and the seller payout is $90.00.
 
 ---
 
 **👤 You:**
-> "Show me the detailed breakdown for a $50 sale with 10% commission, $1 fixed fee, 2% payment fee, $5 shipping, $4 tax, and $0 promotion."
+> "What is the payout for a $500 sale if the fee is 15%?"
 
 **🤖 AI Agent:**
-> The deductions are: Commission: $5.00, Payment Fee: $2.00, Shipping: $5.00, Tax: $4.00, Promotion: $0.00. Total deductions: $16.00.
+> The marketplace fee is $75.00 and the seller payout is $425.00.
 
 ---
 
 **👤 You:**
-> "If I increase my shipping cost from $10 to $15 on a $100 sale, how much will my proceeds change?"
+> "Check if a 105% fee is valid."
 
 **🤖 AI Agent:**
-> Increasing the shipping cost by $5.00 will decrease your net proceeds by exactly $5.00.
+> No, the fee percentage is invalid as it exceeds the permitted range.
 
 
 ## ❓ FAQ
 
-**Q: How are the net proceeds calculated?**
-Net proceeds are calculated by taking the gross sale price and subtracting the marketplace commission, payment fees (fixed and percentage), shipping costs, taxes, and any promotion costs.
+**Q: How do I calculate a single sale fee?**
+Use the `calculate_single_transaction` tool by providing the sale price and the fee percentage.
 
-**Q: Can I test how a discount affects my profit?**
-Yes, you can use the `simulate_margin_impact` tool to adjust variables like promotion costs and see the resulting change in proceeds.
+**Q: Can I process multiple sales at once?**
+Yes, use `calculate_batch_fees` with a list of sales to get total fees and payouts.
 
-**Q: Does this tool include shipping costs in the deductions?**
-Yes, shipping costs are treated as a deduction from the gross sale price to arrive at the final net proceeds.
+**Q: How can I see the impact of a fee change?**
+You can use `simulate_payout_impact` to compare the difference between a current fee and a new proposed fee.
 
 
 ## Installation & Usage

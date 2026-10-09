@@ -7,19 +7,19 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate US overtime pay based on FLSA and state-specific rules like CA/CO daily thresholds.
+Calculate precise overtime pay and total compensation based on hourly rates and multipliers.
 
 ## Description
-The Overtime Pay Calculator is a specialized engine designed to handle the complexities of US labor laws. It provides precise calculations for federal FLSA standards, as well as state-specific daily overtime thresholds found in jurisdictions like California and Colorado. Use `calculate_weekly_overtime` to determine pay based on the 40-hour weekly threshold, or `calculate_daily_overtime` to check for daily violations. The tool also handles complex regular rate compositions using `calculate_adjusted_regular_rate`, incorporating non-discentionary bonuses and commissions into the weighted average. Additionally, you can use `evaluate_exemption_eligibility` to analyze whether an employee meets the salary and duties requirements for exempt status.
+This MCP server provides specialized tools for labor compensation management. It allows AI agents to accurately calculate overtime earnings using `calculate_overtime_pay`, determine full compensation with `calculate_total_compensation`, verify legal multiplier compliance via `validate_multiplier`, and generate detailed earnings breakdowns with `get_labor_summary`.
 
 
 ## Available Tools (4)
-- **calculate_daily_overtime**: g., CA/CO 8-hour rule) and calculates excess pay.
+- **calculate_overtime_pay**: Calculates the specific amount earned from overtime hours
+- **calculate_total_compensation**: Determines the total amount of money earned across all hours worked
+- **get_labor_summary**: Provides a high-level overview of hours and pay for a work period
+- **validate_multiplier**: 0).
 
-Calculates overtime owed for daily shifts that exceed state-mandated thresholds
-- **calculate_adjusted_regular_rate**: Calculates the true "Regular Rate of Pay" by incorporating non-discretionary bonuses
-- **calculate_weekly_overtime**: Determines overtime pay based on the federal 40-hour weekly threshold
-- **evaluate_exemption_eligibility**: Determines if an e mployee qualifies as "Exempt" from overtime
+Ensures a provided multiplier adheres to standard labor laws and company policies
 
 
 ## 💬 Prompt Examples
@@ -27,38 +27,38 @@ Calculates overtime owed for daily shifts that exceed state-mandated thresholds
 Here are some examples of how you can interact with the **Overtime Pay Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate overtime pay for 45 hours worked at $20/hour."
+> "Calculate the overtime pay for 5 hours at $30/hour with a 1.5 multiplier."
 
 **🤖 AI Agent:**
-> Regular pay: $800.00, Overtime pay: $150.00.
+> The overtime pay is $225.00 and the total hours accounted for is 5.
 
 ---
 
 **👤 You:**
-> "Is an employee earning $60,000/year in an Executive role exempt?"
+> "What is the total compensation for 40 regular hours and 10 overtime hours at $25/hour with a 2.0 multiplier?"
 
 **🤖 AI Agent:**
-> Yes, the employee meets the salary and duties requirements for exemption.
+> The total pay is $1,500.00, which includes $1,000.00 in regular pay and $500.00 in overtime pay.
 
 ---
 
 **👤 You:**
-> "Calculate daily overtime in CA for a shift of 10 hours at $25/hour."
+> "Is a 1.2 multiplier valid for overtime?"
 
 **🤖 AI Agent:**
-> Daily overtime pay: $50.00 (based on the 8-hour threshold in CA).
+> Yes, the multiplier is valid.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool handle California overtime?**
-By using the `calculate_daily_overtime` tool with the state code 'CA', the engine applies the 8-hour daily threshold rule specific to California.
+**Q: How do I calculate my total earnings including overtime?**
+You can use the `calculate_total_compensation` tool to get the sum of regular pay and overtime pay based on your hourly rate and hours worked.
 
-**Q: Does it include bonuses in the overtime rate?**
-Yes, you can use `calculate_adjusted_regular_rate` to incorporate non-discretionary earnings like commissions and production bonuses into the calculation.
+**Q: Can I check if my overtime multiplier is valid?**
+Yes, the `validate_multiplier` tool checks if a multiplier meets the minimum requirement of 1.0.
 
-**Q: Can I check if an employee is exempt?**
-Yes, the `evaluate_exemption_eligibility` tool analyzes annual salary and job duties to determine if an employee qualifies for exemption.
+**Q: What information is needed for a labor summary?**
+To use `get_labor_summary`, you need to provide the hourly rate, regular hours, overtime hours, and the overtime multiplier.
 
 
 ## Installation & Usage
