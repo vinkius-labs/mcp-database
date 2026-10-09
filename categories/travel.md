@@ -16,6 +16,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Camping Trip Planner](../mcps/camping-trip-planner.md) | Automated logistics for camping trips, covering gear, food, fuel, and permits. |
 | [Campsite Availability](../mcps/campsite-availability.md) | Real campsite availability from Recreation.gov — which nights are open at a campground, which sites fit a multi-night stay, and how campgrounds compare side by side. |
 | [Care Travel Companion Plan](../mcps/care-travel-companion-plan.md) | Coordinates care-specific travel timelines, packing responsibilities, and emergency fallback plans. |
+| [Commute Time Calculator](../mcps/commute-time-calculator.md) | Calculate travel duration, efficiency, and range based on distance and speed. |
 | [Connection Risk Comparator](../mcps/connection-risk-comparator.md) | Assess flight connection reliability and buffer safety. |
 | [Family Trip Seat Count](../mcps/family-trip-seat-count.md) | Calculate vehicle capacity and passenger distribution for family trips. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |

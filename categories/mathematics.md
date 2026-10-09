@@ -48,6 +48,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Procedural Dungeon Complexity Meter](../mcps/procedural-dungeon-complexity-meter.md) | Analyze the structural complexity and player experience of procedural dungeon layouts. |
 | [Projectile Trajectory Simulator](../mcps/projectile-trajectory-simulator.md) | Deterministic physics engine for precise projectile flight path simulation and target analysis. |
 | [Quest Branching Factor Calculator](../mcps/quest-branching-factor-calculator.md) | Quantify narrative complexity and state explosion in branching quest systems. |
+| [Quilt Square Calculator](../mcps/quilt-square-calculator.md) | Calculate precise square patch counts and material wastage for quilt making. |
 | [Sailing VMG Calculator](../mcps/sailing-vmg-calculator.md) | Deterministic sailing vector math and performance calculator for wind and speed analysis. |
 | [Slope Vertical Drop Calculator](../mcps/slope-vertical-drop-calculator.md) | Calculate vertical elevation changes, steepness, and terrain profiles. |
 | [Solar Self-Consumption Calculator](../mcps/solar-self-consumption-calculator.md) | Analyze solar energy flows, battery dynamics, and economic impact. |

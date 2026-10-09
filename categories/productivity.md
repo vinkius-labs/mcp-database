@@ -276,6 +276,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Capsule CRM](../mcps/capsule-crm.md) | Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent. |
 | [Capsule Wardrobe Gap Analyzer](../mcps/capsule-wardrobe-gap-analyzer.md) | Identify missing clothing items needed to meet outfit goals, color rules, and climate needs. |
 | [Capsulink](../mcps/capsulink.md) | Manage shortened URLs via Capsulink — create links, track clicks, and monitor analytics directly from any AI agent. |
+| [Car Lease Mileage Tracker](../mcps/car-lease-mileage-tracker.md) | Calculate remaining lease mileage and track usage status. |
 | [Car Ownership Budgeter](../mcps/car-ownership-budgeter.md) | Project monthly and annual vehicle costs including fuel, insurance, and maintenance. |
 | [Cardly](../mcps/cardly.md) | Send physical greeting cards via Cardly — automate personalized card sends, track orders, and manage contacts directly from any AI agent. |
 | [Care Benefits Application Organizer](../mcps/care-benefits-application-organizer.md) | Orchestrates care-related benefit applications by generating filing timelines, evidence indexes, and document action plans. |
@@ -603,6 +604,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Email Subject Line Optimizer](../mcps/email-subject-line-optimizer.md) | Analyze email subject lines for spam risk, engagement potential, and display truncation. |
 | [EmailOctopus](../mcps/emailoctopus.md) | Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses. |
 | [EmailOctopus](../mcps/emailoctopus-alternative.md) | Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses. |
+| [Embroidery Thread Calculator](../mcps/embroidery-thread-calculator.md) | Calculate total thread length and required skeins for embroidery designs. |
 | [Emergency Cash Access Plan](../mcps/emergency-cash-access-plan.md) | Generate structured contingency readiness documents for household emergency funding and contact hierarchies. |
 | [Emergency Document Grab-Folder](../mcps/emergency-document-grab-folder.md) | Organize and secure critical documents with prioritized folder structures and access controls. |
 | [Emergency Fund Runway](../mcps/emergency-fund-runway.md) | Calculate how many months your savings will last during a financial crisis. |
@@ -745,6 +747,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Fireflies.ai](../mcps/firefliesai-alternative.md) | Record, transcribe, and search across all your meetings with AI that captures every conversation and makes it instantly findable. |
 | [Fishing Catch Rate Calculator](../mcps/fishing-catch-rate-calculator.md) | Calculate fishing productivity and catch rates per hour. |
 | [Flashcard Review Calendar](../mcps/flashcard-review-calendar.md) | Optimizes flashcard review schedules based on due dates and study capacity. |
+| [Flashcard Review Counter](../mcps/flashcard-review-counter.md) | Calculate total flashcard reviews and study metrics. |
 | [Flatwork ATS](../mcps/flatwork-ats.md) | Streamline your hiring pipeline with an applicant tracking system that organizes candidates, interviews, and offer management. |
 | [Float](../mcps/float.md) | Manage team scheduling, project allocations, and time off via AI agents with Float. |
 | [Float Tank Session Planner](../mcps/float-tank-session-planner.md) | Personalized sensory environments and preparation protocols for float therapy. |
@@ -1042,6 +1045,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Later (Social Media Management)](../mcps/later-social-media-management.md) | Manage social media via Later — schedule posts, access your media library, and analyze profile performance. |
 | [Lattice](../mcps/lattice.md) | Retrieve HR employees, goals, feedback, and reviews directly from Lattice. |
 | [Laundry Cycle Optimizer](../mcps/laundry-cycle-optimizer.md) | Minimize laundry loads by grouping items based on color, material, and temperature. |
+| [Laundry Load Calculator](../mcps/laundry-load-calculator.md) | Calculate washing machine cycles and load distributions based on clothing weight. |
 | [Laundry Load Planner](../mcps/laundry-load-planner.md) | Plan efficient laundry cycles by managing garment weights, machine capacities, and time constraints. |
 | [Laundry Water Usage Calculator](../mcps/laundry-water-usage-calculator.md) | Calculate total water consumption based on laundry loads and machine efficiency. |
 | [Layover Duration Calculator](../mcps/layover-duration-calculator.md) | Calculate flight layover times, connection viability, and transit risks. |
@@ -1175,6 +1179,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Move-Day Utility & Access Planner](../mcps/move-day-utility-access-planner.md) | Synchronize utility windows, logistics, and crew arrivals into a single move-day schedule. |
 | [Move-in Room Layout](../mcps/move-in-room-layout.md) | Optimize furniture placement in rectangular rooms with physical constraints. |
 | [Move-Out Cleaning Scheduler](../mcps/move-out-cleaning-scheduler.md) | Optimizes cleaning task assignments based on personnel availability and deadlines. |
+| [Moving Box Calculator](../mcps/moving-box-calculator.md) | Calculate the exact number of boxes and items needed for your move. |
 | [Moving Box Packing Plan](../mcps/moving-box-packing-plan.md) | Optimize your move by assigning belongings to the best box sizes. |
 | [Moving Box Reuse Planner](../mcps/moving-box-reuse-planner.md) | Calculate moving box needs and rental costs based on room inventory and existing boxes. |
 | [Moving Cost Budgeter](../mcps/moving-cost-budgeter.md) | Calculate and analyze moving expenses across upfront, move-week, and first-month phases. |
@@ -1532,6 +1537,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Service Utilization](../mcps/service-utilization.md) | Measure resource efficiency by calculating booked versus available hours. |
 | [Set-List Planner](../mcps/set-list-planner.md) | Optimize your live performance with energy-driven song sequencing and musical transition analysis. |
 | [Severance Pay Calculator](../mcps/severance-pay-calculator.md) | Calculate precise employee termination payouts, including salary balances and statutory penalties. |
+| [Sewing Fabric Calculator](../mcps/sewing-fabric-calculator.md) | Calculate the exact fabric length needed for your sewing projects. |
 | [ShadowBot](../mcps/shadowbot.md) | Orchestrate ShadowBot RPA — manage automation robots, handle execution tasks, and monitor bot performance directly from any AI agent. |
 | [Shansong Swift Delivery](../mcps/shansong-swift-delivery.md) | Bring Shansong's fast P2P Delivery Network into your LLM. Estimate logistics routing, dispatch riders, and track locations. |
 | [Shared Custody Exchange Plan](../mcps/shared-custody-exchange-plan.md) | Transforms raw custody data into structured, operational exchange schedules. |
@@ -1800,6 +1806,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Visa Stay Counter](../mcps/visa-stay-counter.md) | Track visa usage and calculate remaining stay days. |
 | [VivifyScrum](../mcps/vivifyscrum.md) | Manage agile projects with Scrum and Kanban boards, sprint planning, and backlog grooming for software development teams. |
 | [Vocabulary Forge](../mcps/vocabulary-forge.md) | AI detectors don't scan for bad grammar — they scan for vocabulary. "Delve", "leverage", "furthermore" are fingerprints. Vocabulary Forge makes the agent build a complete voice profile: define the person, map tonal shifts, purge signal words, add human roughness, commit to a signature. Any language. |
+| [Vocabulary Streak Calculator](../mcps/vocabulary-streak-calculator.md) | Track and analyze your daily study momentum and streaks. |
 | [Vocabulary Total](../mcps/vocabulary-total.md) | Aggregate and manage English vocabulary learned across multiple sessions. |
 | [Voice Strain Assessment](../mcps/voice-strain-assessment.md) | Assess vocal strain risk and recovery needs for voice professionals. |
 | [Volunteer Onboarding Planner](../mcps/volunteer-onboarding-planner.md) | Automates structured onboarding workflows, timelines, and document checklists for volunteers. |
