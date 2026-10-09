@@ -9,6 +9,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Board Sink Rate Calculator](../mcps/board-sink-rate-calculator.md) | Calculate board sink rates, submergence times, and visibility loss. |
 | [Board Speed Variance Calculator](../mcps/board-speed-variance-calculator.md) | Calculates speed fluctuations and control difficulty for kiteboarders in gusty wind conditions. |
 | [Cake Serving Sizer](../mcps/cake-serving-sizer.md) | Calculate exact cake tier combinations and serving yields using Wilton standards. |
+| [Candle Wax Calculator](../mcps/candle-wax-calculator.md) | Calculate precise wax weights and batch costs for candle production. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
 | [Curtain Panel Calculator](../mcps/curtain-panel-calculator.md) | Calculate the exact number of curtain panels needed for any window. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
@@ -19,6 +20,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Garden Area Calculator](../mcps/garden-area-calculator.md) | Calculate garden bed areas and estimate material volumes and costs. |
 | [Garden Hose Reach](../mcps/garden-hose-reach.md) | Calculate hose reach, coverage, and capacity for gardening tasks. |
 | [Hiking Water Calculator](../mcps/hiking-water-calculator.md) | Calculate precise water requirements for hikers based on duration, intensity, and heat. |
+| [Home Decor Quantity Calculator](../mcps/home-decor-quantity-calculator.md) | Calculate the exact number of decor units needed for any room area. |
 | [Home Recording Track Sheet Generator](../mcps/home-recording-track-sheet-generator.md) | Generate structured, numbered recording track sheets and detect logistical conflicts. |
 | [Houseplant Light Estimator](../mcps/houseplant-light-estimator.md) | Calculate light deficits and optimal plant placement using DLI and lux measurements. |
 | [Kite Inflation Pressure Optimizer](../mcps/kite-inflation-pressure-optimizer.md) | Calculate optimal and safe inflation pressures for kites based on environmental conditions. |
@@ -36,10 +38,13 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Pet Tag Text Validator](../mcps/pet-tag-text-validator.md) | Measure and validate character counts for pet tag engravings. |
 | [Pizza Slice Calculator](../mcps/pizza-slice-calculator.md) | Calculate total slices, pizza requirements, and slice distribution. |
 | [Popcorn Serving Count](../mcps/popcorn-serving-count.md) | Calculate full servings and leftover weight for popcorn portions. |
+| [Potluck Portion Calculator](../mcps/potluck-portion-calculator.md) | Divide food portions evenly among dishes while respecting dietary constraints. |
+| [Pottery Clay Calculator](../mcps/pottery-clay-calculator.md) | Calculate total clay requirements and estimated waste for ceramic production batches. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Raised Bed Soil Volume Calculator](../mcps/raised-bed-soil-volume-calculator.md) | Calculate the exact amount of soil needed for your raised garden beds. |
 | [Recipe Leftover Transformer](../mcps/recipe-leftover-transformer.md) | Match your leftovers to recipes to minimize food waste and cost. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
+| [Serving Size Converter](../mcps/serving-size-converter.md) | Precisely scale recipe ingredient quantities to match any desired serving size. |
 | [Sleeping Bag Temperature Gap](../mcps/sleeping-bag-temperature-gap.md) | Calculates the safety margin between a sleeping bag's thermal rating and the expected ambient temperature. |
 | [Snow Density Loading](../mcps/snow-density-loading.md) | Calculate rider sinkage and flotation capacity based on snow properties. |
 | [Snowboard Detune Zone Calculator](../mcps/snowboard-detune-zone-calculator.md) | Calculate optimal edge detuning parameters to prevent edge catches during park riding. |

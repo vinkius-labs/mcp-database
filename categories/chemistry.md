@@ -28,6 +28,7 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | [Safety Data Sheet Synthesis](../mcps/safety-data-sheet-synthesis.md) | Generates regulatory-compliant GHS Safety Data Sheet (SDS) summaries from chemical data. |
 | [Scale Prediction Model](../mcps/scale-prediction-model.md) | Predicts mineral scale formation in oilfield operations using water chemistry and environmental data. |
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
+| [Soap Batch Calculator](../mcps/soap-batch-calculator.md) | Scales soap recipe ingredients by a batch multiplier for precise production. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
 | [Sustainable Chemistry Assessment](../mcps/sustainable-chemistry-assessment.md) | Quantify environmental impact and green chemistry compliance of chemical processes. |
 | [Wine Acetaldehyde Kinetics](../mcps/wine-acetaldehyde-kinetics.md) | Models acetaldehyde formation and binding during fermentation to predict sensory risks. |

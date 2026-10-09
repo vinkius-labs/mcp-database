@@ -20,6 +20,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Garment Size Averaging](../mcps/garment-size-averaging.md) | Convert qualitative garment sizes into quantitative numeric averages. |
 | [Handmade Production Planner](../mcps/handmade-production-planner.md) | Plan materials, labor, and profitability for artisanal production batches. |
 | [Instrument String Replacement Planner](../mcps/instrument-string-replacement-planner.md) | Calculates replacement schedules and total costs for instrument strings. |
+| [Inventory Reorder Point Calculator](../mcps/inventory-reorder-point-calculator.md) | Calculate precise reorder points and replenishment quantities to prevent stockouts. |
 | [Kitchen Equipment Purchase Planner](../mcps/kitchen-equipment-purchase-planner.md) | Optimize kitchen procurement by ranking equipment based on cost, usage, and space. |
 | [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
 | [Material Inventory Gap Analysis](../mcps/material-inventory-gap-analysis.md) | Analyze material shortages, excesses, and required purchase quantities against project needs. |
@@ -39,6 +40,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Stock Shortage Calculator](../mcps/stock-shortage-calculator.md) | Calculate inventory deficits and monitor stock health. |
 | [stock-surplus](../mcps/stock-surplus.md) | Manage and reconcile inventory by calculating surplus and shortfalls. |
 | [Stockpile Management Model](../mcps/stockpile-management-model.md) | Optimize stockpile inventory, blending ratios, and draw strategies with real-time grade and capacity tracking. |
+| [Vintage Age Calculator](../mcps/vintage-age-calculator.md) | Calculate the exact age of items and determine their vintage or antique status. |
 | [Wine Allocations Management](../mcps/wine-allocations-management.md) | Optimized distribution planning for finite wine inventory across sales channels. |
 | [Wine Storage Rotation System](../mcps/wine-storage-rotation-system.md) | Manage wine inventory freshness using FIFO/FEFO rotation logic and aging models. |
 | [Winevybe](../mcps/winevybe.md) | Automate sommelier intelligence via Winevybe — search global wine catalogs, check vineyard ratings, and manage virtual cellars directly from any AI agent. |

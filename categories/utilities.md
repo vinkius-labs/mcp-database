@@ -23,6 +23,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [BMI Calculator](../mcps/bmi-calculator.md) | Calculate Body Mass Index and weight health metrics. |
 | [Board Game Initiative Resolver](../mcps/board-game-initiative-resolver.md) | Deterministic turn order generator for board games. |
+| [Board Game Probability Calculator](../mcps/board-game-probability-calculator.md) | Instantly calculate dice roll, card draw, and event probabilities for tabletop games. |
 | [Board Game Score Calculator](../mcps/board-game-score-calculator.md) | A precision scoring engine for board games that generates scorecards, rankings, and audit trails. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
@@ -47,6 +48,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Country Data Resolver](../mcps/country-data-resolver.md) | Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data. |
 | [CRC32 Checksum Engine](../mcps/crc32-checksum-engine.md) | Calculate CRC32 checksums instantly — the same algorithm inside ZIP, PNG, Ethernet, and MPEG-2. Pure JS, zero dependencies, three output formats. |
 | [Critical Hit Chance Calculator](../mcps/critical-hit-chance-calculator.md) | Calculate critical hit probabilities, expected damage, and optimal stat allocation. |
+| [Crochet Gauge Converter](../mcps/crochet-gauge-converter.md) | Recalculate stitch and row counts based on your crochet gauge. |
 | [Culinary Unit Converter](../mcps/culinary-unit-converter.md) | Convert culinary measurements between units like cups, spoons, and ml, or estimate ingredient mass. |
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
@@ -76,6 +78,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [Hiking Distance Total](../mcps/hiking-distance-total.md) | Calculate and manage cumulative hiking distances from individual trail segments. |
 | [Hiking Elevation Average](../mcps/hiking-elevation-average.md) | Calculate and analyze hiking trail steepness and incline intensity. |
+| [Hiking Pace Calculator](../mcps/hiking-pace-calculator.md) | Calculate hiking pace per kilometer and per mile from distance and time. |
 | [Home Garden Watering Plan](../mcps/home-garden-watering-plan.md) | Generate optimized watering calendars based on plant needs, container volume, and weather. |
 | [Household Water Use Audit](../mcps/household-water-use-audit.md) | Calculate residential water consumption, leak impacts, and monthly projections. |
 | [HVAC Load Calculator](../mcps/hvac-load-calculator.md) | Calculate residential heating and cooling loads using simplified Manual J principles. |
@@ -88,6 +91,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
 | [Japanese Era & Zodiac Converter](../mcps/japanese-era-zodiac-converter.md) | Convert Gregorian dates to Japanese eras and determine zodiac animals. |
 | [Japanese Era Converter](../mcps/japanese-era-converter.md) | Convert Gregorian dates to Japanese imperial eras and calculate era metrics. |
+| [Jersey Size Converter](../mcps/jersey-size-converter.md) | Converts jersey sizes between different brands and regional systems. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Kayak Speed Calculator](../mcps/kayak-speed-calculator.md) | Calculate kayak velocity, pace, and performance tiers. |
@@ -108,15 +112,19 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
 | [Onsen Mineral Classifier](../mcps/onsen-mineral-classifier.md) | Classify Japanese hot spring water quality, legal status, and therapeutic benefits. |
+| [Package Volume Calculator](../mcps/package-volume-calculator.md) | Calculate package volume and convert to liters. |
 | [Paddle Stroke Counter](../mcps/paddle-stroke-counter.md) | Calculate total paddling strokes and session intensity. |
 | [Paddle-Out Calorie Estimator](../mcps/paddle-out-calorie-estimator.md) | Calculate physiological energy expenditure and time for surfing paddle-outs based on water currents. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
+| [Pet Accessory Size Checker](../mcps/pet-accessory-size-checker.md) | Verify if pet measurements fit specific accessory sizes. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
 | [Pet Bed Area Calculator](../mcps/pet-bed-area-calculator.md) | Calculate pet bed surface area and check size suitability for different pet categories. |
 | [Pet Leash Length Calculator](../mcps/pet-leash-length-calculator.md) | Calculate cumulative lengths and statistics for pet leash components. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
 | [Pet Medication Dose Splitter](../mcps/pet-medication-dose-splitter.md) | Calculate the exact number and fraction of tablets needed for pet medication dosing. |
 | [Pet Treat Calculator](../mcps/pet-treat-calculator.md) | Calculate treat requirements and dietary compliance for pets. |
+| [Photo Print Size Converter](../mcps/photo-print-size-converter.md) | Calculate physical print dimensions in inches and centimeters from pixel counts and DPI. |
+| [Picnic Portion Calculator](../mcps/picnic-portion-calculator.md) | Calculate food portions and bulk serving units for events. |
 | [Pitch Shift Speed Ratio Calculator](../mcps/pitch-shift-speed-ratio-calculator.md) | Calculate playback speed multipliers, adjusted durations, and new BPM for pitch shifting via varispeed. |
 | [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Deterministic Texas Hold'em odds calculator for hand strength, outs, and win probabilities. |
 | [Pool Chemistry Calculator](../mcps/pool-chemistry-calculator.md) | Deterministic tool for precise swimming pool water chemistry adjustments and LSI analysis. |
@@ -143,6 +151,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Running Split Calculator](../mcps/running-split-calculator.md) | Calculate precise running splits, cumulative times, and required paces. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
+| [Shipping Dimensional Weight Calculator](../mcps/shipping-dimensional-weight-calculator.md) | Calculate volumetric and billable shipping weights using carrier divisors. |
 | [Shoe Size Difference Calculator](../mcps/shoe-size-difference-calculator.md) | Calculate the physical millimeter difference between any two shoe sizes across global standards. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [Sneaker Size Converter](../mcps/sneaker-size-converter.md) | Translate footwear sizes across US, UK, EU, JP, and CM systems. |
@@ -172,6 +181,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |
 | [URL and Email Token Detector](../mcps/url-and-email-token-detector.md) | Detect URLs and emails to calculate potential LLM token savings. |
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
+| [Vinyl Speed Converter](../mcps/vinyl-speed-converter.md) | Calculate adjusted playback durations when changing vinyl RPM speeds. |
 | [Water Analysis Calculator](../mcps/water-analysis-calculator.md) | Calculates water quality indices, hardness levels, and regulatory compliance. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Tank Volume Calculator](../mcps/water-tank-volume-calculator.md) | Calculate geometric volume and fluid capacity for rectangular water tanks. |

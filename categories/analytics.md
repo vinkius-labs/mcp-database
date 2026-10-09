@@ -49,6 +49,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Conversion Rate Analytics](../mcps/conversion-rate-analytics.md) | Analyze e-commerce conversion rates, traffic source efficiency, and performance trends. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Crowd Density Impact](../mcps/crowd-density-impact.md) | Analyze how crowd density affects surf session quality and wave access. |
+| [Customer Rating Analytics](../mcps/customer-rating-analytics.md) | Calculate statistical summaries, distributions, and ranges for star ratings. |
 | [Defensive Action Rates](../mcps/defensive-action-rates.md) | Calculate football defensive metrics including success rates, actions per 90, and efficiency comparisons. |
 | [Emission Inventory Manager](../mcps/emission-inventory-manager.md) | Quantify and track chemical facility emissions across all source types. |
 | [Emissions Reporting Calculator](../mcps/emissions-reporting-calculator.md) | Calculate annual emissions, GHG intensity, and regulatory reporting status. |

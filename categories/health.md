@@ -34,6 +34,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Breastfeeding Calorie Calculator](../mcps/breastfeeding-calorie-calculator.md) | Calculates caloric, hydration, and nutritional needs for lactating individuals. |
 | [Breath-Hold Capacity Estimator](../mcps/breath-hold-capacity-estimator.md) | Predict apnea capabilities and optimize training for surfers. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
+| [Caffeine Total Calculator](../mcps/caffeine-total-calculator.md) | Calculate total caffeine intake and the percentage contribution of each drink. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
 | [Calorie Deficit Planner](../mcps/calorie-deficit-planner.md) | Design safe, science-based weight loss strategies with precise caloric and metabolic calculations. |
@@ -216,6 +217,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
 | [Stretch Duration Prescriber](../mcps/stretch-duration-prescriber.md) | Generates personalized stretching protocols based on muscle group, flexibility, and goals. |
 | [Stretching Duration Calculator](../mcps/stretching-duration-calculator.md) | Generate optimal stretching protocols based on physiological goals and timing. |
+| [Sugar Total Calculator](../mcps/sugar-total-calculator.md) | Track and aggregate sugar content from food and drink items. |
 | [Supplement Dosage Calculator](../mcps/supplement-dosage-calculator.md) | Calculate precise supplement dosages based on body weight, age, sex, and ingredient chemistry. |
 | [Supplement Stacker](../mcps/supplement-stacker.md) | Analyze supplement interactions, nutrient competition, and optimal timing schedules. |
 | [Supplement Stacking Advisor](../mcps/supplement-stacking-advisor.md) | Analyze supplement interactions, absorption conflicts, and optimal daily timing. |
